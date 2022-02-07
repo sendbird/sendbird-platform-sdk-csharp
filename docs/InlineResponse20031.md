@@ -1,15 +1,15 @@
 
-
-# InlineResponse20031
-
+# sendbird-platform-sdk.Model.InlineResponse20031
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**mutedList** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  |  [optional]
-**totalMuteCount** | **BigDecimal** |  |  [optional]
-**next** | **String** |  |  [optional]
+**MutedList** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  | [optional] 
+**TotalMuteCount** | **decimal** |  | [optional] 
+**Next** | **string** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

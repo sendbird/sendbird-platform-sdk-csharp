@@ -1,14 +1,14 @@
 
-
-# InlineResponse20030
-
+# sendbird-platform-sdk.Model.InlineResponse20030
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**channels** | [**List&lt;SendBirdOpenChannel&gt;**](SendBirdOpenChannel.md) |  |  [optional]
-**next** | **String** |  |  [optional]
+**Channels** | [**List&lt;SendBirdOpenChannel&gt;**](SendBirdOpenChannel.md) |  | [optional] 
+**Next** | **string** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

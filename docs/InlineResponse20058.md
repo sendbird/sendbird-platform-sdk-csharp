@@ -1,13 +1,13 @@
 
-
-# InlineResponse20058
-
+# sendbird-platform-sdk.Model.InlineResponse20058
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**emojis** | [**List&lt;SendBirdEmoji&gt;**](SendBirdEmoji.md) |  |  [optional]
+**Emojis** | [**List&lt;SendBirdEmoji&gt;**](SendBirdEmoji.md) |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

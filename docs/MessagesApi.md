@@ -1,78 +1,86 @@
-# MessagesApi
+# sendbird-platform-sdk.Api.MessagesApi
 
 All URIs are relative to *https://api-APP_ID.sendbird.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addExtraDataToMessage**](MessagesApi.md#addExtraDataToMessage) | **POST** /v3/{channel_type}/{channel_url}/messages/{message_id}/sorted_metaarray | Add extra data to a message
-[**addReactionToAMessage**](MessagesApi.md#addReactionToAMessage) | **POST** /v3/{channel_type}/{channel_url}/messages/{message_id}/reactions | Add a reaction to a message
-[**deleteMessageById**](MessagesApi.md#deleteMessageById) | **DELETE** /v3/{channel_type}/{channel_url}/messages/{message_id} | Delete a message
-[**gcMarkAllMessagesAsDelivered**](MessagesApi.md#gcMarkAllMessagesAsDelivered) | **PUT** /v3/group_channels/{channel_url}/messages/mark_as_delivered | Mark all messages as delivered
-[**gcMarkAllMessagesAsRead**](MessagesApi.md#gcMarkAllMessagesAsRead) | **PUT** /v3/group_channels/{channel_url}/messages/mark_as_read | Mark all messages as read
-[**gcViewNumberOfEachMembersUnreadMessages**](MessagesApi.md#gcViewNumberOfEachMembersUnreadMessages) | **GET** /v3/group_channels/{channel_url}/messages/unread_count | View number of each member&#39;s unread messages
-[**listMessages**](MessagesApi.md#listMessages) | **GET** /v3/{channel_type}/{channel_url}/messages | List messages
-[**listReactionsOfMessage**](MessagesApi.md#listReactionsOfMessage) | **GET** /v3/{channel_type}/{channel_url}/messages/{message_id}/reactions | List reactions of a message
-[**removeExtraDataFromMessage**](MessagesApi.md#removeExtraDataFromMessage) | **DELETE** /v3/{channel_type}/{channel_url}/messages/{message_id}/sorted_metaarray | Remove extra data from a message
-[**removeReactionFromAMessage**](MessagesApi.md#removeReactionFromAMessage) | **DELETE** /v3/{channel_type}/{channel_url}/messages/{message_id}/reactions | Remove a reaction from a message
-[**sendMessage**](MessagesApi.md#sendMessage) | **POST** /v3/{channel_type}/{channel_url}/messages | Send a message
-[**translateMessageIntoOtherLanguages**](MessagesApi.md#translateMessageIntoOtherLanguages) | **POST** /v3/{channel_type}/{channel_url}/messages/{message_id}/translation | Translate a message into other languages
-[**updateExtraDataInMessage**](MessagesApi.md#updateExtraDataInMessage) | **PUT** /v3/{channel_type}/{channel_url}/messages/{message_id}/sorted_metaarray | Update extra data in a message
-[**updateMessageById**](MessagesApi.md#updateMessageById) | **PUT** /v3/{channel_type}/{channel_url}/messages/{message_id} | Update a message
-[**viewMessageById**](MessagesApi.md#viewMessageById) | **GET** /v3/{channel_type}/{channel_url}/messages/{message_id} | View a message
-[**viewTotalNumberOfMessagesInChannel**](MessagesApi.md#viewTotalNumberOfMessagesInChannel) | **GET** /v3/{channel_type}/{channel_url}/messages/total_count | View total number of messages in a channel
+[**AddExtraDataToMessage**](MessagesApi.md#addextradatatomessage) | **POST** /v3/{channel_type}/{channel_url}/messages/{message_id}/sorted_metaarray | Add extra data to a message
+[**AddReactionToAMessage**](MessagesApi.md#addreactiontoamessage) | **POST** /v3/{channel_type}/{channel_url}/messages/{message_id}/reactions | Add a reaction to a message
+[**DeleteMessageById**](MessagesApi.md#deletemessagebyid) | **DELETE** /v3/{channel_type}/{channel_url}/messages/{message_id} | Delete a message
+[**GcMarkAllMessagesAsDelivered**](MessagesApi.md#gcmarkallmessagesasdelivered) | **PUT** /v3/group_channels/{channel_url}/messages/mark_as_delivered | Mark all messages as delivered
+[**GcMarkAllMessagesAsRead**](MessagesApi.md#gcmarkallmessagesasread) | **PUT** /v3/group_channels/{channel_url}/messages/mark_as_read | Mark all messages as read
+[**GcViewNumberOfEachMembersUnreadMessages**](MessagesApi.md#gcviewnumberofeachmembersunreadmessages) | **GET** /v3/group_channels/{channel_url}/messages/unread_count | View number of each member&#39;s unread messages
+[**ListMessages**](MessagesApi.md#listmessages) | **GET** /v3/{channel_type}/{channel_url}/messages | List messages
+[**ListReactionsOfMessage**](MessagesApi.md#listreactionsofmessage) | **GET** /v3/{channel_type}/{channel_url}/messages/{message_id}/reactions | List reactions of a message
+[**RemoveExtraDataFromMessage**](MessagesApi.md#removeextradatafrommessage) | **DELETE** /v3/{channel_type}/{channel_url}/messages/{message_id}/sorted_metaarray | Remove extra data from a message
+[**RemoveReactionFromAMessage**](MessagesApi.md#removereactionfromamessage) | **DELETE** /v3/{channel_type}/{channel_url}/messages/{message_id}/reactions | Remove a reaction from a message
+[**SendMessage**](MessagesApi.md#sendmessage) | **POST** /v3/{channel_type}/{channel_url}/messages | Send a message
+[**TranslateMessageIntoOtherLanguages**](MessagesApi.md#translatemessageintootherlanguages) | **POST** /v3/{channel_type}/{channel_url}/messages/{message_id}/translation | Translate a message into other languages
+[**UpdateExtraDataInMessage**](MessagesApi.md#updateextradatainmessage) | **PUT** /v3/{channel_type}/{channel_url}/messages/{message_id}/sorted_metaarray | Update extra data in a message
+[**UpdateMessageById**](MessagesApi.md#updatemessagebyid) | **PUT** /v3/{channel_type}/{channel_url}/messages/{message_id} | Update a message
+[**ViewMessageById**](MessagesApi.md#viewmessagebyid) | **GET** /v3/{channel_type}/{channel_url}/messages/{message_id} | View a message
+[**ViewTotalNumberOfMessagesInChannel**](MessagesApi.md#viewtotalnumberofmessagesinchannel) | **GET** /v3/{channel_type}/{channel_url}/messages/total_count | View total number of messages in a channel
 
 
-<a name="addExtraDataToMessage"></a>
-# **addExtraDataToMessage**
-> InlineResponse20054 addExtraDataToMessage(channelType, channelUrl, messageId, apiToken, addExtraDataToMessageData)
+
+## AddExtraDataToMessage
+
+> InlineResponse20054 AddExtraDataToMessage (string channelType, string channelUrl, string messageId, string apiToken = null, AddExtraDataToMessageData addExtraDataToMessageData = null)
 
 Add extra data to a message
 
-## Add extra data to a message  Adds one or more key-values items which store additional information for a message.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-add-extra-data-to-a-message ----------------------------
+## Add extra data to a message  Adds one or more key-values items which store additional information for a message.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-add-extra-data-to-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.MessagesApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    MessagesApi apiInstance = new MessagesApi(defaultClient);
-    String channelType = "channelType_example"; // String | 
-    String channelUrl = "channelUrl_example"; // String | 
-    String messageId = "messageId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    AddExtraDataToMessageData addExtraDataToMessageData = new AddExtraDataToMessageData(); // AddExtraDataToMessageData | 
-    try {
-      InlineResponse20054 result = apiInstance.addExtraDataToMessage(channelType, channelUrl, messageId, apiToken, addExtraDataToMessageData);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling MessagesApi#addExtraDataToMessage");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class AddExtraDataToMessageExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new MessagesApi(Configuration.Default);
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var messageId = messageId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var addExtraDataToMessageData = new AddExtraDataToMessageData(); // AddExtraDataToMessageData |  (optional) 
+
+            try
+            {
+                // Add extra data to a message
+                InlineResponse20054 result = apiInstance.AddExtraDataToMessage(channelType, channelUrl, messageId, apiToken, addExtraDataToMessageData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling MessagesApi.AddExtraDataToMessage: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelType** | **String**|  |
- **channelUrl** | **String**|  |
- **messageId** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **addExtraDataToMessageData** | [**AddExtraDataToMessageData**](AddExtraDataToMessageData.md)|  | [optional]
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **messageId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **addExtraDataToMessageData** | [**AddExtraDataToMessageData**](AddExtraDataToMessageData.md)|  | [optional] 
 
 ### Return type
 
@@ -84,65 +92,79 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="addReactionToAMessage"></a>
-# **addReactionToAMessage**
-> InlineResponse20053 addReactionToAMessage(channelType, channelUrl, messageId, apiToken, addReactionToAMessageData)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## AddReactionToAMessage
+
+> InlineResponse20053 AddReactionToAMessage (string channelType, string channelUrl, string messageId, string apiToken = null, AddReactionToAMessageData addReactionToAMessageData = null)
 
 Add a reaction to a message
 
-## Add a reaction to a message  Adds a specific reaction to a message.  &gt; __Note__: Currently, this action is only available in group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-add-a-reaction-to-a-message ----------------------------
+## Add a reaction to a message  Adds a specific reaction to a message.  > __Note__: Currently, this action is only available in group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-add-a-reaction-to-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.MessagesApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    MessagesApi apiInstance = new MessagesApi(defaultClient);
-    String channelType = "channelType_example"; // String | 
-    String channelUrl = "channelUrl_example"; // String | 
-    String messageId = "messageId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    AddReactionToAMessageData addReactionToAMessageData = new AddReactionToAMessageData(); // AddReactionToAMessageData | 
-    try {
-      InlineResponse20053 result = apiInstance.addReactionToAMessage(channelType, channelUrl, messageId, apiToken, addReactionToAMessageData);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling MessagesApi#addReactionToAMessage");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class AddReactionToAMessageExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new MessagesApi(Configuration.Default);
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var messageId = messageId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var addReactionToAMessageData = new AddReactionToAMessageData(); // AddReactionToAMessageData |  (optional) 
+
+            try
+            {
+                // Add a reaction to a message
+                InlineResponse20053 result = apiInstance.AddReactionToAMessage(channelType, channelUrl, messageId, apiToken, addReactionToAMessageData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling MessagesApi.AddReactionToAMessage: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelType** | **String**|  |
- **channelUrl** | **String**|  |
- **messageId** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **addReactionToAMessageData** | [**AddReactionToAMessageData**](AddReactionToAMessageData.md)|  | [optional]
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **messageId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **addReactionToAMessageData** | [**AddReactionToAMessageData**](AddReactionToAMessageData.md)|  | [optional] 
 
 ### Return type
 
@@ -154,66 +176,80 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="deleteMessageById"></a>
-# **deleteMessageById**
-> deleteMessageById(channelType, channelUrl, messageId, apiToken)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DeleteMessageById
+
+> void DeleteMessageById (string channelType, string channelUrl, string messageId, string apiToken = null)
 
 Delete a message
 
-## Delete a message  Deletes a message from a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-delete-a-message ----------------------------
+## Delete a message  Deletes a message from a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-delete-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.MessagesApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    MessagesApi apiInstance = new MessagesApi(defaultClient);
-    String channelType = "channelType_example"; // String | 
-    String channelUrl = "channelUrl_example"; // String | 
-    String messageId = "messageId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    try {
-      apiInstance.deleteMessageById(channelType, channelUrl, messageId, apiToken);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling MessagesApi#deleteMessageById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class DeleteMessageByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new MessagesApi(Configuration.Default);
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var messageId = messageId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+
+            try
+            {
+                // Delete a message
+                apiInstance.DeleteMessageById(channelType, channelUrl, messageId, apiToken);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling MessagesApi.DeleteMessageById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelType** | **String**|  |
- **channelUrl** | **String**|  |
- **messageId** | **String**|  |
- **apiToken** | **String**|  | [optional]
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **messageId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
-null (empty response body)
+void (empty response body)
 
 ### Authorization
 
@@ -221,61 +257,75 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="gcMarkAllMessagesAsDelivered"></a>
-# **gcMarkAllMessagesAsDelivered**
-> InlineResponse20050 gcMarkAllMessagesAsDelivered(channelUrl, apiToken, gcMarkAllMessagesAsDeliveredData)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## GcMarkAllMessagesAsDelivered
+
+> InlineResponse20050 GcMarkAllMessagesAsDelivered (string channelUrl, string apiToken = null, GcMarkAllMessagesAsDeliveredData gcMarkAllMessagesAsDeliveredData = null)
 
 Mark all messages as delivered
 
-## Mark all messages as delivered  Marks all messages in a group channel as delivered for a given user. This action is only applicable for users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-mark-all-messages-as-delivered ----------------------------
+## Mark all messages as delivered  Marks all messages in a group channel as delivered for a given user. This action is only applicable for users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-mark-all-messages-as-delivered - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.MessagesApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    MessagesApi apiInstance = new MessagesApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    GcMarkAllMessagesAsDeliveredData gcMarkAllMessagesAsDeliveredData = new GcMarkAllMessagesAsDeliveredData(); // GcMarkAllMessagesAsDeliveredData | 
-    try {
-      InlineResponse20050 result = apiInstance.gcMarkAllMessagesAsDelivered(channelUrl, apiToken, gcMarkAllMessagesAsDeliveredData);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling MessagesApi#gcMarkAllMessagesAsDelivered");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class GcMarkAllMessagesAsDeliveredExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new MessagesApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var gcMarkAllMessagesAsDeliveredData = new GcMarkAllMessagesAsDeliveredData(); // GcMarkAllMessagesAsDeliveredData |  (optional) 
+
+            try
+            {
+                // Mark all messages as delivered
+                InlineResponse20050 result = apiInstance.GcMarkAllMessagesAsDelivered(channelUrl, apiToken, gcMarkAllMessagesAsDeliveredData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling MessagesApi.GcMarkAllMessagesAsDelivered: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **gcMarkAllMessagesAsDeliveredData** | [**GcMarkAllMessagesAsDeliveredData**](GcMarkAllMessagesAsDeliveredData.md)|  | [optional]
+ **channelUrl** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **gcMarkAllMessagesAsDeliveredData** | [**GcMarkAllMessagesAsDeliveredData**](GcMarkAllMessagesAsDeliveredData.md)|  | [optional] 
 
 ### Return type
 
@@ -287,64 +337,78 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="gcMarkAllMessagesAsRead"></a>
-# **gcMarkAllMessagesAsRead**
-> gcMarkAllMessagesAsRead(channelUrl, apiToken, gcMarkAllMessagesAsReadData)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## GcMarkAllMessagesAsRead
+
+> void GcMarkAllMessagesAsRead (string channelUrl, string apiToken = null, GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = null)
 
 Mark all messages as read
 
-## Mark all messages as read  Marks all messages in a group channel as read for a given user. This action is only applicable for users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-mark-all-messages-as-read ----------------------------
+## Mark all messages as read  Marks all messages in a group channel as read for a given user. This action is only applicable for users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-mark-all-messages-as-read - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.MessagesApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    MessagesApi apiInstance = new MessagesApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = new GcMarkAllMessagesAsReadData(); // GcMarkAllMessagesAsReadData | 
-    try {
-      apiInstance.gcMarkAllMessagesAsRead(channelUrl, apiToken, gcMarkAllMessagesAsReadData);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling MessagesApi#gcMarkAllMessagesAsRead");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class GcMarkAllMessagesAsReadExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new MessagesApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var gcMarkAllMessagesAsReadData = new GcMarkAllMessagesAsReadData(); // GcMarkAllMessagesAsReadData |  (optional) 
+
+            try
+            {
+                // Mark all messages as read
+                apiInstance.GcMarkAllMessagesAsRead(channelUrl, apiToken, gcMarkAllMessagesAsReadData);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling MessagesApi.GcMarkAllMessagesAsRead: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **gcMarkAllMessagesAsReadData** | [**GcMarkAllMessagesAsReadData**](GcMarkAllMessagesAsReadData.md)|  | [optional]
+ **channelUrl** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **gcMarkAllMessagesAsReadData** | [**GcMarkAllMessagesAsReadData**](GcMarkAllMessagesAsReadData.md)|  | [optional] 
 
 ### Return type
 
-null (empty response body)
+void (empty response body)
 
 ### Authorization
 
@@ -352,61 +416,75 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: Not defined
+- **Content-Type**: application/json
+- **Accept**: Not defined
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="gcViewNumberOfEachMembersUnreadMessages"></a>
-# **gcViewNumberOfEachMembersUnreadMessages**
-> InlineResponse20049 gcViewNumberOfEachMembersUnreadMessages(channelUrl, apiToken, userIds)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
-View number of each member&#39;s unread messages
 
-## View number of each member&#39;s unread messages  Retrieves the total number of each member&#39;s unread messages in a group channel. This action is only applicable for users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-view-number-of-each-member-s-unread-messages ----------------------------
+## GcViewNumberOfEachMembersUnreadMessages
+
+> InlineResponse20049 GcViewNumberOfEachMembersUnreadMessages (string channelUrl, string apiToken = null, string userIds = null)
+
+View number of each member's unread messages
+
+## View number of each member's unread messages  Retrieves the total number of each member's unread messages in a group channel. This action is only applicable for users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-view-number-of-each-member-s-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.MessagesApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    MessagesApi apiInstance = new MessagesApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    String userIds = "userIds_example"; // String | 
-    try {
-      InlineResponse20049 result = apiInstance.gcViewNumberOfEachMembersUnreadMessages(channelUrl, apiToken, userIds);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling MessagesApi#gcViewNumberOfEachMembersUnreadMessages");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class GcViewNumberOfEachMembersUnreadMessagesExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new MessagesApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var userIds = userIds_example;  // string |  (optional) 
+
+            try
+            {
+                // View number of each member's unread messages
+                InlineResponse20049 result = apiInstance.GcViewNumberOfEachMembersUnreadMessages(channelUrl, apiToken, userIds);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling MessagesApi.GcViewNumberOfEachMembersUnreadMessages: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **userIds** | **String**|  | [optional]
+ **channelUrl** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **userIds** | **string**|  | [optional] 
 
 ### Return type
 
@@ -418,97 +496,111 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="listMessages"></a>
-# **listMessages**
-> InlineResponse20047 listMessages(channelType, channelUrl, messageTs, messageId, apiToken, prevLimit, nextLimit, include, reverse, senderId, senderIds, operatorFilter, customTypes, messageType, includingRemoved, includeReactions, withSortedMetaArray, showSubchannelMessagesOnly, userId, customType, withMetaArray)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ListMessages
+
+> InlineResponse20047 ListMessages (string channelType, string channelUrl, int messageTs, int messageId, string apiToken = null, int? prevLimit = null, int? nextLimit = null, bool? include = null, bool? reverse = null, string senderId = null, string senderIds = null, string operatorFilter = null, string customTypes = null, string messageType = null, bool? includingRemoved = null, bool? includeReactions = null, bool? withSortedMetaArray = null, bool? showSubchannelMessagesOnly = null, string userId = null, string customType = null, bool? withMetaArray = null)
 
 List messages
 
-## List messages  Retrieves a list of past messages of a channel.  &gt; This message retrieval is one of Sendbird&#39;s [premium features](https://sendbird.com/docs/chat/v3/platform-api/guides/application#-3-sendbird-s-premium-features). Contact our [sales team](https://get.sendbird.com/talk-to-sales.html) for further assistance.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-list-messages ----------------------------   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of past messages.
+## List messages  Retrieves a list of past messages of a channel.  > This message retrieval is one of Sendbird's [premium features](https://sendbird.com/docs/chat/v3/platform-api/guides/application#-3-sendbird-s-premium-features). Contact our [sales team](https://get.sendbird.com/talk-to-sales.html) for further assistance.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-list-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of past messages.
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.MessagesApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    MessagesApi apiInstance = new MessagesApi(defaultClient);
-    String channelType = "channelType_example"; // String | 
-    String channelUrl = "channelUrl_example"; // String | 
-    Integer messageTs = 56; // Integer | 
-    Integer messageId = 56; // Integer | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    Integer prevLimit = 56; // Integer | 
-    Integer nextLimit = 56; // Integer | 
-    Boolean include = true; // Boolean | 
-    Boolean reverse = true; // Boolean | 
-    String senderId = "senderId_example"; // String | 
-    String senderIds = "senderIds_example"; // String | 
-    String operatorFilter = "operatorFilter_example"; // String | 
-    String customTypes = "customTypes_example"; // String | 
-    String messageType = "messageType_example"; // String | 
-    Boolean includingRemoved = true; // Boolean | 
-    Boolean includeReactions = true; // Boolean | 
-    Boolean withSortedMetaArray = true; // Boolean | 
-    Boolean showSubchannelMessagesOnly = true; // Boolean | 
-    String userId = "userId_example"; // String | 
-    String customType = "customType_example"; // String | 
-    Boolean withMetaArray = true; // Boolean | 
-    try {
-      InlineResponse20047 result = apiInstance.listMessages(channelType, channelUrl, messageTs, messageId, apiToken, prevLimit, nextLimit, include, reverse, senderId, senderIds, operatorFilter, customTypes, messageType, includingRemoved, includeReactions, withSortedMetaArray, showSubchannelMessagesOnly, userId, customType, withMetaArray);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling MessagesApi#listMessages");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class ListMessagesExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new MessagesApi(Configuration.Default);
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var messageTs = 56;  // int | 
+            var messageId = 56;  // int | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var prevLimit = 56;  // int? |  (optional) 
+            var nextLimit = 56;  // int? |  (optional) 
+            var include = true;  // bool? |  (optional) 
+            var reverse = true;  // bool? |  (optional) 
+            var senderId = senderId_example;  // string |  (optional) 
+            var senderIds = senderIds_example;  // string |  (optional) 
+            var operatorFilter = operatorFilter_example;  // string |  (optional) 
+            var customTypes = customTypes_example;  // string |  (optional) 
+            var messageType = messageType_example;  // string |  (optional) 
+            var includingRemoved = true;  // bool? |  (optional) 
+            var includeReactions = true;  // bool? |  (optional) 
+            var withSortedMetaArray = true;  // bool? |  (optional) 
+            var showSubchannelMessagesOnly = true;  // bool? |  (optional) 
+            var userId = userId_example;  // string |  (optional) 
+            var customType = customType_example;  // string |  (optional) 
+            var withMetaArray = true;  // bool? |  (optional) 
+
+            try
+            {
+                // List messages
+                InlineResponse20047 result = apiInstance.ListMessages(channelType, channelUrl, messageTs, messageId, apiToken, prevLimit, nextLimit, include, reverse, senderId, senderIds, operatorFilter, customTypes, messageType, includingRemoved, includeReactions, withSortedMetaArray, showSubchannelMessagesOnly, userId, customType, withMetaArray);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling MessagesApi.ListMessages: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelType** | **String**|  |
- **channelUrl** | **String**|  |
- **messageTs** | **Integer**|  |
- **messageId** | **Integer**|  |
- **apiToken** | **String**|  | [optional]
- **prevLimit** | **Integer**|  | [optional]
- **nextLimit** | **Integer**|  | [optional]
- **include** | **Boolean**|  | [optional]
- **reverse** | **Boolean**|  | [optional]
- **senderId** | **String**|  | [optional]
- **senderIds** | **String**|  | [optional]
- **operatorFilter** | **String**|  | [optional]
- **customTypes** | **String**|  | [optional]
- **messageType** | **String**|  | [optional]
- **includingRemoved** | **Boolean**|  | [optional]
- **includeReactions** | **Boolean**|  | [optional]
- **withSortedMetaArray** | **Boolean**|  | [optional]
- **showSubchannelMessagesOnly** | **Boolean**|  | [optional]
- **userId** | **String**|  | [optional]
- **customType** | **String**|  | [optional]
- **withMetaArray** | **Boolean**|  | [optional]
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **messageTs** | **int**|  | 
+ **messageId** | **int**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **prevLimit** | **int?**|  | [optional] 
+ **nextLimit** | **int?**|  | [optional] 
+ **include** | **bool?**|  | [optional] 
+ **reverse** | **bool?**|  | [optional] 
+ **senderId** | **string**|  | [optional] 
+ **senderIds** | **string**|  | [optional] 
+ **operatorFilter** | **string**|  | [optional] 
+ **customTypes** | **string**|  | [optional] 
+ **messageType** | **string**|  | [optional] 
+ **includingRemoved** | **bool?**|  | [optional] 
+ **includeReactions** | **bool?**|  | [optional] 
+ **withSortedMetaArray** | **bool?**|  | [optional] 
+ **showSubchannelMessagesOnly** | **bool?**|  | [optional] 
+ **userId** | **string**|  | [optional] 
+ **customType** | **string**|  | [optional] 
+ **withMetaArray** | **bool?**|  | [optional] 
 
 ### Return type
 
@@ -520,65 +612,79 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="listReactionsOfMessage"></a>
-# **listReactionsOfMessage**
-> InlineResponse20052 listReactionsOfMessage(channelType, channelUrl, messageId, apiToken, listUsers)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ListReactionsOfMessage
+
+> InlineResponse20052 ListReactionsOfMessage (string channelType, string channelUrl, string messageId, string apiToken = null, bool? listUsers = null)
 
 List reactions of a message
 
-## List reactions of a message  Retrieves a list of reactions made to a message.  &gt; __Note__: Currently, this action is only available in group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-list-reactions-of-a-message ----------------------------   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.  &#x60;message_id&#x60;      Type: long      Description: Specifies the unique ID of the message to add a reaction to.
+## List reactions of a message  Retrieves a list of reactions made to a message.  > __Note__: Currently, this action is only available in group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-list-reactions-of-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the target channel.  `message_id`      Type: long      Description: Specifies the unique ID of the message to add a reaction to.
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.MessagesApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    MessagesApi apiInstance = new MessagesApi(defaultClient);
-    String channelType = "channelType_example"; // String | 
-    String channelUrl = "channelUrl_example"; // String | 
-    String messageId = "messageId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    Boolean listUsers = true; // Boolean | 
-    try {
-      InlineResponse20052 result = apiInstance.listReactionsOfMessage(channelType, channelUrl, messageId, apiToken, listUsers);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling MessagesApi#listReactionsOfMessage");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class ListReactionsOfMessageExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new MessagesApi(Configuration.Default);
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var messageId = messageId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var listUsers = true;  // bool? |  (optional) 
+
+            try
+            {
+                // List reactions of a message
+                InlineResponse20052 result = apiInstance.ListReactionsOfMessage(channelType, channelUrl, messageId, apiToken, listUsers);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling MessagesApi.ListReactionsOfMessage: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelType** | **String**|  |
- **channelUrl** | **String**|  |
- **messageId** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **listUsers** | **Boolean**|  | [optional]
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **messageId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **listUsers** | **bool?**|  | [optional] 
 
 ### Return type
 
@@ -590,68 +696,82 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="removeExtraDataFromMessage"></a>
-# **removeExtraDataFromMessage**
-> removeExtraDataFromMessage(channelType, channelUrl, messageId, apiToken, keys)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## RemoveExtraDataFromMessage
+
+> void RemoveExtraDataFromMessage (string channelType, string channelUrl, string messageId, string apiToken = null, List<string> keys = null)
 
 Remove extra data from a message
 
-## Remove extra data from a message  Removes specific items from a message by their keys.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-remove-extra-data-from-a-message ----------------------------
+## Remove extra data from a message  Removes specific items from a message by their keys.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-remove-extra-data-from-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.MessagesApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    MessagesApi apiInstance = new MessagesApi(defaultClient);
-    String channelType = "channelType_example"; // String | 
-    String channelUrl = "channelUrl_example"; // String | 
-    String messageId = "messageId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    List<String> keys = Arrays.asList(); // List<String> | 
-    try {
-      apiInstance.removeExtraDataFromMessage(channelType, channelUrl, messageId, apiToken, keys);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling MessagesApi#removeExtraDataFromMessage");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class RemoveExtraDataFromMessageExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new MessagesApi(Configuration.Default);
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var messageId = messageId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var keys = new List<string>(); // List<string> |  (optional) 
+
+            try
+            {
+                // Remove extra data from a message
+                apiInstance.RemoveExtraDataFromMessage(channelType, channelUrl, messageId, apiToken, keys);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling MessagesApi.RemoveExtraDataFromMessage: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelType** | **String**|  |
- **channelUrl** | **String**|  |
- **messageId** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **keys** | [**List&lt;String&gt;**](String.md)|  | [optional]
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **messageId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **keys** | [**List&lt;string&gt;**](string.md)|  | [optional] 
 
 ### Return type
 
-null (empty response body)
+void (empty response body)
 
 ### Authorization
 
@@ -659,67 +779,81 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="removeReactionFromAMessage"></a>
-# **removeReactionFromAMessage**
-> InlineResponse20053 removeReactionFromAMessage(channelType, channelUrl, messageId, apiToken, userId, reaction)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## RemoveReactionFromAMessage
+
+> InlineResponse20053 RemoveReactionFromAMessage (string channelType, string channelUrl, string messageId, string apiToken = null, string userId = null, string reaction = null)
 
 Remove a reaction from a message
 
-## Remove a reaction from a message  Removes a specific reaction from a message.  &gt; __Note__: Currently, this action is only available in group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-remove-a-reaction-from-a-message ----------------------------
+## Remove a reaction from a message  Removes a specific reaction from a message.  > __Note__: Currently, this action is only available in group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-remove-a-reaction-from-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.MessagesApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    MessagesApi apiInstance = new MessagesApi(defaultClient);
-    String channelType = "channelType_example"; // String | 
-    String channelUrl = "channelUrl_example"; // String | 
-    String messageId = "messageId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    String userId = "userId_example"; // String | 
-    String reaction = "reaction_example"; // String | 
-    try {
-      InlineResponse20053 result = apiInstance.removeReactionFromAMessage(channelType, channelUrl, messageId, apiToken, userId, reaction);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling MessagesApi#removeReactionFromAMessage");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class RemoveReactionFromAMessageExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new MessagesApi(Configuration.Default);
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var messageId = messageId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var userId = userId_example;  // string |  (optional) 
+            var reaction = reaction_example;  // string |  (optional) 
+
+            try
+            {
+                // Remove a reaction from a message
+                InlineResponse20053 result = apiInstance.RemoveReactionFromAMessage(channelType, channelUrl, messageId, apiToken, userId, reaction);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling MessagesApi.RemoveReactionFromAMessage: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelType** | **String**|  |
- **channelUrl** | **String**|  |
- **messageId** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **userId** | **String**|  | [optional]
- **reaction** | **String**|  | [optional]
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **messageId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **userId** | **string**|  | [optional] 
+ **reaction** | **string**|  | [optional] 
 
 ### Return type
 
@@ -731,63 +865,77 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="sendMessage"></a>
-# **sendMessage**
-> SendBirdMessageResponse sendMessage(channelType, channelUrl, apiToken, sendMessageData)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## SendMessage
+
+> SendBirdMessageResponse SendMessage (string channelType, string channelUrl, string apiToken = null, SendMessageData sendMessageData = null)
 
 Send a message
 
-## Send a message  Sends a message to a channel. You can send a text message, a file message, and an admin message.  &gt;__Note__: With Sendbird Chat SDKs and the platform API, any type of files in messages can be uploaded to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-send-a-message ----------------------------
+## Send a message  Sends a message to a channel. You can send a text message, a file message, and an admin message.  >__Note__: With Sendbird Chat SDKs and the platform API, any type of files in messages can be uploaded to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-send-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.MessagesApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    MessagesApi apiInstance = new MessagesApi(defaultClient);
-    String channelType = "channelType_example"; // String | 
-    String channelUrl = "channelUrl_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    SendMessageData sendMessageData = new SendMessageData(); // SendMessageData | 
-    try {
-      SendBirdMessageResponse result = apiInstance.sendMessage(channelType, channelUrl, apiToken, sendMessageData);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling MessagesApi#sendMessage");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class SendMessageExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new MessagesApi(Configuration.Default);
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var sendMessageData = new SendMessageData(); // SendMessageData |  (optional) 
+
+            try
+            {
+                // Send a message
+                SendBirdMessageResponse result = apiInstance.SendMessage(channelType, channelUrl, apiToken, sendMessageData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling MessagesApi.SendMessage: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelType** | **String**|  |
- **channelUrl** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **sendMessageData** | [**SendMessageData**](SendMessageData.md)|  | [optional]
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **sendMessageData** | [**SendMessageData**](SendMessageData.md)|  | [optional] 
 
 ### Return type
 
@@ -799,65 +947,79 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="translateMessageIntoOtherLanguages"></a>
-# **translateMessageIntoOtherLanguages**
-> SendBirdMessageResponse translateMessageIntoOtherLanguages(channelType, channelUrl, messageId, apiToken, body)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## TranslateMessageIntoOtherLanguages
+
+> SendBirdMessageResponse TranslateMessageIntoOtherLanguages (string channelType, string channelUrl, string messageId, string apiToken = null, Object body = null)
 
 Translate a message into other languages
 
-## Translate a message into other languages  Translates a message into specific languages. Only text messages of which type is MESG can be translated into other languages.  &gt; __Note__: Message translation is powered by [Google Cloud Translation API recognition engine](https://cloud.google.com/translate/). Find language codes supported by the engine in the [Miscellaneous](https://sendbird.com/docs/chat/v3/platform-api/guides/Miscellaneous) page or visit the [Language Support](https://cloud.google.com/translate/docs/languages) for Google Cloud Translation.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-translate-a-message-into-other-languages ----------------------------
+## Translate a message into other languages  Translates a message into specific languages. Only text messages of which type is MESG can be translated into other languages.  > __Note__: Message translation is powered by [Google Cloud Translation API recognition engine](https://cloud.google.com/translate/). Find language codes supported by the engine in the [Miscellaneous](https://sendbird.com/docs/chat/v3/platform-api/guides/Miscellaneous) page or visit the [Language Support](https://cloud.google.com/translate/docs/languages) for Google Cloud Translation.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-translate-a-message-into-other-languages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.MessagesApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    MessagesApi apiInstance = new MessagesApi(defaultClient);
-    String channelType = "channelType_example"; // String | 
-    String channelUrl = "channelUrl_example"; // String | 
-    String messageId = "messageId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    Object body = null; // Object | 
-    try {
-      SendBirdMessageResponse result = apiInstance.translateMessageIntoOtherLanguages(channelType, channelUrl, messageId, apiToken, body);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling MessagesApi#translateMessageIntoOtherLanguages");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class TranslateMessageIntoOtherLanguagesExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new MessagesApi(Configuration.Default);
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var messageId = messageId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var body = ;  // Object |  (optional) 
+
+            try
+            {
+                // Translate a message into other languages
+                SendBirdMessageResponse result = apiInstance.TranslateMessageIntoOtherLanguages(channelType, channelUrl, messageId, apiToken, body);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling MessagesApi.TranslateMessageIntoOtherLanguages: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelType** | **String**|  |
- **channelUrl** | **String**|  |
- **messageId** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **body** | **Object**|  | [optional]
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **messageId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **body** | **Object**|  | [optional] 
 
 ### Return type
 
@@ -869,65 +1031,79 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="updateExtraDataInMessage"></a>
-# **updateExtraDataInMessage**
-> InlineResponse20054 updateExtraDataInMessage(channelType, channelUrl, messageId, apiToken, updateExtraDataInMessageData)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## UpdateExtraDataInMessage
+
+> InlineResponse20054 UpdateExtraDataInMessage (string channelType, string channelUrl, string messageId, string apiToken = null, UpdateExtraDataInMessageData updateExtraDataInMessageData = null)
 
 Update extra data in a message
 
-## Update extra data in a message  Updates the values of specific items by their keys.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-update-extra-data-in-a-message ----------------------------
+## Update extra data in a message  Updates the values of specific items by their keys.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-update-extra-data-in-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.MessagesApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    MessagesApi apiInstance = new MessagesApi(defaultClient);
-    String channelType = "channelType_example"; // String | 
-    String channelUrl = "channelUrl_example"; // String | 
-    String messageId = "messageId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    UpdateExtraDataInMessageData updateExtraDataInMessageData = new UpdateExtraDataInMessageData(); // UpdateExtraDataInMessageData | 
-    try {
-      InlineResponse20054 result = apiInstance.updateExtraDataInMessage(channelType, channelUrl, messageId, apiToken, updateExtraDataInMessageData);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling MessagesApi#updateExtraDataInMessage");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class UpdateExtraDataInMessageExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new MessagesApi(Configuration.Default);
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var messageId = messageId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var updateExtraDataInMessageData = new UpdateExtraDataInMessageData(); // UpdateExtraDataInMessageData |  (optional) 
+
+            try
+            {
+                // Update extra data in a message
+                InlineResponse20054 result = apiInstance.UpdateExtraDataInMessage(channelType, channelUrl, messageId, apiToken, updateExtraDataInMessageData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling MessagesApi.UpdateExtraDataInMessage: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelType** | **String**|  |
- **channelUrl** | **String**|  |
- **messageId** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **updateExtraDataInMessageData** | [**UpdateExtraDataInMessageData**](UpdateExtraDataInMessageData.md)|  | [optional]
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **messageId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **updateExtraDataInMessageData** | [**UpdateExtraDataInMessageData**](UpdateExtraDataInMessageData.md)|  | [optional] 
 
 ### Return type
 
@@ -939,65 +1115,79 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="updateMessageById"></a>
-# **updateMessageById**
-> SendBirdMessageResponse updateMessageById(channelType, channelUrl, messageId, apiToken, updateMessageByIdData)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## UpdateMessageById
+
+> SendBirdMessageResponse UpdateMessageById (string channelType, string channelUrl, string messageId, string apiToken = null, UpdateMessageByIdData updateMessageByIdData = null)
 
 Update a message
 
-## Update a message  Updates information on a message in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-update-a-message ----------------------------
+## Update a message  Updates information on a message in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-update-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.MessagesApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    MessagesApi apiInstance = new MessagesApi(defaultClient);
-    String channelType = "channelType_example"; // String | 
-    String channelUrl = "channelUrl_example"; // String | 
-    String messageId = "messageId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    UpdateMessageByIdData updateMessageByIdData = new UpdateMessageByIdData(); // UpdateMessageByIdData | 
-    try {
-      SendBirdMessageResponse result = apiInstance.updateMessageById(channelType, channelUrl, messageId, apiToken, updateMessageByIdData);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling MessagesApi#updateMessageById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class UpdateMessageByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new MessagesApi(Configuration.Default);
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var messageId = messageId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var updateMessageByIdData = new UpdateMessageByIdData(); // UpdateMessageByIdData |  (optional) 
+
+            try
+            {
+                // Update a message
+                SendBirdMessageResponse result = apiInstance.UpdateMessageById(channelType, channelUrl, messageId, apiToken, updateMessageByIdData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling MessagesApi.UpdateMessageById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelType** | **String**|  |
- **channelUrl** | **String**|  |
- **messageId** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **updateMessageByIdData** | [**UpdateMessageByIdData**](UpdateMessageByIdData.md)|  | [optional]
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **messageId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **updateMessageByIdData** | [**UpdateMessageByIdData**](UpdateMessageByIdData.md)|  | [optional] 
 
 ### Return type
 
@@ -1009,67 +1199,81 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="viewMessageById"></a>
-# **viewMessageById**
-> SendBirdMessageResponse viewMessageById(channelType, channelUrl, messageId, apiToken, withSortedMetaArray, withMetaArray)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ViewMessageById
+
+> SendBirdMessageResponse ViewMessageById (string channelType, string channelUrl, string messageId, string apiToken = null, bool? withSortedMetaArray = null, bool? withMetaArray = null)
 
 View a message
 
-## View a message  Retrieves information on a message.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-view-a-message ----------------------------   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.  &#x60;message_id&#x60;      Type: long      Description: Specifies the unique ID of the message to retrieve.
+## View a message  Retrieves information on a message.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-view-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the target channel.  `message_id`      Type: long      Description: Specifies the unique ID of the message to retrieve.
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.MessagesApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    MessagesApi apiInstance = new MessagesApi(defaultClient);
-    String channelType = "channelType_example"; // String | 
-    String channelUrl = "channelUrl_example"; // String | 
-    String messageId = "messageId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    Boolean withSortedMetaArray = true; // Boolean | 
-    Boolean withMetaArray = true; // Boolean | 
-    try {
-      SendBirdMessageResponse result = apiInstance.viewMessageById(channelType, channelUrl, messageId, apiToken, withSortedMetaArray, withMetaArray);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling MessagesApi#viewMessageById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class ViewMessageByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new MessagesApi(Configuration.Default);
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var messageId = messageId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var withSortedMetaArray = true;  // bool? |  (optional) 
+            var withMetaArray = true;  // bool? |  (optional) 
+
+            try
+            {
+                // View a message
+                SendBirdMessageResponse result = apiInstance.ViewMessageById(channelType, channelUrl, messageId, apiToken, withSortedMetaArray, withMetaArray);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling MessagesApi.ViewMessageById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelType** | **String**|  |
- **channelUrl** | **String**|  |
- **messageId** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **withSortedMetaArray** | **Boolean**|  | [optional]
- **withMetaArray** | **Boolean**|  | [optional]
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **messageId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **withSortedMetaArray** | **bool?**|  | [optional] 
+ **withMetaArray** | **bool?**|  | [optional] 
 
 ### Return type
 
@@ -1081,61 +1285,75 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="viewTotalNumberOfMessagesInChannel"></a>
-# **viewTotalNumberOfMessagesInChannel**
-> InlineResponse20048 viewTotalNumberOfMessagesInChannel(channelType, channelUrl, apiToken)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ViewTotalNumberOfMessagesInChannel
+
+> InlineResponse20048 ViewTotalNumberOfMessagesInChannel (string channelType, string channelUrl, string apiToken = null)
 
 View total number of messages in a channel
 
-## View total number of messages in a channel  Retrieves the total number of messages in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-view-total-number-of-messages-in-a-channel ----------------------------
+## View total number of messages in a channel  Retrieves the total number of messages in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-view-total-number-of-messages-in-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.MessagesApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    MessagesApi apiInstance = new MessagesApi(defaultClient);
-    String channelType = "channelType_example"; // String | 
-    String channelUrl = "channelUrl_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    try {
-      InlineResponse20048 result = apiInstance.viewTotalNumberOfMessagesInChannel(channelType, channelUrl, apiToken);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling MessagesApi#viewTotalNumberOfMessagesInChannel");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class ViewTotalNumberOfMessagesInChannelExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new MessagesApi(Configuration.Default);
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+
+            try
+            {
+                // View total number of messages in a channel
+                InlineResponse20048 result = apiInstance.ViewTotalNumberOfMessagesInChannel(channelType, channelUrl, apiToken);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling MessagesApi.ViewTotalNumberOfMessagesInChannel: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelType** | **String**|  |
- **channelUrl** | **String**|  |
- **apiToken** | **String**|  | [optional]
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1147,11 +1365,17 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 

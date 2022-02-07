@@ -1,16 +1,16 @@
 
-
-# SendBirdThreadInfo
-
+# sendbird-platform-sdk.Model.SendBirdThreadInfo
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**lastRepliedAt** | **BigDecimal** |  |  [optional]
-**mostRepliedUsers** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  |  [optional]
-**replyCount** | **BigDecimal** |  |  [optional]
-**updatedAt** | **BigDecimal** |  |  [optional]
+**LastRepliedAt** | **decimal** |  | [optional] 
+**MostRepliedUsers** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  | [optional] 
+**ReplyCount** | **decimal** |  | [optional] 
+**UpdatedAt** | **decimal** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

@@ -1,77 +1,85 @@
-# OpenChannelApi
+# sendbird-platform-sdk.Api.OpenChannelApi
 
 All URIs are relative to *https://api-APP_ID.sendbird.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ocBanUser**](OpenChannelApi.md#ocBanUser) | **POST** /v3/open_channels/{channel_url}/ban | Ban a user
-[**ocCancelTheRegistrationOfOperators**](OpenChannelApi.md#ocCancelTheRegistrationOfOperators) | **DELETE** /v3/open_channels/{channel_url}/operators | Cancel the registration of operators
-[**ocCreateChannel**](OpenChannelApi.md#ocCreateChannel) | **POST** /v3/open_channels | Create a channel
-[**ocDeleteChannelByUrl**](OpenChannelApi.md#ocDeleteChannelByUrl) | **DELETE** /v3/open_channels/{channel_url} | Delete a channel
-[**ocFreezeChannel**](OpenChannelApi.md#ocFreezeChannel) | **PUT** /v3/open_channels/{channel_url}/freeze | Freeze a channel
-[**ocListBannedUsers**](OpenChannelApi.md#ocListBannedUsers) | **GET** /v3/open_channels/{channel_url}/ban | List banned users
-[**ocListChannels**](OpenChannelApi.md#ocListChannels) | **GET** /v3/open_channels | List channels
-[**ocListMutedUsers**](OpenChannelApi.md#ocListMutedUsers) | **GET** /v3/open_channels/{channel_url}/mute | List muted users
-[**ocListOperators**](OpenChannelApi.md#ocListOperators) | **GET** /v3/open_channels/{channel_url}/operators | List operators
-[**ocListParticipants**](OpenChannelApi.md#ocListParticipants) | **GET** /v3/open_channels/{channel_url}/participants | List participants
-[**ocMuteUser**](OpenChannelApi.md#ocMuteUser) | **POST** /v3/open_channels/{channel_url}/mute | Mute a user
-[**ocRegisterOperators**](OpenChannelApi.md#ocRegisterOperators) | **POST** /v3/open_channels/{channel_url}/operators | Register operators
-[**ocUnbanUserById**](OpenChannelApi.md#ocUnbanUserById) | **DELETE** /v3/open_channels/{channel_url}/ban/{banned_user_id} | Unban a user
-[**ocUnmuteUserById**](OpenChannelApi.md#ocUnmuteUserById) | **DELETE** /v3/open_channels/{channel_url}/mute/{muted_user_id} | Unmute a user
-[**ocUpdateBanById**](OpenChannelApi.md#ocUpdateBanById) | **PUT** /v3/open_channels/{channel_url}/ban/{banned_user_id} | Update a ban
-[**ocUpdateChannelByUrl**](OpenChannelApi.md#ocUpdateChannelByUrl) | **PUT** /v3/open_channels/{channel_url} | Update a channel
-[**ocViewBanById**](OpenChannelApi.md#ocViewBanById) | **GET** /v3/open_channels/{channel_url}/ban/{banned_user_id} | View a ban
-[**ocViewChannelByUrl**](OpenChannelApi.md#ocViewChannelByUrl) | **GET** /v3/open_channels/{channel_url} | View a channel
-[**ocViewMuteById**](OpenChannelApi.md#ocViewMuteById) | **GET** /v3/open_channels/{channel_url}/mute/{muted_user_id} | View a mute
+[**OcBanUser**](OpenChannelApi.md#ocbanuser) | **POST** /v3/open_channels/{channel_url}/ban | Ban a user
+[**OcCancelTheRegistrationOfOperators**](OpenChannelApi.md#occanceltheregistrationofoperators) | **DELETE** /v3/open_channels/{channel_url}/operators | Cancel the registration of operators
+[**OcCreateChannel**](OpenChannelApi.md#occreatechannel) | **POST** /v3/open_channels | Create a channel
+[**OcDeleteChannelByUrl**](OpenChannelApi.md#ocdeletechannelbyurl) | **DELETE** /v3/open_channels/{channel_url} | Delete a channel
+[**OcFreezeChannel**](OpenChannelApi.md#ocfreezechannel) | **PUT** /v3/open_channels/{channel_url}/freeze | Freeze a channel
+[**OcListBannedUsers**](OpenChannelApi.md#oclistbannedusers) | **GET** /v3/open_channels/{channel_url}/ban | List banned users
+[**OcListChannels**](OpenChannelApi.md#oclistchannels) | **GET** /v3/open_channels | List channels
+[**OcListMutedUsers**](OpenChannelApi.md#oclistmutedusers) | **GET** /v3/open_channels/{channel_url}/mute | List muted users
+[**OcListOperators**](OpenChannelApi.md#oclistoperators) | **GET** /v3/open_channels/{channel_url}/operators | List operators
+[**OcListParticipants**](OpenChannelApi.md#oclistparticipants) | **GET** /v3/open_channels/{channel_url}/participants | List participants
+[**OcMuteUser**](OpenChannelApi.md#ocmuteuser) | **POST** /v3/open_channels/{channel_url}/mute | Mute a user
+[**OcRegisterOperators**](OpenChannelApi.md#ocregisteroperators) | **POST** /v3/open_channels/{channel_url}/operators | Register operators
+[**OcUnbanUserById**](OpenChannelApi.md#ocunbanuserbyid) | **DELETE** /v3/open_channels/{channel_url}/ban/{banned_user_id} | Unban a user
+[**OcUnmuteUserById**](OpenChannelApi.md#ocunmuteuserbyid) | **DELETE** /v3/open_channels/{channel_url}/mute/{muted_user_id} | Unmute a user
+[**OcUpdateBanById**](OpenChannelApi.md#ocupdatebanbyid) | **PUT** /v3/open_channels/{channel_url}/ban/{banned_user_id} | Update a ban
+[**OcUpdateChannelByUrl**](OpenChannelApi.md#ocupdatechannelbyurl) | **PUT** /v3/open_channels/{channel_url} | Update a channel
+[**OcViewBanById**](OpenChannelApi.md#ocviewbanbyid) | **GET** /v3/open_channels/{channel_url}/ban/{banned_user_id} | View a ban
+[**OcViewChannelByUrl**](OpenChannelApi.md#ocviewchannelbyurl) | **GET** /v3/open_channels/{channel_url} | View a channel
+[**OcViewMuteById**](OpenChannelApi.md#ocviewmutebyid) | **GET** /v3/open_channels/{channel_url}/mute/{muted_user_id} | View a mute
 
 
-<a name="ocBanUser"></a>
-# **ocBanUser**
-> InlineResponse20033BannedList ocBanUser(channelUrl, apiToken, ocBanUserData)
+
+## OcBanUser
+
+> InlineResponse20033BannedList OcBanUser (string channelUrl, string apiToken = null, OcBanUserData ocBanUserData = null)
 
 Ban a user
 
-## Ban a user  Bans a user from an open channel. A banned user is immediately expelled from a channel and allowed to participate in the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-ban-a-user ----------------------------
+## Ban a user  Bans a user from an open channel. A banned user is immediately expelled from a channel and allowed to participate in the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-ban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    OcBanUserData ocBanUserData = new OcBanUserData(); // OcBanUserData | 
-    try {
-      InlineResponse20033BannedList result = apiInstance.ocBanUser(channelUrl, apiToken, ocBanUserData);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocBanUser");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcBanUserExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var ocBanUserData = new OcBanUserData(); // OcBanUserData |  (optional) 
+
+            try
+            {
+                // Ban a user
+                InlineResponse20033BannedList result = apiInstance.OcBanUser(channelUrl, apiToken, ocBanUserData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcBanUser: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **ocBanUserData** | [**OcBanUserData**](OcBanUserData.md)|  | [optional]
+ **channelUrl** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **ocBanUserData** | [**OcBanUserData**](OcBanUserData.md)|  | [optional] 
 
 ### Return type
 
@@ -83,66 +91,80 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="ocCancelTheRegistrationOfOperators"></a>
-# **ocCancelTheRegistrationOfOperators**
-> ocCancelTheRegistrationOfOperators(channelUrl, operatorIds, apiToken, deleteAll)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## OcCancelTheRegistrationOfOperators
+
+> void OcCancelTheRegistrationOfOperators (string channelUrl, List<string> operatorIds, string apiToken = null, bool? deleteAll = null)
 
 Cancel the registration of operators
 
-## Cancel the registration of operators  Cancels the registration of operators from an open channel but leave them as participants.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-cancel-the-registration-of-operators ----------------------------   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+## Cancel the registration of operators  Cancels the registration of operators from an open channel but leave them as participants.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    List<String> operatorIds = Arrays.asList(); // List<String> | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    Boolean deleteAll = true; // Boolean | 
-    try {
-      apiInstance.ocCancelTheRegistrationOfOperators(channelUrl, operatorIds, apiToken, deleteAll);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocCancelTheRegistrationOfOperators");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcCancelTheRegistrationOfOperatorsExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var operatorIds = new List<string>(); // List<string> | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var deleteAll = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Cancel the registration of operators
+                apiInstance.OcCancelTheRegistrationOfOperators(channelUrl, operatorIds, apiToken, deleteAll);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcCancelTheRegistrationOfOperators: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **operatorIds** | [**List&lt;String&gt;**](String.md)|  |
- **apiToken** | **String**|  | [optional]
- **deleteAll** | **Boolean**|  | [optional]
+ **channelUrl** | **string**|  | 
+ **operatorIds** | [**List&lt;string&gt;**](string.md)|  | 
+ **apiToken** | **string**|  | [optional] 
+ **deleteAll** | **bool?**|  | [optional] 
 
 ### Return type
 
-null (empty response body)
+void (empty response body)
 
 ### Authorization
 
@@ -150,59 +172,73 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="ocCreateChannel"></a>
-# **ocCreateChannel**
-> SendBirdOpenChannel ocCreateChannel(apiToken, ocCreateChannelData)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## OcCreateChannel
+
+> SendBirdOpenChannel OcCreateChannel (string apiToken = null, OcCreateChannelData ocCreateChannelData = null)
 
 Create a channel
 
-## Create a channel  Creates an open channel.  &gt;__Note__: Classic open channels created before the deprecation date of March 2021 will maintain their original form and functions. However, new applications created after December 15, 2020, will be able to create dynamic partitioning open channels only.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel
+## Create a channel  Creates an open channel.  >__Note__: Classic open channels created before the deprecation date of March 2021 will maintain their original form and functions. However, new applications created after December 15, 2020, will be able to create dynamic partitioning open channels only.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    OcCreateChannelData ocCreateChannelData = new OcCreateChannelData(); // OcCreateChannelData | 
-    try {
-      SendBirdOpenChannel result = apiInstance.ocCreateChannel(apiToken, ocCreateChannelData);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocCreateChannel");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcCreateChannelExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var ocCreateChannelData = new OcCreateChannelData(); // OcCreateChannelData |  (optional) 
+
+            try
+            {
+                // Create a channel
+                SendBirdOpenChannel result = apiInstance.OcCreateChannel(apiToken, ocCreateChannelData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcCreateChannel: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **String**|  | [optional]
- **ocCreateChannelData** | [**OcCreateChannelData**](OcCreateChannelData.md)|  | [optional]
+ **apiToken** | **string**|  | [optional] 
+ **ocCreateChannelData** | [**OcCreateChannelData**](OcCreateChannelData.md)|  | [optional] 
 
 ### Return type
 
@@ -214,62 +250,76 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="ocDeleteChannelByUrl"></a>
-# **ocDeleteChannelByUrl**
-> ocDeleteChannelByUrl(channelUrl, apiToken)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## OcDeleteChannelByUrl
+
+> void OcDeleteChannelByUrl (string channelUrl, string apiToken = null)
 
 Delete a channel
 
-## Delete a channel  Deletes an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-delete-a-channel ----------------------------
+## Delete a channel  Deletes an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    try {
-      apiInstance.ocDeleteChannelByUrl(channelUrl, apiToken);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocDeleteChannelByUrl");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcDeleteChannelByUrlExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+
+            try
+            {
+                // Delete a channel
+                apiInstance.OcDeleteChannelByUrl(channelUrl, apiToken);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcDeleteChannelByUrl: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **apiToken** | **String**|  | [optional]
+ **channelUrl** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
-null (empty response body)
+void (empty response body)
 
 ### Authorization
 
@@ -277,61 +327,75 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="ocFreezeChannel"></a>
-# **ocFreezeChannel**
-> SendBirdOpenChannel ocFreezeChannel(channelUrl, apiToken, ocFreezeChannelData)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## OcFreezeChannel
+
+> SendBirdOpenChannel OcFreezeChannel (string channelUrl, string apiToken = null, OcFreezeChannelData ocFreezeChannelData = null)
 
 Freeze a channel
 
-## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel ----------------------------
+## Freeze a channel  Freezes or unfreezes an open channel.  > __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    OcFreezeChannelData ocFreezeChannelData = new OcFreezeChannelData(); // OcFreezeChannelData | 
-    try {
-      SendBirdOpenChannel result = apiInstance.ocFreezeChannel(channelUrl, apiToken, ocFreezeChannelData);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocFreezeChannel");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcFreezeChannelExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var ocFreezeChannelData = new OcFreezeChannelData(); // OcFreezeChannelData |  (optional) 
+
+            try
+            {
+                // Freeze a channel
+                SendBirdOpenChannel result = apiInstance.OcFreezeChannel(channelUrl, apiToken, ocFreezeChannelData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcFreezeChannel: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **ocFreezeChannelData** | [**OcFreezeChannelData**](OcFreezeChannelData.md)|  | [optional]
+ **channelUrl** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **ocFreezeChannelData** | [**OcFreezeChannelData**](OcFreezeChannelData.md)|  | [optional] 
 
 ### Return type
 
@@ -343,63 +407,77 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="ocListBannedUsers"></a>
-# **ocListBannedUsers**
-> InlineResponse20033 ocListBannedUsers(channelUrl, apiToken, token, limit)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## OcListBannedUsers
+
+> InlineResponse20033 OcListBannedUsers (string channelUrl, string apiToken = null, string token = null, int? limit = null)
 
 List banned users
 
-## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users ----------------------------   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
+## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    String token = "token_example"; // String | 
-    Integer limit = 56; // Integer | 
-    try {
-      InlineResponse20033 result = apiInstance.ocListBannedUsers(channelUrl, apiToken, token, limit);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocListBannedUsers");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcListBannedUsersExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var token = token_example;  // string |  (optional) 
+            var limit = 56;  // int? |  (optional) 
+
+            try
+            {
+                // List banned users
+                InlineResponse20033 result = apiInstance.OcListBannedUsers(channelUrl, apiToken, token, limit);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcListBannedUsers: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **token** | **String**|  | [optional]
- **limit** | **Integer**|  | [optional]
+ **channelUrl** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **token** | **string**|  | [optional] 
+ **limit** | **int?**|  | [optional] 
 
 ### Return type
 
@@ -411,73 +489,87 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="ocListChannels"></a>
-# **ocListChannels**
-> InlineResponse20030 ocListChannels(apiToken, token, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, customType)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## OcListChannels
+
+> InlineResponse20030 OcListChannels (string apiToken = null, string token = null, int? limit = null, string customTypes = null, string nameContains = null, string urlContains = null, bool? showFrozen = null, bool? showMetadata = null, string customType = null)
 
 List channels
 
-## List channels  Retrieves a list of open channels. You can query the list using various parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-channels ----------------------------
+## List channels  Retrieves a list of open channels. You can query the list using various parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    String token = "token_example"; // String | 
-    Integer limit = 56; // Integer | 
-    String customTypes = "customTypes_example"; // String | 
-    String nameContains = "nameContains_example"; // String | 
-    String urlContains = "urlContains_example"; // String | 
-    Boolean showFrozen = true; // Boolean | 
-    Boolean showMetadata = true; // Boolean | 
-    String customType = "customType_example"; // String | 
-    try {
-      InlineResponse20030 result = apiInstance.ocListChannels(apiToken, token, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, customType);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocListChannels");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcListChannelsExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var token = token_example;  // string |  (optional) 
+            var limit = 56;  // int? |  (optional) 
+            var customTypes = customTypes_example;  // string |  (optional) 
+            var nameContains = nameContains_example;  // string |  (optional) 
+            var urlContains = urlContains_example;  // string |  (optional) 
+            var showFrozen = true;  // bool? |  (optional) 
+            var showMetadata = true;  // bool? |  (optional) 
+            var customType = customType_example;  // string |  (optional) 
+
+            try
+            {
+                // List channels
+                InlineResponse20030 result = apiInstance.OcListChannels(apiToken, token, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, customType);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcListChannels: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **String**|  | [optional]
- **token** | **String**|  | [optional]
- **limit** | **Integer**|  | [optional]
- **customTypes** | **String**|  | [optional]
- **nameContains** | **String**|  | [optional]
- **urlContains** | **String**|  | [optional]
- **showFrozen** | **Boolean**|  | [optional]
- **showMetadata** | **Boolean**|  | [optional]
- **customType** | **String**|  | [optional]
+ **apiToken** | **string**|  | [optional] 
+ **token** | **string**|  | [optional] 
+ **limit** | **int?**|  | [optional] 
+ **customTypes** | **string**|  | [optional] 
+ **nameContains** | **string**|  | [optional] 
+ **urlContains** | **string**|  | [optional] 
+ **showFrozen** | **bool?**|  | [optional] 
+ **showMetadata** | **bool?**|  | [optional] 
+ **customType** | **string**|  | [optional] 
 
 ### Return type
 
@@ -489,63 +581,77 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="ocListMutedUsers"></a>
-# **ocListMutedUsers**
-> InlineResponse20031 ocListMutedUsers(channelUrl, apiToken, token, limit)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## OcListMutedUsers
+
+> InlineResponse20031 OcListMutedUsers (string channelUrl, string apiToken = null, string token = null, int? limit = null)
 
 List muted users
 
-## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users ----------------------------   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
+## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    String token = "token_example"; // String | 
-    Integer limit = 56; // Integer | 
-    try {
-      InlineResponse20031 result = apiInstance.ocListMutedUsers(channelUrl, apiToken, token, limit);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocListMutedUsers");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcListMutedUsersExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var token = token_example;  // string |  (optional) 
+            var limit = 56;  // int? |  (optional) 
+
+            try
+            {
+                // List muted users
+                InlineResponse20031 result = apiInstance.OcListMutedUsers(channelUrl, apiToken, token, limit);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcListMutedUsers: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **token** | **String**|  | [optional]
- **limit** | **Integer**|  | [optional]
+ **channelUrl** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **token** | **string**|  | [optional] 
+ **limit** | **int?**|  | [optional] 
 
 ### Return type
 
@@ -557,63 +663,77 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="ocListOperators"></a>
-# **ocListOperators**
-> InlineResponse20034 ocListOperators(channelUrl, apiToken, token, limit)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## OcListOperators
+
+> InlineResponse20034 OcListOperators (string channelUrl, string apiToken = null, string token = null, int? limit = null)
 
 List operators
 
-## List operators  Retrieves a list of operators of an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-operators ----------------------------   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+## List operators  Retrieves a list of operators of an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    String token = "token_example"; // String | 
-    Integer limit = 56; // Integer | 
-    try {
-      InlineResponse20034 result = apiInstance.ocListOperators(channelUrl, apiToken, token, limit);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocListOperators");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcListOperatorsExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var token = token_example;  // string |  (optional) 
+            var limit = 56;  // int? |  (optional) 
+
+            try
+            {
+                // List operators
+                InlineResponse20034 result = apiInstance.OcListOperators(channelUrl, apiToken, token, limit);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcListOperators: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **token** | **String**|  | [optional]
- **limit** | **Integer**|  | [optional]
+ **channelUrl** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **token** | **string**|  | [optional] 
+ **limit** | **int?**|  | [optional] 
 
 ### Return type
 
@@ -625,63 +745,77 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="ocListParticipants"></a>
-# **ocListParticipants**
-> InlineResponse20032 ocListParticipants(channelUrl, apiToken, token, limit)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## OcListParticipants
+
+> InlineResponse20032 OcListParticipants (string channelUrl, string apiToken = null, string token = null, int? limit = null)
 
 List participants
 
-## List participants  Retrieves a list of the participants of an open channel. A participant refers to a user who has entered the open channel and is currently online.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-participants ----------------------------   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of participants in.
+## List participants  Retrieves a list of the participants of an open channel. A participant refers to a user who has entered the open channel and is currently online.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-participants - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of participants in.
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    String token = "token_example"; // String | 
-    Integer limit = 56; // Integer | 
-    try {
-      InlineResponse20032 result = apiInstance.ocListParticipants(channelUrl, apiToken, token, limit);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocListParticipants");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcListParticipantsExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var token = token_example;  // string |  (optional) 
+            var limit = 56;  // int? |  (optional) 
+
+            try
+            {
+                // List participants
+                InlineResponse20032 result = apiInstance.OcListParticipants(channelUrl, apiToken, token, limit);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcListParticipants: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **token** | **String**|  | [optional]
- **limit** | **Integer**|  | [optional]
+ **channelUrl** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **token** | **string**|  | [optional] 
+ **limit** | **int?**|  | [optional] 
 
 ### Return type
 
@@ -693,61 +827,75 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="ocMuteUser"></a>
-# **ocMuteUser**
-> SendBirdOpenChannel ocMuteUser(channelUrl, apiToken, ocMuteUserData)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## OcMuteUser
+
+> SendBirdOpenChannel OcMuteUser (string channelUrl, string apiToken = null, OcMuteUserData ocMuteUserData = null)
 
 Mute a user
 
-## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
+## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can't send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    OcMuteUserData ocMuteUserData = new OcMuteUserData(); // OcMuteUserData | 
-    try {
-      SendBirdOpenChannel result = apiInstance.ocMuteUser(channelUrl, apiToken, ocMuteUserData);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocMuteUser");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcMuteUserExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var ocMuteUserData = new OcMuteUserData(); // OcMuteUserData |  (optional) 
+
+            try
+            {
+                // Mute a user
+                SendBirdOpenChannel result = apiInstance.OcMuteUser(channelUrl, apiToken, ocMuteUserData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcMuteUser: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **ocMuteUserData** | [**OcMuteUserData**](OcMuteUserData.md)|  | [optional]
+ **channelUrl** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **ocMuteUserData** | [**OcMuteUserData**](OcMuteUserData.md)|  | [optional] 
 
 ### Return type
 
@@ -759,64 +907,78 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="ocRegisterOperators"></a>
-# **ocRegisterOperators**
-> ocRegisterOperators(channelUrl, apiToken, ocRegisterOperatorsData)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## OcRegisterOperators
+
+> void OcRegisterOperators (string channelUrl, string apiToken = null, OcRegisterOperatorsData ocRegisterOperatorsData = null)
 
 Register operators
 
-## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators ----------------------------
+## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    OcRegisterOperatorsData ocRegisterOperatorsData = new OcRegisterOperatorsData(); // OcRegisterOperatorsData | 
-    try {
-      apiInstance.ocRegisterOperators(channelUrl, apiToken, ocRegisterOperatorsData);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocRegisterOperators");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcRegisterOperatorsExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var ocRegisterOperatorsData = new OcRegisterOperatorsData(); // OcRegisterOperatorsData |  (optional) 
+
+            try
+            {
+                // Register operators
+                apiInstance.OcRegisterOperators(channelUrl, apiToken, ocRegisterOperatorsData);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcRegisterOperators: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **ocRegisterOperatorsData** | [**OcRegisterOperatorsData**](OcRegisterOperatorsData.md)|  | [optional]
+ **channelUrl** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **ocRegisterOperatorsData** | [**OcRegisterOperatorsData**](OcRegisterOperatorsData.md)|  | [optional] 
 
 ### Return type
 
-null (empty response body)
+void (empty response body)
 
 ### Authorization
 
@@ -824,64 +986,78 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: Not defined
+- **Content-Type**: application/json
+- **Accept**: Not defined
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="ocUnbanUserById"></a>
-# **ocUnbanUserById**
-> ocUnbanUserById(channelUrl, bannedUserId, apiToken)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## OcUnbanUserById
+
+> void OcUnbanUserById (string channelUrl, string bannedUserId, string apiToken = null)
 
 Unban a user
 
-## Unban a user  Unbans a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unban-a-user ----------------------------
+## Unban a user  Unbans a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String bannedUserId = "bannedUserId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    try {
-      apiInstance.ocUnbanUserById(channelUrl, bannedUserId, apiToken);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocUnbanUserById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcUnbanUserByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var bannedUserId = bannedUserId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+
+            try
+            {
+                // Unban a user
+                apiInstance.OcUnbanUserById(channelUrl, bannedUserId, apiToken);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcUnbanUserById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **bannedUserId** | **String**|  |
- **apiToken** | **String**|  | [optional]
+ **channelUrl** | **string**|  | 
+ **bannedUserId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
-null (empty response body)
+void (empty response body)
 
 ### Authorization
 
@@ -889,64 +1065,78 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="ocUnmuteUserById"></a>
-# **ocUnmuteUserById**
-> ocUnmuteUserById(channelUrl, mutedUserId, apiToken)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## OcUnmuteUserById
+
+> void OcUnmuteUserById (string channelUrl, string mutedUserId, string apiToken = null)
 
 Unmute a user
 
-## Unmute a user  Unmutes a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unmute-a-user ----------------------------
+## Unmute a user  Unmutes a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unmute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String mutedUserId = "mutedUserId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    try {
-      apiInstance.ocUnmuteUserById(channelUrl, mutedUserId, apiToken);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocUnmuteUserById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcUnmuteUserByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var mutedUserId = mutedUserId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+
+            try
+            {
+                // Unmute a user
+                apiInstance.OcUnmuteUserById(channelUrl, mutedUserId, apiToken);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcUnmuteUserById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **mutedUserId** | **String**|  |
- **apiToken** | **String**|  | [optional]
+ **channelUrl** | **string**|  | 
+ **mutedUserId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
-null (empty response body)
+void (empty response body)
 
 ### Authorization
 
@@ -954,63 +1144,77 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="ocUpdateBanById"></a>
-# **ocUpdateBanById**
-> SendBirdUser ocUpdateBanById(channelUrl, bannedUserId, apiToken, ocUpdateBanByIdData)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## OcUpdateBanById
+
+> SendBirdUser OcUpdateBanById (string channelUrl, string bannedUserId, string apiToken = null, OcUpdateBanByIdData ocUpdateBanByIdData = null)
 
 Update a ban
 
-## Update a ban  Updates details of a ban imposed on a user. You can change the length of a ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-ban ----------------------------
+## Update a ban  Updates details of a ban imposed on a user. You can change the length of a ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String bannedUserId = "bannedUserId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    OcUpdateBanByIdData ocUpdateBanByIdData = new OcUpdateBanByIdData(); // OcUpdateBanByIdData | 
-    try {
-      SendBirdUser result = apiInstance.ocUpdateBanById(channelUrl, bannedUserId, apiToken, ocUpdateBanByIdData);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocUpdateBanById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcUpdateBanByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var bannedUserId = bannedUserId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var ocUpdateBanByIdData = new OcUpdateBanByIdData(); // OcUpdateBanByIdData |  (optional) 
+
+            try
+            {
+                // Update a ban
+                SendBirdUser result = apiInstance.OcUpdateBanById(channelUrl, bannedUserId, apiToken, ocUpdateBanByIdData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcUpdateBanById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **bannedUserId** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **ocUpdateBanByIdData** | [**OcUpdateBanByIdData**](OcUpdateBanByIdData.md)|  | [optional]
+ **channelUrl** | **string**|  | 
+ **bannedUserId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **ocUpdateBanByIdData** | [**OcUpdateBanByIdData**](OcUpdateBanByIdData.md)|  | [optional] 
 
 ### Return type
 
@@ -1022,61 +1226,75 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="ocUpdateChannelByUrl"></a>
-# **ocUpdateChannelByUrl**
-> SendBirdOpenChannel ocUpdateChannelByUrl(channelUrl, apiToken, ocUpdateChannelByUrlData)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## OcUpdateChannelByUrl
+
+> SendBirdOpenChannel OcUpdateChannelByUrl (string channelUrl, string apiToken = null, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = null)
 
 Update a channel
 
-## Update a channel  Updates information on an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-channel ----------------------------
+## Update a channel  Updates information on an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    OcUpdateChannelByUrlData ocUpdateChannelByUrlData = new OcUpdateChannelByUrlData(); // OcUpdateChannelByUrlData | 
-    try {
-      SendBirdOpenChannel result = apiInstance.ocUpdateChannelByUrl(channelUrl, apiToken, ocUpdateChannelByUrlData);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocUpdateChannelByUrl");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcUpdateChannelByUrlExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var ocUpdateChannelByUrlData = new OcUpdateChannelByUrlData(); // OcUpdateChannelByUrlData |  (optional) 
+
+            try
+            {
+                // Update a channel
+                SendBirdOpenChannel result = apiInstance.OcUpdateChannelByUrl(channelUrl, apiToken, ocUpdateChannelByUrlData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcUpdateChannelByUrl: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **ocUpdateChannelByUrlData** | [**OcUpdateChannelByUrlData**](OcUpdateChannelByUrlData.md)|  | [optional]
+ **channelUrl** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **ocUpdateChannelByUrlData** | [**OcUpdateChannelByUrlData**](OcUpdateChannelByUrlData.md)|  | [optional] 
 
 ### Return type
 
@@ -1088,61 +1306,75 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="ocViewBanById"></a>
-# **ocViewBanById**
-> SendBirdUser ocViewBanById(channelUrl, bannedUserId, apiToken)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## OcViewBanById
+
+> SendBirdUser OcViewBanById (string channelUrl, string bannedUserId, string apiToken = null)
 
 View a ban
 
-## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-ban ----------------------------
+## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String bannedUserId = "bannedUserId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    try {
-      SendBirdUser result = apiInstance.ocViewBanById(channelUrl, bannedUserId, apiToken);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocViewBanById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcViewBanByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var bannedUserId = bannedUserId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+
+            try
+            {
+                // View a ban
+                SendBirdUser result = apiInstance.OcViewBanById(channelUrl, bannedUserId, apiToken);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcViewBanById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **bannedUserId** | **String**|  |
- **apiToken** | **String**|  | [optional]
+ **channelUrl** | **string**|  | 
+ **bannedUserId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1154,59 +1386,73 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="ocViewChannelByUrl"></a>
-# **ocViewChannelByUrl**
-> SendBirdOpenChannel ocViewChannelByUrl(channelUrl, apiToken)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## OcViewChannelByUrl
+
+> SendBirdOpenChannel OcViewChannelByUrl (string channelUrl, string apiToken = null)
 
 View a channel
 
-## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel ----------------------------
+## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    try {
-      SendBirdOpenChannel result = apiInstance.ocViewChannelByUrl(channelUrl, apiToken);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocViewChannelByUrl");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcViewChannelByUrlExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+
+            try
+            {
+                // View a channel
+                SendBirdOpenChannel result = apiInstance.OcViewChannelByUrl(channelUrl, apiToken);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcViewChannelByUrl: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **apiToken** | **String**|  | [optional]
+ **channelUrl** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1218,61 +1464,75 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="ocViewMuteById"></a>
-# **ocViewMuteById**
-> InlineResponse20035 ocViewMuteById(channelUrl, mutedUserId, apiToken)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## OcViewMuteById
+
+> InlineResponse20035 OcViewMuteById (string channelUrl, string mutedUserId, string apiToken = null)
 
 View a mute
 
-## View a mute  Checks if a user is muted in an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-mute ----------------------------
+## View a mute  Checks if a user is muted in an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-mute - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.OpenChannelApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    OpenChannelApi apiInstance = new OpenChannelApi(defaultClient);
-    String channelUrl = "channelUrl_example"; // String | 
-    String mutedUserId = "mutedUserId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    try {
-      InlineResponse20035 result = apiInstance.ocViewMuteById(channelUrl, mutedUserId, apiToken);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OpenChannelApi#ocViewMuteById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class OcViewMuteByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new OpenChannelApi(Configuration.Default);
+            var channelUrl = channelUrl_example;  // string | 
+            var mutedUserId = mutedUserId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+
+            try
+            {
+                // View a mute
+                InlineResponse20035 result = apiInstance.OcViewMuteById(channelUrl, mutedUserId, apiToken);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling OpenChannelApi.OcViewMuteById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelUrl** | **String**|  |
- **mutedUserId** | **String**|  |
- **apiToken** | **String**|  | [optional]
+ **channelUrl** | **string**|  | 
+ **mutedUserId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1284,11 +1544,17 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 

@@ -1,14 +1,14 @@
 
-
-# InlineResponse20047SortedMetaarray
-
+# sendbird-platform-sdk.Model.InlineResponse20047SortedMetaarray
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**key** | **String** |  |  [optional]
-**value** | **List&lt;String&gt;** |  |  [optional]
+**Key** | **string** |  | [optional] 
+**Value** | **List&lt;string&gt;** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

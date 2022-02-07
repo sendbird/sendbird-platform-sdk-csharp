@@ -1,17 +1,17 @@
 
-
-# InlineResponse2002PushConfigurations
-
+# sendbird-platform-sdk.Model.InlineResponse2002PushConfigurations
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** |  |  [optional]
-**pushType** | **String** |  |  [optional]
-**huaweiAppId** | **String** |  |  [optional]
-**huaweiAppSecret** | **String** |  |  [optional]
-**pushSound** | **String** |  |  [optional]
+**Id** | **string** |  | [optional] 
+**PushType** | **string** |  | [optional] 
+**HuaweiAppId** | **string** |  | [optional] 
+**HuaweiAppSecret** | **string** |  | [optional] 
+**PushSound** | **string** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

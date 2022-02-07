@@ -1,23 +1,23 @@
 
-
-# InlineResponse20044Statistics
-
+# sendbird-platform-sdk.Model.InlineResponse20044Statistics
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**dateRange** | **String** |  |  [optional]
-**canceledAnnouncementCount** | **BigDecimal** |  |  [optional]
-**stoppedAnnouncementCount** | **BigDecimal** |  |  [optional]
-**completedAnnouncementCount** | **BigDecimal** |  |  [optional]
-**totalAnnouncementCount** | **BigDecimal** |  |  [optional]
-**targetChannelCount** | **BigDecimal** |  |  [optional]
-**targetUserCount** | **BigDecimal** |  |  [optional]
-**sentChannelCount** | **BigDecimal** |  |  [optional]
-**sentUserCount** | **BigDecimal** |  |  [optional]
-**openRate** | **BigDecimal** |  |  [optional]
-**openCount** | **BigDecimal** |  |  [optional]
+**DateRange** | **string** |  | [optional] 
+**CanceledAnnouncementCount** | **decimal** |  | [optional] 
+**StoppedAnnouncementCount** | **decimal** |  | [optional] 
+**CompletedAnnouncementCount** | **decimal** |  | [optional] 
+**TotalAnnouncementCount** | **decimal** |  | [optional] 
+**TargetChannelCount** | **decimal** |  | [optional] 
+**TargetUserCount** | **decimal** |  | [optional] 
+**SentChannelCount** | **decimal** |  | [optional] 
+**SentUserCount** | **decimal** |  | [optional] 
+**OpenRate** | **decimal** |  | [optional] 
+**OpenCount** | **decimal** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

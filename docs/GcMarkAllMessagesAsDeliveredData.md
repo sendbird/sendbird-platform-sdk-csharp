@@ -1,15 +1,15 @@
 
-
-# GcMarkAllMessagesAsDeliveredData
-
+# sendbird-platform-sdk.Model.GcMarkAllMessagesAsDeliveredData
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**applicationId** | **String** | Specifies the unique ID of your application. | 
-**channelUrl** | **String** | Specifies the URL of the target channel. | 
-**userId** | **String** | Specifies the ID of the recipient to mark messages as delivered. | 
+**ApplicationId** | **string** | Specifies the unique ID of your application. | 
+**ChannelUrl** | **string** | Specifies the URL of the target channel. | 
+**UserId** | **string** | Specifies the ID of the recipient to mark messages as delivered. | 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

@@ -1,27 +1,27 @@
 
-
-# InlineResponse20041Message
-
+# sendbird-platform-sdk.Model.InlineResponse20041Message
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | **String** |  |  [optional]
-**customType** | **String** |  |  [optional]
-**userId** | **String** |  |  [optional]
-**content** | **String** |  |  [optional]
-**data** | **String** |  |  [optional]
-**enablePush** | **Boolean** |  |  [optional]
-**targetAt** | **String** |  |  [optional]
-**targetUserCount** | **BigDecimal** |  |  [optional]
-**targetChannelCount** | **BigDecimal** |  |  [optional]
-**status** | **String** |  |  [optional]
-**scheduledAt** | **BigDecimal** |  |  [optional]
-**completedAt** | **BigDecimal** |  |  [optional]
-**sentUserCount** | **BigDecimal** |  |  [optional]
-**openCount** | **BigDecimal** |  |  [optional]
-**openRate** | **BigDecimal** |  |  [optional]
+**Type** | **string** |  | [optional] 
+**CustomType** | **string** |  | [optional] 
+**UserId** | **string** |  | [optional] 
+**Content** | **string** |  | [optional] 
+**Data** | **string** |  | [optional] 
+**EnablePush** | **bool** |  | [optional] 
+**TargetAt** | **string** |  | [optional] 
+**TargetUserCount** | **decimal** |  | [optional] 
+**TargetChannelCount** | **decimal** |  | [optional] 
+**Status** | **string** |  | [optional] 
+**ScheduledAt** | **decimal** |  | [optional] 
+**CompletedAt** | **decimal** |  | [optional] 
+**SentUserCount** | **decimal** |  | [optional] 
+**OpenCount** | **decimal** |  | [optional] 
+**OpenRate** | **decimal** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

@@ -1,25 +1,24 @@
 
-
-# SendBirdUser
-
-User
+# sendbird-platform-sdk.Model.SendBirdUser
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**connectionStatus** | **String** |  |  [optional]
-**friendDiscoveryKey** | **String** |  |  [optional]
-**friendName** | **String** |  |  [optional]
-**isActive** | **Boolean** |  |  [optional]
-**lastSeenAt** | **Integer** |  |  [optional]
-**metaData** | [**ModelObject**](ModelObject.md) |  |  [optional]
-**nickname** | **String** |  |  [optional]
-**plainProfileUrl** | **String** |  |  [optional]
-**preferredLanguages** | **List&lt;String&gt;** |  |  [optional]
-**profileUrl** | **String** |  |  [optional]
-**requireAuth** | **Boolean** |  |  [optional]
-**userId** | **String** |  |  [optional]
+**ConnectionStatus** | **string** |  | [optional] 
+**FriendDiscoveryKey** | **string** |  | [optional] 
+**FriendName** | **string** |  | [optional] 
+**IsActive** | **bool** |  | [optional] 
+**LastSeenAt** | **int** |  | [optional] 
+**MetaData** | **Object** |  | [optional] 
+**Nickname** | **string** |  | [optional] 
+**PlainProfileUrl** | **string** |  | [optional] 
+**PreferredLanguages** | **List&lt;string&gt;** |  | [optional] 
+**ProfileUrl** | **string** |  | [optional] 
+**RequireAuth** | **bool** |  | [optional] 
+**UserId** | **string** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

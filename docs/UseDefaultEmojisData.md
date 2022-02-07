@@ -1,13 +1,13 @@
 
-
-# UseDefaultEmojisData
-
+# sendbird-platform-sdk.Model.UseDefaultEmojisData
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**useDefaultEmoji** | **Boolean** | Determines whether to use the 7 default emojis initially provided. | 
+**UseDefaultEmoji** | **bool** | Determines whether to use the 7 default emojis initially provided. | 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

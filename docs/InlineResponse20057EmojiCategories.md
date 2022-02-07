@@ -1,15 +1,15 @@
 
-
-# InlineResponse20057EmojiCategories
-
+# sendbird-platform-sdk.Model.InlineResponse20057EmojiCategories
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **BigDecimal** |  |  [optional]
-**name** | **String** |  |  [optional]
-**url** | **String** |  |  [optional]
+**Id** | **decimal** |  | [optional] 
+**Name** | **string** |  | [optional] 
+**Url** | **string** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

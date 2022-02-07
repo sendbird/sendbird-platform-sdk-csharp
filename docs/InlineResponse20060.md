@@ -1,14 +1,14 @@
 
-
-# InlineResponse20060
-
+# sendbird-platform-sdk.Model.InlineResponse20060
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**metadata** | **Map&lt;String, String&gt;** |  |  [optional]
-**upsert** | **Boolean** |  |  [optional]
+**Metadata** | **Dictionary&lt;string, string&gt;** |  | [optional] 
+**Upsert** | **bool** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

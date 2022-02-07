@@ -1,14 +1,14 @@
 
-
-# InlineResponse20045
-
+# sendbird-platform-sdk.Model.InlineResponse20045
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**announcementGroup** | **List&lt;String&gt;** |  |  [optional]
-**next** | **String** |  |  [optional]
+**AnnouncementGroup** | **List&lt;string&gt;** |  | [optional] 
+**Next** | **string** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

@@ -1,15 +1,15 @@
 
-
-# InlineResponse20043OpenStatus
-
+# sendbird-platform-sdk.Model.InlineResponse20043OpenStatus
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**userId** | **String** |  |  [optional]
-**channelUrl** | **String** |  |  [optional]
-**hasOpened** | **Boolean** |  |  [optional]
+**UserId** | **string** |  | [optional] 
+**ChannelUrl** | **string** |  | [optional] 
+**HasOpened** | **bool** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

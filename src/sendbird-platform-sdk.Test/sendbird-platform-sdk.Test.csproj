@@ -81,7 +81,7 @@ The version of the OpenAPI document: 1.0.0
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
       <ProjectReference Include="..\sendbird-platform-sdk\sendbird-platform-sdk.csproj">
-          <Project>{5CFDC7CF-8BC9-46C1-AC8C-8B6DB32A3D0C}</Project>
+          <Project>{4060925D-E7B0-47FD-8396-8C736C63E3A2}</Project>
           <Name>sendbird-platform-sdk</Name>
       </ProjectReference>
   </ItemGroup>

@@ -1,17 +1,17 @@
 
-
-# InlineResponse20053
-
+# sendbird-platform-sdk.Model.InlineResponse20053
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**userId** | **String** |  |  [optional]
-**operation** | **String** |  |  [optional]
-**success** | **Boolean** |  |  [optional]
-**reaction** | **String** |  |  [optional]
-**updatedAt** | **BigDecimal** |  |  [optional]
+**UserId** | **string** |  | [optional] 
+**Operation** | **string** |  | [optional] 
+**Success** | **bool** |  | [optional] 
+**Reaction** | **string** |  | [optional] 
+**UpdatedAt** | **decimal** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

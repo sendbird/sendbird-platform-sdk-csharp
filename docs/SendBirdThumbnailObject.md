@@ -1,18 +1,18 @@
 
-
-# SendBirdThumbnailObject
-
+# sendbird-platform-sdk.Model.SendBirdThumbnailObject
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**height** | **BigDecimal** |  |  [optional]
-**plainUrl** | **String** |  |  [optional]
-**realHeight** | **BigDecimal** |  |  [optional]
-**realWidth** | **BigDecimal** |  |  [optional]
-**url** | **String** |  |  [optional]
-**width** | **BigDecimal** |  |  [optional]
+**Height** | **decimal** |  | [optional] 
+**PlainUrl** | **string** |  | [optional] 
+**RealHeight** | **decimal** |  | [optional] 
+**RealWidth** | **decimal** |  | [optional] 
+**Url** | **string** |  | [optional] 
+**Width** | **decimal** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

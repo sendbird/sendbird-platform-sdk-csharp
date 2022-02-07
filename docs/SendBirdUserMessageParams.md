@@ -1,45 +1,27 @@
 
-
-# SendBirdUserMessageParams
-
+# sendbird-platform-sdk.Model.SendBirdUserMessageParams
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**appleCriticalAlertOptions** | [**SendBirdAppleCriticalAlertOptions**](SendBirdAppleCriticalAlertOptions.md) |  |  [optional]
-**customType** | **String** |  |  [optional]
-**data** | **String** |  |  [optional]
-**isReplyToChannel** | **Boolean** |  |  [optional]
-**mentionType** | [**MentionTypeEnum**](#MentionTypeEnum) |  |  [optional]
-**mentionedUserIds** | **List&lt;String&gt;** |  |  [optional]
-**mentionedUsers** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  |  [optional]
-**message** | **String** |  |  [optional]
-**metaArrayKeys** | **List&lt;String&gt;** |  |  [optional]
-**metaArrays** | [**List&lt;SendBirdMessageMetaArray&gt;**](SendBirdMessageMetaArray.md) |  |  [optional]
-**parentMessageId** | **BigDecimal** |  |  [optional]
-**pollId** | **BigDecimal** |  |  [optional]
-**pushNotificationDeliveryOption** | [**PushNotificationDeliveryOptionEnum**](#PushNotificationDeliveryOptionEnum) |  |  [optional]
-**targetLanguages** | **List&lt;String&gt;** |  |  [optional]
-**translationTargetLanguages** | **List&lt;String&gt;** |  |  [optional]
+**AppleCriticalAlertOptions** | [**SendBirdAppleCriticalAlertOptions**](SendBirdAppleCriticalAlertOptions.md) |  | [optional] 
+**CustomType** | **string** |  | [optional] 
+**Data** | **string** |  | [optional] 
+**IsReplyToChannel** | **bool** |  | [optional] 
+**MentionType** | **string** |  | [optional] 
+**MentionedUserIds** | **List&lt;string&gt;** |  | [optional] 
+**MentionedUsers** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  | [optional] 
+**Message** | **string** |  | [optional] 
+**MetaArrayKeys** | **List&lt;string&gt;** |  | [optional] 
+**MetaArrays** | [**List&lt;SendBirdMessageMetaArray&gt;**](SendBirdMessageMetaArray.md) |  | [optional] 
+**ParentMessageId** | **decimal** |  | [optional] 
+**PollId** | **decimal** |  | [optional] 
+**PushNotificationDeliveryOption** | **string** |  | [optional] 
+**TargetLanguages** | **List&lt;string&gt;** |  | [optional] 
+**TranslationTargetLanguages** | **List&lt;string&gt;** |  | [optional] 
 
-
-
-## Enum: MentionTypeEnum
-
-Name | Value
----- | -----
-CHANNEL | &quot;channel&quot;
-USERS | &quot;users&quot;
-
-
-
-## Enum: PushNotificationDeliveryOptionEnum
-
-Name | Value
----- | -----
-DEFAULT | &quot;default&quot;
-SUPPRESS | &quot;suppress&quot;
-
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

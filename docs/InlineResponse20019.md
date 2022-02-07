@@ -1,21 +1,21 @@
 
-
-# InlineResponse20019
-
+# sendbird-platform-sdk.Model.InlineResponse20019
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**nonSuperGroupChannelUnreadMessageCount** | **BigDecimal** |  |  [optional]
-**superGroupChannelUnreadMessageCount** | **BigDecimal** |  |  [optional]
-**groupChannelUnreadMessageCount** | **BigDecimal** |  |  [optional]
-**superGroupChannelInvitationCount** | **BigDecimal** |  |  [optional]
-**groupChannelInvitationCount** | **BigDecimal** |  |  [optional]
-**superGroupChannelUnreadMentionCount** | **BigDecimal** |  |  [optional]
-**groupChannelUnreadMentionCount** | **BigDecimal** |  |  [optional]
-**nonSuperGroupChannelUnreadMentionCount** | **BigDecimal** |  |  [optional]
-**nonSuperGroupChannelInvitationCount** | **BigDecimal** |  |  [optional]
+**NonSuperGroupChannelUnreadMessageCount** | **decimal** |  | [optional] 
+**SuperGroupChannelUnreadMessageCount** | **decimal** |  | [optional] 
+**GroupChannelUnreadMessageCount** | **decimal** |  | [optional] 
+**SuperGroupChannelInvitationCount** | **decimal** |  | [optional] 
+**GroupChannelInvitationCount** | **decimal** |  | [optional] 
+**SuperGroupChannelUnreadMentionCount** | **decimal** |  | [optional] 
+**GroupChannelUnreadMentionCount** | **decimal** |  | [optional] 
+**NonSuperGroupChannelUnreadMentionCount** | **decimal** |  | [optional] 
+**NonSuperGroupChannelInvitationCount** | **decimal** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

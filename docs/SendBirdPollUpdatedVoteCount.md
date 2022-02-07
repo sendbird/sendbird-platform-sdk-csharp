@@ -1,14 +1,14 @@
 
-
-# SendBirdPollUpdatedVoteCount
-
+# sendbird-platform-sdk.Model.SendBirdPollUpdatedVoteCount
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**optionId** | **BigDecimal** |  |  [optional]
-**voteCount** | **BigDecimal** |  |  [optional]
+**OptionId** | **decimal** |  | [optional] 
+**VoteCount** | **decimal** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

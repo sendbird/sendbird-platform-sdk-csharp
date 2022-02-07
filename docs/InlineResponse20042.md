@@ -1,17 +1,17 @@
 
-
-# InlineResponse20042
-
+# sendbird-platform-sdk.Model.InlineResponse20042
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**uniqueId** | **String** |  |  [optional]
-**openCounts** | **List&lt;BigDecimal&gt;** |  |  [optional]
-**openRates** | **List&lt;BigDecimal&gt;** |  |  [optional]
-**cumulativeOpenCounts** | **List&lt;BigDecimal&gt;** |  |  [optional]
-**cumulativeOpenRates** | **List&lt;BigDecimal&gt;** |  |  [optional]
+**UniqueId** | **string** |  | [optional] 
+**OpenCounts** | **List&lt;decimal&gt;** |  | [optional] 
+**OpenRates** | **List&lt;decimal&gt;** |  | [optional] 
+**CumulativeOpenCounts** | **List&lt;decimal&gt;** |  | [optional] 
+**CumulativeOpenRates** | **List&lt;decimal&gt;** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

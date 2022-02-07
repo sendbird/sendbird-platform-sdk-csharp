@@ -1,15 +1,15 @@
 
-
-# GcLeaveChannelData
-
+# sendbird-platform-sdk.Model.GcLeaveChannelData
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**channelUrl** | **String** | Specifies the URL of the channel to leave. | 
-**userIds** | **List&lt;Integer&gt;** | Specifies an array of one or more IDs of the users to leave the channel. | 
-**shouldLeaveAll** | **Boolean** | Determines whether to make all members leave the channel. (Default: false) | 
+**ChannelUrl** | **string** | Specifies the URL of the channel to leave. | 
+**UserIds** | **List&lt;int&gt;** | Specifies an array of one or more IDs of the users to leave the channel. | 
+**ShouldLeaveAll** | **bool** | Determines whether to make all members leave the channel. (Default: false) | 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

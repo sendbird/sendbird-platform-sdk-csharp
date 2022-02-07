@@ -1,14 +1,14 @@
 
-
-# InlineResponse20017
-
+# sendbird-platform-sdk.Model.InlineResponse20017
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**channels** | [**List&lt;SendBirdGroupChannel&gt;**](SendBirdGroupChannel.md) |  |  [optional]
-**next** | **String** |  |  [optional]
+**Channels** | [**List&lt;SendBirdGroupChannel&gt;**](SendBirdGroupChannel.md) |  | [optional] 
+**Next** | **string** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

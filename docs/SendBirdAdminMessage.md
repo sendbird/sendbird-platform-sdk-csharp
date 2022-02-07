@@ -1,58 +1,36 @@
 
-
-# SendBirdAdminMessage
-
+# sendbird-platform-sdk.Model.SendBirdAdminMessage
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**appleCriticalAlertOptions** | [**SendBirdAppleCriticalAlertOptions**](SendBirdAppleCriticalAlertOptions.md) |  |  [optional]
-**channelType** | **String** |  |  [optional]
-**channelUrl** | **String** |  |  [optional]
-**createdAt** | **BigDecimal** |  |  [optional]
-**customType** | **String** |  |  [optional]
-**data** | **String** |  |  [optional]
-**isReplyToChannel** | **Boolean** |  |  [optional]
-**mentionType** | **String** |  |  [optional]
-**mentionedUsers** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  |  [optional]
-**message** | **String** |  |  [optional]
-**messageId** | **BigDecimal** |  |  [optional]
-**messageType** | [**MessageTypeEnum**](#MessageTypeEnum) |  |  [optional]
-**metaArray** | [**ModelObject**](ModelObject.md) |  |  [optional]
-**metaArrays** | [**List&lt;SendBirdMessageMetaArray&gt;**](SendBirdMessageMetaArray.md) |  |  [optional]
-**ogMetaData** | [**SendBirdOGMetaData**](SendBirdOGMetaData.md) |  |  [optional]
-**parentMessage** | [**SendBirdMessageResponse**](SendBirdMessageResponse.md) |  |  [optional]
-**parentMessageId** | **BigDecimal** |  |  [optional]
-**parentMessageText** | **String** |  |  [optional]
-**reactions** | [**List&lt;SendBirdReaction&gt;**](SendBirdReaction.md) |  |  [optional]
-**sendingStatus** | [**SendingStatusEnum**](#SendingStatusEnum) |  |  [optional]
-**silent** | **Boolean** |  |  [optional]
-**threadInfo** | [**SendBirdThreadInfo**](SendBirdThreadInfo.md) |  |  [optional]
-**translations** | [**ModelObject**](ModelObject.md) |  |  [optional]
-**updatedAt** | **BigDecimal** |  |  [optional]
+**AppleCriticalAlertOptions** | [**SendBirdAppleCriticalAlertOptions**](SendBirdAppleCriticalAlertOptions.md) |  | [optional] 
+**ChannelType** | **string** |  | [optional] 
+**ChannelUrl** | **string** |  | [optional] 
+**CreatedAt** | **decimal** |  | [optional] 
+**CustomType** | **string** |  | [optional] 
+**Data** | **string** |  | [optional] 
+**IsReplyToChannel** | **bool** |  | [optional] 
+**MentionType** | **string** |  | [optional] 
+**MentionedUsers** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  | [optional] 
+**Message** | **string** |  | [optional] 
+**MessageId** | **decimal** |  | [optional] 
+**MessageType** | **string** |  | [optional] 
+**MetaArray** | **Object** |  | [optional] 
+**MetaArrays** | [**List&lt;SendBirdMessageMetaArray&gt;**](SendBirdMessageMetaArray.md) |  | [optional] 
+**OgMetaData** | [**SendBirdOGMetaData**](SendBirdOGMetaData.md) |  | [optional] 
+**ParentMessage** | [**SendBirdMessageResponse**](SendBirdMessageResponse.md) |  | [optional] 
+**ParentMessageId** | **decimal** |  | [optional] 
+**ParentMessageText** | **string** |  | [optional] 
+**Reactions** | [**List&lt;SendBirdReaction&gt;**](SendBirdReaction.md) |  | [optional] 
+**SendingStatus** | **string** |  | [optional] 
+**Silent** | **bool** |  | [optional] 
+**ThreadInfo** | [**SendBirdThreadInfo**](SendBirdThreadInfo.md) |  | [optional] 
+**Translations** | **Object** |  | [optional] 
+**UpdatedAt** | **decimal** |  | [optional] 
 
-
-
-## Enum: MessageTypeEnum
-
-Name | Value
----- | -----
-MESG | &quot;MESG&quot;
-ADMM | &quot;ADMM&quot;
-FILE | &quot;FILE&quot;
-
-
-
-## Enum: SendingStatusEnum
-
-Name | Value
----- | -----
-CANCELED | &quot;canceled&quot;
-FAILED | &quot;failed&quot;
-NONE | &quot;none&quot;
-PENDING | &quot;pending&quot;
-SUCCEEDED | &quot;succeeded&quot;
-
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

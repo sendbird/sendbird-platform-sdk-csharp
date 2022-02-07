@@ -1,14 +1,14 @@
 
-
-# JoinChannelsData
-
+# sendbird-platform-sdk.Model.JoinChannelsData
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**botUserid** | **String** | Specifies the ID of the bot to join the channels. | 
-**channelUrls** | **List&lt;String&gt;** | Specifies an array of one or more URLs of the channels to join. | 
+**BotUserid** | **string** | Specifies the ID of the bot to join the channels. | 
+**ChannelUrls** | **List&lt;string&gt;** | Specifies an array of one or more URLs of the channels to join. | 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

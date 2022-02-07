@@ -1,16 +1,16 @@
 
-
-# Function
-
+# sendbird-platform-sdk.Model.Function
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**arguments** | **Object** |  |  [optional]
-**caller** | [**Function**](Function.md) |  |  [optional]
-**length** | **BigDecimal** |  |  [optional]
-**prototype** | **Object** |  |  [optional]
+**Arguments** | **Object** |  | [optional] 
+**Caller** | [**Function**](Function.md) |  | [optional] 
+**Length** | **decimal** |  | [optional] 
+**Prototype** | **Object** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

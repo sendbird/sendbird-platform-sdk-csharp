@@ -1,18 +1,18 @@
 
-
-# InlineResponse20012PushConfigurations
-
+# sendbird-platform-sdk.Model.InlineResponse20012PushConfigurations
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** |  |  [optional]
-**pushType** | **String** |  |  [optional]
-**createdAt** | **BigDecimal** |  |  [optional]
-**apiKey** | **String** |  |  [optional]
-**senderId** | **String** |  |  [optional]
-**pushSound** | **String** |  |  [optional]
+**Id** | **string** |  | [optional] 
+**PushType** | **string** |  | [optional] 
+**CreatedAt** | **decimal** |  | [optional] 
+**ApiKey** | **string** |  | [optional] 
+**SenderId** | **string** |  | [optional] 
+**PushSound** | **string** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

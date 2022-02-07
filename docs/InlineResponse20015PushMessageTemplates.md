@@ -1,15 +1,15 @@
 
-
-# InlineResponse20015PushMessageTemplates
-
+# sendbird-platform-sdk.Model.InlineResponse20015PushMessageTemplates
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**templateName** | **String** |  |  [optional]
-**template** | [**InlineResponse2004Template**](InlineResponse2004Template.md) |  |  [optional]
-**pushMessagePreview** | [**InlineResponse2004Template**](InlineResponse2004Template.md) |  |  [optional]
+**TemplateName** | **string** |  | [optional] 
+**Template** | [**InlineResponse2004Template**](InlineResponse2004Template.md) |  | [optional] 
+**PushMessagePreview** | [**InlineResponse2004Template**](InlineResponse2004Template.md) |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

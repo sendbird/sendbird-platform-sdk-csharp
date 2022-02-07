@@ -1,16 +1,16 @@
 
-
-# SendBirdEmojiCategory
-
+# sendbird-platform-sdk.Model.SendBirdEmojiCategory
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**emojis** | [**List&lt;SendBirdEmoji&gt;**](SendBirdEmoji.md) |  |  [optional]
-**id** | **BigDecimal** |  |  [optional]
-**name** | **String** |  |  [optional]
-**url** | **String** |  |  [optional]
+**Emojis** | [**List&lt;SendBirdEmoji&gt;**](SendBirdEmoji.md) |  | [optional] 
+**Id** | **decimal** |  | [optional] 
+**Name** | **string** |  | [optional] 
+**Url** | **string** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

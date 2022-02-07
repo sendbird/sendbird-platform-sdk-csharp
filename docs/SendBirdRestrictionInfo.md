@@ -1,24 +1,15 @@
 
-
-# SendBirdRestrictionInfo
-
+# sendbird-platform-sdk.Model.SendBirdRestrictionInfo
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**description** | **String** |  |  [optional]
-**endAt** | **BigDecimal** |  |  [optional]
-**restrictionType** | [**RestrictionTypeEnum**](#RestrictionTypeEnum) |  |  [optional]
+**Description** | **string** |  | [optional] 
+**EndAt** | **decimal** |  | [optional] 
+**RestrictionType** | **string** |  | [optional] 
 
-
-
-## Enum: RestrictionTypeEnum
-
-Name | Value
----- | -----
-BANNED | &quot;banned&quot;
-MUTED | &quot;muted&quot;
-
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

@@ -1,67 +1,75 @@
-# AnnouncementsApi
+# sendbird-platform-sdk.Api.AnnouncementsApi
 
 All URIs are relative to *https://api-APP_ID.sendbird.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getDetailedOpenRateOfAnnouncementById**](AnnouncementsApi.md#getDetailedOpenRateOfAnnouncementById) | **GET** /v3/announcement_open_rate/{unique_id} | Get detailed open rate of an announcement
-[**getDetailedOpenRateOfAnnouncementGroup**](AnnouncementsApi.md#getDetailedOpenRateOfAnnouncementGroup) | **GET** /v3/announcement_open_rate_by_group/{announcement_group} | Get detailed open rate of an announcement group
-[**getDetailedOpenStatusOfAnnouncementById**](AnnouncementsApi.md#getDetailedOpenStatusOfAnnouncementById) | **GET** /v3/announcement_open_status/{unique_id} | Get detailed open status of an announcement
-[**getStatistics**](AnnouncementsApi.md#getStatistics) | **GET** /v3/announcement_stats/weekly | Get statistics - weekly
-[**getStatisticsDaily**](AnnouncementsApi.md#getStatisticsDaily) | **GET** /v3/announcement_stats/daily | Get statistics - daily
-[**getStatisticsMonthly**](AnnouncementsApi.md#getStatisticsMonthly) | **GET** /v3/announcement_stats/monthly | Get statistics - monthly
-[**listAnnouncementGroups**](AnnouncementsApi.md#listAnnouncementGroups) | **GET** /v3/announcement_group | List announcement groups
-[**listAnnouncements**](AnnouncementsApi.md#listAnnouncements) | **GET** /v3/announcements | List announcements
-[**scheduleAnnouncement**](AnnouncementsApi.md#scheduleAnnouncement) | **POST** /v3/announcements | Schedule an announcement
-[**updateAnnouncementById**](AnnouncementsApi.md#updateAnnouncementById) | **PUT** /v3/announcements/{unique_id} | Update an announcement
-[**viewAnnouncementById**](AnnouncementsApi.md#viewAnnouncementById) | **GET** /v3/announcements/{unique_id} | View an announcement
+[**GetDetailedOpenRateOfAnnouncementById**](AnnouncementsApi.md#getdetailedopenrateofannouncementbyid) | **GET** /v3/announcement_open_rate/{unique_id} | Get detailed open rate of an announcement
+[**GetDetailedOpenRateOfAnnouncementGroup**](AnnouncementsApi.md#getdetailedopenrateofannouncementgroup) | **GET** /v3/announcement_open_rate_by_group/{announcement_group} | Get detailed open rate of an announcement group
+[**GetDetailedOpenStatusOfAnnouncementById**](AnnouncementsApi.md#getdetailedopenstatusofannouncementbyid) | **GET** /v3/announcement_open_status/{unique_id} | Get detailed open status of an announcement
+[**GetStatistics**](AnnouncementsApi.md#getstatistics) | **GET** /v3/announcement_stats/weekly | Get statistics - weekly
+[**GetStatisticsDaily**](AnnouncementsApi.md#getstatisticsdaily) | **GET** /v3/announcement_stats/daily | Get statistics - daily
+[**GetStatisticsMonthly**](AnnouncementsApi.md#getstatisticsmonthly) | **GET** /v3/announcement_stats/monthly | Get statistics - monthly
+[**ListAnnouncementGroups**](AnnouncementsApi.md#listannouncementgroups) | **GET** /v3/announcement_group | List announcement groups
+[**ListAnnouncements**](AnnouncementsApi.md#listannouncements) | **GET** /v3/announcements | List announcements
+[**ScheduleAnnouncement**](AnnouncementsApi.md#scheduleannouncement) | **POST** /v3/announcements | Schedule an announcement
+[**UpdateAnnouncementById**](AnnouncementsApi.md#updateannouncementbyid) | **PUT** /v3/announcements/{unique_id} | Update an announcement
+[**ViewAnnouncementById**](AnnouncementsApi.md#viewannouncementbyid) | **GET** /v3/announcements/{unique_id} | View an announcement
 
 
-<a name="getDetailedOpenRateOfAnnouncementById"></a>
-# **getDetailedOpenRateOfAnnouncementById**
-> InlineResponse20042 getDetailedOpenRateOfAnnouncementById(uniqueId, apiToken)
+
+## GetDetailedOpenRateOfAnnouncementById
+
+> InlineResponse20042 GetDetailedOpenRateOfAnnouncementById (string uniqueId, string apiToken = null)
 
 Get detailed open rate of an announcement
 
-## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement ----------------------------   &#x60;unique_id&#x60;      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
+## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `unique_id`      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.AnnouncementsApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    AnnouncementsApi apiInstance = new AnnouncementsApi(defaultClient);
-    String uniqueId = "uniqueId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    try {
-      InlineResponse20042 result = apiInstance.getDetailedOpenRateOfAnnouncementById(uniqueId, apiToken);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling AnnouncementsApi#getDetailedOpenRateOfAnnouncementById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class GetDetailedOpenRateOfAnnouncementByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new AnnouncementsApi(Configuration.Default);
+            var uniqueId = uniqueId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+
+            try
+            {
+                // Get detailed open rate of an announcement
+                InlineResponse20042 result = apiInstance.GetDetailedOpenRateOfAnnouncementById(uniqueId, apiToken);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling AnnouncementsApi.GetDetailedOpenRateOfAnnouncementById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **uniqueId** | **String**|  |
- **apiToken** | **String**|  | [optional]
+ **uniqueId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -73,59 +81,73 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="getDetailedOpenRateOfAnnouncementGroup"></a>
-# **getDetailedOpenRateOfAnnouncementGroup**
-> InlineResponse20046 getDetailedOpenRateOfAnnouncementGroup(announcementGroup, apiToken)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## GetDetailedOpenRateOfAnnouncementGroup
+
+> InlineResponse20046 GetDetailedOpenRateOfAnnouncementGroup (string announcementGroup, string apiToken = null)
 
 Get detailed open rate of an announcement group
 
-## Get detailed open rate of an announcement group  Retrieves the detailed open rate information of an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement-group ----------------------------
+## Get detailed open rate of an announcement group  Retrieves the detailed open rate information of an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement-group - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.AnnouncementsApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    AnnouncementsApi apiInstance = new AnnouncementsApi(defaultClient);
-    String announcementGroup = "announcementGroup_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    try {
-      InlineResponse20046 result = apiInstance.getDetailedOpenRateOfAnnouncementGroup(announcementGroup, apiToken);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling AnnouncementsApi#getDetailedOpenRateOfAnnouncementGroup");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class GetDetailedOpenRateOfAnnouncementGroupExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new AnnouncementsApi(Configuration.Default);
+            var announcementGroup = announcementGroup_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+
+            try
+            {
+                // Get detailed open rate of an announcement group
+                InlineResponse20046 result = apiInstance.GetDetailedOpenRateOfAnnouncementGroup(announcementGroup, apiToken);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling AnnouncementsApi.GetDetailedOpenRateOfAnnouncementGroup: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **announcementGroup** | **String**|  |
- **apiToken** | **String**|  | [optional]
+ **announcementGroup** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -137,69 +159,83 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="getDetailedOpenStatusOfAnnouncementById"></a>
-# **getDetailedOpenStatusOfAnnouncementById**
-> InlineResponse20043 getDetailedOpenStatusOfAnnouncementById(uniqueId, apiToken, limit, next, uniqueIds, channelUrls, hasOpened)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## GetDetailedOpenStatusOfAnnouncementById
+
+> InlineResponse20043 GetDetailedOpenStatusOfAnnouncementById (string uniqueId, string apiToken = null, int? limit = null, string next = null, List<string> uniqueIds = null, List<string> channelUrls = null, bool? hasOpened = null)
 
 Get detailed open status of an announcement
 
-## Get detailed open status of an announcement  Retrieves the detailed open status information of a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-status-of-an-announcement ----------------------------
+## Get detailed open status of an announcement  Retrieves the detailed open status information of a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-status-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.AnnouncementsApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    AnnouncementsApi apiInstance = new AnnouncementsApi(defaultClient);
-    String uniqueId = "uniqueId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    Integer limit = 56; // Integer | 
-    String next = "next_example"; // String | 
-    List<String> uniqueIds = Arrays.asList(); // List<String> | 
-    List<String> channelUrls = Arrays.asList(); // List<String> | 
-    Boolean hasOpened = true; // Boolean | 
-    try {
-      InlineResponse20043 result = apiInstance.getDetailedOpenStatusOfAnnouncementById(uniqueId, apiToken, limit, next, uniqueIds, channelUrls, hasOpened);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling AnnouncementsApi#getDetailedOpenStatusOfAnnouncementById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class GetDetailedOpenStatusOfAnnouncementByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new AnnouncementsApi(Configuration.Default);
+            var uniqueId = uniqueId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var limit = 56;  // int? |  (optional) 
+            var next = next_example;  // string |  (optional) 
+            var uniqueIds = new List<string>(); // List<string> |  (optional) 
+            var channelUrls = new List<string>(); // List<string> |  (optional) 
+            var hasOpened = true;  // bool? |  (optional) 
+
+            try
+            {
+                // Get detailed open status of an announcement
+                InlineResponse20043 result = apiInstance.GetDetailedOpenStatusOfAnnouncementById(uniqueId, apiToken, limit, next, uniqueIds, channelUrls, hasOpened);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling AnnouncementsApi.GetDetailedOpenStatusOfAnnouncementById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **uniqueId** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **limit** | **Integer**|  | [optional]
- **next** | **String**|  | [optional]
- **uniqueIds** | [**List&lt;String&gt;**](String.md)|  | [optional]
- **channelUrls** | [**List&lt;String&gt;**](String.md)|  | [optional]
- **hasOpened** | **Boolean**|  | [optional]
+ **uniqueId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **limit** | **int?**|  | [optional] 
+ **next** | **string**|  | [optional] 
+ **uniqueIds** | [**List&lt;string&gt;**](string.md)|  | [optional] 
+ **channelUrls** | [**List&lt;string&gt;**](string.md)|  | [optional] 
+ **hasOpened** | **bool?**|  | [optional] 
 
 ### Return type
 
@@ -211,57 +247,71 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="getStatistics"></a>
-# **getStatistics**
-> InlineResponse20044 getStatistics(apiToken)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## GetStatistics
+
+> InlineResponse20044 GetStatistics (string apiToken = null)
 
 Get statistics - weekly
 
-## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics ----------------------------
+## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.AnnouncementsApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    AnnouncementsApi apiInstance = new AnnouncementsApi(defaultClient);
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    try {
-      InlineResponse20044 result = apiInstance.getStatistics(apiToken);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling AnnouncementsApi#getStatistics");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class GetStatisticsExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new AnnouncementsApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+
+            try
+            {
+                // Get statistics - weekly
+                InlineResponse20044 result = apiInstance.GetStatistics(apiToken);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling AnnouncementsApi.GetStatistics: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **String**|  | [optional]
+ **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -273,71 +323,85 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="getStatisticsDaily"></a>
-# **getStatisticsDaily**
-> InlineResponse20044 getStatisticsDaily(startDate, endDate, startWeek, endWeek, startMonth, endMonth, apiToken, announcementGroup)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## GetStatisticsDaily
+
+> InlineResponse20044 GetStatisticsDaily (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = null, string announcementGroup = null)
 
 Get statistics - daily
 
-## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics ----------------------------
+## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.AnnouncementsApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    AnnouncementsApi apiInstance = new AnnouncementsApi(defaultClient);
-    String startDate = "startDate_example"; // String | 
-    String endDate = "endDate_example"; // String | 
-    String startWeek = "startWeek_example"; // String | 
-    String endWeek = "endWeek_example"; // String | 
-    String startMonth = "startMonth_example"; // String | 
-    String endMonth = "endMonth_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    String announcementGroup = "announcementGroup_example"; // String | 
-    try {
-      InlineResponse20044 result = apiInstance.getStatisticsDaily(startDate, endDate, startWeek, endWeek, startMonth, endMonth, apiToken, announcementGroup);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling AnnouncementsApi#getStatisticsDaily");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class GetStatisticsDailyExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new AnnouncementsApi(Configuration.Default);
+            var startDate = startDate_example;  // string | 
+            var endDate = endDate_example;  // string | 
+            var startWeek = startWeek_example;  // string | 
+            var endWeek = endWeek_example;  // string | 
+            var startMonth = startMonth_example;  // string | 
+            var endMonth = endMonth_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var announcementGroup = announcementGroup_example;  // string |  (optional) 
+
+            try
+            {
+                // Get statistics - daily
+                InlineResponse20044 result = apiInstance.GetStatisticsDaily(startDate, endDate, startWeek, endWeek, startMonth, endMonth, apiToken, announcementGroup);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling AnnouncementsApi.GetStatisticsDaily: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **startDate** | **String**|  |
- **endDate** | **String**|  |
- **startWeek** | **String**|  |
- **endWeek** | **String**|  |
- **startMonth** | **String**|  |
- **endMonth** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **announcementGroup** | **String**|  | [optional]
+ **startDate** | **string**|  | 
+ **endDate** | **string**|  | 
+ **startWeek** | **string**|  | 
+ **endWeek** | **string**|  | 
+ **startMonth** | **string**|  | 
+ **endMonth** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **announcementGroup** | **string**|  | [optional] 
 
 ### Return type
 
@@ -349,57 +413,71 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="getStatisticsMonthly"></a>
-# **getStatisticsMonthly**
-> InlineResponse20044 getStatisticsMonthly(apiToken)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## GetStatisticsMonthly
+
+> InlineResponse20044 GetStatisticsMonthly (string apiToken = null)
 
 Get statistics - monthly
 
-## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics ----------------------------
+## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.AnnouncementsApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    AnnouncementsApi apiInstance = new AnnouncementsApi(defaultClient);
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    try {
-      InlineResponse20044 result = apiInstance.getStatisticsMonthly(apiToken);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling AnnouncementsApi#getStatisticsMonthly");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class GetStatisticsMonthlyExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new AnnouncementsApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+
+            try
+            {
+                // Get statistics - monthly
+                InlineResponse20044 result = apiInstance.GetStatisticsMonthly(apiToken);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling AnnouncementsApi.GetStatisticsMonthly: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **String**|  | [optional]
+ **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -411,61 +489,75 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="listAnnouncementGroups"></a>
-# **listAnnouncementGroups**
-> InlineResponse20045 listAnnouncementGroups(apiToken, token, limit)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ListAnnouncementGroups
+
+> InlineResponse20045 ListAnnouncementGroups (string apiToken = null, string token = null, int? limit = null)
 
 List announcement groups
 
-## List announcement groups  Retrieves a list of announcement groups.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcement-groups ----------------------------
+## List announcement groups  Retrieves a list of announcement groups.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcement-groups - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.AnnouncementsApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    AnnouncementsApi apiInstance = new AnnouncementsApi(defaultClient);
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    String token = "token_example"; // String | 
-    Integer limit = 56; // Integer | 
-    try {
-      InlineResponse20045 result = apiInstance.listAnnouncementGroups(apiToken, token, limit);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling AnnouncementsApi#listAnnouncementGroups");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class ListAnnouncementGroupsExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new AnnouncementsApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var token = token_example;  // string |  (optional) 
+            var limit = 56;  // int? |  (optional) 
+
+            try
+            {
+                // List announcement groups
+                InlineResponse20045 result = apiInstance.ListAnnouncementGroups(apiToken, token, limit);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling AnnouncementsApi.ListAnnouncementGroups: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **String**|  | [optional]
- **token** | **String**|  | [optional]
- **limit** | **Integer**|  | [optional]
+ **apiToken** | **string**|  | [optional] 
+ **token** | **string**|  | [optional] 
+ **limit** | **int?**|  | [optional] 
 
 ### Return type
 
@@ -477,67 +569,81 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="listAnnouncements"></a>
-# **listAnnouncements**
-> InlineResponse20039 listAnnouncements(apiToken, token, limit, order, status, announcementGroup)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ListAnnouncements
+
+> InlineResponse20039 ListAnnouncements (string apiToken = null, string token = null, int? limit = null, string order = null, string status = null, string announcementGroup = null)
 
 List announcements
 
-## List announcements  Retrieves a list of announcements.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcements ----------------------------
+## List announcements  Retrieves a list of announcements.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcements - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.AnnouncementsApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    AnnouncementsApi apiInstance = new AnnouncementsApi(defaultClient);
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    String token = "token_example"; // String | 
-    Integer limit = 56; // Integer | 
-    String order = "order_example"; // String | 
-    String status = "status_example"; // String | 
-    String announcementGroup = "announcementGroup_example"; // String | 
-    try {
-      InlineResponse20039 result = apiInstance.listAnnouncements(apiToken, token, limit, order, status, announcementGroup);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling AnnouncementsApi#listAnnouncements");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class ListAnnouncementsExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new AnnouncementsApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var token = token_example;  // string |  (optional) 
+            var limit = 56;  // int? |  (optional) 
+            var order = order_example;  // string |  (optional) 
+            var status = status_example;  // string |  (optional) 
+            var announcementGroup = announcementGroup_example;  // string |  (optional) 
+
+            try
+            {
+                // List announcements
+                InlineResponse20039 result = apiInstance.ListAnnouncements(apiToken, token, limit, order, status, announcementGroup);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling AnnouncementsApi.ListAnnouncements: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **String**|  | [optional]
- **token** | **String**|  | [optional]
- **limit** | **Integer**|  | [optional]
- **order** | **String**|  | [optional]
- **status** | **String**|  | [optional]
- **announcementGroup** | **String**|  | [optional]
+ **apiToken** | **string**|  | [optional] 
+ **token** | **string**|  | [optional] 
+ **limit** | **int?**|  | [optional] 
+ **order** | **string**|  | [optional] 
+ **status** | **string**|  | [optional] 
+ **announcementGroup** | **string**|  | [optional] 
 
 ### Return type
 
@@ -549,59 +655,73 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="scheduleAnnouncement"></a>
-# **scheduleAnnouncement**
-> InlineResponse20040 scheduleAnnouncement(apiToken, scheduleAnnouncementData)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ScheduleAnnouncement
+
+> InlineResponse20040 ScheduleAnnouncement (string apiToken = null, ScheduleAnnouncementData scheduleAnnouncementData = null)
 
 Schedule an announcement
 
 ## Schedule an announcement  Schedules a new announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-schedule-an-announcement
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.AnnouncementsApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    AnnouncementsApi apiInstance = new AnnouncementsApi(defaultClient);
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    ScheduleAnnouncementData scheduleAnnouncementData = new ScheduleAnnouncementData(); // ScheduleAnnouncementData | 
-    try {
-      InlineResponse20040 result = apiInstance.scheduleAnnouncement(apiToken, scheduleAnnouncementData);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling AnnouncementsApi#scheduleAnnouncement");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class ScheduleAnnouncementExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new AnnouncementsApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var scheduleAnnouncementData = new ScheduleAnnouncementData(); // ScheduleAnnouncementData |  (optional) 
+
+            try
+            {
+                // Schedule an announcement
+                InlineResponse20040 result = apiInstance.ScheduleAnnouncement(apiToken, scheduleAnnouncementData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling AnnouncementsApi.ScheduleAnnouncement: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **String**|  | [optional]
- **scheduleAnnouncementData** | [**ScheduleAnnouncementData**](ScheduleAnnouncementData.md)|  | [optional]
+ **apiToken** | **string**|  | [optional] 
+ **scheduleAnnouncementData** | [**ScheduleAnnouncementData**](ScheduleAnnouncementData.md)|  | [optional] 
 
 ### Return type
 
@@ -613,61 +733,75 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="updateAnnouncementById"></a>
-# **updateAnnouncementById**
-> InlineResponse20041 updateAnnouncementById(uniqueId, apiToken, updateAnnouncementByIdData)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## UpdateAnnouncementById
+
+> InlineResponse20041 UpdateAnnouncementById (string uniqueId, string apiToken = null, UpdateAnnouncementByIdData updateAnnouncementByIdData = null)
 
 Update an announcement
 
-## Update an announcement  Updates information of a specific announcement before it starts or changes the status of a specific announcement after it starts. For the 2 different applications, refer to the request body below.  &gt;__Note__: Updating information of an announcement is possible only when the announcement status is scheduled, indicating it hasn&#39;t started yet.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-update-an-announcement ----------------------------
+## Update an announcement  Updates information of a specific announcement before it starts or changes the status of a specific announcement after it starts. For the 2 different applications, refer to the request body below.  >__Note__: Updating information of an announcement is possible only when the announcement status is scheduled, indicating it hasn't started yet.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-update-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.AnnouncementsApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    AnnouncementsApi apiInstance = new AnnouncementsApi(defaultClient);
-    String uniqueId = "uniqueId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    UpdateAnnouncementByIdData updateAnnouncementByIdData = new UpdateAnnouncementByIdData(); // UpdateAnnouncementByIdData | 
-    try {
-      InlineResponse20041 result = apiInstance.updateAnnouncementById(uniqueId, apiToken, updateAnnouncementByIdData);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling AnnouncementsApi#updateAnnouncementById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class UpdateAnnouncementByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new AnnouncementsApi(Configuration.Default);
+            var uniqueId = uniqueId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var updateAnnouncementByIdData = new UpdateAnnouncementByIdData(); // UpdateAnnouncementByIdData |  (optional) 
+
+            try
+            {
+                // Update an announcement
+                InlineResponse20041 result = apiInstance.UpdateAnnouncementById(uniqueId, apiToken, updateAnnouncementByIdData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling AnnouncementsApi.UpdateAnnouncementById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **uniqueId** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **updateAnnouncementByIdData** | [**UpdateAnnouncementByIdData**](UpdateAnnouncementByIdData.md)|  | [optional]
+ **uniqueId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **updateAnnouncementByIdData** | [**UpdateAnnouncementByIdData**](UpdateAnnouncementByIdData.md)|  | [optional] 
 
 ### Return type
 
@@ -679,59 +813,73 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="viewAnnouncementById"></a>
-# **viewAnnouncementById**
-> InlineResponse20039Announcements viewAnnouncementById(uniqueId, apiToken)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ViewAnnouncementById
+
+> InlineResponse20039Announcements ViewAnnouncementById (string uniqueId, string apiToken = null)
 
 View an announcement
 
-## View an announcement  Retrieves information on a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-view-an-announcement ----------------------------
+## View an announcement  Retrieves information on a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-view-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.AnnouncementsApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    AnnouncementsApi apiInstance = new AnnouncementsApi(defaultClient);
-    String uniqueId = "uniqueId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    try {
-      InlineResponse20039Announcements result = apiInstance.viewAnnouncementById(uniqueId, apiToken);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling AnnouncementsApi#viewAnnouncementById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class ViewAnnouncementByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new AnnouncementsApi(Configuration.Default);
+            var uniqueId = uniqueId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+
+            try
+            {
+                // View an announcement
+                InlineResponse20039Announcements result = apiInstance.ViewAnnouncementById(uniqueId, apiToken);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling AnnouncementsApi.ViewAnnouncementById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **uniqueId** | **String**|  |
- **apiToken** | **String**|  | [optional]
+ **uniqueId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -743,11 +891,17 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 

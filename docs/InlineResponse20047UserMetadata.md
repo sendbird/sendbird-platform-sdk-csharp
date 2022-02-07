@@ -1,13 +1,13 @@
 
-
-# InlineResponse20047UserMetadata
-
+# sendbird-platform-sdk.Model.InlineResponse20047UserMetadata
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**anyOf** | **String** |  |  [optional]
+**AnyOf** | **string** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

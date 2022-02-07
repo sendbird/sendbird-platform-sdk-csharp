@@ -1,32 +1,22 @@
 
-
-# SendBirdPollDetails
-
+# sendbird-platform-sdk.Model.SendBirdPollDetails
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**allowMultipleVotes** | **Boolean** |  |  [optional]
-**allowUserSuggestion** | **Boolean** |  |  [optional]
-**closeAt** | **BigDecimal** |  |  [optional]
-**createdAt** | **BigDecimal** |  |  [optional]
-**createdBy** | **String** |  |  [optional]
-**isAnonymous** | **Boolean** |  |  [optional]
-**options** | [**List&lt;SendBirdPollOption&gt;**](SendBirdPollOption.md) |  |  [optional]
-**status** | [**StatusEnum**](#StatusEnum) |  |  [optional]
-**updatedAt** | **BigDecimal** |  |  [optional]
-**voterCount** | **BigDecimal** |  |  [optional]
+**AllowMultipleVotes** | **bool** |  | [optional] 
+**AllowUserSuggestion** | **bool** |  | [optional] 
+**CloseAt** | **decimal** |  | [optional] 
+**CreatedAt** | **decimal** |  | [optional] 
+**CreatedBy** | **string** |  | [optional] 
+**IsAnonymous** | **bool** |  | [optional] 
+**Options** | [**List&lt;SendBirdPollOption&gt;**](SendBirdPollOption.md) |  | [optional] 
+**Status** | **string** |  | [optional] 
+**UpdatedAt** | **decimal** |  | [optional] 
+**VoterCount** | **decimal** |  | [optional] 
 
-
-
-## Enum: StatusEnum
-
-Name | Value
----- | -----
-CLOSED | &quot;closed&quot;
-OPEN | &quot;open&quot;
-REMOVED | &quot;removed&quot;
-
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

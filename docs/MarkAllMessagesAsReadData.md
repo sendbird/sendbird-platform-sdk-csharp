@@ -1,14 +1,14 @@
 
-
-# MarkAllMessagesAsReadData
-
+# sendbird-platform-sdk.Model.MarkAllMessagesAsReadData
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**userId** | **String** | Specifies the unique ID of the target user. | 
-**channelUrls** | **List&lt;String&gt;** | Specifies an array of one or more group channel URLs to mark all of the unread messages in as read. If not specified, all of the unread messages in the joined group channels are marked as read. | 
+**UserId** | **string** | Specifies the unique ID of the target user. | 
+**ChannelUrls** | **List&lt;string&gt;** | Specifies an array of one or more group channel URLs to mark all of the unread messages in as read. If not specified, all of the unread messages in the joined group channels are marked as read. | 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

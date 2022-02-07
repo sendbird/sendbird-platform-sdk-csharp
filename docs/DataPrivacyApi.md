@@ -1,63 +1,71 @@
-# DataPrivacyApi
+# sendbird-platform-sdk.Api.DataPrivacyApi
 
 All URIs are relative to *https://api-APP_ID.sendbird.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**cancelTheRegistrationOfGdprRequestById**](DataPrivacyApi.md#cancelTheRegistrationOfGdprRequestById) | **DELETE** /v3/privacy/gdpr/{request_id} | Cancel the registration of a GDPR request
-[**listGdprRequests**](DataPrivacyApi.md#listGdprRequests) | **GET** /v3/privacy/gdpr | List GDPR requests
-[**registerGdprRequest**](DataPrivacyApi.md#registerGdprRequest) | **POST** /v3/privacy/gdpr | Register a GDPR request
-[**viewGdprRequestById**](DataPrivacyApi.md#viewGdprRequestById) | **GET** /v3/privacy/gdpr/{request_id} | View a GDPR request
+[**CancelTheRegistrationOfGdprRequestById**](DataPrivacyApi.md#canceltheregistrationofgdprrequestbyid) | **DELETE** /v3/privacy/gdpr/{request_id} | Cancel the registration of a GDPR request
+[**ListGdprRequests**](DataPrivacyApi.md#listgdprrequests) | **GET** /v3/privacy/gdpr | List GDPR requests
+[**RegisterGdprRequest**](DataPrivacyApi.md#registergdprrequest) | **POST** /v3/privacy/gdpr | Register a GDPR request
+[**ViewGdprRequestById**](DataPrivacyApi.md#viewgdprrequestbyid) | **GET** /v3/privacy/gdpr/{request_id} | View a GDPR request
 
 
-<a name="cancelTheRegistrationOfGdprRequestById"></a>
-# **cancelTheRegistrationOfGdprRequestById**
-> cancelTheRegistrationOfGdprRequestById(requestId, apiToken)
+
+## CancelTheRegistrationOfGdprRequestById
+
+> void CancelTheRegistrationOfGdprRequestById (string requestId, string apiToken = null)
 
 Cancel the registration of a GDPR request
 
-## Cancel the registration of a GDPR request  Cancels the registration of a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-cancel-the-registration-of-a-gdpr-request ----------------------------
+## Cancel the registration of a GDPR request  Cancels the registration of a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-cancel-the-registration-of-a-gdpr-request - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.DataPrivacyApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    DataPrivacyApi apiInstance = new DataPrivacyApi(defaultClient);
-    String requestId = "requestId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    try {
-      apiInstance.cancelTheRegistrationOfGdprRequestById(requestId, apiToken);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling DataPrivacyApi#cancelTheRegistrationOfGdprRequestById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class CancelTheRegistrationOfGdprRequestByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new DataPrivacyApi(Configuration.Default);
+            var requestId = requestId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+
+            try
+            {
+                // Cancel the registration of a GDPR request
+                apiInstance.CancelTheRegistrationOfGdprRequestById(requestId, apiToken);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling DataPrivacyApi.CancelTheRegistrationOfGdprRequestById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **requestId** | **String**|  |
- **apiToken** | **String**|  | [optional]
+ **requestId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
-null (empty response body)
+void (empty response body)
 
 ### Authorization
 
@@ -65,61 +73,75 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="listGdprRequests"></a>
-# **listGdprRequests**
-> InlineResponse20068 listGdprRequests(apiToken, token, limit)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ListGdprRequests
+
+> InlineResponse20068 ListGdprRequests (string apiToken = null, string token = null, int? limit = null)
 
 List GDPR requests
 
-## List GDPR requests  Retrieves a list of GDPR requests of all types.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-list-gdpr-requests ----------------------------
+## List GDPR requests  Retrieves a list of GDPR requests of all types.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-list-gdpr-requests - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.DataPrivacyApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    DataPrivacyApi apiInstance = new DataPrivacyApi(defaultClient);
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    String token = "token_example"; // String | 
-    Integer limit = 56; // Integer | 
-    try {
-      InlineResponse20068 result = apiInstance.listGdprRequests(apiToken, token, limit);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling DataPrivacyApi#listGdprRequests");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class ListGdprRequestsExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new DataPrivacyApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var token = token_example;  // string |  (optional) 
+            var limit = 56;  // int? |  (optional) 
+
+            try
+            {
+                // List GDPR requests
+                InlineResponse20068 result = apiInstance.ListGdprRequests(apiToken, token, limit);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling DataPrivacyApi.ListGdprRequests: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **String**|  | [optional]
- **token** | **String**|  | [optional]
- **limit** | **Integer**|  | [optional]
+ **apiToken** | **string**|  | [optional] 
+ **token** | **string**|  | [optional] 
+ **limit** | **int?**|  | [optional] 
 
 ### Return type
 
@@ -131,59 +153,73 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="registerGdprRequest"></a>
-# **registerGdprRequest**
-> InlineResponse20069 registerGdprRequest(apiToken, registerGdprRequestData)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## RegisterGdprRequest
+
+> InlineResponse20069 RegisterGdprRequest (string apiToken = null, RegisterGdprRequestData registerGdprRequestData = null)
 
 Register a GDPR request
 
-## Register a GDPR request  Registers a specific type of GDPR request to meet the GDPR&#39;s requirements.  &gt; __Note__: Currently, only delete and access of the user data are supported. The features for the [right to restriction of processing](https://gdpr-info.eu/art-18-gdpr/) and [right to object](https://gdpr-info.eu/art-21-gdpr/) will be available soon.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-register-a-gdpr-request
+## Register a GDPR request  Registers a specific type of GDPR request to meet the GDPR's requirements.  > __Note__: Currently, only delete and access of the user data are supported. The features for the [right to restriction of processing](https://gdpr-info.eu/art-18-gdpr/) and [right to object](https://gdpr-info.eu/art-21-gdpr/) will be available soon.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-register-a-gdpr-request
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.DataPrivacyApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    DataPrivacyApi apiInstance = new DataPrivacyApi(defaultClient);
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    RegisterGdprRequestData registerGdprRequestData = new RegisterGdprRequestData(); // RegisterGdprRequestData | 
-    try {
-      InlineResponse20069 result = apiInstance.registerGdprRequest(apiToken, registerGdprRequestData);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling DataPrivacyApi#registerGdprRequest");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class RegisterGdprRequestExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new DataPrivacyApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var registerGdprRequestData = new RegisterGdprRequestData(); // RegisterGdprRequestData |  (optional) 
+
+            try
+            {
+                // Register a GDPR request
+                InlineResponse20069 result = apiInstance.RegisterGdprRequest(apiToken, registerGdprRequestData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling DataPrivacyApi.RegisterGdprRequest: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **String**|  | [optional]
- **registerGdprRequestData** | [**RegisterGdprRequestData**](RegisterGdprRequestData.md)|  | [optional]
+ **apiToken** | **string**|  | [optional] 
+ **registerGdprRequestData** | [**RegisterGdprRequestData**](RegisterGdprRequestData.md)|  | [optional] 
 
 ### Return type
 
@@ -195,59 +231,73 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="viewGdprRequestById"></a>
-# **viewGdprRequestById**
-> InlineResponse20068Requests viewGdprRequestById(requestId, apiToken)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ViewGdprRequestById
+
+> InlineResponse20068Requests ViewGdprRequestById (string requestId, string apiToken = null)
 
 View a GDPR request
 
-## View a GDPR request  Retrieves a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-view-a-gdpr-request ----------------------------
+## View a GDPR request  Retrieves a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-view-a-gdpr-request - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.DataPrivacyApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    DataPrivacyApi apiInstance = new DataPrivacyApi(defaultClient);
-    String requestId = "requestId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    try {
-      InlineResponse20068Requests result = apiInstance.viewGdprRequestById(requestId, apiToken);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling DataPrivacyApi#viewGdprRequestById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class ViewGdprRequestByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new DataPrivacyApi(Configuration.Default);
+            var requestId = requestId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+
+            try
+            {
+                // View a GDPR request
+                InlineResponse20068Requests result = apiInstance.ViewGdprRequestById(requestId, apiToken);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling DataPrivacyApi.ViewGdprRequestById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **requestId** | **String**|  |
- **apiToken** | **String**|  | [optional]
+ **requestId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -259,11 +309,17 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 

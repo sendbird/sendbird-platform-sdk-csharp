@@ -1,14 +1,14 @@
 
-
-# InlineResponse20061
-
+# sendbird-platform-sdk.Model.InlineResponse20061
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**metadata** | **Map&lt;String, String&gt;** |  |  [optional]
-**includeTs** | **BigDecimal** |  |  [optional]
+**Metadata** | **Dictionary&lt;string, string&gt;** |  | [optional] 
+**IncludeTs** | **decimal** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

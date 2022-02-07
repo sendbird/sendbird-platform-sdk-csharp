@@ -1,23 +1,23 @@
 
-
-# SendBirdOpenChannel
-
+# sendbird-platform-sdk.Model.SendBirdOpenChannel
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**coverUrl** | **String** |  |  [optional]
-**createdAt** | **BigDecimal** |  |  [optional]
-**creator** | [**SendBirdUser**](SendBirdUser.md) |  |  [optional]
-**customType** | **String** |  |  [optional]
-**data** | **String** |  |  [optional]
-**isEphemeral** | **Boolean** |  |  [optional]
-**isFrozen** | **Boolean** |  |  [optional]
-**name** | **String** |  |  [optional]
-**operators** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  |  [optional]
-**participantCount** | **BigDecimal** |  |  [optional]
-**channelUrl** | **String** |  |  [optional]
+**CoverUrl** | **string** |  | [optional] 
+**CreatedAt** | **decimal** |  | [optional] 
+**Creator** | [**SendBirdUser**](SendBirdUser.md) |  | [optional] 
+**CustomType** | **string** |  | [optional] 
+**Data** | **string** |  | [optional] 
+**IsEphemeral** | **bool** |  | [optional] 
+**IsFrozen** | **bool** |  | [optional] 
+**Name** | **string** |  | [optional] 
+**Operators** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  | [optional] 
+**ParticipantCount** | **decimal** |  | [optional] 
+**ChannelUrl** | **string** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

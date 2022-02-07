@@ -1,48 +1,30 @@
 
-
-# SendBirdMember
-
+# sendbird-platform-sdk.Model.SendBirdMember
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**connectionStatus** | **String** |  |  [optional]
-**friendDiscoveryKey** | **String** |  |  [optional]
-**friendName** | **String** |  |  [optional]
-**isActive** | **Boolean** |  |  [optional]
-**isBlockedByMe** | **Boolean** |  |  [optional]
-**isBlockingMe** | **Boolean** |  |  [optional]
-**isMuted** | **Boolean** |  |  [optional]
-**lastSeenAt** | **Integer** |  |  [optional]
-**metaData** | [**ModelObject**](ModelObject.md) |  |  [optional]
-**nickname** | **String** |  |  [optional]
-**plainProfileUrl** | **String** |  |  [optional]
-**preferredLanguages** | **List&lt;String&gt;** |  |  [optional]
-**profileUrl** | **String** |  |  [optional]
-**requireAuth** | **Boolean** |  |  [optional]
-**restrictionInfo** | [**SendBirdRestrictionInfo**](SendBirdRestrictionInfo.md) |  |  [optional]
-**role** | [**RoleEnum**](#RoleEnum) |  |  [optional]
-**state** | [**StateEnum**](#StateEnum) |  |  [optional]
-**userId** | **String** |  |  [optional]
+**ConnectionStatus** | **string** |  | [optional] 
+**FriendDiscoveryKey** | **string** |  | [optional] 
+**FriendName** | **string** |  | [optional] 
+**IsActive** | **bool** |  | [optional] 
+**IsBlockedByMe** | **bool** |  | [optional] 
+**IsBlockingMe** | **bool** |  | [optional] 
+**IsMuted** | **bool** |  | [optional] 
+**LastSeenAt** | **int** |  | [optional] 
+**MetaData** | **Object** |  | [optional] 
+**Nickname** | **string** |  | [optional] 
+**PlainProfileUrl** | **string** |  | [optional] 
+**PreferredLanguages** | **List&lt;string&gt;** |  | [optional] 
+**ProfileUrl** | **string** |  | [optional] 
+**RequireAuth** | **bool** |  | [optional] 
+**RestrictionInfo** | [**SendBirdRestrictionInfo**](SendBirdRestrictionInfo.md) |  | [optional] 
+**Role** | **string** |  | [optional] 
+**State** | **string** |  | [optional] 
+**UserId** | **string** |  | [optional] 
 
-
-
-## Enum: RoleEnum
-
-Name | Value
----- | -----
-NONE | &quot;none&quot;
-OPERATOR | &quot;operator&quot;
-
-
-
-## Enum: StateEnum
-
-Name | Value
----- | -----
-INVITED | &quot;invited&quot;
-JOINED | &quot;joined&quot;
-
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

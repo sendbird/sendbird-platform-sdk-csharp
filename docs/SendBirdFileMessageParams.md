@@ -1,47 +1,29 @@
 
-
-# SendBirdFileMessageParams
-
+# sendbird-platform-sdk.Model.SendBirdFileMessageParams
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**appleCriticalAlertOptions** | [**SendBirdAppleCriticalAlertOptions**](SendBirdAppleCriticalAlertOptions.md) |  |  [optional]
-**customType** | **String** |  |  [optional]
-**data** | **String** |  |  [optional]
-**file** | [**Blob**](Blob.md) |  |  [optional]
-**fileName** | **String** |  |  [optional]
-**fileSize** | **BigDecimal** |  |  [optional]
-**fileUrl** | **String** |  |  [optional]
-**isReplyToChannel** | **Boolean** |  |  [optional]
-**mentionType** | [**MentionTypeEnum**](#MentionTypeEnum) |  |  [optional]
-**mentionedUserIds** | **List&lt;String&gt;** |  |  [optional]
-**mentionedUsers** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  |  [optional]
-**metaArrayKeys** | **List&lt;String&gt;** |  |  [optional]
-**metaArrays** | [**List&lt;SendBirdMessageMetaArray&gt;**](SendBirdMessageMetaArray.md) |  |  [optional]
-**mimeType** | **String** |  |  [optional]
-**parentMessageId** | **BigDecimal** |  |  [optional]
-**pushNotificationDeliveryOption** | [**PushNotificationDeliveryOptionEnum**](#PushNotificationDeliveryOptionEnum) |  |  [optional]
-**thumbnailSizes** | [**List&lt;SendBirdThumbnailSize&gt;**](SendBirdThumbnailSize.md) |  |  [optional]
+**AppleCriticalAlertOptions** | [**SendBirdAppleCriticalAlertOptions**](SendBirdAppleCriticalAlertOptions.md) |  | [optional] 
+**CustomType** | **string** |  | [optional] 
+**Data** | **string** |  | [optional] 
+**File** | [**Blob**](Blob.md) |  | [optional] 
+**FileName** | **string** |  | [optional] 
+**FileSize** | **decimal** |  | [optional] 
+**FileUrl** | **string** |  | [optional] 
+**IsReplyToChannel** | **bool** |  | [optional] 
+**MentionType** | **string** |  | [optional] 
+**MentionedUserIds** | **List&lt;string&gt;** |  | [optional] 
+**MentionedUsers** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  | [optional] 
+**MetaArrayKeys** | **List&lt;string&gt;** |  | [optional] 
+**MetaArrays** | [**List&lt;SendBirdMessageMetaArray&gt;**](SendBirdMessageMetaArray.md) |  | [optional] 
+**MimeType** | **string** |  | [optional] 
+**ParentMessageId** | **decimal** |  | [optional] 
+**PushNotificationDeliveryOption** | **string** |  | [optional] 
+**ThumbnailSizes** | [**List&lt;SendBirdThumbnailSize&gt;**](SendBirdThumbnailSize.md) |  | [optional] 
 
-
-
-## Enum: MentionTypeEnum
-
-Name | Value
----- | -----
-CHANNEL | &quot;channel&quot;
-USERS | &quot;users&quot;
-
-
-
-## Enum: PushNotificationDeliveryOptionEnum
-
-Name | Value
----- | -----
-DEFAULT | &quot;default&quot;
-SUPPRESS | &quot;suppress&quot;
-
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

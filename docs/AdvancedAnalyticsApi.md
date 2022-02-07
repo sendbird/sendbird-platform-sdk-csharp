@@ -1,55 +1,63 @@
-# AdvancedAnalyticsApi
+# sendbird-platform-sdk.Api.AdvancedAnalyticsApi
 
 All URIs are relative to *https://api-APP_ID.sendbird.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**retrieveAdvancedAnalyticsMetrics**](AdvancedAnalyticsApi.md#retrieveAdvancedAnalyticsMetrics) | **GET** /v3/statistics/metric | Retrieve Advanced analytics metrics
+[**RetrieveAdvancedAnalyticsMetrics**](AdvancedAnalyticsApi.md#retrieveadvancedanalyticsmetrics) | **GET** /v3/statistics/metric | Retrieve Advanced analytics metrics
 
 
-<a name="retrieveAdvancedAnalyticsMetrics"></a>
-# **retrieveAdvancedAnalyticsMetrics**
-> InlineResponse20062 retrieveAdvancedAnalyticsMetrics(apiToken)
+
+## RetrieveAdvancedAnalyticsMetrics
+
+> InlineResponse20062 RetrieveAdvancedAnalyticsMetrics (string apiToken = null)
 
 Retrieve Advanced analytics metrics
 
-## Retrieve Advanced analytics metrics  Retrieves Advanced analytics metrics based on the specified parameters. You can retrieve either daily or monthly metrics using the time_dimension parameter.  &gt;__Note__: Daily metrics are calculated and updated every three hours, starting at 1 a.m. in UTC. Meanwhile, monthly metrics are calculated after the last day of the month.  https://sendbird.com/docs/chat/v3/platform-api/guides/advanced-analytics#2-retrieve-advanced-analytics-metrics ----------------------------
+## Retrieve Advanced analytics metrics  Retrieves Advanced analytics metrics based on the specified parameters. You can retrieve either daily or monthly metrics using the time_dimension parameter.  >__Note__: Daily metrics are calculated and updated every three hours, starting at 1 a.m. in UTC. Meanwhile, monthly metrics are calculated after the last day of the month.  https://sendbird.com/docs/chat/v3/platform-api/guides/advanced-analytics#2-retrieve-advanced-analytics-metrics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.AdvancedAnalyticsApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    AdvancedAnalyticsApi apiInstance = new AdvancedAnalyticsApi(defaultClient);
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    try {
-      InlineResponse20062 result = apiInstance.retrieveAdvancedAnalyticsMetrics(apiToken);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling AdvancedAnalyticsApi#retrieveAdvancedAnalyticsMetrics");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class RetrieveAdvancedAnalyticsMetricsExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new AdvancedAnalyticsApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+
+            try
+            {
+                // Retrieve Advanced analytics metrics
+                InlineResponse20062 result = apiInstance.RetrieveAdvancedAnalyticsMetrics(apiToken);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling AdvancedAnalyticsApi.RetrieveAdvancedAnalyticsMetrics: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **String**|  | [optional]
+ **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -61,11 +69,17 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 

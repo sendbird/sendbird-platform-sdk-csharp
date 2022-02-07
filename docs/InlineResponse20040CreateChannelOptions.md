@@ -1,17 +1,17 @@
 
-
-# InlineResponse20040CreateChannelOptions
-
+# sendbird-platform-sdk.Model.InlineResponse20040CreateChannelOptions
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**distinct** | **Boolean** |  |  [optional]
-**data** | **String** |  |  [optional]
-**name** | **String** |  |  [optional]
-**coverUrl** | **String** |  |  [optional]
-**customType** | **String** |  |  [optional]
+**Distinct** | **bool** |  | [optional] 
+**Data** | **string** |  | [optional] 
+**Name** | **string** |  | [optional] 
+**CoverUrl** | **string** |  | [optional] 
+**CustomType** | **string** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

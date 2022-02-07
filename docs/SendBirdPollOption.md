@@ -1,20 +1,20 @@
 
-
-# SendBirdPollOption
-
+# sendbird-platform-sdk.Model.SendBirdPollOption
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**createdAt** | **BigDecimal** |  |  [optional]
-**createdBy** | **String** |  |  [optional]
-**id** | **BigDecimal** |  |  [optional]
-**partialVoters** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  |  [optional]
-**pollId** | **BigDecimal** |  |  [optional]
-**text** | **String** |  |  [optional]
-**updatedAt** | **BigDecimal** |  |  [optional]
-**voteCount** | **BigDecimal** |  |  [optional]
+**CreatedAt** | **decimal** |  | [optional] 
+**CreatedBy** | **string** |  | [optional] 
+**Id** | **decimal** |  | [optional] 
+**PartialVoters** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  | [optional] 
+**PollId** | **decimal** |  | [optional] 
+**Text** | **string** |  | [optional] 
+**UpdatedAt** | **decimal** |  | [optional] 
+**VoteCount** | **decimal** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

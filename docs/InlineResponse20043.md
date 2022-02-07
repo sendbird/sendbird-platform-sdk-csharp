@@ -1,14 +1,14 @@
 
-
-# InlineResponse20043
-
+# sendbird-platform-sdk.Model.InlineResponse20043
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**openStatus** | [**List&lt;InlineResponse20043OpenStatus&gt;**](InlineResponse20043OpenStatus.md) |  |  [optional]
-**next** | **String** |  |  [optional]
+**OpenStatus** | [**List&lt;InlineResponse20043OpenStatus&gt;**](InlineResponse20043OpenStatus.md) |  | [optional] 
+**Next** | **string** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

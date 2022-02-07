@@ -1,21 +1,21 @@
 
-
-# SendBirdBaseChannel
-
+# sendbird-platform-sdk.Model.SendBirdBaseChannel
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**coverUrl** | **String** |  |  [optional]
-**createdAt** | **BigDecimal** |  |  [optional]
-**creator** | [**SendBirdUser**](SendBirdUser.md) |  |  [optional]
-**customType** | **String** |  |  [optional]
-**data** | **String** |  |  [optional]
-**isEphemeral** | **Boolean** |  |  [optional]
-**isFrozen** | **Boolean** |  |  [optional]
-**name** | **String** |  |  [optional]
-**url** | **String** |  |  [optional]
+**CoverUrl** | **string** |  | [optional] 
+**CreatedAt** | **decimal** |  | [optional] 
+**Creator** | [**SendBirdUser**](SendBirdUser.md) |  | [optional] 
+**CustomType** | **string** |  | [optional] 
+**Data** | **string** |  | [optional] 
+**IsEphemeral** | **bool** |  | [optional] 
+**IsFrozen** | **bool** |  | [optional] 
+**Name** | **string** |  | [optional] 
+**Url** | **string** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

@@ -1,20 +1,20 @@
 
-
-# InlineResponse20071ReportLogs
-
+# sendbird-platform-sdk.Model.InlineResponse20071ReportLogs
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**reportType** | **String** |  |  [optional]
-**reportCategory** | **String** |  |  [optional]
-**reportingUser** | [**SendBirdUser**](SendBirdUser.md) |  |  [optional]
-**offendingUser** | [**SendBirdUser**](SendBirdUser.md) |  |  [optional]
-**reportedMessage** | [**SendBirdMessageResponse**](SendBirdMessageResponse.md) |  |  [optional]
-**channel** | [**SendBirdChannelResponse**](SendBirdChannelResponse.md) |  |  [optional]
-**reportDescription** | **String** |  |  [optional]
-**createdAt** | **BigDecimal** |  |  [optional]
+**ReportType** | **string** |  | [optional] 
+**ReportCategory** | **string** |  | [optional] 
+**ReportingUser** | [**SendBirdUser**](SendBirdUser.md) |  | [optional] 
+**OffendingUser** | [**SendBirdUser**](SendBirdUser.md) |  | [optional] 
+**ReportedMessage** | [**SendBirdMessageResponse**](SendBirdMessageResponse.md) |  | [optional] 
+**Channel** | [**SendBirdChannelResponse**](SendBirdChannelResponse.md) |  | [optional] 
+**ReportDescription** | **string** |  | [optional] 
+**CreatedAt** | **decimal** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

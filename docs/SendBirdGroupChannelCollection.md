@@ -1,14 +1,14 @@
 
-
-# SendBirdGroupChannelCollection
-
+# sendbird-platform-sdk.Model.SendBirdGroupChannelCollection
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**channelList** | [**List&lt;SendBirdGroupChannel&gt;**](SendBirdGroupChannel.md) |  |  [optional]
-**hasMore** | **Boolean** |  |  [optional]
+**ChannelList** | [**List&lt;SendBirdGroupChannel&gt;**](SendBirdGroupChannel.md) |  | [optional] 
+**HasMore** | **bool** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

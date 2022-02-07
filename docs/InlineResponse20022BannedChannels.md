@@ -1,16 +1,16 @@
 
-
-# InlineResponse20022BannedChannels
-
+# sendbird-platform-sdk.Model.InlineResponse20022BannedChannels
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**startAt** | **BigDecimal** |  |  [optional]
-**endAt** | **BigDecimal** |  |  [optional]
-**description** | **String** |  |  [optional]
-**channel** | **SendBirdChannelResponse** |  |  [optional]
+**StartAt** | **decimal** |  | [optional] 
+**EndAt** | **decimal** |  | [optional] 
+**Description** | **string** |  | [optional] 
+**Channel** | [**SendBirdChannelResponse**](.md) |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

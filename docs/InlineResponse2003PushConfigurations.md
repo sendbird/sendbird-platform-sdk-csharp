@@ -1,22 +1,22 @@
 
-
-# InlineResponse2003PushConfigurations
-
+# sendbird-platform-sdk.Model.InlineResponse2003PushConfigurations
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** |  |  [optional]
-**pushType** | **String** |  |  [optional]
-**createdAt** | **BigDecimal** |  |  [optional]
-**apnsCerEnvType** | **String** |  |  [optional]
-**apnsExpiration** | **BigDecimal** |  |  [optional]
-**apnsName** | **String** |  |  [optional]
-**hasUnreadCountBadge** | **BigDecimal** |  |  [optional]
-**contentAvailable** | **Boolean** |  |  [optional]
-**mutableContent** | **Boolean** |  |  [optional]
-**pushSound** | **String** |  |  [optional]
+**Id** | **string** |  | [optional] 
+**PushType** | **string** |  | [optional] 
+**CreatedAt** | **decimal** |  | [optional] 
+**ApnsCerEnvType** | **string** |  | [optional] 
+**ApnsExpiration** | **decimal** |  | [optional] 
+**ApnsName** | **string** |  | [optional] 
+**HasUnreadCountBadge** | **decimal** |  | [optional] 
+**ContentAvailable** | **bool** |  | [optional] 
+**MutableContent** | **bool** |  | [optional] 
+**PushSound** | **string** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

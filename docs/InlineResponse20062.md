@@ -1,18 +1,18 @@
 
-
-# InlineResponse20062
-
+# sendbird-platform-sdk.Model.InlineResponse20062
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**segments** | **String** |  |  [optional]
-**date** | **String** |  |  [optional]
-**value** | **BigDecimal** |  |  [optional]
-**channelType** | **String** |  |  [optional]
-**customChannelType** | **String** |  |  [optional]
-**customMessageType** | **String** |  |  [optional]
+**Segments** | **string** |  | [optional] 
+**Date** | **string** |  | [optional] 
+**Value** | **decimal** |  | [optional] 
+**ChannelType** | **string** |  | [optional] 
+**CustomChannelType** | **string** |  | [optional] 
+**CustomMessageType** | **string** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

@@ -1,14 +1,14 @@
 
-
-# InlineResponse20016
-
+# sendbird-platform-sdk.Model.InlineResponse20016
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**users** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  |  [optional]
-**next** | **String** |  |  [optional]
+**Users** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  | [optional] 
+**Next** | **string** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

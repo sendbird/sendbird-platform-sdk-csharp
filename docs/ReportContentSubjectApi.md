@@ -1,70 +1,78 @@
-# ReportContentSubjectApi
+# sendbird-platform-sdk.Api.ReportContentSubjectApi
 
 All URIs are relative to *https://api-APP_ID.sendbird.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**listReports**](ReportContentSubjectApi.md#listReports) | **GET** /v3/report | List reports
-[**listReportsOnChannelByUrl**](ReportContentSubjectApi.md#listReportsOnChannelByUrl) | **GET** /v3/report/{channel_type}/{channel_url} | List reports on a channel
-[**listReportsOnMessageById**](ReportContentSubjectApi.md#listReportsOnMessageById) | **GET** /v3/report/{channel_type}/{channel_url}/messages/{message_id} | List reports on a message
-[**listReportsOnUserById**](ReportContentSubjectApi.md#listReportsOnUserById) | **GET** /v3/report/users/{offending_user_id} | List reports on a user
-[**reportChannelByUrl**](ReportContentSubjectApi.md#reportChannelByUrl) | **POST** /v3/report/{channel_type}/{channel_url} | Report a channel
-[**reportMessageById**](ReportContentSubjectApi.md#reportMessageById) | **POST** /v3/report/{channel_type}/{channel_url}/messages/{message_id} | Report a message
-[**reportUserById**](ReportContentSubjectApi.md#reportUserById) | **POST** /v3/report/users/{offending_user_id} | Report a user
-[**viewModeratedMessageById**](ReportContentSubjectApi.md#viewModeratedMessageById) | **GET** /v3/report/{channel_type}/{channel_url}/profanity_messages/{message_id} | View a moderated message
+[**ListReports**](ReportContentSubjectApi.md#listreports) | **GET** /v3/report | List reports
+[**ListReportsOnChannelByUrl**](ReportContentSubjectApi.md#listreportsonchannelbyurl) | **GET** /v3/report/{channel_type}/{channel_url} | List reports on a channel
+[**ListReportsOnMessageById**](ReportContentSubjectApi.md#listreportsonmessagebyid) | **GET** /v3/report/{channel_type}/{channel_url}/messages/{message_id} | List reports on a message
+[**ListReportsOnUserById**](ReportContentSubjectApi.md#listreportsonuserbyid) | **GET** /v3/report/users/{offending_user_id} | List reports on a user
+[**ReportChannelByUrl**](ReportContentSubjectApi.md#reportchannelbyurl) | **POST** /v3/report/{channel_type}/{channel_url} | Report a channel
+[**ReportMessageById**](ReportContentSubjectApi.md#reportmessagebyid) | **POST** /v3/report/{channel_type}/{channel_url}/messages/{message_id} | Report a message
+[**ReportUserById**](ReportContentSubjectApi.md#reportuserbyid) | **POST** /v3/report/users/{offending_user_id} | Report a user
+[**ViewModeratedMessageById**](ReportContentSubjectApi.md#viewmoderatedmessagebyid) | **GET** /v3/report/{channel_type}/{channel_url}/profanity_messages/{message_id} | View a moderated message
 
 
-<a name="listReports"></a>
-# **listReports**
-> InlineResponse20070 listReports(apiToken, token, limit, startTs, endTs)
+
+## ListReports
+
+> InlineResponse20070 ListReports (string apiToken = null, string token = null, int? limit = null, int? startTs = null, int? endTs = null)
 
 List reports
 
-## List reports  Retrieves a list of reports within an application regardless of object types.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports ----------------------------
+## List reports  Retrieves a list of reports within an application regardless of object types.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.ReportContentSubjectApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    ReportContentSubjectApi apiInstance = new ReportContentSubjectApi(defaultClient);
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    String token = "token_example"; // String | 
-    Integer limit = 56; // Integer | 
-    Integer startTs = 56; // Integer | 
-    Integer endTs = 56; // Integer | 
-    try {
-      InlineResponse20070 result = apiInstance.listReports(apiToken, token, limit, startTs, endTs);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling ReportContentSubjectApi#listReports");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class ListReportsExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new ReportContentSubjectApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var token = token_example;  // string |  (optional) 
+            var limit = 56;  // int? |  (optional) 
+            var startTs = 56;  // int? |  (optional) 
+            var endTs = 56;  // int? |  (optional) 
+
+            try
+            {
+                // List reports
+                InlineResponse20070 result = apiInstance.ListReports(apiToken, token, limit, startTs, endTs);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling ReportContentSubjectApi.ListReports: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **String**|  | [optional]
- **token** | **String**|  | [optional]
- **limit** | **Integer**|  | [optional]
- **startTs** | **Integer**|  | [optional]
- **endTs** | **Integer**|  | [optional]
+ **apiToken** | **string**|  | [optional] 
+ **token** | **string**|  | [optional] 
+ **limit** | **int?**|  | [optional] 
+ **startTs** | **int?**|  | [optional] 
+ **endTs** | **int?**|  | [optional] 
 
 ### Return type
 
@@ -76,65 +84,79 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="listReportsOnChannelByUrl"></a>
-# **listReportsOnChannelByUrl**
-> InlineResponse20071 listReportsOnChannelByUrl(channelType, channelUrl, apiToken, token, limit)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ListReportsOnChannelByUrl
+
+> InlineResponse20071 ListReportsOnChannelByUrl (string channelType, string channelUrl, string apiToken = null, string token = null, int? limit = null)
 
 List reports on a channel
 
-## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel ----------------------------   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
+## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.ReportContentSubjectApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    ReportContentSubjectApi apiInstance = new ReportContentSubjectApi(defaultClient);
-    String channelType = "channelType_example"; // String | 
-    String channelUrl = "channelUrl_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    String token = "token_example"; // String | 
-    Integer limit = 56; // Integer | 
-    try {
-      InlineResponse20071 result = apiInstance.listReportsOnChannelByUrl(channelType, channelUrl, apiToken, token, limit);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling ReportContentSubjectApi#listReportsOnChannelByUrl");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class ListReportsOnChannelByUrlExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new ReportContentSubjectApi(Configuration.Default);
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var token = token_example;  // string |  (optional) 
+            var limit = 56;  // int? |  (optional) 
+
+            try
+            {
+                // List reports on a channel
+                InlineResponse20071 result = apiInstance.ListReportsOnChannelByUrl(channelType, channelUrl, apiToken, token, limit);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling ReportContentSubjectApi.ListReportsOnChannelByUrl: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelType** | **String**|  |
- **channelUrl** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **token** | **String**|  | [optional]
- **limit** | **Integer**|  | [optional]
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **token** | **string**|  | [optional] 
+ **limit** | **int?**|  | [optional] 
 
 ### Return type
 
@@ -146,67 +168,81 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="listReportsOnMessageById"></a>
-# **listReportsOnMessageById**
-> InlineResponse20071 listReportsOnMessageById(channelType, channelUrl, messageId, apiToken, token, limit)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ListReportsOnMessageById
+
+> InlineResponse20071 ListReportsOnMessageById (string channelType, string channelUrl, string messageId, string apiToken = null, string token = null, int? limit = null)
 
 List reports on a message
 
-## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message ----------------------------   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where the reported message is in.  &#x60;message_id&#x60;      Type: string      Description: Specifies the unique ID of the reported message.
+## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel where the reported message is in.  `message_id`      Type: string      Description: Specifies the unique ID of the reported message.
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.ReportContentSubjectApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    ReportContentSubjectApi apiInstance = new ReportContentSubjectApi(defaultClient);
-    String channelType = "channelType_example"; // String | 
-    String channelUrl = "channelUrl_example"; // String | 
-    String messageId = "messageId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    String token = "token_example"; // String | 
-    Integer limit = 56; // Integer | 
-    try {
-      InlineResponse20071 result = apiInstance.listReportsOnMessageById(channelType, channelUrl, messageId, apiToken, token, limit);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling ReportContentSubjectApi#listReportsOnMessageById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class ListReportsOnMessageByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new ReportContentSubjectApi(Configuration.Default);
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var messageId = messageId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var token = token_example;  // string |  (optional) 
+            var limit = 56;  // int? |  (optional) 
+
+            try
+            {
+                // List reports on a message
+                InlineResponse20071 result = apiInstance.ListReportsOnMessageById(channelType, channelUrl, messageId, apiToken, token, limit);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling ReportContentSubjectApi.ListReportsOnMessageById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelType** | **String**|  |
- **channelUrl** | **String**|  |
- **messageId** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **token** | **String**|  | [optional]
- **limit** | **Integer**|  | [optional]
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **messageId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **token** | **string**|  | [optional] 
+ **limit** | **int?**|  | [optional] 
 
 ### Return type
 
@@ -218,63 +254,77 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="listReportsOnUserById"></a>
-# **listReportsOnUserById**
-> InlineResponse20071 listReportsOnUserById(offendingUserId, apiToken, token, limit)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ListReportsOnUserById
+
+> InlineResponse20071 ListReportsOnUserById (string offendingUserId, string apiToken = null, string token = null, int? limit = null)
 
 List reports on a user
 
-## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user ----------------------------   &#x60;offending_user_id&#x60;      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
+## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `offending_user_id`      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.ReportContentSubjectApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    ReportContentSubjectApi apiInstance = new ReportContentSubjectApi(defaultClient);
-    String offendingUserId = "offendingUserId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    String token = "token_example"; // String | 
-    Integer limit = 56; // Integer | 
-    try {
-      InlineResponse20071 result = apiInstance.listReportsOnUserById(offendingUserId, apiToken, token, limit);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling ReportContentSubjectApi#listReportsOnUserById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class ListReportsOnUserByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new ReportContentSubjectApi(Configuration.Default);
+            var offendingUserId = offendingUserId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var token = token_example;  // string |  (optional) 
+            var limit = 56;  // int? |  (optional) 
+
+            try
+            {
+                // List reports on a user
+                InlineResponse20071 result = apiInstance.ListReportsOnUserById(offendingUserId, apiToken, token, limit);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling ReportContentSubjectApi.ListReportsOnUserById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **offendingUserId** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **token** | **String**|  | [optional]
- **limit** | **Integer**|  | [optional]
+ **offendingUserId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **token** | **string**|  | [optional] 
+ **limit** | **int?**|  | [optional] 
 
 ### Return type
 
@@ -286,63 +336,77 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="reportChannelByUrl"></a>
-# **reportChannelByUrl**
-> InlineResponse20071ReportLogs reportChannelByUrl(channelType, channelUrl, apiToken, reportChannelByUrlData)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ReportChannelByUrl
+
+> InlineResponse20071ReportLogs ReportChannelByUrl (string channelType, string channelUrl, string apiToken = null, ReportChannelByUrlData reportChannelByUrlData = null)
 
 Report a channel
 
-## Report a channel  Reports a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-channel ----------------------------
+## Report a channel  Reports a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.ReportContentSubjectApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    ReportContentSubjectApi apiInstance = new ReportContentSubjectApi(defaultClient);
-    String channelType = "channelType_example"; // String | 
-    String channelUrl = "channelUrl_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    ReportChannelByUrlData reportChannelByUrlData = new ReportChannelByUrlData(); // ReportChannelByUrlData | 
-    try {
-      InlineResponse20071ReportLogs result = apiInstance.reportChannelByUrl(channelType, channelUrl, apiToken, reportChannelByUrlData);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling ReportContentSubjectApi#reportChannelByUrl");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class ReportChannelByUrlExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new ReportContentSubjectApi(Configuration.Default);
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var reportChannelByUrlData = new ReportChannelByUrlData(); // ReportChannelByUrlData |  (optional) 
+
+            try
+            {
+                // Report a channel
+                InlineResponse20071ReportLogs result = apiInstance.ReportChannelByUrl(channelType, channelUrl, apiToken, reportChannelByUrlData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling ReportContentSubjectApi.ReportChannelByUrl: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelType** | **String**|  |
- **channelUrl** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **reportChannelByUrlData** | [**ReportChannelByUrlData**](ReportChannelByUrlData.md)|  | [optional]
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **reportChannelByUrlData** | [**ReportChannelByUrlData**](ReportChannelByUrlData.md)|  | [optional] 
 
 ### Return type
 
@@ -354,65 +418,79 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="reportMessageById"></a>
-# **reportMessageById**
-> InlineResponse20071ReportLogs reportMessageById(channelType, channelUrl, messageId, apiToken, reportMessageByIdData)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ReportMessageById
+
+> InlineResponse20071ReportLogs ReportMessageById (string channelType, string channelUrl, string messageId, string apiToken = null, ReportMessageByIdData reportMessageByIdData = null)
 
 Report a message
 
-## Report a message  Reports a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-message ----------------------------
+## Report a message  Reports a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.ReportContentSubjectApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    ReportContentSubjectApi apiInstance = new ReportContentSubjectApi(defaultClient);
-    String channelType = "channelType_example"; // String | 
-    String channelUrl = "channelUrl_example"; // String | 
-    String messageId = "messageId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    ReportMessageByIdData reportMessageByIdData = new ReportMessageByIdData(); // ReportMessageByIdData | 
-    try {
-      InlineResponse20071ReportLogs result = apiInstance.reportMessageById(channelType, channelUrl, messageId, apiToken, reportMessageByIdData);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling ReportContentSubjectApi#reportMessageById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class ReportMessageByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new ReportContentSubjectApi(Configuration.Default);
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var messageId = messageId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var reportMessageByIdData = new ReportMessageByIdData(); // ReportMessageByIdData |  (optional) 
+
+            try
+            {
+                // Report a message
+                InlineResponse20071ReportLogs result = apiInstance.ReportMessageById(channelType, channelUrl, messageId, apiToken, reportMessageByIdData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling ReportContentSubjectApi.ReportMessageById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelType** | **String**|  |
- **channelUrl** | **String**|  |
- **messageId** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **reportMessageByIdData** | [**ReportMessageByIdData**](ReportMessageByIdData.md)|  | [optional]
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **messageId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **reportMessageByIdData** | [**ReportMessageByIdData**](ReportMessageByIdData.md)|  | [optional] 
 
 ### Return type
 
@@ -424,61 +502,75 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="reportUserById"></a>
-# **reportUserById**
-> InlineResponse20071ReportLogs reportUserById(offendingUserId, apiToken, reportUserByIdData)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ReportUserById
+
+> InlineResponse20071ReportLogs ReportUserById (string offendingUserId, string apiToken = null, ReportUserByIdData reportUserByIdData = null)
 
 Report a user
 
-## Report a user  Reports a user who sends an offensive message in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-user ----------------------------
+## Report a user  Reports a user who sends an offensive message in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.ReportContentSubjectApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    ReportContentSubjectApi apiInstance = new ReportContentSubjectApi(defaultClient);
-    String offendingUserId = "offendingUserId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    ReportUserByIdData reportUserByIdData = new ReportUserByIdData(); // ReportUserByIdData | 
-    try {
-      InlineResponse20071ReportLogs result = apiInstance.reportUserById(offendingUserId, apiToken, reportUserByIdData);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling ReportContentSubjectApi#reportUserById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class ReportUserByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new ReportContentSubjectApi(Configuration.Default);
+            var offendingUserId = offendingUserId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var reportUserByIdData = new ReportUserByIdData(); // ReportUserByIdData |  (optional) 
+
+            try
+            {
+                // Report a user
+                InlineResponse20071ReportLogs result = apiInstance.ReportUserById(offendingUserId, apiToken, reportUserByIdData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling ReportContentSubjectApi.ReportUserById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **offendingUserId** | **String**|  |
- **apiToken** | **String**|  | [optional]
- **reportUserByIdData** | [**ReportUserByIdData**](ReportUserByIdData.md)|  | [optional]
+ **offendingUserId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **reportUserByIdData** | [**ReportUserByIdData**](ReportUserByIdData.md)|  | [optional] 
 
 ### Return type
 
@@ -490,67 +582,81 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
 
-<a name="viewModeratedMessageById"></a>
-# **viewModeratedMessageById**
-> Map&lt;String, String&gt; viewModeratedMessageById(channelType, channelUrl, messageId, apiToken)
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ViewModeratedMessageById
+
+> Dictionary&lt;string, string&gt; ViewModeratedMessageById (string channelType, string channelUrl, string messageId, string apiToken = null)
 
 View a moderated message
 
-## View a moderated message  Retrieves information on a message that has been moderated by the [profanity filter](https://sendbird.com/docs/chat/v3/platform-api/guides/filter-and-moderation#2-profanity-filter).  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-view-a-moderated-message ----------------------------
+## View a moderated message  Retrieves information on a message that has been moderated by the [profanity filter](https://sendbird.com/docs/chat/v3/platform-api/guides/filter-and-moderation#2-profanity-filter).  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-view-a-moderated-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 ### Example
-```java
-// Import classes:
-import org.sendbird.client.ApiClient;
-import org.sendbird.client.ApiException;
-import org.sendbird.client.Configuration;
-import org.sendbird.client.models.*;
-import org.sendbird.client.api.ReportContentSubjectApi;
 
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api-APP_ID.sendbird.com");
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird-platform-sdk.Api;
+using sendbird-platform-sdk.Client;
+using sendbird-platform-sdk.Model;
 
-    ReportContentSubjectApi apiInstance = new ReportContentSubjectApi(defaultClient);
-    String channelType = "channelType_example"; // String | 
-    String channelUrl = "channelUrl_example"; // String | 
-    String messageId = "messageId_example"; // String | 
-    String apiToken = "{{API_TOKEN}}"; // String | 
-    try {
-      Map<String, String> result = apiInstance.viewModeratedMessageById(channelType, channelUrl, messageId, apiToken);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling ReportContentSubjectApi#viewModeratedMessageById");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
+namespace Example
+{
+    public class ViewModeratedMessageByIdExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new ReportContentSubjectApi(Configuration.Default);
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var messageId = messageId_example;  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+
+            try
+            {
+                // View a moderated message
+                Dictionary<string, string> result = apiInstance.ViewModeratedMessageById(channelType, channelUrl, messageId, apiToken);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling ReportContentSubjectApi.ViewModeratedMessageById: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
     }
-  }
 }
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **channelType** | **String**|  |
- **channelUrl** | **String**|  |
- **messageId** | **String**|  |
- **apiToken** | **String**|  | [optional]
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **messageId** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
-**Map&lt;String, String&gt;**
+**Dictionary<string, string>**
 
 ### Authorization
 
@@ -558,11 +664,17 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Successful response |  -  |
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 

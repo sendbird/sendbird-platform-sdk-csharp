@@ -1,15 +1,15 @@
 
-
-# InlineResponse20024
-
+# sendbird-platform-sdk.Model.InlineResponse20024
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**tokens** | **List&lt;String&gt;** |  |  [optional]
-**type** | **String** |  |  [optional]
-**user** | [**SendBirdUser**](SendBirdUser.md) |  |  [optional]
+**Tokens** | **List&lt;string&gt;** |  | [optional] 
+**Type** | **string** |  | [optional] 
+**User** | [**SendBirdUser**](SendBirdUser.md) |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

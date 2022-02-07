@@ -1,16 +1,16 @@
 
-
-# InlineResponse20067Webhook
-
+# sendbird-platform-sdk.Model.InlineResponse20067Webhook
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**enabled** | **Boolean** |  |  [optional]
-**url** | **String** |  |  [optional]
-**includeMembers** | **Boolean** |  |  [optional]
-**enabledEvents** | **List&lt;String&gt;** |  |  [optional]
+**Enabled** | **bool** |  | [optional] 
+**Url** | **string** |  | [optional] 
+**IncludeMembers** | **bool** |  | [optional] 
+**EnabledEvents** | **List&lt;string&gt;** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 

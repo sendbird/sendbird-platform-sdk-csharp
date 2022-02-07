@@ -1,14 +1,14 @@
 
-
-# InlineResponse20071
-
+# sendbird-platform-sdk.Model.InlineResponse20071
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**reportLogs** | [**List&lt;InlineResponse20071ReportLogs&gt;**](InlineResponse20071ReportLogs.md) |  |  [optional]
-**next** | **String** |  |  [optional]
+**ReportLogs** | [**List&lt;InlineResponse20071ReportLogs&gt;**](InlineResponse20071ReportLogs.md) |  | [optional] 
+**Next** | **string** |  | [optional] 
 
-
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
 
