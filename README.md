@@ -1,4 +1,4 @@
-# sendbird-platform-sdk - the C# library for the Sendbird Platform SDK
+# sendbird_platform_sdk - the C# library for the Sendbird Platform SDK
 
 Sendbird Platform API Javascript SDK
 
@@ -43,9 +43,9 @@ Run the following command to generate the DLL
 Then include the DLL (under the `bin` folder) in the C# project, and use the namespaces:
 
 ```csharp
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 ```
 
@@ -57,7 +57,7 @@ A `.nuspec` is included with the project. You can follow the Nuget quickstart to
 This `.nuspec` uses placeholders from the `.csproj`, so build the `.csproj` directly:
 
 ```
-nuget pack -Build -OutputDirectory out sendbird-platform-sdk.csproj
+nuget pack -Build -OutputDirectory out sendbird_platform_sdk.csproj
 ```
 
 Then, publish to a [local feed](https://docs.microsoft.com/en-us/nuget/hosting-packages/local-feeds) or [other host](https://docs.microsoft.com/en-us/nuget/hosting-packages/overview) and consume the new package via Nuget as usual.
@@ -68,9 +68,9 @@ Then, publish to a [local feed](https://docs.microsoft.com/en-us/nuget/hosting-p
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -456,7 +456,6 @@ Class | Method | HTTP request | Description
  - [Model.LeaveMyGroupChannelsData](docs/LeaveMyGroupChannelsData.md)
  - [Model.MarkAllMessagesAsReadData](docs/MarkAllMessagesAsReadData.md)
  - [Model.MuteInChannelsWithCustomChannelTypesData](docs/MuteInChannelsWithCustomChannelTypesData.md)
- - [Model.Object](docs/Object.md)
  - [Model.OcBanUserData](docs/OcBanUserData.md)
  - [Model.OcCreateChannelData](docs/OcCreateChannelData.md)
  - [Model.OcFreezeChannelData](docs/OcFreezeChannelData.md)
@@ -470,6 +469,7 @@ Class | Method | HTTP request | Description
  - [Model.ReportChannelByUrlData](docs/ReportChannelByUrlData.md)
  - [Model.ReportMessageByIdData](docs/ReportMessageByIdData.md)
  - [Model.ReportUserByIdData](docs/ReportUserByIdData.md)
+ - [Model.SBObject](docs/SBObject.md)
  - [Model.ScheduleAnnouncementData](docs/ScheduleAnnouncementData.md)
  - [Model.SendBirdAdditionalProperties](docs/SendBirdAdditionalProperties.md)
  - [Model.SendBirdAdminMessage](docs/SendBirdAdminMessage.md)
@@ -497,7 +497,7 @@ Class | Method | HTTP request | Description
  - [Model.SendBirdRestrictionInfo](docs/SendBirdRestrictionInfo.md)
  - [Model.SendBirdSender](docs/SendBirdSender.md)
  - [Model.SendBirdThreadInfo](docs/SendBirdThreadInfo.md)
- - [Model.SendBirdThumbnailObject](docs/SendBirdThumbnailObject.md)
+ - [Model.SendBirdThumbnailSBObject](docs/SendBirdThumbnailSBObject.md)
  - [Model.SendBirdThumbnailSize](docs/SendBirdThumbnailSize.md)
  - [Model.SendBirdUser](docs/SendBirdUser.md)
  - [Model.SendBirdUserMessageParams](docs/SendBirdUserMessageParams.md)

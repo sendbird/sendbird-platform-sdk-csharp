@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.InlineResponse20047OgTag
+# sendbird_platform_sdk.Model.InlineResponse20047OgTag
 
 ## Properties
 

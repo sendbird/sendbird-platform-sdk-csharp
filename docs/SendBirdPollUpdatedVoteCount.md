@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdPollUpdatedVoteCount
+# sendbird_platform_sdk.Model.SendBirdPollUpdatedVoteCount
 
 ## Properties
 

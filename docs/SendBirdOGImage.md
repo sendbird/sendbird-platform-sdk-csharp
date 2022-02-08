@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdOGImage
+# sendbird_platform_sdk.Model.SendBirdOGImage
 
 ## Properties
 

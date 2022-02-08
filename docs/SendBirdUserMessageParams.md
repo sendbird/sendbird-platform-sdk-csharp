@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdUserMessageParams
+# sendbird_platform_sdk.Model.SendBirdUserMessageParams
 
 ## Properties
 

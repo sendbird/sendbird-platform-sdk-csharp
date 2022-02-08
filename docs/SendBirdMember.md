@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdMember
+# sendbird_platform_sdk.Model.SendBirdMember
 
 ## Properties
 
@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **IsBlockingMe** | **bool** |  | [optional] 
 **IsMuted** | **bool** |  | [optional] 
 **LastSeenAt** | **int** |  | [optional] 
-**MetaData** | **Object** |  | [optional] 
+**MetaData** | [**SBObject**](SBObject.md) |  | [optional] 
 **Nickname** | **string** |  | [optional] 
 **PlainProfileUrl** | **string** |  | [optional] 
 **PreferredLanguages** | **List&lt;string&gt;** |  | [optional] 

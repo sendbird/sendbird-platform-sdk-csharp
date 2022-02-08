@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdBaseChannel
+# sendbird_platform_sdk.Model.SendBirdBaseChannel
 
 ## Properties
 

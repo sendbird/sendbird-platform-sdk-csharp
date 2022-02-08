@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.ReportMessageByIdData
+# sendbird_platform_sdk.Model.ReportMessageByIdData
 
 ## Properties
 

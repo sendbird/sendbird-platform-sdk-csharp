@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.UpdateChannelMetacounterData
+# sendbird_platform_sdk.Model.UpdateChannelMetacounterData
 
 ## Properties
 

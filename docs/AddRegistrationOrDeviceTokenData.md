@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.AddRegistrationOrDeviceTokenData
+# sendbird_platform_sdk.Model.AddRegistrationOrDeviceTokenData
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.ChooseWhichEventsToSubscribeToData
+# sendbird_platform_sdk.Model.ChooseWhichEventsToSubscribeToData
 
 ## Properties
 

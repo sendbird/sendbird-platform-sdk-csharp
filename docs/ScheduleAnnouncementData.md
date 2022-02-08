@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.ScheduleAnnouncementData
+# sendbird_platform_sdk.Model.ScheduleAnnouncementData
 
 ## Properties
 

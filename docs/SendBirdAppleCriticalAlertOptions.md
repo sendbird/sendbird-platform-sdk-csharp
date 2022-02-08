@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdAppleCriticalAlertOptions
+# sendbird_platform_sdk.Model.SendBirdAppleCriticalAlertOptions
 
 ## Properties
 

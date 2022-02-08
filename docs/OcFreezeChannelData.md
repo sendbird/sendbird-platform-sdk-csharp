@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.OcFreezeChannelData
+# sendbird_platform_sdk.Model.OcFreezeChannelData
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.UpdatePushPreferencesForChannelByUrlData
+# sendbird_platform_sdk.Model.UpdatePushPreferencesForChannelByUrlData
 
 ## Properties
 

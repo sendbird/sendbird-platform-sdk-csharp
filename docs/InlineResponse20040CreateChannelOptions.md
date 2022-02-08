@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.InlineResponse20040CreateChannelOptions
+# sendbird_platform_sdk.Model.InlineResponse20040CreateChannelOptions
 
 ## Properties
 

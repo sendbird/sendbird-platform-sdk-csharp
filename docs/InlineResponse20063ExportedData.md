@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.InlineResponse20063ExportedData
+# sendbird_platform_sdk.Model.InlineResponse20063ExportedData
 
 ## Properties
 

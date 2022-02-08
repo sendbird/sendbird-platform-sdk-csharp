@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.InlineResponse20056EmojiCategories
+# sendbird_platform_sdk.Model.InlineResponse20056EmojiCategories
 
 ## Properties
 

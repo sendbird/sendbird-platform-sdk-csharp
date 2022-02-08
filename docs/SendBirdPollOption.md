@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdPollOption
+# sendbird_platform_sdk.Model.SendBirdPollOption
 
 ## Properties
 

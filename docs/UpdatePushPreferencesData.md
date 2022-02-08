@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.UpdatePushPreferencesData
+# sendbird_platform_sdk.Model.UpdatePushPreferencesData
 
 ## Properties
 

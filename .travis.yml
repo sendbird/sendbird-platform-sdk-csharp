@@ -4,6 +4,6 @@
 language: csharp
 mono:
   - latest
-solution: sendbird-platform-sdk.sln
+solution: sendbird_platform_sdk.sln
 script:
   - /bin/sh ./mono_nunit_test.sh

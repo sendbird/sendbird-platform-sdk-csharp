@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.GcResetChatHistoryData
+# sendbird_platform_sdk.Model.GcResetChatHistoryData
 
 ## Properties
 

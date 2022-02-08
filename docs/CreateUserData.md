@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.CreateUserData
+# sendbird_platform_sdk.Model.CreateUserData
 
 ## Properties
 

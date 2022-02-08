@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.File
+# sendbird_platform_sdk.Model.File
 
 ## Properties
 

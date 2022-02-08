@@ -1,4 +1,4 @@
-# sendbird-platform-sdk.Api.AnnouncementsApi
+# sendbird_platform_sdk.Api.AnnouncementsApi
 
 All URIs are relative to *https://api-APP_ID.sendbird.com*
 
@@ -31,9 +31,9 @@ Get detailed open rate of an announcement
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -109,9 +109,9 @@ Get detailed open rate of an announcement group
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -187,9 +187,9 @@ Get detailed open status of an announcement
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -275,9 +275,9 @@ Get statistics - weekly
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -351,9 +351,9 @@ Get statistics - daily
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -441,9 +441,9 @@ Get statistics - monthly
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -517,9 +517,9 @@ List announcement groups
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -597,9 +597,9 @@ List announcements
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -683,9 +683,9 @@ Schedule an announcement
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -761,9 +761,9 @@ Update an announcement
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -841,9 +841,9 @@ View an announcement
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {

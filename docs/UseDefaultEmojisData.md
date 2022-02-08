@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.UseDefaultEmojisData
+# sendbird_platform_sdk.Model.UseDefaultEmojisData
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.UpdateUserByIdData
+# sendbird_platform_sdk.Model.UpdateUserByIdData
 
 ## Properties
 

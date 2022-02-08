@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.Blob
+# sendbird_platform_sdk.Model.Blob
 
 ## Properties
 

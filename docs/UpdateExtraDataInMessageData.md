@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.UpdateExtraDataInMessageData
+# sendbird_platform_sdk.Model.UpdateExtraDataInMessageData
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdGroupChannelCollection
+# sendbird_platform_sdk.Model.SendBirdGroupChannelCollection
 
 ## Properties
 

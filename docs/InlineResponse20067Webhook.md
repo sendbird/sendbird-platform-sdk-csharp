@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.InlineResponse20067Webhook
+# sendbird_platform_sdk.Model.InlineResponse20067Webhook
 
 ## Properties
 

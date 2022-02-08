@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.UpdateChannelInvitationPreferenceData
+# sendbird_platform_sdk.Model.UpdateChannelInvitationPreferenceData
 
 ## Properties
 

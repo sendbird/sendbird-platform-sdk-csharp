@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.GcMarkAllMessagesAsDeliveredData
+# sendbird_platform_sdk.Model.GcMarkAllMessagesAsDeliveredData
 
 ## Properties
 

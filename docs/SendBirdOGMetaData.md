@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdOGMetaData
+# sendbird_platform_sdk.Model.SendBirdOGMetaData
 
 ## Properties
 

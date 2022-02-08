@@ -1,4 +1,4 @@
-# sendbird-platform-sdk.Api.UserChannelMetadataApi
+# sendbird_platform_sdk.Api.UserChannelMetadataApi
 
 All URIs are relative to *https://api-APP_ID.sendbird.com*
 
@@ -41,9 +41,9 @@ Create a channel metacounter
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -123,9 +123,9 @@ Create a channel metadata
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -205,9 +205,9 @@ Create a user metadata
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -285,9 +285,9 @@ Delete a channel metacounter - When deleting all items of a channel metacounter
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -364,9 +364,9 @@ Delete a channel metacounter - When deleting a specific item of a channel metaco
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -445,9 +445,9 @@ Delete a channel metadata - When deleting all items of a channel metadata
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -526,9 +526,9 @@ Delete a channel metadata - When deleting a specific item of a channel metadata 
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -607,9 +607,9 @@ Delete a user metadata - When deleting all items of a user metadata
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -686,9 +686,9 @@ Delete a user metadata - When deleting a specific item of a user metadata by its
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -765,9 +765,9 @@ Update a channel metacounter - When updating existing items of a channel metacou
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -847,9 +847,9 @@ Update a channel metacounter - When updating a specific item of a channel metaco
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -931,9 +931,9 @@ Update a channel metadata - When updating existing items of a channel metadata b
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1013,9 +1013,9 @@ Update a channel metadata - When updating a specific item of a channel metadata 
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1097,9 +1097,9 @@ Update a user metadata - When updating existing items of a user metadata by thei
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1177,9 +1177,9 @@ Update a user metadata - When updating a specific item of a user metadata by its
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1259,9 +1259,9 @@ View a channel metacounter - When retrieving all items of a channel metacounter
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1343,9 +1343,9 @@ View a channel metacounter - When retrieving a specific item of a channel metaco
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1425,9 +1425,9 @@ View a channel metadata - When retrieving all items of a channel metadata
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1509,9 +1509,9 @@ View a channel metadata - When retrieving a specific item of a channel metadata 
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1591,9 +1591,9 @@ View a user metadata - When retrieving all items of a user metadata
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1673,9 +1673,9 @@ View a user metadata - When retrieving a specific item of a user metadata by its
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {

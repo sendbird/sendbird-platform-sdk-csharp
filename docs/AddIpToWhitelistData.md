@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.AddIpToWhitelistData
+# sendbird_platform_sdk.Model.AddIpToWhitelistData
 
 ## Properties
 

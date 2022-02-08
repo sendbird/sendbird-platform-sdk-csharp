@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdUser
+# sendbird_platform_sdk.Model.SendBirdUser
 
 ## Properties
 
@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **FriendName** | **string** |  | [optional] 
 **IsActive** | **bool** |  | [optional] 
 **LastSeenAt** | **int** |  | [optional] 
-**MetaData** | **Object** |  | [optional] 
+**MetaData** | [**SBObject**](SBObject.md) |  | [optional] 
 **Nickname** | **string** |  | [optional] 
 **PlainProfileUrl** | **string** |  | [optional] 
 **PreferredLanguages** | **List&lt;string&gt;** |  | [optional] 

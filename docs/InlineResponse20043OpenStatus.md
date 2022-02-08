@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.InlineResponse20043OpenStatus
+# sendbird_platform_sdk.Model.InlineResponse20043OpenStatus
 
 ## Properties
 

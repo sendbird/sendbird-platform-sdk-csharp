@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.JoinChannelsData
+# sendbird_platform_sdk.Model.JoinChannelsData
 
 ## Properties
 

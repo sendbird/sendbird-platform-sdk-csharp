@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.InlineResponse20033BannedList
+# sendbird_platform_sdk.Model.InlineResponse20033BannedList
 
 ## Properties
 

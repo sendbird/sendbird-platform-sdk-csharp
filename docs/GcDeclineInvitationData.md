@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.GcDeclineInvitationData
+# sendbird_platform_sdk.Model.GcDeclineInvitationData
 
 ## Properties
 

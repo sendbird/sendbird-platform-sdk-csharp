@@ -1,4 +1,4 @@
-# sendbird-platform-sdk.Api.UserApi
+# sendbird_platform_sdk.Api.UserApi
 
 All URIs are relative to *https://api-APP_ID.sendbird.com*
 
@@ -56,9 +56,9 @@ Add a registration or device token
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -138,9 +138,9 @@ Ban from channels with custom channel types
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -217,9 +217,9 @@ Block a user
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -297,9 +297,9 @@ Choose a push notification content template
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -377,9 +377,9 @@ Create a user
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -455,9 +455,9 @@ Delete a user
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -532,9 +532,9 @@ Leave my group channels
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -611,9 +611,9 @@ List banned channels
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -693,9 +693,9 @@ List blocked users
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -781,9 +781,9 @@ List muted channels
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -863,9 +863,9 @@ List my group channels
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1021,9 +1021,9 @@ List registration or device tokens
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1101,9 +1101,9 @@ List users
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1195,9 +1195,9 @@ Mark all messages as read
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1274,9 +1274,9 @@ Mute in channels with custom channel types
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1353,9 +1353,9 @@ Register as an operator to channels with custom channel types
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1432,9 +1432,9 @@ Remove a registration or device token - When unregistering all device tokens
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1510,9 +1510,9 @@ Remove a registration or device token - When unregistering a specific token
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1592,9 +1592,9 @@ Remove a registration or device token from an owner
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1672,9 +1672,9 @@ Reset push preferences
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1749,9 +1749,9 @@ Unblock a user
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1828,9 +1828,9 @@ Update channel invitation preference
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1908,9 +1908,9 @@ Update count preference of a channel
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -1990,9 +1990,9 @@ Update push preferences
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -2070,9 +2070,9 @@ Update push preferences for a channel
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -2152,9 +2152,9 @@ Update a user
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -2232,9 +2232,9 @@ View channel invitation preference
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -2310,9 +2310,9 @@ View count preference of a channel
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -2390,9 +2390,9 @@ View number of channels by join status
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -2470,9 +2470,9 @@ View number of channels with unread messages
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -2552,9 +2552,9 @@ View number of unread items
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -2634,9 +2634,9 @@ View number of unread messages
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -2716,9 +2716,9 @@ View push preferences
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -2794,9 +2794,9 @@ View push preferences for a channel
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -2874,9 +2874,9 @@ View a user
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -2958,9 +2958,9 @@ View who owns a registration or device token
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {

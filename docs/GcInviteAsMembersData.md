@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.GcInviteAsMembersData
+# sendbird_platform_sdk.Model.GcInviteAsMembersData
 
 ## Properties
 

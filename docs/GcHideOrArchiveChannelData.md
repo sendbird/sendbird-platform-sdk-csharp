@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.GcHideOrArchiveChannelData
+# sendbird_platform_sdk.Model.GcHideOrArchiveChannelData
 
 ## Properties
 

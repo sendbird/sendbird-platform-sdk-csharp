@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.InlineResponse20070ReportLogs
+# sendbird_platform_sdk.Model.InlineResponse20070ReportLogs
 
 ## Properties
 

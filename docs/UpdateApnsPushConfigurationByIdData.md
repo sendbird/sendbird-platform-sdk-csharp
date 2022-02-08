@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.UpdateApnsPushConfigurationByIdData
+# sendbird_platform_sdk.Model.UpdateApnsPushConfigurationByIdData
 
 ## Properties
 

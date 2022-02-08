@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.GenerateSecondaryApiTokenData
+# sendbird_platform_sdk.Model.GenerateSecondaryApiTokenData
 
 ## Properties
 

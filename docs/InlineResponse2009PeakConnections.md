@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.InlineResponse2009PeakConnections
+# sendbird_platform_sdk.Model.InlineResponse2009PeakConnections
 
 ## Properties
 

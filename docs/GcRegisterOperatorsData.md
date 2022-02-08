@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.GcRegisterOperatorsData
+# sendbird_platform_sdk.Model.GcRegisterOperatorsData
 
 ## Properties
 

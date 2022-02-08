@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.GcUpdateChannelByUrlData
+# sendbird_platform_sdk.Model.GcUpdateChannelByUrlData
 
 ## Properties
 

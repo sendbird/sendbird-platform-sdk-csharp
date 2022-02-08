@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.GcBanUserData
+# sendbird_platform_sdk.Model.GcBanUserData
 
 ## Properties
 

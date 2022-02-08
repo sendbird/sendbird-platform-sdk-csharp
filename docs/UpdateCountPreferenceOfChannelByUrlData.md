@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.UpdateCountPreferenceOfChannelByUrlData
+# sendbird_platform_sdk.Model.UpdateCountPreferenceOfChannelByUrlData
 
 ## Properties
 

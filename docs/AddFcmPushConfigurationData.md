@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.AddFcmPushConfigurationData
+# sendbird_platform_sdk.Model.AddFcmPushConfigurationData
 
 ## Properties
 

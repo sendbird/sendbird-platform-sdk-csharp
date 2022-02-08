@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.InlineResponse20047SortedMetaarray
+# sendbird_platform_sdk.Model.InlineResponse20047SortedMetaarray
 
 ## Properties
 

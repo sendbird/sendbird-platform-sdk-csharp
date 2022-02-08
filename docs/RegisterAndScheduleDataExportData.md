@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.RegisterAndScheduleDataExportData
+# sendbird_platform_sdk.Model.RegisterAndScheduleDataExportData
 
 ## Properties
 

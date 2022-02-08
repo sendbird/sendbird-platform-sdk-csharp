@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.CreateChannelMetadataData
+# sendbird_platform_sdk.Model.CreateChannelMetadataData
 
 ## Properties
 

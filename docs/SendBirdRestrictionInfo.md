@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdRestrictionInfo
+# sendbird_platform_sdk.Model.SendBirdRestrictionInfo
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.AddReactionToAMessageData
+# sendbird_platform_sdk.Model.AddReactionToAMessageData
 
 ## Properties
 

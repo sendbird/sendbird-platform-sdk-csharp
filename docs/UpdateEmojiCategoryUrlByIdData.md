@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.UpdateEmojiCategoryUrlByIdData
+# sendbird_platform_sdk.Model.UpdateEmojiCategoryUrlByIdData
 
 ## Properties
 

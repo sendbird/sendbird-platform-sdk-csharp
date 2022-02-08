@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.OcUpdateBanByIdData
+# sendbird_platform_sdk.Model.OcUpdateBanByIdData
 
 ## Properties
 

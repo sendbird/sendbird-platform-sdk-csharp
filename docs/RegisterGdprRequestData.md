@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.RegisterGdprRequestData
+# sendbird_platform_sdk.Model.RegisterGdprRequestData
 
 ## Properties
 

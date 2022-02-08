@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.MarkAllMessagesAsReadData
+# sendbird_platform_sdk.Model.MarkAllMessagesAsReadData
 
 ## Properties
 

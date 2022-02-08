@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdEmoji
+# sendbird_platform_sdk.Model.SendBirdEmoji
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdPlugin
+# sendbird_platform_sdk.Model.SendBirdPlugin
 
 ## Properties
 

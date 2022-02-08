@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.InlineResponse2002PushConfigurations
+# sendbird_platform_sdk.Model.InlineResponse2002PushConfigurations
 
 ## Properties
 

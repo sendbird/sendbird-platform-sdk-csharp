@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.CreateBotData
+# sendbird_platform_sdk.Model.CreateBotData
 
 ## Properties
 

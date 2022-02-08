@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.InlineResponse20015PushMessageTemplates
+# sendbird_platform_sdk.Model.InlineResponse20015PushMessageTemplates
 
 ## Properties
 

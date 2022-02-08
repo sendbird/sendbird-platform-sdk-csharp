@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.GcUpdateBanByIdData
+# sendbird_platform_sdk.Model.GcUpdateBanByIdData
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdBaseMessageInstance
+# sendbird_platform_sdk.Model.SendBirdBaseMessageInstance
 
 ## Properties
 
@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **MentionedUsers** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  | [optional] 
 **MessageId** | **decimal** |  | [optional] 
 **MessageType** | **string** |  | [optional] 
-**MetaArray** | **Object** |  | [optional] 
+**MetaArray** | [**SBObject**](SBObject.md) |  | [optional] 
 **MetaArrays** | [**List&lt;SendBirdMessageMetaArray&gt;**](SendBirdMessageMetaArray.md) |  | [optional] 
 **OgMetaData** | [**SendBirdOGMetaData**](SendBirdOGMetaData.md) |  | [optional] 
 **ParentMessage** | [**SendBirdMessageResponse**](SendBirdMessageResponse.md) |  | [optional] 

@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdAdditionalProperties
+# sendbird_platform_sdk.Model.SendBirdAdditionalProperties
 
 ## Properties
 

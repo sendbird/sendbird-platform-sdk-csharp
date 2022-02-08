@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.OcBanUserData
+# sendbird_platform_sdk.Model.OcBanUserData
 
 ## Properties
 

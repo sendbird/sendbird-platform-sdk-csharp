@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.ReportUserByIdData
+# sendbird_platform_sdk.Model.ReportUserByIdData
 
 ## Properties
 

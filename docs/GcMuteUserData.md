@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.GcMuteUserData
+# sendbird_platform_sdk.Model.GcMuteUserData
 
 ## Properties
 

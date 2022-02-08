@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.UpdateAnnouncementByIdData
+# sendbird_platform_sdk.Model.UpdateAnnouncementByIdData
 
 ## Properties
 

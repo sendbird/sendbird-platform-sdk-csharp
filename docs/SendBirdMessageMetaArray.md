@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdMessageMetaArray
+# sendbird_platform_sdk.Model.SendBirdMessageMetaArray
 
 ## Properties
 

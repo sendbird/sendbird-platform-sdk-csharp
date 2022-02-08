@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.LeaveMyGroupChannelsData
+# sendbird_platform_sdk.Model.LeaveMyGroupChannelsData
 
 ## Properties
 

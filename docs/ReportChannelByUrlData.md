@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.ReportChannelByUrlData
+# sendbird_platform_sdk.Model.ReportChannelByUrlData
 
 ## Properties
 

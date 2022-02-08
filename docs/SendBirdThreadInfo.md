@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdThreadInfo
+# sendbird_platform_sdk.Model.SendBirdThreadInfo
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.InlineResponse20049Unread
+# sendbird_platform_sdk.Model.InlineResponse20049Unread
 
 ## Properties
 

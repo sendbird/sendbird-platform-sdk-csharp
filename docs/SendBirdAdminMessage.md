@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdAdminMessage
+# sendbird_platform_sdk.Model.SendBirdAdminMessage
 
 ## Properties
 
@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **Message** | **string** |  | [optional] 
 **MessageId** | **decimal** |  | [optional] 
 **MessageType** | **string** |  | [optional] 
-**MetaArray** | **Object** |  | [optional] 
+**MetaArray** | [**SBObject**](SBObject.md) |  | [optional] 
 **MetaArrays** | [**List&lt;SendBirdMessageMetaArray&gt;**](SendBirdMessageMetaArray.md) |  | [optional] 
 **OgMetaData** | [**SendBirdOGMetaData**](SendBirdOGMetaData.md) |  | [optional] 
 **ParentMessage** | [**SendBirdMessageResponse**](SendBirdMessageResponse.md) |  | [optional] 
@@ -27,7 +27,7 @@ Name | Type | Description | Notes
 **SendingStatus** | **string** |  | [optional] 
 **Silent** | **bool** |  | [optional] 
 **ThreadInfo** | [**SendBirdThreadInfo**](SendBirdThreadInfo.md) |  | [optional] 
-**Translations** | **Object** |  | [optional] 
+**Translations** | [**SBObject**](SBObject.md) |  | [optional] 
 **UpdatedAt** | **decimal** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

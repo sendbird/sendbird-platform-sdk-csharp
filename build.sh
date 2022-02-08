@@ -40,7 +40,7 @@ if ! type nuget &>/dev/null; then
 fi
 
 mozroots --import --sync
-${nuget_cmd} install src/sendbird-platform-sdk/packages.config -o packages;
+${nuget_cmd} install src/sendbird_platform_sdk/packages.config -o packages;
 
 echo "[INFO] Copy DLLs to the 'bin' folder"
 mkdir -p bin;
@@ -48,15 +48,15 @@ cp packages/Newtonsoft.Json.12.0.3/lib/net45/Newtonsoft.Json.dll bin/Newtonsoft.
 cp packages/RestSharp.105.1.0/lib/net45/RestSharp.dll bin/RestSharp.dll;
 cp packages/JsonSubTypes.1.6.0/lib/net45/JsonSubTypes.dll bin/JsonSubTypes.dll
 
-echo "[INFO] Run 'mcs' to build bin/sendbird-platform-sdk.dll"
+echo "[INFO] Run 'mcs' to build bin/sendbird_platform_sdk.dll"
 mcs -langversion:${langversion} -sdk:${sdk} -r:bin/Newtonsoft.Json.dll,bin/JsonSubTypes.dll,\
 bin/RestSharp.dll,\
 System.ComponentModel.DataAnnotations.dll,\
 System.Runtime.Serialization.dll \
 -target:library \
--out:bin/sendbird-platform-sdk.dll \
--recurse:'src/sendbird-platform-sdk/*.cs' \
--doc:bin/sendbird-platform-sdk.xml \
+-out:bin/sendbird_platform_sdk.dll \
+-recurse:'src/sendbird_platform_sdk/*.cs' \
+-doc:bin/sendbird_platform_sdk.xml \
 -platform:anycpu
 
 if [ $? -ne 0 ]
@@ -64,5 +64,5 @@ then
   echo "[ERROR] Compilation failed with exit code $?"
   exit 1
 else
-  echo "[INFO] bin/sendbird-platform-sdk.dll was created successfully"
+  echo "[INFO] bin/sendbird_platform_sdk.dll was created successfully"
 fi

@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.BlockUserData
+# sendbird_platform_sdk.Model.BlockUserData
 
 ## Properties
 

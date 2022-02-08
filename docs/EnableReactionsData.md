@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.EnableReactionsData
+# sendbird_platform_sdk.Model.EnableReactionsData
 
 ## Properties
 

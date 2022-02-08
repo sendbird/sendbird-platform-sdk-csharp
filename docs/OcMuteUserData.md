@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.OcMuteUserData
+# sendbird_platform_sdk.Model.OcMuteUserData
 
 ## Properties
 

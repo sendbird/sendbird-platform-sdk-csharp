@@ -1,4 +1,4 @@
-# sendbird-platform-sdk.Api.WebhooksApi
+# sendbird_platform_sdk.Api.WebhooksApi
 
 All URIs are relative to *https://api-APP_ID.sendbird.com*
 
@@ -22,9 +22,9 @@ Choose which events to subscribe to
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {
@@ -100,9 +100,9 @@ Retrieve a list of subscribed events
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {

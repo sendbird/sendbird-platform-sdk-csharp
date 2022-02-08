@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.SendBirdFileMessageParams
+# sendbird_platform_sdk.Model.SendBirdFileMessageParams
 
 ## Properties
 

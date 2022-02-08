@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.UpdatePushNotificationContentTemplateData
+# sendbird_platform_sdk.Model.UpdatePushNotificationContentTemplateData
 
 ## Properties
 

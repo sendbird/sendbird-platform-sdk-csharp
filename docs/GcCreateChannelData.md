@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.GcCreateChannelData
+# sendbird_platform_sdk.Model.GcCreateChannelData
 
 ## Properties
 

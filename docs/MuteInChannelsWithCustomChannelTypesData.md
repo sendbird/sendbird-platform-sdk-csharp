@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.MuteInChannelsWithCustomChannelTypesData
+# sendbird_platform_sdk.Model.MuteInChannelsWithCustomChannelTypesData
 
 ## Properties
 

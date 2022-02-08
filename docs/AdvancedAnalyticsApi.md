@@ -1,4 +1,4 @@
-# sendbird-platform-sdk.Api.AdvancedAnalyticsApi
+# sendbird_platform_sdk.Api.AdvancedAnalyticsApi
 
 All URIs are relative to *https://api-APP_ID.sendbird.com*
 
@@ -21,9 +21,9 @@ Retrieve Advanced analytics metrics
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using sendbird-platform-sdk.Api;
-using sendbird-platform-sdk.Client;
-using sendbird-platform-sdk.Model;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
 
 namespace Example
 {

@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.InlineResponse20049
+# sendbird_platform_sdk.Model.InlineResponse20049
 
 ## Properties
 

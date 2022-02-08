@@ -6,17 +6,17 @@
 wget -nc https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
 mozroots --import --sync
 
-echo "[INFO] remove bin/Debug/sendbird-platform-sdk.Test.dll"
-rm src/sendbird-platform-sdk.Test/bin/Debug/sendbird-platform-sdk.Test.dll 2> /dev/null
+echo "[INFO] remove bin/Debug/sendbird_platform_sdk.Test.dll"
+rm src/sendbird_platform_sdk.Test/bin/Debug/sendbird_platform_sdk.Test.dll 2> /dev/null
 
 echo "[INFO] install NUnit runners via NuGet"
 wget -nc https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
 mozroots --import --sync
-mono nuget.exe install src/sendbird-platform-sdk.Test/packages.config -o packages
+mono nuget.exe install src/sendbird_platform_sdk.Test/packages.config -o packages
 
 echo "[INFO] Install NUnit Console 3.x runners via NuGet"
 mono nuget.exe install NUnit.ConsoleRunner -Version 3.10.0 -OutputDirectory packages
 
 echo "[INFO] Build the solution and run the unit test"
-xbuild sendbird-platform-sdk.sln && \
-    mono ./packages/NUnit.ConsoleRunner.3.10.0/tools/nunit3-console.exe src/sendbird-platform-sdk.Test/bin/Debug/sendbird-platform-sdk.Test.dll
+xbuild sendbird_platform_sdk.sln && \
+    mono ./packages/NUnit.ConsoleRunner.3.10.0/tools/nunit3-console.exe src/sendbird_platform_sdk.Test/bin/Debug/sendbird_platform_sdk.Test.dll

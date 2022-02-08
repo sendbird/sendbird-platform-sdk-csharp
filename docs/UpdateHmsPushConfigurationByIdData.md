@@ -1,5 +1,5 @@
 
-# sendbird-platform-sdk.Model.UpdateHmsPushConfigurationByIdData
+# sendbird_platform_sdk.Model.UpdateHmsPushConfigurationByIdData
 
 ## Properties
 
