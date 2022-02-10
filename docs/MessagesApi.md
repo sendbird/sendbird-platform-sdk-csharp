@@ -25,7 +25,7 @@ Method | HTTP request | Description
 
 ## AddExtraDataToMessage
 
-> InlineResponse20054 AddExtraDataToMessage (string channelType, string channelUrl, string messageId, string apiToken = null, AddExtraDataToMessageData addExtraDataToMessageData = null)
+> AddExtraDataToMessageResponse AddExtraDataToMessage (string channelType, string channelUrl, string messageId, string apiToken = null, AddExtraDataToMessageData addExtraDataToMessageData = null)
 
 Add extra data to a message
 
@@ -57,7 +57,7 @@ namespace Example
             try
             {
                 // Add extra data to a message
-                InlineResponse20054 result = apiInstance.AddExtraDataToMessage(channelType, channelUrl, messageId, apiToken, addExtraDataToMessageData);
+                AddExtraDataToMessageResponse result = apiInstance.AddExtraDataToMessage(channelType, channelUrl, messageId, apiToken, addExtraDataToMessageData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -84,7 +84,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20054**](InlineResponse20054.md)
+[**AddExtraDataToMessageResponse**](AddExtraDataToMessageResponse.md)
 
 ### Authorization
 
@@ -109,7 +109,7 @@ No authorization required
 
 ## AddReactionToAMessage
 
-> InlineResponse20053 AddReactionToAMessage (string channelType, string channelUrl, string messageId, string apiToken = null, AddReactionToAMessageData addReactionToAMessageData = null)
+> AddReactionToAMessageResponse AddReactionToAMessage (string channelType, string channelUrl, string messageId, string apiToken = null, AddReactionToAMessageData addReactionToAMessageData = null)
 
 Add a reaction to a message
 
@@ -141,7 +141,7 @@ namespace Example
             try
             {
                 // Add a reaction to a message
-                InlineResponse20053 result = apiInstance.AddReactionToAMessage(channelType, channelUrl, messageId, apiToken, addReactionToAMessageData);
+                AddReactionToAMessageResponse result = apiInstance.AddReactionToAMessage(channelType, channelUrl, messageId, apiToken, addReactionToAMessageData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -168,7 +168,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20053**](InlineResponse20053.md)
+[**AddReactionToAMessageResponse**](AddReactionToAMessageResponse.md)
 
 ### Authorization
 
@@ -274,7 +274,7 @@ No authorization required
 
 ## GcMarkAllMessagesAsDelivered
 
-> InlineResponse20050 GcMarkAllMessagesAsDelivered (string channelUrl, string apiToken = null, GcMarkAllMessagesAsDeliveredData gcMarkAllMessagesAsDeliveredData = null)
+> GcMarkAllMessagesAsDeliveredResponse GcMarkAllMessagesAsDelivered (string channelUrl, string apiToken = null, GcMarkAllMessagesAsDeliveredData gcMarkAllMessagesAsDeliveredData = null)
 
 Mark all messages as delivered
 
@@ -304,7 +304,7 @@ namespace Example
             try
             {
                 // Mark all messages as delivered
-                InlineResponse20050 result = apiInstance.GcMarkAllMessagesAsDelivered(channelUrl, apiToken, gcMarkAllMessagesAsDeliveredData);
+                GcMarkAllMessagesAsDeliveredResponse result = apiInstance.GcMarkAllMessagesAsDelivered(channelUrl, apiToken, gcMarkAllMessagesAsDeliveredData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -329,7 +329,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20050**](InlineResponse20050.md)
+[**GcMarkAllMessagesAsDeliveredResponse**](GcMarkAllMessagesAsDeliveredResponse.md)
 
 ### Authorization
 
@@ -433,7 +433,7 @@ No authorization required
 
 ## GcViewNumberOfEachMembersUnreadMessages
 
-> InlineResponse20049 GcViewNumberOfEachMembersUnreadMessages (string channelUrl, string apiToken = null, string userIds = null)
+> GcViewNumberOfEachMembersUnreadMessagesResponse GcViewNumberOfEachMembersUnreadMessages (string channelUrl, string apiToken = null, string userIds = null)
 
 View number of each member's unread messages
 
@@ -463,7 +463,7 @@ namespace Example
             try
             {
                 // View number of each member's unread messages
-                InlineResponse20049 result = apiInstance.GcViewNumberOfEachMembersUnreadMessages(channelUrl, apiToken, userIds);
+                GcViewNumberOfEachMembersUnreadMessagesResponse result = apiInstance.GcViewNumberOfEachMembersUnreadMessages(channelUrl, apiToken, userIds);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -488,7 +488,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20049**](InlineResponse20049.md)
+[**GcViewNumberOfEachMembersUnreadMessagesResponse**](GcViewNumberOfEachMembersUnreadMessagesResponse.md)
 
 ### Authorization
 
@@ -513,7 +513,7 @@ No authorization required
 
 ## ListMessages
 
-> InlineResponse20047 ListMessages (string channelType, string channelUrl, int messageTs, int messageId, string apiToken = null, int? prevLimit = null, int? nextLimit = null, bool? include = null, bool? reverse = null, string senderId = null, string senderIds = null, string operatorFilter = null, string customTypes = null, string messageType = null, bool? includingRemoved = null, bool? includeReactions = null, bool? withSortedMetaArray = null, bool? showSubchannelMessagesOnly = null, string userId = null, string customType = null, bool? withMetaArray = null)
+> ListMessagesResponse ListMessages (string channelType, string channelUrl, int messageTs, int messageId, string apiToken = null, int? prevLimit = null, int? nextLimit = null, bool? include = null, bool? reverse = null, string senderId = null, string senderIds = null, string operatorFilter = null, string customTypes = null, string messageType = null, bool? includingRemoved = null, bool? includeReactions = null, bool? withSortedMetaArray = null, bool? showSubchannelMessagesOnly = null, string userId = null, string customType = null, bool? withMetaArray = null)
 
 List messages
 
@@ -561,7 +561,7 @@ namespace Example
             try
             {
                 // List messages
-                InlineResponse20047 result = apiInstance.ListMessages(channelType, channelUrl, messageTs, messageId, apiToken, prevLimit, nextLimit, include, reverse, senderId, senderIds, operatorFilter, customTypes, messageType, includingRemoved, includeReactions, withSortedMetaArray, showSubchannelMessagesOnly, userId, customType, withMetaArray);
+                ListMessagesResponse result = apiInstance.ListMessages(channelType, channelUrl, messageTs, messageId, apiToken, prevLimit, nextLimit, include, reverse, senderId, senderIds, operatorFilter, customTypes, messageType, includingRemoved, includeReactions, withSortedMetaArray, showSubchannelMessagesOnly, userId, customType, withMetaArray);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -604,7 +604,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20047**](InlineResponse20047.md)
+[**ListMessagesResponse**](ListMessagesResponse.md)
 
 ### Authorization
 
@@ -629,7 +629,7 @@ No authorization required
 
 ## ListReactionsOfMessage
 
-> InlineResponse20052 ListReactionsOfMessage (string channelType, string channelUrl, string messageId, string apiToken = null, bool? listUsers = null)
+> ListReactionsOfMessageResponse ListReactionsOfMessage (string channelType, string channelUrl, string messageId, string apiToken = null, bool? listUsers = null)
 
 List reactions of a message
 
@@ -661,7 +661,7 @@ namespace Example
             try
             {
                 // List reactions of a message
-                InlineResponse20052 result = apiInstance.ListReactionsOfMessage(channelType, channelUrl, messageId, apiToken, listUsers);
+                ListReactionsOfMessageResponse result = apiInstance.ListReactionsOfMessage(channelType, channelUrl, messageId, apiToken, listUsers);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -688,7 +688,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20052**](InlineResponse20052.md)
+[**ListReactionsOfMessageResponse**](ListReactionsOfMessageResponse.md)
 
 ### Authorization
 
@@ -796,7 +796,7 @@ No authorization required
 
 ## RemoveReactionFromAMessage
 
-> InlineResponse20053 RemoveReactionFromAMessage (string channelType, string channelUrl, string messageId, string apiToken = null, string userId = null, string reaction = null)
+> RemoveReactionFromAMessageResponse RemoveReactionFromAMessage (string channelType, string channelUrl, string messageId, string apiToken = null, string userId = null, string reaction = null)
 
 Remove a reaction from a message
 
@@ -829,7 +829,7 @@ namespace Example
             try
             {
                 // Remove a reaction from a message
-                InlineResponse20053 result = apiInstance.RemoveReactionFromAMessage(channelType, channelUrl, messageId, apiToken, userId, reaction);
+                RemoveReactionFromAMessageResponse result = apiInstance.RemoveReactionFromAMessage(channelType, channelUrl, messageId, apiToken, userId, reaction);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -857,7 +857,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20053**](InlineResponse20053.md)
+[**RemoveReactionFromAMessageResponse**](RemoveReactionFromAMessageResponse.md)
 
 ### Authorization
 
@@ -1048,7 +1048,7 @@ No authorization required
 
 ## UpdateExtraDataInMessage
 
-> InlineResponse20054 UpdateExtraDataInMessage (string channelType, string channelUrl, string messageId, string apiToken = null, UpdateExtraDataInMessageData updateExtraDataInMessageData = null)
+> UpdateExtraDataInMessageResponse UpdateExtraDataInMessage (string channelType, string channelUrl, string messageId, string apiToken = null, UpdateExtraDataInMessageData updateExtraDataInMessageData = null)
 
 Update extra data in a message
 
@@ -1080,7 +1080,7 @@ namespace Example
             try
             {
                 // Update extra data in a message
-                InlineResponse20054 result = apiInstance.UpdateExtraDataInMessage(channelType, channelUrl, messageId, apiToken, updateExtraDataInMessageData);
+                UpdateExtraDataInMessageResponse result = apiInstance.UpdateExtraDataInMessage(channelType, channelUrl, messageId, apiToken, updateExtraDataInMessageData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1107,7 +1107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20054**](InlineResponse20054.md)
+[**UpdateExtraDataInMessageResponse**](UpdateExtraDataInMessageResponse.md)
 
 ### Authorization
 
@@ -1302,7 +1302,7 @@ No authorization required
 
 ## ViewTotalNumberOfMessagesInChannel
 
-> InlineResponse20048 ViewTotalNumberOfMessagesInChannel (string channelType, string channelUrl, string apiToken = null)
+> ViewTotalNumberOfMessagesInChannelResponse ViewTotalNumberOfMessagesInChannel (string channelType, string channelUrl, string apiToken = null)
 
 View total number of messages in a channel
 
@@ -1332,7 +1332,7 @@ namespace Example
             try
             {
                 // View total number of messages in a channel
-                InlineResponse20048 result = apiInstance.ViewTotalNumberOfMessagesInChannel(channelType, channelUrl, apiToken);
+                ViewTotalNumberOfMessagesInChannelResponse result = apiInstance.ViewTotalNumberOfMessagesInChannel(channelType, channelUrl, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1357,7 +1357,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20048**](InlineResponse20048.md)
+[**ViewTotalNumberOfMessagesInChannelResponse**](ViewTotalNumberOfMessagesInChannelResponse.md)
 
 ### Authorization
 

@@ -35,8 +35,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="ocBanUserData"> (optional)</param>
-        /// <returns>InlineResponse20033BannedList</returns>
-        InlineResponse20033BannedList OcBanUser (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData));
+        /// <returns>OcBanUserResponse</returns>
+        OcBanUserResponse OcBanUser (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData));
 
         /// <summary>
         /// Ban a user
@@ -48,8 +48,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="ocBanUserData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20033BannedList</returns>
-        ApiResponse<InlineResponse20033BannedList> OcBanUserWithHttpInfo (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData));
+        /// <returns>ApiResponse of OcBanUserResponse</returns>
+        ApiResponse<OcBanUserResponse> OcBanUserWithHttpInfo (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData));
         /// <summary>
         /// Cancel the registration of operators
         /// </summary>
@@ -159,8 +159,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20033</returns>
-        InlineResponse20033 OcListBannedUsers (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>OcListBannedUsersResponse</returns>
+        OcListBannedUsersResponse OcListBannedUsers (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List banned users
@@ -173,8 +173,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20033</returns>
-        ApiResponse<InlineResponse20033> OcListBannedUsersWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ApiResponse of OcListBannedUsersResponse</returns>
+        ApiResponse<OcListBannedUsersResponse> OcListBannedUsersWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
         /// <summary>
         /// List channels
         /// </summary>
@@ -191,8 +191,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showFrozen"> (optional)</param>
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="customType"> (optional)</param>
-        /// <returns>InlineResponse20030</returns>
-        InlineResponse20030 OcListChannels (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string));
+        /// <returns>OcListChannelsResponse</returns>
+        OcListChannelsResponse OcListChannels (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string));
 
         /// <summary>
         /// List channels
@@ -210,8 +210,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showFrozen"> (optional)</param>
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="customType"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20030</returns>
-        ApiResponse<InlineResponse20030> OcListChannelsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string));
+        /// <returns>ApiResponse of OcListChannelsResponse</returns>
+        ApiResponse<OcListChannelsResponse> OcListChannelsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string));
         /// <summary>
         /// List muted users
         /// </summary>
@@ -223,8 +223,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20031</returns>
-        InlineResponse20031 OcListMutedUsers (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>OcListMutedUsersResponse</returns>
+        OcListMutedUsersResponse OcListMutedUsers (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List muted users
@@ -237,8 +237,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20031</returns>
-        ApiResponse<InlineResponse20031> OcListMutedUsersWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ApiResponse of OcListMutedUsersResponse</returns>
+        ApiResponse<OcListMutedUsersResponse> OcListMutedUsersWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
         /// <summary>
         /// List operators
         /// </summary>
@@ -250,8 +250,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20034</returns>
-        InlineResponse20034 OcListOperators (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>OcListOperatorsResponse</returns>
+        OcListOperatorsResponse OcListOperators (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List operators
@@ -264,8 +264,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20034</returns>
-        ApiResponse<InlineResponse20034> OcListOperatorsWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ApiResponse of OcListOperatorsResponse</returns>
+        ApiResponse<OcListOperatorsResponse> OcListOperatorsWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
         /// <summary>
         /// List participants
         /// </summary>
@@ -277,8 +277,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20032</returns>
-        InlineResponse20032 OcListParticipants (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>OcListParticipantsResponse</returns>
+        OcListParticipantsResponse OcListParticipants (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List participants
@@ -291,8 +291,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20032</returns>
-        ApiResponse<InlineResponse20032> OcListParticipantsWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ApiResponse of OcListParticipantsResponse</returns>
+        ApiResponse<OcListParticipantsResponse> OcListParticipantsWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
         /// <summary>
         /// Mute a user
         /// </summary>
@@ -503,8 +503,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20035</returns>
-        InlineResponse20035 OcViewMuteById (string channelUrl, string mutedUserId, string apiToken = default(string));
+        /// <returns>OcViewMuteByIdResponse</returns>
+        OcViewMuteByIdResponse OcViewMuteById (string channelUrl, string mutedUserId, string apiToken = default(string));
 
         /// <summary>
         /// View a mute
@@ -516,8 +516,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20035</returns>
-        ApiResponse<InlineResponse20035> OcViewMuteByIdWithHttpInfo (string channelUrl, string mutedUserId, string apiToken = default(string));
+        /// <returns>ApiResponse of OcViewMuteByIdResponse</returns>
+        ApiResponse<OcViewMuteByIdResponse> OcViewMuteByIdWithHttpInfo (string channelUrl, string mutedUserId, string apiToken = default(string));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -531,8 +531,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="ocBanUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20033BannedList</returns>
-        System.Threading.Tasks.Task<InlineResponse20033BannedList> OcBanUserAsync (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcBanUserResponse</returns>
+        System.Threading.Tasks.Task<OcBanUserResponse> OcBanUserAsync (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Ban a user
@@ -545,8 +545,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="ocBanUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20033BannedList)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20033BannedList>> OcBanUserWithHttpInfoAsync (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcBanUserResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcBanUserResponse>> OcBanUserWithHttpInfoAsync (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Cancel the registration of operators
         /// </summary>
@@ -665,8 +665,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20033</returns>
-        System.Threading.Tasks.Task<InlineResponse20033> OcListBannedUsersAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcListBannedUsersResponse</returns>
+        System.Threading.Tasks.Task<OcListBannedUsersResponse> OcListBannedUsersAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List banned users
@@ -680,8 +680,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20033)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20033>> OcListBannedUsersWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcListBannedUsersResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcListBannedUsersResponse>> OcListBannedUsersWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List channels
         /// </summary>
@@ -699,8 +699,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20030</returns>
-        System.Threading.Tasks.Task<InlineResponse20030> OcListChannelsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcListChannelsResponse</returns>
+        System.Threading.Tasks.Task<OcListChannelsResponse> OcListChannelsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List channels
@@ -719,8 +719,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20030)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20030>> OcListChannelsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcListChannelsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcListChannelsResponse>> OcListChannelsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List muted users
         /// </summary>
@@ -733,8 +733,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20031</returns>
-        System.Threading.Tasks.Task<InlineResponse20031> OcListMutedUsersAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcListMutedUsersResponse</returns>
+        System.Threading.Tasks.Task<OcListMutedUsersResponse> OcListMutedUsersAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List muted users
@@ -748,8 +748,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20031)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20031>> OcListMutedUsersWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcListMutedUsersResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcListMutedUsersResponse>> OcListMutedUsersWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List operators
         /// </summary>
@@ -762,8 +762,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20034</returns>
-        System.Threading.Tasks.Task<InlineResponse20034> OcListOperatorsAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcListOperatorsResponse</returns>
+        System.Threading.Tasks.Task<OcListOperatorsResponse> OcListOperatorsAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List operators
@@ -777,8 +777,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20034)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20034>> OcListOperatorsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcListOperatorsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcListOperatorsResponse>> OcListOperatorsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List participants
         /// </summary>
@@ -791,8 +791,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20032</returns>
-        System.Threading.Tasks.Task<InlineResponse20032> OcListParticipantsAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcListParticipantsResponse</returns>
+        System.Threading.Tasks.Task<OcListParticipantsResponse> OcListParticipantsAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List participants
@@ -806,8 +806,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20032)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20032>> OcListParticipantsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcListParticipantsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcListParticipantsResponse>> OcListParticipantsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Mute a user
         /// </summary>
@@ -1035,8 +1035,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20035</returns>
-        System.Threading.Tasks.Task<InlineResponse20035> OcViewMuteByIdAsync (string channelUrl, string mutedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcViewMuteByIdResponse</returns>
+        System.Threading.Tasks.Task<OcViewMuteByIdResponse> OcViewMuteByIdAsync (string channelUrl, string mutedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a mute
@@ -1049,8 +1049,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20035)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20035>> OcViewMuteByIdWithHttpInfoAsync (string channelUrl, string mutedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcViewMuteByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcViewMuteByIdResponse>> OcViewMuteByIdWithHttpInfoAsync (string channelUrl, string mutedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -1169,10 +1169,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="ocBanUserData"> (optional)</param>
-        /// <returns>InlineResponse20033BannedList</returns>
-        public InlineResponse20033BannedList OcBanUser (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData))
+        /// <returns>OcBanUserResponse</returns>
+        public OcBanUserResponse OcBanUser (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData))
         {
-             ApiResponse<InlineResponse20033BannedList> localVarResponse = OcBanUserWithHttpInfo(channelUrl, apiToken, ocBanUserData);
+             ApiResponse<OcBanUserResponse> localVarResponse = OcBanUserWithHttpInfo(channelUrl, apiToken, ocBanUserData);
              return localVarResponse.Data;
         }
 
@@ -1183,8 +1183,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="ocBanUserData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20033BannedList</returns>
-        public ApiResponse<InlineResponse20033BannedList> OcBanUserWithHttpInfo (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData))
+        /// <returns>ApiResponse of OcBanUserResponse</returns>
+        public ApiResponse<OcBanUserResponse> OcBanUserWithHttpInfo (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData))
         {
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
@@ -1237,9 +1237,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20033BannedList>(localVarStatusCode,
+            return new ApiResponse<OcBanUserResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20033BannedList) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20033BannedList)));
+                (OcBanUserResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcBanUserResponse)));
         }
 
         /// <summary>
@@ -1250,10 +1250,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="ocBanUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20033BannedList</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20033BannedList> OcBanUserAsync (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcBanUserResponse</returns>
+        public async System.Threading.Tasks.Task<OcBanUserResponse> OcBanUserAsync (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20033BannedList> localVarResponse = await OcBanUserWithHttpInfoAsync(channelUrl, apiToken, ocBanUserData, cancellationToken);
+             ApiResponse<OcBanUserResponse> localVarResponse = await OcBanUserWithHttpInfoAsync(channelUrl, apiToken, ocBanUserData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1266,8 +1266,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="ocBanUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20033BannedList)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20033BannedList>> OcBanUserWithHttpInfoAsync (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcBanUserResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcBanUserResponse>> OcBanUserWithHttpInfoAsync (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
@@ -1320,9 +1320,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20033BannedList>(localVarStatusCode,
+            return new ApiResponse<OcBanUserResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20033BannedList) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20033BannedList)));
+                (OcBanUserResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcBanUserResponse)));
         }
 
         /// <summary>
@@ -1939,10 +1939,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20033</returns>
-        public InlineResponse20033 OcListBannedUsers (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>OcListBannedUsersResponse</returns>
+        public OcListBannedUsersResponse OcListBannedUsers (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<InlineResponse20033> localVarResponse = OcListBannedUsersWithHttpInfo(channelUrl, apiToken, token, limit);
+             ApiResponse<OcListBannedUsersResponse> localVarResponse = OcListBannedUsersWithHttpInfo(channelUrl, apiToken, token, limit);
              return localVarResponse.Data;
         }
 
@@ -1954,8 +1954,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20033</returns>
-        public ApiResponse<InlineResponse20033> OcListBannedUsersWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ApiResponse of OcListBannedUsersResponse</returns>
+        public ApiResponse<OcListBannedUsersResponse> OcListBannedUsersWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
@@ -2001,9 +2001,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20033>(localVarStatusCode,
+            return new ApiResponse<OcListBannedUsersResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20033) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20033)));
+                (OcListBannedUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListBannedUsersResponse)));
         }
 
         /// <summary>
@@ -2015,10 +2015,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20033</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20033> OcListBannedUsersAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcListBannedUsersResponse</returns>
+        public async System.Threading.Tasks.Task<OcListBannedUsersResponse> OcListBannedUsersAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20033> localVarResponse = await OcListBannedUsersWithHttpInfoAsync(channelUrl, apiToken, token, limit, cancellationToken);
+             ApiResponse<OcListBannedUsersResponse> localVarResponse = await OcListBannedUsersWithHttpInfoAsync(channelUrl, apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2032,8 +2032,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20033)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20033>> OcListBannedUsersWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcListBannedUsersResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcListBannedUsersResponse>> OcListBannedUsersWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
@@ -2079,9 +2079,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20033>(localVarStatusCode,
+            return new ApiResponse<OcListBannedUsersResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20033) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20033)));
+                (OcListBannedUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListBannedUsersResponse)));
         }
 
         /// <summary>
@@ -2097,10 +2097,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showFrozen"> (optional)</param>
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="customType"> (optional)</param>
-        /// <returns>InlineResponse20030</returns>
-        public InlineResponse20030 OcListChannels (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string))
+        /// <returns>OcListChannelsResponse</returns>
+        public OcListChannelsResponse OcListChannels (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string))
         {
-             ApiResponse<InlineResponse20030> localVarResponse = OcListChannelsWithHttpInfo(apiToken, token, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, customType);
+             ApiResponse<OcListChannelsResponse> localVarResponse = OcListChannelsWithHttpInfo(apiToken, token, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, customType);
              return localVarResponse.Data;
         }
 
@@ -2117,8 +2117,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showFrozen"> (optional)</param>
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="customType"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20030</returns>
-        public ApiResponse<InlineResponse20030> OcListChannelsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string))
+        /// <returns>ApiResponse of OcListChannelsResponse</returns>
+        public ApiResponse<OcListChannelsResponse> OcListChannelsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string))
         {
 
             var localVarPath = "/v3/open_channels";
@@ -2166,9 +2166,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20030>(localVarStatusCode,
+            return new ApiResponse<OcListChannelsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20030) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20030)));
+                (OcListChannelsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListChannelsResponse)));
         }
 
         /// <summary>
@@ -2185,10 +2185,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20030</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20030> OcListChannelsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcListChannelsResponse</returns>
+        public async System.Threading.Tasks.Task<OcListChannelsResponse> OcListChannelsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20030> localVarResponse = await OcListChannelsWithHttpInfoAsync(apiToken, token, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, customType, cancellationToken);
+             ApiResponse<OcListChannelsResponse> localVarResponse = await OcListChannelsWithHttpInfoAsync(apiToken, token, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, customType, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2207,8 +2207,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20030)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20030>> OcListChannelsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcListChannelsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcListChannelsResponse>> OcListChannelsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/open_channels";
@@ -2256,9 +2256,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20030>(localVarStatusCode,
+            return new ApiResponse<OcListChannelsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20030) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20030)));
+                (OcListChannelsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListChannelsResponse)));
         }
 
         /// <summary>
@@ -2269,10 +2269,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20031</returns>
-        public InlineResponse20031 OcListMutedUsers (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>OcListMutedUsersResponse</returns>
+        public OcListMutedUsersResponse OcListMutedUsers (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<InlineResponse20031> localVarResponse = OcListMutedUsersWithHttpInfo(channelUrl, apiToken, token, limit);
+             ApiResponse<OcListMutedUsersResponse> localVarResponse = OcListMutedUsersWithHttpInfo(channelUrl, apiToken, token, limit);
              return localVarResponse.Data;
         }
 
@@ -2284,8 +2284,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20031</returns>
-        public ApiResponse<InlineResponse20031> OcListMutedUsersWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ApiResponse of OcListMutedUsersResponse</returns>
+        public ApiResponse<OcListMutedUsersResponse> OcListMutedUsersWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
@@ -2331,9 +2331,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20031>(localVarStatusCode,
+            return new ApiResponse<OcListMutedUsersResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20031) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20031)));
+                (OcListMutedUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListMutedUsersResponse)));
         }
 
         /// <summary>
@@ -2345,10 +2345,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20031</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20031> OcListMutedUsersAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcListMutedUsersResponse</returns>
+        public async System.Threading.Tasks.Task<OcListMutedUsersResponse> OcListMutedUsersAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20031> localVarResponse = await OcListMutedUsersWithHttpInfoAsync(channelUrl, apiToken, token, limit, cancellationToken);
+             ApiResponse<OcListMutedUsersResponse> localVarResponse = await OcListMutedUsersWithHttpInfoAsync(channelUrl, apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2362,8 +2362,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20031)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20031>> OcListMutedUsersWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcListMutedUsersResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcListMutedUsersResponse>> OcListMutedUsersWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
@@ -2409,9 +2409,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20031>(localVarStatusCode,
+            return new ApiResponse<OcListMutedUsersResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20031) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20031)));
+                (OcListMutedUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListMutedUsersResponse)));
         }
 
         /// <summary>
@@ -2422,10 +2422,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20034</returns>
-        public InlineResponse20034 OcListOperators (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>OcListOperatorsResponse</returns>
+        public OcListOperatorsResponse OcListOperators (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<InlineResponse20034> localVarResponse = OcListOperatorsWithHttpInfo(channelUrl, apiToken, token, limit);
+             ApiResponse<OcListOperatorsResponse> localVarResponse = OcListOperatorsWithHttpInfo(channelUrl, apiToken, token, limit);
              return localVarResponse.Data;
         }
 
@@ -2437,8 +2437,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20034</returns>
-        public ApiResponse<InlineResponse20034> OcListOperatorsWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ApiResponse of OcListOperatorsResponse</returns>
+        public ApiResponse<OcListOperatorsResponse> OcListOperatorsWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
@@ -2484,9 +2484,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20034>(localVarStatusCode,
+            return new ApiResponse<OcListOperatorsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20034) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20034)));
+                (OcListOperatorsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListOperatorsResponse)));
         }
 
         /// <summary>
@@ -2498,10 +2498,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20034</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20034> OcListOperatorsAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcListOperatorsResponse</returns>
+        public async System.Threading.Tasks.Task<OcListOperatorsResponse> OcListOperatorsAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20034> localVarResponse = await OcListOperatorsWithHttpInfoAsync(channelUrl, apiToken, token, limit, cancellationToken);
+             ApiResponse<OcListOperatorsResponse> localVarResponse = await OcListOperatorsWithHttpInfoAsync(channelUrl, apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2515,8 +2515,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20034)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20034>> OcListOperatorsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcListOperatorsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcListOperatorsResponse>> OcListOperatorsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
@@ -2562,9 +2562,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20034>(localVarStatusCode,
+            return new ApiResponse<OcListOperatorsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20034) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20034)));
+                (OcListOperatorsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListOperatorsResponse)));
         }
 
         /// <summary>
@@ -2575,10 +2575,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20032</returns>
-        public InlineResponse20032 OcListParticipants (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>OcListParticipantsResponse</returns>
+        public OcListParticipantsResponse OcListParticipants (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<InlineResponse20032> localVarResponse = OcListParticipantsWithHttpInfo(channelUrl, apiToken, token, limit);
+             ApiResponse<OcListParticipantsResponse> localVarResponse = OcListParticipantsWithHttpInfo(channelUrl, apiToken, token, limit);
              return localVarResponse.Data;
         }
 
@@ -2590,8 +2590,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20032</returns>
-        public ApiResponse<InlineResponse20032> OcListParticipantsWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ApiResponse of OcListParticipantsResponse</returns>
+        public ApiResponse<OcListParticipantsResponse> OcListParticipantsWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
@@ -2637,9 +2637,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20032>(localVarStatusCode,
+            return new ApiResponse<OcListParticipantsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20032) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20032)));
+                (OcListParticipantsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListParticipantsResponse)));
         }
 
         /// <summary>
@@ -2651,10 +2651,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20032</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20032> OcListParticipantsAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcListParticipantsResponse</returns>
+        public async System.Threading.Tasks.Task<OcListParticipantsResponse> OcListParticipantsAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20032> localVarResponse = await OcListParticipantsWithHttpInfoAsync(channelUrl, apiToken, token, limit, cancellationToken);
+             ApiResponse<OcListParticipantsResponse> localVarResponse = await OcListParticipantsWithHttpInfoAsync(channelUrl, apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2668,8 +2668,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20032)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20032>> OcListParticipantsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcListParticipantsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcListParticipantsResponse>> OcListParticipantsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
@@ -2715,9 +2715,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20032>(localVarStatusCode,
+            return new ApiResponse<OcListParticipantsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20032) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20032)));
+                (OcListParticipantsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListParticipantsResponse)));
         }
 
         /// <summary>
@@ -3979,10 +3979,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20035</returns>
-        public InlineResponse20035 OcViewMuteById (string channelUrl, string mutedUserId, string apiToken = default(string))
+        /// <returns>OcViewMuteByIdResponse</returns>
+        public OcViewMuteByIdResponse OcViewMuteById (string channelUrl, string mutedUserId, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20035> localVarResponse = OcViewMuteByIdWithHttpInfo(channelUrl, mutedUserId, apiToken);
+             ApiResponse<OcViewMuteByIdResponse> localVarResponse = OcViewMuteByIdWithHttpInfo(channelUrl, mutedUserId, apiToken);
              return localVarResponse.Data;
         }
 
@@ -3993,8 +3993,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20035</returns>
-        public ApiResponse<InlineResponse20035> OcViewMuteByIdWithHttpInfo (string channelUrl, string mutedUserId, string apiToken = default(string))
+        /// <returns>ApiResponse of OcViewMuteByIdResponse</returns>
+        public ApiResponse<OcViewMuteByIdResponse> OcViewMuteByIdWithHttpInfo (string channelUrl, string mutedUserId, string apiToken = default(string))
         {
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
@@ -4042,9 +4042,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20035>(localVarStatusCode,
+            return new ApiResponse<OcViewMuteByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20035) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20035)));
+                (OcViewMuteByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcViewMuteByIdResponse)));
         }
 
         /// <summary>
@@ -4055,10 +4055,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20035</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20035> OcViewMuteByIdAsync (string channelUrl, string mutedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcViewMuteByIdResponse</returns>
+        public async System.Threading.Tasks.Task<OcViewMuteByIdResponse> OcViewMuteByIdAsync (string channelUrl, string mutedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20035> localVarResponse = await OcViewMuteByIdWithHttpInfoAsync(channelUrl, mutedUserId, apiToken, cancellationToken);
+             ApiResponse<OcViewMuteByIdResponse> localVarResponse = await OcViewMuteByIdWithHttpInfoAsync(channelUrl, mutedUserId, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -4071,8 +4071,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20035)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20035>> OcViewMuteByIdWithHttpInfoAsync (string channelUrl, string mutedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcViewMuteByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcViewMuteByIdResponse>> OcViewMuteByIdWithHttpInfoAsync (string channelUrl, string mutedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
@@ -4120,9 +4120,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20035>(localVarStatusCode,
+            return new ApiResponse<OcViewMuteByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20035) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20035)));
+                (OcViewMuteByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcViewMuteByIdResponse)));
         }
 
     }

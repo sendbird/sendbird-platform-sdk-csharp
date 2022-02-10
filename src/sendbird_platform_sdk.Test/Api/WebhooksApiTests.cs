@@ -73,7 +73,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = null;
             //var response = instance.ChooseWhichEventsToSubscribeTo(apiToken, chooseWhichEventsToSubscribeToData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20067), response, "response is InlineResponse20067");
+            //Assert.IsInstanceOf(typeof(ChooseWhichEventsToSubscribeToResponse), response, "response is ChooseWhichEventsToSubscribeToResponse");
         }
         
         /// <summary>
@@ -86,7 +86,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //bool? displayAllWebhookCategories = null;
             //var response = instance.RetrieveListOfSubscribedEvents(apiToken, displayAllWebhookCategories);
-            //Assert.IsInstanceOf(typeof(InlineResponse20066), response, "response is InlineResponse20066");
+            //Assert.IsInstanceOf(typeof(RetrieveListOfSubscribedEventsResponse), response, "response is RetrieveListOfSubscribedEventsResponse");
         }
         
     }

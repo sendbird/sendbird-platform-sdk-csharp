@@ -76,7 +76,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //AddExtraDataToMessageData addExtraDataToMessageData = null;
             //var response = instance.AddExtraDataToMessage(channelType, channelUrl, messageId, apiToken, addExtraDataToMessageData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20054), response, "response is InlineResponse20054");
+            //Assert.IsInstanceOf(typeof(AddExtraDataToMessageResponse), response, "response is AddExtraDataToMessageResponse");
         }
         
         /// <summary>
@@ -92,7 +92,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //AddReactionToAMessageData addReactionToAMessageData = null;
             //var response = instance.AddReactionToAMessage(channelType, channelUrl, messageId, apiToken, addReactionToAMessageData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20053), response, "response is InlineResponse20053");
+            //Assert.IsInstanceOf(typeof(AddReactionToAMessageResponse), response, "response is AddReactionToAMessageResponse");
         }
         
         /// <summary>
@@ -121,7 +121,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //GcMarkAllMessagesAsDeliveredData gcMarkAllMessagesAsDeliveredData = null;
             //var response = instance.GcMarkAllMessagesAsDelivered(channelUrl, apiToken, gcMarkAllMessagesAsDeliveredData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20050), response, "response is InlineResponse20050");
+            //Assert.IsInstanceOf(typeof(GcMarkAllMessagesAsDeliveredResponse), response, "response is GcMarkAllMessagesAsDeliveredResponse");
         }
         
         /// <summary>
@@ -149,7 +149,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //string userIds = null;
             //var response = instance.GcViewNumberOfEachMembersUnreadMessages(channelUrl, apiToken, userIds);
-            //Assert.IsInstanceOf(typeof(InlineResponse20049), response, "response is InlineResponse20049");
+            //Assert.IsInstanceOf(typeof(GcViewNumberOfEachMembersUnreadMessagesResponse), response, "response is GcViewNumberOfEachMembersUnreadMessagesResponse");
         }
         
         /// <summary>
@@ -181,7 +181,7 @@ namespace sendbird_platform_sdk.Test
             //string customType = null;
             //bool? withMetaArray = null;
             //var response = instance.ListMessages(channelType, channelUrl, messageTs, messageId, apiToken, prevLimit, nextLimit, include, reverse, senderId, senderIds, operatorFilter, customTypes, messageType, includingRemoved, includeReactions, withSortedMetaArray, showSubchannelMessagesOnly, userId, customType, withMetaArray);
-            //Assert.IsInstanceOf(typeof(InlineResponse20047), response, "response is InlineResponse20047");
+            //Assert.IsInstanceOf(typeof(ListMessagesResponse), response, "response is ListMessagesResponse");
         }
         
         /// <summary>
@@ -197,7 +197,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //bool? listUsers = null;
             //var response = instance.ListReactionsOfMessage(channelType, channelUrl, messageId, apiToken, listUsers);
-            //Assert.IsInstanceOf(typeof(InlineResponse20052), response, "response is InlineResponse20052");
+            //Assert.IsInstanceOf(typeof(ListReactionsOfMessageResponse), response, "response is ListReactionsOfMessageResponse");
         }
         
         /// <summary>
@@ -230,7 +230,7 @@ namespace sendbird_platform_sdk.Test
             //string userId = null;
             //string reaction = null;
             //var response = instance.RemoveReactionFromAMessage(channelType, channelUrl, messageId, apiToken, userId, reaction);
-            //Assert.IsInstanceOf(typeof(InlineResponse20053), response, "response is InlineResponse20053");
+            //Assert.IsInstanceOf(typeof(RemoveReactionFromAMessageResponse), response, "response is RemoveReactionFromAMessageResponse");
         }
         
         /// <summary>
@@ -277,7 +277,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //UpdateExtraDataInMessageData updateExtraDataInMessageData = null;
             //var response = instance.UpdateExtraDataInMessage(channelType, channelUrl, messageId, apiToken, updateExtraDataInMessageData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20054), response, "response is InlineResponse20054");
+            //Assert.IsInstanceOf(typeof(UpdateExtraDataInMessageResponse), response, "response is UpdateExtraDataInMessageResponse");
         }
         
         /// <summary>
@@ -324,7 +324,7 @@ namespace sendbird_platform_sdk.Test
             //string channelUrl = null;
             //string apiToken = null;
             //var response = instance.ViewTotalNumberOfMessagesInChannel(channelType, channelUrl, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20048), response, "response is InlineResponse20048");
+            //Assert.IsInstanceOf(typeof(ViewTotalNumberOfMessagesInChannelResponse), response, "response is ViewTotalNumberOfMessagesInChannelResponse");
         }
         
     }

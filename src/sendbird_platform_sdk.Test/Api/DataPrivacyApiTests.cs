@@ -87,7 +87,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //int? limit = null;
             //var response = instance.ListGdprRequests(apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(InlineResponse20068), response, "response is InlineResponse20068");
+            //Assert.IsInstanceOf(typeof(ListGdprRequestsResponse), response, "response is ListGdprRequestsResponse");
         }
         
         /// <summary>
@@ -100,7 +100,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //RegisterGdprRequestData registerGdprRequestData = null;
             //var response = instance.RegisterGdprRequest(apiToken, registerGdprRequestData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20069), response, "response is InlineResponse20069");
+            //Assert.IsInstanceOf(typeof(RegisterGdprRequestResponse), response, "response is RegisterGdprRequestResponse");
         }
         
         /// <summary>
@@ -113,7 +113,7 @@ namespace sendbird_platform_sdk.Test
             //string requestId = null;
             //string apiToken = null;
             //var response = instance.ViewGdprRequestById(requestId, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20068Requests), response, "response is InlineResponse20068Requests");
+            //Assert.IsInstanceOf(typeof(ViewGdprRequestByIdResponse), response, "response is ViewGdprRequestByIdResponse");
         }
         
     }

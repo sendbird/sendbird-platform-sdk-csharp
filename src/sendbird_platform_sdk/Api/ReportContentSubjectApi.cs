@@ -37,8 +37,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="startTs"> (optional)</param>
         /// <param name="endTs"> (optional)</param>
-        /// <returns>InlineResponse20070</returns>
-        InlineResponse20070 ListReports (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?));
+        /// <returns>ListReportsResponse</returns>
+        ListReportsResponse ListReports (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?));
 
         /// <summary>
         /// List reports
@@ -52,8 +52,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="startTs"> (optional)</param>
         /// <param name="endTs"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20070</returns>
-        ApiResponse<InlineResponse20070> ListReportsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?));
+        /// <returns>ApiResponse of ListReportsResponse</returns>
+        ApiResponse<ListReportsResponse> ListReportsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?));
         /// <summary>
         /// List reports on a channel
         /// </summary>
@@ -66,8 +66,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20071</returns>
-        InlineResponse20071 ListReportsOnChannelByUrl (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ListReportsOnChannelByUrlResponse</returns>
+        ListReportsOnChannelByUrlResponse ListReportsOnChannelByUrl (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List reports on a channel
@@ -81,8 +81,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20071</returns>
-        ApiResponse<InlineResponse20071> ListReportsOnChannelByUrlWithHttpInfo (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ApiResponse of ListReportsOnChannelByUrlResponse</returns>
+        ApiResponse<ListReportsOnChannelByUrlResponse> ListReportsOnChannelByUrlWithHttpInfo (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
         /// <summary>
         /// List reports on a message
         /// </summary>
@@ -96,8 +96,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20071</returns>
-        InlineResponse20071 ListReportsOnMessageById (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ListReportsOnMessageByIdResponse</returns>
+        ListReportsOnMessageByIdResponse ListReportsOnMessageById (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List reports on a message
@@ -112,8 +112,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20071</returns>
-        ApiResponse<InlineResponse20071> ListReportsOnMessageByIdWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ApiResponse of ListReportsOnMessageByIdResponse</returns>
+        ApiResponse<ListReportsOnMessageByIdResponse> ListReportsOnMessageByIdWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
         /// <summary>
         /// List reports on a user
         /// </summary>
@@ -125,8 +125,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20071</returns>
-        InlineResponse20071 ListReportsOnUserById (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ListReportsOnUserByIdResponse</returns>
+        ListReportsOnUserByIdResponse ListReportsOnUserById (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List reports on a user
@@ -139,8 +139,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20071</returns>
-        ApiResponse<InlineResponse20071> ListReportsOnUserByIdWithHttpInfo (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ApiResponse of ListReportsOnUserByIdResponse</returns>
+        ApiResponse<ListReportsOnUserByIdResponse> ListReportsOnUserByIdWithHttpInfo (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
         /// <summary>
         /// Report a channel
         /// </summary>
@@ -152,8 +152,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportChannelByUrlData"> (optional)</param>
-        /// <returns>InlineResponse20071ReportLogs</returns>
-        InlineResponse20071ReportLogs ReportChannelByUrl (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData));
+        /// <returns>ReportChannelByUrlResponse</returns>
+        ReportChannelByUrlResponse ReportChannelByUrl (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData));
 
         /// <summary>
         /// Report a channel
@@ -166,8 +166,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportChannelByUrlData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20071ReportLogs</returns>
-        ApiResponse<InlineResponse20071ReportLogs> ReportChannelByUrlWithHttpInfo (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData));
+        /// <returns>ApiResponse of ReportChannelByUrlResponse</returns>
+        ApiResponse<ReportChannelByUrlResponse> ReportChannelByUrlWithHttpInfo (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData));
         /// <summary>
         /// Report a message
         /// </summary>
@@ -180,8 +180,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="messageId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportMessageByIdData"> (optional)</param>
-        /// <returns>InlineResponse20071ReportLogs</returns>
-        InlineResponse20071ReportLogs ReportMessageById (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData));
+        /// <returns>ReportMessageByIdResponse</returns>
+        ReportMessageByIdResponse ReportMessageById (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData));
 
         /// <summary>
         /// Report a message
@@ -195,8 +195,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="messageId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportMessageByIdData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20071ReportLogs</returns>
-        ApiResponse<InlineResponse20071ReportLogs> ReportMessageByIdWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData));
+        /// <returns>ApiResponse of ReportMessageByIdResponse</returns>
+        ApiResponse<ReportMessageByIdResponse> ReportMessageByIdWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData));
         /// <summary>
         /// Report a user
         /// </summary>
@@ -207,8 +207,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="offendingUserId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportUserByIdData"> (optional)</param>
-        /// <returns>InlineResponse20071ReportLogs</returns>
-        InlineResponse20071ReportLogs ReportUserById (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData));
+        /// <returns>ReportUserByIdResponse</returns>
+        ReportUserByIdResponse ReportUserById (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData));
 
         /// <summary>
         /// Report a user
@@ -220,8 +220,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="offendingUserId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportUserByIdData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20071ReportLogs</returns>
-        ApiResponse<InlineResponse20071ReportLogs> ReportUserByIdWithHttpInfo (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData));
+        /// <returns>ApiResponse of ReportUserByIdResponse</returns>
+        ApiResponse<ReportUserByIdResponse> ReportUserByIdWithHttpInfo (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData));
         /// <summary>
         /// View a moderated message
         /// </summary>
@@ -264,8 +264,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="startTs"> (optional)</param>
         /// <param name="endTs"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20070</returns>
-        System.Threading.Tasks.Task<InlineResponse20070> ListReportsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListReportsResponse</returns>
+        System.Threading.Tasks.Task<ListReportsResponse> ListReportsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List reports
@@ -280,8 +280,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="startTs"> (optional)</param>
         /// <param name="endTs"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20070)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20070>> ListReportsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListReportsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListReportsResponse>> ListReportsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List reports on a channel
         /// </summary>
@@ -295,8 +295,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20071</returns>
-        System.Threading.Tasks.Task<InlineResponse20071> ListReportsOnChannelByUrlAsync (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListReportsOnChannelByUrlResponse</returns>
+        System.Threading.Tasks.Task<ListReportsOnChannelByUrlResponse> ListReportsOnChannelByUrlAsync (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List reports on a channel
@@ -311,8 +311,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20071)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20071>> ListReportsOnChannelByUrlWithHttpInfoAsync (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListReportsOnChannelByUrlResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListReportsOnChannelByUrlResponse>> ListReportsOnChannelByUrlWithHttpInfoAsync (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List reports on a message
         /// </summary>
@@ -327,8 +327,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20071</returns>
-        System.Threading.Tasks.Task<InlineResponse20071> ListReportsOnMessageByIdAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListReportsOnMessageByIdResponse</returns>
+        System.Threading.Tasks.Task<ListReportsOnMessageByIdResponse> ListReportsOnMessageByIdAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List reports on a message
@@ -344,8 +344,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20071)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20071>> ListReportsOnMessageByIdWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListReportsOnMessageByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListReportsOnMessageByIdResponse>> ListReportsOnMessageByIdWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List reports on a user
         /// </summary>
@@ -358,8 +358,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20071</returns>
-        System.Threading.Tasks.Task<InlineResponse20071> ListReportsOnUserByIdAsync (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListReportsOnUserByIdResponse</returns>
+        System.Threading.Tasks.Task<ListReportsOnUserByIdResponse> ListReportsOnUserByIdAsync (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List reports on a user
@@ -373,8 +373,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20071)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20071>> ListReportsOnUserByIdWithHttpInfoAsync (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListReportsOnUserByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListReportsOnUserByIdResponse>> ListReportsOnUserByIdWithHttpInfoAsync (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Report a channel
         /// </summary>
@@ -387,8 +387,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20071ReportLogs</returns>
-        System.Threading.Tasks.Task<InlineResponse20071ReportLogs> ReportChannelByUrlAsync (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ReportChannelByUrlResponse</returns>
+        System.Threading.Tasks.Task<ReportChannelByUrlResponse> ReportChannelByUrlAsync (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Report a channel
@@ -402,8 +402,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20071ReportLogs)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20071ReportLogs>> ReportChannelByUrlWithHttpInfoAsync (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ReportChannelByUrlResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ReportChannelByUrlResponse>> ReportChannelByUrlWithHttpInfoAsync (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Report a message
         /// </summary>
@@ -417,8 +417,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportMessageByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20071ReportLogs</returns>
-        System.Threading.Tasks.Task<InlineResponse20071ReportLogs> ReportMessageByIdAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ReportMessageByIdResponse</returns>
+        System.Threading.Tasks.Task<ReportMessageByIdResponse> ReportMessageByIdAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Report a message
@@ -433,8 +433,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportMessageByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20071ReportLogs)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20071ReportLogs>> ReportMessageByIdWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ReportMessageByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ReportMessageByIdResponse>> ReportMessageByIdWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Report a user
         /// </summary>
@@ -446,8 +446,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportUserByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20071ReportLogs</returns>
-        System.Threading.Tasks.Task<InlineResponse20071ReportLogs> ReportUserByIdAsync (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ReportUserByIdResponse</returns>
+        System.Threading.Tasks.Task<ReportUserByIdResponse> ReportUserByIdAsync (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Report a user
@@ -460,8 +460,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportUserByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20071ReportLogs)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20071ReportLogs>> ReportUserByIdWithHttpInfoAsync (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ReportUserByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ReportUserByIdResponse>> ReportUserByIdWithHttpInfoAsync (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a moderated message
         /// </summary>
@@ -611,10 +611,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="startTs"> (optional)</param>
         /// <param name="endTs"> (optional)</param>
-        /// <returns>InlineResponse20070</returns>
-        public InlineResponse20070 ListReports (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?))
+        /// <returns>ListReportsResponse</returns>
+        public ListReportsResponse ListReports (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?))
         {
-             ApiResponse<InlineResponse20070> localVarResponse = ListReportsWithHttpInfo(apiToken, token, limit, startTs, endTs);
+             ApiResponse<ListReportsResponse> localVarResponse = ListReportsWithHttpInfo(apiToken, token, limit, startTs, endTs);
              return localVarResponse.Data;
         }
 
@@ -627,8 +627,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="startTs"> (optional)</param>
         /// <param name="endTs"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20070</returns>
-        public ApiResponse<InlineResponse20070> ListReportsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?))
+        /// <returns>ApiResponse of ListReportsResponse</returns>
+        public ApiResponse<ListReportsResponse> ListReportsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?))
         {
 
             var localVarPath = "/v3/report";
@@ -672,9 +672,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20070>(localVarStatusCode,
+            return new ApiResponse<ListReportsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20070) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20070)));
+                (ListReportsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListReportsResponse)));
         }
 
         /// <summary>
@@ -687,10 +687,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="startTs"> (optional)</param>
         /// <param name="endTs"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20070</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20070> ListReportsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListReportsResponse</returns>
+        public async System.Threading.Tasks.Task<ListReportsResponse> ListReportsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20070> localVarResponse = await ListReportsWithHttpInfoAsync(apiToken, token, limit, startTs, endTs, cancellationToken);
+             ApiResponse<ListReportsResponse> localVarResponse = await ListReportsWithHttpInfoAsync(apiToken, token, limit, startTs, endTs, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -705,8 +705,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="startTs"> (optional)</param>
         /// <param name="endTs"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20070)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20070>> ListReportsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListReportsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListReportsResponse>> ListReportsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/report";
@@ -750,9 +750,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20070>(localVarStatusCode,
+            return new ApiResponse<ListReportsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20070) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20070)));
+                (ListReportsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListReportsResponse)));
         }
 
         /// <summary>
@@ -764,10 +764,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20071</returns>
-        public InlineResponse20071 ListReportsOnChannelByUrl (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ListReportsOnChannelByUrlResponse</returns>
+        public ListReportsOnChannelByUrlResponse ListReportsOnChannelByUrl (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<InlineResponse20071> localVarResponse = ListReportsOnChannelByUrlWithHttpInfo(channelType, channelUrl, apiToken, token, limit);
+             ApiResponse<ListReportsOnChannelByUrlResponse> localVarResponse = ListReportsOnChannelByUrlWithHttpInfo(channelType, channelUrl, apiToken, token, limit);
              return localVarResponse.Data;
         }
 
@@ -780,8 +780,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20071</returns>
-        public ApiResponse<InlineResponse20071> ListReportsOnChannelByUrlWithHttpInfo (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ApiResponse of ListReportsOnChannelByUrlResponse</returns>
+        public ApiResponse<ListReportsOnChannelByUrlResponse> ListReportsOnChannelByUrlWithHttpInfo (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -831,9 +831,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20071>(localVarStatusCode,
+            return new ApiResponse<ListReportsOnChannelByUrlResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20071) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20071)));
+                (ListReportsOnChannelByUrlResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListReportsOnChannelByUrlResponse)));
         }
 
         /// <summary>
@@ -846,10 +846,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20071</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20071> ListReportsOnChannelByUrlAsync (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListReportsOnChannelByUrlResponse</returns>
+        public async System.Threading.Tasks.Task<ListReportsOnChannelByUrlResponse> ListReportsOnChannelByUrlAsync (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20071> localVarResponse = await ListReportsOnChannelByUrlWithHttpInfoAsync(channelType, channelUrl, apiToken, token, limit, cancellationToken);
+             ApiResponse<ListReportsOnChannelByUrlResponse> localVarResponse = await ListReportsOnChannelByUrlWithHttpInfoAsync(channelType, channelUrl, apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -864,8 +864,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20071)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20071>> ListReportsOnChannelByUrlWithHttpInfoAsync (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListReportsOnChannelByUrlResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListReportsOnChannelByUrlResponse>> ListReportsOnChannelByUrlWithHttpInfoAsync (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -915,9 +915,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20071>(localVarStatusCode,
+            return new ApiResponse<ListReportsOnChannelByUrlResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20071) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20071)));
+                (ListReportsOnChannelByUrlResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListReportsOnChannelByUrlResponse)));
         }
 
         /// <summary>
@@ -930,10 +930,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20071</returns>
-        public InlineResponse20071 ListReportsOnMessageById (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ListReportsOnMessageByIdResponse</returns>
+        public ListReportsOnMessageByIdResponse ListReportsOnMessageById (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<InlineResponse20071> localVarResponse = ListReportsOnMessageByIdWithHttpInfo(channelType, channelUrl, messageId, apiToken, token, limit);
+             ApiResponse<ListReportsOnMessageByIdResponse> localVarResponse = ListReportsOnMessageByIdWithHttpInfo(channelType, channelUrl, messageId, apiToken, token, limit);
              return localVarResponse.Data;
         }
 
@@ -947,8 +947,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20071</returns>
-        public ApiResponse<InlineResponse20071> ListReportsOnMessageByIdWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ApiResponse of ListReportsOnMessageByIdResponse</returns>
+        public ApiResponse<ListReportsOnMessageByIdResponse> ListReportsOnMessageByIdWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -1002,9 +1002,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20071>(localVarStatusCode,
+            return new ApiResponse<ListReportsOnMessageByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20071) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20071)));
+                (ListReportsOnMessageByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListReportsOnMessageByIdResponse)));
         }
 
         /// <summary>
@@ -1018,10 +1018,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20071</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20071> ListReportsOnMessageByIdAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListReportsOnMessageByIdResponse</returns>
+        public async System.Threading.Tasks.Task<ListReportsOnMessageByIdResponse> ListReportsOnMessageByIdAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20071> localVarResponse = await ListReportsOnMessageByIdWithHttpInfoAsync(channelType, channelUrl, messageId, apiToken, token, limit, cancellationToken);
+             ApiResponse<ListReportsOnMessageByIdResponse> localVarResponse = await ListReportsOnMessageByIdWithHttpInfoAsync(channelType, channelUrl, messageId, apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1037,8 +1037,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20071)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20071>> ListReportsOnMessageByIdWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListReportsOnMessageByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListReportsOnMessageByIdResponse>> ListReportsOnMessageByIdWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -1092,9 +1092,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20071>(localVarStatusCode,
+            return new ApiResponse<ListReportsOnMessageByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20071) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20071)));
+                (ListReportsOnMessageByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListReportsOnMessageByIdResponse)));
         }
 
         /// <summary>
@@ -1105,10 +1105,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20071</returns>
-        public InlineResponse20071 ListReportsOnUserById (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ListReportsOnUserByIdResponse</returns>
+        public ListReportsOnUserByIdResponse ListReportsOnUserById (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<InlineResponse20071> localVarResponse = ListReportsOnUserByIdWithHttpInfo(offendingUserId, apiToken, token, limit);
+             ApiResponse<ListReportsOnUserByIdResponse> localVarResponse = ListReportsOnUserByIdWithHttpInfo(offendingUserId, apiToken, token, limit);
              return localVarResponse.Data;
         }
 
@@ -1120,8 +1120,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20071</returns>
-        public ApiResponse<InlineResponse20071> ListReportsOnUserByIdWithHttpInfo (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ApiResponse of ListReportsOnUserByIdResponse</returns>
+        public ApiResponse<ListReportsOnUserByIdResponse> ListReportsOnUserByIdWithHttpInfo (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
             // verify the required parameter 'offendingUserId' is set
             if (offendingUserId == null)
@@ -1167,9 +1167,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20071>(localVarStatusCode,
+            return new ApiResponse<ListReportsOnUserByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20071) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20071)));
+                (ListReportsOnUserByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListReportsOnUserByIdResponse)));
         }
 
         /// <summary>
@@ -1181,10 +1181,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20071</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20071> ListReportsOnUserByIdAsync (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListReportsOnUserByIdResponse</returns>
+        public async System.Threading.Tasks.Task<ListReportsOnUserByIdResponse> ListReportsOnUserByIdAsync (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20071> localVarResponse = await ListReportsOnUserByIdWithHttpInfoAsync(offendingUserId, apiToken, token, limit, cancellationToken);
+             ApiResponse<ListReportsOnUserByIdResponse> localVarResponse = await ListReportsOnUserByIdWithHttpInfoAsync(offendingUserId, apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1198,8 +1198,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20071)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20071>> ListReportsOnUserByIdWithHttpInfoAsync (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListReportsOnUserByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListReportsOnUserByIdResponse>> ListReportsOnUserByIdWithHttpInfoAsync (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'offendingUserId' is set
             if (offendingUserId == null)
@@ -1245,9 +1245,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20071>(localVarStatusCode,
+            return new ApiResponse<ListReportsOnUserByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20071) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20071)));
+                (ListReportsOnUserByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListReportsOnUserByIdResponse)));
         }
 
         /// <summary>
@@ -1258,10 +1258,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportChannelByUrlData"> (optional)</param>
-        /// <returns>InlineResponse20071ReportLogs</returns>
-        public InlineResponse20071ReportLogs ReportChannelByUrl (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData))
+        /// <returns>ReportChannelByUrlResponse</returns>
+        public ReportChannelByUrlResponse ReportChannelByUrl (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData))
         {
-             ApiResponse<InlineResponse20071ReportLogs> localVarResponse = ReportChannelByUrlWithHttpInfo(channelType, channelUrl, apiToken, reportChannelByUrlData);
+             ApiResponse<ReportChannelByUrlResponse> localVarResponse = ReportChannelByUrlWithHttpInfo(channelType, channelUrl, apiToken, reportChannelByUrlData);
              return localVarResponse.Data;
         }
 
@@ -1273,8 +1273,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportChannelByUrlData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20071ReportLogs</returns>
-        public ApiResponse<InlineResponse20071ReportLogs> ReportChannelByUrlWithHttpInfo (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData))
+        /// <returns>ApiResponse of ReportChannelByUrlResponse</returns>
+        public ApiResponse<ReportChannelByUrlResponse> ReportChannelByUrlWithHttpInfo (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -1331,9 +1331,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20071ReportLogs>(localVarStatusCode,
+            return new ApiResponse<ReportChannelByUrlResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20071ReportLogs) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20071ReportLogs)));
+                (ReportChannelByUrlResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ReportChannelByUrlResponse)));
         }
 
         /// <summary>
@@ -1345,10 +1345,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20071ReportLogs</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20071ReportLogs> ReportChannelByUrlAsync (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ReportChannelByUrlResponse</returns>
+        public async System.Threading.Tasks.Task<ReportChannelByUrlResponse> ReportChannelByUrlAsync (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20071ReportLogs> localVarResponse = await ReportChannelByUrlWithHttpInfoAsync(channelType, channelUrl, apiToken, reportChannelByUrlData, cancellationToken);
+             ApiResponse<ReportChannelByUrlResponse> localVarResponse = await ReportChannelByUrlWithHttpInfoAsync(channelType, channelUrl, apiToken, reportChannelByUrlData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1362,8 +1362,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20071ReportLogs)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20071ReportLogs>> ReportChannelByUrlWithHttpInfoAsync (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ReportChannelByUrlResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ReportChannelByUrlResponse>> ReportChannelByUrlWithHttpInfoAsync (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -1420,9 +1420,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20071ReportLogs>(localVarStatusCode,
+            return new ApiResponse<ReportChannelByUrlResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20071ReportLogs) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20071ReportLogs)));
+                (ReportChannelByUrlResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ReportChannelByUrlResponse)));
         }
 
         /// <summary>
@@ -1434,10 +1434,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="messageId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportMessageByIdData"> (optional)</param>
-        /// <returns>InlineResponse20071ReportLogs</returns>
-        public InlineResponse20071ReportLogs ReportMessageById (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData))
+        /// <returns>ReportMessageByIdResponse</returns>
+        public ReportMessageByIdResponse ReportMessageById (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData))
         {
-             ApiResponse<InlineResponse20071ReportLogs> localVarResponse = ReportMessageByIdWithHttpInfo(channelType, channelUrl, messageId, apiToken, reportMessageByIdData);
+             ApiResponse<ReportMessageByIdResponse> localVarResponse = ReportMessageByIdWithHttpInfo(channelType, channelUrl, messageId, apiToken, reportMessageByIdData);
              return localVarResponse.Data;
         }
 
@@ -1450,8 +1450,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="messageId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportMessageByIdData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20071ReportLogs</returns>
-        public ApiResponse<InlineResponse20071ReportLogs> ReportMessageByIdWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData))
+        /// <returns>ApiResponse of ReportMessageByIdResponse</returns>
+        public ApiResponse<ReportMessageByIdResponse> ReportMessageByIdWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -1512,9 +1512,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20071ReportLogs>(localVarStatusCode,
+            return new ApiResponse<ReportMessageByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20071ReportLogs) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20071ReportLogs)));
+                (ReportMessageByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ReportMessageByIdResponse)));
         }
 
         /// <summary>
@@ -1527,10 +1527,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportMessageByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20071ReportLogs</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20071ReportLogs> ReportMessageByIdAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ReportMessageByIdResponse</returns>
+        public async System.Threading.Tasks.Task<ReportMessageByIdResponse> ReportMessageByIdAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20071ReportLogs> localVarResponse = await ReportMessageByIdWithHttpInfoAsync(channelType, channelUrl, messageId, apiToken, reportMessageByIdData, cancellationToken);
+             ApiResponse<ReportMessageByIdResponse> localVarResponse = await ReportMessageByIdWithHttpInfoAsync(channelType, channelUrl, messageId, apiToken, reportMessageByIdData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1545,8 +1545,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportMessageByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20071ReportLogs)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20071ReportLogs>> ReportMessageByIdWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ReportMessageByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ReportMessageByIdResponse>> ReportMessageByIdWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -1607,9 +1607,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20071ReportLogs>(localVarStatusCode,
+            return new ApiResponse<ReportMessageByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20071ReportLogs) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20071ReportLogs)));
+                (ReportMessageByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ReportMessageByIdResponse)));
         }
 
         /// <summary>
@@ -1619,10 +1619,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="offendingUserId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportUserByIdData"> (optional)</param>
-        /// <returns>InlineResponse20071ReportLogs</returns>
-        public InlineResponse20071ReportLogs ReportUserById (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData))
+        /// <returns>ReportUserByIdResponse</returns>
+        public ReportUserByIdResponse ReportUserById (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData))
         {
-             ApiResponse<InlineResponse20071ReportLogs> localVarResponse = ReportUserByIdWithHttpInfo(offendingUserId, apiToken, reportUserByIdData);
+             ApiResponse<ReportUserByIdResponse> localVarResponse = ReportUserByIdWithHttpInfo(offendingUserId, apiToken, reportUserByIdData);
              return localVarResponse.Data;
         }
 
@@ -1633,8 +1633,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="offendingUserId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportUserByIdData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20071ReportLogs</returns>
-        public ApiResponse<InlineResponse20071ReportLogs> ReportUserByIdWithHttpInfo (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData))
+        /// <returns>ApiResponse of ReportUserByIdResponse</returns>
+        public ApiResponse<ReportUserByIdResponse> ReportUserByIdWithHttpInfo (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData))
         {
             // verify the required parameter 'offendingUserId' is set
             if (offendingUserId == null)
@@ -1687,9 +1687,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20071ReportLogs>(localVarStatusCode,
+            return new ApiResponse<ReportUserByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20071ReportLogs) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20071ReportLogs)));
+                (ReportUserByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ReportUserByIdResponse)));
         }
 
         /// <summary>
@@ -1700,10 +1700,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportUserByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20071ReportLogs</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20071ReportLogs> ReportUserByIdAsync (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ReportUserByIdResponse</returns>
+        public async System.Threading.Tasks.Task<ReportUserByIdResponse> ReportUserByIdAsync (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20071ReportLogs> localVarResponse = await ReportUserByIdWithHttpInfoAsync(offendingUserId, apiToken, reportUserByIdData, cancellationToken);
+             ApiResponse<ReportUserByIdResponse> localVarResponse = await ReportUserByIdWithHttpInfoAsync(offendingUserId, apiToken, reportUserByIdData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1716,8 +1716,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="reportUserByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20071ReportLogs)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20071ReportLogs>> ReportUserByIdWithHttpInfoAsync (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ReportUserByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ReportUserByIdResponse>> ReportUserByIdWithHttpInfoAsync (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'offendingUserId' is set
             if (offendingUserId == null)
@@ -1770,9 +1770,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20071ReportLogs>(localVarStatusCode,
+            return new ApiResponse<ReportUserByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20071ReportLogs) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20071ReportLogs)));
+                (ReportUserByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ReportUserByIdResponse)));
         }
 
         /// <summary>

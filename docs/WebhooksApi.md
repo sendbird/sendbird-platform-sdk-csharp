@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 ## ChooseWhichEventsToSubscribeTo
 
-> InlineResponse20067 ChooseWhichEventsToSubscribeTo (string apiToken = null, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = null)
+> ChooseWhichEventsToSubscribeToResponse ChooseWhichEventsToSubscribeTo (string apiToken = null, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = null)
 
 Choose which events to subscribe to
 
@@ -40,7 +40,7 @@ namespace Example
             try
             {
                 // Choose which events to subscribe to
-                InlineResponse20067 result = apiInstance.ChooseWhichEventsToSubscribeTo(apiToken, chooseWhichEventsToSubscribeToData);
+                ChooseWhichEventsToSubscribeToResponse result = apiInstance.ChooseWhichEventsToSubscribeTo(apiToken, chooseWhichEventsToSubscribeToData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20067**](InlineResponse20067.md)
+[**ChooseWhichEventsToSubscribeToResponse**](ChooseWhichEventsToSubscribeToResponse.md)
 
 ### Authorization
 
@@ -89,7 +89,7 @@ No authorization required
 
 ## RetrieveListOfSubscribedEvents
 
-> InlineResponse20066 RetrieveListOfSubscribedEvents (string apiToken = null, bool? displayAllWebhookCategories = null)
+> RetrieveListOfSubscribedEventsResponse RetrieveListOfSubscribedEvents (string apiToken = null, bool? displayAllWebhookCategories = null)
 
 Retrieve a list of subscribed events
 
@@ -118,7 +118,7 @@ namespace Example
             try
             {
                 // Retrieve a list of subscribed events
-                InlineResponse20066 result = apiInstance.RetrieveListOfSubscribedEvents(apiToken, displayAllWebhookCategories);
+                RetrieveListOfSubscribedEventsResponse result = apiInstance.RetrieveListOfSubscribedEvents(apiToken, displayAllWebhookCategories);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -142,7 +142,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20066**](InlineResponse20066.md)
+[**RetrieveListOfSubscribedEventsResponse**](RetrieveListOfSubscribedEventsResponse.md)
 
 ### Authorization
 

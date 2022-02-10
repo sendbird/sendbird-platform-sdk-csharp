@@ -28,7 +28,7 @@ Method | HTTP request | Description
 
 ## OcBanUser
 
-> InlineResponse20033BannedList OcBanUser (string channelUrl, string apiToken = null, OcBanUserData ocBanUserData = null)
+> OcBanUserResponse OcBanUser (string channelUrl, string apiToken = null, OcBanUserData ocBanUserData = null)
 
 Ban a user
 
@@ -58,7 +58,7 @@ namespace Example
             try
             {
                 // Ban a user
-                InlineResponse20033BannedList result = apiInstance.OcBanUser(channelUrl, apiToken, ocBanUserData);
+                OcBanUserResponse result = apiInstance.OcBanUser(channelUrl, apiToken, ocBanUserData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -83,7 +83,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20033BannedList**](InlineResponse20033BannedList.md)
+[**OcBanUserResponse**](OcBanUserResponse.md)
 
 ### Authorization
 
@@ -424,7 +424,7 @@ No authorization required
 
 ## OcListBannedUsers
 
-> InlineResponse20033 OcListBannedUsers (string channelUrl, string apiToken = null, string token = null, int? limit = null)
+> OcListBannedUsersResponse OcListBannedUsers (string channelUrl, string apiToken = null, string token = null, int? limit = null)
 
 List banned users
 
@@ -455,7 +455,7 @@ namespace Example
             try
             {
                 // List banned users
-                InlineResponse20033 result = apiInstance.OcListBannedUsers(channelUrl, apiToken, token, limit);
+                OcListBannedUsersResponse result = apiInstance.OcListBannedUsers(channelUrl, apiToken, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -481,7 +481,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20033**](InlineResponse20033.md)
+[**OcListBannedUsersResponse**](OcListBannedUsersResponse.md)
 
 ### Authorization
 
@@ -506,7 +506,7 @@ No authorization required
 
 ## OcListChannels
 
-> InlineResponse20030 OcListChannels (string apiToken = null, string token = null, int? limit = null, string customTypes = null, string nameContains = null, string urlContains = null, bool? showFrozen = null, bool? showMetadata = null, string customType = null)
+> OcListChannelsResponse OcListChannels (string apiToken = null, string token = null, int? limit = null, string customTypes = null, string nameContains = null, string urlContains = null, bool? showFrozen = null, bool? showMetadata = null, string customType = null)
 
 List channels
 
@@ -542,7 +542,7 @@ namespace Example
             try
             {
                 // List channels
-                InlineResponse20030 result = apiInstance.OcListChannels(apiToken, token, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, customType);
+                OcListChannelsResponse result = apiInstance.OcListChannels(apiToken, token, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, customType);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -573,7 +573,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20030**](InlineResponse20030.md)
+[**OcListChannelsResponse**](OcListChannelsResponse.md)
 
 ### Authorization
 
@@ -598,7 +598,7 @@ No authorization required
 
 ## OcListMutedUsers
 
-> InlineResponse20031 OcListMutedUsers (string channelUrl, string apiToken = null, string token = null, int? limit = null)
+> OcListMutedUsersResponse OcListMutedUsers (string channelUrl, string apiToken = null, string token = null, int? limit = null)
 
 List muted users
 
@@ -629,7 +629,7 @@ namespace Example
             try
             {
                 // List muted users
-                InlineResponse20031 result = apiInstance.OcListMutedUsers(channelUrl, apiToken, token, limit);
+                OcListMutedUsersResponse result = apiInstance.OcListMutedUsers(channelUrl, apiToken, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -655,7 +655,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20031**](InlineResponse20031.md)
+[**OcListMutedUsersResponse**](OcListMutedUsersResponse.md)
 
 ### Authorization
 
@@ -680,7 +680,7 @@ No authorization required
 
 ## OcListOperators
 
-> InlineResponse20034 OcListOperators (string channelUrl, string apiToken = null, string token = null, int? limit = null)
+> OcListOperatorsResponse OcListOperators (string channelUrl, string apiToken = null, string token = null, int? limit = null)
 
 List operators
 
@@ -711,7 +711,7 @@ namespace Example
             try
             {
                 // List operators
-                InlineResponse20034 result = apiInstance.OcListOperators(channelUrl, apiToken, token, limit);
+                OcListOperatorsResponse result = apiInstance.OcListOperators(channelUrl, apiToken, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -737,7 +737,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20034**](InlineResponse20034.md)
+[**OcListOperatorsResponse**](OcListOperatorsResponse.md)
 
 ### Authorization
 
@@ -762,7 +762,7 @@ No authorization required
 
 ## OcListParticipants
 
-> InlineResponse20032 OcListParticipants (string channelUrl, string apiToken = null, string token = null, int? limit = null)
+> OcListParticipantsResponse OcListParticipants (string channelUrl, string apiToken = null, string token = null, int? limit = null)
 
 List participants
 
@@ -793,7 +793,7 @@ namespace Example
             try
             {
                 // List participants
-                InlineResponse20032 result = apiInstance.OcListParticipants(channelUrl, apiToken, token, limit);
+                OcListParticipantsResponse result = apiInstance.OcListParticipants(channelUrl, apiToken, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -819,7 +819,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20032**](InlineResponse20032.md)
+[**OcListParticipantsResponse**](OcListParticipantsResponse.md)
 
 ### Authorization
 
@@ -1481,7 +1481,7 @@ No authorization required
 
 ## OcViewMuteById
 
-> InlineResponse20035 OcViewMuteById (string channelUrl, string mutedUserId, string apiToken = null)
+> OcViewMuteByIdResponse OcViewMuteById (string channelUrl, string mutedUserId, string apiToken = null)
 
 View a mute
 
@@ -1511,7 +1511,7 @@ namespace Example
             try
             {
                 // View a mute
-                InlineResponse20035 result = apiInstance.OcViewMuteById(channelUrl, mutedUserId, apiToken);
+                OcViewMuteByIdResponse result = apiInstance.OcViewMuteById(channelUrl, mutedUserId, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1536,7 +1536,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20035**](InlineResponse20035.md)
+[**OcViewMuteByIdResponse**](OcViewMuteByIdResponse.md)
 
 ### Authorization
 

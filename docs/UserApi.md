@@ -45,7 +45,7 @@ Method | HTTP request | Description
 
 ## AddRegistrationOrDeviceToken
 
-> InlineResponse20025 AddRegistrationOrDeviceToken (string userId, string tokenType, string apiToken = null, AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = null)
+> AddRegistrationOrDeviceTokenResponse AddRegistrationOrDeviceToken (string userId, string tokenType, string apiToken = null, AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = null)
 
 Add a registration or device token
 
@@ -76,7 +76,7 @@ namespace Example
             try
             {
                 // Add a registration or device token
-                InlineResponse20025 result = apiInstance.AddRegistrationOrDeviceToken(userId, tokenType, apiToken, addRegistrationOrDeviceTokenData);
+                AddRegistrationOrDeviceTokenResponse result = apiInstance.AddRegistrationOrDeviceToken(userId, tokenType, apiToken, addRegistrationOrDeviceTokenData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20025**](InlineResponse20025.md)
+[**AddRegistrationOrDeviceTokenResponse**](AddRegistrationOrDeviceTokenResponse.md)
 
 ### Authorization
 
@@ -286,7 +286,7 @@ No authorization required
 
 ## ChoosePushNotificationContentTemplate
 
-> InlineResponse20029 ChoosePushNotificationContentTemplate (string userId, string apiToken = null, Object body = null)
+> ChoosePushNotificationContentTemplateResponse ChoosePushNotificationContentTemplate (string userId, string apiToken = null, Object body = null)
 
 Choose a push notification content template
 
@@ -316,7 +316,7 @@ namespace Example
             try
             {
                 // Choose a push notification content template
-                InlineResponse20029 result = apiInstance.ChoosePushNotificationContentTemplate(userId, apiToken, body);
+                ChoosePushNotificationContentTemplateResponse result = apiInstance.ChoosePushNotificationContentTemplate(userId, apiToken, body);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -341,7 +341,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20029**](InlineResponse20029.md)
+[**ChoosePushNotificationContentTemplateResponse**](ChoosePushNotificationContentTemplateResponse.md)
 
 ### Authorization
 
@@ -600,7 +600,7 @@ No authorization required
 
 ## ListBannedChannels
 
-> InlineResponse20022 ListBannedChannels (string userId, string apiToken = null, string token = null, int? limit = null)
+> ListBannedChannelsResponse ListBannedChannels (string userId, string apiToken = null, string token = null, int? limit = null)
 
 List banned channels
 
@@ -631,7 +631,7 @@ namespace Example
             try
             {
                 // List banned channels
-                InlineResponse20022 result = apiInstance.ListBannedChannels(userId, apiToken, token, limit);
+                ListBannedChannelsResponse result = apiInstance.ListBannedChannels(userId, apiToken, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -657,7 +657,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20022**](InlineResponse20022.md)
+[**ListBannedChannelsResponse**](ListBannedChannelsResponse.md)
 
 ### Authorization
 
@@ -682,7 +682,7 @@ No authorization required
 
 ## ListBlockedUsers
 
-> InlineResponse20016 ListBlockedUsers (string userId, string apiToken = null, string token = null, int? limit = null, string userIds = null, string metadatakey = null, string metadatavaluesIn = null)
+> ListBlockedUsersResponse ListBlockedUsers (string userId, string apiToken = null, string token = null, int? limit = null, string userIds = null, string metadatakey = null, string metadatavaluesIn = null)
 
 List blocked users
 
@@ -716,7 +716,7 @@ namespace Example
             try
             {
                 // List blocked users
-                InlineResponse20016 result = apiInstance.ListBlockedUsers(userId, apiToken, token, limit, userIds, metadatakey, metadatavaluesIn);
+                ListBlockedUsersResponse result = apiInstance.ListBlockedUsers(userId, apiToken, token, limit, userIds, metadatakey, metadatavaluesIn);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -745,7 +745,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20016**](InlineResponse20016.md)
+[**ListBlockedUsersResponse**](ListBlockedUsersResponse.md)
 
 ### Authorization
 
@@ -770,7 +770,7 @@ No authorization required
 
 ## ListMutedChannels
 
-> InlineResponse20023 ListMutedChannels (string userId, string apiToken = null, string token = null, int? limit = null)
+> ListMutedChannelsResponse ListMutedChannels (string userId, string apiToken = null, string token = null, int? limit = null)
 
 List muted channels
 
@@ -801,7 +801,7 @@ namespace Example
             try
             {
                 // List muted channels
-                InlineResponse20023 result = apiInstance.ListMutedChannels(userId, apiToken, token, limit);
+                ListMutedChannelsResponse result = apiInstance.ListMutedChannels(userId, apiToken, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -827,7 +827,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20023**](InlineResponse20023.md)
+[**ListMutedChannelsResponse**](ListMutedChannelsResponse.md)
 
 ### Authorization
 
@@ -852,7 +852,7 @@ No authorization required
 
 ## ListMyGroupChannels
 
-> InlineResponse20017 ListMyGroupChannels (string userId, string apiToken = null, string token = null, int? limit = null, string distinctMode = null, string publicMode = null, string superMode = null, string hiddenMode = null, string memberStateFilter = null, string unreadFilter = null, int? createdAfter = null, int? createdBefore = null, bool? showEmpty = null, bool? showFrozen = null, bool? showMember = null, bool? showDeliveryReceipt = null, bool? showReadReceipt = null, string order = null, string metadataOrderKey = null, string customTypes = null, string customTypeStartswith = null, string channelUrls = null, string name = null, string nameContains = null, string nameStartswith = null, string membersExactlyIn = null, string membersIncludeIn = null, string queryType = null, string membersNickname = null, string membersNicknameContains = null, string searchQuery = null, string searchFields = null, string metadataKey = null, string metadataValues = null, string metadataValueStartswith = null, string metacounterKey = null, string metacounterValues = null, string metacounterValueGt = null, string metacounterValueGte = null, string metacounterValueLt = null, string metacounterValueLte = null, string customType = null)
+> ListMyGroupChannelsResponse ListMyGroupChannels (string userId, string apiToken = null, string token = null, int? limit = null, string distinctMode = null, string publicMode = null, string superMode = null, string hiddenMode = null, string memberStateFilter = null, string unreadFilter = null, int? createdAfter = null, int? createdBefore = null, bool? showEmpty = null, bool? showFrozen = null, bool? showMember = null, bool? showDeliveryReceipt = null, bool? showReadReceipt = null, string order = null, string metadataOrderKey = null, string customTypes = null, string customTypeStartswith = null, string channelUrls = null, string name = null, string nameContains = null, string nameStartswith = null, string membersExactlyIn = null, string membersIncludeIn = null, string queryType = null, string membersNickname = null, string membersNicknameContains = null, string searchQuery = null, string searchFields = null, string metadataKey = null, string metadataValues = null, string metadataValueStartswith = null, string metacounterKey = null, string metacounterValues = null, string metacounterValueGt = null, string metacounterValueGte = null, string metacounterValueLt = null, string metacounterValueLte = null, string customType = null)
 
 List my group channels
 
@@ -921,7 +921,7 @@ namespace Example
             try
             {
                 // List my group channels
-                InlineResponse20017 result = apiInstance.ListMyGroupChannels(userId, apiToken, token, limit, distinctMode, publicMode, superMode, hiddenMode, memberStateFilter, unreadFilter, createdAfter, createdBefore, showEmpty, showFrozen, showMember, showDeliveryReceipt, showReadReceipt, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, searchQuery, searchFields, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, customType);
+                ListMyGroupChannelsResponse result = apiInstance.ListMyGroupChannels(userId, apiToken, token, limit, distinctMode, publicMode, superMode, hiddenMode, memberStateFilter, unreadFilter, createdAfter, createdBefore, showEmpty, showFrozen, showMember, showDeliveryReceipt, showReadReceipt, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, searchQuery, searchFields, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, customType);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -985,7 +985,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20017**](InlineResponse20017.md)
+[**ListMyGroupChannelsResponse**](ListMyGroupChannelsResponse.md)
 
 ### Authorization
 
@@ -1010,7 +1010,7 @@ No authorization required
 
 ## ListRegistrationOrDeviceTokens
 
-> InlineResponse20024 ListRegistrationOrDeviceTokens (string userId, string tokenType, string apiToken = null)
+> ListRegistrationOrDeviceTokensResponse ListRegistrationOrDeviceTokens (string userId, string tokenType, string apiToken = null)
 
 List registration or device tokens
 
@@ -1040,7 +1040,7 @@ namespace Example
             try
             {
                 // List registration or device tokens
-                InlineResponse20024 result = apiInstance.ListRegistrationOrDeviceTokens(userId, tokenType, apiToken);
+                ListRegistrationOrDeviceTokensResponse result = apiInstance.ListRegistrationOrDeviceTokens(userId, tokenType, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1065,7 +1065,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20024**](InlineResponse20024.md)
+[**ListRegistrationOrDeviceTokensResponse**](ListRegistrationOrDeviceTokensResponse.md)
 
 ### Authorization
 
@@ -1090,7 +1090,7 @@ No authorization required
 
 ## ListUsers
 
-> InlineResponse20016 ListUsers (string apiToken = null, string token = null, int? limit = null, string activeMode = null, bool? showBot = null, string userIds = null, string nickname = null, string nicknameStartswith = null, string metadatakey = null, string metadatavaluesIn = null)
+> ListUsersResponse ListUsers (string apiToken = null, string token = null, int? limit = null, string activeMode = null, bool? showBot = null, string userIds = null, string nickname = null, string nicknameStartswith = null, string metadatakey = null, string metadatavaluesIn = null)
 
 List users
 
@@ -1127,7 +1127,7 @@ namespace Example
             try
             {
                 // List users
-                InlineResponse20016 result = apiInstance.ListUsers(apiToken, token, limit, activeMode, showBot, userIds, nickname, nicknameStartswith, metadatakey, metadatavaluesIn);
+                ListUsersResponse result = apiInstance.ListUsers(apiToken, token, limit, activeMode, showBot, userIds, nickname, nicknameStartswith, metadatakey, metadatavaluesIn);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1159,7 +1159,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20016**](InlineResponse20016.md)
+[**ListUsersResponse**](ListUsersResponse.md)
 
 ### Authorization
 
@@ -1421,7 +1421,7 @@ No authorization required
 
 ## RemoveRegistrationOrDeviceToken
 
-> InlineResponse20026 RemoveRegistrationOrDeviceToken (string userId, string apiToken = null)
+> RemoveRegistrationOrDeviceTokenResponse RemoveRegistrationOrDeviceToken (string userId, string apiToken = null)
 
 Remove a registration or device token - When unregistering all device tokens
 
@@ -1450,7 +1450,7 @@ namespace Example
             try
             {
                 // Remove a registration or device token - When unregistering all device tokens
-                InlineResponse20026 result = apiInstance.RemoveRegistrationOrDeviceToken(userId, apiToken);
+                RemoveRegistrationOrDeviceTokenResponse result = apiInstance.RemoveRegistrationOrDeviceToken(userId, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1474,7 +1474,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20026**](InlineResponse20026.md)
+[**RemoveRegistrationOrDeviceTokenResponse**](RemoveRegistrationOrDeviceTokenResponse.md)
 
 ### Authorization
 
@@ -1499,7 +1499,7 @@ No authorization required
 
 ## RemoveRegistrationOrDeviceTokenByToken
 
-> InlineResponse20026 RemoveRegistrationOrDeviceTokenByToken (string userId, string tokenType, string token, string apiToken = null)
+> RemoveRegistrationOrDeviceTokenByTokenResponse RemoveRegistrationOrDeviceTokenByToken (string userId, string tokenType, string token, string apiToken = null)
 
 Remove a registration or device token - When unregistering a specific token
 
@@ -1530,7 +1530,7 @@ namespace Example
             try
             {
                 // Remove a registration or device token - When unregistering a specific token
-                InlineResponse20026 result = apiInstance.RemoveRegistrationOrDeviceTokenByToken(userId, tokenType, token, apiToken);
+                RemoveRegistrationOrDeviceTokenByTokenResponse result = apiInstance.RemoveRegistrationOrDeviceTokenByToken(userId, tokenType, token, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1556,7 +1556,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20026**](InlineResponse20026.md)
+[**RemoveRegistrationOrDeviceTokenByTokenResponse**](RemoveRegistrationOrDeviceTokenByTokenResponse.md)
 
 ### Authorization
 
@@ -1581,7 +1581,7 @@ No authorization required
 
 ## RemoveRegistrationOrDeviceTokenFromOwnerByToken
 
-> InlineResponse20027 RemoveRegistrationOrDeviceTokenFromOwnerByToken (string tokenType, string token, string apiToken = null)
+> RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse RemoveRegistrationOrDeviceTokenFromOwnerByToken (string tokenType, string token, string apiToken = null)
 
 Remove a registration or device token from an owner
 
@@ -1611,7 +1611,7 @@ namespace Example
             try
             {
                 // Remove a registration or device token from an owner
-                InlineResponse20027 result = apiInstance.RemoveRegistrationOrDeviceTokenFromOwnerByToken(tokenType, token, apiToken);
+                RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse result = apiInstance.RemoveRegistrationOrDeviceTokenFromOwnerByToken(tokenType, token, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1636,7 +1636,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20027**](InlineResponse20027.md)
+[**RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse**](RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse.md)
 
 ### Authorization
 
@@ -1817,7 +1817,7 @@ No authorization required
 
 ## UpdateChannelInvitationPreference
 
-> InlineResponse2005 UpdateChannelInvitationPreference (string userId, string apiToken = null, UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = null)
+> UpdateChannelInvitationPreferenceResponse UpdateChannelInvitationPreference (string userId, string apiToken = null, UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = null)
 
 Update channel invitation preference
 
@@ -1847,7 +1847,7 @@ namespace Example
             try
             {
                 // Update channel invitation preference
-                InlineResponse2005 result = apiInstance.UpdateChannelInvitationPreference(userId, apiToken, updateChannelInvitationPreferenceData);
+                UpdateChannelInvitationPreferenceResponse result = apiInstance.UpdateChannelInvitationPreference(userId, apiToken, updateChannelInvitationPreferenceData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1872,7 +1872,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2005**](InlineResponse2005.md)
+[**UpdateChannelInvitationPreferenceResponse**](UpdateChannelInvitationPreferenceResponse.md)
 
 ### Authorization
 
@@ -1897,7 +1897,7 @@ No authorization required
 
 ## UpdateCountPreferenceOfChannelByUrl
 
-> InlineResponse20021 UpdateCountPreferenceOfChannelByUrl (string userId, string channelUrl, string apiToken = null, UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = null)
+> UpdateCountPreferenceOfChannelByUrlResponse UpdateCountPreferenceOfChannelByUrl (string userId, string channelUrl, string apiToken = null, UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = null)
 
 Update count preference of a channel
 
@@ -1928,7 +1928,7 @@ namespace Example
             try
             {
                 // Update count preference of a channel
-                InlineResponse20021 result = apiInstance.UpdateCountPreferenceOfChannelByUrl(userId, channelUrl, apiToken, updateCountPreferenceOfChannelByUrlData);
+                UpdateCountPreferenceOfChannelByUrlResponse result = apiInstance.UpdateCountPreferenceOfChannelByUrl(userId, channelUrl, apiToken, updateCountPreferenceOfChannelByUrlData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1954,7 +1954,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20021**](InlineResponse20021.md)
+[**UpdateCountPreferenceOfChannelByUrlResponse**](UpdateCountPreferenceOfChannelByUrlResponse.md)
 
 ### Authorization
 
@@ -1979,7 +1979,7 @@ No authorization required
 
 ## UpdatePushPreferences
 
-> InlineResponse20028 UpdatePushPreferences (string userId, string apiToken = null, UpdatePushPreferencesData updatePushPreferencesData = null)
+> UpdatePushPreferencesResponse UpdatePushPreferences (string userId, string apiToken = null, UpdatePushPreferencesData updatePushPreferencesData = null)
 
 Update push preferences
 
@@ -2009,7 +2009,7 @@ namespace Example
             try
             {
                 // Update push preferences
-                InlineResponse20028 result = apiInstance.UpdatePushPreferences(userId, apiToken, updatePushPreferencesData);
+                UpdatePushPreferencesResponse result = apiInstance.UpdatePushPreferences(userId, apiToken, updatePushPreferencesData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2034,7 +2034,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20028**](InlineResponse20028.md)
+[**UpdatePushPreferencesResponse**](UpdatePushPreferencesResponse.md)
 
 ### Authorization
 
@@ -2059,7 +2059,7 @@ No authorization required
 
 ## UpdatePushPreferencesForChannelByUrl
 
-> InlineResponse20028 UpdatePushPreferencesForChannelByUrl (string userId, string channelUrl, string apiToken = null, UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = null)
+> UpdatePushPreferencesForChannelByUrlResponse UpdatePushPreferencesForChannelByUrl (string userId, string channelUrl, string apiToken = null, UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = null)
 
 Update push preferences for a channel
 
@@ -2090,7 +2090,7 @@ namespace Example
             try
             {
                 // Update push preferences for a channel
-                InlineResponse20028 result = apiInstance.UpdatePushPreferencesForChannelByUrl(userId, channelUrl, apiToken, updatePushPreferencesForChannelByUrlData);
+                UpdatePushPreferencesForChannelByUrlResponse result = apiInstance.UpdatePushPreferencesForChannelByUrl(userId, channelUrl, apiToken, updatePushPreferencesForChannelByUrlData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2116,7 +2116,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20028**](InlineResponse20028.md)
+[**UpdatePushPreferencesForChannelByUrlResponse**](UpdatePushPreferencesForChannelByUrlResponse.md)
 
 ### Authorization
 
@@ -2221,7 +2221,7 @@ No authorization required
 
 ## ViewChannelInvitationPreference
 
-> InlineResponse2005 ViewChannelInvitationPreference (string userId, string apiToken = null)
+> ViewChannelInvitationPreferenceResponse ViewChannelInvitationPreference (string userId, string apiToken = null)
 
 View channel invitation preference
 
@@ -2250,7 +2250,7 @@ namespace Example
             try
             {
                 // View channel invitation preference
-                InlineResponse2005 result = apiInstance.ViewChannelInvitationPreference(userId, apiToken);
+                ViewChannelInvitationPreferenceResponse result = apiInstance.ViewChannelInvitationPreference(userId, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2274,7 +2274,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2005**](InlineResponse2005.md)
+[**ViewChannelInvitationPreferenceResponse**](ViewChannelInvitationPreferenceResponse.md)
 
 ### Authorization
 
@@ -2299,7 +2299,7 @@ No authorization required
 
 ## ViewCountPreferenceOfChannelByUrl
 
-> InlineResponse20021 ViewCountPreferenceOfChannelByUrl (string userId, string channelUrl, string apiToken = null)
+> ViewCountPreferenceOfChannelByUrlResponse ViewCountPreferenceOfChannelByUrl (string userId, string channelUrl, string apiToken = null)
 
 View count preference of a channel
 
@@ -2329,7 +2329,7 @@ namespace Example
             try
             {
                 // View count preference of a channel
-                InlineResponse20021 result = apiInstance.ViewCountPreferenceOfChannelByUrl(userId, channelUrl, apiToken);
+                ViewCountPreferenceOfChannelByUrlResponse result = apiInstance.ViewCountPreferenceOfChannelByUrl(userId, channelUrl, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2354,7 +2354,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20021**](InlineResponse20021.md)
+[**ViewCountPreferenceOfChannelByUrlResponse**](ViewCountPreferenceOfChannelByUrlResponse.md)
 
 ### Authorization
 
@@ -2379,7 +2379,7 @@ No authorization required
 
 ## ViewNumberOfChannelsByJoinStatus
 
-> InlineResponse20020 ViewNumberOfChannelsByJoinStatus (string userId, string apiToken = null, string state = null)
+> ViewNumberOfChannelsByJoinStatusResponse ViewNumberOfChannelsByJoinStatus (string userId, string apiToken = null, string state = null)
 
 View number of channels by join status
 
@@ -2409,7 +2409,7 @@ namespace Example
             try
             {
                 // View number of channels by join status
-                InlineResponse20020 result = apiInstance.ViewNumberOfChannelsByJoinStatus(userId, apiToken, state);
+                ViewNumberOfChannelsByJoinStatusResponse result = apiInstance.ViewNumberOfChannelsByJoinStatus(userId, apiToken, state);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2434,7 +2434,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20020**](InlineResponse20020.md)
+[**ViewNumberOfChannelsByJoinStatusResponse**](ViewNumberOfChannelsByJoinStatusResponse.md)
 
 ### Authorization
 
@@ -2459,7 +2459,7 @@ No authorization required
 
 ## ViewNumberOfChannelsWithUnreadMessages
 
-> InlineResponse20018 ViewNumberOfChannelsWithUnreadMessages (string userId, string apiToken = null, List<string> customTypes = null, string superMode = null)
+> ViewNumberOfChannelsWithUnreadMessagesResponse ViewNumberOfChannelsWithUnreadMessages (string userId, string apiToken = null, List<string> customTypes = null, string superMode = null)
 
 View number of channels with unread messages
 
@@ -2490,7 +2490,7 @@ namespace Example
             try
             {
                 // View number of channels with unread messages
-                InlineResponse20018 result = apiInstance.ViewNumberOfChannelsWithUnreadMessages(userId, apiToken, customTypes, superMode);
+                ViewNumberOfChannelsWithUnreadMessagesResponse result = apiInstance.ViewNumberOfChannelsWithUnreadMessages(userId, apiToken, customTypes, superMode);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2516,7 +2516,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20018**](InlineResponse20018.md)
+[**ViewNumberOfChannelsWithUnreadMessagesResponse**](ViewNumberOfChannelsWithUnreadMessagesResponse.md)
 
 ### Authorization
 
@@ -2541,7 +2541,7 @@ No authorization required
 
 ## ViewNumberOfUnreadItems
 
-> InlineResponse20019 ViewNumberOfUnreadItems (string userId, string apiToken = null, string customType = null, string itemKeys = null)
+> ViewNumberOfUnreadItemsResponse ViewNumberOfUnreadItems (string userId, string apiToken = null, string customType = null, string itemKeys = null)
 
 View number of unread items
 
@@ -2572,7 +2572,7 @@ namespace Example
             try
             {
                 // View number of unread items
-                InlineResponse20019 result = apiInstance.ViewNumberOfUnreadItems(userId, apiToken, customType, itemKeys);
+                ViewNumberOfUnreadItemsResponse result = apiInstance.ViewNumberOfUnreadItems(userId, apiToken, customType, itemKeys);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2598,7 +2598,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20019**](InlineResponse20019.md)
+[**ViewNumberOfUnreadItemsResponse**](ViewNumberOfUnreadItemsResponse.md)
 
 ### Authorization
 
@@ -2623,7 +2623,7 @@ No authorization required
 
 ## ViewNumberOfUnreadMessages
 
-> InlineResponse20018 ViewNumberOfUnreadMessages (string userId, string apiToken = null, string customTypes = null, string superMode = null)
+> ViewNumberOfUnreadMessagesResponse ViewNumberOfUnreadMessages (string userId, string apiToken = null, string customTypes = null, string superMode = null)
 
 View number of unread messages
 
@@ -2654,7 +2654,7 @@ namespace Example
             try
             {
                 // View number of unread messages
-                InlineResponse20018 result = apiInstance.ViewNumberOfUnreadMessages(userId, apiToken, customTypes, superMode);
+                ViewNumberOfUnreadMessagesResponse result = apiInstance.ViewNumberOfUnreadMessages(userId, apiToken, customTypes, superMode);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2680,7 +2680,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20018**](InlineResponse20018.md)
+[**ViewNumberOfUnreadMessagesResponse**](ViewNumberOfUnreadMessagesResponse.md)
 
 ### Authorization
 
@@ -2705,7 +2705,7 @@ No authorization required
 
 ## ViewPushPreferences
 
-> InlineResponse20028 ViewPushPreferences (string userId, string apiToken = null)
+> ViewPushPreferencesResponse ViewPushPreferences (string userId, string apiToken = null)
 
 View push preferences
 
@@ -2734,7 +2734,7 @@ namespace Example
             try
             {
                 // View push preferences
-                InlineResponse20028 result = apiInstance.ViewPushPreferences(userId, apiToken);
+                ViewPushPreferencesResponse result = apiInstance.ViewPushPreferences(userId, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2758,7 +2758,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20028**](InlineResponse20028.md)
+[**ViewPushPreferencesResponse**](ViewPushPreferencesResponse.md)
 
 ### Authorization
 
@@ -2783,7 +2783,7 @@ No authorization required
 
 ## ViewPushPreferencesForChannelByUrl
 
-> InlineResponse20028 ViewPushPreferencesForChannelByUrl (string userId, string channelUrl, string apiToken = null)
+> ViewPushPreferencesForChannelByUrlResponse ViewPushPreferencesForChannelByUrl (string userId, string channelUrl, string apiToken = null)
 
 View push preferences for a channel
 
@@ -2813,7 +2813,7 @@ namespace Example
             try
             {
                 // View push preferences for a channel
-                InlineResponse20028 result = apiInstance.ViewPushPreferencesForChannelByUrl(userId, channelUrl, apiToken);
+                ViewPushPreferencesForChannelByUrlResponse result = apiInstance.ViewPushPreferencesForChannelByUrl(userId, channelUrl, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2838,7 +2838,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20028**](InlineResponse20028.md)
+[**ViewPushPreferencesForChannelByUrlResponse**](ViewPushPreferencesForChannelByUrlResponse.md)
 
 ### Authorization
 
@@ -2947,7 +2947,7 @@ No authorization required
 
 ## ViewWhoOwnsRegistrationOrDeviceTokenByToken
 
-> InlineResponse20027 ViewWhoOwnsRegistrationOrDeviceTokenByToken (string tokenType, string token, string apiToken = null)
+> ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse ViewWhoOwnsRegistrationOrDeviceTokenByToken (string tokenType, string token, string apiToken = null)
 
 View who owns a registration or device token
 
@@ -2977,7 +2977,7 @@ namespace Example
             try
             {
                 // View who owns a registration or device token
-                InlineResponse20027 result = apiInstance.ViewWhoOwnsRegistrationOrDeviceTokenByToken(tokenType, token, apiToken);
+                ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse result = apiInstance.ViewWhoOwnsRegistrationOrDeviceTokenByToken(tokenType, token, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -3002,7 +3002,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20027**](InlineResponse20027.md)
+[**ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse**](ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse.md)
 
 ### Authorization
 

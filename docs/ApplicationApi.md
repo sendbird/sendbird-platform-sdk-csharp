@@ -35,7 +35,7 @@ Method | HTTP request | Description
 
 ## AddApnsPushConfiguration
 
-> InlineResponse2003 AddApnsPushConfiguration (string apiToken = null, AddApnsPushConfigurationData addApnsPushConfigurationData = null)
+> AddApnsPushConfigurationResponse AddApnsPushConfiguration (string apiToken = null, AddApnsPushConfigurationData addApnsPushConfigurationData = null)
 
 Add an APNs push configuration
 
@@ -64,7 +64,7 @@ namespace Example
             try
             {
                 // Add an APNs push configuration
-                InlineResponse2003 result = apiInstance.AddApnsPushConfiguration(apiToken, addApnsPushConfigurationData);
+                AddApnsPushConfigurationResponse result = apiInstance.AddApnsPushConfiguration(apiToken, addApnsPushConfigurationData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -88,7 +88,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**AddApnsPushConfigurationResponse**](AddApnsPushConfigurationResponse.md)
 
 ### Authorization
 
@@ -113,7 +113,7 @@ No authorization required
 
 ## AddFcmPushConfiguration
 
-> InlineResponse2001 AddFcmPushConfiguration (string apiToken = null, AddFcmPushConfigurationData addFcmPushConfigurationData = null)
+> AddFcmPushConfigurationResponse AddFcmPushConfiguration (string apiToken = null, AddFcmPushConfigurationData addFcmPushConfigurationData = null)
 
 Add a FCM push configuration
 
@@ -142,7 +142,7 @@ namespace Example
             try
             {
                 // Add a FCM push configuration
-                InlineResponse2001 result = apiInstance.AddFcmPushConfiguration(apiToken, addFcmPushConfigurationData);
+                AddFcmPushConfigurationResponse result = apiInstance.AddFcmPushConfiguration(apiToken, addFcmPushConfigurationData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -166,7 +166,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**AddFcmPushConfigurationResponse**](AddFcmPushConfigurationResponse.md)
 
 ### Authorization
 
@@ -191,7 +191,7 @@ No authorization required
 
 ## AddHmsPushConfiguration
 
-> InlineResponse2002 AddHmsPushConfiguration (string apiToken = null, AddHmsPushConfigurationData addHmsPushConfigurationData = null)
+> AddHmsPushConfigurationResponse AddHmsPushConfiguration (string apiToken = null, AddHmsPushConfigurationData addHmsPushConfigurationData = null)
 
 Add an HMS push configuration
 
@@ -220,7 +220,7 @@ namespace Example
             try
             {
                 // Add an HMS push configuration
-                InlineResponse2002 result = apiInstance.AddHmsPushConfiguration(apiToken, addHmsPushConfigurationData);
+                AddHmsPushConfigurationResponse result = apiInstance.AddHmsPushConfiguration(apiToken, addHmsPushConfigurationData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**AddHmsPushConfigurationResponse**](AddHmsPushConfigurationResponse.md)
 
 ### Authorization
 
@@ -269,7 +269,7 @@ No authorization required
 
 ## AddIpToWhitelist
 
-> InlineResponse2006 AddIpToWhitelist (string apiToken = null, AddIpToWhitelistData addIpToWhitelistData = null)
+> AddIpToWhitelistResponse AddIpToWhitelist (string apiToken = null, AddIpToWhitelistData addIpToWhitelistData = null)
 
 Add an IP to a whitelist
 
@@ -298,7 +298,7 @@ namespace Example
             try
             {
                 // Add an IP to a whitelist
-                InlineResponse2006 result = apiInstance.AddIpToWhitelist(apiToken, addIpToWhitelistData);
+                AddIpToWhitelistResponse result = apiInstance.AddIpToWhitelist(apiToken, addIpToWhitelistData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2006**](InlineResponse2006.md)
+[**AddIpToWhitelistResponse**](AddIpToWhitelistResponse.md)
 
 ### Authorization
 
@@ -347,7 +347,7 @@ No authorization required
 
 ## DeleteAllowedIpsFromWhitelist
 
-> InlineResponse2006 DeleteAllowedIpsFromWhitelist (List<string> ipWhitelistAddresses, string apiToken = null)
+> DeleteAllowedIpsFromWhitelistResponse DeleteAllowedIpsFromWhitelist (List<string> ipWhitelistAddresses, string apiToken = null)
 
 Delete allowed IPs from a whitelist
 
@@ -376,7 +376,7 @@ namespace Example
             try
             {
                 // Delete allowed IPs from a whitelist
-                InlineResponse2006 result = apiInstance.DeleteAllowedIpsFromWhitelist(ipWhitelistAddresses, apiToken);
+                DeleteAllowedIpsFromWhitelistResponse result = apiInstance.DeleteAllowedIpsFromWhitelist(ipWhitelistAddresses, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -400,7 +400,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2006**](InlineResponse2006.md)
+[**DeleteAllowedIpsFromWhitelistResponse**](DeleteAllowedIpsFromWhitelistResponse.md)
 
 ### Authorization
 
@@ -425,7 +425,7 @@ No authorization required
 
 ## DeleteApnsCertificateById
 
-> InlineResponse20013 DeleteApnsCertificateById (string providerId, string apiToken = null)
+> DeleteApnsCertificateByIdResponse DeleteApnsCertificateById (string providerId, string apiToken = null)
 
 Delete an APNs certificate
 
@@ -454,7 +454,7 @@ namespace Example
             try
             {
                 // Delete an APNs certificate
-                InlineResponse20013 result = apiInstance.DeleteApnsCertificateById(providerId, apiToken);
+                DeleteApnsCertificateByIdResponse result = apiInstance.DeleteApnsCertificateById(providerId, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -478,7 +478,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20013**](InlineResponse20013.md)
+[**DeleteApnsCertificateByIdResponse**](DeleteApnsCertificateByIdResponse.md)
 
 ### Authorization
 
@@ -503,7 +503,7 @@ No authorization required
 
 ## GenerateSecondaryApiToken
 
-> InlineResponse2007 GenerateSecondaryApiToken (string apiToken = null, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = null)
+> GenerateSecondaryApiTokenResponse GenerateSecondaryApiToken (string apiToken = null, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = null)
 
 Generate a secondary API token
 
@@ -532,7 +532,7 @@ namespace Example
             try
             {
                 // Generate a secondary API token
-                InlineResponse2007 result = apiInstance.GenerateSecondaryApiToken(apiToken, generateSecondaryApiTokenData);
+                GenerateSecondaryApiTokenResponse result = apiInstance.GenerateSecondaryApiToken(apiToken, generateSecondaryApiTokenData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -556,7 +556,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2007**](InlineResponse2007.md)
+[**GenerateSecondaryApiTokenResponse**](GenerateSecondaryApiTokenResponse.md)
 
 ### Authorization
 
@@ -581,7 +581,7 @@ No authorization required
 
 ## ListPushConfigurations
 
-> InlineResponse20012 ListPushConfigurations (string pushType, string apiToken = null)
+> ListPushConfigurationsResponse ListPushConfigurations (string pushType, string apiToken = null)
 
 List push configurations
 
@@ -610,7 +610,7 @@ namespace Example
             try
             {
                 // List push configurations
-                InlineResponse20012 result = apiInstance.ListPushConfigurations(pushType, apiToken);
+                ListPushConfigurationsResponse result = apiInstance.ListPushConfigurations(pushType, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -634,7 +634,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20012**](InlineResponse20012.md)
+[**ListPushConfigurationsResponse**](ListPushConfigurationsResponse.md)
 
 ### Authorization
 
@@ -659,7 +659,7 @@ No authorization required
 
 ## ListPushNotificationContentTemplates
 
-> InlineResponse2004 ListPushNotificationContentTemplates (string apiToken = null)
+> ListPushNotificationContentTemplatesResponse ListPushNotificationContentTemplates (string apiToken = null)
 
 List push notification content templates
 
@@ -687,7 +687,7 @@ namespace Example
             try
             {
                 // List push notification content templates
-                InlineResponse2004 result = apiInstance.ListPushNotificationContentTemplates(apiToken);
+                ListPushNotificationContentTemplatesResponse result = apiInstance.ListPushNotificationContentTemplates(apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -710,7 +710,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2004**](InlineResponse2004.md)
+[**ListPushNotificationContentTemplatesResponse**](ListPushNotificationContentTemplatesResponse.md)
 
 ### Authorization
 
@@ -735,7 +735,7 @@ No authorization required
 
 ## ListSecondaryApiTokens
 
-> InlineResponse2008 ListSecondaryApiTokens (string apiToken = null)
+> ListSecondaryApiTokensResponse ListSecondaryApiTokens (string apiToken = null)
 
 List secondary API tokens
 
@@ -763,7 +763,7 @@ namespace Example
             try
             {
                 // List secondary API tokens
-                InlineResponse2008 result = apiInstance.ListSecondaryApiTokens(apiToken);
+                ListSecondaryApiTokensResponse result = apiInstance.ListSecondaryApiTokens(apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -786,7 +786,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2008**](InlineResponse2008.md)
+[**ListSecondaryApiTokensResponse**](ListSecondaryApiTokensResponse.md)
 
 ### Authorization
 
@@ -811,7 +811,7 @@ No authorization required
 
 ## RemovePushConfigurationById
 
-> InlineResponse20013 RemovePushConfigurationById (string pushType, string providerId, string apiToken = null)
+> RemovePushConfigurationByIdResponse RemovePushConfigurationById (string pushType, string providerId, string apiToken = null)
 
 Remove a push configuration
 
@@ -841,7 +841,7 @@ namespace Example
             try
             {
                 // Remove a push configuration
-                InlineResponse20013 result = apiInstance.RemovePushConfigurationById(pushType, providerId, apiToken);
+                RemovePushConfigurationByIdResponse result = apiInstance.RemovePushConfigurationById(pushType, providerId, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -866,7 +866,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20013**](InlineResponse20013.md)
+[**RemovePushConfigurationByIdResponse**](RemovePushConfigurationByIdResponse.md)
 
 ### Authorization
 
@@ -891,7 +891,7 @@ No authorization required
 
 ## RetrieveIpWhitelist
 
-> InlineResponse2006 RetrieveIpWhitelist (string apiToken = null)
+> RetrieveIpWhitelistResponse RetrieveIpWhitelist (string apiToken = null)
 
 Retrieve an IP whitelist
 
@@ -919,7 +919,7 @@ namespace Example
             try
             {
                 // Retrieve an IP whitelist
-                InlineResponse2006 result = apiInstance.RetrieveIpWhitelist(apiToken);
+                RetrieveIpWhitelistResponse result = apiInstance.RetrieveIpWhitelist(apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -942,7 +942,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2006**](InlineResponse2006.md)
+[**RetrieveIpWhitelistResponse**](RetrieveIpWhitelistResponse.md)
 
 ### Authorization
 
@@ -967,7 +967,7 @@ No authorization required
 
 ## RevokeSecondaryApiTokenByToken
 
-> InlineResponse2007 RevokeSecondaryApiTokenByToken (string apiToken2, string apiToken = null)
+> RevokeSecondaryApiTokenByTokenResponse RevokeSecondaryApiTokenByToken (string apiToken2, string apiToken = null)
 
 Revoke a secondary API token
 
@@ -996,7 +996,7 @@ namespace Example
             try
             {
                 // Revoke a secondary API token
-                InlineResponse2007 result = apiInstance.RevokeSecondaryApiTokenByToken(apiToken2, apiToken);
+                RevokeSecondaryApiTokenByTokenResponse result = apiInstance.RevokeSecondaryApiTokenByToken(apiToken2, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1020,7 +1020,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2007**](InlineResponse2007.md)
+[**RevokeSecondaryApiTokenByTokenResponse**](RevokeSecondaryApiTokenByTokenResponse.md)
 
 ### Authorization
 
@@ -1045,7 +1045,7 @@ No authorization required
 
 ## UpdateApnsPushConfigurationById
 
-> InlineResponse20014 UpdateApnsPushConfigurationById (string providerId, string apiToken = null, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = null)
+> UpdateApnsPushConfigurationByIdResponse UpdateApnsPushConfigurationById (string providerId, string apiToken = null, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = null)
 
 Update an APNs push configuration
 
@@ -1075,7 +1075,7 @@ namespace Example
             try
             {
                 // Update an APNs push configuration
-                InlineResponse20014 result = apiInstance.UpdateApnsPushConfigurationById(providerId, apiToken, updateApnsPushConfigurationByIdData);
+                UpdateApnsPushConfigurationByIdResponse result = apiInstance.UpdateApnsPushConfigurationById(providerId, apiToken, updateApnsPushConfigurationByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1100,7 +1100,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20014**](InlineResponse20014.md)
+[**UpdateApnsPushConfigurationByIdResponse**](UpdateApnsPushConfigurationByIdResponse.md)
 
 ### Authorization
 
@@ -1125,7 +1125,7 @@ No authorization required
 
 ## UpdateDefaultChannelInvitationPreference
 
-> InlineResponse2005 UpdateDefaultChannelInvitationPreference (string apiToken = null, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = null)
+> UpdateDefaultChannelInvitationPreferenceResponse UpdateDefaultChannelInvitationPreference (string apiToken = null, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = null)
 
 Update default channel invitation preference
 
@@ -1154,7 +1154,7 @@ namespace Example
             try
             {
                 // Update default channel invitation preference
-                InlineResponse2005 result = apiInstance.UpdateDefaultChannelInvitationPreference(apiToken, updateDefaultChannelInvitationPreferenceData);
+                UpdateDefaultChannelInvitationPreferenceResponse result = apiInstance.UpdateDefaultChannelInvitationPreference(apiToken, updateDefaultChannelInvitationPreferenceData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1178,7 +1178,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2005**](InlineResponse2005.md)
+[**UpdateDefaultChannelInvitationPreferenceResponse**](UpdateDefaultChannelInvitationPreferenceResponse.md)
 
 ### Authorization
 
@@ -1203,7 +1203,7 @@ No authorization required
 
 ## UpdateFcmPushConfigurationById
 
-> InlineResponse20014 UpdateFcmPushConfigurationById (string providerId, string apiToken = null, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = null)
+> UpdateFcmPushConfigurationByIdResponse UpdateFcmPushConfigurationById (string providerId, string apiToken = null, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = null)
 
 Update a FCM push configuration
 
@@ -1233,7 +1233,7 @@ namespace Example
             try
             {
                 // Update a FCM push configuration
-                InlineResponse20014 result = apiInstance.UpdateFcmPushConfigurationById(providerId, apiToken, updateFcmPushConfigurationByIdData);
+                UpdateFcmPushConfigurationByIdResponse result = apiInstance.UpdateFcmPushConfigurationById(providerId, apiToken, updateFcmPushConfigurationByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1258,7 +1258,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20014**](InlineResponse20014.md)
+[**UpdateFcmPushConfigurationByIdResponse**](UpdateFcmPushConfigurationByIdResponse.md)
 
 ### Authorization
 
@@ -1283,7 +1283,7 @@ No authorization required
 
 ## UpdateHmsPushConfigurationById
 
-> InlineResponse20014 UpdateHmsPushConfigurationById (string providerId, string apiToken = null, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = null)
+> UpdateHmsPushConfigurationByIdResponse UpdateHmsPushConfigurationById (string providerId, string apiToken = null, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = null)
 
 Update an HMS push configuration
 
@@ -1313,7 +1313,7 @@ namespace Example
             try
             {
                 // Update an HMS push configuration
-                InlineResponse20014 result = apiInstance.UpdateHmsPushConfigurationById(providerId, apiToken, updateHmsPushConfigurationByIdData);
+                UpdateHmsPushConfigurationByIdResponse result = apiInstance.UpdateHmsPushConfigurationById(providerId, apiToken, updateHmsPushConfigurationByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1338,7 +1338,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20014**](InlineResponse20014.md)
+[**UpdateHmsPushConfigurationByIdResponse**](UpdateHmsPushConfigurationByIdResponse.md)
 
 ### Authorization
 
@@ -1363,7 +1363,7 @@ No authorization required
 
 ## UpdatePushNotificationContentTemplate
 
-> InlineResponse20015 UpdatePushNotificationContentTemplate (string templateName, string apiToken = null, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = null)
+> UpdatePushNotificationContentTemplateResponse UpdatePushNotificationContentTemplate (string templateName, string apiToken = null, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = null)
 
 Update a push notification content template
 
@@ -1393,7 +1393,7 @@ namespace Example
             try
             {
                 // Update a push notification content template
-                InlineResponse20015 result = apiInstance.UpdatePushNotificationContentTemplate(templateName, apiToken, updatePushNotificationContentTemplateData);
+                UpdatePushNotificationContentTemplateResponse result = apiInstance.UpdatePushNotificationContentTemplate(templateName, apiToken, updatePushNotificationContentTemplateData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1418,7 +1418,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20015**](InlineResponse20015.md)
+[**UpdatePushNotificationContentTemplateResponse**](UpdatePushNotificationContentTemplateResponse.md)
 
 ### Authorization
 
@@ -1443,7 +1443,7 @@ No authorization required
 
 ## ViewDefaultChannelInvitationPreference
 
-> InlineResponse2005 ViewDefaultChannelInvitationPreference (string apiToken = null)
+> ViewDefaultChannelInvitationPreferenceResponse ViewDefaultChannelInvitationPreference (string apiToken = null)
 
 View default channel invitation preference
 
@@ -1471,7 +1471,7 @@ namespace Example
             try
             {
                 // View default channel invitation preference
-                InlineResponse2005 result = apiInstance.ViewDefaultChannelInvitationPreference(apiToken);
+                ViewDefaultChannelInvitationPreferenceResponse result = apiInstance.ViewDefaultChannelInvitationPreference(apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1494,7 +1494,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2005**](InlineResponse2005.md)
+[**ViewDefaultChannelInvitationPreferenceResponse**](ViewDefaultChannelInvitationPreferenceResponse.md)
 
 ### Authorization
 
@@ -1519,7 +1519,7 @@ No authorization required
 
 ## ViewNumberOfConcurrentConnections
 
-> InlineResponse200 ViewNumberOfConcurrentConnections (string apiToken = null)
+> ViewNumberOfConcurrentConnectionsResponse ViewNumberOfConcurrentConnections (string apiToken = null)
 
 View number of concurrent connections
 
@@ -1547,7 +1547,7 @@ namespace Example
             try
             {
                 // View number of concurrent connections
-                InlineResponse200 result = apiInstance.ViewNumberOfConcurrentConnections(apiToken);
+                ViewNumberOfConcurrentConnectionsResponse result = apiInstance.ViewNumberOfConcurrentConnections(apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1570,7 +1570,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**ViewNumberOfConcurrentConnectionsResponse**](ViewNumberOfConcurrentConnectionsResponse.md)
 
 ### Authorization
 
@@ -1595,7 +1595,7 @@ No authorization required
 
 ## ViewNumberOfDailyActiveUsers
 
-> InlineResponse20011 ViewNumberOfDailyActiveUsers (string apiToken = null, string date = null)
+> ViewNumberOfDailyActiveUsersResponse ViewNumberOfDailyActiveUsers (string apiToken = null, string date = null)
 
 View number of daily active users
 
@@ -1624,7 +1624,7 @@ namespace Example
             try
             {
                 // View number of daily active users
-                InlineResponse20011 result = apiInstance.ViewNumberOfDailyActiveUsers(apiToken, date);
+                ViewNumberOfDailyActiveUsersResponse result = apiInstance.ViewNumberOfDailyActiveUsers(apiToken, date);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1648,7 +1648,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20011**](InlineResponse20011.md)
+[**ViewNumberOfDailyActiveUsersResponse**](ViewNumberOfDailyActiveUsersResponse.md)
 
 ### Authorization
 
@@ -1673,7 +1673,7 @@ No authorization required
 
 ## ViewNumberOfMonthlyActiveUsers
 
-> InlineResponse20010 ViewNumberOfMonthlyActiveUsers (string apiToken = null, string date = null)
+> ViewNumberOfMonthlyActiveUsersResponse ViewNumberOfMonthlyActiveUsers (string apiToken = null, string date = null)
 
 View number of monthly active users
 
@@ -1702,7 +1702,7 @@ namespace Example
             try
             {
                 // View number of monthly active users
-                InlineResponse20010 result = apiInstance.ViewNumberOfMonthlyActiveUsers(apiToken, date);
+                ViewNumberOfMonthlyActiveUsersResponse result = apiInstance.ViewNumberOfMonthlyActiveUsers(apiToken, date);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1726,7 +1726,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20010**](InlineResponse20010.md)
+[**ViewNumberOfMonthlyActiveUsersResponse**](ViewNumberOfMonthlyActiveUsersResponse.md)
 
 ### Authorization
 
@@ -1751,7 +1751,7 @@ No authorization required
 
 ## ViewNumberOfPeakConnections
 
-> InlineResponse2009 ViewNumberOfPeakConnections (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = null, int? startDay = null, int? endDay = null)
+> ViewNumberOfPeakConnectionsResponse ViewNumberOfPeakConnections (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = null, int? startDay = null, int? endDay = null)
 
 View number of peak connections
 
@@ -1786,7 +1786,7 @@ namespace Example
             try
             {
                 // View number of peak connections
-                InlineResponse2009 result = apiInstance.ViewNumberOfPeakConnections(timeDimension, startYear, startMonth, endYear, endMonth, apiToken, startDay, endDay);
+                ViewNumberOfPeakConnectionsResponse result = apiInstance.ViewNumberOfPeakConnections(timeDimension, startYear, startMonth, endYear, endMonth, apiToken, startDay, endDay);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1816,7 +1816,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2009**](InlineResponse2009.md)
+[**ViewNumberOfPeakConnectionsResponse**](ViewNumberOfPeakConnectionsResponse.md)
 
 ### Authorization
 
@@ -1841,7 +1841,7 @@ No authorization required
 
 ## ViewPushConfigurationById
 
-> InlineResponse20012 ViewPushConfigurationById (string pushType, string providerId, string apiToken = null)
+> ViewPushConfigurationByIdResponse ViewPushConfigurationById (string pushType, string providerId, string apiToken = null)
 
 View a push configuration
 
@@ -1871,7 +1871,7 @@ namespace Example
             try
             {
                 // View a push configuration
-                InlineResponse20012 result = apiInstance.ViewPushConfigurationById(pushType, providerId, apiToken);
+                ViewPushConfigurationByIdResponse result = apiInstance.ViewPushConfigurationById(pushType, providerId, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1896,7 +1896,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20012**](InlineResponse20012.md)
+[**ViewPushConfigurationByIdResponse**](ViewPushConfigurationByIdResponse.md)
 
 ### Authorization
 
@@ -1921,7 +1921,7 @@ No authorization required
 
 ## ViewPushNotificationContentTemplate
 
-> InlineResponse20015 ViewPushNotificationContentTemplate (string templateName, string apiToken = null)
+> ViewPushNotificationContentTemplateResponse ViewPushNotificationContentTemplate (string templateName, string apiToken = null)
 
 View a push notification content template
 
@@ -1950,7 +1950,7 @@ namespace Example
             try
             {
                 // View a push notification content template
-                InlineResponse20015 result = apiInstance.ViewPushNotificationContentTemplate(templateName, apiToken);
+                ViewPushNotificationContentTemplateResponse result = apiInstance.ViewPushNotificationContentTemplate(templateName, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1974,7 +1974,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20015**](InlineResponse20015.md)
+[**ViewPushNotificationContentTemplateResponse**](ViewPushNotificationContentTemplateResponse.md)
 
 ### Authorization
 
@@ -1999,7 +1999,7 @@ No authorization required
 
 ## ViewSecondaryApiTokenByToken
 
-> InlineResponse2007 ViewSecondaryApiTokenByToken (string apiToken2, string apiToken = null)
+> ViewSecondaryApiTokenByTokenResponse ViewSecondaryApiTokenByToken (string apiToken2, string apiToken = null)
 
 View a secondary API token
 
@@ -2028,7 +2028,7 @@ namespace Example
             try
             {
                 // View a secondary API token
-                InlineResponse2007 result = apiInstance.ViewSecondaryApiTokenByToken(apiToken2, apiToken);
+                ViewSecondaryApiTokenByTokenResponse result = apiInstance.ViewSecondaryApiTokenByToken(apiToken2, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2052,7 +2052,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2007**](InlineResponse2007.md)
+[**ViewSecondaryApiTokenByTokenResponse**](ViewSecondaryApiTokenByTokenResponse.md)
 
 ### Authorization
 

@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 ## AddEmojiCategories
 
-> InlineResponse20057 AddEmojiCategories (string apiToken = null, Object body = null)
+> AddEmojiCategoriesResponse AddEmojiCategories (string apiToken = null, Object body = null)
 
 Add emoji categories
 
@@ -50,7 +50,7 @@ namespace Example
             try
             {
                 // Add emoji categories
-                InlineResponse20057 result = apiInstance.AddEmojiCategories(apiToken, body);
+                AddEmojiCategoriesResponse result = apiInstance.AddEmojiCategories(apiToken, body);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20057**](InlineResponse20057.md)
+[**AddEmojiCategoriesResponse**](AddEmojiCategoriesResponse.md)
 
 ### Authorization
 
@@ -99,7 +99,7 @@ No authorization required
 
 ## AddEmojis
 
-> InlineResponse20059 AddEmojis (string apiToken = null, AddEmojisData addEmojisData = null)
+> AddEmojisResponse AddEmojis (string apiToken = null, AddEmojisData addEmojisData = null)
 
 Add emojis
 
@@ -128,7 +128,7 @@ namespace Example
             try
             {
                 // Add emojis
-                InlineResponse20059 result = apiInstance.AddEmojis(apiToken, addEmojisData);
+                AddEmojisResponse result = apiInstance.AddEmojis(apiToken, addEmojisData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20059**](InlineResponse20059.md)
+[**AddEmojisResponse**](AddEmojisResponse.md)
 
 ### Authorization
 
@@ -331,7 +331,7 @@ No authorization required
 
 ## EnableReactions
 
-> InlineResponse20051 EnableReactions (string apiToken = null, EnableReactionsData enableReactionsData = null)
+> EnableReactionsResponse EnableReactions (string apiToken = null, EnableReactionsData enableReactionsData = null)
 
 Enable reactions
 
@@ -360,7 +360,7 @@ namespace Example
             try
             {
                 // Enable reactions
-                InlineResponse20051 result = apiInstance.EnableReactions(apiToken, enableReactionsData);
+                EnableReactionsResponse result = apiInstance.EnableReactions(apiToken, enableReactionsData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -384,7 +384,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20051**](InlineResponse20051.md)
+[**EnableReactionsResponse**](EnableReactionsResponse.md)
 
 ### Authorization
 
@@ -565,7 +565,7 @@ No authorization required
 
 ## ListAllEmojisAndEmojiCategories
 
-> InlineResponse20056 ListAllEmojisAndEmojiCategories (string apiToken = null)
+> ListAllEmojisAndEmojiCategoriesResponse ListAllEmojisAndEmojiCategories (string apiToken = null)
 
 List all emojis and emoji categories
 
@@ -593,7 +593,7 @@ namespace Example
             try
             {
                 // List all emojis and emoji categories
-                InlineResponse20056 result = apiInstance.ListAllEmojisAndEmojiCategories(apiToken);
+                ListAllEmojisAndEmojiCategoriesResponse result = apiInstance.ListAllEmojisAndEmojiCategories(apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -616,7 +616,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20056**](InlineResponse20056.md)
+[**ListAllEmojisAndEmojiCategoriesResponse**](ListAllEmojisAndEmojiCategoriesResponse.md)
 
 ### Authorization
 
@@ -641,7 +641,7 @@ No authorization required
 
 ## ListEmojis
 
-> InlineResponse20058 ListEmojis (string apiToken = null)
+> ListEmojisResponse ListEmojis (string apiToken = null)
 
 List emojis
 
@@ -669,7 +669,7 @@ namespace Example
             try
             {
                 // List emojis
-                InlineResponse20058 result = apiInstance.ListEmojis(apiToken);
+                ListEmojisResponse result = apiInstance.ListEmojis(apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -692,7 +692,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20058**](InlineResponse20058.md)
+[**ListEmojisResponse**](ListEmojisResponse.md)
 
 ### Authorization
 
@@ -877,7 +877,7 @@ No authorization required
 
 ## UseDefaultEmojis
 
-> InlineResponse20055 UseDefaultEmojis (string apiToken = null, UseDefaultEmojisData useDefaultEmojisData = null)
+> UseDefaultEmojisResponse UseDefaultEmojis (string apiToken = null, UseDefaultEmojisData useDefaultEmojisData = null)
 
 Use default emojis
 
@@ -906,7 +906,7 @@ namespace Example
             try
             {
                 // Use default emojis
-                InlineResponse20055 result = apiInstance.UseDefaultEmojis(apiToken, useDefaultEmojisData);
+                UseDefaultEmojisResponse result = apiInstance.UseDefaultEmojis(apiToken, useDefaultEmojisData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -930,7 +930,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20055**](InlineResponse20055.md)
+[**UseDefaultEmojisResponse**](UseDefaultEmojisResponse.md)
 
 ### Authorization
 

@@ -33,8 +33,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20062</returns>
-        InlineResponse20062 RetrieveAdvancedAnalyticsMetrics (string apiToken = default(string));
+        /// <returns>RetrieveAdvancedAnalyticsMetricsResponse</returns>
+        RetrieveAdvancedAnalyticsMetricsResponse RetrieveAdvancedAnalyticsMetrics (string apiToken = default(string));
 
         /// <summary>
         /// Retrieve Advanced analytics metrics
@@ -44,8 +44,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20062</returns>
-        ApiResponse<InlineResponse20062> RetrieveAdvancedAnalyticsMetricsWithHttpInfo (string apiToken = default(string));
+        /// <returns>ApiResponse of RetrieveAdvancedAnalyticsMetricsResponse</returns>
+        ApiResponse<RetrieveAdvancedAnalyticsMetricsResponse> RetrieveAdvancedAnalyticsMetricsWithHttpInfo (string apiToken = default(string));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -57,8 +57,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20062</returns>
-        System.Threading.Tasks.Task<InlineResponse20062> RetrieveAdvancedAnalyticsMetricsAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of RetrieveAdvancedAnalyticsMetricsResponse</returns>
+        System.Threading.Tasks.Task<RetrieveAdvancedAnalyticsMetricsResponse> RetrieveAdvancedAnalyticsMetricsAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Retrieve Advanced analytics metrics
@@ -69,8 +69,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20062)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20062>> RetrieveAdvancedAnalyticsMetricsWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (RetrieveAdvancedAnalyticsMetricsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<RetrieveAdvancedAnalyticsMetricsResponse>> RetrieveAdvancedAnalyticsMetricsWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -187,10 +187,10 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20062</returns>
-        public InlineResponse20062 RetrieveAdvancedAnalyticsMetrics (string apiToken = default(string))
+        /// <returns>RetrieveAdvancedAnalyticsMetricsResponse</returns>
+        public RetrieveAdvancedAnalyticsMetricsResponse RetrieveAdvancedAnalyticsMetrics (string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20062> localVarResponse = RetrieveAdvancedAnalyticsMetricsWithHttpInfo(apiToken);
+             ApiResponse<RetrieveAdvancedAnalyticsMetricsResponse> localVarResponse = RetrieveAdvancedAnalyticsMetricsWithHttpInfo(apiToken);
              return localVarResponse.Data;
         }
 
@@ -199,8 +199,8 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20062</returns>
-        public ApiResponse<InlineResponse20062> RetrieveAdvancedAnalyticsMetricsWithHttpInfo (string apiToken = default(string))
+        /// <returns>ApiResponse of RetrieveAdvancedAnalyticsMetricsResponse</returns>
+        public ApiResponse<RetrieveAdvancedAnalyticsMetricsResponse> RetrieveAdvancedAnalyticsMetricsWithHttpInfo (string apiToken = default(string))
         {
 
             var localVarPath = "/v3/statistics/metric";
@@ -240,9 +240,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20062>(localVarStatusCode,
+            return new ApiResponse<RetrieveAdvancedAnalyticsMetricsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20062) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20062)));
+                (RetrieveAdvancedAnalyticsMetricsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RetrieveAdvancedAnalyticsMetricsResponse)));
         }
 
         /// <summary>
@@ -251,10 +251,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20062</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20062> RetrieveAdvancedAnalyticsMetricsAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of RetrieveAdvancedAnalyticsMetricsResponse</returns>
+        public async System.Threading.Tasks.Task<RetrieveAdvancedAnalyticsMetricsResponse> RetrieveAdvancedAnalyticsMetricsAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20062> localVarResponse = await RetrieveAdvancedAnalyticsMetricsWithHttpInfoAsync(apiToken, cancellationToken);
+             ApiResponse<RetrieveAdvancedAnalyticsMetricsResponse> localVarResponse = await RetrieveAdvancedAnalyticsMetricsWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -265,8 +265,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20062)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20062>> RetrieveAdvancedAnalyticsMetricsWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (RetrieveAdvancedAnalyticsMetricsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<RetrieveAdvancedAnalyticsMetricsResponse>> RetrieveAdvancedAnalyticsMetricsWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/statistics/metric";
@@ -306,9 +306,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20062>(localVarStatusCode,
+            return new ApiResponse<RetrieveAdvancedAnalyticsMetricsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20062) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20062)));
+                (RetrieveAdvancedAnalyticsMetricsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RetrieveAdvancedAnalyticsMetricsResponse)));
         }
 
     }

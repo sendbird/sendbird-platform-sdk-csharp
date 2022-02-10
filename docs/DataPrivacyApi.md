@@ -90,7 +90,7 @@ No authorization required
 
 ## ListGdprRequests
 
-> InlineResponse20068 ListGdprRequests (string apiToken = null, string token = null, int? limit = null)
+> ListGdprRequestsResponse ListGdprRequests (string apiToken = null, string token = null, int? limit = null)
 
 List GDPR requests
 
@@ -120,7 +120,7 @@ namespace Example
             try
             {
                 // List GDPR requests
-                InlineResponse20068 result = apiInstance.ListGdprRequests(apiToken, token, limit);
+                ListGdprRequestsResponse result = apiInstance.ListGdprRequests(apiToken, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -145,7 +145,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20068**](InlineResponse20068.md)
+[**ListGdprRequestsResponse**](ListGdprRequestsResponse.md)
 
 ### Authorization
 
@@ -170,7 +170,7 @@ No authorization required
 
 ## RegisterGdprRequest
 
-> InlineResponse20069 RegisterGdprRequest (string apiToken = null, RegisterGdprRequestData registerGdprRequestData = null)
+> RegisterGdprRequestResponse RegisterGdprRequest (string apiToken = null, RegisterGdprRequestData registerGdprRequestData = null)
 
 Register a GDPR request
 
@@ -199,7 +199,7 @@ namespace Example
             try
             {
                 // Register a GDPR request
-                InlineResponse20069 result = apiInstance.RegisterGdprRequest(apiToken, registerGdprRequestData);
+                RegisterGdprRequestResponse result = apiInstance.RegisterGdprRequest(apiToken, registerGdprRequestData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -223,7 +223,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20069**](InlineResponse20069.md)
+[**RegisterGdprRequestResponse**](RegisterGdprRequestResponse.md)
 
 ### Authorization
 
@@ -248,7 +248,7 @@ No authorization required
 
 ## ViewGdprRequestById
 
-> InlineResponse20068Requests ViewGdprRequestById (string requestId, string apiToken = null)
+> ViewGdprRequestByIdResponse ViewGdprRequestById (string requestId, string apiToken = null)
 
 View a GDPR request
 
@@ -277,7 +277,7 @@ namespace Example
             try
             {
                 // View a GDPR request
-                InlineResponse20068Requests result = apiInstance.ViewGdprRequestById(requestId, apiToken);
+                ViewGdprRequestByIdResponse result = apiInstance.ViewGdprRequestById(requestId, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -301,7 +301,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20068Requests**](InlineResponse20068Requests.md)
+[**ViewGdprRequestByIdResponse**](ViewGdprRequestByIdResponse.md)
 
 ### Authorization
 

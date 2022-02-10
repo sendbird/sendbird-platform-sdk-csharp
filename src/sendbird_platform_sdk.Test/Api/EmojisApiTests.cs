@@ -73,7 +73,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //Object body = null;
             //var response = instance.AddEmojiCategories(apiToken, body);
-            //Assert.IsInstanceOf(typeof(InlineResponse20057), response, "response is InlineResponse20057");
+            //Assert.IsInstanceOf(typeof(AddEmojiCategoriesResponse), response, "response is AddEmojiCategoriesResponse");
         }
         
         /// <summary>
@@ -86,7 +86,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //AddEmojisData addEmojisData = null;
             //var response = instance.AddEmojis(apiToken, addEmojisData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20059), response, "response is InlineResponse20059");
+            //Assert.IsInstanceOf(typeof(AddEmojisResponse), response, "response is AddEmojisResponse");
         }
         
         /// <summary>
@@ -125,7 +125,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //EnableReactionsData enableReactionsData = null;
             //var response = instance.EnableReactions(apiToken, enableReactionsData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20051), response, "response is InlineResponse20051");
+            //Assert.IsInstanceOf(typeof(EnableReactionsResponse), response, "response is EnableReactionsResponse");
         }
         
         /// <summary>
@@ -163,7 +163,7 @@ namespace sendbird_platform_sdk.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
             //var response = instance.ListAllEmojisAndEmojiCategories(apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20056), response, "response is InlineResponse20056");
+            //Assert.IsInstanceOf(typeof(ListAllEmojisAndEmojiCategoriesResponse), response, "response is ListAllEmojisAndEmojiCategoriesResponse");
         }
         
         /// <summary>
@@ -175,7 +175,7 @@ namespace sendbird_platform_sdk.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
             //var response = instance.ListEmojis(apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20058), response, "response is InlineResponse20058");
+            //Assert.IsInstanceOf(typeof(ListEmojisResponse), response, "response is ListEmojisResponse");
         }
         
         /// <summary>
@@ -216,7 +216,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //UseDefaultEmojisData useDefaultEmojisData = null;
             //var response = instance.UseDefaultEmojis(apiToken, useDefaultEmojisData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20055), response, "response is InlineResponse20055");
+            //Assert.IsInstanceOf(typeof(UseDefaultEmojisResponse), response, "response is UseDefaultEmojisResponse");
         }
         
     }

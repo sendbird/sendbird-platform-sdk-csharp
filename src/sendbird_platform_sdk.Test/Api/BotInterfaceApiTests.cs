@@ -73,7 +73,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //CreateBotData createBotData = null;
             //var response = instance.CreateBot(apiToken, createBotData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20065Bots), response, "response is InlineResponse20065Bots");
+            //Assert.IsInstanceOf(typeof(CreateBotResponse), response, "response is CreateBotResponse");
         }
         
         /// <summary>
@@ -142,7 +142,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //int? limit = null;
             //var response = instance.ListBots(apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(InlineResponse20065), response, "response is InlineResponse20065");
+            //Assert.IsInstanceOf(typeof(ListBotsResponse), response, "response is ListBotsResponse");
         }
         
         /// <summary>
@@ -170,7 +170,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //UpdateBotByIdData updateBotByIdData = null;
             //var response = instance.UpdateBotById(botUserid, apiToken, updateBotByIdData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20065Bots), response, "response is InlineResponse20065Bots");
+            //Assert.IsInstanceOf(typeof(UpdateBotByIdResponse), response, "response is UpdateBotByIdResponse");
         }
         
         /// <summary>
@@ -183,7 +183,7 @@ namespace sendbird_platform_sdk.Test
             //string botUserid = null;
             //string apiToken = null;
             //var response = instance.ViewBotById(botUserid, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20065Bots), response, "response is InlineResponse20065Bots");
+            //Assert.IsInstanceOf(typeof(ViewBotByIdResponse), response, "response is ViewBotByIdResponse");
         }
         
     }

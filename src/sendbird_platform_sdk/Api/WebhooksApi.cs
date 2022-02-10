@@ -34,8 +34,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
-        /// <returns>InlineResponse20067</returns>
-        InlineResponse20067 ChooseWhichEventsToSubscribeTo (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData));
+        /// <returns>ChooseWhichEventsToSubscribeToResponse</returns>
+        ChooseWhichEventsToSubscribeToResponse ChooseWhichEventsToSubscribeTo (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData));
 
         /// <summary>
         /// Choose which events to subscribe to
@@ -46,8 +46,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20067</returns>
-        ApiResponse<InlineResponse20067> ChooseWhichEventsToSubscribeToWithHttpInfo (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData));
+        /// <returns>ApiResponse of ChooseWhichEventsToSubscribeToResponse</returns>
+        ApiResponse<ChooseWhichEventsToSubscribeToResponse> ChooseWhichEventsToSubscribeToWithHttpInfo (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData));
         /// <summary>
         /// Retrieve a list of subscribed events
         /// </summary>
@@ -57,8 +57,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
-        /// <returns>InlineResponse20066</returns>
-        InlineResponse20066 RetrieveListOfSubscribedEvents (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?));
+        /// <returns>RetrieveListOfSubscribedEventsResponse</returns>
+        RetrieveListOfSubscribedEventsResponse RetrieveListOfSubscribedEvents (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?));
 
         /// <summary>
         /// Retrieve a list of subscribed events
@@ -69,8 +69,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20066</returns>
-        ApiResponse<InlineResponse20066> RetrieveListOfSubscribedEventsWithHttpInfo (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?));
+        /// <returns>ApiResponse of RetrieveListOfSubscribedEventsResponse</returns>
+        ApiResponse<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsWithHttpInfo (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -83,8 +83,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20067</returns>
-        System.Threading.Tasks.Task<InlineResponse20067> ChooseWhichEventsToSubscribeToAsync (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ChooseWhichEventsToSubscribeToResponse</returns>
+        System.Threading.Tasks.Task<ChooseWhichEventsToSubscribeToResponse> ChooseWhichEventsToSubscribeToAsync (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Choose which events to subscribe to
@@ -96,8 +96,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20067)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20067>> ChooseWhichEventsToSubscribeToWithHttpInfoAsync (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ChooseWhichEventsToSubscribeToResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ChooseWhichEventsToSubscribeToResponse>> ChooseWhichEventsToSubscribeToWithHttpInfoAsync (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Retrieve a list of subscribed events
         /// </summary>
@@ -108,8 +108,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20066</returns>
-        System.Threading.Tasks.Task<InlineResponse20066> RetrieveListOfSubscribedEventsAsync (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of RetrieveListOfSubscribedEventsResponse</returns>
+        System.Threading.Tasks.Task<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsAsync (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Retrieve a list of subscribed events
@@ -121,8 +121,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20066)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20066>> RetrieveListOfSubscribedEventsWithHttpInfoAsync (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (RetrieveListOfSubscribedEventsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<RetrieveListOfSubscribedEventsResponse>> RetrieveListOfSubscribedEventsWithHttpInfoAsync (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -240,10 +240,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
-        /// <returns>InlineResponse20067</returns>
-        public InlineResponse20067 ChooseWhichEventsToSubscribeTo (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData))
+        /// <returns>ChooseWhichEventsToSubscribeToResponse</returns>
+        public ChooseWhichEventsToSubscribeToResponse ChooseWhichEventsToSubscribeTo (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData))
         {
-             ApiResponse<InlineResponse20067> localVarResponse = ChooseWhichEventsToSubscribeToWithHttpInfo(apiToken, chooseWhichEventsToSubscribeToData);
+             ApiResponse<ChooseWhichEventsToSubscribeToResponse> localVarResponse = ChooseWhichEventsToSubscribeToWithHttpInfo(apiToken, chooseWhichEventsToSubscribeToData);
              return localVarResponse.Data;
         }
 
@@ -253,8 +253,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20067</returns>
-        public ApiResponse<InlineResponse20067> ChooseWhichEventsToSubscribeToWithHttpInfo (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData))
+        /// <returns>ApiResponse of ChooseWhichEventsToSubscribeToResponse</returns>
+        public ApiResponse<ChooseWhichEventsToSubscribeToResponse> ChooseWhichEventsToSubscribeToWithHttpInfo (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData))
         {
 
             var localVarPath = "/v3/applications/settings/webhook";
@@ -303,9 +303,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20067>(localVarStatusCode,
+            return new ApiResponse<ChooseWhichEventsToSubscribeToResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20067) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20067)));
+                (ChooseWhichEventsToSubscribeToResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ChooseWhichEventsToSubscribeToResponse)));
         }
 
         /// <summary>
@@ -315,10 +315,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20067</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20067> ChooseWhichEventsToSubscribeToAsync (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ChooseWhichEventsToSubscribeToResponse</returns>
+        public async System.Threading.Tasks.Task<ChooseWhichEventsToSubscribeToResponse> ChooseWhichEventsToSubscribeToAsync (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20067> localVarResponse = await ChooseWhichEventsToSubscribeToWithHttpInfoAsync(apiToken, chooseWhichEventsToSubscribeToData, cancellationToken);
+             ApiResponse<ChooseWhichEventsToSubscribeToResponse> localVarResponse = await ChooseWhichEventsToSubscribeToWithHttpInfoAsync(apiToken, chooseWhichEventsToSubscribeToData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -330,8 +330,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20067)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20067>> ChooseWhichEventsToSubscribeToWithHttpInfoAsync (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ChooseWhichEventsToSubscribeToResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ChooseWhichEventsToSubscribeToResponse>> ChooseWhichEventsToSubscribeToWithHttpInfoAsync (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/applications/settings/webhook";
@@ -380,9 +380,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20067>(localVarStatusCode,
+            return new ApiResponse<ChooseWhichEventsToSubscribeToResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20067) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20067)));
+                (ChooseWhichEventsToSubscribeToResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ChooseWhichEventsToSubscribeToResponse)));
         }
 
         /// <summary>
@@ -391,10 +391,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
-        /// <returns>InlineResponse20066</returns>
-        public InlineResponse20066 RetrieveListOfSubscribedEvents (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?))
+        /// <returns>RetrieveListOfSubscribedEventsResponse</returns>
+        public RetrieveListOfSubscribedEventsResponse RetrieveListOfSubscribedEvents (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?))
         {
-             ApiResponse<InlineResponse20066> localVarResponse = RetrieveListOfSubscribedEventsWithHttpInfo(apiToken, displayAllWebhookCategories);
+             ApiResponse<RetrieveListOfSubscribedEventsResponse> localVarResponse = RetrieveListOfSubscribedEventsWithHttpInfo(apiToken, displayAllWebhookCategories);
              return localVarResponse.Data;
         }
 
@@ -404,8 +404,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20066</returns>
-        public ApiResponse<InlineResponse20066> RetrieveListOfSubscribedEventsWithHttpInfo (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?))
+        /// <returns>ApiResponse of RetrieveListOfSubscribedEventsResponse</returns>
+        public ApiResponse<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsWithHttpInfo (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?))
         {
 
             var localVarPath = "/v3/applications/settings/webhook";
@@ -446,9 +446,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20066>(localVarStatusCode,
+            return new ApiResponse<RetrieveListOfSubscribedEventsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20066) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20066)));
+                (RetrieveListOfSubscribedEventsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RetrieveListOfSubscribedEventsResponse)));
         }
 
         /// <summary>
@@ -458,10 +458,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20066</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20066> RetrieveListOfSubscribedEventsAsync (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of RetrieveListOfSubscribedEventsResponse</returns>
+        public async System.Threading.Tasks.Task<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsAsync (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20066> localVarResponse = await RetrieveListOfSubscribedEventsWithHttpInfoAsync(apiToken, displayAllWebhookCategories, cancellationToken);
+             ApiResponse<RetrieveListOfSubscribedEventsResponse> localVarResponse = await RetrieveListOfSubscribedEventsWithHttpInfoAsync(apiToken, displayAllWebhookCategories, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -473,8 +473,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20066)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20066>> RetrieveListOfSubscribedEventsWithHttpInfoAsync (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (RetrieveListOfSubscribedEventsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<RetrieveListOfSubscribedEventsResponse>> RetrieveListOfSubscribedEventsWithHttpInfoAsync (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/applications/settings/webhook";
@@ -515,9 +515,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20066>(localVarStatusCode,
+            return new ApiResponse<RetrieveListOfSubscribedEventsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20066) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20066)));
+                (RetrieveListOfSubscribedEventsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RetrieveListOfSubscribedEventsResponse)));
         }
 
     }

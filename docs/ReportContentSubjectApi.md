@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 ## ListReports
 
-> InlineResponse20070 ListReports (string apiToken = null, string token = null, int? limit = null, int? startTs = null, int? endTs = null)
+> ListReportsResponse ListReports (string apiToken = null, string token = null, int? limit = null, int? startTs = null, int? endTs = null)
 
 List reports
 
@@ -49,7 +49,7 @@ namespace Example
             try
             {
                 // List reports
-                InlineResponse20070 result = apiInstance.ListReports(apiToken, token, limit, startTs, endTs);
+                ListReportsResponse result = apiInstance.ListReports(apiToken, token, limit, startTs, endTs);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20070**](InlineResponse20070.md)
+[**ListReportsResponse**](ListReportsResponse.md)
 
 ### Authorization
 
@@ -101,7 +101,7 @@ No authorization required
 
 ## ListReportsOnChannelByUrl
 
-> InlineResponse20071 ListReportsOnChannelByUrl (string channelType, string channelUrl, string apiToken = null, string token = null, int? limit = null)
+> ListReportsOnChannelByUrlResponse ListReportsOnChannelByUrl (string channelType, string channelUrl, string apiToken = null, string token = null, int? limit = null)
 
 List reports on a channel
 
@@ -133,7 +133,7 @@ namespace Example
             try
             {
                 // List reports on a channel
-                InlineResponse20071 result = apiInstance.ListReportsOnChannelByUrl(channelType, channelUrl, apiToken, token, limit);
+                ListReportsOnChannelByUrlResponse result = apiInstance.ListReportsOnChannelByUrl(channelType, channelUrl, apiToken, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20071**](InlineResponse20071.md)
+[**ListReportsOnChannelByUrlResponse**](ListReportsOnChannelByUrlResponse.md)
 
 ### Authorization
 
@@ -185,7 +185,7 @@ No authorization required
 
 ## ListReportsOnMessageById
 
-> InlineResponse20071 ListReportsOnMessageById (string channelType, string channelUrl, string messageId, string apiToken = null, string token = null, int? limit = null)
+> ListReportsOnMessageByIdResponse ListReportsOnMessageById (string channelType, string channelUrl, string messageId, string apiToken = null, string token = null, int? limit = null)
 
 List reports on a message
 
@@ -218,7 +218,7 @@ namespace Example
             try
             {
                 // List reports on a message
-                InlineResponse20071 result = apiInstance.ListReportsOnMessageById(channelType, channelUrl, messageId, apiToken, token, limit);
+                ListReportsOnMessageByIdResponse result = apiInstance.ListReportsOnMessageById(channelType, channelUrl, messageId, apiToken, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -246,7 +246,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20071**](InlineResponse20071.md)
+[**ListReportsOnMessageByIdResponse**](ListReportsOnMessageByIdResponse.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ No authorization required
 
 ## ListReportsOnUserById
 
-> InlineResponse20071 ListReportsOnUserById (string offendingUserId, string apiToken = null, string token = null, int? limit = null)
+> ListReportsOnUserByIdResponse ListReportsOnUserById (string offendingUserId, string apiToken = null, string token = null, int? limit = null)
 
 List reports on a user
 
@@ -302,7 +302,7 @@ namespace Example
             try
             {
                 // List reports on a user
-                InlineResponse20071 result = apiInstance.ListReportsOnUserById(offendingUserId, apiToken, token, limit);
+                ListReportsOnUserByIdResponse result = apiInstance.ListReportsOnUserById(offendingUserId, apiToken, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -328,7 +328,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20071**](InlineResponse20071.md)
+[**ListReportsOnUserByIdResponse**](ListReportsOnUserByIdResponse.md)
 
 ### Authorization
 
@@ -353,7 +353,7 @@ No authorization required
 
 ## ReportChannelByUrl
 
-> InlineResponse20071ReportLogs ReportChannelByUrl (string channelType, string channelUrl, string apiToken = null, ReportChannelByUrlData reportChannelByUrlData = null)
+> ReportChannelByUrlResponse ReportChannelByUrl (string channelType, string channelUrl, string apiToken = null, ReportChannelByUrlData reportChannelByUrlData = null)
 
 Report a channel
 
@@ -384,7 +384,7 @@ namespace Example
             try
             {
                 // Report a channel
-                InlineResponse20071ReportLogs result = apiInstance.ReportChannelByUrl(channelType, channelUrl, apiToken, reportChannelByUrlData);
+                ReportChannelByUrlResponse result = apiInstance.ReportChannelByUrl(channelType, channelUrl, apiToken, reportChannelByUrlData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -410,7 +410,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20071ReportLogs**](InlineResponse20071ReportLogs.md)
+[**ReportChannelByUrlResponse**](ReportChannelByUrlResponse.md)
 
 ### Authorization
 
@@ -435,7 +435,7 @@ No authorization required
 
 ## ReportMessageById
 
-> InlineResponse20071ReportLogs ReportMessageById (string channelType, string channelUrl, string messageId, string apiToken = null, ReportMessageByIdData reportMessageByIdData = null)
+> ReportMessageByIdResponse ReportMessageById (string channelType, string channelUrl, string messageId, string apiToken = null, ReportMessageByIdData reportMessageByIdData = null)
 
 Report a message
 
@@ -467,7 +467,7 @@ namespace Example
             try
             {
                 // Report a message
-                InlineResponse20071ReportLogs result = apiInstance.ReportMessageById(channelType, channelUrl, messageId, apiToken, reportMessageByIdData);
+                ReportMessageByIdResponse result = apiInstance.ReportMessageById(channelType, channelUrl, messageId, apiToken, reportMessageByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -494,7 +494,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20071ReportLogs**](InlineResponse20071ReportLogs.md)
+[**ReportMessageByIdResponse**](ReportMessageByIdResponse.md)
 
 ### Authorization
 
@@ -519,7 +519,7 @@ No authorization required
 
 ## ReportUserById
 
-> InlineResponse20071ReportLogs ReportUserById (string offendingUserId, string apiToken = null, ReportUserByIdData reportUserByIdData = null)
+> ReportUserByIdResponse ReportUserById (string offendingUserId, string apiToken = null, ReportUserByIdData reportUserByIdData = null)
 
 Report a user
 
@@ -549,7 +549,7 @@ namespace Example
             try
             {
                 // Report a user
-                InlineResponse20071ReportLogs result = apiInstance.ReportUserById(offendingUserId, apiToken, reportUserByIdData);
+                ReportUserByIdResponse result = apiInstance.ReportUserById(offendingUserId, apiToken, reportUserByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -574,7 +574,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20071ReportLogs**](InlineResponse20071ReportLogs.md)
+[**ReportUserByIdResponse**](ReportUserByIdResponse.md)
 
 ### Authorization
 

@@ -34,8 +34,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="body"> (optional)</param>
-        /// <returns>InlineResponse20057</returns>
-        InlineResponse20057 AddEmojiCategories (string apiToken = default(string), Object body = default(Object));
+        /// <returns>AddEmojiCategoriesResponse</returns>
+        AddEmojiCategoriesResponse AddEmojiCategories (string apiToken = default(string), Object body = default(Object));
 
         /// <summary>
         /// Add emoji categories
@@ -46,8 +46,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="body"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20057</returns>
-        ApiResponse<InlineResponse20057> AddEmojiCategoriesWithHttpInfo (string apiToken = default(string), Object body = default(Object));
+        /// <returns>ApiResponse of AddEmojiCategoriesResponse</returns>
+        ApiResponse<AddEmojiCategoriesResponse> AddEmojiCategoriesWithHttpInfo (string apiToken = default(string), Object body = default(Object));
         /// <summary>
         /// Add emojis
         /// </summary>
@@ -57,8 +57,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addEmojisData"> (optional)</param>
-        /// <returns>InlineResponse20059</returns>
-        InlineResponse20059 AddEmojis (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData));
+        /// <returns>AddEmojisResponse</returns>
+        AddEmojisResponse AddEmojis (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData));
 
         /// <summary>
         /// Add emojis
@@ -69,8 +69,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addEmojisData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20059</returns>
-        ApiResponse<InlineResponse20059> AddEmojisWithHttpInfo (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData));
+        /// <returns>ApiResponse of AddEmojisResponse</returns>
+        ApiResponse<AddEmojisResponse> AddEmojisWithHttpInfo (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData));
         /// <summary>
         /// Delete an emoji
         /// </summary>
@@ -126,8 +126,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="enableReactionsData"> (optional)</param>
-        /// <returns>InlineResponse20051</returns>
-        InlineResponse20051 EnableReactions (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData));
+        /// <returns>EnableReactionsResponse</returns>
+        EnableReactionsResponse EnableReactions (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData));
 
         /// <summary>
         /// Enable reactions
@@ -138,8 +138,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="enableReactionsData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20051</returns>
-        ApiResponse<InlineResponse20051> EnableReactionsWithHttpInfo (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData));
+        /// <returns>ApiResponse of EnableReactionsResponse</returns>
+        ApiResponse<EnableReactionsResponse> EnableReactionsWithHttpInfo (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData));
         /// <summary>
         /// Get an emoji
         /// </summary>
@@ -194,8 +194,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20056</returns>
-        InlineResponse20056 ListAllEmojisAndEmojiCategories (string apiToken = default(string));
+        /// <returns>ListAllEmojisAndEmojiCategoriesResponse</returns>
+        ListAllEmojisAndEmojiCategoriesResponse ListAllEmojisAndEmojiCategories (string apiToken = default(string));
 
         /// <summary>
         /// List all emojis and emoji categories
@@ -205,8 +205,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20056</returns>
-        ApiResponse<InlineResponse20056> ListAllEmojisAndEmojiCategoriesWithHttpInfo (string apiToken = default(string));
+        /// <returns>ApiResponse of ListAllEmojisAndEmojiCategoriesResponse</returns>
+        ApiResponse<ListAllEmojisAndEmojiCategoriesResponse> ListAllEmojisAndEmojiCategoriesWithHttpInfo (string apiToken = default(string));
         /// <summary>
         /// List emojis
         /// </summary>
@@ -215,8 +215,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20058</returns>
-        InlineResponse20058 ListEmojis (string apiToken = default(string));
+        /// <returns>ListEmojisResponse</returns>
+        ListEmojisResponse ListEmojis (string apiToken = default(string));
 
         /// <summary>
         /// List emojis
@@ -226,8 +226,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20058</returns>
-        ApiResponse<InlineResponse20058> ListEmojisWithHttpInfo (string apiToken = default(string));
+        /// <returns>ApiResponse of ListEmojisResponse</returns>
+        ApiResponse<ListEmojisResponse> ListEmojisWithHttpInfo (string apiToken = default(string));
         /// <summary>
         /// Update an emoji category URL
         /// </summary>
@@ -287,8 +287,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="useDefaultEmojisData"> (optional)</param>
-        /// <returns>InlineResponse20055</returns>
-        InlineResponse20055 UseDefaultEmojis (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData));
+        /// <returns>UseDefaultEmojisResponse</returns>
+        UseDefaultEmojisResponse UseDefaultEmojis (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData));
 
         /// <summary>
         /// Use default emojis
@@ -299,8 +299,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="useDefaultEmojisData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20055</returns>
-        ApiResponse<InlineResponse20055> UseDefaultEmojisWithHttpInfo (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData));
+        /// <returns>ApiResponse of UseDefaultEmojisResponse</returns>
+        ApiResponse<UseDefaultEmojisResponse> UseDefaultEmojisWithHttpInfo (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -313,8 +313,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20057</returns>
-        System.Threading.Tasks.Task<InlineResponse20057> AddEmojiCategoriesAsync (string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of AddEmojiCategoriesResponse</returns>
+        System.Threading.Tasks.Task<AddEmojiCategoriesResponse> AddEmojiCategoriesAsync (string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Add emoji categories
@@ -326,8 +326,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20057)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20057>> AddEmojiCategoriesWithHttpInfoAsync (string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (AddEmojiCategoriesResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<AddEmojiCategoriesResponse>> AddEmojiCategoriesWithHttpInfoAsync (string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Add emojis
         /// </summary>
@@ -338,8 +338,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addEmojisData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20059</returns>
-        System.Threading.Tasks.Task<InlineResponse20059> AddEmojisAsync (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of AddEmojisResponse</returns>
+        System.Threading.Tasks.Task<AddEmojisResponse> AddEmojisAsync (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Add emojis
@@ -351,8 +351,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addEmojisData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20059)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20059>> AddEmojisWithHttpInfoAsync (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (AddEmojisResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<AddEmojisResponse>> AddEmojisWithHttpInfoAsync (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Delete an emoji
         /// </summary>
@@ -413,8 +413,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="enableReactionsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20051</returns>
-        System.Threading.Tasks.Task<InlineResponse20051> EnableReactionsAsync (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of EnableReactionsResponse</returns>
+        System.Threading.Tasks.Task<EnableReactionsResponse> EnableReactionsAsync (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Enable reactions
@@ -426,8 +426,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="enableReactionsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20051)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20051>> EnableReactionsWithHttpInfoAsync (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (EnableReactionsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<EnableReactionsResponse>> EnableReactionsWithHttpInfoAsync (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get an emoji
         /// </summary>
@@ -487,8 +487,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20056</returns>
-        System.Threading.Tasks.Task<InlineResponse20056> ListAllEmojisAndEmojiCategoriesAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListAllEmojisAndEmojiCategoriesResponse</returns>
+        System.Threading.Tasks.Task<ListAllEmojisAndEmojiCategoriesResponse> ListAllEmojisAndEmojiCategoriesAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List all emojis and emoji categories
@@ -499,8 +499,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20056)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20056>> ListAllEmojisAndEmojiCategoriesWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListAllEmojisAndEmojiCategoriesResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListAllEmojisAndEmojiCategoriesResponse>> ListAllEmojisAndEmojiCategoriesWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List emojis
         /// </summary>
@@ -510,8 +510,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20058</returns>
-        System.Threading.Tasks.Task<InlineResponse20058> ListEmojisAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListEmojisResponse</returns>
+        System.Threading.Tasks.Task<ListEmojisResponse> ListEmojisAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List emojis
@@ -522,8 +522,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20058)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20058>> ListEmojisWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListEmojisResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListEmojisResponse>> ListEmojisWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update an emoji category URL
         /// </summary>
@@ -588,8 +588,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="useDefaultEmojisData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20055</returns>
-        System.Threading.Tasks.Task<InlineResponse20055> UseDefaultEmojisAsync (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of UseDefaultEmojisResponse</returns>
+        System.Threading.Tasks.Task<UseDefaultEmojisResponse> UseDefaultEmojisAsync (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Use default emojis
@@ -601,8 +601,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="useDefaultEmojisData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20055)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20055>> UseDefaultEmojisWithHttpInfoAsync (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (UseDefaultEmojisResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UseDefaultEmojisResponse>> UseDefaultEmojisWithHttpInfoAsync (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -720,10 +720,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="body"> (optional)</param>
-        /// <returns>InlineResponse20057</returns>
-        public InlineResponse20057 AddEmojiCategories (string apiToken = default(string), Object body = default(Object))
+        /// <returns>AddEmojiCategoriesResponse</returns>
+        public AddEmojiCategoriesResponse AddEmojiCategories (string apiToken = default(string), Object body = default(Object))
         {
-             ApiResponse<InlineResponse20057> localVarResponse = AddEmojiCategoriesWithHttpInfo(apiToken, body);
+             ApiResponse<AddEmojiCategoriesResponse> localVarResponse = AddEmojiCategoriesWithHttpInfo(apiToken, body);
              return localVarResponse.Data;
         }
 
@@ -733,8 +733,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="body"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20057</returns>
-        public ApiResponse<InlineResponse20057> AddEmojiCategoriesWithHttpInfo (string apiToken = default(string), Object body = default(Object))
+        /// <returns>ApiResponse of AddEmojiCategoriesResponse</returns>
+        public ApiResponse<AddEmojiCategoriesResponse> AddEmojiCategoriesWithHttpInfo (string apiToken = default(string), Object body = default(Object))
         {
 
             var localVarPath = "/v3/emoji_categories";
@@ -783,9 +783,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20057>(localVarStatusCode,
+            return new ApiResponse<AddEmojiCategoriesResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20057) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20057)));
+                (AddEmojiCategoriesResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(AddEmojiCategoriesResponse)));
         }
 
         /// <summary>
@@ -795,10 +795,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20057</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20057> AddEmojiCategoriesAsync (string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of AddEmojiCategoriesResponse</returns>
+        public async System.Threading.Tasks.Task<AddEmojiCategoriesResponse> AddEmojiCategoriesAsync (string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20057> localVarResponse = await AddEmojiCategoriesWithHttpInfoAsync(apiToken, body, cancellationToken);
+             ApiResponse<AddEmojiCategoriesResponse> localVarResponse = await AddEmojiCategoriesWithHttpInfoAsync(apiToken, body, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -810,8 +810,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20057)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20057>> AddEmojiCategoriesWithHttpInfoAsync (string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (AddEmojiCategoriesResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<AddEmojiCategoriesResponse>> AddEmojiCategoriesWithHttpInfoAsync (string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/emoji_categories";
@@ -860,9 +860,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20057>(localVarStatusCode,
+            return new ApiResponse<AddEmojiCategoriesResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20057) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20057)));
+                (AddEmojiCategoriesResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(AddEmojiCategoriesResponse)));
         }
 
         /// <summary>
@@ -871,10 +871,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addEmojisData"> (optional)</param>
-        /// <returns>InlineResponse20059</returns>
-        public InlineResponse20059 AddEmojis (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData))
+        /// <returns>AddEmojisResponse</returns>
+        public AddEmojisResponse AddEmojis (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData))
         {
-             ApiResponse<InlineResponse20059> localVarResponse = AddEmojisWithHttpInfo(apiToken, addEmojisData);
+             ApiResponse<AddEmojisResponse> localVarResponse = AddEmojisWithHttpInfo(apiToken, addEmojisData);
              return localVarResponse.Data;
         }
 
@@ -884,8 +884,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addEmojisData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20059</returns>
-        public ApiResponse<InlineResponse20059> AddEmojisWithHttpInfo (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData))
+        /// <returns>ApiResponse of AddEmojisResponse</returns>
+        public ApiResponse<AddEmojisResponse> AddEmojisWithHttpInfo (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData))
         {
 
             var localVarPath = "/v3/emojis";
@@ -934,9 +934,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20059>(localVarStatusCode,
+            return new ApiResponse<AddEmojisResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20059) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20059)));
+                (AddEmojisResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(AddEmojisResponse)));
         }
 
         /// <summary>
@@ -946,10 +946,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addEmojisData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20059</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20059> AddEmojisAsync (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of AddEmojisResponse</returns>
+        public async System.Threading.Tasks.Task<AddEmojisResponse> AddEmojisAsync (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20059> localVarResponse = await AddEmojisWithHttpInfoAsync(apiToken, addEmojisData, cancellationToken);
+             ApiResponse<AddEmojisResponse> localVarResponse = await AddEmojisWithHttpInfoAsync(apiToken, addEmojisData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -961,8 +961,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addEmojisData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20059)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20059>> AddEmojisWithHttpInfoAsync (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (AddEmojisResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<AddEmojisResponse>> AddEmojisWithHttpInfoAsync (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/emojis";
@@ -1011,9 +1011,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20059>(localVarStatusCode,
+            return new ApiResponse<AddEmojisResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20059) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20059)));
+                (AddEmojisResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(AddEmojisResponse)));
         }
 
         /// <summary>
@@ -1296,10 +1296,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="enableReactionsData"> (optional)</param>
-        /// <returns>InlineResponse20051</returns>
-        public InlineResponse20051 EnableReactions (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData))
+        /// <returns>EnableReactionsResponse</returns>
+        public EnableReactionsResponse EnableReactions (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData))
         {
-             ApiResponse<InlineResponse20051> localVarResponse = EnableReactionsWithHttpInfo(apiToken, enableReactionsData);
+             ApiResponse<EnableReactionsResponse> localVarResponse = EnableReactionsWithHttpInfo(apiToken, enableReactionsData);
              return localVarResponse.Data;
         }
 
@@ -1309,8 +1309,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="enableReactionsData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20051</returns>
-        public ApiResponse<InlineResponse20051> EnableReactionsWithHttpInfo (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData))
+        /// <returns>ApiResponse of EnableReactionsResponse</returns>
+        public ApiResponse<EnableReactionsResponse> EnableReactionsWithHttpInfo (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData))
         {
 
             var localVarPath = "/v3/applications/settings/reactions";
@@ -1359,9 +1359,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20051>(localVarStatusCode,
+            return new ApiResponse<EnableReactionsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20051) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20051)));
+                (EnableReactionsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(EnableReactionsResponse)));
         }
 
         /// <summary>
@@ -1371,10 +1371,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="enableReactionsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20051</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20051> EnableReactionsAsync (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of EnableReactionsResponse</returns>
+        public async System.Threading.Tasks.Task<EnableReactionsResponse> EnableReactionsAsync (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20051> localVarResponse = await EnableReactionsWithHttpInfoAsync(apiToken, enableReactionsData, cancellationToken);
+             ApiResponse<EnableReactionsResponse> localVarResponse = await EnableReactionsWithHttpInfoAsync(apiToken, enableReactionsData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1386,8 +1386,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="enableReactionsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20051)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20051>> EnableReactionsWithHttpInfoAsync (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (EnableReactionsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<EnableReactionsResponse>> EnableReactionsWithHttpInfoAsync (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/applications/settings/reactions";
@@ -1436,9 +1436,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20051>(localVarStatusCode,
+            return new ApiResponse<EnableReactionsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20051) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20051)));
+                (EnableReactionsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(EnableReactionsResponse)));
         }
 
         /// <summary>
@@ -1728,10 +1728,10 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20056</returns>
-        public InlineResponse20056 ListAllEmojisAndEmojiCategories (string apiToken = default(string))
+        /// <returns>ListAllEmojisAndEmojiCategoriesResponse</returns>
+        public ListAllEmojisAndEmojiCategoriesResponse ListAllEmojisAndEmojiCategories (string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20056> localVarResponse = ListAllEmojisAndEmojiCategoriesWithHttpInfo(apiToken);
+             ApiResponse<ListAllEmojisAndEmojiCategoriesResponse> localVarResponse = ListAllEmojisAndEmojiCategoriesWithHttpInfo(apiToken);
              return localVarResponse.Data;
         }
 
@@ -1740,8 +1740,8 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20056</returns>
-        public ApiResponse<InlineResponse20056> ListAllEmojisAndEmojiCategoriesWithHttpInfo (string apiToken = default(string))
+        /// <returns>ApiResponse of ListAllEmojisAndEmojiCategoriesResponse</returns>
+        public ApiResponse<ListAllEmojisAndEmojiCategoriesResponse> ListAllEmojisAndEmojiCategoriesWithHttpInfo (string apiToken = default(string))
         {
 
             var localVarPath = "/v3/emoji_categories";
@@ -1781,9 +1781,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20056>(localVarStatusCode,
+            return new ApiResponse<ListAllEmojisAndEmojiCategoriesResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20056) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20056)));
+                (ListAllEmojisAndEmojiCategoriesResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListAllEmojisAndEmojiCategoriesResponse)));
         }
 
         /// <summary>
@@ -1792,10 +1792,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20056</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20056> ListAllEmojisAndEmojiCategoriesAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListAllEmojisAndEmojiCategoriesResponse</returns>
+        public async System.Threading.Tasks.Task<ListAllEmojisAndEmojiCategoriesResponse> ListAllEmojisAndEmojiCategoriesAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20056> localVarResponse = await ListAllEmojisAndEmojiCategoriesWithHttpInfoAsync(apiToken, cancellationToken);
+             ApiResponse<ListAllEmojisAndEmojiCategoriesResponse> localVarResponse = await ListAllEmojisAndEmojiCategoriesWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1806,8 +1806,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20056)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20056>> ListAllEmojisAndEmojiCategoriesWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListAllEmojisAndEmojiCategoriesResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListAllEmojisAndEmojiCategoriesResponse>> ListAllEmojisAndEmojiCategoriesWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/emoji_categories";
@@ -1847,9 +1847,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20056>(localVarStatusCode,
+            return new ApiResponse<ListAllEmojisAndEmojiCategoriesResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20056) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20056)));
+                (ListAllEmojisAndEmojiCategoriesResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListAllEmojisAndEmojiCategoriesResponse)));
         }
 
         /// <summary>
@@ -1857,10 +1857,10 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20058</returns>
-        public InlineResponse20058 ListEmojis (string apiToken = default(string))
+        /// <returns>ListEmojisResponse</returns>
+        public ListEmojisResponse ListEmojis (string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20058> localVarResponse = ListEmojisWithHttpInfo(apiToken);
+             ApiResponse<ListEmojisResponse> localVarResponse = ListEmojisWithHttpInfo(apiToken);
              return localVarResponse.Data;
         }
 
@@ -1869,8 +1869,8 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20058</returns>
-        public ApiResponse<InlineResponse20058> ListEmojisWithHttpInfo (string apiToken = default(string))
+        /// <returns>ApiResponse of ListEmojisResponse</returns>
+        public ApiResponse<ListEmojisResponse> ListEmojisWithHttpInfo (string apiToken = default(string))
         {
 
             var localVarPath = "/v3/emojis";
@@ -1910,9 +1910,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20058>(localVarStatusCode,
+            return new ApiResponse<ListEmojisResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20058) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20058)));
+                (ListEmojisResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListEmojisResponse)));
         }
 
         /// <summary>
@@ -1921,10 +1921,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20058</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20058> ListEmojisAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListEmojisResponse</returns>
+        public async System.Threading.Tasks.Task<ListEmojisResponse> ListEmojisAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20058> localVarResponse = await ListEmojisWithHttpInfoAsync(apiToken, cancellationToken);
+             ApiResponse<ListEmojisResponse> localVarResponse = await ListEmojisWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1935,8 +1935,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20058)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20058>> ListEmojisWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListEmojisResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListEmojisResponse>> ListEmojisWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/emojis";
@@ -1976,9 +1976,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20058>(localVarStatusCode,
+            return new ApiResponse<ListEmojisResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20058) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20058)));
+                (ListEmojisResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListEmojisResponse)));
         }
 
         /// <summary>
@@ -2313,10 +2313,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="useDefaultEmojisData"> (optional)</param>
-        /// <returns>InlineResponse20055</returns>
-        public InlineResponse20055 UseDefaultEmojis (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData))
+        /// <returns>UseDefaultEmojisResponse</returns>
+        public UseDefaultEmojisResponse UseDefaultEmojis (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData))
         {
-             ApiResponse<InlineResponse20055> localVarResponse = UseDefaultEmojisWithHttpInfo(apiToken, useDefaultEmojisData);
+             ApiResponse<UseDefaultEmojisResponse> localVarResponse = UseDefaultEmojisWithHttpInfo(apiToken, useDefaultEmojisData);
              return localVarResponse.Data;
         }
 
@@ -2326,8 +2326,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="useDefaultEmojisData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20055</returns>
-        public ApiResponse<InlineResponse20055> UseDefaultEmojisWithHttpInfo (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData))
+        /// <returns>ApiResponse of UseDefaultEmojisResponse</returns>
+        public ApiResponse<UseDefaultEmojisResponse> UseDefaultEmojisWithHttpInfo (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData))
         {
 
             var localVarPath = "/v3/applications/settings/use_default_emoji";
@@ -2376,9 +2376,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20055>(localVarStatusCode,
+            return new ApiResponse<UseDefaultEmojisResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20055) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20055)));
+                (UseDefaultEmojisResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UseDefaultEmojisResponse)));
         }
 
         /// <summary>
@@ -2388,10 +2388,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="useDefaultEmojisData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20055</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20055> UseDefaultEmojisAsync (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of UseDefaultEmojisResponse</returns>
+        public async System.Threading.Tasks.Task<UseDefaultEmojisResponse> UseDefaultEmojisAsync (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20055> localVarResponse = await UseDefaultEmojisWithHttpInfoAsync(apiToken, useDefaultEmojisData, cancellationToken);
+             ApiResponse<UseDefaultEmojisResponse> localVarResponse = await UseDefaultEmojisWithHttpInfoAsync(apiToken, useDefaultEmojisData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2403,8 +2403,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="useDefaultEmojisData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20055)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20055>> UseDefaultEmojisWithHttpInfoAsync (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (UseDefaultEmojisResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UseDefaultEmojisResponse>> UseDefaultEmojisWithHttpInfoAsync (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/applications/settings/use_default_emoji";
@@ -2453,9 +2453,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20055>(localVarStatusCode,
+            return new ApiResponse<UseDefaultEmojisResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20055) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20055)));
+                (UseDefaultEmojisResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UseDefaultEmojisResponse)));
         }
 
     }

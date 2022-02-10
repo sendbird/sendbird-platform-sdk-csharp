@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## RetrieveAdvancedAnalyticsMetrics
 
-> InlineResponse20062 RetrieveAdvancedAnalyticsMetrics (string apiToken = null)
+> RetrieveAdvancedAnalyticsMetricsResponse RetrieveAdvancedAnalyticsMetrics (string apiToken = null)
 
 Retrieve Advanced analytics metrics
 
@@ -38,7 +38,7 @@ namespace Example
             try
             {
                 // Retrieve Advanced analytics metrics
-                InlineResponse20062 result = apiInstance.RetrieveAdvancedAnalyticsMetrics(apiToken);
+                RetrieveAdvancedAnalyticsMetricsResponse result = apiInstance.RetrieveAdvancedAnalyticsMetrics(apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20062**](InlineResponse20062.md)
+[**RetrieveAdvancedAnalyticsMetricsResponse**](RetrieveAdvancedAnalyticsMetricsResponse.md)
 
 ### Authorization
 

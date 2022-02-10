@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 ## GetDetailedOpenRateOfAnnouncementById
 
-> InlineResponse20042 GetDetailedOpenRateOfAnnouncementById (string uniqueId, string apiToken = null)
+> GetDetailedOpenRateOfAnnouncementByIdResponse GetDetailedOpenRateOfAnnouncementById (string uniqueId, string apiToken = null)
 
 Get detailed open rate of an announcement
 
@@ -49,7 +49,7 @@ namespace Example
             try
             {
                 // Get detailed open rate of an announcement
-                InlineResponse20042 result = apiInstance.GetDetailedOpenRateOfAnnouncementById(uniqueId, apiToken);
+                GetDetailedOpenRateOfAnnouncementByIdResponse result = apiInstance.GetDetailedOpenRateOfAnnouncementById(uniqueId, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20042**](InlineResponse20042.md)
+[**GetDetailedOpenRateOfAnnouncementByIdResponse**](GetDetailedOpenRateOfAnnouncementByIdResponse.md)
 
 ### Authorization
 
@@ -98,7 +98,7 @@ No authorization required
 
 ## GetDetailedOpenRateOfAnnouncementGroup
 
-> InlineResponse20046 GetDetailedOpenRateOfAnnouncementGroup (string announcementGroup, string apiToken = null)
+> GetDetailedOpenRateOfAnnouncementGroupResponse GetDetailedOpenRateOfAnnouncementGroup (string announcementGroup, string apiToken = null)
 
 Get detailed open rate of an announcement group
 
@@ -127,7 +127,7 @@ namespace Example
             try
             {
                 // Get detailed open rate of an announcement group
-                InlineResponse20046 result = apiInstance.GetDetailedOpenRateOfAnnouncementGroup(announcementGroup, apiToken);
+                GetDetailedOpenRateOfAnnouncementGroupResponse result = apiInstance.GetDetailedOpenRateOfAnnouncementGroup(announcementGroup, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -151,7 +151,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20046**](InlineResponse20046.md)
+[**GetDetailedOpenRateOfAnnouncementGroupResponse**](GetDetailedOpenRateOfAnnouncementGroupResponse.md)
 
 ### Authorization
 
@@ -176,7 +176,7 @@ No authorization required
 
 ## GetDetailedOpenStatusOfAnnouncementById
 
-> InlineResponse20043 GetDetailedOpenStatusOfAnnouncementById (string uniqueId, string apiToken = null, int? limit = null, string next = null, List<string> uniqueIds = null, List<string> channelUrls = null, bool? hasOpened = null)
+> GetDetailedOpenStatusOfAnnouncementByIdResponse GetDetailedOpenStatusOfAnnouncementById (string uniqueId, string apiToken = null, int? limit = null, string next = null, List<string> uniqueIds = null, List<string> channelUrls = null, bool? hasOpened = null)
 
 Get detailed open status of an announcement
 
@@ -210,7 +210,7 @@ namespace Example
             try
             {
                 // Get detailed open status of an announcement
-                InlineResponse20043 result = apiInstance.GetDetailedOpenStatusOfAnnouncementById(uniqueId, apiToken, limit, next, uniqueIds, channelUrls, hasOpened);
+                GetDetailedOpenStatusOfAnnouncementByIdResponse result = apiInstance.GetDetailedOpenStatusOfAnnouncementById(uniqueId, apiToken, limit, next, uniqueIds, channelUrls, hasOpened);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -239,7 +239,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20043**](InlineResponse20043.md)
+[**GetDetailedOpenStatusOfAnnouncementByIdResponse**](GetDetailedOpenStatusOfAnnouncementByIdResponse.md)
 
 ### Authorization
 
@@ -264,7 +264,7 @@ No authorization required
 
 ## GetStatistics
 
-> InlineResponse20044 GetStatistics (string apiToken = null)
+> GetStatisticsResponse GetStatistics (string apiToken = null)
 
 Get statistics - weekly
 
@@ -292,7 +292,7 @@ namespace Example
             try
             {
                 // Get statistics - weekly
-                InlineResponse20044 result = apiInstance.GetStatistics(apiToken);
+                GetStatisticsResponse result = apiInstance.GetStatistics(apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -315,7 +315,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20044**](InlineResponse20044.md)
+[**GetStatisticsResponse**](GetStatisticsResponse.md)
 
 ### Authorization
 
@@ -340,7 +340,7 @@ No authorization required
 
 ## GetStatisticsDaily
 
-> InlineResponse20044 GetStatisticsDaily (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = null, string announcementGroup = null)
+> GetStatisticsDailyResponse GetStatisticsDaily (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = null, string announcementGroup = null)
 
 Get statistics - daily
 
@@ -375,7 +375,7 @@ namespace Example
             try
             {
                 // Get statistics - daily
-                InlineResponse20044 result = apiInstance.GetStatisticsDaily(startDate, endDate, startWeek, endWeek, startMonth, endMonth, apiToken, announcementGroup);
+                GetStatisticsDailyResponse result = apiInstance.GetStatisticsDaily(startDate, endDate, startWeek, endWeek, startMonth, endMonth, apiToken, announcementGroup);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -405,7 +405,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20044**](InlineResponse20044.md)
+[**GetStatisticsDailyResponse**](GetStatisticsDailyResponse.md)
 
 ### Authorization
 
@@ -430,7 +430,7 @@ No authorization required
 
 ## GetStatisticsMonthly
 
-> InlineResponse20044 GetStatisticsMonthly (string apiToken = null)
+> GetStatisticsMonthlyResponse GetStatisticsMonthly (string apiToken = null)
 
 Get statistics - monthly
 
@@ -458,7 +458,7 @@ namespace Example
             try
             {
                 // Get statistics - monthly
-                InlineResponse20044 result = apiInstance.GetStatisticsMonthly(apiToken);
+                GetStatisticsMonthlyResponse result = apiInstance.GetStatisticsMonthly(apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -481,7 +481,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20044**](InlineResponse20044.md)
+[**GetStatisticsMonthlyResponse**](GetStatisticsMonthlyResponse.md)
 
 ### Authorization
 
@@ -506,7 +506,7 @@ No authorization required
 
 ## ListAnnouncementGroups
 
-> InlineResponse20045 ListAnnouncementGroups (string apiToken = null, string token = null, int? limit = null)
+> ListAnnouncementGroupsResponse ListAnnouncementGroups (string apiToken = null, string token = null, int? limit = null)
 
 List announcement groups
 
@@ -536,7 +536,7 @@ namespace Example
             try
             {
                 // List announcement groups
-                InlineResponse20045 result = apiInstance.ListAnnouncementGroups(apiToken, token, limit);
+                ListAnnouncementGroupsResponse result = apiInstance.ListAnnouncementGroups(apiToken, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -561,7 +561,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20045**](InlineResponse20045.md)
+[**ListAnnouncementGroupsResponse**](ListAnnouncementGroupsResponse.md)
 
 ### Authorization
 
@@ -586,7 +586,7 @@ No authorization required
 
 ## ListAnnouncements
 
-> InlineResponse20039 ListAnnouncements (string apiToken = null, string token = null, int? limit = null, string order = null, string status = null, string announcementGroup = null)
+> ListAnnouncementsResponse ListAnnouncements (string apiToken = null, string token = null, int? limit = null, string order = null, string status = null, string announcementGroup = null)
 
 List announcements
 
@@ -619,7 +619,7 @@ namespace Example
             try
             {
                 // List announcements
-                InlineResponse20039 result = apiInstance.ListAnnouncements(apiToken, token, limit, order, status, announcementGroup);
+                ListAnnouncementsResponse result = apiInstance.ListAnnouncements(apiToken, token, limit, order, status, announcementGroup);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -647,7 +647,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20039**](InlineResponse20039.md)
+[**ListAnnouncementsResponse**](ListAnnouncementsResponse.md)
 
 ### Authorization
 
@@ -672,7 +672,7 @@ No authorization required
 
 ## ScheduleAnnouncement
 
-> InlineResponse20040 ScheduleAnnouncement (string apiToken = null, ScheduleAnnouncementData scheduleAnnouncementData = null)
+> ScheduleAnnouncementResponse ScheduleAnnouncement (string apiToken = null, ScheduleAnnouncementData scheduleAnnouncementData = null)
 
 Schedule an announcement
 
@@ -701,7 +701,7 @@ namespace Example
             try
             {
                 // Schedule an announcement
-                InlineResponse20040 result = apiInstance.ScheduleAnnouncement(apiToken, scheduleAnnouncementData);
+                ScheduleAnnouncementResponse result = apiInstance.ScheduleAnnouncement(apiToken, scheduleAnnouncementData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -725,7 +725,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20040**](InlineResponse20040.md)
+[**ScheduleAnnouncementResponse**](ScheduleAnnouncementResponse.md)
 
 ### Authorization
 
@@ -750,7 +750,7 @@ No authorization required
 
 ## UpdateAnnouncementById
 
-> InlineResponse20041 UpdateAnnouncementById (string uniqueId, string apiToken = null, UpdateAnnouncementByIdData updateAnnouncementByIdData = null)
+> UpdateAnnouncementByIdResponse UpdateAnnouncementById (string uniqueId, string apiToken = null, UpdateAnnouncementByIdData updateAnnouncementByIdData = null)
 
 Update an announcement
 
@@ -780,7 +780,7 @@ namespace Example
             try
             {
                 // Update an announcement
-                InlineResponse20041 result = apiInstance.UpdateAnnouncementById(uniqueId, apiToken, updateAnnouncementByIdData);
+                UpdateAnnouncementByIdResponse result = apiInstance.UpdateAnnouncementById(uniqueId, apiToken, updateAnnouncementByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -805,7 +805,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20041**](InlineResponse20041.md)
+[**UpdateAnnouncementByIdResponse**](UpdateAnnouncementByIdResponse.md)
 
 ### Authorization
 
@@ -830,7 +830,7 @@ No authorization required
 
 ## ViewAnnouncementById
 
-> InlineResponse20039Announcements ViewAnnouncementById (string uniqueId, string apiToken = null)
+> ViewAnnouncementByIdResponse ViewAnnouncementById (string uniqueId, string apiToken = null)
 
 View an announcement
 
@@ -859,7 +859,7 @@ namespace Example
             try
             {
                 // View an announcement
-                InlineResponse20039Announcements result = apiInstance.ViewAnnouncementById(uniqueId, apiToken);
+                ViewAnnouncementByIdResponse result = apiInstance.ViewAnnouncementById(uniqueId, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -883,7 +883,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20039Announcements**](InlineResponse20039Announcements.md)
+[**ViewAnnouncementByIdResponse**](ViewAnnouncementByIdResponse.md)
 
 ### Authorization
 

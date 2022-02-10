@@ -112,7 +112,7 @@ No authorization required
 
 ## CreateChannelMetadata
 
-> InlineResponse20061 CreateChannelMetadata (string channelType, string channelUrl, string apiToken = null, CreateChannelMetadataData createChannelMetadataData = null)
+> CreateChannelMetadataResponse CreateChannelMetadata (string channelType, string channelUrl, string apiToken = null, CreateChannelMetadataData createChannelMetadataData = null)
 
 Create a channel metadata
 
@@ -143,7 +143,7 @@ namespace Example
             try
             {
                 // Create a channel metadata
-                InlineResponse20061 result = apiInstance.CreateChannelMetadata(channelType, channelUrl, apiToken, createChannelMetadataData);
+                CreateChannelMetadataResponse result = apiInstance.CreateChannelMetadata(channelType, channelUrl, apiToken, createChannelMetadataData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -169,7 +169,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20061**](InlineResponse20061.md)
+[**CreateChannelMetadataResponse**](CreateChannelMetadataResponse.md)
 
 ### Authorization
 
@@ -194,7 +194,7 @@ No authorization required
 
 ## CreateUserMetadata
 
-> InlineResponse20047UserMetadata CreateUserMetadata (string userId, string apiToken = null, CreateUserMetadataData createUserMetadataData = null)
+> CreateUserMetadataResponse CreateUserMetadata (string userId, string apiToken = null, CreateUserMetadataData createUserMetadataData = null)
 
 Create a user metadata
 
@@ -224,7 +224,7 @@ namespace Example
             try
             {
                 // Create a user metadata
-                InlineResponse20047UserMetadata result = apiInstance.CreateUserMetadata(userId, apiToken, createUserMetadataData);
+                CreateUserMetadataResponse result = apiInstance.CreateUserMetadata(userId, apiToken, createUserMetadataData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -249,7 +249,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20047UserMetadata**](InlineResponse20047UserMetadata.md)
+[**CreateUserMetadataResponse**](CreateUserMetadataResponse.md)
 
 ### Authorization
 
@@ -1086,7 +1086,7 @@ No authorization required
 
 ## UpdateUserMetadata
 
-> InlineResponse20060 UpdateUserMetadata (string userId, string apiToken = null, UpdateUserMetadataData updateUserMetadataData = null)
+> UpdateUserMetadataResponse UpdateUserMetadata (string userId, string apiToken = null, UpdateUserMetadataData updateUserMetadataData = null)
 
 Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata
 
@@ -1116,7 +1116,7 @@ namespace Example
             try
             {
                 // Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata
-                InlineResponse20060 result = apiInstance.UpdateUserMetadata(userId, apiToken, updateUserMetadataData);
+                UpdateUserMetadataResponse result = apiInstance.UpdateUserMetadata(userId, apiToken, updateUserMetadataData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1141,7 +1141,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20060**](InlineResponse20060.md)
+[**UpdateUserMetadataResponse**](UpdateUserMetadataResponse.md)
 
 ### Authorization
 
@@ -1580,7 +1580,7 @@ No authorization required
 
 ## ViewUserMetadata
 
-> InlineResponse20047UserMetadata ViewUserMetadata (string userId, string apiToken = null, string key = null, List<string> keys = null)
+> ViewUserMetadataResponse ViewUserMetadata (string userId, string apiToken = null, string key = null, List<string> keys = null)
 
 View a user metadata - When retrieving all items of a user metadata
 
@@ -1611,7 +1611,7 @@ namespace Example
             try
             {
                 // View a user metadata - When retrieving all items of a user metadata
-                InlineResponse20047UserMetadata result = apiInstance.ViewUserMetadata(userId, apiToken, key, keys);
+                ViewUserMetadataResponse result = apiInstance.ViewUserMetadata(userId, apiToken, key, keys);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1637,7 +1637,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20047UserMetadata**](InlineResponse20047UserMetadata.md)
+[**ViewUserMetadataResponse**](ViewUserMetadataResponse.md)
 
 ### Authorization
 

@@ -75,7 +75,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = null;
             //var response = instance.AddRegistrationOrDeviceToken(userId, tokenType, apiToken, addRegistrationOrDeviceTokenData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20025), response, "response is InlineResponse20025");
+            //Assert.IsInstanceOf(typeof(AddRegistrationOrDeviceTokenResponse), response, "response is AddRegistrationOrDeviceTokenResponse");
         }
         
         /// <summary>
@@ -117,7 +117,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //Object body = null;
             //var response = instance.ChoosePushNotificationContentTemplate(userId, apiToken, body);
-            //Assert.IsInstanceOf(typeof(InlineResponse20029), response, "response is InlineResponse20029");
+            //Assert.IsInstanceOf(typeof(ChoosePushNotificationContentTemplateResponse), response, "response is ChoosePushNotificationContentTemplateResponse");
         }
         
         /// <summary>
@@ -172,7 +172,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //int? limit = null;
             //var response = instance.ListBannedChannels(userId, apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(InlineResponse20022), response, "response is InlineResponse20022");
+            //Assert.IsInstanceOf(typeof(ListBannedChannelsResponse), response, "response is ListBannedChannelsResponse");
         }
         
         /// <summary>
@@ -190,7 +190,7 @@ namespace sendbird_platform_sdk.Test
             //string metadatakey = null;
             //string metadatavaluesIn = null;
             //var response = instance.ListBlockedUsers(userId, apiToken, token, limit, userIds, metadatakey, metadatavaluesIn);
-            //Assert.IsInstanceOf(typeof(InlineResponse20016), response, "response is InlineResponse20016");
+            //Assert.IsInstanceOf(typeof(ListBlockedUsersResponse), response, "response is ListBlockedUsersResponse");
         }
         
         /// <summary>
@@ -205,7 +205,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //int? limit = null;
             //var response = instance.ListMutedChannels(userId, apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(InlineResponse20023), response, "response is InlineResponse20023");
+            //Assert.IsInstanceOf(typeof(ListMutedChannelsResponse), response, "response is ListMutedChannelsResponse");
         }
         
         /// <summary>
@@ -258,7 +258,7 @@ namespace sendbird_platform_sdk.Test
             //string metacounterValueLte = null;
             //string customType = null;
             //var response = instance.ListMyGroupChannels(userId, apiToken, token, limit, distinctMode, publicMode, superMode, hiddenMode, memberStateFilter, unreadFilter, createdAfter, createdBefore, showEmpty, showFrozen, showMember, showDeliveryReceipt, showReadReceipt, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, searchQuery, searchFields, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, customType);
-            //Assert.IsInstanceOf(typeof(InlineResponse20017), response, "response is InlineResponse20017");
+            //Assert.IsInstanceOf(typeof(ListMyGroupChannelsResponse), response, "response is ListMyGroupChannelsResponse");
         }
         
         /// <summary>
@@ -272,7 +272,7 @@ namespace sendbird_platform_sdk.Test
             //string tokenType = null;
             //string apiToken = null;
             //var response = instance.ListRegistrationOrDeviceTokens(userId, tokenType, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20024), response, "response is InlineResponse20024");
+            //Assert.IsInstanceOf(typeof(ListRegistrationOrDeviceTokensResponse), response, "response is ListRegistrationOrDeviceTokensResponse");
         }
         
         /// <summary>
@@ -293,7 +293,7 @@ namespace sendbird_platform_sdk.Test
             //string metadatakey = null;
             //string metadatavaluesIn = null;
             //var response = instance.ListUsers(apiToken, token, limit, activeMode, showBot, userIds, nickname, nicknameStartswith, metadatakey, metadatavaluesIn);
-            //Assert.IsInstanceOf(typeof(InlineResponse20016), response, "response is InlineResponse20016");
+            //Assert.IsInstanceOf(typeof(ListUsersResponse), response, "response is ListUsersResponse");
         }
         
         /// <summary>
@@ -348,7 +348,7 @@ namespace sendbird_platform_sdk.Test
             //string userId = null;
             //string apiToken = null;
             //var response = instance.RemoveRegistrationOrDeviceToken(userId, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20026), response, "response is InlineResponse20026");
+            //Assert.IsInstanceOf(typeof(RemoveRegistrationOrDeviceTokenResponse), response, "response is RemoveRegistrationOrDeviceTokenResponse");
         }
         
         /// <summary>
@@ -363,7 +363,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //string apiToken = null;
             //var response = instance.RemoveRegistrationOrDeviceTokenByToken(userId, tokenType, token, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20026), response, "response is InlineResponse20026");
+            //Assert.IsInstanceOf(typeof(RemoveRegistrationOrDeviceTokenByTokenResponse), response, "response is RemoveRegistrationOrDeviceTokenByTokenResponse");
         }
         
         /// <summary>
@@ -377,7 +377,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //string apiToken = null;
             //var response = instance.RemoveRegistrationOrDeviceTokenFromOwnerByToken(tokenType, token, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20027), response, "response is InlineResponse20027");
+            //Assert.IsInstanceOf(typeof(RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse), response, "response is RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse");
         }
         
         /// <summary>
@@ -418,7 +418,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = null;
             //var response = instance.UpdateChannelInvitationPreference(userId, apiToken, updateChannelInvitationPreferenceData);
-            //Assert.IsInstanceOf(typeof(InlineResponse2005), response, "response is InlineResponse2005");
+            //Assert.IsInstanceOf(typeof(UpdateChannelInvitationPreferenceResponse), response, "response is UpdateChannelInvitationPreferenceResponse");
         }
         
         /// <summary>
@@ -433,7 +433,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = null;
             //var response = instance.UpdateCountPreferenceOfChannelByUrl(userId, channelUrl, apiToken, updateCountPreferenceOfChannelByUrlData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20021), response, "response is InlineResponse20021");
+            //Assert.IsInstanceOf(typeof(UpdateCountPreferenceOfChannelByUrlResponse), response, "response is UpdateCountPreferenceOfChannelByUrlResponse");
         }
         
         /// <summary>
@@ -447,7 +447,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //UpdatePushPreferencesData updatePushPreferencesData = null;
             //var response = instance.UpdatePushPreferences(userId, apiToken, updatePushPreferencesData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20028), response, "response is InlineResponse20028");
+            //Assert.IsInstanceOf(typeof(UpdatePushPreferencesResponse), response, "response is UpdatePushPreferencesResponse");
         }
         
         /// <summary>
@@ -462,7 +462,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = null;
             //var response = instance.UpdatePushPreferencesForChannelByUrl(userId, channelUrl, apiToken, updatePushPreferencesForChannelByUrlData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20028), response, "response is InlineResponse20028");
+            //Assert.IsInstanceOf(typeof(UpdatePushPreferencesForChannelByUrlResponse), response, "response is UpdatePushPreferencesForChannelByUrlResponse");
         }
         
         /// <summary>
@@ -489,7 +489,7 @@ namespace sendbird_platform_sdk.Test
             //string userId = null;
             //string apiToken = null;
             //var response = instance.ViewChannelInvitationPreference(userId, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse2005), response, "response is InlineResponse2005");
+            //Assert.IsInstanceOf(typeof(ViewChannelInvitationPreferenceResponse), response, "response is ViewChannelInvitationPreferenceResponse");
         }
         
         /// <summary>
@@ -503,7 +503,7 @@ namespace sendbird_platform_sdk.Test
             //string channelUrl = null;
             //string apiToken = null;
             //var response = instance.ViewCountPreferenceOfChannelByUrl(userId, channelUrl, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20021), response, "response is InlineResponse20021");
+            //Assert.IsInstanceOf(typeof(ViewCountPreferenceOfChannelByUrlResponse), response, "response is ViewCountPreferenceOfChannelByUrlResponse");
         }
         
         /// <summary>
@@ -517,7 +517,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //string state = null;
             //var response = instance.ViewNumberOfChannelsByJoinStatus(userId, apiToken, state);
-            //Assert.IsInstanceOf(typeof(InlineResponse20020), response, "response is InlineResponse20020");
+            //Assert.IsInstanceOf(typeof(ViewNumberOfChannelsByJoinStatusResponse), response, "response is ViewNumberOfChannelsByJoinStatusResponse");
         }
         
         /// <summary>
@@ -532,7 +532,7 @@ namespace sendbird_platform_sdk.Test
             //List<string> customTypes = null;
             //string superMode = null;
             //var response = instance.ViewNumberOfChannelsWithUnreadMessages(userId, apiToken, customTypes, superMode);
-            //Assert.IsInstanceOf(typeof(InlineResponse20018), response, "response is InlineResponse20018");
+            //Assert.IsInstanceOf(typeof(ViewNumberOfChannelsWithUnreadMessagesResponse), response, "response is ViewNumberOfChannelsWithUnreadMessagesResponse");
         }
         
         /// <summary>
@@ -547,7 +547,7 @@ namespace sendbird_platform_sdk.Test
             //string customType = null;
             //string itemKeys = null;
             //var response = instance.ViewNumberOfUnreadItems(userId, apiToken, customType, itemKeys);
-            //Assert.IsInstanceOf(typeof(InlineResponse20019), response, "response is InlineResponse20019");
+            //Assert.IsInstanceOf(typeof(ViewNumberOfUnreadItemsResponse), response, "response is ViewNumberOfUnreadItemsResponse");
         }
         
         /// <summary>
@@ -562,7 +562,7 @@ namespace sendbird_platform_sdk.Test
             //string customTypes = null;
             //string superMode = null;
             //var response = instance.ViewNumberOfUnreadMessages(userId, apiToken, customTypes, superMode);
-            //Assert.IsInstanceOf(typeof(InlineResponse20018), response, "response is InlineResponse20018");
+            //Assert.IsInstanceOf(typeof(ViewNumberOfUnreadMessagesResponse), response, "response is ViewNumberOfUnreadMessagesResponse");
         }
         
         /// <summary>
@@ -575,7 +575,7 @@ namespace sendbird_platform_sdk.Test
             //string userId = null;
             //string apiToken = null;
             //var response = instance.ViewPushPreferences(userId, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20028), response, "response is InlineResponse20028");
+            //Assert.IsInstanceOf(typeof(ViewPushPreferencesResponse), response, "response is ViewPushPreferencesResponse");
         }
         
         /// <summary>
@@ -589,7 +589,7 @@ namespace sendbird_platform_sdk.Test
             //string channelUrl = null;
             //string apiToken = null;
             //var response = instance.ViewPushPreferencesForChannelByUrl(userId, channelUrl, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20028), response, "response is InlineResponse20028");
+            //Assert.IsInstanceOf(typeof(ViewPushPreferencesForChannelByUrlResponse), response, "response is ViewPushPreferencesForChannelByUrlResponse");
         }
         
         /// <summary>
@@ -619,7 +619,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //string apiToken = null;
             //var response = instance.ViewWhoOwnsRegistrationOrDeviceTokenByToken(tokenType, token, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20027), response, "response is InlineResponse20027");
+            //Assert.IsInstanceOf(typeof(ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse), response, "response is ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse");
         }
         
     }

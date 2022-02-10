@@ -75,7 +75,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //int? limit = null;
             //var response = instance.ListDataExportsByMessageChannelOrUser(dataType, apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(InlineResponse20063), response, "response is InlineResponse20063");
+            //Assert.IsInstanceOf(typeof(ListDataExportsByMessageChannelOrUserResponse), response, "response is ListDataExportsByMessageChannelOrUserResponse");
         }
         
         /// <summary>
@@ -89,7 +89,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //RegisterAndScheduleDataExportData registerAndScheduleDataExportData = null;
             //var response = instance.RegisterAndScheduleDataExport(dataType, apiToken, registerAndScheduleDataExportData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20063ExportedData), response, "response is InlineResponse20063ExportedData");
+            //Assert.IsInstanceOf(typeof(RegisterAndScheduleDataExportResponse), response, "response is RegisterAndScheduleDataExportResponse");
         }
         
         /// <summary>
@@ -103,7 +103,7 @@ namespace sendbird_platform_sdk.Test
             //string requestId = null;
             //string apiToken = null;
             //var response = instance.ViewDataExportById(dataType, requestId, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20064), response, "response is InlineResponse20064");
+            //Assert.IsInstanceOf(typeof(ViewDataExportByIdResponse), response, "response is ViewDataExportByIdResponse");
         }
         
     }

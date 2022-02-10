@@ -34,8 +34,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
-        /// <returns>InlineResponse2003</returns>
-        InlineResponse2003 AddApnsPushConfiguration (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData));
+        /// <returns>AddApnsPushConfigurationResponse</returns>
+        AddApnsPushConfigurationResponse AddApnsPushConfiguration (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData));
 
         /// <summary>
         /// Add an APNs push configuration
@@ -46,8 +46,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2003</returns>
-        ApiResponse<InlineResponse2003> AddApnsPushConfigurationWithHttpInfo (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData));
+        /// <returns>ApiResponse of AddApnsPushConfigurationResponse</returns>
+        ApiResponse<AddApnsPushConfigurationResponse> AddApnsPushConfigurationWithHttpInfo (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData));
         /// <summary>
         /// Add a FCM push configuration
         /// </summary>
@@ -57,8 +57,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        InlineResponse2001 AddFcmPushConfiguration (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData));
+        /// <returns>AddFcmPushConfigurationResponse</returns>
+        AddFcmPushConfigurationResponse AddFcmPushConfiguration (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData));
 
         /// <summary>
         /// Add a FCM push configuration
@@ -69,8 +69,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        ApiResponse<InlineResponse2001> AddFcmPushConfigurationWithHttpInfo (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData));
+        /// <returns>ApiResponse of AddFcmPushConfigurationResponse</returns>
+        ApiResponse<AddFcmPushConfigurationResponse> AddFcmPushConfigurationWithHttpInfo (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData));
         /// <summary>
         /// Add an HMS push configuration
         /// </summary>
@@ -80,8 +80,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
-        /// <returns>InlineResponse2002</returns>
-        InlineResponse2002 AddHmsPushConfiguration (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData));
+        /// <returns>AddHmsPushConfigurationResponse</returns>
+        AddHmsPushConfigurationResponse AddHmsPushConfiguration (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData));
 
         /// <summary>
         /// Add an HMS push configuration
@@ -92,8 +92,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2002</returns>
-        ApiResponse<InlineResponse2002> AddHmsPushConfigurationWithHttpInfo (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData));
+        /// <returns>ApiResponse of AddHmsPushConfigurationResponse</returns>
+        ApiResponse<AddHmsPushConfigurationResponse> AddHmsPushConfigurationWithHttpInfo (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData));
         /// <summary>
         /// Add an IP to a whitelist
         /// </summary>
@@ -103,8 +103,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addIpToWhitelistData"> (optional)</param>
-        /// <returns>InlineResponse2006</returns>
-        InlineResponse2006 AddIpToWhitelist (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData));
+        /// <returns>AddIpToWhitelistResponse</returns>
+        AddIpToWhitelistResponse AddIpToWhitelist (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData));
 
         /// <summary>
         /// Add an IP to a whitelist
@@ -115,8 +115,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addIpToWhitelistData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2006</returns>
-        ApiResponse<InlineResponse2006> AddIpToWhitelistWithHttpInfo (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData));
+        /// <returns>ApiResponse of AddIpToWhitelistResponse</returns>
+        ApiResponse<AddIpToWhitelistResponse> AddIpToWhitelistWithHttpInfo (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData));
         /// <summary>
         /// Delete allowed IPs from a whitelist
         /// </summary>
@@ -126,8 +126,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ipWhitelistAddresses"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse2006</returns>
-        InlineResponse2006 DeleteAllowedIpsFromWhitelist (List<string> ipWhitelistAddresses, string apiToken = default(string));
+        /// <returns>DeleteAllowedIpsFromWhitelistResponse</returns>
+        DeleteAllowedIpsFromWhitelistResponse DeleteAllowedIpsFromWhitelist (List<string> ipWhitelistAddresses, string apiToken = default(string));
 
         /// <summary>
         /// Delete allowed IPs from a whitelist
@@ -138,8 +138,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ipWhitelistAddresses"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2006</returns>
-        ApiResponse<InlineResponse2006> DeleteAllowedIpsFromWhitelistWithHttpInfo (List<string> ipWhitelistAddresses, string apiToken = default(string));
+        /// <returns>ApiResponse of DeleteAllowedIpsFromWhitelistResponse</returns>
+        ApiResponse<DeleteAllowedIpsFromWhitelistResponse> DeleteAllowedIpsFromWhitelistWithHttpInfo (List<string> ipWhitelistAddresses, string apiToken = default(string));
         /// <summary>
         /// Delete an APNs certificate
         /// </summary>
@@ -149,8 +149,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20013</returns>
-        InlineResponse20013 DeleteApnsCertificateById (string providerId, string apiToken = default(string));
+        /// <returns>DeleteApnsCertificateByIdResponse</returns>
+        DeleteApnsCertificateByIdResponse DeleteApnsCertificateById (string providerId, string apiToken = default(string));
 
         /// <summary>
         /// Delete an APNs certificate
@@ -161,8 +161,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20013</returns>
-        ApiResponse<InlineResponse20013> DeleteApnsCertificateByIdWithHttpInfo (string providerId, string apiToken = default(string));
+        /// <returns>ApiResponse of DeleteApnsCertificateByIdResponse</returns>
+        ApiResponse<DeleteApnsCertificateByIdResponse> DeleteApnsCertificateByIdWithHttpInfo (string providerId, string apiToken = default(string));
         /// <summary>
         /// Generate a secondary API token
         /// </summary>
@@ -172,8 +172,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
-        /// <returns>InlineResponse2007</returns>
-        InlineResponse2007 GenerateSecondaryApiToken (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData));
+        /// <returns>GenerateSecondaryApiTokenResponse</returns>
+        GenerateSecondaryApiTokenResponse GenerateSecondaryApiToken (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData));
 
         /// <summary>
         /// Generate a secondary API token
@@ -184,8 +184,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2007</returns>
-        ApiResponse<InlineResponse2007> GenerateSecondaryApiTokenWithHttpInfo (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData));
+        /// <returns>ApiResponse of GenerateSecondaryApiTokenResponse</returns>
+        ApiResponse<GenerateSecondaryApiTokenResponse> GenerateSecondaryApiTokenWithHttpInfo (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData));
         /// <summary>
         /// List push configurations
         /// </summary>
@@ -195,8 +195,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="pushType"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20012</returns>
-        InlineResponse20012 ListPushConfigurations (string pushType, string apiToken = default(string));
+        /// <returns>ListPushConfigurationsResponse</returns>
+        ListPushConfigurationsResponse ListPushConfigurations (string pushType, string apiToken = default(string));
 
         /// <summary>
         /// List push configurations
@@ -207,8 +207,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="pushType"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20012</returns>
-        ApiResponse<InlineResponse20012> ListPushConfigurationsWithHttpInfo (string pushType, string apiToken = default(string));
+        /// <returns>ApiResponse of ListPushConfigurationsResponse</returns>
+        ApiResponse<ListPushConfigurationsResponse> ListPushConfigurationsWithHttpInfo (string pushType, string apiToken = default(string));
         /// <summary>
         /// List push notification content templates
         /// </summary>
@@ -217,8 +217,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse2004</returns>
-        InlineResponse2004 ListPushNotificationContentTemplates (string apiToken = default(string));
+        /// <returns>ListPushNotificationContentTemplatesResponse</returns>
+        ListPushNotificationContentTemplatesResponse ListPushNotificationContentTemplates (string apiToken = default(string));
 
         /// <summary>
         /// List push notification content templates
@@ -228,8 +228,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2004</returns>
-        ApiResponse<InlineResponse2004> ListPushNotificationContentTemplatesWithHttpInfo (string apiToken = default(string));
+        /// <returns>ApiResponse of ListPushNotificationContentTemplatesResponse</returns>
+        ApiResponse<ListPushNotificationContentTemplatesResponse> ListPushNotificationContentTemplatesWithHttpInfo (string apiToken = default(string));
         /// <summary>
         /// List secondary API tokens
         /// </summary>
@@ -238,8 +238,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse2008</returns>
-        InlineResponse2008 ListSecondaryApiTokens (string apiToken = default(string));
+        /// <returns>ListSecondaryApiTokensResponse</returns>
+        ListSecondaryApiTokensResponse ListSecondaryApiTokens (string apiToken = default(string));
 
         /// <summary>
         /// List secondary API tokens
@@ -249,8 +249,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2008</returns>
-        ApiResponse<InlineResponse2008> ListSecondaryApiTokensWithHttpInfo (string apiToken = default(string));
+        /// <returns>ApiResponse of ListSecondaryApiTokensResponse</returns>
+        ApiResponse<ListSecondaryApiTokensResponse> ListSecondaryApiTokensWithHttpInfo (string apiToken = default(string));
         /// <summary>
         /// Remove a push configuration
         /// </summary>
@@ -261,8 +261,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20013</returns>
-        InlineResponse20013 RemovePushConfigurationById (string pushType, string providerId, string apiToken = default(string));
+        /// <returns>RemovePushConfigurationByIdResponse</returns>
+        RemovePushConfigurationByIdResponse RemovePushConfigurationById (string pushType, string providerId, string apiToken = default(string));
 
         /// <summary>
         /// Remove a push configuration
@@ -274,8 +274,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20013</returns>
-        ApiResponse<InlineResponse20013> RemovePushConfigurationByIdWithHttpInfo (string pushType, string providerId, string apiToken = default(string));
+        /// <returns>ApiResponse of RemovePushConfigurationByIdResponse</returns>
+        ApiResponse<RemovePushConfigurationByIdResponse> RemovePushConfigurationByIdWithHttpInfo (string pushType, string providerId, string apiToken = default(string));
         /// <summary>
         /// Retrieve an IP whitelist
         /// </summary>
@@ -284,8 +284,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse2006</returns>
-        InlineResponse2006 RetrieveIpWhitelist (string apiToken = default(string));
+        /// <returns>RetrieveIpWhitelistResponse</returns>
+        RetrieveIpWhitelistResponse RetrieveIpWhitelist (string apiToken = default(string));
 
         /// <summary>
         /// Retrieve an IP whitelist
@@ -295,8 +295,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2006</returns>
-        ApiResponse<InlineResponse2006> RetrieveIpWhitelistWithHttpInfo (string apiToken = default(string));
+        /// <returns>ApiResponse of RetrieveIpWhitelistResponse</returns>
+        ApiResponse<RetrieveIpWhitelistResponse> RetrieveIpWhitelistWithHttpInfo (string apiToken = default(string));
         /// <summary>
         /// Revoke a secondary API token
         /// </summary>
@@ -306,8 +306,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken2"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse2007</returns>
-        InlineResponse2007 RevokeSecondaryApiTokenByToken (string apiToken2, string apiToken = default(string));
+        /// <returns>RevokeSecondaryApiTokenByTokenResponse</returns>
+        RevokeSecondaryApiTokenByTokenResponse RevokeSecondaryApiTokenByToken (string apiToken2, string apiToken = default(string));
 
         /// <summary>
         /// Revoke a secondary API token
@@ -318,8 +318,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken2"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2007</returns>
-        ApiResponse<InlineResponse2007> RevokeSecondaryApiTokenByTokenWithHttpInfo (string apiToken2, string apiToken = default(string));
+        /// <returns>ApiResponse of RevokeSecondaryApiTokenByTokenResponse</returns>
+        ApiResponse<RevokeSecondaryApiTokenByTokenResponse> RevokeSecondaryApiTokenByTokenWithHttpInfo (string apiToken2, string apiToken = default(string));
         /// <summary>
         /// Update an APNs push configuration
         /// </summary>
@@ -330,8 +330,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
-        /// <returns>InlineResponse20014</returns>
-        InlineResponse20014 UpdateApnsPushConfigurationById (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData));
+        /// <returns>UpdateApnsPushConfigurationByIdResponse</returns>
+        UpdateApnsPushConfigurationByIdResponse UpdateApnsPushConfigurationById (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData));
 
         /// <summary>
         /// Update an APNs push configuration
@@ -343,8 +343,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20014</returns>
-        ApiResponse<InlineResponse20014> UpdateApnsPushConfigurationByIdWithHttpInfo (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData));
+        /// <returns>ApiResponse of UpdateApnsPushConfigurationByIdResponse</returns>
+        ApiResponse<UpdateApnsPushConfigurationByIdResponse> UpdateApnsPushConfigurationByIdWithHttpInfo (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData));
         /// <summary>
         /// Update default channel invitation preference
         /// </summary>
@@ -354,8 +354,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
-        /// <returns>InlineResponse2005</returns>
-        InlineResponse2005 UpdateDefaultChannelInvitationPreference (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData));
+        /// <returns>UpdateDefaultChannelInvitationPreferenceResponse</returns>
+        UpdateDefaultChannelInvitationPreferenceResponse UpdateDefaultChannelInvitationPreference (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData));
 
         /// <summary>
         /// Update default channel invitation preference
@@ -366,8 +366,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2005</returns>
-        ApiResponse<InlineResponse2005> UpdateDefaultChannelInvitationPreferenceWithHttpInfo (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData));
+        /// <returns>ApiResponse of UpdateDefaultChannelInvitationPreferenceResponse</returns>
+        ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse> UpdateDefaultChannelInvitationPreferenceWithHttpInfo (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData));
         /// <summary>
         /// Update a FCM push configuration
         /// </summary>
@@ -378,8 +378,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
-        /// <returns>InlineResponse20014</returns>
-        InlineResponse20014 UpdateFcmPushConfigurationById (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData));
+        /// <returns>UpdateFcmPushConfigurationByIdResponse</returns>
+        UpdateFcmPushConfigurationByIdResponse UpdateFcmPushConfigurationById (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData));
 
         /// <summary>
         /// Update a FCM push configuration
@@ -391,8 +391,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20014</returns>
-        ApiResponse<InlineResponse20014> UpdateFcmPushConfigurationByIdWithHttpInfo (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData));
+        /// <returns>ApiResponse of UpdateFcmPushConfigurationByIdResponse</returns>
+        ApiResponse<UpdateFcmPushConfigurationByIdResponse> UpdateFcmPushConfigurationByIdWithHttpInfo (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData));
         /// <summary>
         /// Update an HMS push configuration
         /// </summary>
@@ -403,8 +403,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
-        /// <returns>InlineResponse20014</returns>
-        InlineResponse20014 UpdateHmsPushConfigurationById (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData));
+        /// <returns>UpdateHmsPushConfigurationByIdResponse</returns>
+        UpdateHmsPushConfigurationByIdResponse UpdateHmsPushConfigurationById (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData));
 
         /// <summary>
         /// Update an HMS push configuration
@@ -416,8 +416,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20014</returns>
-        ApiResponse<InlineResponse20014> UpdateHmsPushConfigurationByIdWithHttpInfo (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData));
+        /// <returns>ApiResponse of UpdateHmsPushConfigurationByIdResponse</returns>
+        ApiResponse<UpdateHmsPushConfigurationByIdResponse> UpdateHmsPushConfigurationByIdWithHttpInfo (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData));
         /// <summary>
         /// Update a push notification content template
         /// </summary>
@@ -428,8 +428,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="templateName"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
-        /// <returns>InlineResponse20015</returns>
-        InlineResponse20015 UpdatePushNotificationContentTemplate (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData));
+        /// <returns>UpdatePushNotificationContentTemplateResponse</returns>
+        UpdatePushNotificationContentTemplateResponse UpdatePushNotificationContentTemplate (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData));
 
         /// <summary>
         /// Update a push notification content template
@@ -441,8 +441,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="templateName"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20015</returns>
-        ApiResponse<InlineResponse20015> UpdatePushNotificationContentTemplateWithHttpInfo (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData));
+        /// <returns>ApiResponse of UpdatePushNotificationContentTemplateResponse</returns>
+        ApiResponse<UpdatePushNotificationContentTemplateResponse> UpdatePushNotificationContentTemplateWithHttpInfo (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData));
         /// <summary>
         /// View default channel invitation preference
         /// </summary>
@@ -451,8 +451,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse2005</returns>
-        InlineResponse2005 ViewDefaultChannelInvitationPreference (string apiToken = default(string));
+        /// <returns>ViewDefaultChannelInvitationPreferenceResponse</returns>
+        ViewDefaultChannelInvitationPreferenceResponse ViewDefaultChannelInvitationPreference (string apiToken = default(string));
 
         /// <summary>
         /// View default channel invitation preference
@@ -462,8 +462,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2005</returns>
-        ApiResponse<InlineResponse2005> ViewDefaultChannelInvitationPreferenceWithHttpInfo (string apiToken = default(string));
+        /// <returns>ApiResponse of ViewDefaultChannelInvitationPreferenceResponse</returns>
+        ApiResponse<ViewDefaultChannelInvitationPreferenceResponse> ViewDefaultChannelInvitationPreferenceWithHttpInfo (string apiToken = default(string));
         /// <summary>
         /// View number of concurrent connections
         /// </summary>
@@ -472,8 +472,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse200</returns>
-        InlineResponse200 ViewNumberOfConcurrentConnections (string apiToken = default(string));
+        /// <returns>ViewNumberOfConcurrentConnectionsResponse</returns>
+        ViewNumberOfConcurrentConnectionsResponse ViewNumberOfConcurrentConnections (string apiToken = default(string));
 
         /// <summary>
         /// View number of concurrent connections
@@ -483,8 +483,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse200</returns>
-        ApiResponse<InlineResponse200> ViewNumberOfConcurrentConnectionsWithHttpInfo (string apiToken = default(string));
+        /// <returns>ApiResponse of ViewNumberOfConcurrentConnectionsResponse</returns>
+        ApiResponse<ViewNumberOfConcurrentConnectionsResponse> ViewNumberOfConcurrentConnectionsWithHttpInfo (string apiToken = default(string));
         /// <summary>
         /// View number of daily active users
         /// </summary>
@@ -494,8 +494,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="date"> (optional)</param>
-        /// <returns>InlineResponse20011</returns>
-        InlineResponse20011 ViewNumberOfDailyActiveUsers (string apiToken = default(string), string date = default(string));
+        /// <returns>ViewNumberOfDailyActiveUsersResponse</returns>
+        ViewNumberOfDailyActiveUsersResponse ViewNumberOfDailyActiveUsers (string apiToken = default(string), string date = default(string));
 
         /// <summary>
         /// View number of daily active users
@@ -506,8 +506,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="date"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20011</returns>
-        ApiResponse<InlineResponse20011> ViewNumberOfDailyActiveUsersWithHttpInfo (string apiToken = default(string), string date = default(string));
+        /// <returns>ApiResponse of ViewNumberOfDailyActiveUsersResponse</returns>
+        ApiResponse<ViewNumberOfDailyActiveUsersResponse> ViewNumberOfDailyActiveUsersWithHttpInfo (string apiToken = default(string), string date = default(string));
         /// <summary>
         /// View number of monthly active users
         /// </summary>
@@ -517,8 +517,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="date"> (optional)</param>
-        /// <returns>InlineResponse20010</returns>
-        InlineResponse20010 ViewNumberOfMonthlyActiveUsers (string apiToken = default(string), string date = default(string));
+        /// <returns>ViewNumberOfMonthlyActiveUsersResponse</returns>
+        ViewNumberOfMonthlyActiveUsersResponse ViewNumberOfMonthlyActiveUsers (string apiToken = default(string), string date = default(string));
 
         /// <summary>
         /// View number of monthly active users
@@ -529,8 +529,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="date"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20010</returns>
-        ApiResponse<InlineResponse20010> ViewNumberOfMonthlyActiveUsersWithHttpInfo (string apiToken = default(string), string date = default(string));
+        /// <returns>ApiResponse of ViewNumberOfMonthlyActiveUsersResponse</returns>
+        ApiResponse<ViewNumberOfMonthlyActiveUsersResponse> ViewNumberOfMonthlyActiveUsersWithHttpInfo (string apiToken = default(string), string date = default(string));
         /// <summary>
         /// View number of peak connections
         /// </summary>
@@ -546,8 +546,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="startDay"> (optional)</param>
         /// <param name="endDay"> (optional)</param>
-        /// <returns>InlineResponse2009</returns>
-        InlineResponse2009 ViewNumberOfPeakConnections (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?));
+        /// <returns>ViewNumberOfPeakConnectionsResponse</returns>
+        ViewNumberOfPeakConnectionsResponse ViewNumberOfPeakConnections (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?));
 
         /// <summary>
         /// View number of peak connections
@@ -564,8 +564,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="startDay"> (optional)</param>
         /// <param name="endDay"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2009</returns>
-        ApiResponse<InlineResponse2009> ViewNumberOfPeakConnectionsWithHttpInfo (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?));
+        /// <returns>ApiResponse of ViewNumberOfPeakConnectionsResponse</returns>
+        ApiResponse<ViewNumberOfPeakConnectionsResponse> ViewNumberOfPeakConnectionsWithHttpInfo (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?));
         /// <summary>
         /// View a push configuration
         /// </summary>
@@ -576,8 +576,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20012</returns>
-        InlineResponse20012 ViewPushConfigurationById (string pushType, string providerId, string apiToken = default(string));
+        /// <returns>ViewPushConfigurationByIdResponse</returns>
+        ViewPushConfigurationByIdResponse ViewPushConfigurationById (string pushType, string providerId, string apiToken = default(string));
 
         /// <summary>
         /// View a push configuration
@@ -589,8 +589,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20012</returns>
-        ApiResponse<InlineResponse20012> ViewPushConfigurationByIdWithHttpInfo (string pushType, string providerId, string apiToken = default(string));
+        /// <returns>ApiResponse of ViewPushConfigurationByIdResponse</returns>
+        ApiResponse<ViewPushConfigurationByIdResponse> ViewPushConfigurationByIdWithHttpInfo (string pushType, string providerId, string apiToken = default(string));
         /// <summary>
         /// View a push notification content template
         /// </summary>
@@ -600,8 +600,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="templateName"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20015</returns>
-        InlineResponse20015 ViewPushNotificationContentTemplate (string templateName, string apiToken = default(string));
+        /// <returns>ViewPushNotificationContentTemplateResponse</returns>
+        ViewPushNotificationContentTemplateResponse ViewPushNotificationContentTemplate (string templateName, string apiToken = default(string));
 
         /// <summary>
         /// View a push notification content template
@@ -612,8 +612,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="templateName"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20015</returns>
-        ApiResponse<InlineResponse20015> ViewPushNotificationContentTemplateWithHttpInfo (string templateName, string apiToken = default(string));
+        /// <returns>ApiResponse of ViewPushNotificationContentTemplateResponse</returns>
+        ApiResponse<ViewPushNotificationContentTemplateResponse> ViewPushNotificationContentTemplateWithHttpInfo (string templateName, string apiToken = default(string));
         /// <summary>
         /// View a secondary API token
         /// </summary>
@@ -623,8 +623,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken2"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse2007</returns>
-        InlineResponse2007 ViewSecondaryApiTokenByToken (string apiToken2, string apiToken = default(string));
+        /// <returns>ViewSecondaryApiTokenByTokenResponse</returns>
+        ViewSecondaryApiTokenByTokenResponse ViewSecondaryApiTokenByToken (string apiToken2, string apiToken = default(string));
 
         /// <summary>
         /// View a secondary API token
@@ -635,8 +635,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken2"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2007</returns>
-        ApiResponse<InlineResponse2007> ViewSecondaryApiTokenByTokenWithHttpInfo (string apiToken2, string apiToken = default(string));
+        /// <returns>ApiResponse of ViewSecondaryApiTokenByTokenResponse</returns>
+        ApiResponse<ViewSecondaryApiTokenByTokenResponse> ViewSecondaryApiTokenByTokenWithHttpInfo (string apiToken2, string apiToken = default(string));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -649,8 +649,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2003</returns>
-        System.Threading.Tasks.Task<InlineResponse2003> AddApnsPushConfigurationAsync (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of AddApnsPushConfigurationResponse</returns>
+        System.Threading.Tasks.Task<AddApnsPushConfigurationResponse> AddApnsPushConfigurationAsync (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Add an APNs push configuration
@@ -662,8 +662,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2003)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2003>> AddApnsPushConfigurationWithHttpInfoAsync (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (AddApnsPushConfigurationResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<AddApnsPushConfigurationResponse>> AddApnsPushConfigurationWithHttpInfoAsync (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Add a FCM push configuration
         /// </summary>
@@ -674,8 +674,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        System.Threading.Tasks.Task<InlineResponse2001> AddFcmPushConfigurationAsync (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of AddFcmPushConfigurationResponse</returns>
+        System.Threading.Tasks.Task<AddFcmPushConfigurationResponse> AddFcmPushConfigurationAsync (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Add a FCM push configuration
@@ -687,8 +687,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> AddFcmPushConfigurationWithHttpInfoAsync (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (AddFcmPushConfigurationResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<AddFcmPushConfigurationResponse>> AddFcmPushConfigurationWithHttpInfoAsync (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Add an HMS push configuration
         /// </summary>
@@ -699,8 +699,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2002</returns>
-        System.Threading.Tasks.Task<InlineResponse2002> AddHmsPushConfigurationAsync (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of AddHmsPushConfigurationResponse</returns>
+        System.Threading.Tasks.Task<AddHmsPushConfigurationResponse> AddHmsPushConfigurationAsync (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Add an HMS push configuration
@@ -712,8 +712,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> AddHmsPushConfigurationWithHttpInfoAsync (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (AddHmsPushConfigurationResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<AddHmsPushConfigurationResponse>> AddHmsPushConfigurationWithHttpInfoAsync (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Add an IP to a whitelist
         /// </summary>
@@ -724,8 +724,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addIpToWhitelistData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2006</returns>
-        System.Threading.Tasks.Task<InlineResponse2006> AddIpToWhitelistAsync (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of AddIpToWhitelistResponse</returns>
+        System.Threading.Tasks.Task<AddIpToWhitelistResponse> AddIpToWhitelistAsync (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Add an IP to a whitelist
@@ -737,8 +737,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addIpToWhitelistData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2006)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2006>> AddIpToWhitelistWithHttpInfoAsync (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (AddIpToWhitelistResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<AddIpToWhitelistResponse>> AddIpToWhitelistWithHttpInfoAsync (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Delete allowed IPs from a whitelist
         /// </summary>
@@ -749,8 +749,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ipWhitelistAddresses"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2006</returns>
-        System.Threading.Tasks.Task<InlineResponse2006> DeleteAllowedIpsFromWhitelistAsync (List<string> ipWhitelistAddresses, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of DeleteAllowedIpsFromWhitelistResponse</returns>
+        System.Threading.Tasks.Task<DeleteAllowedIpsFromWhitelistResponse> DeleteAllowedIpsFromWhitelistAsync (List<string> ipWhitelistAddresses, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Delete allowed IPs from a whitelist
@@ -762,8 +762,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ipWhitelistAddresses"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2006)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2006>> DeleteAllowedIpsFromWhitelistWithHttpInfoAsync (List<string> ipWhitelistAddresses, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (DeleteAllowedIpsFromWhitelistResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<DeleteAllowedIpsFromWhitelistResponse>> DeleteAllowedIpsFromWhitelistWithHttpInfoAsync (List<string> ipWhitelistAddresses, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Delete an APNs certificate
         /// </summary>
@@ -774,8 +774,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20013</returns>
-        System.Threading.Tasks.Task<InlineResponse20013> DeleteApnsCertificateByIdAsync (string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of DeleteApnsCertificateByIdResponse</returns>
+        System.Threading.Tasks.Task<DeleteApnsCertificateByIdResponse> DeleteApnsCertificateByIdAsync (string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Delete an APNs certificate
@@ -787,8 +787,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20013)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20013>> DeleteApnsCertificateByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (DeleteApnsCertificateByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<DeleteApnsCertificateByIdResponse>> DeleteApnsCertificateByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Generate a secondary API token
         /// </summary>
@@ -799,8 +799,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2007</returns>
-        System.Threading.Tasks.Task<InlineResponse2007> GenerateSecondaryApiTokenAsync (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of GenerateSecondaryApiTokenResponse</returns>
+        System.Threading.Tasks.Task<GenerateSecondaryApiTokenResponse> GenerateSecondaryApiTokenAsync (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Generate a secondary API token
@@ -812,8 +812,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2007)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2007>> GenerateSecondaryApiTokenWithHttpInfoAsync (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (GenerateSecondaryApiTokenResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GenerateSecondaryApiTokenResponse>> GenerateSecondaryApiTokenWithHttpInfoAsync (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List push configurations
         /// </summary>
@@ -824,8 +824,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="pushType"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20012</returns>
-        System.Threading.Tasks.Task<InlineResponse20012> ListPushConfigurationsAsync (string pushType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListPushConfigurationsResponse</returns>
+        System.Threading.Tasks.Task<ListPushConfigurationsResponse> ListPushConfigurationsAsync (string pushType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List push configurations
@@ -837,8 +837,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="pushType"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20012)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20012>> ListPushConfigurationsWithHttpInfoAsync (string pushType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListPushConfigurationsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListPushConfigurationsResponse>> ListPushConfigurationsWithHttpInfoAsync (string pushType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List push notification content templates
         /// </summary>
@@ -848,8 +848,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2004</returns>
-        System.Threading.Tasks.Task<InlineResponse2004> ListPushNotificationContentTemplatesAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListPushNotificationContentTemplatesResponse</returns>
+        System.Threading.Tasks.Task<ListPushNotificationContentTemplatesResponse> ListPushNotificationContentTemplatesAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List push notification content templates
@@ -860,8 +860,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2004)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2004>> ListPushNotificationContentTemplatesWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListPushNotificationContentTemplatesResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListPushNotificationContentTemplatesResponse>> ListPushNotificationContentTemplatesWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List secondary API tokens
         /// </summary>
@@ -871,8 +871,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2008</returns>
-        System.Threading.Tasks.Task<InlineResponse2008> ListSecondaryApiTokensAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListSecondaryApiTokensResponse</returns>
+        System.Threading.Tasks.Task<ListSecondaryApiTokensResponse> ListSecondaryApiTokensAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List secondary API tokens
@@ -883,8 +883,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2008)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2008>> ListSecondaryApiTokensWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListSecondaryApiTokensResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListSecondaryApiTokensResponse>> ListSecondaryApiTokensWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Remove a push configuration
         /// </summary>
@@ -896,8 +896,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20013</returns>
-        System.Threading.Tasks.Task<InlineResponse20013> RemovePushConfigurationByIdAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of RemovePushConfigurationByIdResponse</returns>
+        System.Threading.Tasks.Task<RemovePushConfigurationByIdResponse> RemovePushConfigurationByIdAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Remove a push configuration
@@ -910,8 +910,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20013)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20013>> RemovePushConfigurationByIdWithHttpInfoAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (RemovePushConfigurationByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<RemovePushConfigurationByIdResponse>> RemovePushConfigurationByIdWithHttpInfoAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Retrieve an IP whitelist
         /// </summary>
@@ -921,8 +921,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2006</returns>
-        System.Threading.Tasks.Task<InlineResponse2006> RetrieveIpWhitelistAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of RetrieveIpWhitelistResponse</returns>
+        System.Threading.Tasks.Task<RetrieveIpWhitelistResponse> RetrieveIpWhitelistAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Retrieve an IP whitelist
@@ -933,8 +933,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2006)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2006>> RetrieveIpWhitelistWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (RetrieveIpWhitelistResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<RetrieveIpWhitelistResponse>> RetrieveIpWhitelistWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Revoke a secondary API token
         /// </summary>
@@ -945,8 +945,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken2"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2007</returns>
-        System.Threading.Tasks.Task<InlineResponse2007> RevokeSecondaryApiTokenByTokenAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of RevokeSecondaryApiTokenByTokenResponse</returns>
+        System.Threading.Tasks.Task<RevokeSecondaryApiTokenByTokenResponse> RevokeSecondaryApiTokenByTokenAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Revoke a secondary API token
@@ -958,8 +958,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken2"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2007)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2007>> RevokeSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (RevokeSecondaryApiTokenByTokenResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<RevokeSecondaryApiTokenByTokenResponse>> RevokeSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update an APNs push configuration
         /// </summary>
@@ -971,8 +971,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20014</returns>
-        System.Threading.Tasks.Task<InlineResponse20014> UpdateApnsPushConfigurationByIdAsync (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of UpdateApnsPushConfigurationByIdResponse</returns>
+        System.Threading.Tasks.Task<UpdateApnsPushConfigurationByIdResponse> UpdateApnsPushConfigurationByIdAsync (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update an APNs push configuration
@@ -985,8 +985,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20014)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20014>> UpdateApnsPushConfigurationByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (UpdateApnsPushConfigurationByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UpdateApnsPushConfigurationByIdResponse>> UpdateApnsPushConfigurationByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update default channel invitation preference
         /// </summary>
@@ -997,8 +997,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2005</returns>
-        System.Threading.Tasks.Task<InlineResponse2005> UpdateDefaultChannelInvitationPreferenceAsync (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of UpdateDefaultChannelInvitationPreferenceResponse</returns>
+        System.Threading.Tasks.Task<UpdateDefaultChannelInvitationPreferenceResponse> UpdateDefaultChannelInvitationPreferenceAsync (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update default channel invitation preference
@@ -1010,8 +1010,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2005)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2005>> UpdateDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (UpdateDefaultChannelInvitationPreferenceResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse>> UpdateDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update a FCM push configuration
         /// </summary>
@@ -1023,8 +1023,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20014</returns>
-        System.Threading.Tasks.Task<InlineResponse20014> UpdateFcmPushConfigurationByIdAsync (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of UpdateFcmPushConfigurationByIdResponse</returns>
+        System.Threading.Tasks.Task<UpdateFcmPushConfigurationByIdResponse> UpdateFcmPushConfigurationByIdAsync (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update a FCM push configuration
@@ -1037,8 +1037,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20014)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20014>> UpdateFcmPushConfigurationByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (UpdateFcmPushConfigurationByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UpdateFcmPushConfigurationByIdResponse>> UpdateFcmPushConfigurationByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update an HMS push configuration
         /// </summary>
@@ -1050,8 +1050,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20014</returns>
-        System.Threading.Tasks.Task<InlineResponse20014> UpdateHmsPushConfigurationByIdAsync (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of UpdateHmsPushConfigurationByIdResponse</returns>
+        System.Threading.Tasks.Task<UpdateHmsPushConfigurationByIdResponse> UpdateHmsPushConfigurationByIdAsync (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update an HMS push configuration
@@ -1064,8 +1064,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20014)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20014>> UpdateHmsPushConfigurationByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (UpdateHmsPushConfigurationByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UpdateHmsPushConfigurationByIdResponse>> UpdateHmsPushConfigurationByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update a push notification content template
         /// </summary>
@@ -1077,8 +1077,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20015</returns>
-        System.Threading.Tasks.Task<InlineResponse20015> UpdatePushNotificationContentTemplateAsync (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of UpdatePushNotificationContentTemplateResponse</returns>
+        System.Threading.Tasks.Task<UpdatePushNotificationContentTemplateResponse> UpdatePushNotificationContentTemplateAsync (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update a push notification content template
@@ -1091,8 +1091,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20015)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20015>> UpdatePushNotificationContentTemplateWithHttpInfoAsync (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (UpdatePushNotificationContentTemplateResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UpdatePushNotificationContentTemplateResponse>> UpdatePushNotificationContentTemplateWithHttpInfoAsync (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View default channel invitation preference
         /// </summary>
@@ -1102,8 +1102,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2005</returns>
-        System.Threading.Tasks.Task<InlineResponse2005> ViewDefaultChannelInvitationPreferenceAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewDefaultChannelInvitationPreferenceResponse</returns>
+        System.Threading.Tasks.Task<ViewDefaultChannelInvitationPreferenceResponse> ViewDefaultChannelInvitationPreferenceAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View default channel invitation preference
@@ -1114,8 +1114,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2005)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2005>> ViewDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewDefaultChannelInvitationPreferenceResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewDefaultChannelInvitationPreferenceResponse>> ViewDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View number of concurrent connections
         /// </summary>
@@ -1125,8 +1125,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse200</returns>
-        System.Threading.Tasks.Task<InlineResponse200> ViewNumberOfConcurrentConnectionsAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewNumberOfConcurrentConnectionsResponse</returns>
+        System.Threading.Tasks.Task<ViewNumberOfConcurrentConnectionsResponse> ViewNumberOfConcurrentConnectionsAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View number of concurrent connections
@@ -1137,8 +1137,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> ViewNumberOfConcurrentConnectionsWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewNumberOfConcurrentConnectionsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfConcurrentConnectionsResponse>> ViewNumberOfConcurrentConnectionsWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View number of daily active users
         /// </summary>
@@ -1149,8 +1149,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="date"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20011</returns>
-        System.Threading.Tasks.Task<InlineResponse20011> ViewNumberOfDailyActiveUsersAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewNumberOfDailyActiveUsersResponse</returns>
+        System.Threading.Tasks.Task<ViewNumberOfDailyActiveUsersResponse> ViewNumberOfDailyActiveUsersAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View number of daily active users
@@ -1162,8 +1162,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="date"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20011)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20011>> ViewNumberOfDailyActiveUsersWithHttpInfoAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewNumberOfDailyActiveUsersResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfDailyActiveUsersResponse>> ViewNumberOfDailyActiveUsersWithHttpInfoAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View number of monthly active users
         /// </summary>
@@ -1174,8 +1174,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="date"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20010</returns>
-        System.Threading.Tasks.Task<InlineResponse20010> ViewNumberOfMonthlyActiveUsersAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewNumberOfMonthlyActiveUsersResponse</returns>
+        System.Threading.Tasks.Task<ViewNumberOfMonthlyActiveUsersResponse> ViewNumberOfMonthlyActiveUsersAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View number of monthly active users
@@ -1187,8 +1187,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="date"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20010)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20010>> ViewNumberOfMonthlyActiveUsersWithHttpInfoAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewNumberOfMonthlyActiveUsersResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfMonthlyActiveUsersResponse>> ViewNumberOfMonthlyActiveUsersWithHttpInfoAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View number of peak connections
         /// </summary>
@@ -1205,8 +1205,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="startDay"> (optional)</param>
         /// <param name="endDay"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2009</returns>
-        System.Threading.Tasks.Task<InlineResponse2009> ViewNumberOfPeakConnectionsAsync (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewNumberOfPeakConnectionsResponse</returns>
+        System.Threading.Tasks.Task<ViewNumberOfPeakConnectionsResponse> ViewNumberOfPeakConnectionsAsync (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View number of peak connections
@@ -1224,8 +1224,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="startDay"> (optional)</param>
         /// <param name="endDay"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2009)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2009>> ViewNumberOfPeakConnectionsWithHttpInfoAsync (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewNumberOfPeakConnectionsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfPeakConnectionsResponse>> ViewNumberOfPeakConnectionsWithHttpInfoAsync (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a push configuration
         /// </summary>
@@ -1237,8 +1237,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20012</returns>
-        System.Threading.Tasks.Task<InlineResponse20012> ViewPushConfigurationByIdAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewPushConfigurationByIdResponse</returns>
+        System.Threading.Tasks.Task<ViewPushConfigurationByIdResponse> ViewPushConfigurationByIdAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a push configuration
@@ -1251,8 +1251,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20012)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20012>> ViewPushConfigurationByIdWithHttpInfoAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewPushConfigurationByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewPushConfigurationByIdResponse>> ViewPushConfigurationByIdWithHttpInfoAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a push notification content template
         /// </summary>
@@ -1263,8 +1263,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="templateName"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20015</returns>
-        System.Threading.Tasks.Task<InlineResponse20015> ViewPushNotificationContentTemplateAsync (string templateName, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewPushNotificationContentTemplateResponse</returns>
+        System.Threading.Tasks.Task<ViewPushNotificationContentTemplateResponse> ViewPushNotificationContentTemplateAsync (string templateName, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a push notification content template
@@ -1276,8 +1276,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="templateName"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20015)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20015>> ViewPushNotificationContentTemplateWithHttpInfoAsync (string templateName, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewPushNotificationContentTemplateResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewPushNotificationContentTemplateResponse>> ViewPushNotificationContentTemplateWithHttpInfoAsync (string templateName, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a secondary API token
         /// </summary>
@@ -1288,8 +1288,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken2"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2007</returns>
-        System.Threading.Tasks.Task<InlineResponse2007> ViewSecondaryApiTokenByTokenAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewSecondaryApiTokenByTokenResponse</returns>
+        System.Threading.Tasks.Task<ViewSecondaryApiTokenByTokenResponse> ViewSecondaryApiTokenByTokenAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a secondary API token
@@ -1301,8 +1301,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken2"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2007)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2007>> ViewSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewSecondaryApiTokenByTokenResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewSecondaryApiTokenByTokenResponse>> ViewSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -1420,10 +1420,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
-        /// <returns>InlineResponse2003</returns>
-        public InlineResponse2003 AddApnsPushConfiguration (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData))
+        /// <returns>AddApnsPushConfigurationResponse</returns>
+        public AddApnsPushConfigurationResponse AddApnsPushConfiguration (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData))
         {
-             ApiResponse<InlineResponse2003> localVarResponse = AddApnsPushConfigurationWithHttpInfo(apiToken, addApnsPushConfigurationData);
+             ApiResponse<AddApnsPushConfigurationResponse> localVarResponse = AddApnsPushConfigurationWithHttpInfo(apiToken, addApnsPushConfigurationData);
              return localVarResponse.Data;
         }
 
@@ -1433,8 +1433,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2003</returns>
-        public ApiResponse<InlineResponse2003> AddApnsPushConfigurationWithHttpInfo (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData))
+        /// <returns>ApiResponse of AddApnsPushConfigurationResponse</returns>
+        public ApiResponse<AddApnsPushConfigurationResponse> AddApnsPushConfigurationWithHttpInfo (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData))
         {
 
             var localVarPath = "/v3/applications/push/apns";
@@ -1483,9 +1483,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2003>(localVarStatusCode,
+            return new ApiResponse<AddApnsPushConfigurationResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2003) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2003)));
+                (AddApnsPushConfigurationResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(AddApnsPushConfigurationResponse)));
         }
 
         /// <summary>
@@ -1495,10 +1495,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2003</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2003> AddApnsPushConfigurationAsync (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of AddApnsPushConfigurationResponse</returns>
+        public async System.Threading.Tasks.Task<AddApnsPushConfigurationResponse> AddApnsPushConfigurationAsync (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2003> localVarResponse = await AddApnsPushConfigurationWithHttpInfoAsync(apiToken, addApnsPushConfigurationData, cancellationToken);
+             ApiResponse<AddApnsPushConfigurationResponse> localVarResponse = await AddApnsPushConfigurationWithHttpInfoAsync(apiToken, addApnsPushConfigurationData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1510,8 +1510,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2003)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2003>> AddApnsPushConfigurationWithHttpInfoAsync (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (AddApnsPushConfigurationResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<AddApnsPushConfigurationResponse>> AddApnsPushConfigurationWithHttpInfoAsync (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/applications/push/apns";
@@ -1560,9 +1560,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2003>(localVarStatusCode,
+            return new ApiResponse<AddApnsPushConfigurationResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2003) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2003)));
+                (AddApnsPushConfigurationResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(AddApnsPushConfigurationResponse)));
         }
 
         /// <summary>
@@ -1571,10 +1571,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        public InlineResponse2001 AddFcmPushConfiguration (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData))
+        /// <returns>AddFcmPushConfigurationResponse</returns>
+        public AddFcmPushConfigurationResponse AddFcmPushConfiguration (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData))
         {
-             ApiResponse<InlineResponse2001> localVarResponse = AddFcmPushConfigurationWithHttpInfo(apiToken, addFcmPushConfigurationData);
+             ApiResponse<AddFcmPushConfigurationResponse> localVarResponse = AddFcmPushConfigurationWithHttpInfo(apiToken, addFcmPushConfigurationData);
              return localVarResponse.Data;
         }
 
@@ -1584,8 +1584,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        public ApiResponse<InlineResponse2001> AddFcmPushConfigurationWithHttpInfo (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData))
+        /// <returns>ApiResponse of AddFcmPushConfigurationResponse</returns>
+        public ApiResponse<AddFcmPushConfigurationResponse> AddFcmPushConfigurationWithHttpInfo (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData))
         {
 
             var localVarPath = "/v3/applications/push/fcm";
@@ -1634,9 +1634,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<AddFcmPushConfigurationResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (AddFcmPushConfigurationResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(AddFcmPushConfigurationResponse)));
         }
 
         /// <summary>
@@ -1646,10 +1646,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2001> AddFcmPushConfigurationAsync (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of AddFcmPushConfigurationResponse</returns>
+        public async System.Threading.Tasks.Task<AddFcmPushConfigurationResponse> AddFcmPushConfigurationAsync (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2001> localVarResponse = await AddFcmPushConfigurationWithHttpInfoAsync(apiToken, addFcmPushConfigurationData, cancellationToken);
+             ApiResponse<AddFcmPushConfigurationResponse> localVarResponse = await AddFcmPushConfigurationWithHttpInfoAsync(apiToken, addFcmPushConfigurationData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1661,8 +1661,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> AddFcmPushConfigurationWithHttpInfoAsync (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (AddFcmPushConfigurationResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<AddFcmPushConfigurationResponse>> AddFcmPushConfigurationWithHttpInfoAsync (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/applications/push/fcm";
@@ -1711,9 +1711,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<AddFcmPushConfigurationResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (AddFcmPushConfigurationResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(AddFcmPushConfigurationResponse)));
         }
 
         /// <summary>
@@ -1722,10 +1722,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
-        /// <returns>InlineResponse2002</returns>
-        public InlineResponse2002 AddHmsPushConfiguration (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData))
+        /// <returns>AddHmsPushConfigurationResponse</returns>
+        public AddHmsPushConfigurationResponse AddHmsPushConfiguration (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData))
         {
-             ApiResponse<InlineResponse2002> localVarResponse = AddHmsPushConfigurationWithHttpInfo(apiToken, addHmsPushConfigurationData);
+             ApiResponse<AddHmsPushConfigurationResponse> localVarResponse = AddHmsPushConfigurationWithHttpInfo(apiToken, addHmsPushConfigurationData);
              return localVarResponse.Data;
         }
 
@@ -1735,8 +1735,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2002</returns>
-        public ApiResponse<InlineResponse2002> AddHmsPushConfigurationWithHttpInfo (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData))
+        /// <returns>ApiResponse of AddHmsPushConfigurationResponse</returns>
+        public ApiResponse<AddHmsPushConfigurationResponse> AddHmsPushConfigurationWithHttpInfo (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData))
         {
 
             var localVarPath = "/v3/applications/push/hms";
@@ -1785,9 +1785,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
+            return new ApiResponse<AddHmsPushConfigurationResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2002) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
+                (AddHmsPushConfigurationResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(AddHmsPushConfigurationResponse)));
         }
 
         /// <summary>
@@ -1797,10 +1797,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2002</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2002> AddHmsPushConfigurationAsync (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of AddHmsPushConfigurationResponse</returns>
+        public async System.Threading.Tasks.Task<AddHmsPushConfigurationResponse> AddHmsPushConfigurationAsync (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2002> localVarResponse = await AddHmsPushConfigurationWithHttpInfoAsync(apiToken, addHmsPushConfigurationData, cancellationToken);
+             ApiResponse<AddHmsPushConfigurationResponse> localVarResponse = await AddHmsPushConfigurationWithHttpInfoAsync(apiToken, addHmsPushConfigurationData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1812,8 +1812,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> AddHmsPushConfigurationWithHttpInfoAsync (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (AddHmsPushConfigurationResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<AddHmsPushConfigurationResponse>> AddHmsPushConfigurationWithHttpInfoAsync (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/applications/push/hms";
@@ -1862,9 +1862,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2002>(localVarStatusCode,
+            return new ApiResponse<AddHmsPushConfigurationResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2002) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2002)));
+                (AddHmsPushConfigurationResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(AddHmsPushConfigurationResponse)));
         }
 
         /// <summary>
@@ -1873,10 +1873,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addIpToWhitelistData"> (optional)</param>
-        /// <returns>InlineResponse2006</returns>
-        public InlineResponse2006 AddIpToWhitelist (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData))
+        /// <returns>AddIpToWhitelistResponse</returns>
+        public AddIpToWhitelistResponse AddIpToWhitelist (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData))
         {
-             ApiResponse<InlineResponse2006> localVarResponse = AddIpToWhitelistWithHttpInfo(apiToken, addIpToWhitelistData);
+             ApiResponse<AddIpToWhitelistResponse> localVarResponse = AddIpToWhitelistWithHttpInfo(apiToken, addIpToWhitelistData);
              return localVarResponse.Data;
         }
 
@@ -1886,8 +1886,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addIpToWhitelistData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2006</returns>
-        public ApiResponse<InlineResponse2006> AddIpToWhitelistWithHttpInfo (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData))
+        /// <returns>ApiResponse of AddIpToWhitelistResponse</returns>
+        public ApiResponse<AddIpToWhitelistResponse> AddIpToWhitelistWithHttpInfo (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData))
         {
 
             var localVarPath = "/v3/applications/settings/ip_whitelist";
@@ -1936,9 +1936,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2006>(localVarStatusCode,
+            return new ApiResponse<AddIpToWhitelistResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2006) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2006)));
+                (AddIpToWhitelistResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(AddIpToWhitelistResponse)));
         }
 
         /// <summary>
@@ -1948,10 +1948,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addIpToWhitelistData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2006</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2006> AddIpToWhitelistAsync (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of AddIpToWhitelistResponse</returns>
+        public async System.Threading.Tasks.Task<AddIpToWhitelistResponse> AddIpToWhitelistAsync (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2006> localVarResponse = await AddIpToWhitelistWithHttpInfoAsync(apiToken, addIpToWhitelistData, cancellationToken);
+             ApiResponse<AddIpToWhitelistResponse> localVarResponse = await AddIpToWhitelistWithHttpInfoAsync(apiToken, addIpToWhitelistData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1963,8 +1963,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addIpToWhitelistData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2006)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2006>> AddIpToWhitelistWithHttpInfoAsync (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (AddIpToWhitelistResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<AddIpToWhitelistResponse>> AddIpToWhitelistWithHttpInfoAsync (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/applications/settings/ip_whitelist";
@@ -2013,9 +2013,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2006>(localVarStatusCode,
+            return new ApiResponse<AddIpToWhitelistResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2006) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2006)));
+                (AddIpToWhitelistResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(AddIpToWhitelistResponse)));
         }
 
         /// <summary>
@@ -2024,10 +2024,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ipWhitelistAddresses"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse2006</returns>
-        public InlineResponse2006 DeleteAllowedIpsFromWhitelist (List<string> ipWhitelistAddresses, string apiToken = default(string))
+        /// <returns>DeleteAllowedIpsFromWhitelistResponse</returns>
+        public DeleteAllowedIpsFromWhitelistResponse DeleteAllowedIpsFromWhitelist (List<string> ipWhitelistAddresses, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse2006> localVarResponse = DeleteAllowedIpsFromWhitelistWithHttpInfo(ipWhitelistAddresses, apiToken);
+             ApiResponse<DeleteAllowedIpsFromWhitelistResponse> localVarResponse = DeleteAllowedIpsFromWhitelistWithHttpInfo(ipWhitelistAddresses, apiToken);
              return localVarResponse.Data;
         }
 
@@ -2037,8 +2037,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="ipWhitelistAddresses"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2006</returns>
-        public ApiResponse<InlineResponse2006> DeleteAllowedIpsFromWhitelistWithHttpInfo (List<string> ipWhitelistAddresses, string apiToken = default(string))
+        /// <returns>ApiResponse of DeleteAllowedIpsFromWhitelistResponse</returns>
+        public ApiResponse<DeleteAllowedIpsFromWhitelistResponse> DeleteAllowedIpsFromWhitelistWithHttpInfo (List<string> ipWhitelistAddresses, string apiToken = default(string))
         {
             // verify the required parameter 'ipWhitelistAddresses' is set
             if (ipWhitelistAddresses == null)
@@ -2082,9 +2082,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2006>(localVarStatusCode,
+            return new ApiResponse<DeleteAllowedIpsFromWhitelistResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2006) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2006)));
+                (DeleteAllowedIpsFromWhitelistResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(DeleteAllowedIpsFromWhitelistResponse)));
         }
 
         /// <summary>
@@ -2094,10 +2094,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ipWhitelistAddresses"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2006</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2006> DeleteAllowedIpsFromWhitelistAsync (List<string> ipWhitelistAddresses, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of DeleteAllowedIpsFromWhitelistResponse</returns>
+        public async System.Threading.Tasks.Task<DeleteAllowedIpsFromWhitelistResponse> DeleteAllowedIpsFromWhitelistAsync (List<string> ipWhitelistAddresses, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2006> localVarResponse = await DeleteAllowedIpsFromWhitelistWithHttpInfoAsync(ipWhitelistAddresses, apiToken, cancellationToken);
+             ApiResponse<DeleteAllowedIpsFromWhitelistResponse> localVarResponse = await DeleteAllowedIpsFromWhitelistWithHttpInfoAsync(ipWhitelistAddresses, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2109,8 +2109,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ipWhitelistAddresses"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2006)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2006>> DeleteAllowedIpsFromWhitelistWithHttpInfoAsync (List<string> ipWhitelistAddresses, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (DeleteAllowedIpsFromWhitelistResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<DeleteAllowedIpsFromWhitelistResponse>> DeleteAllowedIpsFromWhitelistWithHttpInfoAsync (List<string> ipWhitelistAddresses, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'ipWhitelistAddresses' is set
             if (ipWhitelistAddresses == null)
@@ -2154,9 +2154,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2006>(localVarStatusCode,
+            return new ApiResponse<DeleteAllowedIpsFromWhitelistResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2006) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2006)));
+                (DeleteAllowedIpsFromWhitelistResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(DeleteAllowedIpsFromWhitelistResponse)));
         }
 
         /// <summary>
@@ -2165,10 +2165,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20013</returns>
-        public InlineResponse20013 DeleteApnsCertificateById (string providerId, string apiToken = default(string))
+        /// <returns>DeleteApnsCertificateByIdResponse</returns>
+        public DeleteApnsCertificateByIdResponse DeleteApnsCertificateById (string providerId, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20013> localVarResponse = DeleteApnsCertificateByIdWithHttpInfo(providerId, apiToken);
+             ApiResponse<DeleteApnsCertificateByIdResponse> localVarResponse = DeleteApnsCertificateByIdWithHttpInfo(providerId, apiToken);
              return localVarResponse.Data;
         }
 
@@ -2178,8 +2178,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20013</returns>
-        public ApiResponse<InlineResponse20013> DeleteApnsCertificateByIdWithHttpInfo (string providerId, string apiToken = default(string))
+        /// <returns>ApiResponse of DeleteApnsCertificateByIdResponse</returns>
+        public ApiResponse<DeleteApnsCertificateByIdResponse> DeleteApnsCertificateByIdWithHttpInfo (string providerId, string apiToken = default(string))
         {
             // verify the required parameter 'providerId' is set
             if (providerId == null)
@@ -2223,9 +2223,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20013>(localVarStatusCode,
+            return new ApiResponse<DeleteApnsCertificateByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20013) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20013)));
+                (DeleteApnsCertificateByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(DeleteApnsCertificateByIdResponse)));
         }
 
         /// <summary>
@@ -2235,10 +2235,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20013</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20013> DeleteApnsCertificateByIdAsync (string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of DeleteApnsCertificateByIdResponse</returns>
+        public async System.Threading.Tasks.Task<DeleteApnsCertificateByIdResponse> DeleteApnsCertificateByIdAsync (string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20013> localVarResponse = await DeleteApnsCertificateByIdWithHttpInfoAsync(providerId, apiToken, cancellationToken);
+             ApiResponse<DeleteApnsCertificateByIdResponse> localVarResponse = await DeleteApnsCertificateByIdWithHttpInfoAsync(providerId, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2250,8 +2250,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20013)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20013>> DeleteApnsCertificateByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (DeleteApnsCertificateByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<DeleteApnsCertificateByIdResponse>> DeleteApnsCertificateByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'providerId' is set
             if (providerId == null)
@@ -2295,9 +2295,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20013>(localVarStatusCode,
+            return new ApiResponse<DeleteApnsCertificateByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20013) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20013)));
+                (DeleteApnsCertificateByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(DeleteApnsCertificateByIdResponse)));
         }
 
         /// <summary>
@@ -2306,10 +2306,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
-        /// <returns>InlineResponse2007</returns>
-        public InlineResponse2007 GenerateSecondaryApiToken (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData))
+        /// <returns>GenerateSecondaryApiTokenResponse</returns>
+        public GenerateSecondaryApiTokenResponse GenerateSecondaryApiToken (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData))
         {
-             ApiResponse<InlineResponse2007> localVarResponse = GenerateSecondaryApiTokenWithHttpInfo(apiToken, generateSecondaryApiTokenData);
+             ApiResponse<GenerateSecondaryApiTokenResponse> localVarResponse = GenerateSecondaryApiTokenWithHttpInfo(apiToken, generateSecondaryApiTokenData);
              return localVarResponse.Data;
         }
 
@@ -2319,8 +2319,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2007</returns>
-        public ApiResponse<InlineResponse2007> GenerateSecondaryApiTokenWithHttpInfo (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData))
+        /// <returns>ApiResponse of GenerateSecondaryApiTokenResponse</returns>
+        public ApiResponse<GenerateSecondaryApiTokenResponse> GenerateSecondaryApiTokenWithHttpInfo (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData))
         {
 
             var localVarPath = "/v3/applications/api_tokens";
@@ -2369,9 +2369,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2007>(localVarStatusCode,
+            return new ApiResponse<GenerateSecondaryApiTokenResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2007) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2007)));
+                (GenerateSecondaryApiTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GenerateSecondaryApiTokenResponse)));
         }
 
         /// <summary>
@@ -2381,10 +2381,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2007</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2007> GenerateSecondaryApiTokenAsync (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of GenerateSecondaryApiTokenResponse</returns>
+        public async System.Threading.Tasks.Task<GenerateSecondaryApiTokenResponse> GenerateSecondaryApiTokenAsync (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2007> localVarResponse = await GenerateSecondaryApiTokenWithHttpInfoAsync(apiToken, generateSecondaryApiTokenData, cancellationToken);
+             ApiResponse<GenerateSecondaryApiTokenResponse> localVarResponse = await GenerateSecondaryApiTokenWithHttpInfoAsync(apiToken, generateSecondaryApiTokenData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2396,8 +2396,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2007)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2007>> GenerateSecondaryApiTokenWithHttpInfoAsync (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (GenerateSecondaryApiTokenResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<GenerateSecondaryApiTokenResponse>> GenerateSecondaryApiTokenWithHttpInfoAsync (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/applications/api_tokens";
@@ -2446,9 +2446,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2007>(localVarStatusCode,
+            return new ApiResponse<GenerateSecondaryApiTokenResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2007) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2007)));
+                (GenerateSecondaryApiTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GenerateSecondaryApiTokenResponse)));
         }
 
         /// <summary>
@@ -2457,10 +2457,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="pushType"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20012</returns>
-        public InlineResponse20012 ListPushConfigurations (string pushType, string apiToken = default(string))
+        /// <returns>ListPushConfigurationsResponse</returns>
+        public ListPushConfigurationsResponse ListPushConfigurations (string pushType, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20012> localVarResponse = ListPushConfigurationsWithHttpInfo(pushType, apiToken);
+             ApiResponse<ListPushConfigurationsResponse> localVarResponse = ListPushConfigurationsWithHttpInfo(pushType, apiToken);
              return localVarResponse.Data;
         }
 
@@ -2470,8 +2470,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="pushType"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20012</returns>
-        public ApiResponse<InlineResponse20012> ListPushConfigurationsWithHttpInfo (string pushType, string apiToken = default(string))
+        /// <returns>ApiResponse of ListPushConfigurationsResponse</returns>
+        public ApiResponse<ListPushConfigurationsResponse> ListPushConfigurationsWithHttpInfo (string pushType, string apiToken = default(string))
         {
             // verify the required parameter 'pushType' is set
             if (pushType == null)
@@ -2515,9 +2515,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20012>(localVarStatusCode,
+            return new ApiResponse<ListPushConfigurationsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20012) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20012)));
+                (ListPushConfigurationsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListPushConfigurationsResponse)));
         }
 
         /// <summary>
@@ -2527,10 +2527,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="pushType"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20012</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20012> ListPushConfigurationsAsync (string pushType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListPushConfigurationsResponse</returns>
+        public async System.Threading.Tasks.Task<ListPushConfigurationsResponse> ListPushConfigurationsAsync (string pushType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20012> localVarResponse = await ListPushConfigurationsWithHttpInfoAsync(pushType, apiToken, cancellationToken);
+             ApiResponse<ListPushConfigurationsResponse> localVarResponse = await ListPushConfigurationsWithHttpInfoAsync(pushType, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2542,8 +2542,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="pushType"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20012)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20012>> ListPushConfigurationsWithHttpInfoAsync (string pushType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListPushConfigurationsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListPushConfigurationsResponse>> ListPushConfigurationsWithHttpInfoAsync (string pushType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'pushType' is set
             if (pushType == null)
@@ -2587,9 +2587,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20012>(localVarStatusCode,
+            return new ApiResponse<ListPushConfigurationsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20012) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20012)));
+                (ListPushConfigurationsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListPushConfigurationsResponse)));
         }
 
         /// <summary>
@@ -2597,10 +2597,10 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse2004</returns>
-        public InlineResponse2004 ListPushNotificationContentTemplates (string apiToken = default(string))
+        /// <returns>ListPushNotificationContentTemplatesResponse</returns>
+        public ListPushNotificationContentTemplatesResponse ListPushNotificationContentTemplates (string apiToken = default(string))
         {
-             ApiResponse<InlineResponse2004> localVarResponse = ListPushNotificationContentTemplatesWithHttpInfo(apiToken);
+             ApiResponse<ListPushNotificationContentTemplatesResponse> localVarResponse = ListPushNotificationContentTemplatesWithHttpInfo(apiToken);
              return localVarResponse.Data;
         }
 
@@ -2609,8 +2609,8 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2004</returns>
-        public ApiResponse<InlineResponse2004> ListPushNotificationContentTemplatesWithHttpInfo (string apiToken = default(string))
+        /// <returns>ApiResponse of ListPushNotificationContentTemplatesResponse</returns>
+        public ApiResponse<ListPushNotificationContentTemplatesResponse> ListPushNotificationContentTemplatesWithHttpInfo (string apiToken = default(string))
         {
 
             var localVarPath = "/v3/applications/push/message_templates";
@@ -2650,9 +2650,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2004>(localVarStatusCode,
+            return new ApiResponse<ListPushNotificationContentTemplatesResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2004) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2004)));
+                (ListPushNotificationContentTemplatesResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListPushNotificationContentTemplatesResponse)));
         }
 
         /// <summary>
@@ -2661,10 +2661,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2004</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2004> ListPushNotificationContentTemplatesAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListPushNotificationContentTemplatesResponse</returns>
+        public async System.Threading.Tasks.Task<ListPushNotificationContentTemplatesResponse> ListPushNotificationContentTemplatesAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2004> localVarResponse = await ListPushNotificationContentTemplatesWithHttpInfoAsync(apiToken, cancellationToken);
+             ApiResponse<ListPushNotificationContentTemplatesResponse> localVarResponse = await ListPushNotificationContentTemplatesWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2675,8 +2675,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2004)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2004>> ListPushNotificationContentTemplatesWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListPushNotificationContentTemplatesResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListPushNotificationContentTemplatesResponse>> ListPushNotificationContentTemplatesWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/applications/push/message_templates";
@@ -2716,9 +2716,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2004>(localVarStatusCode,
+            return new ApiResponse<ListPushNotificationContentTemplatesResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2004) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2004)));
+                (ListPushNotificationContentTemplatesResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListPushNotificationContentTemplatesResponse)));
         }
 
         /// <summary>
@@ -2726,10 +2726,10 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse2008</returns>
-        public InlineResponse2008 ListSecondaryApiTokens (string apiToken = default(string))
+        /// <returns>ListSecondaryApiTokensResponse</returns>
+        public ListSecondaryApiTokensResponse ListSecondaryApiTokens (string apiToken = default(string))
         {
-             ApiResponse<InlineResponse2008> localVarResponse = ListSecondaryApiTokensWithHttpInfo(apiToken);
+             ApiResponse<ListSecondaryApiTokensResponse> localVarResponse = ListSecondaryApiTokensWithHttpInfo(apiToken);
              return localVarResponse.Data;
         }
 
@@ -2738,8 +2738,8 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2008</returns>
-        public ApiResponse<InlineResponse2008> ListSecondaryApiTokensWithHttpInfo (string apiToken = default(string))
+        /// <returns>ApiResponse of ListSecondaryApiTokensResponse</returns>
+        public ApiResponse<ListSecondaryApiTokensResponse> ListSecondaryApiTokensWithHttpInfo (string apiToken = default(string))
         {
 
             var localVarPath = "/v3/applications/api_tokens";
@@ -2779,9 +2779,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2008>(localVarStatusCode,
+            return new ApiResponse<ListSecondaryApiTokensResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2008) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2008)));
+                (ListSecondaryApiTokensResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListSecondaryApiTokensResponse)));
         }
 
         /// <summary>
@@ -2790,10 +2790,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2008</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2008> ListSecondaryApiTokensAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListSecondaryApiTokensResponse</returns>
+        public async System.Threading.Tasks.Task<ListSecondaryApiTokensResponse> ListSecondaryApiTokensAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2008> localVarResponse = await ListSecondaryApiTokensWithHttpInfoAsync(apiToken, cancellationToken);
+             ApiResponse<ListSecondaryApiTokensResponse> localVarResponse = await ListSecondaryApiTokensWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2804,8 +2804,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2008)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2008>> ListSecondaryApiTokensWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListSecondaryApiTokensResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListSecondaryApiTokensResponse>> ListSecondaryApiTokensWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/applications/api_tokens";
@@ -2845,9 +2845,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2008>(localVarStatusCode,
+            return new ApiResponse<ListSecondaryApiTokensResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2008) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2008)));
+                (ListSecondaryApiTokensResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListSecondaryApiTokensResponse)));
         }
 
         /// <summary>
@@ -2857,10 +2857,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20013</returns>
-        public InlineResponse20013 RemovePushConfigurationById (string pushType, string providerId, string apiToken = default(string))
+        /// <returns>RemovePushConfigurationByIdResponse</returns>
+        public RemovePushConfigurationByIdResponse RemovePushConfigurationById (string pushType, string providerId, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20013> localVarResponse = RemovePushConfigurationByIdWithHttpInfo(pushType, providerId, apiToken);
+             ApiResponse<RemovePushConfigurationByIdResponse> localVarResponse = RemovePushConfigurationByIdWithHttpInfo(pushType, providerId, apiToken);
              return localVarResponse.Data;
         }
 
@@ -2871,8 +2871,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20013</returns>
-        public ApiResponse<InlineResponse20013> RemovePushConfigurationByIdWithHttpInfo (string pushType, string providerId, string apiToken = default(string))
+        /// <returns>ApiResponse of RemovePushConfigurationByIdResponse</returns>
+        public ApiResponse<RemovePushConfigurationByIdResponse> RemovePushConfigurationByIdWithHttpInfo (string pushType, string providerId, string apiToken = default(string))
         {
             // verify the required parameter 'pushType' is set
             if (pushType == null)
@@ -2920,9 +2920,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20013>(localVarStatusCode,
+            return new ApiResponse<RemovePushConfigurationByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20013) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20013)));
+                (RemovePushConfigurationByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RemovePushConfigurationByIdResponse)));
         }
 
         /// <summary>
@@ -2933,10 +2933,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20013</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20013> RemovePushConfigurationByIdAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of RemovePushConfigurationByIdResponse</returns>
+        public async System.Threading.Tasks.Task<RemovePushConfigurationByIdResponse> RemovePushConfigurationByIdAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20013> localVarResponse = await RemovePushConfigurationByIdWithHttpInfoAsync(pushType, providerId, apiToken, cancellationToken);
+             ApiResponse<RemovePushConfigurationByIdResponse> localVarResponse = await RemovePushConfigurationByIdWithHttpInfoAsync(pushType, providerId, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2949,8 +2949,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20013)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20013>> RemovePushConfigurationByIdWithHttpInfoAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (RemovePushConfigurationByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<RemovePushConfigurationByIdResponse>> RemovePushConfigurationByIdWithHttpInfoAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'pushType' is set
             if (pushType == null)
@@ -2998,9 +2998,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20013>(localVarStatusCode,
+            return new ApiResponse<RemovePushConfigurationByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20013) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20013)));
+                (RemovePushConfigurationByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RemovePushConfigurationByIdResponse)));
         }
 
         /// <summary>
@@ -3008,10 +3008,10 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse2006</returns>
-        public InlineResponse2006 RetrieveIpWhitelist (string apiToken = default(string))
+        /// <returns>RetrieveIpWhitelistResponse</returns>
+        public RetrieveIpWhitelistResponse RetrieveIpWhitelist (string apiToken = default(string))
         {
-             ApiResponse<InlineResponse2006> localVarResponse = RetrieveIpWhitelistWithHttpInfo(apiToken);
+             ApiResponse<RetrieveIpWhitelistResponse> localVarResponse = RetrieveIpWhitelistWithHttpInfo(apiToken);
              return localVarResponse.Data;
         }
 
@@ -3020,8 +3020,8 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2006</returns>
-        public ApiResponse<InlineResponse2006> RetrieveIpWhitelistWithHttpInfo (string apiToken = default(string))
+        /// <returns>ApiResponse of RetrieveIpWhitelistResponse</returns>
+        public ApiResponse<RetrieveIpWhitelistResponse> RetrieveIpWhitelistWithHttpInfo (string apiToken = default(string))
         {
 
             var localVarPath = "/v3/applications/settings/ip_whitelist";
@@ -3061,9 +3061,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2006>(localVarStatusCode,
+            return new ApiResponse<RetrieveIpWhitelistResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2006) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2006)));
+                (RetrieveIpWhitelistResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RetrieveIpWhitelistResponse)));
         }
 
         /// <summary>
@@ -3072,10 +3072,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2006</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2006> RetrieveIpWhitelistAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of RetrieveIpWhitelistResponse</returns>
+        public async System.Threading.Tasks.Task<RetrieveIpWhitelistResponse> RetrieveIpWhitelistAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2006> localVarResponse = await RetrieveIpWhitelistWithHttpInfoAsync(apiToken, cancellationToken);
+             ApiResponse<RetrieveIpWhitelistResponse> localVarResponse = await RetrieveIpWhitelistWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3086,8 +3086,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2006)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2006>> RetrieveIpWhitelistWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (RetrieveIpWhitelistResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<RetrieveIpWhitelistResponse>> RetrieveIpWhitelistWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/applications/settings/ip_whitelist";
@@ -3127,9 +3127,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2006>(localVarStatusCode,
+            return new ApiResponse<RetrieveIpWhitelistResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2006) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2006)));
+                (RetrieveIpWhitelistResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RetrieveIpWhitelistResponse)));
         }
 
         /// <summary>
@@ -3138,10 +3138,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken2"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse2007</returns>
-        public InlineResponse2007 RevokeSecondaryApiTokenByToken (string apiToken2, string apiToken = default(string))
+        /// <returns>RevokeSecondaryApiTokenByTokenResponse</returns>
+        public RevokeSecondaryApiTokenByTokenResponse RevokeSecondaryApiTokenByToken (string apiToken2, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse2007> localVarResponse = RevokeSecondaryApiTokenByTokenWithHttpInfo(apiToken2, apiToken);
+             ApiResponse<RevokeSecondaryApiTokenByTokenResponse> localVarResponse = RevokeSecondaryApiTokenByTokenWithHttpInfo(apiToken2, apiToken);
              return localVarResponse.Data;
         }
 
@@ -3151,8 +3151,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken2"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2007</returns>
-        public ApiResponse<InlineResponse2007> RevokeSecondaryApiTokenByTokenWithHttpInfo (string apiToken2, string apiToken = default(string))
+        /// <returns>ApiResponse of RevokeSecondaryApiTokenByTokenResponse</returns>
+        public ApiResponse<RevokeSecondaryApiTokenByTokenResponse> RevokeSecondaryApiTokenByTokenWithHttpInfo (string apiToken2, string apiToken = default(string))
         {
             // verify the required parameter 'apiToken2' is set
             if (apiToken2 == null)
@@ -3196,9 +3196,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2007>(localVarStatusCode,
+            return new ApiResponse<RevokeSecondaryApiTokenByTokenResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2007) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2007)));
+                (RevokeSecondaryApiTokenByTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RevokeSecondaryApiTokenByTokenResponse)));
         }
 
         /// <summary>
@@ -3208,10 +3208,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken2"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2007</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2007> RevokeSecondaryApiTokenByTokenAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of RevokeSecondaryApiTokenByTokenResponse</returns>
+        public async System.Threading.Tasks.Task<RevokeSecondaryApiTokenByTokenResponse> RevokeSecondaryApiTokenByTokenAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2007> localVarResponse = await RevokeSecondaryApiTokenByTokenWithHttpInfoAsync(apiToken2, apiToken, cancellationToken);
+             ApiResponse<RevokeSecondaryApiTokenByTokenResponse> localVarResponse = await RevokeSecondaryApiTokenByTokenWithHttpInfoAsync(apiToken2, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3223,8 +3223,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken2"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2007)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2007>> RevokeSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (RevokeSecondaryApiTokenByTokenResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<RevokeSecondaryApiTokenByTokenResponse>> RevokeSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken2' is set
             if (apiToken2 == null)
@@ -3268,9 +3268,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2007>(localVarStatusCode,
+            return new ApiResponse<RevokeSecondaryApiTokenByTokenResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2007) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2007)));
+                (RevokeSecondaryApiTokenByTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RevokeSecondaryApiTokenByTokenResponse)));
         }
 
         /// <summary>
@@ -3280,10 +3280,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
-        /// <returns>InlineResponse20014</returns>
-        public InlineResponse20014 UpdateApnsPushConfigurationById (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData))
+        /// <returns>UpdateApnsPushConfigurationByIdResponse</returns>
+        public UpdateApnsPushConfigurationByIdResponse UpdateApnsPushConfigurationById (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData))
         {
-             ApiResponse<InlineResponse20014> localVarResponse = UpdateApnsPushConfigurationByIdWithHttpInfo(providerId, apiToken, updateApnsPushConfigurationByIdData);
+             ApiResponse<UpdateApnsPushConfigurationByIdResponse> localVarResponse = UpdateApnsPushConfigurationByIdWithHttpInfo(providerId, apiToken, updateApnsPushConfigurationByIdData);
              return localVarResponse.Data;
         }
 
@@ -3294,8 +3294,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20014</returns>
-        public ApiResponse<InlineResponse20014> UpdateApnsPushConfigurationByIdWithHttpInfo (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData))
+        /// <returns>ApiResponse of UpdateApnsPushConfigurationByIdResponse</returns>
+        public ApiResponse<UpdateApnsPushConfigurationByIdResponse> UpdateApnsPushConfigurationByIdWithHttpInfo (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData))
         {
             // verify the required parameter 'providerId' is set
             if (providerId == null)
@@ -3348,9 +3348,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20014>(localVarStatusCode,
+            return new ApiResponse<UpdateApnsPushConfigurationByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20014) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20014)));
+                (UpdateApnsPushConfigurationByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateApnsPushConfigurationByIdResponse)));
         }
 
         /// <summary>
@@ -3361,10 +3361,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20014</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20014> UpdateApnsPushConfigurationByIdAsync (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of UpdateApnsPushConfigurationByIdResponse</returns>
+        public async System.Threading.Tasks.Task<UpdateApnsPushConfigurationByIdResponse> UpdateApnsPushConfigurationByIdAsync (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20014> localVarResponse = await UpdateApnsPushConfigurationByIdWithHttpInfoAsync(providerId, apiToken, updateApnsPushConfigurationByIdData, cancellationToken);
+             ApiResponse<UpdateApnsPushConfigurationByIdResponse> localVarResponse = await UpdateApnsPushConfigurationByIdWithHttpInfoAsync(providerId, apiToken, updateApnsPushConfigurationByIdData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3377,8 +3377,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20014)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20014>> UpdateApnsPushConfigurationByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (UpdateApnsPushConfigurationByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateApnsPushConfigurationByIdResponse>> UpdateApnsPushConfigurationByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'providerId' is set
             if (providerId == null)
@@ -3431,9 +3431,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20014>(localVarStatusCode,
+            return new ApiResponse<UpdateApnsPushConfigurationByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20014) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20014)));
+                (UpdateApnsPushConfigurationByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateApnsPushConfigurationByIdResponse)));
         }
 
         /// <summary>
@@ -3442,10 +3442,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
-        /// <returns>InlineResponse2005</returns>
-        public InlineResponse2005 UpdateDefaultChannelInvitationPreference (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData))
+        /// <returns>UpdateDefaultChannelInvitationPreferenceResponse</returns>
+        public UpdateDefaultChannelInvitationPreferenceResponse UpdateDefaultChannelInvitationPreference (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData))
         {
-             ApiResponse<InlineResponse2005> localVarResponse = UpdateDefaultChannelInvitationPreferenceWithHttpInfo(apiToken, updateDefaultChannelInvitationPreferenceData);
+             ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse> localVarResponse = UpdateDefaultChannelInvitationPreferenceWithHttpInfo(apiToken, updateDefaultChannelInvitationPreferenceData);
              return localVarResponse.Data;
         }
 
@@ -3455,8 +3455,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2005</returns>
-        public ApiResponse<InlineResponse2005> UpdateDefaultChannelInvitationPreferenceWithHttpInfo (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData))
+        /// <returns>ApiResponse of UpdateDefaultChannelInvitationPreferenceResponse</returns>
+        public ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse> UpdateDefaultChannelInvitationPreferenceWithHttpInfo (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData))
         {
 
             var localVarPath = "/v3/applications/default_channel_invitation_preference";
@@ -3505,9 +3505,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2005>(localVarStatusCode,
+            return new ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2005) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2005)));
+                (UpdateDefaultChannelInvitationPreferenceResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateDefaultChannelInvitationPreferenceResponse)));
         }
 
         /// <summary>
@@ -3517,10 +3517,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2005</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2005> UpdateDefaultChannelInvitationPreferenceAsync (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of UpdateDefaultChannelInvitationPreferenceResponse</returns>
+        public async System.Threading.Tasks.Task<UpdateDefaultChannelInvitationPreferenceResponse> UpdateDefaultChannelInvitationPreferenceAsync (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2005> localVarResponse = await UpdateDefaultChannelInvitationPreferenceWithHttpInfoAsync(apiToken, updateDefaultChannelInvitationPreferenceData, cancellationToken);
+             ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse> localVarResponse = await UpdateDefaultChannelInvitationPreferenceWithHttpInfoAsync(apiToken, updateDefaultChannelInvitationPreferenceData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3532,8 +3532,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2005)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2005>> UpdateDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (UpdateDefaultChannelInvitationPreferenceResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse>> UpdateDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/applications/default_channel_invitation_preference";
@@ -3582,9 +3582,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2005>(localVarStatusCode,
+            return new ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2005) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2005)));
+                (UpdateDefaultChannelInvitationPreferenceResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateDefaultChannelInvitationPreferenceResponse)));
         }
 
         /// <summary>
@@ -3594,10 +3594,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
-        /// <returns>InlineResponse20014</returns>
-        public InlineResponse20014 UpdateFcmPushConfigurationById (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData))
+        /// <returns>UpdateFcmPushConfigurationByIdResponse</returns>
+        public UpdateFcmPushConfigurationByIdResponse UpdateFcmPushConfigurationById (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData))
         {
-             ApiResponse<InlineResponse20014> localVarResponse = UpdateFcmPushConfigurationByIdWithHttpInfo(providerId, apiToken, updateFcmPushConfigurationByIdData);
+             ApiResponse<UpdateFcmPushConfigurationByIdResponse> localVarResponse = UpdateFcmPushConfigurationByIdWithHttpInfo(providerId, apiToken, updateFcmPushConfigurationByIdData);
              return localVarResponse.Data;
         }
 
@@ -3608,8 +3608,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20014</returns>
-        public ApiResponse<InlineResponse20014> UpdateFcmPushConfigurationByIdWithHttpInfo (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData))
+        /// <returns>ApiResponse of UpdateFcmPushConfigurationByIdResponse</returns>
+        public ApiResponse<UpdateFcmPushConfigurationByIdResponse> UpdateFcmPushConfigurationByIdWithHttpInfo (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData))
         {
             // verify the required parameter 'providerId' is set
             if (providerId == null)
@@ -3662,9 +3662,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20014>(localVarStatusCode,
+            return new ApiResponse<UpdateFcmPushConfigurationByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20014) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20014)));
+                (UpdateFcmPushConfigurationByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateFcmPushConfigurationByIdResponse)));
         }
 
         /// <summary>
@@ -3675,10 +3675,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20014</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20014> UpdateFcmPushConfigurationByIdAsync (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of UpdateFcmPushConfigurationByIdResponse</returns>
+        public async System.Threading.Tasks.Task<UpdateFcmPushConfigurationByIdResponse> UpdateFcmPushConfigurationByIdAsync (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20014> localVarResponse = await UpdateFcmPushConfigurationByIdWithHttpInfoAsync(providerId, apiToken, updateFcmPushConfigurationByIdData, cancellationToken);
+             ApiResponse<UpdateFcmPushConfigurationByIdResponse> localVarResponse = await UpdateFcmPushConfigurationByIdWithHttpInfoAsync(providerId, apiToken, updateFcmPushConfigurationByIdData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3691,8 +3691,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20014)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20014>> UpdateFcmPushConfigurationByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (UpdateFcmPushConfigurationByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateFcmPushConfigurationByIdResponse>> UpdateFcmPushConfigurationByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'providerId' is set
             if (providerId == null)
@@ -3745,9 +3745,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20014>(localVarStatusCode,
+            return new ApiResponse<UpdateFcmPushConfigurationByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20014) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20014)));
+                (UpdateFcmPushConfigurationByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateFcmPushConfigurationByIdResponse)));
         }
 
         /// <summary>
@@ -3757,10 +3757,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
-        /// <returns>InlineResponse20014</returns>
-        public InlineResponse20014 UpdateHmsPushConfigurationById (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData))
+        /// <returns>UpdateHmsPushConfigurationByIdResponse</returns>
+        public UpdateHmsPushConfigurationByIdResponse UpdateHmsPushConfigurationById (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData))
         {
-             ApiResponse<InlineResponse20014> localVarResponse = UpdateHmsPushConfigurationByIdWithHttpInfo(providerId, apiToken, updateHmsPushConfigurationByIdData);
+             ApiResponse<UpdateHmsPushConfigurationByIdResponse> localVarResponse = UpdateHmsPushConfigurationByIdWithHttpInfo(providerId, apiToken, updateHmsPushConfigurationByIdData);
              return localVarResponse.Data;
         }
 
@@ -3771,8 +3771,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20014</returns>
-        public ApiResponse<InlineResponse20014> UpdateHmsPushConfigurationByIdWithHttpInfo (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData))
+        /// <returns>ApiResponse of UpdateHmsPushConfigurationByIdResponse</returns>
+        public ApiResponse<UpdateHmsPushConfigurationByIdResponse> UpdateHmsPushConfigurationByIdWithHttpInfo (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData))
         {
             // verify the required parameter 'providerId' is set
             if (providerId == null)
@@ -3825,9 +3825,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20014>(localVarStatusCode,
+            return new ApiResponse<UpdateHmsPushConfigurationByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20014) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20014)));
+                (UpdateHmsPushConfigurationByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateHmsPushConfigurationByIdResponse)));
         }
 
         /// <summary>
@@ -3838,10 +3838,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20014</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20014> UpdateHmsPushConfigurationByIdAsync (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of UpdateHmsPushConfigurationByIdResponse</returns>
+        public async System.Threading.Tasks.Task<UpdateHmsPushConfigurationByIdResponse> UpdateHmsPushConfigurationByIdAsync (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20014> localVarResponse = await UpdateHmsPushConfigurationByIdWithHttpInfoAsync(providerId, apiToken, updateHmsPushConfigurationByIdData, cancellationToken);
+             ApiResponse<UpdateHmsPushConfigurationByIdResponse> localVarResponse = await UpdateHmsPushConfigurationByIdWithHttpInfoAsync(providerId, apiToken, updateHmsPushConfigurationByIdData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3854,8 +3854,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20014)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20014>> UpdateHmsPushConfigurationByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (UpdateHmsPushConfigurationByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateHmsPushConfigurationByIdResponse>> UpdateHmsPushConfigurationByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'providerId' is set
             if (providerId == null)
@@ -3908,9 +3908,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20014>(localVarStatusCode,
+            return new ApiResponse<UpdateHmsPushConfigurationByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20014) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20014)));
+                (UpdateHmsPushConfigurationByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateHmsPushConfigurationByIdResponse)));
         }
 
         /// <summary>
@@ -3920,10 +3920,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="templateName"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
-        /// <returns>InlineResponse20015</returns>
-        public InlineResponse20015 UpdatePushNotificationContentTemplate (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData))
+        /// <returns>UpdatePushNotificationContentTemplateResponse</returns>
+        public UpdatePushNotificationContentTemplateResponse UpdatePushNotificationContentTemplate (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData))
         {
-             ApiResponse<InlineResponse20015> localVarResponse = UpdatePushNotificationContentTemplateWithHttpInfo(templateName, apiToken, updatePushNotificationContentTemplateData);
+             ApiResponse<UpdatePushNotificationContentTemplateResponse> localVarResponse = UpdatePushNotificationContentTemplateWithHttpInfo(templateName, apiToken, updatePushNotificationContentTemplateData);
              return localVarResponse.Data;
         }
 
@@ -3934,8 +3934,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="templateName"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20015</returns>
-        public ApiResponse<InlineResponse20015> UpdatePushNotificationContentTemplateWithHttpInfo (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData))
+        /// <returns>ApiResponse of UpdatePushNotificationContentTemplateResponse</returns>
+        public ApiResponse<UpdatePushNotificationContentTemplateResponse> UpdatePushNotificationContentTemplateWithHttpInfo (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData))
         {
             // verify the required parameter 'templateName' is set
             if (templateName == null)
@@ -3988,9 +3988,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20015>(localVarStatusCode,
+            return new ApiResponse<UpdatePushNotificationContentTemplateResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20015) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20015)));
+                (UpdatePushNotificationContentTemplateResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdatePushNotificationContentTemplateResponse)));
         }
 
         /// <summary>
@@ -4001,10 +4001,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20015</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20015> UpdatePushNotificationContentTemplateAsync (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of UpdatePushNotificationContentTemplateResponse</returns>
+        public async System.Threading.Tasks.Task<UpdatePushNotificationContentTemplateResponse> UpdatePushNotificationContentTemplateAsync (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20015> localVarResponse = await UpdatePushNotificationContentTemplateWithHttpInfoAsync(templateName, apiToken, updatePushNotificationContentTemplateData, cancellationToken);
+             ApiResponse<UpdatePushNotificationContentTemplateResponse> localVarResponse = await UpdatePushNotificationContentTemplateWithHttpInfoAsync(templateName, apiToken, updatePushNotificationContentTemplateData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -4017,8 +4017,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20015)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20015>> UpdatePushNotificationContentTemplateWithHttpInfoAsync (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (UpdatePushNotificationContentTemplateResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UpdatePushNotificationContentTemplateResponse>> UpdatePushNotificationContentTemplateWithHttpInfoAsync (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'templateName' is set
             if (templateName == null)
@@ -4071,9 +4071,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20015>(localVarStatusCode,
+            return new ApiResponse<UpdatePushNotificationContentTemplateResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20015) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20015)));
+                (UpdatePushNotificationContentTemplateResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdatePushNotificationContentTemplateResponse)));
         }
 
         /// <summary>
@@ -4081,10 +4081,10 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse2005</returns>
-        public InlineResponse2005 ViewDefaultChannelInvitationPreference (string apiToken = default(string))
+        /// <returns>ViewDefaultChannelInvitationPreferenceResponse</returns>
+        public ViewDefaultChannelInvitationPreferenceResponse ViewDefaultChannelInvitationPreference (string apiToken = default(string))
         {
-             ApiResponse<InlineResponse2005> localVarResponse = ViewDefaultChannelInvitationPreferenceWithHttpInfo(apiToken);
+             ApiResponse<ViewDefaultChannelInvitationPreferenceResponse> localVarResponse = ViewDefaultChannelInvitationPreferenceWithHttpInfo(apiToken);
              return localVarResponse.Data;
         }
 
@@ -4093,8 +4093,8 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2005</returns>
-        public ApiResponse<InlineResponse2005> ViewDefaultChannelInvitationPreferenceWithHttpInfo (string apiToken = default(string))
+        /// <returns>ApiResponse of ViewDefaultChannelInvitationPreferenceResponse</returns>
+        public ApiResponse<ViewDefaultChannelInvitationPreferenceResponse> ViewDefaultChannelInvitationPreferenceWithHttpInfo (string apiToken = default(string))
         {
 
             var localVarPath = "/v3/applications/default_channel_invitation_preference";
@@ -4134,9 +4134,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2005>(localVarStatusCode,
+            return new ApiResponse<ViewDefaultChannelInvitationPreferenceResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2005) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2005)));
+                (ViewDefaultChannelInvitationPreferenceResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewDefaultChannelInvitationPreferenceResponse)));
         }
 
         /// <summary>
@@ -4145,10 +4145,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2005</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2005> ViewDefaultChannelInvitationPreferenceAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewDefaultChannelInvitationPreferenceResponse</returns>
+        public async System.Threading.Tasks.Task<ViewDefaultChannelInvitationPreferenceResponse> ViewDefaultChannelInvitationPreferenceAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2005> localVarResponse = await ViewDefaultChannelInvitationPreferenceWithHttpInfoAsync(apiToken, cancellationToken);
+             ApiResponse<ViewDefaultChannelInvitationPreferenceResponse> localVarResponse = await ViewDefaultChannelInvitationPreferenceWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -4159,8 +4159,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2005)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2005>> ViewDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewDefaultChannelInvitationPreferenceResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewDefaultChannelInvitationPreferenceResponse>> ViewDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/applications/default_channel_invitation_preference";
@@ -4200,9 +4200,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2005>(localVarStatusCode,
+            return new ApiResponse<ViewDefaultChannelInvitationPreferenceResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2005) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2005)));
+                (ViewDefaultChannelInvitationPreferenceResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewDefaultChannelInvitationPreferenceResponse)));
         }
 
         /// <summary>
@@ -4210,10 +4210,10 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse200</returns>
-        public InlineResponse200 ViewNumberOfConcurrentConnections (string apiToken = default(string))
+        /// <returns>ViewNumberOfConcurrentConnectionsResponse</returns>
+        public ViewNumberOfConcurrentConnectionsResponse ViewNumberOfConcurrentConnections (string apiToken = default(string))
         {
-             ApiResponse<InlineResponse200> localVarResponse = ViewNumberOfConcurrentConnectionsWithHttpInfo(apiToken);
+             ApiResponse<ViewNumberOfConcurrentConnectionsResponse> localVarResponse = ViewNumberOfConcurrentConnectionsWithHttpInfo(apiToken);
              return localVarResponse.Data;
         }
 
@@ -4222,8 +4222,8 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse200</returns>
-        public ApiResponse<InlineResponse200> ViewNumberOfConcurrentConnectionsWithHttpInfo (string apiToken = default(string))
+        /// <returns>ApiResponse of ViewNumberOfConcurrentConnectionsResponse</returns>
+        public ApiResponse<ViewNumberOfConcurrentConnectionsResponse> ViewNumberOfConcurrentConnectionsWithHttpInfo (string apiToken = default(string))
         {
 
             var localVarPath = "/v3/applications/ccu";
@@ -4263,9 +4263,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse200>(localVarStatusCode,
+            return new ApiResponse<ViewNumberOfConcurrentConnectionsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
+                (ViewNumberOfConcurrentConnectionsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfConcurrentConnectionsResponse)));
         }
 
         /// <summary>
@@ -4274,10 +4274,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse200</returns>
-        public async System.Threading.Tasks.Task<InlineResponse200> ViewNumberOfConcurrentConnectionsAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewNumberOfConcurrentConnectionsResponse</returns>
+        public async System.Threading.Tasks.Task<ViewNumberOfConcurrentConnectionsResponse> ViewNumberOfConcurrentConnectionsAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse200> localVarResponse = await ViewNumberOfConcurrentConnectionsWithHttpInfoAsync(apiToken, cancellationToken);
+             ApiResponse<ViewNumberOfConcurrentConnectionsResponse> localVarResponse = await ViewNumberOfConcurrentConnectionsWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -4288,8 +4288,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> ViewNumberOfConcurrentConnectionsWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewNumberOfConcurrentConnectionsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfConcurrentConnectionsResponse>> ViewNumberOfConcurrentConnectionsWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/applications/ccu";
@@ -4329,9 +4329,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse200>(localVarStatusCode,
+            return new ApiResponse<ViewNumberOfConcurrentConnectionsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
+                (ViewNumberOfConcurrentConnectionsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfConcurrentConnectionsResponse)));
         }
 
         /// <summary>
@@ -4340,10 +4340,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="date"> (optional)</param>
-        /// <returns>InlineResponse20011</returns>
-        public InlineResponse20011 ViewNumberOfDailyActiveUsers (string apiToken = default(string), string date = default(string))
+        /// <returns>ViewNumberOfDailyActiveUsersResponse</returns>
+        public ViewNumberOfDailyActiveUsersResponse ViewNumberOfDailyActiveUsers (string apiToken = default(string), string date = default(string))
         {
-             ApiResponse<InlineResponse20011> localVarResponse = ViewNumberOfDailyActiveUsersWithHttpInfo(apiToken, date);
+             ApiResponse<ViewNumberOfDailyActiveUsersResponse> localVarResponse = ViewNumberOfDailyActiveUsersWithHttpInfo(apiToken, date);
              return localVarResponse.Data;
         }
 
@@ -4353,8 +4353,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="date"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20011</returns>
-        public ApiResponse<InlineResponse20011> ViewNumberOfDailyActiveUsersWithHttpInfo (string apiToken = default(string), string date = default(string))
+        /// <returns>ApiResponse of ViewNumberOfDailyActiveUsersResponse</returns>
+        public ApiResponse<ViewNumberOfDailyActiveUsersResponse> ViewNumberOfDailyActiveUsersWithHttpInfo (string apiToken = default(string), string date = default(string))
         {
 
             var localVarPath = "/v3/applications/dau";
@@ -4395,9 +4395,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20011>(localVarStatusCode,
+            return new ApiResponse<ViewNumberOfDailyActiveUsersResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20011) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20011)));
+                (ViewNumberOfDailyActiveUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfDailyActiveUsersResponse)));
         }
 
         /// <summary>
@@ -4407,10 +4407,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="date"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20011</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20011> ViewNumberOfDailyActiveUsersAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewNumberOfDailyActiveUsersResponse</returns>
+        public async System.Threading.Tasks.Task<ViewNumberOfDailyActiveUsersResponse> ViewNumberOfDailyActiveUsersAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20011> localVarResponse = await ViewNumberOfDailyActiveUsersWithHttpInfoAsync(apiToken, date, cancellationToken);
+             ApiResponse<ViewNumberOfDailyActiveUsersResponse> localVarResponse = await ViewNumberOfDailyActiveUsersWithHttpInfoAsync(apiToken, date, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -4422,8 +4422,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="date"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20011)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20011>> ViewNumberOfDailyActiveUsersWithHttpInfoAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewNumberOfDailyActiveUsersResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfDailyActiveUsersResponse>> ViewNumberOfDailyActiveUsersWithHttpInfoAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/applications/dau";
@@ -4464,9 +4464,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20011>(localVarStatusCode,
+            return new ApiResponse<ViewNumberOfDailyActiveUsersResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20011) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20011)));
+                (ViewNumberOfDailyActiveUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfDailyActiveUsersResponse)));
         }
 
         /// <summary>
@@ -4475,10 +4475,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="date"> (optional)</param>
-        /// <returns>InlineResponse20010</returns>
-        public InlineResponse20010 ViewNumberOfMonthlyActiveUsers (string apiToken = default(string), string date = default(string))
+        /// <returns>ViewNumberOfMonthlyActiveUsersResponse</returns>
+        public ViewNumberOfMonthlyActiveUsersResponse ViewNumberOfMonthlyActiveUsers (string apiToken = default(string), string date = default(string))
         {
-             ApiResponse<InlineResponse20010> localVarResponse = ViewNumberOfMonthlyActiveUsersWithHttpInfo(apiToken, date);
+             ApiResponse<ViewNumberOfMonthlyActiveUsersResponse> localVarResponse = ViewNumberOfMonthlyActiveUsersWithHttpInfo(apiToken, date);
              return localVarResponse.Data;
         }
 
@@ -4488,8 +4488,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="date"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20010</returns>
-        public ApiResponse<InlineResponse20010> ViewNumberOfMonthlyActiveUsersWithHttpInfo (string apiToken = default(string), string date = default(string))
+        /// <returns>ApiResponse of ViewNumberOfMonthlyActiveUsersResponse</returns>
+        public ApiResponse<ViewNumberOfMonthlyActiveUsersResponse> ViewNumberOfMonthlyActiveUsersWithHttpInfo (string apiToken = default(string), string date = default(string))
         {
 
             var localVarPath = "/v3/applications/mau";
@@ -4530,9 +4530,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20010>(localVarStatusCode,
+            return new ApiResponse<ViewNumberOfMonthlyActiveUsersResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20010) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20010)));
+                (ViewNumberOfMonthlyActiveUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfMonthlyActiveUsersResponse)));
         }
 
         /// <summary>
@@ -4542,10 +4542,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="date"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20010</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20010> ViewNumberOfMonthlyActiveUsersAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewNumberOfMonthlyActiveUsersResponse</returns>
+        public async System.Threading.Tasks.Task<ViewNumberOfMonthlyActiveUsersResponse> ViewNumberOfMonthlyActiveUsersAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20010> localVarResponse = await ViewNumberOfMonthlyActiveUsersWithHttpInfoAsync(apiToken, date, cancellationToken);
+             ApiResponse<ViewNumberOfMonthlyActiveUsersResponse> localVarResponse = await ViewNumberOfMonthlyActiveUsersWithHttpInfoAsync(apiToken, date, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -4557,8 +4557,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="date"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20010)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20010>> ViewNumberOfMonthlyActiveUsersWithHttpInfoAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewNumberOfMonthlyActiveUsersResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfMonthlyActiveUsersResponse>> ViewNumberOfMonthlyActiveUsersWithHttpInfoAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/applications/mau";
@@ -4599,9 +4599,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20010>(localVarStatusCode,
+            return new ApiResponse<ViewNumberOfMonthlyActiveUsersResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20010) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20010)));
+                (ViewNumberOfMonthlyActiveUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfMonthlyActiveUsersResponse)));
         }
 
         /// <summary>
@@ -4616,10 +4616,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="startDay"> (optional)</param>
         /// <param name="endDay"> (optional)</param>
-        /// <returns>InlineResponse2009</returns>
-        public InlineResponse2009 ViewNumberOfPeakConnections (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?))
+        /// <returns>ViewNumberOfPeakConnectionsResponse</returns>
+        public ViewNumberOfPeakConnectionsResponse ViewNumberOfPeakConnections (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?))
         {
-             ApiResponse<InlineResponse2009> localVarResponse = ViewNumberOfPeakConnectionsWithHttpInfo(timeDimension, startYear, startMonth, endYear, endMonth, apiToken, startDay, endDay);
+             ApiResponse<ViewNumberOfPeakConnectionsResponse> localVarResponse = ViewNumberOfPeakConnectionsWithHttpInfo(timeDimension, startYear, startMonth, endYear, endMonth, apiToken, startDay, endDay);
              return localVarResponse.Data;
         }
 
@@ -4635,8 +4635,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="startDay"> (optional)</param>
         /// <param name="endDay"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2009</returns>
-        public ApiResponse<InlineResponse2009> ViewNumberOfPeakConnectionsWithHttpInfo (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?))
+        /// <returns>ApiResponse of ViewNumberOfPeakConnectionsResponse</returns>
+        public ApiResponse<ViewNumberOfPeakConnectionsResponse> ViewNumberOfPeakConnectionsWithHttpInfo (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?))
         {
             // verify the required parameter 'timeDimension' is set
             if (timeDimension == null)
@@ -4698,9 +4698,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2009>(localVarStatusCode,
+            return new ApiResponse<ViewNumberOfPeakConnectionsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2009) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2009)));
+                (ViewNumberOfPeakConnectionsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfPeakConnectionsResponse)));
         }
 
         /// <summary>
@@ -4716,10 +4716,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="startDay"> (optional)</param>
         /// <param name="endDay"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2009</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2009> ViewNumberOfPeakConnectionsAsync (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewNumberOfPeakConnectionsResponse</returns>
+        public async System.Threading.Tasks.Task<ViewNumberOfPeakConnectionsResponse> ViewNumberOfPeakConnectionsAsync (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2009> localVarResponse = await ViewNumberOfPeakConnectionsWithHttpInfoAsync(timeDimension, startYear, startMonth, endYear, endMonth, apiToken, startDay, endDay, cancellationToken);
+             ApiResponse<ViewNumberOfPeakConnectionsResponse> localVarResponse = await ViewNumberOfPeakConnectionsWithHttpInfoAsync(timeDimension, startYear, startMonth, endYear, endMonth, apiToken, startDay, endDay, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -4737,8 +4737,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="startDay"> (optional)</param>
         /// <param name="endDay"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2009)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2009>> ViewNumberOfPeakConnectionsWithHttpInfoAsync (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewNumberOfPeakConnectionsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfPeakConnectionsResponse>> ViewNumberOfPeakConnectionsWithHttpInfoAsync (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'timeDimension' is set
             if (timeDimension == null)
@@ -4800,9 +4800,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2009>(localVarStatusCode,
+            return new ApiResponse<ViewNumberOfPeakConnectionsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2009) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2009)));
+                (ViewNumberOfPeakConnectionsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfPeakConnectionsResponse)));
         }
 
         /// <summary>
@@ -4812,10 +4812,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20012</returns>
-        public InlineResponse20012 ViewPushConfigurationById (string pushType, string providerId, string apiToken = default(string))
+        /// <returns>ViewPushConfigurationByIdResponse</returns>
+        public ViewPushConfigurationByIdResponse ViewPushConfigurationById (string pushType, string providerId, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20012> localVarResponse = ViewPushConfigurationByIdWithHttpInfo(pushType, providerId, apiToken);
+             ApiResponse<ViewPushConfigurationByIdResponse> localVarResponse = ViewPushConfigurationByIdWithHttpInfo(pushType, providerId, apiToken);
              return localVarResponse.Data;
         }
 
@@ -4826,8 +4826,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20012</returns>
-        public ApiResponse<InlineResponse20012> ViewPushConfigurationByIdWithHttpInfo (string pushType, string providerId, string apiToken = default(string))
+        /// <returns>ApiResponse of ViewPushConfigurationByIdResponse</returns>
+        public ApiResponse<ViewPushConfigurationByIdResponse> ViewPushConfigurationByIdWithHttpInfo (string pushType, string providerId, string apiToken = default(string))
         {
             // verify the required parameter 'pushType' is set
             if (pushType == null)
@@ -4875,9 +4875,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20012>(localVarStatusCode,
+            return new ApiResponse<ViewPushConfigurationByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20012) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20012)));
+                (ViewPushConfigurationByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewPushConfigurationByIdResponse)));
         }
 
         /// <summary>
@@ -4888,10 +4888,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20012</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20012> ViewPushConfigurationByIdAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewPushConfigurationByIdResponse</returns>
+        public async System.Threading.Tasks.Task<ViewPushConfigurationByIdResponse> ViewPushConfigurationByIdAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20012> localVarResponse = await ViewPushConfigurationByIdWithHttpInfoAsync(pushType, providerId, apiToken, cancellationToken);
+             ApiResponse<ViewPushConfigurationByIdResponse> localVarResponse = await ViewPushConfigurationByIdWithHttpInfoAsync(pushType, providerId, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -4904,8 +4904,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20012)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20012>> ViewPushConfigurationByIdWithHttpInfoAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewPushConfigurationByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewPushConfigurationByIdResponse>> ViewPushConfigurationByIdWithHttpInfoAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'pushType' is set
             if (pushType == null)
@@ -4953,9 +4953,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20012>(localVarStatusCode,
+            return new ApiResponse<ViewPushConfigurationByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20012) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20012)));
+                (ViewPushConfigurationByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewPushConfigurationByIdResponse)));
         }
 
         /// <summary>
@@ -4964,10 +4964,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="templateName"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20015</returns>
-        public InlineResponse20015 ViewPushNotificationContentTemplate (string templateName, string apiToken = default(string))
+        /// <returns>ViewPushNotificationContentTemplateResponse</returns>
+        public ViewPushNotificationContentTemplateResponse ViewPushNotificationContentTemplate (string templateName, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20015> localVarResponse = ViewPushNotificationContentTemplateWithHttpInfo(templateName, apiToken);
+             ApiResponse<ViewPushNotificationContentTemplateResponse> localVarResponse = ViewPushNotificationContentTemplateWithHttpInfo(templateName, apiToken);
              return localVarResponse.Data;
         }
 
@@ -4977,8 +4977,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="templateName"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20015</returns>
-        public ApiResponse<InlineResponse20015> ViewPushNotificationContentTemplateWithHttpInfo (string templateName, string apiToken = default(string))
+        /// <returns>ApiResponse of ViewPushNotificationContentTemplateResponse</returns>
+        public ApiResponse<ViewPushNotificationContentTemplateResponse> ViewPushNotificationContentTemplateWithHttpInfo (string templateName, string apiToken = default(string))
         {
             // verify the required parameter 'templateName' is set
             if (templateName == null)
@@ -5022,9 +5022,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20015>(localVarStatusCode,
+            return new ApiResponse<ViewPushNotificationContentTemplateResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20015) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20015)));
+                (ViewPushNotificationContentTemplateResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewPushNotificationContentTemplateResponse)));
         }
 
         /// <summary>
@@ -5034,10 +5034,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="templateName"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20015</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20015> ViewPushNotificationContentTemplateAsync (string templateName, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewPushNotificationContentTemplateResponse</returns>
+        public async System.Threading.Tasks.Task<ViewPushNotificationContentTemplateResponse> ViewPushNotificationContentTemplateAsync (string templateName, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20015> localVarResponse = await ViewPushNotificationContentTemplateWithHttpInfoAsync(templateName, apiToken, cancellationToken);
+             ApiResponse<ViewPushNotificationContentTemplateResponse> localVarResponse = await ViewPushNotificationContentTemplateWithHttpInfoAsync(templateName, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -5049,8 +5049,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="templateName"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20015)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20015>> ViewPushNotificationContentTemplateWithHttpInfoAsync (string templateName, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewPushNotificationContentTemplateResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewPushNotificationContentTemplateResponse>> ViewPushNotificationContentTemplateWithHttpInfoAsync (string templateName, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'templateName' is set
             if (templateName == null)
@@ -5094,9 +5094,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20015>(localVarStatusCode,
+            return new ApiResponse<ViewPushNotificationContentTemplateResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20015) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20015)));
+                (ViewPushNotificationContentTemplateResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewPushNotificationContentTemplateResponse)));
         }
 
         /// <summary>
@@ -5105,10 +5105,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken2"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse2007</returns>
-        public InlineResponse2007 ViewSecondaryApiTokenByToken (string apiToken2, string apiToken = default(string))
+        /// <returns>ViewSecondaryApiTokenByTokenResponse</returns>
+        public ViewSecondaryApiTokenByTokenResponse ViewSecondaryApiTokenByToken (string apiToken2, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse2007> localVarResponse = ViewSecondaryApiTokenByTokenWithHttpInfo(apiToken2, apiToken);
+             ApiResponse<ViewSecondaryApiTokenByTokenResponse> localVarResponse = ViewSecondaryApiTokenByTokenWithHttpInfo(apiToken2, apiToken);
              return localVarResponse.Data;
         }
 
@@ -5118,8 +5118,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken2"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2007</returns>
-        public ApiResponse<InlineResponse2007> ViewSecondaryApiTokenByTokenWithHttpInfo (string apiToken2, string apiToken = default(string))
+        /// <returns>ApiResponse of ViewSecondaryApiTokenByTokenResponse</returns>
+        public ApiResponse<ViewSecondaryApiTokenByTokenResponse> ViewSecondaryApiTokenByTokenWithHttpInfo (string apiToken2, string apiToken = default(string))
         {
             // verify the required parameter 'apiToken2' is set
             if (apiToken2 == null)
@@ -5163,9 +5163,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2007>(localVarStatusCode,
+            return new ApiResponse<ViewSecondaryApiTokenByTokenResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2007) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2007)));
+                (ViewSecondaryApiTokenByTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewSecondaryApiTokenByTokenResponse)));
         }
 
         /// <summary>
@@ -5175,10 +5175,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken2"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2007</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2007> ViewSecondaryApiTokenByTokenAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewSecondaryApiTokenByTokenResponse</returns>
+        public async System.Threading.Tasks.Task<ViewSecondaryApiTokenByTokenResponse> ViewSecondaryApiTokenByTokenAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2007> localVarResponse = await ViewSecondaryApiTokenByTokenWithHttpInfoAsync(apiToken2, apiToken, cancellationToken);
+             ApiResponse<ViewSecondaryApiTokenByTokenResponse> localVarResponse = await ViewSecondaryApiTokenByTokenWithHttpInfoAsync(apiToken2, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -5190,8 +5190,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken2"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2007)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2007>> ViewSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewSecondaryApiTokenByTokenResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewSecondaryApiTokenByTokenResponse>> ViewSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken2' is set
             if (apiToken2 == null)
@@ -5235,9 +5235,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2007>(localVarStatusCode,
+            return new ApiResponse<ViewSecondaryApiTokenByTokenResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2007) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2007)));
+                (ViewSecondaryApiTokenByTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewSecondaryApiTokenByTokenResponse)));
         }
 
     }

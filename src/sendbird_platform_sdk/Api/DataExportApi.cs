@@ -36,8 +36,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20063</returns>
-        InlineResponse20063 ListDataExportsByMessageChannelOrUser (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ListDataExportsByMessageChannelOrUserResponse</returns>
+        ListDataExportsByMessageChannelOrUserResponse ListDataExportsByMessageChannelOrUser (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List data exports by message, channel, or user
@@ -50,8 +50,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20063</returns>
-        ApiResponse<InlineResponse20063> ListDataExportsByMessageChannelOrUserWithHttpInfo (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ApiResponse of ListDataExportsByMessageChannelOrUserResponse</returns>
+        ApiResponse<ListDataExportsByMessageChannelOrUserResponse> ListDataExportsByMessageChannelOrUserWithHttpInfo (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?));
         /// <summary>
         /// Register and schedule a data export
         /// </summary>
@@ -62,8 +62,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="dataType"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="registerAndScheduleDataExportData"> (optional)</param>
-        /// <returns>InlineResponse20063ExportedData</returns>
-        InlineResponse20063ExportedData RegisterAndScheduleDataExport (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData));
+        /// <returns>RegisterAndScheduleDataExportResponse</returns>
+        RegisterAndScheduleDataExportResponse RegisterAndScheduleDataExport (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData));
 
         /// <summary>
         /// Register and schedule a data export
@@ -75,8 +75,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="dataType"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="registerAndScheduleDataExportData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20063ExportedData</returns>
-        ApiResponse<InlineResponse20063ExportedData> RegisterAndScheduleDataExportWithHttpInfo (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData));
+        /// <returns>ApiResponse of RegisterAndScheduleDataExportResponse</returns>
+        ApiResponse<RegisterAndScheduleDataExportResponse> RegisterAndScheduleDataExportWithHttpInfo (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData));
         /// <summary>
         /// View a data export
         /// </summary>
@@ -87,8 +87,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="dataType"></param>
         /// <param name="requestId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20064</returns>
-        InlineResponse20064 ViewDataExportById (string dataType, string requestId, string apiToken = default(string));
+        /// <returns>ViewDataExportByIdResponse</returns>
+        ViewDataExportByIdResponse ViewDataExportById (string dataType, string requestId, string apiToken = default(string));
 
         /// <summary>
         /// View a data export
@@ -100,8 +100,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="dataType"></param>
         /// <param name="requestId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20064</returns>
-        ApiResponse<InlineResponse20064> ViewDataExportByIdWithHttpInfo (string dataType, string requestId, string apiToken = default(string));
+        /// <returns>ApiResponse of ViewDataExportByIdResponse</returns>
+        ApiResponse<ViewDataExportByIdResponse> ViewDataExportByIdWithHttpInfo (string dataType, string requestId, string apiToken = default(string));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -116,8 +116,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20063</returns>
-        System.Threading.Tasks.Task<InlineResponse20063> ListDataExportsByMessageChannelOrUserAsync (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListDataExportsByMessageChannelOrUserResponse</returns>
+        System.Threading.Tasks.Task<ListDataExportsByMessageChannelOrUserResponse> ListDataExportsByMessageChannelOrUserAsync (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List data exports by message, channel, or user
@@ -131,8 +131,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20063)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20063>> ListDataExportsByMessageChannelOrUserWithHttpInfoAsync (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListDataExportsByMessageChannelOrUserResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListDataExportsByMessageChannelOrUserResponse>> ListDataExportsByMessageChannelOrUserWithHttpInfoAsync (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Register and schedule a data export
         /// </summary>
@@ -144,8 +144,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="registerAndScheduleDataExportData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20063ExportedData</returns>
-        System.Threading.Tasks.Task<InlineResponse20063ExportedData> RegisterAndScheduleDataExportAsync (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of RegisterAndScheduleDataExportResponse</returns>
+        System.Threading.Tasks.Task<RegisterAndScheduleDataExportResponse> RegisterAndScheduleDataExportAsync (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Register and schedule a data export
@@ -158,8 +158,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="registerAndScheduleDataExportData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20063ExportedData)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20063ExportedData>> RegisterAndScheduleDataExportWithHttpInfoAsync (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (RegisterAndScheduleDataExportResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<RegisterAndScheduleDataExportResponse>> RegisterAndScheduleDataExportWithHttpInfoAsync (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a data export
         /// </summary>
@@ -171,8 +171,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="requestId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20064</returns>
-        System.Threading.Tasks.Task<InlineResponse20064> ViewDataExportByIdAsync (string dataType, string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewDataExportByIdResponse</returns>
+        System.Threading.Tasks.Task<ViewDataExportByIdResponse> ViewDataExportByIdAsync (string dataType, string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a data export
@@ -185,8 +185,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="requestId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20064)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20064>> ViewDataExportByIdWithHttpInfoAsync (string dataType, string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewDataExportByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewDataExportByIdResponse>> ViewDataExportByIdWithHttpInfoAsync (string dataType, string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -306,10 +306,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20063</returns>
-        public InlineResponse20063 ListDataExportsByMessageChannelOrUser (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ListDataExportsByMessageChannelOrUserResponse</returns>
+        public ListDataExportsByMessageChannelOrUserResponse ListDataExportsByMessageChannelOrUser (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<InlineResponse20063> localVarResponse = ListDataExportsByMessageChannelOrUserWithHttpInfo(dataType, apiToken, token, limit);
+             ApiResponse<ListDataExportsByMessageChannelOrUserResponse> localVarResponse = ListDataExportsByMessageChannelOrUserWithHttpInfo(dataType, apiToken, token, limit);
              return localVarResponse.Data;
         }
 
@@ -321,8 +321,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20063</returns>
-        public ApiResponse<InlineResponse20063> ListDataExportsByMessageChannelOrUserWithHttpInfo (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ApiResponse of ListDataExportsByMessageChannelOrUserResponse</returns>
+        public ApiResponse<ListDataExportsByMessageChannelOrUserResponse> ListDataExportsByMessageChannelOrUserWithHttpInfo (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
             // verify the required parameter 'dataType' is set
             if (dataType == null)
@@ -368,9 +368,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20063>(localVarStatusCode,
+            return new ApiResponse<ListDataExportsByMessageChannelOrUserResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20063) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20063)));
+                (ListDataExportsByMessageChannelOrUserResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListDataExportsByMessageChannelOrUserResponse)));
         }
 
         /// <summary>
@@ -382,10 +382,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20063</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20063> ListDataExportsByMessageChannelOrUserAsync (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListDataExportsByMessageChannelOrUserResponse</returns>
+        public async System.Threading.Tasks.Task<ListDataExportsByMessageChannelOrUserResponse> ListDataExportsByMessageChannelOrUserAsync (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20063> localVarResponse = await ListDataExportsByMessageChannelOrUserWithHttpInfoAsync(dataType, apiToken, token, limit, cancellationToken);
+             ApiResponse<ListDataExportsByMessageChannelOrUserResponse> localVarResponse = await ListDataExportsByMessageChannelOrUserWithHttpInfoAsync(dataType, apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -399,8 +399,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20063)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20063>> ListDataExportsByMessageChannelOrUserWithHttpInfoAsync (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListDataExportsByMessageChannelOrUserResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListDataExportsByMessageChannelOrUserResponse>> ListDataExportsByMessageChannelOrUserWithHttpInfoAsync (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'dataType' is set
             if (dataType == null)
@@ -446,9 +446,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20063>(localVarStatusCode,
+            return new ApiResponse<ListDataExportsByMessageChannelOrUserResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20063) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20063)));
+                (ListDataExportsByMessageChannelOrUserResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListDataExportsByMessageChannelOrUserResponse)));
         }
 
         /// <summary>
@@ -458,10 +458,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="dataType"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="registerAndScheduleDataExportData"> (optional)</param>
-        /// <returns>InlineResponse20063ExportedData</returns>
-        public InlineResponse20063ExportedData RegisterAndScheduleDataExport (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData))
+        /// <returns>RegisterAndScheduleDataExportResponse</returns>
+        public RegisterAndScheduleDataExportResponse RegisterAndScheduleDataExport (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData))
         {
-             ApiResponse<InlineResponse20063ExportedData> localVarResponse = RegisterAndScheduleDataExportWithHttpInfo(dataType, apiToken, registerAndScheduleDataExportData);
+             ApiResponse<RegisterAndScheduleDataExportResponse> localVarResponse = RegisterAndScheduleDataExportWithHttpInfo(dataType, apiToken, registerAndScheduleDataExportData);
              return localVarResponse.Data;
         }
 
@@ -472,8 +472,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="dataType"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="registerAndScheduleDataExportData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20063ExportedData</returns>
-        public ApiResponse<InlineResponse20063ExportedData> RegisterAndScheduleDataExportWithHttpInfo (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData))
+        /// <returns>ApiResponse of RegisterAndScheduleDataExportResponse</returns>
+        public ApiResponse<RegisterAndScheduleDataExportResponse> RegisterAndScheduleDataExportWithHttpInfo (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData))
         {
             // verify the required parameter 'dataType' is set
             if (dataType == null)
@@ -526,9 +526,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20063ExportedData>(localVarStatusCode,
+            return new ApiResponse<RegisterAndScheduleDataExportResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20063ExportedData) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20063ExportedData)));
+                (RegisterAndScheduleDataExportResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RegisterAndScheduleDataExportResponse)));
         }
 
         /// <summary>
@@ -539,10 +539,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="registerAndScheduleDataExportData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20063ExportedData</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20063ExportedData> RegisterAndScheduleDataExportAsync (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of RegisterAndScheduleDataExportResponse</returns>
+        public async System.Threading.Tasks.Task<RegisterAndScheduleDataExportResponse> RegisterAndScheduleDataExportAsync (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20063ExportedData> localVarResponse = await RegisterAndScheduleDataExportWithHttpInfoAsync(dataType, apiToken, registerAndScheduleDataExportData, cancellationToken);
+             ApiResponse<RegisterAndScheduleDataExportResponse> localVarResponse = await RegisterAndScheduleDataExportWithHttpInfoAsync(dataType, apiToken, registerAndScheduleDataExportData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -555,8 +555,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="registerAndScheduleDataExportData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20063ExportedData)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20063ExportedData>> RegisterAndScheduleDataExportWithHttpInfoAsync (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (RegisterAndScheduleDataExportResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<RegisterAndScheduleDataExportResponse>> RegisterAndScheduleDataExportWithHttpInfoAsync (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'dataType' is set
             if (dataType == null)
@@ -609,9 +609,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20063ExportedData>(localVarStatusCode,
+            return new ApiResponse<RegisterAndScheduleDataExportResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20063ExportedData) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20063ExportedData)));
+                (RegisterAndScheduleDataExportResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RegisterAndScheduleDataExportResponse)));
         }
 
         /// <summary>
@@ -621,10 +621,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="dataType"></param>
         /// <param name="requestId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20064</returns>
-        public InlineResponse20064 ViewDataExportById (string dataType, string requestId, string apiToken = default(string))
+        /// <returns>ViewDataExportByIdResponse</returns>
+        public ViewDataExportByIdResponse ViewDataExportById (string dataType, string requestId, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20064> localVarResponse = ViewDataExportByIdWithHttpInfo(dataType, requestId, apiToken);
+             ApiResponse<ViewDataExportByIdResponse> localVarResponse = ViewDataExportByIdWithHttpInfo(dataType, requestId, apiToken);
              return localVarResponse.Data;
         }
 
@@ -635,8 +635,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="dataType"></param>
         /// <param name="requestId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20064</returns>
-        public ApiResponse<InlineResponse20064> ViewDataExportByIdWithHttpInfo (string dataType, string requestId, string apiToken = default(string))
+        /// <returns>ApiResponse of ViewDataExportByIdResponse</returns>
+        public ApiResponse<ViewDataExportByIdResponse> ViewDataExportByIdWithHttpInfo (string dataType, string requestId, string apiToken = default(string))
         {
             // verify the required parameter 'dataType' is set
             if (dataType == null)
@@ -684,9 +684,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20064>(localVarStatusCode,
+            return new ApiResponse<ViewDataExportByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20064) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20064)));
+                (ViewDataExportByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewDataExportByIdResponse)));
         }
 
         /// <summary>
@@ -697,10 +697,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="requestId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20064</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20064> ViewDataExportByIdAsync (string dataType, string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewDataExportByIdResponse</returns>
+        public async System.Threading.Tasks.Task<ViewDataExportByIdResponse> ViewDataExportByIdAsync (string dataType, string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20064> localVarResponse = await ViewDataExportByIdWithHttpInfoAsync(dataType, requestId, apiToken, cancellationToken);
+             ApiResponse<ViewDataExportByIdResponse> localVarResponse = await ViewDataExportByIdWithHttpInfoAsync(dataType, requestId, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -713,8 +713,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="requestId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20064)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20064>> ViewDataExportByIdWithHttpInfoAsync (string dataType, string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewDataExportByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewDataExportByIdResponse>> ViewDataExportByIdWithHttpInfoAsync (string dataType, string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'dataType' is set
             if (dataType == null)
@@ -762,9 +762,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20064>(localVarStatusCode,
+            return new ApiResponse<ViewDataExportByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20064) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20064)));
+                (ViewDataExportByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewDataExportByIdResponse)));
         }
 
     }

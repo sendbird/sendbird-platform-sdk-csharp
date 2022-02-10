@@ -90,7 +90,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //CreateChannelMetadataData createChannelMetadataData = null;
             //var response = instance.CreateChannelMetadata(channelType, channelUrl, apiToken, createChannelMetadataData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20061), response, "response is InlineResponse20061");
+            //Assert.IsInstanceOf(typeof(CreateChannelMetadataResponse), response, "response is CreateChannelMetadataResponse");
         }
         
         /// <summary>
@@ -104,7 +104,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //CreateUserMetadataData createUserMetadataData = null;
             //var response = instance.CreateUserMetadata(userId, apiToken, createUserMetadataData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20047UserMetadata), response, "response is InlineResponse20047UserMetadata");
+            //Assert.IsInstanceOf(typeof(CreateUserMetadataResponse), response, "response is CreateUserMetadataResponse");
         }
         
         /// <summary>
@@ -267,7 +267,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //UpdateUserMetadataData updateUserMetadataData = null;
             //var response = instance.UpdateUserMetadata(userId, apiToken, updateUserMetadataData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20060), response, "response is InlineResponse20060");
+            //Assert.IsInstanceOf(typeof(UpdateUserMetadataResponse), response, "response is UpdateUserMetadataResponse");
         }
         
         /// <summary>
@@ -359,7 +359,7 @@ namespace sendbird_platform_sdk.Test
             //string key = null;
             //List<string> keys = null;
             //var response = instance.ViewUserMetadata(userId, apiToken, key, keys);
-            //Assert.IsInstanceOf(typeof(InlineResponse20047UserMetadata), response, "response is InlineResponse20047UserMetadata");
+            //Assert.IsInstanceOf(typeof(ViewUserMetadataResponse), response, "response is ViewUserMetadataResponse");
         }
         
         /// <summary>

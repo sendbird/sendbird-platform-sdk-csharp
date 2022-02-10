@@ -73,7 +73,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //AddApnsPushConfigurationData addApnsPushConfigurationData = null;
             //var response = instance.AddApnsPushConfiguration(apiToken, addApnsPushConfigurationData);
-            //Assert.IsInstanceOf(typeof(InlineResponse2003), response, "response is InlineResponse2003");
+            //Assert.IsInstanceOf(typeof(AddApnsPushConfigurationResponse), response, "response is AddApnsPushConfigurationResponse");
         }
         
         /// <summary>
@@ -86,7 +86,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //AddFcmPushConfigurationData addFcmPushConfigurationData = null;
             //var response = instance.AddFcmPushConfiguration(apiToken, addFcmPushConfigurationData);
-            //Assert.IsInstanceOf(typeof(InlineResponse2001), response, "response is InlineResponse2001");
+            //Assert.IsInstanceOf(typeof(AddFcmPushConfigurationResponse), response, "response is AddFcmPushConfigurationResponse");
         }
         
         /// <summary>
@@ -99,7 +99,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //AddHmsPushConfigurationData addHmsPushConfigurationData = null;
             //var response = instance.AddHmsPushConfiguration(apiToken, addHmsPushConfigurationData);
-            //Assert.IsInstanceOf(typeof(InlineResponse2002), response, "response is InlineResponse2002");
+            //Assert.IsInstanceOf(typeof(AddHmsPushConfigurationResponse), response, "response is AddHmsPushConfigurationResponse");
         }
         
         /// <summary>
@@ -112,7 +112,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //AddIpToWhitelistData addIpToWhitelistData = null;
             //var response = instance.AddIpToWhitelist(apiToken, addIpToWhitelistData);
-            //Assert.IsInstanceOf(typeof(InlineResponse2006), response, "response is InlineResponse2006");
+            //Assert.IsInstanceOf(typeof(AddIpToWhitelistResponse), response, "response is AddIpToWhitelistResponse");
         }
         
         /// <summary>
@@ -125,7 +125,7 @@ namespace sendbird_platform_sdk.Test
             //List<string> ipWhitelistAddresses = null;
             //string apiToken = null;
             //var response = instance.DeleteAllowedIpsFromWhitelist(ipWhitelistAddresses, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse2006), response, "response is InlineResponse2006");
+            //Assert.IsInstanceOf(typeof(DeleteAllowedIpsFromWhitelistResponse), response, "response is DeleteAllowedIpsFromWhitelistResponse");
         }
         
         /// <summary>
@@ -138,7 +138,7 @@ namespace sendbird_platform_sdk.Test
             //string providerId = null;
             //string apiToken = null;
             //var response = instance.DeleteApnsCertificateById(providerId, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20013), response, "response is InlineResponse20013");
+            //Assert.IsInstanceOf(typeof(DeleteApnsCertificateByIdResponse), response, "response is DeleteApnsCertificateByIdResponse");
         }
         
         /// <summary>
@@ -151,7 +151,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //GenerateSecondaryApiTokenData generateSecondaryApiTokenData = null;
             //var response = instance.GenerateSecondaryApiToken(apiToken, generateSecondaryApiTokenData);
-            //Assert.IsInstanceOf(typeof(InlineResponse2007), response, "response is InlineResponse2007");
+            //Assert.IsInstanceOf(typeof(GenerateSecondaryApiTokenResponse), response, "response is GenerateSecondaryApiTokenResponse");
         }
         
         /// <summary>
@@ -164,7 +164,7 @@ namespace sendbird_platform_sdk.Test
             //string pushType = null;
             //string apiToken = null;
             //var response = instance.ListPushConfigurations(pushType, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20012), response, "response is InlineResponse20012");
+            //Assert.IsInstanceOf(typeof(ListPushConfigurationsResponse), response, "response is ListPushConfigurationsResponse");
         }
         
         /// <summary>
@@ -176,7 +176,7 @@ namespace sendbird_platform_sdk.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
             //var response = instance.ListPushNotificationContentTemplates(apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse2004), response, "response is InlineResponse2004");
+            //Assert.IsInstanceOf(typeof(ListPushNotificationContentTemplatesResponse), response, "response is ListPushNotificationContentTemplatesResponse");
         }
         
         /// <summary>
@@ -188,7 +188,7 @@ namespace sendbird_platform_sdk.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
             //var response = instance.ListSecondaryApiTokens(apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse2008), response, "response is InlineResponse2008");
+            //Assert.IsInstanceOf(typeof(ListSecondaryApiTokensResponse), response, "response is ListSecondaryApiTokensResponse");
         }
         
         /// <summary>
@@ -202,7 +202,7 @@ namespace sendbird_platform_sdk.Test
             //string providerId = null;
             //string apiToken = null;
             //var response = instance.RemovePushConfigurationById(pushType, providerId, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20013), response, "response is InlineResponse20013");
+            //Assert.IsInstanceOf(typeof(RemovePushConfigurationByIdResponse), response, "response is RemovePushConfigurationByIdResponse");
         }
         
         /// <summary>
@@ -214,7 +214,7 @@ namespace sendbird_platform_sdk.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
             //var response = instance.RetrieveIpWhitelist(apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse2006), response, "response is InlineResponse2006");
+            //Assert.IsInstanceOf(typeof(RetrieveIpWhitelistResponse), response, "response is RetrieveIpWhitelistResponse");
         }
         
         /// <summary>
@@ -227,7 +227,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken2 = null;
             //string apiToken = null;
             //var response = instance.RevokeSecondaryApiTokenByToken(apiToken2, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse2007), response, "response is InlineResponse2007");
+            //Assert.IsInstanceOf(typeof(RevokeSecondaryApiTokenByTokenResponse), response, "response is RevokeSecondaryApiTokenByTokenResponse");
         }
         
         /// <summary>
@@ -241,7 +241,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = null;
             //var response = instance.UpdateApnsPushConfigurationById(providerId, apiToken, updateApnsPushConfigurationByIdData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20014), response, "response is InlineResponse20014");
+            //Assert.IsInstanceOf(typeof(UpdateApnsPushConfigurationByIdResponse), response, "response is UpdateApnsPushConfigurationByIdResponse");
         }
         
         /// <summary>
@@ -254,7 +254,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = null;
             //var response = instance.UpdateDefaultChannelInvitationPreference(apiToken, updateDefaultChannelInvitationPreferenceData);
-            //Assert.IsInstanceOf(typeof(InlineResponse2005), response, "response is InlineResponse2005");
+            //Assert.IsInstanceOf(typeof(UpdateDefaultChannelInvitationPreferenceResponse), response, "response is UpdateDefaultChannelInvitationPreferenceResponse");
         }
         
         /// <summary>
@@ -268,7 +268,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = null;
             //var response = instance.UpdateFcmPushConfigurationById(providerId, apiToken, updateFcmPushConfigurationByIdData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20014), response, "response is InlineResponse20014");
+            //Assert.IsInstanceOf(typeof(UpdateFcmPushConfigurationByIdResponse), response, "response is UpdateFcmPushConfigurationByIdResponse");
         }
         
         /// <summary>
@@ -282,7 +282,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = null;
             //var response = instance.UpdateHmsPushConfigurationById(providerId, apiToken, updateHmsPushConfigurationByIdData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20014), response, "response is InlineResponse20014");
+            //Assert.IsInstanceOf(typeof(UpdateHmsPushConfigurationByIdResponse), response, "response is UpdateHmsPushConfigurationByIdResponse");
         }
         
         /// <summary>
@@ -296,7 +296,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = null;
             //var response = instance.UpdatePushNotificationContentTemplate(templateName, apiToken, updatePushNotificationContentTemplateData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20015), response, "response is InlineResponse20015");
+            //Assert.IsInstanceOf(typeof(UpdatePushNotificationContentTemplateResponse), response, "response is UpdatePushNotificationContentTemplateResponse");
         }
         
         /// <summary>
@@ -308,7 +308,7 @@ namespace sendbird_platform_sdk.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
             //var response = instance.ViewDefaultChannelInvitationPreference(apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse2005), response, "response is InlineResponse2005");
+            //Assert.IsInstanceOf(typeof(ViewDefaultChannelInvitationPreferenceResponse), response, "response is ViewDefaultChannelInvitationPreferenceResponse");
         }
         
         /// <summary>
@@ -320,7 +320,7 @@ namespace sendbird_platform_sdk.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
             //var response = instance.ViewNumberOfConcurrentConnections(apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse200), response, "response is InlineResponse200");
+            //Assert.IsInstanceOf(typeof(ViewNumberOfConcurrentConnectionsResponse), response, "response is ViewNumberOfConcurrentConnectionsResponse");
         }
         
         /// <summary>
@@ -333,7 +333,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //string date = null;
             //var response = instance.ViewNumberOfDailyActiveUsers(apiToken, date);
-            //Assert.IsInstanceOf(typeof(InlineResponse20011), response, "response is InlineResponse20011");
+            //Assert.IsInstanceOf(typeof(ViewNumberOfDailyActiveUsersResponse), response, "response is ViewNumberOfDailyActiveUsersResponse");
         }
         
         /// <summary>
@@ -346,7 +346,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //string date = null;
             //var response = instance.ViewNumberOfMonthlyActiveUsers(apiToken, date);
-            //Assert.IsInstanceOf(typeof(InlineResponse20010), response, "response is InlineResponse20010");
+            //Assert.IsInstanceOf(typeof(ViewNumberOfMonthlyActiveUsersResponse), response, "response is ViewNumberOfMonthlyActiveUsersResponse");
         }
         
         /// <summary>
@@ -365,7 +365,7 @@ namespace sendbird_platform_sdk.Test
             //int? startDay = null;
             //int? endDay = null;
             //var response = instance.ViewNumberOfPeakConnections(timeDimension, startYear, startMonth, endYear, endMonth, apiToken, startDay, endDay);
-            //Assert.IsInstanceOf(typeof(InlineResponse2009), response, "response is InlineResponse2009");
+            //Assert.IsInstanceOf(typeof(ViewNumberOfPeakConnectionsResponse), response, "response is ViewNumberOfPeakConnectionsResponse");
         }
         
         /// <summary>
@@ -379,7 +379,7 @@ namespace sendbird_platform_sdk.Test
             //string providerId = null;
             //string apiToken = null;
             //var response = instance.ViewPushConfigurationById(pushType, providerId, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20012), response, "response is InlineResponse20012");
+            //Assert.IsInstanceOf(typeof(ViewPushConfigurationByIdResponse), response, "response is ViewPushConfigurationByIdResponse");
         }
         
         /// <summary>
@@ -392,7 +392,7 @@ namespace sendbird_platform_sdk.Test
             //string templateName = null;
             //string apiToken = null;
             //var response = instance.ViewPushNotificationContentTemplate(templateName, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20015), response, "response is InlineResponse20015");
+            //Assert.IsInstanceOf(typeof(ViewPushNotificationContentTemplateResponse), response, "response is ViewPushNotificationContentTemplateResponse");
         }
         
         /// <summary>
@@ -405,7 +405,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken2 = null;
             //string apiToken = null;
             //var response = instance.ViewSecondaryApiTokenByToken(apiToken2, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse2007), response, "response is InlineResponse2007");
+            //Assert.IsInstanceOf(typeof(ViewSecondaryApiTokenByTokenResponse), response, "response is ViewSecondaryApiTokenByTokenResponse");
         }
         
     }

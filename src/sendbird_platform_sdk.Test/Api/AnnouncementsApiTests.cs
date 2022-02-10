@@ -73,7 +73,7 @@ namespace sendbird_platform_sdk.Test
             //string uniqueId = null;
             //string apiToken = null;
             //var response = instance.GetDetailedOpenRateOfAnnouncementById(uniqueId, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20042), response, "response is InlineResponse20042");
+            //Assert.IsInstanceOf(typeof(GetDetailedOpenRateOfAnnouncementByIdResponse), response, "response is GetDetailedOpenRateOfAnnouncementByIdResponse");
         }
         
         /// <summary>
@@ -86,7 +86,7 @@ namespace sendbird_platform_sdk.Test
             //string announcementGroup = null;
             //string apiToken = null;
             //var response = instance.GetDetailedOpenRateOfAnnouncementGroup(announcementGroup, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20046), response, "response is InlineResponse20046");
+            //Assert.IsInstanceOf(typeof(GetDetailedOpenRateOfAnnouncementGroupResponse), response, "response is GetDetailedOpenRateOfAnnouncementGroupResponse");
         }
         
         /// <summary>
@@ -104,7 +104,7 @@ namespace sendbird_platform_sdk.Test
             //List<string> channelUrls = null;
             //bool? hasOpened = null;
             //var response = instance.GetDetailedOpenStatusOfAnnouncementById(uniqueId, apiToken, limit, next, uniqueIds, channelUrls, hasOpened);
-            //Assert.IsInstanceOf(typeof(InlineResponse20043), response, "response is InlineResponse20043");
+            //Assert.IsInstanceOf(typeof(GetDetailedOpenStatusOfAnnouncementByIdResponse), response, "response is GetDetailedOpenStatusOfAnnouncementByIdResponse");
         }
         
         /// <summary>
@@ -116,7 +116,7 @@ namespace sendbird_platform_sdk.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
             //var response = instance.GetStatistics(apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20044), response, "response is InlineResponse20044");
+            //Assert.IsInstanceOf(typeof(GetStatisticsResponse), response, "response is GetStatisticsResponse");
         }
         
         /// <summary>
@@ -135,7 +135,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //string announcementGroup = null;
             //var response = instance.GetStatisticsDaily(startDate, endDate, startWeek, endWeek, startMonth, endMonth, apiToken, announcementGroup);
-            //Assert.IsInstanceOf(typeof(InlineResponse20044), response, "response is InlineResponse20044");
+            //Assert.IsInstanceOf(typeof(GetStatisticsDailyResponse), response, "response is GetStatisticsDailyResponse");
         }
         
         /// <summary>
@@ -147,7 +147,7 @@ namespace sendbird_platform_sdk.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
             //var response = instance.GetStatisticsMonthly(apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20044), response, "response is InlineResponse20044");
+            //Assert.IsInstanceOf(typeof(GetStatisticsMonthlyResponse), response, "response is GetStatisticsMonthlyResponse");
         }
         
         /// <summary>
@@ -161,7 +161,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //int? limit = null;
             //var response = instance.ListAnnouncementGroups(apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(InlineResponse20045), response, "response is InlineResponse20045");
+            //Assert.IsInstanceOf(typeof(ListAnnouncementGroupsResponse), response, "response is ListAnnouncementGroupsResponse");
         }
         
         /// <summary>
@@ -178,7 +178,7 @@ namespace sendbird_platform_sdk.Test
             //string status = null;
             //string announcementGroup = null;
             //var response = instance.ListAnnouncements(apiToken, token, limit, order, status, announcementGroup);
-            //Assert.IsInstanceOf(typeof(InlineResponse20039), response, "response is InlineResponse20039");
+            //Assert.IsInstanceOf(typeof(ListAnnouncementsResponse), response, "response is ListAnnouncementsResponse");
         }
         
         /// <summary>
@@ -191,7 +191,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //ScheduleAnnouncementData scheduleAnnouncementData = null;
             //var response = instance.ScheduleAnnouncement(apiToken, scheduleAnnouncementData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20040), response, "response is InlineResponse20040");
+            //Assert.IsInstanceOf(typeof(ScheduleAnnouncementResponse), response, "response is ScheduleAnnouncementResponse");
         }
         
         /// <summary>
@@ -205,7 +205,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //UpdateAnnouncementByIdData updateAnnouncementByIdData = null;
             //var response = instance.UpdateAnnouncementById(uniqueId, apiToken, updateAnnouncementByIdData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20041), response, "response is InlineResponse20041");
+            //Assert.IsInstanceOf(typeof(UpdateAnnouncementByIdResponse), response, "response is UpdateAnnouncementByIdResponse");
         }
         
         /// <summary>
@@ -218,7 +218,7 @@ namespace sendbird_platform_sdk.Test
             //string uniqueId = null;
             //string apiToken = null;
             //var response = instance.ViewAnnouncementById(uniqueId, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20039Announcements), response, "response is InlineResponse20039Announcements");
+            //Assert.IsInstanceOf(typeof(ViewAnnouncementByIdResponse), response, "response is ViewAnnouncementByIdResponse");
         }
         
     }

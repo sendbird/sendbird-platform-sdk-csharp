@@ -34,8 +34,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createBotData"> (optional)</param>
-        /// <returns>InlineResponse20065Bots</returns>
-        InlineResponse20065Bots CreateBot (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData));
+        /// <returns>CreateBotResponse</returns>
+        CreateBotResponse CreateBot (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData));
 
         /// <summary>
         /// Create a bot
@@ -46,8 +46,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createBotData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20065Bots</returns>
-        ApiResponse<InlineResponse20065Bots> CreateBotWithHttpInfo (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData));
+        /// <returns>ApiResponse of CreateBotResponse</returns>
+        ApiResponse<CreateBotResponse> CreateBotWithHttpInfo (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData));
         /// <summary>
         /// Delete a bot
         /// </summary>
@@ -156,8 +156,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20065</returns>
-        InlineResponse20065 ListBots (string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ListBotsResponse</returns>
+        ListBotsResponse ListBots (string apiToken = default(string), string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List bots
@@ -169,8 +169,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20065</returns>
-        ApiResponse<InlineResponse20065> ListBotsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ApiResponse of ListBotsResponse</returns>
+        ApiResponse<ListBotsResponse> ListBotsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?));
         /// <summary>
         /// Send a bot&#39;s message
         /// </summary>
@@ -206,8 +206,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateBotByIdData"> (optional)</param>
-        /// <returns>InlineResponse20065Bots</returns>
-        InlineResponse20065Bots UpdateBotById (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData));
+        /// <returns>UpdateBotByIdResponse</returns>
+        UpdateBotByIdResponse UpdateBotById (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData));
 
         /// <summary>
         /// Update a bot
@@ -219,8 +219,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateBotByIdData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20065Bots</returns>
-        ApiResponse<InlineResponse20065Bots> UpdateBotByIdWithHttpInfo (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData));
+        /// <returns>ApiResponse of UpdateBotByIdResponse</returns>
+        ApiResponse<UpdateBotByIdResponse> UpdateBotByIdWithHttpInfo (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData));
         /// <summary>
         /// View a bot
         /// </summary>
@@ -230,8 +230,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="botUserid"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20065Bots</returns>
-        InlineResponse20065Bots ViewBotById (string botUserid, string apiToken = default(string));
+        /// <returns>ViewBotByIdResponse</returns>
+        ViewBotByIdResponse ViewBotById (string botUserid, string apiToken = default(string));
 
         /// <summary>
         /// View a bot
@@ -242,8 +242,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="botUserid"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20065Bots</returns>
-        ApiResponse<InlineResponse20065Bots> ViewBotByIdWithHttpInfo (string botUserid, string apiToken = default(string));
+        /// <returns>ApiResponse of ViewBotByIdResponse</returns>
+        ApiResponse<ViewBotByIdResponse> ViewBotByIdWithHttpInfo (string botUserid, string apiToken = default(string));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -256,8 +256,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createBotData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20065Bots</returns>
-        System.Threading.Tasks.Task<InlineResponse20065Bots> CreateBotAsync (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of CreateBotResponse</returns>
+        System.Threading.Tasks.Task<CreateBotResponse> CreateBotAsync (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Create a bot
@@ -269,8 +269,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createBotData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20065Bots)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20065Bots>> CreateBotWithHttpInfoAsync (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (CreateBotResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CreateBotResponse>> CreateBotWithHttpInfoAsync (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Delete a bot
         /// </summary>
@@ -388,8 +388,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20065</returns>
-        System.Threading.Tasks.Task<InlineResponse20065> ListBotsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListBotsResponse</returns>
+        System.Threading.Tasks.Task<ListBotsResponse> ListBotsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List bots
@@ -402,8 +402,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20065)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20065>> ListBotsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListBotsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListBotsResponse>> ListBotsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Send a bot&#39;s message
         /// </summary>
@@ -442,8 +442,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateBotByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20065Bots</returns>
-        System.Threading.Tasks.Task<InlineResponse20065Bots> UpdateBotByIdAsync (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of UpdateBotByIdResponse</returns>
+        System.Threading.Tasks.Task<UpdateBotByIdResponse> UpdateBotByIdAsync (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update a bot
@@ -456,8 +456,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateBotByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20065Bots)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20065Bots>> UpdateBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (UpdateBotByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UpdateBotByIdResponse>> UpdateBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a bot
         /// </summary>
@@ -468,8 +468,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20065Bots</returns>
-        System.Threading.Tasks.Task<InlineResponse20065Bots> ViewBotByIdAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewBotByIdResponse</returns>
+        System.Threading.Tasks.Task<ViewBotByIdResponse> ViewBotByIdAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a bot
@@ -481,8 +481,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20065Bots)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20065Bots>> ViewBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewBotByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewBotByIdResponse>> ViewBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -600,10 +600,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createBotData"> (optional)</param>
-        /// <returns>InlineResponse20065Bots</returns>
-        public InlineResponse20065Bots CreateBot (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData))
+        /// <returns>CreateBotResponse</returns>
+        public CreateBotResponse CreateBot (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData))
         {
-             ApiResponse<InlineResponse20065Bots> localVarResponse = CreateBotWithHttpInfo(apiToken, createBotData);
+             ApiResponse<CreateBotResponse> localVarResponse = CreateBotWithHttpInfo(apiToken, createBotData);
              return localVarResponse.Data;
         }
 
@@ -613,8 +613,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createBotData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20065Bots</returns>
-        public ApiResponse<InlineResponse20065Bots> CreateBotWithHttpInfo (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData))
+        /// <returns>ApiResponse of CreateBotResponse</returns>
+        public ApiResponse<CreateBotResponse> CreateBotWithHttpInfo (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData))
         {
 
             var localVarPath = "/v3/bots";
@@ -663,9 +663,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20065Bots>(localVarStatusCode,
+            return new ApiResponse<CreateBotResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20065Bots) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20065Bots)));
+                (CreateBotResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CreateBotResponse)));
         }
 
         /// <summary>
@@ -675,10 +675,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createBotData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20065Bots</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20065Bots> CreateBotAsync (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of CreateBotResponse</returns>
+        public async System.Threading.Tasks.Task<CreateBotResponse> CreateBotAsync (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20065Bots> localVarResponse = await CreateBotWithHttpInfoAsync(apiToken, createBotData, cancellationToken);
+             ApiResponse<CreateBotResponse> localVarResponse = await CreateBotWithHttpInfoAsync(apiToken, createBotData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -690,8 +690,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createBotData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20065Bots)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20065Bots>> CreateBotWithHttpInfoAsync (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (CreateBotResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CreateBotResponse>> CreateBotWithHttpInfoAsync (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/bots";
@@ -740,9 +740,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20065Bots>(localVarStatusCode,
+            return new ApiResponse<CreateBotResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20065Bots) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20065Bots)));
+                (CreateBotResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CreateBotResponse)));
         }
 
         /// <summary>
@@ -1344,10 +1344,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20065</returns>
-        public InlineResponse20065 ListBots (string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ListBotsResponse</returns>
+        public ListBotsResponse ListBots (string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<InlineResponse20065> localVarResponse = ListBotsWithHttpInfo(apiToken, token, limit);
+             ApiResponse<ListBotsResponse> localVarResponse = ListBotsWithHttpInfo(apiToken, token, limit);
              return localVarResponse.Data;
         }
 
@@ -1358,8 +1358,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20065</returns>
-        public ApiResponse<InlineResponse20065> ListBotsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ApiResponse of ListBotsResponse</returns>
+        public ApiResponse<ListBotsResponse> ListBotsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
 
             var localVarPath = "/v3/bots";
@@ -1401,9 +1401,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20065>(localVarStatusCode,
+            return new ApiResponse<ListBotsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20065) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20065)));
+                (ListBotsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListBotsResponse)));
         }
 
         /// <summary>
@@ -1414,10 +1414,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20065</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20065> ListBotsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListBotsResponse</returns>
+        public async System.Threading.Tasks.Task<ListBotsResponse> ListBotsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20065> localVarResponse = await ListBotsWithHttpInfoAsync(apiToken, token, limit, cancellationToken);
+             ApiResponse<ListBotsResponse> localVarResponse = await ListBotsWithHttpInfoAsync(apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1430,8 +1430,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20065)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20065>> ListBotsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListBotsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListBotsResponse>> ListBotsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/bots";
@@ -1473,9 +1473,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20065>(localVarStatusCode,
+            return new ApiResponse<ListBotsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20065) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20065)));
+                (ListBotsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListBotsResponse)));
         }
 
         /// <summary>
@@ -1648,10 +1648,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateBotByIdData"> (optional)</param>
-        /// <returns>InlineResponse20065Bots</returns>
-        public InlineResponse20065Bots UpdateBotById (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData))
+        /// <returns>UpdateBotByIdResponse</returns>
+        public UpdateBotByIdResponse UpdateBotById (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData))
         {
-             ApiResponse<InlineResponse20065Bots> localVarResponse = UpdateBotByIdWithHttpInfo(botUserid, apiToken, updateBotByIdData);
+             ApiResponse<UpdateBotByIdResponse> localVarResponse = UpdateBotByIdWithHttpInfo(botUserid, apiToken, updateBotByIdData);
              return localVarResponse.Data;
         }
 
@@ -1662,8 +1662,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateBotByIdData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20065Bots</returns>
-        public ApiResponse<InlineResponse20065Bots> UpdateBotByIdWithHttpInfo (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData))
+        /// <returns>ApiResponse of UpdateBotByIdResponse</returns>
+        public ApiResponse<UpdateBotByIdResponse> UpdateBotByIdWithHttpInfo (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData))
         {
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
@@ -1716,9 +1716,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20065Bots>(localVarStatusCode,
+            return new ApiResponse<UpdateBotByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20065Bots) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20065Bots)));
+                (UpdateBotByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateBotByIdResponse)));
         }
 
         /// <summary>
@@ -1729,10 +1729,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateBotByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20065Bots</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20065Bots> UpdateBotByIdAsync (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of UpdateBotByIdResponse</returns>
+        public async System.Threading.Tasks.Task<UpdateBotByIdResponse> UpdateBotByIdAsync (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20065Bots> localVarResponse = await UpdateBotByIdWithHttpInfoAsync(botUserid, apiToken, updateBotByIdData, cancellationToken);
+             ApiResponse<UpdateBotByIdResponse> localVarResponse = await UpdateBotByIdWithHttpInfoAsync(botUserid, apiToken, updateBotByIdData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1745,8 +1745,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateBotByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20065Bots)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20065Bots>> UpdateBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (UpdateBotByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateBotByIdResponse>> UpdateBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
@@ -1799,9 +1799,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20065Bots>(localVarStatusCode,
+            return new ApiResponse<UpdateBotByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20065Bots) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20065Bots)));
+                (UpdateBotByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateBotByIdResponse)));
         }
 
         /// <summary>
@@ -1810,10 +1810,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="botUserid"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20065Bots</returns>
-        public InlineResponse20065Bots ViewBotById (string botUserid, string apiToken = default(string))
+        /// <returns>ViewBotByIdResponse</returns>
+        public ViewBotByIdResponse ViewBotById (string botUserid, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20065Bots> localVarResponse = ViewBotByIdWithHttpInfo(botUserid, apiToken);
+             ApiResponse<ViewBotByIdResponse> localVarResponse = ViewBotByIdWithHttpInfo(botUserid, apiToken);
              return localVarResponse.Data;
         }
 
@@ -1823,8 +1823,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="botUserid"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20065Bots</returns>
-        public ApiResponse<InlineResponse20065Bots> ViewBotByIdWithHttpInfo (string botUserid, string apiToken = default(string))
+        /// <returns>ApiResponse of ViewBotByIdResponse</returns>
+        public ApiResponse<ViewBotByIdResponse> ViewBotByIdWithHttpInfo (string botUserid, string apiToken = default(string))
         {
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
@@ -1868,9 +1868,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20065Bots>(localVarStatusCode,
+            return new ApiResponse<ViewBotByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20065Bots) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20065Bots)));
+                (ViewBotByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewBotByIdResponse)));
         }
 
         /// <summary>
@@ -1880,10 +1880,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20065Bots</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20065Bots> ViewBotByIdAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewBotByIdResponse</returns>
+        public async System.Threading.Tasks.Task<ViewBotByIdResponse> ViewBotByIdAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20065Bots> localVarResponse = await ViewBotByIdWithHttpInfoAsync(botUserid, apiToken, cancellationToken);
+             ApiResponse<ViewBotByIdResponse> localVarResponse = await ViewBotByIdWithHttpInfoAsync(botUserid, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1895,8 +1895,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20065Bots)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20065Bots>> ViewBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewBotByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewBotByIdResponse>> ViewBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
@@ -1940,9 +1940,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20065Bots>(localVarStatusCode,
+            return new ApiResponse<ViewBotByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20065Bots) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20065Bots)));
+                (ViewBotByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewBotByIdResponse)));
         }
 
     }

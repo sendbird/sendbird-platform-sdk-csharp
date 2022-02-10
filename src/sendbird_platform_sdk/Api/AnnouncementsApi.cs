@@ -34,8 +34,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20042</returns>
-        InlineResponse20042 GetDetailedOpenRateOfAnnouncementById (string uniqueId, string apiToken = default(string));
+        /// <returns>GetDetailedOpenRateOfAnnouncementByIdResponse</returns>
+        GetDetailedOpenRateOfAnnouncementByIdResponse GetDetailedOpenRateOfAnnouncementById (string uniqueId, string apiToken = default(string));
 
         /// <summary>
         /// Get detailed open rate of an announcement
@@ -46,8 +46,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20042</returns>
-        ApiResponse<InlineResponse20042> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string));
+        /// <returns>ApiResponse of GetDetailedOpenRateOfAnnouncementByIdResponse</returns>
+        ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string));
         /// <summary>
         /// Get detailed open rate of an announcement group
         /// </summary>
@@ -57,8 +57,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="announcementGroup"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20046</returns>
-        InlineResponse20046 GetDetailedOpenRateOfAnnouncementGroup (string announcementGroup, string apiToken = default(string));
+        /// <returns>GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
+        GetDetailedOpenRateOfAnnouncementGroupResponse GetDetailedOpenRateOfAnnouncementGroup (string announcementGroup, string apiToken = default(string));
 
         /// <summary>
         /// Get detailed open rate of an announcement group
@@ -69,8 +69,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="announcementGroup"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20046</returns>
-        ApiResponse<InlineResponse20046> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfo (string announcementGroup, string apiToken = default(string));
+        /// <returns>ApiResponse of GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
+        ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfo (string announcementGroup, string apiToken = default(string));
         /// <summary>
         /// Get detailed open status of an announcement
         /// </summary>
@@ -85,8 +85,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueIds"> (optional)</param>
         /// <param name="channelUrls"> (optional)</param>
         /// <param name="hasOpened"> (optional)</param>
-        /// <returns>InlineResponse20043</returns>
-        InlineResponse20043 GetDetailedOpenStatusOfAnnouncementById (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?));
+        /// <returns>GetDetailedOpenStatusOfAnnouncementByIdResponse</returns>
+        GetDetailedOpenStatusOfAnnouncementByIdResponse GetDetailedOpenStatusOfAnnouncementById (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?));
 
         /// <summary>
         /// Get detailed open status of an announcement
@@ -102,8 +102,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueIds"> (optional)</param>
         /// <param name="channelUrls"> (optional)</param>
         /// <param name="hasOpened"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20043</returns>
-        ApiResponse<InlineResponse20043> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?));
+        /// <returns>ApiResponse of GetDetailedOpenStatusOfAnnouncementByIdResponse</returns>
+        ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?));
         /// <summary>
         /// Get statistics - weekly
         /// </summary>
@@ -112,8 +112,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20044</returns>
-        InlineResponse20044 GetStatistics (string apiToken = default(string));
+        /// <returns>GetStatisticsResponse</returns>
+        GetStatisticsResponse GetStatistics (string apiToken = default(string));
 
         /// <summary>
         /// Get statistics - weekly
@@ -123,8 +123,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20044</returns>
-        ApiResponse<InlineResponse20044> GetStatisticsWithHttpInfo (string apiToken = default(string));
+        /// <returns>ApiResponse of GetStatisticsResponse</returns>
+        ApiResponse<GetStatisticsResponse> GetStatisticsWithHttpInfo (string apiToken = default(string));
         /// <summary>
         /// Get statistics - daily
         /// </summary>
@@ -140,8 +140,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="endMonth"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
-        /// <returns>InlineResponse20044</returns>
-        InlineResponse20044 GetStatisticsDaily (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string));
+        /// <returns>GetStatisticsDailyResponse</returns>
+        GetStatisticsDailyResponse GetStatisticsDaily (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string));
 
         /// <summary>
         /// Get statistics - daily
@@ -158,8 +158,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="endMonth"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20044</returns>
-        ApiResponse<InlineResponse20044> GetStatisticsDailyWithHttpInfo (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string));
+        /// <returns>ApiResponse of GetStatisticsDailyResponse</returns>
+        ApiResponse<GetStatisticsDailyResponse> GetStatisticsDailyWithHttpInfo (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string));
         /// <summary>
         /// Get statistics - monthly
         /// </summary>
@@ -168,8 +168,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20044</returns>
-        InlineResponse20044 GetStatisticsMonthly (string apiToken = default(string));
+        /// <returns>GetStatisticsMonthlyResponse</returns>
+        GetStatisticsMonthlyResponse GetStatisticsMonthly (string apiToken = default(string));
 
         /// <summary>
         /// Get statistics - monthly
@@ -179,8 +179,8 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20044</returns>
-        ApiResponse<InlineResponse20044> GetStatisticsMonthlyWithHttpInfo (string apiToken = default(string));
+        /// <returns>ApiResponse of GetStatisticsMonthlyResponse</returns>
+        ApiResponse<GetStatisticsMonthlyResponse> GetStatisticsMonthlyWithHttpInfo (string apiToken = default(string));
         /// <summary>
         /// List announcement groups
         /// </summary>
@@ -191,8 +191,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20045</returns>
-        InlineResponse20045 ListAnnouncementGroups (string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ListAnnouncementGroupsResponse</returns>
+        ListAnnouncementGroupsResponse ListAnnouncementGroups (string apiToken = default(string), string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List announcement groups
@@ -204,8 +204,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20045</returns>
-        ApiResponse<InlineResponse20045> ListAnnouncementGroupsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ApiResponse of ListAnnouncementGroupsResponse</returns>
+        ApiResponse<ListAnnouncementGroupsResponse> ListAnnouncementGroupsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?));
         /// <summary>
         /// List announcements
         /// </summary>
@@ -219,8 +219,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="order"> (optional)</param>
         /// <param name="status"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
-        /// <returns>InlineResponse20039</returns>
-        InlineResponse20039 ListAnnouncements (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string));
+        /// <returns>ListAnnouncementsResponse</returns>
+        ListAnnouncementsResponse ListAnnouncements (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string));
 
         /// <summary>
         /// List announcements
@@ -235,8 +235,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="order"> (optional)</param>
         /// <param name="status"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20039</returns>
-        ApiResponse<InlineResponse20039> ListAnnouncementsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string));
+        /// <returns>ApiResponse of ListAnnouncementsResponse</returns>
+        ApiResponse<ListAnnouncementsResponse> ListAnnouncementsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string));
         /// <summary>
         /// Schedule an announcement
         /// </summary>
@@ -246,8 +246,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="scheduleAnnouncementData"> (optional)</param>
-        /// <returns>InlineResponse20040</returns>
-        InlineResponse20040 ScheduleAnnouncement (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData));
+        /// <returns>ScheduleAnnouncementResponse</returns>
+        ScheduleAnnouncementResponse ScheduleAnnouncement (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData));
 
         /// <summary>
         /// Schedule an announcement
@@ -258,8 +258,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="scheduleAnnouncementData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20040</returns>
-        ApiResponse<InlineResponse20040> ScheduleAnnouncementWithHttpInfo (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData));
+        /// <returns>ApiResponse of ScheduleAnnouncementResponse</returns>
+        ApiResponse<ScheduleAnnouncementResponse> ScheduleAnnouncementWithHttpInfo (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData));
         /// <summary>
         /// Update an announcement
         /// </summary>
@@ -270,8 +270,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
-        /// <returns>InlineResponse20041</returns>
-        InlineResponse20041 UpdateAnnouncementById (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData));
+        /// <returns>UpdateAnnouncementByIdResponse</returns>
+        UpdateAnnouncementByIdResponse UpdateAnnouncementById (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData));
 
         /// <summary>
         /// Update an announcement
@@ -283,8 +283,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20041</returns>
-        ApiResponse<InlineResponse20041> UpdateAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData));
+        /// <returns>ApiResponse of UpdateAnnouncementByIdResponse</returns>
+        ApiResponse<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData));
         /// <summary>
         /// View an announcement
         /// </summary>
@@ -294,8 +294,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20039Announcements</returns>
-        InlineResponse20039Announcements ViewAnnouncementById (string uniqueId, string apiToken = default(string));
+        /// <returns>ViewAnnouncementByIdResponse</returns>
+        ViewAnnouncementByIdResponse ViewAnnouncementById (string uniqueId, string apiToken = default(string));
 
         /// <summary>
         /// View an announcement
@@ -306,8 +306,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20039Announcements</returns>
-        ApiResponse<InlineResponse20039Announcements> ViewAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string));
+        /// <returns>ApiResponse of ViewAnnouncementByIdResponse</returns>
+        ApiResponse<ViewAnnouncementByIdResponse> ViewAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -320,8 +320,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20042</returns>
-        System.Threading.Tasks.Task<InlineResponse20042> GetDetailedOpenRateOfAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of GetDetailedOpenRateOfAnnouncementByIdResponse</returns>
+        System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementByIdResponse> GetDetailedOpenRateOfAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get detailed open rate of an announcement
@@ -333,8 +333,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20042)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20042>> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (GetDetailedOpenRateOfAnnouncementByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse>> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get detailed open rate of an announcement group
         /// </summary>
@@ -345,8 +345,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="announcementGroup"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20046</returns>
-        System.Threading.Tasks.Task<InlineResponse20046> GetDetailedOpenRateOfAnnouncementGroupAsync (string announcementGroup, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
+        System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupAsync (string announcementGroup, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get detailed open rate of an announcement group
@@ -358,8 +358,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="announcementGroup"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20046)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20046>> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync (string announcementGroup, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (GetDetailedOpenRateOfAnnouncementGroupResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse>> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync (string announcementGroup, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get detailed open status of an announcement
         /// </summary>
@@ -375,8 +375,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrls"> (optional)</param>
         /// <param name="hasOpened"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20043</returns>
-        System.Threading.Tasks.Task<InlineResponse20043> GetDetailedOpenStatusOfAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of GetDetailedOpenStatusOfAnnouncementByIdResponse</returns>
+        System.Threading.Tasks.Task<GetDetailedOpenStatusOfAnnouncementByIdResponse> GetDetailedOpenStatusOfAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get detailed open status of an announcement
@@ -393,8 +393,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrls"> (optional)</param>
         /// <param name="hasOpened"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20043)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20043>> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (GetDetailedOpenStatusOfAnnouncementByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse>> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get statistics - weekly
         /// </summary>
@@ -404,8 +404,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20044</returns>
-        System.Threading.Tasks.Task<InlineResponse20044> GetStatisticsAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of GetStatisticsResponse</returns>
+        System.Threading.Tasks.Task<GetStatisticsResponse> GetStatisticsAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get statistics - weekly
@@ -416,8 +416,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20044)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20044>> GetStatisticsWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (GetStatisticsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GetStatisticsResponse>> GetStatisticsWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get statistics - daily
         /// </summary>
@@ -434,8 +434,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20044</returns>
-        System.Threading.Tasks.Task<InlineResponse20044> GetStatisticsDailyAsync (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of GetStatisticsDailyResponse</returns>
+        System.Threading.Tasks.Task<GetStatisticsDailyResponse> GetStatisticsDailyAsync (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get statistics - daily
@@ -453,8 +453,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20044)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20044>> GetStatisticsDailyWithHttpInfoAsync (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (GetStatisticsDailyResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GetStatisticsDailyResponse>> GetStatisticsDailyWithHttpInfoAsync (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get statistics - monthly
         /// </summary>
@@ -464,8 +464,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20044</returns>
-        System.Threading.Tasks.Task<InlineResponse20044> GetStatisticsMonthlyAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of GetStatisticsMonthlyResponse</returns>
+        System.Threading.Tasks.Task<GetStatisticsMonthlyResponse> GetStatisticsMonthlyAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get statistics - monthly
@@ -476,8 +476,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20044)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20044>> GetStatisticsMonthlyWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (GetStatisticsMonthlyResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GetStatisticsMonthlyResponse>> GetStatisticsMonthlyWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List announcement groups
         /// </summary>
@@ -489,8 +489,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20045</returns>
-        System.Threading.Tasks.Task<InlineResponse20045> ListAnnouncementGroupsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListAnnouncementGroupsResponse</returns>
+        System.Threading.Tasks.Task<ListAnnouncementGroupsResponse> ListAnnouncementGroupsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List announcement groups
@@ -503,8 +503,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20045)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20045>> ListAnnouncementGroupsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListAnnouncementGroupsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListAnnouncementGroupsResponse>> ListAnnouncementGroupsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List announcements
         /// </summary>
@@ -519,8 +519,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="status"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20039</returns>
-        System.Threading.Tasks.Task<InlineResponse20039> ListAnnouncementsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListAnnouncementsResponse</returns>
+        System.Threading.Tasks.Task<ListAnnouncementsResponse> ListAnnouncementsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List announcements
@@ -536,8 +536,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="status"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20039)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20039>> ListAnnouncementsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListAnnouncementsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListAnnouncementsResponse>> ListAnnouncementsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Schedule an announcement
         /// </summary>
@@ -548,8 +548,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="scheduleAnnouncementData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20040</returns>
-        System.Threading.Tasks.Task<InlineResponse20040> ScheduleAnnouncementAsync (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ScheduleAnnouncementResponse</returns>
+        System.Threading.Tasks.Task<ScheduleAnnouncementResponse> ScheduleAnnouncementAsync (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Schedule an announcement
@@ -561,8 +561,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="scheduleAnnouncementData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20040)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20040>> ScheduleAnnouncementWithHttpInfoAsync (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ScheduleAnnouncementResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ScheduleAnnouncementResponse>> ScheduleAnnouncementWithHttpInfoAsync (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update an announcement
         /// </summary>
@@ -574,8 +574,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20041</returns>
-        System.Threading.Tasks.Task<InlineResponse20041> UpdateAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of UpdateAnnouncementByIdResponse</returns>
+        System.Threading.Tasks.Task<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update an announcement
@@ -588,8 +588,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20041)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20041>> UpdateAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (UpdateAnnouncementByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UpdateAnnouncementByIdResponse>> UpdateAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View an announcement
         /// </summary>
@@ -600,8 +600,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20039Announcements</returns>
-        System.Threading.Tasks.Task<InlineResponse20039Announcements> ViewAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewAnnouncementByIdResponse</returns>
+        System.Threading.Tasks.Task<ViewAnnouncementByIdResponse> ViewAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View an announcement
@@ -613,8 +613,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20039Announcements)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20039Announcements>> ViewAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewAnnouncementByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewAnnouncementByIdResponse>> ViewAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -732,10 +732,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20042</returns>
-        public InlineResponse20042 GetDetailedOpenRateOfAnnouncementById (string uniqueId, string apiToken = default(string))
+        /// <returns>GetDetailedOpenRateOfAnnouncementByIdResponse</returns>
+        public GetDetailedOpenRateOfAnnouncementByIdResponse GetDetailedOpenRateOfAnnouncementById (string uniqueId, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20042> localVarResponse = GetDetailedOpenRateOfAnnouncementByIdWithHttpInfo(uniqueId, apiToken);
+             ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse> localVarResponse = GetDetailedOpenRateOfAnnouncementByIdWithHttpInfo(uniqueId, apiToken);
              return localVarResponse.Data;
         }
 
@@ -745,8 +745,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20042</returns>
-        public ApiResponse<InlineResponse20042> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string))
+        /// <returns>ApiResponse of GetDetailedOpenRateOfAnnouncementByIdResponse</returns>
+        public ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string))
         {
             // verify the required parameter 'uniqueId' is set
             if (uniqueId == null)
@@ -790,9 +790,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20042>(localVarStatusCode,
+            return new ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20042) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20042)));
+                (GetDetailedOpenRateOfAnnouncementByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetDetailedOpenRateOfAnnouncementByIdResponse)));
         }
 
         /// <summary>
@@ -802,10 +802,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20042</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20042> GetDetailedOpenRateOfAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of GetDetailedOpenRateOfAnnouncementByIdResponse</returns>
+        public async System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementByIdResponse> GetDetailedOpenRateOfAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20042> localVarResponse = await GetDetailedOpenRateOfAnnouncementByIdWithHttpInfoAsync(uniqueId, apiToken, cancellationToken);
+             ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse> localVarResponse = await GetDetailedOpenRateOfAnnouncementByIdWithHttpInfoAsync(uniqueId, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -817,8 +817,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20042)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20042>> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (GetDetailedOpenRateOfAnnouncementByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse>> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'uniqueId' is set
             if (uniqueId == null)
@@ -862,9 +862,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20042>(localVarStatusCode,
+            return new ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20042) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20042)));
+                (GetDetailedOpenRateOfAnnouncementByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetDetailedOpenRateOfAnnouncementByIdResponse)));
         }
 
         /// <summary>
@@ -873,10 +873,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="announcementGroup"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20046</returns>
-        public InlineResponse20046 GetDetailedOpenRateOfAnnouncementGroup (string announcementGroup, string apiToken = default(string))
+        /// <returns>GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
+        public GetDetailedOpenRateOfAnnouncementGroupResponse GetDetailedOpenRateOfAnnouncementGroup (string announcementGroup, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20046> localVarResponse = GetDetailedOpenRateOfAnnouncementGroupWithHttpInfo(announcementGroup, apiToken);
+             ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse> localVarResponse = GetDetailedOpenRateOfAnnouncementGroupWithHttpInfo(announcementGroup, apiToken);
              return localVarResponse.Data;
         }
 
@@ -886,8 +886,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="announcementGroup"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20046</returns>
-        public ApiResponse<InlineResponse20046> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfo (string announcementGroup, string apiToken = default(string))
+        /// <returns>ApiResponse of GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
+        public ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfo (string announcementGroup, string apiToken = default(string))
         {
             // verify the required parameter 'announcementGroup' is set
             if (announcementGroup == null)
@@ -931,9 +931,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20046>(localVarStatusCode,
+            return new ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20046) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20046)));
+                (GetDetailedOpenRateOfAnnouncementGroupResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetDetailedOpenRateOfAnnouncementGroupResponse)));
         }
 
         /// <summary>
@@ -943,10 +943,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="announcementGroup"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20046</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20046> GetDetailedOpenRateOfAnnouncementGroupAsync (string announcementGroup, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
+        public async System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupAsync (string announcementGroup, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20046> localVarResponse = await GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync(announcementGroup, apiToken, cancellationToken);
+             ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse> localVarResponse = await GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync(announcementGroup, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -958,8 +958,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="announcementGroup"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20046)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20046>> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync (string announcementGroup, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (GetDetailedOpenRateOfAnnouncementGroupResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse>> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync (string announcementGroup, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'announcementGroup' is set
             if (announcementGroup == null)
@@ -1003,9 +1003,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20046>(localVarStatusCode,
+            return new ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20046) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20046)));
+                (GetDetailedOpenRateOfAnnouncementGroupResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetDetailedOpenRateOfAnnouncementGroupResponse)));
         }
 
         /// <summary>
@@ -1019,10 +1019,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueIds"> (optional)</param>
         /// <param name="channelUrls"> (optional)</param>
         /// <param name="hasOpened"> (optional)</param>
-        /// <returns>InlineResponse20043</returns>
-        public InlineResponse20043 GetDetailedOpenStatusOfAnnouncementById (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?))
+        /// <returns>GetDetailedOpenStatusOfAnnouncementByIdResponse</returns>
+        public GetDetailedOpenStatusOfAnnouncementByIdResponse GetDetailedOpenStatusOfAnnouncementById (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?))
         {
-             ApiResponse<InlineResponse20043> localVarResponse = GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfo(uniqueId, apiToken, limit, next, uniqueIds, channelUrls, hasOpened);
+             ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse> localVarResponse = GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfo(uniqueId, apiToken, limit, next, uniqueIds, channelUrls, hasOpened);
              return localVarResponse.Data;
         }
 
@@ -1037,8 +1037,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueIds"> (optional)</param>
         /// <param name="channelUrls"> (optional)</param>
         /// <param name="hasOpened"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20043</returns>
-        public ApiResponse<InlineResponse20043> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?))
+        /// <returns>ApiResponse of GetDetailedOpenStatusOfAnnouncementByIdResponse</returns>
+        public ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?))
         {
             // verify the required parameter 'uniqueId' is set
             if (uniqueId == null)
@@ -1087,9 +1087,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20043>(localVarStatusCode,
+            return new ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20043) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20043)));
+                (GetDetailedOpenStatusOfAnnouncementByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetDetailedOpenStatusOfAnnouncementByIdResponse)));
         }
 
         /// <summary>
@@ -1104,10 +1104,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrls"> (optional)</param>
         /// <param name="hasOpened"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20043</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20043> GetDetailedOpenStatusOfAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of GetDetailedOpenStatusOfAnnouncementByIdResponse</returns>
+        public async System.Threading.Tasks.Task<GetDetailedOpenStatusOfAnnouncementByIdResponse> GetDetailedOpenStatusOfAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20043> localVarResponse = await GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfoAsync(uniqueId, apiToken, limit, next, uniqueIds, channelUrls, hasOpened, cancellationToken);
+             ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse> localVarResponse = await GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfoAsync(uniqueId, apiToken, limit, next, uniqueIds, channelUrls, hasOpened, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1124,8 +1124,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrls"> (optional)</param>
         /// <param name="hasOpened"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20043)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20043>> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (GetDetailedOpenStatusOfAnnouncementByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse>> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'uniqueId' is set
             if (uniqueId == null)
@@ -1174,9 +1174,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20043>(localVarStatusCode,
+            return new ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20043) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20043)));
+                (GetDetailedOpenStatusOfAnnouncementByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetDetailedOpenStatusOfAnnouncementByIdResponse)));
         }
 
         /// <summary>
@@ -1184,10 +1184,10 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20044</returns>
-        public InlineResponse20044 GetStatistics (string apiToken = default(string))
+        /// <returns>GetStatisticsResponse</returns>
+        public GetStatisticsResponse GetStatistics (string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20044> localVarResponse = GetStatisticsWithHttpInfo(apiToken);
+             ApiResponse<GetStatisticsResponse> localVarResponse = GetStatisticsWithHttpInfo(apiToken);
              return localVarResponse.Data;
         }
 
@@ -1196,8 +1196,8 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20044</returns>
-        public ApiResponse<InlineResponse20044> GetStatisticsWithHttpInfo (string apiToken = default(string))
+        /// <returns>ApiResponse of GetStatisticsResponse</returns>
+        public ApiResponse<GetStatisticsResponse> GetStatisticsWithHttpInfo (string apiToken = default(string))
         {
 
             var localVarPath = "/v3/announcement_stats/weekly";
@@ -1237,9 +1237,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20044>(localVarStatusCode,
+            return new ApiResponse<GetStatisticsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20044) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20044)));
+                (GetStatisticsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetStatisticsResponse)));
         }
 
         /// <summary>
@@ -1248,10 +1248,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20044</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20044> GetStatisticsAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of GetStatisticsResponse</returns>
+        public async System.Threading.Tasks.Task<GetStatisticsResponse> GetStatisticsAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20044> localVarResponse = await GetStatisticsWithHttpInfoAsync(apiToken, cancellationToken);
+             ApiResponse<GetStatisticsResponse> localVarResponse = await GetStatisticsWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1262,8 +1262,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20044)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20044>> GetStatisticsWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (GetStatisticsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<GetStatisticsResponse>> GetStatisticsWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/announcement_stats/weekly";
@@ -1303,9 +1303,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20044>(localVarStatusCode,
+            return new ApiResponse<GetStatisticsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20044) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20044)));
+                (GetStatisticsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetStatisticsResponse)));
         }
 
         /// <summary>
@@ -1320,10 +1320,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="endMonth"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
-        /// <returns>InlineResponse20044</returns>
-        public InlineResponse20044 GetStatisticsDaily (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string))
+        /// <returns>GetStatisticsDailyResponse</returns>
+        public GetStatisticsDailyResponse GetStatisticsDaily (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string))
         {
-             ApiResponse<InlineResponse20044> localVarResponse = GetStatisticsDailyWithHttpInfo(startDate, endDate, startWeek, endWeek, startMonth, endMonth, apiToken, announcementGroup);
+             ApiResponse<GetStatisticsDailyResponse> localVarResponse = GetStatisticsDailyWithHttpInfo(startDate, endDate, startWeek, endWeek, startMonth, endMonth, apiToken, announcementGroup);
              return localVarResponse.Data;
         }
 
@@ -1339,8 +1339,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="endMonth"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20044</returns>
-        public ApiResponse<InlineResponse20044> GetStatisticsDailyWithHttpInfo (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string))
+        /// <returns>ApiResponse of GetStatisticsDailyResponse</returns>
+        public ApiResponse<GetStatisticsDailyResponse> GetStatisticsDailyWithHttpInfo (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string))
         {
             // verify the required parameter 'startDate' is set
             if (startDate == null)
@@ -1405,9 +1405,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20044>(localVarStatusCode,
+            return new ApiResponse<GetStatisticsDailyResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20044) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20044)));
+                (GetStatisticsDailyResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetStatisticsDailyResponse)));
         }
 
         /// <summary>
@@ -1423,10 +1423,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20044</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20044> GetStatisticsDailyAsync (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of GetStatisticsDailyResponse</returns>
+        public async System.Threading.Tasks.Task<GetStatisticsDailyResponse> GetStatisticsDailyAsync (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20044> localVarResponse = await GetStatisticsDailyWithHttpInfoAsync(startDate, endDate, startWeek, endWeek, startMonth, endMonth, apiToken, announcementGroup, cancellationToken);
+             ApiResponse<GetStatisticsDailyResponse> localVarResponse = await GetStatisticsDailyWithHttpInfoAsync(startDate, endDate, startWeek, endWeek, startMonth, endMonth, apiToken, announcementGroup, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1444,8 +1444,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20044)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20044>> GetStatisticsDailyWithHttpInfoAsync (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (GetStatisticsDailyResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<GetStatisticsDailyResponse>> GetStatisticsDailyWithHttpInfoAsync (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'startDate' is set
             if (startDate == null)
@@ -1510,9 +1510,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20044>(localVarStatusCode,
+            return new ApiResponse<GetStatisticsDailyResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20044) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20044)));
+                (GetStatisticsDailyResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetStatisticsDailyResponse)));
         }
 
         /// <summary>
@@ -1520,10 +1520,10 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20044</returns>
-        public InlineResponse20044 GetStatisticsMonthly (string apiToken = default(string))
+        /// <returns>GetStatisticsMonthlyResponse</returns>
+        public GetStatisticsMonthlyResponse GetStatisticsMonthly (string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20044> localVarResponse = GetStatisticsMonthlyWithHttpInfo(apiToken);
+             ApiResponse<GetStatisticsMonthlyResponse> localVarResponse = GetStatisticsMonthlyWithHttpInfo(apiToken);
              return localVarResponse.Data;
         }
 
@@ -1532,8 +1532,8 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20044</returns>
-        public ApiResponse<InlineResponse20044> GetStatisticsMonthlyWithHttpInfo (string apiToken = default(string))
+        /// <returns>ApiResponse of GetStatisticsMonthlyResponse</returns>
+        public ApiResponse<GetStatisticsMonthlyResponse> GetStatisticsMonthlyWithHttpInfo (string apiToken = default(string))
         {
 
             var localVarPath = "/v3/announcement_stats/monthly";
@@ -1573,9 +1573,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20044>(localVarStatusCode,
+            return new ApiResponse<GetStatisticsMonthlyResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20044) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20044)));
+                (GetStatisticsMonthlyResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetStatisticsMonthlyResponse)));
         }
 
         /// <summary>
@@ -1584,10 +1584,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20044</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20044> GetStatisticsMonthlyAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of GetStatisticsMonthlyResponse</returns>
+        public async System.Threading.Tasks.Task<GetStatisticsMonthlyResponse> GetStatisticsMonthlyAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20044> localVarResponse = await GetStatisticsMonthlyWithHttpInfoAsync(apiToken, cancellationToken);
+             ApiResponse<GetStatisticsMonthlyResponse> localVarResponse = await GetStatisticsMonthlyWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1598,8 +1598,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20044)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20044>> GetStatisticsMonthlyWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (GetStatisticsMonthlyResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<GetStatisticsMonthlyResponse>> GetStatisticsMonthlyWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/announcement_stats/monthly";
@@ -1639,9 +1639,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20044>(localVarStatusCode,
+            return new ApiResponse<GetStatisticsMonthlyResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20044) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20044)));
+                (GetStatisticsMonthlyResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetStatisticsMonthlyResponse)));
         }
 
         /// <summary>
@@ -1651,10 +1651,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20045</returns>
-        public InlineResponse20045 ListAnnouncementGroups (string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ListAnnouncementGroupsResponse</returns>
+        public ListAnnouncementGroupsResponse ListAnnouncementGroups (string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<InlineResponse20045> localVarResponse = ListAnnouncementGroupsWithHttpInfo(apiToken, token, limit);
+             ApiResponse<ListAnnouncementGroupsResponse> localVarResponse = ListAnnouncementGroupsWithHttpInfo(apiToken, token, limit);
              return localVarResponse.Data;
         }
 
@@ -1665,8 +1665,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20045</returns>
-        public ApiResponse<InlineResponse20045> ListAnnouncementGroupsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ApiResponse of ListAnnouncementGroupsResponse</returns>
+        public ApiResponse<ListAnnouncementGroupsResponse> ListAnnouncementGroupsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
 
             var localVarPath = "/v3/announcement_group";
@@ -1708,9 +1708,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20045>(localVarStatusCode,
+            return new ApiResponse<ListAnnouncementGroupsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20045) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20045)));
+                (ListAnnouncementGroupsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListAnnouncementGroupsResponse)));
         }
 
         /// <summary>
@@ -1721,10 +1721,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20045</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20045> ListAnnouncementGroupsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListAnnouncementGroupsResponse</returns>
+        public async System.Threading.Tasks.Task<ListAnnouncementGroupsResponse> ListAnnouncementGroupsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20045> localVarResponse = await ListAnnouncementGroupsWithHttpInfoAsync(apiToken, token, limit, cancellationToken);
+             ApiResponse<ListAnnouncementGroupsResponse> localVarResponse = await ListAnnouncementGroupsWithHttpInfoAsync(apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1737,8 +1737,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20045)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20045>> ListAnnouncementGroupsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListAnnouncementGroupsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListAnnouncementGroupsResponse>> ListAnnouncementGroupsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/announcement_group";
@@ -1780,9 +1780,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20045>(localVarStatusCode,
+            return new ApiResponse<ListAnnouncementGroupsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20045) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20045)));
+                (ListAnnouncementGroupsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListAnnouncementGroupsResponse)));
         }
 
         /// <summary>
@@ -1795,10 +1795,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="order"> (optional)</param>
         /// <param name="status"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
-        /// <returns>InlineResponse20039</returns>
-        public InlineResponse20039 ListAnnouncements (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string))
+        /// <returns>ListAnnouncementsResponse</returns>
+        public ListAnnouncementsResponse ListAnnouncements (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string))
         {
-             ApiResponse<InlineResponse20039> localVarResponse = ListAnnouncementsWithHttpInfo(apiToken, token, limit, order, status, announcementGroup);
+             ApiResponse<ListAnnouncementsResponse> localVarResponse = ListAnnouncementsWithHttpInfo(apiToken, token, limit, order, status, announcementGroup);
              return localVarResponse.Data;
         }
 
@@ -1812,8 +1812,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="order"> (optional)</param>
         /// <param name="status"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20039</returns>
-        public ApiResponse<InlineResponse20039> ListAnnouncementsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string))
+        /// <returns>ApiResponse of ListAnnouncementsResponse</returns>
+        public ApiResponse<ListAnnouncementsResponse> ListAnnouncementsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string))
         {
 
             var localVarPath = "/v3/announcements";
@@ -1858,9 +1858,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20039>(localVarStatusCode,
+            return new ApiResponse<ListAnnouncementsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20039) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20039)));
+                (ListAnnouncementsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListAnnouncementsResponse)));
         }
 
         /// <summary>
@@ -1874,10 +1874,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="status"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20039</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20039> ListAnnouncementsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListAnnouncementsResponse</returns>
+        public async System.Threading.Tasks.Task<ListAnnouncementsResponse> ListAnnouncementsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20039> localVarResponse = await ListAnnouncementsWithHttpInfoAsync(apiToken, token, limit, order, status, announcementGroup, cancellationToken);
+             ApiResponse<ListAnnouncementsResponse> localVarResponse = await ListAnnouncementsWithHttpInfoAsync(apiToken, token, limit, order, status, announcementGroup, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1893,8 +1893,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="status"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20039)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20039>> ListAnnouncementsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListAnnouncementsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListAnnouncementsResponse>> ListAnnouncementsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/announcements";
@@ -1939,9 +1939,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20039>(localVarStatusCode,
+            return new ApiResponse<ListAnnouncementsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20039) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20039)));
+                (ListAnnouncementsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListAnnouncementsResponse)));
         }
 
         /// <summary>
@@ -1950,10 +1950,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="scheduleAnnouncementData"> (optional)</param>
-        /// <returns>InlineResponse20040</returns>
-        public InlineResponse20040 ScheduleAnnouncement (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData))
+        /// <returns>ScheduleAnnouncementResponse</returns>
+        public ScheduleAnnouncementResponse ScheduleAnnouncement (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData))
         {
-             ApiResponse<InlineResponse20040> localVarResponse = ScheduleAnnouncementWithHttpInfo(apiToken, scheduleAnnouncementData);
+             ApiResponse<ScheduleAnnouncementResponse> localVarResponse = ScheduleAnnouncementWithHttpInfo(apiToken, scheduleAnnouncementData);
              return localVarResponse.Data;
         }
 
@@ -1963,8 +1963,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="scheduleAnnouncementData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20040</returns>
-        public ApiResponse<InlineResponse20040> ScheduleAnnouncementWithHttpInfo (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData))
+        /// <returns>ApiResponse of ScheduleAnnouncementResponse</returns>
+        public ApiResponse<ScheduleAnnouncementResponse> ScheduleAnnouncementWithHttpInfo (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData))
         {
 
             var localVarPath = "/v3/announcements";
@@ -2013,9 +2013,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20040>(localVarStatusCode,
+            return new ApiResponse<ScheduleAnnouncementResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20040) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20040)));
+                (ScheduleAnnouncementResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ScheduleAnnouncementResponse)));
         }
 
         /// <summary>
@@ -2025,10 +2025,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="scheduleAnnouncementData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20040</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20040> ScheduleAnnouncementAsync (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ScheduleAnnouncementResponse</returns>
+        public async System.Threading.Tasks.Task<ScheduleAnnouncementResponse> ScheduleAnnouncementAsync (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20040> localVarResponse = await ScheduleAnnouncementWithHttpInfoAsync(apiToken, scheduleAnnouncementData, cancellationToken);
+             ApiResponse<ScheduleAnnouncementResponse> localVarResponse = await ScheduleAnnouncementWithHttpInfoAsync(apiToken, scheduleAnnouncementData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2040,8 +2040,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="scheduleAnnouncementData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20040)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20040>> ScheduleAnnouncementWithHttpInfoAsync (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ScheduleAnnouncementResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ScheduleAnnouncementResponse>> ScheduleAnnouncementWithHttpInfoAsync (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/announcements";
@@ -2090,9 +2090,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20040>(localVarStatusCode,
+            return new ApiResponse<ScheduleAnnouncementResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20040) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20040)));
+                (ScheduleAnnouncementResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ScheduleAnnouncementResponse)));
         }
 
         /// <summary>
@@ -2102,10 +2102,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
-        /// <returns>InlineResponse20041</returns>
-        public InlineResponse20041 UpdateAnnouncementById (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData))
+        /// <returns>UpdateAnnouncementByIdResponse</returns>
+        public UpdateAnnouncementByIdResponse UpdateAnnouncementById (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData))
         {
-             ApiResponse<InlineResponse20041> localVarResponse = UpdateAnnouncementByIdWithHttpInfo(uniqueId, apiToken, updateAnnouncementByIdData);
+             ApiResponse<UpdateAnnouncementByIdResponse> localVarResponse = UpdateAnnouncementByIdWithHttpInfo(uniqueId, apiToken, updateAnnouncementByIdData);
              return localVarResponse.Data;
         }
 
@@ -2116,8 +2116,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20041</returns>
-        public ApiResponse<InlineResponse20041> UpdateAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData))
+        /// <returns>ApiResponse of UpdateAnnouncementByIdResponse</returns>
+        public ApiResponse<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData))
         {
             // verify the required parameter 'uniqueId' is set
             if (uniqueId == null)
@@ -2170,9 +2170,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20041>(localVarStatusCode,
+            return new ApiResponse<UpdateAnnouncementByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20041) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20041)));
+                (UpdateAnnouncementByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateAnnouncementByIdResponse)));
         }
 
         /// <summary>
@@ -2183,10 +2183,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20041</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20041> UpdateAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of UpdateAnnouncementByIdResponse</returns>
+        public async System.Threading.Tasks.Task<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20041> localVarResponse = await UpdateAnnouncementByIdWithHttpInfoAsync(uniqueId, apiToken, updateAnnouncementByIdData, cancellationToken);
+             ApiResponse<UpdateAnnouncementByIdResponse> localVarResponse = await UpdateAnnouncementByIdWithHttpInfoAsync(uniqueId, apiToken, updateAnnouncementByIdData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2199,8 +2199,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20041)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20041>> UpdateAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (UpdateAnnouncementByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateAnnouncementByIdResponse>> UpdateAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'uniqueId' is set
             if (uniqueId == null)
@@ -2253,9 +2253,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20041>(localVarStatusCode,
+            return new ApiResponse<UpdateAnnouncementByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20041) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20041)));
+                (UpdateAnnouncementByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateAnnouncementByIdResponse)));
         }
 
         /// <summary>
@@ -2264,10 +2264,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20039Announcements</returns>
-        public InlineResponse20039Announcements ViewAnnouncementById (string uniqueId, string apiToken = default(string))
+        /// <returns>ViewAnnouncementByIdResponse</returns>
+        public ViewAnnouncementByIdResponse ViewAnnouncementById (string uniqueId, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20039Announcements> localVarResponse = ViewAnnouncementByIdWithHttpInfo(uniqueId, apiToken);
+             ApiResponse<ViewAnnouncementByIdResponse> localVarResponse = ViewAnnouncementByIdWithHttpInfo(uniqueId, apiToken);
              return localVarResponse.Data;
         }
 
@@ -2277,8 +2277,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20039Announcements</returns>
-        public ApiResponse<InlineResponse20039Announcements> ViewAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string))
+        /// <returns>ApiResponse of ViewAnnouncementByIdResponse</returns>
+        public ApiResponse<ViewAnnouncementByIdResponse> ViewAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string))
         {
             // verify the required parameter 'uniqueId' is set
             if (uniqueId == null)
@@ -2322,9 +2322,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20039Announcements>(localVarStatusCode,
+            return new ApiResponse<ViewAnnouncementByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20039Announcements) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20039Announcements)));
+                (ViewAnnouncementByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewAnnouncementByIdResponse)));
         }
 
         /// <summary>
@@ -2334,10 +2334,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20039Announcements</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20039Announcements> ViewAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewAnnouncementByIdResponse</returns>
+        public async System.Threading.Tasks.Task<ViewAnnouncementByIdResponse> ViewAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20039Announcements> localVarResponse = await ViewAnnouncementByIdWithHttpInfoAsync(uniqueId, apiToken, cancellationToken);
+             ApiResponse<ViewAnnouncementByIdResponse> localVarResponse = await ViewAnnouncementByIdWithHttpInfoAsync(uniqueId, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2349,8 +2349,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20039Announcements)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20039Announcements>> ViewAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewAnnouncementByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewAnnouncementByIdResponse>> ViewAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'uniqueId' is set
             if (uniqueId == null)
@@ -2394,9 +2394,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20039Announcements>(localVarStatusCode,
+            return new ApiResponse<ViewAnnouncementByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20039Announcements) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20039Announcements)));
+                (ViewAnnouncementByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewAnnouncementByIdResponse)));
         }
 
     }

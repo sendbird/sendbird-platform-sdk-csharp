@@ -88,7 +88,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //GcBanUserData gcBanUserData = null;
             //var response = instance.GcBanUser(channelUrl, apiToken, gcBanUserData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20033BannedList), response, "response is InlineResponse20033BannedList");
+            //Assert.IsInstanceOf(typeof(GcBanUserResponse), response, "response is GcBanUserResponse");
         }
         
         /// <summary>
@@ -117,7 +117,7 @@ namespace sendbird_platform_sdk.Test
             //string userId = null;
             //string apiToken = null;
             //var response = instance.GcCheckIfMemberById(channelUrl, userId, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20037), response, "response is InlineResponse20037");
+            //Assert.IsInstanceOf(typeof(GcCheckIfMemberByIdResponse), response, "response is GcCheckIfMemberByIdResponse");
         }
         
         /// <summary>
@@ -242,7 +242,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //int? limit = null;
             //var response = instance.GcListBannedUsers(channelUrl, apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(InlineResponse20033), response, "response is InlineResponse20033");
+            //Assert.IsInstanceOf(typeof(GcListBannedUsersResponse), response, "response is GcListBannedUsersResponse");
         }
         
         /// <summary>
@@ -296,7 +296,7 @@ namespace sendbird_platform_sdk.Test
             //string membersIn = null;
             //string userId = null;
             //var response = instance.GcListChannels(apiToken, token, limit, distinctMode, publicMode, superMode, createdAfter, createdBefore, showEmpty, showMember, showDeliveryReceipt, showReadReceipt, showMetadata, showFrozen, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, includeSortedMetaarrayInLastMessage, customType, readReceipt, member, isDistinct, membersIn, userId);
-            //Assert.IsInstanceOf(typeof(InlineResponse20017), response, "response is InlineResponse20017");
+            //Assert.IsInstanceOf(typeof(GcListChannelsResponse), response, "response is GcListChannelsResponse");
         }
         
         /// <summary>
@@ -318,7 +318,7 @@ namespace sendbird_platform_sdk.Test
             //string mutedMemberFilter = null;
             //string nicknameStartswith = null;
             //var response = instance.GcListMembers(channelUrl, apiToken, token, limit, showDeliveryReceipt, showReadReceipt, order, operatorFilter, memberStateFilter, mutedMemberFilter, nicknameStartswith);
-            //Assert.IsInstanceOf(typeof(InlineResponse20036), response, "response is InlineResponse20036");
+            //Assert.IsInstanceOf(typeof(GcListMembersResponse), response, "response is GcListMembersResponse");
         }
         
         /// <summary>
@@ -333,7 +333,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //int? limit = null;
             //var response = instance.GcListMutedUsers(channelUrl, apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(InlineResponse20031), response, "response is InlineResponse20031");
+            //Assert.IsInstanceOf(typeof(GcListMutedUsersResponse), response, "response is GcListMutedUsersResponse");
         }
         
         /// <summary>
@@ -348,7 +348,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //int? limit = null;
             //var response = instance.GcListOperators(channelUrl, apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(InlineResponse20034), response, "response is InlineResponse20034");
+            //Assert.IsInstanceOf(typeof(GcListOperatorsResponse), response, "response is GcListOperatorsResponse");
         }
         
         /// <summary>
@@ -376,7 +376,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //GcRegisterOperatorsData gcRegisterOperatorsData = null;
             //var response = instance.GcRegisterOperators(channelUrl, apiToken, gcRegisterOperatorsData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20038), response, "response is InlineResponse20038");
+            //Assert.IsInstanceOf(typeof(GcRegisterOperatorsResponse), response, "response is GcRegisterOperatorsResponse");
         }
         
         /// <summary>
@@ -508,7 +508,7 @@ namespace sendbird_platform_sdk.Test
             //string mutedUserId = null;
             //string apiToken = null;
             //var response = instance.GcViewMuteById(channelUrl, mutedUserId, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20035), response, "response is InlineResponse20035");
+            //Assert.IsInstanceOf(typeof(GcViewMuteByIdResponse), response, "response is GcViewMuteByIdResponse");
         }
         
     }

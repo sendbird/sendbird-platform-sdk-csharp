@@ -58,8 +58,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20068</returns>
-        InlineResponse20068 ListGdprRequests (string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ListGdprRequestsResponse</returns>
+        ListGdprRequestsResponse ListGdprRequests (string apiToken = default(string), string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List GDPR requests
@@ -71,8 +71,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20068</returns>
-        ApiResponse<InlineResponse20068> ListGdprRequestsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ApiResponse of ListGdprRequestsResponse</returns>
+        ApiResponse<ListGdprRequestsResponse> ListGdprRequestsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?));
         /// <summary>
         /// Register a GDPR request
         /// </summary>
@@ -82,8 +82,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="registerGdprRequestData"> (optional)</param>
-        /// <returns>InlineResponse20069</returns>
-        InlineResponse20069 RegisterGdprRequest (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData));
+        /// <returns>RegisterGdprRequestResponse</returns>
+        RegisterGdprRequestResponse RegisterGdprRequest (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData));
 
         /// <summary>
         /// Register a GDPR request
@@ -94,8 +94,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="registerGdprRequestData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20069</returns>
-        ApiResponse<InlineResponse20069> RegisterGdprRequestWithHttpInfo (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData));
+        /// <returns>ApiResponse of RegisterGdprRequestResponse</returns>
+        ApiResponse<RegisterGdprRequestResponse> RegisterGdprRequestWithHttpInfo (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData));
         /// <summary>
         /// View a GDPR request
         /// </summary>
@@ -105,8 +105,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20068Requests</returns>
-        InlineResponse20068Requests ViewGdprRequestById (string requestId, string apiToken = default(string));
+        /// <returns>ViewGdprRequestByIdResponse</returns>
+        ViewGdprRequestByIdResponse ViewGdprRequestById (string requestId, string apiToken = default(string));
 
         /// <summary>
         /// View a GDPR request
@@ -117,8 +117,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20068Requests</returns>
-        ApiResponse<InlineResponse20068Requests> ViewGdprRequestByIdWithHttpInfo (string requestId, string apiToken = default(string));
+        /// <returns>ApiResponse of ViewGdprRequestByIdResponse</returns>
+        ApiResponse<ViewGdprRequestByIdResponse> ViewGdprRequestByIdWithHttpInfo (string requestId, string apiToken = default(string));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -157,8 +157,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20068</returns>
-        System.Threading.Tasks.Task<InlineResponse20068> ListGdprRequestsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListGdprRequestsResponse</returns>
+        System.Threading.Tasks.Task<ListGdprRequestsResponse> ListGdprRequestsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List GDPR requests
@@ -171,8 +171,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20068)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20068>> ListGdprRequestsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListGdprRequestsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListGdprRequestsResponse>> ListGdprRequestsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Register a GDPR request
         /// </summary>
@@ -183,8 +183,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="registerGdprRequestData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20069</returns>
-        System.Threading.Tasks.Task<InlineResponse20069> RegisterGdprRequestAsync (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of RegisterGdprRequestResponse</returns>
+        System.Threading.Tasks.Task<RegisterGdprRequestResponse> RegisterGdprRequestAsync (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Register a GDPR request
@@ -196,8 +196,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="registerGdprRequestData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20069)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20069>> RegisterGdprRequestWithHttpInfoAsync (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (RegisterGdprRequestResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<RegisterGdprRequestResponse>> RegisterGdprRequestWithHttpInfoAsync (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a GDPR request
         /// </summary>
@@ -208,8 +208,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="requestId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20068Requests</returns>
-        System.Threading.Tasks.Task<InlineResponse20068Requests> ViewGdprRequestByIdAsync (string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewGdprRequestByIdResponse</returns>
+        System.Threading.Tasks.Task<ViewGdprRequestByIdResponse> ViewGdprRequestByIdAsync (string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a GDPR request
@@ -221,8 +221,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="requestId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20068Requests)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20068Requests>> ViewGdprRequestByIdWithHttpInfoAsync (string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewGdprRequestByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewGdprRequestByIdResponse>> ViewGdprRequestByIdWithHttpInfoAsync (string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -478,10 +478,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20068</returns>
-        public InlineResponse20068 ListGdprRequests (string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ListGdprRequestsResponse</returns>
+        public ListGdprRequestsResponse ListGdprRequests (string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<InlineResponse20068> localVarResponse = ListGdprRequestsWithHttpInfo(apiToken, token, limit);
+             ApiResponse<ListGdprRequestsResponse> localVarResponse = ListGdprRequestsWithHttpInfo(apiToken, token, limit);
              return localVarResponse.Data;
         }
 
@@ -492,8 +492,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20068</returns>
-        public ApiResponse<InlineResponse20068> ListGdprRequestsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ApiResponse of ListGdprRequestsResponse</returns>
+        public ApiResponse<ListGdprRequestsResponse> ListGdprRequestsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
 
             var localVarPath = "/v3/privacy/gdpr";
@@ -535,9 +535,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20068>(localVarStatusCode,
+            return new ApiResponse<ListGdprRequestsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20068) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20068)));
+                (ListGdprRequestsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListGdprRequestsResponse)));
         }
 
         /// <summary>
@@ -548,10 +548,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20068</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20068> ListGdprRequestsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListGdprRequestsResponse</returns>
+        public async System.Threading.Tasks.Task<ListGdprRequestsResponse> ListGdprRequestsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20068> localVarResponse = await ListGdprRequestsWithHttpInfoAsync(apiToken, token, limit, cancellationToken);
+             ApiResponse<ListGdprRequestsResponse> localVarResponse = await ListGdprRequestsWithHttpInfoAsync(apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -564,8 +564,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20068)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20068>> ListGdprRequestsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListGdprRequestsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListGdprRequestsResponse>> ListGdprRequestsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/privacy/gdpr";
@@ -607,9 +607,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20068>(localVarStatusCode,
+            return new ApiResponse<ListGdprRequestsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20068) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20068)));
+                (ListGdprRequestsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListGdprRequestsResponse)));
         }
 
         /// <summary>
@@ -618,10 +618,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="registerGdprRequestData"> (optional)</param>
-        /// <returns>InlineResponse20069</returns>
-        public InlineResponse20069 RegisterGdprRequest (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData))
+        /// <returns>RegisterGdprRequestResponse</returns>
+        public RegisterGdprRequestResponse RegisterGdprRequest (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData))
         {
-             ApiResponse<InlineResponse20069> localVarResponse = RegisterGdprRequestWithHttpInfo(apiToken, registerGdprRequestData);
+             ApiResponse<RegisterGdprRequestResponse> localVarResponse = RegisterGdprRequestWithHttpInfo(apiToken, registerGdprRequestData);
              return localVarResponse.Data;
         }
 
@@ -631,8 +631,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="registerGdprRequestData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20069</returns>
-        public ApiResponse<InlineResponse20069> RegisterGdprRequestWithHttpInfo (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData))
+        /// <returns>ApiResponse of RegisterGdprRequestResponse</returns>
+        public ApiResponse<RegisterGdprRequestResponse> RegisterGdprRequestWithHttpInfo (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData))
         {
 
             var localVarPath = "/v3/privacy/gdpr";
@@ -681,9 +681,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20069>(localVarStatusCode,
+            return new ApiResponse<RegisterGdprRequestResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20069) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20069)));
+                (RegisterGdprRequestResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RegisterGdprRequestResponse)));
         }
 
         /// <summary>
@@ -693,10 +693,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="registerGdprRequestData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20069</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20069> RegisterGdprRequestAsync (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of RegisterGdprRequestResponse</returns>
+        public async System.Threading.Tasks.Task<RegisterGdprRequestResponse> RegisterGdprRequestAsync (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20069> localVarResponse = await RegisterGdprRequestWithHttpInfoAsync(apiToken, registerGdprRequestData, cancellationToken);
+             ApiResponse<RegisterGdprRequestResponse> localVarResponse = await RegisterGdprRequestWithHttpInfoAsync(apiToken, registerGdprRequestData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -708,8 +708,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="registerGdprRequestData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20069)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20069>> RegisterGdprRequestWithHttpInfoAsync (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (RegisterGdprRequestResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<RegisterGdprRequestResponse>> RegisterGdprRequestWithHttpInfoAsync (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/privacy/gdpr";
@@ -758,9 +758,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20069>(localVarStatusCode,
+            return new ApiResponse<RegisterGdprRequestResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20069) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20069)));
+                (RegisterGdprRequestResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RegisterGdprRequestResponse)));
         }
 
         /// <summary>
@@ -769,10 +769,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20068Requests</returns>
-        public InlineResponse20068Requests ViewGdprRequestById (string requestId, string apiToken = default(string))
+        /// <returns>ViewGdprRequestByIdResponse</returns>
+        public ViewGdprRequestByIdResponse ViewGdprRequestById (string requestId, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20068Requests> localVarResponse = ViewGdprRequestByIdWithHttpInfo(requestId, apiToken);
+             ApiResponse<ViewGdprRequestByIdResponse> localVarResponse = ViewGdprRequestByIdWithHttpInfo(requestId, apiToken);
              return localVarResponse.Data;
         }
 
@@ -782,8 +782,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="requestId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20068Requests</returns>
-        public ApiResponse<InlineResponse20068Requests> ViewGdprRequestByIdWithHttpInfo (string requestId, string apiToken = default(string))
+        /// <returns>ApiResponse of ViewGdprRequestByIdResponse</returns>
+        public ApiResponse<ViewGdprRequestByIdResponse> ViewGdprRequestByIdWithHttpInfo (string requestId, string apiToken = default(string))
         {
             // verify the required parameter 'requestId' is set
             if (requestId == null)
@@ -827,9 +827,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20068Requests>(localVarStatusCode,
+            return new ApiResponse<ViewGdprRequestByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20068Requests) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20068Requests)));
+                (ViewGdprRequestByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewGdprRequestByIdResponse)));
         }
 
         /// <summary>
@@ -839,10 +839,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="requestId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20068Requests</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20068Requests> ViewGdprRequestByIdAsync (string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewGdprRequestByIdResponse</returns>
+        public async System.Threading.Tasks.Task<ViewGdprRequestByIdResponse> ViewGdprRequestByIdAsync (string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20068Requests> localVarResponse = await ViewGdprRequestByIdWithHttpInfoAsync(requestId, apiToken, cancellationToken);
+             ApiResponse<ViewGdprRequestByIdResponse> localVarResponse = await ViewGdprRequestByIdWithHttpInfoAsync(requestId, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -854,8 +854,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="requestId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20068Requests)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20068Requests>> ViewGdprRequestByIdWithHttpInfoAsync (string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewGdprRequestByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewGdprRequestByIdResponse>> ViewGdprRequestByIdWithHttpInfoAsync (string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'requestId' is set
             if (requestId == null)
@@ -899,9 +899,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20068Requests>(localVarStatusCode,
+            return new ApiResponse<ViewGdprRequestByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20068Requests) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20068Requests)));
+                (ViewGdprRequestByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewGdprRequestByIdResponse)));
         }
 
     }

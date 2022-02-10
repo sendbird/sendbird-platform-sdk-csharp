@@ -63,8 +63,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createChannelMetadataData"> (optional)</param>
-        /// <returns>InlineResponse20061</returns>
-        InlineResponse20061 CreateChannelMetadata (string channelType, string channelUrl, string apiToken = default(string), CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData));
+        /// <returns>CreateChannelMetadataResponse</returns>
+        CreateChannelMetadataResponse CreateChannelMetadata (string channelType, string channelUrl, string apiToken = default(string), CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData));
 
         /// <summary>
         /// Create a channel metadata
@@ -77,8 +77,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createChannelMetadataData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20061</returns>
-        ApiResponse<InlineResponse20061> CreateChannelMetadataWithHttpInfo (string channelType, string channelUrl, string apiToken = default(string), CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData));
+        /// <returns>ApiResponse of CreateChannelMetadataResponse</returns>
+        ApiResponse<CreateChannelMetadataResponse> CreateChannelMetadataWithHttpInfo (string channelType, string channelUrl, string apiToken = default(string), CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData));
         /// <summary>
         /// Create a user metadata
         /// </summary>
@@ -89,8 +89,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createUserMetadataData"> (optional)</param>
-        /// <returns>InlineResponse20047UserMetadata</returns>
-        InlineResponse20047UserMetadata CreateUserMetadata (string userId, string apiToken = default(string), CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData));
+        /// <returns>CreateUserMetadataResponse</returns>
+        CreateUserMetadataResponse CreateUserMetadata (string userId, string apiToken = default(string), CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData));
 
         /// <summary>
         /// Create a user metadata
@@ -102,8 +102,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createUserMetadataData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20047UserMetadata</returns>
-        ApiResponse<InlineResponse20047UserMetadata> CreateUserMetadataWithHttpInfo (string userId, string apiToken = default(string), CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData));
+        /// <returns>ApiResponse of CreateUserMetadataResponse</returns>
+        ApiResponse<CreateUserMetadataResponse> CreateUserMetadataWithHttpInfo (string userId, string apiToken = default(string), CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData));
         /// <summary>
         /// Delete a channel metacounter - When deleting all items of a channel metacounter
         /// </summary>
@@ -382,8 +382,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateUserMetadataData"> (optional)</param>
-        /// <returns>InlineResponse20060</returns>
-        InlineResponse20060 UpdateUserMetadata (string userId, string apiToken = default(string), UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData));
+        /// <returns>UpdateUserMetadataResponse</returns>
+        UpdateUserMetadataResponse UpdateUserMetadata (string userId, string apiToken = default(string), UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData));
 
         /// <summary>
         /// Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata
@@ -395,8 +395,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateUserMetadataData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20060</returns>
-        ApiResponse<InlineResponse20060> UpdateUserMetadataWithHttpInfo (string userId, string apiToken = default(string), UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData));
+        /// <returns>ApiResponse of UpdateUserMetadataResponse</returns>
+        ApiResponse<UpdateUserMetadataResponse> UpdateUserMetadataWithHttpInfo (string userId, string apiToken = default(string), UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData));
         /// <summary>
         /// Update a user metadata - When updating a specific item of a user metadata by its key
         /// </summary>
@@ -547,8 +547,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
-        /// <returns>InlineResponse20047UserMetadata</returns>
-        InlineResponse20047UserMetadata ViewUserMetadata (string userId, string apiToken = default(string), string key = default(string), List<string> keys = default(List<string>));
+        /// <returns>ViewUserMetadataResponse</returns>
+        ViewUserMetadataResponse ViewUserMetadata (string userId, string apiToken = default(string), string key = default(string), List<string> keys = default(List<string>));
 
         /// <summary>
         /// View a user metadata - When retrieving all items of a user metadata
@@ -561,8 +561,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20047UserMetadata</returns>
-        ApiResponse<InlineResponse20047UserMetadata> ViewUserMetadataWithHttpInfo (string userId, string apiToken = default(string), string key = default(string), List<string> keys = default(List<string>));
+        /// <returns>ApiResponse of ViewUserMetadataResponse</returns>
+        ApiResponse<ViewUserMetadataResponse> ViewUserMetadataWithHttpInfo (string userId, string apiToken = default(string), string key = default(string), List<string> keys = default(List<string>));
         /// <summary>
         /// View a user metadata - When retrieving a specific item of a user metadata by its key
         /// </summary>
@@ -631,8 +631,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createChannelMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20061</returns>
-        System.Threading.Tasks.Task<InlineResponse20061> CreateChannelMetadataAsync (string channelType, string channelUrl, string apiToken = default(string), CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of CreateChannelMetadataResponse</returns>
+        System.Threading.Tasks.Task<CreateChannelMetadataResponse> CreateChannelMetadataAsync (string channelType, string channelUrl, string apiToken = default(string), CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Create a channel metadata
@@ -646,8 +646,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createChannelMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20061)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20061>> CreateChannelMetadataWithHttpInfoAsync (string channelType, string channelUrl, string apiToken = default(string), CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (CreateChannelMetadataResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CreateChannelMetadataResponse>> CreateChannelMetadataWithHttpInfoAsync (string channelType, string channelUrl, string apiToken = default(string), CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Create a user metadata
         /// </summary>
@@ -659,8 +659,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createUserMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20047UserMetadata</returns>
-        System.Threading.Tasks.Task<InlineResponse20047UserMetadata> CreateUserMetadataAsync (string userId, string apiToken = default(string), CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of CreateUserMetadataResponse</returns>
+        System.Threading.Tasks.Task<CreateUserMetadataResponse> CreateUserMetadataAsync (string userId, string apiToken = default(string), CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Create a user metadata
@@ -673,8 +673,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createUserMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20047UserMetadata)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20047UserMetadata>> CreateUserMetadataWithHttpInfoAsync (string userId, string apiToken = default(string), CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (CreateUserMetadataResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CreateUserMetadataResponse>> CreateUserMetadataWithHttpInfoAsync (string userId, string apiToken = default(string), CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Delete a channel metacounter - When deleting all items of a channel metacounter
         /// </summary>
@@ -974,8 +974,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateUserMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20060</returns>
-        System.Threading.Tasks.Task<InlineResponse20060> UpdateUserMetadataAsync (string userId, string apiToken = default(string), UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of UpdateUserMetadataResponse</returns>
+        System.Threading.Tasks.Task<UpdateUserMetadataResponse> UpdateUserMetadataAsync (string userId, string apiToken = default(string), UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata
@@ -988,8 +988,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateUserMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20060)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20060>> UpdateUserMetadataWithHttpInfoAsync (string userId, string apiToken = default(string), UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (UpdateUserMetadataResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UpdateUserMetadataResponse>> UpdateUserMetadataWithHttpInfoAsync (string userId, string apiToken = default(string), UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update a user metadata - When updating a specific item of a user metadata by its key
         /// </summary>
@@ -1151,8 +1151,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20047UserMetadata</returns>
-        System.Threading.Tasks.Task<InlineResponse20047UserMetadata> ViewUserMetadataAsync (string userId, string apiToken = default(string), string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewUserMetadataResponse</returns>
+        System.Threading.Tasks.Task<ViewUserMetadataResponse> ViewUserMetadataAsync (string userId, string apiToken = default(string), string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a user metadata - When retrieving all items of a user metadata
@@ -1166,8 +1166,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20047UserMetadata)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20047UserMetadata>> ViewUserMetadataWithHttpInfoAsync (string userId, string apiToken = default(string), string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewUserMetadataResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewUserMetadataResponse>> ViewUserMetadataWithHttpInfoAsync (string userId, string apiToken = default(string), string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a user metadata - When retrieving a specific item of a user metadata by its key
         /// </summary>
@@ -1489,10 +1489,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createChannelMetadataData"> (optional)</param>
-        /// <returns>InlineResponse20061</returns>
-        public InlineResponse20061 CreateChannelMetadata (string channelType, string channelUrl, string apiToken = default(string), CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData))
+        /// <returns>CreateChannelMetadataResponse</returns>
+        public CreateChannelMetadataResponse CreateChannelMetadata (string channelType, string channelUrl, string apiToken = default(string), CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData))
         {
-             ApiResponse<InlineResponse20061> localVarResponse = CreateChannelMetadataWithHttpInfo(channelType, channelUrl, apiToken, createChannelMetadataData);
+             ApiResponse<CreateChannelMetadataResponse> localVarResponse = CreateChannelMetadataWithHttpInfo(channelType, channelUrl, apiToken, createChannelMetadataData);
              return localVarResponse.Data;
         }
 
@@ -1504,8 +1504,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createChannelMetadataData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20061</returns>
-        public ApiResponse<InlineResponse20061> CreateChannelMetadataWithHttpInfo (string channelType, string channelUrl, string apiToken = default(string), CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData))
+        /// <returns>ApiResponse of CreateChannelMetadataResponse</returns>
+        public ApiResponse<CreateChannelMetadataResponse> CreateChannelMetadataWithHttpInfo (string channelType, string channelUrl, string apiToken = default(string), CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -1562,9 +1562,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20061>(localVarStatusCode,
+            return new ApiResponse<CreateChannelMetadataResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20061) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20061)));
+                (CreateChannelMetadataResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CreateChannelMetadataResponse)));
         }
 
         /// <summary>
@@ -1576,10 +1576,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createChannelMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20061</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20061> CreateChannelMetadataAsync (string channelType, string channelUrl, string apiToken = default(string), CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of CreateChannelMetadataResponse</returns>
+        public async System.Threading.Tasks.Task<CreateChannelMetadataResponse> CreateChannelMetadataAsync (string channelType, string channelUrl, string apiToken = default(string), CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20061> localVarResponse = await CreateChannelMetadataWithHttpInfoAsync(channelType, channelUrl, apiToken, createChannelMetadataData, cancellationToken);
+             ApiResponse<CreateChannelMetadataResponse> localVarResponse = await CreateChannelMetadataWithHttpInfoAsync(channelType, channelUrl, apiToken, createChannelMetadataData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1593,8 +1593,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createChannelMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20061)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20061>> CreateChannelMetadataWithHttpInfoAsync (string channelType, string channelUrl, string apiToken = default(string), CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (CreateChannelMetadataResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CreateChannelMetadataResponse>> CreateChannelMetadataWithHttpInfoAsync (string channelType, string channelUrl, string apiToken = default(string), CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -1651,9 +1651,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20061>(localVarStatusCode,
+            return new ApiResponse<CreateChannelMetadataResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20061) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20061)));
+                (CreateChannelMetadataResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CreateChannelMetadataResponse)));
         }
 
         /// <summary>
@@ -1663,10 +1663,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createUserMetadataData"> (optional)</param>
-        /// <returns>InlineResponse20047UserMetadata</returns>
-        public InlineResponse20047UserMetadata CreateUserMetadata (string userId, string apiToken = default(string), CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData))
+        /// <returns>CreateUserMetadataResponse</returns>
+        public CreateUserMetadataResponse CreateUserMetadata (string userId, string apiToken = default(string), CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData))
         {
-             ApiResponse<InlineResponse20047UserMetadata> localVarResponse = CreateUserMetadataWithHttpInfo(userId, apiToken, createUserMetadataData);
+             ApiResponse<CreateUserMetadataResponse> localVarResponse = CreateUserMetadataWithHttpInfo(userId, apiToken, createUserMetadataData);
              return localVarResponse.Data;
         }
 
@@ -1677,8 +1677,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createUserMetadataData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20047UserMetadata</returns>
-        public ApiResponse<InlineResponse20047UserMetadata> CreateUserMetadataWithHttpInfo (string userId, string apiToken = default(string), CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData))
+        /// <returns>ApiResponse of CreateUserMetadataResponse</returns>
+        public ApiResponse<CreateUserMetadataResponse> CreateUserMetadataWithHttpInfo (string userId, string apiToken = default(string), CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -1731,9 +1731,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20047UserMetadata>(localVarStatusCode,
+            return new ApiResponse<CreateUserMetadataResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20047UserMetadata) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20047UserMetadata)));
+                (CreateUserMetadataResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CreateUserMetadataResponse)));
         }
 
         /// <summary>
@@ -1744,10 +1744,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createUserMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20047UserMetadata</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20047UserMetadata> CreateUserMetadataAsync (string userId, string apiToken = default(string), CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of CreateUserMetadataResponse</returns>
+        public async System.Threading.Tasks.Task<CreateUserMetadataResponse> CreateUserMetadataAsync (string userId, string apiToken = default(string), CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20047UserMetadata> localVarResponse = await CreateUserMetadataWithHttpInfoAsync(userId, apiToken, createUserMetadataData, cancellationToken);
+             ApiResponse<CreateUserMetadataResponse> localVarResponse = await CreateUserMetadataWithHttpInfoAsync(userId, apiToken, createUserMetadataData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1760,8 +1760,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="createUserMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20047UserMetadata)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20047UserMetadata>> CreateUserMetadataWithHttpInfoAsync (string userId, string apiToken = default(string), CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (CreateUserMetadataResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CreateUserMetadataResponse>> CreateUserMetadataWithHttpInfoAsync (string userId, string apiToken = default(string), CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -1814,9 +1814,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20047UserMetadata>(localVarStatusCode,
+            return new ApiResponse<CreateUserMetadataResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20047UserMetadata) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20047UserMetadata)));
+                (CreateUserMetadataResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CreateUserMetadataResponse)));
         }
 
         /// <summary>
@@ -3468,10 +3468,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateUserMetadataData"> (optional)</param>
-        /// <returns>InlineResponse20060</returns>
-        public InlineResponse20060 UpdateUserMetadata (string userId, string apiToken = default(string), UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData))
+        /// <returns>UpdateUserMetadataResponse</returns>
+        public UpdateUserMetadataResponse UpdateUserMetadata (string userId, string apiToken = default(string), UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData))
         {
-             ApiResponse<InlineResponse20060> localVarResponse = UpdateUserMetadataWithHttpInfo(userId, apiToken, updateUserMetadataData);
+             ApiResponse<UpdateUserMetadataResponse> localVarResponse = UpdateUserMetadataWithHttpInfo(userId, apiToken, updateUserMetadataData);
              return localVarResponse.Data;
         }
 
@@ -3482,8 +3482,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateUserMetadataData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20060</returns>
-        public ApiResponse<InlineResponse20060> UpdateUserMetadataWithHttpInfo (string userId, string apiToken = default(string), UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData))
+        /// <returns>ApiResponse of UpdateUserMetadataResponse</returns>
+        public ApiResponse<UpdateUserMetadataResponse> UpdateUserMetadataWithHttpInfo (string userId, string apiToken = default(string), UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -3536,9 +3536,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20060>(localVarStatusCode,
+            return new ApiResponse<UpdateUserMetadataResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20060) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20060)));
+                (UpdateUserMetadataResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateUserMetadataResponse)));
         }
 
         /// <summary>
@@ -3549,10 +3549,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateUserMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20060</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20060> UpdateUserMetadataAsync (string userId, string apiToken = default(string), UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of UpdateUserMetadataResponse</returns>
+        public async System.Threading.Tasks.Task<UpdateUserMetadataResponse> UpdateUserMetadataAsync (string userId, string apiToken = default(string), UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20060> localVarResponse = await UpdateUserMetadataWithHttpInfoAsync(userId, apiToken, updateUserMetadataData, cancellationToken);
+             ApiResponse<UpdateUserMetadataResponse> localVarResponse = await UpdateUserMetadataWithHttpInfoAsync(userId, apiToken, updateUserMetadataData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3565,8 +3565,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateUserMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20060)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20060>> UpdateUserMetadataWithHttpInfoAsync (string userId, string apiToken = default(string), UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (UpdateUserMetadataResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateUserMetadataResponse>> UpdateUserMetadataWithHttpInfoAsync (string userId, string apiToken = default(string), UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -3619,9 +3619,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20060>(localVarStatusCode,
+            return new ApiResponse<UpdateUserMetadataResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20060) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20060)));
+                (UpdateUserMetadataResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateUserMetadataResponse)));
         }
 
         /// <summary>
@@ -4467,10 +4467,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
-        /// <returns>InlineResponse20047UserMetadata</returns>
-        public InlineResponse20047UserMetadata ViewUserMetadata (string userId, string apiToken = default(string), string key = default(string), List<string> keys = default(List<string>))
+        /// <returns>ViewUserMetadataResponse</returns>
+        public ViewUserMetadataResponse ViewUserMetadata (string userId, string apiToken = default(string), string key = default(string), List<string> keys = default(List<string>))
         {
-             ApiResponse<InlineResponse20047UserMetadata> localVarResponse = ViewUserMetadataWithHttpInfo(userId, apiToken, key, keys);
+             ApiResponse<ViewUserMetadataResponse> localVarResponse = ViewUserMetadataWithHttpInfo(userId, apiToken, key, keys);
              return localVarResponse.Data;
         }
 
@@ -4482,8 +4482,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20047UserMetadata</returns>
-        public ApiResponse<InlineResponse20047UserMetadata> ViewUserMetadataWithHttpInfo (string userId, string apiToken = default(string), string key = default(string), List<string> keys = default(List<string>))
+        /// <returns>ApiResponse of ViewUserMetadataResponse</returns>
+        public ApiResponse<ViewUserMetadataResponse> ViewUserMetadataWithHttpInfo (string userId, string apiToken = default(string), string key = default(string), List<string> keys = default(List<string>))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -4529,9 +4529,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20047UserMetadata>(localVarStatusCode,
+            return new ApiResponse<ViewUserMetadataResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20047UserMetadata) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20047UserMetadata)));
+                (ViewUserMetadataResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewUserMetadataResponse)));
         }
 
         /// <summary>
@@ -4543,10 +4543,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20047UserMetadata</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20047UserMetadata> ViewUserMetadataAsync (string userId, string apiToken = default(string), string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewUserMetadataResponse</returns>
+        public async System.Threading.Tasks.Task<ViewUserMetadataResponse> ViewUserMetadataAsync (string userId, string apiToken = default(string), string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20047UserMetadata> localVarResponse = await ViewUserMetadataWithHttpInfoAsync(userId, apiToken, key, keys, cancellationToken);
+             ApiResponse<ViewUserMetadataResponse> localVarResponse = await ViewUserMetadataWithHttpInfoAsync(userId, apiToken, key, keys, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -4560,8 +4560,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20047UserMetadata)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20047UserMetadata>> ViewUserMetadataWithHttpInfoAsync (string userId, string apiToken = default(string), string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewUserMetadataResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewUserMetadataResponse>> ViewUserMetadataWithHttpInfoAsync (string userId, string apiToken = default(string), string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -4607,9 +4607,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20047UserMetadata>(localVarStatusCode,
+            return new ApiResponse<ViewUserMetadataResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20047UserMetadata) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20047UserMetadata)));
+                (ViewUserMetadataResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewUserMetadataResponse)));
         }
 
         /// <summary>

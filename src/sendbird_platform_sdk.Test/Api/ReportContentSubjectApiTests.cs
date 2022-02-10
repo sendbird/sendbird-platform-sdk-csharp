@@ -76,7 +76,7 @@ namespace sendbird_platform_sdk.Test
             //int? startTs = null;
             //int? endTs = null;
             //var response = instance.ListReports(apiToken, token, limit, startTs, endTs);
-            //Assert.IsInstanceOf(typeof(InlineResponse20070), response, "response is InlineResponse20070");
+            //Assert.IsInstanceOf(typeof(ListReportsResponse), response, "response is ListReportsResponse");
         }
         
         /// <summary>
@@ -92,7 +92,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //int? limit = null;
             //var response = instance.ListReportsOnChannelByUrl(channelType, channelUrl, apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(InlineResponse20071), response, "response is InlineResponse20071");
+            //Assert.IsInstanceOf(typeof(ListReportsOnChannelByUrlResponse), response, "response is ListReportsOnChannelByUrlResponse");
         }
         
         /// <summary>
@@ -109,7 +109,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //int? limit = null;
             //var response = instance.ListReportsOnMessageById(channelType, channelUrl, messageId, apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(InlineResponse20071), response, "response is InlineResponse20071");
+            //Assert.IsInstanceOf(typeof(ListReportsOnMessageByIdResponse), response, "response is ListReportsOnMessageByIdResponse");
         }
         
         /// <summary>
@@ -124,7 +124,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //int? limit = null;
             //var response = instance.ListReportsOnUserById(offendingUserId, apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(InlineResponse20071), response, "response is InlineResponse20071");
+            //Assert.IsInstanceOf(typeof(ListReportsOnUserByIdResponse), response, "response is ListReportsOnUserByIdResponse");
         }
         
         /// <summary>
@@ -139,7 +139,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //ReportChannelByUrlData reportChannelByUrlData = null;
             //var response = instance.ReportChannelByUrl(channelType, channelUrl, apiToken, reportChannelByUrlData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20071ReportLogs), response, "response is InlineResponse20071ReportLogs");
+            //Assert.IsInstanceOf(typeof(ReportChannelByUrlResponse), response, "response is ReportChannelByUrlResponse");
         }
         
         /// <summary>
@@ -155,7 +155,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //ReportMessageByIdData reportMessageByIdData = null;
             //var response = instance.ReportMessageById(channelType, channelUrl, messageId, apiToken, reportMessageByIdData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20071ReportLogs), response, "response is InlineResponse20071ReportLogs");
+            //Assert.IsInstanceOf(typeof(ReportMessageByIdResponse), response, "response is ReportMessageByIdResponse");
         }
         
         /// <summary>
@@ -169,7 +169,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //ReportUserByIdData reportUserByIdData = null;
             //var response = instance.ReportUserById(offendingUserId, apiToken, reportUserByIdData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20071ReportLogs), response, "response is InlineResponse20071ReportLogs");
+            //Assert.IsInstanceOf(typeof(ReportUserByIdResponse), response, "response is ReportUserByIdResponse");
         }
         
         /// <summary>

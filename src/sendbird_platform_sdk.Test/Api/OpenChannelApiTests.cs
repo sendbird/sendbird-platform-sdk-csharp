@@ -74,7 +74,7 @@ namespace sendbird_platform_sdk.Test
             //string apiToken = null;
             //OcBanUserData ocBanUserData = null;
             //var response = instance.OcBanUser(channelUrl, apiToken, ocBanUserData);
-            //Assert.IsInstanceOf(typeof(InlineResponse20033BannedList), response, "response is InlineResponse20033BannedList");
+            //Assert.IsInstanceOf(typeof(OcBanUserResponse), response, "response is OcBanUserResponse");
         }
         
         /// <summary>
@@ -144,7 +144,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //int? limit = null;
             //var response = instance.OcListBannedUsers(channelUrl, apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(InlineResponse20033), response, "response is InlineResponse20033");
+            //Assert.IsInstanceOf(typeof(OcListBannedUsersResponse), response, "response is OcListBannedUsersResponse");
         }
         
         /// <summary>
@@ -164,7 +164,7 @@ namespace sendbird_platform_sdk.Test
             //bool? showMetadata = null;
             //string customType = null;
             //var response = instance.OcListChannels(apiToken, token, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, customType);
-            //Assert.IsInstanceOf(typeof(InlineResponse20030), response, "response is InlineResponse20030");
+            //Assert.IsInstanceOf(typeof(OcListChannelsResponse), response, "response is OcListChannelsResponse");
         }
         
         /// <summary>
@@ -179,7 +179,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //int? limit = null;
             //var response = instance.OcListMutedUsers(channelUrl, apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(InlineResponse20031), response, "response is InlineResponse20031");
+            //Assert.IsInstanceOf(typeof(OcListMutedUsersResponse), response, "response is OcListMutedUsersResponse");
         }
         
         /// <summary>
@@ -194,7 +194,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //int? limit = null;
             //var response = instance.OcListOperators(channelUrl, apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(InlineResponse20034), response, "response is InlineResponse20034");
+            //Assert.IsInstanceOf(typeof(OcListOperatorsResponse), response, "response is OcListOperatorsResponse");
         }
         
         /// <summary>
@@ -209,7 +209,7 @@ namespace sendbird_platform_sdk.Test
             //string token = null;
             //int? limit = null;
             //var response = instance.OcListParticipants(channelUrl, apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(InlineResponse20032), response, "response is InlineResponse20032");
+            //Assert.IsInstanceOf(typeof(OcListParticipantsResponse), response, "response is OcListParticipantsResponse");
         }
         
         /// <summary>
@@ -335,7 +335,7 @@ namespace sendbird_platform_sdk.Test
             //string mutedUserId = null;
             //string apiToken = null;
             //var response = instance.OcViewMuteById(channelUrl, mutedUserId, apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20035), response, "response is InlineResponse20035");
+            //Assert.IsInstanceOf(typeof(OcViewMuteByIdResponse), response, "response is OcViewMuteByIdResponse");
         }
         
     }

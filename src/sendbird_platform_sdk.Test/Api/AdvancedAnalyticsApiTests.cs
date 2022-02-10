@@ -72,7 +72,7 @@ namespace sendbird_platform_sdk.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
             //var response = instance.RetrieveAdvancedAnalyticsMetrics(apiToken);
-            //Assert.IsInstanceOf(typeof(InlineResponse20062), response, "response is InlineResponse20062");
+            //Assert.IsInstanceOf(typeof(RetrieveAdvancedAnalyticsMetricsResponse), response, "response is RetrieveAdvancedAnalyticsMetricsResponse");
         }
         
     }

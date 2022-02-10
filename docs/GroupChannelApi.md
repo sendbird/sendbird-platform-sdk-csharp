@@ -117,7 +117,7 @@ No authorization required
 
 ## GcBanUser
 
-> InlineResponse20033BannedList GcBanUser (string channelUrl, string apiToken = null, GcBanUserData gcBanUserData = null)
+> GcBanUserResponse GcBanUser (string channelUrl, string apiToken = null, GcBanUserData gcBanUserData = null)
 
 Ban a user
 
@@ -147,7 +147,7 @@ namespace Example
             try
             {
                 // Ban a user
-                InlineResponse20033BannedList result = apiInstance.GcBanUser(channelUrl, apiToken, gcBanUserData);
+                GcBanUserResponse result = apiInstance.GcBanUser(channelUrl, apiToken, gcBanUserData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20033BannedList**](InlineResponse20033BannedList.md)
+[**GcBanUserResponse**](GcBanUserResponse.md)
 
 ### Authorization
 
@@ -278,7 +278,7 @@ No authorization required
 
 ## GcCheckIfMemberById
 
-> InlineResponse20037 GcCheckIfMemberById (string channelUrl, string userId, string apiToken = null)
+> GcCheckIfMemberByIdResponse GcCheckIfMemberById (string channelUrl, string userId, string apiToken = null)
 
 Check if member
 
@@ -308,7 +308,7 @@ namespace Example
             try
             {
                 // Check if member
-                InlineResponse20037 result = apiInstance.GcCheckIfMemberById(channelUrl, userId, apiToken);
+                GcCheckIfMemberByIdResponse result = apiInstance.GcCheckIfMemberById(channelUrl, userId, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -333,7 +333,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20037**](InlineResponse20037.md)
+[**GcCheckIfMemberByIdResponse**](GcCheckIfMemberByIdResponse.md)
 
 ### Authorization
 
@@ -989,7 +989,7 @@ No authorization required
 
 ## GcListBannedUsers
 
-> InlineResponse20033 GcListBannedUsers (string channelUrl, string apiToken = null, string token = null, int? limit = null)
+> GcListBannedUsersResponse GcListBannedUsers (string channelUrl, string apiToken = null, string token = null, int? limit = null)
 
 List banned users
 
@@ -1020,7 +1020,7 @@ namespace Example
             try
             {
                 // List banned users
-                InlineResponse20033 result = apiInstance.GcListBannedUsers(channelUrl, apiToken, token, limit);
+                GcListBannedUsersResponse result = apiInstance.GcListBannedUsers(channelUrl, apiToken, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1046,7 +1046,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20033**](InlineResponse20033.md)
+[**GcListBannedUsersResponse**](GcListBannedUsersResponse.md)
 
 ### Authorization
 
@@ -1071,7 +1071,7 @@ No authorization required
 
 ## GcListChannels
 
-> InlineResponse20017 GcListChannels (string apiToken = null, string token = null, int? limit = null, string distinctMode = null, string publicMode = null, string superMode = null, int? createdAfter = null, int? createdBefore = null, bool? showEmpty = null, bool? showMember = null, bool? showDeliveryReceipt = null, bool? showReadReceipt = null, bool? showMetadata = null, bool? showFrozen = null, string order = null, string metadataOrderKey = null, string customTypes = null, string customTypeStartswith = null, string channelUrls = null, string name = null, string nameContains = null, string nameStartswith = null, string membersExactlyIn = null, string membersIncludeIn = null, string queryType = null, string membersNickname = null, string membersNicknameContains = null, string metadataKey = null, string metadataValues = null, string metadataValueStartswith = null, string metacounterKey = null, string metacounterValues = null, string metacounterValueGt = null, string metacounterValueGte = null, string metacounterValueLt = null, string metacounterValueLte = null, bool? includeSortedMetaarrayInLastMessage = null, string customType = null, bool? readReceipt = null, bool? member = null, bool? isDistinct = null, string membersIn = null, string userId = null)
+> GcListChannelsResponse GcListChannels (string apiToken = null, string token = null, int? limit = null, string distinctMode = null, string publicMode = null, string superMode = null, int? createdAfter = null, int? createdBefore = null, bool? showEmpty = null, bool? showMember = null, bool? showDeliveryReceipt = null, bool? showReadReceipt = null, bool? showMetadata = null, bool? showFrozen = null, string order = null, string metadataOrderKey = null, string customTypes = null, string customTypeStartswith = null, string channelUrls = null, string name = null, string nameContains = null, string nameStartswith = null, string membersExactlyIn = null, string membersIncludeIn = null, string queryType = null, string membersNickname = null, string membersNicknameContains = null, string metadataKey = null, string metadataValues = null, string metadataValueStartswith = null, string metacounterKey = null, string metacounterValues = null, string metacounterValueGt = null, string metacounterValueGte = null, string metacounterValueLt = null, string metacounterValueLte = null, bool? includeSortedMetaarrayInLastMessage = null, string customType = null, bool? readReceipt = null, bool? member = null, bool? isDistinct = null, string membersIn = null, string userId = null)
 
 List channels
 
@@ -1141,7 +1141,7 @@ namespace Example
             try
             {
                 // List channels
-                InlineResponse20017 result = apiInstance.GcListChannels(apiToken, token, limit, distinctMode, publicMode, superMode, createdAfter, createdBefore, showEmpty, showMember, showDeliveryReceipt, showReadReceipt, showMetadata, showFrozen, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, includeSortedMetaarrayInLastMessage, customType, readReceipt, member, isDistinct, membersIn, userId);
+                GcListChannelsResponse result = apiInstance.GcListChannels(apiToken, token, limit, distinctMode, publicMode, superMode, createdAfter, createdBefore, showEmpty, showMember, showDeliveryReceipt, showReadReceipt, showMetadata, showFrozen, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, includeSortedMetaarrayInLastMessage, customType, readReceipt, member, isDistinct, membersIn, userId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1206,7 +1206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20017**](InlineResponse20017.md)
+[**GcListChannelsResponse**](GcListChannelsResponse.md)
 
 ### Authorization
 
@@ -1231,7 +1231,7 @@ No authorization required
 
 ## GcListMembers
 
-> InlineResponse20036 GcListMembers (string channelUrl, string apiToken = null, string token = null, int? limit = null, bool? showDeliveryReceipt = null, bool? showReadReceipt = null, string order = null, string operatorFilter = null, string memberStateFilter = null, string mutedMemberFilter = null, string nicknameStartswith = null)
+> GcListMembersResponse GcListMembers (string channelUrl, string apiToken = null, string token = null, int? limit = null, bool? showDeliveryReceipt = null, bool? showReadReceipt = null, string order = null, string operatorFilter = null, string memberStateFilter = null, string mutedMemberFilter = null, string nicknameStartswith = null)
 
 List members
 
@@ -1269,7 +1269,7 @@ namespace Example
             try
             {
                 // List members
-                InlineResponse20036 result = apiInstance.GcListMembers(channelUrl, apiToken, token, limit, showDeliveryReceipt, showReadReceipt, order, operatorFilter, memberStateFilter, mutedMemberFilter, nicknameStartswith);
+                GcListMembersResponse result = apiInstance.GcListMembers(channelUrl, apiToken, token, limit, showDeliveryReceipt, showReadReceipt, order, operatorFilter, memberStateFilter, mutedMemberFilter, nicknameStartswith);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1302,7 +1302,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20036**](InlineResponse20036.md)
+[**GcListMembersResponse**](GcListMembersResponse.md)
 
 ### Authorization
 
@@ -1327,7 +1327,7 @@ No authorization required
 
 ## GcListMutedUsers
 
-> InlineResponse20031 GcListMutedUsers (string channelUrl, string apiToken = null, string token = null, int? limit = null)
+> GcListMutedUsersResponse GcListMutedUsers (string channelUrl, string apiToken = null, string token = null, int? limit = null)
 
 List muted users
 
@@ -1358,7 +1358,7 @@ namespace Example
             try
             {
                 // List muted users
-                InlineResponse20031 result = apiInstance.GcListMutedUsers(channelUrl, apiToken, token, limit);
+                GcListMutedUsersResponse result = apiInstance.GcListMutedUsers(channelUrl, apiToken, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1384,7 +1384,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20031**](InlineResponse20031.md)
+[**GcListMutedUsersResponse**](GcListMutedUsersResponse.md)
 
 ### Authorization
 
@@ -1409,7 +1409,7 @@ No authorization required
 
 ## GcListOperators
 
-> InlineResponse20034 GcListOperators (string channelUrl, string apiToken = null, string token = null, int? limit = null)
+> GcListOperatorsResponse GcListOperators (string channelUrl, string apiToken = null, string token = null, int? limit = null)
 
 List operators
 
@@ -1440,7 +1440,7 @@ namespace Example
             try
             {
                 // List operators
-                InlineResponse20034 result = apiInstance.GcListOperators(channelUrl, apiToken, token, limit);
+                GcListOperatorsResponse result = apiInstance.GcListOperators(channelUrl, apiToken, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1466,7 +1466,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20034**](InlineResponse20034.md)
+[**GcListOperatorsResponse**](GcListOperatorsResponse.md)
 
 ### Authorization
 
@@ -1571,7 +1571,7 @@ No authorization required
 
 ## GcRegisterOperators
 
-> InlineResponse20038 GcRegisterOperators (string channelUrl, string apiToken = null, GcRegisterOperatorsData gcRegisterOperatorsData = null)
+> GcRegisterOperatorsResponse GcRegisterOperators (string channelUrl, string apiToken = null, GcRegisterOperatorsData gcRegisterOperatorsData = null)
 
 Register operators
 
@@ -1601,7 +1601,7 @@ namespace Example
             try
             {
                 // Register operators
-                InlineResponse20038 result = apiInstance.GcRegisterOperators(channelUrl, apiToken, gcRegisterOperatorsData);
+                GcRegisterOperatorsResponse result = apiInstance.GcRegisterOperators(channelUrl, apiToken, gcRegisterOperatorsData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1626,7 +1626,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20038**](InlineResponse20038.md)
+[**GcRegisterOperatorsResponse**](GcRegisterOperatorsResponse.md)
 
 ### Authorization
 
@@ -2299,7 +2299,7 @@ No authorization required
 
 ## GcViewMuteById
 
-> InlineResponse20035 GcViewMuteById (string channelUrl, string mutedUserId, string apiToken = null)
+> GcViewMuteByIdResponse GcViewMuteById (string channelUrl, string mutedUserId, string apiToken = null)
 
 View a mute
 
@@ -2329,7 +2329,7 @@ namespace Example
             try
             {
                 // View a mute
-                InlineResponse20035 result = apiInstance.GcViewMuteById(channelUrl, mutedUserId, apiToken);
+                GcViewMuteByIdResponse result = apiInstance.GcViewMuteById(channelUrl, mutedUserId, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2354,7 +2354,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20035**](InlineResponse20035.md)
+[**GcViewMuteByIdResponse**](GcViewMuteByIdResponse.md)
 
 ### Authorization
 

@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 ## ListDataExportsByMessageChannelOrUser
 
-> InlineResponse20063 ListDataExportsByMessageChannelOrUser (string dataType, string apiToken = null, string token = null, int? limit = null)
+> ListDataExportsByMessageChannelOrUserResponse ListDataExportsByMessageChannelOrUser (string dataType, string apiToken = null, string token = null, int? limit = null)
 
 List data exports by message, channel, or user
 
@@ -43,7 +43,7 @@ namespace Example
             try
             {
                 // List data exports by message, channel, or user
-                InlineResponse20063 result = apiInstance.ListDataExportsByMessageChannelOrUser(dataType, apiToken, token, limit);
+                ListDataExportsByMessageChannelOrUserResponse result = apiInstance.ListDataExportsByMessageChannelOrUser(dataType, apiToken, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20063**](InlineResponse20063.md)
+[**ListDataExportsByMessageChannelOrUserResponse**](ListDataExportsByMessageChannelOrUserResponse.md)
 
 ### Authorization
 
@@ -94,7 +94,7 @@ No authorization required
 
 ## RegisterAndScheduleDataExport
 
-> InlineResponse20063ExportedData RegisterAndScheduleDataExport (string dataType, string apiToken = null, RegisterAndScheduleDataExportData registerAndScheduleDataExportData = null)
+> RegisterAndScheduleDataExportResponse RegisterAndScheduleDataExport (string dataType, string apiToken = null, RegisterAndScheduleDataExportData registerAndScheduleDataExportData = null)
 
 Register and schedule a data export
 
@@ -124,7 +124,7 @@ namespace Example
             try
             {
                 // Register and schedule a data export
-                InlineResponse20063ExportedData result = apiInstance.RegisterAndScheduleDataExport(dataType, apiToken, registerAndScheduleDataExportData);
+                RegisterAndScheduleDataExportResponse result = apiInstance.RegisterAndScheduleDataExport(dataType, apiToken, registerAndScheduleDataExportData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -149,7 +149,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20063ExportedData**](InlineResponse20063ExportedData.md)
+[**RegisterAndScheduleDataExportResponse**](RegisterAndScheduleDataExportResponse.md)
 
 ### Authorization
 
@@ -174,7 +174,7 @@ No authorization required
 
 ## ViewDataExportById
 
-> InlineResponse20064 ViewDataExportById (string dataType, string requestId, string apiToken = null)
+> ViewDataExportByIdResponse ViewDataExportById (string dataType, string requestId, string apiToken = null)
 
 View a data export
 
@@ -204,7 +204,7 @@ namespace Example
             try
             {
                 // View a data export
-                InlineResponse20064 result = apiInstance.ViewDataExportById(dataType, requestId, apiToken);
+                ViewDataExportByIdResponse result = apiInstance.ViewDataExportById(dataType, requestId, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -229,7 +229,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20064**](InlineResponse20064.md)
+[**ViewDataExportByIdResponse**](ViewDataExportByIdResponse.md)
 
 ### Authorization
 

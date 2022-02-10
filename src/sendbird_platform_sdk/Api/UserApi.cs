@@ -36,8 +36,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addRegistrationOrDeviceTokenData"> (optional)</param>
-        /// <returns>InlineResponse20025</returns>
-        InlineResponse20025 AddRegistrationOrDeviceToken (string userId, string tokenType, string apiToken = default(string), AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = default(AddRegistrationOrDeviceTokenData));
+        /// <returns>AddRegistrationOrDeviceTokenResponse</returns>
+        AddRegistrationOrDeviceTokenResponse AddRegistrationOrDeviceToken (string userId, string tokenType, string apiToken = default(string), AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = default(AddRegistrationOrDeviceTokenData));
 
         /// <summary>
         /// Add a registration or device token
@@ -50,8 +50,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addRegistrationOrDeviceTokenData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20025</returns>
-        ApiResponse<InlineResponse20025> AddRegistrationOrDeviceTokenWithHttpInfo (string userId, string tokenType, string apiToken = default(string), AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = default(AddRegistrationOrDeviceTokenData));
+        /// <returns>ApiResponse of AddRegistrationOrDeviceTokenResponse</returns>
+        ApiResponse<AddRegistrationOrDeviceTokenResponse> AddRegistrationOrDeviceTokenWithHttpInfo (string userId, string tokenType, string apiToken = default(string), AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = default(AddRegistrationOrDeviceTokenData));
         /// <summary>
         /// Ban from channels with custom channel types
         /// </summary>
@@ -112,8 +112,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="body"> (optional)</param>
-        /// <returns>InlineResponse20029</returns>
-        InlineResponse20029 ChoosePushNotificationContentTemplate (string userId, string apiToken = default(string), Object body = default(Object));
+        /// <returns>ChoosePushNotificationContentTemplateResponse</returns>
+        ChoosePushNotificationContentTemplateResponse ChoosePushNotificationContentTemplate (string userId, string apiToken = default(string), Object body = default(Object));
 
         /// <summary>
         /// Choose a push notification content template
@@ -125,8 +125,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="body"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20029</returns>
-        ApiResponse<InlineResponse20029> ChoosePushNotificationContentTemplateWithHttpInfo (string userId, string apiToken = default(string), Object body = default(Object));
+        /// <returns>ApiResponse of ChoosePushNotificationContentTemplateResponse</returns>
+        ApiResponse<ChoosePushNotificationContentTemplateResponse> ChoosePushNotificationContentTemplateWithHttpInfo (string userId, string apiToken = default(string), Object body = default(Object));
         /// <summary>
         /// Create a user
         /// </summary>
@@ -209,8 +209,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20022</returns>
-        InlineResponse20022 ListBannedChannels (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ListBannedChannelsResponse</returns>
+        ListBannedChannelsResponse ListBannedChannels (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List banned channels
@@ -223,8 +223,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20022</returns>
-        ApiResponse<InlineResponse20022> ListBannedChannelsWithHttpInfo (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ApiResponse of ListBannedChannelsResponse</returns>
+        ApiResponse<ListBannedChannelsResponse> ListBannedChannelsWithHttpInfo (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
         /// <summary>
         /// List blocked users
         /// </summary>
@@ -239,8 +239,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userIds"> (optional)</param>
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
-        /// <returns>InlineResponse20016</returns>
-        InlineResponse20016 ListBlockedUsers (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string));
+        /// <returns>ListBlockedUsersResponse</returns>
+        ListBlockedUsersResponse ListBlockedUsers (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string));
 
         /// <summary>
         /// List blocked users
@@ -256,8 +256,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userIds"> (optional)</param>
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20016</returns>
-        ApiResponse<InlineResponse20016> ListBlockedUsersWithHttpInfo (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string));
+        /// <returns>ApiResponse of ListBlockedUsersResponse</returns>
+        ApiResponse<ListBlockedUsersResponse> ListBlockedUsersWithHttpInfo (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string));
         /// <summary>
         /// List muted channels
         /// </summary>
@@ -269,8 +269,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20023</returns>
-        InlineResponse20023 ListMutedChannels (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ListMutedChannelsResponse</returns>
+        ListMutedChannelsResponse ListMutedChannels (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List muted channels
@@ -283,8 +283,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20023</returns>
-        ApiResponse<InlineResponse20023> ListMutedChannelsWithHttpInfo (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        /// <returns>ApiResponse of ListMutedChannelsResponse</returns>
+        ApiResponse<ListMutedChannelsResponse> ListMutedChannelsWithHttpInfo (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
         /// <summary>
         /// List my group channels
         /// </summary>
@@ -334,8 +334,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metacounterValueLt"> (optional)</param>
         /// <param name="metacounterValueLte"> (optional)</param>
         /// <param name="customType"> (optional)</param>
-        /// <returns>InlineResponse20017</returns>
-        InlineResponse20017 ListMyGroupChannels (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), string hiddenMode = default(string), string memberStateFilter = default(string), string unreadFilter = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showFrozen = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string searchQuery = default(string), string searchFields = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), string customType = default(string));
+        /// <returns>ListMyGroupChannelsResponse</returns>
+        ListMyGroupChannelsResponse ListMyGroupChannels (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), string hiddenMode = default(string), string memberStateFilter = default(string), string unreadFilter = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showFrozen = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string searchQuery = default(string), string searchFields = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), string customType = default(string));
 
         /// <summary>
         /// List my group channels
@@ -386,8 +386,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metacounterValueLt"> (optional)</param>
         /// <param name="metacounterValueLte"> (optional)</param>
         /// <param name="customType"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20017</returns>
-        ApiResponse<InlineResponse20017> ListMyGroupChannelsWithHttpInfo (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), string hiddenMode = default(string), string memberStateFilter = default(string), string unreadFilter = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showFrozen = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string searchQuery = default(string), string searchFields = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), string customType = default(string));
+        /// <returns>ApiResponse of ListMyGroupChannelsResponse</returns>
+        ApiResponse<ListMyGroupChannelsResponse> ListMyGroupChannelsWithHttpInfo (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), string hiddenMode = default(string), string memberStateFilter = default(string), string unreadFilter = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showFrozen = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string searchQuery = default(string), string searchFields = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), string customType = default(string));
         /// <summary>
         /// List registration or device tokens
         /// </summary>
@@ -398,8 +398,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="tokenType"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20024</returns>
-        InlineResponse20024 ListRegistrationOrDeviceTokens (string userId, string tokenType, string apiToken = default(string));
+        /// <returns>ListRegistrationOrDeviceTokensResponse</returns>
+        ListRegistrationOrDeviceTokensResponse ListRegistrationOrDeviceTokens (string userId, string tokenType, string apiToken = default(string));
 
         /// <summary>
         /// List registration or device tokens
@@ -411,8 +411,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="tokenType"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20024</returns>
-        ApiResponse<InlineResponse20024> ListRegistrationOrDeviceTokensWithHttpInfo (string userId, string tokenType, string apiToken = default(string));
+        /// <returns>ApiResponse of ListRegistrationOrDeviceTokensResponse</returns>
+        ApiResponse<ListRegistrationOrDeviceTokensResponse> ListRegistrationOrDeviceTokensWithHttpInfo (string userId, string tokenType, string apiToken = default(string));
         /// <summary>
         /// List users
         /// </summary>
@@ -430,8 +430,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="nicknameStartswith"> (optional)</param>
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
-        /// <returns>InlineResponse20016</returns>
-        InlineResponse20016 ListUsers (string apiToken = default(string), string token = default(string), int? limit = default(int?), string activeMode = default(string), bool? showBot = default(bool?), string userIds = default(string), string nickname = default(string), string nicknameStartswith = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string));
+        /// <returns>ListUsersResponse</returns>
+        ListUsersResponse ListUsers (string apiToken = default(string), string token = default(string), int? limit = default(int?), string activeMode = default(string), bool? showBot = default(bool?), string userIds = default(string), string nickname = default(string), string nicknameStartswith = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string));
 
         /// <summary>
         /// List users
@@ -450,8 +450,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="nicknameStartswith"> (optional)</param>
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20016</returns>
-        ApiResponse<InlineResponse20016> ListUsersWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), string activeMode = default(string), bool? showBot = default(bool?), string userIds = default(string), string nickname = default(string), string nicknameStartswith = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string));
+        /// <returns>ApiResponse of ListUsersResponse</returns>
+        ApiResponse<ListUsersResponse> ListUsersWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), string activeMode = default(string), bool? showBot = default(bool?), string userIds = default(string), string nickname = default(string), string nicknameStartswith = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string));
         /// <summary>
         /// Mark all messages as read
         /// </summary>
@@ -536,8 +536,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20026</returns>
-        InlineResponse20026 RemoveRegistrationOrDeviceToken (string userId, string apiToken = default(string));
+        /// <returns>RemoveRegistrationOrDeviceTokenResponse</returns>
+        RemoveRegistrationOrDeviceTokenResponse RemoveRegistrationOrDeviceToken (string userId, string apiToken = default(string));
 
         /// <summary>
         /// Remove a registration or device token - When unregistering all device tokens
@@ -548,8 +548,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20026</returns>
-        ApiResponse<InlineResponse20026> RemoveRegistrationOrDeviceTokenWithHttpInfo (string userId, string apiToken = default(string));
+        /// <returns>ApiResponse of RemoveRegistrationOrDeviceTokenResponse</returns>
+        ApiResponse<RemoveRegistrationOrDeviceTokenResponse> RemoveRegistrationOrDeviceTokenWithHttpInfo (string userId, string apiToken = default(string));
         /// <summary>
         /// Remove a registration or device token - When unregistering a specific token
         /// </summary>
@@ -561,8 +561,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20026</returns>
-        InlineResponse20026 RemoveRegistrationOrDeviceTokenByToken (string userId, string tokenType, string token, string apiToken = default(string));
+        /// <returns>RemoveRegistrationOrDeviceTokenByTokenResponse</returns>
+        RemoveRegistrationOrDeviceTokenByTokenResponse RemoveRegistrationOrDeviceTokenByToken (string userId, string tokenType, string token, string apiToken = default(string));
 
         /// <summary>
         /// Remove a registration or device token - When unregistering a specific token
@@ -575,8 +575,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20026</returns>
-        ApiResponse<InlineResponse20026> RemoveRegistrationOrDeviceTokenByTokenWithHttpInfo (string userId, string tokenType, string token, string apiToken = default(string));
+        /// <returns>ApiResponse of RemoveRegistrationOrDeviceTokenByTokenResponse</returns>
+        ApiResponse<RemoveRegistrationOrDeviceTokenByTokenResponse> RemoveRegistrationOrDeviceTokenByTokenWithHttpInfo (string userId, string tokenType, string token, string apiToken = default(string));
         /// <summary>
         /// Remove a registration or device token from an owner
         /// </summary>
@@ -587,8 +587,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20027</returns>
-        InlineResponse20027 RemoveRegistrationOrDeviceTokenFromOwnerByToken (string tokenType, string token, string apiToken = default(string));
+        /// <returns>RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse</returns>
+        RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse RemoveRegistrationOrDeviceTokenFromOwnerByToken (string tokenType, string token, string apiToken = default(string));
 
         /// <summary>
         /// Remove a registration or device token from an owner
@@ -600,8 +600,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20027</returns>
-        ApiResponse<InlineResponse20027> RemoveRegistrationOrDeviceTokenFromOwnerByTokenWithHttpInfo (string tokenType, string token, string apiToken = default(string));
+        /// <returns>ApiResponse of RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse</returns>
+        ApiResponse<RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse> RemoveRegistrationOrDeviceTokenFromOwnerByTokenWithHttpInfo (string tokenType, string token, string apiToken = default(string));
         /// <summary>
         /// Reset push preferences
         /// </summary>
@@ -660,8 +660,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateChannelInvitationPreferenceData"> (optional)</param>
-        /// <returns>InlineResponse2005</returns>
-        InlineResponse2005 UpdateChannelInvitationPreference (string userId, string apiToken = default(string), UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = default(UpdateChannelInvitationPreferenceData));
+        /// <returns>UpdateChannelInvitationPreferenceResponse</returns>
+        UpdateChannelInvitationPreferenceResponse UpdateChannelInvitationPreference (string userId, string apiToken = default(string), UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = default(UpdateChannelInvitationPreferenceData));
 
         /// <summary>
         /// Update channel invitation preference
@@ -673,8 +673,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateChannelInvitationPreferenceData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2005</returns>
-        ApiResponse<InlineResponse2005> UpdateChannelInvitationPreferenceWithHttpInfo (string userId, string apiToken = default(string), UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = default(UpdateChannelInvitationPreferenceData));
+        /// <returns>ApiResponse of UpdateChannelInvitationPreferenceResponse</returns>
+        ApiResponse<UpdateChannelInvitationPreferenceResponse> UpdateChannelInvitationPreferenceWithHttpInfo (string userId, string apiToken = default(string), UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = default(UpdateChannelInvitationPreferenceData));
         /// <summary>
         /// Update count preference of a channel
         /// </summary>
@@ -686,8 +686,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateCountPreferenceOfChannelByUrlData"> (optional)</param>
-        /// <returns>InlineResponse20021</returns>
-        InlineResponse20021 UpdateCountPreferenceOfChannelByUrl (string userId, string channelUrl, string apiToken = default(string), UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = default(UpdateCountPreferenceOfChannelByUrlData));
+        /// <returns>UpdateCountPreferenceOfChannelByUrlResponse</returns>
+        UpdateCountPreferenceOfChannelByUrlResponse UpdateCountPreferenceOfChannelByUrl (string userId, string channelUrl, string apiToken = default(string), UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = default(UpdateCountPreferenceOfChannelByUrlData));
 
         /// <summary>
         /// Update count preference of a channel
@@ -700,8 +700,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateCountPreferenceOfChannelByUrlData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20021</returns>
-        ApiResponse<InlineResponse20021> UpdateCountPreferenceOfChannelByUrlWithHttpInfo (string userId, string channelUrl, string apiToken = default(string), UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = default(UpdateCountPreferenceOfChannelByUrlData));
+        /// <returns>ApiResponse of UpdateCountPreferenceOfChannelByUrlResponse</returns>
+        ApiResponse<UpdateCountPreferenceOfChannelByUrlResponse> UpdateCountPreferenceOfChannelByUrlWithHttpInfo (string userId, string channelUrl, string apiToken = default(string), UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = default(UpdateCountPreferenceOfChannelByUrlData));
         /// <summary>
         /// Update push preferences
         /// </summary>
@@ -712,8 +712,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushPreferencesData"> (optional)</param>
-        /// <returns>InlineResponse20028</returns>
-        InlineResponse20028 UpdatePushPreferences (string userId, string apiToken = default(string), UpdatePushPreferencesData updatePushPreferencesData = default(UpdatePushPreferencesData));
+        /// <returns>UpdatePushPreferencesResponse</returns>
+        UpdatePushPreferencesResponse UpdatePushPreferences (string userId, string apiToken = default(string), UpdatePushPreferencesData updatePushPreferencesData = default(UpdatePushPreferencesData));
 
         /// <summary>
         /// Update push preferences
@@ -725,8 +725,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushPreferencesData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20028</returns>
-        ApiResponse<InlineResponse20028> UpdatePushPreferencesWithHttpInfo (string userId, string apiToken = default(string), UpdatePushPreferencesData updatePushPreferencesData = default(UpdatePushPreferencesData));
+        /// <returns>ApiResponse of UpdatePushPreferencesResponse</returns>
+        ApiResponse<UpdatePushPreferencesResponse> UpdatePushPreferencesWithHttpInfo (string userId, string apiToken = default(string), UpdatePushPreferencesData updatePushPreferencesData = default(UpdatePushPreferencesData));
         /// <summary>
         /// Update push preferences for a channel
         /// </summary>
@@ -738,8 +738,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushPreferencesForChannelByUrlData"> (optional)</param>
-        /// <returns>InlineResponse20028</returns>
-        InlineResponse20028 UpdatePushPreferencesForChannelByUrl (string userId, string channelUrl, string apiToken = default(string), UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = default(UpdatePushPreferencesForChannelByUrlData));
+        /// <returns>UpdatePushPreferencesForChannelByUrlResponse</returns>
+        UpdatePushPreferencesForChannelByUrlResponse UpdatePushPreferencesForChannelByUrl (string userId, string channelUrl, string apiToken = default(string), UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = default(UpdatePushPreferencesForChannelByUrlData));
 
         /// <summary>
         /// Update push preferences for a channel
@@ -752,8 +752,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushPreferencesForChannelByUrlData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20028</returns>
-        ApiResponse<InlineResponse20028> UpdatePushPreferencesForChannelByUrlWithHttpInfo (string userId, string channelUrl, string apiToken = default(string), UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = default(UpdatePushPreferencesForChannelByUrlData));
+        /// <returns>ApiResponse of UpdatePushPreferencesForChannelByUrlResponse</returns>
+        ApiResponse<UpdatePushPreferencesForChannelByUrlResponse> UpdatePushPreferencesForChannelByUrlWithHttpInfo (string userId, string channelUrl, string apiToken = default(string), UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = default(UpdatePushPreferencesForChannelByUrlData));
         /// <summary>
         /// Update a user
         /// </summary>
@@ -788,8 +788,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse2005</returns>
-        InlineResponse2005 ViewChannelInvitationPreference (string userId, string apiToken = default(string));
+        /// <returns>ViewChannelInvitationPreferenceResponse</returns>
+        ViewChannelInvitationPreferenceResponse ViewChannelInvitationPreference (string userId, string apiToken = default(string));
 
         /// <summary>
         /// View channel invitation preference
@@ -800,8 +800,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2005</returns>
-        ApiResponse<InlineResponse2005> ViewChannelInvitationPreferenceWithHttpInfo (string userId, string apiToken = default(string));
+        /// <returns>ApiResponse of ViewChannelInvitationPreferenceResponse</returns>
+        ApiResponse<ViewChannelInvitationPreferenceResponse> ViewChannelInvitationPreferenceWithHttpInfo (string userId, string apiToken = default(string));
         /// <summary>
         /// View count preference of a channel
         /// </summary>
@@ -812,8 +812,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20021</returns>
-        InlineResponse20021 ViewCountPreferenceOfChannelByUrl (string userId, string channelUrl, string apiToken = default(string));
+        /// <returns>ViewCountPreferenceOfChannelByUrlResponse</returns>
+        ViewCountPreferenceOfChannelByUrlResponse ViewCountPreferenceOfChannelByUrl (string userId, string channelUrl, string apiToken = default(string));
 
         /// <summary>
         /// View count preference of a channel
@@ -825,8 +825,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20021</returns>
-        ApiResponse<InlineResponse20021> ViewCountPreferenceOfChannelByUrlWithHttpInfo (string userId, string channelUrl, string apiToken = default(string));
+        /// <returns>ApiResponse of ViewCountPreferenceOfChannelByUrlResponse</returns>
+        ApiResponse<ViewCountPreferenceOfChannelByUrlResponse> ViewCountPreferenceOfChannelByUrlWithHttpInfo (string userId, string channelUrl, string apiToken = default(string));
         /// <summary>
         /// View number of channels by join status
         /// </summary>
@@ -837,8 +837,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="state"> (optional)</param>
-        /// <returns>InlineResponse20020</returns>
-        InlineResponse20020 ViewNumberOfChannelsByJoinStatus (string userId, string apiToken = default(string), string state = default(string));
+        /// <returns>ViewNumberOfChannelsByJoinStatusResponse</returns>
+        ViewNumberOfChannelsByJoinStatusResponse ViewNumberOfChannelsByJoinStatus (string userId, string apiToken = default(string), string state = default(string));
 
         /// <summary>
         /// View number of channels by join status
@@ -850,8 +850,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="state"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20020</returns>
-        ApiResponse<InlineResponse20020> ViewNumberOfChannelsByJoinStatusWithHttpInfo (string userId, string apiToken = default(string), string state = default(string));
+        /// <returns>ApiResponse of ViewNumberOfChannelsByJoinStatusResponse</returns>
+        ApiResponse<ViewNumberOfChannelsByJoinStatusResponse> ViewNumberOfChannelsByJoinStatusWithHttpInfo (string userId, string apiToken = default(string), string state = default(string));
         /// <summary>
         /// View number of channels with unread messages
         /// </summary>
@@ -863,8 +863,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="customTypes"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
-        /// <returns>InlineResponse20018</returns>
-        InlineResponse20018 ViewNumberOfChannelsWithUnreadMessages (string userId, string apiToken = default(string), List<string> customTypes = default(List<string>), string superMode = default(string));
+        /// <returns>ViewNumberOfChannelsWithUnreadMessagesResponse</returns>
+        ViewNumberOfChannelsWithUnreadMessagesResponse ViewNumberOfChannelsWithUnreadMessages (string userId, string apiToken = default(string), List<string> customTypes = default(List<string>), string superMode = default(string));
 
         /// <summary>
         /// View number of channels with unread messages
@@ -877,8 +877,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="customTypes"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20018</returns>
-        ApiResponse<InlineResponse20018> ViewNumberOfChannelsWithUnreadMessagesWithHttpInfo (string userId, string apiToken = default(string), List<string> customTypes = default(List<string>), string superMode = default(string));
+        /// <returns>ApiResponse of ViewNumberOfChannelsWithUnreadMessagesResponse</returns>
+        ApiResponse<ViewNumberOfChannelsWithUnreadMessagesResponse> ViewNumberOfChannelsWithUnreadMessagesWithHttpInfo (string userId, string apiToken = default(string), List<string> customTypes = default(List<string>), string superMode = default(string));
         /// <summary>
         /// View number of unread items
         /// </summary>
@@ -890,8 +890,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <param name="itemKeys"> (optional)</param>
-        /// <returns>InlineResponse20019</returns>
-        InlineResponse20019 ViewNumberOfUnreadItems (string userId, string apiToken = default(string), string customType = default(string), string itemKeys = default(string));
+        /// <returns>ViewNumberOfUnreadItemsResponse</returns>
+        ViewNumberOfUnreadItemsResponse ViewNumberOfUnreadItems (string userId, string apiToken = default(string), string customType = default(string), string itemKeys = default(string));
 
         /// <summary>
         /// View number of unread items
@@ -904,8 +904,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <param name="itemKeys"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20019</returns>
-        ApiResponse<InlineResponse20019> ViewNumberOfUnreadItemsWithHttpInfo (string userId, string apiToken = default(string), string customType = default(string), string itemKeys = default(string));
+        /// <returns>ApiResponse of ViewNumberOfUnreadItemsResponse</returns>
+        ApiResponse<ViewNumberOfUnreadItemsResponse> ViewNumberOfUnreadItemsWithHttpInfo (string userId, string apiToken = default(string), string customType = default(string), string itemKeys = default(string));
         /// <summary>
         /// View number of unread messages
         /// </summary>
@@ -917,8 +917,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="customTypes"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
-        /// <returns>InlineResponse20018</returns>
-        InlineResponse20018 ViewNumberOfUnreadMessages (string userId, string apiToken = default(string), string customTypes = default(string), string superMode = default(string));
+        /// <returns>ViewNumberOfUnreadMessagesResponse</returns>
+        ViewNumberOfUnreadMessagesResponse ViewNumberOfUnreadMessages (string userId, string apiToken = default(string), string customTypes = default(string), string superMode = default(string));
 
         /// <summary>
         /// View number of unread messages
@@ -931,8 +931,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="customTypes"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20018</returns>
-        ApiResponse<InlineResponse20018> ViewNumberOfUnreadMessagesWithHttpInfo (string userId, string apiToken = default(string), string customTypes = default(string), string superMode = default(string));
+        /// <returns>ApiResponse of ViewNumberOfUnreadMessagesResponse</returns>
+        ApiResponse<ViewNumberOfUnreadMessagesResponse> ViewNumberOfUnreadMessagesWithHttpInfo (string userId, string apiToken = default(string), string customTypes = default(string), string superMode = default(string));
         /// <summary>
         /// View push preferences
         /// </summary>
@@ -942,8 +942,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20028</returns>
-        InlineResponse20028 ViewPushPreferences (string userId, string apiToken = default(string));
+        /// <returns>ViewPushPreferencesResponse</returns>
+        ViewPushPreferencesResponse ViewPushPreferences (string userId, string apiToken = default(string));
 
         /// <summary>
         /// View push preferences
@@ -954,8 +954,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20028</returns>
-        ApiResponse<InlineResponse20028> ViewPushPreferencesWithHttpInfo (string userId, string apiToken = default(string));
+        /// <returns>ApiResponse of ViewPushPreferencesResponse</returns>
+        ApiResponse<ViewPushPreferencesResponse> ViewPushPreferencesWithHttpInfo (string userId, string apiToken = default(string));
         /// <summary>
         /// View push preferences for a channel
         /// </summary>
@@ -966,8 +966,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20028</returns>
-        InlineResponse20028 ViewPushPreferencesForChannelByUrl (string userId, string channelUrl, string apiToken = default(string));
+        /// <returns>ViewPushPreferencesForChannelByUrlResponse</returns>
+        ViewPushPreferencesForChannelByUrlResponse ViewPushPreferencesForChannelByUrl (string userId, string channelUrl, string apiToken = default(string));
 
         /// <summary>
         /// View push preferences for a channel
@@ -979,8 +979,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20028</returns>
-        ApiResponse<InlineResponse20028> ViewPushPreferencesForChannelByUrlWithHttpInfo (string userId, string channelUrl, string apiToken = default(string));
+        /// <returns>ApiResponse of ViewPushPreferencesForChannelByUrlResponse</returns>
+        ApiResponse<ViewPushPreferencesForChannelByUrlResponse> ViewPushPreferencesForChannelByUrlWithHttpInfo (string userId, string channelUrl, string apiToken = default(string));
         /// <summary>
         /// View a user
         /// </summary>
@@ -1020,8 +1020,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20027</returns>
-        InlineResponse20027 ViewWhoOwnsRegistrationOrDeviceTokenByToken (string tokenType, string token, string apiToken = default(string));
+        /// <returns>ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse</returns>
+        ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse ViewWhoOwnsRegistrationOrDeviceTokenByToken (string tokenType, string token, string apiToken = default(string));
 
         /// <summary>
         /// View who owns a registration or device token
@@ -1033,8 +1033,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20027</returns>
-        ApiResponse<InlineResponse20027> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo (string tokenType, string token, string apiToken = default(string));
+        /// <returns>ApiResponse of ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse</returns>
+        ApiResponse<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo (string tokenType, string token, string apiToken = default(string));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -1049,8 +1049,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addRegistrationOrDeviceTokenData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20025</returns>
-        System.Threading.Tasks.Task<InlineResponse20025> AddRegistrationOrDeviceTokenAsync (string userId, string tokenType, string apiToken = default(string), AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = default(AddRegistrationOrDeviceTokenData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of AddRegistrationOrDeviceTokenResponse</returns>
+        System.Threading.Tasks.Task<AddRegistrationOrDeviceTokenResponse> AddRegistrationOrDeviceTokenAsync (string userId, string tokenType, string apiToken = default(string), AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = default(AddRegistrationOrDeviceTokenData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Add a registration or device token
@@ -1064,8 +1064,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addRegistrationOrDeviceTokenData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20025)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20025>> AddRegistrationOrDeviceTokenWithHttpInfoAsync (string userId, string tokenType, string apiToken = default(string), AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = default(AddRegistrationOrDeviceTokenData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (AddRegistrationOrDeviceTokenResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<AddRegistrationOrDeviceTokenResponse>> AddRegistrationOrDeviceTokenWithHttpInfoAsync (string userId, string tokenType, string apiToken = default(string), AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = default(AddRegistrationOrDeviceTokenData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Ban from channels with custom channel types
         /// </summary>
@@ -1131,8 +1131,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20029</returns>
-        System.Threading.Tasks.Task<InlineResponse20029> ChoosePushNotificationContentTemplateAsync (string userId, string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ChoosePushNotificationContentTemplateResponse</returns>
+        System.Threading.Tasks.Task<ChoosePushNotificationContentTemplateResponse> ChoosePushNotificationContentTemplateAsync (string userId, string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Choose a push notification content template
@@ -1145,8 +1145,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20029)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20029>> ChoosePushNotificationContentTemplateWithHttpInfoAsync (string userId, string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ChoosePushNotificationContentTemplateResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ChoosePushNotificationContentTemplateResponse>> ChoosePushNotificationContentTemplateWithHttpInfoAsync (string userId, string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Create a user
         /// </summary>
@@ -1236,8 +1236,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20022</returns>
-        System.Threading.Tasks.Task<InlineResponse20022> ListBannedChannelsAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListBannedChannelsResponse</returns>
+        System.Threading.Tasks.Task<ListBannedChannelsResponse> ListBannedChannelsAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List banned channels
@@ -1251,8 +1251,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20022)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20022>> ListBannedChannelsWithHttpInfoAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListBannedChannelsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListBannedChannelsResponse>> ListBannedChannelsWithHttpInfoAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List blocked users
         /// </summary>
@@ -1268,8 +1268,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20016</returns>
-        System.Threading.Tasks.Task<InlineResponse20016> ListBlockedUsersAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListBlockedUsersResponse</returns>
+        System.Threading.Tasks.Task<ListBlockedUsersResponse> ListBlockedUsersAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List blocked users
@@ -1286,8 +1286,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20016)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20016>> ListBlockedUsersWithHttpInfoAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListBlockedUsersResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListBlockedUsersResponse>> ListBlockedUsersWithHttpInfoAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List muted channels
         /// </summary>
@@ -1300,8 +1300,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20023</returns>
-        System.Threading.Tasks.Task<InlineResponse20023> ListMutedChannelsAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListMutedChannelsResponse</returns>
+        System.Threading.Tasks.Task<ListMutedChannelsResponse> ListMutedChannelsAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List muted channels
@@ -1315,8 +1315,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20023)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20023>> ListMutedChannelsWithHttpInfoAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListMutedChannelsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListMutedChannelsResponse>> ListMutedChannelsWithHttpInfoAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List my group channels
         /// </summary>
@@ -1367,8 +1367,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metacounterValueLte"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20017</returns>
-        System.Threading.Tasks.Task<InlineResponse20017> ListMyGroupChannelsAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), string hiddenMode = default(string), string memberStateFilter = default(string), string unreadFilter = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showFrozen = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string searchQuery = default(string), string searchFields = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListMyGroupChannelsResponse</returns>
+        System.Threading.Tasks.Task<ListMyGroupChannelsResponse> ListMyGroupChannelsAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), string hiddenMode = default(string), string memberStateFilter = default(string), string unreadFilter = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showFrozen = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string searchQuery = default(string), string searchFields = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List my group channels
@@ -1420,8 +1420,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metacounterValueLte"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20017)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20017>> ListMyGroupChannelsWithHttpInfoAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), string hiddenMode = default(string), string memberStateFilter = default(string), string unreadFilter = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showFrozen = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string searchQuery = default(string), string searchFields = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListMyGroupChannelsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListMyGroupChannelsResponse>> ListMyGroupChannelsWithHttpInfoAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), string hiddenMode = default(string), string memberStateFilter = default(string), string unreadFilter = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showFrozen = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string searchQuery = default(string), string searchFields = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List registration or device tokens
         /// </summary>
@@ -1433,8 +1433,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20024</returns>
-        System.Threading.Tasks.Task<InlineResponse20024> ListRegistrationOrDeviceTokensAsync (string userId, string tokenType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListRegistrationOrDeviceTokensResponse</returns>
+        System.Threading.Tasks.Task<ListRegistrationOrDeviceTokensResponse> ListRegistrationOrDeviceTokensAsync (string userId, string tokenType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List registration or device tokens
@@ -1447,8 +1447,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20024)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20024>> ListRegistrationOrDeviceTokensWithHttpInfoAsync (string userId, string tokenType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListRegistrationOrDeviceTokensResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListRegistrationOrDeviceTokensResponse>> ListRegistrationOrDeviceTokensWithHttpInfoAsync (string userId, string tokenType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List users
         /// </summary>
@@ -1467,8 +1467,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20016</returns>
-        System.Threading.Tasks.Task<InlineResponse20016> ListUsersAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string activeMode = default(string), bool? showBot = default(bool?), string userIds = default(string), string nickname = default(string), string nicknameStartswith = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListUsersResponse</returns>
+        System.Threading.Tasks.Task<ListUsersResponse> ListUsersAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string activeMode = default(string), bool? showBot = default(bool?), string userIds = default(string), string nickname = default(string), string nicknameStartswith = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List users
@@ -1488,8 +1488,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20016)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20016>> ListUsersWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string activeMode = default(string), bool? showBot = default(bool?), string userIds = default(string), string nickname = default(string), string nicknameStartswith = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListUsersResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListUsersResponse>> ListUsersWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string activeMode = default(string), bool? showBot = default(bool?), string userIds = default(string), string nickname = default(string), string nicknameStartswith = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Mark all messages as read
         /// </summary>
@@ -1581,8 +1581,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20026</returns>
-        System.Threading.Tasks.Task<InlineResponse20026> RemoveRegistrationOrDeviceTokenAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of RemoveRegistrationOrDeviceTokenResponse</returns>
+        System.Threading.Tasks.Task<RemoveRegistrationOrDeviceTokenResponse> RemoveRegistrationOrDeviceTokenAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Remove a registration or device token - When unregistering all device tokens
@@ -1594,8 +1594,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20026)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20026>> RemoveRegistrationOrDeviceTokenWithHttpInfoAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (RemoveRegistrationOrDeviceTokenResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<RemoveRegistrationOrDeviceTokenResponse>> RemoveRegistrationOrDeviceTokenWithHttpInfoAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Remove a registration or device token - When unregistering a specific token
         /// </summary>
@@ -1608,8 +1608,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20026</returns>
-        System.Threading.Tasks.Task<InlineResponse20026> RemoveRegistrationOrDeviceTokenByTokenAsync (string userId, string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of RemoveRegistrationOrDeviceTokenByTokenResponse</returns>
+        System.Threading.Tasks.Task<RemoveRegistrationOrDeviceTokenByTokenResponse> RemoveRegistrationOrDeviceTokenByTokenAsync (string userId, string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Remove a registration or device token - When unregistering a specific token
@@ -1623,8 +1623,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20026)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20026>> RemoveRegistrationOrDeviceTokenByTokenWithHttpInfoAsync (string userId, string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (RemoveRegistrationOrDeviceTokenByTokenResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<RemoveRegistrationOrDeviceTokenByTokenResponse>> RemoveRegistrationOrDeviceTokenByTokenWithHttpInfoAsync (string userId, string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Remove a registration or device token from an owner
         /// </summary>
@@ -1636,8 +1636,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20027</returns>
-        System.Threading.Tasks.Task<InlineResponse20027> RemoveRegistrationOrDeviceTokenFromOwnerByTokenAsync (string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse</returns>
+        System.Threading.Tasks.Task<RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse> RemoveRegistrationOrDeviceTokenFromOwnerByTokenAsync (string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Remove a registration or device token from an owner
@@ -1650,8 +1650,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20027)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20027>> RemoveRegistrationOrDeviceTokenFromOwnerByTokenWithHttpInfoAsync (string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse>> RemoveRegistrationOrDeviceTokenFromOwnerByTokenWithHttpInfoAsync (string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Reset push preferences
         /// </summary>
@@ -1715,8 +1715,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateChannelInvitationPreferenceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2005</returns>
-        System.Threading.Tasks.Task<InlineResponse2005> UpdateChannelInvitationPreferenceAsync (string userId, string apiToken = default(string), UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = default(UpdateChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of UpdateChannelInvitationPreferenceResponse</returns>
+        System.Threading.Tasks.Task<UpdateChannelInvitationPreferenceResponse> UpdateChannelInvitationPreferenceAsync (string userId, string apiToken = default(string), UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = default(UpdateChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update channel invitation preference
@@ -1729,8 +1729,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateChannelInvitationPreferenceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2005)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2005>> UpdateChannelInvitationPreferenceWithHttpInfoAsync (string userId, string apiToken = default(string), UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = default(UpdateChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (UpdateChannelInvitationPreferenceResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UpdateChannelInvitationPreferenceResponse>> UpdateChannelInvitationPreferenceWithHttpInfoAsync (string userId, string apiToken = default(string), UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = default(UpdateChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update count preference of a channel
         /// </summary>
@@ -1743,8 +1743,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateCountPreferenceOfChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20021</returns>
-        System.Threading.Tasks.Task<InlineResponse20021> UpdateCountPreferenceOfChannelByUrlAsync (string userId, string channelUrl, string apiToken = default(string), UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = default(UpdateCountPreferenceOfChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of UpdateCountPreferenceOfChannelByUrlResponse</returns>
+        System.Threading.Tasks.Task<UpdateCountPreferenceOfChannelByUrlResponse> UpdateCountPreferenceOfChannelByUrlAsync (string userId, string channelUrl, string apiToken = default(string), UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = default(UpdateCountPreferenceOfChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update count preference of a channel
@@ -1758,8 +1758,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateCountPreferenceOfChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20021)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20021>> UpdateCountPreferenceOfChannelByUrlWithHttpInfoAsync (string userId, string channelUrl, string apiToken = default(string), UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = default(UpdateCountPreferenceOfChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (UpdateCountPreferenceOfChannelByUrlResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UpdateCountPreferenceOfChannelByUrlResponse>> UpdateCountPreferenceOfChannelByUrlWithHttpInfoAsync (string userId, string channelUrl, string apiToken = default(string), UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = default(UpdateCountPreferenceOfChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update push preferences
         /// </summary>
@@ -1771,8 +1771,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushPreferencesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20028</returns>
-        System.Threading.Tasks.Task<InlineResponse20028> UpdatePushPreferencesAsync (string userId, string apiToken = default(string), UpdatePushPreferencesData updatePushPreferencesData = default(UpdatePushPreferencesData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of UpdatePushPreferencesResponse</returns>
+        System.Threading.Tasks.Task<UpdatePushPreferencesResponse> UpdatePushPreferencesAsync (string userId, string apiToken = default(string), UpdatePushPreferencesData updatePushPreferencesData = default(UpdatePushPreferencesData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update push preferences
@@ -1785,8 +1785,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushPreferencesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20028)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20028>> UpdatePushPreferencesWithHttpInfoAsync (string userId, string apiToken = default(string), UpdatePushPreferencesData updatePushPreferencesData = default(UpdatePushPreferencesData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (UpdatePushPreferencesResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UpdatePushPreferencesResponse>> UpdatePushPreferencesWithHttpInfoAsync (string userId, string apiToken = default(string), UpdatePushPreferencesData updatePushPreferencesData = default(UpdatePushPreferencesData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update push preferences for a channel
         /// </summary>
@@ -1799,8 +1799,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushPreferencesForChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20028</returns>
-        System.Threading.Tasks.Task<InlineResponse20028> UpdatePushPreferencesForChannelByUrlAsync (string userId, string channelUrl, string apiToken = default(string), UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = default(UpdatePushPreferencesForChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of UpdatePushPreferencesForChannelByUrlResponse</returns>
+        System.Threading.Tasks.Task<UpdatePushPreferencesForChannelByUrlResponse> UpdatePushPreferencesForChannelByUrlAsync (string userId, string channelUrl, string apiToken = default(string), UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = default(UpdatePushPreferencesForChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update push preferences for a channel
@@ -1814,8 +1814,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushPreferencesForChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20028)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20028>> UpdatePushPreferencesForChannelByUrlWithHttpInfoAsync (string userId, string channelUrl, string apiToken = default(string), UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = default(UpdatePushPreferencesForChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (UpdatePushPreferencesForChannelByUrlResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UpdatePushPreferencesForChannelByUrlResponse>> UpdatePushPreferencesForChannelByUrlWithHttpInfoAsync (string userId, string channelUrl, string apiToken = default(string), UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = default(UpdatePushPreferencesForChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update a user
         /// </summary>
@@ -1853,8 +1853,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2005</returns>
-        System.Threading.Tasks.Task<InlineResponse2005> ViewChannelInvitationPreferenceAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewChannelInvitationPreferenceResponse</returns>
+        System.Threading.Tasks.Task<ViewChannelInvitationPreferenceResponse> ViewChannelInvitationPreferenceAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View channel invitation preference
@@ -1866,8 +1866,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2005)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2005>> ViewChannelInvitationPreferenceWithHttpInfoAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewChannelInvitationPreferenceResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewChannelInvitationPreferenceResponse>> ViewChannelInvitationPreferenceWithHttpInfoAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View count preference of a channel
         /// </summary>
@@ -1879,8 +1879,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20021</returns>
-        System.Threading.Tasks.Task<InlineResponse20021> ViewCountPreferenceOfChannelByUrlAsync (string userId, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewCountPreferenceOfChannelByUrlResponse</returns>
+        System.Threading.Tasks.Task<ViewCountPreferenceOfChannelByUrlResponse> ViewCountPreferenceOfChannelByUrlAsync (string userId, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View count preference of a channel
@@ -1893,8 +1893,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20021)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20021>> ViewCountPreferenceOfChannelByUrlWithHttpInfoAsync (string userId, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewCountPreferenceOfChannelByUrlResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewCountPreferenceOfChannelByUrlResponse>> ViewCountPreferenceOfChannelByUrlWithHttpInfoAsync (string userId, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View number of channels by join status
         /// </summary>
@@ -1906,8 +1906,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="state"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20020</returns>
-        System.Threading.Tasks.Task<InlineResponse20020> ViewNumberOfChannelsByJoinStatusAsync (string userId, string apiToken = default(string), string state = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewNumberOfChannelsByJoinStatusResponse</returns>
+        System.Threading.Tasks.Task<ViewNumberOfChannelsByJoinStatusResponse> ViewNumberOfChannelsByJoinStatusAsync (string userId, string apiToken = default(string), string state = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View number of channels by join status
@@ -1920,8 +1920,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="state"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20020)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20020>> ViewNumberOfChannelsByJoinStatusWithHttpInfoAsync (string userId, string apiToken = default(string), string state = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewNumberOfChannelsByJoinStatusResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfChannelsByJoinStatusResponse>> ViewNumberOfChannelsByJoinStatusWithHttpInfoAsync (string userId, string apiToken = default(string), string state = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View number of channels with unread messages
         /// </summary>
@@ -1934,8 +1934,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customTypes"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20018</returns>
-        System.Threading.Tasks.Task<InlineResponse20018> ViewNumberOfChannelsWithUnreadMessagesAsync (string userId, string apiToken = default(string), List<string> customTypes = default(List<string>), string superMode = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewNumberOfChannelsWithUnreadMessagesResponse</returns>
+        System.Threading.Tasks.Task<ViewNumberOfChannelsWithUnreadMessagesResponse> ViewNumberOfChannelsWithUnreadMessagesAsync (string userId, string apiToken = default(string), List<string> customTypes = default(List<string>), string superMode = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View number of channels with unread messages
@@ -1949,8 +1949,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customTypes"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20018)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20018>> ViewNumberOfChannelsWithUnreadMessagesWithHttpInfoAsync (string userId, string apiToken = default(string), List<string> customTypes = default(List<string>), string superMode = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewNumberOfChannelsWithUnreadMessagesResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfChannelsWithUnreadMessagesResponse>> ViewNumberOfChannelsWithUnreadMessagesWithHttpInfoAsync (string userId, string apiToken = default(string), List<string> customTypes = default(List<string>), string superMode = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View number of unread items
         /// </summary>
@@ -1963,8 +1963,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customType"> (optional)</param>
         /// <param name="itemKeys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20019</returns>
-        System.Threading.Tasks.Task<InlineResponse20019> ViewNumberOfUnreadItemsAsync (string userId, string apiToken = default(string), string customType = default(string), string itemKeys = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewNumberOfUnreadItemsResponse</returns>
+        System.Threading.Tasks.Task<ViewNumberOfUnreadItemsResponse> ViewNumberOfUnreadItemsAsync (string userId, string apiToken = default(string), string customType = default(string), string itemKeys = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View number of unread items
@@ -1978,8 +1978,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customType"> (optional)</param>
         /// <param name="itemKeys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20019)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20019>> ViewNumberOfUnreadItemsWithHttpInfoAsync (string userId, string apiToken = default(string), string customType = default(string), string itemKeys = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewNumberOfUnreadItemsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfUnreadItemsResponse>> ViewNumberOfUnreadItemsWithHttpInfoAsync (string userId, string apiToken = default(string), string customType = default(string), string itemKeys = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View number of unread messages
         /// </summary>
@@ -1992,8 +1992,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customTypes"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20018</returns>
-        System.Threading.Tasks.Task<InlineResponse20018> ViewNumberOfUnreadMessagesAsync (string userId, string apiToken = default(string), string customTypes = default(string), string superMode = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewNumberOfUnreadMessagesResponse</returns>
+        System.Threading.Tasks.Task<ViewNumberOfUnreadMessagesResponse> ViewNumberOfUnreadMessagesAsync (string userId, string apiToken = default(string), string customTypes = default(string), string superMode = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View number of unread messages
@@ -2007,8 +2007,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customTypes"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20018)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20018>> ViewNumberOfUnreadMessagesWithHttpInfoAsync (string userId, string apiToken = default(string), string customTypes = default(string), string superMode = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewNumberOfUnreadMessagesResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfUnreadMessagesResponse>> ViewNumberOfUnreadMessagesWithHttpInfoAsync (string userId, string apiToken = default(string), string customTypes = default(string), string superMode = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View push preferences
         /// </summary>
@@ -2019,8 +2019,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20028</returns>
-        System.Threading.Tasks.Task<InlineResponse20028> ViewPushPreferencesAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewPushPreferencesResponse</returns>
+        System.Threading.Tasks.Task<ViewPushPreferencesResponse> ViewPushPreferencesAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View push preferences
@@ -2032,8 +2032,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20028)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20028>> ViewPushPreferencesWithHttpInfoAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewPushPreferencesResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewPushPreferencesResponse>> ViewPushPreferencesWithHttpInfoAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View push preferences for a channel
         /// </summary>
@@ -2045,8 +2045,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20028</returns>
-        System.Threading.Tasks.Task<InlineResponse20028> ViewPushPreferencesForChannelByUrlAsync (string userId, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewPushPreferencesForChannelByUrlResponse</returns>
+        System.Threading.Tasks.Task<ViewPushPreferencesForChannelByUrlResponse> ViewPushPreferencesForChannelByUrlAsync (string userId, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View push preferences for a channel
@@ -2059,8 +2059,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20028)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20028>> ViewPushPreferencesForChannelByUrlWithHttpInfoAsync (string userId, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewPushPreferencesForChannelByUrlResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewPushPreferencesForChannelByUrlResponse>> ViewPushPreferencesForChannelByUrlWithHttpInfoAsync (string userId, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a user
         /// </summary>
@@ -2103,8 +2103,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20027</returns>
-        System.Threading.Tasks.Task<InlineResponse20027> ViewWhoOwnsRegistrationOrDeviceTokenByTokenAsync (string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse</returns>
+        System.Threading.Tasks.Task<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse> ViewWhoOwnsRegistrationOrDeviceTokenByTokenAsync (string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View who owns a registration or device token
@@ -2117,8 +2117,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20027)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20027>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync (string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync (string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -2238,10 +2238,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addRegistrationOrDeviceTokenData"> (optional)</param>
-        /// <returns>InlineResponse20025</returns>
-        public InlineResponse20025 AddRegistrationOrDeviceToken (string userId, string tokenType, string apiToken = default(string), AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = default(AddRegistrationOrDeviceTokenData))
+        /// <returns>AddRegistrationOrDeviceTokenResponse</returns>
+        public AddRegistrationOrDeviceTokenResponse AddRegistrationOrDeviceToken (string userId, string tokenType, string apiToken = default(string), AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = default(AddRegistrationOrDeviceTokenData))
         {
-             ApiResponse<InlineResponse20025> localVarResponse = AddRegistrationOrDeviceTokenWithHttpInfo(userId, tokenType, apiToken, addRegistrationOrDeviceTokenData);
+             ApiResponse<AddRegistrationOrDeviceTokenResponse> localVarResponse = AddRegistrationOrDeviceTokenWithHttpInfo(userId, tokenType, apiToken, addRegistrationOrDeviceTokenData);
              return localVarResponse.Data;
         }
 
@@ -2253,8 +2253,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addRegistrationOrDeviceTokenData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20025</returns>
-        public ApiResponse<InlineResponse20025> AddRegistrationOrDeviceTokenWithHttpInfo (string userId, string tokenType, string apiToken = default(string), AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = default(AddRegistrationOrDeviceTokenData))
+        /// <returns>ApiResponse of AddRegistrationOrDeviceTokenResponse</returns>
+        public ApiResponse<AddRegistrationOrDeviceTokenResponse> AddRegistrationOrDeviceTokenWithHttpInfo (string userId, string tokenType, string apiToken = default(string), AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = default(AddRegistrationOrDeviceTokenData))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -2311,9 +2311,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20025>(localVarStatusCode,
+            return new ApiResponse<AddRegistrationOrDeviceTokenResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20025) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20025)));
+                (AddRegistrationOrDeviceTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(AddRegistrationOrDeviceTokenResponse)));
         }
 
         /// <summary>
@@ -2325,10 +2325,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addRegistrationOrDeviceTokenData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20025</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20025> AddRegistrationOrDeviceTokenAsync (string userId, string tokenType, string apiToken = default(string), AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = default(AddRegistrationOrDeviceTokenData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of AddRegistrationOrDeviceTokenResponse</returns>
+        public async System.Threading.Tasks.Task<AddRegistrationOrDeviceTokenResponse> AddRegistrationOrDeviceTokenAsync (string userId, string tokenType, string apiToken = default(string), AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = default(AddRegistrationOrDeviceTokenData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20025> localVarResponse = await AddRegistrationOrDeviceTokenWithHttpInfoAsync(userId, tokenType, apiToken, addRegistrationOrDeviceTokenData, cancellationToken);
+             ApiResponse<AddRegistrationOrDeviceTokenResponse> localVarResponse = await AddRegistrationOrDeviceTokenWithHttpInfoAsync(userId, tokenType, apiToken, addRegistrationOrDeviceTokenData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2342,8 +2342,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addRegistrationOrDeviceTokenData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20025)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20025>> AddRegistrationOrDeviceTokenWithHttpInfoAsync (string userId, string tokenType, string apiToken = default(string), AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = default(AddRegistrationOrDeviceTokenData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (AddRegistrationOrDeviceTokenResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<AddRegistrationOrDeviceTokenResponse>> AddRegistrationOrDeviceTokenWithHttpInfoAsync (string userId, string tokenType, string apiToken = default(string), AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = default(AddRegistrationOrDeviceTokenData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -2400,9 +2400,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20025>(localVarStatusCode,
+            return new ApiResponse<AddRegistrationOrDeviceTokenResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20025) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20025)));
+                (AddRegistrationOrDeviceTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(AddRegistrationOrDeviceTokenResponse)));
         }
 
         /// <summary>
@@ -2734,10 +2734,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="body"> (optional)</param>
-        /// <returns>InlineResponse20029</returns>
-        public InlineResponse20029 ChoosePushNotificationContentTemplate (string userId, string apiToken = default(string), Object body = default(Object))
+        /// <returns>ChoosePushNotificationContentTemplateResponse</returns>
+        public ChoosePushNotificationContentTemplateResponse ChoosePushNotificationContentTemplate (string userId, string apiToken = default(string), Object body = default(Object))
         {
-             ApiResponse<InlineResponse20029> localVarResponse = ChoosePushNotificationContentTemplateWithHttpInfo(userId, apiToken, body);
+             ApiResponse<ChoosePushNotificationContentTemplateResponse> localVarResponse = ChoosePushNotificationContentTemplateWithHttpInfo(userId, apiToken, body);
              return localVarResponse.Data;
         }
 
@@ -2748,8 +2748,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="body"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20029</returns>
-        public ApiResponse<InlineResponse20029> ChoosePushNotificationContentTemplateWithHttpInfo (string userId, string apiToken = default(string), Object body = default(Object))
+        /// <returns>ApiResponse of ChoosePushNotificationContentTemplateResponse</returns>
+        public ApiResponse<ChoosePushNotificationContentTemplateResponse> ChoosePushNotificationContentTemplateWithHttpInfo (string userId, string apiToken = default(string), Object body = default(Object))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -2802,9 +2802,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20029>(localVarStatusCode,
+            return new ApiResponse<ChoosePushNotificationContentTemplateResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20029) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20029)));
+                (ChoosePushNotificationContentTemplateResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ChoosePushNotificationContentTemplateResponse)));
         }
 
         /// <summary>
@@ -2815,10 +2815,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20029</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20029> ChoosePushNotificationContentTemplateAsync (string userId, string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ChoosePushNotificationContentTemplateResponse</returns>
+        public async System.Threading.Tasks.Task<ChoosePushNotificationContentTemplateResponse> ChoosePushNotificationContentTemplateAsync (string userId, string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20029> localVarResponse = await ChoosePushNotificationContentTemplateWithHttpInfoAsync(userId, apiToken, body, cancellationToken);
+             ApiResponse<ChoosePushNotificationContentTemplateResponse> localVarResponse = await ChoosePushNotificationContentTemplateWithHttpInfoAsync(userId, apiToken, body, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2831,8 +2831,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20029)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20029>> ChoosePushNotificationContentTemplateWithHttpInfoAsync (string userId, string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ChoosePushNotificationContentTemplateResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ChoosePushNotificationContentTemplateResponse>> ChoosePushNotificationContentTemplateWithHttpInfoAsync (string userId, string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -2885,9 +2885,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20029>(localVarStatusCode,
+            return new ApiResponse<ChoosePushNotificationContentTemplateResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20029) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20029)));
+                (ChoosePushNotificationContentTemplateResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ChoosePushNotificationContentTemplateResponse)));
         }
 
         /// <summary>
@@ -3345,10 +3345,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20022</returns>
-        public InlineResponse20022 ListBannedChannels (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ListBannedChannelsResponse</returns>
+        public ListBannedChannelsResponse ListBannedChannels (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<InlineResponse20022> localVarResponse = ListBannedChannelsWithHttpInfo(userId, apiToken, token, limit);
+             ApiResponse<ListBannedChannelsResponse> localVarResponse = ListBannedChannelsWithHttpInfo(userId, apiToken, token, limit);
              return localVarResponse.Data;
         }
 
@@ -3360,8 +3360,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20022</returns>
-        public ApiResponse<InlineResponse20022> ListBannedChannelsWithHttpInfo (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ApiResponse of ListBannedChannelsResponse</returns>
+        public ApiResponse<ListBannedChannelsResponse> ListBannedChannelsWithHttpInfo (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -3407,9 +3407,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20022>(localVarStatusCode,
+            return new ApiResponse<ListBannedChannelsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20022) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20022)));
+                (ListBannedChannelsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListBannedChannelsResponse)));
         }
 
         /// <summary>
@@ -3421,10 +3421,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20022</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20022> ListBannedChannelsAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListBannedChannelsResponse</returns>
+        public async System.Threading.Tasks.Task<ListBannedChannelsResponse> ListBannedChannelsAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20022> localVarResponse = await ListBannedChannelsWithHttpInfoAsync(userId, apiToken, token, limit, cancellationToken);
+             ApiResponse<ListBannedChannelsResponse> localVarResponse = await ListBannedChannelsWithHttpInfoAsync(userId, apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3438,8 +3438,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20022)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20022>> ListBannedChannelsWithHttpInfoAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListBannedChannelsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListBannedChannelsResponse>> ListBannedChannelsWithHttpInfoAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -3485,9 +3485,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20022>(localVarStatusCode,
+            return new ApiResponse<ListBannedChannelsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20022) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20022)));
+                (ListBannedChannelsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListBannedChannelsResponse)));
         }
 
         /// <summary>
@@ -3501,10 +3501,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userIds"> (optional)</param>
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
-        /// <returns>InlineResponse20016</returns>
-        public InlineResponse20016 ListBlockedUsers (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string))
+        /// <returns>ListBlockedUsersResponse</returns>
+        public ListBlockedUsersResponse ListBlockedUsers (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string))
         {
-             ApiResponse<InlineResponse20016> localVarResponse = ListBlockedUsersWithHttpInfo(userId, apiToken, token, limit, userIds, metadatakey, metadatavaluesIn);
+             ApiResponse<ListBlockedUsersResponse> localVarResponse = ListBlockedUsersWithHttpInfo(userId, apiToken, token, limit, userIds, metadatakey, metadatavaluesIn);
              return localVarResponse.Data;
         }
 
@@ -3519,8 +3519,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userIds"> (optional)</param>
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20016</returns>
-        public ApiResponse<InlineResponse20016> ListBlockedUsersWithHttpInfo (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string))
+        /// <returns>ApiResponse of ListBlockedUsersResponse</returns>
+        public ApiResponse<ListBlockedUsersResponse> ListBlockedUsersWithHttpInfo (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -3569,9 +3569,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20016>(localVarStatusCode,
+            return new ApiResponse<ListBlockedUsersResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20016) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20016)));
+                (ListBlockedUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListBlockedUsersResponse)));
         }
 
         /// <summary>
@@ -3586,10 +3586,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20016</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20016> ListBlockedUsersAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListBlockedUsersResponse</returns>
+        public async System.Threading.Tasks.Task<ListBlockedUsersResponse> ListBlockedUsersAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20016> localVarResponse = await ListBlockedUsersWithHttpInfoAsync(userId, apiToken, token, limit, userIds, metadatakey, metadatavaluesIn, cancellationToken);
+             ApiResponse<ListBlockedUsersResponse> localVarResponse = await ListBlockedUsersWithHttpInfoAsync(userId, apiToken, token, limit, userIds, metadatakey, metadatavaluesIn, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3606,8 +3606,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20016)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20016>> ListBlockedUsersWithHttpInfoAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListBlockedUsersResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListBlockedUsersResponse>> ListBlockedUsersWithHttpInfoAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -3656,9 +3656,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20016>(localVarStatusCode,
+            return new ApiResponse<ListBlockedUsersResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20016) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20016)));
+                (ListBlockedUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListBlockedUsersResponse)));
         }
 
         /// <summary>
@@ -3669,10 +3669,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>InlineResponse20023</returns>
-        public InlineResponse20023 ListMutedChannels (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ListMutedChannelsResponse</returns>
+        public ListMutedChannelsResponse ListMutedChannels (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<InlineResponse20023> localVarResponse = ListMutedChannelsWithHttpInfo(userId, apiToken, token, limit);
+             ApiResponse<ListMutedChannelsResponse> localVarResponse = ListMutedChannelsWithHttpInfo(userId, apiToken, token, limit);
              return localVarResponse.Data;
         }
 
@@ -3684,8 +3684,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20023</returns>
-        public ApiResponse<InlineResponse20023> ListMutedChannelsWithHttpInfo (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        /// <returns>ApiResponse of ListMutedChannelsResponse</returns>
+        public ApiResponse<ListMutedChannelsResponse> ListMutedChannelsWithHttpInfo (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -3731,9 +3731,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20023>(localVarStatusCode,
+            return new ApiResponse<ListMutedChannelsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20023) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20023)));
+                (ListMutedChannelsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListMutedChannelsResponse)));
         }
 
         /// <summary>
@@ -3745,10 +3745,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20023</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20023> ListMutedChannelsAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListMutedChannelsResponse</returns>
+        public async System.Threading.Tasks.Task<ListMutedChannelsResponse> ListMutedChannelsAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20023> localVarResponse = await ListMutedChannelsWithHttpInfoAsync(userId, apiToken, token, limit, cancellationToken);
+             ApiResponse<ListMutedChannelsResponse> localVarResponse = await ListMutedChannelsWithHttpInfoAsync(userId, apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3762,8 +3762,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20023)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20023>> ListMutedChannelsWithHttpInfoAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListMutedChannelsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListMutedChannelsResponse>> ListMutedChannelsWithHttpInfoAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -3809,9 +3809,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20023>(localVarStatusCode,
+            return new ApiResponse<ListMutedChannelsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20023) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20023)));
+                (ListMutedChannelsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListMutedChannelsResponse)));
         }
 
         /// <summary>
@@ -3860,10 +3860,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metacounterValueLt"> (optional)</param>
         /// <param name="metacounterValueLte"> (optional)</param>
         /// <param name="customType"> (optional)</param>
-        /// <returns>InlineResponse20017</returns>
-        public InlineResponse20017 ListMyGroupChannels (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), string hiddenMode = default(string), string memberStateFilter = default(string), string unreadFilter = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showFrozen = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string searchQuery = default(string), string searchFields = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), string customType = default(string))
+        /// <returns>ListMyGroupChannelsResponse</returns>
+        public ListMyGroupChannelsResponse ListMyGroupChannels (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), string hiddenMode = default(string), string memberStateFilter = default(string), string unreadFilter = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showFrozen = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string searchQuery = default(string), string searchFields = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), string customType = default(string))
         {
-             ApiResponse<InlineResponse20017> localVarResponse = ListMyGroupChannelsWithHttpInfo(userId, apiToken, token, limit, distinctMode, publicMode, superMode, hiddenMode, memberStateFilter, unreadFilter, createdAfter, createdBefore, showEmpty, showFrozen, showMember, showDeliveryReceipt, showReadReceipt, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, searchQuery, searchFields, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, customType);
+             ApiResponse<ListMyGroupChannelsResponse> localVarResponse = ListMyGroupChannelsWithHttpInfo(userId, apiToken, token, limit, distinctMode, publicMode, superMode, hiddenMode, memberStateFilter, unreadFilter, createdAfter, createdBefore, showEmpty, showFrozen, showMember, showDeliveryReceipt, showReadReceipt, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, searchQuery, searchFields, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, customType);
              return localVarResponse.Data;
         }
 
@@ -3913,8 +3913,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metacounterValueLt"> (optional)</param>
         /// <param name="metacounterValueLte"> (optional)</param>
         /// <param name="customType"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20017</returns>
-        public ApiResponse<InlineResponse20017> ListMyGroupChannelsWithHttpInfo (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), string hiddenMode = default(string), string memberStateFilter = default(string), string unreadFilter = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showFrozen = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string searchQuery = default(string), string searchFields = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), string customType = default(string))
+        /// <returns>ApiResponse of ListMyGroupChannelsResponse</returns>
+        public ApiResponse<ListMyGroupChannelsResponse> ListMyGroupChannelsWithHttpInfo (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), string hiddenMode = default(string), string memberStateFilter = default(string), string unreadFilter = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showFrozen = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string searchQuery = default(string), string searchFields = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), string customType = default(string))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -3998,9 +3998,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20017>(localVarStatusCode,
+            return new ApiResponse<ListMyGroupChannelsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20017) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20017)));
+                (ListMyGroupChannelsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListMyGroupChannelsResponse)));
         }
 
         /// <summary>
@@ -4050,10 +4050,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metacounterValueLte"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20017</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20017> ListMyGroupChannelsAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), string hiddenMode = default(string), string memberStateFilter = default(string), string unreadFilter = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showFrozen = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string searchQuery = default(string), string searchFields = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListMyGroupChannelsResponse</returns>
+        public async System.Threading.Tasks.Task<ListMyGroupChannelsResponse> ListMyGroupChannelsAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), string hiddenMode = default(string), string memberStateFilter = default(string), string unreadFilter = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showFrozen = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string searchQuery = default(string), string searchFields = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20017> localVarResponse = await ListMyGroupChannelsWithHttpInfoAsync(userId, apiToken, token, limit, distinctMode, publicMode, superMode, hiddenMode, memberStateFilter, unreadFilter, createdAfter, createdBefore, showEmpty, showFrozen, showMember, showDeliveryReceipt, showReadReceipt, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, searchQuery, searchFields, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, customType, cancellationToken);
+             ApiResponse<ListMyGroupChannelsResponse> localVarResponse = await ListMyGroupChannelsWithHttpInfoAsync(userId, apiToken, token, limit, distinctMode, publicMode, superMode, hiddenMode, memberStateFilter, unreadFilter, createdAfter, createdBefore, showEmpty, showFrozen, showMember, showDeliveryReceipt, showReadReceipt, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, searchQuery, searchFields, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, customType, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -4105,8 +4105,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metacounterValueLte"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20017)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20017>> ListMyGroupChannelsWithHttpInfoAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), string hiddenMode = default(string), string memberStateFilter = default(string), string unreadFilter = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showFrozen = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string searchQuery = default(string), string searchFields = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListMyGroupChannelsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListMyGroupChannelsResponse>> ListMyGroupChannelsWithHttpInfoAsync (string userId, string apiToken = default(string), string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), string hiddenMode = default(string), string memberStateFilter = default(string), string unreadFilter = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showFrozen = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string searchQuery = default(string), string searchFields = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -4190,9 +4190,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20017>(localVarStatusCode,
+            return new ApiResponse<ListMyGroupChannelsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20017) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20017)));
+                (ListMyGroupChannelsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListMyGroupChannelsResponse)));
         }
 
         /// <summary>
@@ -4202,10 +4202,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="tokenType"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20024</returns>
-        public InlineResponse20024 ListRegistrationOrDeviceTokens (string userId, string tokenType, string apiToken = default(string))
+        /// <returns>ListRegistrationOrDeviceTokensResponse</returns>
+        public ListRegistrationOrDeviceTokensResponse ListRegistrationOrDeviceTokens (string userId, string tokenType, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20024> localVarResponse = ListRegistrationOrDeviceTokensWithHttpInfo(userId, tokenType, apiToken);
+             ApiResponse<ListRegistrationOrDeviceTokensResponse> localVarResponse = ListRegistrationOrDeviceTokensWithHttpInfo(userId, tokenType, apiToken);
              return localVarResponse.Data;
         }
 
@@ -4216,8 +4216,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="tokenType"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20024</returns>
-        public ApiResponse<InlineResponse20024> ListRegistrationOrDeviceTokensWithHttpInfo (string userId, string tokenType, string apiToken = default(string))
+        /// <returns>ApiResponse of ListRegistrationOrDeviceTokensResponse</returns>
+        public ApiResponse<ListRegistrationOrDeviceTokensResponse> ListRegistrationOrDeviceTokensWithHttpInfo (string userId, string tokenType, string apiToken = default(string))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -4265,9 +4265,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20024>(localVarStatusCode,
+            return new ApiResponse<ListRegistrationOrDeviceTokensResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20024) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20024)));
+                (ListRegistrationOrDeviceTokensResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListRegistrationOrDeviceTokensResponse)));
         }
 
         /// <summary>
@@ -4278,10 +4278,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20024</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20024> ListRegistrationOrDeviceTokensAsync (string userId, string tokenType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListRegistrationOrDeviceTokensResponse</returns>
+        public async System.Threading.Tasks.Task<ListRegistrationOrDeviceTokensResponse> ListRegistrationOrDeviceTokensAsync (string userId, string tokenType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20024> localVarResponse = await ListRegistrationOrDeviceTokensWithHttpInfoAsync(userId, tokenType, apiToken, cancellationToken);
+             ApiResponse<ListRegistrationOrDeviceTokensResponse> localVarResponse = await ListRegistrationOrDeviceTokensWithHttpInfoAsync(userId, tokenType, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -4294,8 +4294,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20024)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20024>> ListRegistrationOrDeviceTokensWithHttpInfoAsync (string userId, string tokenType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListRegistrationOrDeviceTokensResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListRegistrationOrDeviceTokensResponse>> ListRegistrationOrDeviceTokensWithHttpInfoAsync (string userId, string tokenType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -4343,9 +4343,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20024>(localVarStatusCode,
+            return new ApiResponse<ListRegistrationOrDeviceTokensResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20024) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20024)));
+                (ListRegistrationOrDeviceTokensResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListRegistrationOrDeviceTokensResponse)));
         }
 
         /// <summary>
@@ -4362,10 +4362,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="nicknameStartswith"> (optional)</param>
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
-        /// <returns>InlineResponse20016</returns>
-        public InlineResponse20016 ListUsers (string apiToken = default(string), string token = default(string), int? limit = default(int?), string activeMode = default(string), bool? showBot = default(bool?), string userIds = default(string), string nickname = default(string), string nicknameStartswith = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string))
+        /// <returns>ListUsersResponse</returns>
+        public ListUsersResponse ListUsers (string apiToken = default(string), string token = default(string), int? limit = default(int?), string activeMode = default(string), bool? showBot = default(bool?), string userIds = default(string), string nickname = default(string), string nicknameStartswith = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string))
         {
-             ApiResponse<InlineResponse20016> localVarResponse = ListUsersWithHttpInfo(apiToken, token, limit, activeMode, showBot, userIds, nickname, nicknameStartswith, metadatakey, metadatavaluesIn);
+             ApiResponse<ListUsersResponse> localVarResponse = ListUsersWithHttpInfo(apiToken, token, limit, activeMode, showBot, userIds, nickname, nicknameStartswith, metadatakey, metadatavaluesIn);
              return localVarResponse.Data;
         }
 
@@ -4383,8 +4383,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="nicknameStartswith"> (optional)</param>
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20016</returns>
-        public ApiResponse<InlineResponse20016> ListUsersWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), string activeMode = default(string), bool? showBot = default(bool?), string userIds = default(string), string nickname = default(string), string nicknameStartswith = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string))
+        /// <returns>ApiResponse of ListUsersResponse</returns>
+        public ApiResponse<ListUsersResponse> ListUsersWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), string activeMode = default(string), bool? showBot = default(bool?), string userIds = default(string), string nickname = default(string), string nicknameStartswith = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string))
         {
 
             var localVarPath = "/v3/users";
@@ -4433,9 +4433,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20016>(localVarStatusCode,
+            return new ApiResponse<ListUsersResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20016) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20016)));
+                (ListUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListUsersResponse)));
         }
 
         /// <summary>
@@ -4453,10 +4453,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20016</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20016> ListUsersAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string activeMode = default(string), bool? showBot = default(bool?), string userIds = default(string), string nickname = default(string), string nicknameStartswith = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListUsersResponse</returns>
+        public async System.Threading.Tasks.Task<ListUsersResponse> ListUsersAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string activeMode = default(string), bool? showBot = default(bool?), string userIds = default(string), string nickname = default(string), string nicknameStartswith = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20016> localVarResponse = await ListUsersWithHttpInfoAsync(apiToken, token, limit, activeMode, showBot, userIds, nickname, nicknameStartswith, metadatakey, metadatavaluesIn, cancellationToken);
+             ApiResponse<ListUsersResponse> localVarResponse = await ListUsersWithHttpInfoAsync(apiToken, token, limit, activeMode, showBot, userIds, nickname, nicknameStartswith, metadatakey, metadatavaluesIn, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -4476,8 +4476,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20016)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20016>> ListUsersWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string activeMode = default(string), bool? showBot = default(bool?), string userIds = default(string), string nickname = default(string), string nicknameStartswith = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListUsersResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListUsersResponse>> ListUsersWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string activeMode = default(string), bool? showBot = default(bool?), string userIds = default(string), string nickname = default(string), string nicknameStartswith = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/v3/users";
@@ -4526,9 +4526,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20016>(localVarStatusCode,
+            return new ApiResponse<ListUsersResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20016) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20016)));
+                (ListUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListUsersResponse)));
         }
 
         /// <summary>
@@ -5014,10 +5014,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20026</returns>
-        public InlineResponse20026 RemoveRegistrationOrDeviceToken (string userId, string apiToken = default(string))
+        /// <returns>RemoveRegistrationOrDeviceTokenResponse</returns>
+        public RemoveRegistrationOrDeviceTokenResponse RemoveRegistrationOrDeviceToken (string userId, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20026> localVarResponse = RemoveRegistrationOrDeviceTokenWithHttpInfo(userId, apiToken);
+             ApiResponse<RemoveRegistrationOrDeviceTokenResponse> localVarResponse = RemoveRegistrationOrDeviceTokenWithHttpInfo(userId, apiToken);
              return localVarResponse.Data;
         }
 
@@ -5027,8 +5027,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20026</returns>
-        public ApiResponse<InlineResponse20026> RemoveRegistrationOrDeviceTokenWithHttpInfo (string userId, string apiToken = default(string))
+        /// <returns>ApiResponse of RemoveRegistrationOrDeviceTokenResponse</returns>
+        public ApiResponse<RemoveRegistrationOrDeviceTokenResponse> RemoveRegistrationOrDeviceTokenWithHttpInfo (string userId, string apiToken = default(string))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -5072,9 +5072,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20026>(localVarStatusCode,
+            return new ApiResponse<RemoveRegistrationOrDeviceTokenResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20026) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20026)));
+                (RemoveRegistrationOrDeviceTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RemoveRegistrationOrDeviceTokenResponse)));
         }
 
         /// <summary>
@@ -5084,10 +5084,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20026</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20026> RemoveRegistrationOrDeviceTokenAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of RemoveRegistrationOrDeviceTokenResponse</returns>
+        public async System.Threading.Tasks.Task<RemoveRegistrationOrDeviceTokenResponse> RemoveRegistrationOrDeviceTokenAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20026> localVarResponse = await RemoveRegistrationOrDeviceTokenWithHttpInfoAsync(userId, apiToken, cancellationToken);
+             ApiResponse<RemoveRegistrationOrDeviceTokenResponse> localVarResponse = await RemoveRegistrationOrDeviceTokenWithHttpInfoAsync(userId, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -5099,8 +5099,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20026)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20026>> RemoveRegistrationOrDeviceTokenWithHttpInfoAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (RemoveRegistrationOrDeviceTokenResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<RemoveRegistrationOrDeviceTokenResponse>> RemoveRegistrationOrDeviceTokenWithHttpInfoAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -5144,9 +5144,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20026>(localVarStatusCode,
+            return new ApiResponse<RemoveRegistrationOrDeviceTokenResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20026) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20026)));
+                (RemoveRegistrationOrDeviceTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RemoveRegistrationOrDeviceTokenResponse)));
         }
 
         /// <summary>
@@ -5157,10 +5157,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20026</returns>
-        public InlineResponse20026 RemoveRegistrationOrDeviceTokenByToken (string userId, string tokenType, string token, string apiToken = default(string))
+        /// <returns>RemoveRegistrationOrDeviceTokenByTokenResponse</returns>
+        public RemoveRegistrationOrDeviceTokenByTokenResponse RemoveRegistrationOrDeviceTokenByToken (string userId, string tokenType, string token, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20026> localVarResponse = RemoveRegistrationOrDeviceTokenByTokenWithHttpInfo(userId, tokenType, token, apiToken);
+             ApiResponse<RemoveRegistrationOrDeviceTokenByTokenResponse> localVarResponse = RemoveRegistrationOrDeviceTokenByTokenWithHttpInfo(userId, tokenType, token, apiToken);
              return localVarResponse.Data;
         }
 
@@ -5172,8 +5172,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20026</returns>
-        public ApiResponse<InlineResponse20026> RemoveRegistrationOrDeviceTokenByTokenWithHttpInfo (string userId, string tokenType, string token, string apiToken = default(string))
+        /// <returns>ApiResponse of RemoveRegistrationOrDeviceTokenByTokenResponse</returns>
+        public ApiResponse<RemoveRegistrationOrDeviceTokenByTokenResponse> RemoveRegistrationOrDeviceTokenByTokenWithHttpInfo (string userId, string tokenType, string token, string apiToken = default(string))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -5225,9 +5225,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20026>(localVarStatusCode,
+            return new ApiResponse<RemoveRegistrationOrDeviceTokenByTokenResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20026) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20026)));
+                (RemoveRegistrationOrDeviceTokenByTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RemoveRegistrationOrDeviceTokenByTokenResponse)));
         }
 
         /// <summary>
@@ -5239,10 +5239,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20026</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20026> RemoveRegistrationOrDeviceTokenByTokenAsync (string userId, string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of RemoveRegistrationOrDeviceTokenByTokenResponse</returns>
+        public async System.Threading.Tasks.Task<RemoveRegistrationOrDeviceTokenByTokenResponse> RemoveRegistrationOrDeviceTokenByTokenAsync (string userId, string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20026> localVarResponse = await RemoveRegistrationOrDeviceTokenByTokenWithHttpInfoAsync(userId, tokenType, token, apiToken, cancellationToken);
+             ApiResponse<RemoveRegistrationOrDeviceTokenByTokenResponse> localVarResponse = await RemoveRegistrationOrDeviceTokenByTokenWithHttpInfoAsync(userId, tokenType, token, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -5256,8 +5256,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20026)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20026>> RemoveRegistrationOrDeviceTokenByTokenWithHttpInfoAsync (string userId, string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (RemoveRegistrationOrDeviceTokenByTokenResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<RemoveRegistrationOrDeviceTokenByTokenResponse>> RemoveRegistrationOrDeviceTokenByTokenWithHttpInfoAsync (string userId, string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -5309,9 +5309,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20026>(localVarStatusCode,
+            return new ApiResponse<RemoveRegistrationOrDeviceTokenByTokenResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20026) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20026)));
+                (RemoveRegistrationOrDeviceTokenByTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RemoveRegistrationOrDeviceTokenByTokenResponse)));
         }
 
         /// <summary>
@@ -5321,10 +5321,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20027</returns>
-        public InlineResponse20027 RemoveRegistrationOrDeviceTokenFromOwnerByToken (string tokenType, string token, string apiToken = default(string))
+        /// <returns>RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse</returns>
+        public RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse RemoveRegistrationOrDeviceTokenFromOwnerByToken (string tokenType, string token, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20027> localVarResponse = RemoveRegistrationOrDeviceTokenFromOwnerByTokenWithHttpInfo(tokenType, token, apiToken);
+             ApiResponse<RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse> localVarResponse = RemoveRegistrationOrDeviceTokenFromOwnerByTokenWithHttpInfo(tokenType, token, apiToken);
              return localVarResponse.Data;
         }
 
@@ -5335,8 +5335,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20027</returns>
-        public ApiResponse<InlineResponse20027> RemoveRegistrationOrDeviceTokenFromOwnerByTokenWithHttpInfo (string tokenType, string token, string apiToken = default(string))
+        /// <returns>ApiResponse of RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse</returns>
+        public ApiResponse<RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse> RemoveRegistrationOrDeviceTokenFromOwnerByTokenWithHttpInfo (string tokenType, string token, string apiToken = default(string))
         {
             // verify the required parameter 'tokenType' is set
             if (tokenType == null)
@@ -5384,9 +5384,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20027>(localVarStatusCode,
+            return new ApiResponse<RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20027) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20027)));
+                (RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse)));
         }
 
         /// <summary>
@@ -5397,10 +5397,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20027</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20027> RemoveRegistrationOrDeviceTokenFromOwnerByTokenAsync (string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse</returns>
+        public async System.Threading.Tasks.Task<RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse> RemoveRegistrationOrDeviceTokenFromOwnerByTokenAsync (string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20027> localVarResponse = await RemoveRegistrationOrDeviceTokenFromOwnerByTokenWithHttpInfoAsync(tokenType, token, apiToken, cancellationToken);
+             ApiResponse<RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse> localVarResponse = await RemoveRegistrationOrDeviceTokenFromOwnerByTokenWithHttpInfoAsync(tokenType, token, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -5413,8 +5413,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20027)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20027>> RemoveRegistrationOrDeviceTokenFromOwnerByTokenWithHttpInfoAsync (string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse>> RemoveRegistrationOrDeviceTokenFromOwnerByTokenWithHttpInfoAsync (string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'tokenType' is set
             if (tokenType == null)
@@ -5462,9 +5462,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20027>(localVarStatusCode,
+            return new ApiResponse<RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20027) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20027)));
+                (RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse)));
         }
 
         /// <summary>
@@ -5760,10 +5760,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateChannelInvitationPreferenceData"> (optional)</param>
-        /// <returns>InlineResponse2005</returns>
-        public InlineResponse2005 UpdateChannelInvitationPreference (string userId, string apiToken = default(string), UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = default(UpdateChannelInvitationPreferenceData))
+        /// <returns>UpdateChannelInvitationPreferenceResponse</returns>
+        public UpdateChannelInvitationPreferenceResponse UpdateChannelInvitationPreference (string userId, string apiToken = default(string), UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = default(UpdateChannelInvitationPreferenceData))
         {
-             ApiResponse<InlineResponse2005> localVarResponse = UpdateChannelInvitationPreferenceWithHttpInfo(userId, apiToken, updateChannelInvitationPreferenceData);
+             ApiResponse<UpdateChannelInvitationPreferenceResponse> localVarResponse = UpdateChannelInvitationPreferenceWithHttpInfo(userId, apiToken, updateChannelInvitationPreferenceData);
              return localVarResponse.Data;
         }
 
@@ -5774,8 +5774,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateChannelInvitationPreferenceData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2005</returns>
-        public ApiResponse<InlineResponse2005> UpdateChannelInvitationPreferenceWithHttpInfo (string userId, string apiToken = default(string), UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = default(UpdateChannelInvitationPreferenceData))
+        /// <returns>ApiResponse of UpdateChannelInvitationPreferenceResponse</returns>
+        public ApiResponse<UpdateChannelInvitationPreferenceResponse> UpdateChannelInvitationPreferenceWithHttpInfo (string userId, string apiToken = default(string), UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = default(UpdateChannelInvitationPreferenceData))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -5828,9 +5828,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2005>(localVarStatusCode,
+            return new ApiResponse<UpdateChannelInvitationPreferenceResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2005) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2005)));
+                (UpdateChannelInvitationPreferenceResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateChannelInvitationPreferenceResponse)));
         }
 
         /// <summary>
@@ -5841,10 +5841,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateChannelInvitationPreferenceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2005</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2005> UpdateChannelInvitationPreferenceAsync (string userId, string apiToken = default(string), UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = default(UpdateChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of UpdateChannelInvitationPreferenceResponse</returns>
+        public async System.Threading.Tasks.Task<UpdateChannelInvitationPreferenceResponse> UpdateChannelInvitationPreferenceAsync (string userId, string apiToken = default(string), UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = default(UpdateChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2005> localVarResponse = await UpdateChannelInvitationPreferenceWithHttpInfoAsync(userId, apiToken, updateChannelInvitationPreferenceData, cancellationToken);
+             ApiResponse<UpdateChannelInvitationPreferenceResponse> localVarResponse = await UpdateChannelInvitationPreferenceWithHttpInfoAsync(userId, apiToken, updateChannelInvitationPreferenceData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -5857,8 +5857,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateChannelInvitationPreferenceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2005)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2005>> UpdateChannelInvitationPreferenceWithHttpInfoAsync (string userId, string apiToken = default(string), UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = default(UpdateChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (UpdateChannelInvitationPreferenceResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateChannelInvitationPreferenceResponse>> UpdateChannelInvitationPreferenceWithHttpInfoAsync (string userId, string apiToken = default(string), UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = default(UpdateChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -5911,9 +5911,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2005>(localVarStatusCode,
+            return new ApiResponse<UpdateChannelInvitationPreferenceResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2005) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2005)));
+                (UpdateChannelInvitationPreferenceResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateChannelInvitationPreferenceResponse)));
         }
 
         /// <summary>
@@ -5924,10 +5924,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateCountPreferenceOfChannelByUrlData"> (optional)</param>
-        /// <returns>InlineResponse20021</returns>
-        public InlineResponse20021 UpdateCountPreferenceOfChannelByUrl (string userId, string channelUrl, string apiToken = default(string), UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = default(UpdateCountPreferenceOfChannelByUrlData))
+        /// <returns>UpdateCountPreferenceOfChannelByUrlResponse</returns>
+        public UpdateCountPreferenceOfChannelByUrlResponse UpdateCountPreferenceOfChannelByUrl (string userId, string channelUrl, string apiToken = default(string), UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = default(UpdateCountPreferenceOfChannelByUrlData))
         {
-             ApiResponse<InlineResponse20021> localVarResponse = UpdateCountPreferenceOfChannelByUrlWithHttpInfo(userId, channelUrl, apiToken, updateCountPreferenceOfChannelByUrlData);
+             ApiResponse<UpdateCountPreferenceOfChannelByUrlResponse> localVarResponse = UpdateCountPreferenceOfChannelByUrlWithHttpInfo(userId, channelUrl, apiToken, updateCountPreferenceOfChannelByUrlData);
              return localVarResponse.Data;
         }
 
@@ -5939,8 +5939,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateCountPreferenceOfChannelByUrlData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20021</returns>
-        public ApiResponse<InlineResponse20021> UpdateCountPreferenceOfChannelByUrlWithHttpInfo (string userId, string channelUrl, string apiToken = default(string), UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = default(UpdateCountPreferenceOfChannelByUrlData))
+        /// <returns>ApiResponse of UpdateCountPreferenceOfChannelByUrlResponse</returns>
+        public ApiResponse<UpdateCountPreferenceOfChannelByUrlResponse> UpdateCountPreferenceOfChannelByUrlWithHttpInfo (string userId, string channelUrl, string apiToken = default(string), UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = default(UpdateCountPreferenceOfChannelByUrlData))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -5997,9 +5997,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20021>(localVarStatusCode,
+            return new ApiResponse<UpdateCountPreferenceOfChannelByUrlResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20021) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20021)));
+                (UpdateCountPreferenceOfChannelByUrlResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateCountPreferenceOfChannelByUrlResponse)));
         }
 
         /// <summary>
@@ -6011,10 +6011,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateCountPreferenceOfChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20021</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20021> UpdateCountPreferenceOfChannelByUrlAsync (string userId, string channelUrl, string apiToken = default(string), UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = default(UpdateCountPreferenceOfChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of UpdateCountPreferenceOfChannelByUrlResponse</returns>
+        public async System.Threading.Tasks.Task<UpdateCountPreferenceOfChannelByUrlResponse> UpdateCountPreferenceOfChannelByUrlAsync (string userId, string channelUrl, string apiToken = default(string), UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = default(UpdateCountPreferenceOfChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20021> localVarResponse = await UpdateCountPreferenceOfChannelByUrlWithHttpInfoAsync(userId, channelUrl, apiToken, updateCountPreferenceOfChannelByUrlData, cancellationToken);
+             ApiResponse<UpdateCountPreferenceOfChannelByUrlResponse> localVarResponse = await UpdateCountPreferenceOfChannelByUrlWithHttpInfoAsync(userId, channelUrl, apiToken, updateCountPreferenceOfChannelByUrlData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -6028,8 +6028,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateCountPreferenceOfChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20021)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20021>> UpdateCountPreferenceOfChannelByUrlWithHttpInfoAsync (string userId, string channelUrl, string apiToken = default(string), UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = default(UpdateCountPreferenceOfChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (UpdateCountPreferenceOfChannelByUrlResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateCountPreferenceOfChannelByUrlResponse>> UpdateCountPreferenceOfChannelByUrlWithHttpInfoAsync (string userId, string channelUrl, string apiToken = default(string), UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = default(UpdateCountPreferenceOfChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -6086,9 +6086,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20021>(localVarStatusCode,
+            return new ApiResponse<UpdateCountPreferenceOfChannelByUrlResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20021) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20021)));
+                (UpdateCountPreferenceOfChannelByUrlResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateCountPreferenceOfChannelByUrlResponse)));
         }
 
         /// <summary>
@@ -6098,10 +6098,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushPreferencesData"> (optional)</param>
-        /// <returns>InlineResponse20028</returns>
-        public InlineResponse20028 UpdatePushPreferences (string userId, string apiToken = default(string), UpdatePushPreferencesData updatePushPreferencesData = default(UpdatePushPreferencesData))
+        /// <returns>UpdatePushPreferencesResponse</returns>
+        public UpdatePushPreferencesResponse UpdatePushPreferences (string userId, string apiToken = default(string), UpdatePushPreferencesData updatePushPreferencesData = default(UpdatePushPreferencesData))
         {
-             ApiResponse<InlineResponse20028> localVarResponse = UpdatePushPreferencesWithHttpInfo(userId, apiToken, updatePushPreferencesData);
+             ApiResponse<UpdatePushPreferencesResponse> localVarResponse = UpdatePushPreferencesWithHttpInfo(userId, apiToken, updatePushPreferencesData);
              return localVarResponse.Data;
         }
 
@@ -6112,8 +6112,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushPreferencesData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20028</returns>
-        public ApiResponse<InlineResponse20028> UpdatePushPreferencesWithHttpInfo (string userId, string apiToken = default(string), UpdatePushPreferencesData updatePushPreferencesData = default(UpdatePushPreferencesData))
+        /// <returns>ApiResponse of UpdatePushPreferencesResponse</returns>
+        public ApiResponse<UpdatePushPreferencesResponse> UpdatePushPreferencesWithHttpInfo (string userId, string apiToken = default(string), UpdatePushPreferencesData updatePushPreferencesData = default(UpdatePushPreferencesData))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -6166,9 +6166,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20028>(localVarStatusCode,
+            return new ApiResponse<UpdatePushPreferencesResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20028) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20028)));
+                (UpdatePushPreferencesResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdatePushPreferencesResponse)));
         }
 
         /// <summary>
@@ -6179,10 +6179,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushPreferencesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20028</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20028> UpdatePushPreferencesAsync (string userId, string apiToken = default(string), UpdatePushPreferencesData updatePushPreferencesData = default(UpdatePushPreferencesData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of UpdatePushPreferencesResponse</returns>
+        public async System.Threading.Tasks.Task<UpdatePushPreferencesResponse> UpdatePushPreferencesAsync (string userId, string apiToken = default(string), UpdatePushPreferencesData updatePushPreferencesData = default(UpdatePushPreferencesData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20028> localVarResponse = await UpdatePushPreferencesWithHttpInfoAsync(userId, apiToken, updatePushPreferencesData, cancellationToken);
+             ApiResponse<UpdatePushPreferencesResponse> localVarResponse = await UpdatePushPreferencesWithHttpInfoAsync(userId, apiToken, updatePushPreferencesData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -6195,8 +6195,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushPreferencesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20028)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20028>> UpdatePushPreferencesWithHttpInfoAsync (string userId, string apiToken = default(string), UpdatePushPreferencesData updatePushPreferencesData = default(UpdatePushPreferencesData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (UpdatePushPreferencesResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UpdatePushPreferencesResponse>> UpdatePushPreferencesWithHttpInfoAsync (string userId, string apiToken = default(string), UpdatePushPreferencesData updatePushPreferencesData = default(UpdatePushPreferencesData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -6249,9 +6249,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20028>(localVarStatusCode,
+            return new ApiResponse<UpdatePushPreferencesResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20028) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20028)));
+                (UpdatePushPreferencesResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdatePushPreferencesResponse)));
         }
 
         /// <summary>
@@ -6262,10 +6262,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushPreferencesForChannelByUrlData"> (optional)</param>
-        /// <returns>InlineResponse20028</returns>
-        public InlineResponse20028 UpdatePushPreferencesForChannelByUrl (string userId, string channelUrl, string apiToken = default(string), UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = default(UpdatePushPreferencesForChannelByUrlData))
+        /// <returns>UpdatePushPreferencesForChannelByUrlResponse</returns>
+        public UpdatePushPreferencesForChannelByUrlResponse UpdatePushPreferencesForChannelByUrl (string userId, string channelUrl, string apiToken = default(string), UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = default(UpdatePushPreferencesForChannelByUrlData))
         {
-             ApiResponse<InlineResponse20028> localVarResponse = UpdatePushPreferencesForChannelByUrlWithHttpInfo(userId, channelUrl, apiToken, updatePushPreferencesForChannelByUrlData);
+             ApiResponse<UpdatePushPreferencesForChannelByUrlResponse> localVarResponse = UpdatePushPreferencesForChannelByUrlWithHttpInfo(userId, channelUrl, apiToken, updatePushPreferencesForChannelByUrlData);
              return localVarResponse.Data;
         }
 
@@ -6277,8 +6277,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushPreferencesForChannelByUrlData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20028</returns>
-        public ApiResponse<InlineResponse20028> UpdatePushPreferencesForChannelByUrlWithHttpInfo (string userId, string channelUrl, string apiToken = default(string), UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = default(UpdatePushPreferencesForChannelByUrlData))
+        /// <returns>ApiResponse of UpdatePushPreferencesForChannelByUrlResponse</returns>
+        public ApiResponse<UpdatePushPreferencesForChannelByUrlResponse> UpdatePushPreferencesForChannelByUrlWithHttpInfo (string userId, string channelUrl, string apiToken = default(string), UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = default(UpdatePushPreferencesForChannelByUrlData))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -6335,9 +6335,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20028>(localVarStatusCode,
+            return new ApiResponse<UpdatePushPreferencesForChannelByUrlResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20028) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20028)));
+                (UpdatePushPreferencesForChannelByUrlResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdatePushPreferencesForChannelByUrlResponse)));
         }
 
         /// <summary>
@@ -6349,10 +6349,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushPreferencesForChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20028</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20028> UpdatePushPreferencesForChannelByUrlAsync (string userId, string channelUrl, string apiToken = default(string), UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = default(UpdatePushPreferencesForChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of UpdatePushPreferencesForChannelByUrlResponse</returns>
+        public async System.Threading.Tasks.Task<UpdatePushPreferencesForChannelByUrlResponse> UpdatePushPreferencesForChannelByUrlAsync (string userId, string channelUrl, string apiToken = default(string), UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = default(UpdatePushPreferencesForChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20028> localVarResponse = await UpdatePushPreferencesForChannelByUrlWithHttpInfoAsync(userId, channelUrl, apiToken, updatePushPreferencesForChannelByUrlData, cancellationToken);
+             ApiResponse<UpdatePushPreferencesForChannelByUrlResponse> localVarResponse = await UpdatePushPreferencesForChannelByUrlWithHttpInfoAsync(userId, channelUrl, apiToken, updatePushPreferencesForChannelByUrlData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -6366,8 +6366,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushPreferencesForChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20028)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20028>> UpdatePushPreferencesForChannelByUrlWithHttpInfoAsync (string userId, string channelUrl, string apiToken = default(string), UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = default(UpdatePushPreferencesForChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (UpdatePushPreferencesForChannelByUrlResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UpdatePushPreferencesForChannelByUrlResponse>> UpdatePushPreferencesForChannelByUrlWithHttpInfoAsync (string userId, string channelUrl, string apiToken = default(string), UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = default(UpdatePushPreferencesForChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -6424,9 +6424,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20028>(localVarStatusCode,
+            return new ApiResponse<UpdatePushPreferencesForChannelByUrlResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20028) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20028)));
+                (UpdatePushPreferencesForChannelByUrlResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdatePushPreferencesForChannelByUrlResponse)));
         }
 
         /// <summary>
@@ -6598,10 +6598,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse2005</returns>
-        public InlineResponse2005 ViewChannelInvitationPreference (string userId, string apiToken = default(string))
+        /// <returns>ViewChannelInvitationPreferenceResponse</returns>
+        public ViewChannelInvitationPreferenceResponse ViewChannelInvitationPreference (string userId, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse2005> localVarResponse = ViewChannelInvitationPreferenceWithHttpInfo(userId, apiToken);
+             ApiResponse<ViewChannelInvitationPreferenceResponse> localVarResponse = ViewChannelInvitationPreferenceWithHttpInfo(userId, apiToken);
              return localVarResponse.Data;
         }
 
@@ -6611,8 +6611,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2005</returns>
-        public ApiResponse<InlineResponse2005> ViewChannelInvitationPreferenceWithHttpInfo (string userId, string apiToken = default(string))
+        /// <returns>ApiResponse of ViewChannelInvitationPreferenceResponse</returns>
+        public ApiResponse<ViewChannelInvitationPreferenceResponse> ViewChannelInvitationPreferenceWithHttpInfo (string userId, string apiToken = default(string))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -6656,9 +6656,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2005>(localVarStatusCode,
+            return new ApiResponse<ViewChannelInvitationPreferenceResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2005) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2005)));
+                (ViewChannelInvitationPreferenceResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewChannelInvitationPreferenceResponse)));
         }
 
         /// <summary>
@@ -6668,10 +6668,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2005</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2005> ViewChannelInvitationPreferenceAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewChannelInvitationPreferenceResponse</returns>
+        public async System.Threading.Tasks.Task<ViewChannelInvitationPreferenceResponse> ViewChannelInvitationPreferenceAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2005> localVarResponse = await ViewChannelInvitationPreferenceWithHttpInfoAsync(userId, apiToken, cancellationToken);
+             ApiResponse<ViewChannelInvitationPreferenceResponse> localVarResponse = await ViewChannelInvitationPreferenceWithHttpInfoAsync(userId, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -6683,8 +6683,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2005)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2005>> ViewChannelInvitationPreferenceWithHttpInfoAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewChannelInvitationPreferenceResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewChannelInvitationPreferenceResponse>> ViewChannelInvitationPreferenceWithHttpInfoAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -6728,9 +6728,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2005>(localVarStatusCode,
+            return new ApiResponse<ViewChannelInvitationPreferenceResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2005) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2005)));
+                (ViewChannelInvitationPreferenceResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewChannelInvitationPreferenceResponse)));
         }
 
         /// <summary>
@@ -6740,10 +6740,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20021</returns>
-        public InlineResponse20021 ViewCountPreferenceOfChannelByUrl (string userId, string channelUrl, string apiToken = default(string))
+        /// <returns>ViewCountPreferenceOfChannelByUrlResponse</returns>
+        public ViewCountPreferenceOfChannelByUrlResponse ViewCountPreferenceOfChannelByUrl (string userId, string channelUrl, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20021> localVarResponse = ViewCountPreferenceOfChannelByUrlWithHttpInfo(userId, channelUrl, apiToken);
+             ApiResponse<ViewCountPreferenceOfChannelByUrlResponse> localVarResponse = ViewCountPreferenceOfChannelByUrlWithHttpInfo(userId, channelUrl, apiToken);
              return localVarResponse.Data;
         }
 
@@ -6754,8 +6754,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20021</returns>
-        public ApiResponse<InlineResponse20021> ViewCountPreferenceOfChannelByUrlWithHttpInfo (string userId, string channelUrl, string apiToken = default(string))
+        /// <returns>ApiResponse of ViewCountPreferenceOfChannelByUrlResponse</returns>
+        public ApiResponse<ViewCountPreferenceOfChannelByUrlResponse> ViewCountPreferenceOfChannelByUrlWithHttpInfo (string userId, string channelUrl, string apiToken = default(string))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -6803,9 +6803,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20021>(localVarStatusCode,
+            return new ApiResponse<ViewCountPreferenceOfChannelByUrlResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20021) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20021)));
+                (ViewCountPreferenceOfChannelByUrlResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewCountPreferenceOfChannelByUrlResponse)));
         }
 
         /// <summary>
@@ -6816,10 +6816,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20021</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20021> ViewCountPreferenceOfChannelByUrlAsync (string userId, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewCountPreferenceOfChannelByUrlResponse</returns>
+        public async System.Threading.Tasks.Task<ViewCountPreferenceOfChannelByUrlResponse> ViewCountPreferenceOfChannelByUrlAsync (string userId, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20021> localVarResponse = await ViewCountPreferenceOfChannelByUrlWithHttpInfoAsync(userId, channelUrl, apiToken, cancellationToken);
+             ApiResponse<ViewCountPreferenceOfChannelByUrlResponse> localVarResponse = await ViewCountPreferenceOfChannelByUrlWithHttpInfoAsync(userId, channelUrl, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -6832,8 +6832,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20021)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20021>> ViewCountPreferenceOfChannelByUrlWithHttpInfoAsync (string userId, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewCountPreferenceOfChannelByUrlResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewCountPreferenceOfChannelByUrlResponse>> ViewCountPreferenceOfChannelByUrlWithHttpInfoAsync (string userId, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -6881,9 +6881,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20021>(localVarStatusCode,
+            return new ApiResponse<ViewCountPreferenceOfChannelByUrlResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20021) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20021)));
+                (ViewCountPreferenceOfChannelByUrlResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewCountPreferenceOfChannelByUrlResponse)));
         }
 
         /// <summary>
@@ -6893,10 +6893,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="state"> (optional)</param>
-        /// <returns>InlineResponse20020</returns>
-        public InlineResponse20020 ViewNumberOfChannelsByJoinStatus (string userId, string apiToken = default(string), string state = default(string))
+        /// <returns>ViewNumberOfChannelsByJoinStatusResponse</returns>
+        public ViewNumberOfChannelsByJoinStatusResponse ViewNumberOfChannelsByJoinStatus (string userId, string apiToken = default(string), string state = default(string))
         {
-             ApiResponse<InlineResponse20020> localVarResponse = ViewNumberOfChannelsByJoinStatusWithHttpInfo(userId, apiToken, state);
+             ApiResponse<ViewNumberOfChannelsByJoinStatusResponse> localVarResponse = ViewNumberOfChannelsByJoinStatusWithHttpInfo(userId, apiToken, state);
              return localVarResponse.Data;
         }
 
@@ -6907,8 +6907,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="state"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20020</returns>
-        public ApiResponse<InlineResponse20020> ViewNumberOfChannelsByJoinStatusWithHttpInfo (string userId, string apiToken = default(string), string state = default(string))
+        /// <returns>ApiResponse of ViewNumberOfChannelsByJoinStatusResponse</returns>
+        public ApiResponse<ViewNumberOfChannelsByJoinStatusResponse> ViewNumberOfChannelsByJoinStatusWithHttpInfo (string userId, string apiToken = default(string), string state = default(string))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -6953,9 +6953,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20020>(localVarStatusCode,
+            return new ApiResponse<ViewNumberOfChannelsByJoinStatusResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20020) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20020)));
+                (ViewNumberOfChannelsByJoinStatusResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfChannelsByJoinStatusResponse)));
         }
 
         /// <summary>
@@ -6966,10 +6966,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="state"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20020</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20020> ViewNumberOfChannelsByJoinStatusAsync (string userId, string apiToken = default(string), string state = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewNumberOfChannelsByJoinStatusResponse</returns>
+        public async System.Threading.Tasks.Task<ViewNumberOfChannelsByJoinStatusResponse> ViewNumberOfChannelsByJoinStatusAsync (string userId, string apiToken = default(string), string state = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20020> localVarResponse = await ViewNumberOfChannelsByJoinStatusWithHttpInfoAsync(userId, apiToken, state, cancellationToken);
+             ApiResponse<ViewNumberOfChannelsByJoinStatusResponse> localVarResponse = await ViewNumberOfChannelsByJoinStatusWithHttpInfoAsync(userId, apiToken, state, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -6982,8 +6982,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="state"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20020)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20020>> ViewNumberOfChannelsByJoinStatusWithHttpInfoAsync (string userId, string apiToken = default(string), string state = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewNumberOfChannelsByJoinStatusResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfChannelsByJoinStatusResponse>> ViewNumberOfChannelsByJoinStatusWithHttpInfoAsync (string userId, string apiToken = default(string), string state = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -7028,9 +7028,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20020>(localVarStatusCode,
+            return new ApiResponse<ViewNumberOfChannelsByJoinStatusResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20020) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20020)));
+                (ViewNumberOfChannelsByJoinStatusResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfChannelsByJoinStatusResponse)));
         }
 
         /// <summary>
@@ -7041,10 +7041,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="customTypes"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
-        /// <returns>InlineResponse20018</returns>
-        public InlineResponse20018 ViewNumberOfChannelsWithUnreadMessages (string userId, string apiToken = default(string), List<string> customTypes = default(List<string>), string superMode = default(string))
+        /// <returns>ViewNumberOfChannelsWithUnreadMessagesResponse</returns>
+        public ViewNumberOfChannelsWithUnreadMessagesResponse ViewNumberOfChannelsWithUnreadMessages (string userId, string apiToken = default(string), List<string> customTypes = default(List<string>), string superMode = default(string))
         {
-             ApiResponse<InlineResponse20018> localVarResponse = ViewNumberOfChannelsWithUnreadMessagesWithHttpInfo(userId, apiToken, customTypes, superMode);
+             ApiResponse<ViewNumberOfChannelsWithUnreadMessagesResponse> localVarResponse = ViewNumberOfChannelsWithUnreadMessagesWithHttpInfo(userId, apiToken, customTypes, superMode);
              return localVarResponse.Data;
         }
 
@@ -7056,8 +7056,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="customTypes"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20018</returns>
-        public ApiResponse<InlineResponse20018> ViewNumberOfChannelsWithUnreadMessagesWithHttpInfo (string userId, string apiToken = default(string), List<string> customTypes = default(List<string>), string superMode = default(string))
+        /// <returns>ApiResponse of ViewNumberOfChannelsWithUnreadMessagesResponse</returns>
+        public ApiResponse<ViewNumberOfChannelsWithUnreadMessagesResponse> ViewNumberOfChannelsWithUnreadMessagesWithHttpInfo (string userId, string apiToken = default(string), List<string> customTypes = default(List<string>), string superMode = default(string))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -7103,9 +7103,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20018>(localVarStatusCode,
+            return new ApiResponse<ViewNumberOfChannelsWithUnreadMessagesResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20018) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20018)));
+                (ViewNumberOfChannelsWithUnreadMessagesResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfChannelsWithUnreadMessagesResponse)));
         }
 
         /// <summary>
@@ -7117,10 +7117,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customTypes"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20018</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20018> ViewNumberOfChannelsWithUnreadMessagesAsync (string userId, string apiToken = default(string), List<string> customTypes = default(List<string>), string superMode = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewNumberOfChannelsWithUnreadMessagesResponse</returns>
+        public async System.Threading.Tasks.Task<ViewNumberOfChannelsWithUnreadMessagesResponse> ViewNumberOfChannelsWithUnreadMessagesAsync (string userId, string apiToken = default(string), List<string> customTypes = default(List<string>), string superMode = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20018> localVarResponse = await ViewNumberOfChannelsWithUnreadMessagesWithHttpInfoAsync(userId, apiToken, customTypes, superMode, cancellationToken);
+             ApiResponse<ViewNumberOfChannelsWithUnreadMessagesResponse> localVarResponse = await ViewNumberOfChannelsWithUnreadMessagesWithHttpInfoAsync(userId, apiToken, customTypes, superMode, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -7134,8 +7134,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customTypes"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20018)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20018>> ViewNumberOfChannelsWithUnreadMessagesWithHttpInfoAsync (string userId, string apiToken = default(string), List<string> customTypes = default(List<string>), string superMode = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewNumberOfChannelsWithUnreadMessagesResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfChannelsWithUnreadMessagesResponse>> ViewNumberOfChannelsWithUnreadMessagesWithHttpInfoAsync (string userId, string apiToken = default(string), List<string> customTypes = default(List<string>), string superMode = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -7181,9 +7181,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20018>(localVarStatusCode,
+            return new ApiResponse<ViewNumberOfChannelsWithUnreadMessagesResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20018) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20018)));
+                (ViewNumberOfChannelsWithUnreadMessagesResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfChannelsWithUnreadMessagesResponse)));
         }
 
         /// <summary>
@@ -7194,10 +7194,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <param name="itemKeys"> (optional)</param>
-        /// <returns>InlineResponse20019</returns>
-        public InlineResponse20019 ViewNumberOfUnreadItems (string userId, string apiToken = default(string), string customType = default(string), string itemKeys = default(string))
+        /// <returns>ViewNumberOfUnreadItemsResponse</returns>
+        public ViewNumberOfUnreadItemsResponse ViewNumberOfUnreadItems (string userId, string apiToken = default(string), string customType = default(string), string itemKeys = default(string))
         {
-             ApiResponse<InlineResponse20019> localVarResponse = ViewNumberOfUnreadItemsWithHttpInfo(userId, apiToken, customType, itemKeys);
+             ApiResponse<ViewNumberOfUnreadItemsResponse> localVarResponse = ViewNumberOfUnreadItemsWithHttpInfo(userId, apiToken, customType, itemKeys);
              return localVarResponse.Data;
         }
 
@@ -7209,8 +7209,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <param name="itemKeys"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20019</returns>
-        public ApiResponse<InlineResponse20019> ViewNumberOfUnreadItemsWithHttpInfo (string userId, string apiToken = default(string), string customType = default(string), string itemKeys = default(string))
+        /// <returns>ApiResponse of ViewNumberOfUnreadItemsResponse</returns>
+        public ApiResponse<ViewNumberOfUnreadItemsResponse> ViewNumberOfUnreadItemsWithHttpInfo (string userId, string apiToken = default(string), string customType = default(string), string itemKeys = default(string))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -7256,9 +7256,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20019>(localVarStatusCode,
+            return new ApiResponse<ViewNumberOfUnreadItemsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20019) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20019)));
+                (ViewNumberOfUnreadItemsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfUnreadItemsResponse)));
         }
 
         /// <summary>
@@ -7270,10 +7270,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customType"> (optional)</param>
         /// <param name="itemKeys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20019</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20019> ViewNumberOfUnreadItemsAsync (string userId, string apiToken = default(string), string customType = default(string), string itemKeys = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewNumberOfUnreadItemsResponse</returns>
+        public async System.Threading.Tasks.Task<ViewNumberOfUnreadItemsResponse> ViewNumberOfUnreadItemsAsync (string userId, string apiToken = default(string), string customType = default(string), string itemKeys = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20019> localVarResponse = await ViewNumberOfUnreadItemsWithHttpInfoAsync(userId, apiToken, customType, itemKeys, cancellationToken);
+             ApiResponse<ViewNumberOfUnreadItemsResponse> localVarResponse = await ViewNumberOfUnreadItemsWithHttpInfoAsync(userId, apiToken, customType, itemKeys, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -7287,8 +7287,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customType"> (optional)</param>
         /// <param name="itemKeys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20019)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20019>> ViewNumberOfUnreadItemsWithHttpInfoAsync (string userId, string apiToken = default(string), string customType = default(string), string itemKeys = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewNumberOfUnreadItemsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfUnreadItemsResponse>> ViewNumberOfUnreadItemsWithHttpInfoAsync (string userId, string apiToken = default(string), string customType = default(string), string itemKeys = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -7334,9 +7334,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20019>(localVarStatusCode,
+            return new ApiResponse<ViewNumberOfUnreadItemsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20019) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20019)));
+                (ViewNumberOfUnreadItemsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfUnreadItemsResponse)));
         }
 
         /// <summary>
@@ -7347,10 +7347,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="customTypes"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
-        /// <returns>InlineResponse20018</returns>
-        public InlineResponse20018 ViewNumberOfUnreadMessages (string userId, string apiToken = default(string), string customTypes = default(string), string superMode = default(string))
+        /// <returns>ViewNumberOfUnreadMessagesResponse</returns>
+        public ViewNumberOfUnreadMessagesResponse ViewNumberOfUnreadMessages (string userId, string apiToken = default(string), string customTypes = default(string), string superMode = default(string))
         {
-             ApiResponse<InlineResponse20018> localVarResponse = ViewNumberOfUnreadMessagesWithHttpInfo(userId, apiToken, customTypes, superMode);
+             ApiResponse<ViewNumberOfUnreadMessagesResponse> localVarResponse = ViewNumberOfUnreadMessagesWithHttpInfo(userId, apiToken, customTypes, superMode);
              return localVarResponse.Data;
         }
 
@@ -7362,8 +7362,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="customTypes"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20018</returns>
-        public ApiResponse<InlineResponse20018> ViewNumberOfUnreadMessagesWithHttpInfo (string userId, string apiToken = default(string), string customTypes = default(string), string superMode = default(string))
+        /// <returns>ApiResponse of ViewNumberOfUnreadMessagesResponse</returns>
+        public ApiResponse<ViewNumberOfUnreadMessagesResponse> ViewNumberOfUnreadMessagesWithHttpInfo (string userId, string apiToken = default(string), string customTypes = default(string), string superMode = default(string))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -7409,9 +7409,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20018>(localVarStatusCode,
+            return new ApiResponse<ViewNumberOfUnreadMessagesResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20018) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20018)));
+                (ViewNumberOfUnreadMessagesResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfUnreadMessagesResponse)));
         }
 
         /// <summary>
@@ -7423,10 +7423,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customTypes"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20018</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20018> ViewNumberOfUnreadMessagesAsync (string userId, string apiToken = default(string), string customTypes = default(string), string superMode = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewNumberOfUnreadMessagesResponse</returns>
+        public async System.Threading.Tasks.Task<ViewNumberOfUnreadMessagesResponse> ViewNumberOfUnreadMessagesAsync (string userId, string apiToken = default(string), string customTypes = default(string), string superMode = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20018> localVarResponse = await ViewNumberOfUnreadMessagesWithHttpInfoAsync(userId, apiToken, customTypes, superMode, cancellationToken);
+             ApiResponse<ViewNumberOfUnreadMessagesResponse> localVarResponse = await ViewNumberOfUnreadMessagesWithHttpInfoAsync(userId, apiToken, customTypes, superMode, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -7440,8 +7440,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customTypes"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20018)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20018>> ViewNumberOfUnreadMessagesWithHttpInfoAsync (string userId, string apiToken = default(string), string customTypes = default(string), string superMode = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewNumberOfUnreadMessagesResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfUnreadMessagesResponse>> ViewNumberOfUnreadMessagesWithHttpInfoAsync (string userId, string apiToken = default(string), string customTypes = default(string), string superMode = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -7487,9 +7487,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20018>(localVarStatusCode,
+            return new ApiResponse<ViewNumberOfUnreadMessagesResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20018) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20018)));
+                (ViewNumberOfUnreadMessagesResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfUnreadMessagesResponse)));
         }
 
         /// <summary>
@@ -7498,10 +7498,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20028</returns>
-        public InlineResponse20028 ViewPushPreferences (string userId, string apiToken = default(string))
+        /// <returns>ViewPushPreferencesResponse</returns>
+        public ViewPushPreferencesResponse ViewPushPreferences (string userId, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20028> localVarResponse = ViewPushPreferencesWithHttpInfo(userId, apiToken);
+             ApiResponse<ViewPushPreferencesResponse> localVarResponse = ViewPushPreferencesWithHttpInfo(userId, apiToken);
              return localVarResponse.Data;
         }
 
@@ -7511,8 +7511,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20028</returns>
-        public ApiResponse<InlineResponse20028> ViewPushPreferencesWithHttpInfo (string userId, string apiToken = default(string))
+        /// <returns>ApiResponse of ViewPushPreferencesResponse</returns>
+        public ApiResponse<ViewPushPreferencesResponse> ViewPushPreferencesWithHttpInfo (string userId, string apiToken = default(string))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -7556,9 +7556,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20028>(localVarStatusCode,
+            return new ApiResponse<ViewPushPreferencesResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20028) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20028)));
+                (ViewPushPreferencesResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewPushPreferencesResponse)));
         }
 
         /// <summary>
@@ -7568,10 +7568,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20028</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20028> ViewPushPreferencesAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewPushPreferencesResponse</returns>
+        public async System.Threading.Tasks.Task<ViewPushPreferencesResponse> ViewPushPreferencesAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20028> localVarResponse = await ViewPushPreferencesWithHttpInfoAsync(userId, apiToken, cancellationToken);
+             ApiResponse<ViewPushPreferencesResponse> localVarResponse = await ViewPushPreferencesWithHttpInfoAsync(userId, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -7583,8 +7583,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20028)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20028>> ViewPushPreferencesWithHttpInfoAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewPushPreferencesResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewPushPreferencesResponse>> ViewPushPreferencesWithHttpInfoAsync (string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -7628,9 +7628,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20028>(localVarStatusCode,
+            return new ApiResponse<ViewPushPreferencesResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20028) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20028)));
+                (ViewPushPreferencesResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewPushPreferencesResponse)));
         }
 
         /// <summary>
@@ -7640,10 +7640,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20028</returns>
-        public InlineResponse20028 ViewPushPreferencesForChannelByUrl (string userId, string channelUrl, string apiToken = default(string))
+        /// <returns>ViewPushPreferencesForChannelByUrlResponse</returns>
+        public ViewPushPreferencesForChannelByUrlResponse ViewPushPreferencesForChannelByUrl (string userId, string channelUrl, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20028> localVarResponse = ViewPushPreferencesForChannelByUrlWithHttpInfo(userId, channelUrl, apiToken);
+             ApiResponse<ViewPushPreferencesForChannelByUrlResponse> localVarResponse = ViewPushPreferencesForChannelByUrlWithHttpInfo(userId, channelUrl, apiToken);
              return localVarResponse.Data;
         }
 
@@ -7654,8 +7654,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20028</returns>
-        public ApiResponse<InlineResponse20028> ViewPushPreferencesForChannelByUrlWithHttpInfo (string userId, string channelUrl, string apiToken = default(string))
+        /// <returns>ApiResponse of ViewPushPreferencesForChannelByUrlResponse</returns>
+        public ApiResponse<ViewPushPreferencesForChannelByUrlResponse> ViewPushPreferencesForChannelByUrlWithHttpInfo (string userId, string channelUrl, string apiToken = default(string))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -7703,9 +7703,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20028>(localVarStatusCode,
+            return new ApiResponse<ViewPushPreferencesForChannelByUrlResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20028) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20028)));
+                (ViewPushPreferencesForChannelByUrlResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewPushPreferencesForChannelByUrlResponse)));
         }
 
         /// <summary>
@@ -7716,10 +7716,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20028</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20028> ViewPushPreferencesForChannelByUrlAsync (string userId, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewPushPreferencesForChannelByUrlResponse</returns>
+        public async System.Threading.Tasks.Task<ViewPushPreferencesForChannelByUrlResponse> ViewPushPreferencesForChannelByUrlAsync (string userId, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20028> localVarResponse = await ViewPushPreferencesForChannelByUrlWithHttpInfoAsync(userId, channelUrl, apiToken, cancellationToken);
+             ApiResponse<ViewPushPreferencesForChannelByUrlResponse> localVarResponse = await ViewPushPreferencesForChannelByUrlWithHttpInfoAsync(userId, channelUrl, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -7732,8 +7732,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20028)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20028>> ViewPushPreferencesForChannelByUrlWithHttpInfoAsync (string userId, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewPushPreferencesForChannelByUrlResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewPushPreferencesForChannelByUrlResponse>> ViewPushPreferencesForChannelByUrlWithHttpInfoAsync (string userId, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'userId' is set
             if (userId == null)
@@ -7781,9 +7781,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20028>(localVarStatusCode,
+            return new ApiResponse<ViewPushPreferencesForChannelByUrlResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20028) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20028)));
+                (ViewPushPreferencesForChannelByUrlResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewPushPreferencesForChannelByUrlResponse)));
         }
 
         /// <summary>
@@ -7952,10 +7952,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>InlineResponse20027</returns>
-        public InlineResponse20027 ViewWhoOwnsRegistrationOrDeviceTokenByToken (string tokenType, string token, string apiToken = default(string))
+        /// <returns>ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse</returns>
+        public ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse ViewWhoOwnsRegistrationOrDeviceTokenByToken (string tokenType, string token, string apiToken = default(string))
         {
-             ApiResponse<InlineResponse20027> localVarResponse = ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo(tokenType, token, apiToken);
+             ApiResponse<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse> localVarResponse = ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo(tokenType, token, apiToken);
              return localVarResponse.Data;
         }
 
@@ -7966,8 +7966,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse20027</returns>
-        public ApiResponse<InlineResponse20027> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo (string tokenType, string token, string apiToken = default(string))
+        /// <returns>ApiResponse of ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse</returns>
+        public ApiResponse<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo (string tokenType, string token, string apiToken = default(string))
         {
             // verify the required parameter 'tokenType' is set
             if (tokenType == null)
@@ -8015,9 +8015,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20027>(localVarStatusCode,
+            return new ApiResponse<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20027) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20027)));
+                (ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse)));
         }
 
         /// <summary>
@@ -8028,10 +8028,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse20027</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20027> ViewWhoOwnsRegistrationOrDeviceTokenByTokenAsync (string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse</returns>
+        public async System.Threading.Tasks.Task<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse> ViewWhoOwnsRegistrationOrDeviceTokenByTokenAsync (string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse20027> localVarResponse = await ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync(tokenType, token, apiToken, cancellationToken);
+             ApiResponse<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse> localVarResponse = await ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync(tokenType, token, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -8044,8 +8044,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"></param>
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse20027)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20027>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync (string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync (string tokenType, string token, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'tokenType' is set
             if (tokenType == null)
@@ -8093,9 +8093,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse20027>(localVarStatusCode,
+            return new ApiResponse<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse20027) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20027)));
+                (ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse)));
         }
 
     }

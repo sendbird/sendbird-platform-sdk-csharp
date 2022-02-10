@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 ## CreateBot
 
-> InlineResponse20065Bots CreateBot (string apiToken = null, CreateBotData createBotData = null)
+> CreateBotResponse CreateBot (string apiToken = null, CreateBotData createBotData = null)
 
 Create a bot
 
@@ -47,7 +47,7 @@ namespace Example
             try
             {
                 // Create a bot
-                InlineResponse20065Bots result = apiInstance.CreateBot(apiToken, createBotData);
+                CreateBotResponse result = apiInstance.CreateBot(apiToken, createBotData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20065Bots**](InlineResponse20065Bots.md)
+[**CreateBotResponse**](CreateBotResponse.md)
 
 ### Authorization
 
@@ -411,7 +411,7 @@ No authorization required
 
 ## ListBots
 
-> InlineResponse20065 ListBots (string apiToken = null, string token = null, int? limit = null)
+> ListBotsResponse ListBots (string apiToken = null, string token = null, int? limit = null)
 
 List bots
 
@@ -441,7 +441,7 @@ namespace Example
             try
             {
                 // List bots
-                InlineResponse20065 result = apiInstance.ListBots(apiToken, token, limit);
+                ListBotsResponse result = apiInstance.ListBots(apiToken, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -466,7 +466,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20065**](InlineResponse20065.md)
+[**ListBotsResponse**](ListBotsResponse.md)
 
 ### Authorization
 
@@ -571,7 +571,7 @@ No authorization required
 
 ## UpdateBotById
 
-> InlineResponse20065Bots UpdateBotById (string botUserid, string apiToken = null, UpdateBotByIdData updateBotByIdData = null)
+> UpdateBotByIdResponse UpdateBotById (string botUserid, string apiToken = null, UpdateBotByIdData updateBotByIdData = null)
 
 Update a bot
 
@@ -601,7 +601,7 @@ namespace Example
             try
             {
                 // Update a bot
-                InlineResponse20065Bots result = apiInstance.UpdateBotById(botUserid, apiToken, updateBotByIdData);
+                UpdateBotByIdResponse result = apiInstance.UpdateBotById(botUserid, apiToken, updateBotByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -626,7 +626,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20065Bots**](InlineResponse20065Bots.md)
+[**UpdateBotByIdResponse**](UpdateBotByIdResponse.md)
 
 ### Authorization
 
@@ -651,7 +651,7 @@ No authorization required
 
 ## ViewBotById
 
-> InlineResponse20065Bots ViewBotById (string botUserid, string apiToken = null)
+> ViewBotByIdResponse ViewBotById (string botUserid, string apiToken = null)
 
 View a bot
 
@@ -680,7 +680,7 @@ namespace Example
             try
             {
                 // View a bot
-                InlineResponse20065Bots result = apiInstance.ViewBotById(botUserid, apiToken);
+                ViewBotByIdResponse result = apiInstance.ViewBotById(botUserid, apiToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -704,7 +704,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20065Bots**](InlineResponse20065Bots.md)
+[**ViewBotByIdResponse**](ViewBotByIdResponse.md)
 
 ### Authorization
 
