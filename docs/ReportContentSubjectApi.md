@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 ## ListReports
 
-> ListReportsResponse ListReports (string apiToken = null, string token = null, int? limit = null, int? startTs = null, int? endTs = null)
+> ListReportsResponse ListReports (string apiToken, string token = null, int? limit = null, int? startTs = null, int? endTs = null)
 
 List reports
 
@@ -40,7 +40,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ReportContentSubjectApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
             var startTs = 56;  // int? |  (optional) 
@@ -68,7 +68,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
  **startTs** | **int?**|  | [optional] 
@@ -101,7 +101,7 @@ No authorization required
 
 ## ListReportsOnChannelByUrl
 
-> ListReportsOnChannelByUrlResponse ListReportsOnChannelByUrl (string channelType, string channelUrl, string apiToken = null, string token = null, int? limit = null)
+> ListReportsOnChannelByUrlResponse ListReportsOnChannelByUrl (string apiToken, string channelType, string channelUrl, string token = null, int? limit = null)
 
 List reports on a channel
 
@@ -124,16 +124,16 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ReportContentSubjectApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
             {
                 // List reports on a channel
-                ListReportsOnChannelByUrlResponse result = apiInstance.ListReportsOnChannelByUrl(channelType, channelUrl, apiToken, token, limit);
+                ListReportsOnChannelByUrlResponse result = apiInstance.ListReportsOnChannelByUrl(apiToken, channelType, channelUrl, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -152,9 +152,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
 
@@ -185,7 +185,7 @@ No authorization required
 
 ## ListReportsOnMessageById
 
-> ListReportsOnMessageByIdResponse ListReportsOnMessageById (string channelType, string channelUrl, string messageId, string apiToken = null, string token = null, int? limit = null)
+> ListReportsOnMessageByIdResponse ListReportsOnMessageById (string apiToken, string channelType, string channelUrl, string messageId, string token = null, int? limit = null)
 
 List reports on a message
 
@@ -208,17 +208,17 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ReportContentSubjectApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var messageId = messageId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
             {
                 // List reports on a message
-                ListReportsOnMessageByIdResponse result = apiInstance.ListReportsOnMessageById(channelType, channelUrl, messageId, apiToken, token, limit);
+                ListReportsOnMessageByIdResponse result = apiInstance.ListReportsOnMessageById(apiToken, channelType, channelUrl, messageId, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -237,10 +237,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **messageId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
 
@@ -271,7 +271,7 @@ No authorization required
 
 ## ListReportsOnUserById
 
-> ListReportsOnUserByIdResponse ListReportsOnUserById (string offendingUserId, string apiToken = null, string token = null, int? limit = null)
+> ListReportsOnUserByIdResponse ListReportsOnUserById (string apiToken, string offendingUserId, string token = null, int? limit = null)
 
 List reports on a user
 
@@ -294,15 +294,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ReportContentSubjectApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var offendingUserId = offendingUserId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
             {
                 // List reports on a user
-                ListReportsOnUserByIdResponse result = apiInstance.ListReportsOnUserById(offendingUserId, apiToken, token, limit);
+                ListReportsOnUserByIdResponse result = apiInstance.ListReportsOnUserById(apiToken, offendingUserId, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -321,8 +321,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **offendingUserId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
 
@@ -353,7 +353,7 @@ No authorization required
 
 ## ReportChannelByUrl
 
-> ReportChannelByUrlResponse ReportChannelByUrl (string channelType, string channelUrl, string apiToken = null, ReportChannelByUrlData reportChannelByUrlData = null)
+> ReportChannelByUrlResponse ReportChannelByUrl (string apiToken, string channelType, string channelUrl, ReportChannelByUrlData reportChannelByUrlData = null)
 
 Report a channel
 
@@ -376,15 +376,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ReportContentSubjectApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var reportChannelByUrlData = new ReportChannelByUrlData(); // ReportChannelByUrlData |  (optional) 
 
             try
             {
                 // Report a channel
-                ReportChannelByUrlResponse result = apiInstance.ReportChannelByUrl(channelType, channelUrl, apiToken, reportChannelByUrlData);
+                ReportChannelByUrlResponse result = apiInstance.ReportChannelByUrl(apiToken, channelType, channelUrl, reportChannelByUrlData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -403,9 +403,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **reportChannelByUrlData** | [**ReportChannelByUrlData**](ReportChannelByUrlData.md)|  | [optional] 
 
 ### Return type
@@ -435,7 +435,7 @@ No authorization required
 
 ## ReportMessageById
 
-> ReportMessageByIdResponse ReportMessageById (string channelType, string channelUrl, string messageId, string apiToken = null, ReportMessageByIdData reportMessageByIdData = null)
+> ReportMessageByIdResponse ReportMessageById (string apiToken, string channelType, string channelUrl, string messageId, ReportMessageByIdData reportMessageByIdData = null)
 
 Report a message
 
@@ -458,16 +458,16 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ReportContentSubjectApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var messageId = messageId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var reportMessageByIdData = new ReportMessageByIdData(); // ReportMessageByIdData |  (optional) 
 
             try
             {
                 // Report a message
-                ReportMessageByIdResponse result = apiInstance.ReportMessageById(channelType, channelUrl, messageId, apiToken, reportMessageByIdData);
+                ReportMessageByIdResponse result = apiInstance.ReportMessageById(apiToken, channelType, channelUrl, messageId, reportMessageByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -486,10 +486,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **messageId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **reportMessageByIdData** | [**ReportMessageByIdData**](ReportMessageByIdData.md)|  | [optional] 
 
 ### Return type
@@ -519,7 +519,7 @@ No authorization required
 
 ## ReportUserById
 
-> ReportUserByIdResponse ReportUserById (string offendingUserId, string apiToken = null, ReportUserByIdData reportUserByIdData = null)
+> ReportUserByIdResponse ReportUserById (string apiToken, string offendingUserId, ReportUserByIdData reportUserByIdData = null)
 
 Report a user
 
@@ -542,14 +542,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ReportContentSubjectApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var offendingUserId = offendingUserId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var reportUserByIdData = new ReportUserByIdData(); // ReportUserByIdData |  (optional) 
 
             try
             {
                 // Report a user
-                ReportUserByIdResponse result = apiInstance.ReportUserById(offendingUserId, apiToken, reportUserByIdData);
+                ReportUserByIdResponse result = apiInstance.ReportUserById(apiToken, offendingUserId, reportUserByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -568,8 +568,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **offendingUserId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **reportUserByIdData** | [**ReportUserByIdData**](ReportUserByIdData.md)|  | [optional] 
 
 ### Return type
@@ -599,7 +599,7 @@ No authorization required
 
 ## ViewModeratedMessageById
 
-> Dictionary&lt;string, string&gt; ViewModeratedMessageById (string channelType, string channelUrl, string messageId, string apiToken = null)
+> Dictionary&lt;string, string&gt; ViewModeratedMessageById (string apiToken, string channelType, string channelUrl, string messageId)
 
 View a moderated message
 
@@ -622,15 +622,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ReportContentSubjectApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var messageId = messageId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View a moderated message
-                Dictionary<string, string> result = apiInstance.ViewModeratedMessageById(channelType, channelUrl, messageId, apiToken);
+                Dictionary<string, string> result = apiInstance.ViewModeratedMessageById(apiToken, channelType, channelUrl, messageId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -649,10 +649,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **messageId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 

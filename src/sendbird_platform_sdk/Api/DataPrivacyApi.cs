@@ -32,10 +32,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Cancel the registration of a GDPR request  Cancels the registration of a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-cancel-the-registration-of-a-gdpr-request - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns></returns>
-        void CancelTheRegistrationOfGdprRequestById (string requestId, string apiToken = default(string));
+        void CancelTheRegistrationOfGdprRequestById (string apiToken, string requestId);
 
         /// <summary>
         /// Cancel the registration of a GDPR request
@@ -44,10 +44,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Cancel the registration of a GDPR request  Cancels the registration of a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-cancel-the-registration-of-a-gdpr-request - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> CancelTheRegistrationOfGdprRequestByIdWithHttpInfo (string requestId, string apiToken = default(string));
+        ApiResponse<Object> CancelTheRegistrationOfGdprRequestByIdWithHttpInfo (string apiToken, string requestId);
         /// <summary>
         /// List GDPR requests
         /// </summary>
@@ -55,11 +55,11 @@ namespace sendbird_platform_sdk.Api
         /// ## List GDPR requests  Retrieves a list of GDPR requests of all types.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-list-gdpr-requests - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListGdprRequestsResponse</returns>
-        ListGdprRequestsResponse ListGdprRequests (string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        ListGdprRequestsResponse ListGdprRequests (string apiToken, string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List GDPR requests
@@ -68,11 +68,11 @@ namespace sendbird_platform_sdk.Api
         /// ## List GDPR requests  Retrieves a list of GDPR requests of all types.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-list-gdpr-requests - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListGdprRequestsResponse</returns>
-        ApiResponse<ListGdprRequestsResponse> ListGdprRequestsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        ApiResponse<ListGdprRequestsResponse> ListGdprRequestsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?));
         /// <summary>
         /// Register a GDPR request
         /// </summary>
@@ -80,10 +80,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Register a GDPR request  Registers a specific type of GDPR request to meet the GDPR&#39;s requirements.  &gt; __Note__: Currently, only delete and access of the user data are supported. The features for the [right to restriction of processing](https://gdpr-info.eu/art-18-gdpr/) and [right to object](https://gdpr-info.eu/art-21-gdpr/) will be available soon.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-register-a-gdpr-request
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="registerGdprRequestData"> (optional)</param>
         /// <returns>RegisterGdprRequestResponse</returns>
-        RegisterGdprRequestResponse RegisterGdprRequest (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData));
+        RegisterGdprRequestResponse RegisterGdprRequest (string apiToken, RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData));
 
         /// <summary>
         /// Register a GDPR request
@@ -92,10 +92,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Register a GDPR request  Registers a specific type of GDPR request to meet the GDPR&#39;s requirements.  &gt; __Note__: Currently, only delete and access of the user data are supported. The features for the [right to restriction of processing](https://gdpr-info.eu/art-18-gdpr/) and [right to object](https://gdpr-info.eu/art-21-gdpr/) will be available soon.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-register-a-gdpr-request
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="registerGdprRequestData"> (optional)</param>
         /// <returns>ApiResponse of RegisterGdprRequestResponse</returns>
-        ApiResponse<RegisterGdprRequestResponse> RegisterGdprRequestWithHttpInfo (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData));
+        ApiResponse<RegisterGdprRequestResponse> RegisterGdprRequestWithHttpInfo (string apiToken, RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData));
         /// <summary>
         /// View a GDPR request
         /// </summary>
@@ -103,10 +103,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View a GDPR request  Retrieves a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-view-a-gdpr-request - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ViewGdprRequestByIdResponse</returns>
-        ViewGdprRequestByIdResponse ViewGdprRequestById (string requestId, string apiToken = default(string));
+        ViewGdprRequestByIdResponse ViewGdprRequestById (string apiToken, string requestId);
 
         /// <summary>
         /// View a GDPR request
@@ -115,10 +115,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View a GDPR request  Retrieves a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-view-a-gdpr-request - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of ViewGdprRequestByIdResponse</returns>
-        ApiResponse<ViewGdprRequestByIdResponse> ViewGdprRequestByIdWithHttpInfo (string requestId, string apiToken = default(string));
+        ApiResponse<ViewGdprRequestByIdResponse> ViewGdprRequestByIdWithHttpInfo (string apiToken, string requestId);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -128,11 +128,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Cancel the registration of a GDPR request  Cancels the registration of a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-cancel-the-registration-of-a-gdpr-request - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task CancelTheRegistrationOfGdprRequestByIdAsync (string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task CancelTheRegistrationOfGdprRequestByIdAsync (string apiToken, string requestId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Cancel the registration of a GDPR request
@@ -141,11 +141,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Cancel the registration of a GDPR request  Cancels the registration of a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-cancel-the-registration-of-a-gdpr-request - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> CancelTheRegistrationOfGdprRequestByIdWithHttpInfoAsync (string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> CancelTheRegistrationOfGdprRequestByIdWithHttpInfoAsync (string apiToken, string requestId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List GDPR requests
         /// </summary>
@@ -153,12 +153,12 @@ namespace sendbird_platform_sdk.Api
         /// ## List GDPR requests  Retrieves a list of GDPR requests of all types.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-list-gdpr-requests - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListGdprRequestsResponse</returns>
-        System.Threading.Tasks.Task<ListGdprRequestsResponse> ListGdprRequestsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListGdprRequestsResponse> ListGdprRequestsAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List GDPR requests
@@ -167,12 +167,12 @@ namespace sendbird_platform_sdk.Api
         /// ## List GDPR requests  Retrieves a list of GDPR requests of all types.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-list-gdpr-requests - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListGdprRequestsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListGdprRequestsResponse>> ListGdprRequestsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListGdprRequestsResponse>> ListGdprRequestsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Register a GDPR request
         /// </summary>
@@ -180,11 +180,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Register a GDPR request  Registers a specific type of GDPR request to meet the GDPR&#39;s requirements.  &gt; __Note__: Currently, only delete and access of the user data are supported. The features for the [right to restriction of processing](https://gdpr-info.eu/art-18-gdpr/) and [right to object](https://gdpr-info.eu/art-21-gdpr/) will be available soon.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-register-a-gdpr-request
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="registerGdprRequestData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RegisterGdprRequestResponse</returns>
-        System.Threading.Tasks.Task<RegisterGdprRequestResponse> RegisterGdprRequestAsync (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<RegisterGdprRequestResponse> RegisterGdprRequestAsync (string apiToken, RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Register a GDPR request
@@ -193,11 +193,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Register a GDPR request  Registers a specific type of GDPR request to meet the GDPR&#39;s requirements.  &gt; __Note__: Currently, only delete and access of the user data are supported. The features for the [right to restriction of processing](https://gdpr-info.eu/art-18-gdpr/) and [right to object](https://gdpr-info.eu/art-21-gdpr/) will be available soon.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-register-a-gdpr-request
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="registerGdprRequestData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RegisterGdprRequestResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RegisterGdprRequestResponse>> RegisterGdprRequestWithHttpInfoAsync (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<RegisterGdprRequestResponse>> RegisterGdprRequestWithHttpInfoAsync (string apiToken, RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a GDPR request
         /// </summary>
@@ -205,11 +205,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View a GDPR request  Retrieves a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-view-a-gdpr-request - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewGdprRequestByIdResponse</returns>
-        System.Threading.Tasks.Task<ViewGdprRequestByIdResponse> ViewGdprRequestByIdAsync (string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewGdprRequestByIdResponse> ViewGdprRequestByIdAsync (string apiToken, string requestId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a GDPR request
@@ -218,11 +218,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View a GDPR request  Retrieves a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-view-a-gdpr-request - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewGdprRequestByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewGdprRequestByIdResponse>> ViewGdprRequestByIdWithHttpInfoAsync (string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewGdprRequestByIdResponse>> ViewGdprRequestByIdWithHttpInfoAsync (string apiToken, string requestId, CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -338,23 +338,26 @@ namespace sendbird_platform_sdk.Api
         /// Cancel the registration of a GDPR request ## Cancel the registration of a GDPR request  Cancels the registration of a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-cancel-the-registration-of-a-gdpr-request - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns></returns>
-        public void CancelTheRegistrationOfGdprRequestById (string requestId, string apiToken = default(string))
+        public void CancelTheRegistrationOfGdprRequestById (string apiToken, string requestId)
         {
-             CancelTheRegistrationOfGdprRequestByIdWithHttpInfo(requestId, apiToken);
+             CancelTheRegistrationOfGdprRequestByIdWithHttpInfo(apiToken, requestId);
         }
 
         /// <summary>
         /// Cancel the registration of a GDPR request ## Cancel the registration of a GDPR request  Cancels the registration of a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-cancel-the-registration-of-a-gdpr-request - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> CancelTheRegistrationOfGdprRequestByIdWithHttpInfo (string requestId, string apiToken = default(string))
+        public ApiResponse<Object> CancelTheRegistrationOfGdprRequestByIdWithHttpInfo (string apiToken, string requestId)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling DataPrivacyApi->CancelTheRegistrationOfGdprRequestById");
             // verify the required parameter 'requestId' is set
             if (requestId == null)
                 throw new ApiException(400, "Missing required parameter 'requestId' when calling DataPrivacyApi->CancelTheRegistrationOfGdprRequestById");
@@ -405,13 +408,13 @@ namespace sendbird_platform_sdk.Api
         /// Cancel the registration of a GDPR request ## Cancel the registration of a GDPR request  Cancels the registration of a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-cancel-the-registration-of-a-gdpr-request - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task CancelTheRegistrationOfGdprRequestByIdAsync (string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task CancelTheRegistrationOfGdprRequestByIdAsync (string apiToken, string requestId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await CancelTheRegistrationOfGdprRequestByIdWithHttpInfoAsync(requestId, apiToken, cancellationToken);
+             await CancelTheRegistrationOfGdprRequestByIdWithHttpInfoAsync(apiToken, requestId, cancellationToken);
 
         }
 
@@ -419,12 +422,15 @@ namespace sendbird_platform_sdk.Api
         /// Cancel the registration of a GDPR request ## Cancel the registration of a GDPR request  Cancels the registration of a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-cancel-the-registration-of-a-gdpr-request - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> CancelTheRegistrationOfGdprRequestByIdWithHttpInfoAsync (string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> CancelTheRegistrationOfGdprRequestByIdWithHttpInfoAsync (string apiToken, string requestId, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling DataPrivacyApi->CancelTheRegistrationOfGdprRequestById");
             // verify the required parameter 'requestId' is set
             if (requestId == null)
                 throw new ApiException(400, "Missing required parameter 'requestId' when calling DataPrivacyApi->CancelTheRegistrationOfGdprRequestById");
@@ -475,11 +481,11 @@ namespace sendbird_platform_sdk.Api
         /// List GDPR requests ## List GDPR requests  Retrieves a list of GDPR requests of all types.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-list-gdpr-requests - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListGdprRequestsResponse</returns>
-        public ListGdprRequestsResponse ListGdprRequests (string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public ListGdprRequestsResponse ListGdprRequests (string apiToken, string token = default(string), int? limit = default(int?))
         {
              ApiResponse<ListGdprRequestsResponse> localVarResponse = ListGdprRequestsWithHttpInfo(apiToken, token, limit);
              return localVarResponse.Data;
@@ -489,12 +495,15 @@ namespace sendbird_platform_sdk.Api
         /// List GDPR requests ## List GDPR requests  Retrieves a list of GDPR requests of all types.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-list-gdpr-requests - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListGdprRequestsResponse</returns>
-        public ApiResponse<ListGdprRequestsResponse> ListGdprRequestsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public ApiResponse<ListGdprRequestsResponse> ListGdprRequestsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling DataPrivacyApi->ListGdprRequests");
 
             var localVarPath = "/v3/privacy/gdpr";
             var localVarPathParams = new Dictionary<String, String>();
@@ -544,12 +553,12 @@ namespace sendbird_platform_sdk.Api
         /// List GDPR requests ## List GDPR requests  Retrieves a list of GDPR requests of all types.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-list-gdpr-requests - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListGdprRequestsResponse</returns>
-        public async System.Threading.Tasks.Task<ListGdprRequestsResponse> ListGdprRequestsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListGdprRequestsResponse> ListGdprRequestsAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<ListGdprRequestsResponse> localVarResponse = await ListGdprRequestsWithHttpInfoAsync(apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
@@ -560,13 +569,16 @@ namespace sendbird_platform_sdk.Api
         /// List GDPR requests ## List GDPR requests  Retrieves a list of GDPR requests of all types.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-list-gdpr-requests - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListGdprRequestsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListGdprRequestsResponse>> ListGdprRequestsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListGdprRequestsResponse>> ListGdprRequestsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling DataPrivacyApi->ListGdprRequests");
 
             var localVarPath = "/v3/privacy/gdpr";
             var localVarPathParams = new Dictionary<String, String>();
@@ -616,10 +628,10 @@ namespace sendbird_platform_sdk.Api
         /// Register a GDPR request ## Register a GDPR request  Registers a specific type of GDPR request to meet the GDPR&#39;s requirements.  &gt; __Note__: Currently, only delete and access of the user data are supported. The features for the [right to restriction of processing](https://gdpr-info.eu/art-18-gdpr/) and [right to object](https://gdpr-info.eu/art-21-gdpr/) will be available soon.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-register-a-gdpr-request
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="registerGdprRequestData"> (optional)</param>
         /// <returns>RegisterGdprRequestResponse</returns>
-        public RegisterGdprRequestResponse RegisterGdprRequest (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData))
+        public RegisterGdprRequestResponse RegisterGdprRequest (string apiToken, RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData))
         {
              ApiResponse<RegisterGdprRequestResponse> localVarResponse = RegisterGdprRequestWithHttpInfo(apiToken, registerGdprRequestData);
              return localVarResponse.Data;
@@ -629,11 +641,14 @@ namespace sendbird_platform_sdk.Api
         /// Register a GDPR request ## Register a GDPR request  Registers a specific type of GDPR request to meet the GDPR&#39;s requirements.  &gt; __Note__: Currently, only delete and access of the user data are supported. The features for the [right to restriction of processing](https://gdpr-info.eu/art-18-gdpr/) and [right to object](https://gdpr-info.eu/art-21-gdpr/) will be available soon.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-register-a-gdpr-request
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="registerGdprRequestData"> (optional)</param>
         /// <returns>ApiResponse of RegisterGdprRequestResponse</returns>
-        public ApiResponse<RegisterGdprRequestResponse> RegisterGdprRequestWithHttpInfo (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData))
+        public ApiResponse<RegisterGdprRequestResponse> RegisterGdprRequestWithHttpInfo (string apiToken, RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling DataPrivacyApi->RegisterGdprRequest");
 
             var localVarPath = "/v3/privacy/gdpr";
             var localVarPathParams = new Dictionary<String, String>();
@@ -690,11 +705,11 @@ namespace sendbird_platform_sdk.Api
         /// Register a GDPR request ## Register a GDPR request  Registers a specific type of GDPR request to meet the GDPR&#39;s requirements.  &gt; __Note__: Currently, only delete and access of the user data are supported. The features for the [right to restriction of processing](https://gdpr-info.eu/art-18-gdpr/) and [right to object](https://gdpr-info.eu/art-21-gdpr/) will be available soon.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-register-a-gdpr-request
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="registerGdprRequestData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RegisterGdprRequestResponse</returns>
-        public async System.Threading.Tasks.Task<RegisterGdprRequestResponse> RegisterGdprRequestAsync (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<RegisterGdprRequestResponse> RegisterGdprRequestAsync (string apiToken, RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<RegisterGdprRequestResponse> localVarResponse = await RegisterGdprRequestWithHttpInfoAsync(apiToken, registerGdprRequestData, cancellationToken);
              return localVarResponse.Data;
@@ -705,12 +720,15 @@ namespace sendbird_platform_sdk.Api
         /// Register a GDPR request ## Register a GDPR request  Registers a specific type of GDPR request to meet the GDPR&#39;s requirements.  &gt; __Note__: Currently, only delete and access of the user data are supported. The features for the [right to restriction of processing](https://gdpr-info.eu/art-18-gdpr/) and [right to object](https://gdpr-info.eu/art-21-gdpr/) will be available soon.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-register-a-gdpr-request
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="registerGdprRequestData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RegisterGdprRequestResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RegisterGdprRequestResponse>> RegisterGdprRequestWithHttpInfoAsync (string apiToken = default(string), RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<RegisterGdprRequestResponse>> RegisterGdprRequestWithHttpInfoAsync (string apiToken, RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling DataPrivacyApi->RegisterGdprRequest");
 
             var localVarPath = "/v3/privacy/gdpr";
             var localVarPathParams = new Dictionary<String, String>();
@@ -767,12 +785,12 @@ namespace sendbird_platform_sdk.Api
         /// View a GDPR request ## View a GDPR request  Retrieves a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-view-a-gdpr-request - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ViewGdprRequestByIdResponse</returns>
-        public ViewGdprRequestByIdResponse ViewGdprRequestById (string requestId, string apiToken = default(string))
+        public ViewGdprRequestByIdResponse ViewGdprRequestById (string apiToken, string requestId)
         {
-             ApiResponse<ViewGdprRequestByIdResponse> localVarResponse = ViewGdprRequestByIdWithHttpInfo(requestId, apiToken);
+             ApiResponse<ViewGdprRequestByIdResponse> localVarResponse = ViewGdprRequestByIdWithHttpInfo(apiToken, requestId);
              return localVarResponse.Data;
         }
 
@@ -780,11 +798,14 @@ namespace sendbird_platform_sdk.Api
         /// View a GDPR request ## View a GDPR request  Retrieves a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-view-a-gdpr-request - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of ViewGdprRequestByIdResponse</returns>
-        public ApiResponse<ViewGdprRequestByIdResponse> ViewGdprRequestByIdWithHttpInfo (string requestId, string apiToken = default(string))
+        public ApiResponse<ViewGdprRequestByIdResponse> ViewGdprRequestByIdWithHttpInfo (string apiToken, string requestId)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling DataPrivacyApi->ViewGdprRequestById");
             // verify the required parameter 'requestId' is set
             if (requestId == null)
                 throw new ApiException(400, "Missing required parameter 'requestId' when calling DataPrivacyApi->ViewGdprRequestById");
@@ -836,13 +857,13 @@ namespace sendbird_platform_sdk.Api
         /// View a GDPR request ## View a GDPR request  Retrieves a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-view-a-gdpr-request - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewGdprRequestByIdResponse</returns>
-        public async System.Threading.Tasks.Task<ViewGdprRequestByIdResponse> ViewGdprRequestByIdAsync (string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewGdprRequestByIdResponse> ViewGdprRequestByIdAsync (string apiToken, string requestId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ViewGdprRequestByIdResponse> localVarResponse = await ViewGdprRequestByIdWithHttpInfoAsync(requestId, apiToken, cancellationToken);
+             ApiResponse<ViewGdprRequestByIdResponse> localVarResponse = await ViewGdprRequestByIdWithHttpInfoAsync(apiToken, requestId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -851,12 +872,15 @@ namespace sendbird_platform_sdk.Api
         /// View a GDPR request ## View a GDPR request  Retrieves a specific GDPR request.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-privacy#2-view-a-gdpr-request - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewGdprRequestByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewGdprRequestByIdResponse>> ViewGdprRequestByIdWithHttpInfoAsync (string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewGdprRequestByIdResponse>> ViewGdprRequestByIdWithHttpInfoAsync (string apiToken, string requestId, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling DataPrivacyApi->ViewGdprRequestById");
             // verify the required parameter 'requestId' is set
             if (requestId == null)
                 throw new ApiException(400, "Missing required parameter 'requestId' when calling DataPrivacyApi->ViewGdprRequestById");

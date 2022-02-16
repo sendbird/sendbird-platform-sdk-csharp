@@ -32,9 +32,9 @@ namespace sendbird_platform_sdk.Api
         /// ## Retrieve Advanced analytics metrics  Retrieves Advanced analytics metrics based on the specified parameters. You can retrieve either daily or monthly metrics using the time_dimension parameter.  &gt;__Note__: Daily metrics are calculated and updated every three hours, starting at 1 a.m. in UTC. Meanwhile, monthly metrics are calculated after the last day of the month.  https://sendbird.com/docs/chat/v3/platform-api/guides/advanced-analytics#2-retrieve-advanced-analytics-metrics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>RetrieveAdvancedAnalyticsMetricsResponse</returns>
-        RetrieveAdvancedAnalyticsMetricsResponse RetrieveAdvancedAnalyticsMetrics (string apiToken = default(string));
+        RetrieveAdvancedAnalyticsMetricsResponse RetrieveAdvancedAnalyticsMetrics (string apiToken);
 
         /// <summary>
         /// Retrieve Advanced analytics metrics
@@ -43,9 +43,9 @@ namespace sendbird_platform_sdk.Api
         /// ## Retrieve Advanced analytics metrics  Retrieves Advanced analytics metrics based on the specified parameters. You can retrieve either daily or monthly metrics using the time_dimension parameter.  &gt;__Note__: Daily metrics are calculated and updated every three hours, starting at 1 a.m. in UTC. Meanwhile, monthly metrics are calculated after the last day of the month.  https://sendbird.com/docs/chat/v3/platform-api/guides/advanced-analytics#2-retrieve-advanced-analytics-metrics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of RetrieveAdvancedAnalyticsMetricsResponse</returns>
-        ApiResponse<RetrieveAdvancedAnalyticsMetricsResponse> RetrieveAdvancedAnalyticsMetricsWithHttpInfo (string apiToken = default(string));
+        ApiResponse<RetrieveAdvancedAnalyticsMetricsResponse> RetrieveAdvancedAnalyticsMetricsWithHttpInfo (string apiToken);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -55,10 +55,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Retrieve Advanced analytics metrics  Retrieves Advanced analytics metrics based on the specified parameters. You can retrieve either daily or monthly metrics using the time_dimension parameter.  &gt;__Note__: Daily metrics are calculated and updated every three hours, starting at 1 a.m. in UTC. Meanwhile, monthly metrics are calculated after the last day of the month.  https://sendbird.com/docs/chat/v3/platform-api/guides/advanced-analytics#2-retrieve-advanced-analytics-metrics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RetrieveAdvancedAnalyticsMetricsResponse</returns>
-        System.Threading.Tasks.Task<RetrieveAdvancedAnalyticsMetricsResponse> RetrieveAdvancedAnalyticsMetricsAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<RetrieveAdvancedAnalyticsMetricsResponse> RetrieveAdvancedAnalyticsMetricsAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Retrieve Advanced analytics metrics
@@ -67,10 +67,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Retrieve Advanced analytics metrics  Retrieves Advanced analytics metrics based on the specified parameters. You can retrieve either daily or monthly metrics using the time_dimension parameter.  &gt;__Note__: Daily metrics are calculated and updated every three hours, starting at 1 a.m. in UTC. Meanwhile, monthly metrics are calculated after the last day of the month.  https://sendbird.com/docs/chat/v3/platform-api/guides/advanced-analytics#2-retrieve-advanced-analytics-metrics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RetrieveAdvancedAnalyticsMetricsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RetrieveAdvancedAnalyticsMetricsResponse>> RetrieveAdvancedAnalyticsMetricsWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<RetrieveAdvancedAnalyticsMetricsResponse>> RetrieveAdvancedAnalyticsMetricsWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -186,9 +186,9 @@ namespace sendbird_platform_sdk.Api
         /// Retrieve Advanced analytics metrics ## Retrieve Advanced analytics metrics  Retrieves Advanced analytics metrics based on the specified parameters. You can retrieve either daily or monthly metrics using the time_dimension parameter.  &gt;__Note__: Daily metrics are calculated and updated every three hours, starting at 1 a.m. in UTC. Meanwhile, monthly metrics are calculated after the last day of the month.  https://sendbird.com/docs/chat/v3/platform-api/guides/advanced-analytics#2-retrieve-advanced-analytics-metrics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>RetrieveAdvancedAnalyticsMetricsResponse</returns>
-        public RetrieveAdvancedAnalyticsMetricsResponse RetrieveAdvancedAnalyticsMetrics (string apiToken = default(string))
+        public RetrieveAdvancedAnalyticsMetricsResponse RetrieveAdvancedAnalyticsMetrics (string apiToken)
         {
              ApiResponse<RetrieveAdvancedAnalyticsMetricsResponse> localVarResponse = RetrieveAdvancedAnalyticsMetricsWithHttpInfo(apiToken);
              return localVarResponse.Data;
@@ -198,10 +198,13 @@ namespace sendbird_platform_sdk.Api
         /// Retrieve Advanced analytics metrics ## Retrieve Advanced analytics metrics  Retrieves Advanced analytics metrics based on the specified parameters. You can retrieve either daily or monthly metrics using the time_dimension parameter.  &gt;__Note__: Daily metrics are calculated and updated every three hours, starting at 1 a.m. in UTC. Meanwhile, monthly metrics are calculated after the last day of the month.  https://sendbird.com/docs/chat/v3/platform-api/guides/advanced-analytics#2-retrieve-advanced-analytics-metrics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of RetrieveAdvancedAnalyticsMetricsResponse</returns>
-        public ApiResponse<RetrieveAdvancedAnalyticsMetricsResponse> RetrieveAdvancedAnalyticsMetricsWithHttpInfo (string apiToken = default(string))
+        public ApiResponse<RetrieveAdvancedAnalyticsMetricsResponse> RetrieveAdvancedAnalyticsMetricsWithHttpInfo (string apiToken)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AdvancedAnalyticsApi->RetrieveAdvancedAnalyticsMetrics");
 
             var localVarPath = "/v3/statistics/metric";
             var localVarPathParams = new Dictionary<String, String>();
@@ -249,10 +252,10 @@ namespace sendbird_platform_sdk.Api
         /// Retrieve Advanced analytics metrics ## Retrieve Advanced analytics metrics  Retrieves Advanced analytics metrics based on the specified parameters. You can retrieve either daily or monthly metrics using the time_dimension parameter.  &gt;__Note__: Daily metrics are calculated and updated every three hours, starting at 1 a.m. in UTC. Meanwhile, monthly metrics are calculated after the last day of the month.  https://sendbird.com/docs/chat/v3/platform-api/guides/advanced-analytics#2-retrieve-advanced-analytics-metrics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RetrieveAdvancedAnalyticsMetricsResponse</returns>
-        public async System.Threading.Tasks.Task<RetrieveAdvancedAnalyticsMetricsResponse> RetrieveAdvancedAnalyticsMetricsAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<RetrieveAdvancedAnalyticsMetricsResponse> RetrieveAdvancedAnalyticsMetricsAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<RetrieveAdvancedAnalyticsMetricsResponse> localVarResponse = await RetrieveAdvancedAnalyticsMetricsWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -263,11 +266,14 @@ namespace sendbird_platform_sdk.Api
         /// Retrieve Advanced analytics metrics ## Retrieve Advanced analytics metrics  Retrieves Advanced analytics metrics based on the specified parameters. You can retrieve either daily or monthly metrics using the time_dimension parameter.  &gt;__Note__: Daily metrics are calculated and updated every three hours, starting at 1 a.m. in UTC. Meanwhile, monthly metrics are calculated after the last day of the month.  https://sendbird.com/docs/chat/v3/platform-api/guides/advanced-analytics#2-retrieve-advanced-analytics-metrics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RetrieveAdvancedAnalyticsMetricsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RetrieveAdvancedAnalyticsMetricsResponse>> RetrieveAdvancedAnalyticsMetricsWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<RetrieveAdvancedAnalyticsMetricsResponse>> RetrieveAdvancedAnalyticsMetricsWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AdvancedAnalyticsApi->RetrieveAdvancedAnalyticsMetrics");
 
             var localVarPath = "/v3/statistics/metric";
             var localVarPathParams = new Dictionary<String, String>();

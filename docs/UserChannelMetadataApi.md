@@ -30,7 +30,7 @@ Method | HTTP request | Description
 
 ## CreateChannelMetacounter
 
-> Dictionary&lt;string, SendBirdAdditionalProperties&gt; CreateChannelMetacounter (string channelType, string channelUrl, string apiToken = null, CreateChannelMetacounterData createChannelMetacounterData = null)
+> Dictionary&lt;string, SendBirdAdditionalProperties&gt; CreateChannelMetacounter (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = null)
 
 Create a channel metacounter
 
@@ -53,15 +53,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var createChannelMetacounterData = new CreateChannelMetacounterData(); // CreateChannelMetacounterData |  (optional) 
 
             try
             {
                 // Create a channel metacounter
-                Dictionary<string, SendBirdAdditionalProperties> result = apiInstance.CreateChannelMetacounter(channelType, channelUrl, apiToken, createChannelMetacounterData);
+                Dictionary<string, SendBirdAdditionalProperties> result = apiInstance.CreateChannelMetacounter(apiToken, channelType, channelUrl, createChannelMetacounterData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -80,9 +80,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **createChannelMetacounterData** | [**CreateChannelMetacounterData**](CreateChannelMetacounterData.md)|  | [optional] 
 
 ### Return type
@@ -112,7 +112,7 @@ No authorization required
 
 ## CreateChannelMetadata
 
-> CreateChannelMetadataResponse CreateChannelMetadata (string channelType, string channelUrl, string apiToken = null, CreateChannelMetadataData createChannelMetadataData = null)
+> CreateChannelMetadataResponse CreateChannelMetadata (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = null)
 
 Create a channel metadata
 
@@ -135,15 +135,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var createChannelMetadataData = new CreateChannelMetadataData(); // CreateChannelMetadataData |  (optional) 
 
             try
             {
                 // Create a channel metadata
-                CreateChannelMetadataResponse result = apiInstance.CreateChannelMetadata(channelType, channelUrl, apiToken, createChannelMetadataData);
+                CreateChannelMetadataResponse result = apiInstance.CreateChannelMetadata(apiToken, channelType, channelUrl, createChannelMetadataData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -162,9 +162,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **createChannelMetadataData** | [**CreateChannelMetadataData**](CreateChannelMetadataData.md)|  | [optional] 
 
 ### Return type
@@ -194,7 +194,7 @@ No authorization required
 
 ## CreateUserMetadata
 
-> CreateUserMetadataResponse CreateUserMetadata (string userId, string apiToken = null, CreateUserMetadataData createUserMetadataData = null)
+> CreateUserMetadataResponse CreateUserMetadata (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = null)
 
 Create a user metadata
 
@@ -217,14 +217,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var createUserMetadataData = new CreateUserMetadataData(); // CreateUserMetadataData |  (optional) 
 
             try
             {
                 // Create a user metadata
-                CreateUserMetadataResponse result = apiInstance.CreateUserMetadata(userId, apiToken, createUserMetadataData);
+                CreateUserMetadataResponse result = apiInstance.CreateUserMetadata(apiToken, userId, createUserMetadataData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -243,8 +243,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **createUserMetadataData** | [**CreateUserMetadataData**](CreateUserMetadataData.md)|  | [optional] 
 
 ### Return type
@@ -274,7 +274,7 @@ No authorization required
 
 ## DeleteChannelMetacounter
 
-> void DeleteChannelMetacounter (string channelType, string channelUrl, string apiToken = null)
+> void DeleteChannelMetacounter (string apiToken, string channelType, string channelUrl)
 
 Delete a channel metacounter - When deleting all items of a channel metacounter
 
@@ -297,14 +297,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Delete a channel metacounter - When deleting all items of a channel metacounter
-                apiInstance.DeleteChannelMetacounter(channelType, channelUrl, apiToken);
+                apiInstance.DeleteChannelMetacounter(apiToken, channelType, channelUrl);
             }
             catch (ApiException e)
             {
@@ -322,9 +322,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -353,7 +353,7 @@ No authorization required
 
 ## DeleteChannelMetacounterByKey
 
-> void DeleteChannelMetacounterByKey (string channelType, string channelUrl, string key, string apiToken = null)
+> void DeleteChannelMetacounterByKey (string apiToken, string channelType, string channelUrl, string key)
 
 Delete a channel metacounter - When deleting a specific item of a channel metacounter by its key
 
@@ -376,15 +376,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var key = key_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Delete a channel metacounter - When deleting a specific item of a channel metacounter by its key
-                apiInstance.DeleteChannelMetacounterByKey(channelType, channelUrl, key, apiToken);
+                apiInstance.DeleteChannelMetacounterByKey(apiToken, channelType, channelUrl, key);
             }
             catch (ApiException e)
             {
@@ -402,10 +402,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **key** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -434,7 +434,7 @@ No authorization required
 
 ## DeleteChannelMetadata
 
-> void DeleteChannelMetadata (string channelType, string channelUrl, string apiToken = null, string key = null)
+> void DeleteChannelMetadata (string apiToken, string channelType, string channelUrl, string key = null)
 
 Delete a channel metadata - When deleting all items of a channel metadata
 
@@ -457,15 +457,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var key = key_example;  // string |  (optional) 
 
             try
             {
                 // Delete a channel metadata - When deleting all items of a channel metadata
-                apiInstance.DeleteChannelMetadata(channelType, channelUrl, apiToken, key);
+                apiInstance.DeleteChannelMetadata(apiToken, channelType, channelUrl, key);
             }
             catch (ApiException e)
             {
@@ -483,9 +483,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **key** | **string**|  | [optional] 
 
 ### Return type
@@ -515,7 +515,7 @@ No authorization required
 
 ## DeleteChannelMetadataByKey
 
-> void DeleteChannelMetadataByKey (string channelType, string channelUrl, string key, string apiToken = null)
+> void DeleteChannelMetadataByKey (string apiToken, string channelType, string channelUrl, string key)
 
 Delete a channel metadata - When deleting a specific item of a channel metadata by its key
 
@@ -538,15 +538,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var key = key_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Delete a channel metadata - When deleting a specific item of a channel metadata by its key
-                apiInstance.DeleteChannelMetadataByKey(channelType, channelUrl, key, apiToken);
+                apiInstance.DeleteChannelMetadataByKey(apiToken, channelType, channelUrl, key);
             }
             catch (ApiException e)
             {
@@ -564,10 +564,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **key** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -596,7 +596,7 @@ No authorization required
 
 ## DeleteUserMetadata
 
-> void DeleteUserMetadata (string userId, string apiToken = null, string key = null)
+> void DeleteUserMetadata (string apiToken, string userId, string key = null)
 
 Delete a user metadata - When deleting all items of a user metadata
 
@@ -619,14 +619,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var key = key_example;  // string |  (optional) 
 
             try
             {
                 // Delete a user metadata - When deleting all items of a user metadata
-                apiInstance.DeleteUserMetadata(userId, apiToken, key);
+                apiInstance.DeleteUserMetadata(apiToken, userId, key);
             }
             catch (ApiException e)
             {
@@ -644,8 +644,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **key** | **string**|  | [optional] 
 
 ### Return type
@@ -675,7 +675,7 @@ No authorization required
 
 ## DeleteUserMetadataByKey
 
-> void DeleteUserMetadataByKey (string userId, string key, string apiToken = null)
+> void DeleteUserMetadataByKey (string apiToken, string userId, string key)
 
 Delete a user metadata - When deleting a specific item of a user metadata by its key
 
@@ -698,14 +698,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
             var key = key_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Delete a user metadata - When deleting a specific item of a user metadata by its key
-                apiInstance.DeleteUserMetadataByKey(userId, key, apiToken);
+                apiInstance.DeleteUserMetadataByKey(apiToken, userId, key);
             }
             catch (ApiException e)
             {
@@ -723,9 +723,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
  **key** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -754,7 +754,7 @@ No authorization required
 
 ## UpdateChannelMetacounter
 
-> Dictionary&lt;string, SendBirdAdditionalProperties&gt; UpdateChannelMetacounter (string channelType, string channelUrl, string apiToken = null, UpdateChannelMetacounterData updateChannelMetacounterData = null)
+> Dictionary&lt;string, SendBirdAdditionalProperties&gt; UpdateChannelMetacounter (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = null)
 
 Update a channel metacounter - When updating existing items of a channel metacounter by their keys or adding new items to the metacounter
 
@@ -777,15 +777,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updateChannelMetacounterData = new UpdateChannelMetacounterData(); // UpdateChannelMetacounterData |  (optional) 
 
             try
             {
                 // Update a channel metacounter - When updating existing items of a channel metacounter by their keys or adding new items to the metacounter
-                Dictionary<string, SendBirdAdditionalProperties> result = apiInstance.UpdateChannelMetacounter(channelType, channelUrl, apiToken, updateChannelMetacounterData);
+                Dictionary<string, SendBirdAdditionalProperties> result = apiInstance.UpdateChannelMetacounter(apiToken, channelType, channelUrl, updateChannelMetacounterData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -804,9 +804,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **updateChannelMetacounterData** | [**UpdateChannelMetacounterData**](UpdateChannelMetacounterData.md)|  | [optional] 
 
 ### Return type
@@ -836,7 +836,7 @@ No authorization required
 
 ## UpdateChannelMetacounterByKey
 
-> Dictionary&lt;string, string&gt; UpdateChannelMetacounterByKey (string channelType, string channelUrl, string key, string apiToken = null, Object body = null)
+> Dictionary&lt;string, string&gt; UpdateChannelMetacounterByKey (string apiToken, string channelType, string channelUrl, string key, Object body = null)
 
 Update a channel metacounter - When updating a specific item of a channel metacounter by its key
 
@@ -859,16 +859,16 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var key = key_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var body = ;  // Object |  (optional) 
 
             try
             {
                 // Update a channel metacounter - When updating a specific item of a channel metacounter by its key
-                Dictionary<string, string> result = apiInstance.UpdateChannelMetacounterByKey(channelType, channelUrl, key, apiToken, body);
+                Dictionary<string, string> result = apiInstance.UpdateChannelMetacounterByKey(apiToken, channelType, channelUrl, key, body);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -887,10 +887,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **key** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **body** | **Object**|  | [optional] 
 
 ### Return type
@@ -920,7 +920,7 @@ No authorization required
 
 ## UpdateChannelMetadata
 
-> Dictionary&lt;string, string&gt; UpdateChannelMetadata (string channelType, string channelUrl, string apiToken = null, UpdateChannelMetadataData updateChannelMetadataData = null)
+> Dictionary&lt;string, string&gt; UpdateChannelMetadata (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = null)
 
 Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata
 
@@ -943,15 +943,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updateChannelMetadataData = new UpdateChannelMetadataData(); // UpdateChannelMetadataData |  (optional) 
 
             try
             {
                 // Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata
-                Dictionary<string, string> result = apiInstance.UpdateChannelMetadata(channelType, channelUrl, apiToken, updateChannelMetadataData);
+                Dictionary<string, string> result = apiInstance.UpdateChannelMetadata(apiToken, channelType, channelUrl, updateChannelMetadataData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -970,9 +970,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **updateChannelMetadataData** | [**UpdateChannelMetadataData**](UpdateChannelMetadataData.md)|  | [optional] 
 
 ### Return type
@@ -1002,7 +1002,7 @@ No authorization required
 
 ## UpdateChannelMetadataByKey
 
-> Dictionary&lt;string, string&gt; UpdateChannelMetadataByKey (string channelType, string channelUrl, string key, string apiToken = null, Object body = null)
+> Dictionary&lt;string, string&gt; UpdateChannelMetadataByKey (string apiToken, string channelType, string channelUrl, string key, Object body = null)
 
 Update a channel metadata - When updating a specific item of a channel metadata by its key
 
@@ -1025,16 +1025,16 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var key = key_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var body = ;  // Object |  (optional) 
 
             try
             {
                 // Update a channel metadata - When updating a specific item of a channel metadata by its key
-                Dictionary<string, string> result = apiInstance.UpdateChannelMetadataByKey(channelType, channelUrl, key, apiToken, body);
+                Dictionary<string, string> result = apiInstance.UpdateChannelMetadataByKey(apiToken, channelType, channelUrl, key, body);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1053,10 +1053,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **key** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **body** | **Object**|  | [optional] 
 
 ### Return type
@@ -1086,7 +1086,7 @@ No authorization required
 
 ## UpdateUserMetadata
 
-> UpdateUserMetadataResponse UpdateUserMetadata (string userId, string apiToken = null, UpdateUserMetadataData updateUserMetadataData = null)
+> UpdateUserMetadataResponse UpdateUserMetadata (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = null)
 
 Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata
 
@@ -1109,14 +1109,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updateUserMetadataData = new UpdateUserMetadataData(); // UpdateUserMetadataData |  (optional) 
 
             try
             {
                 // Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata
-                UpdateUserMetadataResponse result = apiInstance.UpdateUserMetadata(userId, apiToken, updateUserMetadataData);
+                UpdateUserMetadataResponse result = apiInstance.UpdateUserMetadata(apiToken, userId, updateUserMetadataData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1135,8 +1135,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **updateUserMetadataData** | [**UpdateUserMetadataData**](UpdateUserMetadataData.md)|  | [optional] 
 
 ### Return type
@@ -1166,7 +1166,7 @@ No authorization required
 
 ## UpdateUserMetadataByKey
 
-> Dictionary&lt;string, string&gt; UpdateUserMetadataByKey (string userId, string key, string apiToken = null, Object body = null)
+> Dictionary&lt;string, string&gt; UpdateUserMetadataByKey (string apiToken, string userId, string key, Object body = null)
 
 Update a user metadata - When updating a specific item of a user metadata by its key
 
@@ -1189,15 +1189,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
             var key = key_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var body = ;  // Object |  (optional) 
 
             try
             {
                 // Update a user metadata - When updating a specific item of a user metadata by its key
-                Dictionary<string, string> result = apiInstance.UpdateUserMetadataByKey(userId, key, apiToken, body);
+                Dictionary<string, string> result = apiInstance.UpdateUserMetadataByKey(apiToken, userId, key, body);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1216,9 +1216,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
  **key** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **body** | **Object**|  | [optional] 
 
 ### Return type
@@ -1248,7 +1248,7 @@ No authorization required
 
 ## ViewChannelMetacounter
 
-> Dictionary&lt;string, SendBirdAdditionalProperties&gt; ViewChannelMetacounter (string channelType, string channelUrl, string apiToken = null, string key = null, List<string> keys = null)
+> Dictionary&lt;string, SendBirdAdditionalProperties&gt; ViewChannelMetacounter (string apiToken, string channelType, string channelUrl, string key = null, List<string> keys = null)
 
 View a channel metacounter - When retrieving all items of a channel metacounter
 
@@ -1271,16 +1271,16 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var key = key_example;  // string |  (optional) 
             var keys = new List<string>(); // List<string> |  (optional) 
 
             try
             {
                 // View a channel metacounter - When retrieving all items of a channel metacounter
-                Dictionary<string, SendBirdAdditionalProperties> result = apiInstance.ViewChannelMetacounter(channelType, channelUrl, apiToken, key, keys);
+                Dictionary<string, SendBirdAdditionalProperties> result = apiInstance.ViewChannelMetacounter(apiToken, channelType, channelUrl, key, keys);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1299,9 +1299,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **key** | **string**|  | [optional] 
  **keys** | [**List&lt;string&gt;**](string.md)|  | [optional] 
 
@@ -1332,7 +1332,7 @@ No authorization required
 
 ## ViewChannelMetacounterByKey
 
-> Dictionary&lt;string, SendBirdAdditionalProperties&gt; ViewChannelMetacounterByKey (string channelType, string channelUrl, string key, string apiToken = null)
+> Dictionary&lt;string, SendBirdAdditionalProperties&gt; ViewChannelMetacounterByKey (string apiToken, string channelType, string channelUrl, string key)
 
 View a channel metacounter - When retrieving a specific item of a channel metacounter by its key
 
@@ -1355,15 +1355,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var key = key_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View a channel metacounter - When retrieving a specific item of a channel metacounter by its key
-                Dictionary<string, SendBirdAdditionalProperties> result = apiInstance.ViewChannelMetacounterByKey(channelType, channelUrl, key, apiToken);
+                Dictionary<string, SendBirdAdditionalProperties> result = apiInstance.ViewChannelMetacounterByKey(apiToken, channelType, channelUrl, key);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1382,10 +1382,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **key** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1414,7 +1414,7 @@ No authorization required
 
 ## ViewChannelMetadata
 
-> Dictionary&lt;string, string&gt; ViewChannelMetadata (string channelType, string channelUrl, string apiToken = null, string key = null, List<string> keys = null)
+> Dictionary&lt;string, string&gt; ViewChannelMetadata (string apiToken, string channelType, string channelUrl, string key = null, List<string> keys = null)
 
 View a channel metadata - When retrieving all items of a channel metadata
 
@@ -1437,16 +1437,16 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var key = key_example;  // string |  (optional) 
             var keys = new List<string>(); // List<string> |  (optional) 
 
             try
             {
                 // View a channel metadata - When retrieving all items of a channel metadata
-                Dictionary<string, string> result = apiInstance.ViewChannelMetadata(channelType, channelUrl, apiToken, key, keys);
+                Dictionary<string, string> result = apiInstance.ViewChannelMetadata(apiToken, channelType, channelUrl, key, keys);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1465,9 +1465,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **key** | **string**|  | [optional] 
  **keys** | [**List&lt;string&gt;**](string.md)|  | [optional] 
 
@@ -1498,7 +1498,7 @@ No authorization required
 
 ## ViewChannelMetadataByKey
 
-> Dictionary&lt;string, string&gt; ViewChannelMetadataByKey (string channelType, string channelUrl, string key, string apiToken = null)
+> Dictionary&lt;string, string&gt; ViewChannelMetadataByKey (string apiToken, string channelType, string channelUrl, string key)
 
 View a channel metadata - When retrieving a specific item of a channel metadata by its key
 
@@ -1521,15 +1521,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var key = key_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View a channel metadata - When retrieving a specific item of a channel metadata by its key
-                Dictionary<string, string> result = apiInstance.ViewChannelMetadataByKey(channelType, channelUrl, key, apiToken);
+                Dictionary<string, string> result = apiInstance.ViewChannelMetadataByKey(apiToken, channelType, channelUrl, key);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1548,10 +1548,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **key** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1580,7 +1580,7 @@ No authorization required
 
 ## ViewUserMetadata
 
-> ViewUserMetadataResponse ViewUserMetadata (string userId, string apiToken = null, string key = null, List<string> keys = null)
+> ViewUserMetadataResponse ViewUserMetadata (string apiToken, string userId, string key = null, List<string> keys = null)
 
 View a user metadata - When retrieving all items of a user metadata
 
@@ -1603,15 +1603,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var key = key_example;  // string |  (optional) 
             var keys = new List<string>(); // List<string> |  (optional) 
 
             try
             {
                 // View a user metadata - When retrieving all items of a user metadata
-                ViewUserMetadataResponse result = apiInstance.ViewUserMetadata(userId, apiToken, key, keys);
+                ViewUserMetadataResponse result = apiInstance.ViewUserMetadata(apiToken, userId, key, keys);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1630,8 +1630,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **key** | **string**|  | [optional] 
  **keys** | [**List&lt;string&gt;**](string.md)|  | [optional] 
 
@@ -1662,7 +1662,7 @@ No authorization required
 
 ## ViewUserMetadataByKey
 
-> Dictionary&lt;string, string&gt; ViewUserMetadataByKey (string userId, string key, string apiToken = null)
+> Dictionary&lt;string, string&gt; ViewUserMetadataByKey (string apiToken, string userId, string key)
 
 View a user metadata - When retrieving a specific item of a user metadata by its key
 
@@ -1685,14 +1685,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserChannelMetadataApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
             var key = key_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View a user metadata - When retrieving a specific item of a user metadata by its key
-                Dictionary<string, string> result = apiInstance.ViewUserMetadataByKey(userId, key, apiToken);
+                Dictionary<string, string> result = apiInstance.ViewUserMetadataByKey(apiToken, userId, key);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1711,9 +1711,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
  **key** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 

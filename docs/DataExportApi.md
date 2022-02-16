@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 ## ListDataExportsByMessageChannelOrUser
 
-> ListDataExportsByMessageChannelOrUserResponse ListDataExportsByMessageChannelOrUser (string dataType, string apiToken = null, string token = null, int? limit = null)
+> ListDataExportsByMessageChannelOrUserResponse ListDataExportsByMessageChannelOrUser (string apiToken, string dataType, string token = null, int? limit = null)
 
 List data exports by message, channel, or user
 
@@ -35,15 +35,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new DataExportApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var dataType = dataType_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
             {
                 // List data exports by message, channel, or user
-                ListDataExportsByMessageChannelOrUserResponse result = apiInstance.ListDataExportsByMessageChannelOrUser(dataType, apiToken, token, limit);
+                ListDataExportsByMessageChannelOrUserResponse result = apiInstance.ListDataExportsByMessageChannelOrUser(apiToken, dataType, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -62,8 +62,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **dataType** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
 
@@ -94,7 +94,7 @@ No authorization required
 
 ## RegisterAndScheduleDataExport
 
-> RegisterAndScheduleDataExportResponse RegisterAndScheduleDataExport (string dataType, string apiToken = null, RegisterAndScheduleDataExportData registerAndScheduleDataExportData = null)
+> RegisterAndScheduleDataExportResponse RegisterAndScheduleDataExport (string apiToken, string dataType, RegisterAndScheduleDataExportData registerAndScheduleDataExportData = null)
 
 Register and schedule a data export
 
@@ -117,14 +117,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new DataExportApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var dataType = dataType_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var registerAndScheduleDataExportData = new RegisterAndScheduleDataExportData(); // RegisterAndScheduleDataExportData |  (optional) 
 
             try
             {
                 // Register and schedule a data export
-                RegisterAndScheduleDataExportResponse result = apiInstance.RegisterAndScheduleDataExport(dataType, apiToken, registerAndScheduleDataExportData);
+                RegisterAndScheduleDataExportResponse result = apiInstance.RegisterAndScheduleDataExport(apiToken, dataType, registerAndScheduleDataExportData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -143,8 +143,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **dataType** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **registerAndScheduleDataExportData** | [**RegisterAndScheduleDataExportData**](RegisterAndScheduleDataExportData.md)|  | [optional] 
 
 ### Return type
@@ -174,7 +174,7 @@ No authorization required
 
 ## ViewDataExportById
 
-> ViewDataExportByIdResponse ViewDataExportById (string dataType, string requestId, string apiToken = null)
+> ViewDataExportByIdResponse ViewDataExportById (string apiToken, string dataType, string requestId)
 
 View a data export
 
@@ -197,14 +197,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new DataExportApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var dataType = dataType_example;  // string | 
             var requestId = requestId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View a data export
-                ViewDataExportByIdResponse result = apiInstance.ViewDataExportById(dataType, requestId, apiToken);
+                ViewDataExportByIdResponse result = apiInstance.ViewDataExportById(apiToken, dataType, requestId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -223,9 +223,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **dataType** | **string**|  | 
  **requestId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 

@@ -32,12 +32,12 @@ namespace sendbird_platform_sdk.Api
         /// ## List data exports by message, channel, or user  Retrieves a list of message, channel or user data exports  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-list-data-exports-by-message,-channel,-or-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;data_type&#x60;      Type: string      Description: Specifies the type of a data export to retrieve. Acceptable values are messages, channels, users, and failed_webhooks.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListDataExportsByMessageChannelOrUserResponse</returns>
-        ListDataExportsByMessageChannelOrUserResponse ListDataExportsByMessageChannelOrUser (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        ListDataExportsByMessageChannelOrUserResponse ListDataExportsByMessageChannelOrUser (string apiToken, string dataType, string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List data exports by message, channel, or user
@@ -46,12 +46,12 @@ namespace sendbird_platform_sdk.Api
         /// ## List data exports by message, channel, or user  Retrieves a list of message, channel or user data exports  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-list-data-exports-by-message,-channel,-or-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;data_type&#x60;      Type: string      Description: Specifies the type of a data export to retrieve. Acceptable values are messages, channels, users, and failed_webhooks.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListDataExportsByMessageChannelOrUserResponse</returns>
-        ApiResponse<ListDataExportsByMessageChannelOrUserResponse> ListDataExportsByMessageChannelOrUserWithHttpInfo (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        ApiResponse<ListDataExportsByMessageChannelOrUserResponse> ListDataExportsByMessageChannelOrUserWithHttpInfo (string apiToken, string dataType, string token = default(string), int? limit = default(int?));
         /// <summary>
         /// Register and schedule a data export
         /// </summary>
@@ -59,11 +59,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Register and schedule a data export  Registers and schedules a message, channel, or user data export.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-register-and-schedule-a-data-export - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="registerAndScheduleDataExportData"> (optional)</param>
         /// <returns>RegisterAndScheduleDataExportResponse</returns>
-        RegisterAndScheduleDataExportResponse RegisterAndScheduleDataExport (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData));
+        RegisterAndScheduleDataExportResponse RegisterAndScheduleDataExport (string apiToken, string dataType, RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData));
 
         /// <summary>
         /// Register and schedule a data export
@@ -72,11 +72,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Register and schedule a data export  Registers and schedules a message, channel, or user data export.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-register-and-schedule-a-data-export - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="registerAndScheduleDataExportData"> (optional)</param>
         /// <returns>ApiResponse of RegisterAndScheduleDataExportResponse</returns>
-        ApiResponse<RegisterAndScheduleDataExportResponse> RegisterAndScheduleDataExportWithHttpInfo (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData));
+        ApiResponse<RegisterAndScheduleDataExportResponse> RegisterAndScheduleDataExportWithHttpInfo (string apiToken, string dataType, RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData));
         /// <summary>
         /// View a data export
         /// </summary>
@@ -84,11 +84,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View a data export  Retrieves information on a message, channel or user data export.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-view-a-data-export - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;data_type&#x60;      Type: string      Description: Specifies the type of a targeted data export. Acceptable values are messages, channels,  users, and failed_webhooks.  &#x60;request_id&#x60;      Type: string      Description: Specifies the unique ID of a data export to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ViewDataExportByIdResponse</returns>
-        ViewDataExportByIdResponse ViewDataExportById (string dataType, string requestId, string apiToken = default(string));
+        ViewDataExportByIdResponse ViewDataExportById (string apiToken, string dataType, string requestId);
 
         /// <summary>
         /// View a data export
@@ -97,11 +97,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View a data export  Retrieves information on a message, channel or user data export.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-view-a-data-export - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;data_type&#x60;      Type: string      Description: Specifies the type of a targeted data export. Acceptable values are messages, channels,  users, and failed_webhooks.  &#x60;request_id&#x60;      Type: string      Description: Specifies the unique ID of a data export to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of ViewDataExportByIdResponse</returns>
-        ApiResponse<ViewDataExportByIdResponse> ViewDataExportByIdWithHttpInfo (string dataType, string requestId, string apiToken = default(string));
+        ApiResponse<ViewDataExportByIdResponse> ViewDataExportByIdWithHttpInfo (string apiToken, string dataType, string requestId);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -111,13 +111,13 @@ namespace sendbird_platform_sdk.Api
         /// ## List data exports by message, channel, or user  Retrieves a list of message, channel or user data exports  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-list-data-exports-by-message,-channel,-or-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;data_type&#x60;      Type: string      Description: Specifies the type of a data export to retrieve. Acceptable values are messages, channels, users, and failed_webhooks.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListDataExportsByMessageChannelOrUserResponse</returns>
-        System.Threading.Tasks.Task<ListDataExportsByMessageChannelOrUserResponse> ListDataExportsByMessageChannelOrUserAsync (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListDataExportsByMessageChannelOrUserResponse> ListDataExportsByMessageChannelOrUserAsync (string apiToken, string dataType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List data exports by message, channel, or user
@@ -126,13 +126,13 @@ namespace sendbird_platform_sdk.Api
         /// ## List data exports by message, channel, or user  Retrieves a list of message, channel or user data exports  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-list-data-exports-by-message,-channel,-or-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;data_type&#x60;      Type: string      Description: Specifies the type of a data export to retrieve. Acceptable values are messages, channels, users, and failed_webhooks.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListDataExportsByMessageChannelOrUserResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListDataExportsByMessageChannelOrUserResponse>> ListDataExportsByMessageChannelOrUserWithHttpInfoAsync (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListDataExportsByMessageChannelOrUserResponse>> ListDataExportsByMessageChannelOrUserWithHttpInfoAsync (string apiToken, string dataType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Register and schedule a data export
         /// </summary>
@@ -140,12 +140,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Register and schedule a data export  Registers and schedules a message, channel, or user data export.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-register-and-schedule-a-data-export - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="registerAndScheduleDataExportData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RegisterAndScheduleDataExportResponse</returns>
-        System.Threading.Tasks.Task<RegisterAndScheduleDataExportResponse> RegisterAndScheduleDataExportAsync (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<RegisterAndScheduleDataExportResponse> RegisterAndScheduleDataExportAsync (string apiToken, string dataType, RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Register and schedule a data export
@@ -154,12 +154,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Register and schedule a data export  Registers and schedules a message, channel, or user data export.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-register-and-schedule-a-data-export - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="registerAndScheduleDataExportData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RegisterAndScheduleDataExportResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RegisterAndScheduleDataExportResponse>> RegisterAndScheduleDataExportWithHttpInfoAsync (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<RegisterAndScheduleDataExportResponse>> RegisterAndScheduleDataExportWithHttpInfoAsync (string apiToken, string dataType, RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a data export
         /// </summary>
@@ -167,12 +167,12 @@ namespace sendbird_platform_sdk.Api
         /// ## View a data export  Retrieves information on a message, channel or user data export.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-view-a-data-export - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;data_type&#x60;      Type: string      Description: Specifies the type of a targeted data export. Acceptable values are messages, channels,  users, and failed_webhooks.  &#x60;request_id&#x60;      Type: string      Description: Specifies the unique ID of a data export to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewDataExportByIdResponse</returns>
-        System.Threading.Tasks.Task<ViewDataExportByIdResponse> ViewDataExportByIdAsync (string dataType, string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewDataExportByIdResponse> ViewDataExportByIdAsync (string apiToken, string dataType, string requestId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a data export
@@ -181,12 +181,12 @@ namespace sendbird_platform_sdk.Api
         /// ## View a data export  Retrieves information on a message, channel or user data export.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-view-a-data-export - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;data_type&#x60;      Type: string      Description: Specifies the type of a targeted data export. Acceptable values are messages, channels,  users, and failed_webhooks.  &#x60;request_id&#x60;      Type: string      Description: Specifies the unique ID of a data export to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewDataExportByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewDataExportByIdResponse>> ViewDataExportByIdWithHttpInfoAsync (string dataType, string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewDataExportByIdResponse>> ViewDataExportByIdWithHttpInfoAsync (string apiToken, string dataType, string requestId, CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -302,14 +302,14 @@ namespace sendbird_platform_sdk.Api
         /// List data exports by message, channel, or user ## List data exports by message, channel, or user  Retrieves a list of message, channel or user data exports  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-list-data-exports-by-message,-channel,-or-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;data_type&#x60;      Type: string      Description: Specifies the type of a data export to retrieve. Acceptable values are messages, channels, users, and failed_webhooks.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListDataExportsByMessageChannelOrUserResponse</returns>
-        public ListDataExportsByMessageChannelOrUserResponse ListDataExportsByMessageChannelOrUser (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public ListDataExportsByMessageChannelOrUserResponse ListDataExportsByMessageChannelOrUser (string apiToken, string dataType, string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<ListDataExportsByMessageChannelOrUserResponse> localVarResponse = ListDataExportsByMessageChannelOrUserWithHttpInfo(dataType, apiToken, token, limit);
+             ApiResponse<ListDataExportsByMessageChannelOrUserResponse> localVarResponse = ListDataExportsByMessageChannelOrUserWithHttpInfo(apiToken, dataType, token, limit);
              return localVarResponse.Data;
         }
 
@@ -317,13 +317,16 @@ namespace sendbird_platform_sdk.Api
         /// List data exports by message, channel, or user ## List data exports by message, channel, or user  Retrieves a list of message, channel or user data exports  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-list-data-exports-by-message,-channel,-or-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;data_type&#x60;      Type: string      Description: Specifies the type of a data export to retrieve. Acceptable values are messages, channels, users, and failed_webhooks.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListDataExportsByMessageChannelOrUserResponse</returns>
-        public ApiResponse<ListDataExportsByMessageChannelOrUserResponse> ListDataExportsByMessageChannelOrUserWithHttpInfo (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public ApiResponse<ListDataExportsByMessageChannelOrUserResponse> ListDataExportsByMessageChannelOrUserWithHttpInfo (string apiToken, string dataType, string token = default(string), int? limit = default(int?))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling DataExportApi->ListDataExportsByMessageChannelOrUser");
             // verify the required parameter 'dataType' is set
             if (dataType == null)
                 throw new ApiException(400, "Missing required parameter 'dataType' when calling DataExportApi->ListDataExportsByMessageChannelOrUser");
@@ -377,15 +380,15 @@ namespace sendbird_platform_sdk.Api
         /// List data exports by message, channel, or user ## List data exports by message, channel, or user  Retrieves a list of message, channel or user data exports  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-list-data-exports-by-message,-channel,-or-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;data_type&#x60;      Type: string      Description: Specifies the type of a data export to retrieve. Acceptable values are messages, channels, users, and failed_webhooks.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListDataExportsByMessageChannelOrUserResponse</returns>
-        public async System.Threading.Tasks.Task<ListDataExportsByMessageChannelOrUserResponse> ListDataExportsByMessageChannelOrUserAsync (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListDataExportsByMessageChannelOrUserResponse> ListDataExportsByMessageChannelOrUserAsync (string apiToken, string dataType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ListDataExportsByMessageChannelOrUserResponse> localVarResponse = await ListDataExportsByMessageChannelOrUserWithHttpInfoAsync(dataType, apiToken, token, limit, cancellationToken);
+             ApiResponse<ListDataExportsByMessageChannelOrUserResponse> localVarResponse = await ListDataExportsByMessageChannelOrUserWithHttpInfoAsync(apiToken, dataType, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -394,14 +397,17 @@ namespace sendbird_platform_sdk.Api
         /// List data exports by message, channel, or user ## List data exports by message, channel, or user  Retrieves a list of message, channel or user data exports  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-list-data-exports-by-message,-channel,-or-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;data_type&#x60;      Type: string      Description: Specifies the type of a data export to retrieve. Acceptable values are messages, channels, users, and failed_webhooks.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListDataExportsByMessageChannelOrUserResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListDataExportsByMessageChannelOrUserResponse>> ListDataExportsByMessageChannelOrUserWithHttpInfoAsync (string dataType, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListDataExportsByMessageChannelOrUserResponse>> ListDataExportsByMessageChannelOrUserWithHttpInfoAsync (string apiToken, string dataType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling DataExportApi->ListDataExportsByMessageChannelOrUser");
             // verify the required parameter 'dataType' is set
             if (dataType == null)
                 throw new ApiException(400, "Missing required parameter 'dataType' when calling DataExportApi->ListDataExportsByMessageChannelOrUser");
@@ -455,13 +461,13 @@ namespace sendbird_platform_sdk.Api
         /// Register and schedule a data export ## Register and schedule a data export  Registers and schedules a message, channel, or user data export.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-register-and-schedule-a-data-export - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="registerAndScheduleDataExportData"> (optional)</param>
         /// <returns>RegisterAndScheduleDataExportResponse</returns>
-        public RegisterAndScheduleDataExportResponse RegisterAndScheduleDataExport (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData))
+        public RegisterAndScheduleDataExportResponse RegisterAndScheduleDataExport (string apiToken, string dataType, RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData))
         {
-             ApiResponse<RegisterAndScheduleDataExportResponse> localVarResponse = RegisterAndScheduleDataExportWithHttpInfo(dataType, apiToken, registerAndScheduleDataExportData);
+             ApiResponse<RegisterAndScheduleDataExportResponse> localVarResponse = RegisterAndScheduleDataExportWithHttpInfo(apiToken, dataType, registerAndScheduleDataExportData);
              return localVarResponse.Data;
         }
 
@@ -469,12 +475,15 @@ namespace sendbird_platform_sdk.Api
         /// Register and schedule a data export ## Register and schedule a data export  Registers and schedules a message, channel, or user data export.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-register-and-schedule-a-data-export - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="registerAndScheduleDataExportData"> (optional)</param>
         /// <returns>ApiResponse of RegisterAndScheduleDataExportResponse</returns>
-        public ApiResponse<RegisterAndScheduleDataExportResponse> RegisterAndScheduleDataExportWithHttpInfo (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData))
+        public ApiResponse<RegisterAndScheduleDataExportResponse> RegisterAndScheduleDataExportWithHttpInfo (string apiToken, string dataType, RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling DataExportApi->RegisterAndScheduleDataExport");
             // verify the required parameter 'dataType' is set
             if (dataType == null)
                 throw new ApiException(400, "Missing required parameter 'dataType' when calling DataExportApi->RegisterAndScheduleDataExport");
@@ -535,14 +544,14 @@ namespace sendbird_platform_sdk.Api
         /// Register and schedule a data export ## Register and schedule a data export  Registers and schedules a message, channel, or user data export.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-register-and-schedule-a-data-export - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="registerAndScheduleDataExportData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RegisterAndScheduleDataExportResponse</returns>
-        public async System.Threading.Tasks.Task<RegisterAndScheduleDataExportResponse> RegisterAndScheduleDataExportAsync (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<RegisterAndScheduleDataExportResponse> RegisterAndScheduleDataExportAsync (string apiToken, string dataType, RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<RegisterAndScheduleDataExportResponse> localVarResponse = await RegisterAndScheduleDataExportWithHttpInfoAsync(dataType, apiToken, registerAndScheduleDataExportData, cancellationToken);
+             ApiResponse<RegisterAndScheduleDataExportResponse> localVarResponse = await RegisterAndScheduleDataExportWithHttpInfoAsync(apiToken, dataType, registerAndScheduleDataExportData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -551,13 +560,16 @@ namespace sendbird_platform_sdk.Api
         /// Register and schedule a data export ## Register and schedule a data export  Registers and schedules a message, channel, or user data export.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-register-and-schedule-a-data-export - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="registerAndScheduleDataExportData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RegisterAndScheduleDataExportResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RegisterAndScheduleDataExportResponse>> RegisterAndScheduleDataExportWithHttpInfoAsync (string dataType, string apiToken = default(string), RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<RegisterAndScheduleDataExportResponse>> RegisterAndScheduleDataExportWithHttpInfoAsync (string apiToken, string dataType, RegisterAndScheduleDataExportData registerAndScheduleDataExportData = default(RegisterAndScheduleDataExportData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling DataExportApi->RegisterAndScheduleDataExport");
             // verify the required parameter 'dataType' is set
             if (dataType == null)
                 throw new ApiException(400, "Missing required parameter 'dataType' when calling DataExportApi->RegisterAndScheduleDataExport");
@@ -618,13 +630,13 @@ namespace sendbird_platform_sdk.Api
         /// View a data export ## View a data export  Retrieves information on a message, channel or user data export.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-view-a-data-export - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;data_type&#x60;      Type: string      Description: Specifies the type of a targeted data export. Acceptable values are messages, channels,  users, and failed_webhooks.  &#x60;request_id&#x60;      Type: string      Description: Specifies the unique ID of a data export to retrieve.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ViewDataExportByIdResponse</returns>
-        public ViewDataExportByIdResponse ViewDataExportById (string dataType, string requestId, string apiToken = default(string))
+        public ViewDataExportByIdResponse ViewDataExportById (string apiToken, string dataType, string requestId)
         {
-             ApiResponse<ViewDataExportByIdResponse> localVarResponse = ViewDataExportByIdWithHttpInfo(dataType, requestId, apiToken);
+             ApiResponse<ViewDataExportByIdResponse> localVarResponse = ViewDataExportByIdWithHttpInfo(apiToken, dataType, requestId);
              return localVarResponse.Data;
         }
 
@@ -632,12 +644,15 @@ namespace sendbird_platform_sdk.Api
         /// View a data export ## View a data export  Retrieves information on a message, channel or user data export.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-view-a-data-export - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;data_type&#x60;      Type: string      Description: Specifies the type of a targeted data export. Acceptable values are messages, channels,  users, and failed_webhooks.  &#x60;request_id&#x60;      Type: string      Description: Specifies the unique ID of a data export to retrieve.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of ViewDataExportByIdResponse</returns>
-        public ApiResponse<ViewDataExportByIdResponse> ViewDataExportByIdWithHttpInfo (string dataType, string requestId, string apiToken = default(string))
+        public ApiResponse<ViewDataExportByIdResponse> ViewDataExportByIdWithHttpInfo (string apiToken, string dataType, string requestId)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling DataExportApi->ViewDataExportById");
             // verify the required parameter 'dataType' is set
             if (dataType == null)
                 throw new ApiException(400, "Missing required parameter 'dataType' when calling DataExportApi->ViewDataExportById");
@@ -693,14 +708,14 @@ namespace sendbird_platform_sdk.Api
         /// View a data export ## View a data export  Retrieves information on a message, channel or user data export.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-view-a-data-export - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;data_type&#x60;      Type: string      Description: Specifies the type of a targeted data export. Acceptable values are messages, channels,  users, and failed_webhooks.  &#x60;request_id&#x60;      Type: string      Description: Specifies the unique ID of a data export to retrieve.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewDataExportByIdResponse</returns>
-        public async System.Threading.Tasks.Task<ViewDataExportByIdResponse> ViewDataExportByIdAsync (string dataType, string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewDataExportByIdResponse> ViewDataExportByIdAsync (string apiToken, string dataType, string requestId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ViewDataExportByIdResponse> localVarResponse = await ViewDataExportByIdWithHttpInfoAsync(dataType, requestId, apiToken, cancellationToken);
+             ApiResponse<ViewDataExportByIdResponse> localVarResponse = await ViewDataExportByIdWithHttpInfoAsync(apiToken, dataType, requestId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -709,13 +724,16 @@ namespace sendbird_platform_sdk.Api
         /// View a data export ## View a data export  Retrieves information on a message, channel or user data export.  https://sendbird.com/docs/chat/v3/platform-api/guides/data-export#2-view-a-data-export - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;data_type&#x60;      Type: string      Description: Specifies the type of a targeted data export. Acceptable values are messages, channels,  users, and failed_webhooks.  &#x60;request_id&#x60;      Type: string      Description: Specifies the unique ID of a data export to retrieve.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="dataType"></param>
         /// <param name="requestId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewDataExportByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewDataExportByIdResponse>> ViewDataExportByIdWithHttpInfoAsync (string dataType, string requestId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewDataExportByIdResponse>> ViewDataExportByIdWithHttpInfoAsync (string apiToken, string dataType, string requestId, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling DataExportApi->ViewDataExportById");
             // verify the required parameter 'dataType' is set
             if (dataType == null)
                 throw new ApiException(400, "Missing required parameter 'dataType' when calling DataExportApi->ViewDataExportById");

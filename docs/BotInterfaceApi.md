@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 ## CreateBot
 
-> CreateBotResponse CreateBot (string apiToken = null, CreateBotData createBotData = null)
+> CreateBotResponse CreateBot (string apiToken, CreateBotData createBotData = null)
 
 Create a bot
 
@@ -41,7 +41,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new BotInterfaceApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var createBotData = new CreateBotData(); // CreateBotData |  (optional) 
 
             try
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **createBotData** | [**CreateBotData**](CreateBotData.md)|  | [optional] 
 
 ### Return type
@@ -96,7 +96,7 @@ No authorization required
 
 ## DeleteBotById
 
-> void DeleteBotById (string botUserid, string apiToken = null)
+> void DeleteBotById (string apiToken, string botUserid)
 
 Delete a bot
 
@@ -119,13 +119,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new BotInterfaceApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var botUserid = botUserid_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Delete a bot
-                apiInstance.DeleteBotById(botUserid, apiToken);
+                apiInstance.DeleteBotById(apiToken, botUserid);
             }
             catch (ApiException e)
             {
@@ -143,8 +143,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **botUserid** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -173,7 +173,7 @@ No authorization required
 
 ## JoinChannels
 
-> SendBirdGroupChannelCollection JoinChannels (string botUserid, string apiToken = null, JoinChannelsData joinChannelsData = null)
+> SendBirdGroupChannelCollection JoinChannels (string apiToken, string botUserid, JoinChannelsData joinChannelsData = null)
 
 Join channels
 
@@ -196,14 +196,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new BotInterfaceApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var botUserid = botUserid_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var joinChannelsData = new JoinChannelsData(); // JoinChannelsData |  (optional) 
 
             try
             {
                 // Join channels
-                SendBirdGroupChannelCollection result = apiInstance.JoinChannels(botUserid, apiToken, joinChannelsData);
+                SendBirdGroupChannelCollection result = apiInstance.JoinChannels(apiToken, botUserid, joinChannelsData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -222,8 +222,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **botUserid** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **joinChannelsData** | [**JoinChannelsData**](JoinChannelsData.md)|  | [optional] 
 
 ### Return type
@@ -253,7 +253,7 @@ No authorization required
 
 ## LeaveChannels
 
-> void LeaveChannels (string botUserid, string apiToken = null, string channelUrl = null)
+> void LeaveChannels (string apiToken, string botUserid, string channelUrl = null)
 
 Leave channels - When leaving all channels
 
@@ -276,14 +276,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new BotInterfaceApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var botUserid = botUserid_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var channelUrl = channelUrl_example;  // string |  (optional) 
 
             try
             {
                 // Leave channels - When leaving all channels
-                apiInstance.LeaveChannels(botUserid, apiToken, channelUrl);
+                apiInstance.LeaveChannels(apiToken, botUserid, channelUrl);
             }
             catch (ApiException e)
             {
@@ -301,8 +301,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **botUserid** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **channelUrl** | **string**|  | [optional] 
 
 ### Return type
@@ -332,7 +332,7 @@ No authorization required
 
 ## LeaveChannelsByUrl
 
-> void LeaveChannelsByUrl (string botUserid, string channelUrl, string apiToken = null)
+> void LeaveChannelsByUrl (string apiToken, string botUserid, string channelUrl)
 
 Leave channels - When leaving a channel by its channel URL
 
@@ -355,14 +355,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new BotInterfaceApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var botUserid = botUserid_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Leave channels - When leaving a channel by its channel URL
-                apiInstance.LeaveChannelsByUrl(botUserid, channelUrl, apiToken);
+                apiInstance.LeaveChannelsByUrl(apiToken, botUserid, channelUrl);
             }
             catch (ApiException e)
             {
@@ -380,9 +380,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **botUserid** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -411,7 +411,7 @@ No authorization required
 
 ## ListBots
 
-> ListBotsResponse ListBots (string apiToken = null, string token = null, int? limit = null)
+> ListBotsResponse ListBots (string apiToken, string token = null, int? limit = null)
 
 List bots
 
@@ -434,7 +434,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new BotInterfaceApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
@@ -460,7 +460,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
 
@@ -491,7 +491,7 @@ No authorization required
 
 ## SendBotsMessage
 
-> SendBirdMessageResponse SendBotsMessage (string botUserid, string apiToken = null, SendBotSMessageData sendBotSMessageData = null)
+> SendBirdMessageResponse SendBotsMessage (string apiToken, string botUserid, SendBotSMessageData sendBotSMessageData = null)
 
 Send a bot's message
 
@@ -514,14 +514,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new BotInterfaceApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var botUserid = botUserid_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var sendBotSMessageData = new SendBotSMessageData(); // SendBotSMessageData |  (optional) 
 
             try
             {
                 // Send a bot's message
-                SendBirdMessageResponse result = apiInstance.SendBotsMessage(botUserid, apiToken, sendBotSMessageData);
+                SendBirdMessageResponse result = apiInstance.SendBotsMessage(apiToken, botUserid, sendBotSMessageData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -540,8 +540,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **botUserid** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **sendBotSMessageData** | [**SendBotSMessageData**](SendBotSMessageData.md)|  | [optional] 
 
 ### Return type
@@ -571,7 +571,7 @@ No authorization required
 
 ## UpdateBotById
 
-> UpdateBotByIdResponse UpdateBotById (string botUserid, string apiToken = null, UpdateBotByIdData updateBotByIdData = null)
+> UpdateBotByIdResponse UpdateBotById (string apiToken, string botUserid, UpdateBotByIdData updateBotByIdData = null)
 
 Update a bot
 
@@ -594,14 +594,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new BotInterfaceApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var botUserid = botUserid_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updateBotByIdData = new UpdateBotByIdData(); // UpdateBotByIdData |  (optional) 
 
             try
             {
                 // Update a bot
-                UpdateBotByIdResponse result = apiInstance.UpdateBotById(botUserid, apiToken, updateBotByIdData);
+                UpdateBotByIdResponse result = apiInstance.UpdateBotById(apiToken, botUserid, updateBotByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -620,8 +620,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **botUserid** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **updateBotByIdData** | [**UpdateBotByIdData**](UpdateBotByIdData.md)|  | [optional] 
 
 ### Return type
@@ -651,7 +651,7 @@ No authorization required
 
 ## ViewBotById
 
-> ViewBotByIdResponse ViewBotById (string botUserid, string apiToken = null)
+> ViewBotByIdResponse ViewBotById (string apiToken, string botUserid)
 
 View a bot
 
@@ -674,13 +674,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new BotInterfaceApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var botUserid = botUserid_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View a bot
-                ViewBotByIdResponse result = apiInstance.ViewBotById(botUserid, apiToken);
+                ViewBotByIdResponse result = apiInstance.ViewBotById(apiToken, botUserid);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -699,8 +699,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **botUserid** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 

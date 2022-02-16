@@ -28,7 +28,7 @@ Method | HTTP request | Description
 
 ## OcBanUser
 
-> OcBanUserResponse OcBanUser (string channelUrl, string apiToken = null, OcBanUserData ocBanUserData = null)
+> OcBanUserResponse OcBanUser (string apiToken, string channelUrl, OcBanUserData ocBanUserData = null)
 
 Ban a user
 
@@ -51,14 +51,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var ocBanUserData = new OcBanUserData(); // OcBanUserData |  (optional) 
 
             try
             {
                 // Ban a user
-                OcBanUserResponse result = apiInstance.OcBanUser(channelUrl, apiToken, ocBanUserData);
+                OcBanUserResponse result = apiInstance.OcBanUser(apiToken, channelUrl, ocBanUserData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -77,8 +77,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **ocBanUserData** | [**OcBanUserData**](OcBanUserData.md)|  | [optional] 
 
 ### Return type
@@ -108,7 +108,7 @@ No authorization required
 
 ## OcCancelTheRegistrationOfOperators
 
-> void OcCancelTheRegistrationOfOperators (string channelUrl, List<string> operatorIds, string apiToken = null, bool? deleteAll = null)
+> void OcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = null)
 
 Cancel the registration of operators
 
@@ -131,15 +131,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var operatorIds = new List<string>(); // List<string> | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var deleteAll = true;  // bool? |  (optional) 
 
             try
             {
                 // Cancel the registration of operators
-                apiInstance.OcCancelTheRegistrationOfOperators(channelUrl, operatorIds, apiToken, deleteAll);
+                apiInstance.OcCancelTheRegistrationOfOperators(apiToken, channelUrl, operatorIds, deleteAll);
             }
             catch (ApiException e)
             {
@@ -157,9 +157,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
  **operatorIds** | [**List&lt;string&gt;**](string.md)|  | 
- **apiToken** | **string**|  | [optional] 
  **deleteAll** | **bool?**|  | [optional] 
 
 ### Return type
@@ -189,7 +189,7 @@ No authorization required
 
 ## OcCreateChannel
 
-> SendBirdOpenChannel OcCreateChannel (string apiToken = null, OcCreateChannelData ocCreateChannelData = null)
+> SendBirdOpenChannel OcCreateChannel (string apiToken, OcCreateChannelData ocCreateChannelData = null)
 
 Create a channel
 
@@ -212,7 +212,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var ocCreateChannelData = new OcCreateChannelData(); // OcCreateChannelData |  (optional) 
 
             try
@@ -237,7 +237,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **ocCreateChannelData** | [**OcCreateChannelData**](OcCreateChannelData.md)|  | [optional] 
 
 ### Return type
@@ -267,7 +267,7 @@ No authorization required
 
 ## OcDeleteChannelByUrl
 
-> void OcDeleteChannelByUrl (string channelUrl, string apiToken = null)
+> void OcDeleteChannelByUrl (string apiToken, string channelUrl)
 
 Delete a channel
 
@@ -290,13 +290,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Delete a channel
-                apiInstance.OcDeleteChannelByUrl(channelUrl, apiToken);
+                apiInstance.OcDeleteChannelByUrl(apiToken, channelUrl);
             }
             catch (ApiException e)
             {
@@ -314,8 +314,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -344,7 +344,7 @@ No authorization required
 
 ## OcFreezeChannel
 
-> SendBirdOpenChannel OcFreezeChannel (string channelUrl, string apiToken = null, OcFreezeChannelData ocFreezeChannelData = null)
+> SendBirdOpenChannel OcFreezeChannel (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = null)
 
 Freeze a channel
 
@@ -367,14 +367,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var ocFreezeChannelData = new OcFreezeChannelData(); // OcFreezeChannelData |  (optional) 
 
             try
             {
                 // Freeze a channel
-                SendBirdOpenChannel result = apiInstance.OcFreezeChannel(channelUrl, apiToken, ocFreezeChannelData);
+                SendBirdOpenChannel result = apiInstance.OcFreezeChannel(apiToken, channelUrl, ocFreezeChannelData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -393,8 +393,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **ocFreezeChannelData** | [**OcFreezeChannelData**](OcFreezeChannelData.md)|  | [optional] 
 
 ### Return type
@@ -424,7 +424,7 @@ No authorization required
 
 ## OcListBannedUsers
 
-> OcListBannedUsersResponse OcListBannedUsers (string channelUrl, string apiToken = null, string token = null, int? limit = null)
+> OcListBannedUsersResponse OcListBannedUsers (string apiToken, string channelUrl, string token = null, int? limit = null)
 
 List banned users
 
@@ -447,15 +447,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
             {
                 // List banned users
-                OcListBannedUsersResponse result = apiInstance.OcListBannedUsers(channelUrl, apiToken, token, limit);
+                OcListBannedUsersResponse result = apiInstance.OcListBannedUsers(apiToken, channelUrl, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -474,8 +474,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
 
@@ -506,7 +506,7 @@ No authorization required
 
 ## OcListChannels
 
-> OcListChannelsResponse OcListChannels (string apiToken = null, string token = null, int? limit = null, string customTypes = null, string nameContains = null, string urlContains = null, bool? showFrozen = null, bool? showMetadata = null, string customType = null)
+> OcListChannelsResponse OcListChannels (string apiToken, string token = null, int? limit = null, string customTypes = null, string nameContains = null, string urlContains = null, bool? showFrozen = null, bool? showMetadata = null, string customType = null)
 
 List channels
 
@@ -529,7 +529,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
             var customTypes = customTypes_example;  // string |  (optional) 
@@ -561,7 +561,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
  **customTypes** | **string**|  | [optional] 
@@ -598,7 +598,7 @@ No authorization required
 
 ## OcListMutedUsers
 
-> OcListMutedUsersResponse OcListMutedUsers (string channelUrl, string apiToken = null, string token = null, int? limit = null)
+> OcListMutedUsersResponse OcListMutedUsers (string apiToken, string channelUrl, string token = null, int? limit = null)
 
 List muted users
 
@@ -621,15 +621,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
             {
                 // List muted users
-                OcListMutedUsersResponse result = apiInstance.OcListMutedUsers(channelUrl, apiToken, token, limit);
+                OcListMutedUsersResponse result = apiInstance.OcListMutedUsers(apiToken, channelUrl, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -648,8 +648,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
 
@@ -680,7 +680,7 @@ No authorization required
 
 ## OcListOperators
 
-> OcListOperatorsResponse OcListOperators (string channelUrl, string apiToken = null, string token = null, int? limit = null)
+> OcListOperatorsResponse OcListOperators (string apiToken, string channelUrl, string token = null, int? limit = null)
 
 List operators
 
@@ -703,15 +703,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
             {
                 // List operators
-                OcListOperatorsResponse result = apiInstance.OcListOperators(channelUrl, apiToken, token, limit);
+                OcListOperatorsResponse result = apiInstance.OcListOperators(apiToken, channelUrl, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -730,8 +730,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
 
@@ -762,7 +762,7 @@ No authorization required
 
 ## OcListParticipants
 
-> OcListParticipantsResponse OcListParticipants (string channelUrl, string apiToken = null, string token = null, int? limit = null)
+> OcListParticipantsResponse OcListParticipants (string apiToken, string channelUrl, string token = null, int? limit = null)
 
 List participants
 
@@ -785,15 +785,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
             {
                 // List participants
-                OcListParticipantsResponse result = apiInstance.OcListParticipants(channelUrl, apiToken, token, limit);
+                OcListParticipantsResponse result = apiInstance.OcListParticipants(apiToken, channelUrl, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -812,8 +812,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
 
@@ -844,7 +844,7 @@ No authorization required
 
 ## OcMuteUser
 
-> SendBirdOpenChannel OcMuteUser (string channelUrl, string apiToken = null, OcMuteUserData ocMuteUserData = null)
+> SendBirdOpenChannel OcMuteUser (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = null)
 
 Mute a user
 
@@ -867,14 +867,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var ocMuteUserData = new OcMuteUserData(); // OcMuteUserData |  (optional) 
 
             try
             {
                 // Mute a user
-                SendBirdOpenChannel result = apiInstance.OcMuteUser(channelUrl, apiToken, ocMuteUserData);
+                SendBirdOpenChannel result = apiInstance.OcMuteUser(apiToken, channelUrl, ocMuteUserData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -893,8 +893,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **ocMuteUserData** | [**OcMuteUserData**](OcMuteUserData.md)|  | [optional] 
 
 ### Return type
@@ -924,7 +924,7 @@ No authorization required
 
 ## OcRegisterOperators
 
-> void OcRegisterOperators (string channelUrl, string apiToken = null, OcRegisterOperatorsData ocRegisterOperatorsData = null)
+> void OcRegisterOperators (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = null)
 
 Register operators
 
@@ -947,14 +947,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var ocRegisterOperatorsData = new OcRegisterOperatorsData(); // OcRegisterOperatorsData |  (optional) 
 
             try
             {
                 // Register operators
-                apiInstance.OcRegisterOperators(channelUrl, apiToken, ocRegisterOperatorsData);
+                apiInstance.OcRegisterOperators(apiToken, channelUrl, ocRegisterOperatorsData);
             }
             catch (ApiException e)
             {
@@ -972,8 +972,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **ocRegisterOperatorsData** | [**OcRegisterOperatorsData**](OcRegisterOperatorsData.md)|  | [optional] 
 
 ### Return type
@@ -1003,7 +1003,7 @@ No authorization required
 
 ## OcUnbanUserById
 
-> void OcUnbanUserById (string channelUrl, string bannedUserId, string apiToken = null)
+> void OcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
 
 Unban a user
 
@@ -1026,14 +1026,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var bannedUserId = bannedUserId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Unban a user
-                apiInstance.OcUnbanUserById(channelUrl, bannedUserId, apiToken);
+                apiInstance.OcUnbanUserById(apiToken, channelUrl, bannedUserId);
             }
             catch (ApiException e)
             {
@@ -1051,9 +1051,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
  **bannedUserId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1082,7 +1082,7 @@ No authorization required
 
 ## OcUnmuteUserById
 
-> void OcUnmuteUserById (string channelUrl, string mutedUserId, string apiToken = null)
+> void OcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
 
 Unmute a user
 
@@ -1105,14 +1105,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var mutedUserId = mutedUserId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Unmute a user
-                apiInstance.OcUnmuteUserById(channelUrl, mutedUserId, apiToken);
+                apiInstance.OcUnmuteUserById(apiToken, channelUrl, mutedUserId);
             }
             catch (ApiException e)
             {
@@ -1130,9 +1130,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
  **mutedUserId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1161,7 +1161,7 @@ No authorization required
 
 ## OcUpdateBanById
 
-> SendBirdUser OcUpdateBanById (string channelUrl, string bannedUserId, string apiToken = null, OcUpdateBanByIdData ocUpdateBanByIdData = null)
+> SendBirdUser OcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = null)
 
 Update a ban
 
@@ -1184,15 +1184,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var bannedUserId = bannedUserId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var ocUpdateBanByIdData = new OcUpdateBanByIdData(); // OcUpdateBanByIdData |  (optional) 
 
             try
             {
                 // Update a ban
-                SendBirdUser result = apiInstance.OcUpdateBanById(channelUrl, bannedUserId, apiToken, ocUpdateBanByIdData);
+                SendBirdUser result = apiInstance.OcUpdateBanById(apiToken, channelUrl, bannedUserId, ocUpdateBanByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1211,9 +1211,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
  **bannedUserId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **ocUpdateBanByIdData** | [**OcUpdateBanByIdData**](OcUpdateBanByIdData.md)|  | [optional] 
 
 ### Return type
@@ -1243,7 +1243,7 @@ No authorization required
 
 ## OcUpdateChannelByUrl
 
-> SendBirdOpenChannel OcUpdateChannelByUrl (string channelUrl, string apiToken = null, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = null)
+> SendBirdOpenChannel OcUpdateChannelByUrl (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = null)
 
 Update a channel
 
@@ -1266,14 +1266,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var ocUpdateChannelByUrlData = new OcUpdateChannelByUrlData(); // OcUpdateChannelByUrlData |  (optional) 
 
             try
             {
                 // Update a channel
-                SendBirdOpenChannel result = apiInstance.OcUpdateChannelByUrl(channelUrl, apiToken, ocUpdateChannelByUrlData);
+                SendBirdOpenChannel result = apiInstance.OcUpdateChannelByUrl(apiToken, channelUrl, ocUpdateChannelByUrlData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1292,8 +1292,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **ocUpdateChannelByUrlData** | [**OcUpdateChannelByUrlData**](OcUpdateChannelByUrlData.md)|  | [optional] 
 
 ### Return type
@@ -1323,7 +1323,7 @@ No authorization required
 
 ## OcViewBanById
 
-> SendBirdUser OcViewBanById (string channelUrl, string bannedUserId, string apiToken = null)
+> SendBirdUser OcViewBanById (string apiToken, string channelUrl, string bannedUserId)
 
 View a ban
 
@@ -1346,14 +1346,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var bannedUserId = bannedUserId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View a ban
-                SendBirdUser result = apiInstance.OcViewBanById(channelUrl, bannedUserId, apiToken);
+                SendBirdUser result = apiInstance.OcViewBanById(apiToken, channelUrl, bannedUserId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1372,9 +1372,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
  **bannedUserId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1403,7 +1403,7 @@ No authorization required
 
 ## OcViewChannelByUrl
 
-> SendBirdOpenChannel OcViewChannelByUrl (string channelUrl, string apiToken = null)
+> SendBirdOpenChannel OcViewChannelByUrl (string apiToken, string channelUrl)
 
 View a channel
 
@@ -1426,13 +1426,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View a channel
-                SendBirdOpenChannel result = apiInstance.OcViewChannelByUrl(channelUrl, apiToken);
+                SendBirdOpenChannel result = apiInstance.OcViewChannelByUrl(apiToken, channelUrl);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1451,8 +1451,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1481,7 +1481,7 @@ No authorization required
 
 ## OcViewMuteById
 
-> OcViewMuteByIdResponse OcViewMuteById (string channelUrl, string mutedUserId, string apiToken = null)
+> OcViewMuteByIdResponse OcViewMuteById (string apiToken, string channelUrl, string mutedUserId)
 
 View a mute
 
@@ -1504,14 +1504,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var mutedUserId = mutedUserId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View a mute
-                OcViewMuteByIdResponse result = apiInstance.OcViewMuteById(channelUrl, mutedUserId, apiToken);
+                OcViewMuteByIdResponse result = apiInstance.OcViewMuteById(apiToken, channelUrl, mutedUserId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1530,9 +1530,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
  **mutedUserId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 

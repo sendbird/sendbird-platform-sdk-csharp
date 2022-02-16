@@ -32,13 +32,13 @@ namespace sendbird_platform_sdk.Api
         /// ## List reports  Retrieves a list of reports within an application regardless of object types.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="startTs"> (optional)</param>
         /// <param name="endTs"> (optional)</param>
         /// <returns>ListReportsResponse</returns>
-        ListReportsResponse ListReports (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?));
+        ListReportsResponse ListReports (string apiToken, string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?));
 
         /// <summary>
         /// List reports
@@ -47,13 +47,13 @@ namespace sendbird_platform_sdk.Api
         /// ## List reports  Retrieves a list of reports within an application regardless of object types.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="startTs"> (optional)</param>
         /// <param name="endTs"> (optional)</param>
         /// <returns>ApiResponse of ListReportsResponse</returns>
-        ApiResponse<ListReportsResponse> ListReportsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?));
+        ApiResponse<ListReportsResponse> ListReportsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?));
         /// <summary>
         /// List reports on a channel
         /// </summary>
@@ -61,13 +61,13 @@ namespace sendbird_platform_sdk.Api
         /// ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListReportsOnChannelByUrlResponse</returns>
-        ListReportsOnChannelByUrlResponse ListReportsOnChannelByUrl (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        ListReportsOnChannelByUrlResponse ListReportsOnChannelByUrl (string apiToken, string channelType, string channelUrl, string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List reports on a channel
@@ -76,13 +76,13 @@ namespace sendbird_platform_sdk.Api
         /// ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListReportsOnChannelByUrlResponse</returns>
-        ApiResponse<ListReportsOnChannelByUrlResponse> ListReportsOnChannelByUrlWithHttpInfo (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        ApiResponse<ListReportsOnChannelByUrlResponse> ListReportsOnChannelByUrlWithHttpInfo (string apiToken, string channelType, string channelUrl, string token = default(string), int? limit = default(int?));
         /// <summary>
         /// List reports on a message
         /// </summary>
@@ -90,14 +90,14 @@ namespace sendbird_platform_sdk.Api
         /// ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where the reported message is in.  &#x60;message_id&#x60;      Type: string      Description: Specifies the unique ID of the reported message.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListReportsOnMessageByIdResponse</returns>
-        ListReportsOnMessageByIdResponse ListReportsOnMessageById (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        ListReportsOnMessageByIdResponse ListReportsOnMessageById (string apiToken, string channelType, string channelUrl, string messageId, string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List reports on a message
@@ -106,14 +106,14 @@ namespace sendbird_platform_sdk.Api
         /// ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where the reported message is in.  &#x60;message_id&#x60;      Type: string      Description: Specifies the unique ID of the reported message.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListReportsOnMessageByIdResponse</returns>
-        ApiResponse<ListReportsOnMessageByIdResponse> ListReportsOnMessageByIdWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        ApiResponse<ListReportsOnMessageByIdResponse> ListReportsOnMessageByIdWithHttpInfo (string apiToken, string channelType, string channelUrl, string messageId, string token = default(string), int? limit = default(int?));
         /// <summary>
         /// List reports on a user
         /// </summary>
@@ -121,12 +121,12 @@ namespace sendbird_platform_sdk.Api
         /// ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;offending_user_id&#x60;      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="offendingUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListReportsOnUserByIdResponse</returns>
-        ListReportsOnUserByIdResponse ListReportsOnUserById (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        ListReportsOnUserByIdResponse ListReportsOnUserById (string apiToken, string offendingUserId, string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List reports on a user
@@ -135,12 +135,12 @@ namespace sendbird_platform_sdk.Api
         /// ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;offending_user_id&#x60;      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="offendingUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListReportsOnUserByIdResponse</returns>
-        ApiResponse<ListReportsOnUserByIdResponse> ListReportsOnUserByIdWithHttpInfo (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        ApiResponse<ListReportsOnUserByIdResponse> ListReportsOnUserByIdWithHttpInfo (string apiToken, string offendingUserId, string token = default(string), int? limit = default(int?));
         /// <summary>
         /// Report a channel
         /// </summary>
@@ -148,12 +148,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Report a channel  Reports a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportChannelByUrlData"> (optional)</param>
         /// <returns>ReportChannelByUrlResponse</returns>
-        ReportChannelByUrlResponse ReportChannelByUrl (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData));
+        ReportChannelByUrlResponse ReportChannelByUrl (string apiToken, string channelType, string channelUrl, ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData));
 
         /// <summary>
         /// Report a channel
@@ -162,12 +162,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Report a channel  Reports a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportChannelByUrlData"> (optional)</param>
         /// <returns>ApiResponse of ReportChannelByUrlResponse</returns>
-        ApiResponse<ReportChannelByUrlResponse> ReportChannelByUrlWithHttpInfo (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData));
+        ApiResponse<ReportChannelByUrlResponse> ReportChannelByUrlWithHttpInfo (string apiToken, string channelType, string channelUrl, ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData));
         /// <summary>
         /// Report a message
         /// </summary>
@@ -175,13 +175,13 @@ namespace sendbird_platform_sdk.Api
         /// ## Report a message  Reports a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportMessageByIdData"> (optional)</param>
         /// <returns>ReportMessageByIdResponse</returns>
-        ReportMessageByIdResponse ReportMessageById (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData));
+        ReportMessageByIdResponse ReportMessageById (string apiToken, string channelType, string channelUrl, string messageId, ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData));
 
         /// <summary>
         /// Report a message
@@ -190,13 +190,13 @@ namespace sendbird_platform_sdk.Api
         /// ## Report a message  Reports a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportMessageByIdData"> (optional)</param>
         /// <returns>ApiResponse of ReportMessageByIdResponse</returns>
-        ApiResponse<ReportMessageByIdResponse> ReportMessageByIdWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData));
+        ApiResponse<ReportMessageByIdResponse> ReportMessageByIdWithHttpInfo (string apiToken, string channelType, string channelUrl, string messageId, ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData));
         /// <summary>
         /// Report a user
         /// </summary>
@@ -204,11 +204,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Report a user  Reports a user who sends an offensive message in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="offendingUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportUserByIdData"> (optional)</param>
         /// <returns>ReportUserByIdResponse</returns>
-        ReportUserByIdResponse ReportUserById (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData));
+        ReportUserByIdResponse ReportUserById (string apiToken, string offendingUserId, ReportUserByIdData reportUserByIdData = default(ReportUserByIdData));
 
         /// <summary>
         /// Report a user
@@ -217,11 +217,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Report a user  Reports a user who sends an offensive message in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="offendingUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportUserByIdData"> (optional)</param>
         /// <returns>ApiResponse of ReportUserByIdResponse</returns>
-        ApiResponse<ReportUserByIdResponse> ReportUserByIdWithHttpInfo (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData));
+        ApiResponse<ReportUserByIdResponse> ReportUserByIdWithHttpInfo (string apiToken, string offendingUserId, ReportUserByIdData reportUserByIdData = default(ReportUserByIdData));
         /// <summary>
         /// View a moderated message
         /// </summary>
@@ -229,12 +229,12 @@ namespace sendbird_platform_sdk.Api
         /// ## View a moderated message  Retrieves information on a message that has been moderated by the [profanity filter](https://sendbird.com/docs/chat/v3/platform-api/guides/filter-and-moderation#2-profanity-filter).  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-view-a-moderated-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>Dictionary&lt;string, string&gt;</returns>
-        Dictionary<string, string> ViewModeratedMessageById (string channelType, string channelUrl, string messageId, string apiToken = default(string));
+        Dictionary<string, string> ViewModeratedMessageById (string apiToken, string channelType, string channelUrl, string messageId);
 
         /// <summary>
         /// View a moderated message
@@ -243,12 +243,12 @@ namespace sendbird_platform_sdk.Api
         /// ## View a moderated message  Retrieves information on a message that has been moderated by the [profanity filter](https://sendbird.com/docs/chat/v3/platform-api/guides/filter-and-moderation#2-profanity-filter).  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-view-a-moderated-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Dictionary&lt;string, string&gt;</returns>
-        ApiResponse<Dictionary<string, string>> ViewModeratedMessageByIdWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string));
+        ApiResponse<Dictionary<string, string>> ViewModeratedMessageByIdWithHttpInfo (string apiToken, string channelType, string channelUrl, string messageId);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -258,14 +258,14 @@ namespace sendbird_platform_sdk.Api
         /// ## List reports  Retrieves a list of reports within an application regardless of object types.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="startTs"> (optional)</param>
         /// <param name="endTs"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListReportsResponse</returns>
-        System.Threading.Tasks.Task<ListReportsResponse> ListReportsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListReportsResponse> ListReportsAsync (string apiToken, string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List reports
@@ -274,14 +274,14 @@ namespace sendbird_platform_sdk.Api
         /// ## List reports  Retrieves a list of reports within an application regardless of object types.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="startTs"> (optional)</param>
         /// <param name="endTs"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListReportsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListReportsResponse>> ListReportsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListReportsResponse>> ListReportsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List reports on a channel
         /// </summary>
@@ -289,14 +289,14 @@ namespace sendbird_platform_sdk.Api
         /// ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListReportsOnChannelByUrlResponse</returns>
-        System.Threading.Tasks.Task<ListReportsOnChannelByUrlResponse> ListReportsOnChannelByUrlAsync (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListReportsOnChannelByUrlResponse> ListReportsOnChannelByUrlAsync (string apiToken, string channelType, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List reports on a channel
@@ -305,14 +305,14 @@ namespace sendbird_platform_sdk.Api
         /// ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListReportsOnChannelByUrlResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListReportsOnChannelByUrlResponse>> ListReportsOnChannelByUrlWithHttpInfoAsync (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListReportsOnChannelByUrlResponse>> ListReportsOnChannelByUrlWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List reports on a message
         /// </summary>
@@ -320,15 +320,15 @@ namespace sendbird_platform_sdk.Api
         /// ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where the reported message is in.  &#x60;message_id&#x60;      Type: string      Description: Specifies the unique ID of the reported message.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListReportsOnMessageByIdResponse</returns>
-        System.Threading.Tasks.Task<ListReportsOnMessageByIdResponse> ListReportsOnMessageByIdAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListReportsOnMessageByIdResponse> ListReportsOnMessageByIdAsync (string apiToken, string channelType, string channelUrl, string messageId, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List reports on a message
@@ -337,15 +337,15 @@ namespace sendbird_platform_sdk.Api
         /// ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where the reported message is in.  &#x60;message_id&#x60;      Type: string      Description: Specifies the unique ID of the reported message.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListReportsOnMessageByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListReportsOnMessageByIdResponse>> ListReportsOnMessageByIdWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListReportsOnMessageByIdResponse>> ListReportsOnMessageByIdWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string messageId, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List reports on a user
         /// </summary>
@@ -353,13 +353,13 @@ namespace sendbird_platform_sdk.Api
         /// ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;offending_user_id&#x60;      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="offendingUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListReportsOnUserByIdResponse</returns>
-        System.Threading.Tasks.Task<ListReportsOnUserByIdResponse> ListReportsOnUserByIdAsync (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListReportsOnUserByIdResponse> ListReportsOnUserByIdAsync (string apiToken, string offendingUserId, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List reports on a user
@@ -368,13 +368,13 @@ namespace sendbird_platform_sdk.Api
         /// ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;offending_user_id&#x60;      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="offendingUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListReportsOnUserByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListReportsOnUserByIdResponse>> ListReportsOnUserByIdWithHttpInfoAsync (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListReportsOnUserByIdResponse>> ListReportsOnUserByIdWithHttpInfoAsync (string apiToken, string offendingUserId, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Report a channel
         /// </summary>
@@ -382,13 +382,13 @@ namespace sendbird_platform_sdk.Api
         /// ## Report a channel  Reports a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ReportChannelByUrlResponse</returns>
-        System.Threading.Tasks.Task<ReportChannelByUrlResponse> ReportChannelByUrlAsync (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ReportChannelByUrlResponse> ReportChannelByUrlAsync (string apiToken, string channelType, string channelUrl, ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Report a channel
@@ -397,13 +397,13 @@ namespace sendbird_platform_sdk.Api
         /// ## Report a channel  Reports a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ReportChannelByUrlResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ReportChannelByUrlResponse>> ReportChannelByUrlWithHttpInfoAsync (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ReportChannelByUrlResponse>> ReportChannelByUrlWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Report a message
         /// </summary>
@@ -411,14 +411,14 @@ namespace sendbird_platform_sdk.Api
         /// ## Report a message  Reports a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportMessageByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ReportMessageByIdResponse</returns>
-        System.Threading.Tasks.Task<ReportMessageByIdResponse> ReportMessageByIdAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ReportMessageByIdResponse> ReportMessageByIdAsync (string apiToken, string channelType, string channelUrl, string messageId, ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Report a message
@@ -427,14 +427,14 @@ namespace sendbird_platform_sdk.Api
         /// ## Report a message  Reports a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportMessageByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ReportMessageByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ReportMessageByIdResponse>> ReportMessageByIdWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ReportMessageByIdResponse>> ReportMessageByIdWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string messageId, ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Report a user
         /// </summary>
@@ -442,12 +442,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Report a user  Reports a user who sends an offensive message in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="offendingUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportUserByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ReportUserByIdResponse</returns>
-        System.Threading.Tasks.Task<ReportUserByIdResponse> ReportUserByIdAsync (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ReportUserByIdResponse> ReportUserByIdAsync (string apiToken, string offendingUserId, ReportUserByIdData reportUserByIdData = default(ReportUserByIdData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Report a user
@@ -456,12 +456,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Report a user  Reports a user who sends an offensive message in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="offendingUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportUserByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ReportUserByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ReportUserByIdResponse>> ReportUserByIdWithHttpInfoAsync (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ReportUserByIdResponse>> ReportUserByIdWithHttpInfoAsync (string apiToken, string offendingUserId, ReportUserByIdData reportUserByIdData = default(ReportUserByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a moderated message
         /// </summary>
@@ -469,13 +469,13 @@ namespace sendbird_platform_sdk.Api
         /// ## View a moderated message  Retrieves information on a message that has been moderated by the [profanity filter](https://sendbird.com/docs/chat/v3/platform-api/guides/filter-and-moderation#2-profanity-filter).  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-view-a-moderated-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Dictionary&lt;string, string&gt;</returns>
-        System.Threading.Tasks.Task<Dictionary<string, string>> ViewModeratedMessageByIdAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Dictionary<string, string>> ViewModeratedMessageByIdAsync (string apiToken, string channelType, string channelUrl, string messageId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a moderated message
@@ -484,13 +484,13 @@ namespace sendbird_platform_sdk.Api
         /// ## View a moderated message  Retrieves information on a message that has been moderated by the [profanity filter](https://sendbird.com/docs/chat/v3/platform-api/guides/filter-and-moderation#2-profanity-filter).  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-view-a-moderated-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewModeratedMessageByIdWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewModeratedMessageByIdWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string messageId, CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -606,13 +606,13 @@ namespace sendbird_platform_sdk.Api
         /// List reports ## List reports  Retrieves a list of reports within an application regardless of object types.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="startTs"> (optional)</param>
         /// <param name="endTs"> (optional)</param>
         /// <returns>ListReportsResponse</returns>
-        public ListReportsResponse ListReports (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?))
+        public ListReportsResponse ListReports (string apiToken, string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?))
         {
              ApiResponse<ListReportsResponse> localVarResponse = ListReportsWithHttpInfo(apiToken, token, limit, startTs, endTs);
              return localVarResponse.Data;
@@ -622,14 +622,17 @@ namespace sendbird_platform_sdk.Api
         /// List reports ## List reports  Retrieves a list of reports within an application regardless of object types.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="startTs"> (optional)</param>
         /// <param name="endTs"> (optional)</param>
         /// <returns>ApiResponse of ListReportsResponse</returns>
-        public ApiResponse<ListReportsResponse> ListReportsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?))
+        public ApiResponse<ListReportsResponse> ListReportsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ReportContentSubjectApi->ListReports");
 
             var localVarPath = "/v3/report";
             var localVarPathParams = new Dictionary<String, String>();
@@ -681,14 +684,14 @@ namespace sendbird_platform_sdk.Api
         /// List reports ## List reports  Retrieves a list of reports within an application regardless of object types.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="startTs"> (optional)</param>
         /// <param name="endTs"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListReportsResponse</returns>
-        public async System.Threading.Tasks.Task<ListReportsResponse> ListReportsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListReportsResponse> ListReportsAsync (string apiToken, string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<ListReportsResponse> localVarResponse = await ListReportsWithHttpInfoAsync(apiToken, token, limit, startTs, endTs, cancellationToken);
              return localVarResponse.Data;
@@ -699,15 +702,18 @@ namespace sendbird_platform_sdk.Api
         /// List reports ## List reports  Retrieves a list of reports within an application regardless of object types.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="startTs"> (optional)</param>
         /// <param name="endTs"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListReportsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListReportsResponse>> ListReportsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListReportsResponse>> ListReportsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), int? startTs = default(int?), int? endTs = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ReportContentSubjectApi->ListReports");
 
             var localVarPath = "/v3/report";
             var localVarPathParams = new Dictionary<String, String>();
@@ -759,15 +765,15 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a channel ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListReportsOnChannelByUrlResponse</returns>
-        public ListReportsOnChannelByUrlResponse ListReportsOnChannelByUrl (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public ListReportsOnChannelByUrlResponse ListReportsOnChannelByUrl (string apiToken, string channelType, string channelUrl, string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<ListReportsOnChannelByUrlResponse> localVarResponse = ListReportsOnChannelByUrlWithHttpInfo(channelType, channelUrl, apiToken, token, limit);
+             ApiResponse<ListReportsOnChannelByUrlResponse> localVarResponse = ListReportsOnChannelByUrlWithHttpInfo(apiToken, channelType, channelUrl, token, limit);
              return localVarResponse.Data;
         }
 
@@ -775,14 +781,17 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a channel ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListReportsOnChannelByUrlResponse</returns>
-        public ApiResponse<ListReportsOnChannelByUrlResponse> ListReportsOnChannelByUrlWithHttpInfo (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public ApiResponse<ListReportsOnChannelByUrlResponse> ListReportsOnChannelByUrlWithHttpInfo (string apiToken, string channelType, string channelUrl, string token = default(string), int? limit = default(int?))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ReportContentSubjectApi->ListReportsOnChannelByUrl");
             // verify the required parameter 'channelType' is set
             if (channelType == null)
                 throw new ApiException(400, "Missing required parameter 'channelType' when calling ReportContentSubjectApi->ListReportsOnChannelByUrl");
@@ -840,16 +849,16 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a channel ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListReportsOnChannelByUrlResponse</returns>
-        public async System.Threading.Tasks.Task<ListReportsOnChannelByUrlResponse> ListReportsOnChannelByUrlAsync (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListReportsOnChannelByUrlResponse> ListReportsOnChannelByUrlAsync (string apiToken, string channelType, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ListReportsOnChannelByUrlResponse> localVarResponse = await ListReportsOnChannelByUrlWithHttpInfoAsync(channelType, channelUrl, apiToken, token, limit, cancellationToken);
+             ApiResponse<ListReportsOnChannelByUrlResponse> localVarResponse = await ListReportsOnChannelByUrlWithHttpInfoAsync(apiToken, channelType, channelUrl, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -858,15 +867,18 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a channel ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListReportsOnChannelByUrlResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListReportsOnChannelByUrlResponse>> ListReportsOnChannelByUrlWithHttpInfoAsync (string channelType, string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListReportsOnChannelByUrlResponse>> ListReportsOnChannelByUrlWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ReportContentSubjectApi->ListReportsOnChannelByUrl");
             // verify the required parameter 'channelType' is set
             if (channelType == null)
                 throw new ApiException(400, "Missing required parameter 'channelType' when calling ReportContentSubjectApi->ListReportsOnChannelByUrl");
@@ -924,16 +936,16 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a message ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where the reported message is in.  &#x60;message_id&#x60;      Type: string      Description: Specifies the unique ID of the reported message.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListReportsOnMessageByIdResponse</returns>
-        public ListReportsOnMessageByIdResponse ListReportsOnMessageById (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public ListReportsOnMessageByIdResponse ListReportsOnMessageById (string apiToken, string channelType, string channelUrl, string messageId, string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<ListReportsOnMessageByIdResponse> localVarResponse = ListReportsOnMessageByIdWithHttpInfo(channelType, channelUrl, messageId, apiToken, token, limit);
+             ApiResponse<ListReportsOnMessageByIdResponse> localVarResponse = ListReportsOnMessageByIdWithHttpInfo(apiToken, channelType, channelUrl, messageId, token, limit);
              return localVarResponse.Data;
         }
 
@@ -941,15 +953,18 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a message ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where the reported message is in.  &#x60;message_id&#x60;      Type: string      Description: Specifies the unique ID of the reported message.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListReportsOnMessageByIdResponse</returns>
-        public ApiResponse<ListReportsOnMessageByIdResponse> ListReportsOnMessageByIdWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public ApiResponse<ListReportsOnMessageByIdResponse> ListReportsOnMessageByIdWithHttpInfo (string apiToken, string channelType, string channelUrl, string messageId, string token = default(string), int? limit = default(int?))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ReportContentSubjectApi->ListReportsOnMessageById");
             // verify the required parameter 'channelType' is set
             if (channelType == null)
                 throw new ApiException(400, "Missing required parameter 'channelType' when calling ReportContentSubjectApi->ListReportsOnMessageById");
@@ -1011,17 +1026,17 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a message ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where the reported message is in.  &#x60;message_id&#x60;      Type: string      Description: Specifies the unique ID of the reported message.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListReportsOnMessageByIdResponse</returns>
-        public async System.Threading.Tasks.Task<ListReportsOnMessageByIdResponse> ListReportsOnMessageByIdAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListReportsOnMessageByIdResponse> ListReportsOnMessageByIdAsync (string apiToken, string channelType, string channelUrl, string messageId, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ListReportsOnMessageByIdResponse> localVarResponse = await ListReportsOnMessageByIdWithHttpInfoAsync(channelType, channelUrl, messageId, apiToken, token, limit, cancellationToken);
+             ApiResponse<ListReportsOnMessageByIdResponse> localVarResponse = await ListReportsOnMessageByIdWithHttpInfoAsync(apiToken, channelType, channelUrl, messageId, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1030,16 +1045,19 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a message ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where the reported message is in.  &#x60;message_id&#x60;      Type: string      Description: Specifies the unique ID of the reported message.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListReportsOnMessageByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListReportsOnMessageByIdResponse>> ListReportsOnMessageByIdWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListReportsOnMessageByIdResponse>> ListReportsOnMessageByIdWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string messageId, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ReportContentSubjectApi->ListReportsOnMessageById");
             // verify the required parameter 'channelType' is set
             if (channelType == null)
                 throw new ApiException(400, "Missing required parameter 'channelType' when calling ReportContentSubjectApi->ListReportsOnMessageById");
@@ -1101,14 +1119,14 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a user ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;offending_user_id&#x60;      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="offendingUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListReportsOnUserByIdResponse</returns>
-        public ListReportsOnUserByIdResponse ListReportsOnUserById (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public ListReportsOnUserByIdResponse ListReportsOnUserById (string apiToken, string offendingUserId, string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<ListReportsOnUserByIdResponse> localVarResponse = ListReportsOnUserByIdWithHttpInfo(offendingUserId, apiToken, token, limit);
+             ApiResponse<ListReportsOnUserByIdResponse> localVarResponse = ListReportsOnUserByIdWithHttpInfo(apiToken, offendingUserId, token, limit);
              return localVarResponse.Data;
         }
 
@@ -1116,13 +1134,16 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a user ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;offending_user_id&#x60;      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="offendingUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListReportsOnUserByIdResponse</returns>
-        public ApiResponse<ListReportsOnUserByIdResponse> ListReportsOnUserByIdWithHttpInfo (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public ApiResponse<ListReportsOnUserByIdResponse> ListReportsOnUserByIdWithHttpInfo (string apiToken, string offendingUserId, string token = default(string), int? limit = default(int?))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ReportContentSubjectApi->ListReportsOnUserById");
             // verify the required parameter 'offendingUserId' is set
             if (offendingUserId == null)
                 throw new ApiException(400, "Missing required parameter 'offendingUserId' when calling ReportContentSubjectApi->ListReportsOnUserById");
@@ -1176,15 +1197,15 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a user ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;offending_user_id&#x60;      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="offendingUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListReportsOnUserByIdResponse</returns>
-        public async System.Threading.Tasks.Task<ListReportsOnUserByIdResponse> ListReportsOnUserByIdAsync (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListReportsOnUserByIdResponse> ListReportsOnUserByIdAsync (string apiToken, string offendingUserId, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ListReportsOnUserByIdResponse> localVarResponse = await ListReportsOnUserByIdWithHttpInfoAsync(offendingUserId, apiToken, token, limit, cancellationToken);
+             ApiResponse<ListReportsOnUserByIdResponse> localVarResponse = await ListReportsOnUserByIdWithHttpInfoAsync(apiToken, offendingUserId, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1193,14 +1214,17 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a user ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;offending_user_id&#x60;      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="offendingUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListReportsOnUserByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListReportsOnUserByIdResponse>> ListReportsOnUserByIdWithHttpInfoAsync (string offendingUserId, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListReportsOnUserByIdResponse>> ListReportsOnUserByIdWithHttpInfoAsync (string apiToken, string offendingUserId, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ReportContentSubjectApi->ListReportsOnUserById");
             // verify the required parameter 'offendingUserId' is set
             if (offendingUserId == null)
                 throw new ApiException(400, "Missing required parameter 'offendingUserId' when calling ReportContentSubjectApi->ListReportsOnUserById");
@@ -1254,14 +1278,14 @@ namespace sendbird_platform_sdk.Api
         /// Report a channel ## Report a channel  Reports a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportChannelByUrlData"> (optional)</param>
         /// <returns>ReportChannelByUrlResponse</returns>
-        public ReportChannelByUrlResponse ReportChannelByUrl (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData))
+        public ReportChannelByUrlResponse ReportChannelByUrl (string apiToken, string channelType, string channelUrl, ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData))
         {
-             ApiResponse<ReportChannelByUrlResponse> localVarResponse = ReportChannelByUrlWithHttpInfo(channelType, channelUrl, apiToken, reportChannelByUrlData);
+             ApiResponse<ReportChannelByUrlResponse> localVarResponse = ReportChannelByUrlWithHttpInfo(apiToken, channelType, channelUrl, reportChannelByUrlData);
              return localVarResponse.Data;
         }
 
@@ -1269,13 +1293,16 @@ namespace sendbird_platform_sdk.Api
         /// Report a channel ## Report a channel  Reports a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportChannelByUrlData"> (optional)</param>
         /// <returns>ApiResponse of ReportChannelByUrlResponse</returns>
-        public ApiResponse<ReportChannelByUrlResponse> ReportChannelByUrlWithHttpInfo (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData))
+        public ApiResponse<ReportChannelByUrlResponse> ReportChannelByUrlWithHttpInfo (string apiToken, string channelType, string channelUrl, ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ReportContentSubjectApi->ReportChannelByUrl");
             // verify the required parameter 'channelType' is set
             if (channelType == null)
                 throw new ApiException(400, "Missing required parameter 'channelType' when calling ReportContentSubjectApi->ReportChannelByUrl");
@@ -1340,15 +1367,15 @@ namespace sendbird_platform_sdk.Api
         /// Report a channel ## Report a channel  Reports a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ReportChannelByUrlResponse</returns>
-        public async System.Threading.Tasks.Task<ReportChannelByUrlResponse> ReportChannelByUrlAsync (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ReportChannelByUrlResponse> ReportChannelByUrlAsync (string apiToken, string channelType, string channelUrl, ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ReportChannelByUrlResponse> localVarResponse = await ReportChannelByUrlWithHttpInfoAsync(channelType, channelUrl, apiToken, reportChannelByUrlData, cancellationToken);
+             ApiResponse<ReportChannelByUrlResponse> localVarResponse = await ReportChannelByUrlWithHttpInfoAsync(apiToken, channelType, channelUrl, reportChannelByUrlData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1357,14 +1384,17 @@ namespace sendbird_platform_sdk.Api
         /// Report a channel ## Report a channel  Reports a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ReportChannelByUrlResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ReportChannelByUrlResponse>> ReportChannelByUrlWithHttpInfoAsync (string channelType, string channelUrl, string apiToken = default(string), ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ReportChannelByUrlResponse>> ReportChannelByUrlWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, ReportChannelByUrlData reportChannelByUrlData = default(ReportChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ReportContentSubjectApi->ReportChannelByUrl");
             // verify the required parameter 'channelType' is set
             if (channelType == null)
                 throw new ApiException(400, "Missing required parameter 'channelType' when calling ReportContentSubjectApi->ReportChannelByUrl");
@@ -1429,15 +1459,15 @@ namespace sendbird_platform_sdk.Api
         /// Report a message ## Report a message  Reports a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportMessageByIdData"> (optional)</param>
         /// <returns>ReportMessageByIdResponse</returns>
-        public ReportMessageByIdResponse ReportMessageById (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData))
+        public ReportMessageByIdResponse ReportMessageById (string apiToken, string channelType, string channelUrl, string messageId, ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData))
         {
-             ApiResponse<ReportMessageByIdResponse> localVarResponse = ReportMessageByIdWithHttpInfo(channelType, channelUrl, messageId, apiToken, reportMessageByIdData);
+             ApiResponse<ReportMessageByIdResponse> localVarResponse = ReportMessageByIdWithHttpInfo(apiToken, channelType, channelUrl, messageId, reportMessageByIdData);
              return localVarResponse.Data;
         }
 
@@ -1445,14 +1475,17 @@ namespace sendbird_platform_sdk.Api
         /// Report a message ## Report a message  Reports a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportMessageByIdData"> (optional)</param>
         /// <returns>ApiResponse of ReportMessageByIdResponse</returns>
-        public ApiResponse<ReportMessageByIdResponse> ReportMessageByIdWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData))
+        public ApiResponse<ReportMessageByIdResponse> ReportMessageByIdWithHttpInfo (string apiToken, string channelType, string channelUrl, string messageId, ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ReportContentSubjectApi->ReportMessageById");
             // verify the required parameter 'channelType' is set
             if (channelType == null)
                 throw new ApiException(400, "Missing required parameter 'channelType' when calling ReportContentSubjectApi->ReportMessageById");
@@ -1521,16 +1554,16 @@ namespace sendbird_platform_sdk.Api
         /// Report a message ## Report a message  Reports a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportMessageByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ReportMessageByIdResponse</returns>
-        public async System.Threading.Tasks.Task<ReportMessageByIdResponse> ReportMessageByIdAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ReportMessageByIdResponse> ReportMessageByIdAsync (string apiToken, string channelType, string channelUrl, string messageId, ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ReportMessageByIdResponse> localVarResponse = await ReportMessageByIdWithHttpInfoAsync(channelType, channelUrl, messageId, apiToken, reportMessageByIdData, cancellationToken);
+             ApiResponse<ReportMessageByIdResponse> localVarResponse = await ReportMessageByIdWithHttpInfoAsync(apiToken, channelType, channelUrl, messageId, reportMessageByIdData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1539,15 +1572,18 @@ namespace sendbird_platform_sdk.Api
         /// Report a message ## Report a message  Reports a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportMessageByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ReportMessageByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ReportMessageByIdResponse>> ReportMessageByIdWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ReportMessageByIdResponse>> ReportMessageByIdWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string messageId, ReportMessageByIdData reportMessageByIdData = default(ReportMessageByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ReportContentSubjectApi->ReportMessageById");
             // verify the required parameter 'channelType' is set
             if (channelType == null)
                 throw new ApiException(400, "Missing required parameter 'channelType' when calling ReportContentSubjectApi->ReportMessageById");
@@ -1616,13 +1652,13 @@ namespace sendbird_platform_sdk.Api
         /// Report a user ## Report a user  Reports a user who sends an offensive message in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="offendingUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportUserByIdData"> (optional)</param>
         /// <returns>ReportUserByIdResponse</returns>
-        public ReportUserByIdResponse ReportUserById (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData))
+        public ReportUserByIdResponse ReportUserById (string apiToken, string offendingUserId, ReportUserByIdData reportUserByIdData = default(ReportUserByIdData))
         {
-             ApiResponse<ReportUserByIdResponse> localVarResponse = ReportUserByIdWithHttpInfo(offendingUserId, apiToken, reportUserByIdData);
+             ApiResponse<ReportUserByIdResponse> localVarResponse = ReportUserByIdWithHttpInfo(apiToken, offendingUserId, reportUserByIdData);
              return localVarResponse.Data;
         }
 
@@ -1630,12 +1666,15 @@ namespace sendbird_platform_sdk.Api
         /// Report a user ## Report a user  Reports a user who sends an offensive message in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="offendingUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportUserByIdData"> (optional)</param>
         /// <returns>ApiResponse of ReportUserByIdResponse</returns>
-        public ApiResponse<ReportUserByIdResponse> ReportUserByIdWithHttpInfo (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData))
+        public ApiResponse<ReportUserByIdResponse> ReportUserByIdWithHttpInfo (string apiToken, string offendingUserId, ReportUserByIdData reportUserByIdData = default(ReportUserByIdData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ReportContentSubjectApi->ReportUserById");
             // verify the required parameter 'offendingUserId' is set
             if (offendingUserId == null)
                 throw new ApiException(400, "Missing required parameter 'offendingUserId' when calling ReportContentSubjectApi->ReportUserById");
@@ -1696,14 +1735,14 @@ namespace sendbird_platform_sdk.Api
         /// Report a user ## Report a user  Reports a user who sends an offensive message in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="offendingUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportUserByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ReportUserByIdResponse</returns>
-        public async System.Threading.Tasks.Task<ReportUserByIdResponse> ReportUserByIdAsync (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ReportUserByIdResponse> ReportUserByIdAsync (string apiToken, string offendingUserId, ReportUserByIdData reportUserByIdData = default(ReportUserByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ReportUserByIdResponse> localVarResponse = await ReportUserByIdWithHttpInfoAsync(offendingUserId, apiToken, reportUserByIdData, cancellationToken);
+             ApiResponse<ReportUserByIdResponse> localVarResponse = await ReportUserByIdWithHttpInfoAsync(apiToken, offendingUserId, reportUserByIdData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1712,13 +1751,16 @@ namespace sendbird_platform_sdk.Api
         /// Report a user ## Report a user  Reports a user who sends an offensive message in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-report-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="offendingUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="reportUserByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ReportUserByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ReportUserByIdResponse>> ReportUserByIdWithHttpInfoAsync (string offendingUserId, string apiToken = default(string), ReportUserByIdData reportUserByIdData = default(ReportUserByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ReportUserByIdResponse>> ReportUserByIdWithHttpInfoAsync (string apiToken, string offendingUserId, ReportUserByIdData reportUserByIdData = default(ReportUserByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ReportContentSubjectApi->ReportUserById");
             // verify the required parameter 'offendingUserId' is set
             if (offendingUserId == null)
                 throw new ApiException(400, "Missing required parameter 'offendingUserId' when calling ReportContentSubjectApi->ReportUserById");
@@ -1779,14 +1821,14 @@ namespace sendbird_platform_sdk.Api
         /// View a moderated message ## View a moderated message  Retrieves information on a message that has been moderated by the [profanity filter](https://sendbird.com/docs/chat/v3/platform-api/guides/filter-and-moderation#2-profanity-filter).  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-view-a-moderated-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>Dictionary&lt;string, string&gt;</returns>
-        public Dictionary<string, string> ViewModeratedMessageById (string channelType, string channelUrl, string messageId, string apiToken = default(string))
+        public Dictionary<string, string> ViewModeratedMessageById (string apiToken, string channelType, string channelUrl, string messageId)
         {
-             ApiResponse<Dictionary<string, string>> localVarResponse = ViewModeratedMessageByIdWithHttpInfo(channelType, channelUrl, messageId, apiToken);
+             ApiResponse<Dictionary<string, string>> localVarResponse = ViewModeratedMessageByIdWithHttpInfo(apiToken, channelType, channelUrl, messageId);
              return localVarResponse.Data;
         }
 
@@ -1794,13 +1836,16 @@ namespace sendbird_platform_sdk.Api
         /// View a moderated message ## View a moderated message  Retrieves information on a message that has been moderated by the [profanity filter](https://sendbird.com/docs/chat/v3/platform-api/guides/filter-and-moderation#2-profanity-filter).  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-view-a-moderated-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Dictionary&lt;string, string&gt;</returns>
-        public ApiResponse<Dictionary<string, string>> ViewModeratedMessageByIdWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string))
+        public ApiResponse<Dictionary<string, string>> ViewModeratedMessageByIdWithHttpInfo (string apiToken, string channelType, string channelUrl, string messageId)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ReportContentSubjectApi->ViewModeratedMessageById");
             // verify the required parameter 'channelType' is set
             if (channelType == null)
                 throw new ApiException(400, "Missing required parameter 'channelType' when calling ReportContentSubjectApi->ViewModeratedMessageById");
@@ -1860,15 +1905,15 @@ namespace sendbird_platform_sdk.Api
         /// View a moderated message ## View a moderated message  Retrieves information on a message that has been moderated by the [profanity filter](https://sendbird.com/docs/chat/v3/platform-api/guides/filter-and-moderation#2-profanity-filter).  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-view-a-moderated-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Dictionary&lt;string, string&gt;</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, string>> ViewModeratedMessageByIdAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Dictionary<string, string>> ViewModeratedMessageByIdAsync (string apiToken, string channelType, string channelUrl, string messageId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<Dictionary<string, string>> localVarResponse = await ViewModeratedMessageByIdWithHttpInfoAsync(channelType, channelUrl, messageId, apiToken, cancellationToken);
+             ApiResponse<Dictionary<string, string>> localVarResponse = await ViewModeratedMessageByIdWithHttpInfoAsync(apiToken, channelType, channelUrl, messageId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1877,14 +1922,17 @@ namespace sendbird_platform_sdk.Api
         /// View a moderated message ## View a moderated message  Retrieves information on a message that has been moderated by the [profanity filter](https://sendbird.com/docs/chat/v3/platform-api/guides/filter-and-moderation#2-profanity-filter).  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-view-a-moderated-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewModeratedMessageByIdWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewModeratedMessageByIdWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string messageId, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ReportContentSubjectApi->ViewModeratedMessageById");
             // verify the required parameter 'channelType' is set
             if (channelType == null)
                 throw new ApiException(400, "Missing required parameter 'channelType' when calling ReportContentSubjectApi->ViewModeratedMessageById");

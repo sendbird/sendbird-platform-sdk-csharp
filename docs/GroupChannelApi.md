@@ -37,7 +37,7 @@ Method | HTTP request | Description
 
 ## GcAcceptInvitation
 
-> SendBirdGroupChannel GcAcceptInvitation (string channelUrl, string apiToken = null, GcAcceptInvitationData gcAcceptInvitationData = null)
+> SendBirdGroupChannel GcAcceptInvitation (string apiToken, string channelUrl, GcAcceptInvitationData gcAcceptInvitationData = null)
 
 Accept an invitation
 
@@ -60,14 +60,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var gcAcceptInvitationData = new GcAcceptInvitationData(); // GcAcceptInvitationData |  (optional) 
 
             try
             {
                 // Accept an invitation
-                SendBirdGroupChannel result = apiInstance.GcAcceptInvitation(channelUrl, apiToken, gcAcceptInvitationData);
+                SendBirdGroupChannel result = apiInstance.GcAcceptInvitation(apiToken, channelUrl, gcAcceptInvitationData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -86,8 +86,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **gcAcceptInvitationData** | [**GcAcceptInvitationData**](GcAcceptInvitationData.md)|  | [optional] 
 
 ### Return type
@@ -117,7 +117,7 @@ No authorization required
 
 ## GcBanUser
 
-> GcBanUserResponse GcBanUser (string channelUrl, string apiToken = null, GcBanUserData gcBanUserData = null)
+> GcBanUserResponse GcBanUser (string apiToken, string channelUrl, GcBanUserData gcBanUserData = null)
 
 Ban a user
 
@@ -140,14 +140,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var gcBanUserData = new GcBanUserData(); // GcBanUserData |  (optional) 
 
             try
             {
                 // Ban a user
-                GcBanUserResponse result = apiInstance.GcBanUser(channelUrl, apiToken, gcBanUserData);
+                GcBanUserResponse result = apiInstance.GcBanUser(apiToken, channelUrl, gcBanUserData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -166,8 +166,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **gcBanUserData** | [**GcBanUserData**](GcBanUserData.md)|  | [optional] 
 
 ### Return type
@@ -197,7 +197,7 @@ No authorization required
 
 ## GcCancelTheRegistrationOfOperators
 
-> void GcCancelTheRegistrationOfOperators (string channelUrl, List<string> operatorIds, string apiToken = null, bool? deleteAll = null)
+> void GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = null)
 
 Cancel the registration of operators
 
@@ -220,15 +220,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var operatorIds = new List<string>(); // List<string> | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var deleteAll = true;  // bool? |  (optional) 
 
             try
             {
                 // Cancel the registration of operators
-                apiInstance.GcCancelTheRegistrationOfOperators(channelUrl, operatorIds, apiToken, deleteAll);
+                apiInstance.GcCancelTheRegistrationOfOperators(apiToken, channelUrl, operatorIds, deleteAll);
             }
             catch (ApiException e)
             {
@@ -246,9 +246,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
  **operatorIds** | [**List&lt;string&gt;**](string.md)|  | 
- **apiToken** | **string**|  | [optional] 
  **deleteAll** | **bool?**|  | [optional] 
 
 ### Return type
@@ -278,7 +278,7 @@ No authorization required
 
 ## GcCheckIfMemberById
 
-> GcCheckIfMemberByIdResponse GcCheckIfMemberById (string channelUrl, string userId, string apiToken = null)
+> GcCheckIfMemberByIdResponse GcCheckIfMemberById (string apiToken, string channelUrl, string userId)
 
 Check if member
 
@@ -301,14 +301,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Check if member
-                GcCheckIfMemberByIdResponse result = apiInstance.GcCheckIfMemberById(channelUrl, userId, apiToken);
+                GcCheckIfMemberByIdResponse result = apiInstance.GcCheckIfMemberById(apiToken, channelUrl, userId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -327,9 +327,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -358,7 +358,7 @@ No authorization required
 
 ## GcCreateChannel
 
-> SendBirdGroupChannel GcCreateChannel (string apiToken = null, GcCreateChannelData gcCreateChannelData = null)
+> SendBirdGroupChannel GcCreateChannel (string apiToken, GcCreateChannelData gcCreateChannelData = null)
 
 Create a channel
 
@@ -381,7 +381,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var gcCreateChannelData = new GcCreateChannelData(); // GcCreateChannelData |  (optional) 
 
             try
@@ -406,7 +406,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **gcCreateChannelData** | [**GcCreateChannelData**](GcCreateChannelData.md)|  | [optional] 
 
 ### Return type
@@ -436,7 +436,7 @@ No authorization required
 
 ## GcDeclineInvitation
 
-> void GcDeclineInvitation (string channelUrl, string apiToken = null, GcDeclineInvitationData gcDeclineInvitationData = null)
+> void GcDeclineInvitation (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = null)
 
 Decline an invitation
 
@@ -459,14 +459,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var gcDeclineInvitationData = new GcDeclineInvitationData(); // GcDeclineInvitationData |  (optional) 
 
             try
             {
                 // Decline an invitation
-                apiInstance.GcDeclineInvitation(channelUrl, apiToken, gcDeclineInvitationData);
+                apiInstance.GcDeclineInvitation(apiToken, channelUrl, gcDeclineInvitationData);
             }
             catch (ApiException e)
             {
@@ -484,8 +484,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **gcDeclineInvitationData** | [**GcDeclineInvitationData**](GcDeclineInvitationData.md)|  | [optional] 
 
 ### Return type
@@ -515,7 +515,7 @@ No authorization required
 
 ## GcDeleteChannelByUrl
 
-> void GcDeleteChannelByUrl (string channelUrl, string apiToken = null)
+> void GcDeleteChannelByUrl (string apiToken, string channelUrl)
 
 Delete a channel
 
@@ -538,13 +538,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Delete a channel
-                apiInstance.GcDeleteChannelByUrl(channelUrl, apiToken);
+                apiInstance.GcDeleteChannelByUrl(apiToken, channelUrl);
             }
             catch (ApiException e)
             {
@@ -562,8 +562,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -592,7 +592,7 @@ No authorization required
 
 ## GcFreezeChannel
 
-> SendBirdGroupChannel GcFreezeChannel (string channelUrl, string apiToken = null, GcFreezeChannelData gcFreezeChannelData = null)
+> SendBirdGroupChannel GcFreezeChannel (string apiToken, string channelUrl, GcFreezeChannelData gcFreezeChannelData = null)
 
 Freeze a channel
 
@@ -615,14 +615,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var gcFreezeChannelData = new GcFreezeChannelData(); // GcFreezeChannelData |  (optional) 
 
             try
             {
                 // Freeze a channel
-                SendBirdGroupChannel result = apiInstance.GcFreezeChannel(channelUrl, apiToken, gcFreezeChannelData);
+                SendBirdGroupChannel result = apiInstance.GcFreezeChannel(apiToken, channelUrl, gcFreezeChannelData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -641,8 +641,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **gcFreezeChannelData** | [**GcFreezeChannelData**](GcFreezeChannelData.md)|  | [optional] 
 
 ### Return type
@@ -672,7 +672,7 @@ No authorization required
 
 ## GcHideOrArchiveChannel
 
-> void GcHideOrArchiveChannel (string channelUrl, string apiToken = null, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = null)
+> void GcHideOrArchiveChannel (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = null)
 
 Hide or archive a channel
 
@@ -695,14 +695,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var gcHideOrArchiveChannelData = new GcHideOrArchiveChannelData(); // GcHideOrArchiveChannelData |  (optional) 
 
             try
             {
                 // Hide or archive a channel
-                apiInstance.GcHideOrArchiveChannel(channelUrl, apiToken, gcHideOrArchiveChannelData);
+                apiInstance.GcHideOrArchiveChannel(apiToken, channelUrl, gcHideOrArchiveChannelData);
             }
             catch (ApiException e)
             {
@@ -720,8 +720,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **gcHideOrArchiveChannelData** | [**GcHideOrArchiveChannelData**](GcHideOrArchiveChannelData.md)|  | [optional] 
 
 ### Return type
@@ -751,7 +751,7 @@ No authorization required
 
 ## GcInviteAsMembers
 
-> SendBirdGroupChannel GcInviteAsMembers (string channelUrl, string apiToken = null, GcInviteAsMembersData gcInviteAsMembersData = null)
+> SendBirdGroupChannel GcInviteAsMembers (string apiToken, string channelUrl, GcInviteAsMembersData gcInviteAsMembersData = null)
 
 Invite as members
 
@@ -774,14 +774,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var gcInviteAsMembersData = new GcInviteAsMembersData(); // GcInviteAsMembersData |  (optional) 
 
             try
             {
                 // Invite as members
-                SendBirdGroupChannel result = apiInstance.GcInviteAsMembers(channelUrl, apiToken, gcInviteAsMembersData);
+                SendBirdGroupChannel result = apiInstance.GcInviteAsMembers(apiToken, channelUrl, gcInviteAsMembersData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -800,8 +800,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **gcInviteAsMembersData** | [**GcInviteAsMembersData**](GcInviteAsMembersData.md)|  | [optional] 
 
 ### Return type
@@ -831,7 +831,7 @@ No authorization required
 
 ## GcJoinChannel
 
-> void GcJoinChannel (string channelUrl, string apiToken = null, GcJoinChannelData gcJoinChannelData = null)
+> void GcJoinChannel (string apiToken, string channelUrl, GcJoinChannelData gcJoinChannelData = null)
 
 Join a channel
 
@@ -854,14 +854,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var gcJoinChannelData = new GcJoinChannelData(); // GcJoinChannelData |  (optional) 
 
             try
             {
                 // Join a channel
-                apiInstance.GcJoinChannel(channelUrl, apiToken, gcJoinChannelData);
+                apiInstance.GcJoinChannel(apiToken, channelUrl, gcJoinChannelData);
             }
             catch (ApiException e)
             {
@@ -879,8 +879,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **gcJoinChannelData** | [**GcJoinChannelData**](GcJoinChannelData.md)|  | [optional] 
 
 ### Return type
@@ -910,7 +910,7 @@ No authorization required
 
 ## GcLeaveChannel
 
-> void GcLeaveChannel (string channelUrl, string apiToken = null, GcLeaveChannelData gcLeaveChannelData = null)
+> void GcLeaveChannel (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = null)
 
 Leave a channel
 
@@ -933,14 +933,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var gcLeaveChannelData = new GcLeaveChannelData(); // GcLeaveChannelData |  (optional) 
 
             try
             {
                 // Leave a channel
-                apiInstance.GcLeaveChannel(channelUrl, apiToken, gcLeaveChannelData);
+                apiInstance.GcLeaveChannel(apiToken, channelUrl, gcLeaveChannelData);
             }
             catch (ApiException e)
             {
@@ -958,8 +958,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **gcLeaveChannelData** | [**GcLeaveChannelData**](GcLeaveChannelData.md)|  | [optional] 
 
 ### Return type
@@ -989,7 +989,7 @@ No authorization required
 
 ## GcListBannedUsers
 
-> GcListBannedUsersResponse GcListBannedUsers (string channelUrl, string apiToken = null, string token = null, int? limit = null)
+> GcListBannedUsersResponse GcListBannedUsers (string apiToken, string channelUrl, string token = null, int? limit = null)
 
 List banned users
 
@@ -1012,15 +1012,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
             {
                 // List banned users
-                GcListBannedUsersResponse result = apiInstance.GcListBannedUsers(channelUrl, apiToken, token, limit);
+                GcListBannedUsersResponse result = apiInstance.GcListBannedUsers(apiToken, channelUrl, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1039,8 +1039,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
 
@@ -1071,7 +1071,7 @@ No authorization required
 
 ## GcListChannels
 
-> GcListChannelsResponse GcListChannels (string apiToken = null, string token = null, int? limit = null, string distinctMode = null, string publicMode = null, string superMode = null, int? createdAfter = null, int? createdBefore = null, bool? showEmpty = null, bool? showMember = null, bool? showDeliveryReceipt = null, bool? showReadReceipt = null, bool? showMetadata = null, bool? showFrozen = null, string order = null, string metadataOrderKey = null, string customTypes = null, string customTypeStartswith = null, string channelUrls = null, string name = null, string nameContains = null, string nameStartswith = null, string membersExactlyIn = null, string membersIncludeIn = null, string queryType = null, string membersNickname = null, string membersNicknameContains = null, string metadataKey = null, string metadataValues = null, string metadataValueStartswith = null, string metacounterKey = null, string metacounterValues = null, string metacounterValueGt = null, string metacounterValueGte = null, string metacounterValueLt = null, string metacounterValueLte = null, bool? includeSortedMetaarrayInLastMessage = null, string customType = null, bool? readReceipt = null, bool? member = null, bool? isDistinct = null, string membersIn = null, string userId = null)
+> GcListChannelsResponse GcListChannels (string apiToken, string token = null, int? limit = null, string distinctMode = null, string publicMode = null, string superMode = null, int? createdAfter = null, int? createdBefore = null, bool? showEmpty = null, bool? showMember = null, bool? showDeliveryReceipt = null, bool? showReadReceipt = null, bool? showMetadata = null, bool? showFrozen = null, string order = null, string metadataOrderKey = null, string customTypes = null, string customTypeStartswith = null, string channelUrls = null, string name = null, string nameContains = null, string nameStartswith = null, string membersExactlyIn = null, string membersIncludeIn = null, string queryType = null, string membersNickname = null, string membersNicknameContains = null, string metadataKey = null, string metadataValues = null, string metadataValueStartswith = null, string metacounterKey = null, string metacounterValues = null, string metacounterValueGt = null, string metacounterValueGte = null, string metacounterValueLt = null, string metacounterValueLte = null, bool? includeSortedMetaarrayInLastMessage = null, string customType = null, bool? readReceipt = null, bool? member = null, bool? isDistinct = null, string membersIn = null, string userId = null)
 
 List channels
 
@@ -1094,7 +1094,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
             var distinctMode = distinctMode_example;  // string |  (optional) 
@@ -1160,7 +1160,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
  **distinctMode** | **string**|  | [optional] 
@@ -1231,7 +1231,7 @@ No authorization required
 
 ## GcListMembers
 
-> GcListMembersResponse GcListMembers (string channelUrl, string apiToken = null, string token = null, int? limit = null, bool? showDeliveryReceipt = null, bool? showReadReceipt = null, string order = null, string operatorFilter = null, string memberStateFilter = null, string mutedMemberFilter = null, string nicknameStartswith = null)
+> GcListMembersResponse GcListMembers (string apiToken, string channelUrl, string token = null, int? limit = null, bool? showDeliveryReceipt = null, bool? showReadReceipt = null, string order = null, string operatorFilter = null, string memberStateFilter = null, string mutedMemberFilter = null, string nicknameStartswith = null)
 
 List members
 
@@ -1254,8 +1254,8 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
             var showDeliveryReceipt = true;  // bool? |  (optional) 
@@ -1269,7 +1269,7 @@ namespace Example
             try
             {
                 // List members
-                GcListMembersResponse result = apiInstance.GcListMembers(channelUrl, apiToken, token, limit, showDeliveryReceipt, showReadReceipt, order, operatorFilter, memberStateFilter, mutedMemberFilter, nicknameStartswith);
+                GcListMembersResponse result = apiInstance.GcListMembers(apiToken, channelUrl, token, limit, showDeliveryReceipt, showReadReceipt, order, operatorFilter, memberStateFilter, mutedMemberFilter, nicknameStartswith);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1288,8 +1288,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
  **showDeliveryReceipt** | **bool?**|  | [optional] 
@@ -1327,7 +1327,7 @@ No authorization required
 
 ## GcListMutedUsers
 
-> GcListMutedUsersResponse GcListMutedUsers (string channelUrl, string apiToken = null, string token = null, int? limit = null)
+> GcListMutedUsersResponse GcListMutedUsers (string apiToken, string channelUrl, string token = null, int? limit = null)
 
 List muted users
 
@@ -1350,15 +1350,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
             {
                 // List muted users
-                GcListMutedUsersResponse result = apiInstance.GcListMutedUsers(channelUrl, apiToken, token, limit);
+                GcListMutedUsersResponse result = apiInstance.GcListMutedUsers(apiToken, channelUrl, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1377,8 +1377,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
 
@@ -1409,7 +1409,7 @@ No authorization required
 
 ## GcListOperators
 
-> GcListOperatorsResponse GcListOperators (string channelUrl, string apiToken = null, string token = null, int? limit = null)
+> GcListOperatorsResponse GcListOperators (string apiToken, string channelUrl, string token = null, int? limit = null)
 
 List operators
 
@@ -1432,15 +1432,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
             {
                 // List operators
-                GcListOperatorsResponse result = apiInstance.GcListOperators(channelUrl, apiToken, token, limit);
+                GcListOperatorsResponse result = apiInstance.GcListOperators(apiToken, channelUrl, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1459,8 +1459,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
 
@@ -1491,7 +1491,7 @@ No authorization required
 
 ## GcMuteUser
 
-> SendBirdGroupChannel GcMuteUser (string channelUrl, string apiToken = null, GcMuteUserData gcMuteUserData = null)
+> SendBirdGroupChannel GcMuteUser (string apiToken, string channelUrl, GcMuteUserData gcMuteUserData = null)
 
 Mute a user
 
@@ -1514,14 +1514,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var gcMuteUserData = new GcMuteUserData(); // GcMuteUserData |  (optional) 
 
             try
             {
                 // Mute a user
-                SendBirdGroupChannel result = apiInstance.GcMuteUser(channelUrl, apiToken, gcMuteUserData);
+                SendBirdGroupChannel result = apiInstance.GcMuteUser(apiToken, channelUrl, gcMuteUserData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1540,8 +1540,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **gcMuteUserData** | [**GcMuteUserData**](GcMuteUserData.md)|  | [optional] 
 
 ### Return type
@@ -1571,7 +1571,7 @@ No authorization required
 
 ## GcRegisterOperators
 
-> GcRegisterOperatorsResponse GcRegisterOperators (string channelUrl, string apiToken = null, GcRegisterOperatorsData gcRegisterOperatorsData = null)
+> GcRegisterOperatorsResponse GcRegisterOperators (string apiToken, string channelUrl, GcRegisterOperatorsData gcRegisterOperatorsData = null)
 
 Register operators
 
@@ -1594,14 +1594,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var gcRegisterOperatorsData = new GcRegisterOperatorsData(); // GcRegisterOperatorsData |  (optional) 
 
             try
             {
                 // Register operators
-                GcRegisterOperatorsResponse result = apiInstance.GcRegisterOperators(channelUrl, apiToken, gcRegisterOperatorsData);
+                GcRegisterOperatorsResponse result = apiInstance.GcRegisterOperators(apiToken, channelUrl, gcRegisterOperatorsData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1620,8 +1620,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **gcRegisterOperatorsData** | [**GcRegisterOperatorsData**](GcRegisterOperatorsData.md)|  | [optional] 
 
 ### Return type
@@ -1651,7 +1651,7 @@ No authorization required
 
 ## GcResetChatHistory
 
-> void GcResetChatHistory (string channelUrl, string apiToken = null, GcResetChatHistoryData gcResetChatHistoryData = null)
+> void GcResetChatHistory (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = null)
 
 Reset chat history
 
@@ -1674,14 +1674,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var gcResetChatHistoryData = new GcResetChatHistoryData(); // GcResetChatHistoryData |  (optional) 
 
             try
             {
                 // Reset chat history
-                apiInstance.GcResetChatHistory(channelUrl, apiToken, gcResetChatHistoryData);
+                apiInstance.GcResetChatHistory(apiToken, channelUrl, gcResetChatHistoryData);
             }
             catch (ApiException e)
             {
@@ -1699,8 +1699,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **gcResetChatHistoryData** | [**GcResetChatHistoryData**](GcResetChatHistoryData.md)|  | [optional] 
 
 ### Return type
@@ -1730,7 +1730,7 @@ No authorization required
 
 ## GcUnbanUserById
 
-> void GcUnbanUserById (string channelUrl, string bannedUserId, string apiToken = null)
+> void GcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
 
 Unban a user
 
@@ -1753,14 +1753,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var bannedUserId = bannedUserId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Unban a user
-                apiInstance.GcUnbanUserById(channelUrl, bannedUserId, apiToken);
+                apiInstance.GcUnbanUserById(apiToken, channelUrl, bannedUserId);
             }
             catch (ApiException e)
             {
@@ -1778,9 +1778,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
  **bannedUserId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1809,7 +1809,7 @@ No authorization required
 
 ## GcUnhideOrUnarchiveChannel
 
-> void GcUnhideOrUnarchiveChannel (string channelUrl, string userId, string apiToken = null, bool? shouldUnhideAll = null)
+> void GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = null)
 
 Unhide or unarchive a channel
 
@@ -1832,15 +1832,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var shouldUnhideAll = true;  // bool? |  (optional) 
 
             try
             {
                 // Unhide or unarchive a channel
-                apiInstance.GcUnhideOrUnarchiveChannel(channelUrl, userId, apiToken, shouldUnhideAll);
+                apiInstance.GcUnhideOrUnarchiveChannel(apiToken, channelUrl, userId, shouldUnhideAll);
             }
             catch (ApiException e)
             {
@@ -1858,9 +1858,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **shouldUnhideAll** | **bool?**|  | [optional] 
 
 ### Return type
@@ -1890,7 +1890,7 @@ No authorization required
 
 ## GcUnmuteUserById
 
-> void GcUnmuteUserById (string channelUrl, string mutedUserId, string apiToken = null)
+> void GcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
 
 Unmute a user
 
@@ -1913,14 +1913,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var mutedUserId = mutedUserId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Unmute a user
-                apiInstance.GcUnmuteUserById(channelUrl, mutedUserId, apiToken);
+                apiInstance.GcUnmuteUserById(apiToken, channelUrl, mutedUserId);
             }
             catch (ApiException e)
             {
@@ -1938,9 +1938,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
  **mutedUserId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1969,7 +1969,7 @@ No authorization required
 
 ## GcUpdateBanById
 
-> SendBirdUser GcUpdateBanById (string channelUrl, string bannedUserId, string apiToken = null, GcUpdateBanByIdData gcUpdateBanByIdData = null)
+> SendBirdUser GcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = null)
 
 Update a ban
 
@@ -1992,15 +1992,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var bannedUserId = bannedUserId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var gcUpdateBanByIdData = new GcUpdateBanByIdData(); // GcUpdateBanByIdData |  (optional) 
 
             try
             {
                 // Update a ban
-                SendBirdUser result = apiInstance.GcUpdateBanById(channelUrl, bannedUserId, apiToken, gcUpdateBanByIdData);
+                SendBirdUser result = apiInstance.GcUpdateBanById(apiToken, channelUrl, bannedUserId, gcUpdateBanByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2019,9 +2019,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
  **bannedUserId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **gcUpdateBanByIdData** | [**GcUpdateBanByIdData**](GcUpdateBanByIdData.md)|  | [optional] 
 
 ### Return type
@@ -2051,7 +2051,7 @@ No authorization required
 
 ## GcUpdateChannelByUrl
 
-> SendBirdGroupChannel GcUpdateChannelByUrl (string channelUrl, string apiToken = null, GcUpdateChannelByUrlData gcUpdateChannelByUrlData = null)
+> SendBirdGroupChannel GcUpdateChannelByUrl (string apiToken, string channelUrl, GcUpdateChannelByUrlData gcUpdateChannelByUrlData = null)
 
 Update a channel
 
@@ -2074,14 +2074,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var gcUpdateChannelByUrlData = new GcUpdateChannelByUrlData(); // GcUpdateChannelByUrlData |  (optional) 
 
             try
             {
                 // Update a channel
-                SendBirdGroupChannel result = apiInstance.GcUpdateChannelByUrl(channelUrl, apiToken, gcUpdateChannelByUrlData);
+                SendBirdGroupChannel result = apiInstance.GcUpdateChannelByUrl(apiToken, channelUrl, gcUpdateChannelByUrlData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2100,8 +2100,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **gcUpdateChannelByUrlData** | [**GcUpdateChannelByUrlData**](GcUpdateChannelByUrlData.md)|  | [optional] 
 
 ### Return type
@@ -2131,7 +2131,7 @@ No authorization required
 
 ## GcViewBanById
 
-> SendBirdUser GcViewBanById (string channelUrl, string bannedUserId, string apiToken = null)
+> SendBirdUser GcViewBanById (string apiToken, string channelUrl, string bannedUserId)
 
 View a ban
 
@@ -2154,14 +2154,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var bannedUserId = bannedUserId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View a ban
-                SendBirdUser result = apiInstance.GcViewBanById(channelUrl, bannedUserId, apiToken);
+                SendBirdUser result = apiInstance.GcViewBanById(apiToken, channelUrl, bannedUserId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2180,9 +2180,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
  **bannedUserId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -2211,7 +2211,7 @@ No authorization required
 
 ## GcViewChannelByUrl
 
-> SendBirdGroupChannel GcViewChannelByUrl (string channelUrl, string apiToken = null, bool? showDeliveryReceipt = null, bool? showReadReceipt = null, bool? showMember = null, bool? readReceipt = null, bool? member = null)
+> SendBirdGroupChannel GcViewChannelByUrl (string apiToken, string channelUrl, bool? showDeliveryReceipt = null, bool? showReadReceipt = null, bool? showMember = null, bool? readReceipt = null, bool? member = null)
 
 View a channel
 
@@ -2234,8 +2234,8 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var showDeliveryReceipt = true;  // bool? |  (optional) 
             var showReadReceipt = true;  // bool? |  (optional) 
             var showMember = true;  // bool? |  (optional) 
@@ -2245,7 +2245,7 @@ namespace Example
             try
             {
                 // View a channel
-                SendBirdGroupChannel result = apiInstance.GcViewChannelByUrl(channelUrl, apiToken, showDeliveryReceipt, showReadReceipt, showMember, readReceipt, member);
+                SendBirdGroupChannel result = apiInstance.GcViewChannelByUrl(apiToken, channelUrl, showDeliveryReceipt, showReadReceipt, showMember, readReceipt, member);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2264,8 +2264,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **showDeliveryReceipt** | **bool?**|  | [optional] 
  **showReadReceipt** | **bool?**|  | [optional] 
  **showMember** | **bool?**|  | [optional] 
@@ -2299,7 +2299,7 @@ No authorization required
 
 ## GcViewMuteById
 
-> GcViewMuteByIdResponse GcViewMuteById (string channelUrl, string mutedUserId, string apiToken = null)
+> GcViewMuteByIdResponse GcViewMuteById (string apiToken, string channelUrl, string mutedUserId)
 
 View a mute
 
@@ -2322,14 +2322,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var mutedUserId = mutedUserId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View a mute
-                GcViewMuteByIdResponse result = apiInstance.GcViewMuteById(channelUrl, mutedUserId, apiToken);
+                GcViewMuteByIdResponse result = apiInstance.GcViewMuteById(apiToken, channelUrl, mutedUserId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2348,9 +2348,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
  **mutedUserId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 

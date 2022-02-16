@@ -25,7 +25,7 @@ Method | HTTP request | Description
 
 ## AddExtraDataToMessage
 
-> AddExtraDataToMessageResponse AddExtraDataToMessage (string channelType, string channelUrl, string messageId, string apiToken = null, AddExtraDataToMessageData addExtraDataToMessageData = null)
+> AddExtraDataToMessageResponse AddExtraDataToMessage (string apiToken, string channelType, string channelUrl, string messageId, AddExtraDataToMessageData addExtraDataToMessageData = null)
 
 Add extra data to a message
 
@@ -48,16 +48,16 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessagesApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var messageId = messageId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var addExtraDataToMessageData = new AddExtraDataToMessageData(); // AddExtraDataToMessageData |  (optional) 
 
             try
             {
                 // Add extra data to a message
-                AddExtraDataToMessageResponse result = apiInstance.AddExtraDataToMessage(channelType, channelUrl, messageId, apiToken, addExtraDataToMessageData);
+                AddExtraDataToMessageResponse result = apiInstance.AddExtraDataToMessage(apiToken, channelType, channelUrl, messageId, addExtraDataToMessageData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -76,10 +76,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **messageId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **addExtraDataToMessageData** | [**AddExtraDataToMessageData**](AddExtraDataToMessageData.md)|  | [optional] 
 
 ### Return type
@@ -109,7 +109,7 @@ No authorization required
 
 ## AddReactionToAMessage
 
-> AddReactionToAMessageResponse AddReactionToAMessage (string channelType, string channelUrl, string messageId, string apiToken = null, AddReactionToAMessageData addReactionToAMessageData = null)
+> AddReactionToAMessageResponse AddReactionToAMessage (string apiToken, string channelType, string channelUrl, string messageId, AddReactionToAMessageData addReactionToAMessageData = null)
 
 Add a reaction to a message
 
@@ -132,16 +132,16 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessagesApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var messageId = messageId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var addReactionToAMessageData = new AddReactionToAMessageData(); // AddReactionToAMessageData |  (optional) 
 
             try
             {
                 // Add a reaction to a message
-                AddReactionToAMessageResponse result = apiInstance.AddReactionToAMessage(channelType, channelUrl, messageId, apiToken, addReactionToAMessageData);
+                AddReactionToAMessageResponse result = apiInstance.AddReactionToAMessage(apiToken, channelType, channelUrl, messageId, addReactionToAMessageData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -160,10 +160,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **messageId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **addReactionToAMessageData** | [**AddReactionToAMessageData**](AddReactionToAMessageData.md)|  | [optional] 
 
 ### Return type
@@ -193,7 +193,7 @@ No authorization required
 
 ## DeleteMessageById
 
-> void DeleteMessageById (string channelType, string channelUrl, string messageId, string apiToken = null)
+> void DeleteMessageById (string apiToken, string channelType, string channelUrl, string messageId)
 
 Delete a message
 
@@ -216,15 +216,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessagesApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var messageId = messageId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Delete a message
-                apiInstance.DeleteMessageById(channelType, channelUrl, messageId, apiToken);
+                apiInstance.DeleteMessageById(apiToken, channelType, channelUrl, messageId);
             }
             catch (ApiException e)
             {
@@ -242,10 +242,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **messageId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -274,7 +274,7 @@ No authorization required
 
 ## GcMarkAllMessagesAsDelivered
 
-> GcMarkAllMessagesAsDeliveredResponse GcMarkAllMessagesAsDelivered (string channelUrl, string apiToken = null, GcMarkAllMessagesAsDeliveredData gcMarkAllMessagesAsDeliveredData = null)
+> GcMarkAllMessagesAsDeliveredResponse GcMarkAllMessagesAsDelivered (string apiToken, string channelUrl, GcMarkAllMessagesAsDeliveredData gcMarkAllMessagesAsDeliveredData = null)
 
 Mark all messages as delivered
 
@@ -297,14 +297,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessagesApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var gcMarkAllMessagesAsDeliveredData = new GcMarkAllMessagesAsDeliveredData(); // GcMarkAllMessagesAsDeliveredData |  (optional) 
 
             try
             {
                 // Mark all messages as delivered
-                GcMarkAllMessagesAsDeliveredResponse result = apiInstance.GcMarkAllMessagesAsDelivered(channelUrl, apiToken, gcMarkAllMessagesAsDeliveredData);
+                GcMarkAllMessagesAsDeliveredResponse result = apiInstance.GcMarkAllMessagesAsDelivered(apiToken, channelUrl, gcMarkAllMessagesAsDeliveredData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -323,8 +323,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **gcMarkAllMessagesAsDeliveredData** | [**GcMarkAllMessagesAsDeliveredData**](GcMarkAllMessagesAsDeliveredData.md)|  | [optional] 
 
 ### Return type
@@ -354,7 +354,7 @@ No authorization required
 
 ## GcMarkAllMessagesAsRead
 
-> void GcMarkAllMessagesAsRead (string channelUrl, string apiToken = null, GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = null)
+> void GcMarkAllMessagesAsRead (string apiToken, string channelUrl, GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = null)
 
 Mark all messages as read
 
@@ -377,14 +377,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessagesApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var gcMarkAllMessagesAsReadData = new GcMarkAllMessagesAsReadData(); // GcMarkAllMessagesAsReadData |  (optional) 
 
             try
             {
                 // Mark all messages as read
-                apiInstance.GcMarkAllMessagesAsRead(channelUrl, apiToken, gcMarkAllMessagesAsReadData);
+                apiInstance.GcMarkAllMessagesAsRead(apiToken, channelUrl, gcMarkAllMessagesAsReadData);
             }
             catch (ApiException e)
             {
@@ -402,8 +402,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **gcMarkAllMessagesAsReadData** | [**GcMarkAllMessagesAsReadData**](GcMarkAllMessagesAsReadData.md)|  | [optional] 
 
 ### Return type
@@ -433,7 +433,7 @@ No authorization required
 
 ## GcViewNumberOfEachMembersUnreadMessages
 
-> GcViewNumberOfEachMembersUnreadMessagesResponse GcViewNumberOfEachMembersUnreadMessages (string channelUrl, string apiToken = null, string userIds = null)
+> GcViewNumberOfEachMembersUnreadMessagesResponse GcViewNumberOfEachMembersUnreadMessages (string apiToken, string channelUrl, string userIds = null)
 
 View number of each member's unread messages
 
@@ -456,14 +456,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessagesApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var userIds = userIds_example;  // string |  (optional) 
 
             try
             {
                 // View number of each member's unread messages
-                GcViewNumberOfEachMembersUnreadMessagesResponse result = apiInstance.GcViewNumberOfEachMembersUnreadMessages(channelUrl, apiToken, userIds);
+                GcViewNumberOfEachMembersUnreadMessagesResponse result = apiInstance.GcViewNumberOfEachMembersUnreadMessages(apiToken, channelUrl, userIds);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -482,8 +482,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **userIds** | **string**|  | [optional] 
 
 ### Return type
@@ -513,7 +513,7 @@ No authorization required
 
 ## ListMessages
 
-> ListMessagesResponse ListMessages (string channelType, string channelUrl, int messageTs, int messageId, string apiToken = null, int? prevLimit = null, int? nextLimit = null, bool? include = null, bool? reverse = null, string senderId = null, string senderIds = null, string operatorFilter = null, string customTypes = null, string messageType = null, bool? includingRemoved = null, bool? includeReactions = null, bool? withSortedMetaArray = null, bool? showSubchannelMessagesOnly = null, string userId = null, string customType = null, bool? withMetaArray = null)
+> ListMessagesResponse ListMessages (string apiToken, string channelType, string channelUrl, int? messageTs = null, int? messageId = null, int? prevLimit = null, int? nextLimit = null, bool? include = null, bool? reverse = null, string senderId = null, string senderIds = null, string operatorFilter = null, string customTypes = null, string messageType = null, bool? includingRemoved = null, bool? includeReactions = null, bool? withSortedMetaArray = null, bool? showSubchannelMessagesOnly = null, string userId = null, string customType = null, bool? withMetaArray = null)
 
 List messages
 
@@ -536,11 +536,11 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessagesApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var messageTs = 56;  // int | 
-            var messageId = 56;  // int | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var messageTs = 56;  // int? |  (optional) 
+            var messageId = 56;  // int? |  (optional) 
             var prevLimit = 56;  // int? |  (optional) 
             var nextLimit = 56;  // int? |  (optional) 
             var include = true;  // bool? |  (optional) 
@@ -561,7 +561,7 @@ namespace Example
             try
             {
                 // List messages
-                ListMessagesResponse result = apiInstance.ListMessages(channelType, channelUrl, messageTs, messageId, apiToken, prevLimit, nextLimit, include, reverse, senderId, senderIds, operatorFilter, customTypes, messageType, includingRemoved, includeReactions, withSortedMetaArray, showSubchannelMessagesOnly, userId, customType, withMetaArray);
+                ListMessagesResponse result = apiInstance.ListMessages(apiToken, channelType, channelUrl, messageTs, messageId, prevLimit, nextLimit, include, reverse, senderId, senderIds, operatorFilter, customTypes, messageType, includingRemoved, includeReactions, withSortedMetaArray, showSubchannelMessagesOnly, userId, customType, withMetaArray);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -580,11 +580,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
- **messageTs** | **int**|  | 
- **messageId** | **int**|  | 
- **apiToken** | **string**|  | [optional] 
+ **messageTs** | **int?**|  | [optional] 
+ **messageId** | **int?**|  | [optional] 
  **prevLimit** | **int?**|  | [optional] 
  **nextLimit** | **int?**|  | [optional] 
  **include** | **bool?**|  | [optional] 
@@ -629,7 +629,7 @@ No authorization required
 
 ## ListReactionsOfMessage
 
-> ListReactionsOfMessageResponse ListReactionsOfMessage (string channelType, string channelUrl, string messageId, string apiToken = null, bool? listUsers = null)
+> ListReactionsOfMessageResponse ListReactionsOfMessage (string apiToken, string channelType, string channelUrl, string messageId, bool? listUsers = null)
 
 List reactions of a message
 
@@ -652,16 +652,16 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessagesApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var messageId = messageId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var listUsers = true;  // bool? |  (optional) 
 
             try
             {
                 // List reactions of a message
-                ListReactionsOfMessageResponse result = apiInstance.ListReactionsOfMessage(channelType, channelUrl, messageId, apiToken, listUsers);
+                ListReactionsOfMessageResponse result = apiInstance.ListReactionsOfMessage(apiToken, channelType, channelUrl, messageId, listUsers);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -680,10 +680,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **messageId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **listUsers** | **bool?**|  | [optional] 
 
 ### Return type
@@ -713,7 +713,7 @@ No authorization required
 
 ## RemoveExtraDataFromMessage
 
-> void RemoveExtraDataFromMessage (string channelType, string channelUrl, string messageId, string apiToken = null, List<string> keys = null)
+> void RemoveExtraDataFromMessage (string apiToken, string channelType, string channelUrl, string messageId, List<string> keys = null)
 
 Remove extra data from a message
 
@@ -736,16 +736,16 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessagesApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var messageId = messageId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var keys = new List<string>(); // List<string> |  (optional) 
 
             try
             {
                 // Remove extra data from a message
-                apiInstance.RemoveExtraDataFromMessage(channelType, channelUrl, messageId, apiToken, keys);
+                apiInstance.RemoveExtraDataFromMessage(apiToken, channelType, channelUrl, messageId, keys);
             }
             catch (ApiException e)
             {
@@ -763,10 +763,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **messageId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **keys** | [**List&lt;string&gt;**](string.md)|  | [optional] 
 
 ### Return type
@@ -796,7 +796,7 @@ No authorization required
 
 ## RemoveReactionFromAMessage
 
-> RemoveReactionFromAMessageResponse RemoveReactionFromAMessage (string channelType, string channelUrl, string messageId, string apiToken = null, string userId = null, string reaction = null)
+> RemoveReactionFromAMessageResponse RemoveReactionFromAMessage (string apiToken, string channelType, string channelUrl, string messageId, string userId = null, string reaction = null)
 
 Remove a reaction from a message
 
@@ -819,17 +819,17 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessagesApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var messageId = messageId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var userId = userId_example;  // string |  (optional) 
             var reaction = reaction_example;  // string |  (optional) 
 
             try
             {
                 // Remove a reaction from a message
-                RemoveReactionFromAMessageResponse result = apiInstance.RemoveReactionFromAMessage(channelType, channelUrl, messageId, apiToken, userId, reaction);
+                RemoveReactionFromAMessageResponse result = apiInstance.RemoveReactionFromAMessage(apiToken, channelType, channelUrl, messageId, userId, reaction);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -848,10 +848,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **messageId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **userId** | **string**|  | [optional] 
  **reaction** | **string**|  | [optional] 
 
@@ -882,7 +882,7 @@ No authorization required
 
 ## SendMessage
 
-> SendBirdMessageResponse SendMessage (string channelType, string channelUrl, string apiToken = null, SendMessageData sendMessageData = null)
+> SendBirdMessageResponse SendMessage (string apiToken, string channelType, string channelUrl, SendMessageData sendMessageData = null)
 
 Send a message
 
@@ -905,15 +905,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessagesApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var sendMessageData = new SendMessageData(); // SendMessageData |  (optional) 
 
             try
             {
                 // Send a message
-                SendBirdMessageResponse result = apiInstance.SendMessage(channelType, channelUrl, apiToken, sendMessageData);
+                SendBirdMessageResponse result = apiInstance.SendMessage(apiToken, channelType, channelUrl, sendMessageData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -932,9 +932,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **sendMessageData** | [**SendMessageData**](SendMessageData.md)|  | [optional] 
 
 ### Return type
@@ -964,7 +964,7 @@ No authorization required
 
 ## TranslateMessageIntoOtherLanguages
 
-> SendBirdMessageResponse TranslateMessageIntoOtherLanguages (string channelType, string channelUrl, string messageId, string apiToken = null, Object body = null)
+> SendBirdMessageResponse TranslateMessageIntoOtherLanguages (string apiToken, string channelType, string channelUrl, string messageId, Object body = null)
 
 Translate a message into other languages
 
@@ -987,16 +987,16 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessagesApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var messageId = messageId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var body = ;  // Object |  (optional) 
 
             try
             {
                 // Translate a message into other languages
-                SendBirdMessageResponse result = apiInstance.TranslateMessageIntoOtherLanguages(channelType, channelUrl, messageId, apiToken, body);
+                SendBirdMessageResponse result = apiInstance.TranslateMessageIntoOtherLanguages(apiToken, channelType, channelUrl, messageId, body);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1015,10 +1015,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **messageId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **body** | **Object**|  | [optional] 
 
 ### Return type
@@ -1048,7 +1048,7 @@ No authorization required
 
 ## UpdateExtraDataInMessage
 
-> UpdateExtraDataInMessageResponse UpdateExtraDataInMessage (string channelType, string channelUrl, string messageId, string apiToken = null, UpdateExtraDataInMessageData updateExtraDataInMessageData = null)
+> UpdateExtraDataInMessageResponse UpdateExtraDataInMessage (string apiToken, string channelType, string channelUrl, string messageId, UpdateExtraDataInMessageData updateExtraDataInMessageData = null)
 
 Update extra data in a message
 
@@ -1071,16 +1071,16 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessagesApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var messageId = messageId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updateExtraDataInMessageData = new UpdateExtraDataInMessageData(); // UpdateExtraDataInMessageData |  (optional) 
 
             try
             {
                 // Update extra data in a message
-                UpdateExtraDataInMessageResponse result = apiInstance.UpdateExtraDataInMessage(channelType, channelUrl, messageId, apiToken, updateExtraDataInMessageData);
+                UpdateExtraDataInMessageResponse result = apiInstance.UpdateExtraDataInMessage(apiToken, channelType, channelUrl, messageId, updateExtraDataInMessageData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1099,10 +1099,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **messageId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **updateExtraDataInMessageData** | [**UpdateExtraDataInMessageData**](UpdateExtraDataInMessageData.md)|  | [optional] 
 
 ### Return type
@@ -1132,7 +1132,7 @@ No authorization required
 
 ## UpdateMessageById
 
-> SendBirdMessageResponse UpdateMessageById (string channelType, string channelUrl, string messageId, string apiToken = null, UpdateMessageByIdData updateMessageByIdData = null)
+> SendBirdMessageResponse UpdateMessageById (string apiToken, string channelType, string channelUrl, string messageId, UpdateMessageByIdData updateMessageByIdData = null)
 
 Update a message
 
@@ -1155,16 +1155,16 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessagesApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var messageId = messageId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updateMessageByIdData = new UpdateMessageByIdData(); // UpdateMessageByIdData |  (optional) 
 
             try
             {
                 // Update a message
-                SendBirdMessageResponse result = apiInstance.UpdateMessageById(channelType, channelUrl, messageId, apiToken, updateMessageByIdData);
+                SendBirdMessageResponse result = apiInstance.UpdateMessageById(apiToken, channelType, channelUrl, messageId, updateMessageByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1183,10 +1183,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **messageId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **updateMessageByIdData** | [**UpdateMessageByIdData**](UpdateMessageByIdData.md)|  | [optional] 
 
 ### Return type
@@ -1216,7 +1216,7 @@ No authorization required
 
 ## ViewMessageById
 
-> SendBirdMessageResponse ViewMessageById (string channelType, string channelUrl, string messageId, string apiToken = null, bool? withSortedMetaArray = null, bool? withMetaArray = null)
+> SendBirdMessageResponse ViewMessageById (string apiToken, string channelType, string channelUrl, string messageId, bool? withSortedMetaArray = null, bool? withMetaArray = null)
 
 View a message
 
@@ -1239,17 +1239,17 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessagesApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
             var messageId = messageId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var withSortedMetaArray = true;  // bool? |  (optional) 
             var withMetaArray = true;  // bool? |  (optional) 
 
             try
             {
                 // View a message
-                SendBirdMessageResponse result = apiInstance.ViewMessageById(channelType, channelUrl, messageId, apiToken, withSortedMetaArray, withMetaArray);
+                SendBirdMessageResponse result = apiInstance.ViewMessageById(apiToken, channelType, channelUrl, messageId, withSortedMetaArray, withMetaArray);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1268,10 +1268,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **messageId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **withSortedMetaArray** | **bool?**|  | [optional] 
  **withMetaArray** | **bool?**|  | [optional] 
 
@@ -1302,7 +1302,7 @@ No authorization required
 
 ## ViewTotalNumberOfMessagesInChannel
 
-> ViewTotalNumberOfMessagesInChannelResponse ViewTotalNumberOfMessagesInChannel (string channelType, string channelUrl, string apiToken = null)
+> ViewTotalNumberOfMessagesInChannelResponse ViewTotalNumberOfMessagesInChannel (string apiToken, string channelType, string channelUrl)
 
 View total number of messages in a channel
 
@@ -1325,14 +1325,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessagesApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var channelType = channelType_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View total number of messages in a channel
-                ViewTotalNumberOfMessagesInChannelResponse result = apiInstance.ViewTotalNumberOfMessagesInChannel(channelType, channelUrl, apiToken);
+                ViewTotalNumberOfMessagesInChannelResponse result = apiInstance.ViewTotalNumberOfMessagesInChannel(apiToken, channelType, channelUrl);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1351,9 +1351,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 

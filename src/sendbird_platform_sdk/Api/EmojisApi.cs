@@ -32,10 +32,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Add emoji categories  Adds a list of one or more new emoji categories to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-add-emoji-categories
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="body"> (optional)</param>
         /// <returns>AddEmojiCategoriesResponse</returns>
-        AddEmojiCategoriesResponse AddEmojiCategories (string apiToken = default(string), Object body = default(Object));
+        AddEmojiCategoriesResponse AddEmojiCategories (string apiToken, Object body = default(Object));
 
         /// <summary>
         /// Add emoji categories
@@ -44,10 +44,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Add emoji categories  Adds a list of one or more new emoji categories to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-add-emoji-categories
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="body"> (optional)</param>
         /// <returns>ApiResponse of AddEmojiCategoriesResponse</returns>
-        ApiResponse<AddEmojiCategoriesResponse> AddEmojiCategoriesWithHttpInfo (string apiToken = default(string), Object body = default(Object));
+        ApiResponse<AddEmojiCategoriesResponse> AddEmojiCategoriesWithHttpInfo (string apiToken, Object body = default(Object));
         /// <summary>
         /// Add emojis
         /// </summary>
@@ -55,10 +55,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Add emojis  Adds a list of one or more new emojis to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-add-emojis
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addEmojisData"> (optional)</param>
         /// <returns>AddEmojisResponse</returns>
-        AddEmojisResponse AddEmojis (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData));
+        AddEmojisResponse AddEmojis (string apiToken, AddEmojisData addEmojisData = default(AddEmojisData));
 
         /// <summary>
         /// Add emojis
@@ -67,10 +67,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Add emojis  Adds a list of one or more new emojis to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-add-emojis
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addEmojisData"> (optional)</param>
         /// <returns>ApiResponse of AddEmojisResponse</returns>
-        ApiResponse<AddEmojisResponse> AddEmojisWithHttpInfo (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData));
+        ApiResponse<AddEmojisResponse> AddEmojisWithHttpInfo (string apiToken, AddEmojisData addEmojisData = default(AddEmojisData));
         /// <summary>
         /// Delete an emoji
         /// </summary>
@@ -78,10 +78,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete an emoji  Deletes an emoji from the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-delete-an-emoji - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns></returns>
-        void DeleteEmojiByKey (string emojiKey, string apiToken = default(string));
+        void DeleteEmojiByKey (string apiToken, string emojiKey);
 
         /// <summary>
         /// Delete an emoji
@@ -90,10 +90,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete an emoji  Deletes an emoji from the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-delete-an-emoji - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteEmojiByKeyWithHttpInfo (string emojiKey, string apiToken = default(string));
+        ApiResponse<Object> DeleteEmojiByKeyWithHttpInfo (string apiToken, string emojiKey);
         /// <summary>
         /// Delete an emoji category
         /// </summary>
@@ -101,10 +101,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete an emoji category  Deletes an emoji category with the specified ID.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-delete-an-emoji-category - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns></returns>
-        void DeleteEmojiCategoryById (string emojiCategoryId, string apiToken = default(string));
+        void DeleteEmojiCategoryById (string apiToken, string emojiCategoryId);
 
         /// <summary>
         /// Delete an emoji category
@@ -113,10 +113,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete an emoji category  Deletes an emoji category with the specified ID.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-delete-an-emoji-category - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteEmojiCategoryByIdWithHttpInfo (string emojiCategoryId, string apiToken = default(string));
+        ApiResponse<Object> DeleteEmojiCategoryByIdWithHttpInfo (string apiToken, string emojiCategoryId);
         /// <summary>
         /// Enable reactions
         /// </summary>
@@ -124,10 +124,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Enable reactions  Turn on or off reactions in a Sendbird application.  &gt; __Note__: This action also allows reactions in UIKit.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-enable-reactions
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="enableReactionsData"> (optional)</param>
         /// <returns>EnableReactionsResponse</returns>
-        EnableReactionsResponse EnableReactions (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData));
+        EnableReactionsResponse EnableReactions (string apiToken, EnableReactionsData enableReactionsData = default(EnableReactionsData));
 
         /// <summary>
         /// Enable reactions
@@ -136,10 +136,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Enable reactions  Turn on or off reactions in a Sendbird application.  &gt; __Note__: This action also allows reactions in UIKit.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-enable-reactions
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="enableReactionsData"> (optional)</param>
         /// <returns>ApiResponse of EnableReactionsResponse</returns>
-        ApiResponse<EnableReactionsResponse> EnableReactionsWithHttpInfo (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData));
+        ApiResponse<EnableReactionsResponse> EnableReactionsWithHttpInfo (string apiToken, EnableReactionsData enableReactionsData = default(EnableReactionsData));
         /// <summary>
         /// Get an emoji
         /// </summary>
@@ -147,10 +147,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Get an emoji  Retrieves an emoji with the specified key.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-get-an-emoji - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>SendBirdEmoji</returns>
-        SendBirdEmoji GetEmojiByKey (string emojiKey, string apiToken = default(string));
+        SendBirdEmoji GetEmojiByKey (string apiToken, string emojiKey);
 
         /// <summary>
         /// Get an emoji
@@ -159,10 +159,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Get an emoji  Retrieves an emoji with the specified key.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-get-an-emoji - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of SendBirdEmoji</returns>
-        ApiResponse<SendBirdEmoji> GetEmojiByKeyWithHttpInfo (string emojiKey, string apiToken = default(string));
+        ApiResponse<SendBirdEmoji> GetEmojiByKeyWithHttpInfo (string apiToken, string emojiKey);
         /// <summary>
         /// Get an emoji category
         /// </summary>
@@ -170,10 +170,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Get an emoji category  Retrieves an emoji category with the specified ID, including its emojis.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-get-an-emoji-category - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;emoji_category_id&#x60;      Type: int      Description: Specifies the unique ID of the emoji category to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>SendBirdEmojiCategory</returns>
-        SendBirdEmojiCategory GetEmojiCategoryById (string emojiCategoryId, string apiToken = default(string));
+        SendBirdEmojiCategory GetEmojiCategoryById (string apiToken, string emojiCategoryId);
 
         /// <summary>
         /// Get an emoji category
@@ -182,10 +182,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Get an emoji category  Retrieves an emoji category with the specified ID, including its emojis.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-get-an-emoji-category - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;emoji_category_id&#x60;      Type: int      Description: Specifies the unique ID of the emoji category to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of SendBirdEmojiCategory</returns>
-        ApiResponse<SendBirdEmojiCategory> GetEmojiCategoryByIdWithHttpInfo (string emojiCategoryId, string apiToken = default(string));
+        ApiResponse<SendBirdEmojiCategory> GetEmojiCategoryByIdWithHttpInfo (string apiToken, string emojiCategoryId);
         /// <summary>
         /// List all emojis and emoji categories
         /// </summary>
@@ -193,9 +193,9 @@ namespace sendbird_platform_sdk.Api
         /// ## List all emojis and emoji categories  Retrieves a list of all emoji categories registered to the application, including their emojis.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-list-all-emojis-and-emoji-categories
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ListAllEmojisAndEmojiCategoriesResponse</returns>
-        ListAllEmojisAndEmojiCategoriesResponse ListAllEmojisAndEmojiCategories (string apiToken = default(string));
+        ListAllEmojisAndEmojiCategoriesResponse ListAllEmojisAndEmojiCategories (string apiToken);
 
         /// <summary>
         /// List all emojis and emoji categories
@@ -204,9 +204,9 @@ namespace sendbird_platform_sdk.Api
         /// ## List all emojis and emoji categories  Retrieves a list of all emoji categories registered to the application, including their emojis.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-list-all-emojis-and-emoji-categories
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of ListAllEmojisAndEmojiCategoriesResponse</returns>
-        ApiResponse<ListAllEmojisAndEmojiCategoriesResponse> ListAllEmojisAndEmojiCategoriesWithHttpInfo (string apiToken = default(string));
+        ApiResponse<ListAllEmojisAndEmojiCategoriesResponse> ListAllEmojisAndEmojiCategoriesWithHttpInfo (string apiToken);
         /// <summary>
         /// List emojis
         /// </summary>
@@ -214,9 +214,9 @@ namespace sendbird_platform_sdk.Api
         /// ## List emojis  Retrieves a list of all emojis registered to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-list-emojis
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ListEmojisResponse</returns>
-        ListEmojisResponse ListEmojis (string apiToken = default(string));
+        ListEmojisResponse ListEmojis (string apiToken);
 
         /// <summary>
         /// List emojis
@@ -225,9 +225,9 @@ namespace sendbird_platform_sdk.Api
         /// ## List emojis  Retrieves a list of all emojis registered to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-list-emojis
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of ListEmojisResponse</returns>
-        ApiResponse<ListEmojisResponse> ListEmojisWithHttpInfo (string apiToken = default(string));
+        ApiResponse<ListEmojisResponse> ListEmojisWithHttpInfo (string apiToken);
         /// <summary>
         /// Update an emoji category URL
         /// </summary>
@@ -235,11 +235,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an emoji category URL  Updates the URL of an emoji category with the specified ID.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-update-an-emoji-category-url - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateEmojiCategoryUrlByIdData"> (optional)</param>
         /// <returns>SendBirdEmojiCategory</returns>
-        SendBirdEmojiCategory UpdateEmojiCategoryUrlById (string emojiCategoryId, string apiToken = default(string), UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = default(UpdateEmojiCategoryUrlByIdData));
+        SendBirdEmojiCategory UpdateEmojiCategoryUrlById (string apiToken, string emojiCategoryId, UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = default(UpdateEmojiCategoryUrlByIdData));
 
         /// <summary>
         /// Update an emoji category URL
@@ -248,11 +248,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an emoji category URL  Updates the URL of an emoji category with the specified ID.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-update-an-emoji-category-url - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateEmojiCategoryUrlByIdData"> (optional)</param>
         /// <returns>ApiResponse of SendBirdEmojiCategory</returns>
-        ApiResponse<SendBirdEmojiCategory> UpdateEmojiCategoryUrlByIdWithHttpInfo (string emojiCategoryId, string apiToken = default(string), UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = default(UpdateEmojiCategoryUrlByIdData));
+        ApiResponse<SendBirdEmojiCategory> UpdateEmojiCategoryUrlByIdWithHttpInfo (string apiToken, string emojiCategoryId, UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = default(UpdateEmojiCategoryUrlByIdData));
         /// <summary>
         /// Update an emoji URL
         /// </summary>
@@ -260,11 +260,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an emoji URL  Updates the image URL of an emoji with the specified key.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-update-an-emoji-url - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateEmojiUrlByKeyData"> (optional)</param>
         /// <returns>SendBirdEmoji</returns>
-        SendBirdEmoji UpdateEmojiUrlByKey (string emojiKey, string apiToken = default(string), UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = default(UpdateEmojiUrlByKeyData));
+        SendBirdEmoji UpdateEmojiUrlByKey (string apiToken, string emojiKey, UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = default(UpdateEmojiUrlByKeyData));
 
         /// <summary>
         /// Update an emoji URL
@@ -273,11 +273,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an emoji URL  Updates the image URL of an emoji with the specified key.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-update-an-emoji-url - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateEmojiUrlByKeyData"> (optional)</param>
         /// <returns>ApiResponse of SendBirdEmoji</returns>
-        ApiResponse<SendBirdEmoji> UpdateEmojiUrlByKeyWithHttpInfo (string emojiKey, string apiToken = default(string), UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = default(UpdateEmojiUrlByKeyData));
+        ApiResponse<SendBirdEmoji> UpdateEmojiUrlByKeyWithHttpInfo (string apiToken, string emojiKey, UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = default(UpdateEmojiUrlByKeyData));
         /// <summary>
         /// Use default emojis
         /// </summary>
@@ -285,10 +285,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Use default emojis  Determines whether to use the 7 default emojis initially provided.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-use-default-emojis
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="useDefaultEmojisData"> (optional)</param>
         /// <returns>UseDefaultEmojisResponse</returns>
-        UseDefaultEmojisResponse UseDefaultEmojis (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData));
+        UseDefaultEmojisResponse UseDefaultEmojis (string apiToken, UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData));
 
         /// <summary>
         /// Use default emojis
@@ -297,10 +297,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Use default emojis  Determines whether to use the 7 default emojis initially provided.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-use-default-emojis
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="useDefaultEmojisData"> (optional)</param>
         /// <returns>ApiResponse of UseDefaultEmojisResponse</returns>
-        ApiResponse<UseDefaultEmojisResponse> UseDefaultEmojisWithHttpInfo (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData));
+        ApiResponse<UseDefaultEmojisResponse> UseDefaultEmojisWithHttpInfo (string apiToken, UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -310,11 +310,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Add emoji categories  Adds a list of one or more new emoji categories to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-add-emoji-categories
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddEmojiCategoriesResponse</returns>
-        System.Threading.Tasks.Task<AddEmojiCategoriesResponse> AddEmojiCategoriesAsync (string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<AddEmojiCategoriesResponse> AddEmojiCategoriesAsync (string apiToken, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Add emoji categories
@@ -323,11 +323,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Add emoji categories  Adds a list of one or more new emoji categories to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-add-emoji-categories
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddEmojiCategoriesResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AddEmojiCategoriesResponse>> AddEmojiCategoriesWithHttpInfoAsync (string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<AddEmojiCategoriesResponse>> AddEmojiCategoriesWithHttpInfoAsync (string apiToken, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Add emojis
         /// </summary>
@@ -335,11 +335,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Add emojis  Adds a list of one or more new emojis to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-add-emojis
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addEmojisData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddEmojisResponse</returns>
-        System.Threading.Tasks.Task<AddEmojisResponse> AddEmojisAsync (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<AddEmojisResponse> AddEmojisAsync (string apiToken, AddEmojisData addEmojisData = default(AddEmojisData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Add emojis
@@ -348,11 +348,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Add emojis  Adds a list of one or more new emojis to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-add-emojis
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addEmojisData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddEmojisResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AddEmojisResponse>> AddEmojisWithHttpInfoAsync (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<AddEmojisResponse>> AddEmojisWithHttpInfoAsync (string apiToken, AddEmojisData addEmojisData = default(AddEmojisData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Delete an emoji
         /// </summary>
@@ -360,11 +360,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete an emoji  Deletes an emoji from the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-delete-an-emoji - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteEmojiByKeyAsync (string emojiKey, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task DeleteEmojiByKeyAsync (string apiToken, string emojiKey, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Delete an emoji
@@ -373,11 +373,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete an emoji  Deletes an emoji from the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-delete-an-emoji - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmojiByKeyWithHttpInfoAsync (string emojiKey, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmojiByKeyWithHttpInfoAsync (string apiToken, string emojiKey, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Delete an emoji category
         /// </summary>
@@ -385,11 +385,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete an emoji category  Deletes an emoji category with the specified ID.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-delete-an-emoji-category - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteEmojiCategoryByIdAsync (string emojiCategoryId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task DeleteEmojiCategoryByIdAsync (string apiToken, string emojiCategoryId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Delete an emoji category
@@ -398,11 +398,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete an emoji category  Deletes an emoji category with the specified ID.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-delete-an-emoji-category - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmojiCategoryByIdWithHttpInfoAsync (string emojiCategoryId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmojiCategoryByIdWithHttpInfoAsync (string apiToken, string emojiCategoryId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Enable reactions
         /// </summary>
@@ -410,11 +410,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Enable reactions  Turn on or off reactions in a Sendbird application.  &gt; __Note__: This action also allows reactions in UIKit.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-enable-reactions
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="enableReactionsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of EnableReactionsResponse</returns>
-        System.Threading.Tasks.Task<EnableReactionsResponse> EnableReactionsAsync (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<EnableReactionsResponse> EnableReactionsAsync (string apiToken, EnableReactionsData enableReactionsData = default(EnableReactionsData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Enable reactions
@@ -423,11 +423,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Enable reactions  Turn on or off reactions in a Sendbird application.  &gt; __Note__: This action also allows reactions in UIKit.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-enable-reactions
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="enableReactionsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (EnableReactionsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<EnableReactionsResponse>> EnableReactionsWithHttpInfoAsync (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<EnableReactionsResponse>> EnableReactionsWithHttpInfoAsync (string apiToken, EnableReactionsData enableReactionsData = default(EnableReactionsData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get an emoji
         /// </summary>
@@ -435,11 +435,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Get an emoji  Retrieves an emoji with the specified key.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-get-an-emoji - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdEmoji</returns>
-        System.Threading.Tasks.Task<SendBirdEmoji> GetEmojiByKeyAsync (string emojiKey, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdEmoji> GetEmojiByKeyAsync (string apiToken, string emojiKey, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get an emoji
@@ -448,11 +448,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Get an emoji  Retrieves an emoji with the specified key.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-get-an-emoji - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdEmoji)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdEmoji>> GetEmojiByKeyWithHttpInfoAsync (string emojiKey, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdEmoji>> GetEmojiByKeyWithHttpInfoAsync (string apiToken, string emojiKey, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get an emoji category
         /// </summary>
@@ -460,11 +460,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Get an emoji category  Retrieves an emoji category with the specified ID, including its emojis.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-get-an-emoji-category - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;emoji_category_id&#x60;      Type: int      Description: Specifies the unique ID of the emoji category to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdEmojiCategory</returns>
-        System.Threading.Tasks.Task<SendBirdEmojiCategory> GetEmojiCategoryByIdAsync (string emojiCategoryId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdEmojiCategory> GetEmojiCategoryByIdAsync (string apiToken, string emojiCategoryId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get an emoji category
@@ -473,11 +473,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Get an emoji category  Retrieves an emoji category with the specified ID, including its emojis.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-get-an-emoji-category - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;emoji_category_id&#x60;      Type: int      Description: Specifies the unique ID of the emoji category to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdEmojiCategory)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdEmojiCategory>> GetEmojiCategoryByIdWithHttpInfoAsync (string emojiCategoryId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdEmojiCategory>> GetEmojiCategoryByIdWithHttpInfoAsync (string apiToken, string emojiCategoryId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List all emojis and emoji categories
         /// </summary>
@@ -485,10 +485,10 @@ namespace sendbird_platform_sdk.Api
         /// ## List all emojis and emoji categories  Retrieves a list of all emoji categories registered to the application, including their emojis.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-list-all-emojis-and-emoji-categories
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListAllEmojisAndEmojiCategoriesResponse</returns>
-        System.Threading.Tasks.Task<ListAllEmojisAndEmojiCategoriesResponse> ListAllEmojisAndEmojiCategoriesAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListAllEmojisAndEmojiCategoriesResponse> ListAllEmojisAndEmojiCategoriesAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List all emojis and emoji categories
@@ -497,10 +497,10 @@ namespace sendbird_platform_sdk.Api
         /// ## List all emojis and emoji categories  Retrieves a list of all emoji categories registered to the application, including their emojis.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-list-all-emojis-and-emoji-categories
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListAllEmojisAndEmojiCategoriesResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListAllEmojisAndEmojiCategoriesResponse>> ListAllEmojisAndEmojiCategoriesWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListAllEmojisAndEmojiCategoriesResponse>> ListAllEmojisAndEmojiCategoriesWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List emojis
         /// </summary>
@@ -508,10 +508,10 @@ namespace sendbird_platform_sdk.Api
         /// ## List emojis  Retrieves a list of all emojis registered to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-list-emojis
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListEmojisResponse</returns>
-        System.Threading.Tasks.Task<ListEmojisResponse> ListEmojisAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListEmojisResponse> ListEmojisAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List emojis
@@ -520,10 +520,10 @@ namespace sendbird_platform_sdk.Api
         /// ## List emojis  Retrieves a list of all emojis registered to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-list-emojis
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListEmojisResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListEmojisResponse>> ListEmojisWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListEmojisResponse>> ListEmojisWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update an emoji category URL
         /// </summary>
@@ -531,12 +531,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an emoji category URL  Updates the URL of an emoji category with the specified ID.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-update-an-emoji-category-url - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateEmojiCategoryUrlByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdEmojiCategory</returns>
-        System.Threading.Tasks.Task<SendBirdEmojiCategory> UpdateEmojiCategoryUrlByIdAsync (string emojiCategoryId, string apiToken = default(string), UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = default(UpdateEmojiCategoryUrlByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdEmojiCategory> UpdateEmojiCategoryUrlByIdAsync (string apiToken, string emojiCategoryId, UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = default(UpdateEmojiCategoryUrlByIdData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update an emoji category URL
@@ -545,12 +545,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an emoji category URL  Updates the URL of an emoji category with the specified ID.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-update-an-emoji-category-url - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateEmojiCategoryUrlByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdEmojiCategory)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdEmojiCategory>> UpdateEmojiCategoryUrlByIdWithHttpInfoAsync (string emojiCategoryId, string apiToken = default(string), UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = default(UpdateEmojiCategoryUrlByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdEmojiCategory>> UpdateEmojiCategoryUrlByIdWithHttpInfoAsync (string apiToken, string emojiCategoryId, UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = default(UpdateEmojiCategoryUrlByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update an emoji URL
         /// </summary>
@@ -558,12 +558,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an emoji URL  Updates the image URL of an emoji with the specified key.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-update-an-emoji-url - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateEmojiUrlByKeyData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdEmoji</returns>
-        System.Threading.Tasks.Task<SendBirdEmoji> UpdateEmojiUrlByKeyAsync (string emojiKey, string apiToken = default(string), UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = default(UpdateEmojiUrlByKeyData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdEmoji> UpdateEmojiUrlByKeyAsync (string apiToken, string emojiKey, UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = default(UpdateEmojiUrlByKeyData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update an emoji URL
@@ -572,12 +572,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an emoji URL  Updates the image URL of an emoji with the specified key.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-update-an-emoji-url - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateEmojiUrlByKeyData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdEmoji)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdEmoji>> UpdateEmojiUrlByKeyWithHttpInfoAsync (string emojiKey, string apiToken = default(string), UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = default(UpdateEmojiUrlByKeyData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdEmoji>> UpdateEmojiUrlByKeyWithHttpInfoAsync (string apiToken, string emojiKey, UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = default(UpdateEmojiUrlByKeyData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Use default emojis
         /// </summary>
@@ -585,11 +585,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Use default emojis  Determines whether to use the 7 default emojis initially provided.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-use-default-emojis
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="useDefaultEmojisData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UseDefaultEmojisResponse</returns>
-        System.Threading.Tasks.Task<UseDefaultEmojisResponse> UseDefaultEmojisAsync (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<UseDefaultEmojisResponse> UseDefaultEmojisAsync (string apiToken, UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Use default emojis
@@ -598,11 +598,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Use default emojis  Determines whether to use the 7 default emojis initially provided.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-use-default-emojis
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="useDefaultEmojisData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UseDefaultEmojisResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UseDefaultEmojisResponse>> UseDefaultEmojisWithHttpInfoAsync (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<UseDefaultEmojisResponse>> UseDefaultEmojisWithHttpInfoAsync (string apiToken, UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -718,10 +718,10 @@ namespace sendbird_platform_sdk.Api
         /// Add emoji categories ## Add emoji categories  Adds a list of one or more new emoji categories to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-add-emoji-categories
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="body"> (optional)</param>
         /// <returns>AddEmojiCategoriesResponse</returns>
-        public AddEmojiCategoriesResponse AddEmojiCategories (string apiToken = default(string), Object body = default(Object))
+        public AddEmojiCategoriesResponse AddEmojiCategories (string apiToken, Object body = default(Object))
         {
              ApiResponse<AddEmojiCategoriesResponse> localVarResponse = AddEmojiCategoriesWithHttpInfo(apiToken, body);
              return localVarResponse.Data;
@@ -731,11 +731,14 @@ namespace sendbird_platform_sdk.Api
         /// Add emoji categories ## Add emoji categories  Adds a list of one or more new emoji categories to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-add-emoji-categories
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="body"> (optional)</param>
         /// <returns>ApiResponse of AddEmojiCategoriesResponse</returns>
-        public ApiResponse<AddEmojiCategoriesResponse> AddEmojiCategoriesWithHttpInfo (string apiToken = default(string), Object body = default(Object))
+        public ApiResponse<AddEmojiCategoriesResponse> AddEmojiCategoriesWithHttpInfo (string apiToken, Object body = default(Object))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->AddEmojiCategories");
 
             var localVarPath = "/v3/emoji_categories";
             var localVarPathParams = new Dictionary<String, String>();
@@ -792,11 +795,11 @@ namespace sendbird_platform_sdk.Api
         /// Add emoji categories ## Add emoji categories  Adds a list of one or more new emoji categories to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-add-emoji-categories
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddEmojiCategoriesResponse</returns>
-        public async System.Threading.Tasks.Task<AddEmojiCategoriesResponse> AddEmojiCategoriesAsync (string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<AddEmojiCategoriesResponse> AddEmojiCategoriesAsync (string apiToken, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<AddEmojiCategoriesResponse> localVarResponse = await AddEmojiCategoriesWithHttpInfoAsync(apiToken, body, cancellationToken);
              return localVarResponse.Data;
@@ -807,12 +810,15 @@ namespace sendbird_platform_sdk.Api
         /// Add emoji categories ## Add emoji categories  Adds a list of one or more new emoji categories to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-add-emoji-categories
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddEmojiCategoriesResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<AddEmojiCategoriesResponse>> AddEmojiCategoriesWithHttpInfoAsync (string apiToken = default(string), Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<AddEmojiCategoriesResponse>> AddEmojiCategoriesWithHttpInfoAsync (string apiToken, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->AddEmojiCategories");
 
             var localVarPath = "/v3/emoji_categories";
             var localVarPathParams = new Dictionary<String, String>();
@@ -869,10 +875,10 @@ namespace sendbird_platform_sdk.Api
         /// Add emojis ## Add emojis  Adds a list of one or more new emojis to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-add-emojis
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addEmojisData"> (optional)</param>
         /// <returns>AddEmojisResponse</returns>
-        public AddEmojisResponse AddEmojis (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData))
+        public AddEmojisResponse AddEmojis (string apiToken, AddEmojisData addEmojisData = default(AddEmojisData))
         {
              ApiResponse<AddEmojisResponse> localVarResponse = AddEmojisWithHttpInfo(apiToken, addEmojisData);
              return localVarResponse.Data;
@@ -882,11 +888,14 @@ namespace sendbird_platform_sdk.Api
         /// Add emojis ## Add emojis  Adds a list of one or more new emojis to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-add-emojis
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addEmojisData"> (optional)</param>
         /// <returns>ApiResponse of AddEmojisResponse</returns>
-        public ApiResponse<AddEmojisResponse> AddEmojisWithHttpInfo (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData))
+        public ApiResponse<AddEmojisResponse> AddEmojisWithHttpInfo (string apiToken, AddEmojisData addEmojisData = default(AddEmojisData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->AddEmojis");
 
             var localVarPath = "/v3/emojis";
             var localVarPathParams = new Dictionary<String, String>();
@@ -943,11 +952,11 @@ namespace sendbird_platform_sdk.Api
         /// Add emojis ## Add emojis  Adds a list of one or more new emojis to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-add-emojis
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addEmojisData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddEmojisResponse</returns>
-        public async System.Threading.Tasks.Task<AddEmojisResponse> AddEmojisAsync (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<AddEmojisResponse> AddEmojisAsync (string apiToken, AddEmojisData addEmojisData = default(AddEmojisData), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<AddEmojisResponse> localVarResponse = await AddEmojisWithHttpInfoAsync(apiToken, addEmojisData, cancellationToken);
              return localVarResponse.Data;
@@ -958,12 +967,15 @@ namespace sendbird_platform_sdk.Api
         /// Add emojis ## Add emojis  Adds a list of one or more new emojis to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-add-emojis
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addEmojisData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddEmojisResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<AddEmojisResponse>> AddEmojisWithHttpInfoAsync (string apiToken = default(string), AddEmojisData addEmojisData = default(AddEmojisData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<AddEmojisResponse>> AddEmojisWithHttpInfoAsync (string apiToken, AddEmojisData addEmojisData = default(AddEmojisData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->AddEmojis");
 
             var localVarPath = "/v3/emojis";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1020,23 +1032,26 @@ namespace sendbird_platform_sdk.Api
         /// Delete an emoji ## Delete an emoji  Deletes an emoji from the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-delete-an-emoji - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns></returns>
-        public void DeleteEmojiByKey (string emojiKey, string apiToken = default(string))
+        public void DeleteEmojiByKey (string apiToken, string emojiKey)
         {
-             DeleteEmojiByKeyWithHttpInfo(emojiKey, apiToken);
+             DeleteEmojiByKeyWithHttpInfo(apiToken, emojiKey);
         }
 
         /// <summary>
         /// Delete an emoji ## Delete an emoji  Deletes an emoji from the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-delete-an-emoji - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteEmojiByKeyWithHttpInfo (string emojiKey, string apiToken = default(string))
+        public ApiResponse<Object> DeleteEmojiByKeyWithHttpInfo (string apiToken, string emojiKey)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->DeleteEmojiByKey");
             // verify the required parameter 'emojiKey' is set
             if (emojiKey == null)
                 throw new ApiException(400, "Missing required parameter 'emojiKey' when calling EmojisApi->DeleteEmojiByKey");
@@ -1087,13 +1102,13 @@ namespace sendbird_platform_sdk.Api
         /// Delete an emoji ## Delete an emoji  Deletes an emoji from the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-delete-an-emoji - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteEmojiByKeyAsync (string emojiKey, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task DeleteEmojiByKeyAsync (string apiToken, string emojiKey, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await DeleteEmojiByKeyWithHttpInfoAsync(emojiKey, apiToken, cancellationToken);
+             await DeleteEmojiByKeyWithHttpInfoAsync(apiToken, emojiKey, cancellationToken);
 
         }
 
@@ -1101,12 +1116,15 @@ namespace sendbird_platform_sdk.Api
         /// Delete an emoji ## Delete an emoji  Deletes an emoji from the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-delete-an-emoji - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmojiByKeyWithHttpInfoAsync (string emojiKey, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmojiByKeyWithHttpInfoAsync (string apiToken, string emojiKey, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->DeleteEmojiByKey");
             // verify the required parameter 'emojiKey' is set
             if (emojiKey == null)
                 throw new ApiException(400, "Missing required parameter 'emojiKey' when calling EmojisApi->DeleteEmojiByKey");
@@ -1157,23 +1175,26 @@ namespace sendbird_platform_sdk.Api
         /// Delete an emoji category ## Delete an emoji category  Deletes an emoji category with the specified ID.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-delete-an-emoji-category - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns></returns>
-        public void DeleteEmojiCategoryById (string emojiCategoryId, string apiToken = default(string))
+        public void DeleteEmojiCategoryById (string apiToken, string emojiCategoryId)
         {
-             DeleteEmojiCategoryByIdWithHttpInfo(emojiCategoryId, apiToken);
+             DeleteEmojiCategoryByIdWithHttpInfo(apiToken, emojiCategoryId);
         }
 
         /// <summary>
         /// Delete an emoji category ## Delete an emoji category  Deletes an emoji category with the specified ID.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-delete-an-emoji-category - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteEmojiCategoryByIdWithHttpInfo (string emojiCategoryId, string apiToken = default(string))
+        public ApiResponse<Object> DeleteEmojiCategoryByIdWithHttpInfo (string apiToken, string emojiCategoryId)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->DeleteEmojiCategoryById");
             // verify the required parameter 'emojiCategoryId' is set
             if (emojiCategoryId == null)
                 throw new ApiException(400, "Missing required parameter 'emojiCategoryId' when calling EmojisApi->DeleteEmojiCategoryById");
@@ -1224,13 +1245,13 @@ namespace sendbird_platform_sdk.Api
         /// Delete an emoji category ## Delete an emoji category  Deletes an emoji category with the specified ID.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-delete-an-emoji-category - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteEmojiCategoryByIdAsync (string emojiCategoryId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task DeleteEmojiCategoryByIdAsync (string apiToken, string emojiCategoryId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await DeleteEmojiCategoryByIdWithHttpInfoAsync(emojiCategoryId, apiToken, cancellationToken);
+             await DeleteEmojiCategoryByIdWithHttpInfoAsync(apiToken, emojiCategoryId, cancellationToken);
 
         }
 
@@ -1238,12 +1259,15 @@ namespace sendbird_platform_sdk.Api
         /// Delete an emoji category ## Delete an emoji category  Deletes an emoji category with the specified ID.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-delete-an-emoji-category - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmojiCategoryByIdWithHttpInfoAsync (string emojiCategoryId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmojiCategoryByIdWithHttpInfoAsync (string apiToken, string emojiCategoryId, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->DeleteEmojiCategoryById");
             // verify the required parameter 'emojiCategoryId' is set
             if (emojiCategoryId == null)
                 throw new ApiException(400, "Missing required parameter 'emojiCategoryId' when calling EmojisApi->DeleteEmojiCategoryById");
@@ -1294,10 +1318,10 @@ namespace sendbird_platform_sdk.Api
         /// Enable reactions ## Enable reactions  Turn on or off reactions in a Sendbird application.  &gt; __Note__: This action also allows reactions in UIKit.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-enable-reactions
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="enableReactionsData"> (optional)</param>
         /// <returns>EnableReactionsResponse</returns>
-        public EnableReactionsResponse EnableReactions (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData))
+        public EnableReactionsResponse EnableReactions (string apiToken, EnableReactionsData enableReactionsData = default(EnableReactionsData))
         {
              ApiResponse<EnableReactionsResponse> localVarResponse = EnableReactionsWithHttpInfo(apiToken, enableReactionsData);
              return localVarResponse.Data;
@@ -1307,11 +1331,14 @@ namespace sendbird_platform_sdk.Api
         /// Enable reactions ## Enable reactions  Turn on or off reactions in a Sendbird application.  &gt; __Note__: This action also allows reactions in UIKit.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-enable-reactions
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="enableReactionsData"> (optional)</param>
         /// <returns>ApiResponse of EnableReactionsResponse</returns>
-        public ApiResponse<EnableReactionsResponse> EnableReactionsWithHttpInfo (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData))
+        public ApiResponse<EnableReactionsResponse> EnableReactionsWithHttpInfo (string apiToken, EnableReactionsData enableReactionsData = default(EnableReactionsData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->EnableReactions");
 
             var localVarPath = "/v3/applications/settings/reactions";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1368,11 +1395,11 @@ namespace sendbird_platform_sdk.Api
         /// Enable reactions ## Enable reactions  Turn on or off reactions in a Sendbird application.  &gt; __Note__: This action also allows reactions in UIKit.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-enable-reactions
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="enableReactionsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of EnableReactionsResponse</returns>
-        public async System.Threading.Tasks.Task<EnableReactionsResponse> EnableReactionsAsync (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<EnableReactionsResponse> EnableReactionsAsync (string apiToken, EnableReactionsData enableReactionsData = default(EnableReactionsData), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<EnableReactionsResponse> localVarResponse = await EnableReactionsWithHttpInfoAsync(apiToken, enableReactionsData, cancellationToken);
              return localVarResponse.Data;
@@ -1383,12 +1410,15 @@ namespace sendbird_platform_sdk.Api
         /// Enable reactions ## Enable reactions  Turn on or off reactions in a Sendbird application.  &gt; __Note__: This action also allows reactions in UIKit.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-enable-reactions
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="enableReactionsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (EnableReactionsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<EnableReactionsResponse>> EnableReactionsWithHttpInfoAsync (string apiToken = default(string), EnableReactionsData enableReactionsData = default(EnableReactionsData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<EnableReactionsResponse>> EnableReactionsWithHttpInfoAsync (string apiToken, EnableReactionsData enableReactionsData = default(EnableReactionsData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->EnableReactions");
 
             var localVarPath = "/v3/applications/settings/reactions";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1445,12 +1475,12 @@ namespace sendbird_platform_sdk.Api
         /// Get an emoji ## Get an emoji  Retrieves an emoji with the specified key.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-get-an-emoji - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>SendBirdEmoji</returns>
-        public SendBirdEmoji GetEmojiByKey (string emojiKey, string apiToken = default(string))
+        public SendBirdEmoji GetEmojiByKey (string apiToken, string emojiKey)
         {
-             ApiResponse<SendBirdEmoji> localVarResponse = GetEmojiByKeyWithHttpInfo(emojiKey, apiToken);
+             ApiResponse<SendBirdEmoji> localVarResponse = GetEmojiByKeyWithHttpInfo(apiToken, emojiKey);
              return localVarResponse.Data;
         }
 
@@ -1458,11 +1488,14 @@ namespace sendbird_platform_sdk.Api
         /// Get an emoji ## Get an emoji  Retrieves an emoji with the specified key.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-get-an-emoji - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of SendBirdEmoji</returns>
-        public ApiResponse<SendBirdEmoji> GetEmojiByKeyWithHttpInfo (string emojiKey, string apiToken = default(string))
+        public ApiResponse<SendBirdEmoji> GetEmojiByKeyWithHttpInfo (string apiToken, string emojiKey)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->GetEmojiByKey");
             // verify the required parameter 'emojiKey' is set
             if (emojiKey == null)
                 throw new ApiException(400, "Missing required parameter 'emojiKey' when calling EmojisApi->GetEmojiByKey");
@@ -1514,13 +1547,13 @@ namespace sendbird_platform_sdk.Api
         /// Get an emoji ## Get an emoji  Retrieves an emoji with the specified key.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-get-an-emoji - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdEmoji</returns>
-        public async System.Threading.Tasks.Task<SendBirdEmoji> GetEmojiByKeyAsync (string emojiKey, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdEmoji> GetEmojiByKeyAsync (string apiToken, string emojiKey, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdEmoji> localVarResponse = await GetEmojiByKeyWithHttpInfoAsync(emojiKey, apiToken, cancellationToken);
+             ApiResponse<SendBirdEmoji> localVarResponse = await GetEmojiByKeyWithHttpInfoAsync(apiToken, emojiKey, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1529,12 +1562,15 @@ namespace sendbird_platform_sdk.Api
         /// Get an emoji ## Get an emoji  Retrieves an emoji with the specified key.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-get-an-emoji - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdEmoji)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdEmoji>> GetEmojiByKeyWithHttpInfoAsync (string emojiKey, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdEmoji>> GetEmojiByKeyWithHttpInfoAsync (string apiToken, string emojiKey, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->GetEmojiByKey");
             // verify the required parameter 'emojiKey' is set
             if (emojiKey == null)
                 throw new ApiException(400, "Missing required parameter 'emojiKey' when calling EmojisApi->GetEmojiByKey");
@@ -1586,12 +1622,12 @@ namespace sendbird_platform_sdk.Api
         /// Get an emoji category ## Get an emoji category  Retrieves an emoji category with the specified ID, including its emojis.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-get-an-emoji-category - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;emoji_category_id&#x60;      Type: int      Description: Specifies the unique ID of the emoji category to retrieve.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>SendBirdEmojiCategory</returns>
-        public SendBirdEmojiCategory GetEmojiCategoryById (string emojiCategoryId, string apiToken = default(string))
+        public SendBirdEmojiCategory GetEmojiCategoryById (string apiToken, string emojiCategoryId)
         {
-             ApiResponse<SendBirdEmojiCategory> localVarResponse = GetEmojiCategoryByIdWithHttpInfo(emojiCategoryId, apiToken);
+             ApiResponse<SendBirdEmojiCategory> localVarResponse = GetEmojiCategoryByIdWithHttpInfo(apiToken, emojiCategoryId);
              return localVarResponse.Data;
         }
 
@@ -1599,11 +1635,14 @@ namespace sendbird_platform_sdk.Api
         /// Get an emoji category ## Get an emoji category  Retrieves an emoji category with the specified ID, including its emojis.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-get-an-emoji-category - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;emoji_category_id&#x60;      Type: int      Description: Specifies the unique ID of the emoji category to retrieve.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of SendBirdEmojiCategory</returns>
-        public ApiResponse<SendBirdEmojiCategory> GetEmojiCategoryByIdWithHttpInfo (string emojiCategoryId, string apiToken = default(string))
+        public ApiResponse<SendBirdEmojiCategory> GetEmojiCategoryByIdWithHttpInfo (string apiToken, string emojiCategoryId)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->GetEmojiCategoryById");
             // verify the required parameter 'emojiCategoryId' is set
             if (emojiCategoryId == null)
                 throw new ApiException(400, "Missing required parameter 'emojiCategoryId' when calling EmojisApi->GetEmojiCategoryById");
@@ -1655,13 +1694,13 @@ namespace sendbird_platform_sdk.Api
         /// Get an emoji category ## Get an emoji category  Retrieves an emoji category with the specified ID, including its emojis.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-get-an-emoji-category - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;emoji_category_id&#x60;      Type: int      Description: Specifies the unique ID of the emoji category to retrieve.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdEmojiCategory</returns>
-        public async System.Threading.Tasks.Task<SendBirdEmojiCategory> GetEmojiCategoryByIdAsync (string emojiCategoryId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdEmojiCategory> GetEmojiCategoryByIdAsync (string apiToken, string emojiCategoryId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdEmojiCategory> localVarResponse = await GetEmojiCategoryByIdWithHttpInfoAsync(emojiCategoryId, apiToken, cancellationToken);
+             ApiResponse<SendBirdEmojiCategory> localVarResponse = await GetEmojiCategoryByIdWithHttpInfoAsync(apiToken, emojiCategoryId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1670,12 +1709,15 @@ namespace sendbird_platform_sdk.Api
         /// Get an emoji category ## Get an emoji category  Retrieves an emoji category with the specified ID, including its emojis.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-get-an-emoji-category - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;emoji_category_id&#x60;      Type: int      Description: Specifies the unique ID of the emoji category to retrieve.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdEmojiCategory)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdEmojiCategory>> GetEmojiCategoryByIdWithHttpInfoAsync (string emojiCategoryId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdEmojiCategory>> GetEmojiCategoryByIdWithHttpInfoAsync (string apiToken, string emojiCategoryId, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->GetEmojiCategoryById");
             // verify the required parameter 'emojiCategoryId' is set
             if (emojiCategoryId == null)
                 throw new ApiException(400, "Missing required parameter 'emojiCategoryId' when calling EmojisApi->GetEmojiCategoryById");
@@ -1727,9 +1769,9 @@ namespace sendbird_platform_sdk.Api
         /// List all emojis and emoji categories ## List all emojis and emoji categories  Retrieves a list of all emoji categories registered to the application, including their emojis.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-list-all-emojis-and-emoji-categories
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ListAllEmojisAndEmojiCategoriesResponse</returns>
-        public ListAllEmojisAndEmojiCategoriesResponse ListAllEmojisAndEmojiCategories (string apiToken = default(string))
+        public ListAllEmojisAndEmojiCategoriesResponse ListAllEmojisAndEmojiCategories (string apiToken)
         {
              ApiResponse<ListAllEmojisAndEmojiCategoriesResponse> localVarResponse = ListAllEmojisAndEmojiCategoriesWithHttpInfo(apiToken);
              return localVarResponse.Data;
@@ -1739,10 +1781,13 @@ namespace sendbird_platform_sdk.Api
         /// List all emojis and emoji categories ## List all emojis and emoji categories  Retrieves a list of all emoji categories registered to the application, including their emojis.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-list-all-emojis-and-emoji-categories
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of ListAllEmojisAndEmojiCategoriesResponse</returns>
-        public ApiResponse<ListAllEmojisAndEmojiCategoriesResponse> ListAllEmojisAndEmojiCategoriesWithHttpInfo (string apiToken = default(string))
+        public ApiResponse<ListAllEmojisAndEmojiCategoriesResponse> ListAllEmojisAndEmojiCategoriesWithHttpInfo (string apiToken)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->ListAllEmojisAndEmojiCategories");
 
             var localVarPath = "/v3/emoji_categories";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1790,10 +1835,10 @@ namespace sendbird_platform_sdk.Api
         /// List all emojis and emoji categories ## List all emojis and emoji categories  Retrieves a list of all emoji categories registered to the application, including their emojis.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-list-all-emojis-and-emoji-categories
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListAllEmojisAndEmojiCategoriesResponse</returns>
-        public async System.Threading.Tasks.Task<ListAllEmojisAndEmojiCategoriesResponse> ListAllEmojisAndEmojiCategoriesAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListAllEmojisAndEmojiCategoriesResponse> ListAllEmojisAndEmojiCategoriesAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<ListAllEmojisAndEmojiCategoriesResponse> localVarResponse = await ListAllEmojisAndEmojiCategoriesWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -1804,11 +1849,14 @@ namespace sendbird_platform_sdk.Api
         /// List all emojis and emoji categories ## List all emojis and emoji categories  Retrieves a list of all emoji categories registered to the application, including their emojis.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-list-all-emojis-and-emoji-categories
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListAllEmojisAndEmojiCategoriesResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListAllEmojisAndEmojiCategoriesResponse>> ListAllEmojisAndEmojiCategoriesWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListAllEmojisAndEmojiCategoriesResponse>> ListAllEmojisAndEmojiCategoriesWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->ListAllEmojisAndEmojiCategories");
 
             var localVarPath = "/v3/emoji_categories";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1856,9 +1904,9 @@ namespace sendbird_platform_sdk.Api
         /// List emojis ## List emojis  Retrieves a list of all emojis registered to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-list-emojis
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ListEmojisResponse</returns>
-        public ListEmojisResponse ListEmojis (string apiToken = default(string))
+        public ListEmojisResponse ListEmojis (string apiToken)
         {
              ApiResponse<ListEmojisResponse> localVarResponse = ListEmojisWithHttpInfo(apiToken);
              return localVarResponse.Data;
@@ -1868,10 +1916,13 @@ namespace sendbird_platform_sdk.Api
         /// List emojis ## List emojis  Retrieves a list of all emojis registered to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-list-emojis
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of ListEmojisResponse</returns>
-        public ApiResponse<ListEmojisResponse> ListEmojisWithHttpInfo (string apiToken = default(string))
+        public ApiResponse<ListEmojisResponse> ListEmojisWithHttpInfo (string apiToken)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->ListEmojis");
 
             var localVarPath = "/v3/emojis";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1919,10 +1970,10 @@ namespace sendbird_platform_sdk.Api
         /// List emojis ## List emojis  Retrieves a list of all emojis registered to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-list-emojis
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListEmojisResponse</returns>
-        public async System.Threading.Tasks.Task<ListEmojisResponse> ListEmojisAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListEmojisResponse> ListEmojisAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<ListEmojisResponse> localVarResponse = await ListEmojisWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -1933,11 +1984,14 @@ namespace sendbird_platform_sdk.Api
         /// List emojis ## List emojis  Retrieves a list of all emojis registered to the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-list-emojis
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListEmojisResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListEmojisResponse>> ListEmojisWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListEmojisResponse>> ListEmojisWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->ListEmojis");
 
             var localVarPath = "/v3/emojis";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1985,13 +2039,13 @@ namespace sendbird_platform_sdk.Api
         /// Update an emoji category URL ## Update an emoji category URL  Updates the URL of an emoji category with the specified ID.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-update-an-emoji-category-url - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateEmojiCategoryUrlByIdData"> (optional)</param>
         /// <returns>SendBirdEmojiCategory</returns>
-        public SendBirdEmojiCategory UpdateEmojiCategoryUrlById (string emojiCategoryId, string apiToken = default(string), UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = default(UpdateEmojiCategoryUrlByIdData))
+        public SendBirdEmojiCategory UpdateEmojiCategoryUrlById (string apiToken, string emojiCategoryId, UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = default(UpdateEmojiCategoryUrlByIdData))
         {
-             ApiResponse<SendBirdEmojiCategory> localVarResponse = UpdateEmojiCategoryUrlByIdWithHttpInfo(emojiCategoryId, apiToken, updateEmojiCategoryUrlByIdData);
+             ApiResponse<SendBirdEmojiCategory> localVarResponse = UpdateEmojiCategoryUrlByIdWithHttpInfo(apiToken, emojiCategoryId, updateEmojiCategoryUrlByIdData);
              return localVarResponse.Data;
         }
 
@@ -1999,12 +2053,15 @@ namespace sendbird_platform_sdk.Api
         /// Update an emoji category URL ## Update an emoji category URL  Updates the URL of an emoji category with the specified ID.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-update-an-emoji-category-url - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateEmojiCategoryUrlByIdData"> (optional)</param>
         /// <returns>ApiResponse of SendBirdEmojiCategory</returns>
-        public ApiResponse<SendBirdEmojiCategory> UpdateEmojiCategoryUrlByIdWithHttpInfo (string emojiCategoryId, string apiToken = default(string), UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = default(UpdateEmojiCategoryUrlByIdData))
+        public ApiResponse<SendBirdEmojiCategory> UpdateEmojiCategoryUrlByIdWithHttpInfo (string apiToken, string emojiCategoryId, UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = default(UpdateEmojiCategoryUrlByIdData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->UpdateEmojiCategoryUrlById");
             // verify the required parameter 'emojiCategoryId' is set
             if (emojiCategoryId == null)
                 throw new ApiException(400, "Missing required parameter 'emojiCategoryId' when calling EmojisApi->UpdateEmojiCategoryUrlById");
@@ -2065,14 +2122,14 @@ namespace sendbird_platform_sdk.Api
         /// Update an emoji category URL ## Update an emoji category URL  Updates the URL of an emoji category with the specified ID.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-update-an-emoji-category-url - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateEmojiCategoryUrlByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdEmojiCategory</returns>
-        public async System.Threading.Tasks.Task<SendBirdEmojiCategory> UpdateEmojiCategoryUrlByIdAsync (string emojiCategoryId, string apiToken = default(string), UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = default(UpdateEmojiCategoryUrlByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdEmojiCategory> UpdateEmojiCategoryUrlByIdAsync (string apiToken, string emojiCategoryId, UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = default(UpdateEmojiCategoryUrlByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdEmojiCategory> localVarResponse = await UpdateEmojiCategoryUrlByIdWithHttpInfoAsync(emojiCategoryId, apiToken, updateEmojiCategoryUrlByIdData, cancellationToken);
+             ApiResponse<SendBirdEmojiCategory> localVarResponse = await UpdateEmojiCategoryUrlByIdWithHttpInfoAsync(apiToken, emojiCategoryId, updateEmojiCategoryUrlByIdData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2081,13 +2138,16 @@ namespace sendbird_platform_sdk.Api
         /// Update an emoji category URL ## Update an emoji category URL  Updates the URL of an emoji category with the specified ID.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-update-an-emoji-category-url - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateEmojiCategoryUrlByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdEmojiCategory)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdEmojiCategory>> UpdateEmojiCategoryUrlByIdWithHttpInfoAsync (string emojiCategoryId, string apiToken = default(string), UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = default(UpdateEmojiCategoryUrlByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdEmojiCategory>> UpdateEmojiCategoryUrlByIdWithHttpInfoAsync (string apiToken, string emojiCategoryId, UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = default(UpdateEmojiCategoryUrlByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->UpdateEmojiCategoryUrlById");
             // verify the required parameter 'emojiCategoryId' is set
             if (emojiCategoryId == null)
                 throw new ApiException(400, "Missing required parameter 'emojiCategoryId' when calling EmojisApi->UpdateEmojiCategoryUrlById");
@@ -2148,13 +2208,13 @@ namespace sendbird_platform_sdk.Api
         /// Update an emoji URL ## Update an emoji URL  Updates the image URL of an emoji with the specified key.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-update-an-emoji-url - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateEmojiUrlByKeyData"> (optional)</param>
         /// <returns>SendBirdEmoji</returns>
-        public SendBirdEmoji UpdateEmojiUrlByKey (string emojiKey, string apiToken = default(string), UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = default(UpdateEmojiUrlByKeyData))
+        public SendBirdEmoji UpdateEmojiUrlByKey (string apiToken, string emojiKey, UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = default(UpdateEmojiUrlByKeyData))
         {
-             ApiResponse<SendBirdEmoji> localVarResponse = UpdateEmojiUrlByKeyWithHttpInfo(emojiKey, apiToken, updateEmojiUrlByKeyData);
+             ApiResponse<SendBirdEmoji> localVarResponse = UpdateEmojiUrlByKeyWithHttpInfo(apiToken, emojiKey, updateEmojiUrlByKeyData);
              return localVarResponse.Data;
         }
 
@@ -2162,12 +2222,15 @@ namespace sendbird_platform_sdk.Api
         /// Update an emoji URL ## Update an emoji URL  Updates the image URL of an emoji with the specified key.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-update-an-emoji-url - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateEmojiUrlByKeyData"> (optional)</param>
         /// <returns>ApiResponse of SendBirdEmoji</returns>
-        public ApiResponse<SendBirdEmoji> UpdateEmojiUrlByKeyWithHttpInfo (string emojiKey, string apiToken = default(string), UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = default(UpdateEmojiUrlByKeyData))
+        public ApiResponse<SendBirdEmoji> UpdateEmojiUrlByKeyWithHttpInfo (string apiToken, string emojiKey, UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = default(UpdateEmojiUrlByKeyData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->UpdateEmojiUrlByKey");
             // verify the required parameter 'emojiKey' is set
             if (emojiKey == null)
                 throw new ApiException(400, "Missing required parameter 'emojiKey' when calling EmojisApi->UpdateEmojiUrlByKey");
@@ -2228,14 +2291,14 @@ namespace sendbird_platform_sdk.Api
         /// Update an emoji URL ## Update an emoji URL  Updates the image URL of an emoji with the specified key.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-update-an-emoji-url - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateEmojiUrlByKeyData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdEmoji</returns>
-        public async System.Threading.Tasks.Task<SendBirdEmoji> UpdateEmojiUrlByKeyAsync (string emojiKey, string apiToken = default(string), UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = default(UpdateEmojiUrlByKeyData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdEmoji> UpdateEmojiUrlByKeyAsync (string apiToken, string emojiKey, UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = default(UpdateEmojiUrlByKeyData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdEmoji> localVarResponse = await UpdateEmojiUrlByKeyWithHttpInfoAsync(emojiKey, apiToken, updateEmojiUrlByKeyData, cancellationToken);
+             ApiResponse<SendBirdEmoji> localVarResponse = await UpdateEmojiUrlByKeyWithHttpInfoAsync(apiToken, emojiKey, updateEmojiUrlByKeyData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2244,13 +2307,16 @@ namespace sendbird_platform_sdk.Api
         /// Update an emoji URL ## Update an emoji URL  Updates the image URL of an emoji with the specified key.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-update-an-emoji-url - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="emojiKey"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateEmojiUrlByKeyData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdEmoji)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdEmoji>> UpdateEmojiUrlByKeyWithHttpInfoAsync (string emojiKey, string apiToken = default(string), UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = default(UpdateEmojiUrlByKeyData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdEmoji>> UpdateEmojiUrlByKeyWithHttpInfoAsync (string apiToken, string emojiKey, UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = default(UpdateEmojiUrlByKeyData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->UpdateEmojiUrlByKey");
             // verify the required parameter 'emojiKey' is set
             if (emojiKey == null)
                 throw new ApiException(400, "Missing required parameter 'emojiKey' when calling EmojisApi->UpdateEmojiUrlByKey");
@@ -2311,10 +2377,10 @@ namespace sendbird_platform_sdk.Api
         /// Use default emojis ## Use default emojis  Determines whether to use the 7 default emojis initially provided.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-use-default-emojis
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="useDefaultEmojisData"> (optional)</param>
         /// <returns>UseDefaultEmojisResponse</returns>
-        public UseDefaultEmojisResponse UseDefaultEmojis (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData))
+        public UseDefaultEmojisResponse UseDefaultEmojis (string apiToken, UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData))
         {
              ApiResponse<UseDefaultEmojisResponse> localVarResponse = UseDefaultEmojisWithHttpInfo(apiToken, useDefaultEmojisData);
              return localVarResponse.Data;
@@ -2324,11 +2390,14 @@ namespace sendbird_platform_sdk.Api
         /// Use default emojis ## Use default emojis  Determines whether to use the 7 default emojis initially provided.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-use-default-emojis
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="useDefaultEmojisData"> (optional)</param>
         /// <returns>ApiResponse of UseDefaultEmojisResponse</returns>
-        public ApiResponse<UseDefaultEmojisResponse> UseDefaultEmojisWithHttpInfo (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData))
+        public ApiResponse<UseDefaultEmojisResponse> UseDefaultEmojisWithHttpInfo (string apiToken, UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->UseDefaultEmojis");
 
             var localVarPath = "/v3/applications/settings/use_default_emoji";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2385,11 +2454,11 @@ namespace sendbird_platform_sdk.Api
         /// Use default emojis ## Use default emojis  Determines whether to use the 7 default emojis initially provided.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-use-default-emojis
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="useDefaultEmojisData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UseDefaultEmojisResponse</returns>
-        public async System.Threading.Tasks.Task<UseDefaultEmojisResponse> UseDefaultEmojisAsync (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<UseDefaultEmojisResponse> UseDefaultEmojisAsync (string apiToken, UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<UseDefaultEmojisResponse> localVarResponse = await UseDefaultEmojisWithHttpInfoAsync(apiToken, useDefaultEmojisData, cancellationToken);
              return localVarResponse.Data;
@@ -2400,12 +2469,15 @@ namespace sendbird_platform_sdk.Api
         /// Use default emojis ## Use default emojis  Determines whether to use the 7 default emojis initially provided.  https://sendbird.com/docs/chat/v3/platform-api/guides/emojis#2-use-default-emojis
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="useDefaultEmojisData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UseDefaultEmojisResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UseDefaultEmojisResponse>> UseDefaultEmojisWithHttpInfoAsync (string apiToken = default(string), UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<UseDefaultEmojisResponse>> UseDefaultEmojisWithHttpInfoAsync (string apiToken, UseDefaultEmojisData useDefaultEmojisData = default(UseDefaultEmojisData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling EmojisApi->UseDefaultEmojis");
 
             var localVarPath = "/v3/applications/settings/use_default_emoji";
             var localVarPathParams = new Dictionary<String, String>();

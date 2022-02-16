@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## RetrieveAdvancedAnalyticsMetrics
 
-> RetrieveAdvancedAnalyticsMetricsResponse RetrieveAdvancedAnalyticsMetrics (string apiToken = null)
+> RetrieveAdvancedAnalyticsMetricsResponse RetrieveAdvancedAnalyticsMetrics (string apiToken)
 
 Retrieve Advanced analytics metrics
 
@@ -33,7 +33,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new AdvancedAnalyticsApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
 
             try
             {
@@ -57,7 +57,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
 
 ### Return type
 

@@ -32,10 +32,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  &gt; __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="createBotData"> (optional)</param>
         /// <returns>CreateBotResponse</returns>
-        CreateBotResponse CreateBot (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData));
+        CreateBotResponse CreateBot (string apiToken, CreateBotData createBotData = default(CreateBotData));
 
         /// <summary>
         /// Create a bot
@@ -44,10 +44,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  &gt; __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="createBotData"> (optional)</param>
         /// <returns>ApiResponse of CreateBotResponse</returns>
-        ApiResponse<CreateBotResponse> CreateBotWithHttpInfo (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData));
+        ApiResponse<CreateBotResponse> CreateBotWithHttpInfo (string apiToken, CreateBotData createBotData = default(CreateBotData));
         /// <summary>
         /// Delete a bot
         /// </summary>
@@ -55,10 +55,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete a bot  Deletes a bot from an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-delete-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns></returns>
-        void DeleteBotById (string botUserid, string apiToken = default(string));
+        void DeleteBotById (string apiToken, string botUserid);
 
         /// <summary>
         /// Delete a bot
@@ -67,10 +67,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete a bot  Deletes a bot from an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-delete-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteBotByIdWithHttpInfo (string botUserid, string apiToken = default(string));
+        ApiResponse<Object> DeleteBotByIdWithHttpInfo (string apiToken, string botUserid);
         /// <summary>
         /// Join channels
         /// </summary>
@@ -78,11 +78,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Join channels  Makes a bot join one or more channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-join-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="joinChannelsData"> (optional)</param>
         /// <returns>SendBirdGroupChannelCollection</returns>
-        SendBirdGroupChannelCollection JoinChannels (string botUserid, string apiToken = default(string), JoinChannelsData joinChannelsData = default(JoinChannelsData));
+        SendBirdGroupChannelCollection JoinChannels (string apiToken, string botUserid, JoinChannelsData joinChannelsData = default(JoinChannelsData));
 
         /// <summary>
         /// Join channels
@@ -91,11 +91,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Join channels  Makes a bot join one or more channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-join-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="joinChannelsData"> (optional)</param>
         /// <returns>ApiResponse of SendBirdGroupChannelCollection</returns>
-        ApiResponse<SendBirdGroupChannelCollection> JoinChannelsWithHttpInfo (string botUserid, string apiToken = default(string), JoinChannelsData joinChannelsData = default(JoinChannelsData));
+        ApiResponse<SendBirdGroupChannelCollection> JoinChannelsWithHttpInfo (string apiToken, string botUserid, JoinChannelsData joinChannelsData = default(JoinChannelsData));
         /// <summary>
         /// Leave channels - When leaving all channels
         /// </summary>
@@ -103,11 +103,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Leave channels  Makes a bot leave one or more group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-leave-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="channelUrl"> (optional)</param>
         /// <returns></returns>
-        void LeaveChannels (string botUserid, string apiToken = default(string), string channelUrl = default(string));
+        void LeaveChannels (string apiToken, string botUserid, string channelUrl = default(string));
 
         /// <summary>
         /// Leave channels - When leaving all channels
@@ -116,11 +116,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Leave channels  Makes a bot leave one or more group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-leave-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="channelUrl"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> LeaveChannelsWithHttpInfo (string botUserid, string apiToken = default(string), string channelUrl = default(string));
+        ApiResponse<Object> LeaveChannelsWithHttpInfo (string apiToken, string botUserid, string channelUrl = default(string));
         /// <summary>
         /// Leave channels - When leaving a channel by its channel URL
         /// </summary>
@@ -128,11 +128,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Leave channels  Makes a bot leave one or more group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-leave-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns></returns>
-        void LeaveChannelsByUrl (string botUserid, string channelUrl, string apiToken = default(string));
+        void LeaveChannelsByUrl (string apiToken, string botUserid, string channelUrl);
 
         /// <summary>
         /// Leave channels - When leaving a channel by its channel URL
@@ -141,11 +141,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Leave channels  Makes a bot leave one or more group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-leave-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> LeaveChannelsByUrlWithHttpInfo (string botUserid, string channelUrl, string apiToken = default(string));
+        ApiResponse<Object> LeaveChannelsByUrlWithHttpInfo (string apiToken, string botUserid, string channelUrl);
         /// <summary>
         /// List bots
         /// </summary>
@@ -153,11 +153,11 @@ namespace sendbird_platform_sdk.Api
         /// ## List bots  Retrieves a list of all bots within an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-list-bots - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListBotsResponse</returns>
-        ListBotsResponse ListBots (string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        ListBotsResponse ListBots (string apiToken, string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List bots
@@ -166,11 +166,11 @@ namespace sendbird_platform_sdk.Api
         /// ## List bots  Retrieves a list of all bots within an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-list-bots - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListBotsResponse</returns>
-        ApiResponse<ListBotsResponse> ListBotsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        ApiResponse<ListBotsResponse> ListBotsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?));
         /// <summary>
         /// Send a bot&#39;s message
         /// </summary>
@@ -178,11 +178,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Send a bot&#39;s message  Sends a bot&#39;s message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;bot_userid&#x60;      Type: string      Description: Specifies the ID of the bot to send a message.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="sendBotSMessageData"> (optional)</param>
         /// <returns>SendBirdMessageResponse</returns>
-        SendBirdMessageResponse SendBotsMessage (string botUserid, string apiToken = default(string), SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData));
+        SendBirdMessageResponse SendBotsMessage (string apiToken, string botUserid, SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData));
 
         /// <summary>
         /// Send a bot&#39;s message
@@ -191,11 +191,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Send a bot&#39;s message  Sends a bot&#39;s message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;bot_userid&#x60;      Type: string      Description: Specifies the ID of the bot to send a message.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="sendBotSMessageData"> (optional)</param>
         /// <returns>ApiResponse of SendBirdMessageResponse</returns>
-        ApiResponse<SendBirdMessageResponse> SendBotsMessageWithHttpInfo (string botUserid, string apiToken = default(string), SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData));
+        ApiResponse<SendBirdMessageResponse> SendBotsMessageWithHttpInfo (string apiToken, string botUserid, SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData));
         /// <summary>
         /// Update a bot
         /// </summary>
@@ -203,11 +203,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a bot  Updates information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-update-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateBotByIdData"> (optional)</param>
         /// <returns>UpdateBotByIdResponse</returns>
-        UpdateBotByIdResponse UpdateBotById (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData));
+        UpdateBotByIdResponse UpdateBotById (string apiToken, string botUserid, UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData));
 
         /// <summary>
         /// Update a bot
@@ -216,11 +216,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a bot  Updates information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-update-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateBotByIdData"> (optional)</param>
         /// <returns>ApiResponse of UpdateBotByIdResponse</returns>
-        ApiResponse<UpdateBotByIdResponse> UpdateBotByIdWithHttpInfo (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData));
+        ApiResponse<UpdateBotByIdResponse> UpdateBotByIdWithHttpInfo (string apiToken, string botUserid, UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData));
         /// <summary>
         /// View a bot
         /// </summary>
@@ -228,10 +228,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View a bot  Retrieves information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-view-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ViewBotByIdResponse</returns>
-        ViewBotByIdResponse ViewBotById (string botUserid, string apiToken = default(string));
+        ViewBotByIdResponse ViewBotById (string apiToken, string botUserid);
 
         /// <summary>
         /// View a bot
@@ -240,10 +240,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View a bot  Retrieves information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-view-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of ViewBotByIdResponse</returns>
-        ApiResponse<ViewBotByIdResponse> ViewBotByIdWithHttpInfo (string botUserid, string apiToken = default(string));
+        ApiResponse<ViewBotByIdResponse> ViewBotByIdWithHttpInfo (string apiToken, string botUserid);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -253,11 +253,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  &gt; __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="createBotData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of CreateBotResponse</returns>
-        System.Threading.Tasks.Task<CreateBotResponse> CreateBotAsync (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<CreateBotResponse> CreateBotAsync (string apiToken, CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Create a bot
@@ -266,11 +266,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  &gt; __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="createBotData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (CreateBotResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CreateBotResponse>> CreateBotWithHttpInfoAsync (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<CreateBotResponse>> CreateBotWithHttpInfoAsync (string apiToken, CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Delete a bot
         /// </summary>
@@ -278,11 +278,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete a bot  Deletes a bot from an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-delete-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteBotByIdAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task DeleteBotByIdAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Delete a bot
@@ -291,11 +291,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete a bot  Deletes a bot from an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-delete-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBotByIdWithHttpInfoAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Join channels
         /// </summary>
@@ -303,12 +303,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Join channels  Makes a bot join one or more channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-join-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="joinChannelsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdGroupChannelCollection</returns>
-        System.Threading.Tasks.Task<SendBirdGroupChannelCollection> JoinChannelsAsync (string botUserid, string apiToken = default(string), JoinChannelsData joinChannelsData = default(JoinChannelsData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdGroupChannelCollection> JoinChannelsAsync (string apiToken, string botUserid, JoinChannelsData joinChannelsData = default(JoinChannelsData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Join channels
@@ -317,12 +317,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Join channels  Makes a bot join one or more channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-join-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="joinChannelsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdGroupChannelCollection)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannelCollection>> JoinChannelsWithHttpInfoAsync (string botUserid, string apiToken = default(string), JoinChannelsData joinChannelsData = default(JoinChannelsData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannelCollection>> JoinChannelsWithHttpInfoAsync (string apiToken, string botUserid, JoinChannelsData joinChannelsData = default(JoinChannelsData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Leave channels - When leaving all channels
         /// </summary>
@@ -330,12 +330,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Leave channels  Makes a bot leave one or more group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-leave-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="channelUrl"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task LeaveChannelsAsync (string botUserid, string apiToken = default(string), string channelUrl = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task LeaveChannelsAsync (string apiToken, string botUserid, string channelUrl = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Leave channels - When leaving all channels
@@ -344,12 +344,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Leave channels  Makes a bot leave one or more group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-leave-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="channelUrl"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> LeaveChannelsWithHttpInfoAsync (string botUserid, string apiToken = default(string), string channelUrl = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> LeaveChannelsWithHttpInfoAsync (string apiToken, string botUserid, string channelUrl = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Leave channels - When leaving a channel by its channel URL
         /// </summary>
@@ -357,12 +357,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Leave channels  Makes a bot leave one or more group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-leave-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task LeaveChannelsByUrlAsync (string botUserid, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task LeaveChannelsByUrlAsync (string apiToken, string botUserid, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Leave channels - When leaving a channel by its channel URL
@@ -371,12 +371,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Leave channels  Makes a bot leave one or more group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-leave-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> LeaveChannelsByUrlWithHttpInfoAsync (string botUserid, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> LeaveChannelsByUrlWithHttpInfoAsync (string apiToken, string botUserid, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List bots
         /// </summary>
@@ -384,12 +384,12 @@ namespace sendbird_platform_sdk.Api
         /// ## List bots  Retrieves a list of all bots within an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-list-bots - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListBotsResponse</returns>
-        System.Threading.Tasks.Task<ListBotsResponse> ListBotsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListBotsResponse> ListBotsAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List bots
@@ -398,12 +398,12 @@ namespace sendbird_platform_sdk.Api
         /// ## List bots  Retrieves a list of all bots within an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-list-bots - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListBotsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListBotsResponse>> ListBotsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListBotsResponse>> ListBotsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Send a bot&#39;s message
         /// </summary>
@@ -411,12 +411,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Send a bot&#39;s message  Sends a bot&#39;s message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;bot_userid&#x60;      Type: string      Description: Specifies the ID of the bot to send a message.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="sendBotSMessageData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdMessageResponse</returns>
-        System.Threading.Tasks.Task<SendBirdMessageResponse> SendBotsMessageAsync (string botUserid, string apiToken = default(string), SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdMessageResponse> SendBotsMessageAsync (string apiToken, string botUserid, SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Send a bot&#39;s message
@@ -425,12 +425,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Send a bot&#39;s message  Sends a bot&#39;s message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;bot_userid&#x60;      Type: string      Description: Specifies the ID of the bot to send a message.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="sendBotSMessageData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdMessageResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdMessageResponse>> SendBotsMessageWithHttpInfoAsync (string botUserid, string apiToken = default(string), SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdMessageResponse>> SendBotsMessageWithHttpInfoAsync (string apiToken, string botUserid, SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update a bot
         /// </summary>
@@ -438,12 +438,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a bot  Updates information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-update-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateBotByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateBotByIdResponse</returns>
-        System.Threading.Tasks.Task<UpdateBotByIdResponse> UpdateBotByIdAsync (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<UpdateBotByIdResponse> UpdateBotByIdAsync (string apiToken, string botUserid, UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update a bot
@@ -452,12 +452,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a bot  Updates information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-update-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateBotByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateBotByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UpdateBotByIdResponse>> UpdateBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<UpdateBotByIdResponse>> UpdateBotByIdWithHttpInfoAsync (string apiToken, string botUserid, UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a bot
         /// </summary>
@@ -465,11 +465,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View a bot  Retrieves information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-view-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewBotByIdResponse</returns>
-        System.Threading.Tasks.Task<ViewBotByIdResponse> ViewBotByIdAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewBotByIdResponse> ViewBotByIdAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a bot
@@ -478,11 +478,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View a bot  Retrieves information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-view-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewBotByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewBotByIdResponse>> ViewBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewBotByIdResponse>> ViewBotByIdWithHttpInfoAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -598,10 +598,10 @@ namespace sendbird_platform_sdk.Api
         /// Create a bot ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  &gt; __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="createBotData"> (optional)</param>
         /// <returns>CreateBotResponse</returns>
-        public CreateBotResponse CreateBot (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData))
+        public CreateBotResponse CreateBot (string apiToken, CreateBotData createBotData = default(CreateBotData))
         {
              ApiResponse<CreateBotResponse> localVarResponse = CreateBotWithHttpInfo(apiToken, createBotData);
              return localVarResponse.Data;
@@ -611,11 +611,14 @@ namespace sendbird_platform_sdk.Api
         /// Create a bot ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  &gt; __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="createBotData"> (optional)</param>
         /// <returns>ApiResponse of CreateBotResponse</returns>
-        public ApiResponse<CreateBotResponse> CreateBotWithHttpInfo (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData))
+        public ApiResponse<CreateBotResponse> CreateBotWithHttpInfo (string apiToken, CreateBotData createBotData = default(CreateBotData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling BotInterfaceApi->CreateBot");
 
             var localVarPath = "/v3/bots";
             var localVarPathParams = new Dictionary<String, String>();
@@ -672,11 +675,11 @@ namespace sendbird_platform_sdk.Api
         /// Create a bot ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  &gt; __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="createBotData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of CreateBotResponse</returns>
-        public async System.Threading.Tasks.Task<CreateBotResponse> CreateBotAsync (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<CreateBotResponse> CreateBotAsync (string apiToken, CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<CreateBotResponse> localVarResponse = await CreateBotWithHttpInfoAsync(apiToken, createBotData, cancellationToken);
              return localVarResponse.Data;
@@ -687,12 +690,15 @@ namespace sendbird_platform_sdk.Api
         /// Create a bot ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  &gt; __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="createBotData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (CreateBotResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CreateBotResponse>> CreateBotWithHttpInfoAsync (string apiToken = default(string), CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<CreateBotResponse>> CreateBotWithHttpInfoAsync (string apiToken, CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling BotInterfaceApi->CreateBot");
 
             var localVarPath = "/v3/bots";
             var localVarPathParams = new Dictionary<String, String>();
@@ -749,23 +755,26 @@ namespace sendbird_platform_sdk.Api
         /// Delete a bot ## Delete a bot  Deletes a bot from an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-delete-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns></returns>
-        public void DeleteBotById (string botUserid, string apiToken = default(string))
+        public void DeleteBotById (string apiToken, string botUserid)
         {
-             DeleteBotByIdWithHttpInfo(botUserid, apiToken);
+             DeleteBotByIdWithHttpInfo(apiToken, botUserid);
         }
 
         /// <summary>
         /// Delete a bot ## Delete a bot  Deletes a bot from an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-delete-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteBotByIdWithHttpInfo (string botUserid, string apiToken = default(string))
+        public ApiResponse<Object> DeleteBotByIdWithHttpInfo (string apiToken, string botUserid)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling BotInterfaceApi->DeleteBotById");
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
                 throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotInterfaceApi->DeleteBotById");
@@ -816,13 +825,13 @@ namespace sendbird_platform_sdk.Api
         /// Delete a bot ## Delete a bot  Deletes a bot from an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-delete-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteBotByIdAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task DeleteBotByIdAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await DeleteBotByIdWithHttpInfoAsync(botUserid, apiToken, cancellationToken);
+             await DeleteBotByIdWithHttpInfoAsync(apiToken, botUserid, cancellationToken);
 
         }
 
@@ -830,12 +839,15 @@ namespace sendbird_platform_sdk.Api
         /// Delete a bot ## Delete a bot  Deletes a bot from an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-delete-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBotByIdWithHttpInfoAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling BotInterfaceApi->DeleteBotById");
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
                 throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotInterfaceApi->DeleteBotById");
@@ -886,13 +898,13 @@ namespace sendbird_platform_sdk.Api
         /// Join channels ## Join channels  Makes a bot join one or more channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-join-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="joinChannelsData"> (optional)</param>
         /// <returns>SendBirdGroupChannelCollection</returns>
-        public SendBirdGroupChannelCollection JoinChannels (string botUserid, string apiToken = default(string), JoinChannelsData joinChannelsData = default(JoinChannelsData))
+        public SendBirdGroupChannelCollection JoinChannels (string apiToken, string botUserid, JoinChannelsData joinChannelsData = default(JoinChannelsData))
         {
-             ApiResponse<SendBirdGroupChannelCollection> localVarResponse = JoinChannelsWithHttpInfo(botUserid, apiToken, joinChannelsData);
+             ApiResponse<SendBirdGroupChannelCollection> localVarResponse = JoinChannelsWithHttpInfo(apiToken, botUserid, joinChannelsData);
              return localVarResponse.Data;
         }
 
@@ -900,12 +912,15 @@ namespace sendbird_platform_sdk.Api
         /// Join channels ## Join channels  Makes a bot join one or more channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-join-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="joinChannelsData"> (optional)</param>
         /// <returns>ApiResponse of SendBirdGroupChannelCollection</returns>
-        public ApiResponse<SendBirdGroupChannelCollection> JoinChannelsWithHttpInfo (string botUserid, string apiToken = default(string), JoinChannelsData joinChannelsData = default(JoinChannelsData))
+        public ApiResponse<SendBirdGroupChannelCollection> JoinChannelsWithHttpInfo (string apiToken, string botUserid, JoinChannelsData joinChannelsData = default(JoinChannelsData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling BotInterfaceApi->JoinChannels");
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
                 throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotInterfaceApi->JoinChannels");
@@ -966,14 +981,14 @@ namespace sendbird_platform_sdk.Api
         /// Join channels ## Join channels  Makes a bot join one or more channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-join-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="joinChannelsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdGroupChannelCollection</returns>
-        public async System.Threading.Tasks.Task<SendBirdGroupChannelCollection> JoinChannelsAsync (string botUserid, string apiToken = default(string), JoinChannelsData joinChannelsData = default(JoinChannelsData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdGroupChannelCollection> JoinChannelsAsync (string apiToken, string botUserid, JoinChannelsData joinChannelsData = default(JoinChannelsData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdGroupChannelCollection> localVarResponse = await JoinChannelsWithHttpInfoAsync(botUserid, apiToken, joinChannelsData, cancellationToken);
+             ApiResponse<SendBirdGroupChannelCollection> localVarResponse = await JoinChannelsWithHttpInfoAsync(apiToken, botUserid, joinChannelsData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -982,13 +997,16 @@ namespace sendbird_platform_sdk.Api
         /// Join channels ## Join channels  Makes a bot join one or more channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-join-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="joinChannelsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdGroupChannelCollection)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannelCollection>> JoinChannelsWithHttpInfoAsync (string botUserid, string apiToken = default(string), JoinChannelsData joinChannelsData = default(JoinChannelsData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannelCollection>> JoinChannelsWithHttpInfoAsync (string apiToken, string botUserid, JoinChannelsData joinChannelsData = default(JoinChannelsData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling BotInterfaceApi->JoinChannels");
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
                 throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotInterfaceApi->JoinChannels");
@@ -1049,25 +1067,28 @@ namespace sendbird_platform_sdk.Api
         /// Leave channels - When leaving all channels ## Leave channels  Makes a bot leave one or more group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-leave-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="channelUrl"> (optional)</param>
         /// <returns></returns>
-        public void LeaveChannels (string botUserid, string apiToken = default(string), string channelUrl = default(string))
+        public void LeaveChannels (string apiToken, string botUserid, string channelUrl = default(string))
         {
-             LeaveChannelsWithHttpInfo(botUserid, apiToken, channelUrl);
+             LeaveChannelsWithHttpInfo(apiToken, botUserid, channelUrl);
         }
 
         /// <summary>
         /// Leave channels - When leaving all channels ## Leave channels  Makes a bot leave one or more group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-leave-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="channelUrl"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> LeaveChannelsWithHttpInfo (string botUserid, string apiToken = default(string), string channelUrl = default(string))
+        public ApiResponse<Object> LeaveChannelsWithHttpInfo (string apiToken, string botUserid, string channelUrl = default(string))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling BotInterfaceApi->LeaveChannels");
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
                 throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotInterfaceApi->LeaveChannels");
@@ -1119,14 +1140,14 @@ namespace sendbird_platform_sdk.Api
         /// Leave channels - When leaving all channels ## Leave channels  Makes a bot leave one or more group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-leave-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="channelUrl"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task LeaveChannelsAsync (string botUserid, string apiToken = default(string), string channelUrl = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task LeaveChannelsAsync (string apiToken, string botUserid, string channelUrl = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             await LeaveChannelsWithHttpInfoAsync(botUserid, apiToken, channelUrl, cancellationToken);
+             await LeaveChannelsWithHttpInfoAsync(apiToken, botUserid, channelUrl, cancellationToken);
 
         }
 
@@ -1134,13 +1155,16 @@ namespace sendbird_platform_sdk.Api
         /// Leave channels - When leaving all channels ## Leave channels  Makes a bot leave one or more group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-leave-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="channelUrl"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> LeaveChannelsWithHttpInfoAsync (string botUserid, string apiToken = default(string), string channelUrl = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> LeaveChannelsWithHttpInfoAsync (string apiToken, string botUserid, string channelUrl = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling BotInterfaceApi->LeaveChannels");
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
                 throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotInterfaceApi->LeaveChannels");
@@ -1192,25 +1216,28 @@ namespace sendbird_platform_sdk.Api
         /// Leave channels - When leaving a channel by its channel URL ## Leave channels  Makes a bot leave one or more group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-leave-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns></returns>
-        public void LeaveChannelsByUrl (string botUserid, string channelUrl, string apiToken = default(string))
+        public void LeaveChannelsByUrl (string apiToken, string botUserid, string channelUrl)
         {
-             LeaveChannelsByUrlWithHttpInfo(botUserid, channelUrl, apiToken);
+             LeaveChannelsByUrlWithHttpInfo(apiToken, botUserid, channelUrl);
         }
 
         /// <summary>
         /// Leave channels - When leaving a channel by its channel URL ## Leave channels  Makes a bot leave one or more group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-leave-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> LeaveChannelsByUrlWithHttpInfo (string botUserid, string channelUrl, string apiToken = default(string))
+        public ApiResponse<Object> LeaveChannelsByUrlWithHttpInfo (string apiToken, string botUserid, string channelUrl)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling BotInterfaceApi->LeaveChannelsByUrl");
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
                 throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotInterfaceApi->LeaveChannelsByUrl");
@@ -1265,14 +1292,14 @@ namespace sendbird_platform_sdk.Api
         /// Leave channels - When leaving a channel by its channel URL ## Leave channels  Makes a bot leave one or more group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-leave-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task LeaveChannelsByUrlAsync (string botUserid, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task LeaveChannelsByUrlAsync (string apiToken, string botUserid, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await LeaveChannelsByUrlWithHttpInfoAsync(botUserid, channelUrl, apiToken, cancellationToken);
+             await LeaveChannelsByUrlWithHttpInfoAsync(apiToken, botUserid, channelUrl, cancellationToken);
 
         }
 
@@ -1280,13 +1307,16 @@ namespace sendbird_platform_sdk.Api
         /// Leave channels - When leaving a channel by its channel URL ## Leave channels  Makes a bot leave one or more group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-leave-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> LeaveChannelsByUrlWithHttpInfoAsync (string botUserid, string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> LeaveChannelsByUrlWithHttpInfoAsync (string apiToken, string botUserid, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling BotInterfaceApi->LeaveChannelsByUrl");
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
                 throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotInterfaceApi->LeaveChannelsByUrl");
@@ -1341,11 +1371,11 @@ namespace sendbird_platform_sdk.Api
         /// List bots ## List bots  Retrieves a list of all bots within an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-list-bots - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListBotsResponse</returns>
-        public ListBotsResponse ListBots (string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public ListBotsResponse ListBots (string apiToken, string token = default(string), int? limit = default(int?))
         {
              ApiResponse<ListBotsResponse> localVarResponse = ListBotsWithHttpInfo(apiToken, token, limit);
              return localVarResponse.Data;
@@ -1355,12 +1385,15 @@ namespace sendbird_platform_sdk.Api
         /// List bots ## List bots  Retrieves a list of all bots within an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-list-bots - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListBotsResponse</returns>
-        public ApiResponse<ListBotsResponse> ListBotsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public ApiResponse<ListBotsResponse> ListBotsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling BotInterfaceApi->ListBots");
 
             var localVarPath = "/v3/bots";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1410,12 +1443,12 @@ namespace sendbird_platform_sdk.Api
         /// List bots ## List bots  Retrieves a list of all bots within an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-list-bots - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListBotsResponse</returns>
-        public async System.Threading.Tasks.Task<ListBotsResponse> ListBotsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListBotsResponse> ListBotsAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<ListBotsResponse> localVarResponse = await ListBotsWithHttpInfoAsync(apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
@@ -1426,13 +1459,16 @@ namespace sendbird_platform_sdk.Api
         /// List bots ## List bots  Retrieves a list of all bots within an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-list-bots - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListBotsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListBotsResponse>> ListBotsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListBotsResponse>> ListBotsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling BotInterfaceApi->ListBots");
 
             var localVarPath = "/v3/bots";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1482,13 +1518,13 @@ namespace sendbird_platform_sdk.Api
         /// Send a bot&#39;s message ## Send a bot&#39;s message  Sends a bot&#39;s message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;bot_userid&#x60;      Type: string      Description: Specifies the ID of the bot to send a message.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="sendBotSMessageData"> (optional)</param>
         /// <returns>SendBirdMessageResponse</returns>
-        public SendBirdMessageResponse SendBotsMessage (string botUserid, string apiToken = default(string), SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData))
+        public SendBirdMessageResponse SendBotsMessage (string apiToken, string botUserid, SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData))
         {
-             ApiResponse<SendBirdMessageResponse> localVarResponse = SendBotsMessageWithHttpInfo(botUserid, apiToken, sendBotSMessageData);
+             ApiResponse<SendBirdMessageResponse> localVarResponse = SendBotsMessageWithHttpInfo(apiToken, botUserid, sendBotSMessageData);
              return localVarResponse.Data;
         }
 
@@ -1496,12 +1532,15 @@ namespace sendbird_platform_sdk.Api
         /// Send a bot&#39;s message ## Send a bot&#39;s message  Sends a bot&#39;s message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;bot_userid&#x60;      Type: string      Description: Specifies the ID of the bot to send a message.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="sendBotSMessageData"> (optional)</param>
         /// <returns>ApiResponse of SendBirdMessageResponse</returns>
-        public ApiResponse<SendBirdMessageResponse> SendBotsMessageWithHttpInfo (string botUserid, string apiToken = default(string), SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData))
+        public ApiResponse<SendBirdMessageResponse> SendBotsMessageWithHttpInfo (string apiToken, string botUserid, SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling BotInterfaceApi->SendBotsMessage");
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
                 throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotInterfaceApi->SendBotsMessage");
@@ -1562,14 +1601,14 @@ namespace sendbird_platform_sdk.Api
         /// Send a bot&#39;s message ## Send a bot&#39;s message  Sends a bot&#39;s message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;bot_userid&#x60;      Type: string      Description: Specifies the ID of the bot to send a message.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="sendBotSMessageData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdMessageResponse</returns>
-        public async System.Threading.Tasks.Task<SendBirdMessageResponse> SendBotsMessageAsync (string botUserid, string apiToken = default(string), SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdMessageResponse> SendBotsMessageAsync (string apiToken, string botUserid, SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdMessageResponse> localVarResponse = await SendBotsMessageWithHttpInfoAsync(botUserid, apiToken, sendBotSMessageData, cancellationToken);
+             ApiResponse<SendBirdMessageResponse> localVarResponse = await SendBotsMessageWithHttpInfoAsync(apiToken, botUserid, sendBotSMessageData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1578,13 +1617,16 @@ namespace sendbird_platform_sdk.Api
         /// Send a bot&#39;s message ## Send a bot&#39;s message  Sends a bot&#39;s message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;bot_userid&#x60;      Type: string      Description: Specifies the ID of the bot to send a message.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="sendBotSMessageData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdMessageResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdMessageResponse>> SendBotsMessageWithHttpInfoAsync (string botUserid, string apiToken = default(string), SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdMessageResponse>> SendBotsMessageWithHttpInfoAsync (string apiToken, string botUserid, SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling BotInterfaceApi->SendBotsMessage");
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
                 throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotInterfaceApi->SendBotsMessage");
@@ -1645,13 +1687,13 @@ namespace sendbird_platform_sdk.Api
         /// Update a bot ## Update a bot  Updates information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-update-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateBotByIdData"> (optional)</param>
         /// <returns>UpdateBotByIdResponse</returns>
-        public UpdateBotByIdResponse UpdateBotById (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData))
+        public UpdateBotByIdResponse UpdateBotById (string apiToken, string botUserid, UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData))
         {
-             ApiResponse<UpdateBotByIdResponse> localVarResponse = UpdateBotByIdWithHttpInfo(botUserid, apiToken, updateBotByIdData);
+             ApiResponse<UpdateBotByIdResponse> localVarResponse = UpdateBotByIdWithHttpInfo(apiToken, botUserid, updateBotByIdData);
              return localVarResponse.Data;
         }
 
@@ -1659,12 +1701,15 @@ namespace sendbird_platform_sdk.Api
         /// Update a bot ## Update a bot  Updates information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-update-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateBotByIdData"> (optional)</param>
         /// <returns>ApiResponse of UpdateBotByIdResponse</returns>
-        public ApiResponse<UpdateBotByIdResponse> UpdateBotByIdWithHttpInfo (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData))
+        public ApiResponse<UpdateBotByIdResponse> UpdateBotByIdWithHttpInfo (string apiToken, string botUserid, UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling BotInterfaceApi->UpdateBotById");
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
                 throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotInterfaceApi->UpdateBotById");
@@ -1725,14 +1770,14 @@ namespace sendbird_platform_sdk.Api
         /// Update a bot ## Update a bot  Updates information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-update-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateBotByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateBotByIdResponse</returns>
-        public async System.Threading.Tasks.Task<UpdateBotByIdResponse> UpdateBotByIdAsync (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<UpdateBotByIdResponse> UpdateBotByIdAsync (string apiToken, string botUserid, UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<UpdateBotByIdResponse> localVarResponse = await UpdateBotByIdWithHttpInfoAsync(botUserid, apiToken, updateBotByIdData, cancellationToken);
+             ApiResponse<UpdateBotByIdResponse> localVarResponse = await UpdateBotByIdWithHttpInfoAsync(apiToken, botUserid, updateBotByIdData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1741,13 +1786,16 @@ namespace sendbird_platform_sdk.Api
         /// Update a bot ## Update a bot  Updates information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-update-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateBotByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateBotByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UpdateBotByIdResponse>> UpdateBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateBotByIdResponse>> UpdateBotByIdWithHttpInfoAsync (string apiToken, string botUserid, UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling BotInterfaceApi->UpdateBotById");
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
                 throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotInterfaceApi->UpdateBotById");
@@ -1808,12 +1856,12 @@ namespace sendbird_platform_sdk.Api
         /// View a bot ## View a bot  Retrieves information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-view-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ViewBotByIdResponse</returns>
-        public ViewBotByIdResponse ViewBotById (string botUserid, string apiToken = default(string))
+        public ViewBotByIdResponse ViewBotById (string apiToken, string botUserid)
         {
-             ApiResponse<ViewBotByIdResponse> localVarResponse = ViewBotByIdWithHttpInfo(botUserid, apiToken);
+             ApiResponse<ViewBotByIdResponse> localVarResponse = ViewBotByIdWithHttpInfo(apiToken, botUserid);
              return localVarResponse.Data;
         }
 
@@ -1821,11 +1869,14 @@ namespace sendbird_platform_sdk.Api
         /// View a bot ## View a bot  Retrieves information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-view-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of ViewBotByIdResponse</returns>
-        public ApiResponse<ViewBotByIdResponse> ViewBotByIdWithHttpInfo (string botUserid, string apiToken = default(string))
+        public ApiResponse<ViewBotByIdResponse> ViewBotByIdWithHttpInfo (string apiToken, string botUserid)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling BotInterfaceApi->ViewBotById");
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
                 throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotInterfaceApi->ViewBotById");
@@ -1877,13 +1928,13 @@ namespace sendbird_platform_sdk.Api
         /// View a bot ## View a bot  Retrieves information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-view-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewBotByIdResponse</returns>
-        public async System.Threading.Tasks.Task<ViewBotByIdResponse> ViewBotByIdAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewBotByIdResponse> ViewBotByIdAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ViewBotByIdResponse> localVarResponse = await ViewBotByIdWithHttpInfoAsync(botUserid, apiToken, cancellationToken);
+             ApiResponse<ViewBotByIdResponse> localVarResponse = await ViewBotByIdWithHttpInfoAsync(apiToken, botUserid, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1892,12 +1943,15 @@ namespace sendbird_platform_sdk.Api
         /// View a bot ## View a bot  Retrieves information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-view-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="botUserid"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewBotByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewBotByIdResponse>> ViewBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewBotByIdResponse>> ViewBotByIdWithHttpInfoAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling BotInterfaceApi->ViewBotById");
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
                 throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotInterfaceApi->ViewBotById");

@@ -32,11 +32,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Ban a user  Bans a user from an open channel. A banned user is immediately expelled from a channel and allowed to participate in the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-ban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocBanUserData"> (optional)</param>
         /// <returns>OcBanUserResponse</returns>
-        OcBanUserResponse OcBanUser (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData));
+        OcBanUserResponse OcBanUser (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData));
 
         /// <summary>
         /// Ban a user
@@ -45,11 +45,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Ban a user  Bans a user from an open channel. A banned user is immediately expelled from a channel and allowed to participate in the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-ban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocBanUserData"> (optional)</param>
         /// <returns>ApiResponse of OcBanUserResponse</returns>
-        ApiResponse<OcBanUserResponse> OcBanUserWithHttpInfo (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData));
+        ApiResponse<OcBanUserResponse> OcBanUserWithHttpInfo (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData));
         /// <summary>
         /// Cancel the registration of operators
         /// </summary>
@@ -57,12 +57,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Cancel the registration of operators  Cancels the registration of operators from an open channel but leave them as participants.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="operatorIds"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="deleteAll"> (optional)</param>
         /// <returns></returns>
-        void OcCancelTheRegistrationOfOperators (string channelUrl, List<string> operatorIds, string apiToken = default(string), bool? deleteAll = default(bool?));
+        void OcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?));
 
         /// <summary>
         /// Cancel the registration of operators
@@ -71,12 +71,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Cancel the registration of operators  Cancels the registration of operators from an open channel but leave them as participants.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="operatorIds"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="deleteAll"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> OcCancelTheRegistrationOfOperatorsWithHttpInfo (string channelUrl, List<string> operatorIds, string apiToken = default(string), bool? deleteAll = default(bool?));
+        ApiResponse<Object> OcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?));
         /// <summary>
         /// Create a channel
         /// </summary>
@@ -84,10 +84,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Create a channel  Creates an open channel.  &gt;__Note__: Classic open channels created before the deprecation date of March 2021 will maintain their original form and functions. However, new applications created after December 15, 2020, will be able to create dynamic partitioning open channels only.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="ocCreateChannelData"> (optional)</param>
         /// <returns>SendBirdOpenChannel</returns>
-        SendBirdOpenChannel OcCreateChannel (string apiToken = default(string), OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData));
+        SendBirdOpenChannel OcCreateChannel (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData));
 
         /// <summary>
         /// Create a channel
@@ -96,10 +96,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Create a channel  Creates an open channel.  &gt;__Note__: Classic open channels created before the deprecation date of March 2021 will maintain their original form and functions. However, new applications created after December 15, 2020, will be able to create dynamic partitioning open channels only.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="ocCreateChannelData"> (optional)</param>
         /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        ApiResponse<SendBirdOpenChannel> OcCreateChannelWithHttpInfo (string apiToken = default(string), OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData));
+        ApiResponse<SendBirdOpenChannel> OcCreateChannelWithHttpInfo (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData));
         /// <summary>
         /// Delete a channel
         /// </summary>
@@ -107,10 +107,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete a channel  Deletes an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns></returns>
-        void OcDeleteChannelByUrl (string channelUrl, string apiToken = default(string));
+        void OcDeleteChannelByUrl (string apiToken, string channelUrl);
 
         /// <summary>
         /// Delete a channel
@@ -119,10 +119,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete a channel  Deletes an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> OcDeleteChannelByUrlWithHttpInfo (string channelUrl, string apiToken = default(string));
+        ApiResponse<Object> OcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl);
         /// <summary>
         /// Freeze a channel
         /// </summary>
@@ -130,11 +130,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocFreezeChannelData"> (optional)</param>
         /// <returns>SendBirdOpenChannel</returns>
-        SendBirdOpenChannel OcFreezeChannel (string channelUrl, string apiToken = default(string), OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData));
+        SendBirdOpenChannel OcFreezeChannel (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData));
 
         /// <summary>
         /// Freeze a channel
@@ -143,11 +143,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocFreezeChannelData"> (optional)</param>
         /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        ApiResponse<SendBirdOpenChannel> OcFreezeChannelWithHttpInfo (string channelUrl, string apiToken = default(string), OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData));
+        ApiResponse<SendBirdOpenChannel> OcFreezeChannelWithHttpInfo (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData));
         /// <summary>
         /// List banned users
         /// </summary>
@@ -155,12 +155,12 @@ namespace sendbird_platform_sdk.Api
         /// ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>OcListBannedUsersResponse</returns>
-        OcListBannedUsersResponse OcListBannedUsers (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        OcListBannedUsersResponse OcListBannedUsers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List banned users
@@ -169,12 +169,12 @@ namespace sendbird_platform_sdk.Api
         /// ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of OcListBannedUsersResponse</returns>
-        ApiResponse<OcListBannedUsersResponse> OcListBannedUsersWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        ApiResponse<OcListBannedUsersResponse> OcListBannedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
         /// <summary>
         /// List channels
         /// </summary>
@@ -182,7 +182,7 @@ namespace sendbird_platform_sdk.Api
         /// ## List channels  Retrieves a list of open channels. You can query the list using various parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="customTypes"> (optional)</param>
@@ -192,7 +192,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <returns>OcListChannelsResponse</returns>
-        OcListChannelsResponse OcListChannels (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string));
+        OcListChannelsResponse OcListChannels (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string));
 
         /// <summary>
         /// List channels
@@ -201,7 +201,7 @@ namespace sendbird_platform_sdk.Api
         /// ## List channels  Retrieves a list of open channels. You can query the list using various parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="customTypes"> (optional)</param>
@@ -211,7 +211,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <returns>ApiResponse of OcListChannelsResponse</returns>
-        ApiResponse<OcListChannelsResponse> OcListChannelsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string));
+        ApiResponse<OcListChannelsResponse> OcListChannelsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string));
         /// <summary>
         /// List muted users
         /// </summary>
@@ -219,12 +219,12 @@ namespace sendbird_platform_sdk.Api
         /// ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>OcListMutedUsersResponse</returns>
-        OcListMutedUsersResponse OcListMutedUsers (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        OcListMutedUsersResponse OcListMutedUsers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List muted users
@@ -233,12 +233,12 @@ namespace sendbird_platform_sdk.Api
         /// ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of OcListMutedUsersResponse</returns>
-        ApiResponse<OcListMutedUsersResponse> OcListMutedUsersWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        ApiResponse<OcListMutedUsersResponse> OcListMutedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
         /// <summary>
         /// List operators
         /// </summary>
@@ -246,12 +246,12 @@ namespace sendbird_platform_sdk.Api
         /// ## List operators  Retrieves a list of operators of an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>OcListOperatorsResponse</returns>
-        OcListOperatorsResponse OcListOperators (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        OcListOperatorsResponse OcListOperators (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List operators
@@ -260,12 +260,12 @@ namespace sendbird_platform_sdk.Api
         /// ## List operators  Retrieves a list of operators of an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of OcListOperatorsResponse</returns>
-        ApiResponse<OcListOperatorsResponse> OcListOperatorsWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        ApiResponse<OcListOperatorsResponse> OcListOperatorsWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
         /// <summary>
         /// List participants
         /// </summary>
@@ -273,12 +273,12 @@ namespace sendbird_platform_sdk.Api
         /// ## List participants  Retrieves a list of the participants of an open channel. A participant refers to a user who has entered the open channel and is currently online.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-participants - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of participants in.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>OcListParticipantsResponse</returns>
-        OcListParticipantsResponse OcListParticipants (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        OcListParticipantsResponse OcListParticipants (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List participants
@@ -287,12 +287,12 @@ namespace sendbird_platform_sdk.Api
         /// ## List participants  Retrieves a list of the participants of an open channel. A participant refers to a user who has entered the open channel and is currently online.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-participants - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of participants in.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of OcListParticipantsResponse</returns>
-        ApiResponse<OcListParticipantsResponse> OcListParticipantsWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        ApiResponse<OcListParticipantsResponse> OcListParticipantsWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
         /// <summary>
         /// Mute a user
         /// </summary>
@@ -300,11 +300,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocMuteUserData"> (optional)</param>
         /// <returns>SendBirdOpenChannel</returns>
-        SendBirdOpenChannel OcMuteUser (string channelUrl, string apiToken = default(string), OcMuteUserData ocMuteUserData = default(OcMuteUserData));
+        SendBirdOpenChannel OcMuteUser (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData));
 
         /// <summary>
         /// Mute a user
@@ -313,11 +313,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocMuteUserData"> (optional)</param>
         /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        ApiResponse<SendBirdOpenChannel> OcMuteUserWithHttpInfo (string channelUrl, string apiToken = default(string), OcMuteUserData ocMuteUserData = default(OcMuteUserData));
+        ApiResponse<SendBirdOpenChannel> OcMuteUserWithHttpInfo (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData));
         /// <summary>
         /// Register operators
         /// </summary>
@@ -325,11 +325,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <returns></returns>
-        void OcRegisterOperators (string channelUrl, string apiToken = default(string), OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData));
+        void OcRegisterOperators (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData));
 
         /// <summary>
         /// Register operators
@@ -338,11 +338,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> OcRegisterOperatorsWithHttpInfo (string channelUrl, string apiToken = default(string), OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData));
+        ApiResponse<Object> OcRegisterOperatorsWithHttpInfo (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData));
         /// <summary>
         /// Unban a user
         /// </summary>
@@ -350,11 +350,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Unban a user  Unbans a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns></returns>
-        void OcUnbanUserById (string channelUrl, string bannedUserId, string apiToken = default(string));
+        void OcUnbanUserById (string apiToken, string channelUrl, string bannedUserId);
 
         /// <summary>
         /// Unban a user
@@ -363,11 +363,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Unban a user  Unbans a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> OcUnbanUserByIdWithHttpInfo (string channelUrl, string bannedUserId, string apiToken = default(string));
+        ApiResponse<Object> OcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId);
         /// <summary>
         /// Unmute a user
         /// </summary>
@@ -375,11 +375,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Unmute a user  Unmutes a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unmute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns></returns>
-        void OcUnmuteUserById (string channelUrl, string mutedUserId, string apiToken = default(string));
+        void OcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId);
 
         /// <summary>
         /// Unmute a user
@@ -388,11 +388,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Unmute a user  Unmutes a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unmute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> OcUnmuteUserByIdWithHttpInfo (string channelUrl, string mutedUserId, string apiToken = default(string));
+        ApiResponse<Object> OcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId);
         /// <summary>
         /// Update a ban
         /// </summary>
@@ -400,12 +400,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a ban  Updates details of a ban imposed on a user. You can change the length of a ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
         /// <returns>SendBirdUser</returns>
-        SendBirdUser OcUpdateBanById (string channelUrl, string bannedUserId, string apiToken = default(string), OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData));
+        SendBirdUser OcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData));
 
         /// <summary>
         /// Update a ban
@@ -414,12 +414,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a ban  Updates details of a ban imposed on a user. You can change the length of a ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
         /// <returns>ApiResponse of SendBirdUser</returns>
-        ApiResponse<SendBirdUser> OcUpdateBanByIdWithHttpInfo (string channelUrl, string bannedUserId, string apiToken = default(string), OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData));
+        ApiResponse<SendBirdUser> OcUpdateBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData));
         /// <summary>
         /// Update a channel
         /// </summary>
@@ -427,11 +427,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a channel  Updates information on an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
         /// <returns>SendBirdOpenChannel</returns>
-        SendBirdOpenChannel OcUpdateChannelByUrl (string channelUrl, string apiToken = default(string), OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData));
+        SendBirdOpenChannel OcUpdateChannelByUrl (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData));
 
         /// <summary>
         /// Update a channel
@@ -440,11 +440,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a channel  Updates information on an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
         /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        ApiResponse<SendBirdOpenChannel> OcUpdateChannelByUrlWithHttpInfo (string channelUrl, string apiToken = default(string), OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData));
+        ApiResponse<SendBirdOpenChannel> OcUpdateChannelByUrlWithHttpInfo (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData));
         /// <summary>
         /// View a ban
         /// </summary>
@@ -452,11 +452,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>SendBirdUser</returns>
-        SendBirdUser OcViewBanById (string channelUrl, string bannedUserId, string apiToken = default(string));
+        SendBirdUser OcViewBanById (string apiToken, string channelUrl, string bannedUserId);
 
         /// <summary>
         /// View a ban
@@ -465,11 +465,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of SendBirdUser</returns>
-        ApiResponse<SendBirdUser> OcViewBanByIdWithHttpInfo (string channelUrl, string bannedUserId, string apiToken = default(string));
+        ApiResponse<SendBirdUser> OcViewBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId);
         /// <summary>
         /// View a channel
         /// </summary>
@@ -477,10 +477,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>SendBirdOpenChannel</returns>
-        SendBirdOpenChannel OcViewChannelByUrl (string channelUrl, string apiToken = default(string));
+        SendBirdOpenChannel OcViewChannelByUrl (string apiToken, string channelUrl);
 
         /// <summary>
         /// View a channel
@@ -489,10 +489,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        ApiResponse<SendBirdOpenChannel> OcViewChannelByUrlWithHttpInfo (string channelUrl, string apiToken = default(string));
+        ApiResponse<SendBirdOpenChannel> OcViewChannelByUrlWithHttpInfo (string apiToken, string channelUrl);
         /// <summary>
         /// View a mute
         /// </summary>
@@ -500,11 +500,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View a mute  Checks if a user is muted in an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-mute - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>OcViewMuteByIdResponse</returns>
-        OcViewMuteByIdResponse OcViewMuteById (string channelUrl, string mutedUserId, string apiToken = default(string));
+        OcViewMuteByIdResponse OcViewMuteById (string apiToken, string channelUrl, string mutedUserId);
 
         /// <summary>
         /// View a mute
@@ -513,11 +513,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View a mute  Checks if a user is muted in an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-mute - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of OcViewMuteByIdResponse</returns>
-        ApiResponse<OcViewMuteByIdResponse> OcViewMuteByIdWithHttpInfo (string channelUrl, string mutedUserId, string apiToken = default(string));
+        ApiResponse<OcViewMuteByIdResponse> OcViewMuteByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -527,12 +527,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Ban a user  Bans a user from an open channel. A banned user is immediately expelled from a channel and allowed to participate in the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-ban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocBanUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcBanUserResponse</returns>
-        System.Threading.Tasks.Task<OcBanUserResponse> OcBanUserAsync (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcBanUserResponse> OcBanUserAsync (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Ban a user
@@ -541,12 +541,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Ban a user  Bans a user from an open channel. A banned user is immediately expelled from a channel and allowed to participate in the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-ban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocBanUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcBanUserResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcBanUserResponse>> OcBanUserWithHttpInfoAsync (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcBanUserResponse>> OcBanUserWithHttpInfoAsync (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Cancel the registration of operators
         /// </summary>
@@ -554,13 +554,13 @@ namespace sendbird_platform_sdk.Api
         /// ## Cancel the registration of operators  Cancels the registration of operators from an open channel but leave them as participants.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="operatorIds"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task OcCancelTheRegistrationOfOperatorsAsync (string channelUrl, List<string> operatorIds, string apiToken = default(string), bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task OcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Cancel the registration of operators
@@ -569,13 +569,13 @@ namespace sendbird_platform_sdk.Api
         /// ## Cancel the registration of operators  Cancels the registration of operators from an open channel but leave them as participants.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="operatorIds"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> OcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string channelUrl, List<string> operatorIds, string apiToken = default(string), bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> OcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Create a channel
         /// </summary>
@@ -583,11 +583,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Create a channel  Creates an open channel.  &gt;__Note__: Classic open channels created before the deprecation date of March 2021 will maintain their original form and functions. However, new applications created after December 15, 2020, will be able to create dynamic partitioning open channels only.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="ocCreateChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        System.Threading.Tasks.Task<SendBirdOpenChannel> OcCreateChannelAsync (string apiToken = default(string), OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdOpenChannel> OcCreateChannelAsync (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Create a channel
@@ -596,11 +596,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Create a channel  Creates an open channel.  &gt;__Note__: Classic open channels created before the deprecation date of March 2021 will maintain their original form and functions. However, new applications created after December 15, 2020, will be able to create dynamic partitioning open channels only.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="ocCreateChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcCreateChannelWithHttpInfoAsync (string apiToken = default(string), OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcCreateChannelWithHttpInfoAsync (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Delete a channel
         /// </summary>
@@ -608,11 +608,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete a channel  Deletes an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task OcDeleteChannelByUrlAsync (string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task OcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Delete a channel
@@ -621,11 +621,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete a channel  Deletes an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> OcDeleteChannelByUrlWithHttpInfoAsync (string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> OcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Freeze a channel
         /// </summary>
@@ -633,12 +633,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocFreezeChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        System.Threading.Tasks.Task<SendBirdOpenChannel> OcFreezeChannelAsync (string channelUrl, string apiToken = default(string), OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdOpenChannel> OcFreezeChannelAsync (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Freeze a channel
@@ -647,12 +647,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocFreezeChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcFreezeChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcFreezeChannelWithHttpInfoAsync (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List banned users
         /// </summary>
@@ -660,13 +660,13 @@ namespace sendbird_platform_sdk.Api
         /// ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListBannedUsersResponse</returns>
-        System.Threading.Tasks.Task<OcListBannedUsersResponse> OcListBannedUsersAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcListBannedUsersResponse> OcListBannedUsersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List banned users
@@ -675,13 +675,13 @@ namespace sendbird_platform_sdk.Api
         /// ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListBannedUsersResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcListBannedUsersResponse>> OcListBannedUsersWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcListBannedUsersResponse>> OcListBannedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List channels
         /// </summary>
@@ -689,7 +689,7 @@ namespace sendbird_platform_sdk.Api
         /// ## List channels  Retrieves a list of open channels. You can query the list using various parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="customTypes"> (optional)</param>
@@ -700,7 +700,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customType"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListChannelsResponse</returns>
-        System.Threading.Tasks.Task<OcListChannelsResponse> OcListChannelsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcListChannelsResponse> OcListChannelsAsync (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List channels
@@ -709,7 +709,7 @@ namespace sendbird_platform_sdk.Api
         /// ## List channels  Retrieves a list of open channels. You can query the list using various parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="customTypes"> (optional)</param>
@@ -720,7 +720,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customType"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListChannelsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcListChannelsResponse>> OcListChannelsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcListChannelsResponse>> OcListChannelsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List muted users
         /// </summary>
@@ -728,13 +728,13 @@ namespace sendbird_platform_sdk.Api
         /// ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListMutedUsersResponse</returns>
-        System.Threading.Tasks.Task<OcListMutedUsersResponse> OcListMutedUsersAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcListMutedUsersResponse> OcListMutedUsersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List muted users
@@ -743,13 +743,13 @@ namespace sendbird_platform_sdk.Api
         /// ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListMutedUsersResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcListMutedUsersResponse>> OcListMutedUsersWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcListMutedUsersResponse>> OcListMutedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List operators
         /// </summary>
@@ -757,13 +757,13 @@ namespace sendbird_platform_sdk.Api
         /// ## List operators  Retrieves a list of operators of an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListOperatorsResponse</returns>
-        System.Threading.Tasks.Task<OcListOperatorsResponse> OcListOperatorsAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcListOperatorsResponse> OcListOperatorsAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List operators
@@ -772,13 +772,13 @@ namespace sendbird_platform_sdk.Api
         /// ## List operators  Retrieves a list of operators of an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListOperatorsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcListOperatorsResponse>> OcListOperatorsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcListOperatorsResponse>> OcListOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List participants
         /// </summary>
@@ -786,13 +786,13 @@ namespace sendbird_platform_sdk.Api
         /// ## List participants  Retrieves a list of the participants of an open channel. A participant refers to a user who has entered the open channel and is currently online.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-participants - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of participants in.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListParticipantsResponse</returns>
-        System.Threading.Tasks.Task<OcListParticipantsResponse> OcListParticipantsAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcListParticipantsResponse> OcListParticipantsAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List participants
@@ -801,13 +801,13 @@ namespace sendbird_platform_sdk.Api
         /// ## List participants  Retrieves a list of the participants of an open channel. A participant refers to a user who has entered the open channel and is currently online.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-participants - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of participants in.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListParticipantsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcListParticipantsResponse>> OcListParticipantsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcListParticipantsResponse>> OcListParticipantsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Mute a user
         /// </summary>
@@ -815,12 +815,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocMuteUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        System.Threading.Tasks.Task<SendBirdOpenChannel> OcMuteUserAsync (string channelUrl, string apiToken = default(string), OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdOpenChannel> OcMuteUserAsync (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Mute a user
@@ -829,12 +829,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocMuteUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcMuteUserWithHttpInfoAsync (string channelUrl, string apiToken = default(string), OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcMuteUserWithHttpInfoAsync (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Register operators
         /// </summary>
@@ -842,12 +842,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task OcRegisterOperatorsAsync (string channelUrl, string apiToken = default(string), OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task OcRegisterOperatorsAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Register operators
@@ -856,12 +856,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> OcRegisterOperatorsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> OcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Unban a user
         /// </summary>
@@ -869,12 +869,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Unban a user  Unbans a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task OcUnbanUserByIdAsync (string channelUrl, string bannedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task OcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Unban a user
@@ -883,12 +883,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Unban a user  Unbans a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> OcUnbanUserByIdWithHttpInfoAsync (string channelUrl, string bannedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> OcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Unmute a user
         /// </summary>
@@ -896,12 +896,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Unmute a user  Unmutes a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unmute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task OcUnmuteUserByIdAsync (string channelUrl, string mutedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task OcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Unmute a user
@@ -910,12 +910,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Unmute a user  Unmutes a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unmute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> OcUnmuteUserByIdWithHttpInfoAsync (string channelUrl, string mutedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> OcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update a ban
         /// </summary>
@@ -923,13 +923,13 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a ban  Updates details of a ban imposed on a user. You can change the length of a ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdUser</returns>
-        System.Threading.Tasks.Task<SendBirdUser> OcUpdateBanByIdAsync (string channelUrl, string bannedUserId, string apiToken = default(string), OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdUser> OcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update a ban
@@ -938,13 +938,13 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a ban  Updates details of a ban imposed on a user. You can change the length of a ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdUser)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> OcUpdateBanByIdWithHttpInfoAsync (string channelUrl, string bannedUserId, string apiToken = default(string), OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> OcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update a channel
         /// </summary>
@@ -952,12 +952,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a channel  Updates information on an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        System.Threading.Tasks.Task<SendBirdOpenChannel> OcUpdateChannelByUrlAsync (string channelUrl, string apiToken = default(string), OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdOpenChannel> OcUpdateChannelByUrlAsync (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update a channel
@@ -966,12 +966,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a channel  Updates information on an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcUpdateChannelByUrlWithHttpInfoAsync (string channelUrl, string apiToken = default(string), OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcUpdateChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a ban
         /// </summary>
@@ -979,12 +979,12 @@ namespace sendbird_platform_sdk.Api
         /// ## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdUser</returns>
-        System.Threading.Tasks.Task<SendBirdUser> OcViewBanByIdAsync (string channelUrl, string bannedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdUser> OcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a ban
@@ -993,12 +993,12 @@ namespace sendbird_platform_sdk.Api
         /// ## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdUser)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> OcViewBanByIdWithHttpInfoAsync (string channelUrl, string bannedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> OcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a channel
         /// </summary>
@@ -1006,11 +1006,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        System.Threading.Tasks.Task<SendBirdOpenChannel> OcViewChannelByUrlAsync (string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdOpenChannel> OcViewChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a channel
@@ -1019,11 +1019,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcViewChannelByUrlWithHttpInfoAsync (string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcViewChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a mute
         /// </summary>
@@ -1031,12 +1031,12 @@ namespace sendbird_platform_sdk.Api
         /// ## View a mute  Checks if a user is muted in an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-mute - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcViewMuteByIdResponse</returns>
-        System.Threading.Tasks.Task<OcViewMuteByIdResponse> OcViewMuteByIdAsync (string channelUrl, string mutedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcViewMuteByIdResponse> OcViewMuteByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a mute
@@ -1045,12 +1045,12 @@ namespace sendbird_platform_sdk.Api
         /// ## View a mute  Checks if a user is muted in an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-mute - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcViewMuteByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcViewMuteByIdResponse>> OcViewMuteByIdWithHttpInfoAsync (string channelUrl, string mutedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcViewMuteByIdResponse>> OcViewMuteByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -1166,13 +1166,13 @@ namespace sendbird_platform_sdk.Api
         /// Ban a user ## Ban a user  Bans a user from an open channel. A banned user is immediately expelled from a channel and allowed to participate in the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-ban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocBanUserData"> (optional)</param>
         /// <returns>OcBanUserResponse</returns>
-        public OcBanUserResponse OcBanUser (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData))
+        public OcBanUserResponse OcBanUser (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData))
         {
-             ApiResponse<OcBanUserResponse> localVarResponse = OcBanUserWithHttpInfo(channelUrl, apiToken, ocBanUserData);
+             ApiResponse<OcBanUserResponse> localVarResponse = OcBanUserWithHttpInfo(apiToken, channelUrl, ocBanUserData);
              return localVarResponse.Data;
         }
 
@@ -1180,12 +1180,15 @@ namespace sendbird_platform_sdk.Api
         /// Ban a user ## Ban a user  Bans a user from an open channel. A banned user is immediately expelled from a channel and allowed to participate in the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-ban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocBanUserData"> (optional)</param>
         /// <returns>ApiResponse of OcBanUserResponse</returns>
-        public ApiResponse<OcBanUserResponse> OcBanUserWithHttpInfo (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData))
+        public ApiResponse<OcBanUserResponse> OcBanUserWithHttpInfo (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcBanUser");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcBanUser");
@@ -1246,14 +1249,14 @@ namespace sendbird_platform_sdk.Api
         /// Ban a user ## Ban a user  Bans a user from an open channel. A banned user is immediately expelled from a channel and allowed to participate in the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-ban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocBanUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcBanUserResponse</returns>
-        public async System.Threading.Tasks.Task<OcBanUserResponse> OcBanUserAsync (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcBanUserResponse> OcBanUserAsync (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<OcBanUserResponse> localVarResponse = await OcBanUserWithHttpInfoAsync(channelUrl, apiToken, ocBanUserData, cancellationToken);
+             ApiResponse<OcBanUserResponse> localVarResponse = await OcBanUserWithHttpInfoAsync(apiToken, channelUrl, ocBanUserData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1262,13 +1265,16 @@ namespace sendbird_platform_sdk.Api
         /// Ban a user ## Ban a user  Bans a user from an open channel. A banned user is immediately expelled from a channel and allowed to participate in the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-ban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocBanUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcBanUserResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcBanUserResponse>> OcBanUserWithHttpInfoAsync (string channelUrl, string apiToken = default(string), OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcBanUserResponse>> OcBanUserWithHttpInfoAsync (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcBanUser");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcBanUser");
@@ -1329,27 +1335,30 @@ namespace sendbird_platform_sdk.Api
         /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from an open channel but leave them as participants.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="operatorIds"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="deleteAll"> (optional)</param>
         /// <returns></returns>
-        public void OcCancelTheRegistrationOfOperators (string channelUrl, List<string> operatorIds, string apiToken = default(string), bool? deleteAll = default(bool?))
+        public void OcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?))
         {
-             OcCancelTheRegistrationOfOperatorsWithHttpInfo(channelUrl, operatorIds, apiToken, deleteAll);
+             OcCancelTheRegistrationOfOperatorsWithHttpInfo(apiToken, channelUrl, operatorIds, deleteAll);
         }
 
         /// <summary>
         /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from an open channel but leave them as participants.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="operatorIds"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="deleteAll"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> OcCancelTheRegistrationOfOperatorsWithHttpInfo (string channelUrl, List<string> operatorIds, string apiToken = default(string), bool? deleteAll = default(bool?))
+        public ApiResponse<Object> OcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcCancelTheRegistrationOfOperators");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcCancelTheRegistrationOfOperators");
@@ -1405,15 +1414,15 @@ namespace sendbird_platform_sdk.Api
         /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from an open channel but leave them as participants.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="operatorIds"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task OcCancelTheRegistrationOfOperatorsAsync (string channelUrl, List<string> operatorIds, string apiToken = default(string), bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task OcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             await OcCancelTheRegistrationOfOperatorsWithHttpInfoAsync(channelUrl, operatorIds, apiToken, deleteAll, cancellationToken);
+             await OcCancelTheRegistrationOfOperatorsWithHttpInfoAsync(apiToken, channelUrl, operatorIds, deleteAll, cancellationToken);
 
         }
 
@@ -1421,14 +1430,17 @@ namespace sendbird_platform_sdk.Api
         /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from an open channel but leave them as participants.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="operatorIds"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> OcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string channelUrl, List<string> operatorIds, string apiToken = default(string), bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> OcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcCancelTheRegistrationOfOperators");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcCancelTheRegistrationOfOperators");
@@ -1484,10 +1496,10 @@ namespace sendbird_platform_sdk.Api
         /// Create a channel ## Create a channel  Creates an open channel.  &gt;__Note__: Classic open channels created before the deprecation date of March 2021 will maintain their original form and functions. However, new applications created after December 15, 2020, will be able to create dynamic partitioning open channels only.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="ocCreateChannelData"> (optional)</param>
         /// <returns>SendBirdOpenChannel</returns>
-        public SendBirdOpenChannel OcCreateChannel (string apiToken = default(string), OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData))
+        public SendBirdOpenChannel OcCreateChannel (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData))
         {
              ApiResponse<SendBirdOpenChannel> localVarResponse = OcCreateChannelWithHttpInfo(apiToken, ocCreateChannelData);
              return localVarResponse.Data;
@@ -1497,11 +1509,14 @@ namespace sendbird_platform_sdk.Api
         /// Create a channel ## Create a channel  Creates an open channel.  &gt;__Note__: Classic open channels created before the deprecation date of March 2021 will maintain their original form and functions. However, new applications created after December 15, 2020, will be able to create dynamic partitioning open channels only.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="ocCreateChannelData"> (optional)</param>
         /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        public ApiResponse<SendBirdOpenChannel> OcCreateChannelWithHttpInfo (string apiToken = default(string), OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData))
+        public ApiResponse<SendBirdOpenChannel> OcCreateChannelWithHttpInfo (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcCreateChannel");
 
             var localVarPath = "/v3/open_channels";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1558,11 +1573,11 @@ namespace sendbird_platform_sdk.Api
         /// Create a channel ## Create a channel  Creates an open channel.  &gt;__Note__: Classic open channels created before the deprecation date of March 2021 will maintain their original form and functions. However, new applications created after December 15, 2020, will be able to create dynamic partitioning open channels only.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="ocCreateChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcCreateChannelAsync (string apiToken = default(string), OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcCreateChannelAsync (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<SendBirdOpenChannel> localVarResponse = await OcCreateChannelWithHttpInfoAsync(apiToken, ocCreateChannelData, cancellationToken);
              return localVarResponse.Data;
@@ -1573,12 +1588,15 @@ namespace sendbird_platform_sdk.Api
         /// Create a channel ## Create a channel  Creates an open channel.  &gt;__Note__: Classic open channels created before the deprecation date of March 2021 will maintain their original form and functions. However, new applications created after December 15, 2020, will be able to create dynamic partitioning open channels only.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="ocCreateChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcCreateChannelWithHttpInfoAsync (string apiToken = default(string), OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcCreateChannelWithHttpInfoAsync (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcCreateChannel");
 
             var localVarPath = "/v3/open_channels";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1635,23 +1653,26 @@ namespace sendbird_platform_sdk.Api
         /// Delete a channel ## Delete a channel  Deletes an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns></returns>
-        public void OcDeleteChannelByUrl (string channelUrl, string apiToken = default(string))
+        public void OcDeleteChannelByUrl (string apiToken, string channelUrl)
         {
-             OcDeleteChannelByUrlWithHttpInfo(channelUrl, apiToken);
+             OcDeleteChannelByUrlWithHttpInfo(apiToken, channelUrl);
         }
 
         /// <summary>
         /// Delete a channel ## Delete a channel  Deletes an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> OcDeleteChannelByUrlWithHttpInfo (string channelUrl, string apiToken = default(string))
+        public ApiResponse<Object> OcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcDeleteChannelByUrl");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcDeleteChannelByUrl");
@@ -1702,13 +1723,13 @@ namespace sendbird_platform_sdk.Api
         /// Delete a channel ## Delete a channel  Deletes an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task OcDeleteChannelByUrlAsync (string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task OcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await OcDeleteChannelByUrlWithHttpInfoAsync(channelUrl, apiToken, cancellationToken);
+             await OcDeleteChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, cancellationToken);
 
         }
 
@@ -1716,12 +1737,15 @@ namespace sendbird_platform_sdk.Api
         /// Delete a channel ## Delete a channel  Deletes an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> OcDeleteChannelByUrlWithHttpInfoAsync (string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> OcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcDeleteChannelByUrl");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcDeleteChannelByUrl");
@@ -1772,13 +1796,13 @@ namespace sendbird_platform_sdk.Api
         /// Freeze a channel ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocFreezeChannelData"> (optional)</param>
         /// <returns>SendBirdOpenChannel</returns>
-        public SendBirdOpenChannel OcFreezeChannel (string channelUrl, string apiToken = default(string), OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData))
+        public SendBirdOpenChannel OcFreezeChannel (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData))
         {
-             ApiResponse<SendBirdOpenChannel> localVarResponse = OcFreezeChannelWithHttpInfo(channelUrl, apiToken, ocFreezeChannelData);
+             ApiResponse<SendBirdOpenChannel> localVarResponse = OcFreezeChannelWithHttpInfo(apiToken, channelUrl, ocFreezeChannelData);
              return localVarResponse.Data;
         }
 
@@ -1786,12 +1810,15 @@ namespace sendbird_platform_sdk.Api
         /// Freeze a channel ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocFreezeChannelData"> (optional)</param>
         /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        public ApiResponse<SendBirdOpenChannel> OcFreezeChannelWithHttpInfo (string channelUrl, string apiToken = default(string), OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData))
+        public ApiResponse<SendBirdOpenChannel> OcFreezeChannelWithHttpInfo (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcFreezeChannel");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcFreezeChannel");
@@ -1852,14 +1879,14 @@ namespace sendbird_platform_sdk.Api
         /// Freeze a channel ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocFreezeChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcFreezeChannelAsync (string channelUrl, string apiToken = default(string), OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcFreezeChannelAsync (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdOpenChannel> localVarResponse = await OcFreezeChannelWithHttpInfoAsync(channelUrl, apiToken, ocFreezeChannelData, cancellationToken);
+             ApiResponse<SendBirdOpenChannel> localVarResponse = await OcFreezeChannelWithHttpInfoAsync(apiToken, channelUrl, ocFreezeChannelData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1868,13 +1895,16 @@ namespace sendbird_platform_sdk.Api
         /// Freeze a channel ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocFreezeChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcFreezeChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcFreezeChannelWithHttpInfoAsync (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcFreezeChannel");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcFreezeChannel");
@@ -1935,14 +1965,14 @@ namespace sendbird_platform_sdk.Api
         /// List banned users ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>OcListBannedUsersResponse</returns>
-        public OcListBannedUsersResponse OcListBannedUsers (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public OcListBannedUsersResponse OcListBannedUsers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<OcListBannedUsersResponse> localVarResponse = OcListBannedUsersWithHttpInfo(channelUrl, apiToken, token, limit);
+             ApiResponse<OcListBannedUsersResponse> localVarResponse = OcListBannedUsersWithHttpInfo(apiToken, channelUrl, token, limit);
              return localVarResponse.Data;
         }
 
@@ -1950,13 +1980,16 @@ namespace sendbird_platform_sdk.Api
         /// List banned users ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of OcListBannedUsersResponse</returns>
-        public ApiResponse<OcListBannedUsersResponse> OcListBannedUsersWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public ApiResponse<OcListBannedUsersResponse> OcListBannedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListBannedUsers");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcListBannedUsers");
@@ -2010,15 +2043,15 @@ namespace sendbird_platform_sdk.Api
         /// List banned users ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListBannedUsersResponse</returns>
-        public async System.Threading.Tasks.Task<OcListBannedUsersResponse> OcListBannedUsersAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcListBannedUsersResponse> OcListBannedUsersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<OcListBannedUsersResponse> localVarResponse = await OcListBannedUsersWithHttpInfoAsync(channelUrl, apiToken, token, limit, cancellationToken);
+             ApiResponse<OcListBannedUsersResponse> localVarResponse = await OcListBannedUsersWithHttpInfoAsync(apiToken, channelUrl, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2027,14 +2060,17 @@ namespace sendbird_platform_sdk.Api
         /// List banned users ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListBannedUsersResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcListBannedUsersResponse>> OcListBannedUsersWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcListBannedUsersResponse>> OcListBannedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListBannedUsers");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcListBannedUsers");
@@ -2088,7 +2124,7 @@ namespace sendbird_platform_sdk.Api
         /// List channels ## List channels  Retrieves a list of open channels. You can query the list using various parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="customTypes"> (optional)</param>
@@ -2098,7 +2134,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <returns>OcListChannelsResponse</returns>
-        public OcListChannelsResponse OcListChannels (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string))
+        public OcListChannelsResponse OcListChannels (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string))
         {
              ApiResponse<OcListChannelsResponse> localVarResponse = OcListChannelsWithHttpInfo(apiToken, token, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, customType);
              return localVarResponse.Data;
@@ -2108,7 +2144,7 @@ namespace sendbird_platform_sdk.Api
         /// List channels ## List channels  Retrieves a list of open channels. You can query the list using various parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="customTypes"> (optional)</param>
@@ -2118,8 +2154,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <returns>ApiResponse of OcListChannelsResponse</returns>
-        public ApiResponse<OcListChannelsResponse> OcListChannelsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string))
+        public ApiResponse<OcListChannelsResponse> OcListChannelsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListChannels");
 
             var localVarPath = "/v3/open_channels";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2175,7 +2214,7 @@ namespace sendbird_platform_sdk.Api
         /// List channels ## List channels  Retrieves a list of open channels. You can query the list using various parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="customTypes"> (optional)</param>
@@ -2186,7 +2225,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customType"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListChannelsResponse</returns>
-        public async System.Threading.Tasks.Task<OcListChannelsResponse> OcListChannelsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcListChannelsResponse> OcListChannelsAsync (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<OcListChannelsResponse> localVarResponse = await OcListChannelsWithHttpInfoAsync(apiToken, token, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, customType, cancellationToken);
              return localVarResponse.Data;
@@ -2197,7 +2236,7 @@ namespace sendbird_platform_sdk.Api
         /// List channels ## List channels  Retrieves a list of open channels. You can query the list using various parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="customTypes"> (optional)</param>
@@ -2208,8 +2247,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customType"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListChannelsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcListChannelsResponse>> OcListChannelsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcListChannelsResponse>> OcListChannelsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListChannels");
 
             var localVarPath = "/v3/open_channels";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2265,14 +2307,14 @@ namespace sendbird_platform_sdk.Api
         /// List muted users ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>OcListMutedUsersResponse</returns>
-        public OcListMutedUsersResponse OcListMutedUsers (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public OcListMutedUsersResponse OcListMutedUsers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<OcListMutedUsersResponse> localVarResponse = OcListMutedUsersWithHttpInfo(channelUrl, apiToken, token, limit);
+             ApiResponse<OcListMutedUsersResponse> localVarResponse = OcListMutedUsersWithHttpInfo(apiToken, channelUrl, token, limit);
              return localVarResponse.Data;
         }
 
@@ -2280,13 +2322,16 @@ namespace sendbird_platform_sdk.Api
         /// List muted users ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of OcListMutedUsersResponse</returns>
-        public ApiResponse<OcListMutedUsersResponse> OcListMutedUsersWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public ApiResponse<OcListMutedUsersResponse> OcListMutedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListMutedUsers");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcListMutedUsers");
@@ -2340,15 +2385,15 @@ namespace sendbird_platform_sdk.Api
         /// List muted users ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListMutedUsersResponse</returns>
-        public async System.Threading.Tasks.Task<OcListMutedUsersResponse> OcListMutedUsersAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcListMutedUsersResponse> OcListMutedUsersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<OcListMutedUsersResponse> localVarResponse = await OcListMutedUsersWithHttpInfoAsync(channelUrl, apiToken, token, limit, cancellationToken);
+             ApiResponse<OcListMutedUsersResponse> localVarResponse = await OcListMutedUsersWithHttpInfoAsync(apiToken, channelUrl, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2357,14 +2402,17 @@ namespace sendbird_platform_sdk.Api
         /// List muted users ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListMutedUsersResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcListMutedUsersResponse>> OcListMutedUsersWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcListMutedUsersResponse>> OcListMutedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListMutedUsers");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcListMutedUsers");
@@ -2418,14 +2466,14 @@ namespace sendbird_platform_sdk.Api
         /// List operators ## List operators  Retrieves a list of operators of an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>OcListOperatorsResponse</returns>
-        public OcListOperatorsResponse OcListOperators (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public OcListOperatorsResponse OcListOperators (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<OcListOperatorsResponse> localVarResponse = OcListOperatorsWithHttpInfo(channelUrl, apiToken, token, limit);
+             ApiResponse<OcListOperatorsResponse> localVarResponse = OcListOperatorsWithHttpInfo(apiToken, channelUrl, token, limit);
              return localVarResponse.Data;
         }
 
@@ -2433,13 +2481,16 @@ namespace sendbird_platform_sdk.Api
         /// List operators ## List operators  Retrieves a list of operators of an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of OcListOperatorsResponse</returns>
-        public ApiResponse<OcListOperatorsResponse> OcListOperatorsWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public ApiResponse<OcListOperatorsResponse> OcListOperatorsWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListOperators");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcListOperators");
@@ -2493,15 +2544,15 @@ namespace sendbird_platform_sdk.Api
         /// List operators ## List operators  Retrieves a list of operators of an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListOperatorsResponse</returns>
-        public async System.Threading.Tasks.Task<OcListOperatorsResponse> OcListOperatorsAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcListOperatorsResponse> OcListOperatorsAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<OcListOperatorsResponse> localVarResponse = await OcListOperatorsWithHttpInfoAsync(channelUrl, apiToken, token, limit, cancellationToken);
+             ApiResponse<OcListOperatorsResponse> localVarResponse = await OcListOperatorsWithHttpInfoAsync(apiToken, channelUrl, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2510,14 +2561,17 @@ namespace sendbird_platform_sdk.Api
         /// List operators ## List operators  Retrieves a list of operators of an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListOperatorsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcListOperatorsResponse>> OcListOperatorsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcListOperatorsResponse>> OcListOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListOperators");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcListOperators");
@@ -2571,14 +2625,14 @@ namespace sendbird_platform_sdk.Api
         /// List participants ## List participants  Retrieves a list of the participants of an open channel. A participant refers to a user who has entered the open channel and is currently online.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-participants - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of participants in.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>OcListParticipantsResponse</returns>
-        public OcListParticipantsResponse OcListParticipants (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public OcListParticipantsResponse OcListParticipants (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
         {
-             ApiResponse<OcListParticipantsResponse> localVarResponse = OcListParticipantsWithHttpInfo(channelUrl, apiToken, token, limit);
+             ApiResponse<OcListParticipantsResponse> localVarResponse = OcListParticipantsWithHttpInfo(apiToken, channelUrl, token, limit);
              return localVarResponse.Data;
         }
 
@@ -2586,13 +2640,16 @@ namespace sendbird_platform_sdk.Api
         /// List participants ## List participants  Retrieves a list of the participants of an open channel. A participant refers to a user who has entered the open channel and is currently online.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-participants - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of participants in.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of OcListParticipantsResponse</returns>
-        public ApiResponse<OcListParticipantsResponse> OcListParticipantsWithHttpInfo (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public ApiResponse<OcListParticipantsResponse> OcListParticipantsWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListParticipants");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcListParticipants");
@@ -2646,15 +2703,15 @@ namespace sendbird_platform_sdk.Api
         /// List participants ## List participants  Retrieves a list of the participants of an open channel. A participant refers to a user who has entered the open channel and is currently online.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-participants - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of participants in.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListParticipantsResponse</returns>
-        public async System.Threading.Tasks.Task<OcListParticipantsResponse> OcListParticipantsAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcListParticipantsResponse> OcListParticipantsAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<OcListParticipantsResponse> localVarResponse = await OcListParticipantsWithHttpInfoAsync(channelUrl, apiToken, token, limit, cancellationToken);
+             ApiResponse<OcListParticipantsResponse> localVarResponse = await OcListParticipantsWithHttpInfoAsync(apiToken, channelUrl, token, limit, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2663,14 +2720,17 @@ namespace sendbird_platform_sdk.Api
         /// List participants ## List participants  Retrieves a list of the participants of an open channel. A participant refers to a user who has entered the open channel and is currently online.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-participants - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of participants in.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListParticipantsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcListParticipantsResponse>> OcListParticipantsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcListParticipantsResponse>> OcListParticipantsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListParticipants");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcListParticipants");
@@ -2724,13 +2784,13 @@ namespace sendbird_platform_sdk.Api
         /// Mute a user ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocMuteUserData"> (optional)</param>
         /// <returns>SendBirdOpenChannel</returns>
-        public SendBirdOpenChannel OcMuteUser (string channelUrl, string apiToken = default(string), OcMuteUserData ocMuteUserData = default(OcMuteUserData))
+        public SendBirdOpenChannel OcMuteUser (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData))
         {
-             ApiResponse<SendBirdOpenChannel> localVarResponse = OcMuteUserWithHttpInfo(channelUrl, apiToken, ocMuteUserData);
+             ApiResponse<SendBirdOpenChannel> localVarResponse = OcMuteUserWithHttpInfo(apiToken, channelUrl, ocMuteUserData);
              return localVarResponse.Data;
         }
 
@@ -2738,12 +2798,15 @@ namespace sendbird_platform_sdk.Api
         /// Mute a user ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocMuteUserData"> (optional)</param>
         /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        public ApiResponse<SendBirdOpenChannel> OcMuteUserWithHttpInfo (string channelUrl, string apiToken = default(string), OcMuteUserData ocMuteUserData = default(OcMuteUserData))
+        public ApiResponse<SendBirdOpenChannel> OcMuteUserWithHttpInfo (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcMuteUser");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcMuteUser");
@@ -2804,14 +2867,14 @@ namespace sendbird_platform_sdk.Api
         /// Mute a user ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocMuteUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcMuteUserAsync (string channelUrl, string apiToken = default(string), OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcMuteUserAsync (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdOpenChannel> localVarResponse = await OcMuteUserWithHttpInfoAsync(channelUrl, apiToken, ocMuteUserData, cancellationToken);
+             ApiResponse<SendBirdOpenChannel> localVarResponse = await OcMuteUserWithHttpInfoAsync(apiToken, channelUrl, ocMuteUserData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2820,13 +2883,16 @@ namespace sendbird_platform_sdk.Api
         /// Mute a user ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocMuteUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcMuteUserWithHttpInfoAsync (string channelUrl, string apiToken = default(string), OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcMuteUserWithHttpInfoAsync (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcMuteUser");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcMuteUser");
@@ -2887,25 +2953,28 @@ namespace sendbird_platform_sdk.Api
         /// Register operators ## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <returns></returns>
-        public void OcRegisterOperators (string channelUrl, string apiToken = default(string), OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData))
+        public void OcRegisterOperators (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData))
         {
-             OcRegisterOperatorsWithHttpInfo(channelUrl, apiToken, ocRegisterOperatorsData);
+             OcRegisterOperatorsWithHttpInfo(apiToken, channelUrl, ocRegisterOperatorsData);
         }
 
         /// <summary>
         /// Register operators ## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> OcRegisterOperatorsWithHttpInfo (string channelUrl, string apiToken = default(string), OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData))
+        public ApiResponse<Object> OcRegisterOperatorsWithHttpInfo (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcRegisterOperators");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcRegisterOperators");
@@ -2965,14 +3034,14 @@ namespace sendbird_platform_sdk.Api
         /// Register operators ## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task OcRegisterOperatorsAsync (string channelUrl, string apiToken = default(string), OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task OcRegisterOperatorsAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             await OcRegisterOperatorsWithHttpInfoAsync(channelUrl, apiToken, ocRegisterOperatorsData, cancellationToken);
+             await OcRegisterOperatorsWithHttpInfoAsync(apiToken, channelUrl, ocRegisterOperatorsData, cancellationToken);
 
         }
 
@@ -2980,13 +3049,16 @@ namespace sendbird_platform_sdk.Api
         /// Register operators ## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> OcRegisterOperatorsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> OcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcRegisterOperators");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcRegisterOperators");
@@ -3046,25 +3118,28 @@ namespace sendbird_platform_sdk.Api
         /// Unban a user ## Unban a user  Unbans a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns></returns>
-        public void OcUnbanUserById (string channelUrl, string bannedUserId, string apiToken = default(string))
+        public void OcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
         {
-             OcUnbanUserByIdWithHttpInfo(channelUrl, bannedUserId, apiToken);
+             OcUnbanUserByIdWithHttpInfo(apiToken, channelUrl, bannedUserId);
         }
 
         /// <summary>
         /// Unban a user ## Unban a user  Unbans a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> OcUnbanUserByIdWithHttpInfo (string channelUrl, string bannedUserId, string apiToken = default(string))
+        public ApiResponse<Object> OcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcUnbanUserById");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcUnbanUserById");
@@ -3119,14 +3194,14 @@ namespace sendbird_platform_sdk.Api
         /// Unban a user ## Unban a user  Unbans a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task OcUnbanUserByIdAsync (string channelUrl, string bannedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task OcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await OcUnbanUserByIdWithHttpInfoAsync(channelUrl, bannedUserId, apiToken, cancellationToken);
+             await OcUnbanUserByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
 
         }
 
@@ -3134,13 +3209,16 @@ namespace sendbird_platform_sdk.Api
         /// Unban a user ## Unban a user  Unbans a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> OcUnbanUserByIdWithHttpInfoAsync (string channelUrl, string bannedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> OcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcUnbanUserById");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcUnbanUserById");
@@ -3195,25 +3273,28 @@ namespace sendbird_platform_sdk.Api
         /// Unmute a user ## Unmute a user  Unmutes a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unmute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns></returns>
-        public void OcUnmuteUserById (string channelUrl, string mutedUserId, string apiToken = default(string))
+        public void OcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
         {
-             OcUnmuteUserByIdWithHttpInfo(channelUrl, mutedUserId, apiToken);
+             OcUnmuteUserByIdWithHttpInfo(apiToken, channelUrl, mutedUserId);
         }
 
         /// <summary>
         /// Unmute a user ## Unmute a user  Unmutes a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unmute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> OcUnmuteUserByIdWithHttpInfo (string channelUrl, string mutedUserId, string apiToken = default(string))
+        public ApiResponse<Object> OcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcUnmuteUserById");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcUnmuteUserById");
@@ -3268,14 +3349,14 @@ namespace sendbird_platform_sdk.Api
         /// Unmute a user ## Unmute a user  Unmutes a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unmute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task OcUnmuteUserByIdAsync (string channelUrl, string mutedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task OcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await OcUnmuteUserByIdWithHttpInfoAsync(channelUrl, mutedUserId, apiToken, cancellationToken);
+             await OcUnmuteUserByIdWithHttpInfoAsync(apiToken, channelUrl, mutedUserId, cancellationToken);
 
         }
 
@@ -3283,13 +3364,16 @@ namespace sendbird_platform_sdk.Api
         /// Unmute a user ## Unmute a user  Unmutes a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unmute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> OcUnmuteUserByIdWithHttpInfoAsync (string channelUrl, string mutedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> OcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcUnmuteUserById");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcUnmuteUserById");
@@ -3344,14 +3428,14 @@ namespace sendbird_platform_sdk.Api
         /// Update a ban ## Update a ban  Updates details of a ban imposed on a user. You can change the length of a ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
         /// <returns>SendBirdUser</returns>
-        public SendBirdUser OcUpdateBanById (string channelUrl, string bannedUserId, string apiToken = default(string), OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData))
+        public SendBirdUser OcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData))
         {
-             ApiResponse<SendBirdUser> localVarResponse = OcUpdateBanByIdWithHttpInfo(channelUrl, bannedUserId, apiToken, ocUpdateBanByIdData);
+             ApiResponse<SendBirdUser> localVarResponse = OcUpdateBanByIdWithHttpInfo(apiToken, channelUrl, bannedUserId, ocUpdateBanByIdData);
              return localVarResponse.Data;
         }
 
@@ -3359,13 +3443,16 @@ namespace sendbird_platform_sdk.Api
         /// Update a ban ## Update a ban  Updates details of a ban imposed on a user. You can change the length of a ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
         /// <returns>ApiResponse of SendBirdUser</returns>
-        public ApiResponse<SendBirdUser> OcUpdateBanByIdWithHttpInfo (string channelUrl, string bannedUserId, string apiToken = default(string), OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData))
+        public ApiResponse<SendBirdUser> OcUpdateBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcUpdateBanById");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcUpdateBanById");
@@ -3430,15 +3517,15 @@ namespace sendbird_platform_sdk.Api
         /// Update a ban ## Update a ban  Updates details of a ban imposed on a user. You can change the length of a ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdUser</returns>
-        public async System.Threading.Tasks.Task<SendBirdUser> OcUpdateBanByIdAsync (string channelUrl, string bannedUserId, string apiToken = default(string), OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdUser> OcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdUser> localVarResponse = await OcUpdateBanByIdWithHttpInfoAsync(channelUrl, bannedUserId, apiToken, ocUpdateBanByIdData, cancellationToken);
+             ApiResponse<SendBirdUser> localVarResponse = await OcUpdateBanByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, ocUpdateBanByIdData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3447,14 +3534,17 @@ namespace sendbird_platform_sdk.Api
         /// Update a ban ## Update a ban  Updates details of a ban imposed on a user. You can change the length of a ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdUser)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> OcUpdateBanByIdWithHttpInfoAsync (string channelUrl, string bannedUserId, string apiToken = default(string), OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> OcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcUpdateBanById");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcUpdateBanById");
@@ -3519,13 +3609,13 @@ namespace sendbird_platform_sdk.Api
         /// Update a channel ## Update a channel  Updates information on an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
         /// <returns>SendBirdOpenChannel</returns>
-        public SendBirdOpenChannel OcUpdateChannelByUrl (string channelUrl, string apiToken = default(string), OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData))
+        public SendBirdOpenChannel OcUpdateChannelByUrl (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData))
         {
-             ApiResponse<SendBirdOpenChannel> localVarResponse = OcUpdateChannelByUrlWithHttpInfo(channelUrl, apiToken, ocUpdateChannelByUrlData);
+             ApiResponse<SendBirdOpenChannel> localVarResponse = OcUpdateChannelByUrlWithHttpInfo(apiToken, channelUrl, ocUpdateChannelByUrlData);
              return localVarResponse.Data;
         }
 
@@ -3533,12 +3623,15 @@ namespace sendbird_platform_sdk.Api
         /// Update a channel ## Update a channel  Updates information on an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
         /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        public ApiResponse<SendBirdOpenChannel> OcUpdateChannelByUrlWithHttpInfo (string channelUrl, string apiToken = default(string), OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData))
+        public ApiResponse<SendBirdOpenChannel> OcUpdateChannelByUrlWithHttpInfo (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcUpdateChannelByUrl");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcUpdateChannelByUrl");
@@ -3599,14 +3692,14 @@ namespace sendbird_platform_sdk.Api
         /// Update a channel ## Update a channel  Updates information on an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcUpdateChannelByUrlAsync (string channelUrl, string apiToken = default(string), OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcUpdateChannelByUrlAsync (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdOpenChannel> localVarResponse = await OcUpdateChannelByUrlWithHttpInfoAsync(channelUrl, apiToken, ocUpdateChannelByUrlData, cancellationToken);
+             ApiResponse<SendBirdOpenChannel> localVarResponse = await OcUpdateChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, ocUpdateChannelByUrlData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3615,13 +3708,16 @@ namespace sendbird_platform_sdk.Api
         /// Update a channel ## Update a channel  Updates information on an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcUpdateChannelByUrlWithHttpInfoAsync (string channelUrl, string apiToken = default(string), OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcUpdateChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcUpdateChannelByUrl");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcUpdateChannelByUrl");
@@ -3682,13 +3778,13 @@ namespace sendbird_platform_sdk.Api
         /// View a ban ## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>SendBirdUser</returns>
-        public SendBirdUser OcViewBanById (string channelUrl, string bannedUserId, string apiToken = default(string))
+        public SendBirdUser OcViewBanById (string apiToken, string channelUrl, string bannedUserId)
         {
-             ApiResponse<SendBirdUser> localVarResponse = OcViewBanByIdWithHttpInfo(channelUrl, bannedUserId, apiToken);
+             ApiResponse<SendBirdUser> localVarResponse = OcViewBanByIdWithHttpInfo(apiToken, channelUrl, bannedUserId);
              return localVarResponse.Data;
         }
 
@@ -3696,12 +3792,15 @@ namespace sendbird_platform_sdk.Api
         /// View a ban ## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of SendBirdUser</returns>
-        public ApiResponse<SendBirdUser> OcViewBanByIdWithHttpInfo (string channelUrl, string bannedUserId, string apiToken = default(string))
+        public ApiResponse<SendBirdUser> OcViewBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcViewBanById");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcViewBanById");
@@ -3757,14 +3856,14 @@ namespace sendbird_platform_sdk.Api
         /// View a ban ## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdUser</returns>
-        public async System.Threading.Tasks.Task<SendBirdUser> OcViewBanByIdAsync (string channelUrl, string bannedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdUser> OcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdUser> localVarResponse = await OcViewBanByIdWithHttpInfoAsync(channelUrl, bannedUserId, apiToken, cancellationToken);
+             ApiResponse<SendBirdUser> localVarResponse = await OcViewBanByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3773,13 +3872,16 @@ namespace sendbird_platform_sdk.Api
         /// View a ban ## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdUser)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> OcViewBanByIdWithHttpInfoAsync (string channelUrl, string bannedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> OcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcViewBanById");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcViewBanById");
@@ -3835,12 +3937,12 @@ namespace sendbird_platform_sdk.Api
         /// View a channel ## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>SendBirdOpenChannel</returns>
-        public SendBirdOpenChannel OcViewChannelByUrl (string channelUrl, string apiToken = default(string))
+        public SendBirdOpenChannel OcViewChannelByUrl (string apiToken, string channelUrl)
         {
-             ApiResponse<SendBirdOpenChannel> localVarResponse = OcViewChannelByUrlWithHttpInfo(channelUrl, apiToken);
+             ApiResponse<SendBirdOpenChannel> localVarResponse = OcViewChannelByUrlWithHttpInfo(apiToken, channelUrl);
              return localVarResponse.Data;
         }
 
@@ -3848,11 +3950,14 @@ namespace sendbird_platform_sdk.Api
         /// View a channel ## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        public ApiResponse<SendBirdOpenChannel> OcViewChannelByUrlWithHttpInfo (string channelUrl, string apiToken = default(string))
+        public ApiResponse<SendBirdOpenChannel> OcViewChannelByUrlWithHttpInfo (string apiToken, string channelUrl)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcViewChannelByUrl");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcViewChannelByUrl");
@@ -3904,13 +4009,13 @@ namespace sendbird_platform_sdk.Api
         /// View a channel ## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcViewChannelByUrlAsync (string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcViewChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdOpenChannel> localVarResponse = await OcViewChannelByUrlWithHttpInfoAsync(channelUrl, apiToken, cancellationToken);
+             ApiResponse<SendBirdOpenChannel> localVarResponse = await OcViewChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3919,12 +4024,15 @@ namespace sendbird_platform_sdk.Api
         /// View a channel ## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcViewChannelByUrlWithHttpInfoAsync (string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcViewChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcViewChannelByUrl");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcViewChannelByUrl");
@@ -3976,13 +4084,13 @@ namespace sendbird_platform_sdk.Api
         /// View a mute ## View a mute  Checks if a user is muted in an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-mute - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>OcViewMuteByIdResponse</returns>
-        public OcViewMuteByIdResponse OcViewMuteById (string channelUrl, string mutedUserId, string apiToken = default(string))
+        public OcViewMuteByIdResponse OcViewMuteById (string apiToken, string channelUrl, string mutedUserId)
         {
-             ApiResponse<OcViewMuteByIdResponse> localVarResponse = OcViewMuteByIdWithHttpInfo(channelUrl, mutedUserId, apiToken);
+             ApiResponse<OcViewMuteByIdResponse> localVarResponse = OcViewMuteByIdWithHttpInfo(apiToken, channelUrl, mutedUserId);
              return localVarResponse.Data;
         }
 
@@ -3990,12 +4098,15 @@ namespace sendbird_platform_sdk.Api
         /// View a mute ## View a mute  Checks if a user is muted in an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-mute - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of OcViewMuteByIdResponse</returns>
-        public ApiResponse<OcViewMuteByIdResponse> OcViewMuteByIdWithHttpInfo (string channelUrl, string mutedUserId, string apiToken = default(string))
+        public ApiResponse<OcViewMuteByIdResponse> OcViewMuteByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcViewMuteById");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcViewMuteById");
@@ -4051,14 +4162,14 @@ namespace sendbird_platform_sdk.Api
         /// View a mute ## View a mute  Checks if a user is muted in an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-mute - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcViewMuteByIdResponse</returns>
-        public async System.Threading.Tasks.Task<OcViewMuteByIdResponse> OcViewMuteByIdAsync (string channelUrl, string mutedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcViewMuteByIdResponse> OcViewMuteByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<OcViewMuteByIdResponse> localVarResponse = await OcViewMuteByIdWithHttpInfoAsync(channelUrl, mutedUserId, apiToken, cancellationToken);
+             ApiResponse<OcViewMuteByIdResponse> localVarResponse = await OcViewMuteByIdWithHttpInfoAsync(apiToken, channelUrl, mutedUserId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -4067,13 +4178,16 @@ namespace sendbird_platform_sdk.Api
         /// View a mute ## View a mute  Checks if a user is muted in an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-mute - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcViewMuteByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcViewMuteByIdResponse>> OcViewMuteByIdWithHttpInfoAsync (string channelUrl, string mutedUserId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcViewMuteByIdResponse>> OcViewMuteByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcViewMuteById");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
                 throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcViewMuteById");

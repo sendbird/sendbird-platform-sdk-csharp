@@ -32,10 +32,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;unique_id&#x60;      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>GetDetailedOpenRateOfAnnouncementByIdResponse</returns>
-        GetDetailedOpenRateOfAnnouncementByIdResponse GetDetailedOpenRateOfAnnouncementById (string uniqueId, string apiToken = default(string));
+        GetDetailedOpenRateOfAnnouncementByIdResponse GetDetailedOpenRateOfAnnouncementById (string apiToken, string uniqueId);
 
         /// <summary>
         /// Get detailed open rate of an announcement
@@ -44,10 +44,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;unique_id&#x60;      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of GetDetailedOpenRateOfAnnouncementByIdResponse</returns>
-        ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string));
+        ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfo (string apiToken, string uniqueId);
         /// <summary>
         /// Get detailed open rate of an announcement group
         /// </summary>
@@ -55,10 +55,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Get detailed open rate of an announcement group  Retrieves the detailed open rate information of an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement-group - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="announcementGroup"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
-        GetDetailedOpenRateOfAnnouncementGroupResponse GetDetailedOpenRateOfAnnouncementGroup (string announcementGroup, string apiToken = default(string));
+        GetDetailedOpenRateOfAnnouncementGroupResponse GetDetailedOpenRateOfAnnouncementGroup (string apiToken, string announcementGroup);
 
         /// <summary>
         /// Get detailed open rate of an announcement group
@@ -67,10 +67,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Get detailed open rate of an announcement group  Retrieves the detailed open rate information of an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement-group - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="announcementGroup"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
-        ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfo (string announcementGroup, string apiToken = default(string));
+        ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfo (string apiToken, string announcementGroup);
         /// <summary>
         /// Get detailed open status of an announcement
         /// </summary>
@@ -78,15 +78,15 @@ namespace sendbird_platform_sdk.Api
         /// ## Get detailed open status of an announcement  Retrieves the detailed open status information of a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-status-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="next"> (optional)</param>
         /// <param name="uniqueIds"> (optional)</param>
         /// <param name="channelUrls"> (optional)</param>
         /// <param name="hasOpened"> (optional)</param>
         /// <returns>GetDetailedOpenStatusOfAnnouncementByIdResponse</returns>
-        GetDetailedOpenStatusOfAnnouncementByIdResponse GetDetailedOpenStatusOfAnnouncementById (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?));
+        GetDetailedOpenStatusOfAnnouncementByIdResponse GetDetailedOpenStatusOfAnnouncementById (string apiToken, string uniqueId, int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?));
 
         /// <summary>
         /// Get detailed open status of an announcement
@@ -95,15 +95,15 @@ namespace sendbird_platform_sdk.Api
         /// ## Get detailed open status of an announcement  Retrieves the detailed open status information of a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-status-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="next"> (optional)</param>
         /// <param name="uniqueIds"> (optional)</param>
         /// <param name="channelUrls"> (optional)</param>
         /// <param name="hasOpened"> (optional)</param>
         /// <returns>ApiResponse of GetDetailedOpenStatusOfAnnouncementByIdResponse</returns>
-        ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?));
+        ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfo (string apiToken, string uniqueId, int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?));
         /// <summary>
         /// Get statistics - weekly
         /// </summary>
@@ -111,9 +111,9 @@ namespace sendbird_platform_sdk.Api
         /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>GetStatisticsResponse</returns>
-        GetStatisticsResponse GetStatistics (string apiToken = default(string));
+        GetStatisticsResponse GetStatistics (string apiToken);
 
         /// <summary>
         /// Get statistics - weekly
@@ -122,9 +122,9 @@ namespace sendbird_platform_sdk.Api
         /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of GetStatisticsResponse</returns>
-        ApiResponse<GetStatisticsResponse> GetStatisticsWithHttpInfo (string apiToken = default(string));
+        ApiResponse<GetStatisticsResponse> GetStatisticsWithHttpInfo (string apiToken);
         /// <summary>
         /// Get statistics - daily
         /// </summary>
@@ -132,16 +132,16 @@ namespace sendbird_platform_sdk.Api
         /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="startDate"></param>
         /// <param name="endDate"></param>
         /// <param name="startWeek"></param>
         /// <param name="endWeek"></param>
         /// <param name="startMonth"></param>
         /// <param name="endMonth"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <returns>GetStatisticsDailyResponse</returns>
-        GetStatisticsDailyResponse GetStatisticsDaily (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string));
+        GetStatisticsDailyResponse GetStatisticsDaily (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string));
 
         /// <summary>
         /// Get statistics - daily
@@ -150,16 +150,16 @@ namespace sendbird_platform_sdk.Api
         /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="startDate"></param>
         /// <param name="endDate"></param>
         /// <param name="startWeek"></param>
         /// <param name="endWeek"></param>
         /// <param name="startMonth"></param>
         /// <param name="endMonth"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <returns>ApiResponse of GetStatisticsDailyResponse</returns>
-        ApiResponse<GetStatisticsDailyResponse> GetStatisticsDailyWithHttpInfo (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string));
+        ApiResponse<GetStatisticsDailyResponse> GetStatisticsDailyWithHttpInfo (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string));
         /// <summary>
         /// Get statistics - monthly
         /// </summary>
@@ -167,9 +167,9 @@ namespace sendbird_platform_sdk.Api
         /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>GetStatisticsMonthlyResponse</returns>
-        GetStatisticsMonthlyResponse GetStatisticsMonthly (string apiToken = default(string));
+        GetStatisticsMonthlyResponse GetStatisticsMonthly (string apiToken);
 
         /// <summary>
         /// Get statistics - monthly
@@ -178,9 +178,9 @@ namespace sendbird_platform_sdk.Api
         /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of GetStatisticsMonthlyResponse</returns>
-        ApiResponse<GetStatisticsMonthlyResponse> GetStatisticsMonthlyWithHttpInfo (string apiToken = default(string));
+        ApiResponse<GetStatisticsMonthlyResponse> GetStatisticsMonthlyWithHttpInfo (string apiToken);
         /// <summary>
         /// List announcement groups
         /// </summary>
@@ -188,11 +188,11 @@ namespace sendbird_platform_sdk.Api
         /// ## List announcement groups  Retrieves a list of announcement groups.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcement-groups - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListAnnouncementGroupsResponse</returns>
-        ListAnnouncementGroupsResponse ListAnnouncementGroups (string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        ListAnnouncementGroupsResponse ListAnnouncementGroups (string apiToken, string token = default(string), int? limit = default(int?));
 
         /// <summary>
         /// List announcement groups
@@ -201,11 +201,11 @@ namespace sendbird_platform_sdk.Api
         /// ## List announcement groups  Retrieves a list of announcement groups.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcement-groups - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListAnnouncementGroupsResponse</returns>
-        ApiResponse<ListAnnouncementGroupsResponse> ListAnnouncementGroupsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?));
+        ApiResponse<ListAnnouncementGroupsResponse> ListAnnouncementGroupsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?));
         /// <summary>
         /// List announcements
         /// </summary>
@@ -213,14 +213,14 @@ namespace sendbird_platform_sdk.Api
         /// ## List announcements  Retrieves a list of announcements.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcements - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="order"> (optional)</param>
         /// <param name="status"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <returns>ListAnnouncementsResponse</returns>
-        ListAnnouncementsResponse ListAnnouncements (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string));
+        ListAnnouncementsResponse ListAnnouncements (string apiToken, string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string));
 
         /// <summary>
         /// List announcements
@@ -229,14 +229,14 @@ namespace sendbird_platform_sdk.Api
         /// ## List announcements  Retrieves a list of announcements.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcements - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="order"> (optional)</param>
         /// <param name="status"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <returns>ApiResponse of ListAnnouncementsResponse</returns>
-        ApiResponse<ListAnnouncementsResponse> ListAnnouncementsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string));
+        ApiResponse<ListAnnouncementsResponse> ListAnnouncementsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string));
         /// <summary>
         /// Schedule an announcement
         /// </summary>
@@ -244,10 +244,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Schedule an announcement  Schedules a new announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-schedule-an-announcement
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="scheduleAnnouncementData"> (optional)</param>
         /// <returns>ScheduleAnnouncementResponse</returns>
-        ScheduleAnnouncementResponse ScheduleAnnouncement (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData));
+        ScheduleAnnouncementResponse ScheduleAnnouncement (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData));
 
         /// <summary>
         /// Schedule an announcement
@@ -256,10 +256,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Schedule an announcement  Schedules a new announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-schedule-an-announcement
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="scheduleAnnouncementData"> (optional)</param>
         /// <returns>ApiResponse of ScheduleAnnouncementResponse</returns>
-        ApiResponse<ScheduleAnnouncementResponse> ScheduleAnnouncementWithHttpInfo (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData));
+        ApiResponse<ScheduleAnnouncementResponse> ScheduleAnnouncementWithHttpInfo (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData));
         /// <summary>
         /// Update an announcement
         /// </summary>
@@ -267,11 +267,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an announcement  Updates information of a specific announcement before it starts or changes the status of a specific announcement after it starts. For the 2 different applications, refer to the request body below.  &gt;__Note__: Updating information of an announcement is possible only when the announcement status is scheduled, indicating it hasn&#39;t started yet.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-update-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
         /// <returns>UpdateAnnouncementByIdResponse</returns>
-        UpdateAnnouncementByIdResponse UpdateAnnouncementById (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData));
+        UpdateAnnouncementByIdResponse UpdateAnnouncementById (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData));
 
         /// <summary>
         /// Update an announcement
@@ -280,11 +280,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an announcement  Updates information of a specific announcement before it starts or changes the status of a specific announcement after it starts. For the 2 different applications, refer to the request body below.  &gt;__Note__: Updating information of an announcement is possible only when the announcement status is scheduled, indicating it hasn&#39;t started yet.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-update-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
         /// <returns>ApiResponse of UpdateAnnouncementByIdResponse</returns>
-        ApiResponse<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData));
+        ApiResponse<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdWithHttpInfo (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData));
         /// <summary>
         /// View an announcement
         /// </summary>
@@ -292,10 +292,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View an announcement  Retrieves information on a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-view-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ViewAnnouncementByIdResponse</returns>
-        ViewAnnouncementByIdResponse ViewAnnouncementById (string uniqueId, string apiToken = default(string));
+        ViewAnnouncementByIdResponse ViewAnnouncementById (string apiToken, string uniqueId);
 
         /// <summary>
         /// View an announcement
@@ -304,10 +304,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View an announcement  Retrieves information on a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-view-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of ViewAnnouncementByIdResponse</returns>
-        ApiResponse<ViewAnnouncementByIdResponse> ViewAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string));
+        ApiResponse<ViewAnnouncementByIdResponse> ViewAnnouncementByIdWithHttpInfo (string apiToken, string uniqueId);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -317,11 +317,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;unique_id&#x60;      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetDetailedOpenRateOfAnnouncementByIdResponse</returns>
-        System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementByIdResponse> GetDetailedOpenRateOfAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementByIdResponse> GetDetailedOpenRateOfAnnouncementByIdAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get detailed open rate of an announcement
@@ -330,11 +330,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;unique_id&#x60;      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetDetailedOpenRateOfAnnouncementByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse>> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse>> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get detailed open rate of an announcement group
         /// </summary>
@@ -342,11 +342,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Get detailed open rate of an announcement group  Retrieves the detailed open rate information of an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement-group - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="announcementGroup"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
-        System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupAsync (string announcementGroup, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupAsync (string apiToken, string announcementGroup, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get detailed open rate of an announcement group
@@ -355,11 +355,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Get detailed open rate of an announcement group  Retrieves the detailed open rate information of an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement-group - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="announcementGroup"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetDetailedOpenRateOfAnnouncementGroupResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse>> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync (string announcementGroup, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse>> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync (string apiToken, string announcementGroup, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get detailed open status of an announcement
         /// </summary>
@@ -367,8 +367,8 @@ namespace sendbird_platform_sdk.Api
         /// ## Get detailed open status of an announcement  Retrieves the detailed open status information of a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-status-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="next"> (optional)</param>
         /// <param name="uniqueIds"> (optional)</param>
@@ -376,7 +376,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="hasOpened"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetDetailedOpenStatusOfAnnouncementByIdResponse</returns>
-        System.Threading.Tasks.Task<GetDetailedOpenStatusOfAnnouncementByIdResponse> GetDetailedOpenStatusOfAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GetDetailedOpenStatusOfAnnouncementByIdResponse> GetDetailedOpenStatusOfAnnouncementByIdAsync (string apiToken, string uniqueId, int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get detailed open status of an announcement
@@ -385,8 +385,8 @@ namespace sendbird_platform_sdk.Api
         /// ## Get detailed open status of an announcement  Retrieves the detailed open status information of a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-status-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="next"> (optional)</param>
         /// <param name="uniqueIds"> (optional)</param>
@@ -394,7 +394,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="hasOpened"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetDetailedOpenStatusOfAnnouncementByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse>> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse>> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get statistics - weekly
         /// </summary>
@@ -402,10 +402,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetStatisticsResponse</returns>
-        System.Threading.Tasks.Task<GetStatisticsResponse> GetStatisticsAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GetStatisticsResponse> GetStatisticsAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get statistics - weekly
@@ -414,10 +414,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetStatisticsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetStatisticsResponse>> GetStatisticsWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GetStatisticsResponse>> GetStatisticsWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get statistics - daily
         /// </summary>
@@ -425,17 +425,17 @@ namespace sendbird_platform_sdk.Api
         /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="startDate"></param>
         /// <param name="endDate"></param>
         /// <param name="startWeek"></param>
         /// <param name="endWeek"></param>
         /// <param name="startMonth"></param>
         /// <param name="endMonth"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetStatisticsDailyResponse</returns>
-        System.Threading.Tasks.Task<GetStatisticsDailyResponse> GetStatisticsDailyAsync (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GetStatisticsDailyResponse> GetStatisticsDailyAsync (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get statistics - daily
@@ -444,17 +444,17 @@ namespace sendbird_platform_sdk.Api
         /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="startDate"></param>
         /// <param name="endDate"></param>
         /// <param name="startWeek"></param>
         /// <param name="endWeek"></param>
         /// <param name="startMonth"></param>
         /// <param name="endMonth"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetStatisticsDailyResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetStatisticsDailyResponse>> GetStatisticsDailyWithHttpInfoAsync (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GetStatisticsDailyResponse>> GetStatisticsDailyWithHttpInfoAsync (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get statistics - monthly
         /// </summary>
@@ -462,10 +462,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetStatisticsMonthlyResponse</returns>
-        System.Threading.Tasks.Task<GetStatisticsMonthlyResponse> GetStatisticsMonthlyAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GetStatisticsMonthlyResponse> GetStatisticsMonthlyAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get statistics - monthly
@@ -474,10 +474,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetStatisticsMonthlyResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetStatisticsMonthlyResponse>> GetStatisticsMonthlyWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GetStatisticsMonthlyResponse>> GetStatisticsMonthlyWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List announcement groups
         /// </summary>
@@ -485,12 +485,12 @@ namespace sendbird_platform_sdk.Api
         /// ## List announcement groups  Retrieves a list of announcement groups.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcement-groups - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListAnnouncementGroupsResponse</returns>
-        System.Threading.Tasks.Task<ListAnnouncementGroupsResponse> ListAnnouncementGroupsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListAnnouncementGroupsResponse> ListAnnouncementGroupsAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List announcement groups
@@ -499,12 +499,12 @@ namespace sendbird_platform_sdk.Api
         /// ## List announcement groups  Retrieves a list of announcement groups.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcement-groups - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListAnnouncementGroupsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListAnnouncementGroupsResponse>> ListAnnouncementGroupsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListAnnouncementGroupsResponse>> ListAnnouncementGroupsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List announcements
         /// </summary>
@@ -512,7 +512,7 @@ namespace sendbird_platform_sdk.Api
         /// ## List announcements  Retrieves a list of announcements.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcements - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="order"> (optional)</param>
@@ -520,7 +520,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListAnnouncementsResponse</returns>
-        System.Threading.Tasks.Task<ListAnnouncementsResponse> ListAnnouncementsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListAnnouncementsResponse> ListAnnouncementsAsync (string apiToken, string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List announcements
@@ -529,7 +529,7 @@ namespace sendbird_platform_sdk.Api
         /// ## List announcements  Retrieves a list of announcements.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcements - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="order"> (optional)</param>
@@ -537,7 +537,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListAnnouncementsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListAnnouncementsResponse>> ListAnnouncementsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListAnnouncementsResponse>> ListAnnouncementsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Schedule an announcement
         /// </summary>
@@ -545,11 +545,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Schedule an announcement  Schedules a new announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-schedule-an-announcement
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="scheduleAnnouncementData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ScheduleAnnouncementResponse</returns>
-        System.Threading.Tasks.Task<ScheduleAnnouncementResponse> ScheduleAnnouncementAsync (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ScheduleAnnouncementResponse> ScheduleAnnouncementAsync (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Schedule an announcement
@@ -558,11 +558,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Schedule an announcement  Schedules a new announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-schedule-an-announcement
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="scheduleAnnouncementData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ScheduleAnnouncementResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ScheduleAnnouncementResponse>> ScheduleAnnouncementWithHttpInfoAsync (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ScheduleAnnouncementResponse>> ScheduleAnnouncementWithHttpInfoAsync (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update an announcement
         /// </summary>
@@ -570,12 +570,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an announcement  Updates information of a specific announcement before it starts or changes the status of a specific announcement after it starts. For the 2 different applications, refer to the request body below.  &gt;__Note__: Updating information of an announcement is possible only when the announcement status is scheduled, indicating it hasn&#39;t started yet.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-update-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateAnnouncementByIdResponse</returns>
-        System.Threading.Tasks.Task<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdAsync (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update an announcement
@@ -584,12 +584,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an announcement  Updates information of a specific announcement before it starts or changes the status of a specific announcement after it starts. For the 2 different applications, refer to the request body below.  &gt;__Note__: Updating information of an announcement is possible only when the announcement status is scheduled, indicating it hasn&#39;t started yet.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-update-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateAnnouncementByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UpdateAnnouncementByIdResponse>> UpdateAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<UpdateAnnouncementByIdResponse>> UpdateAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View an announcement
         /// </summary>
@@ -597,11 +597,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View an announcement  Retrieves information on a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-view-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewAnnouncementByIdResponse</returns>
-        System.Threading.Tasks.Task<ViewAnnouncementByIdResponse> ViewAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewAnnouncementByIdResponse> ViewAnnouncementByIdAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View an announcement
@@ -610,11 +610,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View an announcement  Retrieves information on a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-view-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewAnnouncementByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewAnnouncementByIdResponse>> ViewAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewAnnouncementByIdResponse>> ViewAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -730,12 +730,12 @@ namespace sendbird_platform_sdk.Api
         /// Get detailed open rate of an announcement ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;unique_id&#x60;      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>GetDetailedOpenRateOfAnnouncementByIdResponse</returns>
-        public GetDetailedOpenRateOfAnnouncementByIdResponse GetDetailedOpenRateOfAnnouncementById (string uniqueId, string apiToken = default(string))
+        public GetDetailedOpenRateOfAnnouncementByIdResponse GetDetailedOpenRateOfAnnouncementById (string apiToken, string uniqueId)
         {
-             ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse> localVarResponse = GetDetailedOpenRateOfAnnouncementByIdWithHttpInfo(uniqueId, apiToken);
+             ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse> localVarResponse = GetDetailedOpenRateOfAnnouncementByIdWithHttpInfo(apiToken, uniqueId);
              return localVarResponse.Data;
         }
 
@@ -743,11 +743,14 @@ namespace sendbird_platform_sdk.Api
         /// Get detailed open rate of an announcement ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;unique_id&#x60;      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of GetDetailedOpenRateOfAnnouncementByIdResponse</returns>
-        public ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string))
+        public ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfo (string apiToken, string uniqueId)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->GetDetailedOpenRateOfAnnouncementById");
             // verify the required parameter 'uniqueId' is set
             if (uniqueId == null)
                 throw new ApiException(400, "Missing required parameter 'uniqueId' when calling AnnouncementsApi->GetDetailedOpenRateOfAnnouncementById");
@@ -799,13 +802,13 @@ namespace sendbird_platform_sdk.Api
         /// Get detailed open rate of an announcement ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;unique_id&#x60;      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetDetailedOpenRateOfAnnouncementByIdResponse</returns>
-        public async System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementByIdResponse> GetDetailedOpenRateOfAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementByIdResponse> GetDetailedOpenRateOfAnnouncementByIdAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse> localVarResponse = await GetDetailedOpenRateOfAnnouncementByIdWithHttpInfoAsync(uniqueId, apiToken, cancellationToken);
+             ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse> localVarResponse = await GetDetailedOpenRateOfAnnouncementByIdWithHttpInfoAsync(apiToken, uniqueId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -814,12 +817,15 @@ namespace sendbird_platform_sdk.Api
         /// Get detailed open rate of an announcement ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;unique_id&#x60;      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetDetailedOpenRateOfAnnouncementByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse>> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse>> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->GetDetailedOpenRateOfAnnouncementById");
             // verify the required parameter 'uniqueId' is set
             if (uniqueId == null)
                 throw new ApiException(400, "Missing required parameter 'uniqueId' when calling AnnouncementsApi->GetDetailedOpenRateOfAnnouncementById");
@@ -871,12 +877,12 @@ namespace sendbird_platform_sdk.Api
         /// Get detailed open rate of an announcement group ## Get detailed open rate of an announcement group  Retrieves the detailed open rate information of an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement-group - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="announcementGroup"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
-        public GetDetailedOpenRateOfAnnouncementGroupResponse GetDetailedOpenRateOfAnnouncementGroup (string announcementGroup, string apiToken = default(string))
+        public GetDetailedOpenRateOfAnnouncementGroupResponse GetDetailedOpenRateOfAnnouncementGroup (string apiToken, string announcementGroup)
         {
-             ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse> localVarResponse = GetDetailedOpenRateOfAnnouncementGroupWithHttpInfo(announcementGroup, apiToken);
+             ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse> localVarResponse = GetDetailedOpenRateOfAnnouncementGroupWithHttpInfo(apiToken, announcementGroup);
              return localVarResponse.Data;
         }
 
@@ -884,11 +890,14 @@ namespace sendbird_platform_sdk.Api
         /// Get detailed open rate of an announcement group ## Get detailed open rate of an announcement group  Retrieves the detailed open rate information of an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement-group - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="announcementGroup"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
-        public ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfo (string announcementGroup, string apiToken = default(string))
+        public ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfo (string apiToken, string announcementGroup)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->GetDetailedOpenRateOfAnnouncementGroup");
             // verify the required parameter 'announcementGroup' is set
             if (announcementGroup == null)
                 throw new ApiException(400, "Missing required parameter 'announcementGroup' when calling AnnouncementsApi->GetDetailedOpenRateOfAnnouncementGroup");
@@ -940,13 +949,13 @@ namespace sendbird_platform_sdk.Api
         /// Get detailed open rate of an announcement group ## Get detailed open rate of an announcement group  Retrieves the detailed open rate information of an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement-group - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="announcementGroup"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
-        public async System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupAsync (string announcementGroup, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupAsync (string apiToken, string announcementGroup, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse> localVarResponse = await GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync(announcementGroup, apiToken, cancellationToken);
+             ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse> localVarResponse = await GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync(apiToken, announcementGroup, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -955,12 +964,15 @@ namespace sendbird_platform_sdk.Api
         /// Get detailed open rate of an announcement group ## Get detailed open rate of an announcement group  Retrieves the detailed open rate information of an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement-group - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="announcementGroup"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetDetailedOpenRateOfAnnouncementGroupResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse>> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync (string announcementGroup, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse>> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync (string apiToken, string announcementGroup, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->GetDetailedOpenRateOfAnnouncementGroup");
             // verify the required parameter 'announcementGroup' is set
             if (announcementGroup == null)
                 throw new ApiException(400, "Missing required parameter 'announcementGroup' when calling AnnouncementsApi->GetDetailedOpenRateOfAnnouncementGroup");
@@ -1012,17 +1024,17 @@ namespace sendbird_platform_sdk.Api
         /// Get detailed open status of an announcement ## Get detailed open status of an announcement  Retrieves the detailed open status information of a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-status-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="next"> (optional)</param>
         /// <param name="uniqueIds"> (optional)</param>
         /// <param name="channelUrls"> (optional)</param>
         /// <param name="hasOpened"> (optional)</param>
         /// <returns>GetDetailedOpenStatusOfAnnouncementByIdResponse</returns>
-        public GetDetailedOpenStatusOfAnnouncementByIdResponse GetDetailedOpenStatusOfAnnouncementById (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?))
+        public GetDetailedOpenStatusOfAnnouncementByIdResponse GetDetailedOpenStatusOfAnnouncementById (string apiToken, string uniqueId, int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?))
         {
-             ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse> localVarResponse = GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfo(uniqueId, apiToken, limit, next, uniqueIds, channelUrls, hasOpened);
+             ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse> localVarResponse = GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfo(apiToken, uniqueId, limit, next, uniqueIds, channelUrls, hasOpened);
              return localVarResponse.Data;
         }
 
@@ -1030,16 +1042,19 @@ namespace sendbird_platform_sdk.Api
         /// Get detailed open status of an announcement ## Get detailed open status of an announcement  Retrieves the detailed open status information of a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-status-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="next"> (optional)</param>
         /// <param name="uniqueIds"> (optional)</param>
         /// <param name="channelUrls"> (optional)</param>
         /// <param name="hasOpened"> (optional)</param>
         /// <returns>ApiResponse of GetDetailedOpenStatusOfAnnouncementByIdResponse</returns>
-        public ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?))
+        public ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfo (string apiToken, string uniqueId, int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->GetDetailedOpenStatusOfAnnouncementById");
             // verify the required parameter 'uniqueId' is set
             if (uniqueId == null)
                 throw new ApiException(400, "Missing required parameter 'uniqueId' when calling AnnouncementsApi->GetDetailedOpenStatusOfAnnouncementById");
@@ -1096,8 +1111,8 @@ namespace sendbird_platform_sdk.Api
         /// Get detailed open status of an announcement ## Get detailed open status of an announcement  Retrieves the detailed open status information of a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-status-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="next"> (optional)</param>
         /// <param name="uniqueIds"> (optional)</param>
@@ -1105,9 +1120,9 @@ namespace sendbird_platform_sdk.Api
         /// <param name="hasOpened"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetDetailedOpenStatusOfAnnouncementByIdResponse</returns>
-        public async System.Threading.Tasks.Task<GetDetailedOpenStatusOfAnnouncementByIdResponse> GetDetailedOpenStatusOfAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GetDetailedOpenStatusOfAnnouncementByIdResponse> GetDetailedOpenStatusOfAnnouncementByIdAsync (string apiToken, string uniqueId, int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse> localVarResponse = await GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfoAsync(uniqueId, apiToken, limit, next, uniqueIds, channelUrls, hasOpened, cancellationToken);
+             ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse> localVarResponse = await GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfoAsync(apiToken, uniqueId, limit, next, uniqueIds, channelUrls, hasOpened, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1116,8 +1131,8 @@ namespace sendbird_platform_sdk.Api
         /// Get detailed open status of an announcement ## Get detailed open status of an announcement  Retrieves the detailed open status information of a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-status-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="next"> (optional)</param>
         /// <param name="uniqueIds"> (optional)</param>
@@ -1125,8 +1140,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="hasOpened"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetDetailedOpenStatusOfAnnouncementByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse>> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse>> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->GetDetailedOpenStatusOfAnnouncementById");
             // verify the required parameter 'uniqueId' is set
             if (uniqueId == null)
                 throw new ApiException(400, "Missing required parameter 'uniqueId' when calling AnnouncementsApi->GetDetailedOpenStatusOfAnnouncementById");
@@ -1183,9 +1201,9 @@ namespace sendbird_platform_sdk.Api
         /// Get statistics - weekly ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>GetStatisticsResponse</returns>
-        public GetStatisticsResponse GetStatistics (string apiToken = default(string))
+        public GetStatisticsResponse GetStatistics (string apiToken)
         {
              ApiResponse<GetStatisticsResponse> localVarResponse = GetStatisticsWithHttpInfo(apiToken);
              return localVarResponse.Data;
@@ -1195,10 +1213,13 @@ namespace sendbird_platform_sdk.Api
         /// Get statistics - weekly ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of GetStatisticsResponse</returns>
-        public ApiResponse<GetStatisticsResponse> GetStatisticsWithHttpInfo (string apiToken = default(string))
+        public ApiResponse<GetStatisticsResponse> GetStatisticsWithHttpInfo (string apiToken)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->GetStatistics");
 
             var localVarPath = "/v3/announcement_stats/weekly";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1246,10 +1267,10 @@ namespace sendbird_platform_sdk.Api
         /// Get statistics - weekly ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetStatisticsResponse</returns>
-        public async System.Threading.Tasks.Task<GetStatisticsResponse> GetStatisticsAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GetStatisticsResponse> GetStatisticsAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<GetStatisticsResponse> localVarResponse = await GetStatisticsWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -1260,11 +1281,14 @@ namespace sendbird_platform_sdk.Api
         /// Get statistics - weekly ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetStatisticsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GetStatisticsResponse>> GetStatisticsWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GetStatisticsResponse>> GetStatisticsWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->GetStatistics");
 
             var localVarPath = "/v3/announcement_stats/weekly";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1312,18 +1336,18 @@ namespace sendbird_platform_sdk.Api
         /// Get statistics - daily ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="startDate"></param>
         /// <param name="endDate"></param>
         /// <param name="startWeek"></param>
         /// <param name="endWeek"></param>
         /// <param name="startMonth"></param>
         /// <param name="endMonth"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <returns>GetStatisticsDailyResponse</returns>
-        public GetStatisticsDailyResponse GetStatisticsDaily (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string))
+        public GetStatisticsDailyResponse GetStatisticsDaily (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string))
         {
-             ApiResponse<GetStatisticsDailyResponse> localVarResponse = GetStatisticsDailyWithHttpInfo(startDate, endDate, startWeek, endWeek, startMonth, endMonth, apiToken, announcementGroup);
+             ApiResponse<GetStatisticsDailyResponse> localVarResponse = GetStatisticsDailyWithHttpInfo(apiToken, startDate, endDate, startWeek, endWeek, startMonth, endMonth, announcementGroup);
              return localVarResponse.Data;
         }
 
@@ -1331,17 +1355,20 @@ namespace sendbird_platform_sdk.Api
         /// Get statistics - daily ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="startDate"></param>
         /// <param name="endDate"></param>
         /// <param name="startWeek"></param>
         /// <param name="endWeek"></param>
         /// <param name="startMonth"></param>
         /// <param name="endMonth"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <returns>ApiResponse of GetStatisticsDailyResponse</returns>
-        public ApiResponse<GetStatisticsDailyResponse> GetStatisticsDailyWithHttpInfo (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string))
+        public ApiResponse<GetStatisticsDailyResponse> GetStatisticsDailyWithHttpInfo (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->GetStatisticsDaily");
             // verify the required parameter 'startDate' is set
             if (startDate == null)
                 throw new ApiException(400, "Missing required parameter 'startDate' when calling AnnouncementsApi->GetStatisticsDaily");
@@ -1414,19 +1441,19 @@ namespace sendbird_platform_sdk.Api
         /// Get statistics - daily ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="startDate"></param>
         /// <param name="endDate"></param>
         /// <param name="startWeek"></param>
         /// <param name="endWeek"></param>
         /// <param name="startMonth"></param>
         /// <param name="endMonth"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetStatisticsDailyResponse</returns>
-        public async System.Threading.Tasks.Task<GetStatisticsDailyResponse> GetStatisticsDailyAsync (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GetStatisticsDailyResponse> GetStatisticsDailyAsync (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<GetStatisticsDailyResponse> localVarResponse = await GetStatisticsDailyWithHttpInfoAsync(startDate, endDate, startWeek, endWeek, startMonth, endMonth, apiToken, announcementGroup, cancellationToken);
+             ApiResponse<GetStatisticsDailyResponse> localVarResponse = await GetStatisticsDailyWithHttpInfoAsync(apiToken, startDate, endDate, startWeek, endWeek, startMonth, endMonth, announcementGroup, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1435,18 +1462,21 @@ namespace sendbird_platform_sdk.Api
         /// Get statistics - daily ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="startDate"></param>
         /// <param name="endDate"></param>
         /// <param name="startWeek"></param>
         /// <param name="endWeek"></param>
         /// <param name="startMonth"></param>
         /// <param name="endMonth"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetStatisticsDailyResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GetStatisticsDailyResponse>> GetStatisticsDailyWithHttpInfoAsync (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GetStatisticsDailyResponse>> GetStatisticsDailyWithHttpInfoAsync (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->GetStatisticsDaily");
             // verify the required parameter 'startDate' is set
             if (startDate == null)
                 throw new ApiException(400, "Missing required parameter 'startDate' when calling AnnouncementsApi->GetStatisticsDaily");
@@ -1519,9 +1549,9 @@ namespace sendbird_platform_sdk.Api
         /// Get statistics - monthly ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>GetStatisticsMonthlyResponse</returns>
-        public GetStatisticsMonthlyResponse GetStatisticsMonthly (string apiToken = default(string))
+        public GetStatisticsMonthlyResponse GetStatisticsMonthly (string apiToken)
         {
              ApiResponse<GetStatisticsMonthlyResponse> localVarResponse = GetStatisticsMonthlyWithHttpInfo(apiToken);
              return localVarResponse.Data;
@@ -1531,10 +1561,13 @@ namespace sendbird_platform_sdk.Api
         /// Get statistics - monthly ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of GetStatisticsMonthlyResponse</returns>
-        public ApiResponse<GetStatisticsMonthlyResponse> GetStatisticsMonthlyWithHttpInfo (string apiToken = default(string))
+        public ApiResponse<GetStatisticsMonthlyResponse> GetStatisticsMonthlyWithHttpInfo (string apiToken)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->GetStatisticsMonthly");
 
             var localVarPath = "/v3/announcement_stats/monthly";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1582,10 +1615,10 @@ namespace sendbird_platform_sdk.Api
         /// Get statistics - monthly ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetStatisticsMonthlyResponse</returns>
-        public async System.Threading.Tasks.Task<GetStatisticsMonthlyResponse> GetStatisticsMonthlyAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GetStatisticsMonthlyResponse> GetStatisticsMonthlyAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<GetStatisticsMonthlyResponse> localVarResponse = await GetStatisticsMonthlyWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -1596,11 +1629,14 @@ namespace sendbird_platform_sdk.Api
         /// Get statistics - monthly ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetStatisticsMonthlyResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GetStatisticsMonthlyResponse>> GetStatisticsMonthlyWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GetStatisticsMonthlyResponse>> GetStatisticsMonthlyWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->GetStatisticsMonthly");
 
             var localVarPath = "/v3/announcement_stats/monthly";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1648,11 +1684,11 @@ namespace sendbird_platform_sdk.Api
         /// List announcement groups ## List announcement groups  Retrieves a list of announcement groups.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcement-groups - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListAnnouncementGroupsResponse</returns>
-        public ListAnnouncementGroupsResponse ListAnnouncementGroups (string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public ListAnnouncementGroupsResponse ListAnnouncementGroups (string apiToken, string token = default(string), int? limit = default(int?))
         {
              ApiResponse<ListAnnouncementGroupsResponse> localVarResponse = ListAnnouncementGroupsWithHttpInfo(apiToken, token, limit);
              return localVarResponse.Data;
@@ -1662,12 +1698,15 @@ namespace sendbird_platform_sdk.Api
         /// List announcement groups ## List announcement groups  Retrieves a list of announcement groups.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcement-groups - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListAnnouncementGroupsResponse</returns>
-        public ApiResponse<ListAnnouncementGroupsResponse> ListAnnouncementGroupsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?))
+        public ApiResponse<ListAnnouncementGroupsResponse> ListAnnouncementGroupsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->ListAnnouncementGroups");
 
             var localVarPath = "/v3/announcement_group";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1717,12 +1756,12 @@ namespace sendbird_platform_sdk.Api
         /// List announcement groups ## List announcement groups  Retrieves a list of announcement groups.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcement-groups - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListAnnouncementGroupsResponse</returns>
-        public async System.Threading.Tasks.Task<ListAnnouncementGroupsResponse> ListAnnouncementGroupsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListAnnouncementGroupsResponse> ListAnnouncementGroupsAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<ListAnnouncementGroupsResponse> localVarResponse = await ListAnnouncementGroupsWithHttpInfoAsync(apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
@@ -1733,13 +1772,16 @@ namespace sendbird_platform_sdk.Api
         /// List announcement groups ## List announcement groups  Retrieves a list of announcement groups.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcement-groups - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListAnnouncementGroupsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListAnnouncementGroupsResponse>> ListAnnouncementGroupsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListAnnouncementGroupsResponse>> ListAnnouncementGroupsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->ListAnnouncementGroups");
 
             var localVarPath = "/v3/announcement_group";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1789,14 +1831,14 @@ namespace sendbird_platform_sdk.Api
         /// List announcements ## List announcements  Retrieves a list of announcements.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcements - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="order"> (optional)</param>
         /// <param name="status"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <returns>ListAnnouncementsResponse</returns>
-        public ListAnnouncementsResponse ListAnnouncements (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string))
+        public ListAnnouncementsResponse ListAnnouncements (string apiToken, string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string))
         {
              ApiResponse<ListAnnouncementsResponse> localVarResponse = ListAnnouncementsWithHttpInfo(apiToken, token, limit, order, status, announcementGroup);
              return localVarResponse.Data;
@@ -1806,15 +1848,18 @@ namespace sendbird_platform_sdk.Api
         /// List announcements ## List announcements  Retrieves a list of announcements.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcements - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="order"> (optional)</param>
         /// <param name="status"> (optional)</param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <returns>ApiResponse of ListAnnouncementsResponse</returns>
-        public ApiResponse<ListAnnouncementsResponse> ListAnnouncementsWithHttpInfo (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string))
+        public ApiResponse<ListAnnouncementsResponse> ListAnnouncementsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->ListAnnouncements");
 
             var localVarPath = "/v3/announcements";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1867,7 +1912,7 @@ namespace sendbird_platform_sdk.Api
         /// List announcements ## List announcements  Retrieves a list of announcements.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcements - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="order"> (optional)</param>
@@ -1875,7 +1920,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListAnnouncementsResponse</returns>
-        public async System.Threading.Tasks.Task<ListAnnouncementsResponse> ListAnnouncementsAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListAnnouncementsResponse> ListAnnouncementsAsync (string apiToken, string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<ListAnnouncementsResponse> localVarResponse = await ListAnnouncementsWithHttpInfoAsync(apiToken, token, limit, order, status, announcementGroup, cancellationToken);
              return localVarResponse.Data;
@@ -1886,7 +1931,7 @@ namespace sendbird_platform_sdk.Api
         /// List announcements ## List announcements  Retrieves a list of announcements.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcements - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <param name="order"> (optional)</param>
@@ -1894,8 +1939,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListAnnouncementsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListAnnouncementsResponse>> ListAnnouncementsWithHttpInfoAsync (string apiToken = default(string), string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListAnnouncementsResponse>> ListAnnouncementsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), string order = default(string), string status = default(string), string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->ListAnnouncements");
 
             var localVarPath = "/v3/announcements";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1948,10 +1996,10 @@ namespace sendbird_platform_sdk.Api
         /// Schedule an announcement ## Schedule an announcement  Schedules a new announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-schedule-an-announcement
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="scheduleAnnouncementData"> (optional)</param>
         /// <returns>ScheduleAnnouncementResponse</returns>
-        public ScheduleAnnouncementResponse ScheduleAnnouncement (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData))
+        public ScheduleAnnouncementResponse ScheduleAnnouncement (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData))
         {
              ApiResponse<ScheduleAnnouncementResponse> localVarResponse = ScheduleAnnouncementWithHttpInfo(apiToken, scheduleAnnouncementData);
              return localVarResponse.Data;
@@ -1961,11 +2009,14 @@ namespace sendbird_platform_sdk.Api
         /// Schedule an announcement ## Schedule an announcement  Schedules a new announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-schedule-an-announcement
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="scheduleAnnouncementData"> (optional)</param>
         /// <returns>ApiResponse of ScheduleAnnouncementResponse</returns>
-        public ApiResponse<ScheduleAnnouncementResponse> ScheduleAnnouncementWithHttpInfo (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData))
+        public ApiResponse<ScheduleAnnouncementResponse> ScheduleAnnouncementWithHttpInfo (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->ScheduleAnnouncement");
 
             var localVarPath = "/v3/announcements";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2022,11 +2073,11 @@ namespace sendbird_platform_sdk.Api
         /// Schedule an announcement ## Schedule an announcement  Schedules a new announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-schedule-an-announcement
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="scheduleAnnouncementData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ScheduleAnnouncementResponse</returns>
-        public async System.Threading.Tasks.Task<ScheduleAnnouncementResponse> ScheduleAnnouncementAsync (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ScheduleAnnouncementResponse> ScheduleAnnouncementAsync (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<ScheduleAnnouncementResponse> localVarResponse = await ScheduleAnnouncementWithHttpInfoAsync(apiToken, scheduleAnnouncementData, cancellationToken);
              return localVarResponse.Data;
@@ -2037,12 +2088,15 @@ namespace sendbird_platform_sdk.Api
         /// Schedule an announcement ## Schedule an announcement  Schedules a new announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-schedule-an-announcement
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="scheduleAnnouncementData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ScheduleAnnouncementResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ScheduleAnnouncementResponse>> ScheduleAnnouncementWithHttpInfoAsync (string apiToken = default(string), ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ScheduleAnnouncementResponse>> ScheduleAnnouncementWithHttpInfoAsync (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->ScheduleAnnouncement");
 
             var localVarPath = "/v3/announcements";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2099,13 +2153,13 @@ namespace sendbird_platform_sdk.Api
         /// Update an announcement ## Update an announcement  Updates information of a specific announcement before it starts or changes the status of a specific announcement after it starts. For the 2 different applications, refer to the request body below.  &gt;__Note__: Updating information of an announcement is possible only when the announcement status is scheduled, indicating it hasn&#39;t started yet.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-update-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
         /// <returns>UpdateAnnouncementByIdResponse</returns>
-        public UpdateAnnouncementByIdResponse UpdateAnnouncementById (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData))
+        public UpdateAnnouncementByIdResponse UpdateAnnouncementById (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData))
         {
-             ApiResponse<UpdateAnnouncementByIdResponse> localVarResponse = UpdateAnnouncementByIdWithHttpInfo(uniqueId, apiToken, updateAnnouncementByIdData);
+             ApiResponse<UpdateAnnouncementByIdResponse> localVarResponse = UpdateAnnouncementByIdWithHttpInfo(apiToken, uniqueId, updateAnnouncementByIdData);
              return localVarResponse.Data;
         }
 
@@ -2113,12 +2167,15 @@ namespace sendbird_platform_sdk.Api
         /// Update an announcement ## Update an announcement  Updates information of a specific announcement before it starts or changes the status of a specific announcement after it starts. For the 2 different applications, refer to the request body below.  &gt;__Note__: Updating information of an announcement is possible only when the announcement status is scheduled, indicating it hasn&#39;t started yet.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-update-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
         /// <returns>ApiResponse of UpdateAnnouncementByIdResponse</returns>
-        public ApiResponse<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData))
+        public ApiResponse<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdWithHttpInfo (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->UpdateAnnouncementById");
             // verify the required parameter 'uniqueId' is set
             if (uniqueId == null)
                 throw new ApiException(400, "Missing required parameter 'uniqueId' when calling AnnouncementsApi->UpdateAnnouncementById");
@@ -2179,14 +2236,14 @@ namespace sendbird_platform_sdk.Api
         /// Update an announcement ## Update an announcement  Updates information of a specific announcement before it starts or changes the status of a specific announcement after it starts. For the 2 different applications, refer to the request body below.  &gt;__Note__: Updating information of an announcement is possible only when the announcement status is scheduled, indicating it hasn&#39;t started yet.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-update-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateAnnouncementByIdResponse</returns>
-        public async System.Threading.Tasks.Task<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdAsync (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<UpdateAnnouncementByIdResponse> localVarResponse = await UpdateAnnouncementByIdWithHttpInfoAsync(uniqueId, apiToken, updateAnnouncementByIdData, cancellationToken);
+             ApiResponse<UpdateAnnouncementByIdResponse> localVarResponse = await UpdateAnnouncementByIdWithHttpInfoAsync(apiToken, uniqueId, updateAnnouncementByIdData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2195,13 +2252,16 @@ namespace sendbird_platform_sdk.Api
         /// Update an announcement ## Update an announcement  Updates information of a specific announcement before it starts or changes the status of a specific announcement after it starts. For the 2 different applications, refer to the request body below.  &gt;__Note__: Updating information of an announcement is possible only when the announcement status is scheduled, indicating it hasn&#39;t started yet.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-update-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateAnnouncementByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UpdateAnnouncementByIdResponse>> UpdateAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateAnnouncementByIdResponse>> UpdateAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->UpdateAnnouncementById");
             // verify the required parameter 'uniqueId' is set
             if (uniqueId == null)
                 throw new ApiException(400, "Missing required parameter 'uniqueId' when calling AnnouncementsApi->UpdateAnnouncementById");
@@ -2262,12 +2322,12 @@ namespace sendbird_platform_sdk.Api
         /// View an announcement ## View an announcement  Retrieves information on a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-view-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ViewAnnouncementByIdResponse</returns>
-        public ViewAnnouncementByIdResponse ViewAnnouncementById (string uniqueId, string apiToken = default(string))
+        public ViewAnnouncementByIdResponse ViewAnnouncementById (string apiToken, string uniqueId)
         {
-             ApiResponse<ViewAnnouncementByIdResponse> localVarResponse = ViewAnnouncementByIdWithHttpInfo(uniqueId, apiToken);
+             ApiResponse<ViewAnnouncementByIdResponse> localVarResponse = ViewAnnouncementByIdWithHttpInfo(apiToken, uniqueId);
              return localVarResponse.Data;
         }
 
@@ -2275,11 +2335,14 @@ namespace sendbird_platform_sdk.Api
         /// View an announcement ## View an announcement  Retrieves information on a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-view-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of ViewAnnouncementByIdResponse</returns>
-        public ApiResponse<ViewAnnouncementByIdResponse> ViewAnnouncementByIdWithHttpInfo (string uniqueId, string apiToken = default(string))
+        public ApiResponse<ViewAnnouncementByIdResponse> ViewAnnouncementByIdWithHttpInfo (string apiToken, string uniqueId)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->ViewAnnouncementById");
             // verify the required parameter 'uniqueId' is set
             if (uniqueId == null)
                 throw new ApiException(400, "Missing required parameter 'uniqueId' when calling AnnouncementsApi->ViewAnnouncementById");
@@ -2331,13 +2394,13 @@ namespace sendbird_platform_sdk.Api
         /// View an announcement ## View an announcement  Retrieves information on a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-view-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewAnnouncementByIdResponse</returns>
-        public async System.Threading.Tasks.Task<ViewAnnouncementByIdResponse> ViewAnnouncementByIdAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewAnnouncementByIdResponse> ViewAnnouncementByIdAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ViewAnnouncementByIdResponse> localVarResponse = await ViewAnnouncementByIdWithHttpInfoAsync(uniqueId, apiToken, cancellationToken);
+             ApiResponse<ViewAnnouncementByIdResponse> localVarResponse = await ViewAnnouncementByIdWithHttpInfoAsync(apiToken, uniqueId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2346,12 +2409,15 @@ namespace sendbird_platform_sdk.Api
         /// View an announcement ## View an announcement  Retrieves information on a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-view-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="uniqueId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewAnnouncementByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewAnnouncementByIdResponse>> ViewAnnouncementByIdWithHttpInfoAsync (string uniqueId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewAnnouncementByIdResponse>> ViewAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementsApi->ViewAnnouncementById");
             // verify the required parameter 'uniqueId' is set
             if (uniqueId == null)
                 throw new ApiException(400, "Missing required parameter 'uniqueId' when calling AnnouncementsApi->ViewAnnouncementById");

@@ -45,7 +45,7 @@ Method | HTTP request | Description
 
 ## AddRegistrationOrDeviceToken
 
-> AddRegistrationOrDeviceTokenResponse AddRegistrationOrDeviceToken (string userId, string tokenType, string apiToken = null, AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = null)
+> AddRegistrationOrDeviceTokenResponse AddRegistrationOrDeviceToken (string apiToken, string userId, string tokenType, AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = null)
 
 Add a registration or device token
 
@@ -68,15 +68,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
             var tokenType = tokenType_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var addRegistrationOrDeviceTokenData = new AddRegistrationOrDeviceTokenData(); // AddRegistrationOrDeviceTokenData |  (optional) 
 
             try
             {
                 // Add a registration or device token
-                AddRegistrationOrDeviceTokenResponse result = apiInstance.AddRegistrationOrDeviceToken(userId, tokenType, apiToken, addRegistrationOrDeviceTokenData);
+                AddRegistrationOrDeviceTokenResponse result = apiInstance.AddRegistrationOrDeviceToken(apiToken, userId, tokenType, addRegistrationOrDeviceTokenData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -95,9 +95,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
  **tokenType** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **addRegistrationOrDeviceTokenData** | [**AddRegistrationOrDeviceTokenData**](AddRegistrationOrDeviceTokenData.md)|  | [optional] 
 
 ### Return type
@@ -127,7 +127,7 @@ No authorization required
 
 ## BanFromChannelsWithCustomChannelTypes
 
-> void BanFromChannelsWithCustomChannelTypes (string userId, string apiToken = null, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = null)
+> void BanFromChannelsWithCustomChannelTypes (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = null)
 
 Ban from channels with custom channel types
 
@@ -150,14 +150,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var banFromChannelsWithCustomChannelTypesData = new BanFromChannelsWithCustomChannelTypesData(); // BanFromChannelsWithCustomChannelTypesData |  (optional) 
 
             try
             {
                 // Ban from channels with custom channel types
-                apiInstance.BanFromChannelsWithCustomChannelTypes(userId, apiToken, banFromChannelsWithCustomChannelTypesData);
+                apiInstance.BanFromChannelsWithCustomChannelTypes(apiToken, userId, banFromChannelsWithCustomChannelTypesData);
             }
             catch (ApiException e)
             {
@@ -175,8 +175,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **banFromChannelsWithCustomChannelTypesData** | [**BanFromChannelsWithCustomChannelTypesData**](BanFromChannelsWithCustomChannelTypesData.md)|  | [optional] 
 
 ### Return type
@@ -206,7 +206,7 @@ No authorization required
 
 ## BlockUser
 
-> SendBirdUser BlockUser (string userId, string apiToken = null, BlockUserData blockUserData = null)
+> SendBirdUser BlockUser (string apiToken, string userId, BlockUserData blockUserData = null)
 
 Block a user
 
@@ -229,14 +229,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var blockUserData = new BlockUserData(); // BlockUserData |  (optional) 
 
             try
             {
                 // Block a user
-                SendBirdUser result = apiInstance.BlockUser(userId, apiToken, blockUserData);
+                SendBirdUser result = apiInstance.BlockUser(apiToken, userId, blockUserData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -255,8 +255,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **blockUserData** | [**BlockUserData**](BlockUserData.md)|  | [optional] 
 
 ### Return type
@@ -286,7 +286,7 @@ No authorization required
 
 ## ChoosePushNotificationContentTemplate
 
-> ChoosePushNotificationContentTemplateResponse ChoosePushNotificationContentTemplate (string userId, string apiToken = null, Object body = null)
+> ChoosePushNotificationContentTemplateResponse ChoosePushNotificationContentTemplate (string apiToken, string userId, Object body = null)
 
 Choose a push notification content template
 
@@ -309,14 +309,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var body = ;  // Object |  (optional) 
 
             try
             {
                 // Choose a push notification content template
-                ChoosePushNotificationContentTemplateResponse result = apiInstance.ChoosePushNotificationContentTemplate(userId, apiToken, body);
+                ChoosePushNotificationContentTemplateResponse result = apiInstance.ChoosePushNotificationContentTemplate(apiToken, userId, body);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -335,8 +335,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **body** | **Object**|  | [optional] 
 
 ### Return type
@@ -366,7 +366,7 @@ No authorization required
 
 ## CreateUser
 
-> SendBirdUser CreateUser (string apiToken = null, CreateUserData createUserData = null)
+> SendBirdUser CreateUser (string apiToken, CreateUserData createUserData = null)
 
 Create a user
 
@@ -389,7 +389,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var createUserData = new CreateUserData(); // CreateUserData |  (optional) 
 
             try
@@ -414,7 +414,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **createUserData** | [**CreateUserData**](CreateUserData.md)|  | [optional] 
 
 ### Return type
@@ -444,7 +444,7 @@ No authorization required
 
 ## DeleteUserById
 
-> void DeleteUserById (string userId, string apiToken = null)
+> void DeleteUserById (string apiToken, string userId)
 
 Delete a user
 
@@ -467,13 +467,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Delete a user
-                apiInstance.DeleteUserById(userId, apiToken);
+                apiInstance.DeleteUserById(apiToken, userId);
             }
             catch (ApiException e)
             {
@@ -491,8 +491,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -521,7 +521,7 @@ No authorization required
 
 ## LeaveMyGroupChannels
 
-> void LeaveMyGroupChannels (string userId, string apiToken = null, LeaveMyGroupChannelsData leaveMyGroupChannelsData = null)
+> void LeaveMyGroupChannels (string apiToken, string userId, LeaveMyGroupChannelsData leaveMyGroupChannelsData = null)
 
 Leave my group channels
 
@@ -544,14 +544,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var leaveMyGroupChannelsData = new LeaveMyGroupChannelsData(); // LeaveMyGroupChannelsData |  (optional) 
 
             try
             {
                 // Leave my group channels
-                apiInstance.LeaveMyGroupChannels(userId, apiToken, leaveMyGroupChannelsData);
+                apiInstance.LeaveMyGroupChannels(apiToken, userId, leaveMyGroupChannelsData);
             }
             catch (ApiException e)
             {
@@ -569,8 +569,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **leaveMyGroupChannelsData** | [**LeaveMyGroupChannelsData**](LeaveMyGroupChannelsData.md)|  | [optional] 
 
 ### Return type
@@ -600,7 +600,7 @@ No authorization required
 
 ## ListBannedChannels
 
-> ListBannedChannelsResponse ListBannedChannels (string userId, string apiToken = null, string token = null, int? limit = null)
+> ListBannedChannelsResponse ListBannedChannels (string apiToken, string userId, string token = null, int? limit = null)
 
 List banned channels
 
@@ -623,15 +623,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
             {
                 // List banned channels
-                ListBannedChannelsResponse result = apiInstance.ListBannedChannels(userId, apiToken, token, limit);
+                ListBannedChannelsResponse result = apiInstance.ListBannedChannels(apiToken, userId, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -650,8 +650,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
 
@@ -682,7 +682,7 @@ No authorization required
 
 ## ListBlockedUsers
 
-> ListBlockedUsersResponse ListBlockedUsers (string userId, string apiToken = null, string token = null, int? limit = null, string userIds = null, string metadatakey = null, string metadatavaluesIn = null)
+> ListBlockedUsersResponse ListBlockedUsers (string apiToken, string userId, string token = null, int? limit = null, string userIds = null, string metadatakey = null, string metadatavaluesIn = null)
 
 List blocked users
 
@@ -705,8 +705,8 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
             var userIds = userIds_example;  // string |  (optional) 
@@ -716,7 +716,7 @@ namespace Example
             try
             {
                 // List blocked users
-                ListBlockedUsersResponse result = apiInstance.ListBlockedUsers(userId, apiToken, token, limit, userIds, metadatakey, metadatavaluesIn);
+                ListBlockedUsersResponse result = apiInstance.ListBlockedUsers(apiToken, userId, token, limit, userIds, metadatakey, metadatavaluesIn);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -735,8 +735,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
  **userIds** | **string**|  | [optional] 
@@ -770,7 +770,7 @@ No authorization required
 
 ## ListMutedChannels
 
-> ListMutedChannelsResponse ListMutedChannels (string userId, string apiToken = null, string token = null, int? limit = null)
+> ListMutedChannelsResponse ListMutedChannels (string apiToken, string userId, string token = null, int? limit = null)
 
 List muted channels
 
@@ -793,15 +793,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
             {
                 // List muted channels
-                ListMutedChannelsResponse result = apiInstance.ListMutedChannels(userId, apiToken, token, limit);
+                ListMutedChannelsResponse result = apiInstance.ListMutedChannels(apiToken, userId, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -820,8 +820,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
 
@@ -852,7 +852,7 @@ No authorization required
 
 ## ListMyGroupChannels
 
-> ListMyGroupChannelsResponse ListMyGroupChannels (string userId, string apiToken = null, string token = null, int? limit = null, string distinctMode = null, string publicMode = null, string superMode = null, string hiddenMode = null, string memberStateFilter = null, string unreadFilter = null, int? createdAfter = null, int? createdBefore = null, bool? showEmpty = null, bool? showFrozen = null, bool? showMember = null, bool? showDeliveryReceipt = null, bool? showReadReceipt = null, string order = null, string metadataOrderKey = null, string customTypes = null, string customTypeStartswith = null, string channelUrls = null, string name = null, string nameContains = null, string nameStartswith = null, string membersExactlyIn = null, string membersIncludeIn = null, string queryType = null, string membersNickname = null, string membersNicknameContains = null, string searchQuery = null, string searchFields = null, string metadataKey = null, string metadataValues = null, string metadataValueStartswith = null, string metacounterKey = null, string metacounterValues = null, string metacounterValueGt = null, string metacounterValueGte = null, string metacounterValueLt = null, string metacounterValueLte = null, string customType = null)
+> ListMyGroupChannelsResponse ListMyGroupChannels (string apiToken, string userId, string token = null, int? limit = null, string distinctMode = null, string publicMode = null, string superMode = null, string hiddenMode = null, string memberStateFilter = null, string unreadFilter = null, int? createdAfter = null, int? createdBefore = null, bool? showEmpty = null, bool? showFrozen = null, bool? showMember = null, bool? showDeliveryReceipt = null, bool? showReadReceipt = null, string order = null, string metadataOrderKey = null, string customTypes = null, string customTypeStartswith = null, string channelUrls = null, string name = null, string nameContains = null, string nameStartswith = null, string membersExactlyIn = null, string membersIncludeIn = null, string queryType = null, string membersNickname = null, string membersNicknameContains = null, string searchQuery = null, string searchFields = null, string metadataKey = null, string metadataValues = null, string metadataValueStartswith = null, string metacounterKey = null, string metacounterValues = null, string metacounterValueGt = null, string metacounterValueGte = null, string metacounterValueLt = null, string metacounterValueLte = null, string customType = null)
 
 List my group channels
 
@@ -875,8 +875,8 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
             var distinctMode = distinctMode_example;  // string |  (optional) 
@@ -921,7 +921,7 @@ namespace Example
             try
             {
                 // List my group channels
-                ListMyGroupChannelsResponse result = apiInstance.ListMyGroupChannels(userId, apiToken, token, limit, distinctMode, publicMode, superMode, hiddenMode, memberStateFilter, unreadFilter, createdAfter, createdBefore, showEmpty, showFrozen, showMember, showDeliveryReceipt, showReadReceipt, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, searchQuery, searchFields, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, customType);
+                ListMyGroupChannelsResponse result = apiInstance.ListMyGroupChannels(apiToken, userId, token, limit, distinctMode, publicMode, superMode, hiddenMode, memberStateFilter, unreadFilter, createdAfter, createdBefore, showEmpty, showFrozen, showMember, showDeliveryReceipt, showReadReceipt, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, searchQuery, searchFields, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, customType);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -940,8 +940,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
  **distinctMode** | **string**|  | [optional] 
@@ -1010,7 +1010,7 @@ No authorization required
 
 ## ListRegistrationOrDeviceTokens
 
-> ListRegistrationOrDeviceTokensResponse ListRegistrationOrDeviceTokens (string userId, string tokenType, string apiToken = null)
+> ListRegistrationOrDeviceTokensResponse ListRegistrationOrDeviceTokens (string apiToken, string userId, string tokenType)
 
 List registration or device tokens
 
@@ -1033,14 +1033,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
             var tokenType = tokenType_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // List registration or device tokens
-                ListRegistrationOrDeviceTokensResponse result = apiInstance.ListRegistrationOrDeviceTokens(userId, tokenType, apiToken);
+                ListRegistrationOrDeviceTokensResponse result = apiInstance.ListRegistrationOrDeviceTokens(apiToken, userId, tokenType);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1059,9 +1059,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
  **tokenType** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1090,7 +1090,7 @@ No authorization required
 
 ## ListUsers
 
-> ListUsersResponse ListUsers (string apiToken = null, string token = null, int? limit = null, string activeMode = null, bool? showBot = null, string userIds = null, string nickname = null, string nicknameStartswith = null, string metadatakey = null, string metadatavaluesIn = null)
+> ListUsersResponse ListUsers (string apiToken, string token = null, int? limit = null, string activeMode = null, bool? showBot = null, string userIds = null, string nickname = null, string nicknameStartswith = null, string metadatakey = null, string metadatavaluesIn = null)
 
 List users
 
@@ -1113,7 +1113,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
             var activeMode = activeMode_example;  // string |  (optional) 
@@ -1146,7 +1146,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
  **activeMode** | **string**|  | [optional] 
@@ -1184,7 +1184,7 @@ No authorization required
 
 ## MarkAllMessagesAsRead
 
-> void MarkAllMessagesAsRead (string userId, string apiToken = null, MarkAllMessagesAsReadData markAllMessagesAsReadData = null)
+> void MarkAllMessagesAsRead (string apiToken, string userId, MarkAllMessagesAsReadData markAllMessagesAsReadData = null)
 
 Mark all messages as read
 
@@ -1207,14 +1207,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var markAllMessagesAsReadData = new MarkAllMessagesAsReadData(); // MarkAllMessagesAsReadData |  (optional) 
 
             try
             {
                 // Mark all messages as read
-                apiInstance.MarkAllMessagesAsRead(userId, apiToken, markAllMessagesAsReadData);
+                apiInstance.MarkAllMessagesAsRead(apiToken, userId, markAllMessagesAsReadData);
             }
             catch (ApiException e)
             {
@@ -1232,8 +1232,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **markAllMessagesAsReadData** | [**MarkAllMessagesAsReadData**](MarkAllMessagesAsReadData.md)|  | [optional] 
 
 ### Return type
@@ -1263,7 +1263,7 @@ No authorization required
 
 ## MuteInChannelsWithCustomChannelTypes
 
-> void MuteInChannelsWithCustomChannelTypes (string userId, string apiToken = null, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = null)
+> void MuteInChannelsWithCustomChannelTypes (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = null)
 
 Mute in channels with custom channel types
 
@@ -1286,14 +1286,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var muteInChannelsWithCustomChannelTypesData = new MuteInChannelsWithCustomChannelTypesData(); // MuteInChannelsWithCustomChannelTypesData |  (optional) 
 
             try
             {
                 // Mute in channels with custom channel types
-                apiInstance.MuteInChannelsWithCustomChannelTypes(userId, apiToken, muteInChannelsWithCustomChannelTypesData);
+                apiInstance.MuteInChannelsWithCustomChannelTypes(apiToken, userId, muteInChannelsWithCustomChannelTypesData);
             }
             catch (ApiException e)
             {
@@ -1311,8 +1311,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **muteInChannelsWithCustomChannelTypesData** | [**MuteInChannelsWithCustomChannelTypesData**](MuteInChannelsWithCustomChannelTypesData.md)|  | [optional] 
 
 ### Return type
@@ -1342,7 +1342,7 @@ No authorization required
 
 ## RegisterAsOperatorToChannelsWithCustomChannelTypes
 
-> void RegisterAsOperatorToChannelsWithCustomChannelTypes (string userId, string apiToken = null, RegisterAsOperatorToChannelsWithCustomChannelTypesData registerAsOperatorToChannelsWithCustomChannelTypesData = null)
+> void RegisterAsOperatorToChannelsWithCustomChannelTypes (string apiToken, string userId, RegisterAsOperatorToChannelsWithCustomChannelTypesData registerAsOperatorToChannelsWithCustomChannelTypesData = null)
 
 Register as an operator to channels with custom channel types
 
@@ -1365,14 +1365,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var registerAsOperatorToChannelsWithCustomChannelTypesData = new RegisterAsOperatorToChannelsWithCustomChannelTypesData(); // RegisterAsOperatorToChannelsWithCustomChannelTypesData |  (optional) 
 
             try
             {
                 // Register as an operator to channels with custom channel types
-                apiInstance.RegisterAsOperatorToChannelsWithCustomChannelTypes(userId, apiToken, registerAsOperatorToChannelsWithCustomChannelTypesData);
+                apiInstance.RegisterAsOperatorToChannelsWithCustomChannelTypes(apiToken, userId, registerAsOperatorToChannelsWithCustomChannelTypesData);
             }
             catch (ApiException e)
             {
@@ -1390,8 +1390,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **registerAsOperatorToChannelsWithCustomChannelTypesData** | [**RegisterAsOperatorToChannelsWithCustomChannelTypesData**](RegisterAsOperatorToChannelsWithCustomChannelTypesData.md)|  | [optional] 
 
 ### Return type
@@ -1421,7 +1421,7 @@ No authorization required
 
 ## RemoveRegistrationOrDeviceToken
 
-> RemoveRegistrationOrDeviceTokenResponse RemoveRegistrationOrDeviceToken (string userId, string apiToken = null)
+> RemoveRegistrationOrDeviceTokenResponse RemoveRegistrationOrDeviceToken (string apiToken, string userId)
 
 Remove a registration or device token - When unregistering all device tokens
 
@@ -1444,13 +1444,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Remove a registration or device token - When unregistering all device tokens
-                RemoveRegistrationOrDeviceTokenResponse result = apiInstance.RemoveRegistrationOrDeviceToken(userId, apiToken);
+                RemoveRegistrationOrDeviceTokenResponse result = apiInstance.RemoveRegistrationOrDeviceToken(apiToken, userId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1469,8 +1469,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1499,7 +1499,7 @@ No authorization required
 
 ## RemoveRegistrationOrDeviceTokenByToken
 
-> RemoveRegistrationOrDeviceTokenByTokenResponse RemoveRegistrationOrDeviceTokenByToken (string userId, string tokenType, string token, string apiToken = null)
+> RemoveRegistrationOrDeviceTokenByTokenResponse RemoveRegistrationOrDeviceTokenByToken (string apiToken, string userId, string tokenType, string token)
 
 Remove a registration or device token - When unregistering a specific token
 
@@ -1522,15 +1522,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
             var tokenType = tokenType_example;  // string | 
             var token = token_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Remove a registration or device token - When unregistering a specific token
-                RemoveRegistrationOrDeviceTokenByTokenResponse result = apiInstance.RemoveRegistrationOrDeviceTokenByToken(userId, tokenType, token, apiToken);
+                RemoveRegistrationOrDeviceTokenByTokenResponse result = apiInstance.RemoveRegistrationOrDeviceTokenByToken(apiToken, userId, tokenType, token);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1549,10 +1549,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
  **tokenType** | **string**|  | 
  **token** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1581,7 +1581,7 @@ No authorization required
 
 ## RemoveRegistrationOrDeviceTokenFromOwnerByToken
 
-> RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse RemoveRegistrationOrDeviceTokenFromOwnerByToken (string tokenType, string token, string apiToken = null)
+> RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse RemoveRegistrationOrDeviceTokenFromOwnerByToken (string apiToken, string tokenType, string token)
 
 Remove a registration or device token from an owner
 
@@ -1604,14 +1604,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var tokenType = tokenType_example;  // string | 
             var token = token_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Remove a registration or device token from an owner
-                RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse result = apiInstance.RemoveRegistrationOrDeviceTokenFromOwnerByToken(tokenType, token, apiToken);
+                RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse result = apiInstance.RemoveRegistrationOrDeviceTokenFromOwnerByToken(apiToken, tokenType, token);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1630,9 +1630,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **tokenType** | **string**|  | 
  **token** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1661,7 +1661,7 @@ No authorization required
 
 ## ResetPushPreferences
 
-> void ResetPushPreferences (string userId, string apiToken = null)
+> void ResetPushPreferences (string apiToken, string userId)
 
 Reset push preferences
 
@@ -1684,13 +1684,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Reset push preferences
-                apiInstance.ResetPushPreferences(userId, apiToken);
+                apiInstance.ResetPushPreferences(apiToken, userId);
             }
             catch (ApiException e)
             {
@@ -1708,8 +1708,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1738,7 +1738,7 @@ No authorization required
 
 ## UnblockUserById
 
-> void UnblockUserById (string userId, string targetId, string apiToken = null)
+> void UnblockUserById (string apiToken, string userId, string targetId)
 
 Unblock a user
 
@@ -1761,14 +1761,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
             var targetId = targetId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Unblock a user
-                apiInstance.UnblockUserById(userId, targetId, apiToken);
+                apiInstance.UnblockUserById(apiToken, userId, targetId);
             }
             catch (ApiException e)
             {
@@ -1786,9 +1786,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
  **targetId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1817,7 +1817,7 @@ No authorization required
 
 ## UpdateChannelInvitationPreference
 
-> UpdateChannelInvitationPreferenceResponse UpdateChannelInvitationPreference (string userId, string apiToken = null, UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = null)
+> UpdateChannelInvitationPreferenceResponse UpdateChannelInvitationPreference (string apiToken, string userId, UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = null)
 
 Update channel invitation preference
 
@@ -1840,14 +1840,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updateChannelInvitationPreferenceData = new UpdateChannelInvitationPreferenceData(); // UpdateChannelInvitationPreferenceData |  (optional) 
 
             try
             {
                 // Update channel invitation preference
-                UpdateChannelInvitationPreferenceResponse result = apiInstance.UpdateChannelInvitationPreference(userId, apiToken, updateChannelInvitationPreferenceData);
+                UpdateChannelInvitationPreferenceResponse result = apiInstance.UpdateChannelInvitationPreference(apiToken, userId, updateChannelInvitationPreferenceData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1866,8 +1866,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **updateChannelInvitationPreferenceData** | [**UpdateChannelInvitationPreferenceData**](UpdateChannelInvitationPreferenceData.md)|  | [optional] 
 
 ### Return type
@@ -1897,7 +1897,7 @@ No authorization required
 
 ## UpdateCountPreferenceOfChannelByUrl
 
-> UpdateCountPreferenceOfChannelByUrlResponse UpdateCountPreferenceOfChannelByUrl (string userId, string channelUrl, string apiToken = null, UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = null)
+> UpdateCountPreferenceOfChannelByUrlResponse UpdateCountPreferenceOfChannelByUrl (string apiToken, string userId, string channelUrl, UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = null)
 
 Update count preference of a channel
 
@@ -1920,15 +1920,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updateCountPreferenceOfChannelByUrlData = new UpdateCountPreferenceOfChannelByUrlData(); // UpdateCountPreferenceOfChannelByUrlData |  (optional) 
 
             try
             {
                 // Update count preference of a channel
-                UpdateCountPreferenceOfChannelByUrlResponse result = apiInstance.UpdateCountPreferenceOfChannelByUrl(userId, channelUrl, apiToken, updateCountPreferenceOfChannelByUrlData);
+                UpdateCountPreferenceOfChannelByUrlResponse result = apiInstance.UpdateCountPreferenceOfChannelByUrl(apiToken, userId, channelUrl, updateCountPreferenceOfChannelByUrlData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1947,9 +1947,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **updateCountPreferenceOfChannelByUrlData** | [**UpdateCountPreferenceOfChannelByUrlData**](UpdateCountPreferenceOfChannelByUrlData.md)|  | [optional] 
 
 ### Return type
@@ -1979,7 +1979,7 @@ No authorization required
 
 ## UpdatePushPreferences
 
-> UpdatePushPreferencesResponse UpdatePushPreferences (string userId, string apiToken = null, UpdatePushPreferencesData updatePushPreferencesData = null)
+> UpdatePushPreferencesResponse UpdatePushPreferences (string apiToken, string userId, UpdatePushPreferencesData updatePushPreferencesData = null)
 
 Update push preferences
 
@@ -2002,14 +2002,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updatePushPreferencesData = new UpdatePushPreferencesData(); // UpdatePushPreferencesData |  (optional) 
 
             try
             {
                 // Update push preferences
-                UpdatePushPreferencesResponse result = apiInstance.UpdatePushPreferences(userId, apiToken, updatePushPreferencesData);
+                UpdatePushPreferencesResponse result = apiInstance.UpdatePushPreferences(apiToken, userId, updatePushPreferencesData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2028,8 +2028,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **updatePushPreferencesData** | [**UpdatePushPreferencesData**](UpdatePushPreferencesData.md)|  | [optional] 
 
 ### Return type
@@ -2059,7 +2059,7 @@ No authorization required
 
 ## UpdatePushPreferencesForChannelByUrl
 
-> UpdatePushPreferencesForChannelByUrlResponse UpdatePushPreferencesForChannelByUrl (string userId, string channelUrl, string apiToken = null, UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = null)
+> UpdatePushPreferencesForChannelByUrlResponse UpdatePushPreferencesForChannelByUrl (string apiToken, string userId, string channelUrl, UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = null)
 
 Update push preferences for a channel
 
@@ -2082,15 +2082,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updatePushPreferencesForChannelByUrlData = new UpdatePushPreferencesForChannelByUrlData(); // UpdatePushPreferencesForChannelByUrlData |  (optional) 
 
             try
             {
                 // Update push preferences for a channel
-                UpdatePushPreferencesForChannelByUrlResponse result = apiInstance.UpdatePushPreferencesForChannelByUrl(userId, channelUrl, apiToken, updatePushPreferencesForChannelByUrlData);
+                UpdatePushPreferencesForChannelByUrlResponse result = apiInstance.UpdatePushPreferencesForChannelByUrl(apiToken, userId, channelUrl, updatePushPreferencesForChannelByUrlData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2109,9 +2109,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **updatePushPreferencesForChannelByUrlData** | [**UpdatePushPreferencesForChannelByUrlData**](UpdatePushPreferencesForChannelByUrlData.md)|  | [optional] 
 
 ### Return type
@@ -2141,7 +2141,7 @@ No authorization required
 
 ## UpdateUserById
 
-> SendBirdUser UpdateUserById (string userId, string apiToken = null, UpdateUserByIdData updateUserByIdData = null)
+> SendBirdUser UpdateUserById (string apiToken, string userId, UpdateUserByIdData updateUserByIdData = null)
 
 Update a user
 
@@ -2164,14 +2164,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updateUserByIdData = new UpdateUserByIdData(); // UpdateUserByIdData |  (optional) 
 
             try
             {
                 // Update a user
-                SendBirdUser result = apiInstance.UpdateUserById(userId, apiToken, updateUserByIdData);
+                SendBirdUser result = apiInstance.UpdateUserById(apiToken, userId, updateUserByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2190,8 +2190,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **updateUserByIdData** | [**UpdateUserByIdData**](UpdateUserByIdData.md)|  | [optional] 
 
 ### Return type
@@ -2221,7 +2221,7 @@ No authorization required
 
 ## ViewChannelInvitationPreference
 
-> ViewChannelInvitationPreferenceResponse ViewChannelInvitationPreference (string userId, string apiToken = null)
+> ViewChannelInvitationPreferenceResponse ViewChannelInvitationPreference (string apiToken, string userId)
 
 View channel invitation preference
 
@@ -2244,13 +2244,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View channel invitation preference
-                ViewChannelInvitationPreferenceResponse result = apiInstance.ViewChannelInvitationPreference(userId, apiToken);
+                ViewChannelInvitationPreferenceResponse result = apiInstance.ViewChannelInvitationPreference(apiToken, userId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2269,8 +2269,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -2299,7 +2299,7 @@ No authorization required
 
 ## ViewCountPreferenceOfChannelByUrl
 
-> ViewCountPreferenceOfChannelByUrlResponse ViewCountPreferenceOfChannelByUrl (string userId, string channelUrl, string apiToken = null)
+> ViewCountPreferenceOfChannelByUrlResponse ViewCountPreferenceOfChannelByUrl (string apiToken, string userId, string channelUrl)
 
 View count preference of a channel
 
@@ -2322,14 +2322,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View count preference of a channel
-                ViewCountPreferenceOfChannelByUrlResponse result = apiInstance.ViewCountPreferenceOfChannelByUrl(userId, channelUrl, apiToken);
+                ViewCountPreferenceOfChannelByUrlResponse result = apiInstance.ViewCountPreferenceOfChannelByUrl(apiToken, userId, channelUrl);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2348,9 +2348,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -2379,7 +2379,7 @@ No authorization required
 
 ## ViewNumberOfChannelsByJoinStatus
 
-> ViewNumberOfChannelsByJoinStatusResponse ViewNumberOfChannelsByJoinStatus (string userId, string apiToken = null, string state = null)
+> ViewNumberOfChannelsByJoinStatusResponse ViewNumberOfChannelsByJoinStatus (string apiToken, string userId, string state = null)
 
 View number of channels by join status
 
@@ -2402,14 +2402,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var state = state_example;  // string |  (optional) 
 
             try
             {
                 // View number of channels by join status
-                ViewNumberOfChannelsByJoinStatusResponse result = apiInstance.ViewNumberOfChannelsByJoinStatus(userId, apiToken, state);
+                ViewNumberOfChannelsByJoinStatusResponse result = apiInstance.ViewNumberOfChannelsByJoinStatus(apiToken, userId, state);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2428,8 +2428,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **state** | **string**|  | [optional] 
 
 ### Return type
@@ -2459,7 +2459,7 @@ No authorization required
 
 ## ViewNumberOfChannelsWithUnreadMessages
 
-> ViewNumberOfChannelsWithUnreadMessagesResponse ViewNumberOfChannelsWithUnreadMessages (string userId, string apiToken = null, List<string> customTypes = null, string superMode = null)
+> ViewNumberOfChannelsWithUnreadMessagesResponse ViewNumberOfChannelsWithUnreadMessages (string apiToken, string userId, List<string> customTypes = null, string superMode = null)
 
 View number of channels with unread messages
 
@@ -2482,15 +2482,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var customTypes = new List<string>(); // List<string> |  (optional) 
             var superMode = superMode_example;  // string |  (optional) 
 
             try
             {
                 // View number of channels with unread messages
-                ViewNumberOfChannelsWithUnreadMessagesResponse result = apiInstance.ViewNumberOfChannelsWithUnreadMessages(userId, apiToken, customTypes, superMode);
+                ViewNumberOfChannelsWithUnreadMessagesResponse result = apiInstance.ViewNumberOfChannelsWithUnreadMessages(apiToken, userId, customTypes, superMode);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2509,8 +2509,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **customTypes** | [**List&lt;string&gt;**](string.md)|  | [optional] 
  **superMode** | **string**|  | [optional] 
 
@@ -2541,7 +2541,7 @@ No authorization required
 
 ## ViewNumberOfUnreadItems
 
-> ViewNumberOfUnreadItemsResponse ViewNumberOfUnreadItems (string userId, string apiToken = null, string customType = null, string itemKeys = null)
+> ViewNumberOfUnreadItemsResponse ViewNumberOfUnreadItems (string apiToken, string userId, string customType = null, string itemKeys = null)
 
 View number of unread items
 
@@ -2564,15 +2564,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var customType = customType_example;  // string |  (optional) 
             var itemKeys = itemKeys_example;  // string |  (optional) 
 
             try
             {
                 // View number of unread items
-                ViewNumberOfUnreadItemsResponse result = apiInstance.ViewNumberOfUnreadItems(userId, apiToken, customType, itemKeys);
+                ViewNumberOfUnreadItemsResponse result = apiInstance.ViewNumberOfUnreadItems(apiToken, userId, customType, itemKeys);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2591,8 +2591,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **customType** | **string**|  | [optional] 
  **itemKeys** | **string**|  | [optional] 
 
@@ -2623,7 +2623,7 @@ No authorization required
 
 ## ViewNumberOfUnreadMessages
 
-> ViewNumberOfUnreadMessagesResponse ViewNumberOfUnreadMessages (string userId, string apiToken = null, string customTypes = null, string superMode = null)
+> ViewNumberOfUnreadMessagesResponse ViewNumberOfUnreadMessages (string apiToken, string userId, string customTypes = null, string superMode = null)
 
 View number of unread messages
 
@@ -2646,15 +2646,15 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var customTypes = customTypes_example;  // string |  (optional) 
             var superMode = superMode_example;  // string |  (optional) 
 
             try
             {
                 // View number of unread messages
-                ViewNumberOfUnreadMessagesResponse result = apiInstance.ViewNumberOfUnreadMessages(userId, apiToken, customTypes, superMode);
+                ViewNumberOfUnreadMessagesResponse result = apiInstance.ViewNumberOfUnreadMessages(apiToken, userId, customTypes, superMode);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2673,8 +2673,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **customTypes** | **string**|  | [optional] 
  **superMode** | **string**|  | [optional] 
 
@@ -2705,7 +2705,7 @@ No authorization required
 
 ## ViewPushPreferences
 
-> ViewPushPreferencesResponse ViewPushPreferences (string userId, string apiToken = null)
+> ViewPushPreferencesResponse ViewPushPreferences (string apiToken, string userId)
 
 View push preferences
 
@@ -2728,13 +2728,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View push preferences
-                ViewPushPreferencesResponse result = apiInstance.ViewPushPreferences(userId, apiToken);
+                ViewPushPreferencesResponse result = apiInstance.ViewPushPreferences(apiToken, userId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2753,8 +2753,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -2783,7 +2783,7 @@ No authorization required
 
 ## ViewPushPreferencesForChannelByUrl
 
-> ViewPushPreferencesForChannelByUrlResponse ViewPushPreferencesForChannelByUrl (string userId, string channelUrl, string apiToken = null)
+> ViewPushPreferencesForChannelByUrlResponse ViewPushPreferencesForChannelByUrl (string apiToken, string userId, string channelUrl)
 
 View push preferences for a channel
 
@@ -2806,14 +2806,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
             var channelUrl = channelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View push preferences for a channel
-                ViewPushPreferencesForChannelByUrlResponse result = apiInstance.ViewPushPreferencesForChannelByUrl(userId, channelUrl, apiToken);
+                ViewPushPreferencesForChannelByUrlResponse result = apiInstance.ViewPushPreferencesForChannelByUrl(apiToken, userId, channelUrl);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2832,9 +2832,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
  **channelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -2863,7 +2863,7 @@ No authorization required
 
 ## ViewUserById
 
-> SendBirdUser ViewUserById (string userId, string apiToken = null, bool? includeUnreadCount = null, string customTypes = null, string superMode = null)
+> SendBirdUser ViewUserById (string apiToken, string userId, bool? includeUnreadCount = null, string customTypes = null, string superMode = null)
 
 View a user
 
@@ -2886,8 +2886,8 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var userId = userId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var includeUnreadCount = true;  // bool? |  (optional) 
             var customTypes = customTypes_example;  // string |  (optional) 
             var superMode = superMode_example;  // string |  (optional) 
@@ -2895,7 +2895,7 @@ namespace Example
             try
             {
                 // View a user
-                SendBirdUser result = apiInstance.ViewUserById(userId, apiToken, includeUnreadCount, customTypes, superMode);
+                SendBirdUser result = apiInstance.ViewUserById(apiToken, userId, includeUnreadCount, customTypes, superMode);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2914,8 +2914,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **userId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **includeUnreadCount** | **bool?**|  | [optional] 
  **customTypes** | **string**|  | [optional] 
  **superMode** | **string**|  | [optional] 
@@ -2947,7 +2947,7 @@ No authorization required
 
 ## ViewWhoOwnsRegistrationOrDeviceTokenByToken
 
-> ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse ViewWhoOwnsRegistrationOrDeviceTokenByToken (string tokenType, string token, string apiToken = null)
+> ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse ViewWhoOwnsRegistrationOrDeviceTokenByToken (string apiToken, string tokenType, string token)
 
 View who owns a registration or device token
 
@@ -2970,14 +2970,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var tokenType = tokenType_example;  // string | 
             var token = token_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View who owns a registration or device token
-                ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse result = apiInstance.ViewWhoOwnsRegistrationOrDeviceTokenByToken(tokenType, token, apiToken);
+                ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse result = apiInstance.ViewWhoOwnsRegistrationOrDeviceTokenByToken(apiToken, tokenType, token);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2996,9 +2996,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **tokenType** | **string**|  | 
  **token** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 

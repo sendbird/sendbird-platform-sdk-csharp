@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 ## ChooseWhichEventsToSubscribeTo
 
-> ChooseWhichEventsToSubscribeToResponse ChooseWhichEventsToSubscribeTo (string apiToken = null, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = null)
+> ChooseWhichEventsToSubscribeToResponse ChooseWhichEventsToSubscribeTo (string apiToken, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = null)
 
 Choose which events to subscribe to
 
@@ -34,7 +34,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new WebhooksApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var chooseWhichEventsToSubscribeToData = new ChooseWhichEventsToSubscribeToData(); // ChooseWhichEventsToSubscribeToData |  (optional) 
 
             try
@@ -59,7 +59,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **chooseWhichEventsToSubscribeToData** | [**ChooseWhichEventsToSubscribeToData**](ChooseWhichEventsToSubscribeToData.md)|  | [optional] 
 
 ### Return type
@@ -89,7 +89,7 @@ No authorization required
 
 ## RetrieveListOfSubscribedEvents
 
-> RetrieveListOfSubscribedEventsResponse RetrieveListOfSubscribedEvents (string apiToken = null, bool? displayAllWebhookCategories = null)
+> RetrieveListOfSubscribedEventsResponse RetrieveListOfSubscribedEvents (string apiToken, bool? displayAllWebhookCategories = null)
 
 Retrieve a list of subscribed events
 
@@ -112,7 +112,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new WebhooksApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var displayAllWebhookCategories = true;  // bool? |  (optional) 
 
             try
@@ -137,7 +137,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **displayAllWebhookCategories** | **bool?**|  | [optional] 
 
 ### Return type

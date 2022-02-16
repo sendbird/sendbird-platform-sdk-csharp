@@ -32,10 +32,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Choose which events to subscribe to  Chooses which events for your webhook server to receive payloads for. By subscribing to specific events based on your own needs, you can control the number of HTTP requests to your webhook server.  https://sendbird.com/docs/chat/v3/platform-api/guides/webhooks#2-choose-which-events-to-subscribe-to
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
         /// <returns>ChooseWhichEventsToSubscribeToResponse</returns>
-        ChooseWhichEventsToSubscribeToResponse ChooseWhichEventsToSubscribeTo (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData));
+        ChooseWhichEventsToSubscribeToResponse ChooseWhichEventsToSubscribeTo (string apiToken, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData));
 
         /// <summary>
         /// Choose which events to subscribe to
@@ -44,10 +44,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Choose which events to subscribe to  Chooses which events for your webhook server to receive payloads for. By subscribing to specific events based on your own needs, you can control the number of HTTP requests to your webhook server.  https://sendbird.com/docs/chat/v3/platform-api/guides/webhooks#2-choose-which-events-to-subscribe-to
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
         /// <returns>ApiResponse of ChooseWhichEventsToSubscribeToResponse</returns>
-        ApiResponse<ChooseWhichEventsToSubscribeToResponse> ChooseWhichEventsToSubscribeToWithHttpInfo (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData));
+        ApiResponse<ChooseWhichEventsToSubscribeToResponse> ChooseWhichEventsToSubscribeToWithHttpInfo (string apiToken, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData));
         /// <summary>
         /// Retrieve a list of subscribed events
         /// </summary>
@@ -55,10 +55,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Retrieve a list of subscribed events  Retrieves a list of events for your webhook server to receive payloads for.  https://sendbird.com/docs/chat/v3/platform-api/guides/webhooks#2-retrieve-a-list-of-subscribed-events - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <returns>RetrieveListOfSubscribedEventsResponse</returns>
-        RetrieveListOfSubscribedEventsResponse RetrieveListOfSubscribedEvents (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?));
+        RetrieveListOfSubscribedEventsResponse RetrieveListOfSubscribedEvents (string apiToken, bool? displayAllWebhookCategories = default(bool?));
 
         /// <summary>
         /// Retrieve a list of subscribed events
@@ -67,10 +67,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Retrieve a list of subscribed events  Retrieves a list of events for your webhook server to receive payloads for.  https://sendbird.com/docs/chat/v3/platform-api/guides/webhooks#2-retrieve-a-list-of-subscribed-events - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <returns>ApiResponse of RetrieveListOfSubscribedEventsResponse</returns>
-        ApiResponse<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsWithHttpInfo (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?));
+        ApiResponse<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsWithHttpInfo (string apiToken, bool? displayAllWebhookCategories = default(bool?));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -80,11 +80,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Choose which events to subscribe to  Chooses which events for your webhook server to receive payloads for. By subscribing to specific events based on your own needs, you can control the number of HTTP requests to your webhook server.  https://sendbird.com/docs/chat/v3/platform-api/guides/webhooks#2-choose-which-events-to-subscribe-to
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ChooseWhichEventsToSubscribeToResponse</returns>
-        System.Threading.Tasks.Task<ChooseWhichEventsToSubscribeToResponse> ChooseWhichEventsToSubscribeToAsync (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ChooseWhichEventsToSubscribeToResponse> ChooseWhichEventsToSubscribeToAsync (string apiToken, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Choose which events to subscribe to
@@ -93,11 +93,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Choose which events to subscribe to  Chooses which events for your webhook server to receive payloads for. By subscribing to specific events based on your own needs, you can control the number of HTTP requests to your webhook server.  https://sendbird.com/docs/chat/v3/platform-api/guides/webhooks#2-choose-which-events-to-subscribe-to
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ChooseWhichEventsToSubscribeToResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ChooseWhichEventsToSubscribeToResponse>> ChooseWhichEventsToSubscribeToWithHttpInfoAsync (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ChooseWhichEventsToSubscribeToResponse>> ChooseWhichEventsToSubscribeToWithHttpInfoAsync (string apiToken, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Retrieve a list of subscribed events
         /// </summary>
@@ -105,11 +105,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Retrieve a list of subscribed events  Retrieves a list of events for your webhook server to receive payloads for.  https://sendbird.com/docs/chat/v3/platform-api/guides/webhooks#2-retrieve-a-list-of-subscribed-events - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RetrieveListOfSubscribedEventsResponse</returns>
-        System.Threading.Tasks.Task<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsAsync (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsAsync (string apiToken, bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Retrieve a list of subscribed events
@@ -118,11 +118,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Retrieve a list of subscribed events  Retrieves a list of events for your webhook server to receive payloads for.  https://sendbird.com/docs/chat/v3/platform-api/guides/webhooks#2-retrieve-a-list-of-subscribed-events - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RetrieveListOfSubscribedEventsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RetrieveListOfSubscribedEventsResponse>> RetrieveListOfSubscribedEventsWithHttpInfoAsync (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<RetrieveListOfSubscribedEventsResponse>> RetrieveListOfSubscribedEventsWithHttpInfoAsync (string apiToken, bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -238,10 +238,10 @@ namespace sendbird_platform_sdk.Api
         /// Choose which events to subscribe to ## Choose which events to subscribe to  Chooses which events for your webhook server to receive payloads for. By subscribing to specific events based on your own needs, you can control the number of HTTP requests to your webhook server.  https://sendbird.com/docs/chat/v3/platform-api/guides/webhooks#2-choose-which-events-to-subscribe-to
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
         /// <returns>ChooseWhichEventsToSubscribeToResponse</returns>
-        public ChooseWhichEventsToSubscribeToResponse ChooseWhichEventsToSubscribeTo (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData))
+        public ChooseWhichEventsToSubscribeToResponse ChooseWhichEventsToSubscribeTo (string apiToken, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData))
         {
              ApiResponse<ChooseWhichEventsToSubscribeToResponse> localVarResponse = ChooseWhichEventsToSubscribeToWithHttpInfo(apiToken, chooseWhichEventsToSubscribeToData);
              return localVarResponse.Data;
@@ -251,11 +251,14 @@ namespace sendbird_platform_sdk.Api
         /// Choose which events to subscribe to ## Choose which events to subscribe to  Chooses which events for your webhook server to receive payloads for. By subscribing to specific events based on your own needs, you can control the number of HTTP requests to your webhook server.  https://sendbird.com/docs/chat/v3/platform-api/guides/webhooks#2-choose-which-events-to-subscribe-to
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
         /// <returns>ApiResponse of ChooseWhichEventsToSubscribeToResponse</returns>
-        public ApiResponse<ChooseWhichEventsToSubscribeToResponse> ChooseWhichEventsToSubscribeToWithHttpInfo (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData))
+        public ApiResponse<ChooseWhichEventsToSubscribeToResponse> ChooseWhichEventsToSubscribeToWithHttpInfo (string apiToken, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling WebhooksApi->ChooseWhichEventsToSubscribeTo");
 
             var localVarPath = "/v3/applications/settings/webhook";
             var localVarPathParams = new Dictionary<String, String>();
@@ -312,11 +315,11 @@ namespace sendbird_platform_sdk.Api
         /// Choose which events to subscribe to ## Choose which events to subscribe to  Chooses which events for your webhook server to receive payloads for. By subscribing to specific events based on your own needs, you can control the number of HTTP requests to your webhook server.  https://sendbird.com/docs/chat/v3/platform-api/guides/webhooks#2-choose-which-events-to-subscribe-to
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ChooseWhichEventsToSubscribeToResponse</returns>
-        public async System.Threading.Tasks.Task<ChooseWhichEventsToSubscribeToResponse> ChooseWhichEventsToSubscribeToAsync (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ChooseWhichEventsToSubscribeToResponse> ChooseWhichEventsToSubscribeToAsync (string apiToken, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<ChooseWhichEventsToSubscribeToResponse> localVarResponse = await ChooseWhichEventsToSubscribeToWithHttpInfoAsync(apiToken, chooseWhichEventsToSubscribeToData, cancellationToken);
              return localVarResponse.Data;
@@ -327,12 +330,15 @@ namespace sendbird_platform_sdk.Api
         /// Choose which events to subscribe to ## Choose which events to subscribe to  Chooses which events for your webhook server to receive payloads for. By subscribing to specific events based on your own needs, you can control the number of HTTP requests to your webhook server.  https://sendbird.com/docs/chat/v3/platform-api/guides/webhooks#2-choose-which-events-to-subscribe-to
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ChooseWhichEventsToSubscribeToResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ChooseWhichEventsToSubscribeToResponse>> ChooseWhichEventsToSubscribeToWithHttpInfoAsync (string apiToken = default(string), ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ChooseWhichEventsToSubscribeToResponse>> ChooseWhichEventsToSubscribeToWithHttpInfoAsync (string apiToken, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling WebhooksApi->ChooseWhichEventsToSubscribeTo");
 
             var localVarPath = "/v3/applications/settings/webhook";
             var localVarPathParams = new Dictionary<String, String>();
@@ -389,10 +395,10 @@ namespace sendbird_platform_sdk.Api
         /// Retrieve a list of subscribed events ## Retrieve a list of subscribed events  Retrieves a list of events for your webhook server to receive payloads for.  https://sendbird.com/docs/chat/v3/platform-api/guides/webhooks#2-retrieve-a-list-of-subscribed-events - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <returns>RetrieveListOfSubscribedEventsResponse</returns>
-        public RetrieveListOfSubscribedEventsResponse RetrieveListOfSubscribedEvents (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?))
+        public RetrieveListOfSubscribedEventsResponse RetrieveListOfSubscribedEvents (string apiToken, bool? displayAllWebhookCategories = default(bool?))
         {
              ApiResponse<RetrieveListOfSubscribedEventsResponse> localVarResponse = RetrieveListOfSubscribedEventsWithHttpInfo(apiToken, displayAllWebhookCategories);
              return localVarResponse.Data;
@@ -402,11 +408,14 @@ namespace sendbird_platform_sdk.Api
         /// Retrieve a list of subscribed events ## Retrieve a list of subscribed events  Retrieves a list of events for your webhook server to receive payloads for.  https://sendbird.com/docs/chat/v3/platform-api/guides/webhooks#2-retrieve-a-list-of-subscribed-events - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <returns>ApiResponse of RetrieveListOfSubscribedEventsResponse</returns>
-        public ApiResponse<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsWithHttpInfo (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?))
+        public ApiResponse<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsWithHttpInfo (string apiToken, bool? displayAllWebhookCategories = default(bool?))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling WebhooksApi->RetrieveListOfSubscribedEvents");
 
             var localVarPath = "/v3/applications/settings/webhook";
             var localVarPathParams = new Dictionary<String, String>();
@@ -455,11 +464,11 @@ namespace sendbird_platform_sdk.Api
         /// Retrieve a list of subscribed events ## Retrieve a list of subscribed events  Retrieves a list of events for your webhook server to receive payloads for.  https://sendbird.com/docs/chat/v3/platform-api/guides/webhooks#2-retrieve-a-list-of-subscribed-events - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RetrieveListOfSubscribedEventsResponse</returns>
-        public async System.Threading.Tasks.Task<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsAsync (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsAsync (string apiToken, bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<RetrieveListOfSubscribedEventsResponse> localVarResponse = await RetrieveListOfSubscribedEventsWithHttpInfoAsync(apiToken, displayAllWebhookCategories, cancellationToken);
              return localVarResponse.Data;
@@ -470,12 +479,15 @@ namespace sendbird_platform_sdk.Api
         /// Retrieve a list of subscribed events ## Retrieve a list of subscribed events  Retrieves a list of events for your webhook server to receive payloads for.  https://sendbird.com/docs/chat/v3/platform-api/guides/webhooks#2-retrieve-a-list-of-subscribed-events - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RetrieveListOfSubscribedEventsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RetrieveListOfSubscribedEventsResponse>> RetrieveListOfSubscribedEventsWithHttpInfoAsync (string apiToken = default(string), bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<RetrieveListOfSubscribedEventsResponse>> RetrieveListOfSubscribedEventsWithHttpInfoAsync (string apiToken, bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling WebhooksApi->RetrieveListOfSubscribedEvents");
 
             var localVarPath = "/v3/applications/settings/webhook";
             var localVarPathParams = new Dictionary<String, String>();

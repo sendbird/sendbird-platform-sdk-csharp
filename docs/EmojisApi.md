@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 ## AddEmojiCategories
 
-> AddEmojiCategoriesResponse AddEmojiCategories (string apiToken = null, Object body = null)
+> AddEmojiCategoriesResponse AddEmojiCategories (string apiToken, Object body = null)
 
 Add emoji categories
 
@@ -44,7 +44,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new EmojisApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var body = ;  // Object |  (optional) 
 
             try
@@ -69,7 +69,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **body** | **Object**|  | [optional] 
 
 ### Return type
@@ -99,7 +99,7 @@ No authorization required
 
 ## AddEmojis
 
-> AddEmojisResponse AddEmojis (string apiToken = null, AddEmojisData addEmojisData = null)
+> AddEmojisResponse AddEmojis (string apiToken, AddEmojisData addEmojisData = null)
 
 Add emojis
 
@@ -122,7 +122,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new EmojisApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var addEmojisData = new AddEmojisData(); // AddEmojisData |  (optional) 
 
             try
@@ -147,7 +147,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **addEmojisData** | [**AddEmojisData**](AddEmojisData.md)|  | [optional] 
 
 ### Return type
@@ -177,7 +177,7 @@ No authorization required
 
 ## DeleteEmojiByKey
 
-> void DeleteEmojiByKey (string emojiKey, string apiToken = null)
+> void DeleteEmojiByKey (string apiToken, string emojiKey)
 
 Delete an emoji
 
@@ -200,13 +200,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new EmojisApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var emojiKey = emojiKey_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Delete an emoji
-                apiInstance.DeleteEmojiByKey(emojiKey, apiToken);
+                apiInstance.DeleteEmojiByKey(apiToken, emojiKey);
             }
             catch (ApiException e)
             {
@@ -224,8 +224,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **emojiKey** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -254,7 +254,7 @@ No authorization required
 
 ## DeleteEmojiCategoryById
 
-> void DeleteEmojiCategoryById (string emojiCategoryId, string apiToken = null)
+> void DeleteEmojiCategoryById (string apiToken, string emojiCategoryId)
 
 Delete an emoji category
 
@@ -277,13 +277,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new EmojisApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var emojiCategoryId = emojiCategoryId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Delete an emoji category
-                apiInstance.DeleteEmojiCategoryById(emojiCategoryId, apiToken);
+                apiInstance.DeleteEmojiCategoryById(apiToken, emojiCategoryId);
             }
             catch (ApiException e)
             {
@@ -301,8 +301,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **emojiCategoryId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -331,7 +331,7 @@ No authorization required
 
 ## EnableReactions
 
-> EnableReactionsResponse EnableReactions (string apiToken = null, EnableReactionsData enableReactionsData = null)
+> EnableReactionsResponse EnableReactions (string apiToken, EnableReactionsData enableReactionsData = null)
 
 Enable reactions
 
@@ -354,7 +354,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new EmojisApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var enableReactionsData = new EnableReactionsData(); // EnableReactionsData |  (optional) 
 
             try
@@ -379,7 +379,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **enableReactionsData** | [**EnableReactionsData**](EnableReactionsData.md)|  | [optional] 
 
 ### Return type
@@ -409,7 +409,7 @@ No authorization required
 
 ## GetEmojiByKey
 
-> SendBirdEmoji GetEmojiByKey (string emojiKey, string apiToken = null)
+> SendBirdEmoji GetEmojiByKey (string apiToken, string emojiKey)
 
 Get an emoji
 
@@ -432,13 +432,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new EmojisApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var emojiKey = emojiKey_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Get an emoji
-                SendBirdEmoji result = apiInstance.GetEmojiByKey(emojiKey, apiToken);
+                SendBirdEmoji result = apiInstance.GetEmojiByKey(apiToken, emojiKey);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -457,8 +457,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **emojiKey** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -487,7 +487,7 @@ No authorization required
 
 ## GetEmojiCategoryById
 
-> SendBirdEmojiCategory GetEmojiCategoryById (string emojiCategoryId, string apiToken = null)
+> SendBirdEmojiCategory GetEmojiCategoryById (string apiToken, string emojiCategoryId)
 
 Get an emoji category
 
@@ -510,13 +510,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new EmojisApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var emojiCategoryId = emojiCategoryId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Get an emoji category
-                SendBirdEmojiCategory result = apiInstance.GetEmojiCategoryById(emojiCategoryId, apiToken);
+                SendBirdEmojiCategory result = apiInstance.GetEmojiCategoryById(apiToken, emojiCategoryId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -535,8 +535,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **emojiCategoryId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -565,7 +565,7 @@ No authorization required
 
 ## ListAllEmojisAndEmojiCategories
 
-> ListAllEmojisAndEmojiCategoriesResponse ListAllEmojisAndEmojiCategories (string apiToken = null)
+> ListAllEmojisAndEmojiCategoriesResponse ListAllEmojisAndEmojiCategories (string apiToken)
 
 List all emojis and emoji categories
 
@@ -588,7 +588,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new EmojisApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
 
             try
             {
@@ -612,7 +612,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
 
 ### Return type
 
@@ -641,7 +641,7 @@ No authorization required
 
 ## ListEmojis
 
-> ListEmojisResponse ListEmojis (string apiToken = null)
+> ListEmojisResponse ListEmojis (string apiToken)
 
 List emojis
 
@@ -664,7 +664,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new EmojisApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
 
             try
             {
@@ -688,7 +688,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
 
 ### Return type
 
@@ -717,7 +717,7 @@ No authorization required
 
 ## UpdateEmojiCategoryUrlById
 
-> SendBirdEmojiCategory UpdateEmojiCategoryUrlById (string emojiCategoryId, string apiToken = null, UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = null)
+> SendBirdEmojiCategory UpdateEmojiCategoryUrlById (string apiToken, string emojiCategoryId, UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = null)
 
 Update an emoji category URL
 
@@ -740,14 +740,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new EmojisApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var emojiCategoryId = emojiCategoryId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updateEmojiCategoryUrlByIdData = new UpdateEmojiCategoryUrlByIdData(); // UpdateEmojiCategoryUrlByIdData |  (optional) 
 
             try
             {
                 // Update an emoji category URL
-                SendBirdEmojiCategory result = apiInstance.UpdateEmojiCategoryUrlById(emojiCategoryId, apiToken, updateEmojiCategoryUrlByIdData);
+                SendBirdEmojiCategory result = apiInstance.UpdateEmojiCategoryUrlById(apiToken, emojiCategoryId, updateEmojiCategoryUrlByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -766,8 +766,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **emojiCategoryId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **updateEmojiCategoryUrlByIdData** | [**UpdateEmojiCategoryUrlByIdData**](UpdateEmojiCategoryUrlByIdData.md)|  | [optional] 
 
 ### Return type
@@ -797,7 +797,7 @@ No authorization required
 
 ## UpdateEmojiUrlByKey
 
-> SendBirdEmoji UpdateEmojiUrlByKey (string emojiKey, string apiToken = null, UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = null)
+> SendBirdEmoji UpdateEmojiUrlByKey (string apiToken, string emojiKey, UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = null)
 
 Update an emoji URL
 
@@ -820,14 +820,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new EmojisApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var emojiKey = emojiKey_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updateEmojiUrlByKeyData = new UpdateEmojiUrlByKeyData(); // UpdateEmojiUrlByKeyData |  (optional) 
 
             try
             {
                 // Update an emoji URL
-                SendBirdEmoji result = apiInstance.UpdateEmojiUrlByKey(emojiKey, apiToken, updateEmojiUrlByKeyData);
+                SendBirdEmoji result = apiInstance.UpdateEmojiUrlByKey(apiToken, emojiKey, updateEmojiUrlByKeyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -846,8 +846,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **emojiKey** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **updateEmojiUrlByKeyData** | [**UpdateEmojiUrlByKeyData**](UpdateEmojiUrlByKeyData.md)|  | [optional] 
 
 ### Return type
@@ -877,7 +877,7 @@ No authorization required
 
 ## UseDefaultEmojis
 
-> UseDefaultEmojisResponse UseDefaultEmojis (string apiToken = null, UseDefaultEmojisData useDefaultEmojisData = null)
+> UseDefaultEmojisResponse UseDefaultEmojis (string apiToken, UseDefaultEmojisData useDefaultEmojisData = null)
 
 Use default emojis
 
@@ -900,7 +900,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new EmojisApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var useDefaultEmojisData = new UseDefaultEmojisData(); // UseDefaultEmojisData |  (optional) 
 
             try
@@ -925,7 +925,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **useDefaultEmojisData** | [**UseDefaultEmojisData**](UseDefaultEmojisData.md)|  | [optional] 
 
 ### Return type

@@ -35,7 +35,7 @@ Method | HTTP request | Description
 
 ## AddApnsPushConfiguration
 
-> AddApnsPushConfigurationResponse AddApnsPushConfiguration (string apiToken = null, AddApnsPushConfigurationData addApnsPushConfigurationData = null)
+> AddApnsPushConfigurationResponse AddApnsPushConfiguration (string apiToken, AddApnsPushConfigurationData addApnsPushConfigurationData = null)
 
 Add an APNs push configuration
 
@@ -58,7 +58,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var addApnsPushConfigurationData = new AddApnsPushConfigurationData(); // AddApnsPushConfigurationData |  (optional) 
 
             try
@@ -83,7 +83,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **addApnsPushConfigurationData** | [**AddApnsPushConfigurationData**](AddApnsPushConfigurationData.md)|  | [optional] 
 
 ### Return type
@@ -113,7 +113,7 @@ No authorization required
 
 ## AddFcmPushConfiguration
 
-> AddFcmPushConfigurationResponse AddFcmPushConfiguration (string apiToken = null, AddFcmPushConfigurationData addFcmPushConfigurationData = null)
+> AddFcmPushConfigurationResponse AddFcmPushConfiguration (string apiToken, AddFcmPushConfigurationData addFcmPushConfigurationData = null)
 
 Add a FCM push configuration
 
@@ -136,7 +136,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var addFcmPushConfigurationData = new AddFcmPushConfigurationData(); // AddFcmPushConfigurationData |  (optional) 
 
             try
@@ -161,7 +161,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **addFcmPushConfigurationData** | [**AddFcmPushConfigurationData**](AddFcmPushConfigurationData.md)|  | [optional] 
 
 ### Return type
@@ -191,7 +191,7 @@ No authorization required
 
 ## AddHmsPushConfiguration
 
-> AddHmsPushConfigurationResponse AddHmsPushConfiguration (string apiToken = null, AddHmsPushConfigurationData addHmsPushConfigurationData = null)
+> AddHmsPushConfigurationResponse AddHmsPushConfiguration (string apiToken, AddHmsPushConfigurationData addHmsPushConfigurationData = null)
 
 Add an HMS push configuration
 
@@ -214,7 +214,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var addHmsPushConfigurationData = new AddHmsPushConfigurationData(); // AddHmsPushConfigurationData |  (optional) 
 
             try
@@ -239,7 +239,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **addHmsPushConfigurationData** | [**AddHmsPushConfigurationData**](AddHmsPushConfigurationData.md)|  | [optional] 
 
 ### Return type
@@ -269,7 +269,7 @@ No authorization required
 
 ## AddIpToWhitelist
 
-> AddIpToWhitelistResponse AddIpToWhitelist (string apiToken = null, AddIpToWhitelistData addIpToWhitelistData = null)
+> AddIpToWhitelistResponse AddIpToWhitelist (string apiToken, AddIpToWhitelistData addIpToWhitelistData = null)
 
 Add an IP to a whitelist
 
@@ -292,7 +292,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var addIpToWhitelistData = new AddIpToWhitelistData(); // AddIpToWhitelistData |  (optional) 
 
             try
@@ -317,7 +317,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **addIpToWhitelistData** | [**AddIpToWhitelistData**](AddIpToWhitelistData.md)|  | [optional] 
 
 ### Return type
@@ -347,7 +347,7 @@ No authorization required
 
 ## DeleteAllowedIpsFromWhitelist
 
-> DeleteAllowedIpsFromWhitelistResponse DeleteAllowedIpsFromWhitelist (List<string> ipWhitelistAddresses, string apiToken = null)
+> DeleteAllowedIpsFromWhitelistResponse DeleteAllowedIpsFromWhitelist (string apiToken, List<string> ipWhitelistAddresses)
 
 Delete allowed IPs from a whitelist
 
@@ -370,13 +370,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var ipWhitelistAddresses = new List<string>(); // List<string> | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Delete allowed IPs from a whitelist
-                DeleteAllowedIpsFromWhitelistResponse result = apiInstance.DeleteAllowedIpsFromWhitelist(ipWhitelistAddresses, apiToken);
+                DeleteAllowedIpsFromWhitelistResponse result = apiInstance.DeleteAllowedIpsFromWhitelist(apiToken, ipWhitelistAddresses);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -395,8 +395,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **ipWhitelistAddresses** | [**List&lt;string&gt;**](string.md)|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -425,7 +425,7 @@ No authorization required
 
 ## DeleteApnsCertificateById
 
-> DeleteApnsCertificateByIdResponse DeleteApnsCertificateById (string providerId, string apiToken = null)
+> DeleteApnsCertificateByIdResponse DeleteApnsCertificateById (string apiToken, string providerId)
 
 Delete an APNs certificate
 
@@ -448,13 +448,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var providerId = providerId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Delete an APNs certificate
-                DeleteApnsCertificateByIdResponse result = apiInstance.DeleteApnsCertificateById(providerId, apiToken);
+                DeleteApnsCertificateByIdResponse result = apiInstance.DeleteApnsCertificateById(apiToken, providerId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -473,8 +473,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **providerId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -503,7 +503,7 @@ No authorization required
 
 ## GenerateSecondaryApiToken
 
-> GenerateSecondaryApiTokenResponse GenerateSecondaryApiToken (string apiToken = null, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = null)
+> GenerateSecondaryApiTokenResponse GenerateSecondaryApiToken (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = null)
 
 Generate a secondary API token
 
@@ -526,7 +526,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var generateSecondaryApiTokenData = new GenerateSecondaryApiTokenData(); // GenerateSecondaryApiTokenData |  (optional) 
 
             try
@@ -551,7 +551,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **generateSecondaryApiTokenData** | [**GenerateSecondaryApiTokenData**](GenerateSecondaryApiTokenData.md)|  | [optional] 
 
 ### Return type
@@ -581,7 +581,7 @@ No authorization required
 
 ## ListPushConfigurations
 
-> ListPushConfigurationsResponse ListPushConfigurations (string pushType, string apiToken = null)
+> ListPushConfigurationsResponse ListPushConfigurations (string apiToken, string pushType)
 
 List push configurations
 
@@ -604,13 +604,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var pushType = pushType_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // List push configurations
-                ListPushConfigurationsResponse result = apiInstance.ListPushConfigurations(pushType, apiToken);
+                ListPushConfigurationsResponse result = apiInstance.ListPushConfigurations(apiToken, pushType);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -629,8 +629,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **pushType** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -659,7 +659,7 @@ No authorization required
 
 ## ListPushNotificationContentTemplates
 
-> ListPushNotificationContentTemplatesResponse ListPushNotificationContentTemplates (string apiToken = null)
+> ListPushNotificationContentTemplatesResponse ListPushNotificationContentTemplates (string apiToken)
 
 List push notification content templates
 
@@ -682,7 +682,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
 
             try
             {
@@ -706,7 +706,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
 
 ### Return type
 
@@ -735,7 +735,7 @@ No authorization required
 
 ## ListSecondaryApiTokens
 
-> ListSecondaryApiTokensResponse ListSecondaryApiTokens (string apiToken = null)
+> ListSecondaryApiTokensResponse ListSecondaryApiTokens (string apiToken)
 
 List secondary API tokens
 
@@ -758,7 +758,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
 
             try
             {
@@ -782,7 +782,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
 
 ### Return type
 
@@ -811,7 +811,7 @@ No authorization required
 
 ## RemovePushConfigurationById
 
-> RemovePushConfigurationByIdResponse RemovePushConfigurationById (string pushType, string providerId, string apiToken = null)
+> RemovePushConfigurationByIdResponse RemovePushConfigurationById (string apiToken, string pushType, string providerId)
 
 Remove a push configuration
 
@@ -834,14 +834,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var pushType = pushType_example;  // string | 
             var providerId = providerId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Remove a push configuration
-                RemovePushConfigurationByIdResponse result = apiInstance.RemovePushConfigurationById(pushType, providerId, apiToken);
+                RemovePushConfigurationByIdResponse result = apiInstance.RemovePushConfigurationById(apiToken, pushType, providerId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -860,9 +860,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **pushType** | **string**|  | 
  **providerId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -891,7 +891,7 @@ No authorization required
 
 ## RetrieveIpWhitelist
 
-> RetrieveIpWhitelistResponse RetrieveIpWhitelist (string apiToken = null)
+> RetrieveIpWhitelistResponse RetrieveIpWhitelist (string apiToken)
 
 Retrieve an IP whitelist
 
@@ -914,7 +914,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
 
             try
             {
@@ -938,7 +938,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
 
 ### Return type
 
@@ -967,7 +967,7 @@ No authorization required
 
 ## RevokeSecondaryApiTokenByToken
 
-> RevokeSecondaryApiTokenByTokenResponse RevokeSecondaryApiTokenByToken (string apiToken2, string apiToken = null)
+> RevokeSecondaryApiTokenByTokenResponse RevokeSecondaryApiTokenByToken (string apiToken, string apiToken2)
 
 Revoke a secondary API token
 
@@ -990,13 +990,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var apiToken2 = apiToken_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Revoke a secondary API token
-                RevokeSecondaryApiTokenByTokenResponse result = apiInstance.RevokeSecondaryApiTokenByToken(apiToken2, apiToken);
+                RevokeSecondaryApiTokenByTokenResponse result = apiInstance.RevokeSecondaryApiTokenByToken(apiToken, apiToken2);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1015,8 +1015,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **apiToken2** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1045,7 +1045,7 @@ No authorization required
 
 ## UpdateApnsPushConfigurationById
 
-> UpdateApnsPushConfigurationByIdResponse UpdateApnsPushConfigurationById (string providerId, string apiToken = null, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = null)
+> UpdateApnsPushConfigurationByIdResponse UpdateApnsPushConfigurationById (string apiToken, string providerId, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = null)
 
 Update an APNs push configuration
 
@@ -1068,14 +1068,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var providerId = providerId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updateApnsPushConfigurationByIdData = new UpdateApnsPushConfigurationByIdData(); // UpdateApnsPushConfigurationByIdData |  (optional) 
 
             try
             {
                 // Update an APNs push configuration
-                UpdateApnsPushConfigurationByIdResponse result = apiInstance.UpdateApnsPushConfigurationById(providerId, apiToken, updateApnsPushConfigurationByIdData);
+                UpdateApnsPushConfigurationByIdResponse result = apiInstance.UpdateApnsPushConfigurationById(apiToken, providerId, updateApnsPushConfigurationByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1094,8 +1094,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **providerId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **updateApnsPushConfigurationByIdData** | [**UpdateApnsPushConfigurationByIdData**](UpdateApnsPushConfigurationByIdData.md)|  | [optional] 
 
 ### Return type
@@ -1125,7 +1125,7 @@ No authorization required
 
 ## UpdateDefaultChannelInvitationPreference
 
-> UpdateDefaultChannelInvitationPreferenceResponse UpdateDefaultChannelInvitationPreference (string apiToken = null, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = null)
+> UpdateDefaultChannelInvitationPreferenceResponse UpdateDefaultChannelInvitationPreference (string apiToken, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = null)
 
 Update default channel invitation preference
 
@@ -1148,7 +1148,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var updateDefaultChannelInvitationPreferenceData = new UpdateDefaultChannelInvitationPreferenceData(); // UpdateDefaultChannelInvitationPreferenceData |  (optional) 
 
             try
@@ -1173,7 +1173,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **updateDefaultChannelInvitationPreferenceData** | [**UpdateDefaultChannelInvitationPreferenceData**](UpdateDefaultChannelInvitationPreferenceData.md)|  | [optional] 
 
 ### Return type
@@ -1203,7 +1203,7 @@ No authorization required
 
 ## UpdateFcmPushConfigurationById
 
-> UpdateFcmPushConfigurationByIdResponse UpdateFcmPushConfigurationById (string providerId, string apiToken = null, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = null)
+> UpdateFcmPushConfigurationByIdResponse UpdateFcmPushConfigurationById (string apiToken, string providerId, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = null)
 
 Update a FCM push configuration
 
@@ -1226,14 +1226,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var providerId = providerId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updateFcmPushConfigurationByIdData = new UpdateFcmPushConfigurationByIdData(); // UpdateFcmPushConfigurationByIdData |  (optional) 
 
             try
             {
                 // Update a FCM push configuration
-                UpdateFcmPushConfigurationByIdResponse result = apiInstance.UpdateFcmPushConfigurationById(providerId, apiToken, updateFcmPushConfigurationByIdData);
+                UpdateFcmPushConfigurationByIdResponse result = apiInstance.UpdateFcmPushConfigurationById(apiToken, providerId, updateFcmPushConfigurationByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1252,8 +1252,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **providerId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **updateFcmPushConfigurationByIdData** | [**UpdateFcmPushConfigurationByIdData**](UpdateFcmPushConfigurationByIdData.md)|  | [optional] 
 
 ### Return type
@@ -1283,7 +1283,7 @@ No authorization required
 
 ## UpdateHmsPushConfigurationById
 
-> UpdateHmsPushConfigurationByIdResponse UpdateHmsPushConfigurationById (string providerId, string apiToken = null, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = null)
+> UpdateHmsPushConfigurationByIdResponse UpdateHmsPushConfigurationById (string apiToken, string providerId, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = null)
 
 Update an HMS push configuration
 
@@ -1306,14 +1306,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var providerId = providerId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updateHmsPushConfigurationByIdData = new UpdateHmsPushConfigurationByIdData(); // UpdateHmsPushConfigurationByIdData |  (optional) 
 
             try
             {
                 // Update an HMS push configuration
-                UpdateHmsPushConfigurationByIdResponse result = apiInstance.UpdateHmsPushConfigurationById(providerId, apiToken, updateHmsPushConfigurationByIdData);
+                UpdateHmsPushConfigurationByIdResponse result = apiInstance.UpdateHmsPushConfigurationById(apiToken, providerId, updateHmsPushConfigurationByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1332,8 +1332,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **providerId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **updateHmsPushConfigurationByIdData** | [**UpdateHmsPushConfigurationByIdData**](UpdateHmsPushConfigurationByIdData.md)|  | [optional] 
 
 ### Return type
@@ -1363,7 +1363,7 @@ No authorization required
 
 ## UpdatePushNotificationContentTemplate
 
-> UpdatePushNotificationContentTemplateResponse UpdatePushNotificationContentTemplate (string templateName, string apiToken = null, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = null)
+> UpdatePushNotificationContentTemplateResponse UpdatePushNotificationContentTemplate (string apiToken, string templateName, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = null)
 
 Update a push notification content template
 
@@ -1386,14 +1386,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var templateName = templateName_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updatePushNotificationContentTemplateData = new UpdatePushNotificationContentTemplateData(); // UpdatePushNotificationContentTemplateData |  (optional) 
 
             try
             {
                 // Update a push notification content template
-                UpdatePushNotificationContentTemplateResponse result = apiInstance.UpdatePushNotificationContentTemplate(templateName, apiToken, updatePushNotificationContentTemplateData);
+                UpdatePushNotificationContentTemplateResponse result = apiInstance.UpdatePushNotificationContentTemplate(apiToken, templateName, updatePushNotificationContentTemplateData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1412,8 +1412,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **templateName** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **updatePushNotificationContentTemplateData** | [**UpdatePushNotificationContentTemplateData**](UpdatePushNotificationContentTemplateData.md)|  | [optional] 
 
 ### Return type
@@ -1443,7 +1443,7 @@ No authorization required
 
 ## ViewDefaultChannelInvitationPreference
 
-> ViewDefaultChannelInvitationPreferenceResponse ViewDefaultChannelInvitationPreference (string apiToken = null)
+> ViewDefaultChannelInvitationPreferenceResponse ViewDefaultChannelInvitationPreference (string apiToken)
 
 View default channel invitation preference
 
@@ -1466,7 +1466,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
 
             try
             {
@@ -1490,7 +1490,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
 
 ### Return type
 
@@ -1519,7 +1519,7 @@ No authorization required
 
 ## ViewNumberOfConcurrentConnections
 
-> ViewNumberOfConcurrentConnectionsResponse ViewNumberOfConcurrentConnections (string apiToken = null)
+> ViewNumberOfConcurrentConnectionsResponse ViewNumberOfConcurrentConnections (string apiToken)
 
 View number of concurrent connections
 
@@ -1542,7 +1542,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
 
             try
             {
@@ -1566,7 +1566,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
 
 ### Return type
 
@@ -1595,7 +1595,7 @@ No authorization required
 
 ## ViewNumberOfDailyActiveUsers
 
-> ViewNumberOfDailyActiveUsersResponse ViewNumberOfDailyActiveUsers (string apiToken = null, string date = null)
+> ViewNumberOfDailyActiveUsersResponse ViewNumberOfDailyActiveUsers (string apiToken, string date = null)
 
 View number of daily active users
 
@@ -1618,7 +1618,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var date = date_example;  // string |  (optional) 
 
             try
@@ -1643,7 +1643,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **date** | **string**|  | [optional] 
 
 ### Return type
@@ -1673,7 +1673,7 @@ No authorization required
 
 ## ViewNumberOfMonthlyActiveUsers
 
-> ViewNumberOfMonthlyActiveUsersResponse ViewNumberOfMonthlyActiveUsers (string apiToken = null, string date = null)
+> ViewNumberOfMonthlyActiveUsersResponse ViewNumberOfMonthlyActiveUsers (string apiToken, string date = null)
 
 View number of monthly active users
 
@@ -1696,7 +1696,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var date = date_example;  // string |  (optional) 
 
             try
@@ -1721,7 +1721,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **date** | **string**|  | [optional] 
 
 ### Return type
@@ -1751,7 +1751,7 @@ No authorization required
 
 ## ViewNumberOfPeakConnections
 
-> ViewNumberOfPeakConnectionsResponse ViewNumberOfPeakConnections (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = null, int? startDay = null, int? endDay = null)
+> ViewNumberOfPeakConnectionsResponse ViewNumberOfPeakConnections (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = null, int? endDay = null)
 
 View number of peak connections
 
@@ -1774,19 +1774,19 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var timeDimension = timeDimension_example;  // string | 
             var startYear = 56;  // int | 
             var startMonth = 56;  // int | 
             var endYear = 56;  // int | 
             var endMonth = 56;  // int | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var startDay = 56;  // int? |  (optional) 
             var endDay = 56;  // int? |  (optional) 
 
             try
             {
                 // View number of peak connections
-                ViewNumberOfPeakConnectionsResponse result = apiInstance.ViewNumberOfPeakConnections(timeDimension, startYear, startMonth, endYear, endMonth, apiToken, startDay, endDay);
+                ViewNumberOfPeakConnectionsResponse result = apiInstance.ViewNumberOfPeakConnections(apiToken, timeDimension, startYear, startMonth, endYear, endMonth, startDay, endDay);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1805,12 +1805,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **timeDimension** | **string**|  | 
  **startYear** | **int**|  | 
  **startMonth** | **int**|  | 
  **endYear** | **int**|  | 
  **endMonth** | **int**|  | 
- **apiToken** | **string**|  | [optional] 
  **startDay** | **int?**|  | [optional] 
  **endDay** | **int?**|  | [optional] 
 
@@ -1841,7 +1841,7 @@ No authorization required
 
 ## ViewPushConfigurationById
 
-> ViewPushConfigurationByIdResponse ViewPushConfigurationById (string pushType, string providerId, string apiToken = null)
+> ViewPushConfigurationByIdResponse ViewPushConfigurationById (string apiToken, string pushType, string providerId)
 
 View a push configuration
 
@@ -1864,14 +1864,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var pushType = pushType_example;  // string | 
             var providerId = providerId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View a push configuration
-                ViewPushConfigurationByIdResponse result = apiInstance.ViewPushConfigurationById(pushType, providerId, apiToken);
+                ViewPushConfigurationByIdResponse result = apiInstance.ViewPushConfigurationById(apiToken, pushType, providerId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1890,9 +1890,9 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **pushType** | **string**|  | 
  **providerId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1921,7 +1921,7 @@ No authorization required
 
 ## ViewPushNotificationContentTemplate
 
-> ViewPushNotificationContentTemplateResponse ViewPushNotificationContentTemplate (string templateName, string apiToken = null)
+> ViewPushNotificationContentTemplateResponse ViewPushNotificationContentTemplate (string apiToken, string templateName)
 
 View a push notification content template
 
@@ -1944,13 +1944,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var templateName = templateName_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View a push notification content template
-                ViewPushNotificationContentTemplateResponse result = apiInstance.ViewPushNotificationContentTemplate(templateName, apiToken);
+                ViewPushNotificationContentTemplateResponse result = apiInstance.ViewPushNotificationContentTemplate(apiToken, templateName);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1969,8 +1969,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **templateName** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1999,7 +1999,7 @@ No authorization required
 
 ## ViewSecondaryApiTokenByToken
 
-> ViewSecondaryApiTokenByTokenResponse ViewSecondaryApiTokenByToken (string apiToken2, string apiToken = null)
+> ViewSecondaryApiTokenByTokenResponse ViewSecondaryApiTokenByToken (string apiToken, string apiToken2)
 
 View a secondary API token
 
@@ -2022,13 +2022,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var apiToken2 = apiToken_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View a secondary API token
-                ViewSecondaryApiTokenByTokenResponse result = apiInstance.ViewSecondaryApiTokenByToken(apiToken2, apiToken);
+                ViewSecondaryApiTokenByTokenResponse result = apiInstance.ViewSecondaryApiTokenByToken(apiToken, apiToken2);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2047,8 +2047,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **apiToken2** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 

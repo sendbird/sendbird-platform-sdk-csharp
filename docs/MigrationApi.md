@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## MigrateMessagesByUrl
 
-> void MigrateMessagesByUrl (string targetChannelUrl, string apiToken = null, Object body = null)
+> void MigrateMessagesByUrl (string apiToken, string targetChannelUrl, Object body = null)
 
 Migrate messages
 
@@ -33,14 +33,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MigrationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var targetChannelUrl = targetChannelUrl_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var body = ;  // Object |  (optional) 
 
             try
             {
                 // Migrate messages
-                apiInstance.MigrateMessagesByUrl(targetChannelUrl, apiToken, body);
+                apiInstance.MigrateMessagesByUrl(apiToken, targetChannelUrl, body);
             }
             catch (ApiException e)
             {
@@ -58,8 +58,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **targetChannelUrl** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **body** | **Object**|  | [optional] 
 
 ### Return type

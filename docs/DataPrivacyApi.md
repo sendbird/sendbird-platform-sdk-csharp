@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 ## CancelTheRegistrationOfGdprRequestById
 
-> void CancelTheRegistrationOfGdprRequestById (string requestId, string apiToken = null)
+> void CancelTheRegistrationOfGdprRequestById (string apiToken, string requestId)
 
 Cancel the registration of a GDPR request
 
@@ -36,13 +36,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new DataPrivacyApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var requestId = requestId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Cancel the registration of a GDPR request
-                apiInstance.CancelTheRegistrationOfGdprRequestById(requestId, apiToken);
+                apiInstance.CancelTheRegistrationOfGdprRequestById(apiToken, requestId);
             }
             catch (ApiException e)
             {
@@ -60,8 +60,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **requestId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -90,7 +90,7 @@ No authorization required
 
 ## ListGdprRequests
 
-> ListGdprRequestsResponse ListGdprRequests (string apiToken = null, string token = null, int? limit = null)
+> ListGdprRequestsResponse ListGdprRequests (string apiToken, string token = null, int? limit = null)
 
 List GDPR requests
 
@@ -113,7 +113,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new DataPrivacyApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
@@ -139,7 +139,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
 
@@ -170,7 +170,7 @@ No authorization required
 
 ## RegisterGdprRequest
 
-> RegisterGdprRequestResponse RegisterGdprRequest (string apiToken = null, RegisterGdprRequestData registerGdprRequestData = null)
+> RegisterGdprRequestResponse RegisterGdprRequest (string apiToken, RegisterGdprRequestData registerGdprRequestData = null)
 
 Register a GDPR request
 
@@ -193,7 +193,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new DataPrivacyApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var registerGdprRequestData = new RegisterGdprRequestData(); // RegisterGdprRequestData |  (optional) 
 
             try
@@ -218,7 +218,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **registerGdprRequestData** | [**RegisterGdprRequestData**](RegisterGdprRequestData.md)|  | [optional] 
 
 ### Return type
@@ -248,7 +248,7 @@ No authorization required
 
 ## ViewGdprRequestById
 
-> ViewGdprRequestByIdResponse ViewGdprRequestById (string requestId, string apiToken = null)
+> ViewGdprRequestByIdResponse ViewGdprRequestById (string apiToken, string requestId)
 
 View a GDPR request
 
@@ -271,13 +271,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new DataPrivacyApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var requestId = requestId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View a GDPR request
-                ViewGdprRequestByIdResponse result = apiInstance.ViewGdprRequestById(requestId, apiToken);
+                ViewGdprRequestByIdResponse result = apiInstance.ViewGdprRequestById(apiToken, requestId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -296,8 +296,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **requestId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 

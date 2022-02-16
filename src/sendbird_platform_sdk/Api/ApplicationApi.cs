@@ -32,10 +32,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Add an APNs push configuration  Registers an APNs (Apple Push Notification service) push configuration for your client app. To send push notifications to iOS devices, your should first register the APNs push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  &gt; __Note__: To upload a [.p12](https://sendbird.com/docs/chat/v3/ios/guides/push-notifications#2-step-3-export-a-p12-file-and-upload-to-sendbird-dashboard) certificate file to Sendbird server, you should send a [Multipart request](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api#2-headers-3-multipart-requests).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-apns-push-configuration
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
         /// <returns>AddApnsPushConfigurationResponse</returns>
-        AddApnsPushConfigurationResponse AddApnsPushConfiguration (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData));
+        AddApnsPushConfigurationResponse AddApnsPushConfiguration (string apiToken, AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData));
 
         /// <summary>
         /// Add an APNs push configuration
@@ -44,10 +44,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Add an APNs push configuration  Registers an APNs (Apple Push Notification service) push configuration for your client app. To send push notifications to iOS devices, your should first register the APNs push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  &gt; __Note__: To upload a [.p12](https://sendbird.com/docs/chat/v3/ios/guides/push-notifications#2-step-3-export-a-p12-file-and-upload-to-sendbird-dashboard) certificate file to Sendbird server, you should send a [Multipart request](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api#2-headers-3-multipart-requests).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-apns-push-configuration
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
         /// <returns>ApiResponse of AddApnsPushConfigurationResponse</returns>
-        ApiResponse<AddApnsPushConfigurationResponse> AddApnsPushConfigurationWithHttpInfo (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData));
+        ApiResponse<AddApnsPushConfigurationResponse> AddApnsPushConfigurationWithHttpInfo (string apiToken, AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData));
         /// <summary>
         /// Add a FCM push configuration
         /// </summary>
@@ -55,10 +55,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Add a FCM push configuration  Registers a FCM (Firebase Cloud Messaging) push configuration for your client app. To send push notifications to Android devices, you should first register the FCM push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-a-fcm-push-configuration
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
         /// <returns>AddFcmPushConfigurationResponse</returns>
-        AddFcmPushConfigurationResponse AddFcmPushConfiguration (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData));
+        AddFcmPushConfigurationResponse AddFcmPushConfiguration (string apiToken, AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData));
 
         /// <summary>
         /// Add a FCM push configuration
@@ -67,10 +67,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Add a FCM push configuration  Registers a FCM (Firebase Cloud Messaging) push configuration for your client app. To send push notifications to Android devices, you should first register the FCM push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-a-fcm-push-configuration
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
         /// <returns>ApiResponse of AddFcmPushConfigurationResponse</returns>
-        ApiResponse<AddFcmPushConfigurationResponse> AddFcmPushConfigurationWithHttpInfo (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData));
+        ApiResponse<AddFcmPushConfigurationResponse> AddFcmPushConfigurationWithHttpInfo (string apiToken, AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData));
         /// <summary>
         /// Add an HMS push configuration
         /// </summary>
@@ -78,10 +78,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Add an HMS push configuration  Registers an HMS (Huawei Mobile Services) push configuration for your client app. To send push notifications to Android devices for HMS, you should first register the HMS push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-hms-push-configuration
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
         /// <returns>AddHmsPushConfigurationResponse</returns>
-        AddHmsPushConfigurationResponse AddHmsPushConfiguration (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData));
+        AddHmsPushConfigurationResponse AddHmsPushConfiguration (string apiToken, AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData));
 
         /// <summary>
         /// Add an HMS push configuration
@@ -90,10 +90,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Add an HMS push configuration  Registers an HMS (Huawei Mobile Services) push configuration for your client app. To send push notifications to Android devices for HMS, you should first register the HMS push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-hms-push-configuration
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
         /// <returns>ApiResponse of AddHmsPushConfigurationResponse</returns>
-        ApiResponse<AddHmsPushConfigurationResponse> AddHmsPushConfigurationWithHttpInfo (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData));
+        ApiResponse<AddHmsPushConfigurationResponse> AddHmsPushConfigurationWithHttpInfo (string apiToken, AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData));
         /// <summary>
         /// Add an IP to a whitelist
         /// </summary>
@@ -101,10 +101,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Add an IP to a whitelist  Adds IP addresses and ranges to your Sendbird application settings. Both currently added and any previously added IPs are granted API access. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-ip-to-a-whitelist
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addIpToWhitelistData"> (optional)</param>
         /// <returns>AddIpToWhitelistResponse</returns>
-        AddIpToWhitelistResponse AddIpToWhitelist (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData));
+        AddIpToWhitelistResponse AddIpToWhitelist (string apiToken, AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData));
 
         /// <summary>
         /// Add an IP to a whitelist
@@ -113,10 +113,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Add an IP to a whitelist  Adds IP addresses and ranges to your Sendbird application settings. Both currently added and any previously added IPs are granted API access. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-ip-to-a-whitelist
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addIpToWhitelistData"> (optional)</param>
         /// <returns>ApiResponse of AddIpToWhitelistResponse</returns>
-        ApiResponse<AddIpToWhitelistResponse> AddIpToWhitelistWithHttpInfo (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData));
+        ApiResponse<AddIpToWhitelistResponse> AddIpToWhitelistWithHttpInfo (string apiToken, AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData));
         /// <summary>
         /// Delete allowed IPs from a whitelist
         /// </summary>
@@ -124,10 +124,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete allowed IPs from a whitelist  Deletes allowed IPs from the whitelist by specifying their IP addresses or ranges. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-delete-allowed-ips-from-a-whitelist
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="ipWhitelistAddresses"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>DeleteAllowedIpsFromWhitelistResponse</returns>
-        DeleteAllowedIpsFromWhitelistResponse DeleteAllowedIpsFromWhitelist (List<string> ipWhitelistAddresses, string apiToken = default(string));
+        DeleteAllowedIpsFromWhitelistResponse DeleteAllowedIpsFromWhitelist (string apiToken, List<string> ipWhitelistAddresses);
 
         /// <summary>
         /// Delete allowed IPs from a whitelist
@@ -136,10 +136,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete allowed IPs from a whitelist  Deletes allowed IPs from the whitelist by specifying their IP addresses or ranges. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-delete-allowed-ips-from-a-whitelist
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="ipWhitelistAddresses"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of DeleteAllowedIpsFromWhitelistResponse</returns>
-        ApiResponse<DeleteAllowedIpsFromWhitelistResponse> DeleteAllowedIpsFromWhitelistWithHttpInfo (List<string> ipWhitelistAddresses, string apiToken = default(string));
+        ApiResponse<DeleteAllowedIpsFromWhitelistResponse> DeleteAllowedIpsFromWhitelistWithHttpInfo (string apiToken, List<string> ipWhitelistAddresses);
         /// <summary>
         /// Delete an APNs certificate
         /// </summary>
@@ -147,10 +147,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete an APNs certificate  Deletes a specific APNs certificate.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-delete-an-apns-certificate - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>DeleteApnsCertificateByIdResponse</returns>
-        DeleteApnsCertificateByIdResponse DeleteApnsCertificateById (string providerId, string apiToken = default(string));
+        DeleteApnsCertificateByIdResponse DeleteApnsCertificateById (string apiToken, string providerId);
 
         /// <summary>
         /// Delete an APNs certificate
@@ -159,10 +159,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete an APNs certificate  Deletes a specific APNs certificate.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-delete-an-apns-certificate - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of DeleteApnsCertificateByIdResponse</returns>
-        ApiResponse<DeleteApnsCertificateByIdResponse> DeleteApnsCertificateByIdWithHttpInfo (string providerId, string apiToken = default(string));
+        ApiResponse<DeleteApnsCertificateByIdResponse> DeleteApnsCertificateByIdWithHttpInfo (string apiToken, string providerId);
         /// <summary>
         /// Generate a secondary API token
         /// </summary>
@@ -170,10 +170,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Generate a secondary API token  Generates a new secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-generate-a-secondary-api-token
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
         /// <returns>GenerateSecondaryApiTokenResponse</returns>
-        GenerateSecondaryApiTokenResponse GenerateSecondaryApiToken (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData));
+        GenerateSecondaryApiTokenResponse GenerateSecondaryApiToken (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData));
 
         /// <summary>
         /// Generate a secondary API token
@@ -182,10 +182,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Generate a secondary API token  Generates a new secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-generate-a-secondary-api-token
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
         /// <returns>ApiResponse of GenerateSecondaryApiTokenResponse</returns>
-        ApiResponse<GenerateSecondaryApiTokenResponse> GenerateSecondaryApiTokenWithHttpInfo (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData));
+        ApiResponse<GenerateSecondaryApiTokenResponse> GenerateSecondaryApiTokenWithHttpInfo (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData));
         /// <summary>
         /// List push configurations
         /// </summary>
@@ -193,10 +193,10 @@ namespace sendbird_platform_sdk.Api
         /// ## List push configurations  Retrieves a list of an application&#39;s registered push configurations.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-push-configurations - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ListPushConfigurationsResponse</returns>
-        ListPushConfigurationsResponse ListPushConfigurations (string pushType, string apiToken = default(string));
+        ListPushConfigurationsResponse ListPushConfigurations (string apiToken, string pushType);
 
         /// <summary>
         /// List push configurations
@@ -205,10 +205,10 @@ namespace sendbird_platform_sdk.Api
         /// ## List push configurations  Retrieves a list of an application&#39;s registered push configurations.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-push-configurations - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of ListPushConfigurationsResponse</returns>
-        ApiResponse<ListPushConfigurationsResponse> ListPushConfigurationsWithHttpInfo (string pushType, string apiToken = default(string));
+        ApiResponse<ListPushConfigurationsResponse> ListPushConfigurationsWithHttpInfo (string apiToken, string pushType);
         /// <summary>
         /// List push notification content templates
         /// </summary>
@@ -216,9 +216,9 @@ namespace sendbird_platform_sdk.Api
         /// ## List push notification content templates  Retrieves a list of push notification content templates of an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-push-notification-content-templates
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ListPushNotificationContentTemplatesResponse</returns>
-        ListPushNotificationContentTemplatesResponse ListPushNotificationContentTemplates (string apiToken = default(string));
+        ListPushNotificationContentTemplatesResponse ListPushNotificationContentTemplates (string apiToken);
 
         /// <summary>
         /// List push notification content templates
@@ -227,9 +227,9 @@ namespace sendbird_platform_sdk.Api
         /// ## List push notification content templates  Retrieves a list of push notification content templates of an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-push-notification-content-templates
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of ListPushNotificationContentTemplatesResponse</returns>
-        ApiResponse<ListPushNotificationContentTemplatesResponse> ListPushNotificationContentTemplatesWithHttpInfo (string apiToken = default(string));
+        ApiResponse<ListPushNotificationContentTemplatesResponse> ListPushNotificationContentTemplatesWithHttpInfo (string apiToken);
         /// <summary>
         /// List secondary API tokens
         /// </summary>
@@ -237,9 +237,9 @@ namespace sendbird_platform_sdk.Api
         /// ## List secondary API tokens  Retrieves a list of secondary API tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-secondary-api-tokens
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ListSecondaryApiTokensResponse</returns>
-        ListSecondaryApiTokensResponse ListSecondaryApiTokens (string apiToken = default(string));
+        ListSecondaryApiTokensResponse ListSecondaryApiTokens (string apiToken);
 
         /// <summary>
         /// List secondary API tokens
@@ -248,9 +248,9 @@ namespace sendbird_platform_sdk.Api
         /// ## List secondary API tokens  Retrieves a list of secondary API tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-secondary-api-tokens
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of ListSecondaryApiTokensResponse</returns>
-        ApiResponse<ListSecondaryApiTokensResponse> ListSecondaryApiTokensWithHttpInfo (string apiToken = default(string));
+        ApiResponse<ListSecondaryApiTokensResponse> ListSecondaryApiTokensWithHttpInfo (string apiToken);
         /// <summary>
         /// Remove a push configuration
         /// </summary>
@@ -258,11 +258,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Remove a push configuration  Removes a specific push configuration from an application. The type of a push configuration is either &#x60;fcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-remove-a-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>RemovePushConfigurationByIdResponse</returns>
-        RemovePushConfigurationByIdResponse RemovePushConfigurationById (string pushType, string providerId, string apiToken = default(string));
+        RemovePushConfigurationByIdResponse RemovePushConfigurationById (string apiToken, string pushType, string providerId);
 
         /// <summary>
         /// Remove a push configuration
@@ -271,11 +271,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Remove a push configuration  Removes a specific push configuration from an application. The type of a push configuration is either &#x60;fcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-remove-a-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of RemovePushConfigurationByIdResponse</returns>
-        ApiResponse<RemovePushConfigurationByIdResponse> RemovePushConfigurationByIdWithHttpInfo (string pushType, string providerId, string apiToken = default(string));
+        ApiResponse<RemovePushConfigurationByIdResponse> RemovePushConfigurationByIdWithHttpInfo (string apiToken, string pushType, string providerId);
         /// <summary>
         /// Retrieve an IP whitelist
         /// </summary>
@@ -283,9 +283,9 @@ namespace sendbird_platform_sdk.Api
         /// ## Retrieve an IP whitelist  Retrieves a list of all the IP ranges and addresses that have access to your Sendbird application. This list is called an IP whitelist and its addresses are granted API access when the IP whitelist API enables [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) notations.  If you specify which IP addresses or ranges to include in the whitelist, any unlisted foreign IP addresses will be denied access. If you don&#39;t specify any IP address or range to include in the whitelist, all IP addresses will be granted API access. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-retrieve-an-ip-whitelist
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>RetrieveIpWhitelistResponse</returns>
-        RetrieveIpWhitelistResponse RetrieveIpWhitelist (string apiToken = default(string));
+        RetrieveIpWhitelistResponse RetrieveIpWhitelist (string apiToken);
 
         /// <summary>
         /// Retrieve an IP whitelist
@@ -294,9 +294,9 @@ namespace sendbird_platform_sdk.Api
         /// ## Retrieve an IP whitelist  Retrieves a list of all the IP ranges and addresses that have access to your Sendbird application. This list is called an IP whitelist and its addresses are granted API access when the IP whitelist API enables [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) notations.  If you specify which IP addresses or ranges to include in the whitelist, any unlisted foreign IP addresses will be denied access. If you don&#39;t specify any IP address or range to include in the whitelist, all IP addresses will be granted API access. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-retrieve-an-ip-whitelist
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of RetrieveIpWhitelistResponse</returns>
-        ApiResponse<RetrieveIpWhitelistResponse> RetrieveIpWhitelistWithHttpInfo (string apiToken = default(string));
+        ApiResponse<RetrieveIpWhitelistResponse> RetrieveIpWhitelistWithHttpInfo (string apiToken);
         /// <summary>
         /// Revoke a secondary API token
         /// </summary>
@@ -304,10 +304,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Revoke a secondary API token  Revokes a secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-revoke-a-secondary-api-token
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="apiToken2"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>RevokeSecondaryApiTokenByTokenResponse</returns>
-        RevokeSecondaryApiTokenByTokenResponse RevokeSecondaryApiTokenByToken (string apiToken2, string apiToken = default(string));
+        RevokeSecondaryApiTokenByTokenResponse RevokeSecondaryApiTokenByToken (string apiToken, string apiToken2);
 
         /// <summary>
         /// Revoke a secondary API token
@@ -316,10 +316,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Revoke a secondary API token  Revokes a secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-revoke-a-secondary-api-token
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="apiToken2"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of RevokeSecondaryApiTokenByTokenResponse</returns>
-        ApiResponse<RevokeSecondaryApiTokenByTokenResponse> RevokeSecondaryApiTokenByTokenWithHttpInfo (string apiToken2, string apiToken = default(string));
+        ApiResponse<RevokeSecondaryApiTokenByTokenResponse> RevokeSecondaryApiTokenByTokenWithHttpInfo (string apiToken, string apiToken2);
         /// <summary>
         /// Update an APNs push configuration
         /// </summary>
@@ -327,11 +327,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an APNs push configuration  Updates a specific APNs (Apple Push Notification service) push configuration for your client app. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  &gt; __Note__: If your HTTP request body contains a [.p12](https://sendbird.com/docs/chat/v3/ios/guides/push-notifications#2-step-3-export-a-p12-file-and-upload-to-sendbird-dashboard) certificate file to upload to Sendbird server, you should send a [Multipart request](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api#2-headers-3-multipart-requests) .  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-an-apns-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
         /// <returns>UpdateApnsPushConfigurationByIdResponse</returns>
-        UpdateApnsPushConfigurationByIdResponse UpdateApnsPushConfigurationById (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData));
+        UpdateApnsPushConfigurationByIdResponse UpdateApnsPushConfigurationById (string apiToken, string providerId, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData));
 
         /// <summary>
         /// Update an APNs push configuration
@@ -340,11 +340,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an APNs push configuration  Updates a specific APNs (Apple Push Notification service) push configuration for your client app. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  &gt; __Note__: If your HTTP request body contains a [.p12](https://sendbird.com/docs/chat/v3/ios/guides/push-notifications#2-step-3-export-a-p12-file-and-upload-to-sendbird-dashboard) certificate file to upload to Sendbird server, you should send a [Multipart request](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api#2-headers-3-multipart-requests) .  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-an-apns-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
         /// <returns>ApiResponse of UpdateApnsPushConfigurationByIdResponse</returns>
-        ApiResponse<UpdateApnsPushConfigurationByIdResponse> UpdateApnsPushConfigurationByIdWithHttpInfo (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData));
+        ApiResponse<UpdateApnsPushConfigurationByIdResponse> UpdateApnsPushConfigurationByIdWithHttpInfo (string apiToken, string providerId, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData));
         /// <summary>
         /// Update default channel invitation preference
         /// </summary>
@@ -352,10 +352,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Update default channel invitation preference  Updates the default channel invitation preference of an application.  &gt; __Note__: Using the [update channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can update the value of a specific user&#39;s channel invitation preference, which can be set individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
         /// <returns>UpdateDefaultChannelInvitationPreferenceResponse</returns>
-        UpdateDefaultChannelInvitationPreferenceResponse UpdateDefaultChannelInvitationPreference (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData));
+        UpdateDefaultChannelInvitationPreferenceResponse UpdateDefaultChannelInvitationPreference (string apiToken, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData));
 
         /// <summary>
         /// Update default channel invitation preference
@@ -364,10 +364,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Update default channel invitation preference  Updates the default channel invitation preference of an application.  &gt; __Note__: Using the [update channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can update the value of a specific user&#39;s channel invitation preference, which can be set individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
         /// <returns>ApiResponse of UpdateDefaultChannelInvitationPreferenceResponse</returns>
-        ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse> UpdateDefaultChannelInvitationPreferenceWithHttpInfo (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData));
+        ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse> UpdateDefaultChannelInvitationPreferenceWithHttpInfo (string apiToken, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData));
         /// <summary>
         /// Update a FCM push configuration
         /// </summary>
@@ -375,11 +375,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a FCM push configuration  Updates a specific FCM (Firebase Cloud Messaging) push configuration for your client app. You can also update the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-a-fcm-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
         /// <returns>UpdateFcmPushConfigurationByIdResponse</returns>
-        UpdateFcmPushConfigurationByIdResponse UpdateFcmPushConfigurationById (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData));
+        UpdateFcmPushConfigurationByIdResponse UpdateFcmPushConfigurationById (string apiToken, string providerId, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData));
 
         /// <summary>
         /// Update a FCM push configuration
@@ -388,11 +388,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a FCM push configuration  Updates a specific FCM (Firebase Cloud Messaging) push configuration for your client app. You can also update the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-a-fcm-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
         /// <returns>ApiResponse of UpdateFcmPushConfigurationByIdResponse</returns>
-        ApiResponse<UpdateFcmPushConfigurationByIdResponse> UpdateFcmPushConfigurationByIdWithHttpInfo (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData));
+        ApiResponse<UpdateFcmPushConfigurationByIdResponse> UpdateFcmPushConfigurationByIdWithHttpInfo (string apiToken, string providerId, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData));
         /// <summary>
         /// Update an HMS push configuration
         /// </summary>
@@ -400,11 +400,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an HMS push configuration  Updates a specific HMS (Huawei Mobile Services) push configuration for your client app. You can also update the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-an-hms-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
         /// <returns>UpdateHmsPushConfigurationByIdResponse</returns>
-        UpdateHmsPushConfigurationByIdResponse UpdateHmsPushConfigurationById (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData));
+        UpdateHmsPushConfigurationByIdResponse UpdateHmsPushConfigurationById (string apiToken, string providerId, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData));
 
         /// <summary>
         /// Update an HMS push configuration
@@ -413,11 +413,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an HMS push configuration  Updates a specific HMS (Huawei Mobile Services) push configuration for your client app. You can also update the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-an-hms-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
         /// <returns>ApiResponse of UpdateHmsPushConfigurationByIdResponse</returns>
-        ApiResponse<UpdateHmsPushConfigurationByIdResponse> UpdateHmsPushConfigurationByIdWithHttpInfo (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData));
+        ApiResponse<UpdateHmsPushConfigurationByIdResponse> UpdateHmsPushConfigurationByIdWithHttpInfo (string apiToken, string providerId, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData));
         /// <summary>
         /// Update a push notification content template
         /// </summary>
@@ -425,11 +425,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a push notification content template  Updates a specific push notification content template of an application. The name of a content template is either &#x60;default&#x60; or &#x60;alternative&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="templateName"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
         /// <returns>UpdatePushNotificationContentTemplateResponse</returns>
-        UpdatePushNotificationContentTemplateResponse UpdatePushNotificationContentTemplate (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData));
+        UpdatePushNotificationContentTemplateResponse UpdatePushNotificationContentTemplate (string apiToken, string templateName, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData));
 
         /// <summary>
         /// Update a push notification content template
@@ -438,11 +438,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a push notification content template  Updates a specific push notification content template of an application. The name of a content template is either &#x60;default&#x60; or &#x60;alternative&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="templateName"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
         /// <returns>ApiResponse of UpdatePushNotificationContentTemplateResponse</returns>
-        ApiResponse<UpdatePushNotificationContentTemplateResponse> UpdatePushNotificationContentTemplateWithHttpInfo (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData));
+        ApiResponse<UpdatePushNotificationContentTemplateResponse> UpdatePushNotificationContentTemplateWithHttpInfo (string apiToken, string templateName, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData));
         /// <summary>
         /// View default channel invitation preference
         /// </summary>
@@ -450,9 +450,9 @@ namespace sendbird_platform_sdk.Api
         /// ## View default channel invitation preference  Retrieves the default channel invitation preference of an application.  &gt; __Note__: Using the [view channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference) action, you can retrieve the value of a specific user&#39;s channel invitation preference, which can be set individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ViewDefaultChannelInvitationPreferenceResponse</returns>
-        ViewDefaultChannelInvitationPreferenceResponse ViewDefaultChannelInvitationPreference (string apiToken = default(string));
+        ViewDefaultChannelInvitationPreferenceResponse ViewDefaultChannelInvitationPreference (string apiToken);
 
         /// <summary>
         /// View default channel invitation preference
@@ -461,9 +461,9 @@ namespace sendbird_platform_sdk.Api
         /// ## View default channel invitation preference  Retrieves the default channel invitation preference of an application.  &gt; __Note__: Using the [view channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference) action, you can retrieve the value of a specific user&#39;s channel invitation preference, which can be set individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of ViewDefaultChannelInvitationPreferenceResponse</returns>
-        ApiResponse<ViewDefaultChannelInvitationPreferenceResponse> ViewDefaultChannelInvitationPreferenceWithHttpInfo (string apiToken = default(string));
+        ApiResponse<ViewDefaultChannelInvitationPreferenceResponse> ViewDefaultChannelInvitationPreferenceWithHttpInfo (string apiToken);
         /// <summary>
         /// View number of concurrent connections
         /// </summary>
@@ -471,9 +471,9 @@ namespace sendbird_platform_sdk.Api
         /// ## View number of concurrent connections  Retrieves the number of devices and opened browser tabs which are currently connected to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-concurrent-connections
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ViewNumberOfConcurrentConnectionsResponse</returns>
-        ViewNumberOfConcurrentConnectionsResponse ViewNumberOfConcurrentConnections (string apiToken = default(string));
+        ViewNumberOfConcurrentConnectionsResponse ViewNumberOfConcurrentConnections (string apiToken);
 
         /// <summary>
         /// View number of concurrent connections
@@ -482,9 +482,9 @@ namespace sendbird_platform_sdk.Api
         /// ## View number of concurrent connections  Retrieves the number of devices and opened browser tabs which are currently connected to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-concurrent-connections
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of ViewNumberOfConcurrentConnectionsResponse</returns>
-        ApiResponse<ViewNumberOfConcurrentConnectionsResponse> ViewNumberOfConcurrentConnectionsWithHttpInfo (string apiToken = default(string));
+        ApiResponse<ViewNumberOfConcurrentConnectionsResponse> ViewNumberOfConcurrentConnectionsWithHttpInfo (string apiToken);
         /// <summary>
         /// View number of daily active users
         /// </summary>
@@ -492,10 +492,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View number of daily active users  Retrieves the number of daily active users of the application (DAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-daily-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="date"> (optional)</param>
         /// <returns>ViewNumberOfDailyActiveUsersResponse</returns>
-        ViewNumberOfDailyActiveUsersResponse ViewNumberOfDailyActiveUsers (string apiToken = default(string), string date = default(string));
+        ViewNumberOfDailyActiveUsersResponse ViewNumberOfDailyActiveUsers (string apiToken, string date = default(string));
 
         /// <summary>
         /// View number of daily active users
@@ -504,10 +504,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View number of daily active users  Retrieves the number of daily active users of the application (DAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-daily-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="date"> (optional)</param>
         /// <returns>ApiResponse of ViewNumberOfDailyActiveUsersResponse</returns>
-        ApiResponse<ViewNumberOfDailyActiveUsersResponse> ViewNumberOfDailyActiveUsersWithHttpInfo (string apiToken = default(string), string date = default(string));
+        ApiResponse<ViewNumberOfDailyActiveUsersResponse> ViewNumberOfDailyActiveUsersWithHttpInfo (string apiToken, string date = default(string));
         /// <summary>
         /// View number of monthly active users
         /// </summary>
@@ -515,10 +515,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View number of monthly active users  Retrieves the number of monthly active users of the application (MAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-monthly-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="date"> (optional)</param>
         /// <returns>ViewNumberOfMonthlyActiveUsersResponse</returns>
-        ViewNumberOfMonthlyActiveUsersResponse ViewNumberOfMonthlyActiveUsers (string apiToken = default(string), string date = default(string));
+        ViewNumberOfMonthlyActiveUsersResponse ViewNumberOfMonthlyActiveUsers (string apiToken, string date = default(string));
 
         /// <summary>
         /// View number of monthly active users
@@ -527,10 +527,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View number of monthly active users  Retrieves the number of monthly active users of the application (MAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-monthly-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="date"> (optional)</param>
         /// <returns>ApiResponse of ViewNumberOfMonthlyActiveUsersResponse</returns>
-        ApiResponse<ViewNumberOfMonthlyActiveUsersResponse> ViewNumberOfMonthlyActiveUsersWithHttpInfo (string apiToken = default(string), string date = default(string));
+        ApiResponse<ViewNumberOfMonthlyActiveUsersResponse> ViewNumberOfMonthlyActiveUsersWithHttpInfo (string apiToken, string date = default(string));
         /// <summary>
         /// View number of peak connections
         /// </summary>
@@ -538,16 +538,16 @@ namespace sendbird_platform_sdk.Api
         /// ## View number of peak connections  Retrieves the number of concurrently connected devices to Sendbird server during the requested time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-peak-connections - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="timeDimension"></param>
         /// <param name="startYear"></param>
         /// <param name="startMonth"></param>
         /// <param name="endYear"></param>
         /// <param name="endMonth"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="startDay"> (optional)</param>
         /// <param name="endDay"> (optional)</param>
         /// <returns>ViewNumberOfPeakConnectionsResponse</returns>
-        ViewNumberOfPeakConnectionsResponse ViewNumberOfPeakConnections (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?));
+        ViewNumberOfPeakConnectionsResponse ViewNumberOfPeakConnections (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = default(int?), int? endDay = default(int?));
 
         /// <summary>
         /// View number of peak connections
@@ -556,16 +556,16 @@ namespace sendbird_platform_sdk.Api
         /// ## View number of peak connections  Retrieves the number of concurrently connected devices to Sendbird server during the requested time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-peak-connections - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="timeDimension"></param>
         /// <param name="startYear"></param>
         /// <param name="startMonth"></param>
         /// <param name="endYear"></param>
         /// <param name="endMonth"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="startDay"> (optional)</param>
         /// <param name="endDay"> (optional)</param>
         /// <returns>ApiResponse of ViewNumberOfPeakConnectionsResponse</returns>
-        ApiResponse<ViewNumberOfPeakConnectionsResponse> ViewNumberOfPeakConnectionsWithHttpInfo (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?));
+        ApiResponse<ViewNumberOfPeakConnectionsResponse> ViewNumberOfPeakConnectionsWithHttpInfo (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = default(int?), int? endDay = default(int?));
         /// <summary>
         /// View a push configuration
         /// </summary>
@@ -573,11 +573,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View a push configuration  Retrieves a specific push configuration of an application. The type of a push configuration is either &#x60;fcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ViewPushConfigurationByIdResponse</returns>
-        ViewPushConfigurationByIdResponse ViewPushConfigurationById (string pushType, string providerId, string apiToken = default(string));
+        ViewPushConfigurationByIdResponse ViewPushConfigurationById (string apiToken, string pushType, string providerId);
 
         /// <summary>
         /// View a push configuration
@@ -586,11 +586,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View a push configuration  Retrieves a specific push configuration of an application. The type of a push configuration is either &#x60;fcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of ViewPushConfigurationByIdResponse</returns>
-        ApiResponse<ViewPushConfigurationByIdResponse> ViewPushConfigurationByIdWithHttpInfo (string pushType, string providerId, string apiToken = default(string));
+        ApiResponse<ViewPushConfigurationByIdResponse> ViewPushConfigurationByIdWithHttpInfo (string apiToken, string pushType, string providerId);
         /// <summary>
         /// View a push notification content template
         /// </summary>
@@ -598,10 +598,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View a push notification content template  Retrieves information on a specific push notification content templates of an application. The name of a content template is either &#x60;default&#x60; or &#x60;alternative&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="templateName"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ViewPushNotificationContentTemplateResponse</returns>
-        ViewPushNotificationContentTemplateResponse ViewPushNotificationContentTemplate (string templateName, string apiToken = default(string));
+        ViewPushNotificationContentTemplateResponse ViewPushNotificationContentTemplate (string apiToken, string templateName);
 
         /// <summary>
         /// View a push notification content template
@@ -610,10 +610,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View a push notification content template  Retrieves information on a specific push notification content templates of an application. The name of a content template is either &#x60;default&#x60; or &#x60;alternative&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="templateName"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of ViewPushNotificationContentTemplateResponse</returns>
-        ApiResponse<ViewPushNotificationContentTemplateResponse> ViewPushNotificationContentTemplateWithHttpInfo (string templateName, string apiToken = default(string));
+        ApiResponse<ViewPushNotificationContentTemplateResponse> ViewPushNotificationContentTemplateWithHttpInfo (string apiToken, string templateName);
         /// <summary>
         /// View a secondary API token
         /// </summary>
@@ -621,10 +621,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View a secondary API token  Retrieves the information on a secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-secondary-api-token
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="apiToken2"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ViewSecondaryApiTokenByTokenResponse</returns>
-        ViewSecondaryApiTokenByTokenResponse ViewSecondaryApiTokenByToken (string apiToken2, string apiToken = default(string));
+        ViewSecondaryApiTokenByTokenResponse ViewSecondaryApiTokenByToken (string apiToken, string apiToken2);
 
         /// <summary>
         /// View a secondary API token
@@ -633,10 +633,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View a secondary API token  Retrieves the information on a secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-secondary-api-token
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="apiToken2"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of ViewSecondaryApiTokenByTokenResponse</returns>
-        ApiResponse<ViewSecondaryApiTokenByTokenResponse> ViewSecondaryApiTokenByTokenWithHttpInfo (string apiToken2, string apiToken = default(string));
+        ApiResponse<ViewSecondaryApiTokenByTokenResponse> ViewSecondaryApiTokenByTokenWithHttpInfo (string apiToken, string apiToken2);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -646,11 +646,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Add an APNs push configuration  Registers an APNs (Apple Push Notification service) push configuration for your client app. To send push notifications to iOS devices, your should first register the APNs push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  &gt; __Note__: To upload a [.p12](https://sendbird.com/docs/chat/v3/ios/guides/push-notifications#2-step-3-export-a-p12-file-and-upload-to-sendbird-dashboard) certificate file to Sendbird server, you should send a [Multipart request](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api#2-headers-3-multipart-requests).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-apns-push-configuration
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddApnsPushConfigurationResponse</returns>
-        System.Threading.Tasks.Task<AddApnsPushConfigurationResponse> AddApnsPushConfigurationAsync (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<AddApnsPushConfigurationResponse> AddApnsPushConfigurationAsync (string apiToken, AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Add an APNs push configuration
@@ -659,11 +659,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Add an APNs push configuration  Registers an APNs (Apple Push Notification service) push configuration for your client app. To send push notifications to iOS devices, your should first register the APNs push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  &gt; __Note__: To upload a [.p12](https://sendbird.com/docs/chat/v3/ios/guides/push-notifications#2-step-3-export-a-p12-file-and-upload-to-sendbird-dashboard) certificate file to Sendbird server, you should send a [Multipart request](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api#2-headers-3-multipart-requests).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-apns-push-configuration
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddApnsPushConfigurationResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AddApnsPushConfigurationResponse>> AddApnsPushConfigurationWithHttpInfoAsync (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<AddApnsPushConfigurationResponse>> AddApnsPushConfigurationWithHttpInfoAsync (string apiToken, AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Add a FCM push configuration
         /// </summary>
@@ -671,11 +671,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Add a FCM push configuration  Registers a FCM (Firebase Cloud Messaging) push configuration for your client app. To send push notifications to Android devices, you should first register the FCM push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-a-fcm-push-configuration
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddFcmPushConfigurationResponse</returns>
-        System.Threading.Tasks.Task<AddFcmPushConfigurationResponse> AddFcmPushConfigurationAsync (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<AddFcmPushConfigurationResponse> AddFcmPushConfigurationAsync (string apiToken, AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Add a FCM push configuration
@@ -684,11 +684,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Add a FCM push configuration  Registers a FCM (Firebase Cloud Messaging) push configuration for your client app. To send push notifications to Android devices, you should first register the FCM push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-a-fcm-push-configuration
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddFcmPushConfigurationResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AddFcmPushConfigurationResponse>> AddFcmPushConfigurationWithHttpInfoAsync (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<AddFcmPushConfigurationResponse>> AddFcmPushConfigurationWithHttpInfoAsync (string apiToken, AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Add an HMS push configuration
         /// </summary>
@@ -696,11 +696,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Add an HMS push configuration  Registers an HMS (Huawei Mobile Services) push configuration for your client app. To send push notifications to Android devices for HMS, you should first register the HMS push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-hms-push-configuration
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddHmsPushConfigurationResponse</returns>
-        System.Threading.Tasks.Task<AddHmsPushConfigurationResponse> AddHmsPushConfigurationAsync (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<AddHmsPushConfigurationResponse> AddHmsPushConfigurationAsync (string apiToken, AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Add an HMS push configuration
@@ -709,11 +709,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Add an HMS push configuration  Registers an HMS (Huawei Mobile Services) push configuration for your client app. To send push notifications to Android devices for HMS, you should first register the HMS push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-hms-push-configuration
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddHmsPushConfigurationResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AddHmsPushConfigurationResponse>> AddHmsPushConfigurationWithHttpInfoAsync (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<AddHmsPushConfigurationResponse>> AddHmsPushConfigurationWithHttpInfoAsync (string apiToken, AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Add an IP to a whitelist
         /// </summary>
@@ -721,11 +721,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Add an IP to a whitelist  Adds IP addresses and ranges to your Sendbird application settings. Both currently added and any previously added IPs are granted API access. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-ip-to-a-whitelist
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addIpToWhitelistData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddIpToWhitelistResponse</returns>
-        System.Threading.Tasks.Task<AddIpToWhitelistResponse> AddIpToWhitelistAsync (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<AddIpToWhitelistResponse> AddIpToWhitelistAsync (string apiToken, AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Add an IP to a whitelist
@@ -734,11 +734,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Add an IP to a whitelist  Adds IP addresses and ranges to your Sendbird application settings. Both currently added and any previously added IPs are granted API access. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-ip-to-a-whitelist
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addIpToWhitelistData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddIpToWhitelistResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AddIpToWhitelistResponse>> AddIpToWhitelistWithHttpInfoAsync (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<AddIpToWhitelistResponse>> AddIpToWhitelistWithHttpInfoAsync (string apiToken, AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Delete allowed IPs from a whitelist
         /// </summary>
@@ -746,11 +746,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete allowed IPs from a whitelist  Deletes allowed IPs from the whitelist by specifying their IP addresses or ranges. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-delete-allowed-ips-from-a-whitelist
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="ipWhitelistAddresses"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of DeleteAllowedIpsFromWhitelistResponse</returns>
-        System.Threading.Tasks.Task<DeleteAllowedIpsFromWhitelistResponse> DeleteAllowedIpsFromWhitelistAsync (List<string> ipWhitelistAddresses, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<DeleteAllowedIpsFromWhitelistResponse> DeleteAllowedIpsFromWhitelistAsync (string apiToken, List<string> ipWhitelistAddresses, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Delete allowed IPs from a whitelist
@@ -759,11 +759,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete allowed IPs from a whitelist  Deletes allowed IPs from the whitelist by specifying their IP addresses or ranges. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-delete-allowed-ips-from-a-whitelist
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="ipWhitelistAddresses"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (DeleteAllowedIpsFromWhitelistResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DeleteAllowedIpsFromWhitelistResponse>> DeleteAllowedIpsFromWhitelistWithHttpInfoAsync (List<string> ipWhitelistAddresses, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DeleteAllowedIpsFromWhitelistResponse>> DeleteAllowedIpsFromWhitelistWithHttpInfoAsync (string apiToken, List<string> ipWhitelistAddresses, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Delete an APNs certificate
         /// </summary>
@@ -771,11 +771,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete an APNs certificate  Deletes a specific APNs certificate.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-delete-an-apns-certificate - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of DeleteApnsCertificateByIdResponse</returns>
-        System.Threading.Tasks.Task<DeleteApnsCertificateByIdResponse> DeleteApnsCertificateByIdAsync (string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<DeleteApnsCertificateByIdResponse> DeleteApnsCertificateByIdAsync (string apiToken, string providerId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Delete an APNs certificate
@@ -784,11 +784,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Delete an APNs certificate  Deletes a specific APNs certificate.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-delete-an-apns-certificate - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (DeleteApnsCertificateByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DeleteApnsCertificateByIdResponse>> DeleteApnsCertificateByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DeleteApnsCertificateByIdResponse>> DeleteApnsCertificateByIdWithHttpInfoAsync (string apiToken, string providerId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Generate a secondary API token
         /// </summary>
@@ -796,11 +796,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Generate a secondary API token  Generates a new secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-generate-a-secondary-api-token
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GenerateSecondaryApiTokenResponse</returns>
-        System.Threading.Tasks.Task<GenerateSecondaryApiTokenResponse> GenerateSecondaryApiTokenAsync (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GenerateSecondaryApiTokenResponse> GenerateSecondaryApiTokenAsync (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Generate a secondary API token
@@ -809,11 +809,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Generate a secondary API token  Generates a new secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-generate-a-secondary-api-token
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GenerateSecondaryApiTokenResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GenerateSecondaryApiTokenResponse>> GenerateSecondaryApiTokenWithHttpInfoAsync (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GenerateSecondaryApiTokenResponse>> GenerateSecondaryApiTokenWithHttpInfoAsync (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List push configurations
         /// </summary>
@@ -821,11 +821,11 @@ namespace sendbird_platform_sdk.Api
         /// ## List push configurations  Retrieves a list of an application&#39;s registered push configurations.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-push-configurations - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListPushConfigurationsResponse</returns>
-        System.Threading.Tasks.Task<ListPushConfigurationsResponse> ListPushConfigurationsAsync (string pushType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListPushConfigurationsResponse> ListPushConfigurationsAsync (string apiToken, string pushType, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List push configurations
@@ -834,11 +834,11 @@ namespace sendbird_platform_sdk.Api
         /// ## List push configurations  Retrieves a list of an application&#39;s registered push configurations.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-push-configurations - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListPushConfigurationsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListPushConfigurationsResponse>> ListPushConfigurationsWithHttpInfoAsync (string pushType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListPushConfigurationsResponse>> ListPushConfigurationsWithHttpInfoAsync (string apiToken, string pushType, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List push notification content templates
         /// </summary>
@@ -846,10 +846,10 @@ namespace sendbird_platform_sdk.Api
         /// ## List push notification content templates  Retrieves a list of push notification content templates of an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-push-notification-content-templates
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListPushNotificationContentTemplatesResponse</returns>
-        System.Threading.Tasks.Task<ListPushNotificationContentTemplatesResponse> ListPushNotificationContentTemplatesAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListPushNotificationContentTemplatesResponse> ListPushNotificationContentTemplatesAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List push notification content templates
@@ -858,10 +858,10 @@ namespace sendbird_platform_sdk.Api
         /// ## List push notification content templates  Retrieves a list of push notification content templates of an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-push-notification-content-templates
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListPushNotificationContentTemplatesResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListPushNotificationContentTemplatesResponse>> ListPushNotificationContentTemplatesWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListPushNotificationContentTemplatesResponse>> ListPushNotificationContentTemplatesWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List secondary API tokens
         /// </summary>
@@ -869,10 +869,10 @@ namespace sendbird_platform_sdk.Api
         /// ## List secondary API tokens  Retrieves a list of secondary API tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-secondary-api-tokens
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListSecondaryApiTokensResponse</returns>
-        System.Threading.Tasks.Task<ListSecondaryApiTokensResponse> ListSecondaryApiTokensAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListSecondaryApiTokensResponse> ListSecondaryApiTokensAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List secondary API tokens
@@ -881,10 +881,10 @@ namespace sendbird_platform_sdk.Api
         /// ## List secondary API tokens  Retrieves a list of secondary API tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-secondary-api-tokens
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListSecondaryApiTokensResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListSecondaryApiTokensResponse>> ListSecondaryApiTokensWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListSecondaryApiTokensResponse>> ListSecondaryApiTokensWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Remove a push configuration
         /// </summary>
@@ -892,12 +892,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Remove a push configuration  Removes a specific push configuration from an application. The type of a push configuration is either &#x60;fcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-remove-a-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RemovePushConfigurationByIdResponse</returns>
-        System.Threading.Tasks.Task<RemovePushConfigurationByIdResponse> RemovePushConfigurationByIdAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<RemovePushConfigurationByIdResponse> RemovePushConfigurationByIdAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Remove a push configuration
@@ -906,12 +906,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Remove a push configuration  Removes a specific push configuration from an application. The type of a push configuration is either &#x60;fcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-remove-a-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RemovePushConfigurationByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RemovePushConfigurationByIdResponse>> RemovePushConfigurationByIdWithHttpInfoAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<RemovePushConfigurationByIdResponse>> RemovePushConfigurationByIdWithHttpInfoAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Retrieve an IP whitelist
         /// </summary>
@@ -919,10 +919,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Retrieve an IP whitelist  Retrieves a list of all the IP ranges and addresses that have access to your Sendbird application. This list is called an IP whitelist and its addresses are granted API access when the IP whitelist API enables [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) notations.  If you specify which IP addresses or ranges to include in the whitelist, any unlisted foreign IP addresses will be denied access. If you don&#39;t specify any IP address or range to include in the whitelist, all IP addresses will be granted API access. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-retrieve-an-ip-whitelist
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RetrieveIpWhitelistResponse</returns>
-        System.Threading.Tasks.Task<RetrieveIpWhitelistResponse> RetrieveIpWhitelistAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<RetrieveIpWhitelistResponse> RetrieveIpWhitelistAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Retrieve an IP whitelist
@@ -931,10 +931,10 @@ namespace sendbird_platform_sdk.Api
         /// ## Retrieve an IP whitelist  Retrieves a list of all the IP ranges and addresses that have access to your Sendbird application. This list is called an IP whitelist and its addresses are granted API access when the IP whitelist API enables [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) notations.  If you specify which IP addresses or ranges to include in the whitelist, any unlisted foreign IP addresses will be denied access. If you don&#39;t specify any IP address or range to include in the whitelist, all IP addresses will be granted API access. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-retrieve-an-ip-whitelist
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RetrieveIpWhitelistResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RetrieveIpWhitelistResponse>> RetrieveIpWhitelistWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<RetrieveIpWhitelistResponse>> RetrieveIpWhitelistWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Revoke a secondary API token
         /// </summary>
@@ -942,11 +942,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Revoke a secondary API token  Revokes a secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-revoke-a-secondary-api-token
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="apiToken2"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RevokeSecondaryApiTokenByTokenResponse</returns>
-        System.Threading.Tasks.Task<RevokeSecondaryApiTokenByTokenResponse> RevokeSecondaryApiTokenByTokenAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<RevokeSecondaryApiTokenByTokenResponse> RevokeSecondaryApiTokenByTokenAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Revoke a secondary API token
@@ -955,11 +955,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Revoke a secondary API token  Revokes a secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-revoke-a-secondary-api-token
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="apiToken2"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RevokeSecondaryApiTokenByTokenResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RevokeSecondaryApiTokenByTokenResponse>> RevokeSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<RevokeSecondaryApiTokenByTokenResponse>> RevokeSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update an APNs push configuration
         /// </summary>
@@ -967,12 +967,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an APNs push configuration  Updates a specific APNs (Apple Push Notification service) push configuration for your client app. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  &gt; __Note__: If your HTTP request body contains a [.p12](https://sendbird.com/docs/chat/v3/ios/guides/push-notifications#2-step-3-export-a-p12-file-and-upload-to-sendbird-dashboard) certificate file to upload to Sendbird server, you should send a [Multipart request](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api#2-headers-3-multipart-requests) .  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-an-apns-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateApnsPushConfigurationByIdResponse</returns>
-        System.Threading.Tasks.Task<UpdateApnsPushConfigurationByIdResponse> UpdateApnsPushConfigurationByIdAsync (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<UpdateApnsPushConfigurationByIdResponse> UpdateApnsPushConfigurationByIdAsync (string apiToken, string providerId, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update an APNs push configuration
@@ -981,12 +981,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an APNs push configuration  Updates a specific APNs (Apple Push Notification service) push configuration for your client app. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  &gt; __Note__: If your HTTP request body contains a [.p12](https://sendbird.com/docs/chat/v3/ios/guides/push-notifications#2-step-3-export-a-p12-file-and-upload-to-sendbird-dashboard) certificate file to upload to Sendbird server, you should send a [Multipart request](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api#2-headers-3-multipart-requests) .  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-an-apns-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateApnsPushConfigurationByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UpdateApnsPushConfigurationByIdResponse>> UpdateApnsPushConfigurationByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<UpdateApnsPushConfigurationByIdResponse>> UpdateApnsPushConfigurationByIdWithHttpInfoAsync (string apiToken, string providerId, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update default channel invitation preference
         /// </summary>
@@ -994,11 +994,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update default channel invitation preference  Updates the default channel invitation preference of an application.  &gt; __Note__: Using the [update channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can update the value of a specific user&#39;s channel invitation preference, which can be set individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateDefaultChannelInvitationPreferenceResponse</returns>
-        System.Threading.Tasks.Task<UpdateDefaultChannelInvitationPreferenceResponse> UpdateDefaultChannelInvitationPreferenceAsync (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<UpdateDefaultChannelInvitationPreferenceResponse> UpdateDefaultChannelInvitationPreferenceAsync (string apiToken, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update default channel invitation preference
@@ -1007,11 +1007,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Update default channel invitation preference  Updates the default channel invitation preference of an application.  &gt; __Note__: Using the [update channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can update the value of a specific user&#39;s channel invitation preference, which can be set individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateDefaultChannelInvitationPreferenceResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse>> UpdateDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse>> UpdateDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update a FCM push configuration
         /// </summary>
@@ -1019,12 +1019,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a FCM push configuration  Updates a specific FCM (Firebase Cloud Messaging) push configuration for your client app. You can also update the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-a-fcm-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateFcmPushConfigurationByIdResponse</returns>
-        System.Threading.Tasks.Task<UpdateFcmPushConfigurationByIdResponse> UpdateFcmPushConfigurationByIdAsync (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<UpdateFcmPushConfigurationByIdResponse> UpdateFcmPushConfigurationByIdAsync (string apiToken, string providerId, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update a FCM push configuration
@@ -1033,12 +1033,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a FCM push configuration  Updates a specific FCM (Firebase Cloud Messaging) push configuration for your client app. You can also update the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-a-fcm-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateFcmPushConfigurationByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UpdateFcmPushConfigurationByIdResponse>> UpdateFcmPushConfigurationByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<UpdateFcmPushConfigurationByIdResponse>> UpdateFcmPushConfigurationByIdWithHttpInfoAsync (string apiToken, string providerId, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update an HMS push configuration
         /// </summary>
@@ -1046,12 +1046,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an HMS push configuration  Updates a specific HMS (Huawei Mobile Services) push configuration for your client app. You can also update the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-an-hms-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateHmsPushConfigurationByIdResponse</returns>
-        System.Threading.Tasks.Task<UpdateHmsPushConfigurationByIdResponse> UpdateHmsPushConfigurationByIdAsync (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<UpdateHmsPushConfigurationByIdResponse> UpdateHmsPushConfigurationByIdAsync (string apiToken, string providerId, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update an HMS push configuration
@@ -1060,12 +1060,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update an HMS push configuration  Updates a specific HMS (Huawei Mobile Services) push configuration for your client app. You can also update the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-an-hms-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateHmsPushConfigurationByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UpdateHmsPushConfigurationByIdResponse>> UpdateHmsPushConfigurationByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<UpdateHmsPushConfigurationByIdResponse>> UpdateHmsPushConfigurationByIdWithHttpInfoAsync (string apiToken, string providerId, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update a push notification content template
         /// </summary>
@@ -1073,12 +1073,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a push notification content template  Updates a specific push notification content template of an application. The name of a content template is either &#x60;default&#x60; or &#x60;alternative&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="templateName"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdatePushNotificationContentTemplateResponse</returns>
-        System.Threading.Tasks.Task<UpdatePushNotificationContentTemplateResponse> UpdatePushNotificationContentTemplateAsync (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<UpdatePushNotificationContentTemplateResponse> UpdatePushNotificationContentTemplateAsync (string apiToken, string templateName, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update a push notification content template
@@ -1087,12 +1087,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Update a push notification content template  Updates a specific push notification content template of an application. The name of a content template is either &#x60;default&#x60; or &#x60;alternative&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="templateName"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdatePushNotificationContentTemplateResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UpdatePushNotificationContentTemplateResponse>> UpdatePushNotificationContentTemplateWithHttpInfoAsync (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<UpdatePushNotificationContentTemplateResponse>> UpdatePushNotificationContentTemplateWithHttpInfoAsync (string apiToken, string templateName, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View default channel invitation preference
         /// </summary>
@@ -1100,10 +1100,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View default channel invitation preference  Retrieves the default channel invitation preference of an application.  &gt; __Note__: Using the [view channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference) action, you can retrieve the value of a specific user&#39;s channel invitation preference, which can be set individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewDefaultChannelInvitationPreferenceResponse</returns>
-        System.Threading.Tasks.Task<ViewDefaultChannelInvitationPreferenceResponse> ViewDefaultChannelInvitationPreferenceAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewDefaultChannelInvitationPreferenceResponse> ViewDefaultChannelInvitationPreferenceAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View default channel invitation preference
@@ -1112,10 +1112,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View default channel invitation preference  Retrieves the default channel invitation preference of an application.  &gt; __Note__: Using the [view channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference) action, you can retrieve the value of a specific user&#39;s channel invitation preference, which can be set individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewDefaultChannelInvitationPreferenceResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewDefaultChannelInvitationPreferenceResponse>> ViewDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewDefaultChannelInvitationPreferenceResponse>> ViewDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View number of concurrent connections
         /// </summary>
@@ -1123,10 +1123,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View number of concurrent connections  Retrieves the number of devices and opened browser tabs which are currently connected to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-concurrent-connections
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewNumberOfConcurrentConnectionsResponse</returns>
-        System.Threading.Tasks.Task<ViewNumberOfConcurrentConnectionsResponse> ViewNumberOfConcurrentConnectionsAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewNumberOfConcurrentConnectionsResponse> ViewNumberOfConcurrentConnectionsAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View number of concurrent connections
@@ -1135,10 +1135,10 @@ namespace sendbird_platform_sdk.Api
         /// ## View number of concurrent connections  Retrieves the number of devices and opened browser tabs which are currently connected to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-concurrent-connections
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewNumberOfConcurrentConnectionsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfConcurrentConnectionsResponse>> ViewNumberOfConcurrentConnectionsWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfConcurrentConnectionsResponse>> ViewNumberOfConcurrentConnectionsWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View number of daily active users
         /// </summary>
@@ -1146,11 +1146,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View number of daily active users  Retrieves the number of daily active users of the application (DAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-daily-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="date"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewNumberOfDailyActiveUsersResponse</returns>
-        System.Threading.Tasks.Task<ViewNumberOfDailyActiveUsersResponse> ViewNumberOfDailyActiveUsersAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewNumberOfDailyActiveUsersResponse> ViewNumberOfDailyActiveUsersAsync (string apiToken, string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View number of daily active users
@@ -1159,11 +1159,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View number of daily active users  Retrieves the number of daily active users of the application (DAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-daily-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="date"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewNumberOfDailyActiveUsersResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfDailyActiveUsersResponse>> ViewNumberOfDailyActiveUsersWithHttpInfoAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfDailyActiveUsersResponse>> ViewNumberOfDailyActiveUsersWithHttpInfoAsync (string apiToken, string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View number of monthly active users
         /// </summary>
@@ -1171,11 +1171,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View number of monthly active users  Retrieves the number of monthly active users of the application (MAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-monthly-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="date"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewNumberOfMonthlyActiveUsersResponse</returns>
-        System.Threading.Tasks.Task<ViewNumberOfMonthlyActiveUsersResponse> ViewNumberOfMonthlyActiveUsersAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewNumberOfMonthlyActiveUsersResponse> ViewNumberOfMonthlyActiveUsersAsync (string apiToken, string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View number of monthly active users
@@ -1184,11 +1184,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View number of monthly active users  Retrieves the number of monthly active users of the application (MAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-monthly-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="date"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewNumberOfMonthlyActiveUsersResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfMonthlyActiveUsersResponse>> ViewNumberOfMonthlyActiveUsersWithHttpInfoAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfMonthlyActiveUsersResponse>> ViewNumberOfMonthlyActiveUsersWithHttpInfoAsync (string apiToken, string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View number of peak connections
         /// </summary>
@@ -1196,17 +1196,17 @@ namespace sendbird_platform_sdk.Api
         /// ## View number of peak connections  Retrieves the number of concurrently connected devices to Sendbird server during the requested time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-peak-connections - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="timeDimension"></param>
         /// <param name="startYear"></param>
         /// <param name="startMonth"></param>
         /// <param name="endYear"></param>
         /// <param name="endMonth"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="startDay"> (optional)</param>
         /// <param name="endDay"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewNumberOfPeakConnectionsResponse</returns>
-        System.Threading.Tasks.Task<ViewNumberOfPeakConnectionsResponse> ViewNumberOfPeakConnectionsAsync (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewNumberOfPeakConnectionsResponse> ViewNumberOfPeakConnectionsAsync (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View number of peak connections
@@ -1215,17 +1215,17 @@ namespace sendbird_platform_sdk.Api
         /// ## View number of peak connections  Retrieves the number of concurrently connected devices to Sendbird server during the requested time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-peak-connections - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="timeDimension"></param>
         /// <param name="startYear"></param>
         /// <param name="startMonth"></param>
         /// <param name="endYear"></param>
         /// <param name="endMonth"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="startDay"> (optional)</param>
         /// <param name="endDay"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewNumberOfPeakConnectionsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfPeakConnectionsResponse>> ViewNumberOfPeakConnectionsWithHttpInfoAsync (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfPeakConnectionsResponse>> ViewNumberOfPeakConnectionsWithHttpInfoAsync (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a push configuration
         /// </summary>
@@ -1233,12 +1233,12 @@ namespace sendbird_platform_sdk.Api
         /// ## View a push configuration  Retrieves a specific push configuration of an application. The type of a push configuration is either &#x60;fcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewPushConfigurationByIdResponse</returns>
-        System.Threading.Tasks.Task<ViewPushConfigurationByIdResponse> ViewPushConfigurationByIdAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewPushConfigurationByIdResponse> ViewPushConfigurationByIdAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a push configuration
@@ -1247,12 +1247,12 @@ namespace sendbird_platform_sdk.Api
         /// ## View a push configuration  Retrieves a specific push configuration of an application. The type of a push configuration is either &#x60;fcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewPushConfigurationByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewPushConfigurationByIdResponse>> ViewPushConfigurationByIdWithHttpInfoAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewPushConfigurationByIdResponse>> ViewPushConfigurationByIdWithHttpInfoAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a push notification content template
         /// </summary>
@@ -1260,11 +1260,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View a push notification content template  Retrieves information on a specific push notification content templates of an application. The name of a content template is either &#x60;default&#x60; or &#x60;alternative&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="templateName"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewPushNotificationContentTemplateResponse</returns>
-        System.Threading.Tasks.Task<ViewPushNotificationContentTemplateResponse> ViewPushNotificationContentTemplateAsync (string templateName, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewPushNotificationContentTemplateResponse> ViewPushNotificationContentTemplateAsync (string apiToken, string templateName, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a push notification content template
@@ -1273,11 +1273,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View a push notification content template  Retrieves information on a specific push notification content templates of an application. The name of a content template is either &#x60;default&#x60; or &#x60;alternative&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="templateName"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewPushNotificationContentTemplateResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewPushNotificationContentTemplateResponse>> ViewPushNotificationContentTemplateWithHttpInfoAsync (string templateName, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewPushNotificationContentTemplateResponse>> ViewPushNotificationContentTemplateWithHttpInfoAsync (string apiToken, string templateName, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a secondary API token
         /// </summary>
@@ -1285,11 +1285,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View a secondary API token  Retrieves the information on a secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-secondary-api-token
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="apiToken2"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewSecondaryApiTokenByTokenResponse</returns>
-        System.Threading.Tasks.Task<ViewSecondaryApiTokenByTokenResponse> ViewSecondaryApiTokenByTokenAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewSecondaryApiTokenByTokenResponse> ViewSecondaryApiTokenByTokenAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a secondary API token
@@ -1298,11 +1298,11 @@ namespace sendbird_platform_sdk.Api
         /// ## View a secondary API token  Retrieves the information on a secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-secondary-api-token
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="apiToken2"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewSecondaryApiTokenByTokenResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewSecondaryApiTokenByTokenResponse>> ViewSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewSecondaryApiTokenByTokenResponse>> ViewSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -1418,10 +1418,10 @@ namespace sendbird_platform_sdk.Api
         /// Add an APNs push configuration ## Add an APNs push configuration  Registers an APNs (Apple Push Notification service) push configuration for your client app. To send push notifications to iOS devices, your should first register the APNs push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  &gt; __Note__: To upload a [.p12](https://sendbird.com/docs/chat/v3/ios/guides/push-notifications#2-step-3-export-a-p12-file-and-upload-to-sendbird-dashboard) certificate file to Sendbird server, you should send a [Multipart request](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api#2-headers-3-multipart-requests).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-apns-push-configuration
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
         /// <returns>AddApnsPushConfigurationResponse</returns>
-        public AddApnsPushConfigurationResponse AddApnsPushConfiguration (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData))
+        public AddApnsPushConfigurationResponse AddApnsPushConfiguration (string apiToken, AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData))
         {
              ApiResponse<AddApnsPushConfigurationResponse> localVarResponse = AddApnsPushConfigurationWithHttpInfo(apiToken, addApnsPushConfigurationData);
              return localVarResponse.Data;
@@ -1431,11 +1431,14 @@ namespace sendbird_platform_sdk.Api
         /// Add an APNs push configuration ## Add an APNs push configuration  Registers an APNs (Apple Push Notification service) push configuration for your client app. To send push notifications to iOS devices, your should first register the APNs push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  &gt; __Note__: To upload a [.p12](https://sendbird.com/docs/chat/v3/ios/guides/push-notifications#2-step-3-export-a-p12-file-and-upload-to-sendbird-dashboard) certificate file to Sendbird server, you should send a [Multipart request](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api#2-headers-3-multipart-requests).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-apns-push-configuration
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
         /// <returns>ApiResponse of AddApnsPushConfigurationResponse</returns>
-        public ApiResponse<AddApnsPushConfigurationResponse> AddApnsPushConfigurationWithHttpInfo (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData))
+        public ApiResponse<AddApnsPushConfigurationResponse> AddApnsPushConfigurationWithHttpInfo (string apiToken, AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->AddApnsPushConfiguration");
 
             var localVarPath = "/v3/applications/push/apns";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1492,11 +1495,11 @@ namespace sendbird_platform_sdk.Api
         /// Add an APNs push configuration ## Add an APNs push configuration  Registers an APNs (Apple Push Notification service) push configuration for your client app. To send push notifications to iOS devices, your should first register the APNs push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  &gt; __Note__: To upload a [.p12](https://sendbird.com/docs/chat/v3/ios/guides/push-notifications#2-step-3-export-a-p12-file-and-upload-to-sendbird-dashboard) certificate file to Sendbird server, you should send a [Multipart request](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api#2-headers-3-multipart-requests).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-apns-push-configuration
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddApnsPushConfigurationResponse</returns>
-        public async System.Threading.Tasks.Task<AddApnsPushConfigurationResponse> AddApnsPushConfigurationAsync (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<AddApnsPushConfigurationResponse> AddApnsPushConfigurationAsync (string apiToken, AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<AddApnsPushConfigurationResponse> localVarResponse = await AddApnsPushConfigurationWithHttpInfoAsync(apiToken, addApnsPushConfigurationData, cancellationToken);
              return localVarResponse.Data;
@@ -1507,12 +1510,15 @@ namespace sendbird_platform_sdk.Api
         /// Add an APNs push configuration ## Add an APNs push configuration  Registers an APNs (Apple Push Notification service) push configuration for your client app. To send push notifications to iOS devices, your should first register the APNs push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  &gt; __Note__: To upload a [.p12](https://sendbird.com/docs/chat/v3/ios/guides/push-notifications#2-step-3-export-a-p12-file-and-upload-to-sendbird-dashboard) certificate file to Sendbird server, you should send a [Multipart request](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api#2-headers-3-multipart-requests).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-apns-push-configuration
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddApnsPushConfigurationResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<AddApnsPushConfigurationResponse>> AddApnsPushConfigurationWithHttpInfoAsync (string apiToken = default(string), AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<AddApnsPushConfigurationResponse>> AddApnsPushConfigurationWithHttpInfoAsync (string apiToken, AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->AddApnsPushConfiguration");
 
             var localVarPath = "/v3/applications/push/apns";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1569,10 +1575,10 @@ namespace sendbird_platform_sdk.Api
         /// Add a FCM push configuration ## Add a FCM push configuration  Registers a FCM (Firebase Cloud Messaging) push configuration for your client app. To send push notifications to Android devices, you should first register the FCM push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-a-fcm-push-configuration
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
         /// <returns>AddFcmPushConfigurationResponse</returns>
-        public AddFcmPushConfigurationResponse AddFcmPushConfiguration (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData))
+        public AddFcmPushConfigurationResponse AddFcmPushConfiguration (string apiToken, AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData))
         {
              ApiResponse<AddFcmPushConfigurationResponse> localVarResponse = AddFcmPushConfigurationWithHttpInfo(apiToken, addFcmPushConfigurationData);
              return localVarResponse.Data;
@@ -1582,11 +1588,14 @@ namespace sendbird_platform_sdk.Api
         /// Add a FCM push configuration ## Add a FCM push configuration  Registers a FCM (Firebase Cloud Messaging) push configuration for your client app. To send push notifications to Android devices, you should first register the FCM push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-a-fcm-push-configuration
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
         /// <returns>ApiResponse of AddFcmPushConfigurationResponse</returns>
-        public ApiResponse<AddFcmPushConfigurationResponse> AddFcmPushConfigurationWithHttpInfo (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData))
+        public ApiResponse<AddFcmPushConfigurationResponse> AddFcmPushConfigurationWithHttpInfo (string apiToken, AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->AddFcmPushConfiguration");
 
             var localVarPath = "/v3/applications/push/fcm";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1643,11 +1652,11 @@ namespace sendbird_platform_sdk.Api
         /// Add a FCM push configuration ## Add a FCM push configuration  Registers a FCM (Firebase Cloud Messaging) push configuration for your client app. To send push notifications to Android devices, you should first register the FCM push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-a-fcm-push-configuration
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddFcmPushConfigurationResponse</returns>
-        public async System.Threading.Tasks.Task<AddFcmPushConfigurationResponse> AddFcmPushConfigurationAsync (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<AddFcmPushConfigurationResponse> AddFcmPushConfigurationAsync (string apiToken, AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<AddFcmPushConfigurationResponse> localVarResponse = await AddFcmPushConfigurationWithHttpInfoAsync(apiToken, addFcmPushConfigurationData, cancellationToken);
              return localVarResponse.Data;
@@ -1658,12 +1667,15 @@ namespace sendbird_platform_sdk.Api
         /// Add a FCM push configuration ## Add a FCM push configuration  Registers a FCM (Firebase Cloud Messaging) push configuration for your client app. To send push notifications to Android devices, you should first register the FCM push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-a-fcm-push-configuration
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddFcmPushConfigurationResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<AddFcmPushConfigurationResponse>> AddFcmPushConfigurationWithHttpInfoAsync (string apiToken = default(string), AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<AddFcmPushConfigurationResponse>> AddFcmPushConfigurationWithHttpInfoAsync (string apiToken, AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->AddFcmPushConfiguration");
 
             var localVarPath = "/v3/applications/push/fcm";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1720,10 +1732,10 @@ namespace sendbird_platform_sdk.Api
         /// Add an HMS push configuration ## Add an HMS push configuration  Registers an HMS (Huawei Mobile Services) push configuration for your client app. To send push notifications to Android devices for HMS, you should first register the HMS push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-hms-push-configuration
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
         /// <returns>AddHmsPushConfigurationResponse</returns>
-        public AddHmsPushConfigurationResponse AddHmsPushConfiguration (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData))
+        public AddHmsPushConfigurationResponse AddHmsPushConfiguration (string apiToken, AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData))
         {
              ApiResponse<AddHmsPushConfigurationResponse> localVarResponse = AddHmsPushConfigurationWithHttpInfo(apiToken, addHmsPushConfigurationData);
              return localVarResponse.Data;
@@ -1733,11 +1745,14 @@ namespace sendbird_platform_sdk.Api
         /// Add an HMS push configuration ## Add an HMS push configuration  Registers an HMS (Huawei Mobile Services) push configuration for your client app. To send push notifications to Android devices for HMS, you should first register the HMS push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-hms-push-configuration
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
         /// <returns>ApiResponse of AddHmsPushConfigurationResponse</returns>
-        public ApiResponse<AddHmsPushConfigurationResponse> AddHmsPushConfigurationWithHttpInfo (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData))
+        public ApiResponse<AddHmsPushConfigurationResponse> AddHmsPushConfigurationWithHttpInfo (string apiToken, AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->AddHmsPushConfiguration");
 
             var localVarPath = "/v3/applications/push/hms";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1794,11 +1809,11 @@ namespace sendbird_platform_sdk.Api
         /// Add an HMS push configuration ## Add an HMS push configuration  Registers an HMS (Huawei Mobile Services) push configuration for your client app. To send push notifications to Android devices for HMS, you should first register the HMS push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-hms-push-configuration
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddHmsPushConfigurationResponse</returns>
-        public async System.Threading.Tasks.Task<AddHmsPushConfigurationResponse> AddHmsPushConfigurationAsync (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<AddHmsPushConfigurationResponse> AddHmsPushConfigurationAsync (string apiToken, AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<AddHmsPushConfigurationResponse> localVarResponse = await AddHmsPushConfigurationWithHttpInfoAsync(apiToken, addHmsPushConfigurationData, cancellationToken);
              return localVarResponse.Data;
@@ -1809,12 +1824,15 @@ namespace sendbird_platform_sdk.Api
         /// Add an HMS push configuration ## Add an HMS push configuration  Registers an HMS (Huawei Mobile Services) push configuration for your client app. To send push notifications to Android devices for HMS, you should first register the HMS push configuration. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-hms-push-configuration
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddHmsPushConfigurationResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<AddHmsPushConfigurationResponse>> AddHmsPushConfigurationWithHttpInfoAsync (string apiToken = default(string), AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<AddHmsPushConfigurationResponse>> AddHmsPushConfigurationWithHttpInfoAsync (string apiToken, AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->AddHmsPushConfiguration");
 
             var localVarPath = "/v3/applications/push/hms";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1871,10 +1889,10 @@ namespace sendbird_platform_sdk.Api
         /// Add an IP to a whitelist ## Add an IP to a whitelist  Adds IP addresses and ranges to your Sendbird application settings. Both currently added and any previously added IPs are granted API access. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-ip-to-a-whitelist
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addIpToWhitelistData"> (optional)</param>
         /// <returns>AddIpToWhitelistResponse</returns>
-        public AddIpToWhitelistResponse AddIpToWhitelist (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData))
+        public AddIpToWhitelistResponse AddIpToWhitelist (string apiToken, AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData))
         {
              ApiResponse<AddIpToWhitelistResponse> localVarResponse = AddIpToWhitelistWithHttpInfo(apiToken, addIpToWhitelistData);
              return localVarResponse.Data;
@@ -1884,11 +1902,14 @@ namespace sendbird_platform_sdk.Api
         /// Add an IP to a whitelist ## Add an IP to a whitelist  Adds IP addresses and ranges to your Sendbird application settings. Both currently added and any previously added IPs are granted API access. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-ip-to-a-whitelist
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addIpToWhitelistData"> (optional)</param>
         /// <returns>ApiResponse of AddIpToWhitelistResponse</returns>
-        public ApiResponse<AddIpToWhitelistResponse> AddIpToWhitelistWithHttpInfo (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData))
+        public ApiResponse<AddIpToWhitelistResponse> AddIpToWhitelistWithHttpInfo (string apiToken, AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->AddIpToWhitelist");
 
             var localVarPath = "/v3/applications/settings/ip_whitelist";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1945,11 +1966,11 @@ namespace sendbird_platform_sdk.Api
         /// Add an IP to a whitelist ## Add an IP to a whitelist  Adds IP addresses and ranges to your Sendbird application settings. Both currently added and any previously added IPs are granted API access. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-ip-to-a-whitelist
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addIpToWhitelistData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddIpToWhitelistResponse</returns>
-        public async System.Threading.Tasks.Task<AddIpToWhitelistResponse> AddIpToWhitelistAsync (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<AddIpToWhitelistResponse> AddIpToWhitelistAsync (string apiToken, AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<AddIpToWhitelistResponse> localVarResponse = await AddIpToWhitelistWithHttpInfoAsync(apiToken, addIpToWhitelistData, cancellationToken);
              return localVarResponse.Data;
@@ -1960,12 +1981,15 @@ namespace sendbird_platform_sdk.Api
         /// Add an IP to a whitelist ## Add an IP to a whitelist  Adds IP addresses and ranges to your Sendbird application settings. Both currently added and any previously added IPs are granted API access. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-add-an-ip-to-a-whitelist
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="addIpToWhitelistData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddIpToWhitelistResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<AddIpToWhitelistResponse>> AddIpToWhitelistWithHttpInfoAsync (string apiToken = default(string), AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<AddIpToWhitelistResponse>> AddIpToWhitelistWithHttpInfoAsync (string apiToken, AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->AddIpToWhitelist");
 
             var localVarPath = "/v3/applications/settings/ip_whitelist";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2022,12 +2046,12 @@ namespace sendbird_platform_sdk.Api
         /// Delete allowed IPs from a whitelist ## Delete allowed IPs from a whitelist  Deletes allowed IPs from the whitelist by specifying their IP addresses or ranges. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-delete-allowed-ips-from-a-whitelist
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="ipWhitelistAddresses"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>DeleteAllowedIpsFromWhitelistResponse</returns>
-        public DeleteAllowedIpsFromWhitelistResponse DeleteAllowedIpsFromWhitelist (List<string> ipWhitelistAddresses, string apiToken = default(string))
+        public DeleteAllowedIpsFromWhitelistResponse DeleteAllowedIpsFromWhitelist (string apiToken, List<string> ipWhitelistAddresses)
         {
-             ApiResponse<DeleteAllowedIpsFromWhitelistResponse> localVarResponse = DeleteAllowedIpsFromWhitelistWithHttpInfo(ipWhitelistAddresses, apiToken);
+             ApiResponse<DeleteAllowedIpsFromWhitelistResponse> localVarResponse = DeleteAllowedIpsFromWhitelistWithHttpInfo(apiToken, ipWhitelistAddresses);
              return localVarResponse.Data;
         }
 
@@ -2035,11 +2059,14 @@ namespace sendbird_platform_sdk.Api
         /// Delete allowed IPs from a whitelist ## Delete allowed IPs from a whitelist  Deletes allowed IPs from the whitelist by specifying their IP addresses or ranges. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-delete-allowed-ips-from-a-whitelist
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="ipWhitelistAddresses"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of DeleteAllowedIpsFromWhitelistResponse</returns>
-        public ApiResponse<DeleteAllowedIpsFromWhitelistResponse> DeleteAllowedIpsFromWhitelistWithHttpInfo (List<string> ipWhitelistAddresses, string apiToken = default(string))
+        public ApiResponse<DeleteAllowedIpsFromWhitelistResponse> DeleteAllowedIpsFromWhitelistWithHttpInfo (string apiToken, List<string> ipWhitelistAddresses)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->DeleteAllowedIpsFromWhitelist");
             // verify the required parameter 'ipWhitelistAddresses' is set
             if (ipWhitelistAddresses == null)
                 throw new ApiException(400, "Missing required parameter 'ipWhitelistAddresses' when calling ApplicationApi->DeleteAllowedIpsFromWhitelist");
@@ -2091,13 +2118,13 @@ namespace sendbird_platform_sdk.Api
         /// Delete allowed IPs from a whitelist ## Delete allowed IPs from a whitelist  Deletes allowed IPs from the whitelist by specifying their IP addresses or ranges. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-delete-allowed-ips-from-a-whitelist
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="ipWhitelistAddresses"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of DeleteAllowedIpsFromWhitelistResponse</returns>
-        public async System.Threading.Tasks.Task<DeleteAllowedIpsFromWhitelistResponse> DeleteAllowedIpsFromWhitelistAsync (List<string> ipWhitelistAddresses, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<DeleteAllowedIpsFromWhitelistResponse> DeleteAllowedIpsFromWhitelistAsync (string apiToken, List<string> ipWhitelistAddresses, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<DeleteAllowedIpsFromWhitelistResponse> localVarResponse = await DeleteAllowedIpsFromWhitelistWithHttpInfoAsync(ipWhitelistAddresses, apiToken, cancellationToken);
+             ApiResponse<DeleteAllowedIpsFromWhitelistResponse> localVarResponse = await DeleteAllowedIpsFromWhitelistWithHttpInfoAsync(apiToken, ipWhitelistAddresses, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2106,12 +2133,15 @@ namespace sendbird_platform_sdk.Api
         /// Delete allowed IPs from a whitelist ## Delete allowed IPs from a whitelist  Deletes allowed IPs from the whitelist by specifying their IP addresses or ranges. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-delete-allowed-ips-from-a-whitelist
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="ipWhitelistAddresses"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (DeleteAllowedIpsFromWhitelistResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<DeleteAllowedIpsFromWhitelistResponse>> DeleteAllowedIpsFromWhitelistWithHttpInfoAsync (List<string> ipWhitelistAddresses, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<DeleteAllowedIpsFromWhitelistResponse>> DeleteAllowedIpsFromWhitelistWithHttpInfoAsync (string apiToken, List<string> ipWhitelistAddresses, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->DeleteAllowedIpsFromWhitelist");
             // verify the required parameter 'ipWhitelistAddresses' is set
             if (ipWhitelistAddresses == null)
                 throw new ApiException(400, "Missing required parameter 'ipWhitelistAddresses' when calling ApplicationApi->DeleteAllowedIpsFromWhitelist");
@@ -2163,12 +2193,12 @@ namespace sendbird_platform_sdk.Api
         /// Delete an APNs certificate ## Delete an APNs certificate  Deletes a specific APNs certificate.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-delete-an-apns-certificate - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>DeleteApnsCertificateByIdResponse</returns>
-        public DeleteApnsCertificateByIdResponse DeleteApnsCertificateById (string providerId, string apiToken = default(string))
+        public DeleteApnsCertificateByIdResponse DeleteApnsCertificateById (string apiToken, string providerId)
         {
-             ApiResponse<DeleteApnsCertificateByIdResponse> localVarResponse = DeleteApnsCertificateByIdWithHttpInfo(providerId, apiToken);
+             ApiResponse<DeleteApnsCertificateByIdResponse> localVarResponse = DeleteApnsCertificateByIdWithHttpInfo(apiToken, providerId);
              return localVarResponse.Data;
         }
 
@@ -2176,11 +2206,14 @@ namespace sendbird_platform_sdk.Api
         /// Delete an APNs certificate ## Delete an APNs certificate  Deletes a specific APNs certificate.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-delete-an-apns-certificate - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of DeleteApnsCertificateByIdResponse</returns>
-        public ApiResponse<DeleteApnsCertificateByIdResponse> DeleteApnsCertificateByIdWithHttpInfo (string providerId, string apiToken = default(string))
+        public ApiResponse<DeleteApnsCertificateByIdResponse> DeleteApnsCertificateByIdWithHttpInfo (string apiToken, string providerId)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->DeleteApnsCertificateById");
             // verify the required parameter 'providerId' is set
             if (providerId == null)
                 throw new ApiException(400, "Missing required parameter 'providerId' when calling ApplicationApi->DeleteApnsCertificateById");
@@ -2232,13 +2265,13 @@ namespace sendbird_platform_sdk.Api
         /// Delete an APNs certificate ## Delete an APNs certificate  Deletes a specific APNs certificate.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-delete-an-apns-certificate - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of DeleteApnsCertificateByIdResponse</returns>
-        public async System.Threading.Tasks.Task<DeleteApnsCertificateByIdResponse> DeleteApnsCertificateByIdAsync (string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<DeleteApnsCertificateByIdResponse> DeleteApnsCertificateByIdAsync (string apiToken, string providerId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<DeleteApnsCertificateByIdResponse> localVarResponse = await DeleteApnsCertificateByIdWithHttpInfoAsync(providerId, apiToken, cancellationToken);
+             ApiResponse<DeleteApnsCertificateByIdResponse> localVarResponse = await DeleteApnsCertificateByIdWithHttpInfoAsync(apiToken, providerId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2247,12 +2280,15 @@ namespace sendbird_platform_sdk.Api
         /// Delete an APNs certificate ## Delete an APNs certificate  Deletes a specific APNs certificate.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-delete-an-apns-certificate - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (DeleteApnsCertificateByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<DeleteApnsCertificateByIdResponse>> DeleteApnsCertificateByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<DeleteApnsCertificateByIdResponse>> DeleteApnsCertificateByIdWithHttpInfoAsync (string apiToken, string providerId, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->DeleteApnsCertificateById");
             // verify the required parameter 'providerId' is set
             if (providerId == null)
                 throw new ApiException(400, "Missing required parameter 'providerId' when calling ApplicationApi->DeleteApnsCertificateById");
@@ -2304,10 +2340,10 @@ namespace sendbird_platform_sdk.Api
         /// Generate a secondary API token ## Generate a secondary API token  Generates a new secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-generate-a-secondary-api-token
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
         /// <returns>GenerateSecondaryApiTokenResponse</returns>
-        public GenerateSecondaryApiTokenResponse GenerateSecondaryApiToken (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData))
+        public GenerateSecondaryApiTokenResponse GenerateSecondaryApiToken (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData))
         {
              ApiResponse<GenerateSecondaryApiTokenResponse> localVarResponse = GenerateSecondaryApiTokenWithHttpInfo(apiToken, generateSecondaryApiTokenData);
              return localVarResponse.Data;
@@ -2317,11 +2353,14 @@ namespace sendbird_platform_sdk.Api
         /// Generate a secondary API token ## Generate a secondary API token  Generates a new secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-generate-a-secondary-api-token
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
         /// <returns>ApiResponse of GenerateSecondaryApiTokenResponse</returns>
-        public ApiResponse<GenerateSecondaryApiTokenResponse> GenerateSecondaryApiTokenWithHttpInfo (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData))
+        public ApiResponse<GenerateSecondaryApiTokenResponse> GenerateSecondaryApiTokenWithHttpInfo (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->GenerateSecondaryApiToken");
 
             var localVarPath = "/v3/applications/api_tokens";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2378,11 +2417,11 @@ namespace sendbird_platform_sdk.Api
         /// Generate a secondary API token ## Generate a secondary API token  Generates a new secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-generate-a-secondary-api-token
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GenerateSecondaryApiTokenResponse</returns>
-        public async System.Threading.Tasks.Task<GenerateSecondaryApiTokenResponse> GenerateSecondaryApiTokenAsync (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GenerateSecondaryApiTokenResponse> GenerateSecondaryApiTokenAsync (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<GenerateSecondaryApiTokenResponse> localVarResponse = await GenerateSecondaryApiTokenWithHttpInfoAsync(apiToken, generateSecondaryApiTokenData, cancellationToken);
              return localVarResponse.Data;
@@ -2393,12 +2432,15 @@ namespace sendbird_platform_sdk.Api
         /// Generate a secondary API token ## Generate a secondary API token  Generates a new secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-generate-a-secondary-api-token
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GenerateSecondaryApiTokenResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GenerateSecondaryApiTokenResponse>> GenerateSecondaryApiTokenWithHttpInfoAsync (string apiToken = default(string), GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GenerateSecondaryApiTokenResponse>> GenerateSecondaryApiTokenWithHttpInfoAsync (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->GenerateSecondaryApiToken");
 
             var localVarPath = "/v3/applications/api_tokens";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2455,12 +2497,12 @@ namespace sendbird_platform_sdk.Api
         /// List push configurations ## List push configurations  Retrieves a list of an application&#39;s registered push configurations.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-push-configurations - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ListPushConfigurationsResponse</returns>
-        public ListPushConfigurationsResponse ListPushConfigurations (string pushType, string apiToken = default(string))
+        public ListPushConfigurationsResponse ListPushConfigurations (string apiToken, string pushType)
         {
-             ApiResponse<ListPushConfigurationsResponse> localVarResponse = ListPushConfigurationsWithHttpInfo(pushType, apiToken);
+             ApiResponse<ListPushConfigurationsResponse> localVarResponse = ListPushConfigurationsWithHttpInfo(apiToken, pushType);
              return localVarResponse.Data;
         }
 
@@ -2468,11 +2510,14 @@ namespace sendbird_platform_sdk.Api
         /// List push configurations ## List push configurations  Retrieves a list of an application&#39;s registered push configurations.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-push-configurations - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of ListPushConfigurationsResponse</returns>
-        public ApiResponse<ListPushConfigurationsResponse> ListPushConfigurationsWithHttpInfo (string pushType, string apiToken = default(string))
+        public ApiResponse<ListPushConfigurationsResponse> ListPushConfigurationsWithHttpInfo (string apiToken, string pushType)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ListPushConfigurations");
             // verify the required parameter 'pushType' is set
             if (pushType == null)
                 throw new ApiException(400, "Missing required parameter 'pushType' when calling ApplicationApi->ListPushConfigurations");
@@ -2524,13 +2569,13 @@ namespace sendbird_platform_sdk.Api
         /// List push configurations ## List push configurations  Retrieves a list of an application&#39;s registered push configurations.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-push-configurations - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListPushConfigurationsResponse</returns>
-        public async System.Threading.Tasks.Task<ListPushConfigurationsResponse> ListPushConfigurationsAsync (string pushType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListPushConfigurationsResponse> ListPushConfigurationsAsync (string apiToken, string pushType, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ListPushConfigurationsResponse> localVarResponse = await ListPushConfigurationsWithHttpInfoAsync(pushType, apiToken, cancellationToken);
+             ApiResponse<ListPushConfigurationsResponse> localVarResponse = await ListPushConfigurationsWithHttpInfoAsync(apiToken, pushType, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2539,12 +2584,15 @@ namespace sendbird_platform_sdk.Api
         /// List push configurations ## List push configurations  Retrieves a list of an application&#39;s registered push configurations.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-push-configurations - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListPushConfigurationsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListPushConfigurationsResponse>> ListPushConfigurationsWithHttpInfoAsync (string pushType, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListPushConfigurationsResponse>> ListPushConfigurationsWithHttpInfoAsync (string apiToken, string pushType, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ListPushConfigurations");
             // verify the required parameter 'pushType' is set
             if (pushType == null)
                 throw new ApiException(400, "Missing required parameter 'pushType' when calling ApplicationApi->ListPushConfigurations");
@@ -2596,9 +2644,9 @@ namespace sendbird_platform_sdk.Api
         /// List push notification content templates ## List push notification content templates  Retrieves a list of push notification content templates of an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-push-notification-content-templates
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ListPushNotificationContentTemplatesResponse</returns>
-        public ListPushNotificationContentTemplatesResponse ListPushNotificationContentTemplates (string apiToken = default(string))
+        public ListPushNotificationContentTemplatesResponse ListPushNotificationContentTemplates (string apiToken)
         {
              ApiResponse<ListPushNotificationContentTemplatesResponse> localVarResponse = ListPushNotificationContentTemplatesWithHttpInfo(apiToken);
              return localVarResponse.Data;
@@ -2608,10 +2656,13 @@ namespace sendbird_platform_sdk.Api
         /// List push notification content templates ## List push notification content templates  Retrieves a list of push notification content templates of an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-push-notification-content-templates
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of ListPushNotificationContentTemplatesResponse</returns>
-        public ApiResponse<ListPushNotificationContentTemplatesResponse> ListPushNotificationContentTemplatesWithHttpInfo (string apiToken = default(string))
+        public ApiResponse<ListPushNotificationContentTemplatesResponse> ListPushNotificationContentTemplatesWithHttpInfo (string apiToken)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ListPushNotificationContentTemplates");
 
             var localVarPath = "/v3/applications/push/message_templates";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2659,10 +2710,10 @@ namespace sendbird_platform_sdk.Api
         /// List push notification content templates ## List push notification content templates  Retrieves a list of push notification content templates of an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-push-notification-content-templates
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListPushNotificationContentTemplatesResponse</returns>
-        public async System.Threading.Tasks.Task<ListPushNotificationContentTemplatesResponse> ListPushNotificationContentTemplatesAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListPushNotificationContentTemplatesResponse> ListPushNotificationContentTemplatesAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<ListPushNotificationContentTemplatesResponse> localVarResponse = await ListPushNotificationContentTemplatesWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -2673,11 +2724,14 @@ namespace sendbird_platform_sdk.Api
         /// List push notification content templates ## List push notification content templates  Retrieves a list of push notification content templates of an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-push-notification-content-templates
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListPushNotificationContentTemplatesResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListPushNotificationContentTemplatesResponse>> ListPushNotificationContentTemplatesWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListPushNotificationContentTemplatesResponse>> ListPushNotificationContentTemplatesWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ListPushNotificationContentTemplates");
 
             var localVarPath = "/v3/applications/push/message_templates";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2725,9 +2779,9 @@ namespace sendbird_platform_sdk.Api
         /// List secondary API tokens ## List secondary API tokens  Retrieves a list of secondary API tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-secondary-api-tokens
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ListSecondaryApiTokensResponse</returns>
-        public ListSecondaryApiTokensResponse ListSecondaryApiTokens (string apiToken = default(string))
+        public ListSecondaryApiTokensResponse ListSecondaryApiTokens (string apiToken)
         {
              ApiResponse<ListSecondaryApiTokensResponse> localVarResponse = ListSecondaryApiTokensWithHttpInfo(apiToken);
              return localVarResponse.Data;
@@ -2737,10 +2791,13 @@ namespace sendbird_platform_sdk.Api
         /// List secondary API tokens ## List secondary API tokens  Retrieves a list of secondary API tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-secondary-api-tokens
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of ListSecondaryApiTokensResponse</returns>
-        public ApiResponse<ListSecondaryApiTokensResponse> ListSecondaryApiTokensWithHttpInfo (string apiToken = default(string))
+        public ApiResponse<ListSecondaryApiTokensResponse> ListSecondaryApiTokensWithHttpInfo (string apiToken)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ListSecondaryApiTokens");
 
             var localVarPath = "/v3/applications/api_tokens";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2788,10 +2845,10 @@ namespace sendbird_platform_sdk.Api
         /// List secondary API tokens ## List secondary API tokens  Retrieves a list of secondary API tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-secondary-api-tokens
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListSecondaryApiTokensResponse</returns>
-        public async System.Threading.Tasks.Task<ListSecondaryApiTokensResponse> ListSecondaryApiTokensAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListSecondaryApiTokensResponse> ListSecondaryApiTokensAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<ListSecondaryApiTokensResponse> localVarResponse = await ListSecondaryApiTokensWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -2802,11 +2859,14 @@ namespace sendbird_platform_sdk.Api
         /// List secondary API tokens ## List secondary API tokens  Retrieves a list of secondary API tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-secondary-api-tokens
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListSecondaryApiTokensResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListSecondaryApiTokensResponse>> ListSecondaryApiTokensWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListSecondaryApiTokensResponse>> ListSecondaryApiTokensWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ListSecondaryApiTokens");
 
             var localVarPath = "/v3/applications/api_tokens";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2854,13 +2914,13 @@ namespace sendbird_platform_sdk.Api
         /// Remove a push configuration ## Remove a push configuration  Removes a specific push configuration from an application. The type of a push configuration is either &#x60;fcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-remove-a-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>RemovePushConfigurationByIdResponse</returns>
-        public RemovePushConfigurationByIdResponse RemovePushConfigurationById (string pushType, string providerId, string apiToken = default(string))
+        public RemovePushConfigurationByIdResponse RemovePushConfigurationById (string apiToken, string pushType, string providerId)
         {
-             ApiResponse<RemovePushConfigurationByIdResponse> localVarResponse = RemovePushConfigurationByIdWithHttpInfo(pushType, providerId, apiToken);
+             ApiResponse<RemovePushConfigurationByIdResponse> localVarResponse = RemovePushConfigurationByIdWithHttpInfo(apiToken, pushType, providerId);
              return localVarResponse.Data;
         }
 
@@ -2868,12 +2928,15 @@ namespace sendbird_platform_sdk.Api
         /// Remove a push configuration ## Remove a push configuration  Removes a specific push configuration from an application. The type of a push configuration is either &#x60;fcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-remove-a-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of RemovePushConfigurationByIdResponse</returns>
-        public ApiResponse<RemovePushConfigurationByIdResponse> RemovePushConfigurationByIdWithHttpInfo (string pushType, string providerId, string apiToken = default(string))
+        public ApiResponse<RemovePushConfigurationByIdResponse> RemovePushConfigurationByIdWithHttpInfo (string apiToken, string pushType, string providerId)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->RemovePushConfigurationById");
             // verify the required parameter 'pushType' is set
             if (pushType == null)
                 throw new ApiException(400, "Missing required parameter 'pushType' when calling ApplicationApi->RemovePushConfigurationById");
@@ -2929,14 +2992,14 @@ namespace sendbird_platform_sdk.Api
         /// Remove a push configuration ## Remove a push configuration  Removes a specific push configuration from an application. The type of a push configuration is either &#x60;fcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-remove-a-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RemovePushConfigurationByIdResponse</returns>
-        public async System.Threading.Tasks.Task<RemovePushConfigurationByIdResponse> RemovePushConfigurationByIdAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<RemovePushConfigurationByIdResponse> RemovePushConfigurationByIdAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<RemovePushConfigurationByIdResponse> localVarResponse = await RemovePushConfigurationByIdWithHttpInfoAsync(pushType, providerId, apiToken, cancellationToken);
+             ApiResponse<RemovePushConfigurationByIdResponse> localVarResponse = await RemovePushConfigurationByIdWithHttpInfoAsync(apiToken, pushType, providerId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2945,13 +3008,16 @@ namespace sendbird_platform_sdk.Api
         /// Remove a push configuration ## Remove a push configuration  Removes a specific push configuration from an application. The type of a push configuration is either &#x60;fcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-remove-a-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RemovePushConfigurationByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RemovePushConfigurationByIdResponse>> RemovePushConfigurationByIdWithHttpInfoAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<RemovePushConfigurationByIdResponse>> RemovePushConfigurationByIdWithHttpInfoAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->RemovePushConfigurationById");
             // verify the required parameter 'pushType' is set
             if (pushType == null)
                 throw new ApiException(400, "Missing required parameter 'pushType' when calling ApplicationApi->RemovePushConfigurationById");
@@ -3007,9 +3073,9 @@ namespace sendbird_platform_sdk.Api
         /// Retrieve an IP whitelist ## Retrieve an IP whitelist  Retrieves a list of all the IP ranges and addresses that have access to your Sendbird application. This list is called an IP whitelist and its addresses are granted API access when the IP whitelist API enables [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) notations.  If you specify which IP addresses or ranges to include in the whitelist, any unlisted foreign IP addresses will be denied access. If you don&#39;t specify any IP address or range to include in the whitelist, all IP addresses will be granted API access. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-retrieve-an-ip-whitelist
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>RetrieveIpWhitelistResponse</returns>
-        public RetrieveIpWhitelistResponse RetrieveIpWhitelist (string apiToken = default(string))
+        public RetrieveIpWhitelistResponse RetrieveIpWhitelist (string apiToken)
         {
              ApiResponse<RetrieveIpWhitelistResponse> localVarResponse = RetrieveIpWhitelistWithHttpInfo(apiToken);
              return localVarResponse.Data;
@@ -3019,10 +3085,13 @@ namespace sendbird_platform_sdk.Api
         /// Retrieve an IP whitelist ## Retrieve an IP whitelist  Retrieves a list of all the IP ranges and addresses that have access to your Sendbird application. This list is called an IP whitelist and its addresses are granted API access when the IP whitelist API enables [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) notations.  If you specify which IP addresses or ranges to include in the whitelist, any unlisted foreign IP addresses will be denied access. If you don&#39;t specify any IP address or range to include in the whitelist, all IP addresses will be granted API access. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-retrieve-an-ip-whitelist
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of RetrieveIpWhitelistResponse</returns>
-        public ApiResponse<RetrieveIpWhitelistResponse> RetrieveIpWhitelistWithHttpInfo (string apiToken = default(string))
+        public ApiResponse<RetrieveIpWhitelistResponse> RetrieveIpWhitelistWithHttpInfo (string apiToken)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->RetrieveIpWhitelist");
 
             var localVarPath = "/v3/applications/settings/ip_whitelist";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3070,10 +3139,10 @@ namespace sendbird_platform_sdk.Api
         /// Retrieve an IP whitelist ## Retrieve an IP whitelist  Retrieves a list of all the IP ranges and addresses that have access to your Sendbird application. This list is called an IP whitelist and its addresses are granted API access when the IP whitelist API enables [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) notations.  If you specify which IP addresses or ranges to include in the whitelist, any unlisted foreign IP addresses will be denied access. If you don&#39;t specify any IP address or range to include in the whitelist, all IP addresses will be granted API access. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-retrieve-an-ip-whitelist
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RetrieveIpWhitelistResponse</returns>
-        public async System.Threading.Tasks.Task<RetrieveIpWhitelistResponse> RetrieveIpWhitelistAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<RetrieveIpWhitelistResponse> RetrieveIpWhitelistAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<RetrieveIpWhitelistResponse> localVarResponse = await RetrieveIpWhitelistWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -3084,11 +3153,14 @@ namespace sendbird_platform_sdk.Api
         /// Retrieve an IP whitelist ## Retrieve an IP whitelist  Retrieves a list of all the IP ranges and addresses that have access to your Sendbird application. This list is called an IP whitelist and its addresses are granted API access when the IP whitelist API enables [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) notations.  If you specify which IP addresses or ranges to include in the whitelist, any unlisted foreign IP addresses will be denied access. If you don&#39;t specify any IP address or range to include in the whitelist, all IP addresses will be granted API access. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-retrieve-an-ip-whitelist
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RetrieveIpWhitelistResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RetrieveIpWhitelistResponse>> RetrieveIpWhitelistWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<RetrieveIpWhitelistResponse>> RetrieveIpWhitelistWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->RetrieveIpWhitelist");
 
             var localVarPath = "/v3/applications/settings/ip_whitelist";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3136,12 +3208,12 @@ namespace sendbird_platform_sdk.Api
         /// Revoke a secondary API token ## Revoke a secondary API token  Revokes a secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-revoke-a-secondary-api-token
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="apiToken2"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>RevokeSecondaryApiTokenByTokenResponse</returns>
-        public RevokeSecondaryApiTokenByTokenResponse RevokeSecondaryApiTokenByToken (string apiToken2, string apiToken = default(string))
+        public RevokeSecondaryApiTokenByTokenResponse RevokeSecondaryApiTokenByToken (string apiToken, string apiToken2)
         {
-             ApiResponse<RevokeSecondaryApiTokenByTokenResponse> localVarResponse = RevokeSecondaryApiTokenByTokenWithHttpInfo(apiToken2, apiToken);
+             ApiResponse<RevokeSecondaryApiTokenByTokenResponse> localVarResponse = RevokeSecondaryApiTokenByTokenWithHttpInfo(apiToken, apiToken2);
              return localVarResponse.Data;
         }
 
@@ -3149,11 +3221,14 @@ namespace sendbird_platform_sdk.Api
         /// Revoke a secondary API token ## Revoke a secondary API token  Revokes a secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-revoke-a-secondary-api-token
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="apiToken2"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of RevokeSecondaryApiTokenByTokenResponse</returns>
-        public ApiResponse<RevokeSecondaryApiTokenByTokenResponse> RevokeSecondaryApiTokenByTokenWithHttpInfo (string apiToken2, string apiToken = default(string))
+        public ApiResponse<RevokeSecondaryApiTokenByTokenResponse> RevokeSecondaryApiTokenByTokenWithHttpInfo (string apiToken, string apiToken2)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->RevokeSecondaryApiTokenByToken");
             // verify the required parameter 'apiToken2' is set
             if (apiToken2 == null)
                 throw new ApiException(400, "Missing required parameter 'apiToken2' when calling ApplicationApi->RevokeSecondaryApiTokenByToken");
@@ -3205,13 +3280,13 @@ namespace sendbird_platform_sdk.Api
         /// Revoke a secondary API token ## Revoke a secondary API token  Revokes a secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-revoke-a-secondary-api-token
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="apiToken2"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RevokeSecondaryApiTokenByTokenResponse</returns>
-        public async System.Threading.Tasks.Task<RevokeSecondaryApiTokenByTokenResponse> RevokeSecondaryApiTokenByTokenAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<RevokeSecondaryApiTokenByTokenResponse> RevokeSecondaryApiTokenByTokenAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<RevokeSecondaryApiTokenByTokenResponse> localVarResponse = await RevokeSecondaryApiTokenByTokenWithHttpInfoAsync(apiToken2, apiToken, cancellationToken);
+             ApiResponse<RevokeSecondaryApiTokenByTokenResponse> localVarResponse = await RevokeSecondaryApiTokenByTokenWithHttpInfoAsync(apiToken, apiToken2, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3220,12 +3295,15 @@ namespace sendbird_platform_sdk.Api
         /// Revoke a secondary API token ## Revoke a secondary API token  Revokes a secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-revoke-a-secondary-api-token
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="apiToken2"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RevokeSecondaryApiTokenByTokenResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RevokeSecondaryApiTokenByTokenResponse>> RevokeSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<RevokeSecondaryApiTokenByTokenResponse>> RevokeSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->RevokeSecondaryApiTokenByToken");
             // verify the required parameter 'apiToken2' is set
             if (apiToken2 == null)
                 throw new ApiException(400, "Missing required parameter 'apiToken2' when calling ApplicationApi->RevokeSecondaryApiTokenByToken");
@@ -3277,13 +3355,13 @@ namespace sendbird_platform_sdk.Api
         /// Update an APNs push configuration ## Update an APNs push configuration  Updates a specific APNs (Apple Push Notification service) push configuration for your client app. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  &gt; __Note__: If your HTTP request body contains a [.p12](https://sendbird.com/docs/chat/v3/ios/guides/push-notifications#2-step-3-export-a-p12-file-and-upload-to-sendbird-dashboard) certificate file to upload to Sendbird server, you should send a [Multipart request](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api#2-headers-3-multipart-requests) .  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-an-apns-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
         /// <returns>UpdateApnsPushConfigurationByIdResponse</returns>
-        public UpdateApnsPushConfigurationByIdResponse UpdateApnsPushConfigurationById (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData))
+        public UpdateApnsPushConfigurationByIdResponse UpdateApnsPushConfigurationById (string apiToken, string providerId, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData))
         {
-             ApiResponse<UpdateApnsPushConfigurationByIdResponse> localVarResponse = UpdateApnsPushConfigurationByIdWithHttpInfo(providerId, apiToken, updateApnsPushConfigurationByIdData);
+             ApiResponse<UpdateApnsPushConfigurationByIdResponse> localVarResponse = UpdateApnsPushConfigurationByIdWithHttpInfo(apiToken, providerId, updateApnsPushConfigurationByIdData);
              return localVarResponse.Data;
         }
 
@@ -3291,12 +3369,15 @@ namespace sendbird_platform_sdk.Api
         /// Update an APNs push configuration ## Update an APNs push configuration  Updates a specific APNs (Apple Push Notification service) push configuration for your client app. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  &gt; __Note__: If your HTTP request body contains a [.p12](https://sendbird.com/docs/chat/v3/ios/guides/push-notifications#2-step-3-export-a-p12-file-and-upload-to-sendbird-dashboard) certificate file to upload to Sendbird server, you should send a [Multipart request](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api#2-headers-3-multipart-requests) .  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-an-apns-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
         /// <returns>ApiResponse of UpdateApnsPushConfigurationByIdResponse</returns>
-        public ApiResponse<UpdateApnsPushConfigurationByIdResponse> UpdateApnsPushConfigurationByIdWithHttpInfo (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData))
+        public ApiResponse<UpdateApnsPushConfigurationByIdResponse> UpdateApnsPushConfigurationByIdWithHttpInfo (string apiToken, string providerId, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->UpdateApnsPushConfigurationById");
             // verify the required parameter 'providerId' is set
             if (providerId == null)
                 throw new ApiException(400, "Missing required parameter 'providerId' when calling ApplicationApi->UpdateApnsPushConfigurationById");
@@ -3357,14 +3438,14 @@ namespace sendbird_platform_sdk.Api
         /// Update an APNs push configuration ## Update an APNs push configuration  Updates a specific APNs (Apple Push Notification service) push configuration for your client app. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  &gt; __Note__: If your HTTP request body contains a [.p12](https://sendbird.com/docs/chat/v3/ios/guides/push-notifications#2-step-3-export-a-p12-file-and-upload-to-sendbird-dashboard) certificate file to upload to Sendbird server, you should send a [Multipart request](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api#2-headers-3-multipart-requests) .  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-an-apns-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateApnsPushConfigurationByIdResponse</returns>
-        public async System.Threading.Tasks.Task<UpdateApnsPushConfigurationByIdResponse> UpdateApnsPushConfigurationByIdAsync (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<UpdateApnsPushConfigurationByIdResponse> UpdateApnsPushConfigurationByIdAsync (string apiToken, string providerId, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<UpdateApnsPushConfigurationByIdResponse> localVarResponse = await UpdateApnsPushConfigurationByIdWithHttpInfoAsync(providerId, apiToken, updateApnsPushConfigurationByIdData, cancellationToken);
+             ApiResponse<UpdateApnsPushConfigurationByIdResponse> localVarResponse = await UpdateApnsPushConfigurationByIdWithHttpInfoAsync(apiToken, providerId, updateApnsPushConfigurationByIdData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3373,13 +3454,16 @@ namespace sendbird_platform_sdk.Api
         /// Update an APNs push configuration ## Update an APNs push configuration  Updates a specific APNs (Apple Push Notification service) push configuration for your client app. You can also register the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  &gt; __Note__: If your HTTP request body contains a [.p12](https://sendbird.com/docs/chat/v3/ios/guides/push-notifications#2-step-3-export-a-p12-file-and-upload-to-sendbird-dashboard) certificate file to upload to Sendbird server, you should send a [Multipart request](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api#2-headers-3-multipart-requests) .  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-an-apns-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateApnsPushConfigurationByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UpdateApnsPushConfigurationByIdResponse>> UpdateApnsPushConfigurationByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateApnsPushConfigurationByIdResponse>> UpdateApnsPushConfigurationByIdWithHttpInfoAsync (string apiToken, string providerId, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->UpdateApnsPushConfigurationById");
             // verify the required parameter 'providerId' is set
             if (providerId == null)
                 throw new ApiException(400, "Missing required parameter 'providerId' when calling ApplicationApi->UpdateApnsPushConfigurationById");
@@ -3440,10 +3524,10 @@ namespace sendbird_platform_sdk.Api
         /// Update default channel invitation preference ## Update default channel invitation preference  Updates the default channel invitation preference of an application.  &gt; __Note__: Using the [update channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can update the value of a specific user&#39;s channel invitation preference, which can be set individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
         /// <returns>UpdateDefaultChannelInvitationPreferenceResponse</returns>
-        public UpdateDefaultChannelInvitationPreferenceResponse UpdateDefaultChannelInvitationPreference (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData))
+        public UpdateDefaultChannelInvitationPreferenceResponse UpdateDefaultChannelInvitationPreference (string apiToken, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData))
         {
              ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse> localVarResponse = UpdateDefaultChannelInvitationPreferenceWithHttpInfo(apiToken, updateDefaultChannelInvitationPreferenceData);
              return localVarResponse.Data;
@@ -3453,11 +3537,14 @@ namespace sendbird_platform_sdk.Api
         /// Update default channel invitation preference ## Update default channel invitation preference  Updates the default channel invitation preference of an application.  &gt; __Note__: Using the [update channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can update the value of a specific user&#39;s channel invitation preference, which can be set individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
         /// <returns>ApiResponse of UpdateDefaultChannelInvitationPreferenceResponse</returns>
-        public ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse> UpdateDefaultChannelInvitationPreferenceWithHttpInfo (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData))
+        public ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse> UpdateDefaultChannelInvitationPreferenceWithHttpInfo (string apiToken, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->UpdateDefaultChannelInvitationPreference");
 
             var localVarPath = "/v3/applications/default_channel_invitation_preference";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3514,11 +3601,11 @@ namespace sendbird_platform_sdk.Api
         /// Update default channel invitation preference ## Update default channel invitation preference  Updates the default channel invitation preference of an application.  &gt; __Note__: Using the [update channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can update the value of a specific user&#39;s channel invitation preference, which can be set individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateDefaultChannelInvitationPreferenceResponse</returns>
-        public async System.Threading.Tasks.Task<UpdateDefaultChannelInvitationPreferenceResponse> UpdateDefaultChannelInvitationPreferenceAsync (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<UpdateDefaultChannelInvitationPreferenceResponse> UpdateDefaultChannelInvitationPreferenceAsync (string apiToken, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse> localVarResponse = await UpdateDefaultChannelInvitationPreferenceWithHttpInfoAsync(apiToken, updateDefaultChannelInvitationPreferenceData, cancellationToken);
              return localVarResponse.Data;
@@ -3529,12 +3616,15 @@ namespace sendbird_platform_sdk.Api
         /// Update default channel invitation preference ## Update default channel invitation preference  Updates the default channel invitation preference of an application.  &gt; __Note__: Using the [update channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can update the value of a specific user&#39;s channel invitation preference, which can be set individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateDefaultChannelInvitationPreferenceResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse>> UpdateDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken = default(string), UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse>> UpdateDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->UpdateDefaultChannelInvitationPreference");
 
             var localVarPath = "/v3/applications/default_channel_invitation_preference";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3591,13 +3681,13 @@ namespace sendbird_platform_sdk.Api
         /// Update a FCM push configuration ## Update a FCM push configuration  Updates a specific FCM (Firebase Cloud Messaging) push configuration for your client app. You can also update the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-a-fcm-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
         /// <returns>UpdateFcmPushConfigurationByIdResponse</returns>
-        public UpdateFcmPushConfigurationByIdResponse UpdateFcmPushConfigurationById (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData))
+        public UpdateFcmPushConfigurationByIdResponse UpdateFcmPushConfigurationById (string apiToken, string providerId, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData))
         {
-             ApiResponse<UpdateFcmPushConfigurationByIdResponse> localVarResponse = UpdateFcmPushConfigurationByIdWithHttpInfo(providerId, apiToken, updateFcmPushConfigurationByIdData);
+             ApiResponse<UpdateFcmPushConfigurationByIdResponse> localVarResponse = UpdateFcmPushConfigurationByIdWithHttpInfo(apiToken, providerId, updateFcmPushConfigurationByIdData);
              return localVarResponse.Data;
         }
 
@@ -3605,12 +3695,15 @@ namespace sendbird_platform_sdk.Api
         /// Update a FCM push configuration ## Update a FCM push configuration  Updates a specific FCM (Firebase Cloud Messaging) push configuration for your client app. You can also update the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-a-fcm-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
         /// <returns>ApiResponse of UpdateFcmPushConfigurationByIdResponse</returns>
-        public ApiResponse<UpdateFcmPushConfigurationByIdResponse> UpdateFcmPushConfigurationByIdWithHttpInfo (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData))
+        public ApiResponse<UpdateFcmPushConfigurationByIdResponse> UpdateFcmPushConfigurationByIdWithHttpInfo (string apiToken, string providerId, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->UpdateFcmPushConfigurationById");
             // verify the required parameter 'providerId' is set
             if (providerId == null)
                 throw new ApiException(400, "Missing required parameter 'providerId' when calling ApplicationApi->UpdateFcmPushConfigurationById");
@@ -3671,14 +3764,14 @@ namespace sendbird_platform_sdk.Api
         /// Update a FCM push configuration ## Update a FCM push configuration  Updates a specific FCM (Firebase Cloud Messaging) push configuration for your client app. You can also update the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-a-fcm-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateFcmPushConfigurationByIdResponse</returns>
-        public async System.Threading.Tasks.Task<UpdateFcmPushConfigurationByIdResponse> UpdateFcmPushConfigurationByIdAsync (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<UpdateFcmPushConfigurationByIdResponse> UpdateFcmPushConfigurationByIdAsync (string apiToken, string providerId, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<UpdateFcmPushConfigurationByIdResponse> localVarResponse = await UpdateFcmPushConfigurationByIdWithHttpInfoAsync(providerId, apiToken, updateFcmPushConfigurationByIdData, cancellationToken);
+             ApiResponse<UpdateFcmPushConfigurationByIdResponse> localVarResponse = await UpdateFcmPushConfigurationByIdWithHttpInfoAsync(apiToken, providerId, updateFcmPushConfigurationByIdData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3687,13 +3780,16 @@ namespace sendbird_platform_sdk.Api
         /// Update a FCM push configuration ## Update a FCM push configuration  Updates a specific FCM (Firebase Cloud Messaging) push configuration for your client app. You can also update the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-a-fcm-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateFcmPushConfigurationByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UpdateFcmPushConfigurationByIdResponse>> UpdateFcmPushConfigurationByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateFcmPushConfigurationByIdResponse>> UpdateFcmPushConfigurationByIdWithHttpInfoAsync (string apiToken, string providerId, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->UpdateFcmPushConfigurationById");
             // verify the required parameter 'providerId' is set
             if (providerId == null)
                 throw new ApiException(400, "Missing required parameter 'providerId' when calling ApplicationApi->UpdateFcmPushConfigurationById");
@@ -3754,13 +3850,13 @@ namespace sendbird_platform_sdk.Api
         /// Update an HMS push configuration ## Update an HMS push configuration  Updates a specific HMS (Huawei Mobile Services) push configuration for your client app. You can also update the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-an-hms-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
         /// <returns>UpdateHmsPushConfigurationByIdResponse</returns>
-        public UpdateHmsPushConfigurationByIdResponse UpdateHmsPushConfigurationById (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData))
+        public UpdateHmsPushConfigurationByIdResponse UpdateHmsPushConfigurationById (string apiToken, string providerId, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData))
         {
-             ApiResponse<UpdateHmsPushConfigurationByIdResponse> localVarResponse = UpdateHmsPushConfigurationByIdWithHttpInfo(providerId, apiToken, updateHmsPushConfigurationByIdData);
+             ApiResponse<UpdateHmsPushConfigurationByIdResponse> localVarResponse = UpdateHmsPushConfigurationByIdWithHttpInfo(apiToken, providerId, updateHmsPushConfigurationByIdData);
              return localVarResponse.Data;
         }
 
@@ -3768,12 +3864,15 @@ namespace sendbird_platform_sdk.Api
         /// Update an HMS push configuration ## Update an HMS push configuration  Updates a specific HMS (Huawei Mobile Services) push configuration for your client app. You can also update the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-an-hms-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
         /// <returns>ApiResponse of UpdateHmsPushConfigurationByIdResponse</returns>
-        public ApiResponse<UpdateHmsPushConfigurationByIdResponse> UpdateHmsPushConfigurationByIdWithHttpInfo (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData))
+        public ApiResponse<UpdateHmsPushConfigurationByIdResponse> UpdateHmsPushConfigurationByIdWithHttpInfo (string apiToken, string providerId, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->UpdateHmsPushConfigurationById");
             // verify the required parameter 'providerId' is set
             if (providerId == null)
                 throw new ApiException(400, "Missing required parameter 'providerId' when calling ApplicationApi->UpdateHmsPushConfigurationById");
@@ -3834,14 +3933,14 @@ namespace sendbird_platform_sdk.Api
         /// Update an HMS push configuration ## Update an HMS push configuration  Updates a specific HMS (Huawei Mobile Services) push configuration for your client app. You can also update the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-an-hms-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateHmsPushConfigurationByIdResponse</returns>
-        public async System.Threading.Tasks.Task<UpdateHmsPushConfigurationByIdResponse> UpdateHmsPushConfigurationByIdAsync (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<UpdateHmsPushConfigurationByIdResponse> UpdateHmsPushConfigurationByIdAsync (string apiToken, string providerId, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<UpdateHmsPushConfigurationByIdResponse> localVarResponse = await UpdateHmsPushConfigurationByIdWithHttpInfoAsync(providerId, apiToken, updateHmsPushConfigurationByIdData, cancellationToken);
+             ApiResponse<UpdateHmsPushConfigurationByIdResponse> localVarResponse = await UpdateHmsPushConfigurationByIdWithHttpInfoAsync(apiToken, providerId, updateHmsPushConfigurationByIdData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3850,13 +3949,16 @@ namespace sendbird_platform_sdk.Api
         /// Update an HMS push configuration ## Update an HMS push configuration  Updates a specific HMS (Huawei Mobile Services) push configuration for your client app. You can also update the configurations in your [dashboard](https://dashboard.sendbird.com) under Settings &gt; Application &gt; Notifications.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-an-hms-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateHmsPushConfigurationByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UpdateHmsPushConfigurationByIdResponse>> UpdateHmsPushConfigurationByIdWithHttpInfoAsync (string providerId, string apiToken = default(string), UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateHmsPushConfigurationByIdResponse>> UpdateHmsPushConfigurationByIdWithHttpInfoAsync (string apiToken, string providerId, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->UpdateHmsPushConfigurationById");
             // verify the required parameter 'providerId' is set
             if (providerId == null)
                 throw new ApiException(400, "Missing required parameter 'providerId' when calling ApplicationApi->UpdateHmsPushConfigurationById");
@@ -3917,13 +4019,13 @@ namespace sendbird_platform_sdk.Api
         /// Update a push notification content template ## Update a push notification content template  Updates a specific push notification content template of an application. The name of a content template is either &#x60;default&#x60; or &#x60;alternative&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="templateName"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
         /// <returns>UpdatePushNotificationContentTemplateResponse</returns>
-        public UpdatePushNotificationContentTemplateResponse UpdatePushNotificationContentTemplate (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData))
+        public UpdatePushNotificationContentTemplateResponse UpdatePushNotificationContentTemplate (string apiToken, string templateName, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData))
         {
-             ApiResponse<UpdatePushNotificationContentTemplateResponse> localVarResponse = UpdatePushNotificationContentTemplateWithHttpInfo(templateName, apiToken, updatePushNotificationContentTemplateData);
+             ApiResponse<UpdatePushNotificationContentTemplateResponse> localVarResponse = UpdatePushNotificationContentTemplateWithHttpInfo(apiToken, templateName, updatePushNotificationContentTemplateData);
              return localVarResponse.Data;
         }
 
@@ -3931,12 +4033,15 @@ namespace sendbird_platform_sdk.Api
         /// Update a push notification content template ## Update a push notification content template  Updates a specific push notification content template of an application. The name of a content template is either &#x60;default&#x60; or &#x60;alternative&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="templateName"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
         /// <returns>ApiResponse of UpdatePushNotificationContentTemplateResponse</returns>
-        public ApiResponse<UpdatePushNotificationContentTemplateResponse> UpdatePushNotificationContentTemplateWithHttpInfo (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData))
+        public ApiResponse<UpdatePushNotificationContentTemplateResponse> UpdatePushNotificationContentTemplateWithHttpInfo (string apiToken, string templateName, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->UpdatePushNotificationContentTemplate");
             // verify the required parameter 'templateName' is set
             if (templateName == null)
                 throw new ApiException(400, "Missing required parameter 'templateName' when calling ApplicationApi->UpdatePushNotificationContentTemplate");
@@ -3997,14 +4102,14 @@ namespace sendbird_platform_sdk.Api
         /// Update a push notification content template ## Update a push notification content template  Updates a specific push notification content template of an application. The name of a content template is either &#x60;default&#x60; or &#x60;alternative&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="templateName"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdatePushNotificationContentTemplateResponse</returns>
-        public async System.Threading.Tasks.Task<UpdatePushNotificationContentTemplateResponse> UpdatePushNotificationContentTemplateAsync (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<UpdatePushNotificationContentTemplateResponse> UpdatePushNotificationContentTemplateAsync (string apiToken, string templateName, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<UpdatePushNotificationContentTemplateResponse> localVarResponse = await UpdatePushNotificationContentTemplateWithHttpInfoAsync(templateName, apiToken, updatePushNotificationContentTemplateData, cancellationToken);
+             ApiResponse<UpdatePushNotificationContentTemplateResponse> localVarResponse = await UpdatePushNotificationContentTemplateWithHttpInfoAsync(apiToken, templateName, updatePushNotificationContentTemplateData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -4013,13 +4118,16 @@ namespace sendbird_platform_sdk.Api
         /// Update a push notification content template ## Update a push notification content template  Updates a specific push notification content template of an application. The name of a content template is either &#x60;default&#x60; or &#x60;alternative&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="templateName"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdatePushNotificationContentTemplateResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UpdatePushNotificationContentTemplateResponse>> UpdatePushNotificationContentTemplateWithHttpInfoAsync (string templateName, string apiToken = default(string), UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<UpdatePushNotificationContentTemplateResponse>> UpdatePushNotificationContentTemplateWithHttpInfoAsync (string apiToken, string templateName, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->UpdatePushNotificationContentTemplate");
             // verify the required parameter 'templateName' is set
             if (templateName == null)
                 throw new ApiException(400, "Missing required parameter 'templateName' when calling ApplicationApi->UpdatePushNotificationContentTemplate");
@@ -4080,9 +4188,9 @@ namespace sendbird_platform_sdk.Api
         /// View default channel invitation preference ## View default channel invitation preference  Retrieves the default channel invitation preference of an application.  &gt; __Note__: Using the [view channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference) action, you can retrieve the value of a specific user&#39;s channel invitation preference, which can be set individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ViewDefaultChannelInvitationPreferenceResponse</returns>
-        public ViewDefaultChannelInvitationPreferenceResponse ViewDefaultChannelInvitationPreference (string apiToken = default(string))
+        public ViewDefaultChannelInvitationPreferenceResponse ViewDefaultChannelInvitationPreference (string apiToken)
         {
              ApiResponse<ViewDefaultChannelInvitationPreferenceResponse> localVarResponse = ViewDefaultChannelInvitationPreferenceWithHttpInfo(apiToken);
              return localVarResponse.Data;
@@ -4092,10 +4200,13 @@ namespace sendbird_platform_sdk.Api
         /// View default channel invitation preference ## View default channel invitation preference  Retrieves the default channel invitation preference of an application.  &gt; __Note__: Using the [view channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference) action, you can retrieve the value of a specific user&#39;s channel invitation preference, which can be set individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of ViewDefaultChannelInvitationPreferenceResponse</returns>
-        public ApiResponse<ViewDefaultChannelInvitationPreferenceResponse> ViewDefaultChannelInvitationPreferenceWithHttpInfo (string apiToken = default(string))
+        public ApiResponse<ViewDefaultChannelInvitationPreferenceResponse> ViewDefaultChannelInvitationPreferenceWithHttpInfo (string apiToken)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewDefaultChannelInvitationPreference");
 
             var localVarPath = "/v3/applications/default_channel_invitation_preference";
             var localVarPathParams = new Dictionary<String, String>();
@@ -4143,10 +4254,10 @@ namespace sendbird_platform_sdk.Api
         /// View default channel invitation preference ## View default channel invitation preference  Retrieves the default channel invitation preference of an application.  &gt; __Note__: Using the [view channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference) action, you can retrieve the value of a specific user&#39;s channel invitation preference, which can be set individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewDefaultChannelInvitationPreferenceResponse</returns>
-        public async System.Threading.Tasks.Task<ViewDefaultChannelInvitationPreferenceResponse> ViewDefaultChannelInvitationPreferenceAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewDefaultChannelInvitationPreferenceResponse> ViewDefaultChannelInvitationPreferenceAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<ViewDefaultChannelInvitationPreferenceResponse> localVarResponse = await ViewDefaultChannelInvitationPreferenceWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -4157,11 +4268,14 @@ namespace sendbird_platform_sdk.Api
         /// View default channel invitation preference ## View default channel invitation preference  Retrieves the default channel invitation preference of an application.  &gt; __Note__: Using the [view channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference) action, you can retrieve the value of a specific user&#39;s channel invitation preference, which can be set individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewDefaultChannelInvitationPreferenceResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewDefaultChannelInvitationPreferenceResponse>> ViewDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewDefaultChannelInvitationPreferenceResponse>> ViewDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewDefaultChannelInvitationPreference");
 
             var localVarPath = "/v3/applications/default_channel_invitation_preference";
             var localVarPathParams = new Dictionary<String, String>();
@@ -4209,9 +4323,9 @@ namespace sendbird_platform_sdk.Api
         /// View number of concurrent connections ## View number of concurrent connections  Retrieves the number of devices and opened browser tabs which are currently connected to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-concurrent-connections
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ViewNumberOfConcurrentConnectionsResponse</returns>
-        public ViewNumberOfConcurrentConnectionsResponse ViewNumberOfConcurrentConnections (string apiToken = default(string))
+        public ViewNumberOfConcurrentConnectionsResponse ViewNumberOfConcurrentConnections (string apiToken)
         {
              ApiResponse<ViewNumberOfConcurrentConnectionsResponse> localVarResponse = ViewNumberOfConcurrentConnectionsWithHttpInfo(apiToken);
              return localVarResponse.Data;
@@ -4221,10 +4335,13 @@ namespace sendbird_platform_sdk.Api
         /// View number of concurrent connections ## View number of concurrent connections  Retrieves the number of devices and opened browser tabs which are currently connected to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-concurrent-connections
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <returns>ApiResponse of ViewNumberOfConcurrentConnectionsResponse</returns>
-        public ApiResponse<ViewNumberOfConcurrentConnectionsResponse> ViewNumberOfConcurrentConnectionsWithHttpInfo (string apiToken = default(string))
+        public ApiResponse<ViewNumberOfConcurrentConnectionsResponse> ViewNumberOfConcurrentConnectionsWithHttpInfo (string apiToken)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewNumberOfConcurrentConnections");
 
             var localVarPath = "/v3/applications/ccu";
             var localVarPathParams = new Dictionary<String, String>();
@@ -4272,10 +4389,10 @@ namespace sendbird_platform_sdk.Api
         /// View number of concurrent connections ## View number of concurrent connections  Retrieves the number of devices and opened browser tabs which are currently connected to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-concurrent-connections
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewNumberOfConcurrentConnectionsResponse</returns>
-        public async System.Threading.Tasks.Task<ViewNumberOfConcurrentConnectionsResponse> ViewNumberOfConcurrentConnectionsAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewNumberOfConcurrentConnectionsResponse> ViewNumberOfConcurrentConnectionsAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<ViewNumberOfConcurrentConnectionsResponse> localVarResponse = await ViewNumberOfConcurrentConnectionsWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -4286,11 +4403,14 @@ namespace sendbird_platform_sdk.Api
         /// View number of concurrent connections ## View number of concurrent connections  Retrieves the number of devices and opened browser tabs which are currently connected to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-concurrent-connections
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewNumberOfConcurrentConnectionsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfConcurrentConnectionsResponse>> ViewNumberOfConcurrentConnectionsWithHttpInfoAsync (string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfConcurrentConnectionsResponse>> ViewNumberOfConcurrentConnectionsWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewNumberOfConcurrentConnections");
 
             var localVarPath = "/v3/applications/ccu";
             var localVarPathParams = new Dictionary<String, String>();
@@ -4338,10 +4458,10 @@ namespace sendbird_platform_sdk.Api
         /// View number of daily active users ## View number of daily active users  Retrieves the number of daily active users of the application (DAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-daily-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="date"> (optional)</param>
         /// <returns>ViewNumberOfDailyActiveUsersResponse</returns>
-        public ViewNumberOfDailyActiveUsersResponse ViewNumberOfDailyActiveUsers (string apiToken = default(string), string date = default(string))
+        public ViewNumberOfDailyActiveUsersResponse ViewNumberOfDailyActiveUsers (string apiToken, string date = default(string))
         {
              ApiResponse<ViewNumberOfDailyActiveUsersResponse> localVarResponse = ViewNumberOfDailyActiveUsersWithHttpInfo(apiToken, date);
              return localVarResponse.Data;
@@ -4351,11 +4471,14 @@ namespace sendbird_platform_sdk.Api
         /// View number of daily active users ## View number of daily active users  Retrieves the number of daily active users of the application (DAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-daily-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="date"> (optional)</param>
         /// <returns>ApiResponse of ViewNumberOfDailyActiveUsersResponse</returns>
-        public ApiResponse<ViewNumberOfDailyActiveUsersResponse> ViewNumberOfDailyActiveUsersWithHttpInfo (string apiToken = default(string), string date = default(string))
+        public ApiResponse<ViewNumberOfDailyActiveUsersResponse> ViewNumberOfDailyActiveUsersWithHttpInfo (string apiToken, string date = default(string))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewNumberOfDailyActiveUsers");
 
             var localVarPath = "/v3/applications/dau";
             var localVarPathParams = new Dictionary<String, String>();
@@ -4404,11 +4527,11 @@ namespace sendbird_platform_sdk.Api
         /// View number of daily active users ## View number of daily active users  Retrieves the number of daily active users of the application (DAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-daily-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="date"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewNumberOfDailyActiveUsersResponse</returns>
-        public async System.Threading.Tasks.Task<ViewNumberOfDailyActiveUsersResponse> ViewNumberOfDailyActiveUsersAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewNumberOfDailyActiveUsersResponse> ViewNumberOfDailyActiveUsersAsync (string apiToken, string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<ViewNumberOfDailyActiveUsersResponse> localVarResponse = await ViewNumberOfDailyActiveUsersWithHttpInfoAsync(apiToken, date, cancellationToken);
              return localVarResponse.Data;
@@ -4419,12 +4542,15 @@ namespace sendbird_platform_sdk.Api
         /// View number of daily active users ## View number of daily active users  Retrieves the number of daily active users of the application (DAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-daily-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="date"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewNumberOfDailyActiveUsersResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfDailyActiveUsersResponse>> ViewNumberOfDailyActiveUsersWithHttpInfoAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfDailyActiveUsersResponse>> ViewNumberOfDailyActiveUsersWithHttpInfoAsync (string apiToken, string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewNumberOfDailyActiveUsers");
 
             var localVarPath = "/v3/applications/dau";
             var localVarPathParams = new Dictionary<String, String>();
@@ -4473,10 +4599,10 @@ namespace sendbird_platform_sdk.Api
         /// View number of monthly active users ## View number of monthly active users  Retrieves the number of monthly active users of the application (MAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-monthly-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="date"> (optional)</param>
         /// <returns>ViewNumberOfMonthlyActiveUsersResponse</returns>
-        public ViewNumberOfMonthlyActiveUsersResponse ViewNumberOfMonthlyActiveUsers (string apiToken = default(string), string date = default(string))
+        public ViewNumberOfMonthlyActiveUsersResponse ViewNumberOfMonthlyActiveUsers (string apiToken, string date = default(string))
         {
              ApiResponse<ViewNumberOfMonthlyActiveUsersResponse> localVarResponse = ViewNumberOfMonthlyActiveUsersWithHttpInfo(apiToken, date);
              return localVarResponse.Data;
@@ -4486,11 +4612,14 @@ namespace sendbird_platform_sdk.Api
         /// View number of monthly active users ## View number of monthly active users  Retrieves the number of monthly active users of the application (MAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-monthly-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="date"> (optional)</param>
         /// <returns>ApiResponse of ViewNumberOfMonthlyActiveUsersResponse</returns>
-        public ApiResponse<ViewNumberOfMonthlyActiveUsersResponse> ViewNumberOfMonthlyActiveUsersWithHttpInfo (string apiToken = default(string), string date = default(string))
+        public ApiResponse<ViewNumberOfMonthlyActiveUsersResponse> ViewNumberOfMonthlyActiveUsersWithHttpInfo (string apiToken, string date = default(string))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewNumberOfMonthlyActiveUsers");
 
             var localVarPath = "/v3/applications/mau";
             var localVarPathParams = new Dictionary<String, String>();
@@ -4539,11 +4668,11 @@ namespace sendbird_platform_sdk.Api
         /// View number of monthly active users ## View number of monthly active users  Retrieves the number of monthly active users of the application (MAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-monthly-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="date"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewNumberOfMonthlyActiveUsersResponse</returns>
-        public async System.Threading.Tasks.Task<ViewNumberOfMonthlyActiveUsersResponse> ViewNumberOfMonthlyActiveUsersAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewNumberOfMonthlyActiveUsersResponse> ViewNumberOfMonthlyActiveUsersAsync (string apiToken, string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<ViewNumberOfMonthlyActiveUsersResponse> localVarResponse = await ViewNumberOfMonthlyActiveUsersWithHttpInfoAsync(apiToken, date, cancellationToken);
              return localVarResponse.Data;
@@ -4554,12 +4683,15 @@ namespace sendbird_platform_sdk.Api
         /// View number of monthly active users ## View number of monthly active users  Retrieves the number of monthly active users of the application (MAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-monthly-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"> (optional)</param>
+        /// <param name="apiToken"></param>
         /// <param name="date"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewNumberOfMonthlyActiveUsersResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfMonthlyActiveUsersResponse>> ViewNumberOfMonthlyActiveUsersWithHttpInfoAsync (string apiToken = default(string), string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfMonthlyActiveUsersResponse>> ViewNumberOfMonthlyActiveUsersWithHttpInfoAsync (string apiToken, string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewNumberOfMonthlyActiveUsers");
 
             var localVarPath = "/v3/applications/mau";
             var localVarPathParams = new Dictionary<String, String>();
@@ -4608,18 +4740,18 @@ namespace sendbird_platform_sdk.Api
         /// View number of peak connections ## View number of peak connections  Retrieves the number of concurrently connected devices to Sendbird server during the requested time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-peak-connections - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="timeDimension"></param>
         /// <param name="startYear"></param>
         /// <param name="startMonth"></param>
         /// <param name="endYear"></param>
         /// <param name="endMonth"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="startDay"> (optional)</param>
         /// <param name="endDay"> (optional)</param>
         /// <returns>ViewNumberOfPeakConnectionsResponse</returns>
-        public ViewNumberOfPeakConnectionsResponse ViewNumberOfPeakConnections (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?))
+        public ViewNumberOfPeakConnectionsResponse ViewNumberOfPeakConnections (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = default(int?), int? endDay = default(int?))
         {
-             ApiResponse<ViewNumberOfPeakConnectionsResponse> localVarResponse = ViewNumberOfPeakConnectionsWithHttpInfo(timeDimension, startYear, startMonth, endYear, endMonth, apiToken, startDay, endDay);
+             ApiResponse<ViewNumberOfPeakConnectionsResponse> localVarResponse = ViewNumberOfPeakConnectionsWithHttpInfo(apiToken, timeDimension, startYear, startMonth, endYear, endMonth, startDay, endDay);
              return localVarResponse.Data;
         }
 
@@ -4627,17 +4759,20 @@ namespace sendbird_platform_sdk.Api
         /// View number of peak connections ## View number of peak connections  Retrieves the number of concurrently connected devices to Sendbird server during the requested time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-peak-connections - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="timeDimension"></param>
         /// <param name="startYear"></param>
         /// <param name="startMonth"></param>
         /// <param name="endYear"></param>
         /// <param name="endMonth"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="startDay"> (optional)</param>
         /// <param name="endDay"> (optional)</param>
         /// <returns>ApiResponse of ViewNumberOfPeakConnectionsResponse</returns>
-        public ApiResponse<ViewNumberOfPeakConnectionsResponse> ViewNumberOfPeakConnectionsWithHttpInfo (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?))
+        public ApiResponse<ViewNumberOfPeakConnectionsResponse> ViewNumberOfPeakConnectionsWithHttpInfo (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = default(int?), int? endDay = default(int?))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewNumberOfPeakConnections");
             // verify the required parameter 'timeDimension' is set
             if (timeDimension == null)
                 throw new ApiException(400, "Missing required parameter 'timeDimension' when calling ApplicationApi->ViewNumberOfPeakConnections");
@@ -4707,19 +4842,19 @@ namespace sendbird_platform_sdk.Api
         /// View number of peak connections ## View number of peak connections  Retrieves the number of concurrently connected devices to Sendbird server during the requested time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-peak-connections - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="timeDimension"></param>
         /// <param name="startYear"></param>
         /// <param name="startMonth"></param>
         /// <param name="endYear"></param>
         /// <param name="endMonth"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="startDay"> (optional)</param>
         /// <param name="endDay"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewNumberOfPeakConnectionsResponse</returns>
-        public async System.Threading.Tasks.Task<ViewNumberOfPeakConnectionsResponse> ViewNumberOfPeakConnectionsAsync (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewNumberOfPeakConnectionsResponse> ViewNumberOfPeakConnectionsAsync (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ViewNumberOfPeakConnectionsResponse> localVarResponse = await ViewNumberOfPeakConnectionsWithHttpInfoAsync(timeDimension, startYear, startMonth, endYear, endMonth, apiToken, startDay, endDay, cancellationToken);
+             ApiResponse<ViewNumberOfPeakConnectionsResponse> localVarResponse = await ViewNumberOfPeakConnectionsWithHttpInfoAsync(apiToken, timeDimension, startYear, startMonth, endYear, endMonth, startDay, endDay, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -4728,18 +4863,21 @@ namespace sendbird_platform_sdk.Api
         /// View number of peak connections ## View number of peak connections  Retrieves the number of concurrently connected devices to Sendbird server during the requested time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-peak-connections - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="timeDimension"></param>
         /// <param name="startYear"></param>
         /// <param name="startMonth"></param>
         /// <param name="endYear"></param>
         /// <param name="endMonth"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="startDay"> (optional)</param>
         /// <param name="endDay"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewNumberOfPeakConnectionsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfPeakConnectionsResponse>> ViewNumberOfPeakConnectionsWithHttpInfoAsync (string timeDimension, int startYear, int startMonth, int endYear, int endMonth, string apiToken = default(string), int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfPeakConnectionsResponse>> ViewNumberOfPeakConnectionsWithHttpInfoAsync (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewNumberOfPeakConnections");
             // verify the required parameter 'timeDimension' is set
             if (timeDimension == null)
                 throw new ApiException(400, "Missing required parameter 'timeDimension' when calling ApplicationApi->ViewNumberOfPeakConnections");
@@ -4809,13 +4947,13 @@ namespace sendbird_platform_sdk.Api
         /// View a push configuration ## View a push configuration  Retrieves a specific push configuration of an application. The type of a push configuration is either &#x60;fcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ViewPushConfigurationByIdResponse</returns>
-        public ViewPushConfigurationByIdResponse ViewPushConfigurationById (string pushType, string providerId, string apiToken = default(string))
+        public ViewPushConfigurationByIdResponse ViewPushConfigurationById (string apiToken, string pushType, string providerId)
         {
-             ApiResponse<ViewPushConfigurationByIdResponse> localVarResponse = ViewPushConfigurationByIdWithHttpInfo(pushType, providerId, apiToken);
+             ApiResponse<ViewPushConfigurationByIdResponse> localVarResponse = ViewPushConfigurationByIdWithHttpInfo(apiToken, pushType, providerId);
              return localVarResponse.Data;
         }
 
@@ -4823,12 +4961,15 @@ namespace sendbird_platform_sdk.Api
         /// View a push configuration ## View a push configuration  Retrieves a specific push configuration of an application. The type of a push configuration is either &#x60;fcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of ViewPushConfigurationByIdResponse</returns>
-        public ApiResponse<ViewPushConfigurationByIdResponse> ViewPushConfigurationByIdWithHttpInfo (string pushType, string providerId, string apiToken = default(string))
+        public ApiResponse<ViewPushConfigurationByIdResponse> ViewPushConfigurationByIdWithHttpInfo (string apiToken, string pushType, string providerId)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewPushConfigurationById");
             // verify the required parameter 'pushType' is set
             if (pushType == null)
                 throw new ApiException(400, "Missing required parameter 'pushType' when calling ApplicationApi->ViewPushConfigurationById");
@@ -4884,14 +5025,14 @@ namespace sendbird_platform_sdk.Api
         /// View a push configuration ## View a push configuration  Retrieves a specific push configuration of an application. The type of a push configuration is either &#x60;fcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewPushConfigurationByIdResponse</returns>
-        public async System.Threading.Tasks.Task<ViewPushConfigurationByIdResponse> ViewPushConfigurationByIdAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewPushConfigurationByIdResponse> ViewPushConfigurationByIdAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ViewPushConfigurationByIdResponse> localVarResponse = await ViewPushConfigurationByIdWithHttpInfoAsync(pushType, providerId, apiToken, cancellationToken);
+             ApiResponse<ViewPushConfigurationByIdResponse> localVarResponse = await ViewPushConfigurationByIdWithHttpInfoAsync(apiToken, pushType, providerId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -4900,13 +5041,16 @@ namespace sendbird_platform_sdk.Api
         /// View a push configuration ## View a push configuration  Retrieves a specific push configuration of an application. The type of a push configuration is either &#x60;fcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-push-configuration - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="pushType"></param>
         /// <param name="providerId"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewPushConfigurationByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewPushConfigurationByIdResponse>> ViewPushConfigurationByIdWithHttpInfoAsync (string pushType, string providerId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewPushConfigurationByIdResponse>> ViewPushConfigurationByIdWithHttpInfoAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewPushConfigurationById");
             // verify the required parameter 'pushType' is set
             if (pushType == null)
                 throw new ApiException(400, "Missing required parameter 'pushType' when calling ApplicationApi->ViewPushConfigurationById");
@@ -4962,12 +5106,12 @@ namespace sendbird_platform_sdk.Api
         /// View a push notification content template ## View a push notification content template  Retrieves information on a specific push notification content templates of an application. The name of a content template is either &#x60;default&#x60; or &#x60;alternative&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="templateName"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ViewPushNotificationContentTemplateResponse</returns>
-        public ViewPushNotificationContentTemplateResponse ViewPushNotificationContentTemplate (string templateName, string apiToken = default(string))
+        public ViewPushNotificationContentTemplateResponse ViewPushNotificationContentTemplate (string apiToken, string templateName)
         {
-             ApiResponse<ViewPushNotificationContentTemplateResponse> localVarResponse = ViewPushNotificationContentTemplateWithHttpInfo(templateName, apiToken);
+             ApiResponse<ViewPushNotificationContentTemplateResponse> localVarResponse = ViewPushNotificationContentTemplateWithHttpInfo(apiToken, templateName);
              return localVarResponse.Data;
         }
 
@@ -4975,11 +5119,14 @@ namespace sendbird_platform_sdk.Api
         /// View a push notification content template ## View a push notification content template  Retrieves information on a specific push notification content templates of an application. The name of a content template is either &#x60;default&#x60; or &#x60;alternative&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="templateName"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of ViewPushNotificationContentTemplateResponse</returns>
-        public ApiResponse<ViewPushNotificationContentTemplateResponse> ViewPushNotificationContentTemplateWithHttpInfo (string templateName, string apiToken = default(string))
+        public ApiResponse<ViewPushNotificationContentTemplateResponse> ViewPushNotificationContentTemplateWithHttpInfo (string apiToken, string templateName)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewPushNotificationContentTemplate");
             // verify the required parameter 'templateName' is set
             if (templateName == null)
                 throw new ApiException(400, "Missing required parameter 'templateName' when calling ApplicationApi->ViewPushNotificationContentTemplate");
@@ -5031,13 +5178,13 @@ namespace sendbird_platform_sdk.Api
         /// View a push notification content template ## View a push notification content template  Retrieves information on a specific push notification content templates of an application. The name of a content template is either &#x60;default&#x60; or &#x60;alternative&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="templateName"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewPushNotificationContentTemplateResponse</returns>
-        public async System.Threading.Tasks.Task<ViewPushNotificationContentTemplateResponse> ViewPushNotificationContentTemplateAsync (string templateName, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewPushNotificationContentTemplateResponse> ViewPushNotificationContentTemplateAsync (string apiToken, string templateName, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ViewPushNotificationContentTemplateResponse> localVarResponse = await ViewPushNotificationContentTemplateWithHttpInfoAsync(templateName, apiToken, cancellationToken);
+             ApiResponse<ViewPushNotificationContentTemplateResponse> localVarResponse = await ViewPushNotificationContentTemplateWithHttpInfoAsync(apiToken, templateName, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -5046,12 +5193,15 @@ namespace sendbird_platform_sdk.Api
         /// View a push notification content template ## View a push notification content template  Retrieves information on a specific push notification content templates of an application. The name of a content template is either &#x60;default&#x60; or &#x60;alternative&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="templateName"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewPushNotificationContentTemplateResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewPushNotificationContentTemplateResponse>> ViewPushNotificationContentTemplateWithHttpInfoAsync (string templateName, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewPushNotificationContentTemplateResponse>> ViewPushNotificationContentTemplateWithHttpInfoAsync (string apiToken, string templateName, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewPushNotificationContentTemplate");
             // verify the required parameter 'templateName' is set
             if (templateName == null)
                 throw new ApiException(400, "Missing required parameter 'templateName' when calling ApplicationApi->ViewPushNotificationContentTemplate");
@@ -5103,12 +5253,12 @@ namespace sendbird_platform_sdk.Api
         /// View a secondary API token ## View a secondary API token  Retrieves the information on a secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-secondary-api-token
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="apiToken2"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ViewSecondaryApiTokenByTokenResponse</returns>
-        public ViewSecondaryApiTokenByTokenResponse ViewSecondaryApiTokenByToken (string apiToken2, string apiToken = default(string))
+        public ViewSecondaryApiTokenByTokenResponse ViewSecondaryApiTokenByToken (string apiToken, string apiToken2)
         {
-             ApiResponse<ViewSecondaryApiTokenByTokenResponse> localVarResponse = ViewSecondaryApiTokenByTokenWithHttpInfo(apiToken2, apiToken);
+             ApiResponse<ViewSecondaryApiTokenByTokenResponse> localVarResponse = ViewSecondaryApiTokenByTokenWithHttpInfo(apiToken, apiToken2);
              return localVarResponse.Data;
         }
 
@@ -5116,11 +5266,14 @@ namespace sendbird_platform_sdk.Api
         /// View a secondary API token ## View a secondary API token  Retrieves the information on a secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-secondary-api-token
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="apiToken2"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of ViewSecondaryApiTokenByTokenResponse</returns>
-        public ApiResponse<ViewSecondaryApiTokenByTokenResponse> ViewSecondaryApiTokenByTokenWithHttpInfo (string apiToken2, string apiToken = default(string))
+        public ApiResponse<ViewSecondaryApiTokenByTokenResponse> ViewSecondaryApiTokenByTokenWithHttpInfo (string apiToken, string apiToken2)
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewSecondaryApiTokenByToken");
             // verify the required parameter 'apiToken2' is set
             if (apiToken2 == null)
                 throw new ApiException(400, "Missing required parameter 'apiToken2' when calling ApplicationApi->ViewSecondaryApiTokenByToken");
@@ -5172,13 +5325,13 @@ namespace sendbird_platform_sdk.Api
         /// View a secondary API token ## View a secondary API token  Retrieves the information on a secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-secondary-api-token
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="apiToken2"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewSecondaryApiTokenByTokenResponse</returns>
-        public async System.Threading.Tasks.Task<ViewSecondaryApiTokenByTokenResponse> ViewSecondaryApiTokenByTokenAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewSecondaryApiTokenByTokenResponse> ViewSecondaryApiTokenByTokenAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ViewSecondaryApiTokenByTokenResponse> localVarResponse = await ViewSecondaryApiTokenByTokenWithHttpInfoAsync(apiToken2, apiToken, cancellationToken);
+             ApiResponse<ViewSecondaryApiTokenByTokenResponse> localVarResponse = await ViewSecondaryApiTokenByTokenWithHttpInfoAsync(apiToken, apiToken2, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -5187,12 +5340,15 @@ namespace sendbird_platform_sdk.Api
         /// View a secondary API token ## View a secondary API token  Retrieves the information on a secondary API token.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-a-secondary-api-token
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
         /// <param name="apiToken2"></param>
-        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewSecondaryApiTokenByTokenResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewSecondaryApiTokenByTokenResponse>> ViewSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken2, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewSecondaryApiTokenByTokenResponse>> ViewSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default(CancellationToken))
         {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewSecondaryApiTokenByToken");
             // verify the required parameter 'apiToken2' is set
             if (apiToken2 == null)
                 throw new ApiException(400, "Missing required parameter 'apiToken2' when calling ApplicationApi->ViewSecondaryApiTokenByToken");

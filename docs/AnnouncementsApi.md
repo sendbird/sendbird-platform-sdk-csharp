@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 ## GetDetailedOpenRateOfAnnouncementById
 
-> GetDetailedOpenRateOfAnnouncementByIdResponse GetDetailedOpenRateOfAnnouncementById (string uniqueId, string apiToken = null)
+> GetDetailedOpenRateOfAnnouncementByIdResponse GetDetailedOpenRateOfAnnouncementById (string apiToken, string uniqueId)
 
 Get detailed open rate of an announcement
 
@@ -43,13 +43,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new AnnouncementsApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var uniqueId = uniqueId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Get detailed open rate of an announcement
-                GetDetailedOpenRateOfAnnouncementByIdResponse result = apiInstance.GetDetailedOpenRateOfAnnouncementById(uniqueId, apiToken);
+                GetDetailedOpenRateOfAnnouncementByIdResponse result = apiInstance.GetDetailedOpenRateOfAnnouncementById(apiToken, uniqueId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -68,8 +68,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **uniqueId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -98,7 +98,7 @@ No authorization required
 
 ## GetDetailedOpenRateOfAnnouncementGroup
 
-> GetDetailedOpenRateOfAnnouncementGroupResponse GetDetailedOpenRateOfAnnouncementGroup (string announcementGroup, string apiToken = null)
+> GetDetailedOpenRateOfAnnouncementGroupResponse GetDetailedOpenRateOfAnnouncementGroup (string apiToken, string announcementGroup)
 
 Get detailed open rate of an announcement group
 
@@ -121,13 +121,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new AnnouncementsApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var announcementGroup = announcementGroup_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // Get detailed open rate of an announcement group
-                GetDetailedOpenRateOfAnnouncementGroupResponse result = apiInstance.GetDetailedOpenRateOfAnnouncementGroup(announcementGroup, apiToken);
+                GetDetailedOpenRateOfAnnouncementGroupResponse result = apiInstance.GetDetailedOpenRateOfAnnouncementGroup(apiToken, announcementGroup);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -146,8 +146,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **announcementGroup** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
@@ -176,7 +176,7 @@ No authorization required
 
 ## GetDetailedOpenStatusOfAnnouncementById
 
-> GetDetailedOpenStatusOfAnnouncementByIdResponse GetDetailedOpenStatusOfAnnouncementById (string uniqueId, string apiToken = null, int? limit = null, string next = null, List<string> uniqueIds = null, List<string> channelUrls = null, bool? hasOpened = null)
+> GetDetailedOpenStatusOfAnnouncementByIdResponse GetDetailedOpenStatusOfAnnouncementById (string apiToken, string uniqueId, int? limit = null, string next = null, List<string> uniqueIds = null, List<string> channelUrls = null, bool? hasOpened = null)
 
 Get detailed open status of an announcement
 
@@ -199,8 +199,8 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new AnnouncementsApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var uniqueId = uniqueId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
             var next = next_example;  // string |  (optional) 
             var uniqueIds = new List<string>(); // List<string> |  (optional) 
@@ -210,7 +210,7 @@ namespace Example
             try
             {
                 // Get detailed open status of an announcement
-                GetDetailedOpenStatusOfAnnouncementByIdResponse result = apiInstance.GetDetailedOpenStatusOfAnnouncementById(uniqueId, apiToken, limit, next, uniqueIds, channelUrls, hasOpened);
+                GetDetailedOpenStatusOfAnnouncementByIdResponse result = apiInstance.GetDetailedOpenStatusOfAnnouncementById(apiToken, uniqueId, limit, next, uniqueIds, channelUrls, hasOpened);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -229,8 +229,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **uniqueId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
  **next** | **string**|  | [optional] 
  **uniqueIds** | [**List&lt;string&gt;**](string.md)|  | [optional] 
@@ -264,7 +264,7 @@ No authorization required
 
 ## GetStatistics
 
-> GetStatisticsResponse GetStatistics (string apiToken = null)
+> GetStatisticsResponse GetStatistics (string apiToken)
 
 Get statistics - weekly
 
@@ -287,7 +287,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new AnnouncementsApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
 
             try
             {
@@ -311,7 +311,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
 
 ### Return type
 
@@ -340,7 +340,7 @@ No authorization required
 
 ## GetStatisticsDaily
 
-> GetStatisticsDailyResponse GetStatisticsDaily (string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string apiToken = null, string announcementGroup = null)
+> GetStatisticsDailyResponse GetStatisticsDaily (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = null)
 
 Get statistics - daily
 
@@ -363,19 +363,19 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new AnnouncementsApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var startDate = startDate_example;  // string | 
             var endDate = endDate_example;  // string | 
             var startWeek = startWeek_example;  // string | 
             var endWeek = endWeek_example;  // string | 
             var startMonth = startMonth_example;  // string | 
             var endMonth = endMonth_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var announcementGroup = announcementGroup_example;  // string |  (optional) 
 
             try
             {
                 // Get statistics - daily
-                GetStatisticsDailyResponse result = apiInstance.GetStatisticsDaily(startDate, endDate, startWeek, endWeek, startMonth, endMonth, apiToken, announcementGroup);
+                GetStatisticsDailyResponse result = apiInstance.GetStatisticsDaily(apiToken, startDate, endDate, startWeek, endWeek, startMonth, endMonth, announcementGroup);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -394,13 +394,13 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **startDate** | **string**|  | 
  **endDate** | **string**|  | 
  **startWeek** | **string**|  | 
  **endWeek** | **string**|  | 
  **startMonth** | **string**|  | 
  **endMonth** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **announcementGroup** | **string**|  | [optional] 
 
 ### Return type
@@ -430,7 +430,7 @@ No authorization required
 
 ## GetStatisticsMonthly
 
-> GetStatisticsMonthlyResponse GetStatisticsMonthly (string apiToken = null)
+> GetStatisticsMonthlyResponse GetStatisticsMonthly (string apiToken)
 
 Get statistics - monthly
 
@@ -453,7 +453,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new AnnouncementsApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
 
             try
             {
@@ -477,7 +477,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
 
 ### Return type
 
@@ -506,7 +506,7 @@ No authorization required
 
 ## ListAnnouncementGroups
 
-> ListAnnouncementGroupsResponse ListAnnouncementGroups (string apiToken = null, string token = null, int? limit = null)
+> ListAnnouncementGroupsResponse ListAnnouncementGroups (string apiToken, string token = null, int? limit = null)
 
 List announcement groups
 
@@ -529,7 +529,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new AnnouncementsApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
@@ -555,7 +555,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
 
@@ -586,7 +586,7 @@ No authorization required
 
 ## ListAnnouncements
 
-> ListAnnouncementsResponse ListAnnouncements (string apiToken = null, string token = null, int? limit = null, string order = null, string status = null, string announcementGroup = null)
+> ListAnnouncementsResponse ListAnnouncements (string apiToken, string token = null, int? limit = null, string order = null, string status = null, string announcementGroup = null)
 
 List announcements
 
@@ -609,7 +609,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new AnnouncementsApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var token = token_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
             var order = order_example;  // string |  (optional) 
@@ -638,7 +638,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **token** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
  **order** | **string**|  | [optional] 
@@ -672,7 +672,7 @@ No authorization required
 
 ## ScheduleAnnouncement
 
-> ScheduleAnnouncementResponse ScheduleAnnouncement (string apiToken = null, ScheduleAnnouncementData scheduleAnnouncementData = null)
+> ScheduleAnnouncementResponse ScheduleAnnouncement (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = null)
 
 Schedule an announcement
 
@@ -695,7 +695,7 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new AnnouncementsApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+            var apiToken = {{API_TOKEN}};  // string | 
             var scheduleAnnouncementData = new ScheduleAnnouncementData(); // ScheduleAnnouncementData |  (optional) 
 
             try
@@ -720,7 +720,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | [optional] 
+ **apiToken** | **string**|  | 
  **scheduleAnnouncementData** | [**ScheduleAnnouncementData**](ScheduleAnnouncementData.md)|  | [optional] 
 
 ### Return type
@@ -750,7 +750,7 @@ No authorization required
 
 ## UpdateAnnouncementById
 
-> UpdateAnnouncementByIdResponse UpdateAnnouncementById (string uniqueId, string apiToken = null, UpdateAnnouncementByIdData updateAnnouncementByIdData = null)
+> UpdateAnnouncementByIdResponse UpdateAnnouncementById (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = null)
 
 Update an announcement
 
@@ -773,14 +773,14 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new AnnouncementsApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var uniqueId = uniqueId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updateAnnouncementByIdData = new UpdateAnnouncementByIdData(); // UpdateAnnouncementByIdData |  (optional) 
 
             try
             {
                 // Update an announcement
-                UpdateAnnouncementByIdResponse result = apiInstance.UpdateAnnouncementById(uniqueId, apiToken, updateAnnouncementByIdData);
+                UpdateAnnouncementByIdResponse result = apiInstance.UpdateAnnouncementById(apiToken, uniqueId, updateAnnouncementByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -799,8 +799,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **uniqueId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
  **updateAnnouncementByIdData** | [**UpdateAnnouncementByIdData**](UpdateAnnouncementByIdData.md)|  | [optional] 
 
 ### Return type
@@ -830,7 +830,7 @@ No authorization required
 
 ## ViewAnnouncementById
 
-> ViewAnnouncementByIdResponse ViewAnnouncementById (string uniqueId, string apiToken = null)
+> ViewAnnouncementByIdResponse ViewAnnouncementById (string apiToken, string uniqueId)
 
 View an announcement
 
@@ -853,13 +853,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new AnnouncementsApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
             var uniqueId = uniqueId_example;  // string | 
-            var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
             {
                 // View an announcement
-                ViewAnnouncementByIdResponse result = apiInstance.ViewAnnouncementById(uniqueId, apiToken);
+                ViewAnnouncementByIdResponse result = apiInstance.ViewAnnouncementById(apiToken, uniqueId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -878,8 +878,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
  **uniqueId** | **string**|  | 
- **apiToken** | **string**|  | [optional] 
 
 ### Return type
 
