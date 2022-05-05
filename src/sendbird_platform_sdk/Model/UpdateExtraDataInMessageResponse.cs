@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="UpdateExtraDataInMessageResponse" /> class.
         /// </summary>
         /// <param name="sortedMetaarray">sortedMetaarray.</param>
-        public UpdateExtraDataInMessageResponse(List<ListMessagesResponseSortedMetaarray> sortedMetaarray = default(List<ListMessagesResponseSortedMetaarray>))
+        public UpdateExtraDataInMessageResponse(List<UpdateExtraDataInMessageResponseSortedMetaarray> sortedMetaarray = default(List<UpdateExtraDataInMessageResponseSortedMetaarray>))
         {
             this.SortedMetaarray = sortedMetaarray;
         }
@@ -43,7 +43,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets SortedMetaarray
         /// </summary>
         [DataMember(Name="sorted_metaarray", EmitDefaultValue=false)]
-        public List<ListMessagesResponseSortedMetaarray> SortedMetaarray { get; set; }
+        public List<UpdateExtraDataInMessageResponseSortedMetaarray> SortedMetaarray { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

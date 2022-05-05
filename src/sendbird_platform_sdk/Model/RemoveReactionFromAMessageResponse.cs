@@ -33,37 +33,21 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="RemoveReactionFromAMessageResponse" /> class.
         /// </summary>
-        /// <param name="userId">userId.</param>
-        /// <param name="operation">operation.</param>
-        /// <param name="success">success.</param>
         /// <param name="reaction">reaction.</param>
+        /// <param name="userId">userId.</param>
+        /// <param name="success">success.</param>
+        /// <param name="msgId">msgId.</param>
         /// <param name="updatedAt">updatedAt.</param>
-        public RemoveReactionFromAMessageResponse(string userId = default(string), string operation = default(string), bool success = default(bool), string reaction = default(string), decimal updatedAt = default(decimal))
+        /// <param name="operation">operation.</param>
+        public RemoveReactionFromAMessageResponse(string reaction = default(string), decimal userId = default(decimal), bool success = default(bool), decimal msgId = default(decimal), decimal updatedAt = default(decimal), string operation = default(string))
         {
-            this.UserId = userId;
-            this.Operation = operation;
-            this.Success = success;
             this.Reaction = reaction;
+            this.UserId = userId;
+            this.Success = success;
+            this.MsgId = msgId;
             this.UpdatedAt = updatedAt;
+            this.Operation = operation;
         }
-
-        /// <summary>
-        /// Gets or Sets UserId
-        /// </summary>
-        [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public string UserId { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Operation
-        /// </summary>
-        [DataMember(Name="operation", EmitDefaultValue=false)]
-        public string Operation { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Success
-        /// </summary>
-        [DataMember(Name="success", EmitDefaultValue=false)]
-        public bool Success { get; set; }
 
         /// <summary>
         /// Gets or Sets Reaction
@@ -72,10 +56,34 @@ namespace sendbird_platform_sdk.Model
         public string Reaction { get; set; }
 
         /// <summary>
+        /// Gets or Sets UserId
+        /// </summary>
+        [DataMember(Name="user_id", EmitDefaultValue=false)]
+        public decimal UserId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Success
+        /// </summary>
+        [DataMember(Name="success", EmitDefaultValue=false)]
+        public bool Success { get; set; }
+
+        /// <summary>
+        /// Gets or Sets MsgId
+        /// </summary>
+        [DataMember(Name="msg_id", EmitDefaultValue=false)]
+        public decimal MsgId { get; set; }
+
+        /// <summary>
         /// Gets or Sets UpdatedAt
         /// </summary>
         [DataMember(Name="updated_at", EmitDefaultValue=false)]
         public decimal UpdatedAt { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Operation
+        /// </summary>
+        [DataMember(Name="operation", EmitDefaultValue=false)]
+        public string Operation { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -85,11 +93,12 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class RemoveReactionFromAMessageResponse {\n");
-            sb.Append("  UserId: ").Append(UserId).Append("\n");
-            sb.Append("  Operation: ").Append(Operation).Append("\n");
-            sb.Append("  Success: ").Append(Success).Append("\n");
             sb.Append("  Reaction: ").Append(Reaction).Append("\n");
+            sb.Append("  UserId: ").Append(UserId).Append("\n");
+            sb.Append("  Success: ").Append(Success).Append("\n");
+            sb.Append("  MsgId: ").Append(MsgId).Append("\n");
             sb.Append("  UpdatedAt: ").Append(UpdatedAt).Append("\n");
+            sb.Append("  Operation: ").Append(Operation).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -125,14 +134,14 @@ namespace sendbird_platform_sdk.Model
 
             return 
                 (
+                    this.Reaction == input.Reaction ||
+                    (this.Reaction != null &&
+                    this.Reaction.Equals(input.Reaction))
+                ) && 
+                (
                     this.UserId == input.UserId ||
                     (this.UserId != null &&
                     this.UserId.Equals(input.UserId))
-                ) && 
-                (
-                    this.Operation == input.Operation ||
-                    (this.Operation != null &&
-                    this.Operation.Equals(input.Operation))
                 ) && 
                 (
                     this.Success == input.Success ||
@@ -140,14 +149,19 @@ namespace sendbird_platform_sdk.Model
                     this.Success.Equals(input.Success))
                 ) && 
                 (
-                    this.Reaction == input.Reaction ||
-                    (this.Reaction != null &&
-                    this.Reaction.Equals(input.Reaction))
+                    this.MsgId == input.MsgId ||
+                    (this.MsgId != null &&
+                    this.MsgId.Equals(input.MsgId))
                 ) && 
                 (
                     this.UpdatedAt == input.UpdatedAt ||
                     (this.UpdatedAt != null &&
                     this.UpdatedAt.Equals(input.UpdatedAt))
+                ) && 
+                (
+                    this.Operation == input.Operation ||
+                    (this.Operation != null &&
+                    this.Operation.Equals(input.Operation))
                 );
         }
 
@@ -160,16 +174,18 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.UserId != null)
-                    hashCode = hashCode * 59 + this.UserId.GetHashCode();
-                if (this.Operation != null)
-                    hashCode = hashCode * 59 + this.Operation.GetHashCode();
-                if (this.Success != null)
-                    hashCode = hashCode * 59 + this.Success.GetHashCode();
                 if (this.Reaction != null)
                     hashCode = hashCode * 59 + this.Reaction.GetHashCode();
+                if (this.UserId != null)
+                    hashCode = hashCode * 59 + this.UserId.GetHashCode();
+                if (this.Success != null)
+                    hashCode = hashCode * 59 + this.Success.GetHashCode();
+                if (this.MsgId != null)
+                    hashCode = hashCode * 59 + this.MsgId.GetHashCode();
                 if (this.UpdatedAt != null)
                     hashCode = hashCode * 59 + this.UpdatedAt.GetHashCode();
+                if (this.Operation != null)
+                    hashCode = hashCode * 59 + this.Operation.GetHashCode();
                 return hashCode;
             }
         }

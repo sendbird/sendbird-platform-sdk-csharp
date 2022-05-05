@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**AnnouncementGroup** | **List&lt;string&gt;** |  | [optional] 
+**AnnouncementGroups** | **List&lt;string&gt;** |  | [optional] 
 **Next** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

@@ -20,6 +20,13 @@ Name | Type | Description | Notes
 **SentUserCount** | **decimal** |  | [optional] 
 **OpenCount** | **decimal** |  | [optional] 
 **OpenRate** | **decimal** |  | [optional] 
+**CreateChannel** | **bool** |  | [optional] 
+**CreateChannelOptions** | [**ScheduleAnnouncementResponseCreateChannelOptions**](ScheduleAnnouncementResponseCreateChannelOptions.md) |  | [optional] 
+**EndAt** | **decimal** |  | [optional] 
+**MarkAsRead** | **bool** |  | [optional] 
+**SentChannelCount** | **decimal** |  | [optional] 
+**TargetChannelType** | **string** |  | [optional] 
+**TargetCustomType** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

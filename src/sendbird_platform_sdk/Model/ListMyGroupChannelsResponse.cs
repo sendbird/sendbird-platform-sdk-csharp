@@ -35,10 +35,12 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="channels">channels.</param>
         /// <param name="next">next.</param>
-        public ListMyGroupChannelsResponse(List<SendBirdGroupChannel> channels = default(List<SendBirdGroupChannel>), string next = default(string))
+        /// <param name="ts">ts.</param>
+        public ListMyGroupChannelsResponse(List<SendBirdGroupChannel> channels = default(List<SendBirdGroupChannel>), string next = default(string), decimal ts = default(decimal))
         {
             this.Channels = channels;
             this.Next = next;
+            this.Ts = ts;
         }
 
         /// <summary>
@@ -54,6 +56,12 @@ namespace sendbird_platform_sdk.Model
         public string Next { get; set; }
 
         /// <summary>
+        /// Gets or Sets Ts
+        /// </summary>
+        [DataMember(Name="ts", EmitDefaultValue=false)]
+        public decimal Ts { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -63,6 +71,7 @@ namespace sendbird_platform_sdk.Model
             sb.Append("class ListMyGroupChannelsResponse {\n");
             sb.Append("  Channels: ").Append(Channels).Append("\n");
             sb.Append("  Next: ").Append(Next).Append("\n");
+            sb.Append("  Ts: ").Append(Ts).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -107,6 +116,11 @@ namespace sendbird_platform_sdk.Model
                     this.Next == input.Next ||
                     (this.Next != null &&
                     this.Next.Equals(input.Next))
+                ) && 
+                (
+                    this.Ts == input.Ts ||
+                    (this.Ts != null &&
+                    this.Ts.Equals(input.Ts))
                 );
         }
 
@@ -123,6 +137,8 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.Channels.GetHashCode();
                 if (this.Next != null)
                     hashCode = hashCode * 59 + this.Next.GetHashCode();
+                if (this.Ts != null)
+                    hashCode = hashCode * 59 + this.Ts.GetHashCode();
                 return hashCode;
             }
         }

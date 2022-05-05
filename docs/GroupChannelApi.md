@@ -197,7 +197,7 @@ No authorization required
 
 ## GcCancelTheRegistrationOfOperators
 
-> void GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = null)
+> InlineResponse200 GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = null)
 
 Cancel the registration of operators
 
@@ -228,7 +228,8 @@ namespace Example
             try
             {
                 // Cancel the registration of operators
-                apiInstance.GcCancelTheRegistrationOfOperators(apiToken, channelUrl, operatorIds, deleteAll);
+                InlineResponse200 result = apiInstance.GcCancelTheRegistrationOfOperators(apiToken, channelUrl, operatorIds, deleteAll);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -253,7 +254,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 
@@ -262,7 +263,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -436,7 +437,7 @@ No authorization required
 
 ## GcDeclineInvitation
 
-> void GcDeclineInvitation (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = null)
+> InlineResponse200 GcDeclineInvitation (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = null)
 
 Decline an invitation
 
@@ -466,7 +467,8 @@ namespace Example
             try
             {
                 // Decline an invitation
-                apiInstance.GcDeclineInvitation(apiToken, channelUrl, gcDeclineInvitationData);
+                InlineResponse200 result = apiInstance.GcDeclineInvitation(apiToken, channelUrl, gcDeclineInvitationData);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -490,7 +492,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 
@@ -499,7 +501,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -515,7 +517,7 @@ No authorization required
 
 ## GcDeleteChannelByUrl
 
-> void GcDeleteChannelByUrl (string apiToken, string channelUrl)
+> InlineResponse200 GcDeleteChannelByUrl (string apiToken, string channelUrl)
 
 Delete a channel
 
@@ -544,7 +546,8 @@ namespace Example
             try
             {
                 // Delete a channel
-                apiInstance.GcDeleteChannelByUrl(apiToken, channelUrl);
+                InlineResponse200 result = apiInstance.GcDeleteChannelByUrl(apiToken, channelUrl);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -567,7 +570,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 
@@ -576,7 +579,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -672,7 +675,7 @@ No authorization required
 
 ## GcHideOrArchiveChannel
 
-> void GcHideOrArchiveChannel (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = null)
+> InlineResponse200 GcHideOrArchiveChannel (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = null)
 
 Hide or archive a channel
 
@@ -702,7 +705,8 @@ namespace Example
             try
             {
                 // Hide or archive a channel
-                apiInstance.GcHideOrArchiveChannel(apiToken, channelUrl, gcHideOrArchiveChannelData);
+                InlineResponse200 result = apiInstance.GcHideOrArchiveChannel(apiToken, channelUrl, gcHideOrArchiveChannelData);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -726,7 +730,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 
@@ -735,7 +739,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -910,7 +914,7 @@ No authorization required
 
 ## GcLeaveChannel
 
-> void GcLeaveChannel (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = null)
+> InlineResponse200 GcLeaveChannel (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = null)
 
 Leave a channel
 
@@ -940,7 +944,8 @@ namespace Example
             try
             {
                 // Leave a channel
-                apiInstance.GcLeaveChannel(apiToken, channelUrl, gcLeaveChannelData);
+                InlineResponse200 result = apiInstance.GcLeaveChannel(apiToken, channelUrl, gcLeaveChannelData);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -964,7 +969,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 
@@ -973,7 +978,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -1651,7 +1656,7 @@ No authorization required
 
 ## GcResetChatHistory
 
-> void GcResetChatHistory (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = null)
+> GcResetChatHistoryResponse GcResetChatHistory (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = null)
 
 Reset chat history
 
@@ -1681,7 +1686,8 @@ namespace Example
             try
             {
                 // Reset chat history
-                apiInstance.GcResetChatHistory(apiToken, channelUrl, gcResetChatHistoryData);
+                GcResetChatHistoryResponse result = apiInstance.GcResetChatHistory(apiToken, channelUrl, gcResetChatHistoryData);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -1705,7 +1711,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**GcResetChatHistoryResponse**](GcResetChatHistoryResponse.md)
 
 ### Authorization
 
@@ -1714,7 +1720,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -1730,7 +1736,7 @@ No authorization required
 
 ## GcUnbanUserById
 
-> void GcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
+> InlineResponse200 GcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
 
 Unban a user
 
@@ -1760,7 +1766,8 @@ namespace Example
             try
             {
                 // Unban a user
-                apiInstance.GcUnbanUserById(apiToken, channelUrl, bannedUserId);
+                InlineResponse200 result = apiInstance.GcUnbanUserById(apiToken, channelUrl, bannedUserId);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -1784,7 +1791,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 
@@ -1793,7 +1800,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -1809,7 +1816,7 @@ No authorization required
 
 ## GcUnhideOrUnarchiveChannel
 
-> void GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = null)
+> InlineResponse200 GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = null)
 
 Unhide or unarchive a channel
 
@@ -1840,7 +1847,8 @@ namespace Example
             try
             {
                 // Unhide or unarchive a channel
-                apiInstance.GcUnhideOrUnarchiveChannel(apiToken, channelUrl, userId, shouldUnhideAll);
+                InlineResponse200 result = apiInstance.GcUnhideOrUnarchiveChannel(apiToken, channelUrl, userId, shouldUnhideAll);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -1865,7 +1873,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 
@@ -1874,7 +1882,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -1890,7 +1898,7 @@ No authorization required
 
 ## GcUnmuteUserById
 
-> void GcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
+> InlineResponse200 GcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
 
 Unmute a user
 
@@ -1920,7 +1928,8 @@ namespace Example
             try
             {
                 // Unmute a user
-                apiInstance.GcUnmuteUserById(apiToken, channelUrl, mutedUserId);
+                InlineResponse200 result = apiInstance.GcUnmuteUserById(apiToken, channelUrl, mutedUserId);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -1944,7 +1953,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 
@@ -1953,7 +1962,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -1969,7 +1978,7 @@ No authorization required
 
 ## GcUpdateBanById
 
-> SendBirdUser GcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = null)
+> GcUpdateBanByIdResponse GcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = null)
 
 Update a ban
 
@@ -2000,7 +2009,7 @@ namespace Example
             try
             {
                 // Update a ban
-                SendBirdUser result = apiInstance.GcUpdateBanById(apiToken, channelUrl, bannedUserId, gcUpdateBanByIdData);
+                GcUpdateBanByIdResponse result = apiInstance.GcUpdateBanById(apiToken, channelUrl, bannedUserId, gcUpdateBanByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2026,7 +2035,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SendBirdUser**](SendBirdUser.md)
+[**GcUpdateBanByIdResponse**](GcUpdateBanByIdResponse.md)
 
 ### Authorization
 
@@ -2131,7 +2140,7 @@ No authorization required
 
 ## GcViewBanById
 
-> SendBirdUser GcViewBanById (string apiToken, string channelUrl, string bannedUserId)
+> GcViewBanByIdResponse GcViewBanById (string apiToken, string channelUrl, string bannedUserId)
 
 View a ban
 
@@ -2161,7 +2170,7 @@ namespace Example
             try
             {
                 // View a ban
-                SendBirdUser result = apiInstance.GcViewBanById(apiToken, channelUrl, bannedUserId);
+                GcViewBanByIdResponse result = apiInstance.GcViewBanById(apiToken, channelUrl, bannedUserId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2186,7 +2195,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SendBirdUser**](SendBirdUser.md)
+[**GcViewBanByIdResponse**](GcViewBanByIdResponse.md)
 
 ### Authorization
 

@@ -127,7 +127,7 @@ No authorization required
 
 ## BanFromChannelsWithCustomChannelTypes
 
-> void BanFromChannelsWithCustomChannelTypes (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = null)
+> Object BanFromChannelsWithCustomChannelTypes (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = null)
 
 Ban from channels with custom channel types
 
@@ -157,7 +157,8 @@ namespace Example
             try
             {
                 // Ban from channels with custom channel types
-                apiInstance.BanFromChannelsWithCustomChannelTypes(apiToken, userId, banFromChannelsWithCustomChannelTypesData);
+                Object result = apiInstance.BanFromChannelsWithCustomChannelTypes(apiToken, userId, banFromChannelsWithCustomChannelTypesData);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -181,7 +182,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**Object**
 
 ### Authorization
 
@@ -190,7 +191,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -206,7 +207,7 @@ No authorization required
 
 ## BlockUser
 
-> SendBirdUser BlockUser (string apiToken, string userId, BlockUserData blockUserData = null)
+> BlockUserResponse BlockUser (string apiToken, string userId, BlockUserData blockUserData = null)
 
 Block a user
 
@@ -236,7 +237,7 @@ namespace Example
             try
             {
                 // Block a user
-                SendBirdUser result = apiInstance.BlockUser(apiToken, userId, blockUserData);
+                BlockUserResponse result = apiInstance.BlockUser(apiToken, userId, blockUserData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -261,7 +262,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SendBirdUser**](SendBirdUser.md)
+[**BlockUserResponse**](BlockUserResponse.md)
 
 ### Authorization
 
@@ -444,7 +445,7 @@ No authorization required
 
 ## DeleteUserById
 
-> void DeleteUserById (string apiToken, string userId)
+> Object DeleteUserById (string apiToken, string userId)
 
 Delete a user
 
@@ -473,7 +474,8 @@ namespace Example
             try
             {
                 // Delete a user
-                apiInstance.DeleteUserById(apiToken, userId);
+                Object result = apiInstance.DeleteUserById(apiToken, userId);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -496,7 +498,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**Object**
 
 ### Authorization
 
@@ -505,7 +507,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -521,7 +523,7 @@ No authorization required
 
 ## LeaveMyGroupChannels
 
-> void LeaveMyGroupChannels (string apiToken, string userId, LeaveMyGroupChannelsData leaveMyGroupChannelsData = null)
+> Object LeaveMyGroupChannels (string apiToken, string userId, LeaveMyGroupChannelsData leaveMyGroupChannelsData = null)
 
 Leave my group channels
 
@@ -551,7 +553,8 @@ namespace Example
             try
             {
                 // Leave my group channels
-                apiInstance.LeaveMyGroupChannels(apiToken, userId, leaveMyGroupChannelsData);
+                Object result = apiInstance.LeaveMyGroupChannels(apiToken, userId, leaveMyGroupChannelsData);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -575,7 +578,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**Object**
 
 ### Authorization
 
@@ -584,7 +587,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -1184,7 +1187,7 @@ No authorization required
 
 ## MarkAllMessagesAsRead
 
-> void MarkAllMessagesAsRead (string apiToken, string userId, MarkAllMessagesAsReadData markAllMessagesAsReadData = null)
+> Object MarkAllMessagesAsRead (string apiToken, string userId, MarkAllMessagesAsReadData markAllMessagesAsReadData = null)
 
 Mark all messages as read
 
@@ -1214,7 +1217,8 @@ namespace Example
             try
             {
                 // Mark all messages as read
-                apiInstance.MarkAllMessagesAsRead(apiToken, userId, markAllMessagesAsReadData);
+                Object result = apiInstance.MarkAllMessagesAsRead(apiToken, userId, markAllMessagesAsReadData);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -1238,7 +1242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**Object**
 
 ### Authorization
 
@@ -1247,7 +1251,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -1263,7 +1267,7 @@ No authorization required
 
 ## MuteInChannelsWithCustomChannelTypes
 
-> void MuteInChannelsWithCustomChannelTypes (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = null)
+> Object MuteInChannelsWithCustomChannelTypes (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = null)
 
 Mute in channels with custom channel types
 
@@ -1293,7 +1297,8 @@ namespace Example
             try
             {
                 // Mute in channels with custom channel types
-                apiInstance.MuteInChannelsWithCustomChannelTypes(apiToken, userId, muteInChannelsWithCustomChannelTypesData);
+                Object result = apiInstance.MuteInChannelsWithCustomChannelTypes(apiToken, userId, muteInChannelsWithCustomChannelTypesData);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -1317,7 +1322,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**Object**
 
 ### Authorization
 
@@ -1326,7 +1331,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -1342,7 +1347,7 @@ No authorization required
 
 ## RegisterAsOperatorToChannelsWithCustomChannelTypes
 
-> void RegisterAsOperatorToChannelsWithCustomChannelTypes (string apiToken, string userId, RegisterAsOperatorToChannelsWithCustomChannelTypesData registerAsOperatorToChannelsWithCustomChannelTypesData = null)
+> Object RegisterAsOperatorToChannelsWithCustomChannelTypes (string apiToken, string userId, RegisterAsOperatorToChannelsWithCustomChannelTypesData registerAsOperatorToChannelsWithCustomChannelTypesData = null)
 
 Register as an operator to channels with custom channel types
 
@@ -1372,7 +1377,8 @@ namespace Example
             try
             {
                 // Register as an operator to channels with custom channel types
-                apiInstance.RegisterAsOperatorToChannelsWithCustomChannelTypes(apiToken, userId, registerAsOperatorToChannelsWithCustomChannelTypesData);
+                Object result = apiInstance.RegisterAsOperatorToChannelsWithCustomChannelTypes(apiToken, userId, registerAsOperatorToChannelsWithCustomChannelTypesData);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -1396,7 +1402,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**Object**
 
 ### Authorization
 
@@ -1405,7 +1411,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -1661,7 +1667,7 @@ No authorization required
 
 ## ResetPushPreferences
 
-> void ResetPushPreferences (string apiToken, string userId)
+> ResetPushPreferencesResponse ResetPushPreferences (string apiToken, string userId)
 
 Reset push preferences
 
@@ -1690,7 +1696,8 @@ namespace Example
             try
             {
                 // Reset push preferences
-                apiInstance.ResetPushPreferences(apiToken, userId);
+                ResetPushPreferencesResponse result = apiInstance.ResetPushPreferences(apiToken, userId);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -1713,7 +1720,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**ResetPushPreferencesResponse**](ResetPushPreferencesResponse.md)
 
 ### Authorization
 
@@ -1722,7 +1729,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -1738,7 +1745,7 @@ No authorization required
 
 ## UnblockUserById
 
-> void UnblockUserById (string apiToken, string userId, string targetId)
+> Object UnblockUserById (string apiToken, string userId, string targetId)
 
 Unblock a user
 
@@ -1768,7 +1775,8 @@ namespace Example
             try
             {
                 // Unblock a user
-                apiInstance.UnblockUserById(apiToken, userId, targetId);
+                Object result = apiInstance.UnblockUserById(apiToken, userId, targetId);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -1792,7 +1800,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**Object**
 
 ### Authorization
 
@@ -1801,7 +1809,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -2947,7 +2955,7 @@ No authorization required
 
 ## ViewWhoOwnsRegistrationOrDeviceTokenByToken
 
-> ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse ViewWhoOwnsRegistrationOrDeviceTokenByToken (string apiToken, string tokenType, string token)
+> List&lt;Object&gt; ViewWhoOwnsRegistrationOrDeviceTokenByToken (string apiToken, string tokenType, string token)
 
 View who owns a registration or device token
 
@@ -2977,7 +2985,7 @@ namespace Example
             try
             {
                 // View who owns a registration or device token
-                ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse result = apiInstance.ViewWhoOwnsRegistrationOrDeviceTokenByToken(apiToken, tokenType, token);
+                List<Object> result = apiInstance.ViewWhoOwnsRegistrationOrDeviceTokenByToken(apiToken, tokenType, token);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -3002,7 +3010,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse**](ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse.md)
+**List<Object>**
 
 ### Authorization
 

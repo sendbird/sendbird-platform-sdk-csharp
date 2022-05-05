@@ -267,7 +267,7 @@ No authorization required
 
 ## OcDeleteChannelByUrl
 
-> void OcDeleteChannelByUrl (string apiToken, string channelUrl)
+> InlineResponse200 OcDeleteChannelByUrl (string apiToken, string channelUrl)
 
 Delete a channel
 
@@ -296,7 +296,8 @@ namespace Example
             try
             {
                 // Delete a channel
-                apiInstance.OcDeleteChannelByUrl(apiToken, channelUrl);
+                InlineResponse200 result = apiInstance.OcDeleteChannelByUrl(apiToken, channelUrl);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -319,7 +320,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 
@@ -328,7 +329,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -924,7 +925,7 @@ No authorization required
 
 ## OcRegisterOperators
 
-> void OcRegisterOperators (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = null)
+> InlineResponse200 OcRegisterOperators (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = null)
 
 Register operators
 
@@ -954,7 +955,8 @@ namespace Example
             try
             {
                 // Register operators
-                apiInstance.OcRegisterOperators(apiToken, channelUrl, ocRegisterOperatorsData);
+                InlineResponse200 result = apiInstance.OcRegisterOperators(apiToken, channelUrl, ocRegisterOperatorsData);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -978,7 +980,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 
@@ -987,7 +989,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -1003,7 +1005,7 @@ No authorization required
 
 ## OcUnbanUserById
 
-> void OcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
+> InlineResponse200 OcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
 
 Unban a user
 
@@ -1033,7 +1035,8 @@ namespace Example
             try
             {
                 // Unban a user
-                apiInstance.OcUnbanUserById(apiToken, channelUrl, bannedUserId);
+                InlineResponse200 result = apiInstance.OcUnbanUserById(apiToken, channelUrl, bannedUserId);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -1057,7 +1060,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 
@@ -1066,7 +1069,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -1082,7 +1085,7 @@ No authorization required
 
 ## OcUnmuteUserById
 
-> void OcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
+> InlineResponse200 OcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
 
 Unmute a user
 
@@ -1112,7 +1115,8 @@ namespace Example
             try
             {
                 // Unmute a user
-                apiInstance.OcUnmuteUserById(apiToken, channelUrl, mutedUserId);
+                InlineResponse200 result = apiInstance.OcUnmuteUserById(apiToken, channelUrl, mutedUserId);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -1136,7 +1140,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 
@@ -1145,7 +1149,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -1161,7 +1165,7 @@ No authorization required
 
 ## OcUpdateBanById
 
-> SendBirdUser OcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = null)
+> OcUpdateBanByIdResponse OcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = null)
 
 Update a ban
 
@@ -1192,7 +1196,7 @@ namespace Example
             try
             {
                 // Update a ban
-                SendBirdUser result = apiInstance.OcUpdateBanById(apiToken, channelUrl, bannedUserId, ocUpdateBanByIdData);
+                OcUpdateBanByIdResponse result = apiInstance.OcUpdateBanById(apiToken, channelUrl, bannedUserId, ocUpdateBanByIdData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1218,7 +1222,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SendBirdUser**](SendBirdUser.md)
+[**OcUpdateBanByIdResponse**](OcUpdateBanByIdResponse.md)
 
 ### Authorization
 
@@ -1323,7 +1327,7 @@ No authorization required
 
 ## OcViewBanById
 
-> SendBirdUser OcViewBanById (string apiToken, string channelUrl, string bannedUserId)
+> OcViewBanByIdResponse OcViewBanById (string apiToken, string channelUrl, string bannedUserId)
 
 View a ban
 
@@ -1353,7 +1357,7 @@ namespace Example
             try
             {
                 // View a ban
-                SendBirdUser result = apiInstance.OcViewBanById(apiToken, channelUrl, bannedUserId);
+                OcViewBanByIdResponse result = apiInstance.OcViewBanById(apiToken, channelUrl, bannedUserId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1378,7 +1382,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SendBirdUser**](SendBirdUser.md)
+[**OcViewBanByIdResponse**](OcViewBanByIdResponse.md)
 
 ### Authorization
 

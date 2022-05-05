@@ -96,7 +96,7 @@ No authorization required
 
 ## DeleteBotById
 
-> void DeleteBotById (string apiToken, string botUserid)
+> Object DeleteBotById (string apiToken, string botUserid)
 
 Delete a bot
 
@@ -125,7 +125,8 @@ namespace Example
             try
             {
                 // Delete a bot
-                apiInstance.DeleteBotById(apiToken, botUserid);
+                Object result = apiInstance.DeleteBotById(apiToken, botUserid);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -148,7 +149,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**Object**
 
 ### Authorization
 
@@ -157,7 +158,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -173,7 +174,7 @@ No authorization required
 
 ## JoinChannels
 
-> SendBirdGroupChannelCollection JoinChannels (string apiToken, string botUserid, JoinChannelsData joinChannelsData = null)
+> JoinChannelsResponse JoinChannels (string apiToken, string botUserid, JoinChannelsData joinChannelsData = null)
 
 Join channels
 
@@ -203,7 +204,7 @@ namespace Example
             try
             {
                 // Join channels
-                SendBirdGroupChannelCollection result = apiInstance.JoinChannels(apiToken, botUserid, joinChannelsData);
+                JoinChannelsResponse result = apiInstance.JoinChannels(apiToken, botUserid, joinChannelsData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -228,7 +229,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SendBirdGroupChannelCollection**](SendBirdGroupChannelCollection.md)
+[**JoinChannelsResponse**](JoinChannelsResponse.md)
 
 ### Authorization
 
@@ -332,7 +333,7 @@ No authorization required
 
 ## LeaveChannelsByUrl
 
-> void LeaveChannelsByUrl (string apiToken, string botUserid, string channelUrl)
+> Object LeaveChannelsByUrl (string apiToken, string botUserid, string channelUrl)
 
 Leave channels - When leaving a channel by its channel URL
 
@@ -362,7 +363,8 @@ namespace Example
             try
             {
                 // Leave channels - When leaving a channel by its channel URL
-                apiInstance.LeaveChannelsByUrl(apiToken, botUserid, channelUrl);
+                Object result = apiInstance.LeaveChannelsByUrl(apiToken, botUserid, channelUrl);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -386,7 +388,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**Object**
 
 ### Authorization
 
@@ -395,7 +397,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details

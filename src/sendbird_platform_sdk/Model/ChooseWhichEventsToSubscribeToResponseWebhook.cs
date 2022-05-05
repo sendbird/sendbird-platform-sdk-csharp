@@ -37,12 +37,14 @@ namespace sendbird_platform_sdk.Model
         /// <param name="url">url.</param>
         /// <param name="includeMembers">includeMembers.</param>
         /// <param name="enabledEvents">enabledEvents.</param>
-        public ChooseWhichEventsToSubscribeToResponseWebhook(bool enabled = default(bool), string url = default(string), bool includeMembers = default(bool), List<string> enabledEvents = default(List<string>))
+        /// <param name="includeUnreadCount">includeUnreadCount.</param>
+        public ChooseWhichEventsToSubscribeToResponseWebhook(bool enabled = default(bool), string url = default(string), bool includeMembers = default(bool), List<string> enabledEvents = default(List<string>), bool includeUnreadCount = default(bool))
         {
             this.Enabled = enabled;
             this.Url = url;
             this.IncludeMembers = includeMembers;
             this.EnabledEvents = enabledEvents;
+            this.IncludeUnreadCount = includeUnreadCount;
         }
 
         /// <summary>
@@ -70,6 +72,12 @@ namespace sendbird_platform_sdk.Model
         public List<string> EnabledEvents { get; set; }
 
         /// <summary>
+        /// Gets or Sets IncludeUnreadCount
+        /// </summary>
+        [DataMember(Name="include_unread_count", EmitDefaultValue=false)]
+        public bool IncludeUnreadCount { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -81,6 +89,7 @@ namespace sendbird_platform_sdk.Model
             sb.Append("  Url: ").Append(Url).Append("\n");
             sb.Append("  IncludeMembers: ").Append(IncludeMembers).Append("\n");
             sb.Append("  EnabledEvents: ").Append(EnabledEvents).Append("\n");
+            sb.Append("  IncludeUnreadCount: ").Append(IncludeUnreadCount).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -135,6 +144,11 @@ namespace sendbird_platform_sdk.Model
                     this.EnabledEvents != null &&
                     input.EnabledEvents != null &&
                     this.EnabledEvents.SequenceEqual(input.EnabledEvents)
+                ) && 
+                (
+                    this.IncludeUnreadCount == input.IncludeUnreadCount ||
+                    (this.IncludeUnreadCount != null &&
+                    this.IncludeUnreadCount.Equals(input.IncludeUnreadCount))
                 );
         }
 
@@ -155,6 +169,8 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.IncludeMembers.GetHashCode();
                 if (this.EnabledEvents != null)
                     hashCode = hashCode * 59 + this.EnabledEvents.GetHashCode();
+                if (this.IncludeUnreadCount != null)
+                    hashCode = hashCode * 59 + this.IncludeUnreadCount.GetHashCode();
                 return hashCode;
             }
         }

@@ -34,9 +34,11 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="GcCheckIfMemberByIdResponse" /> class.
         /// </summary>
         /// <param name="isMember">isMember.</param>
-        public GcCheckIfMemberByIdResponse(bool isMember = default(bool))
+        /// <param name="state">state.</param>
+        public GcCheckIfMemberByIdResponse(bool isMember = default(bool), string state = default(string))
         {
             this.IsMember = isMember;
+            this.State = state;
         }
 
         /// <summary>
@@ -44,6 +46,12 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         [DataMember(Name="is_member", EmitDefaultValue=false)]
         public bool IsMember { get; set; }
+
+        /// <summary>
+        /// Gets or Sets State
+        /// </summary>
+        [DataMember(Name="state", EmitDefaultValue=false)]
+        public string State { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,6 +62,7 @@ namespace sendbird_platform_sdk.Model
             var sb = new StringBuilder();
             sb.Append("class GcCheckIfMemberByIdResponse {\n");
             sb.Append("  IsMember: ").Append(IsMember).Append("\n");
+            sb.Append("  State: ").Append(State).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -92,6 +101,11 @@ namespace sendbird_platform_sdk.Model
                     this.IsMember == input.IsMember ||
                     (this.IsMember != null &&
                     this.IsMember.Equals(input.IsMember))
+                ) && 
+                (
+                    this.State == input.State ||
+                    (this.State != null &&
+                    this.State.Equals(input.State))
                 );
         }
 
@@ -106,6 +120,8 @@ namespace sendbird_platform_sdk.Model
                 int hashCode = 41;
                 if (this.IsMember != null)
                     hashCode = hashCode * 59 + this.IsMember.GetHashCode();
+                if (this.State != null)
+                    hashCode = hashCode * 59 + this.State.GetHashCode();
                 return hashCode;
             }
         }

@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **Success** | **bool** |  | [optional] 
 **Reaction** | **string** |  | [optional] 
 **UpdatedAt** | **decimal** |  | [optional] 
+**MsgId** | **decimal** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

@@ -254,7 +254,7 @@ No authorization required
 
 ## DeleteEmojiCategoryById
 
-> void DeleteEmojiCategoryById (string apiToken, string emojiCategoryId)
+> Object DeleteEmojiCategoryById (string apiToken, string emojiCategoryId)
 
 Delete an emoji category
 
@@ -283,7 +283,8 @@ namespace Example
             try
             {
                 // Delete an emoji category
-                apiInstance.DeleteEmojiCategoryById(apiToken, emojiCategoryId);
+                Object result = apiInstance.DeleteEmojiCategoryById(apiToken, emojiCategoryId);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -306,7 +307,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**Object**
 
 ### Authorization
 
@@ -315,7 +316,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details

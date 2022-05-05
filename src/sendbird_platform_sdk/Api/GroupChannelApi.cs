@@ -86,8 +86,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
-        /// <returns></returns>
-        void GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?));
+        /// <returns>InlineResponse200</returns>
+        InlineResponse200 GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?));
 
         /// <summary>
         /// Cancel the registration of operators
@@ -100,8 +100,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?));
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        ApiResponse<InlineResponse200> GcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?));
         /// <summary>
         /// Check if member
         /// </summary>
@@ -160,8 +160,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcDeclineInvitationData"> (optional)</param>
-        /// <returns></returns>
-        void GcDeclineInvitation (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData));
+        /// <returns>InlineResponse200</returns>
+        InlineResponse200 GcDeclineInvitation (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData));
 
         /// <summary>
         /// Decline an invitation
@@ -173,8 +173,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcDeclineInvitationData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GcDeclineInvitationWithHttpInfo (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData));
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        ApiResponse<InlineResponse200> GcDeclineInvitationWithHttpInfo (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData));
         /// <summary>
         /// Delete a channel
         /// </summary>
@@ -184,8 +184,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <returns></returns>
-        void GcDeleteChannelByUrl (string apiToken, string channelUrl);
+        /// <returns>InlineResponse200</returns>
+        InlineResponse200 GcDeleteChannelByUrl (string apiToken, string channelUrl);
 
         /// <summary>
         /// Delete a channel
@@ -196,8 +196,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl);
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        ApiResponse<InlineResponse200> GcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl);
         /// <summary>
         /// Freeze a channel
         /// </summary>
@@ -233,8 +233,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
-        /// <returns></returns>
-        void GcHideOrArchiveChannel (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData));
+        /// <returns>InlineResponse200</returns>
+        InlineResponse200 GcHideOrArchiveChannel (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData));
 
         /// <summary>
         /// Hide or archive a channel
@@ -246,8 +246,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GcHideOrArchiveChannelWithHttpInfo (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData));
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        ApiResponse<InlineResponse200> GcHideOrArchiveChannelWithHttpInfo (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData));
         /// <summary>
         /// Invite as members
         /// </summary>
@@ -308,8 +308,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcLeaveChannelData"> (optional)</param>
-        /// <returns></returns>
-        void GcLeaveChannel (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData));
+        /// <returns>InlineResponse200</returns>
+        InlineResponse200 GcLeaveChannel (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData));
 
         /// <summary>
         /// Leave a channel
@@ -321,8 +321,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcLeaveChannelData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GcLeaveChannelWithHttpInfo (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData));
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        ApiResponse<InlineResponse200> GcLeaveChannelWithHttpInfo (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData));
         /// <summary>
         /// List banned users
         /// </summary>
@@ -610,8 +610,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcResetChatHistoryData"> (optional)</param>
-        /// <returns></returns>
-        void GcResetChatHistory (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData));
+        /// <returns>GcResetChatHistoryResponse</returns>
+        GcResetChatHistoryResponse GcResetChatHistory (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData));
 
         /// <summary>
         /// Reset chat history
@@ -623,8 +623,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcResetChatHistoryData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GcResetChatHistoryWithHttpInfo (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData));
+        /// <returns>ApiResponse of GcResetChatHistoryResponse</returns>
+        ApiResponse<GcResetChatHistoryResponse> GcResetChatHistoryWithHttpInfo (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData));
         /// <summary>
         /// Unban a user
         /// </summary>
@@ -635,8 +635,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns></returns>
-        void GcUnbanUserById (string apiToken, string channelUrl, string bannedUserId);
+        /// <returns>InlineResponse200</returns>
+        InlineResponse200 GcUnbanUserById (string apiToken, string channelUrl, string bannedUserId);
 
         /// <summary>
         /// Unban a user
@@ -648,8 +648,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId);
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        ApiResponse<InlineResponse200> GcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId);
         /// <summary>
         /// Unhide or unarchive a channel
         /// </summary>
@@ -661,8 +661,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
-        /// <returns></returns>
-        void GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?));
+        /// <returns>InlineResponse200</returns>
+        InlineResponse200 GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?));
 
         /// <summary>
         /// Unhide or unarchive a channel
@@ -675,8 +675,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GcUnhideOrUnarchiveChannelWithHttpInfo (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?));
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        ApiResponse<InlineResponse200> GcUnhideOrUnarchiveChannelWithHttpInfo (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?));
         /// <summary>
         /// Unmute a user
         /// </summary>
@@ -687,8 +687,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <returns></returns>
-        void GcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId);
+        /// <returns>InlineResponse200</returns>
+        InlineResponse200 GcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId);
 
         /// <summary>
         /// Unmute a user
@@ -700,8 +700,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId);
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        ApiResponse<InlineResponse200> GcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId);
         /// <summary>
         /// Update a ban
         /// </summary>
@@ -713,8 +713,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="gcUpdateBanByIdData"> (optional)</param>
-        /// <returns>SendBirdUser</returns>
-        SendBirdUser GcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData));
+        /// <returns>GcUpdateBanByIdResponse</returns>
+        GcUpdateBanByIdResponse GcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData));
 
         /// <summary>
         /// Update a ban
@@ -727,8 +727,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="gcUpdateBanByIdData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdUser</returns>
-        ApiResponse<SendBirdUser> GcUpdateBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData));
+        /// <returns>ApiResponse of GcUpdateBanByIdResponse</returns>
+        ApiResponse<GcUpdateBanByIdResponse> GcUpdateBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData));
         /// <summary>
         /// Update a channel
         /// </summary>
@@ -764,8 +764,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>SendBirdUser</returns>
-        SendBirdUser GcViewBanById (string apiToken, string channelUrl, string bannedUserId);
+        /// <returns>GcViewBanByIdResponse</returns>
+        GcViewBanByIdResponse GcViewBanById (string apiToken, string channelUrl, string bannedUserId);
 
         /// <summary>
         /// View a ban
@@ -777,8 +777,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>ApiResponse of SendBirdUser</returns>
-        ApiResponse<SendBirdUser> GcViewBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId);
+        /// <returns>ApiResponse of GcViewBanByIdResponse</returns>
+        ApiResponse<GcViewBanByIdResponse> GcViewBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId);
         /// <summary>
         /// View a channel
         /// </summary>
@@ -905,8 +905,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of InlineResponse200</returns>
+        System.Threading.Tasks.Task<InlineResponse200> GcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Cancel the registration of operators
@@ -920,8 +920,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Check if member
         /// </summary>
@@ -985,8 +985,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcDeclineInvitationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GcDeclineInvitationAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of InlineResponse200</returns>
+        System.Threading.Tasks.Task<InlineResponse200> GcDeclineInvitationAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Decline an invitation
@@ -999,8 +999,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcDeclineInvitationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GcDeclineInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> GcDeclineInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Delete a channel
         /// </summary>
@@ -1011,8 +1011,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of InlineResponse200</returns>
+        System.Threading.Tasks.Task<InlineResponse200> GcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Delete a channel
@@ -1024,8 +1024,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> GcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Freeze a channel
         /// </summary>
@@ -1064,8 +1064,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GcHideOrArchiveChannelAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of InlineResponse200</returns>
+        System.Threading.Tasks.Task<InlineResponse200> GcHideOrArchiveChannelAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Hide or archive a channel
@@ -1078,8 +1078,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GcHideOrArchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> GcHideOrArchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Invite as members
         /// </summary>
@@ -1145,8 +1145,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcLeaveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GcLeaveChannelAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of InlineResponse200</returns>
+        System.Threading.Tasks.Task<InlineResponse200> GcLeaveChannelAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Leave a channel
@@ -1159,8 +1159,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcLeaveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GcLeaveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> GcLeaveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List banned users
         /// </summary>
@@ -1463,8 +1463,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcResetChatHistoryData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GcResetChatHistoryAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of GcResetChatHistoryResponse</returns>
+        System.Threading.Tasks.Task<GcResetChatHistoryResponse> GcResetChatHistoryAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Reset chat history
@@ -1477,8 +1477,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcResetChatHistoryData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GcResetChatHistoryWithHttpInfoAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (GcResetChatHistoryResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GcResetChatHistoryResponse>> GcResetChatHistoryWithHttpInfoAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Unban a user
         /// </summary>
@@ -1490,8 +1490,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of InlineResponse200</returns>
+        System.Threading.Tasks.Task<InlineResponse200> GcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Unban a user
@@ -1504,8 +1504,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> GcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Unhide or unarchive a channel
         /// </summary>
@@ -1518,8 +1518,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GcUnhideOrUnarchiveChannelAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of InlineResponse200</returns>
+        System.Threading.Tasks.Task<InlineResponse200> GcUnhideOrUnarchiveChannelAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Unhide or unarchive a channel
@@ -1533,8 +1533,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GcUnhideOrUnarchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> GcUnhideOrUnarchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Unmute a user
         /// </summary>
@@ -1546,8 +1546,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of InlineResponse200</returns>
+        System.Threading.Tasks.Task<InlineResponse200> GcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Unmute a user
@@ -1560,8 +1560,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> GcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update a ban
         /// </summary>
@@ -1574,8 +1574,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="gcUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdUser</returns>
-        System.Threading.Tasks.Task<SendBirdUser> GcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of GcUpdateBanByIdResponse</returns>
+        System.Threading.Tasks.Task<GcUpdateBanByIdResponse> GcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update a ban
@@ -1589,8 +1589,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="gcUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdUser)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> GcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (GcUpdateBanByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GcUpdateBanByIdResponse>> GcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update a channel
         /// </summary>
@@ -1629,8 +1629,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdUser</returns>
-        System.Threading.Tasks.Task<SendBirdUser> GcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of GcViewBanByIdResponse</returns>
+        System.Threading.Tasks.Task<GcViewBanByIdResponse> GcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a ban
@@ -1643,8 +1643,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdUser)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> GcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (GcViewBanByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GcViewBanByIdResponse>> GcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a channel
         /// </summary>
@@ -2164,10 +2164,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
-        /// <returns></returns>
-        public void GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?))
+        /// <returns>InlineResponse200</returns>
+        public InlineResponse200 GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?))
         {
-             GcCancelTheRegistrationOfOperatorsWithHttpInfo(apiToken, channelUrl, operatorIds, deleteAll);
+             ApiResponse<InlineResponse200> localVarResponse = GcCancelTheRegistrationOfOperatorsWithHttpInfo(apiToken, channelUrl, operatorIds, deleteAll);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -2178,8 +2179,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?))
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        public ApiResponse<InlineResponse200> GcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2206,6 +2207,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -2230,9 +2232,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -2244,10 +2246,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of InlineResponse200</returns>
+        public async System.Threading.Tasks.Task<InlineResponse200> GcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             await GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync(apiToken, channelUrl, operatorIds, deleteAll, cancellationToken);
+             ApiResponse<InlineResponse200> localVarResponse = await GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync(apiToken, channelUrl, operatorIds, deleteAll, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -2260,8 +2263,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2288,6 +2291,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -2312,9 +2316,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -2640,10 +2644,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcDeclineInvitationData"> (optional)</param>
-        /// <returns></returns>
-        public void GcDeclineInvitation (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData))
+        /// <returns>InlineResponse200</returns>
+        public InlineResponse200 GcDeclineInvitation (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData))
         {
-             GcDeclineInvitationWithHttpInfo(apiToken, channelUrl, gcDeclineInvitationData);
+             ApiResponse<InlineResponse200> localVarResponse = GcDeclineInvitationWithHttpInfo(apiToken, channelUrl, gcDeclineInvitationData);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -2653,8 +2658,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcDeclineInvitationData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GcDeclineInvitationWithHttpInfo (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData))
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        public ApiResponse<InlineResponse200> GcDeclineInvitationWithHttpInfo (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2679,6 +2684,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -2709,9 +2715,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -2722,10 +2728,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcDeclineInvitationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GcDeclineInvitationAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of InlineResponse200</returns>
+        public async System.Threading.Tasks.Task<InlineResponse200> GcDeclineInvitationAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             await GcDeclineInvitationWithHttpInfoAsync(apiToken, channelUrl, gcDeclineInvitationData, cancellationToken);
+             ApiResponse<InlineResponse200> localVarResponse = await GcDeclineInvitationWithHttpInfoAsync(apiToken, channelUrl, gcDeclineInvitationData, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -2737,8 +2744,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcDeclineInvitationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GcDeclineInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> GcDeclineInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2763,6 +2770,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -2793,9 +2801,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -2804,10 +2812,11 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <returns></returns>
-        public void GcDeleteChannelByUrl (string apiToken, string channelUrl)
+        /// <returns>InlineResponse200</returns>
+        public InlineResponse200 GcDeleteChannelByUrl (string apiToken, string channelUrl)
         {
-             GcDeleteChannelByUrlWithHttpInfo(apiToken, channelUrl);
+             ApiResponse<InlineResponse200> localVarResponse = GcDeleteChannelByUrlWithHttpInfo(apiToken, channelUrl);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -2816,8 +2825,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl)
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        public ApiResponse<InlineResponse200> GcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2841,6 +2850,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -2863,9 +2873,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -2875,10 +2885,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of InlineResponse200</returns>
+        public async System.Threading.Tasks.Task<InlineResponse200> GcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await GcDeleteChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, cancellationToken);
+             ApiResponse<InlineResponse200> localVarResponse = await GcDeleteChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -2889,8 +2900,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> GcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2914,6 +2925,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -2936,9 +2948,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -3117,10 +3129,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
-        /// <returns></returns>
-        public void GcHideOrArchiveChannel (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData))
+        /// <returns>InlineResponse200</returns>
+        public InlineResponse200 GcHideOrArchiveChannel (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData))
         {
-             GcHideOrArchiveChannelWithHttpInfo(apiToken, channelUrl, gcHideOrArchiveChannelData);
+             ApiResponse<InlineResponse200> localVarResponse = GcHideOrArchiveChannelWithHttpInfo(apiToken, channelUrl, gcHideOrArchiveChannelData);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -3130,8 +3143,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GcHideOrArchiveChannelWithHttpInfo (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData))
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        public ApiResponse<InlineResponse200> GcHideOrArchiveChannelWithHttpInfo (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3156,6 +3169,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -3186,9 +3200,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -3199,10 +3213,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GcHideOrArchiveChannelAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of InlineResponse200</returns>
+        public async System.Threading.Tasks.Task<InlineResponse200> GcHideOrArchiveChannelAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             await GcHideOrArchiveChannelWithHttpInfoAsync(apiToken, channelUrl, gcHideOrArchiveChannelData, cancellationToken);
+             ApiResponse<InlineResponse200> localVarResponse = await GcHideOrArchiveChannelWithHttpInfoAsync(apiToken, channelUrl, gcHideOrArchiveChannelData, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -3214,8 +3229,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GcHideOrArchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> GcHideOrArchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3240,6 +3255,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -3270,9 +3286,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -3616,10 +3632,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcLeaveChannelData"> (optional)</param>
-        /// <returns></returns>
-        public void GcLeaveChannel (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData))
+        /// <returns>InlineResponse200</returns>
+        public InlineResponse200 GcLeaveChannel (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData))
         {
-             GcLeaveChannelWithHttpInfo(apiToken, channelUrl, gcLeaveChannelData);
+             ApiResponse<InlineResponse200> localVarResponse = GcLeaveChannelWithHttpInfo(apiToken, channelUrl, gcLeaveChannelData);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -3629,8 +3646,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcLeaveChannelData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GcLeaveChannelWithHttpInfo (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData))
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        public ApiResponse<InlineResponse200> GcLeaveChannelWithHttpInfo (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3655,6 +3672,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -3685,9 +3703,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -3698,10 +3716,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcLeaveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GcLeaveChannelAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of InlineResponse200</returns>
+        public async System.Threading.Tasks.Task<InlineResponse200> GcLeaveChannelAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             await GcLeaveChannelWithHttpInfoAsync(apiToken, channelUrl, gcLeaveChannelData, cancellationToken);
+             ApiResponse<InlineResponse200> localVarResponse = await GcLeaveChannelWithHttpInfoAsync(apiToken, channelUrl, gcLeaveChannelData, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -3713,8 +3732,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcLeaveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GcLeaveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> GcLeaveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3739,6 +3758,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -3769,9 +3789,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -5184,10 +5204,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcResetChatHistoryData"> (optional)</param>
-        /// <returns></returns>
-        public void GcResetChatHistory (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData))
+        /// <returns>GcResetChatHistoryResponse</returns>
+        public GcResetChatHistoryResponse GcResetChatHistory (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData))
         {
-             GcResetChatHistoryWithHttpInfo(apiToken, channelUrl, gcResetChatHistoryData);
+             ApiResponse<GcResetChatHistoryResponse> localVarResponse = GcResetChatHistoryWithHttpInfo(apiToken, channelUrl, gcResetChatHistoryData);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -5197,8 +5218,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcResetChatHistoryData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GcResetChatHistoryWithHttpInfo (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData))
+        /// <returns>ApiResponse of GcResetChatHistoryResponse</returns>
+        public ApiResponse<GcResetChatHistoryResponse> GcResetChatHistoryWithHttpInfo (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5223,6 +5244,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -5253,9 +5275,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<GcResetChatHistoryResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (GcResetChatHistoryResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GcResetChatHistoryResponse)));
         }
 
         /// <summary>
@@ -5266,10 +5288,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcResetChatHistoryData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GcResetChatHistoryAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of GcResetChatHistoryResponse</returns>
+        public async System.Threading.Tasks.Task<GcResetChatHistoryResponse> GcResetChatHistoryAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             await GcResetChatHistoryWithHttpInfoAsync(apiToken, channelUrl, gcResetChatHistoryData, cancellationToken);
+             ApiResponse<GcResetChatHistoryResponse> localVarResponse = await GcResetChatHistoryWithHttpInfoAsync(apiToken, channelUrl, gcResetChatHistoryData, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -5281,8 +5304,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcResetChatHistoryData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GcResetChatHistoryWithHttpInfoAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (GcResetChatHistoryResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<GcResetChatHistoryResponse>> GcResetChatHistoryWithHttpInfoAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5307,6 +5330,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -5337,9 +5361,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<GcResetChatHistoryResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (GcResetChatHistoryResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GcResetChatHistoryResponse)));
         }
 
         /// <summary>
@@ -5349,10 +5373,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns></returns>
-        public void GcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
+        /// <returns>InlineResponse200</returns>
+        public InlineResponse200 GcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
         {
-             GcUnbanUserByIdWithHttpInfo(apiToken, channelUrl, bannedUserId);
+             ApiResponse<InlineResponse200> localVarResponse = GcUnbanUserByIdWithHttpInfo(apiToken, channelUrl, bannedUserId);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -5362,8 +5387,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId)
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        public ApiResponse<InlineResponse200> GcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5390,6 +5415,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -5413,9 +5439,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -5426,10 +5452,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of InlineResponse200</returns>
+        public async System.Threading.Tasks.Task<InlineResponse200> GcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await GcUnbanUserByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
+             ApiResponse<InlineResponse200> localVarResponse = await GcUnbanUserByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -5441,8 +5468,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> GcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5469,6 +5496,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -5492,9 +5520,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -5505,10 +5533,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
-        /// <returns></returns>
-        public void GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?))
+        /// <returns>InlineResponse200</returns>
+        public InlineResponse200 GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?))
         {
-             GcUnhideOrUnarchiveChannelWithHttpInfo(apiToken, channelUrl, userId, shouldUnhideAll);
+             ApiResponse<InlineResponse200> localVarResponse = GcUnhideOrUnarchiveChannelWithHttpInfo(apiToken, channelUrl, userId, shouldUnhideAll);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -5519,8 +5548,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GcUnhideOrUnarchiveChannelWithHttpInfo (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?))
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        public ApiResponse<InlineResponse200> GcUnhideOrUnarchiveChannelWithHttpInfo (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5547,6 +5576,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -5571,9 +5601,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -5585,10 +5615,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GcUnhideOrUnarchiveChannelAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of InlineResponse200</returns>
+        public async System.Threading.Tasks.Task<InlineResponse200> GcUnhideOrUnarchiveChannelAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             await GcUnhideOrUnarchiveChannelWithHttpInfoAsync(apiToken, channelUrl, userId, shouldUnhideAll, cancellationToken);
+             ApiResponse<InlineResponse200> localVarResponse = await GcUnhideOrUnarchiveChannelWithHttpInfoAsync(apiToken, channelUrl, userId, shouldUnhideAll, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -5601,8 +5632,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GcUnhideOrUnarchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> GcUnhideOrUnarchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5629,6 +5660,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -5653,9 +5685,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -5665,10 +5697,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <returns></returns>
-        public void GcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
+        /// <returns>InlineResponse200</returns>
+        public InlineResponse200 GcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
         {
-             GcUnmuteUserByIdWithHttpInfo(apiToken, channelUrl, mutedUserId);
+             ApiResponse<InlineResponse200> localVarResponse = GcUnmuteUserByIdWithHttpInfo(apiToken, channelUrl, mutedUserId);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -5678,8 +5711,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId)
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        public ApiResponse<InlineResponse200> GcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5706,6 +5739,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -5729,9 +5763,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -5742,10 +5776,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of InlineResponse200</returns>
+        public async System.Threading.Tasks.Task<InlineResponse200> GcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await GcUnmuteUserByIdWithHttpInfoAsync(apiToken, channelUrl, mutedUserId, cancellationToken);
+             ApiResponse<InlineResponse200> localVarResponse = await GcUnmuteUserByIdWithHttpInfoAsync(apiToken, channelUrl, mutedUserId, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -5757,8 +5792,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> GcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5785,6 +5820,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -5808,9 +5844,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -5821,10 +5857,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="gcUpdateBanByIdData"> (optional)</param>
-        /// <returns>SendBirdUser</returns>
-        public SendBirdUser GcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData))
+        /// <returns>GcUpdateBanByIdResponse</returns>
+        public GcUpdateBanByIdResponse GcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData))
         {
-             ApiResponse<SendBirdUser> localVarResponse = GcUpdateBanByIdWithHttpInfo(apiToken, channelUrl, bannedUserId, gcUpdateBanByIdData);
+             ApiResponse<GcUpdateBanByIdResponse> localVarResponse = GcUpdateBanByIdWithHttpInfo(apiToken, channelUrl, bannedUserId, gcUpdateBanByIdData);
              return localVarResponse.Data;
         }
 
@@ -5836,8 +5872,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="gcUpdateBanByIdData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdUser</returns>
-        public ApiResponse<SendBirdUser> GcUpdateBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData))
+        /// <returns>ApiResponse of GcUpdateBanByIdResponse</returns>
+        public ApiResponse<GcUpdateBanByIdResponse> GcUpdateBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5897,9 +5933,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdUser>(localVarStatusCode,
+            return new ApiResponse<GcUpdateBanByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdUser) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdUser)));
+                (GcUpdateBanByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GcUpdateBanByIdResponse)));
         }
 
         /// <summary>
@@ -5911,10 +5947,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="gcUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdUser</returns>
-        public async System.Threading.Tasks.Task<SendBirdUser> GcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of GcUpdateBanByIdResponse</returns>
+        public async System.Threading.Tasks.Task<GcUpdateBanByIdResponse> GcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdUser> localVarResponse = await GcUpdateBanByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, gcUpdateBanByIdData, cancellationToken);
+             ApiResponse<GcUpdateBanByIdResponse> localVarResponse = await GcUpdateBanByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, gcUpdateBanByIdData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -5928,8 +5964,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="gcUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdUser)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> GcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (GcUpdateBanByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<GcUpdateBanByIdResponse>> GcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5989,9 +6025,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdUser>(localVarStatusCode,
+            return new ApiResponse<GcUpdateBanByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdUser) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdUser)));
+                (GcUpdateBanByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GcUpdateBanByIdResponse)));
         }
 
         /// <summary>
@@ -6170,10 +6206,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>SendBirdUser</returns>
-        public SendBirdUser GcViewBanById (string apiToken, string channelUrl, string bannedUserId)
+        /// <returns>GcViewBanByIdResponse</returns>
+        public GcViewBanByIdResponse GcViewBanById (string apiToken, string channelUrl, string bannedUserId)
         {
-             ApiResponse<SendBirdUser> localVarResponse = GcViewBanByIdWithHttpInfo(apiToken, channelUrl, bannedUserId);
+             ApiResponse<GcViewBanByIdResponse> localVarResponse = GcViewBanByIdWithHttpInfo(apiToken, channelUrl, bannedUserId);
              return localVarResponse.Data;
         }
 
@@ -6184,8 +6220,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>ApiResponse of SendBirdUser</returns>
-        public ApiResponse<SendBirdUser> GcViewBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId)
+        /// <returns>ApiResponse of GcViewBanByIdResponse</returns>
+        public ApiResponse<GcViewBanByIdResponse> GcViewBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -6236,9 +6272,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdUser>(localVarStatusCode,
+            return new ApiResponse<GcViewBanByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdUser) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdUser)));
+                (GcViewBanByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GcViewBanByIdResponse)));
         }
 
         /// <summary>
@@ -6249,10 +6285,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdUser</returns>
-        public async System.Threading.Tasks.Task<SendBirdUser> GcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of GcViewBanByIdResponse</returns>
+        public async System.Threading.Tasks.Task<GcViewBanByIdResponse> GcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdUser> localVarResponse = await GcViewBanByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
+             ApiResponse<GcViewBanByIdResponse> localVarResponse = await GcViewBanByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -6265,8 +6301,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdUser)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> GcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (GcViewBanByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<GcViewBanByIdResponse>> GcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -6317,9 +6353,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdUser>(localVarStatusCode,
+            return new ApiResponse<GcViewBanByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdUser) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdUser)));
+                (GcViewBanByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GcViewBanByIdResponse)));
         }
 
         /// <summary>

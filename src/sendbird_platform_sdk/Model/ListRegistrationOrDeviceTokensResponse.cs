@@ -33,15 +33,23 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ListRegistrationOrDeviceTokensResponse" /> class.
         /// </summary>
+        /// <param name="token">token.</param>
         /// <param name="tokens">tokens.</param>
         /// <param name="type">type.</param>
         /// <param name="user">user.</param>
-        public ListRegistrationOrDeviceTokensResponse(List<string> tokens = default(List<string>), string type = default(string), SendBirdUser user = default(SendBirdUser))
+        public ListRegistrationOrDeviceTokensResponse(List<string> token = default(List<string>), List<string> tokens = default(List<string>), string type = default(string), SendBirdUser user = default(SendBirdUser))
         {
+            this.Token = token;
             this.Tokens = tokens;
             this.Type = type;
             this.User = user;
         }
+
+        /// <summary>
+        /// Gets or Sets Token
+        /// </summary>
+        [DataMember(Name="token", EmitDefaultValue=false)]
+        public List<string> Token { get; set; }
 
         /// <summary>
         /// Gets or Sets Tokens
@@ -69,6 +77,7 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class ListRegistrationOrDeviceTokensResponse {\n");
+            sb.Append("  Token: ").Append(Token).Append("\n");
             sb.Append("  Tokens: ").Append(Tokens).Append("\n");
             sb.Append("  Type: ").Append(Type).Append("\n");
             sb.Append("  User: ").Append(User).Append("\n");
@@ -107,6 +116,12 @@ namespace sendbird_platform_sdk.Model
 
             return 
                 (
+                    this.Token == input.Token ||
+                    this.Token != null &&
+                    input.Token != null &&
+                    this.Token.SequenceEqual(input.Token)
+                ) && 
+                (
                     this.Tokens == input.Tokens ||
                     this.Tokens != null &&
                     input.Tokens != null &&
@@ -133,6 +148,8 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.Token != null)
+                    hashCode = hashCode * 59 + this.Token.GetHashCode();
                 if (this.Tokens != null)
                     hashCode = hashCode * 59 + this.Tokens.GetHashCode();
                 if (this.Type != null)

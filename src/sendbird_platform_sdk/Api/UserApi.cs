@@ -62,8 +62,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="banFromChannelsWithCustomChannelTypesData"> (optional)</param>
-        /// <returns></returns>
-        void BanFromChannelsWithCustomChannelTypes (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData));
+        /// <returns>Object</returns>
+        Object BanFromChannelsWithCustomChannelTypes (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData));
 
         /// <summary>
         /// Ban from channels with custom channel types
@@ -75,7 +75,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="banFromChannelsWithCustomChannelTypesData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         ApiResponse<Object> BanFromChannelsWithCustomChannelTypesWithHttpInfo (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData));
         /// <summary>
         /// Block a user
@@ -87,8 +87,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="blockUserData"> (optional)</param>
-        /// <returns>SendBirdUser</returns>
-        SendBirdUser BlockUser (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData));
+        /// <returns>BlockUserResponse</returns>
+        BlockUserResponse BlockUser (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData));
 
         /// <summary>
         /// Block a user
@@ -100,8 +100,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="blockUserData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdUser</returns>
-        ApiResponse<SendBirdUser> BlockUserWithHttpInfo (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData));
+        /// <returns>ApiResponse of BlockUserResponse</returns>
+        ApiResponse<BlockUserResponse> BlockUserWithHttpInfo (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData));
         /// <summary>
         /// Choose a push notification content template
         /// </summary>
@@ -159,8 +159,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
-        /// <returns></returns>
-        void DeleteUserById (string apiToken, string userId);
+        /// <returns>Object</returns>
+        Object DeleteUserById (string apiToken, string userId);
 
         /// <summary>
         /// Delete a user
@@ -171,7 +171,7 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         ApiResponse<Object> DeleteUserByIdWithHttpInfo (string apiToken, string userId);
         /// <summary>
         /// Leave my group channels
@@ -183,8 +183,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="leaveMyGroupChannelsData"> (optional)</param>
-        /// <returns></returns>
-        void LeaveMyGroupChannels (string apiToken, string userId, LeaveMyGroupChannelsData leaveMyGroupChannelsData = default(LeaveMyGroupChannelsData));
+        /// <returns>Object</returns>
+        Object LeaveMyGroupChannels (string apiToken, string userId, LeaveMyGroupChannelsData leaveMyGroupChannelsData = default(LeaveMyGroupChannelsData));
 
         /// <summary>
         /// Leave my group channels
@@ -196,7 +196,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="leaveMyGroupChannelsData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         ApiResponse<Object> LeaveMyGroupChannelsWithHttpInfo (string apiToken, string userId, LeaveMyGroupChannelsData leaveMyGroupChannelsData = default(LeaveMyGroupChannelsData));
         /// <summary>
         /// List banned channels
@@ -462,8 +462,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="markAllMessagesAsReadData"> (optional)</param>
-        /// <returns></returns>
-        void MarkAllMessagesAsRead (string apiToken, string userId, MarkAllMessagesAsReadData markAllMessagesAsReadData = default(MarkAllMessagesAsReadData));
+        /// <returns>Object</returns>
+        Object MarkAllMessagesAsRead (string apiToken, string userId, MarkAllMessagesAsReadData markAllMessagesAsReadData = default(MarkAllMessagesAsReadData));
 
         /// <summary>
         /// Mark all messages as read
@@ -475,7 +475,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="markAllMessagesAsReadData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         ApiResponse<Object> MarkAllMessagesAsReadWithHttpInfo (string apiToken, string userId, MarkAllMessagesAsReadData markAllMessagesAsReadData = default(MarkAllMessagesAsReadData));
         /// <summary>
         /// Mute in channels with custom channel types
@@ -487,8 +487,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="muteInChannelsWithCustomChannelTypesData"> (optional)</param>
-        /// <returns></returns>
-        void MuteInChannelsWithCustomChannelTypes (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData));
+        /// <returns>Object</returns>
+        Object MuteInChannelsWithCustomChannelTypes (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData));
 
         /// <summary>
         /// Mute in channels with custom channel types
@@ -500,7 +500,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="muteInChannelsWithCustomChannelTypesData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         ApiResponse<Object> MuteInChannelsWithCustomChannelTypesWithHttpInfo (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData));
         /// <summary>
         /// Register as an operator to channels with custom channel types
@@ -512,8 +512,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="registerAsOperatorToChannelsWithCustomChannelTypesData"> (optional)</param>
-        /// <returns></returns>
-        void RegisterAsOperatorToChannelsWithCustomChannelTypes (string apiToken, string userId, RegisterAsOperatorToChannelsWithCustomChannelTypesData registerAsOperatorToChannelsWithCustomChannelTypesData = default(RegisterAsOperatorToChannelsWithCustomChannelTypesData));
+        /// <returns>Object</returns>
+        Object RegisterAsOperatorToChannelsWithCustomChannelTypes (string apiToken, string userId, RegisterAsOperatorToChannelsWithCustomChannelTypesData registerAsOperatorToChannelsWithCustomChannelTypesData = default(RegisterAsOperatorToChannelsWithCustomChannelTypesData));
 
         /// <summary>
         /// Register as an operator to channels with custom channel types
@@ -525,7 +525,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="registerAsOperatorToChannelsWithCustomChannelTypesData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         ApiResponse<Object> RegisterAsOperatorToChannelsWithCustomChannelTypesWithHttpInfo (string apiToken, string userId, RegisterAsOperatorToChannelsWithCustomChannelTypesData registerAsOperatorToChannelsWithCustomChannelTypesData = default(RegisterAsOperatorToChannelsWithCustomChannelTypesData));
         /// <summary>
         /// Remove a registration or device token - When unregistering all device tokens
@@ -611,8 +611,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
-        /// <returns></returns>
-        void ResetPushPreferences (string apiToken, string userId);
+        /// <returns>ResetPushPreferencesResponse</returns>
+        ResetPushPreferencesResponse ResetPushPreferences (string apiToken, string userId);
 
         /// <summary>
         /// Reset push preferences
@@ -623,8 +623,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> ResetPushPreferencesWithHttpInfo (string apiToken, string userId);
+        /// <returns>ApiResponse of ResetPushPreferencesResponse</returns>
+        ApiResponse<ResetPushPreferencesResponse> ResetPushPreferencesWithHttpInfo (string apiToken, string userId);
         /// <summary>
         /// Unblock a user
         /// </summary>
@@ -635,8 +635,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="targetId"></param>
-        /// <returns></returns>
-        void UnblockUserById (string apiToken, string userId, string targetId);
+        /// <returns>Object</returns>
+        Object UnblockUserById (string apiToken, string userId, string targetId);
 
         /// <summary>
         /// Unblock a user
@@ -648,7 +648,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="targetId"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         ApiResponse<Object> UnblockUserByIdWithHttpInfo (string apiToken, string userId, string targetId);
         /// <summary>
         /// Update channel invitation preference
@@ -1020,8 +1020,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
-        /// <returns>ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse</returns>
-        ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse ViewWhoOwnsRegistrationOrDeviceTokenByToken (string apiToken, string tokenType, string token);
+        /// <returns>List&lt;Object&gt;</returns>
+        List<Object> ViewWhoOwnsRegistrationOrDeviceTokenByToken (string apiToken, string tokenType, string token);
 
         /// <summary>
         /// View who owns a registration or device token
@@ -1033,8 +1033,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
-        /// <returns>ApiResponse of ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse</returns>
-        ApiResponse<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo (string apiToken, string tokenType, string token);
+        /// <returns>ApiResponse of List&lt;Object&gt;</returns>
+        ApiResponse<List<Object>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo (string apiToken, string tokenType, string token);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -1077,8 +1077,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="banFromChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task BanFromChannelsWithCustomChannelTypesAsync (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> BanFromChannelsWithCustomChannelTypesAsync (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Ban from channels with custom channel types
@@ -1091,7 +1091,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="banFromChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> BanFromChannelsWithCustomChannelTypesWithHttpInfoAsync (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Block a user
@@ -1104,8 +1104,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="blockUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdUser</returns>
-        System.Threading.Tasks.Task<SendBirdUser> BlockUserAsync (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of BlockUserResponse</returns>
+        System.Threading.Tasks.Task<BlockUserResponse> BlockUserAsync (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Block a user
@@ -1118,8 +1118,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="blockUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdUser)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> BlockUserWithHttpInfoAsync (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (BlockUserResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<BlockUserResponse>> BlockUserWithHttpInfoAsync (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Choose a push notification content template
         /// </summary>
@@ -1182,8 +1182,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteUserByIdAsync (string apiToken, string userId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> DeleteUserByIdAsync (string apiToken, string userId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Delete a user
@@ -1195,7 +1195,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteUserByIdWithHttpInfoAsync (string apiToken, string userId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Leave my group channels
@@ -1208,8 +1208,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="leaveMyGroupChannelsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task LeaveMyGroupChannelsAsync (string apiToken, string userId, LeaveMyGroupChannelsData leaveMyGroupChannelsData = default(LeaveMyGroupChannelsData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> LeaveMyGroupChannelsAsync (string apiToken, string userId, LeaveMyGroupChannelsData leaveMyGroupChannelsData = default(LeaveMyGroupChannelsData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Leave my group channels
@@ -1222,7 +1222,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="leaveMyGroupChannelsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> LeaveMyGroupChannelsWithHttpInfoAsync (string apiToken, string userId, LeaveMyGroupChannelsData leaveMyGroupChannelsData = default(LeaveMyGroupChannelsData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List banned channels
@@ -1501,8 +1501,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="markAllMessagesAsReadData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task MarkAllMessagesAsReadAsync (string apiToken, string userId, MarkAllMessagesAsReadData markAllMessagesAsReadData = default(MarkAllMessagesAsReadData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> MarkAllMessagesAsReadAsync (string apiToken, string userId, MarkAllMessagesAsReadData markAllMessagesAsReadData = default(MarkAllMessagesAsReadData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Mark all messages as read
@@ -1515,7 +1515,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="markAllMessagesAsReadData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> MarkAllMessagesAsReadWithHttpInfoAsync (string apiToken, string userId, MarkAllMessagesAsReadData markAllMessagesAsReadData = default(MarkAllMessagesAsReadData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Mute in channels with custom channel types
@@ -1528,8 +1528,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="muteInChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task MuteInChannelsWithCustomChannelTypesAsync (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> MuteInChannelsWithCustomChannelTypesAsync (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Mute in channels with custom channel types
@@ -1542,7 +1542,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="muteInChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> MuteInChannelsWithCustomChannelTypesWithHttpInfoAsync (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Register as an operator to channels with custom channel types
@@ -1555,8 +1555,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="registerAsOperatorToChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task RegisterAsOperatorToChannelsWithCustomChannelTypesAsync (string apiToken, string userId, RegisterAsOperatorToChannelsWithCustomChannelTypesData registerAsOperatorToChannelsWithCustomChannelTypesData = default(RegisterAsOperatorToChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> RegisterAsOperatorToChannelsWithCustomChannelTypesAsync (string apiToken, string userId, RegisterAsOperatorToChannelsWithCustomChannelTypesData registerAsOperatorToChannelsWithCustomChannelTypesData = default(RegisterAsOperatorToChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Register as an operator to channels with custom channel types
@@ -1569,7 +1569,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="registerAsOperatorToChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> RegisterAsOperatorToChannelsWithCustomChannelTypesWithHttpInfoAsync (string apiToken, string userId, RegisterAsOperatorToChannelsWithCustomChannelTypesData registerAsOperatorToChannelsWithCustomChannelTypesData = default(RegisterAsOperatorToChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Remove a registration or device token - When unregistering all device tokens
@@ -1662,8 +1662,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task ResetPushPreferencesAsync (string apiToken, string userId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ResetPushPreferencesResponse</returns>
+        System.Threading.Tasks.Task<ResetPushPreferencesResponse> ResetPushPreferencesAsync (string apiToken, string userId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Reset push preferences
@@ -1675,8 +1675,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> ResetPushPreferencesWithHttpInfoAsync (string apiToken, string userId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ResetPushPreferencesResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ResetPushPreferencesResponse>> ResetPushPreferencesWithHttpInfoAsync (string apiToken, string userId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Unblock a user
         /// </summary>
@@ -1688,8 +1688,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="targetId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task UnblockUserByIdAsync (string apiToken, string userId, string targetId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> UnblockUserByIdAsync (string apiToken, string userId, string targetId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Unblock a user
@@ -1702,7 +1702,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="targetId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> UnblockUserByIdWithHttpInfoAsync (string apiToken, string userId, string targetId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update channel invitation preference
@@ -2103,8 +2103,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse</returns>
-        System.Threading.Tasks.Task<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse> ViewWhoOwnsRegistrationOrDeviceTokenByTokenAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of List&lt;Object&gt;</returns>
+        System.Threading.Tasks.Task<List<Object>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View who owns a registration or device token
@@ -2117,8 +2117,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (List&lt;Object&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<Object>>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -2418,10 +2418,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="banFromChannelsWithCustomChannelTypesData"> (optional)</param>
-        /// <returns></returns>
-        public void BanFromChannelsWithCustomChannelTypes (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData))
+        /// <returns>Object</returns>
+        public Object BanFromChannelsWithCustomChannelTypes (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData))
         {
-             BanFromChannelsWithCustomChannelTypesWithHttpInfo(apiToken, userId, banFromChannelsWithCustomChannelTypesData);
+             ApiResponse<Object> localVarResponse = BanFromChannelsWithCustomChannelTypesWithHttpInfo(apiToken, userId, banFromChannelsWithCustomChannelTypesData);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -2431,7 +2432,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="banFromChannelsWithCustomChannelTypesData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         public ApiResponse<Object> BanFromChannelsWithCustomChannelTypesWithHttpInfo (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData))
         {
             // verify the required parameter 'apiToken' is set
@@ -2457,6 +2458,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -2489,7 +2491,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -2500,10 +2502,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="banFromChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task BanFromChannelsWithCustomChannelTypesAsync (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> BanFromChannelsWithCustomChannelTypesAsync (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             await BanFromChannelsWithCustomChannelTypesWithHttpInfoAsync(apiToken, userId, banFromChannelsWithCustomChannelTypesData, cancellationToken);
+             ApiResponse<Object> localVarResponse = await BanFromChannelsWithCustomChannelTypesWithHttpInfoAsync(apiToken, userId, banFromChannelsWithCustomChannelTypesData, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -2515,7 +2518,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="banFromChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> BanFromChannelsWithCustomChannelTypesWithHttpInfoAsync (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
@@ -2541,6 +2544,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -2573,7 +2577,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -2583,10 +2587,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="blockUserData"> (optional)</param>
-        /// <returns>SendBirdUser</returns>
-        public SendBirdUser BlockUser (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData))
+        /// <returns>BlockUserResponse</returns>
+        public BlockUserResponse BlockUser (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData))
         {
-             ApiResponse<SendBirdUser> localVarResponse = BlockUserWithHttpInfo(apiToken, userId, blockUserData);
+             ApiResponse<BlockUserResponse> localVarResponse = BlockUserWithHttpInfo(apiToken, userId, blockUserData);
              return localVarResponse.Data;
         }
 
@@ -2597,8 +2601,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="blockUserData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdUser</returns>
-        public ApiResponse<SendBirdUser> BlockUserWithHttpInfo (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData))
+        /// <returns>ApiResponse of BlockUserResponse</returns>
+        public ApiResponse<BlockUserResponse> BlockUserWithHttpInfo (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2654,9 +2658,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdUser>(localVarStatusCode,
+            return new ApiResponse<BlockUserResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdUser) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdUser)));
+                (BlockUserResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(BlockUserResponse)));
         }
 
         /// <summary>
@@ -2667,10 +2671,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="blockUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdUser</returns>
-        public async System.Threading.Tasks.Task<SendBirdUser> BlockUserAsync (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of BlockUserResponse</returns>
+        public async System.Threading.Tasks.Task<BlockUserResponse> BlockUserAsync (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdUser> localVarResponse = await BlockUserWithHttpInfoAsync(apiToken, userId, blockUserData, cancellationToken);
+             ApiResponse<BlockUserResponse> localVarResponse = await BlockUserWithHttpInfoAsync(apiToken, userId, blockUserData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2683,8 +2687,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="blockUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdUser)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> BlockUserWithHttpInfoAsync (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (BlockUserResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<BlockUserResponse>> BlockUserWithHttpInfoAsync (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2740,9 +2744,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdUser>(localVarStatusCode,
+            return new ApiResponse<BlockUserResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdUser) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdUser)));
+                (BlockUserResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(BlockUserResponse)));
         }
 
         /// <summary>
@@ -3077,10 +3081,11 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
-        /// <returns></returns>
-        public void DeleteUserById (string apiToken, string userId)
+        /// <returns>Object</returns>
+        public Object DeleteUserById (string apiToken, string userId)
         {
-             DeleteUserByIdWithHttpInfo(apiToken, userId);
+             ApiResponse<Object> localVarResponse = DeleteUserByIdWithHttpInfo(apiToken, userId);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -3089,7 +3094,7 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         public ApiResponse<Object> DeleteUserByIdWithHttpInfo (string apiToken, string userId)
         {
             // verify the required parameter 'apiToken' is set
@@ -3114,6 +3119,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -3138,7 +3144,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -3148,10 +3154,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteUserByIdAsync (string apiToken, string userId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> DeleteUserByIdAsync (string apiToken, string userId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await DeleteUserByIdWithHttpInfoAsync(apiToken, userId, cancellationToken);
+             ApiResponse<Object> localVarResponse = await DeleteUserByIdWithHttpInfoAsync(apiToken, userId, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -3162,7 +3169,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteUserByIdWithHttpInfoAsync (string apiToken, string userId, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
@@ -3187,6 +3194,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -3211,7 +3219,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -3221,10 +3229,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="leaveMyGroupChannelsData"> (optional)</param>
-        /// <returns></returns>
-        public void LeaveMyGroupChannels (string apiToken, string userId, LeaveMyGroupChannelsData leaveMyGroupChannelsData = default(LeaveMyGroupChannelsData))
+        /// <returns>Object</returns>
+        public Object LeaveMyGroupChannels (string apiToken, string userId, LeaveMyGroupChannelsData leaveMyGroupChannelsData = default(LeaveMyGroupChannelsData))
         {
-             LeaveMyGroupChannelsWithHttpInfo(apiToken, userId, leaveMyGroupChannelsData);
+             ApiResponse<Object> localVarResponse = LeaveMyGroupChannelsWithHttpInfo(apiToken, userId, leaveMyGroupChannelsData);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -3234,7 +3243,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="leaveMyGroupChannelsData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         public ApiResponse<Object> LeaveMyGroupChannelsWithHttpInfo (string apiToken, string userId, LeaveMyGroupChannelsData leaveMyGroupChannelsData = default(LeaveMyGroupChannelsData))
         {
             // verify the required parameter 'apiToken' is set
@@ -3260,6 +3269,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -3292,7 +3302,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -3303,10 +3313,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="leaveMyGroupChannelsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task LeaveMyGroupChannelsAsync (string apiToken, string userId, LeaveMyGroupChannelsData leaveMyGroupChannelsData = default(LeaveMyGroupChannelsData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> LeaveMyGroupChannelsAsync (string apiToken, string userId, LeaveMyGroupChannelsData leaveMyGroupChannelsData = default(LeaveMyGroupChannelsData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             await LeaveMyGroupChannelsWithHttpInfoAsync(apiToken, userId, leaveMyGroupChannelsData, cancellationToken);
+             ApiResponse<Object> localVarResponse = await LeaveMyGroupChannelsWithHttpInfoAsync(apiToken, userId, leaveMyGroupChannelsData, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -3318,7 +3329,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="leaveMyGroupChannelsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> LeaveMyGroupChannelsWithHttpInfoAsync (string apiToken, string userId, LeaveMyGroupChannelsData leaveMyGroupChannelsData = default(LeaveMyGroupChannelsData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
@@ -3344,6 +3355,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -3376,7 +3388,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -4616,10 +4628,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="markAllMessagesAsReadData"> (optional)</param>
-        /// <returns></returns>
-        public void MarkAllMessagesAsRead (string apiToken, string userId, MarkAllMessagesAsReadData markAllMessagesAsReadData = default(MarkAllMessagesAsReadData))
+        /// <returns>Object</returns>
+        public Object MarkAllMessagesAsRead (string apiToken, string userId, MarkAllMessagesAsReadData markAllMessagesAsReadData = default(MarkAllMessagesAsReadData))
         {
-             MarkAllMessagesAsReadWithHttpInfo(apiToken, userId, markAllMessagesAsReadData);
+             ApiResponse<Object> localVarResponse = MarkAllMessagesAsReadWithHttpInfo(apiToken, userId, markAllMessagesAsReadData);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -4629,7 +4642,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="markAllMessagesAsReadData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         public ApiResponse<Object> MarkAllMessagesAsReadWithHttpInfo (string apiToken, string userId, MarkAllMessagesAsReadData markAllMessagesAsReadData = default(MarkAllMessagesAsReadData))
         {
             // verify the required parameter 'apiToken' is set
@@ -4655,6 +4668,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -4687,7 +4701,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -4698,10 +4712,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="markAllMessagesAsReadData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task MarkAllMessagesAsReadAsync (string apiToken, string userId, MarkAllMessagesAsReadData markAllMessagesAsReadData = default(MarkAllMessagesAsReadData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> MarkAllMessagesAsReadAsync (string apiToken, string userId, MarkAllMessagesAsReadData markAllMessagesAsReadData = default(MarkAllMessagesAsReadData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             await MarkAllMessagesAsReadWithHttpInfoAsync(apiToken, userId, markAllMessagesAsReadData, cancellationToken);
+             ApiResponse<Object> localVarResponse = await MarkAllMessagesAsReadWithHttpInfoAsync(apiToken, userId, markAllMessagesAsReadData, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -4713,7 +4728,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="markAllMessagesAsReadData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> MarkAllMessagesAsReadWithHttpInfoAsync (string apiToken, string userId, MarkAllMessagesAsReadData markAllMessagesAsReadData = default(MarkAllMessagesAsReadData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
@@ -4739,6 +4754,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -4771,7 +4787,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -4781,10 +4797,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="muteInChannelsWithCustomChannelTypesData"> (optional)</param>
-        /// <returns></returns>
-        public void MuteInChannelsWithCustomChannelTypes (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData))
+        /// <returns>Object</returns>
+        public Object MuteInChannelsWithCustomChannelTypes (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData))
         {
-             MuteInChannelsWithCustomChannelTypesWithHttpInfo(apiToken, userId, muteInChannelsWithCustomChannelTypesData);
+             ApiResponse<Object> localVarResponse = MuteInChannelsWithCustomChannelTypesWithHttpInfo(apiToken, userId, muteInChannelsWithCustomChannelTypesData);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -4794,7 +4811,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="muteInChannelsWithCustomChannelTypesData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         public ApiResponse<Object> MuteInChannelsWithCustomChannelTypesWithHttpInfo (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData))
         {
             // verify the required parameter 'apiToken' is set
@@ -4820,6 +4837,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -4852,7 +4870,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -4863,10 +4881,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="muteInChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task MuteInChannelsWithCustomChannelTypesAsync (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> MuteInChannelsWithCustomChannelTypesAsync (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             await MuteInChannelsWithCustomChannelTypesWithHttpInfoAsync(apiToken, userId, muteInChannelsWithCustomChannelTypesData, cancellationToken);
+             ApiResponse<Object> localVarResponse = await MuteInChannelsWithCustomChannelTypesWithHttpInfoAsync(apiToken, userId, muteInChannelsWithCustomChannelTypesData, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -4878,7 +4897,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="muteInChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> MuteInChannelsWithCustomChannelTypesWithHttpInfoAsync (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
@@ -4904,6 +4923,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -4936,7 +4956,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -4946,10 +4966,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="registerAsOperatorToChannelsWithCustomChannelTypesData"> (optional)</param>
-        /// <returns></returns>
-        public void RegisterAsOperatorToChannelsWithCustomChannelTypes (string apiToken, string userId, RegisterAsOperatorToChannelsWithCustomChannelTypesData registerAsOperatorToChannelsWithCustomChannelTypesData = default(RegisterAsOperatorToChannelsWithCustomChannelTypesData))
+        /// <returns>Object</returns>
+        public Object RegisterAsOperatorToChannelsWithCustomChannelTypes (string apiToken, string userId, RegisterAsOperatorToChannelsWithCustomChannelTypesData registerAsOperatorToChannelsWithCustomChannelTypesData = default(RegisterAsOperatorToChannelsWithCustomChannelTypesData))
         {
-             RegisterAsOperatorToChannelsWithCustomChannelTypesWithHttpInfo(apiToken, userId, registerAsOperatorToChannelsWithCustomChannelTypesData);
+             ApiResponse<Object> localVarResponse = RegisterAsOperatorToChannelsWithCustomChannelTypesWithHttpInfo(apiToken, userId, registerAsOperatorToChannelsWithCustomChannelTypesData);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -4959,7 +4980,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="registerAsOperatorToChannelsWithCustomChannelTypesData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         public ApiResponse<Object> RegisterAsOperatorToChannelsWithCustomChannelTypesWithHttpInfo (string apiToken, string userId, RegisterAsOperatorToChannelsWithCustomChannelTypesData registerAsOperatorToChannelsWithCustomChannelTypesData = default(RegisterAsOperatorToChannelsWithCustomChannelTypesData))
         {
             // verify the required parameter 'apiToken' is set
@@ -4985,6 +5006,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -5017,7 +5039,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -5028,10 +5050,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="registerAsOperatorToChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task RegisterAsOperatorToChannelsWithCustomChannelTypesAsync (string apiToken, string userId, RegisterAsOperatorToChannelsWithCustomChannelTypesData registerAsOperatorToChannelsWithCustomChannelTypesData = default(RegisterAsOperatorToChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> RegisterAsOperatorToChannelsWithCustomChannelTypesAsync (string apiToken, string userId, RegisterAsOperatorToChannelsWithCustomChannelTypesData registerAsOperatorToChannelsWithCustomChannelTypesData = default(RegisterAsOperatorToChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             await RegisterAsOperatorToChannelsWithCustomChannelTypesWithHttpInfoAsync(apiToken, userId, registerAsOperatorToChannelsWithCustomChannelTypesData, cancellationToken);
+             ApiResponse<Object> localVarResponse = await RegisterAsOperatorToChannelsWithCustomChannelTypesWithHttpInfoAsync(apiToken, userId, registerAsOperatorToChannelsWithCustomChannelTypesData, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -5043,7 +5066,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="registerAsOperatorToChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> RegisterAsOperatorToChannelsWithCustomChannelTypesWithHttpInfoAsync (string apiToken, string userId, RegisterAsOperatorToChannelsWithCustomChannelTypesData registerAsOperatorToChannelsWithCustomChannelTypesData = default(RegisterAsOperatorToChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
@@ -5069,6 +5092,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -5101,7 +5125,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -5587,10 +5611,11 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
-        /// <returns></returns>
-        public void ResetPushPreferences (string apiToken, string userId)
+        /// <returns>ResetPushPreferencesResponse</returns>
+        public ResetPushPreferencesResponse ResetPushPreferences (string apiToken, string userId)
         {
-             ResetPushPreferencesWithHttpInfo(apiToken, userId);
+             ApiResponse<ResetPushPreferencesResponse> localVarResponse = ResetPushPreferencesWithHttpInfo(apiToken, userId);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -5599,8 +5624,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> ResetPushPreferencesWithHttpInfo (string apiToken, string userId)
+        /// <returns>ApiResponse of ResetPushPreferencesResponse</returns>
+        public ApiResponse<ResetPushPreferencesResponse> ResetPushPreferencesWithHttpInfo (string apiToken, string userId)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5624,6 +5649,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -5646,9 +5672,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<ResetPushPreferencesResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (ResetPushPreferencesResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ResetPushPreferencesResponse)));
         }
 
         /// <summary>
@@ -5658,10 +5684,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task ResetPushPreferencesAsync (string apiToken, string userId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ResetPushPreferencesResponse</returns>
+        public async System.Threading.Tasks.Task<ResetPushPreferencesResponse> ResetPushPreferencesAsync (string apiToken, string userId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await ResetPushPreferencesWithHttpInfoAsync(apiToken, userId, cancellationToken);
+             ApiResponse<ResetPushPreferencesResponse> localVarResponse = await ResetPushPreferencesWithHttpInfoAsync(apiToken, userId, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -5672,8 +5699,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> ResetPushPreferencesWithHttpInfoAsync (string apiToken, string userId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ResetPushPreferencesResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ResetPushPreferencesResponse>> ResetPushPreferencesWithHttpInfoAsync (string apiToken, string userId, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5697,6 +5724,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -5719,9 +5747,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<ResetPushPreferencesResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (ResetPushPreferencesResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ResetPushPreferencesResponse)));
         }
 
         /// <summary>
@@ -5731,10 +5759,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="targetId"></param>
-        /// <returns></returns>
-        public void UnblockUserById (string apiToken, string userId, string targetId)
+        /// <returns>Object</returns>
+        public Object UnblockUserById (string apiToken, string userId, string targetId)
         {
-             UnblockUserByIdWithHttpInfo(apiToken, userId, targetId);
+             ApiResponse<Object> localVarResponse = UnblockUserByIdWithHttpInfo(apiToken, userId, targetId);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -5744,7 +5773,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="userId"></param>
         /// <param name="targetId"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         public ApiResponse<Object> UnblockUserByIdWithHttpInfo (string apiToken, string userId, string targetId)
         {
             // verify the required parameter 'apiToken' is set
@@ -5772,6 +5801,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -5797,7 +5827,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -5808,10 +5838,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="targetId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task UnblockUserByIdAsync (string apiToken, string userId, string targetId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> UnblockUserByIdAsync (string apiToken, string userId, string targetId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await UnblockUserByIdWithHttpInfoAsync(apiToken, userId, targetId, cancellationToken);
+             ApiResponse<Object> localVarResponse = await UnblockUserByIdWithHttpInfoAsync(apiToken, userId, targetId, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -5823,7 +5854,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="targetId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> UnblockUserByIdWithHttpInfoAsync (string apiToken, string userId, string targetId, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
@@ -5851,6 +5882,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -5876,7 +5908,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -8162,10 +8194,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
-        /// <returns>ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse</returns>
-        public ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse ViewWhoOwnsRegistrationOrDeviceTokenByToken (string apiToken, string tokenType, string token)
+        /// <returns>List&lt;Object&gt;</returns>
+        public List<Object> ViewWhoOwnsRegistrationOrDeviceTokenByToken (string apiToken, string tokenType, string token)
         {
-             ApiResponse<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse> localVarResponse = ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo(apiToken, tokenType, token);
+             ApiResponse<List<Object>> localVarResponse = ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo(apiToken, tokenType, token);
              return localVarResponse.Data;
         }
 
@@ -8176,8 +8208,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
-        /// <returns>ApiResponse of ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse</returns>
-        public ApiResponse<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo (string apiToken, string tokenType, string token)
+        /// <returns>ApiResponse of List&lt;Object&gt;</returns>
+        public ApiResponse<List<Object>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo (string apiToken, string tokenType, string token)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -8228,9 +8260,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse>(localVarStatusCode,
+            return new ApiResponse<List<Object>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse)));
+                (List<Object>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<Object>)));
         }
 
         /// <summary>
@@ -8241,10 +8273,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse</returns>
-        public async System.Threading.Tasks.Task<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse> ViewWhoOwnsRegistrationOrDeviceTokenByTokenAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of List&lt;Object&gt;</returns>
+        public async System.Threading.Tasks.Task<List<Object>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse> localVarResponse = await ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync(apiToken, tokenType, token, cancellationToken);
+             ApiResponse<List<Object>> localVarResponse = await ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync(apiToken, tokenType, token, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -8257,8 +8289,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (List&lt;Object&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<Object>>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -8309,9 +8341,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse>(localVarStatusCode,
+            return new ApiResponse<List<Object>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponse)));
+                (List<Object>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<Object>)));
         }
 
     }

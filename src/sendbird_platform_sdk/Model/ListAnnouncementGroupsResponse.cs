@@ -33,19 +33,19 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ListAnnouncementGroupsResponse" /> class.
         /// </summary>
-        /// <param name="announcementGroup">announcementGroup.</param>
+        /// <param name="announcementGroups">announcementGroups.</param>
         /// <param name="next">next.</param>
-        public ListAnnouncementGroupsResponse(List<string> announcementGroup = default(List<string>), string next = default(string))
+        public ListAnnouncementGroupsResponse(List<string> announcementGroups = default(List<string>), string next = default(string))
         {
-            this.AnnouncementGroup = announcementGroup;
+            this.AnnouncementGroups = announcementGroups;
             this.Next = next;
         }
 
         /// <summary>
-        /// Gets or Sets AnnouncementGroup
+        /// Gets or Sets AnnouncementGroups
         /// </summary>
-        [DataMember(Name="announcement_group", EmitDefaultValue=false)]
-        public List<string> AnnouncementGroup { get; set; }
+        [DataMember(Name="announcement_groups", EmitDefaultValue=false)]
+        public List<string> AnnouncementGroups { get; set; }
 
         /// <summary>
         /// Gets or Sets Next
@@ -61,7 +61,7 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class ListAnnouncementGroupsResponse {\n");
-            sb.Append("  AnnouncementGroup: ").Append(AnnouncementGroup).Append("\n");
+            sb.Append("  AnnouncementGroups: ").Append(AnnouncementGroups).Append("\n");
             sb.Append("  Next: ").Append(Next).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -98,10 +98,10 @@ namespace sendbird_platform_sdk.Model
 
             return 
                 (
-                    this.AnnouncementGroup == input.AnnouncementGroup ||
-                    this.AnnouncementGroup != null &&
-                    input.AnnouncementGroup != null &&
-                    this.AnnouncementGroup.SequenceEqual(input.AnnouncementGroup)
+                    this.AnnouncementGroups == input.AnnouncementGroups ||
+                    this.AnnouncementGroups != null &&
+                    input.AnnouncementGroups != null &&
+                    this.AnnouncementGroups.SequenceEqual(input.AnnouncementGroups)
                 ) && 
                 (
                     this.Next == input.Next ||
@@ -119,8 +119,8 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.AnnouncementGroup != null)
-                    hashCode = hashCode * 59 + this.AnnouncementGroup.GetHashCode();
+                if (this.AnnouncementGroups != null)
+                    hashCode = hashCode * 59 + this.AnnouncementGroups.GetHashCode();
                 if (this.Next != null)
                     hashCode = hashCode * 59 + this.Next.GetHashCode();
                 return hashCode;

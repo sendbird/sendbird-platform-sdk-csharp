@@ -34,15 +34,15 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="ListBannedChannelsResponseBannedChannels" /> class.
         /// </summary>
         /// <param name="startAt">startAt.</param>
-        /// <param name="endAt">endAt.</param>
         /// <param name="description">description.</param>
         /// <param name="channel">channel.</param>
-        public ListBannedChannelsResponseBannedChannels(decimal startAt = default(decimal), decimal endAt = default(decimal), string description = default(string), SendBirdChannelResponse channel = default(SendBirdChannelResponse))
+        /// <param name="endAt">endAt.</param>
+        public ListBannedChannelsResponseBannedChannels(decimal startAt = default(decimal), string description = default(string), SendBirdChannelResponse channel = default(SendBirdChannelResponse), decimal endAt = default(decimal))
         {
             this.StartAt = startAt;
-            this.EndAt = endAt;
             this.Description = description;
             this.Channel = channel;
+            this.EndAt = endAt;
         }
 
         /// <summary>
@@ -50,12 +50,6 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         [DataMember(Name="start_at", EmitDefaultValue=false)]
         public decimal StartAt { get; set; }
-
-        /// <summary>
-        /// Gets or Sets EndAt
-        /// </summary>
-        [DataMember(Name="end_at", EmitDefaultValue=false)]
-        public decimal EndAt { get; set; }
 
         /// <summary>
         /// Gets or Sets Description
@@ -70,6 +64,12 @@ namespace sendbird_platform_sdk.Model
         public SendBirdChannelResponse Channel { get; set; }
 
         /// <summary>
+        /// Gets or Sets EndAt
+        /// </summary>
+        [DataMember(Name="end_at", EmitDefaultValue=false)]
+        public decimal EndAt { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -78,9 +78,9 @@ namespace sendbird_platform_sdk.Model
             var sb = new StringBuilder();
             sb.Append("class ListBannedChannelsResponseBannedChannels {\n");
             sb.Append("  StartAt: ").Append(StartAt).Append("\n");
-            sb.Append("  EndAt: ").Append(EndAt).Append("\n");
             sb.Append("  Description: ").Append(Description).Append("\n");
             sb.Append("  Channel: ").Append(Channel).Append("\n");
+            sb.Append("  EndAt: ").Append(EndAt).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -121,11 +121,6 @@ namespace sendbird_platform_sdk.Model
                     this.StartAt.Equals(input.StartAt))
                 ) && 
                 (
-                    this.EndAt == input.EndAt ||
-                    (this.EndAt != null &&
-                    this.EndAt.Equals(input.EndAt))
-                ) && 
-                (
                     this.Description == input.Description ||
                     (this.Description != null &&
                     this.Description.Equals(input.Description))
@@ -134,6 +129,11 @@ namespace sendbird_platform_sdk.Model
                     this.Channel == input.Channel ||
                     (this.Channel != null &&
                     this.Channel.Equals(input.Channel))
+                ) && 
+                (
+                    this.EndAt == input.EndAt ||
+                    (this.EndAt != null &&
+                    this.EndAt.Equals(input.EndAt))
                 );
         }
 
@@ -148,12 +148,12 @@ namespace sendbird_platform_sdk.Model
                 int hashCode = 41;
                 if (this.StartAt != null)
                     hashCode = hashCode * 59 + this.StartAt.GetHashCode();
-                if (this.EndAt != null)
-                    hashCode = hashCode * 59 + this.EndAt.GetHashCode();
                 if (this.Description != null)
                     hashCode = hashCode * 59 + this.Description.GetHashCode();
                 if (this.Channel != null)
                     hashCode = hashCode * 59 + this.Channel.GetHashCode();
+                if (this.EndAt != null)
+                    hashCode = hashCode * 59 + this.EndAt.GetHashCode();
                 return hashCode;
             }
         }

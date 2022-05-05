@@ -33,23 +33,29 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="OcBanUserResponse" /> class.
         /// </summary>
-        /// <param name="user">user.</param>
         /// <param name="startAt">startAt.</param>
         /// <param name="endAt">endAt.</param>
         /// <param name="description">description.</param>
-        public OcBanUserResponse(SendBirdUser user = default(SendBirdUser), decimal startAt = default(decimal), decimal endAt = default(decimal), string description = default(string))
+        /// <param name="userId">userId.</param>
+        /// <param name="user">user.</param>
+        /// <param name="nextUrl">nextUrl.</param>
+        /// <param name="requireAuthForProfileImage">requireAuthForProfileImage.</param>
+        /// <param name="nickname">nickname.</param>
+        /// <param name="profileUrl">profileUrl.</param>
+        /// <param name="metadata">metadata.</param>
+        public OcBanUserResponse(decimal startAt = default(decimal), decimal endAt = default(decimal), string description = default(string), string userId = default(string), SendBirdUser user = default(SendBirdUser), string nextUrl = default(string), Boolean requireAuthForProfileImage = default(Boolean), string nickname = default(string), string profileUrl = default(string), InlineResponse200 metadata = default(InlineResponse200))
         {
-            this.User = user;
             this.StartAt = startAt;
             this.EndAt = endAt;
             this.Description = description;
+            this.UserId = userId;
+            this.User = user;
+            this.NextUrl = nextUrl;
+            this.RequireAuthForProfileImage = requireAuthForProfileImage;
+            this.Nickname = nickname;
+            this.ProfileUrl = profileUrl;
+            this.Metadata = metadata;
         }
-
-        /// <summary>
-        /// Gets or Sets User
-        /// </summary>
-        [DataMember(Name="user", EmitDefaultValue=false)]
-        public SendBirdUser User { get; set; }
 
         /// <summary>
         /// Gets or Sets StartAt
@@ -70,6 +76,48 @@ namespace sendbird_platform_sdk.Model
         public string Description { get; set; }
 
         /// <summary>
+        /// Gets or Sets UserId
+        /// </summary>
+        [DataMember(Name="user_id", EmitDefaultValue=false)]
+        public string UserId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets User
+        /// </summary>
+        [DataMember(Name="user", EmitDefaultValue=false)]
+        public SendBirdUser User { get; set; }
+
+        /// <summary>
+        /// Gets or Sets NextUrl
+        /// </summary>
+        [DataMember(Name="next_url", EmitDefaultValue=false)]
+        public string NextUrl { get; set; }
+
+        /// <summary>
+        /// Gets or Sets RequireAuthForProfileImage
+        /// </summary>
+        [DataMember(Name="require_auth_for_profile_image", EmitDefaultValue=false)]
+        public Boolean RequireAuthForProfileImage { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Nickname
+        /// </summary>
+        [DataMember(Name="nickname", EmitDefaultValue=false)]
+        public string Nickname { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ProfileUrl
+        /// </summary>
+        [DataMember(Name="profile_url", EmitDefaultValue=false)]
+        public string ProfileUrl { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Metadata
+        /// </summary>
+        [DataMember(Name="metadata", EmitDefaultValue=false)]
+        public InlineResponse200 Metadata { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -77,10 +125,16 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class OcBanUserResponse {\n");
-            sb.Append("  User: ").Append(User).Append("\n");
             sb.Append("  StartAt: ").Append(StartAt).Append("\n");
             sb.Append("  EndAt: ").Append(EndAt).Append("\n");
             sb.Append("  Description: ").Append(Description).Append("\n");
+            sb.Append("  UserId: ").Append(UserId).Append("\n");
+            sb.Append("  User: ").Append(User).Append("\n");
+            sb.Append("  NextUrl: ").Append(NextUrl).Append("\n");
+            sb.Append("  RequireAuthForProfileImage: ").Append(RequireAuthForProfileImage).Append("\n");
+            sb.Append("  Nickname: ").Append(Nickname).Append("\n");
+            sb.Append("  ProfileUrl: ").Append(ProfileUrl).Append("\n");
+            sb.Append("  Metadata: ").Append(Metadata).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -116,11 +170,6 @@ namespace sendbird_platform_sdk.Model
 
             return 
                 (
-                    this.User == input.User ||
-                    (this.User != null &&
-                    this.User.Equals(input.User))
-                ) && 
-                (
                     this.StartAt == input.StartAt ||
                     (this.StartAt != null &&
                     this.StartAt.Equals(input.StartAt))
@@ -134,6 +183,41 @@ namespace sendbird_platform_sdk.Model
                     this.Description == input.Description ||
                     (this.Description != null &&
                     this.Description.Equals(input.Description))
+                ) && 
+                (
+                    this.UserId == input.UserId ||
+                    (this.UserId != null &&
+                    this.UserId.Equals(input.UserId))
+                ) && 
+                (
+                    this.User == input.User ||
+                    (this.User != null &&
+                    this.User.Equals(input.User))
+                ) && 
+                (
+                    this.NextUrl == input.NextUrl ||
+                    (this.NextUrl != null &&
+                    this.NextUrl.Equals(input.NextUrl))
+                ) && 
+                (
+                    this.RequireAuthForProfileImage == input.RequireAuthForProfileImage ||
+                    (this.RequireAuthForProfileImage != null &&
+                    this.RequireAuthForProfileImage.Equals(input.RequireAuthForProfileImage))
+                ) && 
+                (
+                    this.Nickname == input.Nickname ||
+                    (this.Nickname != null &&
+                    this.Nickname.Equals(input.Nickname))
+                ) && 
+                (
+                    this.ProfileUrl == input.ProfileUrl ||
+                    (this.ProfileUrl != null &&
+                    this.ProfileUrl.Equals(input.ProfileUrl))
+                ) && 
+                (
+                    this.Metadata == input.Metadata ||
+                    (this.Metadata != null &&
+                    this.Metadata.Equals(input.Metadata))
                 );
         }
 
@@ -146,14 +230,26 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.User != null)
-                    hashCode = hashCode * 59 + this.User.GetHashCode();
                 if (this.StartAt != null)
                     hashCode = hashCode * 59 + this.StartAt.GetHashCode();
                 if (this.EndAt != null)
                     hashCode = hashCode * 59 + this.EndAt.GetHashCode();
                 if (this.Description != null)
                     hashCode = hashCode * 59 + this.Description.GetHashCode();
+                if (this.UserId != null)
+                    hashCode = hashCode * 59 + this.UserId.GetHashCode();
+                if (this.User != null)
+                    hashCode = hashCode * 59 + this.User.GetHashCode();
+                if (this.NextUrl != null)
+                    hashCode = hashCode * 59 + this.NextUrl.GetHashCode();
+                if (this.RequireAuthForProfileImage != null)
+                    hashCode = hashCode * 59 + this.RequireAuthForProfileImage.GetHashCode();
+                if (this.Nickname != null)
+                    hashCode = hashCode * 59 + this.Nickname.GetHashCode();
+                if (this.ProfileUrl != null)
+                    hashCode = hashCode * 59 + this.ProfileUrl.GetHashCode();
+                if (this.Metadata != null)
+                    hashCode = hashCode * 59 + this.Metadata.GetHashCode();
                 return hashCode;
             }
         }

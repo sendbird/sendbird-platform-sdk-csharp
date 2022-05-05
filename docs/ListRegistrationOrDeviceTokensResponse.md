@@ -5,6 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Token** | **List&lt;string&gt;** |  | [optional] 
 **Tokens** | **List&lt;string&gt;** |  | [optional] 
 **Type** | **string** |  | [optional] 
 **User** | [**SendBirdUser**](SendBirdUser.md) |  | [optional] 

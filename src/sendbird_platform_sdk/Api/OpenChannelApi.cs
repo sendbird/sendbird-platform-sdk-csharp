@@ -109,8 +109,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <returns></returns>
-        void OcDeleteChannelByUrl (string apiToken, string channelUrl);
+        /// <returns>InlineResponse200</returns>
+        InlineResponse200 OcDeleteChannelByUrl (string apiToken, string channelUrl);
 
         /// <summary>
         /// Delete a channel
@@ -121,8 +121,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> OcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl);
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        ApiResponse<InlineResponse200> OcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl);
         /// <summary>
         /// Freeze a channel
         /// </summary>
@@ -328,8 +328,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
-        /// <returns></returns>
-        void OcRegisterOperators (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData));
+        /// <returns>InlineResponse200</returns>
+        InlineResponse200 OcRegisterOperators (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData));
 
         /// <summary>
         /// Register operators
@@ -341,8 +341,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> OcRegisterOperatorsWithHttpInfo (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData));
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        ApiResponse<InlineResponse200> OcRegisterOperatorsWithHttpInfo (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData));
         /// <summary>
         /// Unban a user
         /// </summary>
@@ -353,8 +353,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns></returns>
-        void OcUnbanUserById (string apiToken, string channelUrl, string bannedUserId);
+        /// <returns>InlineResponse200</returns>
+        InlineResponse200 OcUnbanUserById (string apiToken, string channelUrl, string bannedUserId);
 
         /// <summary>
         /// Unban a user
@@ -366,8 +366,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> OcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId);
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        ApiResponse<InlineResponse200> OcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId);
         /// <summary>
         /// Unmute a user
         /// </summary>
@@ -378,8 +378,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <returns></returns>
-        void OcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId);
+        /// <returns>InlineResponse200</returns>
+        InlineResponse200 OcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId);
 
         /// <summary>
         /// Unmute a user
@@ -391,8 +391,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> OcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId);
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        ApiResponse<InlineResponse200> OcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId);
         /// <summary>
         /// Update a ban
         /// </summary>
@@ -404,8 +404,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
-        /// <returns>SendBirdUser</returns>
-        SendBirdUser OcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData));
+        /// <returns>OcUpdateBanByIdResponse</returns>
+        OcUpdateBanByIdResponse OcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData));
 
         /// <summary>
         /// Update a ban
@@ -418,8 +418,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdUser</returns>
-        ApiResponse<SendBirdUser> OcUpdateBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData));
+        /// <returns>ApiResponse of OcUpdateBanByIdResponse</returns>
+        ApiResponse<OcUpdateBanByIdResponse> OcUpdateBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData));
         /// <summary>
         /// Update a channel
         /// </summary>
@@ -455,8 +455,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>SendBirdUser</returns>
-        SendBirdUser OcViewBanById (string apiToken, string channelUrl, string bannedUserId);
+        /// <returns>OcViewBanByIdResponse</returns>
+        OcViewBanByIdResponse OcViewBanById (string apiToken, string channelUrl, string bannedUserId);
 
         /// <summary>
         /// View a ban
@@ -468,8 +468,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>ApiResponse of SendBirdUser</returns>
-        ApiResponse<SendBirdUser> OcViewBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId);
+        /// <returns>ApiResponse of OcViewBanByIdResponse</returns>
+        ApiResponse<OcViewBanByIdResponse> OcViewBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId);
         /// <summary>
         /// View a channel
         /// </summary>
@@ -611,8 +611,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task OcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of InlineResponse200</returns>
+        System.Threading.Tasks.Task<InlineResponse200> OcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Delete a channel
@@ -624,8 +624,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> OcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> OcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Freeze a channel
         /// </summary>
@@ -846,8 +846,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task OcRegisterOperatorsAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of InlineResponse200</returns>
+        System.Threading.Tasks.Task<InlineResponse200> OcRegisterOperatorsAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Register operators
@@ -860,8 +860,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> OcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> OcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Unban a user
         /// </summary>
@@ -873,8 +873,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task OcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of InlineResponse200</returns>
+        System.Threading.Tasks.Task<InlineResponse200> OcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Unban a user
@@ -887,8 +887,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> OcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> OcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Unmute a user
         /// </summary>
@@ -900,8 +900,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task OcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of InlineResponse200</returns>
+        System.Threading.Tasks.Task<InlineResponse200> OcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Unmute a user
@@ -914,8 +914,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> OcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> OcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update a ban
         /// </summary>
@@ -928,8 +928,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdUser</returns>
-        System.Threading.Tasks.Task<SendBirdUser> OcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcUpdateBanByIdResponse</returns>
+        System.Threading.Tasks.Task<OcUpdateBanByIdResponse> OcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update a ban
@@ -943,8 +943,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdUser)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> OcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcUpdateBanByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcUpdateBanByIdResponse>> OcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update a channel
         /// </summary>
@@ -983,8 +983,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdUser</returns>
-        System.Threading.Tasks.Task<SendBirdUser> OcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcViewBanByIdResponse</returns>
+        System.Threading.Tasks.Task<OcViewBanByIdResponse> OcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a ban
@@ -997,8 +997,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdUser)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> OcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcViewBanByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcViewBanByIdResponse>> OcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a channel
         /// </summary>
@@ -1655,10 +1655,11 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <returns></returns>
-        public void OcDeleteChannelByUrl (string apiToken, string channelUrl)
+        /// <returns>InlineResponse200</returns>
+        public InlineResponse200 OcDeleteChannelByUrl (string apiToken, string channelUrl)
         {
-             OcDeleteChannelByUrlWithHttpInfo(apiToken, channelUrl);
+             ApiResponse<InlineResponse200> localVarResponse = OcDeleteChannelByUrlWithHttpInfo(apiToken, channelUrl);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1667,8 +1668,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> OcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl)
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        public ApiResponse<InlineResponse200> OcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1692,6 +1693,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -1714,9 +1716,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -1726,10 +1728,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task OcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of InlineResponse200</returns>
+        public async System.Threading.Tasks.Task<InlineResponse200> OcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await OcDeleteChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, cancellationToken);
+             ApiResponse<InlineResponse200> localVarResponse = await OcDeleteChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -1740,8 +1743,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> OcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> OcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1765,6 +1768,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -1787,9 +1791,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -2956,10 +2960,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
-        /// <returns></returns>
-        public void OcRegisterOperators (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData))
+        /// <returns>InlineResponse200</returns>
+        public InlineResponse200 OcRegisterOperators (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData))
         {
-             OcRegisterOperatorsWithHttpInfo(apiToken, channelUrl, ocRegisterOperatorsData);
+             ApiResponse<InlineResponse200> localVarResponse = OcRegisterOperatorsWithHttpInfo(apiToken, channelUrl, ocRegisterOperatorsData);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -2969,8 +2974,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> OcRegisterOperatorsWithHttpInfo (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData))
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        public ApiResponse<InlineResponse200> OcRegisterOperatorsWithHttpInfo (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2995,6 +3000,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -3025,9 +3031,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -3038,10 +3044,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task OcRegisterOperatorsAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of InlineResponse200</returns>
+        public async System.Threading.Tasks.Task<InlineResponse200> OcRegisterOperatorsAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             await OcRegisterOperatorsWithHttpInfoAsync(apiToken, channelUrl, ocRegisterOperatorsData, cancellationToken);
+             ApiResponse<InlineResponse200> localVarResponse = await OcRegisterOperatorsWithHttpInfoAsync(apiToken, channelUrl, ocRegisterOperatorsData, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -3053,8 +3060,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> OcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> OcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3079,6 +3086,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -3109,9 +3117,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -3121,10 +3129,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns></returns>
-        public void OcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
+        /// <returns>InlineResponse200</returns>
+        public InlineResponse200 OcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
         {
-             OcUnbanUserByIdWithHttpInfo(apiToken, channelUrl, bannedUserId);
+             ApiResponse<InlineResponse200> localVarResponse = OcUnbanUserByIdWithHttpInfo(apiToken, channelUrl, bannedUserId);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -3134,8 +3143,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> OcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId)
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        public ApiResponse<InlineResponse200> OcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3162,6 +3171,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -3185,9 +3195,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -3198,10 +3208,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task OcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of InlineResponse200</returns>
+        public async System.Threading.Tasks.Task<InlineResponse200> OcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await OcUnbanUserByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
+             ApiResponse<InlineResponse200> localVarResponse = await OcUnbanUserByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -3213,8 +3224,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> OcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> OcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3241,6 +3252,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -3264,9 +3276,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -3276,10 +3288,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <returns></returns>
-        public void OcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
+        /// <returns>InlineResponse200</returns>
+        public InlineResponse200 OcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
         {
-             OcUnmuteUserByIdWithHttpInfo(apiToken, channelUrl, mutedUserId);
+             ApiResponse<InlineResponse200> localVarResponse = OcUnmuteUserByIdWithHttpInfo(apiToken, channelUrl, mutedUserId);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -3289,8 +3302,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> OcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId)
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        public ApiResponse<InlineResponse200> OcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3317,6 +3330,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -3340,9 +3354,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -3353,10 +3367,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task OcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of InlineResponse200</returns>
+        public async System.Threading.Tasks.Task<InlineResponse200> OcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await OcUnmuteUserByIdWithHttpInfoAsync(apiToken, channelUrl, mutedUserId, cancellationToken);
+             ApiResponse<InlineResponse200> localVarResponse = await OcUnmuteUserByIdWithHttpInfoAsync(apiToken, channelUrl, mutedUserId, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -3368,8 +3383,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> OcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> OcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3396,6 +3411,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -3419,9 +3435,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
         /// <summary>
@@ -3432,10 +3448,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
-        /// <returns>SendBirdUser</returns>
-        public SendBirdUser OcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData))
+        /// <returns>OcUpdateBanByIdResponse</returns>
+        public OcUpdateBanByIdResponse OcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData))
         {
-             ApiResponse<SendBirdUser> localVarResponse = OcUpdateBanByIdWithHttpInfo(apiToken, channelUrl, bannedUserId, ocUpdateBanByIdData);
+             ApiResponse<OcUpdateBanByIdResponse> localVarResponse = OcUpdateBanByIdWithHttpInfo(apiToken, channelUrl, bannedUserId, ocUpdateBanByIdData);
              return localVarResponse.Data;
         }
 
@@ -3447,8 +3463,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdUser</returns>
-        public ApiResponse<SendBirdUser> OcUpdateBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData))
+        /// <returns>ApiResponse of OcUpdateBanByIdResponse</returns>
+        public ApiResponse<OcUpdateBanByIdResponse> OcUpdateBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3508,9 +3524,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdUser>(localVarStatusCode,
+            return new ApiResponse<OcUpdateBanByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdUser) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdUser)));
+                (OcUpdateBanByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcUpdateBanByIdResponse)));
         }
 
         /// <summary>
@@ -3522,10 +3538,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdUser</returns>
-        public async System.Threading.Tasks.Task<SendBirdUser> OcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcUpdateBanByIdResponse</returns>
+        public async System.Threading.Tasks.Task<OcUpdateBanByIdResponse> OcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdUser> localVarResponse = await OcUpdateBanByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, ocUpdateBanByIdData, cancellationToken);
+             ApiResponse<OcUpdateBanByIdResponse> localVarResponse = await OcUpdateBanByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, ocUpdateBanByIdData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3539,8 +3555,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdUser)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> OcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcUpdateBanByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcUpdateBanByIdResponse>> OcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3600,9 +3616,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdUser>(localVarStatusCode,
+            return new ApiResponse<OcUpdateBanByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdUser) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdUser)));
+                (OcUpdateBanByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcUpdateBanByIdResponse)));
         }
 
         /// <summary>
@@ -3781,10 +3797,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>SendBirdUser</returns>
-        public SendBirdUser OcViewBanById (string apiToken, string channelUrl, string bannedUserId)
+        /// <returns>OcViewBanByIdResponse</returns>
+        public OcViewBanByIdResponse OcViewBanById (string apiToken, string channelUrl, string bannedUserId)
         {
-             ApiResponse<SendBirdUser> localVarResponse = OcViewBanByIdWithHttpInfo(apiToken, channelUrl, bannedUserId);
+             ApiResponse<OcViewBanByIdResponse> localVarResponse = OcViewBanByIdWithHttpInfo(apiToken, channelUrl, bannedUserId);
              return localVarResponse.Data;
         }
 
@@ -3795,8 +3811,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>ApiResponse of SendBirdUser</returns>
-        public ApiResponse<SendBirdUser> OcViewBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId)
+        /// <returns>ApiResponse of OcViewBanByIdResponse</returns>
+        public ApiResponse<OcViewBanByIdResponse> OcViewBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3847,9 +3863,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdUser>(localVarStatusCode,
+            return new ApiResponse<OcViewBanByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdUser) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdUser)));
+                (OcViewBanByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcViewBanByIdResponse)));
         }
 
         /// <summary>
@@ -3860,10 +3876,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdUser</returns>
-        public async System.Threading.Tasks.Task<SendBirdUser> OcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcViewBanByIdResponse</returns>
+        public async System.Threading.Tasks.Task<OcViewBanByIdResponse> OcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdUser> localVarResponse = await OcViewBanByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
+             ApiResponse<OcViewBanByIdResponse> localVarResponse = await OcViewBanByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3876,8 +3892,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdUser)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> OcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcViewBanByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcViewBanByIdResponse>> OcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3928,9 +3944,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdUser>(localVarStatusCode,
+            return new ApiResponse<OcViewBanByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdUser) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdUser)));
+                (OcViewBanByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcViewBanByIdResponse)));
         }
 
         /// <summary>

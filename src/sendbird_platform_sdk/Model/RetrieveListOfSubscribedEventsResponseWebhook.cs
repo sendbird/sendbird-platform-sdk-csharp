@@ -38,13 +38,15 @@ namespace sendbird_platform_sdk.Model
         /// <param name="includeMembers">includeMembers.</param>
         /// <param name="enabledEvents">enabledEvents.</param>
         /// <param name="allWebhookCategories">allWebhookCategories.</param>
-        public RetrieveListOfSubscribedEventsResponseWebhook(bool enabled = default(bool), string url = default(string), bool includeMembers = default(bool), List<string> enabledEvents = default(List<string>), List<string> allWebhookCategories = default(List<string>))
+        /// <param name="includeUnreadCount">includeUnreadCount.</param>
+        public RetrieveListOfSubscribedEventsResponseWebhook(bool enabled = default(bool), string url = default(string), bool includeMembers = default(bool), List<string> enabledEvents = default(List<string>), List<string> allWebhookCategories = default(List<string>), bool includeUnreadCount = default(bool))
         {
             this.Enabled = enabled;
             this.Url = url;
             this.IncludeMembers = includeMembers;
             this.EnabledEvents = enabledEvents;
             this.AllWebhookCategories = allWebhookCategories;
+            this.IncludeUnreadCount = includeUnreadCount;
         }
 
         /// <summary>
@@ -78,6 +80,12 @@ namespace sendbird_platform_sdk.Model
         public List<string> AllWebhookCategories { get; set; }
 
         /// <summary>
+        /// Gets or Sets IncludeUnreadCount
+        /// </summary>
+        [DataMember(Name="include_unread_count", EmitDefaultValue=false)]
+        public bool IncludeUnreadCount { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -90,6 +98,7 @@ namespace sendbird_platform_sdk.Model
             sb.Append("  IncludeMembers: ").Append(IncludeMembers).Append("\n");
             sb.Append("  EnabledEvents: ").Append(EnabledEvents).Append("\n");
             sb.Append("  AllWebhookCategories: ").Append(AllWebhookCategories).Append("\n");
+            sb.Append("  IncludeUnreadCount: ").Append(IncludeUnreadCount).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -150,6 +159,11 @@ namespace sendbird_platform_sdk.Model
                     this.AllWebhookCategories != null &&
                     input.AllWebhookCategories != null &&
                     this.AllWebhookCategories.SequenceEqual(input.AllWebhookCategories)
+                ) && 
+                (
+                    this.IncludeUnreadCount == input.IncludeUnreadCount ||
+                    (this.IncludeUnreadCount != null &&
+                    this.IncludeUnreadCount.Equals(input.IncludeUnreadCount))
                 );
         }
 
@@ -172,6 +186,8 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.EnabledEvents.GetHashCode();
                 if (this.AllWebhookCategories != null)
                     hashCode = hashCode * 59 + this.AllWebhookCategories.GetHashCode();
+                if (this.IncludeUnreadCount != null)
+                    hashCode = hashCode * 59 + this.IncludeUnreadCount.GetHashCode();
                 return hashCode;
             }
         }

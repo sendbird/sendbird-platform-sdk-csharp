@@ -33,6 +33,9 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdatePushPreferencesResponse" /> class.
         /// </summary>
+        /// <param name="blockPushFromBots">blockPushFromBots.</param>
+        /// <param name="enablePushForReplies">enablePushForReplies.</param>
+        /// <param name="pushBlockedBotIds">pushBlockedBotIds.</param>
         /// <param name="pushTriggerOption">pushTriggerOption.</param>
         /// <param name="doNotDisturb">doNotDisturb.</param>
         /// <param name="startHour">startHour.</param>
@@ -44,8 +47,11 @@ namespace sendbird_platform_sdk.Model
         /// <param name="snoozeEndTs">snoozeEndTs.</param>
         /// <param name="timezone">timezone.</param>
         /// <param name="pushSound">pushSound.</param>
-        public UpdatePushPreferencesResponse(string pushTriggerOption = default(string), bool doNotDisturb = default(bool), decimal startHour = default(decimal), decimal startMin = default(decimal), decimal endHour = default(decimal), decimal endMin = default(decimal), bool snoozeEnabled = default(bool), decimal snoozeStartTs = default(decimal), decimal snoozeEndTs = default(decimal), string timezone = default(string), string pushSound = default(string))
+        public UpdatePushPreferencesResponse(bool blockPushFromBots = default(bool), bool enablePushForReplies = default(bool), List<string> pushBlockedBotIds = default(List<string>), string pushTriggerOption = default(string), bool doNotDisturb = default(bool), decimal startHour = default(decimal), decimal startMin = default(decimal), decimal endHour = default(decimal), decimal endMin = default(decimal), bool snoozeEnabled = default(bool), decimal snoozeStartTs = default(decimal), decimal snoozeEndTs = default(decimal), string timezone = default(string), string pushSound = default(string))
         {
+            this.BlockPushFromBots = blockPushFromBots;
+            this.EnablePushForReplies = enablePushForReplies;
+            this.PushBlockedBotIds = pushBlockedBotIds;
             this.PushTriggerOption = pushTriggerOption;
             this.DoNotDisturb = doNotDisturb;
             this.StartHour = startHour;
@@ -58,6 +64,24 @@ namespace sendbird_platform_sdk.Model
             this.Timezone = timezone;
             this.PushSound = pushSound;
         }
+
+        /// <summary>
+        /// Gets or Sets BlockPushFromBots
+        /// </summary>
+        [DataMember(Name="block_push_from_bots", EmitDefaultValue=false)]
+        public bool BlockPushFromBots { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EnablePushForReplies
+        /// </summary>
+        [DataMember(Name="enable_push_for_replies", EmitDefaultValue=false)]
+        public bool EnablePushForReplies { get; set; }
+
+        /// <summary>
+        /// Gets or Sets PushBlockedBotIds
+        /// </summary>
+        [DataMember(Name="push_blocked_bot_ids", EmitDefaultValue=false)]
+        public List<string> PushBlockedBotIds { get; set; }
 
         /// <summary>
         /// Gets or Sets PushTriggerOption
@@ -133,6 +157,9 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class UpdatePushPreferencesResponse {\n");
+            sb.Append("  BlockPushFromBots: ").Append(BlockPushFromBots).Append("\n");
+            sb.Append("  EnablePushForReplies: ").Append(EnablePushForReplies).Append("\n");
+            sb.Append("  PushBlockedBotIds: ").Append(PushBlockedBotIds).Append("\n");
             sb.Append("  PushTriggerOption: ").Append(PushTriggerOption).Append("\n");
             sb.Append("  DoNotDisturb: ").Append(DoNotDisturb).Append("\n");
             sb.Append("  StartHour: ").Append(StartHour).Append("\n");
@@ -178,6 +205,22 @@ namespace sendbird_platform_sdk.Model
                 return false;
 
             return 
+                (
+                    this.BlockPushFromBots == input.BlockPushFromBots ||
+                    (this.BlockPushFromBots != null &&
+                    this.BlockPushFromBots.Equals(input.BlockPushFromBots))
+                ) && 
+                (
+                    this.EnablePushForReplies == input.EnablePushForReplies ||
+                    (this.EnablePushForReplies != null &&
+                    this.EnablePushForReplies.Equals(input.EnablePushForReplies))
+                ) && 
+                (
+                    this.PushBlockedBotIds == input.PushBlockedBotIds ||
+                    this.PushBlockedBotIds != null &&
+                    input.PushBlockedBotIds != null &&
+                    this.PushBlockedBotIds.SequenceEqual(input.PushBlockedBotIds)
+                ) && 
                 (
                     this.PushTriggerOption == input.PushTriggerOption ||
                     (this.PushTriggerOption != null &&
@@ -244,6 +287,12 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.BlockPushFromBots != null)
+                    hashCode = hashCode * 59 + this.BlockPushFromBots.GetHashCode();
+                if (this.EnablePushForReplies != null)
+                    hashCode = hashCode * 59 + this.EnablePushForReplies.GetHashCode();
+                if (this.PushBlockedBotIds != null)
+                    hashCode = hashCode * 59 + this.PushBlockedBotIds.GetHashCode();
                 if (this.PushTriggerOption != null)
                     hashCode = hashCode * 59 + this.PushTriggerOption.GetHashCode();
                 if (this.DoNotDisturb != null)

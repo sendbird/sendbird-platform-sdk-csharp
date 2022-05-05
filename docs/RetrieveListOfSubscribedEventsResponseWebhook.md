@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **IncludeMembers** | **bool** |  | [optional] 
 **EnabledEvents** | **List&lt;string&gt;** |  | [optional] 
 **AllWebhookCategories** | **List&lt;string&gt;** |  | [optional] 
+**IncludeUnreadCount** | **bool** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

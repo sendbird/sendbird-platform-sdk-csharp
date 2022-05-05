@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="GcViewNumberOfEachMembersUnreadMessagesResponse" /> class.
         /// </summary>
         /// <param name="unread">unread.</param>
-        public GcViewNumberOfEachMembersUnreadMessagesResponse(GcViewNumberOfEachMembersUnreadMessagesResponseUnread unread = default(GcViewNumberOfEachMembersUnreadMessagesResponseUnread))
+        public GcViewNumberOfEachMembersUnreadMessagesResponse(Dictionary<string, decimal> unread = default(Dictionary<string, decimal>))
         {
             this.Unread = unread;
         }
@@ -43,7 +43,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets Unread
         /// </summary>
         [DataMember(Name="unread", EmitDefaultValue=false)]
-        public GcViewNumberOfEachMembersUnreadMessagesResponseUnread Unread { get; set; }
+        public Dictionary<string, decimal> Unread { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -90,8 +90,9 @@ namespace sendbird_platform_sdk.Model
             return 
                 (
                     this.Unread == input.Unread ||
-                    (this.Unread != null &&
-                    this.Unread.Equals(input.Unread))
+                    this.Unread != null &&
+                    input.Unread != null &&
+                    this.Unread.SequenceEqual(input.Unread)
                 );
         }
 

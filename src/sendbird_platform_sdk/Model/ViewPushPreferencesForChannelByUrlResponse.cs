@@ -44,7 +44,8 @@ namespace sendbird_platform_sdk.Model
         /// <param name="snoozeEndTs">snoozeEndTs.</param>
         /// <param name="timezone">timezone.</param>
         /// <param name="pushSound">pushSound.</param>
-        public ViewPushPreferencesForChannelByUrlResponse(string pushTriggerOption = default(string), bool doNotDisturb = default(bool), decimal startHour = default(decimal), decimal startMin = default(decimal), decimal endHour = default(decimal), decimal endMin = default(decimal), bool snoozeEnabled = default(bool), decimal snoozeStartTs = default(decimal), decimal snoozeEndTs = default(decimal), string timezone = default(string), string pushSound = default(string))
+        /// <param name="enable">enable.</param>
+        public ViewPushPreferencesForChannelByUrlResponse(string pushTriggerOption = default(string), bool doNotDisturb = default(bool), decimal startHour = default(decimal), decimal startMin = default(decimal), decimal endHour = default(decimal), decimal endMin = default(decimal), bool snoozeEnabled = default(bool), decimal snoozeStartTs = default(decimal), decimal snoozeEndTs = default(decimal), string timezone = default(string), string pushSound = default(string), bool enable = default(bool))
         {
             this.PushTriggerOption = pushTriggerOption;
             this.DoNotDisturb = doNotDisturb;
@@ -57,6 +58,7 @@ namespace sendbird_platform_sdk.Model
             this.SnoozeEndTs = snoozeEndTs;
             this.Timezone = timezone;
             this.PushSound = pushSound;
+            this.Enable = enable;
         }
 
         /// <summary>
@@ -126,6 +128,12 @@ namespace sendbird_platform_sdk.Model
         public string PushSound { get; set; }
 
         /// <summary>
+        /// Gets or Sets Enable
+        /// </summary>
+        [DataMember(Name="enable", EmitDefaultValue=false)]
+        public bool Enable { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -144,6 +152,7 @@ namespace sendbird_platform_sdk.Model
             sb.Append("  SnoozeEndTs: ").Append(SnoozeEndTs).Append("\n");
             sb.Append("  Timezone: ").Append(Timezone).Append("\n");
             sb.Append("  PushSound: ").Append(PushSound).Append("\n");
+            sb.Append("  Enable: ").Append(Enable).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -232,6 +241,11 @@ namespace sendbird_platform_sdk.Model
                     this.PushSound == input.PushSound ||
                     (this.PushSound != null &&
                     this.PushSound.Equals(input.PushSound))
+                ) && 
+                (
+                    this.Enable == input.Enable ||
+                    (this.Enable != null &&
+                    this.Enable.Equals(input.Enable))
                 );
         }
 
@@ -266,6 +280,8 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.Timezone.GetHashCode();
                 if (this.PushSound != null)
                     hashCode = hashCode * 59 + this.PushSound.GetHashCode();
+                if (this.Enable != null)
+                    hashCode = hashCode * 59 + this.Enable.GetHashCode();
                 return hashCode;
             }
         }

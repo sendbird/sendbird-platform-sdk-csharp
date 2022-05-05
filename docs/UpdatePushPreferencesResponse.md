@@ -5,6 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**BlockPushFromBots** | **bool** |  | [optional] 
+**EnablePushForReplies** | **bool** |  | [optional] 
+**PushBlockedBotIds** | **List&lt;string&gt;** |  | [optional] 
 **PushTriggerOption** | **string** |  | [optional] 
 **DoNotDisturb** | **bool** |  | [optional] 
 **StartHour** | **decimal** |  | [optional] 

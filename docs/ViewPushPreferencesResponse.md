@@ -5,17 +5,20 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**PushTriggerOption** | **string** |  | [optional] 
-**DoNotDisturb** | **bool** |  | [optional] 
+**SnoozeStartTs** | **string** |  | [optional] 
 **StartHour** | **decimal** |  | [optional] 
-**StartMin** | **decimal** |  | [optional] 
-**EndHour** | **decimal** |  | [optional] 
-**EndMin** | **decimal** |  | [optional] 
 **SnoozeEnabled** | **bool** |  | [optional] 
-**SnoozeStartTs** | **decimal** |  | [optional] 
-**SnoozeEndTs** | **decimal** |  | [optional] 
+**EndMin** | **decimal** |  | [optional] 
 **Timezone** | **string** |  | [optional] 
+**BlockPushFromBots** | **bool** |  | [optional] 
+**PushBlockedBotIds** | **List&lt;string&gt;** |  | [optional] 
+**StartMin** | **decimal** |  | [optional] 
+**SnoozeEndTs** | **string** |  | [optional] 
+**DoNotDisturb** | **bool** |  | [optional] 
+**EndHour** | **decimal** |  | [optional] 
+**EnablePushForReplies** | **bool** |  | [optional] 
 **PushSound** | **string** |  | [optional] 
+**PushTriggerOption** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

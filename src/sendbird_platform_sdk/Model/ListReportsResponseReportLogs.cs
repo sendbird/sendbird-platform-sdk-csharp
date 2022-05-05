@@ -33,6 +33,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ListReportsResponseReportLogs" /> class.
         /// </summary>
+        /// <param name="reportingUser">reportingUser.</param>
         /// <param name="reportType">reportType.</param>
         /// <param name="reportCategory">reportCategory.</param>
         /// <param name="offendingUser">offendingUser.</param>
@@ -40,8 +41,9 @@ namespace sendbird_platform_sdk.Model
         /// <param name="channel">channel.</param>
         /// <param name="reportDescription">reportDescription.</param>
         /// <param name="createdAt">createdAt.</param>
-        public ListReportsResponseReportLogs(string reportType = default(string), string reportCategory = default(string), SendBirdUser offendingUser = default(SendBirdUser), SendBirdMessageResponse reportedMessage = default(SendBirdMessageResponse), SendBirdChannelResponse channel = default(SendBirdChannelResponse), string reportDescription = default(string), decimal createdAt = default(decimal))
+        public ListReportsResponseReportLogs(SendBirdUser reportingUser = default(SendBirdUser), string reportType = default(string), string reportCategory = default(string), SendBirdUser offendingUser = default(SendBirdUser), SendBirdMessageResponse reportedMessage = default(SendBirdMessageResponse), SendBirdChannelResponse channel = default(SendBirdChannelResponse), string reportDescription = default(string), decimal createdAt = default(decimal))
         {
+            this.ReportingUser = reportingUser;
             this.ReportType = reportType;
             this.ReportCategory = reportCategory;
             this.OffendingUser = offendingUser;
@@ -50,6 +52,12 @@ namespace sendbird_platform_sdk.Model
             this.ReportDescription = reportDescription;
             this.CreatedAt = createdAt;
         }
+
+        /// <summary>
+        /// Gets or Sets ReportingUser
+        /// </summary>
+        [DataMember(Name="reporting_user", EmitDefaultValue=false)]
+        public SendBirdUser ReportingUser { get; set; }
 
         /// <summary>
         /// Gets or Sets ReportType
@@ -101,6 +109,7 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class ListReportsResponseReportLogs {\n");
+            sb.Append("  ReportingUser: ").Append(ReportingUser).Append("\n");
             sb.Append("  ReportType: ").Append(ReportType).Append("\n");
             sb.Append("  ReportCategory: ").Append(ReportCategory).Append("\n");
             sb.Append("  OffendingUser: ").Append(OffendingUser).Append("\n");
@@ -142,6 +151,11 @@ namespace sendbird_platform_sdk.Model
                 return false;
 
             return 
+                (
+                    this.ReportingUser == input.ReportingUser ||
+                    (this.ReportingUser != null &&
+                    this.ReportingUser.Equals(input.ReportingUser))
+                ) && 
                 (
                     this.ReportType == input.ReportType ||
                     (this.ReportType != null &&
@@ -188,6 +202,8 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.ReportingUser != null)
+                    hashCode = hashCode * 59 + this.ReportingUser.GetHashCode();
                 if (this.ReportType != null)
                     hashCode = hashCode * 59 + this.ReportType.GetHashCode();
                 if (this.ReportCategory != null)

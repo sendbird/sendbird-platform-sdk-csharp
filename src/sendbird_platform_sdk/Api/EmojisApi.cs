@@ -103,8 +103,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <returns></returns>
-        void DeleteEmojiCategoryById (string apiToken, string emojiCategoryId);
+        /// <returns>Object</returns>
+        Object DeleteEmojiCategoryById (string apiToken, string emojiCategoryId);
 
         /// <summary>
         /// Delete an emoji category
@@ -115,7 +115,7 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         ApiResponse<Object> DeleteEmojiCategoryByIdWithHttpInfo (string apiToken, string emojiCategoryId);
         /// <summary>
         /// Enable reactions
@@ -388,8 +388,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteEmojiCategoryByIdAsync (string apiToken, string emojiCategoryId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> DeleteEmojiCategoryByIdAsync (string apiToken, string emojiCategoryId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Delete an emoji category
@@ -401,7 +401,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmojiCategoryByIdWithHttpInfoAsync (string apiToken, string emojiCategoryId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Enable reactions
@@ -1177,10 +1177,11 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <returns></returns>
-        public void DeleteEmojiCategoryById (string apiToken, string emojiCategoryId)
+        /// <returns>Object</returns>
+        public Object DeleteEmojiCategoryById (string apiToken, string emojiCategoryId)
         {
-             DeleteEmojiCategoryByIdWithHttpInfo(apiToken, emojiCategoryId);
+             ApiResponse<Object> localVarResponse = DeleteEmojiCategoryByIdWithHttpInfo(apiToken, emojiCategoryId);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1189,7 +1190,7 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         public ApiResponse<Object> DeleteEmojiCategoryByIdWithHttpInfo (string apiToken, string emojiCategoryId)
         {
             // verify the required parameter 'apiToken' is set
@@ -1214,6 +1215,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -1238,7 +1240,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -1248,10 +1250,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteEmojiCategoryByIdAsync (string apiToken, string emojiCategoryId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> DeleteEmojiCategoryByIdAsync (string apiToken, string emojiCategoryId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await DeleteEmojiCategoryByIdWithHttpInfoAsync(apiToken, emojiCategoryId, cancellationToken);
+             ApiResponse<Object> localVarResponse = await DeleteEmojiCategoryByIdWithHttpInfoAsync(apiToken, emojiCategoryId, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -1262,7 +1265,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="emojiCategoryId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmojiCategoryByIdWithHttpInfoAsync (string apiToken, string emojiCategoryId, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
@@ -1287,6 +1290,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -1311,7 +1315,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>

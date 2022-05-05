@@ -9,6 +9,12 @@ Name | Type | Description | Notes
 **StartAt** | **decimal** |  | [optional] 
 **EndAt** | **decimal** |  | [optional] 
 **Description** | **string** |  | [optional] 
+**Metadata** | [**InlineResponse200**](InlineResponse200.md) |  | [optional] 
+**NextUrl** | **string** |  | [optional] 
+**Nickname** | **string** |  | [optional] 
+**ProfileUrl** | **string** |  | [optional] 
+**RequireAuthForProfileImage** | **bool** |  | [optional] 
+**UserId** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

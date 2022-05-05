@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Channels** | [**List&lt;SendBirdOpenChannel&gt;**](SendBirdOpenChannel.md) |  | [optional] 
 **Next** | **string** |  | [optional] 
+**Ts** | **decimal** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

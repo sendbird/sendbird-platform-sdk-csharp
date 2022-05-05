@@ -36,11 +36,15 @@ namespace sendbird_platform_sdk.Model
         /// <param name="userId">userId.</param>
         /// <param name="channelUrl">channelUrl.</param>
         /// <param name="hasOpened">hasOpened.</param>
-        public GetDetailedOpenStatusOfAnnouncementByIdResponseOpenStatus(string userId = default(string), string channelUrl = default(string), bool hasOpened = default(bool))
+        /// <param name="sentAt">sentAt.</param>
+        /// <param name="openAt">openAt.</param>
+        public GetDetailedOpenStatusOfAnnouncementByIdResponseOpenStatus(string userId = default(string), string channelUrl = default(string), bool hasOpened = default(bool), decimal sentAt = default(decimal), decimal openAt = default(decimal))
         {
             this.UserId = userId;
             this.ChannelUrl = channelUrl;
             this.HasOpened = hasOpened;
+            this.SentAt = sentAt;
+            this.OpenAt = openAt;
         }
 
         /// <summary>
@@ -62,6 +66,18 @@ namespace sendbird_platform_sdk.Model
         public bool HasOpened { get; set; }
 
         /// <summary>
+        /// Gets or Sets SentAt
+        /// </summary>
+        [DataMember(Name="sent_at", EmitDefaultValue=false)]
+        public decimal SentAt { get; set; }
+
+        /// <summary>
+        /// Gets or Sets OpenAt
+        /// </summary>
+        [DataMember(Name="open_at", EmitDefaultValue=false)]
+        public decimal OpenAt { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -72,6 +88,8 @@ namespace sendbird_platform_sdk.Model
             sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("  ChannelUrl: ").Append(ChannelUrl).Append("\n");
             sb.Append("  HasOpened: ").Append(HasOpened).Append("\n");
+            sb.Append("  SentAt: ").Append(SentAt).Append("\n");
+            sb.Append("  OpenAt: ").Append(OpenAt).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -120,6 +138,16 @@ namespace sendbird_platform_sdk.Model
                     this.HasOpened == input.HasOpened ||
                     (this.HasOpened != null &&
                     this.HasOpened.Equals(input.HasOpened))
+                ) && 
+                (
+                    this.SentAt == input.SentAt ||
+                    (this.SentAt != null &&
+                    this.SentAt.Equals(input.SentAt))
+                ) && 
+                (
+                    this.OpenAt == input.OpenAt ||
+                    (this.OpenAt != null &&
+                    this.OpenAt.Equals(input.OpenAt))
                 );
         }
 
@@ -138,6 +166,10 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.ChannelUrl.GetHashCode();
                 if (this.HasOpened != null)
                     hashCode = hashCode * 59 + this.HasOpened.GetHashCode();
+                if (this.SentAt != null)
+                    hashCode = hashCode * 59 + this.SentAt.GetHashCode();
+                if (this.OpenAt != null)
+                    hashCode = hashCode * 59 + this.OpenAt.GetHashCode();
                 return hashCode;
             }
         }

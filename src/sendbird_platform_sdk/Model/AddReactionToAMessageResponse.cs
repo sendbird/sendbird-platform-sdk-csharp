@@ -38,13 +38,15 @@ namespace sendbird_platform_sdk.Model
         /// <param name="success">success.</param>
         /// <param name="reaction">reaction.</param>
         /// <param name="updatedAt">updatedAt.</param>
-        public AddReactionToAMessageResponse(string userId = default(string), string operation = default(string), bool success = default(bool), string reaction = default(string), decimal updatedAt = default(decimal))
+        /// <param name="msgId">msgId.</param>
+        public AddReactionToAMessageResponse(string userId = default(string), string operation = default(string), bool success = default(bool), string reaction = default(string), decimal updatedAt = default(decimal), decimal msgId = default(decimal))
         {
             this.UserId = userId;
             this.Operation = operation;
             this.Success = success;
             this.Reaction = reaction;
             this.UpdatedAt = updatedAt;
+            this.MsgId = msgId;
         }
 
         /// <summary>
@@ -78,6 +80,12 @@ namespace sendbird_platform_sdk.Model
         public decimal UpdatedAt { get; set; }
 
         /// <summary>
+        /// Gets or Sets MsgId
+        /// </summary>
+        [DataMember(Name="msg_id", EmitDefaultValue=false)]
+        public decimal MsgId { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -90,6 +98,7 @@ namespace sendbird_platform_sdk.Model
             sb.Append("  Success: ").Append(Success).Append("\n");
             sb.Append("  Reaction: ").Append(Reaction).Append("\n");
             sb.Append("  UpdatedAt: ").Append(UpdatedAt).Append("\n");
+            sb.Append("  MsgId: ").Append(MsgId).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -148,6 +157,11 @@ namespace sendbird_platform_sdk.Model
                     this.UpdatedAt == input.UpdatedAt ||
                     (this.UpdatedAt != null &&
                     this.UpdatedAt.Equals(input.UpdatedAt))
+                ) && 
+                (
+                    this.MsgId == input.MsgId ||
+                    (this.MsgId != null &&
+                    this.MsgId.Equals(input.MsgId))
                 );
         }
 
@@ -170,6 +184,8 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.Reaction.GetHashCode();
                 if (this.UpdatedAt != null)
                     hashCode = hashCode * 59 + this.UpdatedAt.GetHashCode();
+                if (this.MsgId != null)
+                    hashCode = hashCode * 59 + this.MsgId.GetHashCode();
                 return hashCode;
             }
         }

@@ -193,7 +193,7 @@ No authorization required
 
 ## DeleteMessageById
 
-> void DeleteMessageById (string apiToken, string channelType, string channelUrl, string messageId)
+> Object DeleteMessageById (string apiToken, string channelType, string channelUrl, string messageId)
 
 Delete a message
 
@@ -224,7 +224,8 @@ namespace Example
             try
             {
                 // Delete a message
-                apiInstance.DeleteMessageById(apiToken, channelType, channelUrl, messageId);
+                Object result = apiInstance.DeleteMessageById(apiToken, channelType, channelUrl, messageId);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -249,7 +250,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**Object**
 
 ### Authorization
 
@@ -258,7 +259,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -354,7 +355,7 @@ No authorization required
 
 ## GcMarkAllMessagesAsRead
 
-> void GcMarkAllMessagesAsRead (string apiToken, string channelUrl, GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = null)
+> Object GcMarkAllMessagesAsRead (string apiToken, string channelUrl, GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = null)
 
 Mark all messages as read
 
@@ -384,7 +385,8 @@ namespace Example
             try
             {
                 // Mark all messages as read
-                apiInstance.GcMarkAllMessagesAsRead(apiToken, channelUrl, gcMarkAllMessagesAsReadData);
+                Object result = apiInstance.GcMarkAllMessagesAsRead(apiToken, channelUrl, gcMarkAllMessagesAsReadData);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -408,7 +410,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**Object**
 
 ### Authorization
 
@@ -417,7 +419,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details
@@ -713,7 +715,7 @@ No authorization required
 
 ## RemoveExtraDataFromMessage
 
-> void RemoveExtraDataFromMessage (string apiToken, string channelType, string channelUrl, string messageId, List<string> keys = null)
+> Object RemoveExtraDataFromMessage (string apiToken, string channelType, string channelUrl, string messageId, List<string> keys = null)
 
 Remove extra data from a message
 
@@ -745,7 +747,8 @@ namespace Example
             try
             {
                 // Remove extra data from a message
-                apiInstance.RemoveExtraDataFromMessage(apiToken, channelType, channelUrl, messageId, keys);
+                Object result = apiInstance.RemoveExtraDataFromMessage(apiToken, channelType, channelUrl, messageId, keys);
+                Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
@@ -771,7 +774,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**Object**
 
 ### Authorization
 
@@ -780,7 +783,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: Not defined
+- **Accept**: application/json
 
 
 ### HTTP response details

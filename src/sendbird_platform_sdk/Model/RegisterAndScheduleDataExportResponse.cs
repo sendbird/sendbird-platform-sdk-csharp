@@ -33,6 +33,8 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="RegisterAndScheduleDataExportResponse" /> class.
         /// </summary>
+        /// <param name="channelCustomTypes">channelCustomTypes.</param>
+        /// <param name="dataType">dataType.</param>
         /// <param name="requestId">requestId.</param>
         /// <param name="status">status.</param>
         /// <param name="format">format.</param>
@@ -45,8 +47,10 @@ namespace sendbird_platform_sdk.Model
         /// <param name="senderIds">senderIds.</param>
         /// <param name="file">file.</param>
         /// <param name="userIds">userIds.</param>
-        public RegisterAndScheduleDataExportResponse(string requestId = default(string), string status = default(string), string format = default(string), string csvDelimiter = default(string), string timezone = default(string), decimal createdAt = default(decimal), decimal startTs = default(decimal), decimal endTs = default(decimal), List<string> channelUrls = default(List<string>), List<string> senderIds = default(List<string>), ListDataExportsByMessageChannelOrUserResponseFile file = default(ListDataExportsByMessageChannelOrUserResponseFile), List<decimal> userIds = default(List<decimal>))
+        public RegisterAndScheduleDataExportResponse(List<string> channelCustomTypes = default(List<string>), string dataType = default(string), string requestId = default(string), string status = default(string), string format = default(string), string csvDelimiter = default(string), string timezone = default(string), decimal createdAt = default(decimal), decimal startTs = default(decimal), decimal endTs = default(decimal), List<string> channelUrls = default(List<string>), List<string> senderIds = default(List<string>), ListDataExportsByMessageChannelOrUserResponseFile file = default(ListDataExportsByMessageChannelOrUserResponseFile), List<decimal> userIds = default(List<decimal>))
         {
+            this.ChannelCustomTypes = channelCustomTypes;
+            this.DataType = dataType;
             this.RequestId = requestId;
             this.Status = status;
             this.Format = format;
@@ -60,6 +64,18 @@ namespace sendbird_platform_sdk.Model
             this.File = file;
             this.UserIds = userIds;
         }
+
+        /// <summary>
+        /// Gets or Sets ChannelCustomTypes
+        /// </summary>
+        [DataMember(Name="channel_custom_types", EmitDefaultValue=false)]
+        public List<string> ChannelCustomTypes { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DataType
+        /// </summary>
+        [DataMember(Name="data_type", EmitDefaultValue=false)]
+        public string DataType { get; set; }
 
         /// <summary>
         /// Gets or Sets RequestId
@@ -141,6 +157,8 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class RegisterAndScheduleDataExportResponse {\n");
+            sb.Append("  ChannelCustomTypes: ").Append(ChannelCustomTypes).Append("\n");
+            sb.Append("  DataType: ").Append(DataType).Append("\n");
             sb.Append("  RequestId: ").Append(RequestId).Append("\n");
             sb.Append("  Status: ").Append(Status).Append("\n");
             sb.Append("  Format: ").Append(Format).Append("\n");
@@ -187,6 +205,17 @@ namespace sendbird_platform_sdk.Model
                 return false;
 
             return 
+                (
+                    this.ChannelCustomTypes == input.ChannelCustomTypes ||
+                    this.ChannelCustomTypes != null &&
+                    input.ChannelCustomTypes != null &&
+                    this.ChannelCustomTypes.SequenceEqual(input.ChannelCustomTypes)
+                ) && 
+                (
+                    this.DataType == input.DataType ||
+                    (this.DataType != null &&
+                    this.DataType.Equals(input.DataType))
+                ) && 
                 (
                     this.RequestId == input.RequestId ||
                     (this.RequestId != null &&
@@ -261,6 +290,10 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.ChannelCustomTypes != null)
+                    hashCode = hashCode * 59 + this.ChannelCustomTypes.GetHashCode();
+                if (this.DataType != null)
+                    hashCode = hashCode * 59 + this.DataType.GetHashCode();
                 if (this.RequestId != null)
                     hashCode = hashCode * 59 + this.RequestId.GetHashCode();
                 if (this.Status != null)

@@ -48,7 +48,14 @@ namespace sendbird_platform_sdk.Model
         /// <param name="sentUserCount">sentUserCount.</param>
         /// <param name="openCount">openCount.</param>
         /// <param name="openRate">openRate.</param>
-        public ViewAnnouncementByIdResponse(string uniqueId = default(string), string announcementGroup = default(string), ScheduleAnnouncementResponseMessage message = default(ScheduleAnnouncementResponseMessage), bool enablePush = default(bool), string targetAt = default(string), decimal targetUserCount = default(decimal), decimal targetChannelCount = default(decimal), string status = default(string), decimal scheduledAt = default(decimal), string ceaseAt = default(string), string resumeAt = default(string), decimal completedAt = default(decimal), decimal sentUserCount = default(decimal), decimal openCount = default(decimal), decimal openRate = default(decimal))
+        /// <param name="createChannel">createChannel.</param>
+        /// <param name="createChannelOptions">createChannelOptions.</param>
+        /// <param name="endAt">endAt.</param>
+        /// <param name="markAsRead">markAsRead.</param>
+        /// <param name="sentChannelCount">sentChannelCount.</param>
+        /// <param name="targetChannelType">targetChannelType.</param>
+        /// <param name="targetCustomType">targetCustomType.</param>
+        public ViewAnnouncementByIdResponse(string uniqueId = default(string), string announcementGroup = default(string), ScheduleAnnouncementResponseMessage message = default(ScheduleAnnouncementResponseMessage), bool enablePush = default(bool), string targetAt = default(string), decimal targetUserCount = default(decimal), decimal targetChannelCount = default(decimal), string status = default(string), decimal scheduledAt = default(decimal), string ceaseAt = default(string), string resumeAt = default(string), decimal completedAt = default(decimal), decimal sentUserCount = default(decimal), decimal openCount = default(decimal), decimal openRate = default(decimal), bool createChannel = default(bool), ScheduleAnnouncementResponseCreateChannelOptions createChannelOptions = default(ScheduleAnnouncementResponseCreateChannelOptions), decimal endAt = default(decimal), bool markAsRead = default(bool), decimal sentChannelCount = default(decimal), string targetChannelType = default(string), string targetCustomType = default(string))
         {
             this.UniqueId = uniqueId;
             this.AnnouncementGroup = announcementGroup;
@@ -65,6 +72,13 @@ namespace sendbird_platform_sdk.Model
             this.SentUserCount = sentUserCount;
             this.OpenCount = openCount;
             this.OpenRate = openRate;
+            this.CreateChannel = createChannel;
+            this.CreateChannelOptions = createChannelOptions;
+            this.EndAt = endAt;
+            this.MarkAsRead = markAsRead;
+            this.SentChannelCount = sentChannelCount;
+            this.TargetChannelType = targetChannelType;
+            this.TargetCustomType = targetCustomType;
         }
 
         /// <summary>
@@ -158,6 +172,48 @@ namespace sendbird_platform_sdk.Model
         public decimal OpenRate { get; set; }
 
         /// <summary>
+        /// Gets or Sets CreateChannel
+        /// </summary>
+        [DataMember(Name="create_channel", EmitDefaultValue=false)]
+        public bool CreateChannel { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CreateChannelOptions
+        /// </summary>
+        [DataMember(Name="create_channel_options", EmitDefaultValue=false)]
+        public ScheduleAnnouncementResponseCreateChannelOptions CreateChannelOptions { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EndAt
+        /// </summary>
+        [DataMember(Name="end_at", EmitDefaultValue=false)]
+        public decimal EndAt { get; set; }
+
+        /// <summary>
+        /// Gets or Sets MarkAsRead
+        /// </summary>
+        [DataMember(Name="mark_as_read", EmitDefaultValue=false)]
+        public bool MarkAsRead { get; set; }
+
+        /// <summary>
+        /// Gets or Sets SentChannelCount
+        /// </summary>
+        [DataMember(Name="sent_channel_count", EmitDefaultValue=false)]
+        public decimal SentChannelCount { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TargetChannelType
+        /// </summary>
+        [DataMember(Name="target_channel_type", EmitDefaultValue=false)]
+        public string TargetChannelType { get; set; }
+
+        /// <summary>
+        /// Gets or Sets TargetCustomType
+        /// </summary>
+        [DataMember(Name="target_custom_type", EmitDefaultValue=false)]
+        public string TargetCustomType { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -180,6 +236,13 @@ namespace sendbird_platform_sdk.Model
             sb.Append("  SentUserCount: ").Append(SentUserCount).Append("\n");
             sb.Append("  OpenCount: ").Append(OpenCount).Append("\n");
             sb.Append("  OpenRate: ").Append(OpenRate).Append("\n");
+            sb.Append("  CreateChannel: ").Append(CreateChannel).Append("\n");
+            sb.Append("  CreateChannelOptions: ").Append(CreateChannelOptions).Append("\n");
+            sb.Append("  EndAt: ").Append(EndAt).Append("\n");
+            sb.Append("  MarkAsRead: ").Append(MarkAsRead).Append("\n");
+            sb.Append("  SentChannelCount: ").Append(SentChannelCount).Append("\n");
+            sb.Append("  TargetChannelType: ").Append(TargetChannelType).Append("\n");
+            sb.Append("  TargetCustomType: ").Append(TargetCustomType).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -288,6 +351,41 @@ namespace sendbird_platform_sdk.Model
                     this.OpenRate == input.OpenRate ||
                     (this.OpenRate != null &&
                     this.OpenRate.Equals(input.OpenRate))
+                ) && 
+                (
+                    this.CreateChannel == input.CreateChannel ||
+                    (this.CreateChannel != null &&
+                    this.CreateChannel.Equals(input.CreateChannel))
+                ) && 
+                (
+                    this.CreateChannelOptions == input.CreateChannelOptions ||
+                    (this.CreateChannelOptions != null &&
+                    this.CreateChannelOptions.Equals(input.CreateChannelOptions))
+                ) && 
+                (
+                    this.EndAt == input.EndAt ||
+                    (this.EndAt != null &&
+                    this.EndAt.Equals(input.EndAt))
+                ) && 
+                (
+                    this.MarkAsRead == input.MarkAsRead ||
+                    (this.MarkAsRead != null &&
+                    this.MarkAsRead.Equals(input.MarkAsRead))
+                ) && 
+                (
+                    this.SentChannelCount == input.SentChannelCount ||
+                    (this.SentChannelCount != null &&
+                    this.SentChannelCount.Equals(input.SentChannelCount))
+                ) && 
+                (
+                    this.TargetChannelType == input.TargetChannelType ||
+                    (this.TargetChannelType != null &&
+                    this.TargetChannelType.Equals(input.TargetChannelType))
+                ) && 
+                (
+                    this.TargetCustomType == input.TargetCustomType ||
+                    (this.TargetCustomType != null &&
+                    this.TargetCustomType.Equals(input.TargetCustomType))
                 );
         }
 
@@ -330,6 +428,20 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.OpenCount.GetHashCode();
                 if (this.OpenRate != null)
                     hashCode = hashCode * 59 + this.OpenRate.GetHashCode();
+                if (this.CreateChannel != null)
+                    hashCode = hashCode * 59 + this.CreateChannel.GetHashCode();
+                if (this.CreateChannelOptions != null)
+                    hashCode = hashCode * 59 + this.CreateChannelOptions.GetHashCode();
+                if (this.EndAt != null)
+                    hashCode = hashCode * 59 + this.EndAt.GetHashCode();
+                if (this.MarkAsRead != null)
+                    hashCode = hashCode * 59 + this.MarkAsRead.GetHashCode();
+                if (this.SentChannelCount != null)
+                    hashCode = hashCode * 59 + this.SentChannelCount.GetHashCode();
+                if (this.TargetChannelType != null)
+                    hashCode = hashCode * 59 + this.TargetChannelType.GetHashCode();
+                if (this.TargetCustomType != null)
+                    hashCode = hashCode * 59 + this.TargetCustomType.GetHashCode();
                 return hashCode;
             }
         }

@@ -94,8 +94,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <returns></returns>
-        void DeleteMessageById (string apiToken, string channelType, string channelUrl, string messageId);
+        /// <returns>Object</returns>
+        Object DeleteMessageById (string apiToken, string channelType, string channelUrl, string messageId);
 
         /// <summary>
         /// Delete a message
@@ -108,7 +108,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         ApiResponse<Object> DeleteMessageByIdWithHttpInfo (string apiToken, string channelType, string channelUrl, string messageId);
         /// <summary>
         /// Mark all messages as delivered
@@ -145,8 +145,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcMarkAllMessagesAsReadData"> (optional)</param>
-        /// <returns></returns>
-        void GcMarkAllMessagesAsRead (string apiToken, string channelUrl, GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = default(GcMarkAllMessagesAsReadData));
+        /// <returns>Object</returns>
+        Object GcMarkAllMessagesAsRead (string apiToken, string channelUrl, GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = default(GcMarkAllMessagesAsReadData));
 
         /// <summary>
         /// Mark all messages as read
@@ -158,7 +158,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcMarkAllMessagesAsReadData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         ApiResponse<Object> GcMarkAllMessagesAsReadWithHttpInfo (string apiToken, string channelUrl, GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = default(GcMarkAllMessagesAsReadData));
         /// <summary>
         /// View number of each member&#39;s unread messages
@@ -287,8 +287,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
         /// <param name="keys"> (optional)</param>
-        /// <returns></returns>
-        void RemoveExtraDataFromMessage (string apiToken, string channelType, string channelUrl, string messageId, List<string> keys = default(List<string>));
+        /// <returns>Object</returns>
+        Object RemoveExtraDataFromMessage (string apiToken, string channelType, string channelUrl, string messageId, List<string> keys = default(List<string>));
 
         /// <summary>
         /// Remove extra data from a message
@@ -302,7 +302,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
         /// <param name="keys"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         ApiResponse<Object> RemoveExtraDataFromMessageWithHttpInfo (string apiToken, string channelType, string channelUrl, string messageId, List<string> keys = default(List<string>));
         /// <summary>
         /// Remove a reaction from a message
@@ -581,8 +581,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteMessageByIdAsync (string apiToken, string channelType, string channelUrl, string messageId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> DeleteMessageByIdAsync (string apiToken, string channelType, string channelUrl, string messageId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Delete a message
@@ -596,7 +596,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteMessageByIdWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string messageId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Mark all messages as delivered
@@ -636,8 +636,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcMarkAllMessagesAsReadData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GcMarkAllMessagesAsReadAsync (string apiToken, string channelUrl, GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = default(GcMarkAllMessagesAsReadData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> GcMarkAllMessagesAsReadAsync (string apiToken, string channelUrl, GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = default(GcMarkAllMessagesAsReadData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Mark all messages as read
@@ -650,7 +650,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcMarkAllMessagesAsReadData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> GcMarkAllMessagesAsReadWithHttpInfoAsync (string apiToken, string channelUrl, GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = default(GcMarkAllMessagesAsReadData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View number of each member&#39;s unread messages
@@ -786,8 +786,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="messageId"></param>
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task RemoveExtraDataFromMessageAsync (string apiToken, string channelType, string channelUrl, string messageId, List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> RemoveExtraDataFromMessageAsync (string apiToken, string channelType, string channelUrl, string messageId, List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Remove extra data from a message
@@ -802,7 +802,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="messageId"></param>
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> RemoveExtraDataFromMessageWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string messageId, List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Remove a reaction from a message
@@ -1524,10 +1524,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <returns></returns>
-        public void DeleteMessageById (string apiToken, string channelType, string channelUrl, string messageId)
+        /// <returns>Object</returns>
+        public Object DeleteMessageById (string apiToken, string channelType, string channelUrl, string messageId)
         {
-             DeleteMessageByIdWithHttpInfo(apiToken, channelType, channelUrl, messageId);
+             ApiResponse<Object> localVarResponse = DeleteMessageByIdWithHttpInfo(apiToken, channelType, channelUrl, messageId);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1538,7 +1539,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         public ApiResponse<Object> DeleteMessageByIdWithHttpInfo (string apiToken, string channelType, string channelUrl, string messageId)
         {
             // verify the required parameter 'apiToken' is set
@@ -1569,6 +1570,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -1595,7 +1597,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -1607,10 +1609,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteMessageByIdAsync (string apiToken, string channelType, string channelUrl, string messageId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> DeleteMessageByIdAsync (string apiToken, string channelType, string channelUrl, string messageId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             await DeleteMessageByIdWithHttpInfoAsync(apiToken, channelType, channelUrl, messageId, cancellationToken);
+             ApiResponse<Object> localVarResponse = await DeleteMessageByIdWithHttpInfoAsync(apiToken, channelType, channelUrl, messageId, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -1623,7 +1626,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteMessageByIdWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string messageId, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
@@ -1654,6 +1657,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -1680,7 +1684,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -1859,10 +1863,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcMarkAllMessagesAsReadData"> (optional)</param>
-        /// <returns></returns>
-        public void GcMarkAllMessagesAsRead (string apiToken, string channelUrl, GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = default(GcMarkAllMessagesAsReadData))
+        /// <returns>Object</returns>
+        public Object GcMarkAllMessagesAsRead (string apiToken, string channelUrl, GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = default(GcMarkAllMessagesAsReadData))
         {
-             GcMarkAllMessagesAsReadWithHttpInfo(apiToken, channelUrl, gcMarkAllMessagesAsReadData);
+             ApiResponse<Object> localVarResponse = GcMarkAllMessagesAsReadWithHttpInfo(apiToken, channelUrl, gcMarkAllMessagesAsReadData);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1872,7 +1877,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcMarkAllMessagesAsReadData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         public ApiResponse<Object> GcMarkAllMessagesAsReadWithHttpInfo (string apiToken, string channelUrl, GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = default(GcMarkAllMessagesAsReadData))
         {
             // verify the required parameter 'apiToken' is set
@@ -1898,6 +1903,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -1930,7 +1936,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -1941,10 +1947,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcMarkAllMessagesAsReadData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GcMarkAllMessagesAsReadAsync (string apiToken, string channelUrl, GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = default(GcMarkAllMessagesAsReadData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> GcMarkAllMessagesAsReadAsync (string apiToken, string channelUrl, GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = default(GcMarkAllMessagesAsReadData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             await GcMarkAllMessagesAsReadWithHttpInfoAsync(apiToken, channelUrl, gcMarkAllMessagesAsReadData, cancellationToken);
+             ApiResponse<Object> localVarResponse = await GcMarkAllMessagesAsReadWithHttpInfoAsync(apiToken, channelUrl, gcMarkAllMessagesAsReadData, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -1956,7 +1963,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcMarkAllMessagesAsReadData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> GcMarkAllMessagesAsReadWithHttpInfoAsync (string apiToken, string channelUrl, GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = default(GcMarkAllMessagesAsReadData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
@@ -1982,6 +1989,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -2014,7 +2022,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -2623,10 +2631,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
         /// <param name="keys"> (optional)</param>
-        /// <returns></returns>
-        public void RemoveExtraDataFromMessage (string apiToken, string channelType, string channelUrl, string messageId, List<string> keys = default(List<string>))
+        /// <returns>Object</returns>
+        public Object RemoveExtraDataFromMessage (string apiToken, string channelType, string channelUrl, string messageId, List<string> keys = default(List<string>))
         {
-             RemoveExtraDataFromMessageWithHttpInfo(apiToken, channelType, channelUrl, messageId, keys);
+             ApiResponse<Object> localVarResponse = RemoveExtraDataFromMessageWithHttpInfo(apiToken, channelType, channelUrl, messageId, keys);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -2638,7 +2647,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
         /// <param name="keys"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
+        /// <returns>ApiResponse of Object</returns>
         public ApiResponse<Object> RemoveExtraDataFromMessageWithHttpInfo (string apiToken, string channelType, string channelUrl, string messageId, List<string> keys = default(List<string>))
         {
             // verify the required parameter 'apiToken' is set
@@ -2669,6 +2678,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -2696,7 +2706,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -2709,10 +2719,11 @@ namespace sendbird_platform_sdk.Api
         /// <param name="messageId"></param>
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task RemoveExtraDataFromMessageAsync (string apiToken, string channelType, string channelUrl, string messageId, List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> RemoveExtraDataFromMessageAsync (string apiToken, string channelType, string channelUrl, string messageId, List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken))
         {
-             await RemoveExtraDataFromMessageWithHttpInfoAsync(apiToken, channelType, channelUrl, messageId, keys, cancellationToken);
+             ApiResponse<Object> localVarResponse = await RemoveExtraDataFromMessageWithHttpInfoAsync(apiToken, channelType, channelUrl, messageId, keys, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
@@ -2726,7 +2737,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="messageId"></param>
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
+        /// <returns>Task of ApiResponse (Object)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> RemoveExtraDataFromMessageWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string messageId, List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
@@ -2757,6 +2768,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -2784,7 +2796,7 @@ namespace sendbird_platform_sdk.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>

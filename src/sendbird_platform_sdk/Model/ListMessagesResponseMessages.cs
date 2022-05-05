@@ -33,53 +33,59 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ListMessagesResponseMessages" /> class.
         /// </summary>
-        /// <param name="messageId">messageId.</param>
-        /// <param name="type">type.</param>
+        /// <param name="messageSurvivalSeconds">messageSurvivalSeconds.</param>
         /// <param name="customType">customType.</param>
-        /// <param name="channelUrl">channelUrl.</param>
-        /// <param name="user">user.</param>
-        /// <param name="mentionType">mentionType.</param>
         /// <param name="mentionedUsers">mentionedUsers.</param>
-        /// <param name="isRemoved">isRemoved.</param>
-        /// <param name="message">message.</param>
         /// <param name="translations">translations.</param>
+        /// <param name="updatedAt">updatedAt.</param>
+        /// <param name="isOpMsg">isOpMsg.</param>
+        /// <param name="isRemoved">isRemoved.</param>
+        /// <param name="user">user.</param>
+        /// <param name="file">file.</param>
+        /// <param name="message">message.</param>
         /// <param name="data">data.</param>
+        /// <param name="messageRetentionHour">messageRetentionHour.</param>
+        /// <param name="silent">silent.</param>
+        /// <param name="type">type.</param>
+        /// <param name="createdAt">createdAt.</param>
+        /// <param name="channelType">channelType.</param>
+        /// <param name="reqId">reqId.</param>
+        /// <param name="mentionType">mentionType.</param>
+        /// <param name="channelUrl">channelUrl.</param>
+        /// <param name="messageId">messageId.</param>
         /// <param name="sortedMetaarray">sortedMetaarray.</param>
         /// <param name="ogTag">ogTag.</param>
-        /// <param name="createdAt">createdAt.</param>
-        /// <param name="updatedAt">updatedAt.</param>
-        /// <param name="file">file.</param>
-        public ListMessagesResponseMessages(decimal messageId = default(decimal), string type = default(string), string customType = default(string), string channelUrl = default(string), ListMessagesResponseUser user = default(ListMessagesResponseUser), string mentionType = default(string), List<ListMessagesResponseUser> mentionedUsers = default(List<ListMessagesResponseUser>), bool isRemoved = default(bool), string message = default(string), Object translations = default(Object), string data = default(string), List<ListMessagesResponseSortedMetaarray> sortedMetaarray = default(List<ListMessagesResponseSortedMetaarray>), ListMessagesResponseOgTag ogTag = default(ListMessagesResponseOgTag), decimal createdAt = default(decimal), decimal updatedAt = default(decimal), Object file = default(Object))
+        public ListMessagesResponseMessages(decimal messageSurvivalSeconds = default(decimal), string customType = default(string), List<SendBirdMessageResponseMentionedUsers> mentionedUsers = default(List<SendBirdMessageResponseMentionedUsers>), Object translations = default(Object), decimal updatedAt = default(decimal), bool isOpMsg = default(bool), bool isRemoved = default(bool), SendBirdMessageResponseUser user = default(SendBirdMessageResponseUser), Object file = default(Object), string message = default(string), string data = default(string), decimal messageRetentionHour = default(decimal), bool silent = default(bool), string type = default(string), decimal createdAt = default(decimal), string channelType = default(string), string reqId = default(string), string mentionType = default(string), string channelUrl = default(string), decimal messageId = default(decimal), List<ListMessagesResponseSortedMetaarray> sortedMetaarray = default(List<ListMessagesResponseSortedMetaarray>), ListMessagesResponseOgTag ogTag = default(ListMessagesResponseOgTag))
         {
-            this.MessageId = messageId;
-            this.Type = type;
+            this.MessageSurvivalSeconds = messageSurvivalSeconds;
             this.CustomType = customType;
-            this.ChannelUrl = channelUrl;
-            this.User = user;
-            this.MentionType = mentionType;
             this.MentionedUsers = mentionedUsers;
-            this.IsRemoved = isRemoved;
-            this.Message = message;
             this.Translations = translations;
+            this.UpdatedAt = updatedAt;
+            this.IsOpMsg = isOpMsg;
+            this.IsRemoved = isRemoved;
+            this.User = user;
+            this.File = file;
+            this.Message = message;
             this.Data = data;
+            this.MessageRetentionHour = messageRetentionHour;
+            this.Silent = silent;
+            this.Type = type;
+            this.CreatedAt = createdAt;
+            this.ChannelType = channelType;
+            this.ReqId = reqId;
+            this.MentionType = mentionType;
+            this.ChannelUrl = channelUrl;
+            this.MessageId = messageId;
             this.SortedMetaarray = sortedMetaarray;
             this.OgTag = ogTag;
-            this.CreatedAt = createdAt;
-            this.UpdatedAt = updatedAt;
-            this.File = file;
         }
 
         /// <summary>
-        /// Gets or Sets MessageId
+        /// Gets or Sets MessageSurvivalSeconds
         /// </summary>
-        [DataMember(Name="message_id", EmitDefaultValue=false)]
-        public decimal MessageId { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Type
-        /// </summary>
-        [DataMember(Name="type", EmitDefaultValue=false)]
-        public string Type { get; set; }
+        [DataMember(Name="message_survival_seconds", EmitDefaultValue=false)]
+        public decimal MessageSurvivalSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets CustomType
@@ -88,40 +94,10 @@ namespace sendbird_platform_sdk.Model
         public string CustomType { get; set; }
 
         /// <summary>
-        /// Gets or Sets ChannelUrl
-        /// </summary>
-        [DataMember(Name="channel_url", EmitDefaultValue=false)]
-        public string ChannelUrl { get; set; }
-
-        /// <summary>
-        /// Gets or Sets User
-        /// </summary>
-        [DataMember(Name="user", EmitDefaultValue=false)]
-        public ListMessagesResponseUser User { get; set; }
-
-        /// <summary>
-        /// Gets or Sets MentionType
-        /// </summary>
-        [DataMember(Name="mention_type", EmitDefaultValue=false)]
-        public string MentionType { get; set; }
-
-        /// <summary>
         /// Gets or Sets MentionedUsers
         /// </summary>
         [DataMember(Name="mentioned_users", EmitDefaultValue=false)]
-        public List<ListMessagesResponseUser> MentionedUsers { get; set; }
-
-        /// <summary>
-        /// Gets or Sets IsRemoved
-        /// </summary>
-        [DataMember(Name="is_removed", EmitDefaultValue=false)]
-        public bool IsRemoved { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Message
-        /// </summary>
-        [DataMember(Name="message", EmitDefaultValue=false)]
-        public string Message { get; set; }
+        public List<SendBirdMessageResponseMentionedUsers> MentionedUsers { get; set; }
 
         /// <summary>
         /// Gets or Sets Translations
@@ -130,10 +106,100 @@ namespace sendbird_platform_sdk.Model
         public Object Translations { get; set; }
 
         /// <summary>
+        /// Gets or Sets UpdatedAt
+        /// </summary>
+        [DataMember(Name="updated_at", EmitDefaultValue=false)]
+        public decimal UpdatedAt { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsOpMsg
+        /// </summary>
+        [DataMember(Name="is_op_msg", EmitDefaultValue=false)]
+        public bool IsOpMsg { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsRemoved
+        /// </summary>
+        [DataMember(Name="is_removed", EmitDefaultValue=false)]
+        public bool IsRemoved { get; set; }
+
+        /// <summary>
+        /// Gets or Sets User
+        /// </summary>
+        [DataMember(Name="user", EmitDefaultValue=false)]
+        public SendBirdMessageResponseUser User { get; set; }
+
+        /// <summary>
+        /// Gets or Sets File
+        /// </summary>
+        [DataMember(Name="file", EmitDefaultValue=false)]
+        public Object File { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Message
+        /// </summary>
+        [DataMember(Name="message", EmitDefaultValue=false)]
+        public string Message { get; set; }
+
+        /// <summary>
         /// Gets or Sets Data
         /// </summary>
         [DataMember(Name="data", EmitDefaultValue=false)]
         public string Data { get; set; }
+
+        /// <summary>
+        /// Gets or Sets MessageRetentionHour
+        /// </summary>
+        [DataMember(Name="message_retention_hour", EmitDefaultValue=false)]
+        public decimal MessageRetentionHour { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Silent
+        /// </summary>
+        [DataMember(Name="silent", EmitDefaultValue=false)]
+        public bool Silent { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Type
+        /// </summary>
+        [DataMember(Name="type", EmitDefaultValue=false)]
+        public string Type { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CreatedAt
+        /// </summary>
+        [DataMember(Name="created_at", EmitDefaultValue=false)]
+        public decimal CreatedAt { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ChannelType
+        /// </summary>
+        [DataMember(Name="channel_type", EmitDefaultValue=false)]
+        public string ChannelType { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ReqId
+        /// </summary>
+        [DataMember(Name="req_id", EmitDefaultValue=false)]
+        public string ReqId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets MentionType
+        /// </summary>
+        [DataMember(Name="mention_type", EmitDefaultValue=false)]
+        public string MentionType { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ChannelUrl
+        /// </summary>
+        [DataMember(Name="channel_url", EmitDefaultValue=false)]
+        public string ChannelUrl { get; set; }
+
+        /// <summary>
+        /// Gets or Sets MessageId
+        /// </summary>
+        [DataMember(Name="message_id", EmitDefaultValue=false)]
+        public decimal MessageId { get; set; }
 
         /// <summary>
         /// Gets or Sets SortedMetaarray
@@ -148,24 +214,6 @@ namespace sendbird_platform_sdk.Model
         public ListMessagesResponseOgTag OgTag { get; set; }
 
         /// <summary>
-        /// Gets or Sets CreatedAt
-        /// </summary>
-        [DataMember(Name="created_at", EmitDefaultValue=false)]
-        public decimal CreatedAt { get; set; }
-
-        /// <summary>
-        /// Gets or Sets UpdatedAt
-        /// </summary>
-        [DataMember(Name="updated_at", EmitDefaultValue=false)]
-        public decimal UpdatedAt { get; set; }
-
-        /// <summary>
-        /// Gets or Sets File
-        /// </summary>
-        [DataMember(Name="file", EmitDefaultValue=false)]
-        public Object File { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -173,22 +221,28 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class ListMessagesResponseMessages {\n");
-            sb.Append("  MessageId: ").Append(MessageId).Append("\n");
-            sb.Append("  Type: ").Append(Type).Append("\n");
+            sb.Append("  MessageSurvivalSeconds: ").Append(MessageSurvivalSeconds).Append("\n");
             sb.Append("  CustomType: ").Append(CustomType).Append("\n");
-            sb.Append("  ChannelUrl: ").Append(ChannelUrl).Append("\n");
-            sb.Append("  User: ").Append(User).Append("\n");
-            sb.Append("  MentionType: ").Append(MentionType).Append("\n");
             sb.Append("  MentionedUsers: ").Append(MentionedUsers).Append("\n");
-            sb.Append("  IsRemoved: ").Append(IsRemoved).Append("\n");
-            sb.Append("  Message: ").Append(Message).Append("\n");
             sb.Append("  Translations: ").Append(Translations).Append("\n");
+            sb.Append("  UpdatedAt: ").Append(UpdatedAt).Append("\n");
+            sb.Append("  IsOpMsg: ").Append(IsOpMsg).Append("\n");
+            sb.Append("  IsRemoved: ").Append(IsRemoved).Append("\n");
+            sb.Append("  User: ").Append(User).Append("\n");
+            sb.Append("  File: ").Append(File).Append("\n");
+            sb.Append("  Message: ").Append(Message).Append("\n");
             sb.Append("  Data: ").Append(Data).Append("\n");
+            sb.Append("  MessageRetentionHour: ").Append(MessageRetentionHour).Append("\n");
+            sb.Append("  Silent: ").Append(Silent).Append("\n");
+            sb.Append("  Type: ").Append(Type).Append("\n");
+            sb.Append("  CreatedAt: ").Append(CreatedAt).Append("\n");
+            sb.Append("  ChannelType: ").Append(ChannelType).Append("\n");
+            sb.Append("  ReqId: ").Append(ReqId).Append("\n");
+            sb.Append("  MentionType: ").Append(MentionType).Append("\n");
+            sb.Append("  ChannelUrl: ").Append(ChannelUrl).Append("\n");
+            sb.Append("  MessageId: ").Append(MessageId).Append("\n");
             sb.Append("  SortedMetaarray: ").Append(SortedMetaarray).Append("\n");
             sb.Append("  OgTag: ").Append(OgTag).Append("\n");
-            sb.Append("  CreatedAt: ").Append(CreatedAt).Append("\n");
-            sb.Append("  UpdatedAt: ").Append(UpdatedAt).Append("\n");
-            sb.Append("  File: ").Append(File).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -224,34 +278,14 @@ namespace sendbird_platform_sdk.Model
 
             return 
                 (
-                    this.MessageId == input.MessageId ||
-                    (this.MessageId != null &&
-                    this.MessageId.Equals(input.MessageId))
-                ) && 
-                (
-                    this.Type == input.Type ||
-                    (this.Type != null &&
-                    this.Type.Equals(input.Type))
+                    this.MessageSurvivalSeconds == input.MessageSurvivalSeconds ||
+                    (this.MessageSurvivalSeconds != null &&
+                    this.MessageSurvivalSeconds.Equals(input.MessageSurvivalSeconds))
                 ) && 
                 (
                     this.CustomType == input.CustomType ||
                     (this.CustomType != null &&
                     this.CustomType.Equals(input.CustomType))
-                ) && 
-                (
-                    this.ChannelUrl == input.ChannelUrl ||
-                    (this.ChannelUrl != null &&
-                    this.ChannelUrl.Equals(input.ChannelUrl))
-                ) && 
-                (
-                    this.User == input.User ||
-                    (this.User != null &&
-                    this.User.Equals(input.User))
-                ) && 
-                (
-                    this.MentionType == input.MentionType ||
-                    (this.MentionType != null &&
-                    this.MentionType.Equals(input.MentionType))
                 ) && 
                 (
                     this.MentionedUsers == input.MentionedUsers ||
@@ -260,9 +294,34 @@ namespace sendbird_platform_sdk.Model
                     this.MentionedUsers.SequenceEqual(input.MentionedUsers)
                 ) && 
                 (
+                    this.Translations == input.Translations ||
+                    (this.Translations != null &&
+                    this.Translations.Equals(input.Translations))
+                ) && 
+                (
+                    this.UpdatedAt == input.UpdatedAt ||
+                    (this.UpdatedAt != null &&
+                    this.UpdatedAt.Equals(input.UpdatedAt))
+                ) && 
+                (
+                    this.IsOpMsg == input.IsOpMsg ||
+                    (this.IsOpMsg != null &&
+                    this.IsOpMsg.Equals(input.IsOpMsg))
+                ) && 
+                (
                     this.IsRemoved == input.IsRemoved ||
                     (this.IsRemoved != null &&
                     this.IsRemoved.Equals(input.IsRemoved))
+                ) && 
+                (
+                    this.User == input.User ||
+                    (this.User != null &&
+                    this.User.Equals(input.User))
+                ) && 
+                (
+                    this.File == input.File ||
+                    (this.File != null &&
+                    this.File.Equals(input.File))
                 ) && 
                 (
                     this.Message == input.Message ||
@@ -270,14 +329,54 @@ namespace sendbird_platform_sdk.Model
                     this.Message.Equals(input.Message))
                 ) && 
                 (
-                    this.Translations == input.Translations ||
-                    (this.Translations != null &&
-                    this.Translations.Equals(input.Translations))
-                ) && 
-                (
                     this.Data == input.Data ||
                     (this.Data != null &&
                     this.Data.Equals(input.Data))
+                ) && 
+                (
+                    this.MessageRetentionHour == input.MessageRetentionHour ||
+                    (this.MessageRetentionHour != null &&
+                    this.MessageRetentionHour.Equals(input.MessageRetentionHour))
+                ) && 
+                (
+                    this.Silent == input.Silent ||
+                    (this.Silent != null &&
+                    this.Silent.Equals(input.Silent))
+                ) && 
+                (
+                    this.Type == input.Type ||
+                    (this.Type != null &&
+                    this.Type.Equals(input.Type))
+                ) && 
+                (
+                    this.CreatedAt == input.CreatedAt ||
+                    (this.CreatedAt != null &&
+                    this.CreatedAt.Equals(input.CreatedAt))
+                ) && 
+                (
+                    this.ChannelType == input.ChannelType ||
+                    (this.ChannelType != null &&
+                    this.ChannelType.Equals(input.ChannelType))
+                ) && 
+                (
+                    this.ReqId == input.ReqId ||
+                    (this.ReqId != null &&
+                    this.ReqId.Equals(input.ReqId))
+                ) && 
+                (
+                    this.MentionType == input.MentionType ||
+                    (this.MentionType != null &&
+                    this.MentionType.Equals(input.MentionType))
+                ) && 
+                (
+                    this.ChannelUrl == input.ChannelUrl ||
+                    (this.ChannelUrl != null &&
+                    this.ChannelUrl.Equals(input.ChannelUrl))
+                ) && 
+                (
+                    this.MessageId == input.MessageId ||
+                    (this.MessageId != null &&
+                    this.MessageId.Equals(input.MessageId))
                 ) && 
                 (
                     this.SortedMetaarray == input.SortedMetaarray ||
@@ -289,21 +388,6 @@ namespace sendbird_platform_sdk.Model
                     this.OgTag == input.OgTag ||
                     (this.OgTag != null &&
                     this.OgTag.Equals(input.OgTag))
-                ) && 
-                (
-                    this.CreatedAt == input.CreatedAt ||
-                    (this.CreatedAt != null &&
-                    this.CreatedAt.Equals(input.CreatedAt))
-                ) && 
-                (
-                    this.UpdatedAt == input.UpdatedAt ||
-                    (this.UpdatedAt != null &&
-                    this.UpdatedAt.Equals(input.UpdatedAt))
-                ) && 
-                (
-                    this.File == input.File ||
-                    (this.File != null &&
-                    this.File.Equals(input.File))
                 );
         }
 
@@ -316,38 +400,50 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.MessageId != null)
-                    hashCode = hashCode * 59 + this.MessageId.GetHashCode();
-                if (this.Type != null)
-                    hashCode = hashCode * 59 + this.Type.GetHashCode();
+                if (this.MessageSurvivalSeconds != null)
+                    hashCode = hashCode * 59 + this.MessageSurvivalSeconds.GetHashCode();
                 if (this.CustomType != null)
                     hashCode = hashCode * 59 + this.CustomType.GetHashCode();
-                if (this.ChannelUrl != null)
-                    hashCode = hashCode * 59 + this.ChannelUrl.GetHashCode();
-                if (this.User != null)
-                    hashCode = hashCode * 59 + this.User.GetHashCode();
-                if (this.MentionType != null)
-                    hashCode = hashCode * 59 + this.MentionType.GetHashCode();
                 if (this.MentionedUsers != null)
                     hashCode = hashCode * 59 + this.MentionedUsers.GetHashCode();
-                if (this.IsRemoved != null)
-                    hashCode = hashCode * 59 + this.IsRemoved.GetHashCode();
-                if (this.Message != null)
-                    hashCode = hashCode * 59 + this.Message.GetHashCode();
                 if (this.Translations != null)
                     hashCode = hashCode * 59 + this.Translations.GetHashCode();
+                if (this.UpdatedAt != null)
+                    hashCode = hashCode * 59 + this.UpdatedAt.GetHashCode();
+                if (this.IsOpMsg != null)
+                    hashCode = hashCode * 59 + this.IsOpMsg.GetHashCode();
+                if (this.IsRemoved != null)
+                    hashCode = hashCode * 59 + this.IsRemoved.GetHashCode();
+                if (this.User != null)
+                    hashCode = hashCode * 59 + this.User.GetHashCode();
+                if (this.File != null)
+                    hashCode = hashCode * 59 + this.File.GetHashCode();
+                if (this.Message != null)
+                    hashCode = hashCode * 59 + this.Message.GetHashCode();
                 if (this.Data != null)
                     hashCode = hashCode * 59 + this.Data.GetHashCode();
+                if (this.MessageRetentionHour != null)
+                    hashCode = hashCode * 59 + this.MessageRetentionHour.GetHashCode();
+                if (this.Silent != null)
+                    hashCode = hashCode * 59 + this.Silent.GetHashCode();
+                if (this.Type != null)
+                    hashCode = hashCode * 59 + this.Type.GetHashCode();
+                if (this.CreatedAt != null)
+                    hashCode = hashCode * 59 + this.CreatedAt.GetHashCode();
+                if (this.ChannelType != null)
+                    hashCode = hashCode * 59 + this.ChannelType.GetHashCode();
+                if (this.ReqId != null)
+                    hashCode = hashCode * 59 + this.ReqId.GetHashCode();
+                if (this.MentionType != null)
+                    hashCode = hashCode * 59 + this.MentionType.GetHashCode();
+                if (this.ChannelUrl != null)
+                    hashCode = hashCode * 59 + this.ChannelUrl.GetHashCode();
+                if (this.MessageId != null)
+                    hashCode = hashCode * 59 + this.MessageId.GetHashCode();
                 if (this.SortedMetaarray != null)
                     hashCode = hashCode * 59 + this.SortedMetaarray.GetHashCode();
                 if (this.OgTag != null)
                     hashCode = hashCode * 59 + this.OgTag.GetHashCode();
-                if (this.CreatedAt != null)
-                    hashCode = hashCode * 59 + this.CreatedAt.GetHashCode();
-                if (this.UpdatedAt != null)
-                    hashCode = hashCode * 59 + this.UpdatedAt.GetHashCode();
-                if (this.File != null)
-                    hashCode = hashCode * 59 + this.File.GetHashCode();
                 return hashCode;
             }
         }

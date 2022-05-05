@@ -5,6 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**ChannelCustomTypes** | **List&lt;string&gt;** |  | [optional] 
+**DataType** | **string** |  | [optional] 
 **RequestId** | **string** |  | [optional] 
 **Status** | **string** |  | [optional] 
 **Format** | **string** |  | [optional] 

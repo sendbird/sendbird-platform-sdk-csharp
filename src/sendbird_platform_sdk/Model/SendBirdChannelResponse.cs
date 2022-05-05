@@ -182,16 +182,22 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="SendBirdChannelResponse" /> class.
         /// </summary>
+        /// <param name="channelUrl">channelUrl.</param>
         /// <param name="coverUrl">coverUrl.</param>
         /// <param name="createdAt">createdAt.</param>
+        /// <param name="createdBy">createdBy.</param>
         /// <param name="creator">creator.</param>
         /// <param name="customType">customType.</param>
         /// <param name="data">data.</param>
+        /// <param name="disappearingMessage">disappearingMessage.</param>
+        /// <param name="freeze">freeze.</param>
+        /// <param name="ignoreProfanityFilter">ignoreProfanityFilter.</param>
         /// <param name="hiddenState">hiddenState.</param>
         /// <param name="invitedAt">invitedAt.</param>
         /// <param name="inviter">inviter.</param>
         /// <param name="isAccessCodeRequired">isAccessCodeRequired.</param>
         /// <param name="isBroadcast">isBroadcast.</param>
+        /// <param name="isCreated">isCreated.</param>
         /// <param name="isDiscoverable">isDiscoverable.</param>
         /// <param name="isDistinct">isDistinct.</param>
         /// <param name="isEphemeral">isEphemeral.</param>
@@ -203,6 +209,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="joinedAt">joinedAt.</param>
         /// <param name="joinedMemberCount">joinedMemberCount.</param>
         /// <param name="lastMessage">lastMessage.</param>
+        /// <param name="maxLengthMessage">maxLengthMessage.</param>
         /// <param name="memberCount">memberCount.</param>
         /// <param name="members">members.</param>
         /// <param name="messageOffsetTimestamp">messageOffsetTimestamp.</param>
@@ -214,23 +221,30 @@ namespace sendbird_platform_sdk.Model
         /// <param name="myPushTriggerOption">myPushTriggerOption.</param>
         /// <param name="myRole">myRole.</param>
         /// <param name="name">name.</param>
+        /// <param name="operators">operators.</param>
+        /// <param name="smsFallback">smsFallback.</param>
         /// <param name="unreadMentionCount">unreadMentionCount.</param>
         /// <param name="unreadMessageCount">unreadMessageCount.</param>
-        /// <param name="channelUrl">channelUrl.</param>
-        /// <param name="operators">operators.</param>
+        /// <param name="isDynamicPartitioned">isDynamicPartitioned.</param>
         /// <param name="participantCount">participantCount.</param>
-        public SendBirdChannelResponse(string coverUrl = default(string), decimal createdAt = default(decimal), SendBirdUser creator = default(SendBirdUser), string customType = default(string), string data = default(string), HiddenStateEnum? hiddenState = default(HiddenStateEnum?), decimal invitedAt = default(decimal), SendBirdUser inviter = default(SendBirdUser), bool isAccessCodeRequired = default(bool), bool isBroadcast = default(bool), bool isDiscoverable = default(bool), bool isDistinct = default(bool), bool isEphemeral = default(bool), bool isFrozen = default(bool), bool isHidden = default(bool), bool isPublic = default(bool), bool isPushEnabled = default(bool), bool isSuper = default(bool), decimal joinedAt = default(decimal), decimal joinedMemberCount = default(decimal), SendBirdMessageResponse lastMessage = default(SendBirdMessageResponse), decimal memberCount = default(decimal), List<SendBirdMember> members = default(List<SendBirdMember>), decimal messageOffsetTimestamp = default(decimal), decimal messageSurvivalSeconds = default(decimal), string myCountPreference = default(string), decimal myLastRead = default(decimal), MyMemberStateEnum? myMemberState = default(MyMemberStateEnum?), MyMutedStateEnum? myMutedState = default(MyMutedStateEnum?), MyPushTriggerOptionEnum? myPushTriggerOption = default(MyPushTriggerOptionEnum?), MyRoleEnum? myRole = default(MyRoleEnum?), string name = default(string), decimal unreadMentionCount = default(decimal), decimal unreadMessageCount = default(decimal), string channelUrl = default(string), List<SendBirdUser> operators = default(List<SendBirdUser>), decimal participantCount = default(decimal))
+        public SendBirdChannelResponse(string channelUrl = default(string), string coverUrl = default(string), decimal createdAt = default(decimal), SendBirdGroupChannelCreatedBy createdBy = default(SendBirdGroupChannelCreatedBy), SendBirdUser creator = default(SendBirdUser), string customType = default(string), string data = default(string), SendBirdGroupChannelDisappearingMessage disappearingMessage = default(SendBirdGroupChannelDisappearingMessage), bool freeze = default(bool), bool ignoreProfanityFilter = default(bool), HiddenStateEnum? hiddenState = default(HiddenStateEnum?), decimal invitedAt = default(decimal), SendBirdUser inviter = default(SendBirdUser), bool isAccessCodeRequired = default(bool), bool isBroadcast = default(bool), bool isCreated = default(bool), bool isDiscoverable = default(bool), bool isDistinct = default(bool), bool isEphemeral = default(bool), bool isFrozen = default(bool), bool isHidden = default(bool), bool isPublic = default(bool), bool isPushEnabled = default(bool), bool isSuper = default(bool), decimal joinedAt = default(decimal), decimal joinedMemberCount = default(decimal), SendBirdMessageResponse lastMessage = default(SendBirdMessageResponse), decimal maxLengthMessage = default(decimal), decimal memberCount = default(decimal), List<SendBirdMember> members = default(List<SendBirdMember>), decimal messageOffsetTimestamp = default(decimal), decimal messageSurvivalSeconds = default(decimal), string myCountPreference = default(string), decimal myLastRead = default(decimal), MyMemberStateEnum? myMemberState = default(MyMemberStateEnum?), MyMutedStateEnum? myMutedState = default(MyMutedStateEnum?), MyPushTriggerOptionEnum? myPushTriggerOption = default(MyPushTriggerOptionEnum?), MyRoleEnum? myRole = default(MyRoleEnum?), string name = default(string), List<SendBirdUser> operators = default(List<SendBirdUser>), SendBirdGroupChannelSmsFallback smsFallback = default(SendBirdGroupChannelSmsFallback), decimal unreadMentionCount = default(decimal), decimal unreadMessageCount = default(decimal), bool isDynamicPartitioned = default(bool), decimal participantCount = default(decimal))
         {
+            this.ChannelUrl = channelUrl;
             this.CoverUrl = coverUrl;
             this.CreatedAt = createdAt;
+            this.CreatedBy = createdBy;
             this.Creator = creator;
             this.CustomType = customType;
             this.Data = data;
+            this.DisappearingMessage = disappearingMessage;
+            this.Freeze = freeze;
+            this.IgnoreProfanityFilter = ignoreProfanityFilter;
             this.HiddenState = hiddenState;
             this.InvitedAt = invitedAt;
             this.Inviter = inviter;
             this.IsAccessCodeRequired = isAccessCodeRequired;
             this.IsBroadcast = isBroadcast;
+            this.IsCreated = isCreated;
             this.IsDiscoverable = isDiscoverable;
             this.IsDistinct = isDistinct;
             this.IsEphemeral = isEphemeral;
@@ -242,6 +256,7 @@ namespace sendbird_platform_sdk.Model
             this.JoinedAt = joinedAt;
             this.JoinedMemberCount = joinedMemberCount;
             this.LastMessage = lastMessage;
+            this.MaxLengthMessage = maxLengthMessage;
             this.MemberCount = memberCount;
             this.Members = members;
             this.MessageOffsetTimestamp = messageOffsetTimestamp;
@@ -253,12 +268,19 @@ namespace sendbird_platform_sdk.Model
             this.MyPushTriggerOption = myPushTriggerOption;
             this.MyRole = myRole;
             this.Name = name;
+            this.Operators = operators;
+            this.SmsFallback = smsFallback;
             this.UnreadMentionCount = unreadMentionCount;
             this.UnreadMessageCount = unreadMessageCount;
-            this.ChannelUrl = channelUrl;
-            this.Operators = operators;
+            this.IsDynamicPartitioned = isDynamicPartitioned;
             this.ParticipantCount = participantCount;
         }
+
+        /// <summary>
+        /// Gets or Sets ChannelUrl
+        /// </summary>
+        [DataMember(Name="channel_url", EmitDefaultValue=false)]
+        public string ChannelUrl { get; set; }
 
         /// <summary>
         /// Gets or Sets CoverUrl
@@ -271,6 +293,12 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         [DataMember(Name="created_at", EmitDefaultValue=false)]
         public decimal CreatedAt { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CreatedBy
+        /// </summary>
+        [DataMember(Name="created_by", EmitDefaultValue=false)]
+        public SendBirdGroupChannelCreatedBy CreatedBy { get; set; }
 
         /// <summary>
         /// Gets or Sets Creator
@@ -289,6 +317,24 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         [DataMember(Name="data", EmitDefaultValue=false)]
         public string Data { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DisappearingMessage
+        /// </summary>
+        [DataMember(Name="disappearing_message", EmitDefaultValue=false)]
+        public SendBirdGroupChannelDisappearingMessage DisappearingMessage { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Freeze
+        /// </summary>
+        [DataMember(Name="freeze", EmitDefaultValue=false)]
+        public bool Freeze { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IgnoreProfanityFilter
+        /// </summary>
+        [DataMember(Name="ignore_profanity_filter", EmitDefaultValue=false)]
+        public bool IgnoreProfanityFilter { get; set; }
 
 
         /// <summary>
@@ -314,6 +360,12 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         [DataMember(Name="is_broadcast", EmitDefaultValue=false)]
         public bool IsBroadcast { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsCreated
+        /// </summary>
+        [DataMember(Name="is_created", EmitDefaultValue=false)]
+        public bool IsCreated { get; set; }
 
         /// <summary>
         /// Gets or Sets IsDiscoverable
@@ -382,6 +434,12 @@ namespace sendbird_platform_sdk.Model
         public SendBirdMessageResponse LastMessage { get; set; }
 
         /// <summary>
+        /// Gets or Sets MaxLengthMessage
+        /// </summary>
+        [DataMember(Name="max_length_message", EmitDefaultValue=false)]
+        public decimal MaxLengthMessage { get; set; }
+
+        /// <summary>
         /// Gets or Sets MemberCount
         /// </summary>
         [DataMember(Name="member_count", EmitDefaultValue=false)]
@@ -428,6 +486,18 @@ namespace sendbird_platform_sdk.Model
         public string Name { get; set; }
 
         /// <summary>
+        /// Gets or Sets Operators
+        /// </summary>
+        [DataMember(Name="operators", EmitDefaultValue=false)]
+        public List<SendBirdUser> Operators { get; set; }
+
+        /// <summary>
+        /// Gets or Sets SmsFallback
+        /// </summary>
+        [DataMember(Name="sms_fallback", EmitDefaultValue=false)]
+        public SendBirdGroupChannelSmsFallback SmsFallback { get; set; }
+
+        /// <summary>
         /// Gets or Sets UnreadMentionCount
         /// </summary>
         [DataMember(Name="unread_mention_count", EmitDefaultValue=false)]
@@ -440,16 +510,10 @@ namespace sendbird_platform_sdk.Model
         public decimal UnreadMessageCount { get; set; }
 
         /// <summary>
-        /// Gets or Sets ChannelUrl
+        /// Gets or Sets IsDynamicPartitioned
         /// </summary>
-        [DataMember(Name="channel_url", EmitDefaultValue=false)]
-        public string ChannelUrl { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Operators
-        /// </summary>
-        [DataMember(Name="operators", EmitDefaultValue=false)]
-        public List<SendBirdUser> Operators { get; set; }
+        [DataMember(Name="is_dynamic_partitioned", EmitDefaultValue=false)]
+        public bool IsDynamicPartitioned { get; set; }
 
         /// <summary>
         /// Gets or Sets ParticipantCount
@@ -465,16 +529,22 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class SendBirdChannelResponse {\n");
+            sb.Append("  ChannelUrl: ").Append(ChannelUrl).Append("\n");
             sb.Append("  CoverUrl: ").Append(CoverUrl).Append("\n");
             sb.Append("  CreatedAt: ").Append(CreatedAt).Append("\n");
+            sb.Append("  CreatedBy: ").Append(CreatedBy).Append("\n");
             sb.Append("  Creator: ").Append(Creator).Append("\n");
             sb.Append("  CustomType: ").Append(CustomType).Append("\n");
             sb.Append("  Data: ").Append(Data).Append("\n");
+            sb.Append("  DisappearingMessage: ").Append(DisappearingMessage).Append("\n");
+            sb.Append("  Freeze: ").Append(Freeze).Append("\n");
+            sb.Append("  IgnoreProfanityFilter: ").Append(IgnoreProfanityFilter).Append("\n");
             sb.Append("  HiddenState: ").Append(HiddenState).Append("\n");
             sb.Append("  InvitedAt: ").Append(InvitedAt).Append("\n");
             sb.Append("  Inviter: ").Append(Inviter).Append("\n");
             sb.Append("  IsAccessCodeRequired: ").Append(IsAccessCodeRequired).Append("\n");
             sb.Append("  IsBroadcast: ").Append(IsBroadcast).Append("\n");
+            sb.Append("  IsCreated: ").Append(IsCreated).Append("\n");
             sb.Append("  IsDiscoverable: ").Append(IsDiscoverable).Append("\n");
             sb.Append("  IsDistinct: ").Append(IsDistinct).Append("\n");
             sb.Append("  IsEphemeral: ").Append(IsEphemeral).Append("\n");
@@ -486,6 +556,7 @@ namespace sendbird_platform_sdk.Model
             sb.Append("  JoinedAt: ").Append(JoinedAt).Append("\n");
             sb.Append("  JoinedMemberCount: ").Append(JoinedMemberCount).Append("\n");
             sb.Append("  LastMessage: ").Append(LastMessage).Append("\n");
+            sb.Append("  MaxLengthMessage: ").Append(MaxLengthMessage).Append("\n");
             sb.Append("  MemberCount: ").Append(MemberCount).Append("\n");
             sb.Append("  Members: ").Append(Members).Append("\n");
             sb.Append("  MessageOffsetTimestamp: ").Append(MessageOffsetTimestamp).Append("\n");
@@ -497,10 +568,11 @@ namespace sendbird_platform_sdk.Model
             sb.Append("  MyPushTriggerOption: ").Append(MyPushTriggerOption).Append("\n");
             sb.Append("  MyRole: ").Append(MyRole).Append("\n");
             sb.Append("  Name: ").Append(Name).Append("\n");
+            sb.Append("  Operators: ").Append(Operators).Append("\n");
+            sb.Append("  SmsFallback: ").Append(SmsFallback).Append("\n");
             sb.Append("  UnreadMentionCount: ").Append(UnreadMentionCount).Append("\n");
             sb.Append("  UnreadMessageCount: ").Append(UnreadMessageCount).Append("\n");
-            sb.Append("  ChannelUrl: ").Append(ChannelUrl).Append("\n");
-            sb.Append("  Operators: ").Append(Operators).Append("\n");
+            sb.Append("  IsDynamicPartitioned: ").Append(IsDynamicPartitioned).Append("\n");
             sb.Append("  ParticipantCount: ").Append(ParticipantCount).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -537,6 +609,11 @@ namespace sendbird_platform_sdk.Model
 
             return 
                 (
+                    this.ChannelUrl == input.ChannelUrl ||
+                    (this.ChannelUrl != null &&
+                    this.ChannelUrl.Equals(input.ChannelUrl))
+                ) && 
+                (
                     this.CoverUrl == input.CoverUrl ||
                     (this.CoverUrl != null &&
                     this.CoverUrl.Equals(input.CoverUrl))
@@ -545,6 +622,11 @@ namespace sendbird_platform_sdk.Model
                     this.CreatedAt == input.CreatedAt ||
                     (this.CreatedAt != null &&
                     this.CreatedAt.Equals(input.CreatedAt))
+                ) && 
+                (
+                    this.CreatedBy == input.CreatedBy ||
+                    (this.CreatedBy != null &&
+                    this.CreatedBy.Equals(input.CreatedBy))
                 ) && 
                 (
                     this.Creator == input.Creator ||
@@ -560,6 +642,21 @@ namespace sendbird_platform_sdk.Model
                     this.Data == input.Data ||
                     (this.Data != null &&
                     this.Data.Equals(input.Data))
+                ) && 
+                (
+                    this.DisappearingMessage == input.DisappearingMessage ||
+                    (this.DisappearingMessage != null &&
+                    this.DisappearingMessage.Equals(input.DisappearingMessage))
+                ) && 
+                (
+                    this.Freeze == input.Freeze ||
+                    (this.Freeze != null &&
+                    this.Freeze.Equals(input.Freeze))
+                ) && 
+                (
+                    this.IgnoreProfanityFilter == input.IgnoreProfanityFilter ||
+                    (this.IgnoreProfanityFilter != null &&
+                    this.IgnoreProfanityFilter.Equals(input.IgnoreProfanityFilter))
                 ) && 
                 (
                     this.HiddenState == input.HiddenState ||
@@ -585,6 +682,11 @@ namespace sendbird_platform_sdk.Model
                     this.IsBroadcast == input.IsBroadcast ||
                     (this.IsBroadcast != null &&
                     this.IsBroadcast.Equals(input.IsBroadcast))
+                ) && 
+                (
+                    this.IsCreated == input.IsCreated ||
+                    (this.IsCreated != null &&
+                    this.IsCreated.Equals(input.IsCreated))
                 ) && 
                 (
                     this.IsDiscoverable == input.IsDiscoverable ||
@@ -640,6 +742,11 @@ namespace sendbird_platform_sdk.Model
                     this.LastMessage == input.LastMessage ||
                     (this.LastMessage != null &&
                     this.LastMessage.Equals(input.LastMessage))
+                ) && 
+                (
+                    this.MaxLengthMessage == input.MaxLengthMessage ||
+                    (this.MaxLengthMessage != null &&
+                    this.MaxLengthMessage.Equals(input.MaxLengthMessage))
                 ) && 
                 (
                     this.MemberCount == input.MemberCount ||
@@ -698,6 +805,17 @@ namespace sendbird_platform_sdk.Model
                     this.Name.Equals(input.Name))
                 ) && 
                 (
+                    this.Operators == input.Operators ||
+                    this.Operators != null &&
+                    input.Operators != null &&
+                    this.Operators.SequenceEqual(input.Operators)
+                ) && 
+                (
+                    this.SmsFallback == input.SmsFallback ||
+                    (this.SmsFallback != null &&
+                    this.SmsFallback.Equals(input.SmsFallback))
+                ) && 
+                (
                     this.UnreadMentionCount == input.UnreadMentionCount ||
                     (this.UnreadMentionCount != null &&
                     this.UnreadMentionCount.Equals(input.UnreadMentionCount))
@@ -708,15 +826,9 @@ namespace sendbird_platform_sdk.Model
                     this.UnreadMessageCount.Equals(input.UnreadMessageCount))
                 ) && 
                 (
-                    this.ChannelUrl == input.ChannelUrl ||
-                    (this.ChannelUrl != null &&
-                    this.ChannelUrl.Equals(input.ChannelUrl))
-                ) && 
-                (
-                    this.Operators == input.Operators ||
-                    this.Operators != null &&
-                    input.Operators != null &&
-                    this.Operators.SequenceEqual(input.Operators)
+                    this.IsDynamicPartitioned == input.IsDynamicPartitioned ||
+                    (this.IsDynamicPartitioned != null &&
+                    this.IsDynamicPartitioned.Equals(input.IsDynamicPartitioned))
                 ) && 
                 (
                     this.ParticipantCount == input.ParticipantCount ||
@@ -734,16 +846,26 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.ChannelUrl != null)
+                    hashCode = hashCode * 59 + this.ChannelUrl.GetHashCode();
                 if (this.CoverUrl != null)
                     hashCode = hashCode * 59 + this.CoverUrl.GetHashCode();
                 if (this.CreatedAt != null)
                     hashCode = hashCode * 59 + this.CreatedAt.GetHashCode();
+                if (this.CreatedBy != null)
+                    hashCode = hashCode * 59 + this.CreatedBy.GetHashCode();
                 if (this.Creator != null)
                     hashCode = hashCode * 59 + this.Creator.GetHashCode();
                 if (this.CustomType != null)
                     hashCode = hashCode * 59 + this.CustomType.GetHashCode();
                 if (this.Data != null)
                     hashCode = hashCode * 59 + this.Data.GetHashCode();
+                if (this.DisappearingMessage != null)
+                    hashCode = hashCode * 59 + this.DisappearingMessage.GetHashCode();
+                if (this.Freeze != null)
+                    hashCode = hashCode * 59 + this.Freeze.GetHashCode();
+                if (this.IgnoreProfanityFilter != null)
+                    hashCode = hashCode * 59 + this.IgnoreProfanityFilter.GetHashCode();
                 if (this.HiddenState != null)
                     hashCode = hashCode * 59 + this.HiddenState.GetHashCode();
                 if (this.InvitedAt != null)
@@ -754,6 +876,8 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.IsAccessCodeRequired.GetHashCode();
                 if (this.IsBroadcast != null)
                     hashCode = hashCode * 59 + this.IsBroadcast.GetHashCode();
+                if (this.IsCreated != null)
+                    hashCode = hashCode * 59 + this.IsCreated.GetHashCode();
                 if (this.IsDiscoverable != null)
                     hashCode = hashCode * 59 + this.IsDiscoverable.GetHashCode();
                 if (this.IsDistinct != null)
@@ -776,6 +900,8 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.JoinedMemberCount.GetHashCode();
                 if (this.LastMessage != null)
                     hashCode = hashCode * 59 + this.LastMessage.GetHashCode();
+                if (this.MaxLengthMessage != null)
+                    hashCode = hashCode * 59 + this.MaxLengthMessage.GetHashCode();
                 if (this.MemberCount != null)
                     hashCode = hashCode * 59 + this.MemberCount.GetHashCode();
                 if (this.Members != null)
@@ -798,14 +924,16 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.MyRole.GetHashCode();
                 if (this.Name != null)
                     hashCode = hashCode * 59 + this.Name.GetHashCode();
+                if (this.Operators != null)
+                    hashCode = hashCode * 59 + this.Operators.GetHashCode();
+                if (this.SmsFallback != null)
+                    hashCode = hashCode * 59 + this.SmsFallback.GetHashCode();
                 if (this.UnreadMentionCount != null)
                     hashCode = hashCode * 59 + this.UnreadMentionCount.GetHashCode();
                 if (this.UnreadMessageCount != null)
                     hashCode = hashCode * 59 + this.UnreadMessageCount.GetHashCode();
-                if (this.ChannelUrl != null)
-                    hashCode = hashCode * 59 + this.ChannelUrl.GetHashCode();
-                if (this.Operators != null)
-                    hashCode = hashCode * 59 + this.Operators.GetHashCode();
+                if (this.IsDynamicPartitioned != null)
+                    hashCode = hashCode * 59 + this.IsDynamicPartitioned.GetHashCode();
                 if (this.ParticipantCount != null)
                     hashCode = hashCode * 59 + this.ParticipantCount.GetHashCode();
                 return hashCode;
