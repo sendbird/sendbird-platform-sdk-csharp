@@ -26,31 +26,6 @@ namespace sendbird_platform_sdk.Api
     {
         #region Synchronous Operations
         /// <summary>
-        /// Ban a user
-        /// </summary>
-        /// <remarks>
-        /// ## Ban a user  Bans a user from an open channel. A banned user is immediately expelled from a channel and allowed to participate in the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-ban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocBanUserData"> (optional)</param>
-        /// <returns>OcBanUserResponse</returns>
-        OcBanUserResponse OcBanUser (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData));
-
-        /// <summary>
-        /// Ban a user
-        /// </summary>
-        /// <remarks>
-        /// ## Ban a user  Bans a user from an open channel. A banned user is immediately expelled from a channel and allowed to participate in the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-ban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocBanUserData"> (optional)</param>
-        /// <returns>ApiResponse of OcBanUserResponse</returns>
-        ApiResponse<OcBanUserResponse> OcBanUserWithHttpInfo (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData));
-        /// <summary>
         /// Cancel the registration of operators
         /// </summary>
         /// <remarks>
@@ -109,8 +84,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <returns>InlineResponse200</returns>
-        InlineResponse200 OcDeleteChannelByUrl (string apiToken, string channelUrl);
+        /// <returns>InlineResponse2001</returns>
+        InlineResponse2001 OcDeleteChannelByUrl (string apiToken, string channelUrl);
 
         /// <summary>
         /// Delete a channel
@@ -121,60 +96,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <returns>ApiResponse of InlineResponse200</returns>
-        ApiResponse<InlineResponse200> OcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl);
-        /// <summary>
-        /// Freeze a channel
-        /// </summary>
-        /// <remarks>
-        /// ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocFreezeChannelData"> (optional)</param>
-        /// <returns>SendBirdOpenChannel</returns>
-        SendBirdOpenChannel OcFreezeChannel (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData));
-
-        /// <summary>
-        /// Freeze a channel
-        /// </summary>
-        /// <remarks>
-        /// ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocFreezeChannelData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        ApiResponse<SendBirdOpenChannel> OcFreezeChannelWithHttpInfo (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData));
-        /// <summary>
-        /// List banned users
-        /// </summary>
-        /// <remarks>
-        /// ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>OcListBannedUsersResponse</returns>
-        OcListBannedUsersResponse OcListBannedUsers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
-
-        /// <summary>
-        /// List banned users
-        /// </summary>
-        /// <remarks>
-        /// ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of OcListBannedUsersResponse</returns>
-        ApiResponse<OcListBannedUsersResponse> OcListBannedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        /// <returns>ApiResponse of InlineResponse2001</returns>
+        ApiResponse<InlineResponse2001> OcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl);
         /// <summary>
         /// List channels
         /// </summary>
@@ -212,33 +135,6 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customType"> (optional)</param>
         /// <returns>ApiResponse of OcListChannelsResponse</returns>
         ApiResponse<OcListChannelsResponse> OcListChannelsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string));
-        /// <summary>
-        /// List muted users
-        /// </summary>
-        /// <remarks>
-        /// ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>OcListMutedUsersResponse</returns>
-        OcListMutedUsersResponse OcListMutedUsers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
-
-        /// <summary>
-        /// List muted users
-        /// </summary>
-        /// <remarks>
-        /// ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of OcListMutedUsersResponse</returns>
-        ApiResponse<OcListMutedUsersResponse> OcListMutedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
         /// <summary>
         /// List operators
         /// </summary>
@@ -294,31 +190,6 @@ namespace sendbird_platform_sdk.Api
         /// <returns>ApiResponse of OcListParticipantsResponse</returns>
         ApiResponse<OcListParticipantsResponse> OcListParticipantsWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
         /// <summary>
-        /// Mute a user
-        /// </summary>
-        /// <remarks>
-        /// ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocMuteUserData"> (optional)</param>
-        /// <returns>SendBirdOpenChannel</returns>
-        SendBirdOpenChannel OcMuteUser (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData));
-
-        /// <summary>
-        /// Mute a user
-        /// </summary>
-        /// <remarks>
-        /// ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocMuteUserData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        ApiResponse<SendBirdOpenChannel> OcMuteUserWithHttpInfo (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData));
-        /// <summary>
         /// Register operators
         /// </summary>
         /// <remarks>
@@ -328,8 +199,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
-        /// <returns>InlineResponse200</returns>
-        InlineResponse200 OcRegisterOperators (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData));
+        /// <returns>InlineResponse2001</returns>
+        InlineResponse2001 OcRegisterOperators (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData));
 
         /// <summary>
         /// Register operators
@@ -341,85 +212,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse200</returns>
-        ApiResponse<InlineResponse200> OcRegisterOperatorsWithHttpInfo (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData));
-        /// <summary>
-        /// Unban a user
-        /// </summary>
-        /// <remarks>
-        /// ## Unban a user  Unbans a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <returns>InlineResponse200</returns>
-        InlineResponse200 OcUnbanUserById (string apiToken, string channelUrl, string bannedUserId);
-
-        /// <summary>
-        /// Unban a user
-        /// </summary>
-        /// <remarks>
-        /// ## Unban a user  Unbans a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <returns>ApiResponse of InlineResponse200</returns>
-        ApiResponse<InlineResponse200> OcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId);
-        /// <summary>
-        /// Unmute a user
-        /// </summary>
-        /// <remarks>
-        /// ## Unmute a user  Unmutes a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unmute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="mutedUserId"></param>
-        /// <returns>InlineResponse200</returns>
-        InlineResponse200 OcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId);
-
-        /// <summary>
-        /// Unmute a user
-        /// </summary>
-        /// <remarks>
-        /// ## Unmute a user  Unmutes a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unmute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="mutedUserId"></param>
-        /// <returns>ApiResponse of InlineResponse200</returns>
-        ApiResponse<InlineResponse200> OcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId);
-        /// <summary>
-        /// Update a ban
-        /// </summary>
-        /// <remarks>
-        /// ## Update a ban  Updates details of a ban imposed on a user. You can change the length of a ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <param name="ocUpdateBanByIdData"> (optional)</param>
-        /// <returns>OcUpdateBanByIdResponse</returns>
-        OcUpdateBanByIdResponse OcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData));
-
-        /// <summary>
-        /// Update a ban
-        /// </summary>
-        /// <remarks>
-        /// ## Update a ban  Updates details of a ban imposed on a user. You can change the length of a ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <param name="ocUpdateBanByIdData"> (optional)</param>
-        /// <returns>ApiResponse of OcUpdateBanByIdResponse</returns>
-        ApiResponse<OcUpdateBanByIdResponse> OcUpdateBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData));
+        /// <returns>ApiResponse of InlineResponse2001</returns>
+        ApiResponse<InlineResponse2001> OcRegisterOperatorsWithHttpInfo (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData));
         /// <summary>
         /// Update a channel
         /// </summary>
@@ -446,31 +240,6 @@ namespace sendbird_platform_sdk.Api
         /// <returns>ApiResponse of SendBirdOpenChannel</returns>
         ApiResponse<SendBirdOpenChannel> OcUpdateChannelByUrlWithHttpInfo (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData));
         /// <summary>
-        /// View a ban
-        /// </summary>
-        /// <remarks>
-        /// ## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <returns>OcViewBanByIdResponse</returns>
-        OcViewBanByIdResponse OcViewBanById (string apiToken, string channelUrl, string bannedUserId);
-
-        /// <summary>
-        /// View a ban
-        /// </summary>
-        /// <remarks>
-        /// ## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <returns>ApiResponse of OcViewBanByIdResponse</returns>
-        ApiResponse<OcViewBanByIdResponse> OcViewBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId);
-        /// <summary>
         /// View a channel
         /// </summary>
         /// <remarks>
@@ -493,60 +262,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <returns>ApiResponse of SendBirdOpenChannel</returns>
         ApiResponse<SendBirdOpenChannel> OcViewChannelByUrlWithHttpInfo (string apiToken, string channelUrl);
-        /// <summary>
-        /// View a mute
-        /// </summary>
-        /// <remarks>
-        /// ## View a mute  Checks if a user is muted in an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-mute - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="mutedUserId"></param>
-        /// <returns>OcViewMuteByIdResponse</returns>
-        OcViewMuteByIdResponse OcViewMuteById (string apiToken, string channelUrl, string mutedUserId);
-
-        /// <summary>
-        /// View a mute
-        /// </summary>
-        /// <remarks>
-        /// ## View a mute  Checks if a user is muted in an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-mute - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="mutedUserId"></param>
-        /// <returns>ApiResponse of OcViewMuteByIdResponse</returns>
-        ApiResponse<OcViewMuteByIdResponse> OcViewMuteByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId);
         #endregion Synchronous Operations
         #region Asynchronous Operations
-        /// <summary>
-        /// Ban a user
-        /// </summary>
-        /// <remarks>
-        /// ## Ban a user  Bans a user from an open channel. A banned user is immediately expelled from a channel and allowed to participate in the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-ban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocBanUserData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcBanUserResponse</returns>
-        System.Threading.Tasks.Task<OcBanUserResponse> OcBanUserAsync (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Ban a user
-        /// </summary>
-        /// <remarks>
-        /// ## Ban a user  Bans a user from an open channel. A banned user is immediately expelled from a channel and allowed to participate in the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-ban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocBanUserData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcBanUserResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcBanUserResponse>> OcBanUserWithHttpInfoAsync (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Cancel the registration of operators
         /// </summary>
@@ -611,8 +328,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse200</returns>
-        System.Threading.Tasks.Task<InlineResponse200> OcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of InlineResponse2001</returns>
+        System.Threading.Tasks.Task<InlineResponse2001> OcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Delete a channel
@@ -624,64 +341,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> OcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Freeze a channel
-        /// </summary>
-        /// <remarks>
-        /// ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocFreezeChannelData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdOpenChannel</returns>
-        System.Threading.Tasks.Task<SendBirdOpenChannel> OcFreezeChannelAsync (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Freeze a channel
-        /// </summary>
-        /// <remarks>
-        /// ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocFreezeChannelData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcFreezeChannelWithHttpInfoAsync (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// List banned users
-        /// </summary>
-        /// <remarks>
-        /// ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcListBannedUsersResponse</returns>
-        System.Threading.Tasks.Task<OcListBannedUsersResponse> OcListBannedUsersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// List banned users
-        /// </summary>
-        /// <remarks>
-        /// ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcListBannedUsersResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcListBannedUsersResponse>> OcListBannedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> OcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List channels
         /// </summary>
@@ -721,35 +382,6 @@ namespace sendbird_platform_sdk.Api
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListChannelsResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<OcListChannelsResponse>> OcListChannelsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// List muted users
-        /// </summary>
-        /// <remarks>
-        /// ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcListMutedUsersResponse</returns>
-        System.Threading.Tasks.Task<OcListMutedUsersResponse> OcListMutedUsersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// List muted users
-        /// </summary>
-        /// <remarks>
-        /// ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcListMutedUsersResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcListMutedUsersResponse>> OcListMutedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List operators
         /// </summary>
@@ -809,33 +441,6 @@ namespace sendbird_platform_sdk.Api
         /// <returns>Task of ApiResponse (OcListParticipantsResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<OcListParticipantsResponse>> OcListParticipantsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// Mute a user
-        /// </summary>
-        /// <remarks>
-        /// ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocMuteUserData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdOpenChannel</returns>
-        System.Threading.Tasks.Task<SendBirdOpenChannel> OcMuteUserAsync (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Mute a user
-        /// </summary>
-        /// <remarks>
-        /// ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocMuteUserData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcMuteUserWithHttpInfoAsync (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
         /// Register operators
         /// </summary>
         /// <remarks>
@@ -846,8 +451,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse200</returns>
-        System.Threading.Tasks.Task<InlineResponse200> OcRegisterOperatorsAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of InlineResponse2001</returns>
+        System.Threading.Tasks.Task<InlineResponse2001> OcRegisterOperatorsAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Register operators
@@ -860,91 +465,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> OcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Unban a user
-        /// </summary>
-        /// <remarks>
-        /// ## Unban a user  Unbans a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse200</returns>
-        System.Threading.Tasks.Task<InlineResponse200> OcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Unban a user
-        /// </summary>
-        /// <remarks>
-        /// ## Unban a user  Unbans a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> OcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Unmute a user
-        /// </summary>
-        /// <remarks>
-        /// ## Unmute a user  Unmutes a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unmute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="mutedUserId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse200</returns>
-        System.Threading.Tasks.Task<InlineResponse200> OcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Unmute a user
-        /// </summary>
-        /// <remarks>
-        /// ## Unmute a user  Unmutes a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unmute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="mutedUserId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> OcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Update a ban
-        /// </summary>
-        /// <remarks>
-        /// ## Update a ban  Updates details of a ban imposed on a user. You can change the length of a ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <param name="ocUpdateBanByIdData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcUpdateBanByIdResponse</returns>
-        System.Threading.Tasks.Task<OcUpdateBanByIdResponse> OcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Update a ban
-        /// </summary>
-        /// <remarks>
-        /// ## Update a ban  Updates details of a ban imposed on a user. You can change the length of a ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <param name="ocUpdateBanByIdData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcUpdateBanByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcUpdateBanByIdResponse>> OcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> OcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update a channel
         /// </summary>
@@ -973,33 +495,6 @@ namespace sendbird_platform_sdk.Api
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
         System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcUpdateChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// View a ban
-        /// </summary>
-        /// <remarks>
-        /// ## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcViewBanByIdResponse</returns>
-        System.Threading.Tasks.Task<OcViewBanByIdResponse> OcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// View a ban
-        /// </summary>
-        /// <remarks>
-        /// ## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcViewBanByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcViewBanByIdResponse>> OcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
         /// View a channel
         /// </summary>
         /// <remarks>
@@ -1024,33 +519,6 @@ namespace sendbird_platform_sdk.Api
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
         System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcViewChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// View a mute
-        /// </summary>
-        /// <remarks>
-        /// ## View a mute  Checks if a user is muted in an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-mute - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="mutedUserId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcViewMuteByIdResponse</returns>
-        System.Threading.Tasks.Task<OcViewMuteByIdResponse> OcViewMuteByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// View a mute
-        /// </summary>
-        /// <remarks>
-        /// ## View a mute  Checks if a user is muted in an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-mute - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="mutedUserId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcViewMuteByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcViewMuteByIdResponse>> OcViewMuteByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -1160,175 +628,6 @@ namespace sendbird_platform_sdk.Api
         public void AddDefaultHeader(string key, string value)
         {
             this.Configuration.AddDefaultHeader(key, value);
-        }
-
-        /// <summary>
-        /// Ban a user ## Ban a user  Bans a user from an open channel. A banned user is immediately expelled from a channel and allowed to participate in the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-ban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocBanUserData"> (optional)</param>
-        /// <returns>OcBanUserResponse</returns>
-        public OcBanUserResponse OcBanUser (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData))
-        {
-             ApiResponse<OcBanUserResponse> localVarResponse = OcBanUserWithHttpInfo(apiToken, channelUrl, ocBanUserData);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Ban a user ## Ban a user  Bans a user from an open channel. A banned user is immediately expelled from a channel and allowed to participate in the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-ban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocBanUserData"> (optional)</param>
-        /// <returns>ApiResponse of OcBanUserResponse</returns>
-        public ApiResponse<OcBanUserResponse> OcBanUserWithHttpInfo (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcBanUser");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcBanUser");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/ban";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (ocBanUserData != null && ocBanUserData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(ocBanUserData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = ocBanUserData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcBanUser", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OcBanUserResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcBanUserResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcBanUserResponse)));
-        }
-
-        /// <summary>
-        /// Ban a user ## Ban a user  Bans a user from an open channel. A banned user is immediately expelled from a channel and allowed to participate in the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-ban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocBanUserData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcBanUserResponse</returns>
-        public async System.Threading.Tasks.Task<OcBanUserResponse> OcBanUserAsync (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<OcBanUserResponse> localVarResponse = await OcBanUserWithHttpInfoAsync(apiToken, channelUrl, ocBanUserData, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Ban a user ## Ban a user  Bans a user from an open channel. A banned user is immediately expelled from a channel and allowed to participate in the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-ban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocBanUserData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcBanUserResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcBanUserResponse>> OcBanUserWithHttpInfoAsync (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcBanUser");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcBanUser");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/ban";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (ocBanUserData != null && ocBanUserData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(ocBanUserData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = ocBanUserData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcBanUser", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OcBanUserResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcBanUserResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcBanUserResponse)));
         }
 
         /// <summary>
@@ -1655,10 +954,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <returns>InlineResponse200</returns>
-        public InlineResponse200 OcDeleteChannelByUrl (string apiToken, string channelUrl)
+        /// <returns>InlineResponse2001</returns>
+        public InlineResponse2001 OcDeleteChannelByUrl (string apiToken, string channelUrl)
         {
-             ApiResponse<InlineResponse200> localVarResponse = OcDeleteChannelByUrlWithHttpInfo(apiToken, channelUrl);
+             ApiResponse<InlineResponse2001> localVarResponse = OcDeleteChannelByUrlWithHttpInfo(apiToken, channelUrl);
              return localVarResponse.Data;
         }
 
@@ -1668,8 +967,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <returns>ApiResponse of InlineResponse200</returns>
-        public ApiResponse<InlineResponse200> OcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl)
+        /// <returns>ApiResponse of InlineResponse2001</returns>
+        public ApiResponse<InlineResponse2001> OcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1716,9 +1015,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse200>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
+                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
         }
 
         /// <summary>
@@ -1728,10 +1027,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse200</returns>
-        public async System.Threading.Tasks.Task<InlineResponse200> OcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of InlineResponse2001</returns>
+        public async System.Threading.Tasks.Task<InlineResponse2001> OcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse200> localVarResponse = await OcDeleteChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, cancellationToken);
+             ApiResponse<InlineResponse2001> localVarResponse = await OcDeleteChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1743,8 +1042,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> OcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> OcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1791,337 +1090,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse200>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
-        }
-
-        /// <summary>
-        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocFreezeChannelData"> (optional)</param>
-        /// <returns>SendBirdOpenChannel</returns>
-        public SendBirdOpenChannel OcFreezeChannel (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData))
-        {
-             ApiResponse<SendBirdOpenChannel> localVarResponse = OcFreezeChannelWithHttpInfo(apiToken, channelUrl, ocFreezeChannelData);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocFreezeChannelData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        public ApiResponse<SendBirdOpenChannel> OcFreezeChannelWithHttpInfo (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcFreezeChannel");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcFreezeChannel");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/freeze";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (ocFreezeChannelData != null && ocFreezeChannelData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(ocFreezeChannelData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = ocFreezeChannelData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcFreezeChannel", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<SendBirdOpenChannel>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdOpenChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdOpenChannel)));
-        }
-
-        /// <summary>
-        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocFreezeChannelData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdOpenChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcFreezeChannelAsync (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<SendBirdOpenChannel> localVarResponse = await OcFreezeChannelWithHttpInfoAsync(apiToken, channelUrl, ocFreezeChannelData, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocFreezeChannelData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcFreezeChannelWithHttpInfoAsync (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcFreezeChannel");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcFreezeChannel");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/freeze";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (ocFreezeChannelData != null && ocFreezeChannelData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(ocFreezeChannelData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = ocFreezeChannelData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcFreezeChannel", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<SendBirdOpenChannel>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdOpenChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdOpenChannel)));
-        }
-
-        /// <summary>
-        /// List banned users ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>OcListBannedUsersResponse</returns>
-        public OcListBannedUsersResponse OcListBannedUsers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
-        {
-             ApiResponse<OcListBannedUsersResponse> localVarResponse = OcListBannedUsersWithHttpInfo(apiToken, channelUrl, token, limit);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// List banned users ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of OcListBannedUsersResponse</returns>
-        public ApiResponse<OcListBannedUsersResponse> OcListBannedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListBannedUsers");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcListBannedUsers");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/ban";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
-            if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcListBannedUsers", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OcListBannedUsersResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcListBannedUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListBannedUsersResponse)));
-        }
-
-        /// <summary>
-        /// List banned users ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcListBannedUsersResponse</returns>
-        public async System.Threading.Tasks.Task<OcListBannedUsersResponse> OcListBannedUsersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<OcListBannedUsersResponse> localVarResponse = await OcListBannedUsersWithHttpInfoAsync(apiToken, channelUrl, token, limit, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// List banned users ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcListBannedUsersResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcListBannedUsersResponse>> OcListBannedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListBannedUsers");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcListBannedUsers");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/ban";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
-            if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcListBannedUsers", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OcListBannedUsersResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcListBannedUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListBannedUsersResponse)));
+                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
         }
 
         /// <summary>
@@ -2305,165 +1276,6 @@ namespace sendbird_platform_sdk.Api
             return new ApiResponse<OcListChannelsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
                 (OcListChannelsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListChannelsResponse)));
-        }
-
-        /// <summary>
-        /// List muted users ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>OcListMutedUsersResponse</returns>
-        public OcListMutedUsersResponse OcListMutedUsers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
-        {
-             ApiResponse<OcListMutedUsersResponse> localVarResponse = OcListMutedUsersWithHttpInfo(apiToken, channelUrl, token, limit);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// List muted users ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of OcListMutedUsersResponse</returns>
-        public ApiResponse<OcListMutedUsersResponse> OcListMutedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListMutedUsers");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcListMutedUsers");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/mute";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
-            if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcListMutedUsers", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OcListMutedUsersResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcListMutedUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListMutedUsersResponse)));
-        }
-
-        /// <summary>
-        /// List muted users ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcListMutedUsersResponse</returns>
-        public async System.Threading.Tasks.Task<OcListMutedUsersResponse> OcListMutedUsersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<OcListMutedUsersResponse> localVarResponse = await OcListMutedUsersWithHttpInfoAsync(apiToken, channelUrl, token, limit, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// List muted users ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcListMutedUsersResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcListMutedUsersResponse>> OcListMutedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListMutedUsers");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcListMutedUsers");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/mute";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
-            if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcListMutedUsers", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OcListMutedUsersResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcListMutedUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListMutedUsersResponse)));
         }
 
         /// <summary>
@@ -2785,185 +1597,16 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Mute a user ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocMuteUserData"> (optional)</param>
-        /// <returns>SendBirdOpenChannel</returns>
-        public SendBirdOpenChannel OcMuteUser (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData))
-        {
-             ApiResponse<SendBirdOpenChannel> localVarResponse = OcMuteUserWithHttpInfo(apiToken, channelUrl, ocMuteUserData);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Mute a user ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocMuteUserData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        public ApiResponse<SendBirdOpenChannel> OcMuteUserWithHttpInfo (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcMuteUser");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcMuteUser");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/mute";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (ocMuteUserData != null && ocMuteUserData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(ocMuteUserData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = ocMuteUserData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcMuteUser", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<SendBirdOpenChannel>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdOpenChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdOpenChannel)));
-        }
-
-        /// <summary>
-        /// Mute a user ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocMuteUserData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdOpenChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcMuteUserAsync (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<SendBirdOpenChannel> localVarResponse = await OcMuteUserWithHttpInfoAsync(apiToken, channelUrl, ocMuteUserData, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Mute a user ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocMuteUserData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcMuteUserWithHttpInfoAsync (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcMuteUser");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcMuteUser");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/mute";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (ocMuteUserData != null && ocMuteUserData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(ocMuteUserData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = ocMuteUserData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcMuteUser", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<SendBirdOpenChannel>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdOpenChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdOpenChannel)));
-        }
-
-        /// <summary>
         /// Register operators ## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
-        /// <returns>InlineResponse200</returns>
-        public InlineResponse200 OcRegisterOperators (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData))
+        /// <returns>InlineResponse2001</returns>
+        public InlineResponse2001 OcRegisterOperators (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData))
         {
-             ApiResponse<InlineResponse200> localVarResponse = OcRegisterOperatorsWithHttpInfo(apiToken, channelUrl, ocRegisterOperatorsData);
+             ApiResponse<InlineResponse2001> localVarResponse = OcRegisterOperatorsWithHttpInfo(apiToken, channelUrl, ocRegisterOperatorsData);
              return localVarResponse.Data;
         }
 
@@ -2974,8 +1617,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse200</returns>
-        public ApiResponse<InlineResponse200> OcRegisterOperatorsWithHttpInfo (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData))
+        /// <returns>ApiResponse of InlineResponse2001</returns>
+        public ApiResponse<InlineResponse2001> OcRegisterOperatorsWithHttpInfo (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3031,9 +1674,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse200>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
+                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
         }
 
         /// <summary>
@@ -3044,10 +1687,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse200</returns>
-        public async System.Threading.Tasks.Task<InlineResponse200> OcRegisterOperatorsAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of InlineResponse2001</returns>
+        public async System.Threading.Tasks.Task<InlineResponse2001> OcRegisterOperatorsAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse200> localVarResponse = await OcRegisterOperatorsWithHttpInfoAsync(apiToken, channelUrl, ocRegisterOperatorsData, cancellationToken);
+             ApiResponse<InlineResponse2001> localVarResponse = await OcRegisterOperatorsWithHttpInfoAsync(apiToken, channelUrl, ocRegisterOperatorsData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3060,8 +1703,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> OcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> OcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3117,508 +1760,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse200>(localVarStatusCode,
+            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
-        }
-
-        /// <summary>
-        /// Unban a user ## Unban a user  Unbans a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <returns>InlineResponse200</returns>
-        public InlineResponse200 OcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
-        {
-             ApiResponse<InlineResponse200> localVarResponse = OcUnbanUserByIdWithHttpInfo(apiToken, channelUrl, bannedUserId);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Unban a user ## Unban a user  Unbans a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <returns>ApiResponse of InlineResponse200</returns>
-        public ApiResponse<InlineResponse200> OcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId)
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcUnbanUserById");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcUnbanUserById");
-            // verify the required parameter 'bannedUserId' is set
-            if (bannedUserId == null)
-                throw new ApiException(400, "Missing required parameter 'bannedUserId' when calling OpenChannelApi->OcUnbanUserById");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/ban/{banned_user_id}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (bannedUserId != null) localVarPathParams.Add("banned_user_id", this.Configuration.ApiClient.ParameterToString(bannedUserId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcUnbanUserById", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<InlineResponse200>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
-        }
-
-        /// <summary>
-        /// Unban a user ## Unban a user  Unbans a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse200</returns>
-        public async System.Threading.Tasks.Task<InlineResponse200> OcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<InlineResponse200> localVarResponse = await OcUnbanUserByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Unban a user ## Unban a user  Unbans a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> OcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcUnbanUserById");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcUnbanUserById");
-            // verify the required parameter 'bannedUserId' is set
-            if (bannedUserId == null)
-                throw new ApiException(400, "Missing required parameter 'bannedUserId' when calling OpenChannelApi->OcUnbanUserById");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/ban/{banned_user_id}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (bannedUserId != null) localVarPathParams.Add("banned_user_id", this.Configuration.ApiClient.ParameterToString(bannedUserId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcUnbanUserById", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<InlineResponse200>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
-        }
-
-        /// <summary>
-        /// Unmute a user ## Unmute a user  Unmutes a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unmute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="mutedUserId"></param>
-        /// <returns>InlineResponse200</returns>
-        public InlineResponse200 OcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
-        {
-             ApiResponse<InlineResponse200> localVarResponse = OcUnmuteUserByIdWithHttpInfo(apiToken, channelUrl, mutedUserId);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Unmute a user ## Unmute a user  Unmutes a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unmute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="mutedUserId"></param>
-        /// <returns>ApiResponse of InlineResponse200</returns>
-        public ApiResponse<InlineResponse200> OcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId)
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcUnmuteUserById");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcUnmuteUserById");
-            // verify the required parameter 'mutedUserId' is set
-            if (mutedUserId == null)
-                throw new ApiException(400, "Missing required parameter 'mutedUserId' when calling OpenChannelApi->OcUnmuteUserById");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/mute/{muted_user_id}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (mutedUserId != null) localVarPathParams.Add("muted_user_id", this.Configuration.ApiClient.ParameterToString(mutedUserId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcUnmuteUserById", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<InlineResponse200>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
-        }
-
-        /// <summary>
-        /// Unmute a user ## Unmute a user  Unmutes a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unmute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="mutedUserId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse200</returns>
-        public async System.Threading.Tasks.Task<InlineResponse200> OcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<InlineResponse200> localVarResponse = await OcUnmuteUserByIdWithHttpInfoAsync(apiToken, channelUrl, mutedUserId, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Unmute a user ## Unmute a user  Unmutes a user from an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-unmute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="mutedUserId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> OcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcUnmuteUserById");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcUnmuteUserById");
-            // verify the required parameter 'mutedUserId' is set
-            if (mutedUserId == null)
-                throw new ApiException(400, "Missing required parameter 'mutedUserId' when calling OpenChannelApi->OcUnmuteUserById");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/mute/{muted_user_id}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (mutedUserId != null) localVarPathParams.Add("muted_user_id", this.Configuration.ApiClient.ParameterToString(mutedUserId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcUnmuteUserById", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<InlineResponse200>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
-        }
-
-        /// <summary>
-        /// Update a ban ## Update a ban  Updates details of a ban imposed on a user. You can change the length of a ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <param name="ocUpdateBanByIdData"> (optional)</param>
-        /// <returns>OcUpdateBanByIdResponse</returns>
-        public OcUpdateBanByIdResponse OcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData))
-        {
-             ApiResponse<OcUpdateBanByIdResponse> localVarResponse = OcUpdateBanByIdWithHttpInfo(apiToken, channelUrl, bannedUserId, ocUpdateBanByIdData);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Update a ban ## Update a ban  Updates details of a ban imposed on a user. You can change the length of a ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <param name="ocUpdateBanByIdData"> (optional)</param>
-        /// <returns>ApiResponse of OcUpdateBanByIdResponse</returns>
-        public ApiResponse<OcUpdateBanByIdResponse> OcUpdateBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcUpdateBanById");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcUpdateBanById");
-            // verify the required parameter 'bannedUserId' is set
-            if (bannedUserId == null)
-                throw new ApiException(400, "Missing required parameter 'bannedUserId' when calling OpenChannelApi->OcUpdateBanById");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/ban/{banned_user_id}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (bannedUserId != null) localVarPathParams.Add("banned_user_id", this.Configuration.ApiClient.ParameterToString(bannedUserId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (ocUpdateBanByIdData != null && ocUpdateBanByIdData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(ocUpdateBanByIdData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = ocUpdateBanByIdData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcUpdateBanById", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OcUpdateBanByIdResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcUpdateBanByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcUpdateBanByIdResponse)));
-        }
-
-        /// <summary>
-        /// Update a ban ## Update a ban  Updates details of a ban imposed on a user. You can change the length of a ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <param name="ocUpdateBanByIdData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcUpdateBanByIdResponse</returns>
-        public async System.Threading.Tasks.Task<OcUpdateBanByIdResponse> OcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<OcUpdateBanByIdResponse> localVarResponse = await OcUpdateBanByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, ocUpdateBanByIdData, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Update a ban ## Update a ban  Updates details of a ban imposed on a user. You can change the length of a ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <param name="ocUpdateBanByIdData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcUpdateBanByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcUpdateBanByIdResponse>> OcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcUpdateBanById");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcUpdateBanById");
-            // verify the required parameter 'bannedUserId' is set
-            if (bannedUserId == null)
-                throw new ApiException(400, "Missing required parameter 'bannedUserId' when calling OpenChannelApi->OcUpdateBanById");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/ban/{banned_user_id}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (bannedUserId != null) localVarPathParams.Add("banned_user_id", this.Configuration.ApiClient.ParameterToString(bannedUserId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (ocUpdateBanByIdData != null && ocUpdateBanByIdData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(ocUpdateBanByIdData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = ocUpdateBanByIdData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcUpdateBanById", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OcUpdateBanByIdResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcUpdateBanByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcUpdateBanByIdResponse)));
+                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
         }
 
         /// <summary>
@@ -3791,165 +1935,6 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View a ban ## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <returns>OcViewBanByIdResponse</returns>
-        public OcViewBanByIdResponse OcViewBanById (string apiToken, string channelUrl, string bannedUserId)
-        {
-             ApiResponse<OcViewBanByIdResponse> localVarResponse = OcViewBanByIdWithHttpInfo(apiToken, channelUrl, bannedUserId);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// View a ban ## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <returns>ApiResponse of OcViewBanByIdResponse</returns>
-        public ApiResponse<OcViewBanByIdResponse> OcViewBanByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId)
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcViewBanById");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcViewBanById");
-            // verify the required parameter 'bannedUserId' is set
-            if (bannedUserId == null)
-                throw new ApiException(400, "Missing required parameter 'bannedUserId' when calling OpenChannelApi->OcViewBanById");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/ban/{banned_user_id}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (bannedUserId != null) localVarPathParams.Add("banned_user_id", this.Configuration.ApiClient.ParameterToString(bannedUserId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcViewBanById", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OcViewBanByIdResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcViewBanByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcViewBanByIdResponse)));
-        }
-
-        /// <summary>
-        /// View a ban ## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcViewBanByIdResponse</returns>
-        public async System.Threading.Tasks.Task<OcViewBanByIdResponse> OcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<OcViewBanByIdResponse> localVarResponse = await OcViewBanByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// View a ban ## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="bannedUserId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcViewBanByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcViewBanByIdResponse>> OcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcViewBanById");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcViewBanById");
-            // verify the required parameter 'bannedUserId' is set
-            if (bannedUserId == null)
-                throw new ApiException(400, "Missing required parameter 'bannedUserId' when calling OpenChannelApi->OcViewBanById");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/ban/{banned_user_id}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (bannedUserId != null) localVarPathParams.Add("banned_user_id", this.Configuration.ApiClient.ParameterToString(bannedUserId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcViewBanById", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OcViewBanByIdResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcViewBanByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcViewBanByIdResponse)));
-        }
-
-        /// <summary>
         /// View a channel ## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
@@ -4094,165 +2079,6 @@ namespace sendbird_platform_sdk.Api
             return new ApiResponse<SendBirdOpenChannel>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
                 (SendBirdOpenChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdOpenChannel)));
-        }
-
-        /// <summary>
-        /// View a mute ## View a mute  Checks if a user is muted in an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-mute - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="mutedUserId"></param>
-        /// <returns>OcViewMuteByIdResponse</returns>
-        public OcViewMuteByIdResponse OcViewMuteById (string apiToken, string channelUrl, string mutedUserId)
-        {
-             ApiResponse<OcViewMuteByIdResponse> localVarResponse = OcViewMuteByIdWithHttpInfo(apiToken, channelUrl, mutedUserId);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// View a mute ## View a mute  Checks if a user is muted in an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-mute - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="mutedUserId"></param>
-        /// <returns>ApiResponse of OcViewMuteByIdResponse</returns>
-        public ApiResponse<OcViewMuteByIdResponse> OcViewMuteByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId)
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcViewMuteById");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcViewMuteById");
-            // verify the required parameter 'mutedUserId' is set
-            if (mutedUserId == null)
-                throw new ApiException(400, "Missing required parameter 'mutedUserId' when calling OpenChannelApi->OcViewMuteById");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/mute/{muted_user_id}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (mutedUserId != null) localVarPathParams.Add("muted_user_id", this.Configuration.ApiClient.ParameterToString(mutedUserId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcViewMuteById", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OcViewMuteByIdResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcViewMuteByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcViewMuteByIdResponse)));
-        }
-
-        /// <summary>
-        /// View a mute ## View a mute  Checks if a user is muted in an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-mute - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="mutedUserId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcViewMuteByIdResponse</returns>
-        public async System.Threading.Tasks.Task<OcViewMuteByIdResponse> OcViewMuteByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<OcViewMuteByIdResponse> localVarResponse = await OcViewMuteByIdWithHttpInfoAsync(apiToken, channelUrl, mutedUserId, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// View a mute ## View a mute  Checks if a user is muted in an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-mute - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="mutedUserId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcViewMuteByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcViewMuteByIdResponse>> OcViewMuteByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcViewMuteById");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcViewMuteById");
-            // verify the required parameter 'mutedUserId' is set
-            if (mutedUserId == null)
-                throw new ApiException(400, "Missing required parameter 'mutedUserId' when calling OpenChannelApi->OcViewMuteById");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/mute/{muted_user_id}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (mutedUserId != null) localVarPathParams.Add("muted_user_id", this.Configuration.ApiClient.ParameterToString(mutedUserId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcViewMuteById", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OcViewMuteByIdResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcViewMuteByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcViewMuteByIdResponse)));
         }
 
     }

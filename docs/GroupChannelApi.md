@@ -5,33 +5,23 @@ All URIs are relative to *https://api-APP_ID.sendbird.com*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**GcAcceptInvitation**](GroupChannelApi.md#gcacceptinvitation) | **PUT** /v3/group_channels/{channel_url}/accept | Accept an invitation
-[**GcBanUser**](GroupChannelApi.md#gcbanuser) | **POST** /v3/group_channels/{channel_url}/ban | Ban a user
 [**GcCancelTheRegistrationOfOperators**](GroupChannelApi.md#gccanceltheregistrationofoperators) | **DELETE** /v3/group_channels/{channel_url}/operators | Cancel the registration of operators
 [**GcCheckIfMemberById**](GroupChannelApi.md#gccheckifmemberbyid) | **GET** /v3/group_channels/{channel_url}/members/{user_id} | Check if member
 [**GcCreateChannel**](GroupChannelApi.md#gccreatechannel) | **POST** /v3/group_channels | Create a channel
 [**GcDeclineInvitation**](GroupChannelApi.md#gcdeclineinvitation) | **PUT** /v3/group_channels/{channel_url}/decline | Decline an invitation
 [**GcDeleteChannelByUrl**](GroupChannelApi.md#gcdeletechannelbyurl) | **DELETE** /v3/group_channels/{channel_url} | Delete a channel
-[**GcFreezeChannel**](GroupChannelApi.md#gcfreezechannel) | **PUT** /v3/group_channels/{channel_url}/freeze | Freeze a channel
 [**GcHideOrArchiveChannel**](GroupChannelApi.md#gchideorarchivechannel) | **PUT** /v3/group_channels/{channel_url}/hide | Hide or archive a channel
 [**GcInviteAsMembers**](GroupChannelApi.md#gcinviteasmembers) | **POST** /v3/group_channels/{channel_url}/invite | Invite as members
 [**GcJoinChannel**](GroupChannelApi.md#gcjoinchannel) | **PUT** /v3/group_channels/{channel_url}/join | Join a channel
 [**GcLeaveChannel**](GroupChannelApi.md#gcleavechannel) | **PUT** /v3/group_channels/{channel_url}/leave | Leave a channel
-[**GcListBannedUsers**](GroupChannelApi.md#gclistbannedusers) | **GET** /v3/group_channels/{channel_url}/ban | List banned users
 [**GcListChannels**](GroupChannelApi.md#gclistchannels) | **GET** /v3/group_channels | List channels
 [**GcListMembers**](GroupChannelApi.md#gclistmembers) | **GET** /v3/group_channels/{channel_url}/members | List members
-[**GcListMutedUsers**](GroupChannelApi.md#gclistmutedusers) | **GET** /v3/group_channels/{channel_url}/mute | List muted users
 [**GcListOperators**](GroupChannelApi.md#gclistoperators) | **GET** /v3/group_channels/{channel_url}/operators | List operators
-[**GcMuteUser**](GroupChannelApi.md#gcmuteuser) | **POST** /v3/group_channels/{channel_url}/mute | Mute a user
 [**GcRegisterOperators**](GroupChannelApi.md#gcregisteroperators) | **POST** /v3/group_channels/{channel_url}/operators | Register operators
 [**GcResetChatHistory**](GroupChannelApi.md#gcresetchathistory) | **PUT** /v3/group_channels/{channel_url}/reset_user_history | Reset chat history
-[**GcUnbanUserById**](GroupChannelApi.md#gcunbanuserbyid) | **DELETE** /v3/group_channels/{channel_url}/ban/{banned_user_id} | Unban a user
 [**GcUnhideOrUnarchiveChannel**](GroupChannelApi.md#gcunhideorunarchivechannel) | **DELETE** /v3/group_channels/{channel_url}/hide | Unhide or unarchive a channel
-[**GcUnmuteUserById**](GroupChannelApi.md#gcunmuteuserbyid) | **DELETE** /v3/group_channels/{channel_url}/mute/{muted_user_id} | Unmute a user
-[**GcUpdateBanById**](GroupChannelApi.md#gcupdatebanbyid) | **PUT** /v3/group_channels/{channel_url}/ban/{banned_user_id} | Update a ban
 [**GcUpdateChannelByUrl**](GroupChannelApi.md#gcupdatechannelbyurl) | **PUT** /v3/group_channels/{channel_url} | Update a channel
-[**GcViewBanById**](GroupChannelApi.md#gcviewbanbyid) | **GET** /v3/group_channels/{channel_url}/ban/{banned_user_id} | View a ban
 [**GcViewChannelByUrl**](GroupChannelApi.md#gcviewchannelbyurl) | **GET** /v3/group_channels/{channel_url} | View a channel
-[**GcViewMuteById**](GroupChannelApi.md#gcviewmutebyid) | **GET** /v3/group_channels/{channel_url}/mute/{muted_user_id} | View a mute
 
 
 
@@ -115,89 +105,9 @@ No authorization required
 [[Back to README]](../README.md)
 
 
-## GcBanUser
-
-> GcBanUserResponse GcBanUser (string apiToken, string channelUrl, GcBanUserData gcBanUserData = null)
-
-Ban a user
-
-## Ban a user  Bans a user from a group channel. A banned user is immediately expelled from a channel and allowed to join the channel again after a set time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-ban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class GcBanUserExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new GroupChannelApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var gcBanUserData = new GcBanUserData(); // GcBanUserData |  (optional) 
-
-            try
-            {
-                // Ban a user
-                GcBanUserResponse result = apiInstance.GcBanUser(apiToken, channelUrl, gcBanUserData);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling GroupChannelApi.GcBanUser: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **channelUrl** | **string**|  | 
- **gcBanUserData** | [**GcBanUserData**](GcBanUserData.md)|  | [optional] 
-
-### Return type
-
-[**GcBanUserResponse**](GcBanUserResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
 ## GcCancelTheRegistrationOfOperators
 
-> InlineResponse200 GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = null)
+> InlineResponse2001 GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = null)
 
 Cancel the registration of operators
 
@@ -228,7 +138,7 @@ namespace Example
             try
             {
                 // Cancel the registration of operators
-                InlineResponse200 result = apiInstance.GcCancelTheRegistrationOfOperators(apiToken, channelUrl, operatorIds, deleteAll);
+                InlineResponse2001 result = apiInstance.GcCancelTheRegistrationOfOperators(apiToken, channelUrl, operatorIds, deleteAll);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -254,7 +164,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -437,7 +347,7 @@ No authorization required
 
 ## GcDeclineInvitation
 
-> InlineResponse200 GcDeclineInvitation (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = null)
+> InlineResponse2001 GcDeclineInvitation (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = null)
 
 Decline an invitation
 
@@ -467,7 +377,7 @@ namespace Example
             try
             {
                 // Decline an invitation
-                InlineResponse200 result = apiInstance.GcDeclineInvitation(apiToken, channelUrl, gcDeclineInvitationData);
+                InlineResponse2001 result = apiInstance.GcDeclineInvitation(apiToken, channelUrl, gcDeclineInvitationData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -492,7 +402,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -517,7 +427,7 @@ No authorization required
 
 ## GcDeleteChannelByUrl
 
-> InlineResponse200 GcDeleteChannelByUrl (string apiToken, string channelUrl)
+> InlineResponse2001 GcDeleteChannelByUrl (string apiToken, string channelUrl)
 
 Delete a channel
 
@@ -546,7 +456,7 @@ namespace Example
             try
             {
                 // Delete a channel
-                InlineResponse200 result = apiInstance.GcDeleteChannelByUrl(apiToken, channelUrl);
+                InlineResponse2001 result = apiInstance.GcDeleteChannelByUrl(apiToken, channelUrl);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -570,7 +480,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -593,89 +503,9 @@ No authorization required
 [[Back to README]](../README.md)
 
 
-## GcFreezeChannel
-
-> SendBirdGroupChannel GcFreezeChannel (string apiToken, string channelUrl, GcFreezeChannelData gcFreezeChannelData = null)
-
-Freeze a channel
-
-## Freeze a channel  Freezes or unfreezes a group channel.  > __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class GcFreezeChannelExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new GroupChannelApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var gcFreezeChannelData = new GcFreezeChannelData(); // GcFreezeChannelData |  (optional) 
-
-            try
-            {
-                // Freeze a channel
-                SendBirdGroupChannel result = apiInstance.GcFreezeChannel(apiToken, channelUrl, gcFreezeChannelData);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling GroupChannelApi.GcFreezeChannel: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **channelUrl** | **string**|  | 
- **gcFreezeChannelData** | [**GcFreezeChannelData**](GcFreezeChannelData.md)|  | [optional] 
-
-### Return type
-
-[**SendBirdGroupChannel**](SendBirdGroupChannel.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
 ## GcHideOrArchiveChannel
 
-> InlineResponse200 GcHideOrArchiveChannel (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = null)
+> InlineResponse2001 GcHideOrArchiveChannel (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = null)
 
 Hide or archive a channel
 
@@ -705,7 +535,7 @@ namespace Example
             try
             {
                 // Hide or archive a channel
-                InlineResponse200 result = apiInstance.GcHideOrArchiveChannel(apiToken, channelUrl, gcHideOrArchiveChannelData);
+                InlineResponse2001 result = apiInstance.GcHideOrArchiveChannel(apiToken, channelUrl, gcHideOrArchiveChannelData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -730,7 +560,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -914,7 +744,7 @@ No authorization required
 
 ## GcLeaveChannel
 
-> InlineResponse200 GcLeaveChannel (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = null)
+> InlineResponse2001 GcLeaveChannel (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = null)
 
 Leave a channel
 
@@ -944,7 +774,7 @@ namespace Example
             try
             {
                 // Leave a channel
-                InlineResponse200 result = apiInstance.GcLeaveChannel(apiToken, channelUrl, gcLeaveChannelData);
+                InlineResponse2001 result = apiInstance.GcLeaveChannel(apiToken, channelUrl, gcLeaveChannelData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -969,7 +799,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -978,88 +808,6 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## GcListBannedUsers
-
-> GcListBannedUsersResponse GcListBannedUsers (string apiToken, string channelUrl, string token = null, int? limit = null)
-
-List banned users
-
-## List banned users  Retrieves a list of the banned users from a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class GcListBannedUsersExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new GroupChannelApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var token = token_example;  // string |  (optional) 
-            var limit = 56;  // int? |  (optional) 
-
-            try
-            {
-                // List banned users
-                GcListBannedUsersResponse result = apiInstance.GcListBannedUsers(apiToken, channelUrl, token, limit);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling GroupChannelApi.GcListBannedUsers: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **channelUrl** | **string**|  | 
- **token** | **string**|  | [optional] 
- **limit** | **int?**|  | [optional] 
-
-### Return type
-
-[**GcListBannedUsersResponse**](GcListBannedUsersResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
 - **Accept**: application/json
 
 
@@ -1330,88 +1078,6 @@ No authorization required
 [[Back to README]](../README.md)
 
 
-## GcListMutedUsers
-
-> GcListMutedUsersResponse GcListMutedUsers (string apiToken, string channelUrl, string token = null, int? limit = null)
-
-List muted users
-
-## List muted users  Retrieves a list of the muted users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class GcListMutedUsersExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new GroupChannelApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var token = token_example;  // string |  (optional) 
-            var limit = 56;  // int? |  (optional) 
-
-            try
-            {
-                // List muted users
-                GcListMutedUsersResponse result = apiInstance.GcListMutedUsers(apiToken, channelUrl, token, limit);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling GroupChannelApi.GcListMutedUsers: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **channelUrl** | **string**|  | 
- **token** | **string**|  | [optional] 
- **limit** | **int?**|  | [optional] 
-
-### Return type
-
-[**GcListMutedUsersResponse**](GcListMutedUsersResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
 ## GcListOperators
 
 > GcListOperatorsResponse GcListOperators (string apiToken, string channelUrl, string token = null, int? limit = null)
@@ -1480,86 +1146,6 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## GcMuteUser
-
-> SendBirdGroupChannel GcMuteUser (string apiToken, string channelUrl, GcMuteUserData gcMuteUserData = null)
-
-Mute a user
-
-## Mute a user  Mutes a user in a group channel. A muted user remains in the channel and is allowed to view the messages, but can't send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-mute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class GcMuteUserExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new GroupChannelApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var gcMuteUserData = new GcMuteUserData(); // GcMuteUserData |  (optional) 
-
-            try
-            {
-                // Mute a user
-                SendBirdGroupChannel result = apiInstance.GcMuteUser(apiToken, channelUrl, gcMuteUserData);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling GroupChannelApi.GcMuteUser: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **channelUrl** | **string**|  | 
- **gcMuteUserData** | [**GcMuteUserData**](GcMuteUserData.md)|  | [optional] 
-
-### Return type
-
-[**SendBirdGroupChannel**](SendBirdGroupChannel.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: application/json
 - **Accept**: application/json
 
 
@@ -1734,89 +1320,9 @@ No authorization required
 [[Back to README]](../README.md)
 
 
-## GcUnbanUserById
-
-> InlineResponse200 GcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
-
-Unban a user
-
-## Unban a user  Unbans a user from a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unban-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class GcUnbanUserByIdExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new GroupChannelApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var bannedUserId = bannedUserId_example;  // string | 
-
-            try
-            {
-                // Unban a user
-                InlineResponse200 result = apiInstance.GcUnbanUserById(apiToken, channelUrl, bannedUserId);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling GroupChannelApi.GcUnbanUserById: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **channelUrl** | **string**|  | 
- **bannedUserId** | **string**|  | 
-
-### Return type
-
-[**InlineResponse200**](InlineResponse200.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
 ## GcUnhideOrUnarchiveChannel
 
-> InlineResponse200 GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = null)
+> InlineResponse2001 GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = null)
 
 Unhide or unarchive a channel
 
@@ -1847,7 +1353,7 @@ namespace Example
             try
             {
                 // Unhide or unarchive a channel
-                InlineResponse200 result = apiInstance.GcUnhideOrUnarchiveChannel(apiToken, channelUrl, userId, shouldUnhideAll);
+                InlineResponse2001 result = apiInstance.GcUnhideOrUnarchiveChannel(apiToken, channelUrl, userId, shouldUnhideAll);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1873,7 +1379,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -1882,168 +1388,6 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## GcUnmuteUserById
-
-> InlineResponse200 GcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
-
-Unmute a user
-
-## Unmute a user  Unmutes a user within a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unmute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class GcUnmuteUserByIdExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new GroupChannelApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var mutedUserId = mutedUserId_example;  // string | 
-
-            try
-            {
-                // Unmute a user
-                InlineResponse200 result = apiInstance.GcUnmuteUserById(apiToken, channelUrl, mutedUserId);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling GroupChannelApi.GcUnmuteUserById: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **channelUrl** | **string**|  | 
- **mutedUserId** | **string**|  | 
-
-### Return type
-
-[**InlineResponse200**](InlineResponse200.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## GcUpdateBanById
-
-> GcUpdateBanByIdResponse GcUpdateBanById (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = null)
-
-Update a ban
-
-## Update a ban  Updates details of a ban imposed on a user. You can change the length of the ban with this action, and also provide an updated description.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class GcUpdateBanByIdExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new GroupChannelApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var bannedUserId = bannedUserId_example;  // string | 
-            var gcUpdateBanByIdData = new GcUpdateBanByIdData(); // GcUpdateBanByIdData |  (optional) 
-
-            try
-            {
-                // Update a ban
-                GcUpdateBanByIdResponse result = apiInstance.GcUpdateBanById(apiToken, channelUrl, bannedUserId, gcUpdateBanByIdData);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling GroupChannelApi.GcUpdateBanById: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **channelUrl** | **string**|  | 
- **bannedUserId** | **string**|  | 
- **gcUpdateBanByIdData** | [**GcUpdateBanByIdData**](GcUpdateBanByIdData.md)|  | [optional] 
-
-### Return type
-
-[**GcUpdateBanByIdResponse**](GcUpdateBanByIdResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: application/json
 - **Accept**: application/json
 
 
@@ -2138,86 +1482,6 @@ No authorization required
 [[Back to README]](../README.md)
 
 
-## GcViewBanById
-
-> GcViewBanByIdResponse GcViewBanById (string apiToken, string channelUrl, string bannedUserId)
-
-View a ban
-
-## View a ban  Retrieves details of a ban imposed on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-ban - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class GcViewBanByIdExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new GroupChannelApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var bannedUserId = bannedUserId_example;  // string | 
-
-            try
-            {
-                // View a ban
-                GcViewBanByIdResponse result = apiInstance.GcViewBanById(apiToken, channelUrl, bannedUserId);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling GroupChannelApi.GcViewBanById: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **channelUrl** | **string**|  | 
- **bannedUserId** | **string**|  | 
-
-### Return type
-
-[**GcViewBanByIdResponse**](GcViewBanByIdResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
 ## GcViewChannelByUrl
 
 > SendBirdGroupChannel GcViewChannelByUrl (string apiToken, string channelUrl, bool? showDeliveryReceipt = null, bool? showReadReceipt = null, bool? showMember = null, bool? readReceipt = null, bool? member = null)
@@ -2284,86 +1548,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**SendBirdGroupChannel**](SendBirdGroupChannel.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## GcViewMuteById
-
-> GcViewMuteByIdResponse GcViewMuteById (string apiToken, string channelUrl, string mutedUserId)
-
-View a mute
-
-## View a mute  Checks if a user is muted in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-mute - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class GcViewMuteByIdExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new GroupChannelApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var mutedUserId = mutedUserId_example;  // string | 
-
-            try
-            {
-                // View a mute
-                GcViewMuteByIdResponse result = apiInstance.GcViewMuteById(apiToken, channelUrl, mutedUserId);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling GroupChannelApi.GcViewMuteById: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **channelUrl** | **string**|  | 
- **mutedUserId** | **string**|  | 
-
-### Return type
-
-[**GcViewMuteByIdResponse**](GcViewMuteByIdResponse.md)
 
 ### Authorization
 

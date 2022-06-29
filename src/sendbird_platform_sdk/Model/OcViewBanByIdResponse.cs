@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="description">description.</param>
         /// <param name="endAt">endAt.</param>
         /// <param name="startAt">startAt.</param>
-        public OcViewBanByIdResponse(SendbirdUser user = default(SendbirdUser), string description = default(string), decimal endAt = default(decimal), decimal startAt = default(decimal))
+        public OcViewBanByIdResponse(SendBirdUser user = default(SendBirdUser), string description = default(string), decimal endAt = default(decimal), decimal startAt = default(decimal))
         {
             this.User = user;
             this.Description = description;
@@ -49,7 +49,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets User
         /// </summary>
         [DataMember(Name="user", EmitDefaultValue=false)]
-        public SendbirdUser User { get; set; }
+        public SendBirdUser User { get; set; }
 
         /// <summary>
         /// Gets or Sets Description

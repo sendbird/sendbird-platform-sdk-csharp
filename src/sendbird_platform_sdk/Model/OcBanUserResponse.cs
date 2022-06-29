@@ -43,7 +43,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="nickname">nickname.</param>
         /// <param name="profileUrl">profileUrl.</param>
         /// <param name="metadata">metadata.</param>
-        public OcBanUserResponse(decimal startAt = default(decimal), decimal endAt = default(decimal), string description = default(string), string userId = default(string), SendBirdUser user = default(SendBirdUser), string nextUrl = default(string), Boolean requireAuthForProfileImage = default(Boolean), string nickname = default(string), string profileUrl = default(string), InlineResponse200 metadata = default(InlineResponse200))
+        public OcBanUserResponse(decimal startAt = default(decimal), decimal endAt = default(decimal), string description = default(string), string userId = default(string), SendBirdUser user = default(SendBirdUser), string nextUrl = default(string), bool requireAuthForProfileImage = default(bool), string nickname = default(string), string profileUrl = default(string), InlineResponse2001 metadata = default(InlineResponse2001))
         {
             this.StartAt = startAt;
             this.EndAt = endAt;
@@ -97,7 +97,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets RequireAuthForProfileImage
         /// </summary>
         [DataMember(Name="require_auth_for_profile_image", EmitDefaultValue=false)]
-        public Boolean RequireAuthForProfileImage { get; set; }
+        public bool RequireAuthForProfileImage { get; set; }
 
         /// <summary>
         /// Gets or Sets Nickname
@@ -115,7 +115,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets Metadata
         /// </summary>
         [DataMember(Name="metadata", EmitDefaultValue=false)]
-        public InlineResponse200 Metadata { get; set; }
+        public InlineResponse2001 Metadata { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

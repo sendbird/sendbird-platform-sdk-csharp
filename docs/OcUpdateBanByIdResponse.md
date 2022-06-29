@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**User** | [**SendbirdUser**](SendbirdUser.md) |  | [optional] 
+**User** | [**SendBirdUser**](SendBirdUser.md) |  | [optional] 
 **Description** | **string** |  | [optional] 
 **EndAt** | **decimal** |  | [optional] 
 **StartAt** | **decimal** |  | [optional] 

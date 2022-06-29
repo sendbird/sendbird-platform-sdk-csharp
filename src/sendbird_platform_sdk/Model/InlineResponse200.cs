@@ -33,17 +33,25 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="InlineResponse200" /> class.
         /// </summary>
-        /// <param name="anyOf">anyOf.</param>
-        public InlineResponse200(string anyOf = default(string))
+        /// <param name="mutedList">mutedList.</param>
+        /// <param name="next">next.</param>
+        public InlineResponse200(List<SendBirdUser> mutedList = default(List<SendBirdUser>), string next = default(string))
         {
-            this.AnyOf = anyOf;
+            this.MutedList = mutedList;
+            this.Next = next;
         }
 
         /// <summary>
-        /// Gets or Sets AnyOf
+        /// Gets or Sets MutedList
         /// </summary>
-        [DataMember(Name="anyOf", EmitDefaultValue=false)]
-        public string AnyOf { get; set; }
+        [DataMember(Name="muted_list", EmitDefaultValue=false)]
+        public List<SendBirdUser> MutedList { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Next
+        /// </summary>
+        [DataMember(Name="next", EmitDefaultValue=false)]
+        public string Next { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -53,7 +61,8 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class InlineResponse200 {\n");
-            sb.Append("  AnyOf: ").Append(AnyOf).Append("\n");
+            sb.Append("  MutedList: ").Append(MutedList).Append("\n");
+            sb.Append("  Next: ").Append(Next).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -89,9 +98,15 @@ namespace sendbird_platform_sdk.Model
 
             return 
                 (
-                    this.AnyOf == input.AnyOf ||
-                    (this.AnyOf != null &&
-                    this.AnyOf.Equals(input.AnyOf))
+                    this.MutedList == input.MutedList ||
+                    this.MutedList != null &&
+                    input.MutedList != null &&
+                    this.MutedList.SequenceEqual(input.MutedList)
+                ) && 
+                (
+                    this.Next == input.Next ||
+                    (this.Next != null &&
+                    this.Next.Equals(input.Next))
                 );
         }
 
@@ -104,8 +119,10 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.AnyOf != null)
-                    hashCode = hashCode * 59 + this.AnyOf.GetHashCode();
+                if (this.MutedList != null)
+                    hashCode = hashCode * 59 + this.MutedList.GetHashCode();
+                if (this.Next != null)
+                    hashCode = hashCode * 59 + this.Next.GetHashCode();
                 return hashCode;
             }
         }

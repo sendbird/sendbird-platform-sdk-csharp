@@ -5,31 +5,39 @@ All URIs are relative to *https://api-APP_ID.sendbird.com*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddRegistrationOrDeviceToken**](UserApi.md#addregistrationordevicetoken) | **POST** /v3/users/{user_id}/push/{token_type} | Add a registration or device token
-[**BanFromChannelsWithCustomChannelTypes**](UserApi.md#banfromchannelswithcustomchanneltypes) | **POST** /v3/users/{user_id}/banned_channel_custom_types | Ban from channels with custom channel types
-[**BlockUser**](UserApi.md#blockuser) | **POST** /v3/users/{user_id}/block | Block a user
 [**ChoosePushNotificationContentTemplate**](UserApi.md#choosepushnotificationcontenttemplate) | **PUT** /v3/users/{user_id}/push/template | Choose a push notification content template
+[**CreateChannelMetacounter**](UserApi.md#createchannelmetacounter) | **POST** /v3/{channel_type}/{channel_url}/metacounter | Create a channel metacounter
+[**CreateChannelMetadata**](UserApi.md#createchannelmetadata) | **POST** /v3/{channel_type}/{channel_url}/metadata | Create a channel metadata
 [**CreateUser**](UserApi.md#createuser) | **POST** /v3/users | Create a user
+[**CreateUserMetadata**](UserApi.md#createusermetadata) | **POST** /v3/users/{user_id}/metadata | Create a user metadata
+[**DeleteChannelMetacounter**](UserApi.md#deletechannelmetacounter) | **DELETE** /v3/{channel_type}/{channel_url}/metacounter | Delete a channel metacounter - When deleting all items of a channel metacounter
+[**DeleteChannelMetacounterByKey**](UserApi.md#deletechannelmetacounterbykey) | **DELETE** /v3/{channel_type}/{channel_url}/metacounter/{key} | Delete a channel metacounter - When deleting a specific item of a channel metacounter by its key
+[**DeleteChannelMetadata**](UserApi.md#deletechannelmetadata) | **DELETE** /v3/{channel_type}/{channel_url}/metadata | Delete a channel metadata - When deleting all items of a channel metadata
+[**DeleteChannelMetadataByKey**](UserApi.md#deletechannelmetadatabykey) | **DELETE** /v3/{channel_type}/{channel_url}/metadata/{key} | Delete a channel metadata - When deleting a specific item of a channel metadata by its key
 [**DeleteUserById**](UserApi.md#deleteuserbyid) | **DELETE** /v3/users/{user_id} | Delete a user
+[**DeleteUserMetadata**](UserApi.md#deleteusermetadata) | **DELETE** /v3/users/{user_id}/metadata | Delete a user metadata - When deleting all items of a user metadata
+[**DeleteUserMetadataByKey**](UserApi.md#deleteusermetadatabykey) | **DELETE** /v3/users/{user_id}/metadata/{key} | Delete a user metadata - When deleting a specific item of a user metadata by its key
 [**LeaveMyGroupChannels**](UserApi.md#leavemygroupchannels) | **PUT** /v3/users/{user_id}/my_group_channels/leave | Leave my group channels
-[**ListBannedChannels**](UserApi.md#listbannedchannels) | **GET** /v3/users/{user_id}/ban | List banned channels
-[**ListBlockedUsers**](UserApi.md#listblockedusers) | **GET** /v3/users/{user_id}/block | List blocked users
-[**ListMutedChannels**](UserApi.md#listmutedchannels) | **GET** /v3/users/{user_id}/mute | List muted channels
 [**ListMyGroupChannels**](UserApi.md#listmygroupchannels) | **GET** /v3/users/{user_id}/my_group_channels | List my group channels
 [**ListRegistrationOrDeviceTokens**](UserApi.md#listregistrationordevicetokens) | **GET** /v3/users/{user_id}/push/{token_type} | List registration or device tokens
 [**ListUsers**](UserApi.md#listusers) | **GET** /v3/users | List users
 [**MarkAllMessagesAsRead**](UserApi.md#markallmessagesasread) | **PUT** /v3/users/{user_id}/mark_as_read_all | Mark all messages as read
-[**MuteInChannelsWithCustomChannelTypes**](UserApi.md#muteinchannelswithcustomchanneltypes) | **POST** /v3/users/{user_id}/muted_channel_custom_types | Mute in channels with custom channel types
 [**RegisterAsOperatorToChannelsWithCustomChannelTypes**](UserApi.md#registerasoperatortochannelswithcustomchanneltypes) | **POST** /v3/users/{user_id}/operating_channel_custom_types | Register as an operator to channels with custom channel types
 [**RemoveRegistrationOrDeviceToken**](UserApi.md#removeregistrationordevicetoken) | **DELETE** /v3/users/{user_id}/push | Remove a registration or device token - When unregistering all device tokens
 [**RemoveRegistrationOrDeviceTokenByToken**](UserApi.md#removeregistrationordevicetokenbytoken) | **DELETE** /v3/users/{user_id}/push/{token_type}/{token} | Remove a registration or device token - When unregistering a specific token
 [**RemoveRegistrationOrDeviceTokenFromOwnerByToken**](UserApi.md#removeregistrationordevicetokenfromownerbytoken) | **DELETE** /v3/push/device_tokens/{token_type}/{token} | Remove a registration or device token from an owner
 [**ResetPushPreferences**](UserApi.md#resetpushpreferences) | **DELETE** /v3/users/{user_id}/push_preference | Reset push preferences
-[**UnblockUserById**](UserApi.md#unblockuserbyid) | **DELETE** /v3/users/{user_id}/block/{target_id} | Unblock a user
 [**UpdateChannelInvitationPreference**](UserApi.md#updatechannelinvitationpreference) | **PUT** /v3/users/{user_id}/channel_invitation_preference | Update channel invitation preference
+[**UpdateChannelMetacounter**](UserApi.md#updatechannelmetacounter) | **PUT** /v3/{channel_type}/{channel_url}/metacounter | Update a channel metacounter - When updating existing items of a channel metacounter by their keys or adding new items to the metacounter
+[**UpdateChannelMetacounterByKey**](UserApi.md#updatechannelmetacounterbykey) | **PUT** /v3/{channel_type}/{channel_url}/metacounter/{key} | Update a channel metacounter - When updating a specific item of a channel metacounter by its key
+[**UpdateChannelMetadata**](UserApi.md#updatechannelmetadata) | **PUT** /v3/{channel_type}/{channel_url}/metadata | Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata
+[**UpdateChannelMetadataByKey**](UserApi.md#updatechannelmetadatabykey) | **PUT** /v3/{channel_type}/{channel_url}/metadata/{key} | Update a channel metadata - When updating a specific item of a channel metadata by its key
 [**UpdateCountPreferenceOfChannelByUrl**](UserApi.md#updatecountpreferenceofchannelbyurl) | **PUT** /v3/users/{user_id}/count_preference/{channel_url} | Update count preference of a channel
 [**UpdatePushPreferences**](UserApi.md#updatepushpreferences) | **PUT** /v3/users/{user_id}/push_preference | Update push preferences
 [**UpdatePushPreferencesForChannelByUrl**](UserApi.md#updatepushpreferencesforchannelbyurl) | **PUT** /v3/users/{user_id}/push_preference/{channel_url} | Update push preferences for a channel
 [**UpdateUserById**](UserApi.md#updateuserbyid) | **PUT** /v3/users/{user_id} | Update a user
+[**UpdateUserMetadata**](UserApi.md#updateusermetadata) | **PUT** /v3/users/{user_id}/metadata | Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata
+[**UpdateUserMetadataByKey**](UserApi.md#updateusermetadatabykey) | **PUT** /v3/users/{user_id}/metadata/{key} | Update a user metadata - When updating a specific item of a user metadata by its key
 [**ViewChannelInvitationPreference**](UserApi.md#viewchannelinvitationpreference) | **GET** /v3/users/{user_id}/channel_invitation_preference | View channel invitation preference
 [**ViewCountPreferenceOfChannelByUrl**](UserApi.md#viewcountpreferenceofchannelbyurl) | **GET** /v3/users/{user_id}/count_preference/{channel_url} | View count preference of a channel
 [**ViewNumberOfChannelsByJoinStatus**](UserApi.md#viewnumberofchannelsbyjoinstatus) | **GET** /v3/users/{user_id}/group_channel_count | View number of channels by join status
@@ -103,166 +111,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**AddRegistrationOrDeviceTokenResponse**](AddRegistrationOrDeviceTokenResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## BanFromChannelsWithCustomChannelTypes
-
-> Object BanFromChannelsWithCustomChannelTypes (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = null)
-
-Ban from channels with custom channel types
-
-## Ban from channels with custom channel types  Bans a user from channels with particular custom channel types.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-ban-from-channels-with-custom-channel-types - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class BanFromChannelsWithCustomChannelTypesExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new UserApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var userId = userId_example;  // string | 
-            var banFromChannelsWithCustomChannelTypesData = new BanFromChannelsWithCustomChannelTypesData(); // BanFromChannelsWithCustomChannelTypesData |  (optional) 
-
-            try
-            {
-                // Ban from channels with custom channel types
-                Object result = apiInstance.BanFromChannelsWithCustomChannelTypes(apiToken, userId, banFromChannelsWithCustomChannelTypesData);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling UserApi.BanFromChannelsWithCustomChannelTypes: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **userId** | **string**|  | 
- **banFromChannelsWithCustomChannelTypesData** | [**BanFromChannelsWithCustomChannelTypesData**](BanFromChannelsWithCustomChannelTypesData.md)|  | [optional] 
-
-### Return type
-
-**Object**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## BlockUser
-
-> BlockUserResponse BlockUser (string apiToken, string userId, BlockUserData blockUserData = null)
-
-Block a user
-
-## Block a user  Allows a user to block another user. A user doesn't receive messages from someone they have blocked anymore. Also, blocking someone doesn't alert them that they have been blocked. Blocked users still can send messages as normal in the channel: however, they can't receive any messages from the users who have blocked them.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-block-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class BlockUserExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new UserApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var userId = userId_example;  // string | 
-            var blockUserData = new BlockUserData(); // BlockUserData |  (optional) 
-
-            try
-            {
-                // Block a user
-                BlockUserResponse result = apiInstance.BlockUser(apiToken, userId, blockUserData);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling UserApi.BlockUser: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **userId** | **string**|  | 
- **blockUserData** | [**BlockUserData**](BlockUserData.md)|  | [optional] 
-
-### Return type
-
-[**BlockUserResponse**](BlockUserResponse.md)
 
 ### Authorization
 
@@ -365,6 +213,170 @@ No authorization required
 [[Back to README]](../README.md)
 
 
+## CreateChannelMetacounter
+
+> Dictionary&lt;string, SendBirdAdditionalProperties&gt; CreateChannelMetacounter (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = null)
+
+Create a channel metacounter
+
+## Create a channel metacounter  Creates a channel metacounter's items to store in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class CreateChannelMetacounterExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var createChannelMetacounterData = new CreateChannelMetacounterData(); // CreateChannelMetacounterData |  (optional) 
+
+            try
+            {
+                // Create a channel metacounter
+                Dictionary<string, SendBirdAdditionalProperties> result = apiInstance.CreateChannelMetacounter(apiToken, channelType, channelUrl, createChannelMetacounterData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.CreateChannelMetacounter: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **createChannelMetacounterData** | [**CreateChannelMetacounterData**](CreateChannelMetacounterData.md)|  | [optional] 
+
+### Return type
+
+[**Dictionary&lt;string, SendBirdAdditionalProperties&gt;**](SendBirdAdditionalProperties.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## CreateChannelMetadata
+
+> CreateChannelMetadataResponse CreateChannelMetadata (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = null)
+
+Create a channel metadata
+
+## Create a channel metadata  Creates a channel metadata's items to store in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class CreateChannelMetadataExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var createChannelMetadataData = new CreateChannelMetadataData(); // CreateChannelMetadataData |  (optional) 
+
+            try
+            {
+                // Create a channel metadata
+                CreateChannelMetadataResponse result = apiInstance.CreateChannelMetadata(apiToken, channelType, channelUrl, createChannelMetadataData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.CreateChannelMetadata: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **createChannelMetadataData** | [**CreateChannelMetadataData**](CreateChannelMetadataData.md)|  | [optional] 
+
+### Return type
+
+[**CreateChannelMetadataResponse**](CreateChannelMetadataResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## CreateUser
 
 > SendBirdUser CreateUser (string apiToken, CreateUserData createUserData = null)
@@ -430,6 +442,408 @@ No authorization required
 
 - **Content-Type**: application/json
 - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## CreateUserMetadata
+
+> CreateUserMetadataResponse CreateUserMetadata (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = null)
+
+Create a user metadata
+
+## Create a user metadata  Creates a user metadata's items to store in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class CreateUserMetadataExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var userId = userId_example;  // string | 
+            var createUserMetadataData = new CreateUserMetadataData(); // CreateUserMetadataData |  (optional) 
+
+            try
+            {
+                // Create a user metadata
+                CreateUserMetadataResponse result = apiInstance.CreateUserMetadata(apiToken, userId, createUserMetadataData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.CreateUserMetadata: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **userId** | **string**|  | 
+ **createUserMetadataData** | [**CreateUserMetadataData**](CreateUserMetadataData.md)|  | [optional] 
+
+### Return type
+
+[**CreateUserMetadataResponse**](CreateUserMetadataResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DeleteChannelMetacounter
+
+> void DeleteChannelMetacounter (string apiToken, string channelType, string channelUrl)
+
+Delete a channel metacounter - When deleting all items of a channel metacounter
+
+## Delete a channel metacounter  Deletes a channel metacounter's item that is stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel which has the metacounter to delete.
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class DeleteChannelMetacounterExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+
+            try
+            {
+                // Delete a channel metacounter - When deleting all items of a channel metacounter
+                apiInstance.DeleteChannelMetacounter(apiToken, channelType, channelUrl);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.DeleteChannelMetacounter: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DeleteChannelMetacounterByKey
+
+> void DeleteChannelMetacounterByKey (string apiToken, string channelType, string channelUrl, string key)
+
+Delete a channel metacounter - When deleting a specific item of a channel metacounter by its key
+
+## Delete a channel metacounter  Deletes a channel metacounter's item that is stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel which has the metacounter to delete.
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class DeleteChannelMetacounterByKeyExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var key = key_example;  // string | 
+
+            try
+            {
+                // Delete a channel metacounter - When deleting a specific item of a channel metacounter by its key
+                apiInstance.DeleteChannelMetacounterByKey(apiToken, channelType, channelUrl, key);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.DeleteChannelMetacounterByKey: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **key** | **string**|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DeleteChannelMetadata
+
+> void DeleteChannelMetadata (string apiToken, string channelType, string channelUrl, string key = null)
+
+Delete a channel metadata - When deleting all items of a channel metadata
+
+## Delete a channel metadata  Deletes a channel metadata's one or all items that are stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel which has the metadata to delete.
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class DeleteChannelMetadataExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var key = key_example;  // string |  (optional) 
+
+            try
+            {
+                // Delete a channel metadata - When deleting all items of a channel metadata
+                apiInstance.DeleteChannelMetadata(apiToken, channelType, channelUrl, key);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.DeleteChannelMetadata: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **key** | **string**|  | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DeleteChannelMetadataByKey
+
+> void DeleteChannelMetadataByKey (string apiToken, string channelType, string channelUrl, string key)
+
+Delete a channel metadata - When deleting a specific item of a channel metadata by its key
+
+## Delete a channel metadata  Deletes a channel metadata's one or all items that are stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel which has the metadata to delete.
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class DeleteChannelMetadataByKeyExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var key = key_example;  // string | 
+
+            try
+            {
+                // Delete a channel metadata - When deleting a specific item of a channel metadata by its key
+                apiInstance.DeleteChannelMetadataByKey(apiToken, channelType, channelUrl, key);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.DeleteChannelMetadataByKey: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **key** | **string**|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
 
 
 ### HTTP response details
@@ -521,6 +935,164 @@ No authorization required
 [[Back to README]](../README.md)
 
 
+## DeleteUserMetadata
+
+> void DeleteUserMetadata (string apiToken, string userId, string key = null)
+
+Delete a user metadata - When deleting all items of a user metadata
+
+## Delete a user metadata  Deletes a user metadata's one or all items that are stored in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the ID of the user who has the metadata to delete.
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class DeleteUserMetadataExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var userId = userId_example;  // string | 
+            var key = key_example;  // string |  (optional) 
+
+            try
+            {
+                // Delete a user metadata - When deleting all items of a user metadata
+                apiInstance.DeleteUserMetadata(apiToken, userId, key);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.DeleteUserMetadata: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **userId** | **string**|  | 
+ **key** | **string**|  | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DeleteUserMetadataByKey
+
+> void DeleteUserMetadataByKey (string apiToken, string userId, string key)
+
+Delete a user metadata - When deleting a specific item of a user metadata by its key
+
+## Delete a user metadata  Deletes a user metadata's one or all items that are stored in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the ID of the user who has the metadata to delete.
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class DeleteUserMetadataByKeyExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var userId = userId_example;  // string | 
+            var key = key_example;  // string | 
+
+            try
+            {
+                // Delete a user metadata - When deleting a specific item of a user metadata by its key
+                apiInstance.DeleteUserMetadataByKey(apiToken, userId, key);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.DeleteUserMetadataByKey: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **userId** | **string**|  | 
+ **key** | **string**|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## LeaveMyGroupChannels
 
 > Object LeaveMyGroupChannels (string apiToken, string userId, LeaveMyGroupChannelsData leaveMyGroupChannelsData = null)
@@ -587,258 +1159,6 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## ListBannedChannels
-
-> ListBannedChannelsResponse ListBannedChannels (string apiToken, string userId, string token = null, int? limit = null)
-
-List banned channels
-
-## List banned channels  Retrieves a list of open and group channels with additional information where a user is banned.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-banned-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class ListBannedChannelsExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new UserApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var userId = userId_example;  // string | 
-            var token = token_example;  // string |  (optional) 
-            var limit = 56;  // int? |  (optional) 
-
-            try
-            {
-                // List banned channels
-                ListBannedChannelsResponse result = apiInstance.ListBannedChannels(apiToken, userId, token, limit);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling UserApi.ListBannedChannels: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **userId** | **string**|  | 
- **token** | **string**|  | [optional] 
- **limit** | **int?**|  | [optional] 
-
-### Return type
-
-[**ListBannedChannelsResponse**](ListBannedChannelsResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## ListBlockedUsers
-
-> ListBlockedUsersResponse ListBlockedUsers (string apiToken, string userId, string token = null, int? limit = null, string userIds = null, string metadatakey = null, string metadatavaluesIn = null)
-
-List blocked users
-
-## List blocked users  Retrieves a list of other users that a user has blocked.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-blocked-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class ListBlockedUsersExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new UserApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var userId = userId_example;  // string | 
-            var token = token_example;  // string |  (optional) 
-            var limit = 56;  // int? |  (optional) 
-            var userIds = userIds_example;  // string |  (optional) 
-            var metadatakey = metadatakey_example;  // string |  (optional) 
-            var metadatavaluesIn = metadatavaluesIn_example;  // string |  (optional) 
-
-            try
-            {
-                // List blocked users
-                ListBlockedUsersResponse result = apiInstance.ListBlockedUsers(apiToken, userId, token, limit, userIds, metadatakey, metadatavaluesIn);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling UserApi.ListBlockedUsers: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **userId** | **string**|  | 
- **token** | **string**|  | [optional] 
- **limit** | **int?**|  | [optional] 
- **userIds** | **string**|  | [optional] 
- **metadatakey** | **string**|  | [optional] 
- **metadatavaluesIn** | **string**|  | [optional] 
-
-### Return type
-
-[**ListBlockedUsersResponse**](ListBlockedUsersResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## ListMutedChannels
-
-> ListMutedChannelsResponse ListMutedChannels (string apiToken, string userId, string token = null, int? limit = null)
-
-List muted channels
-
-## List muted channels  Retrieves a list of open and group channels with additional information where a user is muted.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-muted-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class ListMutedChannelsExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new UserApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var userId = userId_example;  // string | 
-            var token = token_example;  // string |  (optional) 
-            var limit = 56;  // int? |  (optional) 
-
-            try
-            {
-                // List muted channels
-                ListMutedChannelsResponse result = apiInstance.ListMutedChannels(apiToken, userId, token, limit);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling UserApi.ListMutedChannels: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **userId** | **string**|  | 
- **token** | **string**|  | [optional] 
- **limit** | **int?**|  | [optional] 
-
-### Return type
-
-[**ListMutedChannelsResponse**](ListMutedChannelsResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
 - **Accept**: application/json
 
 
@@ -1265,86 +1585,6 @@ No authorization required
 [[Back to README]](../README.md)
 
 
-## MuteInChannelsWithCustomChannelTypes
-
-> Object MuteInChannelsWithCustomChannelTypes (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = null)
-
-Mute in channels with custom channel types
-
-## Mute in channels with custom channel types  Mutes a user in channels with particular custom channel types.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-mute-in-channels-with-custom-channel-types - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class MuteInChannelsWithCustomChannelTypesExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new UserApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var userId = userId_example;  // string | 
-            var muteInChannelsWithCustomChannelTypesData = new MuteInChannelsWithCustomChannelTypesData(); // MuteInChannelsWithCustomChannelTypesData |  (optional) 
-
-            try
-            {
-                // Mute in channels with custom channel types
-                Object result = apiInstance.MuteInChannelsWithCustomChannelTypes(apiToken, userId, muteInChannelsWithCustomChannelTypesData);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling UserApi.MuteInChannelsWithCustomChannelTypes: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **userId** | **string**|  | 
- **muteInChannelsWithCustomChannelTypesData** | [**MuteInChannelsWithCustomChannelTypesData**](MuteInChannelsWithCustomChannelTypesData.md)|  | [optional] 
-
-### Return type
-
-**Object**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
 ## RegisterAsOperatorToChannelsWithCustomChannelTypes
 
 > Object RegisterAsOperatorToChannelsWithCustomChannelTypes (string apiToken, string userId, RegisterAsOperatorToChannelsWithCustomChannelTypesData registerAsOperatorToChannelsWithCustomChannelTypesData = null)
@@ -1743,86 +1983,6 @@ No authorization required
 [[Back to README]](../README.md)
 
 
-## UnblockUserById
-
-> Object UnblockUserById (string apiToken, string userId, string targetId)
-
-Unblock a user
-
-## Unblock a user  Unblocks the user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-unblock-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class UnblockUserByIdExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new UserApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var userId = userId_example;  // string | 
-            var targetId = targetId_example;  // string | 
-
-            try
-            {
-                // Unblock a user
-                Object result = apiInstance.UnblockUserById(apiToken, userId, targetId);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling UserApi.UnblockUserById: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **userId** | **string**|  | 
- **targetId** | **string**|  | 
-
-### Return type
-
-**Object**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
 ## UpdateChannelInvitationPreference
 
 > UpdateChannelInvitationPreferenceResponse UpdateChannelInvitationPreference (string apiToken, string userId, UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = null)
@@ -1881,6 +2041,338 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**UpdateChannelInvitationPreferenceResponse**](UpdateChannelInvitationPreferenceResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## UpdateChannelMetacounter
+
+> Dictionary&lt;string, SendBirdAdditionalProperties&gt; UpdateChannelMetacounter (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = null)
+
+Update a channel metacounter - When updating existing items of a channel metacounter by their keys or adding new items to the metacounter
+
+## Update a channel metacounter  Updates existing items of a channel metacounter by their keys, or adds new items to the metacounter.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the target channel.
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class UpdateChannelMetacounterExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var updateChannelMetacounterData = new UpdateChannelMetacounterData(); // UpdateChannelMetacounterData |  (optional) 
+
+            try
+            {
+                // Update a channel metacounter - When updating existing items of a channel metacounter by their keys or adding new items to the metacounter
+                Dictionary<string, SendBirdAdditionalProperties> result = apiInstance.UpdateChannelMetacounter(apiToken, channelType, channelUrl, updateChannelMetacounterData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.UpdateChannelMetacounter: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **updateChannelMetacounterData** | [**UpdateChannelMetacounterData**](UpdateChannelMetacounterData.md)|  | [optional] 
+
+### Return type
+
+[**Dictionary&lt;string, SendBirdAdditionalProperties&gt;**](SendBirdAdditionalProperties.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## UpdateChannelMetacounterByKey
+
+> Dictionary&lt;string, string&gt; UpdateChannelMetacounterByKey (string apiToken, string channelType, string channelUrl, string key, Object body = null)
+
+Update a channel metacounter - When updating a specific item of a channel metacounter by its key
+
+## Update a channel metacounter  Updates existing items of a channel metacounter by their keys, or adds new items to the metacounter.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the target channel.
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class UpdateChannelMetacounterByKeyExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var key = key_example;  // string | 
+            var body = ;  // Object |  (optional) 
+
+            try
+            {
+                // Update a channel metacounter - When updating a specific item of a channel metacounter by its key
+                Dictionary<string, string> result = apiInstance.UpdateChannelMetacounterByKey(apiToken, channelType, channelUrl, key, body);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.UpdateChannelMetacounterByKey: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **key** | **string**|  | 
+ **body** | **Object**|  | [optional] 
+
+### Return type
+
+**Dictionary<string, string>**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## UpdateChannelMetadata
+
+> Dictionary&lt;string, string&gt; UpdateChannelMetadata (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = null)
+
+Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata
+
+## Update a channel metadata  Updates existing items of a channel metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the target channel.
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class UpdateChannelMetadataExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var updateChannelMetadataData = new UpdateChannelMetadataData(); // UpdateChannelMetadataData |  (optional) 
+
+            try
+            {
+                // Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata
+                Dictionary<string, string> result = apiInstance.UpdateChannelMetadata(apiToken, channelType, channelUrl, updateChannelMetadataData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.UpdateChannelMetadata: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **updateChannelMetadataData** | [**UpdateChannelMetadataData**](UpdateChannelMetadataData.md)|  | [optional] 
+
+### Return type
+
+**Dictionary<string, string>**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## UpdateChannelMetadataByKey
+
+> Dictionary&lt;string, string&gt; UpdateChannelMetadataByKey (string apiToken, string channelType, string channelUrl, string key, Object body = null)
+
+Update a channel metadata - When updating a specific item of a channel metadata by its key
+
+## Update a channel metadata  Updates existing items of a channel metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the target channel.
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class UpdateChannelMetadataByKeyExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var channelType = channelType_example;  // string | 
+            var channelUrl = channelUrl_example;  // string | 
+            var key = key_example;  // string | 
+            var body = ;  // Object |  (optional) 
+
+            try
+            {
+                // Update a channel metadata - When updating a specific item of a channel metadata by its key
+                Dictionary<string, string> result = apiInstance.UpdateChannelMetadataByKey(apiToken, channelType, channelUrl, key, body);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.UpdateChannelMetadataByKey: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **channelType** | **string**|  | 
+ **channelUrl** | **string**|  | 
+ **key** | **string**|  | 
+ **body** | **Object**|  | [optional] 
+
+### Return type
+
+**Dictionary<string, string>**
 
 ### Authorization
 
@@ -2205,6 +2697,168 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**SendBirdUser**](SendBirdUser.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## UpdateUserMetadata
+
+> UpdateUserMetadataResponse UpdateUserMetadata (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = null)
+
+Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata
+
+## Update a user metadata  Updates existing items of a user metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the ID of the user to update the metadata in.
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class UpdateUserMetadataExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var userId = userId_example;  // string | 
+            var updateUserMetadataData = new UpdateUserMetadataData(); // UpdateUserMetadataData |  (optional) 
+
+            try
+            {
+                // Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata
+                UpdateUserMetadataResponse result = apiInstance.UpdateUserMetadata(apiToken, userId, updateUserMetadataData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.UpdateUserMetadata: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **userId** | **string**|  | 
+ **updateUserMetadataData** | [**UpdateUserMetadataData**](UpdateUserMetadataData.md)|  | [optional] 
+
+### Return type
+
+[**UpdateUserMetadataResponse**](UpdateUserMetadataResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## UpdateUserMetadataByKey
+
+> Dictionary&lt;string, string&gt; UpdateUserMetadataByKey (string apiToken, string userId, string key, Object body = null)
+
+Update a user metadata - When updating a specific item of a user metadata by its key
+
+## Update a user metadata  Updates existing items of a user metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the ID of the user to update the metadata in.
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class UpdateUserMetadataByKeyExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var userId = userId_example;  // string | 
+            var key = key_example;  // string | 
+            var body = ;  // Object |  (optional) 
+
+            try
+            {
+                // Update a user metadata - When updating a specific item of a user metadata by its key
+                Dictionary<string, string> result = apiInstance.UpdateUserMetadataByKey(apiToken, userId, key, body);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.UpdateUserMetadataByKey: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **userId** | **string**|  | 
+ **key** | **string**|  | 
+ **body** | **Object**|  | [optional] 
+
+### Return type
+
+**Dictionary<string, string>**
 
 ### Authorization
 

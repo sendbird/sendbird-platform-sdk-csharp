@@ -5,7 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**AnyOf** | **string** |  | [optional] 
+**MutedList** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  | [optional] 
+**Next** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

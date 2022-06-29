@@ -118,6 +118,31 @@ namespace sendbird_platform_sdk.Api
         /// <returns>ApiResponse of AddIpToWhitelistResponse</returns>
         ApiResponse<AddIpToWhitelistResponse> AddIpToWhitelistWithHttpInfo (string apiToken, AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData));
         /// <summary>
+        /// Ban users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Ban specified users in channels with a custom channel type at once.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="banUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
+        /// <returns>Object</returns>
+        Object BanUsersInChannelsWithCustomChannelType (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = default(BanUsersInChannelsWithCustomChannelTypeData));
+
+        /// <summary>
+        /// Ban users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Ban specified users in channels with a custom channel type at once.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="banUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> BanUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = default(BanUsersInChannelsWithCustomChannelTypeData));
+        /// <summary>
         /// Delete allowed IPs from a whitelist
         /// </summary>
         /// <remarks>
@@ -187,6 +212,60 @@ namespace sendbird_platform_sdk.Api
         /// <returns>ApiResponse of GenerateSecondaryApiTokenResponse</returns>
         ApiResponse<GenerateSecondaryApiTokenResponse> GenerateSecondaryApiTokenWithHttpInfo (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData));
         /// <summary>
+        /// List banned users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Retrieves a list of users banned from channels with the specified custom channel type.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <returns>CustomTypeListBannedUsersResponse</returns>
+        CustomTypeListBannedUsersResponse ListBannedUsersInChannelsWithCustomChannelType (string apiToken, string customType, string token = default(string), int? limit = default(int?));
+
+        /// <summary>
+        /// List banned users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Retrieves a list of users banned from channels with the specified custom channel type.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <returns>ApiResponse of CustomTypeListBannedUsersResponse</returns>
+        ApiResponse<CustomTypeListBannedUsersResponse> ListBannedUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, string token = default(string), int? limit = default(int?));
+        /// <summary>
+        /// List muted users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Retrieves a list of the muted users in channels with a custom channel type.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <returns>InlineResponse200</returns>
+        InlineResponse200 ListMutedUsersInChannelsWithCustomChannelType (string apiToken, string customType, string token = default(string), int? limit = default(int?));
+
+        /// <summary>
+        /// List muted users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Retrieves a list of the muted users in channels with a custom channel type.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        ApiResponse<InlineResponse200> ListMutedUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, string token = default(string), int? limit = default(int?));
+        /// <summary>
         /// List push configurations
         /// </summary>
         /// <remarks>
@@ -251,6 +330,31 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <returns>ApiResponse of ListSecondaryApiTokensResponse</returns>
         ApiResponse<ListSecondaryApiTokensResponse> ListSecondaryApiTokensWithHttpInfo (string apiToken);
+        /// <summary>
+        /// Mute users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Mutes specified users in channels with a custom channel type at once.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="muteUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
+        /// <returns>Object</returns>
+        Object MuteUsersInChannelsWithCustomChannelType (string apiToken, string customType, MuteUsersInChannelsWithCustomChannelTypeData muteUsersInChannelsWithCustomChannelTypeData = default(MuteUsersInChannelsWithCustomChannelTypeData));
+
+        /// <summary>
+        /// Mute users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Mutes specified users in channels with a custom channel type at once.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="muteUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> MuteUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, MuteUsersInChannelsWithCustomChannelTypeData muteUsersInChannelsWithCustomChannelTypeData = default(MuteUsersInChannelsWithCustomChannelTypeData));
         /// <summary>
         /// Remove a push configuration
         /// </summary>
@@ -320,6 +424,81 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken2"></param>
         /// <returns>ApiResponse of RevokeSecondaryApiTokenByTokenResponse</returns>
         ApiResponse<RevokeSecondaryApiTokenByTokenResponse> RevokeSecondaryApiTokenByTokenWithHttpInfo (string apiToken, string apiToken2);
+        /// <summary>
+        /// Message moderation
+        /// </summary>
+        /// <remarks>
+        /// ## 
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="setDomainFilterData"> (optional)</param>
+        /// <returns>SendBirdChannelResponse</returns>
+        SendBirdChannelResponse SetDomainFilter (string apiToken, string customType, SetDomainFilterData setDomainFilterData = default(SetDomainFilterData));
+
+        /// <summary>
+        /// Message moderation
+        /// </summary>
+        /// <remarks>
+        /// ## 
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="setDomainFilterData"> (optional)</param>
+        /// <returns>ApiResponse of SendBirdChannelResponse</returns>
+        ApiResponse<SendBirdChannelResponse> SetDomainFilterWithHttpInfo (string apiToken, string customType, SetDomainFilterData setDomainFilterData = default(SetDomainFilterData));
+        /// <summary>
+        /// Unban users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Unban specified users in channels with a custom channel type at once.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="userIds"></param>
+        /// <returns>Object</returns>
+        Object UnbanUsersInChannelsWithCustomChannelType (string apiToken, string customType, List<string> userIds);
+
+        /// <summary>
+        /// Unban users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Unban specified users in channels with a custom channel type at once.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="userIds"></param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> UnbanUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, List<string> userIds);
+        /// <summary>
+        /// Unmute users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Unmute specified users in channels with a custom channel type at once.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="userIds"></param>
+        /// <returns>Object</returns>
+        Object UnmuteUsersInChannelsWithCustomChannelType (string apiToken, string customType, List<string> userIds);
+
+        /// <summary>
+        /// Unmute users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Unmute specified users in channels with a custom channel type at once.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="userIds"></param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> UnmuteUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, List<string> userIds);
         /// <summary>
         /// Update an APNs push configuration
         /// </summary>
@@ -464,108 +643,6 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <returns>ApiResponse of ViewDefaultChannelInvitationPreferenceResponse</returns>
         ApiResponse<ViewDefaultChannelInvitationPreferenceResponse> ViewDefaultChannelInvitationPreferenceWithHttpInfo (string apiToken);
-        /// <summary>
-        /// View number of concurrent connections
-        /// </summary>
-        /// <remarks>
-        /// ## View number of concurrent connections  Retrieves the number of devices and opened browser tabs which are currently connected to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-concurrent-connections
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <returns>ViewNumberOfConcurrentConnectionsResponse</returns>
-        ViewNumberOfConcurrentConnectionsResponse ViewNumberOfConcurrentConnections (string apiToken);
-
-        /// <summary>
-        /// View number of concurrent connections
-        /// </summary>
-        /// <remarks>
-        /// ## View number of concurrent connections  Retrieves the number of devices and opened browser tabs which are currently connected to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-concurrent-connections
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <returns>ApiResponse of ViewNumberOfConcurrentConnectionsResponse</returns>
-        ApiResponse<ViewNumberOfConcurrentConnectionsResponse> ViewNumberOfConcurrentConnectionsWithHttpInfo (string apiToken);
-        /// <summary>
-        /// View number of daily active users
-        /// </summary>
-        /// <remarks>
-        /// ## View number of daily active users  Retrieves the number of daily active users of the application (DAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-daily-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="date"> (optional)</param>
-        /// <returns>ViewNumberOfDailyActiveUsersResponse</returns>
-        ViewNumberOfDailyActiveUsersResponse ViewNumberOfDailyActiveUsers (string apiToken, string date = default(string));
-
-        /// <summary>
-        /// View number of daily active users
-        /// </summary>
-        /// <remarks>
-        /// ## View number of daily active users  Retrieves the number of daily active users of the application (DAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-daily-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="date"> (optional)</param>
-        /// <returns>ApiResponse of ViewNumberOfDailyActiveUsersResponse</returns>
-        ApiResponse<ViewNumberOfDailyActiveUsersResponse> ViewNumberOfDailyActiveUsersWithHttpInfo (string apiToken, string date = default(string));
-        /// <summary>
-        /// View number of monthly active users
-        /// </summary>
-        /// <remarks>
-        /// ## View number of monthly active users  Retrieves the number of monthly active users of the application (MAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-monthly-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="date"> (optional)</param>
-        /// <returns>ViewNumberOfMonthlyActiveUsersResponse</returns>
-        ViewNumberOfMonthlyActiveUsersResponse ViewNumberOfMonthlyActiveUsers (string apiToken, string date = default(string));
-
-        /// <summary>
-        /// View number of monthly active users
-        /// </summary>
-        /// <remarks>
-        /// ## View number of monthly active users  Retrieves the number of monthly active users of the application (MAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-monthly-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="date"> (optional)</param>
-        /// <returns>ApiResponse of ViewNumberOfMonthlyActiveUsersResponse</returns>
-        ApiResponse<ViewNumberOfMonthlyActiveUsersResponse> ViewNumberOfMonthlyActiveUsersWithHttpInfo (string apiToken, string date = default(string));
-        /// <summary>
-        /// View number of peak connections
-        /// </summary>
-        /// <remarks>
-        /// ## View number of peak connections  Retrieves the number of concurrently connected devices to Sendbird server during the requested time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-peak-connections - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="timeDimension"></param>
-        /// <param name="startYear"></param>
-        /// <param name="startMonth"></param>
-        /// <param name="endYear"></param>
-        /// <param name="endMonth"></param>
-        /// <param name="startDay"> (optional)</param>
-        /// <param name="endDay"> (optional)</param>
-        /// <returns>ViewNumberOfPeakConnectionsResponse</returns>
-        ViewNumberOfPeakConnectionsResponse ViewNumberOfPeakConnections (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = default(int?), int? endDay = default(int?));
-
-        /// <summary>
-        /// View number of peak connections
-        /// </summary>
-        /// <remarks>
-        /// ## View number of peak connections  Retrieves the number of concurrently connected devices to Sendbird server during the requested time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-peak-connections - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="timeDimension"></param>
-        /// <param name="startYear"></param>
-        /// <param name="startMonth"></param>
-        /// <param name="endYear"></param>
-        /// <param name="endMonth"></param>
-        /// <param name="startDay"> (optional)</param>
-        /// <param name="endDay"> (optional)</param>
-        /// <returns>ApiResponse of ViewNumberOfPeakConnectionsResponse</returns>
-        ApiResponse<ViewNumberOfPeakConnectionsResponse> ViewNumberOfPeakConnectionsWithHttpInfo (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = default(int?), int? endDay = default(int?));
         /// <summary>
         /// View a push configuration
         /// </summary>
@@ -740,6 +817,33 @@ namespace sendbird_platform_sdk.Api
         /// <returns>Task of ApiResponse (AddIpToWhitelistResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<AddIpToWhitelistResponse>> AddIpToWhitelistWithHttpInfoAsync (string apiToken, AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
+        /// Ban users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Ban specified users in channels with a custom channel type at once.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="banUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> BanUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = default(BanUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// Ban users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Ban specified users in channels with a custom channel type at once.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="banUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> BanUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = default(BanUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
         /// Delete allowed IPs from a whitelist
         /// </summary>
         /// <remarks>
@@ -815,6 +919,64 @@ namespace sendbird_platform_sdk.Api
         /// <returns>Task of ApiResponse (GenerateSecondaryApiTokenResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GenerateSecondaryApiTokenResponse>> GenerateSecondaryApiTokenWithHttpInfoAsync (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
+        /// List banned users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Retrieves a list of users banned from channels with the specified custom channel type.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of CustomTypeListBannedUsersResponse</returns>
+        System.Threading.Tasks.Task<CustomTypeListBannedUsersResponse> ListBannedUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// List banned users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Retrieves a list of users banned from channels with the specified custom channel type.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (CustomTypeListBannedUsersResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CustomTypeListBannedUsersResponse>> ListBannedUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
+        /// List muted users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Retrieves a list of the muted users in channels with a custom channel type.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of InlineResponse200</returns>
+        System.Threading.Tasks.Task<InlineResponse200> ListMutedUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// List muted users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Retrieves a list of the muted users in channels with a custom channel type.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> ListMutedUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
         /// List push configurations
         /// </summary>
         /// <remarks>
@@ -885,6 +1047,33 @@ namespace sendbird_platform_sdk.Api
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListSecondaryApiTokensResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<ListSecondaryApiTokensResponse>> ListSecondaryApiTokensWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
+        /// Mute users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Mutes specified users in channels with a custom channel type at once.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="muteUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> MuteUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, MuteUsersInChannelsWithCustomChannelTypeData muteUsersInChannelsWithCustomChannelTypeData = default(MuteUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// Mute users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Mutes specified users in channels with a custom channel type at once.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="muteUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> MuteUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, MuteUsersInChannelsWithCustomChannelTypeData muteUsersInChannelsWithCustomChannelTypeData = default(MuteUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Remove a push configuration
         /// </summary>
@@ -960,6 +1149,87 @@ namespace sendbird_platform_sdk.Api
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RevokeSecondaryApiTokenByTokenResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<RevokeSecondaryApiTokenByTokenResponse>> RevokeSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
+        /// Message moderation
+        /// </summary>
+        /// <remarks>
+        /// ## 
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="setDomainFilterData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of SendBirdChannelResponse</returns>
+        System.Threading.Tasks.Task<SendBirdChannelResponse> SetDomainFilterAsync (string apiToken, string customType, SetDomainFilterData setDomainFilterData = default(SetDomainFilterData), CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// Message moderation
+        /// </summary>
+        /// <remarks>
+        /// ## 
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="setDomainFilterData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (SendBirdChannelResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SendBirdChannelResponse>> SetDomainFilterWithHttpInfoAsync (string apiToken, string customType, SetDomainFilterData setDomainFilterData = default(SetDomainFilterData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
+        /// Unban users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Unban specified users in channels with a custom channel type at once.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="userIds"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> UnbanUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// Unban users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Unban specified users in channels with a custom channel type at once.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="userIds"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> UnbanUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
+        /// Unmute users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Unmute specified users in channels with a custom channel type at once.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="userIds"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> UnmuteUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// Unmute users in channels with a custom channel type
+        /// </summary>
+        /// <remarks>
+        /// ## Unmute specified users in channels with a custom channel type at once.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="userIds"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> UnmuteUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update an APNs push configuration
         /// </summary>
@@ -1116,116 +1386,6 @@ namespace sendbird_platform_sdk.Api
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewDefaultChannelInvitationPreferenceResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<ViewDefaultChannelInvitationPreferenceResponse>> ViewDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// View number of concurrent connections
-        /// </summary>
-        /// <remarks>
-        /// ## View number of concurrent connections  Retrieves the number of devices and opened browser tabs which are currently connected to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-concurrent-connections
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ViewNumberOfConcurrentConnectionsResponse</returns>
-        System.Threading.Tasks.Task<ViewNumberOfConcurrentConnectionsResponse> ViewNumberOfConcurrentConnectionsAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// View number of concurrent connections
-        /// </summary>
-        /// <remarks>
-        /// ## View number of concurrent connections  Retrieves the number of devices and opened browser tabs which are currently connected to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-concurrent-connections
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (ViewNumberOfConcurrentConnectionsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfConcurrentConnectionsResponse>> ViewNumberOfConcurrentConnectionsWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// View number of daily active users
-        /// </summary>
-        /// <remarks>
-        /// ## View number of daily active users  Retrieves the number of daily active users of the application (DAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-daily-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="date"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ViewNumberOfDailyActiveUsersResponse</returns>
-        System.Threading.Tasks.Task<ViewNumberOfDailyActiveUsersResponse> ViewNumberOfDailyActiveUsersAsync (string apiToken, string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// View number of daily active users
-        /// </summary>
-        /// <remarks>
-        /// ## View number of daily active users  Retrieves the number of daily active users of the application (DAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-daily-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="date"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (ViewNumberOfDailyActiveUsersResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfDailyActiveUsersResponse>> ViewNumberOfDailyActiveUsersWithHttpInfoAsync (string apiToken, string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// View number of monthly active users
-        /// </summary>
-        /// <remarks>
-        /// ## View number of monthly active users  Retrieves the number of monthly active users of the application (MAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-monthly-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="date"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ViewNumberOfMonthlyActiveUsersResponse</returns>
-        System.Threading.Tasks.Task<ViewNumberOfMonthlyActiveUsersResponse> ViewNumberOfMonthlyActiveUsersAsync (string apiToken, string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// View number of monthly active users
-        /// </summary>
-        /// <remarks>
-        /// ## View number of monthly active users  Retrieves the number of monthly active users of the application (MAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-monthly-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="date"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (ViewNumberOfMonthlyActiveUsersResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfMonthlyActiveUsersResponse>> ViewNumberOfMonthlyActiveUsersWithHttpInfoAsync (string apiToken, string date = default(string), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// View number of peak connections
-        /// </summary>
-        /// <remarks>
-        /// ## View number of peak connections  Retrieves the number of concurrently connected devices to Sendbird server during the requested time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-peak-connections - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="timeDimension"></param>
-        /// <param name="startYear"></param>
-        /// <param name="startMonth"></param>
-        /// <param name="endYear"></param>
-        /// <param name="endMonth"></param>
-        /// <param name="startDay"> (optional)</param>
-        /// <param name="endDay"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ViewNumberOfPeakConnectionsResponse</returns>
-        System.Threading.Tasks.Task<ViewNumberOfPeakConnectionsResponse> ViewNumberOfPeakConnectionsAsync (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// View number of peak connections
-        /// </summary>
-        /// <remarks>
-        /// ## View number of peak connections  Retrieves the number of concurrently connected devices to Sendbird server during the requested time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-peak-connections - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="timeDimension"></param>
-        /// <param name="startYear"></param>
-        /// <param name="startMonth"></param>
-        /// <param name="endYear"></param>
-        /// <param name="endMonth"></param>
-        /// <param name="startDay"> (optional)</param>
-        /// <param name="endDay"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (ViewNumberOfPeakConnectionsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewNumberOfPeakConnectionsResponse>> ViewNumberOfPeakConnectionsWithHttpInfoAsync (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// View a push configuration
         /// </summary>
@@ -2043,6 +2203,175 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
+        /// Ban users in channels with a custom channel type ## Ban specified users in channels with a custom channel type at once.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="banUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
+        /// <returns>Object</returns>
+        public Object BanUsersInChannelsWithCustomChannelType (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = default(BanUsersInChannelsWithCustomChannelTypeData))
+        {
+             ApiResponse<Object> localVarResponse = BanUsersInChannelsWithCustomChannelTypeWithHttpInfo(apiToken, customType, banUsersInChannelsWithCustomChannelTypeData);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Ban users in channels with a custom channel type ## Ban specified users in channels with a custom channel type at once.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="banUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse<Object> BanUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = default(BanUsersInChannelsWithCustomChannelTypeData))
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->BanUsersInChannelsWithCustomChannelType");
+            // verify the required parameter 'customType' is set
+            if (customType == null)
+                throw new ApiException(400, "Missing required parameter 'customType' when calling ApplicationApi->BanUsersInChannelsWithCustomChannelType");
+
+            var localVarPath = "/v3/applications/settings_by_channel_custom_type/{custom_type}/ban";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (customType != null) localVarPathParams.Add("custom_type", this.Configuration.ApiClient.ParameterToString(customType)); // path parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (banUsersInChannelsWithCustomChannelTypeData != null && banUsersInChannelsWithCustomChannelTypeData.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(banUsersInChannelsWithCustomChannelTypeData); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = banUsersInChannelsWithCustomChannelTypeData; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("BanUsersInChannelsWithCustomChannelType", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+        }
+
+        /// <summary>
+        /// Ban users in channels with a custom channel type ## Ban specified users in channels with a custom channel type at once.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="banUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> BanUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = default(BanUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<Object> localVarResponse = await BanUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync(apiToken, customType, banUsersInChannelsWithCustomChannelTypeData, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Ban users in channels with a custom channel type ## Ban specified users in channels with a custom channel type at once.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="banUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> BanUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = default(BanUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->BanUsersInChannelsWithCustomChannelType");
+            // verify the required parameter 'customType' is set
+            if (customType == null)
+                throw new ApiException(400, "Missing required parameter 'customType' when calling ApplicationApi->BanUsersInChannelsWithCustomChannelType");
+
+            var localVarPath = "/v3/applications/settings_by_channel_custom_type/{custom_type}/ban";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (customType != null) localVarPathParams.Add("custom_type", this.Configuration.ApiClient.ParameterToString(customType)); // path parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (banUsersInChannelsWithCustomChannelTypeData != null && banUsersInChannelsWithCustomChannelTypeData.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(banUsersInChannelsWithCustomChannelTypeData); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = banUsersInChannelsWithCustomChannelTypeData; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("BanUsersInChannelsWithCustomChannelType", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+        }
+
+        /// <summary>
         /// Delete allowed IPs from a whitelist ## Delete allowed IPs from a whitelist  Deletes allowed IPs from the whitelist by specifying their IP addresses or ranges. You can configure the IP whitelist under Settings &gt; Security &gt; Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-delete-allowed-ips-from-a-whitelist
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2494,6 +2823,324 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
+        /// List banned users in channels with a custom channel type ## Retrieves a list of users banned from channels with the specified custom channel type.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <returns>CustomTypeListBannedUsersResponse</returns>
+        public CustomTypeListBannedUsersResponse ListBannedUsersInChannelsWithCustomChannelType (string apiToken, string customType, string token = default(string), int? limit = default(int?))
+        {
+             ApiResponse<CustomTypeListBannedUsersResponse> localVarResponse = ListBannedUsersInChannelsWithCustomChannelTypeWithHttpInfo(apiToken, customType, token, limit);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// List banned users in channels with a custom channel type ## Retrieves a list of users banned from channels with the specified custom channel type.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <returns>ApiResponse of CustomTypeListBannedUsersResponse</returns>
+        public ApiResponse<CustomTypeListBannedUsersResponse> ListBannedUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, string token = default(string), int? limit = default(int?))
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ListBannedUsersInChannelsWithCustomChannelType");
+            // verify the required parameter 'customType' is set
+            if (customType == null)
+                throw new ApiException(400, "Missing required parameter 'customType' when calling ApplicationApi->ListBannedUsersInChannelsWithCustomChannelType");
+
+            var localVarPath = "/v3/applications/settings_by_channel_custom_type/{custom_type}/ban";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (customType != null) localVarPathParams.Add("custom_type", this.Configuration.ApiClient.ParameterToString(customType)); // path parameter
+            if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
+            if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ListBannedUsersInChannelsWithCustomChannelType", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CustomTypeListBannedUsersResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (CustomTypeListBannedUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CustomTypeListBannedUsersResponse)));
+        }
+
+        /// <summary>
+        /// List banned users in channels with a custom channel type ## Retrieves a list of users banned from channels with the specified custom channel type.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of CustomTypeListBannedUsersResponse</returns>
+        public async System.Threading.Tasks.Task<CustomTypeListBannedUsersResponse> ListBannedUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<CustomTypeListBannedUsersResponse> localVarResponse = await ListBannedUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync(apiToken, customType, token, limit, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// List banned users in channels with a custom channel type ## Retrieves a list of users banned from channels with the specified custom channel type.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (CustomTypeListBannedUsersResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CustomTypeListBannedUsersResponse>> ListBannedUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ListBannedUsersInChannelsWithCustomChannelType");
+            // verify the required parameter 'customType' is set
+            if (customType == null)
+                throw new ApiException(400, "Missing required parameter 'customType' when calling ApplicationApi->ListBannedUsersInChannelsWithCustomChannelType");
+
+            var localVarPath = "/v3/applications/settings_by_channel_custom_type/{custom_type}/ban";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (customType != null) localVarPathParams.Add("custom_type", this.Configuration.ApiClient.ParameterToString(customType)); // path parameter
+            if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
+            if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ListBannedUsersInChannelsWithCustomChannelType", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<CustomTypeListBannedUsersResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (CustomTypeListBannedUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CustomTypeListBannedUsersResponse)));
+        }
+
+        /// <summary>
+        /// List muted users in channels with a custom channel type ## Retrieves a list of the muted users in channels with a custom channel type.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <returns>InlineResponse200</returns>
+        public InlineResponse200 ListMutedUsersInChannelsWithCustomChannelType (string apiToken, string customType, string token = default(string), int? limit = default(int?))
+        {
+             ApiResponse<InlineResponse200> localVarResponse = ListMutedUsersInChannelsWithCustomChannelTypeWithHttpInfo(apiToken, customType, token, limit);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// List muted users in channels with a custom channel type ## Retrieves a list of the muted users in channels with a custom channel type.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <returns>ApiResponse of InlineResponse200</returns>
+        public ApiResponse<InlineResponse200> ListMutedUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, string token = default(string), int? limit = default(int?))
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ListMutedUsersInChannelsWithCustomChannelType");
+            // verify the required parameter 'customType' is set
+            if (customType == null)
+                throw new ApiException(400, "Missing required parameter 'customType' when calling ApplicationApi->ListMutedUsersInChannelsWithCustomChannelType");
+
+            var localVarPath = "/v3/applications/settings_by_channel_custom_type/{custom_type}/mute";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (customType != null) localVarPathParams.Add("custom_type", this.Configuration.ApiClient.ParameterToString(customType)); // path parameter
+            if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
+            if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ListMutedUsersInChannelsWithCustomChannelType", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
+        }
+
+        /// <summary>
+        /// List muted users in channels with a custom channel type ## Retrieves a list of the muted users in channels with a custom channel type.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of InlineResponse200</returns>
+        public async System.Threading.Tasks.Task<InlineResponse200> ListMutedUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<InlineResponse200> localVarResponse = await ListMutedUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync(apiToken, customType, token, limit, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// List muted users in channels with a custom channel type ## Retrieves a list of the muted users in channels with a custom channel type.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> ListMutedUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ListMutedUsersInChannelsWithCustomChannelType");
+            // verify the required parameter 'customType' is set
+            if (customType == null)
+                throw new ApiException(400, "Missing required parameter 'customType' when calling ApplicationApi->ListMutedUsersInChannelsWithCustomChannelType");
+
+            var localVarPath = "/v3/applications/settings_by_channel_custom_type/{custom_type}/mute";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (customType != null) localVarPathParams.Add("custom_type", this.Configuration.ApiClient.ParameterToString(customType)); // path parameter
+            if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
+            if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ListMutedUsersInChannelsWithCustomChannelType", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<InlineResponse200>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
+        }
+
+        /// <summary>
         /// List push configurations ## List push configurations  Retrieves a list of an application&#39;s registered push configurations.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-list-push-configurations - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2908,6 +3555,175 @@ namespace sendbird_platform_sdk.Api
             return new ApiResponse<ListSecondaryApiTokensResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
                 (ListSecondaryApiTokensResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListSecondaryApiTokensResponse)));
+        }
+
+        /// <summary>
+        /// Mute users in channels with a custom channel type ## Mutes specified users in channels with a custom channel type at once.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="muteUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
+        /// <returns>Object</returns>
+        public Object MuteUsersInChannelsWithCustomChannelType (string apiToken, string customType, MuteUsersInChannelsWithCustomChannelTypeData muteUsersInChannelsWithCustomChannelTypeData = default(MuteUsersInChannelsWithCustomChannelTypeData))
+        {
+             ApiResponse<Object> localVarResponse = MuteUsersInChannelsWithCustomChannelTypeWithHttpInfo(apiToken, customType, muteUsersInChannelsWithCustomChannelTypeData);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Mute users in channels with a custom channel type ## Mutes specified users in channels with a custom channel type at once.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="muteUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse<Object> MuteUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, MuteUsersInChannelsWithCustomChannelTypeData muteUsersInChannelsWithCustomChannelTypeData = default(MuteUsersInChannelsWithCustomChannelTypeData))
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->MuteUsersInChannelsWithCustomChannelType");
+            // verify the required parameter 'customType' is set
+            if (customType == null)
+                throw new ApiException(400, "Missing required parameter 'customType' when calling ApplicationApi->MuteUsersInChannelsWithCustomChannelType");
+
+            var localVarPath = "/v3/applications/settings_by_channel_custom_type/{custom_type}/mute";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (customType != null) localVarPathParams.Add("custom_type", this.Configuration.ApiClient.ParameterToString(customType)); // path parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (muteUsersInChannelsWithCustomChannelTypeData != null && muteUsersInChannelsWithCustomChannelTypeData.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(muteUsersInChannelsWithCustomChannelTypeData); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = muteUsersInChannelsWithCustomChannelTypeData; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("MuteUsersInChannelsWithCustomChannelType", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+        }
+
+        /// <summary>
+        /// Mute users in channels with a custom channel type ## Mutes specified users in channels with a custom channel type at once.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="muteUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> MuteUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, MuteUsersInChannelsWithCustomChannelTypeData muteUsersInChannelsWithCustomChannelTypeData = default(MuteUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<Object> localVarResponse = await MuteUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync(apiToken, customType, muteUsersInChannelsWithCustomChannelTypeData, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Mute users in channels with a custom channel type ## Mutes specified users in channels with a custom channel type at once.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="muteUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> MuteUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, MuteUsersInChannelsWithCustomChannelTypeData muteUsersInChannelsWithCustomChannelTypeData = default(MuteUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->MuteUsersInChannelsWithCustomChannelType");
+            // verify the required parameter 'customType' is set
+            if (customType == null)
+                throw new ApiException(400, "Missing required parameter 'customType' when calling ApplicationApi->MuteUsersInChannelsWithCustomChannelType");
+
+            var localVarPath = "/v3/applications/settings_by_channel_custom_type/{custom_type}/mute";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (customType != null) localVarPathParams.Add("custom_type", this.Configuration.ApiClient.ParameterToString(customType)); // path parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (muteUsersInChannelsWithCustomChannelTypeData != null && muteUsersInChannelsWithCustomChannelTypeData.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(muteUsersInChannelsWithCustomChannelTypeData); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = muteUsersInChannelsWithCustomChannelTypeData; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("MuteUsersInChannelsWithCustomChannelType", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -3349,6 +4165,493 @@ namespace sendbird_platform_sdk.Api
             return new ApiResponse<RevokeSecondaryApiTokenByTokenResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
                 (RevokeSecondaryApiTokenByTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(RevokeSecondaryApiTokenByTokenResponse)));
+        }
+
+        /// <summary>
+        /// Message moderation ## 
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="setDomainFilterData"> (optional)</param>
+        /// <returns>SendBirdChannelResponse</returns>
+        public SendBirdChannelResponse SetDomainFilter (string apiToken, string customType, SetDomainFilterData setDomainFilterData = default(SetDomainFilterData))
+        {
+             ApiResponse<SendBirdChannelResponse> localVarResponse = SetDomainFilterWithHttpInfo(apiToken, customType, setDomainFilterData);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Message moderation ## 
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="setDomainFilterData"> (optional)</param>
+        /// <returns>ApiResponse of SendBirdChannelResponse</returns>
+        public ApiResponse<SendBirdChannelResponse> SetDomainFilterWithHttpInfo (string apiToken, string customType, SetDomainFilterData setDomainFilterData = default(SetDomainFilterData))
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->SetDomainFilter");
+            // verify the required parameter 'customType' is set
+            if (customType == null)
+                throw new ApiException(400, "Missing required parameter 'customType' when calling ApplicationApi->SetDomainFilter");
+
+            var localVarPath = "/v3/applications/settings_global/{custom_type}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (customType != null) localVarPathParams.Add("custom_type", this.Configuration.ApiClient.ParameterToString(customType)); // path parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (setDomainFilterData != null && setDomainFilterData.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(setDomainFilterData); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = setDomainFilterData; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("SetDomainFilter", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<SendBirdChannelResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (SendBirdChannelResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdChannelResponse)));
+        }
+
+        /// <summary>
+        /// Message moderation ## 
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="setDomainFilterData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of SendBirdChannelResponse</returns>
+        public async System.Threading.Tasks.Task<SendBirdChannelResponse> SetDomainFilterAsync (string apiToken, string customType, SetDomainFilterData setDomainFilterData = default(SetDomainFilterData), CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<SendBirdChannelResponse> localVarResponse = await SetDomainFilterWithHttpInfoAsync(apiToken, customType, setDomainFilterData, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Message moderation ## 
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="setDomainFilterData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (SendBirdChannelResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdChannelResponse>> SetDomainFilterWithHttpInfoAsync (string apiToken, string customType, SetDomainFilterData setDomainFilterData = default(SetDomainFilterData), CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->SetDomainFilter");
+            // verify the required parameter 'customType' is set
+            if (customType == null)
+                throw new ApiException(400, "Missing required parameter 'customType' when calling ApplicationApi->SetDomainFilter");
+
+            var localVarPath = "/v3/applications/settings_global/{custom_type}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (customType != null) localVarPathParams.Add("custom_type", this.Configuration.ApiClient.ParameterToString(customType)); // path parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (setDomainFilterData != null && setDomainFilterData.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(setDomainFilterData); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = setDomainFilterData; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("SetDomainFilter", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<SendBirdChannelResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (SendBirdChannelResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdChannelResponse)));
+        }
+
+        /// <summary>
+        /// Unban users in channels with a custom channel type ## Unban specified users in channels with a custom channel type at once.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="userIds"></param>
+        /// <returns>Object</returns>
+        public Object UnbanUsersInChannelsWithCustomChannelType (string apiToken, string customType, List<string> userIds)
+        {
+             ApiResponse<Object> localVarResponse = UnbanUsersInChannelsWithCustomChannelTypeWithHttpInfo(apiToken, customType, userIds);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Unban users in channels with a custom channel type ## Unban specified users in channels with a custom channel type at once.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="userIds"></param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse<Object> UnbanUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, List<string> userIds)
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->UnbanUsersInChannelsWithCustomChannelType");
+            // verify the required parameter 'customType' is set
+            if (customType == null)
+                throw new ApiException(400, "Missing required parameter 'customType' when calling ApplicationApi->UnbanUsersInChannelsWithCustomChannelType");
+            // verify the required parameter 'userIds' is set
+            if (userIds == null)
+                throw new ApiException(400, "Missing required parameter 'userIds' when calling ApplicationApi->UnbanUsersInChannelsWithCustomChannelType");
+
+            var localVarPath = "/v3/applications/settings_by_channel_custom_type/{custom_type}/ban";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (customType != null) localVarPathParams.Add("custom_type", this.Configuration.ApiClient.ParameterToString(customType)); // path parameter
+            if (userIds != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("multi", "user_ids", userIds)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UnbanUsersInChannelsWithCustomChannelType", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+        }
+
+        /// <summary>
+        /// Unban users in channels with a custom channel type ## Unban specified users in channels with a custom channel type at once.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="userIds"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> UnbanUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<Object> localVarResponse = await UnbanUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync(apiToken, customType, userIds, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Unban users in channels with a custom channel type ## Unban specified users in channels with a custom channel type at once.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="userIds"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> UnbanUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->UnbanUsersInChannelsWithCustomChannelType");
+            // verify the required parameter 'customType' is set
+            if (customType == null)
+                throw new ApiException(400, "Missing required parameter 'customType' when calling ApplicationApi->UnbanUsersInChannelsWithCustomChannelType");
+            // verify the required parameter 'userIds' is set
+            if (userIds == null)
+                throw new ApiException(400, "Missing required parameter 'userIds' when calling ApplicationApi->UnbanUsersInChannelsWithCustomChannelType");
+
+            var localVarPath = "/v3/applications/settings_by_channel_custom_type/{custom_type}/ban";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (customType != null) localVarPathParams.Add("custom_type", this.Configuration.ApiClient.ParameterToString(customType)); // path parameter
+            if (userIds != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("multi", "user_ids", userIds)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UnbanUsersInChannelsWithCustomChannelType", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+        }
+
+        /// <summary>
+        /// Unmute users in channels with a custom channel type ## Unmute specified users in channels with a custom channel type at once.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="userIds"></param>
+        /// <returns>Object</returns>
+        public Object UnmuteUsersInChannelsWithCustomChannelType (string apiToken, string customType, List<string> userIds)
+        {
+             ApiResponse<Object> localVarResponse = UnmuteUsersInChannelsWithCustomChannelTypeWithHttpInfo(apiToken, customType, userIds);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Unmute users in channels with a custom channel type ## Unmute specified users in channels with a custom channel type at once.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="userIds"></param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse<Object> UnmuteUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, List<string> userIds)
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->UnmuteUsersInChannelsWithCustomChannelType");
+            // verify the required parameter 'customType' is set
+            if (customType == null)
+                throw new ApiException(400, "Missing required parameter 'customType' when calling ApplicationApi->UnmuteUsersInChannelsWithCustomChannelType");
+            // verify the required parameter 'userIds' is set
+            if (userIds == null)
+                throw new ApiException(400, "Missing required parameter 'userIds' when calling ApplicationApi->UnmuteUsersInChannelsWithCustomChannelType");
+
+            var localVarPath = "/v3/applications/settings_by_channel_custom_type/{custom_type}/mute";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (customType != null) localVarPathParams.Add("custom_type", this.Configuration.ApiClient.ParameterToString(customType)); // path parameter
+            if (userIds != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("multi", "user_ids", userIds)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UnmuteUsersInChannelsWithCustomChannelType", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+        }
+
+        /// <summary>
+        /// Unmute users in channels with a custom channel type ## Unmute specified users in channels with a custom channel type at once.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="userIds"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> UnmuteUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<Object> localVarResponse = await UnmuteUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync(apiToken, customType, userIds, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Unmute users in channels with a custom channel type ## Unmute specified users in channels with a custom channel type at once.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="customType"></param>
+        /// <param name="userIds"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> UnmuteUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->UnmuteUsersInChannelsWithCustomChannelType");
+            // verify the required parameter 'customType' is set
+            if (customType == null)
+                throw new ApiException(400, "Missing required parameter 'customType' when calling ApplicationApi->UnmuteUsersInChannelsWithCustomChannelType");
+            // verify the required parameter 'userIds' is set
+            if (userIds == null)
+                throw new ApiException(400, "Missing required parameter 'userIds' when calling ApplicationApi->UnmuteUsersInChannelsWithCustomChannelType");
+
+            var localVarPath = "/v3/applications/settings_by_channel_custom_type/{custom_type}/mute";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (customType != null) localVarPathParams.Add("custom_type", this.Configuration.ApiClient.ParameterToString(customType)); // path parameter
+            if (userIds != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("multi", "user_ids", userIds)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UnmuteUsersInChannelsWithCustomChannelType", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -4317,630 +5620,6 @@ namespace sendbird_platform_sdk.Api
             return new ApiResponse<ViewDefaultChannelInvitationPreferenceResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
                 (ViewDefaultChannelInvitationPreferenceResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewDefaultChannelInvitationPreferenceResponse)));
-        }
-
-        /// <summary>
-        /// View number of concurrent connections ## View number of concurrent connections  Retrieves the number of devices and opened browser tabs which are currently connected to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-concurrent-connections
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <returns>ViewNumberOfConcurrentConnectionsResponse</returns>
-        public ViewNumberOfConcurrentConnectionsResponse ViewNumberOfConcurrentConnections (string apiToken)
-        {
-             ApiResponse<ViewNumberOfConcurrentConnectionsResponse> localVarResponse = ViewNumberOfConcurrentConnectionsWithHttpInfo(apiToken);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// View number of concurrent connections ## View number of concurrent connections  Retrieves the number of devices and opened browser tabs which are currently connected to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-concurrent-connections
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <returns>ApiResponse of ViewNumberOfConcurrentConnectionsResponse</returns>
-        public ApiResponse<ViewNumberOfConcurrentConnectionsResponse> ViewNumberOfConcurrentConnectionsWithHttpInfo (string apiToken)
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewNumberOfConcurrentConnections");
-
-            var localVarPath = "/v3/applications/ccu";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("ViewNumberOfConcurrentConnections", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<ViewNumberOfConcurrentConnectionsResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (ViewNumberOfConcurrentConnectionsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfConcurrentConnectionsResponse)));
-        }
-
-        /// <summary>
-        /// View number of concurrent connections ## View number of concurrent connections  Retrieves the number of devices and opened browser tabs which are currently connected to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-concurrent-connections
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ViewNumberOfConcurrentConnectionsResponse</returns>
-        public async System.Threading.Tasks.Task<ViewNumberOfConcurrentConnectionsResponse> ViewNumberOfConcurrentConnectionsAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<ViewNumberOfConcurrentConnectionsResponse> localVarResponse = await ViewNumberOfConcurrentConnectionsWithHttpInfoAsync(apiToken, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// View number of concurrent connections ## View number of concurrent connections  Retrieves the number of devices and opened browser tabs which are currently connected to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-concurrent-connections
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (ViewNumberOfConcurrentConnectionsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfConcurrentConnectionsResponse>> ViewNumberOfConcurrentConnectionsWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewNumberOfConcurrentConnections");
-
-            var localVarPath = "/v3/applications/ccu";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("ViewNumberOfConcurrentConnections", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<ViewNumberOfConcurrentConnectionsResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (ViewNumberOfConcurrentConnectionsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfConcurrentConnectionsResponse)));
-        }
-
-        /// <summary>
-        /// View number of daily active users ## View number of daily active users  Retrieves the number of daily active users of the application (DAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-daily-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="date"> (optional)</param>
-        /// <returns>ViewNumberOfDailyActiveUsersResponse</returns>
-        public ViewNumberOfDailyActiveUsersResponse ViewNumberOfDailyActiveUsers (string apiToken, string date = default(string))
-        {
-             ApiResponse<ViewNumberOfDailyActiveUsersResponse> localVarResponse = ViewNumberOfDailyActiveUsersWithHttpInfo(apiToken, date);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// View number of daily active users ## View number of daily active users  Retrieves the number of daily active users of the application (DAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-daily-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="date"> (optional)</param>
-        /// <returns>ApiResponse of ViewNumberOfDailyActiveUsersResponse</returns>
-        public ApiResponse<ViewNumberOfDailyActiveUsersResponse> ViewNumberOfDailyActiveUsersWithHttpInfo (string apiToken, string date = default(string))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewNumberOfDailyActiveUsers");
-
-            var localVarPath = "/v3/applications/dau";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (date != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "date", date)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("ViewNumberOfDailyActiveUsers", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<ViewNumberOfDailyActiveUsersResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (ViewNumberOfDailyActiveUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfDailyActiveUsersResponse)));
-        }
-
-        /// <summary>
-        /// View number of daily active users ## View number of daily active users  Retrieves the number of daily active users of the application (DAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-daily-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="date"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ViewNumberOfDailyActiveUsersResponse</returns>
-        public async System.Threading.Tasks.Task<ViewNumberOfDailyActiveUsersResponse> ViewNumberOfDailyActiveUsersAsync (string apiToken, string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<ViewNumberOfDailyActiveUsersResponse> localVarResponse = await ViewNumberOfDailyActiveUsersWithHttpInfoAsync(apiToken, date, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// View number of daily active users ## View number of daily active users  Retrieves the number of daily active users of the application (DAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-daily-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="date"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (ViewNumberOfDailyActiveUsersResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfDailyActiveUsersResponse>> ViewNumberOfDailyActiveUsersWithHttpInfoAsync (string apiToken, string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewNumberOfDailyActiveUsers");
-
-            var localVarPath = "/v3/applications/dau";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (date != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "date", date)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("ViewNumberOfDailyActiveUsers", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<ViewNumberOfDailyActiveUsersResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (ViewNumberOfDailyActiveUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfDailyActiveUsersResponse)));
-        }
-
-        /// <summary>
-        /// View number of monthly active users ## View number of monthly active users  Retrieves the number of monthly active users of the application (MAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-monthly-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="date"> (optional)</param>
-        /// <returns>ViewNumberOfMonthlyActiveUsersResponse</returns>
-        public ViewNumberOfMonthlyActiveUsersResponse ViewNumberOfMonthlyActiveUsers (string apiToken, string date = default(string))
-        {
-             ApiResponse<ViewNumberOfMonthlyActiveUsersResponse> localVarResponse = ViewNumberOfMonthlyActiveUsersWithHttpInfo(apiToken, date);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// View number of monthly active users ## View number of monthly active users  Retrieves the number of monthly active users of the application (MAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-monthly-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="date"> (optional)</param>
-        /// <returns>ApiResponse of ViewNumberOfMonthlyActiveUsersResponse</returns>
-        public ApiResponse<ViewNumberOfMonthlyActiveUsersResponse> ViewNumberOfMonthlyActiveUsersWithHttpInfo (string apiToken, string date = default(string))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewNumberOfMonthlyActiveUsers");
-
-            var localVarPath = "/v3/applications/mau";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (date != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "date", date)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("ViewNumberOfMonthlyActiveUsers", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<ViewNumberOfMonthlyActiveUsersResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (ViewNumberOfMonthlyActiveUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfMonthlyActiveUsersResponse)));
-        }
-
-        /// <summary>
-        /// View number of monthly active users ## View number of monthly active users  Retrieves the number of monthly active users of the application (MAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-monthly-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="date"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ViewNumberOfMonthlyActiveUsersResponse</returns>
-        public async System.Threading.Tasks.Task<ViewNumberOfMonthlyActiveUsersResponse> ViewNumberOfMonthlyActiveUsersAsync (string apiToken, string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<ViewNumberOfMonthlyActiveUsersResponse> localVarResponse = await ViewNumberOfMonthlyActiveUsersWithHttpInfoAsync(apiToken, date, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// View number of monthly active users ## View number of monthly active users  Retrieves the number of monthly active users of the application (MAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-monthly-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="date"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (ViewNumberOfMonthlyActiveUsersResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfMonthlyActiveUsersResponse>> ViewNumberOfMonthlyActiveUsersWithHttpInfoAsync (string apiToken, string date = default(string), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewNumberOfMonthlyActiveUsers");
-
-            var localVarPath = "/v3/applications/mau";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (date != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "date", date)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("ViewNumberOfMonthlyActiveUsers", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<ViewNumberOfMonthlyActiveUsersResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (ViewNumberOfMonthlyActiveUsersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfMonthlyActiveUsersResponse)));
-        }
-
-        /// <summary>
-        /// View number of peak connections ## View number of peak connections  Retrieves the number of concurrently connected devices to Sendbird server during the requested time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-peak-connections - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="timeDimension"></param>
-        /// <param name="startYear"></param>
-        /// <param name="startMonth"></param>
-        /// <param name="endYear"></param>
-        /// <param name="endMonth"></param>
-        /// <param name="startDay"> (optional)</param>
-        /// <param name="endDay"> (optional)</param>
-        /// <returns>ViewNumberOfPeakConnectionsResponse</returns>
-        public ViewNumberOfPeakConnectionsResponse ViewNumberOfPeakConnections (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = default(int?), int? endDay = default(int?))
-        {
-             ApiResponse<ViewNumberOfPeakConnectionsResponse> localVarResponse = ViewNumberOfPeakConnectionsWithHttpInfo(apiToken, timeDimension, startYear, startMonth, endYear, endMonth, startDay, endDay);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// View number of peak connections ## View number of peak connections  Retrieves the number of concurrently connected devices to Sendbird server during the requested time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-peak-connections - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="timeDimension"></param>
-        /// <param name="startYear"></param>
-        /// <param name="startMonth"></param>
-        /// <param name="endYear"></param>
-        /// <param name="endMonth"></param>
-        /// <param name="startDay"> (optional)</param>
-        /// <param name="endDay"> (optional)</param>
-        /// <returns>ApiResponse of ViewNumberOfPeakConnectionsResponse</returns>
-        public ApiResponse<ViewNumberOfPeakConnectionsResponse> ViewNumberOfPeakConnectionsWithHttpInfo (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = default(int?), int? endDay = default(int?))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewNumberOfPeakConnections");
-            // verify the required parameter 'timeDimension' is set
-            if (timeDimension == null)
-                throw new ApiException(400, "Missing required parameter 'timeDimension' when calling ApplicationApi->ViewNumberOfPeakConnections");
-            // verify the required parameter 'startYear' is set
-            if (startYear == null)
-                throw new ApiException(400, "Missing required parameter 'startYear' when calling ApplicationApi->ViewNumberOfPeakConnections");
-            // verify the required parameter 'startMonth' is set
-            if (startMonth == null)
-                throw new ApiException(400, "Missing required parameter 'startMonth' when calling ApplicationApi->ViewNumberOfPeakConnections");
-            // verify the required parameter 'endYear' is set
-            if (endYear == null)
-                throw new ApiException(400, "Missing required parameter 'endYear' when calling ApplicationApi->ViewNumberOfPeakConnections");
-            // verify the required parameter 'endMonth' is set
-            if (endMonth == null)
-                throw new ApiException(400, "Missing required parameter 'endMonth' when calling ApplicationApi->ViewNumberOfPeakConnections");
-
-            var localVarPath = "/v3/applications/peak_connections";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (timeDimension != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "time_dimension", timeDimension)); // query parameter
-            if (startYear != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "start_year", startYear)); // query parameter
-            if (startMonth != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "start_month", startMonth)); // query parameter
-            if (endYear != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "end_year", endYear)); // query parameter
-            if (endMonth != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "end_month", endMonth)); // query parameter
-            if (startDay != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "start_day", startDay)); // query parameter
-            if (endDay != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "end_day", endDay)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("ViewNumberOfPeakConnections", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<ViewNumberOfPeakConnectionsResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (ViewNumberOfPeakConnectionsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfPeakConnectionsResponse)));
-        }
-
-        /// <summary>
-        /// View number of peak connections ## View number of peak connections  Retrieves the number of concurrently connected devices to Sendbird server during the requested time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-peak-connections - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="timeDimension"></param>
-        /// <param name="startYear"></param>
-        /// <param name="startMonth"></param>
-        /// <param name="endYear"></param>
-        /// <param name="endMonth"></param>
-        /// <param name="startDay"> (optional)</param>
-        /// <param name="endDay"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ViewNumberOfPeakConnectionsResponse</returns>
-        public async System.Threading.Tasks.Task<ViewNumberOfPeakConnectionsResponse> ViewNumberOfPeakConnectionsAsync (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<ViewNumberOfPeakConnectionsResponse> localVarResponse = await ViewNumberOfPeakConnectionsWithHttpInfoAsync(apiToken, timeDimension, startYear, startMonth, endYear, endMonth, startDay, endDay, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// View number of peak connections ## View number of peak connections  Retrieves the number of concurrently connected devices to Sendbird server during the requested time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-peak-connections - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="timeDimension"></param>
-        /// <param name="startYear"></param>
-        /// <param name="startMonth"></param>
-        /// <param name="endYear"></param>
-        /// <param name="endMonth"></param>
-        /// <param name="startDay"> (optional)</param>
-        /// <param name="endDay"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (ViewNumberOfPeakConnectionsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewNumberOfPeakConnectionsResponse>> ViewNumberOfPeakConnectionsWithHttpInfoAsync (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = default(int?), int? endDay = default(int?), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ViewNumberOfPeakConnections");
-            // verify the required parameter 'timeDimension' is set
-            if (timeDimension == null)
-                throw new ApiException(400, "Missing required parameter 'timeDimension' when calling ApplicationApi->ViewNumberOfPeakConnections");
-            // verify the required parameter 'startYear' is set
-            if (startYear == null)
-                throw new ApiException(400, "Missing required parameter 'startYear' when calling ApplicationApi->ViewNumberOfPeakConnections");
-            // verify the required parameter 'startMonth' is set
-            if (startMonth == null)
-                throw new ApiException(400, "Missing required parameter 'startMonth' when calling ApplicationApi->ViewNumberOfPeakConnections");
-            // verify the required parameter 'endYear' is set
-            if (endYear == null)
-                throw new ApiException(400, "Missing required parameter 'endYear' when calling ApplicationApi->ViewNumberOfPeakConnections");
-            // verify the required parameter 'endMonth' is set
-            if (endMonth == null)
-                throw new ApiException(400, "Missing required parameter 'endMonth' when calling ApplicationApi->ViewNumberOfPeakConnections");
-
-            var localVarPath = "/v3/applications/peak_connections";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (timeDimension != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "time_dimension", timeDimension)); // query parameter
-            if (startYear != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "start_year", startYear)); // query parameter
-            if (startMonth != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "start_month", startMonth)); // query parameter
-            if (endYear != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "end_year", endYear)); // query parameter
-            if (endMonth != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "end_month", endMonth)); // query parameter
-            if (startDay != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "start_day", startDay)); // query parameter
-            if (endDay != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "end_day", endDay)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("ViewNumberOfPeakConnections", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<ViewNumberOfPeakConnectionsResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (ViewNumberOfPeakConnectionsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewNumberOfPeakConnectionsResponse)));
         }
 
         /// <summary>

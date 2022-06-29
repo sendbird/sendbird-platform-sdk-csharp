@@ -8,25 +8,28 @@ Method | HTTP request | Description
 [**AddFcmPushConfiguration**](ApplicationApi.md#addfcmpushconfiguration) | **POST** /v3/applications/push/fcm | Add a FCM push configuration
 [**AddHmsPushConfiguration**](ApplicationApi.md#addhmspushconfiguration) | **POST** /v3/applications/push/hms | Add an HMS push configuration
 [**AddIpToWhitelist**](ApplicationApi.md#addiptowhitelist) | **PUT** /v3/applications/settings/ip_whitelist | Add an IP to a whitelist
+[**BanUsersInChannelsWithCustomChannelType**](ApplicationApi.md#banusersinchannelswithcustomchanneltype) | **POST** /v3/applications/settings_by_channel_custom_type/{custom_type}/ban | Ban users in channels with a custom channel type
 [**DeleteAllowedIpsFromWhitelist**](ApplicationApi.md#deleteallowedipsfromwhitelist) | **DELETE** /v3/applications/settings/ip_whitelist | Delete allowed IPs from a whitelist
 [**DeleteApnsCertificateById**](ApplicationApi.md#deleteapnscertificatebyid) | **DELETE** /v3/applications/push/apns/cert/{provider_id} | Delete an APNs certificate
 [**GenerateSecondaryApiToken**](ApplicationApi.md#generatesecondaryapitoken) | **POST** /v3/applications/api_tokens | Generate a secondary API token
+[**ListBannedUsersInChannelsWithCustomChannelType**](ApplicationApi.md#listbannedusersinchannelswithcustomchanneltype) | **GET** /v3/applications/settings_by_channel_custom_type/{custom_type}/ban | List banned users in channels with a custom channel type
+[**ListMutedUsersInChannelsWithCustomChannelType**](ApplicationApi.md#listmutedusersinchannelswithcustomchanneltype) | **GET** /v3/applications/settings_by_channel_custom_type/{custom_type}/mute | List muted users in channels with a custom channel type
 [**ListPushConfigurations**](ApplicationApi.md#listpushconfigurations) | **GET** /v3/applications/push/{push_type} | List push configurations
 [**ListPushNotificationContentTemplates**](ApplicationApi.md#listpushnotificationcontenttemplates) | **GET** /v3/applications/push/message_templates | List push notification content templates
 [**ListSecondaryApiTokens**](ApplicationApi.md#listsecondaryapitokens) | **GET** /v3/applications/api_tokens | List secondary API tokens
+[**MuteUsersInChannelsWithCustomChannelType**](ApplicationApi.md#muteusersinchannelswithcustomchanneltype) | **POST** /v3/applications/settings_by_channel_custom_type/{custom_type}/mute | Mute users in channels with a custom channel type
 [**RemovePushConfigurationById**](ApplicationApi.md#removepushconfigurationbyid) | **DELETE** /v3/applications/push/{push_type}/{provider_id} | Remove a push configuration
 [**RetrieveIpWhitelist**](ApplicationApi.md#retrieveipwhitelist) | **GET** /v3/applications/settings/ip_whitelist | Retrieve an IP whitelist
 [**RevokeSecondaryApiTokenByToken**](ApplicationApi.md#revokesecondaryapitokenbytoken) | **DELETE** /v3/applications/api_tokens/{api_token} | Revoke a secondary API token
+[**SetDomainFilter**](ApplicationApi.md#setdomainfilter) | **PUT** /v3/applications/settings_global/{custom_type} | Message moderation
+[**UnbanUsersInChannelsWithCustomChannelType**](ApplicationApi.md#unbanusersinchannelswithcustomchanneltype) | **DELETE** /v3/applications/settings_by_channel_custom_type/{custom_type}/ban | Unban users in channels with a custom channel type
+[**UnmuteUsersInChannelsWithCustomChannelType**](ApplicationApi.md#unmuteusersinchannelswithcustomchanneltype) | **DELETE** /v3/applications/settings_by_channel_custom_type/{custom_type}/mute | Unmute users in channels with a custom channel type
 [**UpdateApnsPushConfigurationById**](ApplicationApi.md#updateapnspushconfigurationbyid) | **PUT** /v3/applications/push/apns/{provider_id} | Update an APNs push configuration
 [**UpdateDefaultChannelInvitationPreference**](ApplicationApi.md#updatedefaultchannelinvitationpreference) | **PUT** /v3/applications/default_channel_invitation_preference | Update default channel invitation preference
 [**UpdateFcmPushConfigurationById**](ApplicationApi.md#updatefcmpushconfigurationbyid) | **PUT** /v3/applications/push/fcm/{provider_id} | Update a FCM push configuration
 [**UpdateHmsPushConfigurationById**](ApplicationApi.md#updatehmspushconfigurationbyid) | **PUT** /v3/applications/push/hms/{provider_id} | Update an HMS push configuration
 [**UpdatePushNotificationContentTemplate**](ApplicationApi.md#updatepushnotificationcontenttemplate) | **PUT** /v3/applications/push/message_templates/{template_name} | Update a push notification content template
 [**ViewDefaultChannelInvitationPreference**](ApplicationApi.md#viewdefaultchannelinvitationpreference) | **GET** /v3/applications/default_channel_invitation_preference | View default channel invitation preference
-[**ViewNumberOfConcurrentConnections**](ApplicationApi.md#viewnumberofconcurrentconnections) | **GET** /v3/applications/ccu | View number of concurrent connections
-[**ViewNumberOfDailyActiveUsers**](ApplicationApi.md#viewnumberofdailyactiveusers) | **GET** /v3/applications/dau | View number of daily active users
-[**ViewNumberOfMonthlyActiveUsers**](ApplicationApi.md#viewnumberofmonthlyactiveusers) | **GET** /v3/applications/mau | View number of monthly active users
-[**ViewNumberOfPeakConnections**](ApplicationApi.md#viewnumberofpeakconnections) | **GET** /v3/applications/peak_connections | View number of peak connections
 [**ViewPushConfigurationById**](ApplicationApi.md#viewpushconfigurationbyid) | **GET** /v3/applications/push/{push_type}/{provider_id} | View a push configuration
 [**ViewPushNotificationContentTemplate**](ApplicationApi.md#viewpushnotificationcontenttemplate) | **GET** /v3/applications/push/message_templates/{template_name} | View a push notification content template
 [**ViewSecondaryApiTokenByToken**](ApplicationApi.md#viewsecondaryapitokenbytoken) | **GET** /v3/applications/api_tokens/{api_token} | View a secondary API token
@@ -345,6 +348,86 @@ No authorization required
 [[Back to README]](../README.md)
 
 
+## BanUsersInChannelsWithCustomChannelType
+
+> Object BanUsersInChannelsWithCustomChannelType (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = null)
+
+Ban users in channels with a custom channel type
+
+## Ban specified users in channels with a custom channel type at once.
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class BanUsersInChannelsWithCustomChannelTypeExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var customType = customType_example;  // string | 
+            var banUsersInChannelsWithCustomChannelTypeData = new BanUsersInChannelsWithCustomChannelTypeData(); // BanUsersInChannelsWithCustomChannelTypeData |  (optional) 
+
+            try
+            {
+                // Ban users in channels with a custom channel type
+                Object result = apiInstance.BanUsersInChannelsWithCustomChannelType(apiToken, customType, banUsersInChannelsWithCustomChannelTypeData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.BanUsersInChannelsWithCustomChannelType: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **customType** | **string**|  | 
+ **banUsersInChannelsWithCustomChannelTypeData** | [**BanUsersInChannelsWithCustomChannelTypeData**](BanUsersInChannelsWithCustomChannelTypeData.md)|  | [optional] 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## DeleteAllowedIpsFromWhitelist
 
 > DeleteAllowedIpsFromWhitelistResponse DeleteAllowedIpsFromWhitelist (string apiToken, List<string> ipWhitelistAddresses)
@@ -565,6 +648,170 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ListBannedUsersInChannelsWithCustomChannelType
+
+> CustomTypeListBannedUsersResponse ListBannedUsersInChannelsWithCustomChannelType (string apiToken, string customType, string token = null, int? limit = null)
+
+List banned users in channels with a custom channel type
+
+## Retrieves a list of users banned from channels with the specified custom channel type.
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class ListBannedUsersInChannelsWithCustomChannelTypeExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var customType = customType_example;  // string | 
+            var token = token_example;  // string |  (optional) 
+            var limit = 56;  // int? |  (optional) 
+
+            try
+            {
+                // List banned users in channels with a custom channel type
+                CustomTypeListBannedUsersResponse result = apiInstance.ListBannedUsersInChannelsWithCustomChannelType(apiToken, customType, token, limit);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.ListBannedUsersInChannelsWithCustomChannelType: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **customType** | **string**|  | 
+ **token** | **string**|  | [optional] 
+ **limit** | **int?**|  | [optional] 
+
+### Return type
+
+[**CustomTypeListBannedUsersResponse**](CustomTypeListBannedUsersResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ListMutedUsersInChannelsWithCustomChannelType
+
+> InlineResponse200 ListMutedUsersInChannelsWithCustomChannelType (string apiToken, string customType, string token = null, int? limit = null)
+
+List muted users in channels with a custom channel type
+
+## Retrieves a list of the muted users in channels with a custom channel type.
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class ListMutedUsersInChannelsWithCustomChannelTypeExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var customType = customType_example;  // string | 
+            var token = token_example;  // string |  (optional) 
+            var limit = 56;  // int? |  (optional) 
+
+            try
+            {
+                // List muted users in channels with a custom channel type
+                InlineResponse200 result = apiInstance.ListMutedUsersInChannelsWithCustomChannelType(apiToken, customType, token, limit);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.ListMutedUsersInChannelsWithCustomChannelType: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **customType** | **string**|  | 
+ **token** | **string**|  | [optional] 
+ **limit** | **int?**|  | [optional] 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
 - **Accept**: application/json
 
 
@@ -809,6 +1056,86 @@ No authorization required
 [[Back to README]](../README.md)
 
 
+## MuteUsersInChannelsWithCustomChannelType
+
+> Object MuteUsersInChannelsWithCustomChannelType (string apiToken, string customType, MuteUsersInChannelsWithCustomChannelTypeData muteUsersInChannelsWithCustomChannelTypeData = null)
+
+Mute users in channels with a custom channel type
+
+## Mutes specified users in channels with a custom channel type at once.
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class MuteUsersInChannelsWithCustomChannelTypeExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var customType = customType_example;  // string | 
+            var muteUsersInChannelsWithCustomChannelTypeData = new MuteUsersInChannelsWithCustomChannelTypeData(); // MuteUsersInChannelsWithCustomChannelTypeData |  (optional) 
+
+            try
+            {
+                // Mute users in channels with a custom channel type
+                Object result = apiInstance.MuteUsersInChannelsWithCustomChannelType(apiToken, customType, muteUsersInChannelsWithCustomChannelTypeData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.MuteUsersInChannelsWithCustomChannelType: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **customType** | **string**|  | 
+ **muteUsersInChannelsWithCustomChannelTypeData** | [**MuteUsersInChannelsWithCustomChannelTypeData**](MuteUsersInChannelsWithCustomChannelTypeData.md)|  | [optional] 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## RemovePushConfigurationById
 
 > RemovePushConfigurationByIdResponse RemovePushConfigurationById (string apiToken, string pushType, string providerId)
@@ -1021,6 +1348,246 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**RevokeSecondaryApiTokenByTokenResponse**](RevokeSecondaryApiTokenByTokenResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## SetDomainFilter
+
+> SendBirdChannelResponse SetDomainFilter (string apiToken, string customType, SetDomainFilterData setDomainFilterData = null)
+
+Message moderation
+
+## 
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class SetDomainFilterExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var customType = customType_example;  // string | 
+            var setDomainFilterData = new SetDomainFilterData(); // SetDomainFilterData |  (optional) 
+
+            try
+            {
+                // Message moderation
+                SendBirdChannelResponse result = apiInstance.SetDomainFilter(apiToken, customType, setDomainFilterData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.SetDomainFilter: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **customType** | **string**|  | 
+ **setDomainFilterData** | [**SetDomainFilterData**](SetDomainFilterData.md)|  | [optional] 
+
+### Return type
+
+[**SendBirdChannelResponse**](SendBirdChannelResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## UnbanUsersInChannelsWithCustomChannelType
+
+> Object UnbanUsersInChannelsWithCustomChannelType (string apiToken, string customType, List<string> userIds)
+
+Unban users in channels with a custom channel type
+
+## Unban specified users in channels with a custom channel type at once.
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class UnbanUsersInChannelsWithCustomChannelTypeExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var customType = customType_example;  // string | 
+            var userIds = new List<string>(); // List<string> | 
+
+            try
+            {
+                // Unban users in channels with a custom channel type
+                Object result = apiInstance.UnbanUsersInChannelsWithCustomChannelType(apiToken, customType, userIds);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.UnbanUsersInChannelsWithCustomChannelType: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **customType** | **string**|  | 
+ **userIds** | [**List&lt;string&gt;**](string.md)|  | 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## UnmuteUsersInChannelsWithCustomChannelType
+
+> Object UnmuteUsersInChannelsWithCustomChannelType (string apiToken, string customType, List<string> userIds)
+
+Unmute users in channels with a custom channel type
+
+## Unmute specified users in channels with a custom channel type at once.
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class UnmuteUsersInChannelsWithCustomChannelTypeExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var customType = customType_example;  // string | 
+            var userIds = new List<string>(); // List<string> | 
+
+            try
+            {
+                // Unmute users in channels with a custom channel type
+                Object result = apiInstance.UnmuteUsersInChannelsWithCustomChannelType(apiToken, customType, userIds);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.UnmuteUsersInChannelsWithCustomChannelType: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **customType** | **string**|  | 
+ **userIds** | [**List&lt;string&gt;**](string.md)|  | 
+
+### Return type
+
+**Object**
 
 ### Authorization
 
@@ -1495,328 +2062,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ViewDefaultChannelInvitationPreferenceResponse**](ViewDefaultChannelInvitationPreferenceResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## ViewNumberOfConcurrentConnections
-
-> ViewNumberOfConcurrentConnectionsResponse ViewNumberOfConcurrentConnections (string apiToken)
-
-View number of concurrent connections
-
-## View number of concurrent connections  Retrieves the number of devices and opened browser tabs which are currently connected to Sendbird server.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-concurrent-connections
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class ViewNumberOfConcurrentConnectionsExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new ApplicationApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-
-            try
-            {
-                // View number of concurrent connections
-                ViewNumberOfConcurrentConnectionsResponse result = apiInstance.ViewNumberOfConcurrentConnections(apiToken);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ViewNumberOfConcurrentConnections: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
-
-### Return type
-
-[**ViewNumberOfConcurrentConnectionsResponse**](ViewNumberOfConcurrentConnectionsResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## ViewNumberOfDailyActiveUsers
-
-> ViewNumberOfDailyActiveUsersResponse ViewNumberOfDailyActiveUsers (string apiToken, string date = null)
-
-View number of daily active users
-
-## View number of daily active users  Retrieves the number of daily active users of the application (DAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-daily-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class ViewNumberOfDailyActiveUsersExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new ApplicationApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var date = date_example;  // string |  (optional) 
-
-            try
-            {
-                // View number of daily active users
-                ViewNumberOfDailyActiveUsersResponse result = apiInstance.ViewNumberOfDailyActiveUsers(apiToken, date);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ViewNumberOfDailyActiveUsers: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **date** | **string**|  | [optional] 
-
-### Return type
-
-[**ViewNumberOfDailyActiveUsersResponse**](ViewNumberOfDailyActiveUsersResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## ViewNumberOfMonthlyActiveUsers
-
-> ViewNumberOfMonthlyActiveUsersResponse ViewNumberOfMonthlyActiveUsers (string apiToken, string date = null)
-
-View number of monthly active users
-
-## View number of monthly active users  Retrieves the number of monthly active users of the application (MAU).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-monthly-active-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class ViewNumberOfMonthlyActiveUsersExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new ApplicationApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var date = date_example;  // string |  (optional) 
-
-            try
-            {
-                // View number of monthly active users
-                ViewNumberOfMonthlyActiveUsersResponse result = apiInstance.ViewNumberOfMonthlyActiveUsers(apiToken, date);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ViewNumberOfMonthlyActiveUsers: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **date** | **string**|  | [optional] 
-
-### Return type
-
-[**ViewNumberOfMonthlyActiveUsersResponse**](ViewNumberOfMonthlyActiveUsersResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## ViewNumberOfPeakConnections
-
-> ViewNumberOfPeakConnectionsResponse ViewNumberOfPeakConnections (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = null, int? endDay = null)
-
-View number of peak connections
-
-## View number of peak connections  Retrieves the number of concurrently connected devices to Sendbird server during the requested time period.  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-number-of-peak-connections - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using sendbird_platform_sdk.Api;
-using sendbird_platform_sdk.Client;
-using sendbird_platform_sdk.Model;
-
-namespace Example
-{
-    public class ViewNumberOfPeakConnectionsExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
-            var apiInstance = new ApplicationApi(Configuration.Default);
-            var apiToken = {{API_TOKEN}};  // string | 
-            var timeDimension = timeDimension_example;  // string | 
-            var startYear = 56;  // int | 
-            var startMonth = 56;  // int | 
-            var endYear = 56;  // int | 
-            var endMonth = 56;  // int | 
-            var startDay = 56;  // int? |  (optional) 
-            var endDay = 56;  // int? |  (optional) 
-
-            try
-            {
-                // View number of peak connections
-                ViewNumberOfPeakConnectionsResponse result = apiInstance.ViewNumberOfPeakConnections(apiToken, timeDimension, startYear, startMonth, endYear, endMonth, startDay, endDay);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling ApplicationApi.ViewNumberOfPeakConnections: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiToken** | **string**|  | 
- **timeDimension** | **string**|  | 
- **startYear** | **int**|  | 
- **startMonth** | **int**|  | 
- **endYear** | **int**|  | 
- **endMonth** | **int**|  | 
- **startDay** | **int?**|  | [optional] 
- **endDay** | **int?**|  | [optional] 
-
-### Return type
-
-[**ViewNumberOfPeakConnectionsResponse**](ViewNumberOfPeakConnectionsResponse.md)
 
 ### Authorization
 

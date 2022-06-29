@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="nickname">nickname.</param>
         /// <param name="profileUrl">profileUrl.</param>
         /// <param name="metadata">metadata.</param>
-        public SendBirdMessageResponseMentionedUsers(string userId = default(string), string nickname = default(string), string profileUrl = default(string), InlineResponse200 metadata = default(InlineResponse200))
+        public SendBirdMessageResponseMentionedUsers(string userId = default(string), string nickname = default(string), string profileUrl = default(string), InlineResponse2001 metadata = default(InlineResponse2001))
         {
             this.UserId = userId;
             this.Nickname = nickname;
@@ -67,7 +67,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets Metadata
         /// </summary>
         [DataMember(Name="metadata", EmitDefaultValue=false)]
-        public InlineResponse200 Metadata { get; set; }
+        public InlineResponse2001 Metadata { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

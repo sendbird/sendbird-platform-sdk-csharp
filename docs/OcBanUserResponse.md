@@ -11,10 +11,10 @@ Name | Type | Description | Notes
 **UserId** | **string** |  | [optional] 
 **User** | [**SendBirdUser**](SendBirdUser.md) |  | [optional] 
 **NextUrl** | **string** |  | [optional] 
-**RequireAuthForProfileImage** | **Boolean** |  | [optional] 
+**RequireAuthForProfileImage** | **bool** |  | [optional] 
 **Nickname** | **string** |  | [optional] 
 **ProfileUrl** | **string** |  | [optional] 
-**Metadata** | [**InlineResponse200**](InlineResponse200.md) |  | [optional] 
+**Metadata** | [**InlineResponse2001**](InlineResponse2001.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
