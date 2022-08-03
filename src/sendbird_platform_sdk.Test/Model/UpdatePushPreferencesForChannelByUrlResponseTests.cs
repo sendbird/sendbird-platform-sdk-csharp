@@ -153,6 +153,14 @@ namespace sendbird_platform_sdk.Test
         {
             // TODO unit test for the property 'PushSound'
         }
+        /// <summary>
+        /// Test the property 'Enable'
+        /// </summary>
+        [Test]
+        public void EnableTest()
+        {
+            // TODO unit test for the property 'Enable'
+        }
 
     }
 

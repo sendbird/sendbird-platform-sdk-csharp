@@ -41,7 +41,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ReportApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var token = token_example;  // string |  (optional) 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
             var startTs = 56;  // int? |  (optional) 
             var endTs = 56;  // int? |  (optional) 
@@ -125,9 +125,9 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ReportApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelType = channelType_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var token = token_example;  // string |  (optional) 
+            var channelType = "channelType_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
@@ -209,10 +209,10 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ReportApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelType = channelType_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var messageId = messageId_example;  // string | 
-            var token = token_example;  // string |  (optional) 
+            var channelType = "channelType_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var messageId = "messageId_example";  // string | 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
@@ -295,8 +295,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ReportApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var offendingUserId = offendingUserId_example;  // string | 
-            var token = token_example;  // string |  (optional) 
+            var offendingUserId = "offendingUserId_example";  // string | 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
@@ -377,8 +377,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ReportApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelType = channelType_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelType = "channelType_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var reportChannelByUrlData = new ReportChannelByUrlData(); // ReportChannelByUrlData |  (optional) 
 
             try
@@ -459,9 +459,9 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ReportApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelType = channelType_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var messageId = messageId_example;  // string | 
+            var channelType = "channelType_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var messageId = "messageId_example";  // string | 
             var reportMessageByIdData = new ReportMessageByIdData(); // ReportMessageByIdData |  (optional) 
 
             try
@@ -543,7 +543,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ReportApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var offendingUserId = offendingUserId_example;  // string | 
+            var offendingUserId = "offendingUserId_example";  // string | 
             var reportUserByIdData = new ReportUserByIdData(); // ReportUserByIdData |  (optional) 
 
             try
@@ -599,7 +599,7 @@ No authorization required
 
 ## ViewModeratedMessageById
 
-> Dictionary&lt;string, string&gt; ViewModeratedMessageById (string apiToken, string channelType, string channelUrl, string messageId)
+> Object ViewModeratedMessageById (string apiToken, string channelType, string channelUrl, string messageId)
 
 View a moderated message
 
@@ -623,14 +623,14 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ReportApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelType = channelType_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var messageId = messageId_example;  // string | 
+            var channelType = "channelType_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var messageId = "messageId_example";  // string | 
 
             try
             {
                 // View a moderated message
-                Dictionary<string, string> result = apiInstance.ViewModeratedMessageById(apiToken, channelType, channelUrl, messageId);
+                Object result = apiInstance.ViewModeratedMessageById(apiToken, channelType, channelUrl, messageId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -656,7 +656,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Dictionary<string, string>**
+**Object**
 
 ### Authorization
 

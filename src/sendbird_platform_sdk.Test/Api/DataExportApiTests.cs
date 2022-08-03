@@ -70,11 +70,11 @@ namespace sendbird_platform_sdk.Test
         public void ListDataExportsByMessageChannelOrUserTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string dataType = null;
             //string apiToken = null;
+            //string dataType = null;
             //string token = null;
             //int? limit = null;
-            //var response = instance.ListDataExportsByMessageChannelOrUser(dataType, apiToken, token, limit);
+            //var response = instance.ListDataExportsByMessageChannelOrUser(apiToken, dataType, token, limit);
             //Assert.IsInstanceOf(typeof(ListDataExportsByMessageChannelOrUserResponse), response, "response is ListDataExportsByMessageChannelOrUserResponse");
         }
         
@@ -85,10 +85,10 @@ namespace sendbird_platform_sdk.Test
         public void RegisterAndScheduleDataExportTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string dataType = null;
             //string apiToken = null;
+            //string dataType = null;
             //RegisterAndScheduleDataExportData registerAndScheduleDataExportData = null;
-            //var response = instance.RegisterAndScheduleDataExport(dataType, apiToken, registerAndScheduleDataExportData);
+            //var response = instance.RegisterAndScheduleDataExport(apiToken, dataType, registerAndScheduleDataExportData);
             //Assert.IsInstanceOf(typeof(RegisterAndScheduleDataExportResponse), response, "response is RegisterAndScheduleDataExportResponse");
         }
         
@@ -99,10 +99,10 @@ namespace sendbird_platform_sdk.Test
         public void ViewDataExportByIdTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
             //string dataType = null;
             //string requestId = null;
-            //string apiToken = null;
-            //var response = instance.ViewDataExportById(dataType, requestId, apiToken);
+            //var response = instance.ViewDataExportById(apiToken, dataType, requestId);
             //Assert.IsInstanceOf(typeof(ViewDataExportByIdResponse), response, "response is ViewDataExportByIdResponse");
         }
         

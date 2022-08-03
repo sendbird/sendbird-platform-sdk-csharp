@@ -475,8 +475,8 @@ namespace sendbird_platform_sdk.Test
             //string channelType = null;
             //string channelUrl = null;
             //string messageId = null;
-            //Object body = null;
-            //var response = instance.TranslateMessageIntoOtherLanguages(apiToken, channelType, channelUrl, messageId, body);
+            //TranslateMessageIntoOtherLanguagesData translateMessageIntoOtherLanguagesData = null;
+            //var response = instance.TranslateMessageIntoOtherLanguages(apiToken, channelType, channelUrl, messageId, translateMessageIntoOtherLanguagesData);
             //Assert.IsInstanceOf(typeof(SendBirdMessageResponse), response, "response is SendBirdMessageResponse");
         }
         

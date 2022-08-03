@@ -225,8 +225,11 @@ namespace sendbird_platform_sdk.Model
         /// <param name="smsFallback">smsFallback.</param>
         /// <param name="unreadMentionCount">unreadMentionCount.</param>
         /// <param name="unreadMessageCount">unreadMessageCount.</param>
-        public SendBirdGroupChannel(string channelUrl = default(string), string coverUrl = default(string), decimal createdAt = default(decimal), SendBirdGroupChannelCreatedBy createdBy = default(SendBirdGroupChannelCreatedBy), SendBirdUser creator = default(SendBirdUser), string customType = default(string), string data = default(string), SendBirdGroupChannelDisappearingMessage disappearingMessage = default(SendBirdGroupChannelDisappearingMessage), bool freeze = default(bool), bool ignoreProfanityFilter = default(bool), HiddenStateEnum? hiddenState = default(HiddenStateEnum?), decimal invitedAt = default(decimal), SendBirdUser inviter = default(SendBirdUser), bool isAccessCodeRequired = default(bool), bool isBroadcast = default(bool), bool isCreated = default(bool), bool isDiscoverable = default(bool), bool isDistinct = default(bool), bool isEphemeral = default(bool), bool isFrozen = default(bool), bool isHidden = default(bool), bool isPublic = default(bool), bool isPushEnabled = default(bool), bool isSuper = default(bool), decimal joinedAt = default(decimal), decimal joinedMemberCount = default(decimal), SendBirdMessageResponse lastMessage = default(SendBirdMessageResponse), decimal maxLengthMessage = default(decimal), decimal memberCount = default(decimal), List<SendBirdMember> members = default(List<SendBirdMember>), decimal messageOffsetTimestamp = default(decimal), decimal messageSurvivalSeconds = default(decimal), string myCountPreference = default(string), decimal myLastRead = default(decimal), MyMemberStateEnum? myMemberState = default(MyMemberStateEnum?), MyMutedStateEnum? myMutedState = default(MyMutedStateEnum?), MyPushTriggerOptionEnum? myPushTriggerOption = default(MyPushTriggerOptionEnum?), MyRoleEnum? myRole = default(MyRoleEnum?), string name = default(string), List<string> operators = default(List<string>), SendBirdGroupChannelSmsFallback smsFallback = default(SendBirdGroupChannelSmsFallback), decimal unreadMentionCount = default(decimal), decimal unreadMessageCount = default(decimal))
+        /// <param name="channel">channel.</param>
+        public SendBirdGroupChannel(string channelUrl = default(string), string coverUrl = default(string), decimal createdAt = default(decimal), SendBirdGroupChannelCreatedBy createdBy = default(SendBirdGroupChannelCreatedBy), SendBirdUser creator = default(SendBirdUser), string customType = default(string), string data = default(string), SendBirdGroupChannelDisappearingMessage disappearingMessage = default(SendBirdGroupChannelDisappearingMessage), bool freeze = default(bool), bool ignoreProfanityFilter = default(bool), HiddenStateEnum? hiddenState = default(HiddenStateEnum?), decimal invitedAt = default(decimal), SendBirdUser inviter = default(SendBirdUser), bool isAccessCodeRequired = default(bool), bool isBroadcast = default(bool), bool isCreated = default(bool), bool isDiscoverable = default(bool), bool isDistinct = default(bool), bool isEphemeral = default(bool), bool isFrozen = default(bool), bool isHidden = default(bool), bool isPublic = default(bool), bool isPushEnabled = default(bool), bool isSuper = default(bool), decimal joinedAt = default(decimal), decimal joinedMemberCount = default(decimal), SendBirdMessageResponse lastMessage = default(SendBirdMessageResponse), decimal maxLengthMessage = default(decimal), decimal memberCount = default(decimal), List<SendBirdMember> members = default(List<SendBirdMember>), decimal messageOffsetTimestamp = default(decimal), decimal messageSurvivalSeconds = default(decimal), string myCountPreference = default(string), decimal myLastRead = default(decimal), MyMemberStateEnum? myMemberState = default(MyMemberStateEnum?), MyMutedStateEnum? myMutedState = default(MyMutedStateEnum?), MyPushTriggerOptionEnum? myPushTriggerOption = default(MyPushTriggerOptionEnum?), MyRoleEnum? myRole = default(MyRoleEnum?), string name = default(string), List<string> operators = default(List<string>), SendBirdGroupChannelSmsFallback smsFallback = default(SendBirdGroupChannelSmsFallback), decimal unreadMentionCount = default(decimal), decimal unreadMessageCount = default(decimal), SendBirdGroupChannelChannel channel = default(SendBirdGroupChannelChannel))
         {
+            this.CreatedBy = createdBy;
+            this.LastMessage = lastMessage;
             this.ChannelUrl = channelUrl;
             this.CoverUrl = coverUrl;
             this.CreatedAt = createdAt;
@@ -270,6 +273,7 @@ namespace sendbird_platform_sdk.Model
             this.SmsFallback = smsFallback;
             this.UnreadMentionCount = unreadMentionCount;
             this.UnreadMessageCount = unreadMessageCount;
+            this.Channel = channel;
         }
 
         /// <summary>
@@ -293,7 +297,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets CreatedBy
         /// </summary>
-        [DataMember(Name="created_by", EmitDefaultValue=false)]
+        [DataMember(Name="created_by", EmitDefaultValue=true)]
         public SendBirdGroupChannelCreatedBy CreatedBy { get; set; }
 
         /// <summary>
@@ -426,7 +430,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets LastMessage
         /// </summary>
-        [DataMember(Name="last_message", EmitDefaultValue=false)]
+        [DataMember(Name="last_message", EmitDefaultValue=true)]
         public SendBirdMessageResponse LastMessage { get; set; }
 
         /// <summary>
@@ -506,6 +510,12 @@ namespace sendbird_platform_sdk.Model
         public decimal UnreadMessageCount { get; set; }
 
         /// <summary>
+        /// Gets or Sets Channel
+        /// </summary>
+        [DataMember(Name="channel", EmitDefaultValue=false)]
+        public SendBirdGroupChannelChannel Channel { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -556,6 +566,7 @@ namespace sendbird_platform_sdk.Model
             sb.Append("  SmsFallback: ").Append(SmsFallback).Append("\n");
             sb.Append("  UnreadMentionCount: ").Append(UnreadMentionCount).Append("\n");
             sb.Append("  UnreadMessageCount: ").Append(UnreadMessageCount).Append("\n");
+            sb.Append("  Channel: ").Append(Channel).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -806,6 +817,11 @@ namespace sendbird_platform_sdk.Model
                     this.UnreadMessageCount == input.UnreadMessageCount ||
                     (this.UnreadMessageCount != null &&
                     this.UnreadMessageCount.Equals(input.UnreadMessageCount))
+                ) && 
+                (
+                    this.Channel == input.Channel ||
+                    (this.Channel != null &&
+                    this.Channel.Equals(input.Channel))
                 );
         }
 
@@ -904,6 +920,8 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.UnreadMentionCount.GetHashCode();
                 if (this.UnreadMessageCount != null)
                     hashCode = hashCode * 59 + this.UnreadMessageCount.GetHashCode();
+                if (this.Channel != null)
+                    hashCode = hashCode * 59 + this.Channel.GetHashCode();
                 return hashCode;
             }
         }

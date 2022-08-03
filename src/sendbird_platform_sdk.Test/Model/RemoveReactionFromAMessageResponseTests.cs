@@ -66,20 +66,20 @@ namespace sendbird_platform_sdk.Test
 
 
         /// <summary>
+        /// Test the property 'Reaction'
+        /// </summary>
+        [Test]
+        public void ReactionTest()
+        {
+            // TODO unit test for the property 'Reaction'
+        }
+        /// <summary>
         /// Test the property 'UserId'
         /// </summary>
         [Test]
         public void UserIdTest()
         {
             // TODO unit test for the property 'UserId'
-        }
-        /// <summary>
-        /// Test the property 'Operation'
-        /// </summary>
-        [Test]
-        public void OperationTest()
-        {
-            // TODO unit test for the property 'Operation'
         }
         /// <summary>
         /// Test the property 'Success'
@@ -90,12 +90,12 @@ namespace sendbird_platform_sdk.Test
             // TODO unit test for the property 'Success'
         }
         /// <summary>
-        /// Test the property 'Reaction'
+        /// Test the property 'MsgId'
         /// </summary>
         [Test]
-        public void ReactionTest()
+        public void MsgIdTest()
         {
-            // TODO unit test for the property 'Reaction'
+            // TODO unit test for the property 'MsgId'
         }
         /// <summary>
         /// Test the property 'UpdatedAt'
@@ -104,6 +104,14 @@ namespace sendbird_platform_sdk.Test
         public void UpdatedAtTest()
         {
             // TODO unit test for the property 'UpdatedAt'
+        }
+        /// <summary>
+        /// Test the property 'Operation'
+        /// </summary>
+        [Test]
+        public void OperationTest()
+        {
+            // TODO unit test for the property 'Operation'
         }
 
     }

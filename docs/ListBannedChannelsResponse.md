@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**BannedChannels** | [**List&lt;ListBannedChannelsResponseBannedChannels&gt;**](ListBannedChannelsResponseBannedChannels.md) |  | [optional] 
+**BannedChannels** | [**List&lt;ListBannedChannelsResponseBannedChannelsInner&gt;**](ListBannedChannelsResponseBannedChannelsInner.md) |  | [optional] 
 **Next** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

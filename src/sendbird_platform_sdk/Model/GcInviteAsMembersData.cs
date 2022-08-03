@@ -41,9 +41,9 @@ namespace sendbird_platform_sdk.Model
         /// <param name="channelUrl">Specifies the URL of the channel to invite into. (required).</param>
         /// <param name="userIds">Specifies an array of one or more user IDs to invite into the channel. The maximum number of users to be invited at once is 100. The users can be used instead of this property. (required).</param>
         /// <param name="users">Specifies a list of one or more &#x60;JSON&#x60; objects which contain the user_id property to invite into the channel. The maximum number of users to be invited at once is 100. The user_ids can be used instead of this property. (required).</param>
-        /// <param name="invitationStatus">Specifies an array of one or more information about the join status of each invited user to the channel. Each item of the array should be specified with a combination of the unique ID of a user in the user_ids or users property, a colon (:), and the user&#39;s join status (for example, user_id_1: join status). Acceptable values are joined, invited_by_friend, and invited_by_non_friend. (Default: joined) (required).</param>
-        /// <param name="hiddenStatus">Specifies an array of one or more channel hidden statuses about whether to hide the channel from each invited user&#39;s list of group channels, and whether to automatically unhide the hidden channel when receiving a new message from other member of that channel. Each item of the array should be specified with a combination of the unique ID of a user in the user_ids or users property, a colon (:), and the channel hidden status (for example, user_id_1: channel hidden status). Acceptable values are limited to the following:&lt;br /&gt;- unhidden (default): the channel is included in when retrieving a list of group channels.&lt;br /&gt;- hidden_allow_auto_unhide: the channel automatically gets unhidden when receiving a new message.&lt;br /&gt;- hidden_prevent_auto_unhide: the channel keeps hidden though receiving a new message. (required).</param>
-        public GcInviteAsMembersData(string channelUrl = default(string), List<int> userIds = default(List<int>), List<int> users = default(List<int>), List<string> invitationStatus = default(List<string>), List<string> hiddenStatus = default(List<string>))
+        /// <param name="invitationStatus">Specifies one or more key-value pair items which set the invitation status of each user invited to the channel. The key should be a user_id and the value should be their joining status. Acceptable values are joined, invited_by_friend, and invited_by_non_friend. (Default: joined) (required).</param>
+        /// <param name="hiddenStatus">Specifies one or more key-value pair items which set the channel&#39;s hidden status for each user. The key should be a user_id and the value should be their hidden status. Acceptable values are limited to the following:&lt;br /&gt;- unhidden (default): the channel is included in when retrieving a list of group channels.&lt;br /&gt;- hidden_allow_auto_unhide: the channel automatically gets unhidden when receiving a new message.&lt;br /&gt;- hidden_prevent_auto_unhide: the channel keeps hidden though receiving a new message. (required).</param>
+        public GcInviteAsMembersData(string channelUrl = default(string), List<string> userIds = default(List<string>), List<string> users = default(List<string>), Object invitationStatus = default(Object), Object hiddenStatus = default(Object))
         {
             // to ensure "channelUrl" is required (not null)
             if (channelUrl == null)
@@ -109,28 +109,28 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <value>Specifies an array of one or more user IDs to invite into the channel. The maximum number of users to be invited at once is 100. The users can be used instead of this property.</value>
         [DataMember(Name="user_ids", EmitDefaultValue=true)]
-        public List<int> UserIds { get; set; }
+        public List<string> UserIds { get; set; }
 
         /// <summary>
         /// Specifies a list of one or more &#x60;JSON&#x60; objects which contain the user_id property to invite into the channel. The maximum number of users to be invited at once is 100. The user_ids can be used instead of this property.
         /// </summary>
         /// <value>Specifies a list of one or more &#x60;JSON&#x60; objects which contain the user_id property to invite into the channel. The maximum number of users to be invited at once is 100. The user_ids can be used instead of this property.</value>
         [DataMember(Name="users", EmitDefaultValue=true)]
-        public List<int> Users { get; set; }
+        public List<string> Users { get; set; }
 
         /// <summary>
-        /// Specifies an array of one or more information about the join status of each invited user to the channel. Each item of the array should be specified with a combination of the unique ID of a user in the user_ids or users property, a colon (:), and the user&#39;s join status (for example, user_id_1: join status). Acceptable values are joined, invited_by_friend, and invited_by_non_friend. (Default: joined)
+        /// Specifies one or more key-value pair items which set the invitation status of each user invited to the channel. The key should be a user_id and the value should be their joining status. Acceptable values are joined, invited_by_friend, and invited_by_non_friend. (Default: joined)
         /// </summary>
-        /// <value>Specifies an array of one or more information about the join status of each invited user to the channel. Each item of the array should be specified with a combination of the unique ID of a user in the user_ids or users property, a colon (:), and the user&#39;s join status (for example, user_id_1: join status). Acceptable values are joined, invited_by_friend, and invited_by_non_friend. (Default: joined)</value>
+        /// <value>Specifies one or more key-value pair items which set the invitation status of each user invited to the channel. The key should be a user_id and the value should be their joining status. Acceptable values are joined, invited_by_friend, and invited_by_non_friend. (Default: joined)</value>
         [DataMember(Name="invitation_status", EmitDefaultValue=true)]
-        public List<string> InvitationStatus { get; set; }
+        public Object InvitationStatus { get; set; }
 
         /// <summary>
-        /// Specifies an array of one or more channel hidden statuses about whether to hide the channel from each invited user&#39;s list of group channels, and whether to automatically unhide the hidden channel when receiving a new message from other member of that channel. Each item of the array should be specified with a combination of the unique ID of a user in the user_ids or users property, a colon (:), and the channel hidden status (for example, user_id_1: channel hidden status). Acceptable values are limited to the following:&lt;br /&gt;- unhidden (default): the channel is included in when retrieving a list of group channels.&lt;br /&gt;- hidden_allow_auto_unhide: the channel automatically gets unhidden when receiving a new message.&lt;br /&gt;- hidden_prevent_auto_unhide: the channel keeps hidden though receiving a new message.
+        /// Specifies one or more key-value pair items which set the channel&#39;s hidden status for each user. The key should be a user_id and the value should be their hidden status. Acceptable values are limited to the following:&lt;br /&gt;- unhidden (default): the channel is included in when retrieving a list of group channels.&lt;br /&gt;- hidden_allow_auto_unhide: the channel automatically gets unhidden when receiving a new message.&lt;br /&gt;- hidden_prevent_auto_unhide: the channel keeps hidden though receiving a new message.
         /// </summary>
-        /// <value>Specifies an array of one or more channel hidden statuses about whether to hide the channel from each invited user&#39;s list of group channels, and whether to automatically unhide the hidden channel when receiving a new message from other member of that channel. Each item of the array should be specified with a combination of the unique ID of a user in the user_ids or users property, a colon (:), and the channel hidden status (for example, user_id_1: channel hidden status). Acceptable values are limited to the following:&lt;br /&gt;- unhidden (default): the channel is included in when retrieving a list of group channels.&lt;br /&gt;- hidden_allow_auto_unhide: the channel automatically gets unhidden when receiving a new message.&lt;br /&gt;- hidden_prevent_auto_unhide: the channel keeps hidden though receiving a new message.</value>
+        /// <value>Specifies one or more key-value pair items which set the channel&#39;s hidden status for each user. The key should be a user_id and the value should be their hidden status. Acceptable values are limited to the following:&lt;br /&gt;- unhidden (default): the channel is included in when retrieving a list of group channels.&lt;br /&gt;- hidden_allow_auto_unhide: the channel automatically gets unhidden when receiving a new message.&lt;br /&gt;- hidden_prevent_auto_unhide: the channel keeps hidden though receiving a new message.</value>
         [DataMember(Name="hidden_status", EmitDefaultValue=true)]
-        public List<string> HiddenStatus { get; set; }
+        public Object HiddenStatus { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -198,15 +198,13 @@ namespace sendbird_platform_sdk.Model
                 ) && 
                 (
                     this.InvitationStatus == input.InvitationStatus ||
-                    this.InvitationStatus != null &&
-                    input.InvitationStatus != null &&
-                    this.InvitationStatus.SequenceEqual(input.InvitationStatus)
+                    (this.InvitationStatus != null &&
+                    this.InvitationStatus.Equals(input.InvitationStatus))
                 ) && 
                 (
                     this.HiddenStatus == input.HiddenStatus ||
-                    this.HiddenStatus != null &&
-                    input.HiddenStatus != null &&
-                    this.HiddenStatus.SequenceEqual(input.HiddenStatus)
+                    (this.HiddenStatus != null &&
+                    this.HiddenStatus.Equals(input.HiddenStatus))
                 );
         }
 

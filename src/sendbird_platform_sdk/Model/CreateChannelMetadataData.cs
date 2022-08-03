@@ -42,7 +42,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="channelUrl">Specifies the URL of the channel to store the metadata in. (required).</param>
         /// <param name="metadata">Specifies a &#x60;JSON&#x60; object that stores key-value items. The key must not have a comma (,) and its length is limited to 128 characters. The value must be a string and its length is limited to 190 characters. This property can have up to 5 items. (required).</param>
         /// <param name="includeTs">Determines whether to include the timestamp of when a metadata has been created in the response. (Default: false).</param>
-        public CreateChannelMetadataData(string channelType = default(string), string channelUrl = default(string), string metadata = default(string), bool includeTs = default(bool))
+        public CreateChannelMetadataData(string channelType = default(string), string channelUrl = default(string), Object metadata = default(Object), bool includeTs = default(bool))
         {
             // to ensure "channelType" is required (not null)
             if (channelType == null)
@@ -96,7 +96,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <value>Specifies a &#x60;JSON&#x60; object that stores key-value items. The key must not have a comma (,) and its length is limited to 128 characters. The value must be a string and its length is limited to 190 characters. This property can have up to 5 items.</value>
         [DataMember(Name="metadata", EmitDefaultValue=true)]
-        public string Metadata { get; set; }
+        public Object Metadata { get; set; }
 
         /// <summary>
         /// Determines whether to include the timestamp of when a metadata has been created in the response. (Default: false)

@@ -66,6 +66,22 @@ namespace sendbird_platform_sdk.Test
 
 
         /// <summary>
+        /// Test the property 'ChannelCustomTypes'
+        /// </summary>
+        [Test]
+        public void ChannelCustomTypesTest()
+        {
+            // TODO unit test for the property 'ChannelCustomTypes'
+        }
+        /// <summary>
+        /// Test the property 'DataType'
+        /// </summary>
+        [Test]
+        public void DataTypeTest()
+        {
+            // TODO unit test for the property 'DataType'
+        }
+        /// <summary>
         /// Test the property 'RequestId'
         /// </summary>
         [Test]

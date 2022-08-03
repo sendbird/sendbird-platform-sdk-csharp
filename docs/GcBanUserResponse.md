@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **StartAt** | **decimal** |  | [optional] 
 **EndAt** | **decimal** |  | [optional] 
 **Description** | **string** |  | [optional] 
-**Metadata** | [**InlineResponse2001**](InlineResponse2001.md) |  | [optional] 
+**Metadata** | [**OcDeleteChannelByUrl200Response**](OcDeleteChannelByUrl200Response.md) |  | [optional] 
 **NextUrl** | **string** |  | [optional] 
 **Nickname** | **string** |  | [optional] 
 **ProfileUrl** | **string** |  | [optional] 

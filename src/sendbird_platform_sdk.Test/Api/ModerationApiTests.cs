@@ -174,7 +174,7 @@ namespace sendbird_platform_sdk.Test
             //string channelUrl = null;
             //string bannedUserId = null;
             //var response = instance.GcUnbanUserById(apiToken, channelUrl, bannedUserId);
-            //Assert.IsInstanceOf(typeof(InlineResponse2001), response, "response is InlineResponse2001");
+            //Assert.IsInstanceOf(typeof(OcDeleteChannelByUrl200Response), response, "response is OcDeleteChannelByUrl200Response");
         }
         
         /// <summary>
@@ -188,7 +188,7 @@ namespace sendbird_platform_sdk.Test
             //string channelUrl = null;
             //string mutedUserId = null;
             //var response = instance.GcUnmuteUserById(apiToken, channelUrl, mutedUserId);
-            //Assert.IsInstanceOf(typeof(InlineResponse2001), response, "response is InlineResponse2001");
+            //Assert.IsInstanceOf(typeof(OcDeleteChannelByUrl200Response), response, "response is OcDeleteChannelByUrl200Response");
         }
         
         /// <summary>
@@ -379,7 +379,7 @@ namespace sendbird_platform_sdk.Test
             //string channelUrl = null;
             //string bannedUserId = null;
             //var response = instance.OcUnbanUserById(apiToken, channelUrl, bannedUserId);
-            //Assert.IsInstanceOf(typeof(InlineResponse2001), response, "response is InlineResponse2001");
+            //Assert.IsInstanceOf(typeof(OcDeleteChannelByUrl200Response), response, "response is OcDeleteChannelByUrl200Response");
         }
         
         /// <summary>
@@ -393,7 +393,7 @@ namespace sendbird_platform_sdk.Test
             //string channelUrl = null;
             //string mutedUserId = null;
             //var response = instance.OcUnmuteUserById(apiToken, channelUrl, mutedUserId);
-            //Assert.IsInstanceOf(typeof(InlineResponse2001), response, "response is InlineResponse2001");
+            //Assert.IsInstanceOf(typeof(OcDeleteChannelByUrl200Response), response, "response is OcDeleteChannelByUrl200Response");
         }
         
         /// <summary>

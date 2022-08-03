@@ -29,7 +29,7 @@ namespace sendbird_platform_sdk.Api
         /// Add a registration or device token
         /// </summary>
         /// <remarks>
-        /// ## Add a registration or device token  &gt; __Note__: A user can have up to 20 FCM registration tokens, 20 HMS device tokens, and 20 APNs device tokens each. The oldest token will be deleted before a new token is added for a user who already has 20 registration or device tokens. Only the 20 newest tokens will be maintained for users who already have more than 20 of each token type.  To send notification requests to push notification services on behalf of your server, adds a specific user&#39;s FCM registration token, HMS device token, or APNs device token to Sendbird server. Depending on which push service you are using, you can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  A FCM registration token and an APNs device token allow identification of each client app instance on each device, and are generated and registered by Android and iOS apps through the corresponding SDKs. Use this method if you need to register a token via your own server.  &gt; __Note__: For more information on the registration token and device token, visit the Google&#39;s [FCM](https://firebase.google.com/docs/auth/admin/verify-id-tokens) page, Huawei&#39;s [Push kit](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/service-introduction-0000001050040060) and Apple&#39;s [APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) page.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-add-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Add a registration or device token  > __Note__: A user can have up to 20 FCM registration tokens, 20 HMS device tokens, and 20 APNs device tokens each. The oldest token will be deleted before a new token is added for a user who already has 20 registration or device tokens. Only the 20 newest tokens will be maintained for users who already have more than 20 of each token type.  To send notification requests to push notification services on behalf of your server, adds a specific user's FCM registration token, HMS device token, or APNs device token to Sendbird server. Depending on which push service you are using, you can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`.  A FCM registration token and an APNs device token allow identification of each client app instance on each device, and are generated and registered by Android and iOS apps through the corresponding SDKs. Use this method if you need to register a token via your own server.  > __Note__: For more information on the registration token and device token, visit the Google's [FCM](https://firebase.google.com/docs/auth/admin/verify-id-tokens) page, Huawei's [Push kit](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/service-introduction-0000001050040060) and Apple's [APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) page.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-add-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -43,7 +43,7 @@ namespace sendbird_platform_sdk.Api
         /// Add a registration or device token
         /// </summary>
         /// <remarks>
-        /// ## Add a registration or device token  &gt; __Note__: A user can have up to 20 FCM registration tokens, 20 HMS device tokens, and 20 APNs device tokens each. The oldest token will be deleted before a new token is added for a user who already has 20 registration or device tokens. Only the 20 newest tokens will be maintained for users who already have more than 20 of each token type.  To send notification requests to push notification services on behalf of your server, adds a specific user&#39;s FCM registration token, HMS device token, or APNs device token to Sendbird server. Depending on which push service you are using, you can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  A FCM registration token and an APNs device token allow identification of each client app instance on each device, and are generated and registered by Android and iOS apps through the corresponding SDKs. Use this method if you need to register a token via your own server.  &gt; __Note__: For more information on the registration token and device token, visit the Google&#39;s [FCM](https://firebase.google.com/docs/auth/admin/verify-id-tokens) page, Huawei&#39;s [Push kit](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/service-introduction-0000001050040060) and Apple&#39;s [APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) page.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-add-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Add a registration or device token  > __Note__: A user can have up to 20 FCM registration tokens, 20 HMS device tokens, and 20 APNs device tokens each. The oldest token will be deleted before a new token is added for a user who already has 20 registration or device tokens. Only the 20 newest tokens will be maintained for users who already have more than 20 of each token type.  To send notification requests to push notification services on behalf of your server, adds a specific user's FCM registration token, HMS device token, or APNs device token to Sendbird server. Depending on which push service you are using, you can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`.  A FCM registration token and an APNs device token allow identification of each client app instance on each device, and are generated and registered by Android and iOS apps through the corresponding SDKs. Use this method if you need to register a token via your own server.  > __Note__: For more information on the registration token and device token, visit the Google's [FCM](https://firebase.google.com/docs/auth/admin/verify-id-tokens) page, Huawei's [Push kit](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/service-introduction-0000001050040060) and Apple's [APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) page.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-add-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -56,7 +56,7 @@ namespace sendbird_platform_sdk.Api
         /// Choose a push notification content template
         /// </summary>
         /// <remarks>
-        /// ## Choose a push notification content template  Chooses a push notification content template of a user&#39;s own. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-choose-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Choose a push notification content template  Chooses a push notification content template of a user's own. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-choose-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -69,7 +69,7 @@ namespace sendbird_platform_sdk.Api
         /// Choose a push notification content template
         /// </summary>
         /// <remarks>
-        /// ## Choose a push notification content template  Chooses a push notification content template of a user&#39;s own. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-choose-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Choose a push notification content template  Chooses a push notification content template of a user's own. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-choose-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -77,60 +77,6 @@ namespace sendbird_platform_sdk.Api
         /// <param name="body"> (optional)</param>
         /// <returns>ApiResponse of ChoosePushNotificationContentTemplateResponse</returns>
         ApiResponse<ChoosePushNotificationContentTemplateResponse> ChoosePushNotificationContentTemplateWithHttpInfo (string apiToken, string userId, Object body = default(Object));
-        /// <summary>
-        /// Create a channel metacounter
-        /// </summary>
-        /// <remarks>
-        /// ## Create a channel metacounter  Creates a channel metacounter&#39;s items to store in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="createChannelMetacounterData"> (optional)</param>
-        /// <returns>Dictionary&lt;string, SendBirdAdditionalProperties&gt;</returns>
-        Dictionary<string, SendBirdAdditionalProperties> CreateChannelMetacounter (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default(CreateChannelMetacounterData));
-
-        /// <summary>
-        /// Create a channel metacounter
-        /// </summary>
-        /// <remarks>
-        /// ## Create a channel metacounter  Creates a channel metacounter&#39;s items to store in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="createChannelMetacounterData"> (optional)</param>
-        /// <returns>ApiResponse of Dictionary&lt;string, SendBirdAdditionalProperties&gt;</returns>
-        ApiResponse<Dictionary<string, SendBirdAdditionalProperties>> CreateChannelMetacounterWithHttpInfo (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default(CreateChannelMetacounterData));
-        /// <summary>
-        /// Create a channel metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Create a channel metadata  Creates a channel metadata&#39;s items to store in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="createChannelMetadataData"> (optional)</param>
-        /// <returns>CreateChannelMetadataResponse</returns>
-        CreateChannelMetadataResponse CreateChannelMetadata (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData));
-
-        /// <summary>
-        /// Create a channel metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Create a channel metadata  Creates a channel metadata&#39;s items to store in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="createChannelMetadataData"> (optional)</param>
-        /// <returns>ApiResponse of CreateChannelMetadataResponse</returns>
-        ApiResponse<CreateChannelMetadataResponse> CreateChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData));
         /// <summary>
         /// Create a user
         /// </summary>
@@ -155,137 +101,6 @@ namespace sendbird_platform_sdk.Api
         /// <returns>ApiResponse of SendBirdUser</returns>
         ApiResponse<SendBirdUser> CreateUserWithHttpInfo (string apiToken, CreateUserData createUserData = default(CreateUserData));
         /// <summary>
-        /// Create a user metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Create a user metadata  Creates a user metadata&#39;s items to store in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="createUserMetadataData"> (optional)</param>
-        /// <returns>CreateUserMetadataResponse</returns>
-        CreateUserMetadataResponse CreateUserMetadata (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData));
-
-        /// <summary>
-        /// Create a user metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Create a user metadata  Creates a user metadata&#39;s items to store in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="createUserMetadataData"> (optional)</param>
-        /// <returns>ApiResponse of CreateUserMetadataResponse</returns>
-        ApiResponse<CreateUserMetadataResponse> CreateUserMetadataWithHttpInfo (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData));
-        /// <summary>
-        /// Delete a channel metacounter - When deleting all items of a channel metacounter
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a channel metacounter  Deletes a channel metacounter&#39;s item that is stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metacounter to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <returns></returns>
-        void DeleteChannelMetacounter (string apiToken, string channelType, string channelUrl);
-
-        /// <summary>
-        /// Delete a channel metacounter - When deleting all items of a channel metacounter
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a channel metacounter  Deletes a channel metacounter&#39;s item that is stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metacounter to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteChannelMetacounterWithHttpInfo (string apiToken, string channelType, string channelUrl);
-        /// <summary>
-        /// Delete a channel metacounter - When deleting a specific item of a channel metacounter by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a channel metacounter  Deletes a channel metacounter&#39;s item that is stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metacounter to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <returns></returns>
-        void DeleteChannelMetacounterByKey (string apiToken, string channelType, string channelUrl, string key);
-
-        /// <summary>
-        /// Delete a channel metacounter - When deleting a specific item of a channel metacounter by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a channel metacounter  Deletes a channel metacounter&#39;s item that is stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metacounter to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteChannelMetacounterByKeyWithHttpInfo (string apiToken, string channelType, string channelUrl, string key);
-        /// <summary>
-        /// Delete a channel metadata - When deleting all items of a channel metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a channel metadata  Deletes a channel metadata&#39;s one or all items that are stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metadata to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"> (optional)</param>
-        /// <returns></returns>
-        void DeleteChannelMetadata (string apiToken, string channelType, string channelUrl, string key = default(string));
-
-        /// <summary>
-        /// Delete a channel metadata - When deleting all items of a channel metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a channel metadata  Deletes a channel metadata&#39;s one or all items that are stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metadata to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, string key = default(string));
-        /// <summary>
-        /// Delete a channel metadata - When deleting a specific item of a channel metadata by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a channel metadata  Deletes a channel metadata&#39;s one or all items that are stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metadata to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <returns></returns>
-        void DeleteChannelMetadataByKey (string apiToken, string channelType, string channelUrl, string key);
-
-        /// <summary>
-        /// Delete a channel metadata - When deleting a specific item of a channel metadata by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a channel metadata  Deletes a channel metadata&#39;s one or all items that are stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metadata to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteChannelMetadataByKeyWithHttpInfo (string apiToken, string channelType, string channelUrl, string key);
-        /// <summary>
         /// Delete a user
         /// </summary>
         /// <remarks>
@@ -309,60 +124,10 @@ namespace sendbird_platform_sdk.Api
         /// <returns>ApiResponse of Object</returns>
         ApiResponse<Object> DeleteUserByIdWithHttpInfo (string apiToken, string userId);
         /// <summary>
-        /// Delete a user metadata - When deleting all items of a user metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a user metadata  Deletes a user metadata&#39;s one or all items that are stored in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user who has the metadata to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"> (optional)</param>
-        /// <returns></returns>
-        void DeleteUserMetadata (string apiToken, string userId, string key = default(string));
-
-        /// <summary>
-        /// Delete a user metadata - When deleting all items of a user metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a user metadata  Deletes a user metadata&#39;s one or all items that are stored in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user who has the metadata to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteUserMetadataWithHttpInfo (string apiToken, string userId, string key = default(string));
-        /// <summary>
-        /// Delete a user metadata - When deleting a specific item of a user metadata by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a user metadata  Deletes a user metadata&#39;s one or all items that are stored in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user who has the metadata to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"></param>
-        /// <returns></returns>
-        void DeleteUserMetadataByKey (string apiToken, string userId, string key);
-
-        /// <summary>
-        /// Delete a user metadata - When deleting a specific item of a user metadata by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a user metadata  Deletes a user metadata&#39;s one or all items that are stored in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user who has the metadata to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteUserMetadataByKeyWithHttpInfo (string apiToken, string userId, string key);
-        /// <summary>
         /// Leave my group channels
         /// </summary>
         /// <remarks>
-        /// ## Leave my group channels  Makes a user leave all joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-leave-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to leave all joined group channels.
+        /// ## Leave my group channels  Makes a user leave all joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-leave-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to leave all joined group channels.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -375,7 +140,7 @@ namespace sendbird_platform_sdk.Api
         /// Leave my group channels
         /// </summary>
         /// <remarks>
-        /// ## Leave my group channels  Makes a user leave all joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-leave-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to leave all joined group channels.
+        /// ## Leave my group channels  Makes a user leave all joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-leave-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to leave all joined group channels.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -387,7 +152,7 @@ namespace sendbird_platform_sdk.Api
         /// List my group channels
         /// </summary>
         /// <remarks>
-        /// ## List my group channels  Retrieves all group channels that the user has joined. You can create a request based on various query parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// ## List my group channels  Retrieves all group channels that the user has joined. You can create a request based on various query parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -439,7 +204,7 @@ namespace sendbird_platform_sdk.Api
         /// List my group channels
         /// </summary>
         /// <remarks>
-        /// ## List my group channels  Retrieves all group channels that the user has joined. You can create a request based on various query parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// ## List my group channels  Retrieves all group channels that the user has joined. You can create a request based on various query parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -490,7 +255,7 @@ namespace sendbird_platform_sdk.Api
         /// List registration or device tokens
         /// </summary>
         /// <remarks>
-        /// ## List registration or device tokens  Retrieves a list of a specific user&#39;s FCM registration tokens, HMS device tokens, or APNs device tokens. You can specify either &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60; in the &#x60;token_type&#x60; parameter, depending on which push notification service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-registration-or-device-tokens - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## List registration or device tokens  Retrieves a list of a specific user's FCM registration tokens, HMS device tokens, or APNs device tokens. You can specify either `gcm`, `huawei`, or `apns` in the `token_type` parameter, depending on which push notification service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-registration-or-device-tokens - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -503,7 +268,7 @@ namespace sendbird_platform_sdk.Api
         /// List registration or device tokens
         /// </summary>
         /// <remarks>
-        /// ## List registration or device tokens  Retrieves a list of a specific user&#39;s FCM registration tokens, HMS device tokens, or APNs device tokens. You can specify either &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60; in the &#x60;token_type&#x60; parameter, depending on which push notification service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-registration-or-device-tokens - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## List registration or device tokens  Retrieves a list of a specific user's FCM registration tokens, HMS device tokens, or APNs device tokens. You can specify either `gcm`, `huawei`, or `apns` in the `token_type` parameter, depending on which push notification service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-registration-or-device-tokens - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -554,7 +319,7 @@ namespace sendbird_platform_sdk.Api
         /// Mark all messages as read
         /// </summary>
         /// <remarks>
-        /// ## Mark all messages as read  Marks all of a user&#39;s unread messages as read in the joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-mark-all-messages-as-read - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Mark all messages as read  Marks all of a user's unread messages as read in the joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-mark-all-messages-as-read - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -567,7 +332,7 @@ namespace sendbird_platform_sdk.Api
         /// Mark all messages as read
         /// </summary>
         /// <remarks>
-        /// ## Mark all messages as read  Marks all of a user&#39;s unread messages as read in the joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-mark-all-messages-as-read - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Mark all messages as read  Marks all of a user's unread messages as read in the joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-mark-all-messages-as-read - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -604,7 +369,7 @@ namespace sendbird_platform_sdk.Api
         /// Remove a registration or device token - When unregistering all device tokens
         /// </summary>
         /// <remarks>
-        /// ## Remove a registration or device token  Removes a specific user&#39;s one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Remove a registration or device token  Removes a specific user's one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -616,7 +381,7 @@ namespace sendbird_platform_sdk.Api
         /// Remove a registration or device token - When unregistering all device tokens
         /// </summary>
         /// <remarks>
-        /// ## Remove a registration or device token  Removes a specific user&#39;s one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Remove a registration or device token  Removes a specific user's one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -627,7 +392,7 @@ namespace sendbird_platform_sdk.Api
         /// Remove a registration or device token - When unregistering a specific token
         /// </summary>
         /// <remarks>
-        /// ## Remove a registration or device token  Removes a specific user&#39;s one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Remove a registration or device token  Removes a specific user's one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -641,7 +406,7 @@ namespace sendbird_platform_sdk.Api
         /// Remove a registration or device token - When unregistering a specific token
         /// </summary>
         /// <remarks>
-        /// ## Remove a registration or device token  Removes a specific user&#39;s one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Remove a registration or device token  Removes a specific user's one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -654,7 +419,7 @@ namespace sendbird_platform_sdk.Api
         /// Remove a registration or device token from an owner
         /// </summary>
         /// <remarks>
-        /// ## Remove a registration or device token from an owner  Removes a registration or device token from a user who owns it. You can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token-from-an-owner - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Remove a registration or device token from an owner  Removes a registration or device token from a user who owns it. You can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token-from-an-owner - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -667,7 +432,7 @@ namespace sendbird_platform_sdk.Api
         /// Remove a registration or device token from an owner
         /// </summary>
         /// <remarks>
-        /// ## Remove a registration or device token from an owner  Removes a registration or device token from a user who owns it. You can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token-from-an-owner - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Remove a registration or device token from an owner  Removes a registration or device token from a user who owns it. You can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token-from-an-owner - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -679,7 +444,7 @@ namespace sendbird_platform_sdk.Api
         /// Reset push preferences
         /// </summary>
         /// <remarks>
-        /// ## Reset push preferences  Resets a user&#39;s push preferences. After performing this action,   &#x60;do_not_disturb&#x60; and &#x60;snooze_enabled&#x60; are set to false.  The values of the parameters associated with the time frame are all set to 0.  &#x60;timezone&#x60; is reset to &#x60;UTC&#x60;.  &#x60;push_sound&#x60; is reset to &#x60;default&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-reset-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Reset push preferences  Resets a user's push preferences. After performing this action,   `do_not_disturb` and `snooze_enabled` are set to false.  The values of the parameters associated with the time frame are all set to 0.  `timezone` is reset to `UTC`.  `push_sound` is reset to `default`.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-reset-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -691,7 +456,7 @@ namespace sendbird_platform_sdk.Api
         /// Reset push preferences
         /// </summary>
         /// <remarks>
-        /// ## Reset push preferences  Resets a user&#39;s push preferences. After performing this action,   &#x60;do_not_disturb&#x60; and &#x60;snooze_enabled&#x60; are set to false.  The values of the parameters associated with the time frame are all set to 0.  &#x60;timezone&#x60; is reset to &#x60;UTC&#x60;.  &#x60;push_sound&#x60; is reset to &#x60;default&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-reset-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Reset push preferences  Resets a user's push preferences. After performing this action,   `do_not_disturb` and `snooze_enabled` are set to false.  The values of the parameters associated with the time frame are all set to 0.  `timezone` is reset to `UTC`.  `push_sound` is reset to `default`.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-reset-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -702,7 +467,7 @@ namespace sendbird_platform_sdk.Api
         /// Update channel invitation preference
         /// </summary>
         /// <remarks>
-        /// ## Update channel invitation preference  Updates the channel invitation preference for a user&#39;s [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  &gt; __Note__: Using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, you can update the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference
+        /// ## Update channel invitation preference  Updates the channel invitation preference for a user's [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  > __Note__: Using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, you can update the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -715,7 +480,7 @@ namespace sendbird_platform_sdk.Api
         /// Update channel invitation preference
         /// </summary>
         /// <remarks>
-        /// ## Update channel invitation preference  Updates the channel invitation preference for a user&#39;s [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  &gt; __Note__: Using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, you can update the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference
+        /// ## Update channel invitation preference  Updates the channel invitation preference for a user's [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  > __Note__: Using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, you can update the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -723,118 +488,6 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateChannelInvitationPreferenceData"> (optional)</param>
         /// <returns>ApiResponse of UpdateChannelInvitationPreferenceResponse</returns>
         ApiResponse<UpdateChannelInvitationPreferenceResponse> UpdateChannelInvitationPreferenceWithHttpInfo (string apiToken, string userId, UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = default(UpdateChannelInvitationPreferenceData));
-        /// <summary>
-        /// Update a channel metacounter - When updating existing items of a channel metacounter by their keys or adding new items to the metacounter
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel metacounter  Updates existing items of a channel metacounter by their keys, or adds new items to the metacounter.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="updateChannelMetacounterData"> (optional)</param>
-        /// <returns>Dictionary&lt;string, SendBirdAdditionalProperties&gt;</returns>
-        Dictionary<string, SendBirdAdditionalProperties> UpdateChannelMetacounter (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default(UpdateChannelMetacounterData));
-
-        /// <summary>
-        /// Update a channel metacounter - When updating existing items of a channel metacounter by their keys or adding new items to the metacounter
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel metacounter  Updates existing items of a channel metacounter by their keys, or adds new items to the metacounter.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="updateChannelMetacounterData"> (optional)</param>
-        /// <returns>ApiResponse of Dictionary&lt;string, SendBirdAdditionalProperties&gt;</returns>
-        ApiResponse<Dictionary<string, SendBirdAdditionalProperties>> UpdateChannelMetacounterWithHttpInfo (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default(UpdateChannelMetacounterData));
-        /// <summary>
-        /// Update a channel metacounter - When updating a specific item of a channel metacounter by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel metacounter  Updates existing items of a channel metacounter by their keys, or adds new items to the metacounter.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <returns>Dictionary&lt;string, string&gt;</returns>
-        Dictionary<string, string> UpdateChannelMetacounterByKey (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object));
-
-        /// <summary>
-        /// Update a channel metacounter - When updating a specific item of a channel metacounter by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel metacounter  Updates existing items of a channel metacounter by their keys, or adds new items to the metacounter.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <returns>ApiResponse of Dictionary&lt;string, string&gt;</returns>
-        ApiResponse<Dictionary<string, string>> UpdateChannelMetacounterByKeyWithHttpInfo (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object));
-        /// <summary>
-        /// Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel metadata  Updates existing items of a channel metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="updateChannelMetadataData"> (optional)</param>
-        /// <returns>Dictionary&lt;string, string&gt;</returns>
-        Dictionary<string, string> UpdateChannelMetadata (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default(UpdateChannelMetadataData));
-
-        /// <summary>
-        /// Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel metadata  Updates existing items of a channel metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="updateChannelMetadataData"> (optional)</param>
-        /// <returns>ApiResponse of Dictionary&lt;string, string&gt;</returns>
-        ApiResponse<Dictionary<string, string>> UpdateChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default(UpdateChannelMetadataData));
-        /// <summary>
-        /// Update a channel metadata - When updating a specific item of a channel metadata by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel metadata  Updates existing items of a channel metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <returns>Dictionary&lt;string, string&gt;</returns>
-        Dictionary<string, string> UpdateChannelMetadataByKey (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object));
-
-        /// <summary>
-        /// Update a channel metadata - When updating a specific item of a channel metadata by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel metadata  Updates existing items of a channel metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <returns>ApiResponse of Dictionary&lt;string, string&gt;</returns>
-        ApiResponse<Dictionary<string, string>> UpdateChannelMetadataByKeyWithHttpInfo (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object));
         /// <summary>
         /// Update count preference of a channel
         /// </summary>
@@ -866,7 +519,7 @@ namespace sendbird_platform_sdk.Api
         /// Update push preferences
         /// </summary>
         /// <remarks>
-        /// ## Update push preferences  Updates a user&#39;s push preferences. Through this action, you can set &#x60;do_not_disturb&#x60; for a user, and update the time frame in which the setting applies.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update push preferences  Updates a user's push preferences. Through this action, you can set `do_not_disturb` for a user, and update the time frame in which the setting applies.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -879,7 +532,7 @@ namespace sendbird_platform_sdk.Api
         /// Update push preferences
         /// </summary>
         /// <remarks>
-        /// ## Update push preferences  Updates a user&#39;s push preferences. Through this action, you can set &#x60;do_not_disturb&#x60; for a user, and update the time frame in which the setting applies.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update push preferences  Updates a user's push preferences. Through this action, you can set `do_not_disturb` for a user, and update the time frame in which the setting applies.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -891,7 +544,7 @@ namespace sendbird_platform_sdk.Api
         /// Update push preferences for a channel
         /// </summary>
         /// <remarks>
-        /// ## Update push preferences for a channel  Updates push preferences for a user&#39;s specific group channel. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences-for-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update push preferences for a channel  Updates push preferences for a user's specific group channel. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences-for-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -905,7 +558,7 @@ namespace sendbird_platform_sdk.Api
         /// Update push preferences for a channel
         /// </summary>
         /// <remarks>
-        /// ## Update push preferences for a channel  Updates push preferences for a user&#39;s specific group channel. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences-for-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update push preferences for a channel  Updates push preferences for a user's specific group channel. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences-for-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -918,7 +571,7 @@ namespace sendbird_platform_sdk.Api
         /// Update a user
         /// </summary>
         /// <remarks>
-        /// ## Update a user  Updates information on a user. In addition to changing a user&#39;s nickname or profile image, you can issue a new access token for the user. The new access token replaces the previous one as the necessary token for authentication.  You can also deactivate or reactivate a user. If the &#x60;leave_all_when_deactivated&#x60; is true (which it is by default), a user leaves all joined group channels when deactivated.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update a user  Updates information on a user. In addition to changing a user's nickname or profile image, you can issue a new access token for the user. The new access token replaces the previous one as the necessary token for authentication.  You can also deactivate or reactivate a user. If the `leave_all_when_deactivated` is true (which it is by default), a user leaves all joined group channels when deactivated.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -931,7 +584,7 @@ namespace sendbird_platform_sdk.Api
         /// Update a user
         /// </summary>
         /// <remarks>
-        /// ## Update a user  Updates information on a user. In addition to changing a user&#39;s nickname or profile image, you can issue a new access token for the user. The new access token replaces the previous one as the necessary token for authentication.  You can also deactivate or reactivate a user. If the &#x60;leave_all_when_deactivated&#x60; is true (which it is by default), a user leaves all joined group channels when deactivated.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update a user  Updates information on a user. In addition to changing a user's nickname or profile image, you can issue a new access token for the user. The new access token replaces the previous one as the necessary token for authentication.  You can also deactivate or reactivate a user. If the `leave_all_when_deactivated` is true (which it is by default), a user leaves all joined group channels when deactivated.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -940,62 +593,10 @@ namespace sendbird_platform_sdk.Api
         /// <returns>ApiResponse of SendBirdUser</returns>
         ApiResponse<SendBirdUser> UpdateUserByIdWithHttpInfo (string apiToken, string userId, UpdateUserByIdData updateUserByIdData = default(UpdateUserByIdData));
         /// <summary>
-        /// Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Update a user metadata  Updates existing items of a user metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user to update the metadata in.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="updateUserMetadataData"> (optional)</param>
-        /// <returns>UpdateUserMetadataResponse</returns>
-        UpdateUserMetadataResponse UpdateUserMetadata (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData));
-
-        /// <summary>
-        /// Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Update a user metadata  Updates existing items of a user metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user to update the metadata in.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="updateUserMetadataData"> (optional)</param>
-        /// <returns>ApiResponse of UpdateUserMetadataResponse</returns>
-        ApiResponse<UpdateUserMetadataResponse> UpdateUserMetadataWithHttpInfo (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData));
-        /// <summary>
-        /// Update a user metadata - When updating a specific item of a user metadata by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Update a user metadata  Updates existing items of a user metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user to update the metadata in.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <returns>Dictionary&lt;string, string&gt;</returns>
-        Dictionary<string, string> UpdateUserMetadataByKey (string apiToken, string userId, string key, Object body = default(Object));
-
-        /// <summary>
-        /// Update a user metadata - When updating a specific item of a user metadata by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Update a user metadata  Updates existing items of a user metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user to update the metadata in.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <returns>ApiResponse of Dictionary&lt;string, string&gt;</returns>
-        ApiResponse<Dictionary<string, string>> UpdateUserMetadataByKeyWithHttpInfo (string apiToken, string userId, string key, Object body = default(Object));
-        /// <summary>
         /// View channel invitation preference
         /// </summary>
         /// <remarks>
-        /// ## View channel invitation preference  Retrieves channel invitation preference for a user&#39;s [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  &gt; __Note__: Using the [view default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference) action, you can retrieve the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference
+        /// ## View channel invitation preference  Retrieves channel invitation preference for a user's [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  > __Note__: Using the [view default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference) action, you can retrieve the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1007,7 +608,7 @@ namespace sendbird_platform_sdk.Api
         /// View channel invitation preference
         /// </summary>
         /// <remarks>
-        /// ## View channel invitation preference  Retrieves channel invitation preference for a user&#39;s [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  &gt; __Note__: Using the [view default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference) action, you can retrieve the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference
+        /// ## View channel invitation preference  Retrieves channel invitation preference for a user's [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  > __Note__: Using the [view default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference) action, you can retrieve the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1043,7 +644,7 @@ namespace sendbird_platform_sdk.Api
         /// View number of channels by join status
         /// </summary>
         /// <remarks>
-        /// ## View number of channels by join status  Retrieves the number of a user&#39;s group channels by their join status.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-by-join-status - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
+        /// ## View number of channels by join status  Retrieves the number of a user's group channels by their join status.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-by-join-status - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1056,7 +657,7 @@ namespace sendbird_platform_sdk.Api
         /// View number of channels by join status
         /// </summary>
         /// <remarks>
-        /// ## View number of channels by join status  Retrieves the number of a user&#39;s group channels by their join status.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-by-join-status - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
+        /// ## View number of channels by join status  Retrieves the number of a user's group channels by their join status.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-by-join-status - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1068,7 +669,7 @@ namespace sendbird_platform_sdk.Api
         /// View number of channels with unread messages
         /// </summary>
         /// <remarks>
-        /// ## View number of channels with unread messages  Retrieves the total number of a user&#39;s group channels with unread messages.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-with-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## View number of channels with unread messages  Retrieves the total number of a user's group channels with unread messages.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-with-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1082,7 +683,7 @@ namespace sendbird_platform_sdk.Api
         /// View number of channels with unread messages
         /// </summary>
         /// <remarks>
-        /// ## View number of channels with unread messages  Retrieves the total number of a user&#39;s group channels with unread messages.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-with-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## View number of channels with unread messages  Retrieves the total number of a user's group channels with unread messages.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-with-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1095,7 +696,7 @@ namespace sendbird_platform_sdk.Api
         /// View number of unread items
         /// </summary>
         /// <remarks>
-        /// ## View number of unread items  Retrieves a set of total numbers of a user&#39;s unread messages, unread mentioned messages, or received invitations in either super or non-super group channels. This action is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-items - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## View number of unread items  Retrieves a set of total numbers of a user's unread messages, unread mentioned messages, or received invitations in either super or non-super group channels. This action is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-items - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1109,7 +710,7 @@ namespace sendbird_platform_sdk.Api
         /// View number of unread items
         /// </summary>
         /// <remarks>
-        /// ## View number of unread items  Retrieves a set of total numbers of a user&#39;s unread messages, unread mentioned messages, or received invitations in either super or non-super group channels. This action is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-items - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## View number of unread items  Retrieves a set of total numbers of a user's unread messages, unread mentioned messages, or received invitations in either super or non-super group channels. This action is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-items - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1122,7 +723,7 @@ namespace sendbird_platform_sdk.Api
         /// View number of unread messages
         /// </summary>
         /// <remarks>
-        /// ## View number of unread messages  Retrieves the total number of a user&#39;s currently unread messages in the group channels. The unread counts feature is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
+        /// ## View number of unread messages  Retrieves the total number of a user's currently unread messages in the group channels. The unread counts feature is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1136,7 +737,7 @@ namespace sendbird_platform_sdk.Api
         /// View number of unread messages
         /// </summary>
         /// <remarks>
-        /// ## View number of unread messages  Retrieves the total number of a user&#39;s currently unread messages in the group channels. The unread counts feature is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
+        /// ## View number of unread messages  Retrieves the total number of a user's currently unread messages in the group channels. The unread counts feature is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1149,7 +750,7 @@ namespace sendbird_platform_sdk.Api
         /// View push preferences
         /// </summary>
         /// <remarks>
-        /// ## View push preferences  Retrieves a user&#39;s push preferences about whether the user has set &#x60;do_not_disturb&#x60; to pause notifications for a certain period of time, and the time frame in which the user has applied the setting.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## View push preferences  Retrieves a user's push preferences about whether the user has set `do_not_disturb` to pause notifications for a certain period of time, and the time frame in which the user has applied the setting.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1161,7 +762,7 @@ namespace sendbird_platform_sdk.Api
         /// View push preferences
         /// </summary>
         /// <remarks>
-        /// ## View push preferences  Retrieves a user&#39;s push preferences about whether the user has set &#x60;do_not_disturb&#x60; to pause notifications for a certain period of time, and the time frame in which the user has applied the setting.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## View push preferences  Retrieves a user's push preferences about whether the user has set `do_not_disturb` to pause notifications for a certain period of time, and the time frame in which the user has applied the setting.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1197,7 +798,7 @@ namespace sendbird_platform_sdk.Api
         /// View a user
         /// </summary>
         /// <remarks>
-        /// ## View a user  Retrieves information on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve.
+        /// ## View a user  Retrieves information on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1212,7 +813,7 @@ namespace sendbird_platform_sdk.Api
         /// View a user
         /// </summary>
         /// <remarks>
-        /// ## View a user  Retrieves information on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve.
+        /// ## View a user  Retrieves information on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1226,34 +827,34 @@ namespace sendbird_platform_sdk.Api
         /// View who owns a registration or device token
         /// </summary>
         /// <remarks>
-        /// ## View who owns a registration or device token  Retrieves a user who owns a FCM registration token, HMS device token, or APNs device token. You can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-who-owns-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## View who owns a registration or device token  Retrieves a user who owns a FCM registration token, HMS device token, or APNs device token. You can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-who-owns-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
-        /// <returns>List&lt;Object&gt;</returns>
-        List<Object> ViewWhoOwnsRegistrationOrDeviceTokenByToken (string apiToken, string tokenType, string token);
+        /// <returns>List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner></returns>
+        List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner> ViewWhoOwnsRegistrationOrDeviceTokenByToken (string apiToken, string tokenType, string token);
 
         /// <summary>
         /// View who owns a registration or device token
         /// </summary>
         /// <remarks>
-        /// ## View who owns a registration or device token  Retrieves a user who owns a FCM registration token, HMS device token, or APNs device token. You can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-who-owns-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## View who owns a registration or device token  Retrieves a user who owns a FCM registration token, HMS device token, or APNs device token. You can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-who-owns-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
-        /// <returns>ApiResponse of List&lt;Object&gt;</returns>
-        ApiResponse<List<Object>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo (string apiToken, string tokenType, string token);
+        /// <returns>ApiResponse of List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner></returns>
+        ApiResponse<List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo (string apiToken, string tokenType, string token);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
         /// Add a registration or device token
         /// </summary>
         /// <remarks>
-        /// ## Add a registration or device token  &gt; __Note__: A user can have up to 20 FCM registration tokens, 20 HMS device tokens, and 20 APNs device tokens each. The oldest token will be deleted before a new token is added for a user who already has 20 registration or device tokens. Only the 20 newest tokens will be maintained for users who already have more than 20 of each token type.  To send notification requests to push notification services on behalf of your server, adds a specific user&#39;s FCM registration token, HMS device token, or APNs device token to Sendbird server. Depending on which push service you are using, you can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  A FCM registration token and an APNs device token allow identification of each client app instance on each device, and are generated and registered by Android and iOS apps through the corresponding SDKs. Use this method if you need to register a token via your own server.  &gt; __Note__: For more information on the registration token and device token, visit the Google&#39;s [FCM](https://firebase.google.com/docs/auth/admin/verify-id-tokens) page, Huawei&#39;s [Push kit](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/service-introduction-0000001050040060) and Apple&#39;s [APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) page.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-add-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Add a registration or device token  > __Note__: A user can have up to 20 FCM registration tokens, 20 HMS device tokens, and 20 APNs device tokens each. The oldest token will be deleted before a new token is added for a user who already has 20 registration or device tokens. Only the 20 newest tokens will be maintained for users who already have more than 20 of each token type.  To send notification requests to push notification services on behalf of your server, adds a specific user's FCM registration token, HMS device token, or APNs device token to Sendbird server. Depending on which push service you are using, you can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`.  A FCM registration token and an APNs device token allow identification of each client app instance on each device, and are generated and registered by Android and iOS apps through the corresponding SDKs. Use this method if you need to register a token via your own server.  > __Note__: For more information on the registration token and device token, visit the Google's [FCM](https://firebase.google.com/docs/auth/admin/verify-id-tokens) page, Huawei's [Push kit](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/service-introduction-0000001050040060) and Apple's [APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) page.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-add-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1268,7 +869,7 @@ namespace sendbird_platform_sdk.Api
         /// Add a registration or device token
         /// </summary>
         /// <remarks>
-        /// ## Add a registration or device token  &gt; __Note__: A user can have up to 20 FCM registration tokens, 20 HMS device tokens, and 20 APNs device tokens each. The oldest token will be deleted before a new token is added for a user who already has 20 registration or device tokens. Only the 20 newest tokens will be maintained for users who already have more than 20 of each token type.  To send notification requests to push notification services on behalf of your server, adds a specific user&#39;s FCM registration token, HMS device token, or APNs device token to Sendbird server. Depending on which push service you are using, you can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  A FCM registration token and an APNs device token allow identification of each client app instance on each device, and are generated and registered by Android and iOS apps through the corresponding SDKs. Use this method if you need to register a token via your own server.  &gt; __Note__: For more information on the registration token and device token, visit the Google&#39;s [FCM](https://firebase.google.com/docs/auth/admin/verify-id-tokens) page, Huawei&#39;s [Push kit](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/service-introduction-0000001050040060) and Apple&#39;s [APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) page.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-add-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Add a registration or device token  > __Note__: A user can have up to 20 FCM registration tokens, 20 HMS device tokens, and 20 APNs device tokens each. The oldest token will be deleted before a new token is added for a user who already has 20 registration or device tokens. Only the 20 newest tokens will be maintained for users who already have more than 20 of each token type.  To send notification requests to push notification services on behalf of your server, adds a specific user's FCM registration token, HMS device token, or APNs device token to Sendbird server. Depending on which push service you are using, you can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`.  A FCM registration token and an APNs device token allow identification of each client app instance on each device, and are generated and registered by Android and iOS apps through the corresponding SDKs. Use this method if you need to register a token via your own server.  > __Note__: For more information on the registration token and device token, visit the Google's [FCM](https://firebase.google.com/docs/auth/admin/verify-id-tokens) page, Huawei's [Push kit](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/service-introduction-0000001050040060) and Apple's [APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) page.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-add-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1282,7 +883,7 @@ namespace sendbird_platform_sdk.Api
         /// Choose a push notification content template
         /// </summary>
         /// <remarks>
-        /// ## Choose a push notification content template  Chooses a push notification content template of a user&#39;s own. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-choose-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Choose a push notification content template  Chooses a push notification content template of a user's own. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-choose-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1296,7 +897,7 @@ namespace sendbird_platform_sdk.Api
         /// Choose a push notification content template
         /// </summary>
         /// <remarks>
-        /// ## Choose a push notification content template  Chooses a push notification content template of a user&#39;s own. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-choose-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Choose a push notification content template  Chooses a push notification content template of a user's own. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-choose-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1305,64 +906,6 @@ namespace sendbird_platform_sdk.Api
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ChoosePushNotificationContentTemplateResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<ChoosePushNotificationContentTemplateResponse>> ChoosePushNotificationContentTemplateWithHttpInfoAsync (string apiToken, string userId, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Create a channel metacounter
-        /// </summary>
-        /// <remarks>
-        /// ## Create a channel metacounter  Creates a channel metacounter&#39;s items to store in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="createChannelMetacounterData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of Dictionary&lt;string, SendBirdAdditionalProperties&gt;</returns>
-        System.Threading.Tasks.Task<Dictionary<string, SendBirdAdditionalProperties>> CreateChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default(CreateChannelMetacounterData), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Create a channel metacounter
-        /// </summary>
-        /// <remarks>
-        /// ## Create a channel metacounter  Creates a channel metacounter&#39;s items to store in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="createChannelMetacounterData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (Dictionary&lt;string, SendBirdAdditionalProperties&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, SendBirdAdditionalProperties>>> CreateChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default(CreateChannelMetacounterData), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Create a channel metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Create a channel metadata  Creates a channel metadata&#39;s items to store in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="createChannelMetadataData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of CreateChannelMetadataResponse</returns>
-        System.Threading.Tasks.Task<CreateChannelMetadataResponse> CreateChannelMetadataAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Create a channel metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Create a channel metadata  Creates a channel metadata&#39;s items to store in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="createChannelMetadataData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (CreateChannelMetadataResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CreateChannelMetadataResponse>> CreateChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Create a user
         /// </summary>
@@ -1389,147 +932,6 @@ namespace sendbird_platform_sdk.Api
         /// <returns>Task of ApiResponse (SendBirdUser)</returns>
         System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> CreateUserWithHttpInfoAsync (string apiToken, CreateUserData createUserData = default(CreateUserData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// Create a user metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Create a user metadata  Creates a user metadata&#39;s items to store in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="createUserMetadataData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of CreateUserMetadataResponse</returns>
-        System.Threading.Tasks.Task<CreateUserMetadataResponse> CreateUserMetadataAsync (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Create a user metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Create a user metadata  Creates a user metadata&#39;s items to store in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="createUserMetadataData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (CreateUserMetadataResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CreateUserMetadataResponse>> CreateUserMetadataWithHttpInfoAsync (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Delete a channel metacounter - When deleting all items of a channel metacounter
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a channel metacounter  Deletes a channel metacounter&#39;s item that is stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metacounter to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Delete a channel metacounter - When deleting all items of a channel metacounter
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a channel metacounter  Deletes a channel metacounter&#39;s item that is stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metacounter to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Delete a channel metacounter - When deleting a specific item of a channel metacounter by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a channel metacounter  Deletes a channel metacounter&#39;s item that is stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metacounter to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteChannelMetacounterByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Delete a channel metacounter - When deleting a specific item of a channel metacounter by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a channel metacounter  Deletes a channel metacounter&#39;s item that is stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metacounter to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetacounterByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Delete a channel metadata - When deleting all items of a channel metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a channel metadata  Deletes a channel metadata&#39;s one or all items that are stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metadata to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteChannelMetadataAsync (string apiToken, string channelType, string channelUrl, string key = default(string), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Delete a channel metadata - When deleting all items of a channel metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a channel metadata  Deletes a channel metadata&#39;s one or all items that are stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metadata to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key = default(string), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Delete a channel metadata - When deleting a specific item of a channel metadata by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a channel metadata  Deletes a channel metadata&#39;s one or all items that are stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metadata to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteChannelMetadataByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Delete a channel metadata - When deleting a specific item of a channel metadata by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a channel metadata  Deletes a channel metadata&#39;s one or all items that are stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metadata to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetadataByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
         /// Delete a user
         /// </summary>
         /// <remarks>
@@ -1555,64 +957,10 @@ namespace sendbird_platform_sdk.Api
         /// <returns>Task of ApiResponse (Object)</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteUserByIdWithHttpInfoAsync (string apiToken, string userId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// Delete a user metadata - When deleting all items of a user metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a user metadata  Deletes a user metadata&#39;s one or all items that are stored in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user who has the metadata to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteUserMetadataAsync (string apiToken, string userId, string key = default(string), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Delete a user metadata - When deleting all items of a user metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a user metadata  Deletes a user metadata&#39;s one or all items that are stored in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user who has the metadata to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteUserMetadataWithHttpInfoAsync (string apiToken, string userId, string key = default(string), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Delete a user metadata - When deleting a specific item of a user metadata by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a user metadata  Deletes a user metadata&#39;s one or all items that are stored in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user who has the metadata to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteUserMetadataByKeyAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Delete a user metadata - When deleting a specific item of a user metadata by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Delete a user metadata  Deletes a user metadata&#39;s one or all items that are stored in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user who has the metadata to delete.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteUserMetadataByKeyWithHttpInfoAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
         /// Leave my group channels
         /// </summary>
         /// <remarks>
-        /// ## Leave my group channels  Makes a user leave all joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-leave-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to leave all joined group channels.
+        /// ## Leave my group channels  Makes a user leave all joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-leave-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to leave all joined group channels.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1626,7 +974,7 @@ namespace sendbird_platform_sdk.Api
         /// Leave my group channels
         /// </summary>
         /// <remarks>
-        /// ## Leave my group channels  Makes a user leave all joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-leave-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to leave all joined group channels.
+        /// ## Leave my group channels  Makes a user leave all joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-leave-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to leave all joined group channels.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1639,7 +987,7 @@ namespace sendbird_platform_sdk.Api
         /// List my group channels
         /// </summary>
         /// <remarks>
-        /// ## List my group channels  Retrieves all group channels that the user has joined. You can create a request based on various query parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// ## List my group channels  Retrieves all group channels that the user has joined. You can create a request based on various query parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1692,7 +1040,7 @@ namespace sendbird_platform_sdk.Api
         /// List my group channels
         /// </summary>
         /// <remarks>
-        /// ## List my group channels  Retrieves all group channels that the user has joined. You can create a request based on various query parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// ## List my group channels  Retrieves all group channels that the user has joined. You can create a request based on various query parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1744,7 +1092,7 @@ namespace sendbird_platform_sdk.Api
         /// List registration or device tokens
         /// </summary>
         /// <remarks>
-        /// ## List registration or device tokens  Retrieves a list of a specific user&#39;s FCM registration tokens, HMS device tokens, or APNs device tokens. You can specify either &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60; in the &#x60;token_type&#x60; parameter, depending on which push notification service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-registration-or-device-tokens - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## List registration or device tokens  Retrieves a list of a specific user's FCM registration tokens, HMS device tokens, or APNs device tokens. You can specify either `gcm`, `huawei`, or `apns` in the `token_type` parameter, depending on which push notification service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-registration-or-device-tokens - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1758,7 +1106,7 @@ namespace sendbird_platform_sdk.Api
         /// List registration or device tokens
         /// </summary>
         /// <remarks>
-        /// ## List registration or device tokens  Retrieves a list of a specific user&#39;s FCM registration tokens, HMS device tokens, or APNs device tokens. You can specify either &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60; in the &#x60;token_type&#x60; parameter, depending on which push notification service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-registration-or-device-tokens - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## List registration or device tokens  Retrieves a list of a specific user's FCM registration tokens, HMS device tokens, or APNs device tokens. You can specify either `gcm`, `huawei`, or `apns` in the `token_type` parameter, depending on which push notification service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-registration-or-device-tokens - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1812,7 +1160,7 @@ namespace sendbird_platform_sdk.Api
         /// Mark all messages as read
         /// </summary>
         /// <remarks>
-        /// ## Mark all messages as read  Marks all of a user&#39;s unread messages as read in the joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-mark-all-messages-as-read - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Mark all messages as read  Marks all of a user's unread messages as read in the joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-mark-all-messages-as-read - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1826,7 +1174,7 @@ namespace sendbird_platform_sdk.Api
         /// Mark all messages as read
         /// </summary>
         /// <remarks>
-        /// ## Mark all messages as read  Marks all of a user&#39;s unread messages as read in the joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-mark-all-messages-as-read - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Mark all messages as read  Marks all of a user's unread messages as read in the joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-mark-all-messages-as-read - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1866,7 +1214,7 @@ namespace sendbird_platform_sdk.Api
         /// Remove a registration or device token - When unregistering all device tokens
         /// </summary>
         /// <remarks>
-        /// ## Remove a registration or device token  Removes a specific user&#39;s one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Remove a registration or device token  Removes a specific user's one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1879,7 +1227,7 @@ namespace sendbird_platform_sdk.Api
         /// Remove a registration or device token - When unregistering all device tokens
         /// </summary>
         /// <remarks>
-        /// ## Remove a registration or device token  Removes a specific user&#39;s one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Remove a registration or device token  Removes a specific user's one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1891,7 +1239,7 @@ namespace sendbird_platform_sdk.Api
         /// Remove a registration or device token - When unregistering a specific token
         /// </summary>
         /// <remarks>
-        /// ## Remove a registration or device token  Removes a specific user&#39;s one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Remove a registration or device token  Removes a specific user's one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1906,7 +1254,7 @@ namespace sendbird_platform_sdk.Api
         /// Remove a registration or device token - When unregistering a specific token
         /// </summary>
         /// <remarks>
-        /// ## Remove a registration or device token  Removes a specific user&#39;s one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Remove a registration or device token  Removes a specific user's one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1920,7 +1268,7 @@ namespace sendbird_platform_sdk.Api
         /// Remove a registration or device token from an owner
         /// </summary>
         /// <remarks>
-        /// ## Remove a registration or device token from an owner  Removes a registration or device token from a user who owns it. You can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token-from-an-owner - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Remove a registration or device token from an owner  Removes a registration or device token from a user who owns it. You can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token-from-an-owner - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1934,7 +1282,7 @@ namespace sendbird_platform_sdk.Api
         /// Remove a registration or device token from an owner
         /// </summary>
         /// <remarks>
-        /// ## Remove a registration or device token from an owner  Removes a registration or device token from a user who owns it. You can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token-from-an-owner - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Remove a registration or device token from an owner  Removes a registration or device token from a user who owns it. You can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token-from-an-owner - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1947,7 +1295,7 @@ namespace sendbird_platform_sdk.Api
         /// Reset push preferences
         /// </summary>
         /// <remarks>
-        /// ## Reset push preferences  Resets a user&#39;s push preferences. After performing this action,   &#x60;do_not_disturb&#x60; and &#x60;snooze_enabled&#x60; are set to false.  The values of the parameters associated with the time frame are all set to 0.  &#x60;timezone&#x60; is reset to &#x60;UTC&#x60;.  &#x60;push_sound&#x60; is reset to &#x60;default&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-reset-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Reset push preferences  Resets a user's push preferences. After performing this action,   `do_not_disturb` and `snooze_enabled` are set to false.  The values of the parameters associated with the time frame are all set to 0.  `timezone` is reset to `UTC`.  `push_sound` is reset to `default`.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-reset-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1960,7 +1308,7 @@ namespace sendbird_platform_sdk.Api
         /// Reset push preferences
         /// </summary>
         /// <remarks>
-        /// ## Reset push preferences  Resets a user&#39;s push preferences. After performing this action,   &#x60;do_not_disturb&#x60; and &#x60;snooze_enabled&#x60; are set to false.  The values of the parameters associated with the time frame are all set to 0.  &#x60;timezone&#x60; is reset to &#x60;UTC&#x60;.  &#x60;push_sound&#x60; is reset to &#x60;default&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-reset-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Reset push preferences  Resets a user's push preferences. After performing this action,   `do_not_disturb` and `snooze_enabled` are set to false.  The values of the parameters associated with the time frame are all set to 0.  `timezone` is reset to `UTC`.  `push_sound` is reset to `default`.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-reset-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1972,7 +1320,7 @@ namespace sendbird_platform_sdk.Api
         /// Update channel invitation preference
         /// </summary>
         /// <remarks>
-        /// ## Update channel invitation preference  Updates the channel invitation preference for a user&#39;s [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  &gt; __Note__: Using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, you can update the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference
+        /// ## Update channel invitation preference  Updates the channel invitation preference for a user's [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  > __Note__: Using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, you can update the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1986,7 +1334,7 @@ namespace sendbird_platform_sdk.Api
         /// Update channel invitation preference
         /// </summary>
         /// <remarks>
-        /// ## Update channel invitation preference  Updates the channel invitation preference for a user&#39;s [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  &gt; __Note__: Using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, you can update the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference
+        /// ## Update channel invitation preference  Updates the channel invitation preference for a user's [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  > __Note__: Using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, you can update the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1995,126 +1343,6 @@ namespace sendbird_platform_sdk.Api
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateChannelInvitationPreferenceResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<UpdateChannelInvitationPreferenceResponse>> UpdateChannelInvitationPreferenceWithHttpInfoAsync (string apiToken, string userId, UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = default(UpdateChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Update a channel metacounter - When updating existing items of a channel metacounter by their keys or adding new items to the metacounter
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel metacounter  Updates existing items of a channel metacounter by their keys, or adds new items to the metacounter.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="updateChannelMetacounterData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of Dictionary&lt;string, SendBirdAdditionalProperties&gt;</returns>
-        System.Threading.Tasks.Task<Dictionary<string, SendBirdAdditionalProperties>> UpdateChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default(UpdateChannelMetacounterData), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Update a channel metacounter - When updating existing items of a channel metacounter by their keys or adding new items to the metacounter
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel metacounter  Updates existing items of a channel metacounter by their keys, or adds new items to the metacounter.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="updateChannelMetacounterData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (Dictionary&lt;string, SendBirdAdditionalProperties&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, SendBirdAdditionalProperties>>> UpdateChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default(UpdateChannelMetacounterData), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Update a channel metacounter - When updating a specific item of a channel metacounter by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel metacounter  Updates existing items of a channel metacounter by their keys, or adds new items to the metacounter.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of Dictionary&lt;string, string&gt;</returns>
-        System.Threading.Tasks.Task<Dictionary<string, string>> UpdateChannelMetacounterByKeyAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Update a channel metacounter - When updating a specific item of a channel metacounter by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel metacounter  Updates existing items of a channel metacounter by their keys, or adds new items to the metacounter.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateChannelMetacounterByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel metadata  Updates existing items of a channel metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="updateChannelMetadataData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of Dictionary&lt;string, string&gt;</returns>
-        System.Threading.Tasks.Task<Dictionary<string, string>> UpdateChannelMetadataAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default(UpdateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel metadata  Updates existing items of a channel metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="updateChannelMetadataData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default(UpdateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Update a channel metadata - When updating a specific item of a channel metadata by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel metadata  Updates existing items of a channel metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of Dictionary&lt;string, string&gt;</returns>
-        System.Threading.Tasks.Task<Dictionary<string, string>> UpdateChannelMetadataByKeyAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Update a channel metadata - When updating a specific item of a channel metadata by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel metadata  Updates existing items of a channel metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateChannelMetadataByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update count preference of a channel
         /// </summary>
@@ -2148,7 +1376,7 @@ namespace sendbird_platform_sdk.Api
         /// Update push preferences
         /// </summary>
         /// <remarks>
-        /// ## Update push preferences  Updates a user&#39;s push preferences. Through this action, you can set &#x60;do_not_disturb&#x60; for a user, and update the time frame in which the setting applies.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update push preferences  Updates a user's push preferences. Through this action, you can set `do_not_disturb` for a user, and update the time frame in which the setting applies.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2162,7 +1390,7 @@ namespace sendbird_platform_sdk.Api
         /// Update push preferences
         /// </summary>
         /// <remarks>
-        /// ## Update push preferences  Updates a user&#39;s push preferences. Through this action, you can set &#x60;do_not_disturb&#x60; for a user, and update the time frame in which the setting applies.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update push preferences  Updates a user's push preferences. Through this action, you can set `do_not_disturb` for a user, and update the time frame in which the setting applies.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2175,7 +1403,7 @@ namespace sendbird_platform_sdk.Api
         /// Update push preferences for a channel
         /// </summary>
         /// <remarks>
-        /// ## Update push preferences for a channel  Updates push preferences for a user&#39;s specific group channel. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences-for-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update push preferences for a channel  Updates push preferences for a user's specific group channel. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences-for-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2190,7 +1418,7 @@ namespace sendbird_platform_sdk.Api
         /// Update push preferences for a channel
         /// </summary>
         /// <remarks>
-        /// ## Update push preferences for a channel  Updates push preferences for a user&#39;s specific group channel. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences-for-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update push preferences for a channel  Updates push preferences for a user's specific group channel. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences-for-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2204,7 +1432,7 @@ namespace sendbird_platform_sdk.Api
         /// Update a user
         /// </summary>
         /// <remarks>
-        /// ## Update a user  Updates information on a user. In addition to changing a user&#39;s nickname or profile image, you can issue a new access token for the user. The new access token replaces the previous one as the necessary token for authentication.  You can also deactivate or reactivate a user. If the &#x60;leave_all_when_deactivated&#x60; is true (which it is by default), a user leaves all joined group channels when deactivated.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update a user  Updates information on a user. In addition to changing a user's nickname or profile image, you can issue a new access token for the user. The new access token replaces the previous one as the necessary token for authentication.  You can also deactivate or reactivate a user. If the `leave_all_when_deactivated` is true (which it is by default), a user leaves all joined group channels when deactivated.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2218,7 +1446,7 @@ namespace sendbird_platform_sdk.Api
         /// Update a user
         /// </summary>
         /// <remarks>
-        /// ## Update a user  Updates information on a user. In addition to changing a user&#39;s nickname or profile image, you can issue a new access token for the user. The new access token replaces the previous one as the necessary token for authentication.  You can also deactivate or reactivate a user. If the &#x60;leave_all_when_deactivated&#x60; is true (which it is by default), a user leaves all joined group channels when deactivated.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update a user  Updates information on a user. In addition to changing a user's nickname or profile image, you can issue a new access token for the user. The new access token replaces the previous one as the necessary token for authentication.  You can also deactivate or reactivate a user. If the `leave_all_when_deactivated` is true (which it is by default), a user leaves all joined group channels when deactivated.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2228,66 +1456,10 @@ namespace sendbird_platform_sdk.Api
         /// <returns>Task of ApiResponse (SendBirdUser)</returns>
         System.Threading.Tasks.Task<ApiResponse<SendBirdUser>> UpdateUserByIdWithHttpInfoAsync (string apiToken, string userId, UpdateUserByIdData updateUserByIdData = default(UpdateUserByIdData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Update a user metadata  Updates existing items of a user metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user to update the metadata in.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="updateUserMetadataData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of UpdateUserMetadataResponse</returns>
-        System.Threading.Tasks.Task<UpdateUserMetadataResponse> UpdateUserMetadataAsync (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata
-        /// </summary>
-        /// <remarks>
-        /// ## Update a user metadata  Updates existing items of a user metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user to update the metadata in.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="updateUserMetadataData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (UpdateUserMetadataResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UpdateUserMetadataResponse>> UpdateUserMetadataWithHttpInfoAsync (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Update a user metadata - When updating a specific item of a user metadata by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Update a user metadata  Updates existing items of a user metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user to update the metadata in.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of Dictionary&lt;string, string&gt;</returns>
-        System.Threading.Tasks.Task<Dictionary<string, string>> UpdateUserMetadataByKeyAsync (string apiToken, string userId, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Update a user metadata - When updating a specific item of a user metadata by its key
-        /// </summary>
-        /// <remarks>
-        /// ## Update a user metadata  Updates existing items of a user metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user to update the metadata in.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateUserMetadataByKeyWithHttpInfoAsync (string apiToken, string userId, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
         /// View channel invitation preference
         /// </summary>
         /// <remarks>
-        /// ## View channel invitation preference  Retrieves channel invitation preference for a user&#39;s [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  &gt; __Note__: Using the [view default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference) action, you can retrieve the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference
+        /// ## View channel invitation preference  Retrieves channel invitation preference for a user's [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  > __Note__: Using the [view default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference) action, you can retrieve the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2300,7 +1472,7 @@ namespace sendbird_platform_sdk.Api
         /// View channel invitation preference
         /// </summary>
         /// <remarks>
-        /// ## View channel invitation preference  Retrieves channel invitation preference for a user&#39;s [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  &gt; __Note__: Using the [view default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference) action, you can retrieve the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference
+        /// ## View channel invitation preference  Retrieves channel invitation preference for a user's [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  > __Note__: Using the [view default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference) action, you can retrieve the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2339,7 +1511,7 @@ namespace sendbird_platform_sdk.Api
         /// View number of channels by join status
         /// </summary>
         /// <remarks>
-        /// ## View number of channels by join status  Retrieves the number of a user&#39;s group channels by their join status.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-by-join-status - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
+        /// ## View number of channels by join status  Retrieves the number of a user's group channels by their join status.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-by-join-status - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2353,7 +1525,7 @@ namespace sendbird_platform_sdk.Api
         /// View number of channels by join status
         /// </summary>
         /// <remarks>
-        /// ## View number of channels by join status  Retrieves the number of a user&#39;s group channels by their join status.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-by-join-status - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
+        /// ## View number of channels by join status  Retrieves the number of a user's group channels by their join status.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-by-join-status - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2366,7 +1538,7 @@ namespace sendbird_platform_sdk.Api
         /// View number of channels with unread messages
         /// </summary>
         /// <remarks>
-        /// ## View number of channels with unread messages  Retrieves the total number of a user&#39;s group channels with unread messages.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-with-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## View number of channels with unread messages  Retrieves the total number of a user's group channels with unread messages.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-with-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2381,7 +1553,7 @@ namespace sendbird_platform_sdk.Api
         /// View number of channels with unread messages
         /// </summary>
         /// <remarks>
-        /// ## View number of channels with unread messages  Retrieves the total number of a user&#39;s group channels with unread messages.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-with-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## View number of channels with unread messages  Retrieves the total number of a user's group channels with unread messages.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-with-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2395,7 +1567,7 @@ namespace sendbird_platform_sdk.Api
         /// View number of unread items
         /// </summary>
         /// <remarks>
-        /// ## View number of unread items  Retrieves a set of total numbers of a user&#39;s unread messages, unread mentioned messages, or received invitations in either super or non-super group channels. This action is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-items - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## View number of unread items  Retrieves a set of total numbers of a user's unread messages, unread mentioned messages, or received invitations in either super or non-super group channels. This action is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-items - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2410,7 +1582,7 @@ namespace sendbird_platform_sdk.Api
         /// View number of unread items
         /// </summary>
         /// <remarks>
-        /// ## View number of unread items  Retrieves a set of total numbers of a user&#39;s unread messages, unread mentioned messages, or received invitations in either super or non-super group channels. This action is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-items - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## View number of unread items  Retrieves a set of total numbers of a user's unread messages, unread mentioned messages, or received invitations in either super or non-super group channels. This action is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-items - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2424,7 +1596,7 @@ namespace sendbird_platform_sdk.Api
         /// View number of unread messages
         /// </summary>
         /// <remarks>
-        /// ## View number of unread messages  Retrieves the total number of a user&#39;s currently unread messages in the group channels. The unread counts feature is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
+        /// ## View number of unread messages  Retrieves the total number of a user's currently unread messages in the group channels. The unread counts feature is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2439,7 +1611,7 @@ namespace sendbird_platform_sdk.Api
         /// View number of unread messages
         /// </summary>
         /// <remarks>
-        /// ## View number of unread messages  Retrieves the total number of a user&#39;s currently unread messages in the group channels. The unread counts feature is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
+        /// ## View number of unread messages  Retrieves the total number of a user's currently unread messages in the group channels. The unread counts feature is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2453,7 +1625,7 @@ namespace sendbird_platform_sdk.Api
         /// View push preferences
         /// </summary>
         /// <remarks>
-        /// ## View push preferences  Retrieves a user&#39;s push preferences about whether the user has set &#x60;do_not_disturb&#x60; to pause notifications for a certain period of time, and the time frame in which the user has applied the setting.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## View push preferences  Retrieves a user's push preferences about whether the user has set `do_not_disturb` to pause notifications for a certain period of time, and the time frame in which the user has applied the setting.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2466,7 +1638,7 @@ namespace sendbird_platform_sdk.Api
         /// View push preferences
         /// </summary>
         /// <remarks>
-        /// ## View push preferences  Retrieves a user&#39;s push preferences about whether the user has set &#x60;do_not_disturb&#x60; to pause notifications for a certain period of time, and the time frame in which the user has applied the setting.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## View push preferences  Retrieves a user's push preferences about whether the user has set `do_not_disturb` to pause notifications for a certain period of time, and the time frame in which the user has applied the setting.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2505,7 +1677,7 @@ namespace sendbird_platform_sdk.Api
         /// View a user
         /// </summary>
         /// <remarks>
-        /// ## View a user  Retrieves information on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve.
+        /// ## View a user  Retrieves information on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2521,7 +1693,7 @@ namespace sendbird_platform_sdk.Api
         /// View a user
         /// </summary>
         /// <remarks>
-        /// ## View a user  Retrieves information on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve.
+        /// ## View a user  Retrieves information on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2536,29 +1708,29 @@ namespace sendbird_platform_sdk.Api
         /// View who owns a registration or device token
         /// </summary>
         /// <remarks>
-        /// ## View who owns a registration or device token  Retrieves a user who owns a FCM registration token, HMS device token, or APNs device token. You can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-who-owns-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## View who owns a registration or device token  Retrieves a user who owns a FCM registration token, HMS device token, or APNs device token. You can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-who-owns-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of List&lt;Object&gt;</returns>
-        System.Threading.Tasks.Task<List<Object>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner></returns>
+        System.Threading.Tasks.Task<List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View who owns a registration or device token
         /// </summary>
         /// <remarks>
-        /// ## View who owns a registration or device token  Retrieves a user who owns a FCM registration token, HMS device token, or APNs device token. You can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-who-owns-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## View who owns a registration or device token  Retrieves a user who owns a FCM registration token, HMS device token, or APNs device token. You can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-who-owns-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (List&lt;Object&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<Object>>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (List&lt;ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -2671,7 +1843,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Add a registration or device token ## Add a registration or device token  &gt; __Note__: A user can have up to 20 FCM registration tokens, 20 HMS device tokens, and 20 APNs device tokens each. The oldest token will be deleted before a new token is added for a user who already has 20 registration or device tokens. Only the 20 newest tokens will be maintained for users who already have more than 20 of each token type.  To send notification requests to push notification services on behalf of your server, adds a specific user&#39;s FCM registration token, HMS device token, or APNs device token to Sendbird server. Depending on which push service you are using, you can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  A FCM registration token and an APNs device token allow identification of each client app instance on each device, and are generated and registered by Android and iOS apps through the corresponding SDKs. Use this method if you need to register a token via your own server.  &gt; __Note__: For more information on the registration token and device token, visit the Google&#39;s [FCM](https://firebase.google.com/docs/auth/admin/verify-id-tokens) page, Huawei&#39;s [Push kit](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/service-introduction-0000001050040060) and Apple&#39;s [APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) page.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-add-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Add a registration or device token ## Add a registration or device token  > __Note__: A user can have up to 20 FCM registration tokens, 20 HMS device tokens, and 20 APNs device tokens each. The oldest token will be deleted before a new token is added for a user who already has 20 registration or device tokens. Only the 20 newest tokens will be maintained for users who already have more than 20 of each token type.  To send notification requests to push notification services on behalf of your server, adds a specific user's FCM registration token, HMS device token, or APNs device token to Sendbird server. Depending on which push service you are using, you can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`.  A FCM registration token and an APNs device token allow identification of each client app instance on each device, and are generated and registered by Android and iOS apps through the corresponding SDKs. Use this method if you need to register a token via your own server.  > __Note__: For more information on the registration token and device token, visit the Google's [FCM](https://firebase.google.com/docs/auth/admin/verify-id-tokens) page, Huawei's [Push kit](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/service-introduction-0000001050040060) and Apple's [APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) page.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-add-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2686,7 +1858,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Add a registration or device token ## Add a registration or device token  &gt; __Note__: A user can have up to 20 FCM registration tokens, 20 HMS device tokens, and 20 APNs device tokens each. The oldest token will be deleted before a new token is added for a user who already has 20 registration or device tokens. Only the 20 newest tokens will be maintained for users who already have more than 20 of each token type.  To send notification requests to push notification services on behalf of your server, adds a specific user&#39;s FCM registration token, HMS device token, or APNs device token to Sendbird server. Depending on which push service you are using, you can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  A FCM registration token and an APNs device token allow identification of each client app instance on each device, and are generated and registered by Android and iOS apps through the corresponding SDKs. Use this method if you need to register a token via your own server.  &gt; __Note__: For more information on the registration token and device token, visit the Google&#39;s [FCM](https://firebase.google.com/docs/auth/admin/verify-id-tokens) page, Huawei&#39;s [Push kit](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/service-introduction-0000001050040060) and Apple&#39;s [APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) page.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-add-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Add a registration or device token ## Add a registration or device token  > __Note__: A user can have up to 20 FCM registration tokens, 20 HMS device tokens, and 20 APNs device tokens each. The oldest token will be deleted before a new token is added for a user who already has 20 registration or device tokens. Only the 20 newest tokens will be maintained for users who already have more than 20 of each token type.  To send notification requests to push notification services on behalf of your server, adds a specific user's FCM registration token, HMS device token, or APNs device token to Sendbird server. Depending on which push service you are using, you can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`.  A FCM registration token and an APNs device token allow identification of each client app instance on each device, and are generated and registered by Android and iOS apps through the corresponding SDKs. Use this method if you need to register a token via your own server.  > __Note__: For more information on the registration token and device token, visit the Google's [FCM](https://firebase.google.com/docs/auth/admin/verify-id-tokens) page, Huawei's [Push kit](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/service-introduction-0000001050040060) and Apple's [APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) page.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-add-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2760,7 +1932,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Add a registration or device token ## Add a registration or device token  &gt; __Note__: A user can have up to 20 FCM registration tokens, 20 HMS device tokens, and 20 APNs device tokens each. The oldest token will be deleted before a new token is added for a user who already has 20 registration or device tokens. Only the 20 newest tokens will be maintained for users who already have more than 20 of each token type.  To send notification requests to push notification services on behalf of your server, adds a specific user&#39;s FCM registration token, HMS device token, or APNs device token to Sendbird server. Depending on which push service you are using, you can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  A FCM registration token and an APNs device token allow identification of each client app instance on each device, and are generated and registered by Android and iOS apps through the corresponding SDKs. Use this method if you need to register a token via your own server.  &gt; __Note__: For more information on the registration token and device token, visit the Google&#39;s [FCM](https://firebase.google.com/docs/auth/admin/verify-id-tokens) page, Huawei&#39;s [Push kit](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/service-introduction-0000001050040060) and Apple&#39;s [APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) page.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-add-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Add a registration or device token ## Add a registration or device token  > __Note__: A user can have up to 20 FCM registration tokens, 20 HMS device tokens, and 20 APNs device tokens each. The oldest token will be deleted before a new token is added for a user who already has 20 registration or device tokens. Only the 20 newest tokens will be maintained for users who already have more than 20 of each token type.  To send notification requests to push notification services on behalf of your server, adds a specific user's FCM registration token, HMS device token, or APNs device token to Sendbird server. Depending on which push service you are using, you can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`.  A FCM registration token and an APNs device token allow identification of each client app instance on each device, and are generated and registered by Android and iOS apps through the corresponding SDKs. Use this method if you need to register a token via your own server.  > __Note__: For more information on the registration token and device token, visit the Google's [FCM](https://firebase.google.com/docs/auth/admin/verify-id-tokens) page, Huawei's [Push kit](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/service-introduction-0000001050040060) and Apple's [APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) page.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-add-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2777,7 +1949,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Add a registration or device token ## Add a registration or device token  &gt; __Note__: A user can have up to 20 FCM registration tokens, 20 HMS device tokens, and 20 APNs device tokens each. The oldest token will be deleted before a new token is added for a user who already has 20 registration or device tokens. Only the 20 newest tokens will be maintained for users who already have more than 20 of each token type.  To send notification requests to push notification services on behalf of your server, adds a specific user&#39;s FCM registration token, HMS device token, or APNs device token to Sendbird server. Depending on which push service you are using, you can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;.  A FCM registration token and an APNs device token allow identification of each client app instance on each device, and are generated and registered by Android and iOS apps through the corresponding SDKs. Use this method if you need to register a token via your own server.  &gt; __Note__: For more information on the registration token and device token, visit the Google&#39;s [FCM](https://firebase.google.com/docs/auth/admin/verify-id-tokens) page, Huawei&#39;s [Push kit](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/service-introduction-0000001050040060) and Apple&#39;s [APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) page.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-add-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Add a registration or device token ## Add a registration or device token  > __Note__: A user can have up to 20 FCM registration tokens, 20 HMS device tokens, and 20 APNs device tokens each. The oldest token will be deleted before a new token is added for a user who already has 20 registration or device tokens. Only the 20 newest tokens will be maintained for users who already have more than 20 of each token type.  To send notification requests to push notification services on behalf of your server, adds a specific user's FCM registration token, HMS device token, or APNs device token to Sendbird server. Depending on which push service you are using, you can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`.  A FCM registration token and an APNs device token allow identification of each client app instance on each device, and are generated and registered by Android and iOS apps through the corresponding SDKs. Use this method if you need to register a token via your own server.  > __Note__: For more information on the registration token and device token, visit the Google's [FCM](https://firebase.google.com/docs/auth/admin/verify-id-tokens) page, Huawei's [Push kit](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/service-introduction-0000001050040060) and Apple's [APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) page.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-add-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2852,7 +2024,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Choose a push notification content template ## Choose a push notification content template  Chooses a push notification content template of a user&#39;s own. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-choose-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Choose a push notification content template ## Choose a push notification content template  Chooses a push notification content template of a user's own. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-choose-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2866,7 +2038,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Choose a push notification content template ## Choose a push notification content template  Chooses a push notification content template of a user&#39;s own. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-choose-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Choose a push notification content template ## Choose a push notification content template  Chooses a push notification content template of a user's own. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-choose-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2935,7 +2107,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Choose a push notification content template ## Choose a push notification content template  Chooses a push notification content template of a user&#39;s own. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-choose-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Choose a push notification content template ## Choose a push notification content template  Chooses a push notification content template of a user's own. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-choose-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2951,7 +2123,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Choose a push notification content template ## Choose a push notification content template  Chooses a push notification content template of a user&#39;s own. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-choose-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Choose a push notification content template ## Choose a push notification content template  Chooses a push notification content template of a user's own. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-choose-a-push-notification-content-template - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3018,368 +2190,6 @@ namespace sendbird_platform_sdk.Api
             return new ApiResponse<ChoosePushNotificationContentTemplateResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
                 (ChoosePushNotificationContentTemplateResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ChoosePushNotificationContentTemplateResponse)));
-        }
-
-        /// <summary>
-        /// Create a channel metacounter ## Create a channel metacounter  Creates a channel metacounter&#39;s items to store in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="createChannelMetacounterData"> (optional)</param>
-        /// <returns>Dictionary&lt;string, SendBirdAdditionalProperties&gt;</returns>
-        public Dictionary<string, SendBirdAdditionalProperties> CreateChannelMetacounter (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default(CreateChannelMetacounterData))
-        {
-             ApiResponse<Dictionary<string, SendBirdAdditionalProperties>> localVarResponse = CreateChannelMetacounterWithHttpInfo(apiToken, channelType, channelUrl, createChannelMetacounterData);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Create a channel metacounter ## Create a channel metacounter  Creates a channel metacounter&#39;s items to store in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="createChannelMetacounterData"> (optional)</param>
-        /// <returns>ApiResponse of Dictionary&lt;string, SendBirdAdditionalProperties&gt;</returns>
-        public ApiResponse<Dictionary<string, SendBirdAdditionalProperties>> CreateChannelMetacounterWithHttpInfo (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default(CreateChannelMetacounterData))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->CreateChannelMetacounter");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->CreateChannelMetacounter");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->CreateChannelMetacounter");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metacounter";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (createChannelMetacounterData != null && createChannelMetacounterData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(createChannelMetacounterData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = createChannelMetacounterData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("CreateChannelMetacounter", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Dictionary<string, SendBirdAdditionalProperties>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (Dictionary<string, SendBirdAdditionalProperties>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Dictionary<string, SendBirdAdditionalProperties>)));
-        }
-
-        /// <summary>
-        /// Create a channel metacounter ## Create a channel metacounter  Creates a channel metacounter&#39;s items to store in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="createChannelMetacounterData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of Dictionary&lt;string, SendBirdAdditionalProperties&gt;</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, SendBirdAdditionalProperties>> CreateChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default(CreateChannelMetacounterData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<Dictionary<string, SendBirdAdditionalProperties>> localVarResponse = await CreateChannelMetacounterWithHttpInfoAsync(apiToken, channelType, channelUrl, createChannelMetacounterData, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Create a channel metacounter ## Create a channel metacounter  Creates a channel metacounter&#39;s items to store in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="createChannelMetacounterData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (Dictionary&lt;string, SendBirdAdditionalProperties&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, SendBirdAdditionalProperties>>> CreateChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default(CreateChannelMetacounterData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->CreateChannelMetacounter");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->CreateChannelMetacounter");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->CreateChannelMetacounter");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metacounter";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (createChannelMetacounterData != null && createChannelMetacounterData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(createChannelMetacounterData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = createChannelMetacounterData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("CreateChannelMetacounter", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Dictionary<string, SendBirdAdditionalProperties>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (Dictionary<string, SendBirdAdditionalProperties>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Dictionary<string, SendBirdAdditionalProperties>)));
-        }
-
-        /// <summary>
-        /// Create a channel metadata ## Create a channel metadata  Creates a channel metadata&#39;s items to store in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="createChannelMetadataData"> (optional)</param>
-        /// <returns>CreateChannelMetadataResponse</returns>
-        public CreateChannelMetadataResponse CreateChannelMetadata (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData))
-        {
-             ApiResponse<CreateChannelMetadataResponse> localVarResponse = CreateChannelMetadataWithHttpInfo(apiToken, channelType, channelUrl, createChannelMetadataData);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Create a channel metadata ## Create a channel metadata  Creates a channel metadata&#39;s items to store in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="createChannelMetadataData"> (optional)</param>
-        /// <returns>ApiResponse of CreateChannelMetadataResponse</returns>
-        public ApiResponse<CreateChannelMetadataResponse> CreateChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->CreateChannelMetadata");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->CreateChannelMetadata");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->CreateChannelMetadata");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metadata";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (createChannelMetadataData != null && createChannelMetadataData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(createChannelMetadataData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = createChannelMetadataData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("CreateChannelMetadata", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<CreateChannelMetadataResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (CreateChannelMetadataResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CreateChannelMetadataResponse)));
-        }
-
-        /// <summary>
-        /// Create a channel metadata ## Create a channel metadata  Creates a channel metadata&#39;s items to store in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="createChannelMetadataData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of CreateChannelMetadataResponse</returns>
-        public async System.Threading.Tasks.Task<CreateChannelMetadataResponse> CreateChannelMetadataAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<CreateChannelMetadataResponse> localVarResponse = await CreateChannelMetadataWithHttpInfoAsync(apiToken, channelType, channelUrl, createChannelMetadataData, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Create a channel metadata ## Create a channel metadata  Creates a channel metadata&#39;s items to store in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="createChannelMetadataData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (CreateChannelMetadataResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CreateChannelMetadataResponse>> CreateChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->CreateChannelMetadata");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->CreateChannelMetadata");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->CreateChannelMetadata");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metadata";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (createChannelMetadataData != null && createChannelMetadataData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(createChannelMetadataData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = createChannelMetadataData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("CreateChannelMetadata", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<CreateChannelMetadataResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (CreateChannelMetadataResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CreateChannelMetadataResponse)));
         }
 
         /// <summary>
@@ -3540,825 +2350,6 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Create a user metadata ## Create a user metadata  Creates a user metadata&#39;s items to store in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="createUserMetadataData"> (optional)</param>
-        /// <returns>CreateUserMetadataResponse</returns>
-        public CreateUserMetadataResponse CreateUserMetadata (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData))
-        {
-             ApiResponse<CreateUserMetadataResponse> localVarResponse = CreateUserMetadataWithHttpInfo(apiToken, userId, createUserMetadataData);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Create a user metadata ## Create a user metadata  Creates a user metadata&#39;s items to store in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="createUserMetadataData"> (optional)</param>
-        /// <returns>ApiResponse of CreateUserMetadataResponse</returns>
-        public ApiResponse<CreateUserMetadataResponse> CreateUserMetadataWithHttpInfo (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->CreateUserMetadata");
-            // verify the required parameter 'userId' is set
-            if (userId == null)
-                throw new ApiException(400, "Missing required parameter 'userId' when calling UserApi->CreateUserMetadata");
-
-            var localVarPath = "/v3/users/{user_id}/metadata";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (userId != null) localVarPathParams.Add("user_id", this.Configuration.ApiClient.ParameterToString(userId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (createUserMetadataData != null && createUserMetadataData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(createUserMetadataData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = createUserMetadataData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("CreateUserMetadata", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<CreateUserMetadataResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (CreateUserMetadataResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CreateUserMetadataResponse)));
-        }
-
-        /// <summary>
-        /// Create a user metadata ## Create a user metadata  Creates a user metadata&#39;s items to store in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="createUserMetadataData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of CreateUserMetadataResponse</returns>
-        public async System.Threading.Tasks.Task<CreateUserMetadataResponse> CreateUserMetadataAsync (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<CreateUserMetadataResponse> localVarResponse = await CreateUserMetadataWithHttpInfoAsync(apiToken, userId, createUserMetadataData, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Create a user metadata ## Create a user metadata  Creates a user metadata&#39;s items to store in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-create-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="createUserMetadataData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (CreateUserMetadataResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CreateUserMetadataResponse>> CreateUserMetadataWithHttpInfoAsync (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->CreateUserMetadata");
-            // verify the required parameter 'userId' is set
-            if (userId == null)
-                throw new ApiException(400, "Missing required parameter 'userId' when calling UserApi->CreateUserMetadata");
-
-            var localVarPath = "/v3/users/{user_id}/metadata";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (userId != null) localVarPathParams.Add("user_id", this.Configuration.ApiClient.ParameterToString(userId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (createUserMetadataData != null && createUserMetadataData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(createUserMetadataData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = createUserMetadataData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("CreateUserMetadata", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<CreateUserMetadataResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (CreateUserMetadataResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CreateUserMetadataResponse)));
-        }
-
-        /// <summary>
-        /// Delete a channel metacounter - When deleting all items of a channel metacounter ## Delete a channel metacounter  Deletes a channel metacounter&#39;s item that is stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metacounter to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <returns></returns>
-        public void DeleteChannelMetacounter (string apiToken, string channelType, string channelUrl)
-        {
-             DeleteChannelMetacounterWithHttpInfo(apiToken, channelType, channelUrl);
-        }
-
-        /// <summary>
-        /// Delete a channel metacounter - When deleting all items of a channel metacounter ## Delete a channel metacounter  Deletes a channel metacounter&#39;s item that is stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metacounter to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteChannelMetacounterWithHttpInfo (string apiToken, string channelType, string channelUrl)
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->DeleteChannelMetacounter");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->DeleteChannelMetacounter");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->DeleteChannelMetacounter");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metacounter";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteChannelMetacounter", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
-        }
-
-        /// <summary>
-        /// Delete a channel metacounter - When deleting all items of a channel metacounter ## Delete a channel metacounter  Deletes a channel metacounter&#39;s item that is stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metacounter to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
-        {
-             await DeleteChannelMetacounterWithHttpInfoAsync(apiToken, channelType, channelUrl, cancellationToken);
-
-        }
-
-        /// <summary>
-        /// Delete a channel metacounter - When deleting all items of a channel metacounter ## Delete a channel metacounter  Deletes a channel metacounter&#39;s item that is stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metacounter to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->DeleteChannelMetacounter");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->DeleteChannelMetacounter");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->DeleteChannelMetacounter");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metacounter";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteChannelMetacounter", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
-        }
-
-        /// <summary>
-        /// Delete a channel metacounter - When deleting a specific item of a channel metacounter by its key ## Delete a channel metacounter  Deletes a channel metacounter&#39;s item that is stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metacounter to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <returns></returns>
-        public void DeleteChannelMetacounterByKey (string apiToken, string channelType, string channelUrl, string key)
-        {
-             DeleteChannelMetacounterByKeyWithHttpInfo(apiToken, channelType, channelUrl, key);
-        }
-
-        /// <summary>
-        /// Delete a channel metacounter - When deleting a specific item of a channel metacounter by its key ## Delete a channel metacounter  Deletes a channel metacounter&#39;s item that is stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metacounter to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteChannelMetacounterByKeyWithHttpInfo (string apiToken, string channelType, string channelUrl, string key)
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->DeleteChannelMetacounterByKey");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->DeleteChannelMetacounterByKey");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->DeleteChannelMetacounterByKey");
-            // verify the required parameter 'key' is set
-            if (key == null)
-                throw new ApiException(400, "Missing required parameter 'key' when calling UserApi->DeleteChannelMetacounterByKey");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metacounter/{key}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (key != null) localVarPathParams.Add("key", this.Configuration.ApiClient.ParameterToString(key)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteChannelMetacounterByKey", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
-        }
-
-        /// <summary>
-        /// Delete a channel metacounter - When deleting a specific item of a channel metacounter by its key ## Delete a channel metacounter  Deletes a channel metacounter&#39;s item that is stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metacounter to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteChannelMetacounterByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken))
-        {
-             await DeleteChannelMetacounterByKeyWithHttpInfoAsync(apiToken, channelType, channelUrl, key, cancellationToken);
-
-        }
-
-        /// <summary>
-        /// Delete a channel metacounter - When deleting a specific item of a channel metacounter by its key ## Delete a channel metacounter  Deletes a channel metacounter&#39;s item that is stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metacounter to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetacounterByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->DeleteChannelMetacounterByKey");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->DeleteChannelMetacounterByKey");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->DeleteChannelMetacounterByKey");
-            // verify the required parameter 'key' is set
-            if (key == null)
-                throw new ApiException(400, "Missing required parameter 'key' when calling UserApi->DeleteChannelMetacounterByKey");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metacounter/{key}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (key != null) localVarPathParams.Add("key", this.Configuration.ApiClient.ParameterToString(key)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteChannelMetacounterByKey", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
-        }
-
-        /// <summary>
-        /// Delete a channel metadata - When deleting all items of a channel metadata ## Delete a channel metadata  Deletes a channel metadata&#39;s one or all items that are stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metadata to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"> (optional)</param>
-        /// <returns></returns>
-        public void DeleteChannelMetadata (string apiToken, string channelType, string channelUrl, string key = default(string))
-        {
-             DeleteChannelMetadataWithHttpInfo(apiToken, channelType, channelUrl, key);
-        }
-
-        /// <summary>
-        /// Delete a channel metadata - When deleting all items of a channel metadata ## Delete a channel metadata  Deletes a channel metadata&#39;s one or all items that are stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metadata to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, string key = default(string))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->DeleteChannelMetadata");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->DeleteChannelMetadata");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->DeleteChannelMetadata");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metadata";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (key != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "key", key)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteChannelMetadata", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
-        }
-
-        /// <summary>
-        /// Delete a channel metadata - When deleting all items of a channel metadata ## Delete a channel metadata  Deletes a channel metadata&#39;s one or all items that are stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metadata to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteChannelMetadataAsync (string apiToken, string channelType, string channelUrl, string key = default(string), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             await DeleteChannelMetadataWithHttpInfoAsync(apiToken, channelType, channelUrl, key, cancellationToken);
-
-        }
-
-        /// <summary>
-        /// Delete a channel metadata - When deleting all items of a channel metadata ## Delete a channel metadata  Deletes a channel metadata&#39;s one or all items that are stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metadata to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key = default(string), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->DeleteChannelMetadata");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->DeleteChannelMetadata");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->DeleteChannelMetadata");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metadata";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (key != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "key", key)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteChannelMetadata", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
-        }
-
-        /// <summary>
-        /// Delete a channel metadata - When deleting a specific item of a channel metadata by its key ## Delete a channel metadata  Deletes a channel metadata&#39;s one or all items that are stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metadata to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <returns></returns>
-        public void DeleteChannelMetadataByKey (string apiToken, string channelType, string channelUrl, string key)
-        {
-             DeleteChannelMetadataByKeyWithHttpInfo(apiToken, channelType, channelUrl, key);
-        }
-
-        /// <summary>
-        /// Delete a channel metadata - When deleting a specific item of a channel metadata by its key ## Delete a channel metadata  Deletes a channel metadata&#39;s one or all items that are stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metadata to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteChannelMetadataByKeyWithHttpInfo (string apiToken, string channelType, string channelUrl, string key)
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->DeleteChannelMetadataByKey");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->DeleteChannelMetadataByKey");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->DeleteChannelMetadataByKey");
-            // verify the required parameter 'key' is set
-            if (key == null)
-                throw new ApiException(400, "Missing required parameter 'key' when calling UserApi->DeleteChannelMetadataByKey");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metadata/{key}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (key != null) localVarPathParams.Add("key", this.Configuration.ApiClient.ParameterToString(key)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteChannelMetadataByKey", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
-        }
-
-        /// <summary>
-        /// Delete a channel metadata - When deleting a specific item of a channel metadata by its key ## Delete a channel metadata  Deletes a channel metadata&#39;s one or all items that are stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metadata to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteChannelMetadataByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken))
-        {
-             await DeleteChannelMetadataByKeyWithHttpInfoAsync(apiToken, channelType, channelUrl, key, cancellationToken);
-
-        }
-
-        /// <summary>
-        /// Delete a channel metadata - When deleting a specific item of a channel metadata by its key ## Delete a channel metadata  Deletes a channel metadata&#39;s one or all items that are stored in a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which has the metadata to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetadataByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->DeleteChannelMetadataByKey");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->DeleteChannelMetadataByKey");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->DeleteChannelMetadataByKey");
-            // verify the required parameter 'key' is set
-            if (key == null)
-                throw new ApiException(400, "Missing required parameter 'key' when calling UserApi->DeleteChannelMetadataByKey");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metadata/{key}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (key != null) localVarPathParams.Add("key", this.Configuration.ApiClient.ParameterToString(key)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteChannelMetadataByKey", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
-        }
-
-        /// <summary>
         /// Delete a user ## Delete a user  Deletes a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-delete-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
@@ -4506,311 +2497,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Delete a user metadata - When deleting all items of a user metadata ## Delete a user metadata  Deletes a user metadata&#39;s one or all items that are stored in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user who has the metadata to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"> (optional)</param>
-        /// <returns></returns>
-        public void DeleteUserMetadata (string apiToken, string userId, string key = default(string))
-        {
-             DeleteUserMetadataWithHttpInfo(apiToken, userId, key);
-        }
-
-        /// <summary>
-        /// Delete a user metadata - When deleting all items of a user metadata ## Delete a user metadata  Deletes a user metadata&#39;s one or all items that are stored in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user who has the metadata to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteUserMetadataWithHttpInfo (string apiToken, string userId, string key = default(string))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->DeleteUserMetadata");
-            // verify the required parameter 'userId' is set
-            if (userId == null)
-                throw new ApiException(400, "Missing required parameter 'userId' when calling UserApi->DeleteUserMetadata");
-
-            var localVarPath = "/v3/users/{user_id}/metadata";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (userId != null) localVarPathParams.Add("user_id", this.Configuration.ApiClient.ParameterToString(userId)); // path parameter
-            if (key != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "key", key)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteUserMetadata", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
-        }
-
-        /// <summary>
-        /// Delete a user metadata - When deleting all items of a user metadata ## Delete a user metadata  Deletes a user metadata&#39;s one or all items that are stored in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user who has the metadata to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteUserMetadataAsync (string apiToken, string userId, string key = default(string), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             await DeleteUserMetadataWithHttpInfoAsync(apiToken, userId, key, cancellationToken);
-
-        }
-
-        /// <summary>
-        /// Delete a user metadata - When deleting all items of a user metadata ## Delete a user metadata  Deletes a user metadata&#39;s one or all items that are stored in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user who has the metadata to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteUserMetadataWithHttpInfoAsync (string apiToken, string userId, string key = default(string), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->DeleteUserMetadata");
-            // verify the required parameter 'userId' is set
-            if (userId == null)
-                throw new ApiException(400, "Missing required parameter 'userId' when calling UserApi->DeleteUserMetadata");
-
-            var localVarPath = "/v3/users/{user_id}/metadata";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (userId != null) localVarPathParams.Add("user_id", this.Configuration.ApiClient.ParameterToString(userId)); // path parameter
-            if (key != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "key", key)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteUserMetadata", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
-        }
-
-        /// <summary>
-        /// Delete a user metadata - When deleting a specific item of a user metadata by its key ## Delete a user metadata  Deletes a user metadata&#39;s one or all items that are stored in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user who has the metadata to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"></param>
-        /// <returns></returns>
-        public void DeleteUserMetadataByKey (string apiToken, string userId, string key)
-        {
-             DeleteUserMetadataByKeyWithHttpInfo(apiToken, userId, key);
-        }
-
-        /// <summary>
-        /// Delete a user metadata - When deleting a specific item of a user metadata by its key ## Delete a user metadata  Deletes a user metadata&#39;s one or all items that are stored in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user who has the metadata to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"></param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteUserMetadataByKeyWithHttpInfo (string apiToken, string userId, string key)
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->DeleteUserMetadataByKey");
-            // verify the required parameter 'userId' is set
-            if (userId == null)
-                throw new ApiException(400, "Missing required parameter 'userId' when calling UserApi->DeleteUserMetadataByKey");
-            // verify the required parameter 'key' is set
-            if (key == null)
-                throw new ApiException(400, "Missing required parameter 'key' when calling UserApi->DeleteUserMetadataByKey");
-
-            var localVarPath = "/v3/users/{user_id}/metadata/{key}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (userId != null) localVarPathParams.Add("user_id", this.Configuration.ApiClient.ParameterToString(userId)); // path parameter
-            if (key != null) localVarPathParams.Add("key", this.Configuration.ApiClient.ParameterToString(key)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteUserMetadataByKey", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
-        }
-
-        /// <summary>
-        /// Delete a user metadata - When deleting a specific item of a user metadata by its key ## Delete a user metadata  Deletes a user metadata&#39;s one or all items that are stored in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user who has the metadata to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteUserMetadataByKeyAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default(CancellationToken))
-        {
-             await DeleteUserMetadataByKeyWithHttpInfoAsync(apiToken, userId, key, cancellationToken);
-
-        }
-
-        /// <summary>
-        /// Delete a user metadata - When deleting a specific item of a user metadata by its key ## Delete a user metadata  Deletes a user metadata&#39;s one or all items that are stored in a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-delete-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user who has the metadata to delete.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteUserMetadataByKeyWithHttpInfoAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->DeleteUserMetadataByKey");
-            // verify the required parameter 'userId' is set
-            if (userId == null)
-                throw new ApiException(400, "Missing required parameter 'userId' when calling UserApi->DeleteUserMetadataByKey");
-            // verify the required parameter 'key' is set
-            if (key == null)
-                throw new ApiException(400, "Missing required parameter 'key' when calling UserApi->DeleteUserMetadataByKey");
-
-            var localVarPath = "/v3/users/{user_id}/metadata/{key}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (userId != null) localVarPathParams.Add("user_id", this.Configuration.ApiClient.ParameterToString(userId)); // path parameter
-            if (key != null) localVarPathParams.Add("key", this.Configuration.ApiClient.ParameterToString(key)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("DeleteUserMetadataByKey", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
-        }
-
-        /// <summary>
-        /// Leave my group channels ## Leave my group channels  Makes a user leave all joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-leave-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to leave all joined group channels.
+        /// Leave my group channels ## Leave my group channels  Makes a user leave all joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-leave-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to leave all joined group channels.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4824,7 +2511,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Leave my group channels ## Leave my group channels  Makes a user leave all joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-leave-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to leave all joined group channels.
+        /// Leave my group channels ## Leave my group channels  Makes a user leave all joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-leave-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to leave all joined group channels.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4893,7 +2580,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Leave my group channels ## Leave my group channels  Makes a user leave all joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-leave-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to leave all joined group channels.
+        /// Leave my group channels ## Leave my group channels  Makes a user leave all joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-leave-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to leave all joined group channels.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4909,7 +2596,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Leave my group channels ## Leave my group channels  Makes a user leave all joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-leave-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to leave all joined group channels.
+        /// Leave my group channels ## Leave my group channels  Makes a user leave all joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-leave-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to leave all joined group channels.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4979,7 +2666,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List my group channels ## List my group channels  Retrieves all group channels that the user has joined. You can create a request based on various query parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// List my group channels ## List my group channels  Retrieves all group channels that the user has joined. You can create a request based on various query parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -5032,7 +2719,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List my group channels ## List my group channels  Retrieves all group channels that the user has joined. You can create a request based on various query parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// List my group channels ## List my group channels  Retrieves all group channels that the user has joined. You can create a request based on various query parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -5171,7 +2858,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List my group channels ## List my group channels  Retrieves all group channels that the user has joined. You can create a request based on various query parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// List my group channels ## List my group channels  Retrieves all group channels that the user has joined. You can create a request based on various query parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -5226,7 +2913,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List my group channels ## List my group channels  Retrieves all group channels that the user has joined. You can create a request based on various query parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// List my group channels ## List my group channels  Retrieves all group channels that the user has joined. You can create a request based on various query parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -5366,7 +3053,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List registration or device tokens ## List registration or device tokens  Retrieves a list of a specific user&#39;s FCM registration tokens, HMS device tokens, or APNs device tokens. You can specify either &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60; in the &#x60;token_type&#x60; parameter, depending on which push notification service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-registration-or-device-tokens - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// List registration or device tokens ## List registration or device tokens  Retrieves a list of a specific user's FCM registration tokens, HMS device tokens, or APNs device tokens. You can specify either `gcm`, `huawei`, or `apns` in the `token_type` parameter, depending on which push notification service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-registration-or-device-tokens - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -5380,7 +3067,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List registration or device tokens ## List registration or device tokens  Retrieves a list of a specific user&#39;s FCM registration tokens, HMS device tokens, or APNs device tokens. You can specify either &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60; in the &#x60;token_type&#x60; parameter, depending on which push notification service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-registration-or-device-tokens - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// List registration or device tokens ## List registration or device tokens  Retrieves a list of a specific user's FCM registration tokens, HMS device tokens, or APNs device tokens. You can specify either `gcm`, `huawei`, or `apns` in the `token_type` parameter, depending on which push notification service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-registration-or-device-tokens - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -5444,7 +3131,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List registration or device tokens ## List registration or device tokens  Retrieves a list of a specific user&#39;s FCM registration tokens, HMS device tokens, or APNs device tokens. You can specify either &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60; in the &#x60;token_type&#x60; parameter, depending on which push notification service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-registration-or-device-tokens - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// List registration or device tokens ## List registration or device tokens  Retrieves a list of a specific user's FCM registration tokens, HMS device tokens, or APNs device tokens. You can specify either `gcm`, `huawei`, or `apns` in the `token_type` parameter, depending on which push notification service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-registration-or-device-tokens - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -5460,7 +3147,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List registration or device tokens ## List registration or device tokens  Retrieves a list of a specific user&#39;s FCM registration tokens, HMS device tokens, or APNs device tokens. You can specify either &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60; in the &#x60;token_type&#x60; parameter, depending on which push notification service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-registration-or-device-tokens - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// List registration or device tokens ## List registration or device tokens  Retrieves a list of a specific user's FCM registration tokens, HMS device tokens, or APNs device tokens. You can specify either `gcm`, `huawei`, or `apns` in the `token_type` parameter, depending on which push notification service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-registration-or-device-tokens - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -5714,7 +3401,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Mark all messages as read ## Mark all messages as read  Marks all of a user&#39;s unread messages as read in the joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-mark-all-messages-as-read - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Mark all messages as read ## Mark all messages as read  Marks all of a user's unread messages as read in the joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-mark-all-messages-as-read - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -5728,7 +3415,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Mark all messages as read ## Mark all messages as read  Marks all of a user&#39;s unread messages as read in the joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-mark-all-messages-as-read - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Mark all messages as read ## Mark all messages as read  Marks all of a user's unread messages as read in the joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-mark-all-messages-as-read - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -5797,7 +3484,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Mark all messages as read ## Mark all messages as read  Marks all of a user&#39;s unread messages as read in the joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-mark-all-messages-as-read - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Mark all messages as read ## Mark all messages as read  Marks all of a user's unread messages as read in the joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-mark-all-messages-as-read - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -5813,7 +3500,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Mark all messages as read ## Mark all messages as read  Marks all of a user&#39;s unread messages as read in the joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-mark-all-messages-as-read - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Mark all messages as read ## Mark all messages as read  Marks all of a user's unread messages as read in the joined group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-mark-all-messages-as-read - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6052,7 +3739,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Remove a registration or device token - When unregistering all device tokens ## Remove a registration or device token  Removes a specific user&#39;s one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Remove a registration or device token - When unregistering all device tokens ## Remove a registration or device token  Removes a specific user's one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6065,7 +3752,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Remove a registration or device token - When unregistering all device tokens ## Remove a registration or device token  Removes a specific user&#39;s one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Remove a registration or device token - When unregistering all device tokens ## Remove a registration or device token  Removes a specific user's one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6124,7 +3811,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Remove a registration or device token - When unregistering all device tokens ## Remove a registration or device token  Removes a specific user&#39;s one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Remove a registration or device token - When unregistering all device tokens ## Remove a registration or device token  Removes a specific user's one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6139,7 +3826,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Remove a registration or device token - When unregistering all device tokens ## Remove a registration or device token  Removes a specific user&#39;s one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Remove a registration or device token - When unregistering all device tokens ## Remove a registration or device token  Removes a specific user's one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6199,7 +3886,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Remove a registration or device token - When unregistering a specific token ## Remove a registration or device token  Removes a specific user&#39;s one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Remove a registration or device token - When unregistering a specific token ## Remove a registration or device token  Removes a specific user's one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6214,7 +3901,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Remove a registration or device token - When unregistering a specific token ## Remove a registration or device token  Removes a specific user&#39;s one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Remove a registration or device token - When unregistering a specific token ## Remove a registration or device token  Removes a specific user's one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6283,7 +3970,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Remove a registration or device token - When unregistering a specific token ## Remove a registration or device token  Removes a specific user&#39;s one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Remove a registration or device token - When unregistering a specific token ## Remove a registration or device token  Removes a specific user's one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6300,7 +3987,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Remove a registration or device token - When unregistering a specific token ## Remove a registration or device token  Removes a specific user&#39;s one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Remove a registration or device token - When unregistering a specific token ## Remove a registration or device token  Removes a specific user's one or more FCM registration tokens, HMS device tokens, or APNs device tokens.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6370,7 +4057,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Remove a registration or device token from an owner ## Remove a registration or device token from an owner  Removes a registration or device token from a user who owns it. You can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token-from-an-owner - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Remove a registration or device token from an owner ## Remove a registration or device token from an owner  Removes a registration or device token from a user who owns it. You can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token-from-an-owner - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6384,7 +4071,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Remove a registration or device token from an owner ## Remove a registration or device token from an owner  Removes a registration or device token from a user who owns it. You can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token-from-an-owner - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Remove a registration or device token from an owner ## Remove a registration or device token from an owner  Removes a registration or device token from a user who owns it. You can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token-from-an-owner - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6448,7 +4135,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Remove a registration or device token from an owner ## Remove a registration or device token from an owner  Removes a registration or device token from a user who owns it. You can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token-from-an-owner - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Remove a registration or device token from an owner ## Remove a registration or device token from an owner  Removes a registration or device token from a user who owns it. You can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token-from-an-owner - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6464,7 +4151,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Remove a registration or device token from an owner ## Remove a registration or device token from an owner  Removes a registration or device token from a user who owns it. You can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token-from-an-owner - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Remove a registration or device token from an owner ## Remove a registration or device token from an owner  Removes a registration or device token from a user who owns it. You can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-remove-a-registration-or-device-token-from-an-owner - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6529,7 +4216,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Reset push preferences ## Reset push preferences  Resets a user&#39;s push preferences. After performing this action,   &#x60;do_not_disturb&#x60; and &#x60;snooze_enabled&#x60; are set to false.  The values of the parameters associated with the time frame are all set to 0.  &#x60;timezone&#x60; is reset to &#x60;UTC&#x60;.  &#x60;push_sound&#x60; is reset to &#x60;default&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-reset-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Reset push preferences ## Reset push preferences  Resets a user's push preferences. After performing this action,   `do_not_disturb` and `snooze_enabled` are set to false.  The values of the parameters associated with the time frame are all set to 0.  `timezone` is reset to `UTC`.  `push_sound` is reset to `default`.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-reset-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6542,7 +4229,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Reset push preferences ## Reset push preferences  Resets a user&#39;s push preferences. After performing this action,   &#x60;do_not_disturb&#x60; and &#x60;snooze_enabled&#x60; are set to false.  The values of the parameters associated with the time frame are all set to 0.  &#x60;timezone&#x60; is reset to &#x60;UTC&#x60;.  &#x60;push_sound&#x60; is reset to &#x60;default&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-reset-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Reset push preferences ## Reset push preferences  Resets a user's push preferences. After performing this action,   `do_not_disturb` and `snooze_enabled` are set to false.  The values of the parameters associated with the time frame are all set to 0.  `timezone` is reset to `UTC`.  `push_sound` is reset to `default`.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-reset-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6601,7 +4288,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Reset push preferences ## Reset push preferences  Resets a user&#39;s push preferences. After performing this action,   &#x60;do_not_disturb&#x60; and &#x60;snooze_enabled&#x60; are set to false.  The values of the parameters associated with the time frame are all set to 0.  &#x60;timezone&#x60; is reset to &#x60;UTC&#x60;.  &#x60;push_sound&#x60; is reset to &#x60;default&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-reset-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Reset push preferences ## Reset push preferences  Resets a user's push preferences. After performing this action,   `do_not_disturb` and `snooze_enabled` are set to false.  The values of the parameters associated with the time frame are all set to 0.  `timezone` is reset to `UTC`.  `push_sound` is reset to `default`.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-reset-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6616,7 +4303,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Reset push preferences ## Reset push preferences  Resets a user&#39;s push preferences. After performing this action,   &#x60;do_not_disturb&#x60; and &#x60;snooze_enabled&#x60; are set to false.  The values of the parameters associated with the time frame are all set to 0.  &#x60;timezone&#x60; is reset to &#x60;UTC&#x60;.  &#x60;push_sound&#x60; is reset to &#x60;default&#x60;.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-reset-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Reset push preferences ## Reset push preferences  Resets a user's push preferences. After performing this action,   `do_not_disturb` and `snooze_enabled` are set to false.  The values of the parameters associated with the time frame are all set to 0.  `timezone` is reset to `UTC`.  `push_sound` is reset to `default`.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-reset-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6676,7 +4363,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update channel invitation preference ## Update channel invitation preference  Updates the channel invitation preference for a user&#39;s [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  &gt; __Note__: Using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, you can update the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference
+        /// Update channel invitation preference ## Update channel invitation preference  Updates the channel invitation preference for a user's [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  > __Note__: Using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, you can update the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6690,7 +4377,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update channel invitation preference ## Update channel invitation preference  Updates the channel invitation preference for a user&#39;s [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  &gt; __Note__: Using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, you can update the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference
+        /// Update channel invitation preference ## Update channel invitation preference  Updates the channel invitation preference for a user's [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  > __Note__: Using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, you can update the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6759,7 +4446,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update channel invitation preference ## Update channel invitation preference  Updates the channel invitation preference for a user&#39;s [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  &gt; __Note__: Using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, you can update the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference
+        /// Update channel invitation preference ## Update channel invitation preference  Updates the channel invitation preference for a user's [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  > __Note__: Using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, you can update the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6775,7 +4462,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update channel invitation preference ## Update channel invitation preference  Updates the channel invitation preference for a user&#39;s [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  &gt; __Note__: Using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, you can update the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference
+        /// Update channel invitation preference ## Update channel invitation preference  Updates the channel invitation preference for a user's [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  > __Note__: Using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, you can update the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -6842,754 +4529,6 @@ namespace sendbird_platform_sdk.Api
             return new ApiResponse<UpdateChannelInvitationPreferenceResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
                 (UpdateChannelInvitationPreferenceResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateChannelInvitationPreferenceResponse)));
-        }
-
-        /// <summary>
-        /// Update a channel metacounter - When updating existing items of a channel metacounter by their keys or adding new items to the metacounter ## Update a channel metacounter  Updates existing items of a channel metacounter by their keys, or adds new items to the metacounter.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="updateChannelMetacounterData"> (optional)</param>
-        /// <returns>Dictionary&lt;string, SendBirdAdditionalProperties&gt;</returns>
-        public Dictionary<string, SendBirdAdditionalProperties> UpdateChannelMetacounter (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default(UpdateChannelMetacounterData))
-        {
-             ApiResponse<Dictionary<string, SendBirdAdditionalProperties>> localVarResponse = UpdateChannelMetacounterWithHttpInfo(apiToken, channelType, channelUrl, updateChannelMetacounterData);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Update a channel metacounter - When updating existing items of a channel metacounter by their keys or adding new items to the metacounter ## Update a channel metacounter  Updates existing items of a channel metacounter by their keys, or adds new items to the metacounter.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="updateChannelMetacounterData"> (optional)</param>
-        /// <returns>ApiResponse of Dictionary&lt;string, SendBirdAdditionalProperties&gt;</returns>
-        public ApiResponse<Dictionary<string, SendBirdAdditionalProperties>> UpdateChannelMetacounterWithHttpInfo (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default(UpdateChannelMetacounterData))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->UpdateChannelMetacounter");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->UpdateChannelMetacounter");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->UpdateChannelMetacounter");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metacounter";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (updateChannelMetacounterData != null && updateChannelMetacounterData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(updateChannelMetacounterData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = updateChannelMetacounterData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("UpdateChannelMetacounter", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Dictionary<string, SendBirdAdditionalProperties>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (Dictionary<string, SendBirdAdditionalProperties>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Dictionary<string, SendBirdAdditionalProperties>)));
-        }
-
-        /// <summary>
-        /// Update a channel metacounter - When updating existing items of a channel metacounter by their keys or adding new items to the metacounter ## Update a channel metacounter  Updates existing items of a channel metacounter by their keys, or adds new items to the metacounter.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="updateChannelMetacounterData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of Dictionary&lt;string, SendBirdAdditionalProperties&gt;</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, SendBirdAdditionalProperties>> UpdateChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default(UpdateChannelMetacounterData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<Dictionary<string, SendBirdAdditionalProperties>> localVarResponse = await UpdateChannelMetacounterWithHttpInfoAsync(apiToken, channelType, channelUrl, updateChannelMetacounterData, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Update a channel metacounter - When updating existing items of a channel metacounter by their keys or adding new items to the metacounter ## Update a channel metacounter  Updates existing items of a channel metacounter by their keys, or adds new items to the metacounter.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="updateChannelMetacounterData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (Dictionary&lt;string, SendBirdAdditionalProperties&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, SendBirdAdditionalProperties>>> UpdateChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default(UpdateChannelMetacounterData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->UpdateChannelMetacounter");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->UpdateChannelMetacounter");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->UpdateChannelMetacounter");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metacounter";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (updateChannelMetacounterData != null && updateChannelMetacounterData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(updateChannelMetacounterData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = updateChannelMetacounterData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("UpdateChannelMetacounter", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Dictionary<string, SendBirdAdditionalProperties>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (Dictionary<string, SendBirdAdditionalProperties>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Dictionary<string, SendBirdAdditionalProperties>)));
-        }
-
-        /// <summary>
-        /// Update a channel metacounter - When updating a specific item of a channel metacounter by its key ## Update a channel metacounter  Updates existing items of a channel metacounter by their keys, or adds new items to the metacounter.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <returns>Dictionary&lt;string, string&gt;</returns>
-        public Dictionary<string, string> UpdateChannelMetacounterByKey (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object))
-        {
-             ApiResponse<Dictionary<string, string>> localVarResponse = UpdateChannelMetacounterByKeyWithHttpInfo(apiToken, channelType, channelUrl, key, body);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Update a channel metacounter - When updating a specific item of a channel metacounter by its key ## Update a channel metacounter  Updates existing items of a channel metacounter by their keys, or adds new items to the metacounter.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <returns>ApiResponse of Dictionary&lt;string, string&gt;</returns>
-        public ApiResponse<Dictionary<string, string>> UpdateChannelMetacounterByKeyWithHttpInfo (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->UpdateChannelMetacounterByKey");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->UpdateChannelMetacounterByKey");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->UpdateChannelMetacounterByKey");
-            // verify the required parameter 'key' is set
-            if (key == null)
-                throw new ApiException(400, "Missing required parameter 'key' when calling UserApi->UpdateChannelMetacounterByKey");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metacounter/{key}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (key != null) localVarPathParams.Add("key", this.Configuration.ApiClient.ParameterToString(key)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("UpdateChannelMetacounterByKey", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Dictionary<string, string>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (Dictionary<string, string>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Dictionary<string, string>)));
-        }
-
-        /// <summary>
-        /// Update a channel metacounter - When updating a specific item of a channel metacounter by its key ## Update a channel metacounter  Updates existing items of a channel metacounter by their keys, or adds new items to the metacounter.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of Dictionary&lt;string, string&gt;</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, string>> UpdateChannelMetacounterByKeyAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<Dictionary<string, string>> localVarResponse = await UpdateChannelMetacounterByKeyWithHttpInfoAsync(apiToken, channelType, channelUrl, key, body, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Update a channel metacounter - When updating a specific item of a channel metacounter by its key ## Update a channel metacounter  Updates existing items of a channel metacounter by their keys, or adds new items to the metacounter.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metacounter - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateChannelMetacounterByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->UpdateChannelMetacounterByKey");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->UpdateChannelMetacounterByKey");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->UpdateChannelMetacounterByKey");
-            // verify the required parameter 'key' is set
-            if (key == null)
-                throw new ApiException(400, "Missing required parameter 'key' when calling UserApi->UpdateChannelMetacounterByKey");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metacounter/{key}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (key != null) localVarPathParams.Add("key", this.Configuration.ApiClient.ParameterToString(key)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("UpdateChannelMetacounterByKey", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Dictionary<string, string>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (Dictionary<string, string>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Dictionary<string, string>)));
-        }
-
-        /// <summary>
-        /// Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata ## Update a channel metadata  Updates existing items of a channel metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="updateChannelMetadataData"> (optional)</param>
-        /// <returns>Dictionary&lt;string, string&gt;</returns>
-        public Dictionary<string, string> UpdateChannelMetadata (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default(UpdateChannelMetadataData))
-        {
-             ApiResponse<Dictionary<string, string>> localVarResponse = UpdateChannelMetadataWithHttpInfo(apiToken, channelType, channelUrl, updateChannelMetadataData);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata ## Update a channel metadata  Updates existing items of a channel metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="updateChannelMetadataData"> (optional)</param>
-        /// <returns>ApiResponse of Dictionary&lt;string, string&gt;</returns>
-        public ApiResponse<Dictionary<string, string>> UpdateChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default(UpdateChannelMetadataData))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->UpdateChannelMetadata");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->UpdateChannelMetadata");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->UpdateChannelMetadata");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metadata";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (updateChannelMetadataData != null && updateChannelMetadataData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(updateChannelMetadataData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = updateChannelMetadataData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("UpdateChannelMetadata", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Dictionary<string, string>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (Dictionary<string, string>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Dictionary<string, string>)));
-        }
-
-        /// <summary>
-        /// Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata ## Update a channel metadata  Updates existing items of a channel metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="updateChannelMetadataData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of Dictionary&lt;string, string&gt;</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, string>> UpdateChannelMetadataAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default(UpdateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<Dictionary<string, string>> localVarResponse = await UpdateChannelMetadataWithHttpInfoAsync(apiToken, channelType, channelUrl, updateChannelMetadataData, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata ## Update a channel metadata  Updates existing items of a channel metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="updateChannelMetadataData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default(UpdateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->UpdateChannelMetadata");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->UpdateChannelMetadata");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->UpdateChannelMetadata");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metadata";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (updateChannelMetadataData != null && updateChannelMetadataData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(updateChannelMetadataData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = updateChannelMetadataData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("UpdateChannelMetadata", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Dictionary<string, string>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (Dictionary<string, string>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Dictionary<string, string>)));
-        }
-
-        /// <summary>
-        /// Update a channel metadata - When updating a specific item of a channel metadata by its key ## Update a channel metadata  Updates existing items of a channel metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <returns>Dictionary&lt;string, string&gt;</returns>
-        public Dictionary<string, string> UpdateChannelMetadataByKey (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object))
-        {
-             ApiResponse<Dictionary<string, string>> localVarResponse = UpdateChannelMetadataByKeyWithHttpInfo(apiToken, channelType, channelUrl, key, body);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Update a channel metadata - When updating a specific item of a channel metadata by its key ## Update a channel metadata  Updates existing items of a channel metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <returns>ApiResponse of Dictionary&lt;string, string&gt;</returns>
-        public ApiResponse<Dictionary<string, string>> UpdateChannelMetadataByKeyWithHttpInfo (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->UpdateChannelMetadataByKey");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->UpdateChannelMetadataByKey");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->UpdateChannelMetadataByKey");
-            // verify the required parameter 'key' is set
-            if (key == null)
-                throw new ApiException(400, "Missing required parameter 'key' when calling UserApi->UpdateChannelMetadataByKey");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metadata/{key}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (key != null) localVarPathParams.Add("key", this.Configuration.ApiClient.ParameterToString(key)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("UpdateChannelMetadataByKey", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Dictionary<string, string>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (Dictionary<string, string>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Dictionary<string, string>)));
-        }
-
-        /// <summary>
-        /// Update a channel metadata - When updating a specific item of a channel metadata by its key ## Update a channel metadata  Updates existing items of a channel metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of Dictionary&lt;string, string&gt;</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, string>> UpdateChannelMetadataByKeyAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<Dictionary<string, string>> localVarResponse = await UpdateChannelMetadataByKeyWithHttpInfoAsync(apiToken, channelType, channelUrl, key, body, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Update a channel metadata - When updating a specific item of a channel metadata by its key ## Update a channel metadata  Updates existing items of a channel metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-channel-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the target channel.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelType"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateChannelMetadataByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->UpdateChannelMetadataByKey");
-            // verify the required parameter 'channelType' is set
-            if (channelType == null)
-                throw new ApiException(400, "Missing required parameter 'channelType' when calling UserApi->UpdateChannelMetadataByKey");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling UserApi->UpdateChannelMetadataByKey");
-            // verify the required parameter 'key' is set
-            if (key == null)
-                throw new ApiException(400, "Missing required parameter 'key' when calling UserApi->UpdateChannelMetadataByKey");
-
-            var localVarPath = "/v3/{channel_type}/{channel_url}/metadata/{key}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelType != null) localVarPathParams.Add("channel_type", this.Configuration.ApiClient.ParameterToString(channelType)); // path parameter
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (key != null) localVarPathParams.Add("key", this.Configuration.ApiClient.ParameterToString(key)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("UpdateChannelMetadataByKey", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Dictionary<string, string>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (Dictionary<string, string>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Dictionary<string, string>)));
         }
 
         /// <summary>
@@ -7774,7 +4713,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update push preferences ## Update push preferences  Updates a user&#39;s push preferences. Through this action, you can set &#x60;do_not_disturb&#x60; for a user, and update the time frame in which the setting applies.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update push preferences ## Update push preferences  Updates a user's push preferences. Through this action, you can set `do_not_disturb` for a user, and update the time frame in which the setting applies.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -7788,7 +4727,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update push preferences ## Update push preferences  Updates a user&#39;s push preferences. Through this action, you can set &#x60;do_not_disturb&#x60; for a user, and update the time frame in which the setting applies.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update push preferences ## Update push preferences  Updates a user's push preferences. Through this action, you can set `do_not_disturb` for a user, and update the time frame in which the setting applies.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -7857,7 +4796,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update push preferences ## Update push preferences  Updates a user&#39;s push preferences. Through this action, you can set &#x60;do_not_disturb&#x60; for a user, and update the time frame in which the setting applies.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update push preferences ## Update push preferences  Updates a user's push preferences. Through this action, you can set `do_not_disturb` for a user, and update the time frame in which the setting applies.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -7873,7 +4812,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update push preferences ## Update push preferences  Updates a user&#39;s push preferences. Through this action, you can set &#x60;do_not_disturb&#x60; for a user, and update the time frame in which the setting applies.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update push preferences ## Update push preferences  Updates a user's push preferences. Through this action, you can set `do_not_disturb` for a user, and update the time frame in which the setting applies.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -7943,7 +4882,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update push preferences for a channel ## Update push preferences for a channel  Updates push preferences for a user&#39;s specific group channel. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences-for-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update push preferences for a channel ## Update push preferences for a channel  Updates push preferences for a user's specific group channel. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences-for-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -7958,7 +4897,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update push preferences for a channel ## Update push preferences for a channel  Updates push preferences for a user&#39;s specific group channel. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences-for-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update push preferences for a channel ## Update push preferences for a channel  Updates push preferences for a user's specific group channel. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences-for-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -8032,7 +4971,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update push preferences for a channel ## Update push preferences for a channel  Updates push preferences for a user&#39;s specific group channel. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences-for-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update push preferences for a channel ## Update push preferences for a channel  Updates push preferences for a user's specific group channel. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences-for-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -8049,7 +4988,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update push preferences for a channel ## Update push preferences for a channel  Updates push preferences for a user&#39;s specific group channel. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences-for-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update push preferences for a channel ## Update push preferences for a channel  Updates push preferences for a user's specific group channel. The push notifications feature is only available for group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-push-preferences-for-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -8124,7 +5063,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update a user ## Update a user  Updates information on a user. In addition to changing a user&#39;s nickname or profile image, you can issue a new access token for the user. The new access token replaces the previous one as the necessary token for authentication.  You can also deactivate or reactivate a user. If the &#x60;leave_all_when_deactivated&#x60; is true (which it is by default), a user leaves all joined group channels when deactivated.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update a user ## Update a user  Updates information on a user. In addition to changing a user's nickname or profile image, you can issue a new access token for the user. The new access token replaces the previous one as the necessary token for authentication.  You can also deactivate or reactivate a user. If the `leave_all_when_deactivated` is true (which it is by default), a user leaves all joined group channels when deactivated.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -8138,7 +5077,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update a user ## Update a user  Updates information on a user. In addition to changing a user&#39;s nickname or profile image, you can issue a new access token for the user. The new access token replaces the previous one as the necessary token for authentication.  You can also deactivate or reactivate a user. If the &#x60;leave_all_when_deactivated&#x60; is true (which it is by default), a user leaves all joined group channels when deactivated.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update a user ## Update a user  Updates information on a user. In addition to changing a user's nickname or profile image, you can issue a new access token for the user. The new access token replaces the previous one as the necessary token for authentication.  You can also deactivate or reactivate a user. If the `leave_all_when_deactivated` is true (which it is by default), a user leaves all joined group channels when deactivated.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -8207,7 +5146,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update a user ## Update a user  Updates information on a user. In addition to changing a user&#39;s nickname or profile image, you can issue a new access token for the user. The new access token replaces the previous one as the necessary token for authentication.  You can also deactivate or reactivate a user. If the &#x60;leave_all_when_deactivated&#x60; is true (which it is by default), a user leaves all joined group channels when deactivated.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update a user ## Update a user  Updates information on a user. In addition to changing a user's nickname or profile image, you can issue a new access token for the user. The new access token replaces the previous one as the necessary token for authentication.  You can also deactivate or reactivate a user. If the `leave_all_when_deactivated` is true (which it is by default), a user leaves all joined group channels when deactivated.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -8223,7 +5162,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update a user ## Update a user  Updates information on a user. In addition to changing a user&#39;s nickname or profile image, you can issue a new access token for the user. The new access token replaces the previous one as the necessary token for authentication.  You can also deactivate or reactivate a user. If the &#x60;leave_all_when_deactivated&#x60; is true (which it is by default), a user leaves all joined group channels when deactivated.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update a user ## Update a user  Updates information on a user. In addition to changing a user's nickname or profile image, you can issue a new access token for the user. The new access token replaces the previous one as the necessary token for authentication.  You can also deactivate or reactivate a user. If the `leave_all_when_deactivated` is true (which it is by default), a user leaves all joined group channels when deactivated.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -8293,357 +5232,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata ## Update a user metadata  Updates existing items of a user metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user to update the metadata in.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="updateUserMetadataData"> (optional)</param>
-        /// <returns>UpdateUserMetadataResponse</returns>
-        public UpdateUserMetadataResponse UpdateUserMetadata (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData))
-        {
-             ApiResponse<UpdateUserMetadataResponse> localVarResponse = UpdateUserMetadataWithHttpInfo(apiToken, userId, updateUserMetadataData);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata ## Update a user metadata  Updates existing items of a user metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user to update the metadata in.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="updateUserMetadataData"> (optional)</param>
-        /// <returns>ApiResponse of UpdateUserMetadataResponse</returns>
-        public ApiResponse<UpdateUserMetadataResponse> UpdateUserMetadataWithHttpInfo (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->UpdateUserMetadata");
-            // verify the required parameter 'userId' is set
-            if (userId == null)
-                throw new ApiException(400, "Missing required parameter 'userId' when calling UserApi->UpdateUserMetadata");
-
-            var localVarPath = "/v3/users/{user_id}/metadata";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (userId != null) localVarPathParams.Add("user_id", this.Configuration.ApiClient.ParameterToString(userId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (updateUserMetadataData != null && updateUserMetadataData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(updateUserMetadataData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = updateUserMetadataData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("UpdateUserMetadata", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<UpdateUserMetadataResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (UpdateUserMetadataResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateUserMetadataResponse)));
-        }
-
-        /// <summary>
-        /// Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata ## Update a user metadata  Updates existing items of a user metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user to update the metadata in.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="updateUserMetadataData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of UpdateUserMetadataResponse</returns>
-        public async System.Threading.Tasks.Task<UpdateUserMetadataResponse> UpdateUserMetadataAsync (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<UpdateUserMetadataResponse> localVarResponse = await UpdateUserMetadataWithHttpInfoAsync(apiToken, userId, updateUserMetadataData, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata ## Update a user metadata  Updates existing items of a user metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user to update the metadata in.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="updateUserMetadataData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (UpdateUserMetadataResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UpdateUserMetadataResponse>> UpdateUserMetadataWithHttpInfoAsync (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->UpdateUserMetadata");
-            // verify the required parameter 'userId' is set
-            if (userId == null)
-                throw new ApiException(400, "Missing required parameter 'userId' when calling UserApi->UpdateUserMetadata");
-
-            var localVarPath = "/v3/users/{user_id}/metadata";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (userId != null) localVarPathParams.Add("user_id", this.Configuration.ApiClient.ParameterToString(userId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (updateUserMetadataData != null && updateUserMetadataData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(updateUserMetadataData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = updateUserMetadataData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("UpdateUserMetadata", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<UpdateUserMetadataResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (UpdateUserMetadataResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateUserMetadataResponse)));
-        }
-
-        /// <summary>
-        /// Update a user metadata - When updating a specific item of a user metadata by its key ## Update a user metadata  Updates existing items of a user metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user to update the metadata in.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <returns>Dictionary&lt;string, string&gt;</returns>
-        public Dictionary<string, string> UpdateUserMetadataByKey (string apiToken, string userId, string key, Object body = default(Object))
-        {
-             ApiResponse<Dictionary<string, string>> localVarResponse = UpdateUserMetadataByKeyWithHttpInfo(apiToken, userId, key, body);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Update a user metadata - When updating a specific item of a user metadata by its key ## Update a user metadata  Updates existing items of a user metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user to update the metadata in.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <returns>ApiResponse of Dictionary&lt;string, string&gt;</returns>
-        public ApiResponse<Dictionary<string, string>> UpdateUserMetadataByKeyWithHttpInfo (string apiToken, string userId, string key, Object body = default(Object))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->UpdateUserMetadataByKey");
-            // verify the required parameter 'userId' is set
-            if (userId == null)
-                throw new ApiException(400, "Missing required parameter 'userId' when calling UserApi->UpdateUserMetadataByKey");
-            // verify the required parameter 'key' is set
-            if (key == null)
-                throw new ApiException(400, "Missing required parameter 'key' when calling UserApi->UpdateUserMetadataByKey");
-
-            var localVarPath = "/v3/users/{user_id}/metadata/{key}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (userId != null) localVarPathParams.Add("user_id", this.Configuration.ApiClient.ParameterToString(userId)); // path parameter
-            if (key != null) localVarPathParams.Add("key", this.Configuration.ApiClient.ParameterToString(key)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("UpdateUserMetadataByKey", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Dictionary<string, string>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (Dictionary<string, string>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Dictionary<string, string>)));
-        }
-
-        /// <summary>
-        /// Update a user metadata - When updating a specific item of a user metadata by its key ## Update a user metadata  Updates existing items of a user metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user to update the metadata in.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of Dictionary&lt;string, string&gt;</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, string>> UpdateUserMetadataByKeyAsync (string apiToken, string userId, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<Dictionary<string, string>> localVarResponse = await UpdateUserMetadataByKeyWithHttpInfoAsync(apiToken, userId, key, body, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Update a user metadata - When updating a specific item of a user metadata by its key ## Update a user metadata  Updates existing items of a user metadata by their keys, or adds new items to the metadata.  https://sendbird.com/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-update-a-user-metadata - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the ID of the user to update the metadata in.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="userId"></param>
-        /// <param name="key"></param>
-        /// <param name="body"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateUserMetadataByKeyWithHttpInfoAsync (string apiToken, string userId, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling UserApi->UpdateUserMetadataByKey");
-            // verify the required parameter 'userId' is set
-            if (userId == null)
-                throw new ApiException(400, "Missing required parameter 'userId' when calling UserApi->UpdateUserMetadataByKey");
-            // verify the required parameter 'key' is set
-            if (key == null)
-                throw new ApiException(400, "Missing required parameter 'key' when calling UserApi->UpdateUserMetadataByKey");
-
-            var localVarPath = "/v3/users/{user_id}/metadata/{key}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (userId != null) localVarPathParams.Add("user_id", this.Configuration.ApiClient.ParameterToString(userId)); // path parameter
-            if (key != null) localVarPathParams.Add("key", this.Configuration.ApiClient.ParameterToString(key)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("UpdateUserMetadataByKey", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Dictionary<string, string>>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (Dictionary<string, string>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Dictionary<string, string>)));
-        }
-
-        /// <summary>
-        /// View channel invitation preference ## View channel invitation preference  Retrieves channel invitation preference for a user&#39;s [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  &gt; __Note__: Using the [view default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference) action, you can retrieve the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference
+        /// View channel invitation preference ## View channel invitation preference  Retrieves channel invitation preference for a user's [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  > __Note__: Using the [view default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference) action, you can retrieve the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -8656,7 +5245,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View channel invitation preference ## View channel invitation preference  Retrieves channel invitation preference for a user&#39;s [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  &gt; __Note__: Using the [view default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference) action, you can retrieve the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference
+        /// View channel invitation preference ## View channel invitation preference  Retrieves channel invitation preference for a user's [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  > __Note__: Using the [view default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference) action, you can retrieve the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -8715,7 +5304,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View channel invitation preference ## View channel invitation preference  Retrieves channel invitation preference for a user&#39;s [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  &gt; __Note__: Using the [view default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference) action, you can retrieve the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference
+        /// View channel invitation preference ## View channel invitation preference  Retrieves channel invitation preference for a user's [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  > __Note__: Using the [view default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference) action, you can retrieve the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -8730,7 +5319,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View channel invitation preference ## View channel invitation preference  Retrieves channel invitation preference for a user&#39;s [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  &gt; __Note__: Using the [view default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference) action, you can retrieve the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference
+        /// View channel invitation preference ## View channel invitation preference  Retrieves channel invitation preference for a user's [private](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#-3-private-vs-public) group channels.  > __Note__: Using the [view default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-view-default-channel-invitation-preference) action, you can retrieve the value of channel invitation preference which is globally applied to all users within the application.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-channel-invitation-preference
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -8949,7 +5538,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View number of channels by join status ## View number of channels by join status  Retrieves the number of a user&#39;s group channels by their join status.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-by-join-status - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
+        /// View number of channels by join status ## View number of channels by join status  Retrieves the number of a user's group channels by their join status.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-by-join-status - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -8963,7 +5552,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View number of channels by join status ## View number of channels by join status  Retrieves the number of a user&#39;s group channels by their join status.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-by-join-status - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
+        /// View number of channels by join status ## View number of channels by join status  Retrieves the number of a user's group channels by their join status.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-by-join-status - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9024,7 +5613,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View number of channels by join status ## View number of channels by join status  Retrieves the number of a user&#39;s group channels by their join status.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-by-join-status - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
+        /// View number of channels by join status ## View number of channels by join status  Retrieves the number of a user's group channels by their join status.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-by-join-status - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9040,7 +5629,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View number of channels by join status ## View number of channels by join status  Retrieves the number of a user&#39;s group channels by their join status.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-by-join-status - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
+        /// View number of channels by join status ## View number of channels by join status  Retrieves the number of a user's group channels by their join status.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-by-join-status - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9102,7 +5691,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View number of channels with unread messages ## View number of channels with unread messages  Retrieves the total number of a user&#39;s group channels with unread messages.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-with-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// View number of channels with unread messages ## View number of channels with unread messages  Retrieves the total number of a user's group channels with unread messages.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-with-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9117,7 +5706,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View number of channels with unread messages ## View number of channels with unread messages  Retrieves the total number of a user&#39;s group channels with unread messages.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-with-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// View number of channels with unread messages ## View number of channels with unread messages  Retrieves the total number of a user's group channels with unread messages.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-with-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9180,7 +5769,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View number of channels with unread messages ## View number of channels with unread messages  Retrieves the total number of a user&#39;s group channels with unread messages.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-with-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// View number of channels with unread messages ## View number of channels with unread messages  Retrieves the total number of a user's group channels with unread messages.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-with-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9197,7 +5786,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View number of channels with unread messages ## View number of channels with unread messages  Retrieves the total number of a user&#39;s group channels with unread messages.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-with-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// View number of channels with unread messages ## View number of channels with unread messages  Retrieves the total number of a user's group channels with unread messages.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-channels-with-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9261,7 +5850,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View number of unread items ## View number of unread items  Retrieves a set of total numbers of a user&#39;s unread messages, unread mentioned messages, or received invitations in either super or non-super group channels. This action is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-items - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// View number of unread items ## View number of unread items  Retrieves a set of total numbers of a user's unread messages, unread mentioned messages, or received invitations in either super or non-super group channels. This action is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-items - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9276,7 +5865,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View number of unread items ## View number of unread items  Retrieves a set of total numbers of a user&#39;s unread messages, unread mentioned messages, or received invitations in either super or non-super group channels. This action is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-items - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// View number of unread items ## View number of unread items  Retrieves a set of total numbers of a user's unread messages, unread mentioned messages, or received invitations in either super or non-super group channels. This action is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-items - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9339,7 +5928,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View number of unread items ## View number of unread items  Retrieves a set of total numbers of a user&#39;s unread messages, unread mentioned messages, or received invitations in either super or non-super group channels. This action is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-items - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// View number of unread items ## View number of unread items  Retrieves a set of total numbers of a user's unread messages, unread mentioned messages, or received invitations in either super or non-super group channels. This action is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-items - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9356,7 +5945,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View number of unread items ## View number of unread items  Retrieves a set of total numbers of a user&#39;s unread messages, unread mentioned messages, or received invitations in either super or non-super group channels. This action is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-items - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// View number of unread items ## View number of unread items  Retrieves a set of total numbers of a user's unread messages, unread mentioned messages, or received invitations in either super or non-super group channels. This action is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-items - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9420,7 +6009,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View number of unread messages ## View number of unread messages  Retrieves the total number of a user&#39;s currently unread messages in the group channels. The unread counts feature is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
+        /// View number of unread messages ## View number of unread messages  Retrieves the total number of a user's currently unread messages in the group channels. The unread counts feature is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9435,7 +6024,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View number of unread messages ## View number of unread messages  Retrieves the total number of a user&#39;s currently unread messages in the group channels. The unread counts feature is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
+        /// View number of unread messages ## View number of unread messages  Retrieves the total number of a user's currently unread messages in the group channels. The unread counts feature is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9498,7 +6087,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View number of unread messages ## View number of unread messages  Retrieves the total number of a user&#39;s currently unread messages in the group channels. The unread counts feature is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
+        /// View number of unread messages ## View number of unread messages  Retrieves the total number of a user's currently unread messages in the group channels. The unread counts feature is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9515,7 +6104,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View number of unread messages ## View number of unread messages  Retrieves the total number of a user&#39;s currently unread messages in the group channels. The unread counts feature is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
+        /// View number of unread messages ## View number of unread messages  Retrieves the total number of a user's currently unread messages in the group channels. The unread counts feature is only available for the group channels.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-number-of-unread-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve the number.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9579,7 +6168,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View push preferences ## View push preferences  Retrieves a user&#39;s push preferences about whether the user has set &#x60;do_not_disturb&#x60; to pause notifications for a certain period of time, and the time frame in which the user has applied the setting.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// View push preferences ## View push preferences  Retrieves a user's push preferences about whether the user has set `do_not_disturb` to pause notifications for a certain period of time, and the time frame in which the user has applied the setting.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9592,7 +6181,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View push preferences ## View push preferences  Retrieves a user&#39;s push preferences about whether the user has set &#x60;do_not_disturb&#x60; to pause notifications for a certain period of time, and the time frame in which the user has applied the setting.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// View push preferences ## View push preferences  Retrieves a user's push preferences about whether the user has set `do_not_disturb` to pause notifications for a certain period of time, and the time frame in which the user has applied the setting.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9651,7 +6240,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View push preferences ## View push preferences  Retrieves a user&#39;s push preferences about whether the user has set &#x60;do_not_disturb&#x60; to pause notifications for a certain period of time, and the time frame in which the user has applied the setting.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// View push preferences ## View push preferences  Retrieves a user's push preferences about whether the user has set `do_not_disturb` to pause notifications for a certain period of time, and the time frame in which the user has applied the setting.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9666,7 +6255,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View push preferences ## View push preferences  Retrieves a user&#39;s push preferences about whether the user has set &#x60;do_not_disturb&#x60; to pause notifications for a certain period of time, and the time frame in which the user has applied the setting.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// View push preferences ## View push preferences  Retrieves a user's push preferences about whether the user has set `do_not_disturb` to pause notifications for a certain period of time, and the time frame in which the user has applied the setting.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-push-preferences - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9885,7 +6474,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View a user ## View a user  Retrieves information on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve.
+        /// View a user ## View a user  Retrieves information on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9901,7 +6490,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View a user ## View a user  Retrieves information on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve.
+        /// View a user ## View a user  Retrieves information on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9966,7 +6555,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View a user ## View a user  Retrieves information on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve.
+        /// View a user ## View a user  Retrieves information on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -9984,7 +6573,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View a user ## View a user  Retrieves information on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the user to retrieve.
+        /// View a user ## View a user  Retrieves information on a user.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the user to retrieve.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -10050,28 +6639,28 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View who owns a registration or device token ## View who owns a registration or device token  Retrieves a user who owns a FCM registration token, HMS device token, or APNs device token. You can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-who-owns-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// View who owns a registration or device token ## View who owns a registration or device token  Retrieves a user who owns a FCM registration token, HMS device token, or APNs device token. You can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-who-owns-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
-        /// <returns>List&lt;Object&gt;</returns>
-        public List<Object> ViewWhoOwnsRegistrationOrDeviceTokenByToken (string apiToken, string tokenType, string token)
+        /// <returns>List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner></returns>
+        public List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner> ViewWhoOwnsRegistrationOrDeviceTokenByToken (string apiToken, string tokenType, string token)
         {
-             ApiResponse<List<Object>> localVarResponse = ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo(apiToken, tokenType, token);
+             ApiResponse<List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>> localVarResponse = ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo(apiToken, tokenType, token);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// View who owns a registration or device token ## View who owns a registration or device token  Retrieves a user who owns a FCM registration token, HMS device token, or APNs device token. You can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-who-owns-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// View who owns a registration or device token ## View who owns a registration or device token  Retrieves a user who owns a FCM registration token, HMS device token, or APNs device token. You can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-who-owns-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
-        /// <returns>ApiResponse of List&lt;Object&gt;</returns>
-        public ApiResponse<List<Object>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo (string apiToken, string tokenType, string token)
+        /// <returns>ApiResponse of List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner></returns>
+        public ApiResponse<List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo (string apiToken, string tokenType, string token)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -10122,37 +6711,37 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<List<Object>>(localVarStatusCode,
+            return new ApiResponse<List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (List<Object>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<Object>)));
+                (List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>)));
         }
 
         /// <summary>
-        /// View who owns a registration or device token ## View who owns a registration or device token  Retrieves a user who owns a FCM registration token, HMS device token, or APNs device token. You can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-who-owns-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// View who owns a registration or device token ## View who owns a registration or device token  Retrieves a user who owns a FCM registration token, HMS device token, or APNs device token. You can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-who-owns-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of List&lt;Object&gt;</returns>
-        public async System.Threading.Tasks.Task<List<Object>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner></returns>
+        public async System.Threading.Tasks.Task<List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<List<Object>> localVarResponse = await ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync(apiToken, tokenType, token, cancellationToken);
+             ApiResponse<List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>> localVarResponse = await ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync(apiToken, tokenType, token, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// View who owns a registration or device token ## View who owns a registration or device token  Retrieves a user who owns a FCM registration token, HMS device token, or APNs device token. You can pass one of two values in &#x60;token_type&#x60;: &#x60;gcm&#x60;, &#x60;huawei&#x60;, or &#x60;apns&#x60;, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-who-owns-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// View who owns a registration or device token ## View who owns a registration or device token  Retrieves a user who owns a FCM registration token, HMS device token, or APNs device token. You can pass one of two values in `token_type`: `gcm`, `huawei`, or `apns`, depending on which push service you are using.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-view-who-owns-a-registration-or-device-token - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (List&lt;Object&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<Object>>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (List&lt;ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -10203,9 +6792,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<List<Object>>(localVarStatusCode,
+            return new ApiResponse<List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (List<Object>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<Object>)));
+                (List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>)));
         }
 
     }

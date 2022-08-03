@@ -64,6 +64,228 @@ namespace sendbird_platform_sdk.Test
 
         
         /// <summary>
+        /// Test CreateChannelMetacounter
+        /// </summary>
+        [Test]
+        public void CreateChannelMetacounterTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
+            //string channelType = null;
+            //string channelUrl = null;
+            //CreateChannelMetacounterData createChannelMetacounterData = null;
+            //var response = instance.CreateChannelMetacounter(apiToken, channelType, channelUrl, createChannelMetacounterData);
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
+        }
+        
+        /// <summary>
+        /// Test CreateChannelMetadata
+        /// </summary>
+        [Test]
+        public void CreateChannelMetadataTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
+            //string channelType = null;
+            //string channelUrl = null;
+            //CreateChannelMetadataData createChannelMetadataData = null;
+            //var response = instance.CreateChannelMetadata(apiToken, channelType, channelUrl, createChannelMetadataData);
+            //Assert.IsInstanceOf(typeof(CreateChannelMetadataResponse), response, "response is CreateChannelMetadataResponse");
+        }
+        
+        /// <summary>
+        /// Test CreateUserMetadata
+        /// </summary>
+        [Test]
+        public void CreateUserMetadataTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
+            //string userId = null;
+            //CreateUserMetadataData createUserMetadataData = null;
+            //var response = instance.CreateUserMetadata(apiToken, userId, createUserMetadataData);
+            //Assert.IsInstanceOf(typeof(CreateUserMetadataResponse), response, "response is CreateUserMetadataResponse");
+        }
+        
+        /// <summary>
+        /// Test DeleteChannelMetacounter
+        /// </summary>
+        [Test]
+        public void DeleteChannelMetacounterTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
+            //string channelType = null;
+            //string channelUrl = null;
+            //instance.DeleteChannelMetacounter(apiToken, channelType, channelUrl);
+            
+        }
+        
+        /// <summary>
+        /// Test DeleteChannelMetacounterByKey
+        /// </summary>
+        [Test]
+        public void DeleteChannelMetacounterByKeyTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
+            //string channelType = null;
+            //string channelUrl = null;
+            //string key = null;
+            //instance.DeleteChannelMetacounterByKey(apiToken, channelType, channelUrl, key);
+            
+        }
+        
+        /// <summary>
+        /// Test DeleteChannelMetadata
+        /// </summary>
+        [Test]
+        public void DeleteChannelMetadataTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
+            //string channelType = null;
+            //string channelUrl = null;
+            //string key = null;
+            //instance.DeleteChannelMetadata(apiToken, channelType, channelUrl, key);
+            
+        }
+        
+        /// <summary>
+        /// Test DeleteChannelMetadataByKey
+        /// </summary>
+        [Test]
+        public void DeleteChannelMetadataByKeyTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
+            //string channelType = null;
+            //string channelUrl = null;
+            //string key = null;
+            //instance.DeleteChannelMetadataByKey(apiToken, channelType, channelUrl, key);
+            
+        }
+        
+        /// <summary>
+        /// Test DeleteUserMetadata
+        /// </summary>
+        [Test]
+        public void DeleteUserMetadataTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
+            //string userId = null;
+            //string key = null;
+            //instance.DeleteUserMetadata(apiToken, userId, key);
+            
+        }
+        
+        /// <summary>
+        /// Test DeleteUserMetadataByKey
+        /// </summary>
+        [Test]
+        public void DeleteUserMetadataByKeyTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
+            //string userId = null;
+            //string key = null;
+            //instance.DeleteUserMetadataByKey(apiToken, userId, key);
+            
+        }
+        
+        /// <summary>
+        /// Test UpdateChannelMetacounter
+        /// </summary>
+        [Test]
+        public void UpdateChannelMetacounterTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
+            //string channelType = null;
+            //string channelUrl = null;
+            //UpdateChannelMetacounterData updateChannelMetacounterData = null;
+            //var response = instance.UpdateChannelMetacounter(apiToken, channelType, channelUrl, updateChannelMetacounterData);
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
+        }
+        
+        /// <summary>
+        /// Test UpdateChannelMetacounterByKey
+        /// </summary>
+        [Test]
+        public void UpdateChannelMetacounterByKeyTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
+            //string channelType = null;
+            //string channelUrl = null;
+            //string key = null;
+            //Object body = null;
+            //var response = instance.UpdateChannelMetacounterByKey(apiToken, channelType, channelUrl, key, body);
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
+        }
+        
+        /// <summary>
+        /// Test UpdateChannelMetadata
+        /// </summary>
+        [Test]
+        public void UpdateChannelMetadataTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
+            //string channelType = null;
+            //string channelUrl = null;
+            //UpdateChannelMetadataData updateChannelMetadataData = null;
+            //var response = instance.UpdateChannelMetadata(apiToken, channelType, channelUrl, updateChannelMetadataData);
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
+        }
+        
+        /// <summary>
+        /// Test UpdateChannelMetadataByKey
+        /// </summary>
+        [Test]
+        public void UpdateChannelMetadataByKeyTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
+            //string channelType = null;
+            //string channelUrl = null;
+            //string key = null;
+            //Object body = null;
+            //var response = instance.UpdateChannelMetadataByKey(apiToken, channelType, channelUrl, key, body);
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
+        }
+        
+        /// <summary>
+        /// Test UpdateUserMetadata
+        /// </summary>
+        [Test]
+        public void UpdateUserMetadataTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
+            //string userId = null;
+            //UpdateUserMetadataData updateUserMetadataData = null;
+            //var response = instance.UpdateUserMetadata(apiToken, userId, updateUserMetadataData);
+            //Assert.IsInstanceOf(typeof(UpdateUserMetadataResponse), response, "response is UpdateUserMetadataResponse");
+        }
+        
+        /// <summary>
+        /// Test UpdateUserMetadataByKey
+        /// </summary>
+        [Test]
+        public void UpdateUserMetadataByKeyTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
+            //string userId = null;
+            //string key = null;
+            //Object body = null;
+            //var response = instance.UpdateUserMetadataByKey(apiToken, userId, key, body);
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
+        }
+        
+        /// <summary>
         /// Test ViewChannelMetacounter
         /// </summary>
         [Test]
@@ -76,7 +298,7 @@ namespace sendbird_platform_sdk.Test
             //string key = null;
             //List<string> keys = null;
             //var response = instance.ViewChannelMetacounter(apiToken, channelType, channelUrl, key, keys);
-            //Assert.IsInstanceOf(typeof(Dictionary<string, SendBirdAdditionalProperties>), response, "response is Dictionary<string, SendBirdAdditionalProperties>");
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         
         /// <summary>
@@ -91,7 +313,7 @@ namespace sendbird_platform_sdk.Test
             //string channelUrl = null;
             //string key = null;
             //var response = instance.ViewChannelMetacounterByKey(apiToken, channelType, channelUrl, key);
-            //Assert.IsInstanceOf(typeof(Dictionary<string, SendBirdAdditionalProperties>), response, "response is Dictionary<string, SendBirdAdditionalProperties>");
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         
         /// <summary>
@@ -107,7 +329,7 @@ namespace sendbird_platform_sdk.Test
             //string key = null;
             //List<string> keys = null;
             //var response = instance.ViewChannelMetadata(apiToken, channelType, channelUrl, key, keys);
-            //Assert.IsInstanceOf(typeof(Dictionary<string, string>), response, "response is Dictionary<string, string>");
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         
         /// <summary>
@@ -122,7 +344,7 @@ namespace sendbird_platform_sdk.Test
             //string channelUrl = null;
             //string key = null;
             //var response = instance.ViewChannelMetadataByKey(apiToken, channelType, channelUrl, key);
-            //Assert.IsInstanceOf(typeof(Dictionary<string, string>), response, "response is Dictionary<string, string>");
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         
         /// <summary>
@@ -151,7 +373,7 @@ namespace sendbird_platform_sdk.Test
             //string userId = null;
             //string key = null;
             //var response = instance.ViewUserMetadataByKey(apiToken, userId, key);
-            //Assert.IsInstanceOf(typeof(Dictionary<string, string>), response, "response is Dictionary<string, string>");
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         
     }

@@ -105,6 +105,14 @@ namespace sendbird_platform_sdk.Test
         {
             // TODO unit test for the property 'AllWebhookCategories'
         }
+        /// <summary>
+        /// Test the property 'IncludeUnreadCount'
+        /// </summary>
+        [Test]
+        public void IncludeUnreadCountTest()
+        {
+            // TODO unit test for the property 'IncludeUnreadCount'
+        }
 
     }
 

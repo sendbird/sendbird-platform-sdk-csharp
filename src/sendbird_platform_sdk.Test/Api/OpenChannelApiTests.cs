@@ -64,31 +64,17 @@ namespace sendbird_platform_sdk.Test
 
         
         /// <summary>
-        /// Test OcBanUser
-        /// </summary>
-        [Test]
-        public void OcBanUserTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
-            //string apiToken = null;
-            //OcBanUserData ocBanUserData = null;
-            //var response = instance.OcBanUser(channelUrl, apiToken, ocBanUserData);
-            //Assert.IsInstanceOf(typeof(OcBanUserResponse), response, "response is OcBanUserResponse");
-        }
-        
-        /// <summary>
         /// Test OcCancelTheRegistrationOfOperators
         /// </summary>
         [Test]
         public void OcCancelTheRegistrationOfOperatorsTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
             //string channelUrl = null;
             //List<string> operatorIds = null;
-            //string apiToken = null;
             //bool? deleteAll = null;
-            //instance.OcCancelTheRegistrationOfOperators(channelUrl, operatorIds, apiToken, deleteAll);
+            //instance.OcCancelTheRegistrationOfOperators(apiToken, channelUrl, operatorIds, deleteAll);
             
         }
         
@@ -112,39 +98,10 @@ namespace sendbird_platform_sdk.Test
         public void OcDeleteChannelByUrlTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
-            //instance.OcDeleteChannelByUrl(channelUrl, apiToken);
-            
-        }
-        
-        /// <summary>
-        /// Test OcFreezeChannel
-        /// </summary>
-        [Test]
-        public void OcFreezeChannelTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
             //string channelUrl = null;
-            //string apiToken = null;
-            //OcFreezeChannelData ocFreezeChannelData = null;
-            //var response = instance.OcFreezeChannel(channelUrl, apiToken, ocFreezeChannelData);
-            //Assert.IsInstanceOf(typeof(SendBirdOpenChannel), response, "response is SendBirdOpenChannel");
-        }
-        
-        /// <summary>
-        /// Test OcListBannedUsers
-        /// </summary>
-        [Test]
-        public void OcListBannedUsersTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
-            //string apiToken = null;
-            //string token = null;
-            //int? limit = null;
-            //var response = instance.OcListBannedUsers(channelUrl, apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(OcListBannedUsersResponse), response, "response is OcListBannedUsersResponse");
+            //var response = instance.OcDeleteChannelByUrl(apiToken, channelUrl);
+            //Assert.IsInstanceOf(typeof(OcDeleteChannelByUrl200Response), response, "response is OcDeleteChannelByUrl200Response");
         }
         
         /// <summary>
@@ -168,32 +125,17 @@ namespace sendbird_platform_sdk.Test
         }
         
         /// <summary>
-        /// Test OcListMutedUsers
-        /// </summary>
-        [Test]
-        public void OcListMutedUsersTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
-            //string apiToken = null;
-            //string token = null;
-            //int? limit = null;
-            //var response = instance.OcListMutedUsers(channelUrl, apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(OcListMutedUsersResponse), response, "response is OcListMutedUsersResponse");
-        }
-        
-        /// <summary>
         /// Test OcListOperators
         /// </summary>
         [Test]
         public void OcListOperatorsTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
+            //string channelUrl = null;
             //string token = null;
             //int? limit = null;
-            //var response = instance.OcListOperators(channelUrl, apiToken, token, limit);
+            //var response = instance.OcListOperators(apiToken, channelUrl, token, limit);
             //Assert.IsInstanceOf(typeof(OcListOperatorsResponse), response, "response is OcListOperatorsResponse");
         }
         
@@ -204,26 +146,12 @@ namespace sendbird_platform_sdk.Test
         public void OcListParticipantsTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
+            //string channelUrl = null;
             //string token = null;
             //int? limit = null;
-            //var response = instance.OcListParticipants(channelUrl, apiToken, token, limit);
+            //var response = instance.OcListParticipants(apiToken, channelUrl, token, limit);
             //Assert.IsInstanceOf(typeof(OcListParticipantsResponse), response, "response is OcListParticipantsResponse");
-        }
-        
-        /// <summary>
-        /// Test OcMuteUser
-        /// </summary>
-        [Test]
-        public void OcMuteUserTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
-            //string apiToken = null;
-            //OcMuteUserData ocMuteUserData = null;
-            //var response = instance.OcMuteUser(channelUrl, apiToken, ocMuteUserData);
-            //Assert.IsInstanceOf(typeof(SendBirdOpenChannel), response, "response is SendBirdOpenChannel");
         }
         
         /// <summary>
@@ -233,54 +161,11 @@ namespace sendbird_platform_sdk.Test
         public void OcRegisterOperatorsTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
+            //string channelUrl = null;
             //OcRegisterOperatorsData ocRegisterOperatorsData = null;
-            //instance.OcRegisterOperators(channelUrl, apiToken, ocRegisterOperatorsData);
-            
-        }
-        
-        /// <summary>
-        /// Test OcUnbanUserById
-        /// </summary>
-        [Test]
-        public void OcUnbanUserByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
-            //string bannedUserId = null;
-            //string apiToken = null;
-            //instance.OcUnbanUserById(channelUrl, bannedUserId, apiToken);
-            
-        }
-        
-        /// <summary>
-        /// Test OcUnmuteUserById
-        /// </summary>
-        [Test]
-        public void OcUnmuteUserByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
-            //string mutedUserId = null;
-            //string apiToken = null;
-            //instance.OcUnmuteUserById(channelUrl, mutedUserId, apiToken);
-            
-        }
-        
-        /// <summary>
-        /// Test OcUpdateBanById
-        /// </summary>
-        [Test]
-        public void OcUpdateBanByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
-            //string bannedUserId = null;
-            //string apiToken = null;
-            //OcUpdateBanByIdData ocUpdateBanByIdData = null;
-            //var response = instance.OcUpdateBanById(channelUrl, bannedUserId, apiToken, ocUpdateBanByIdData);
-            //Assert.IsInstanceOf(typeof(SendBirdUser), response, "response is SendBirdUser");
+            //var response = instance.OcRegisterOperators(apiToken, channelUrl, ocRegisterOperatorsData);
+            //Assert.IsInstanceOf(typeof(OcDeleteChannelByUrl200Response), response, "response is OcDeleteChannelByUrl200Response");
         }
         
         /// <summary>
@@ -290,25 +175,11 @@ namespace sendbird_platform_sdk.Test
         public void OcUpdateChannelByUrlTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
+            //string channelUrl = null;
             //OcUpdateChannelByUrlData ocUpdateChannelByUrlData = null;
-            //var response = instance.OcUpdateChannelByUrl(channelUrl, apiToken, ocUpdateChannelByUrlData);
+            //var response = instance.OcUpdateChannelByUrl(apiToken, channelUrl, ocUpdateChannelByUrlData);
             //Assert.IsInstanceOf(typeof(SendBirdOpenChannel), response, "response is SendBirdOpenChannel");
-        }
-        
-        /// <summary>
-        /// Test OcViewBanById
-        /// </summary>
-        [Test]
-        public void OcViewBanByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
-            //string bannedUserId = null;
-            //string apiToken = null;
-            //var response = instance.OcViewBanById(channelUrl, bannedUserId, apiToken);
-            //Assert.IsInstanceOf(typeof(SendBirdUser), response, "response is SendBirdUser");
         }
         
         /// <summary>
@@ -318,24 +189,10 @@ namespace sendbird_platform_sdk.Test
         public void OcViewChannelByUrlTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
-            //var response = instance.OcViewChannelByUrl(channelUrl, apiToken);
+            //string channelUrl = null;
+            //var response = instance.OcViewChannelByUrl(apiToken, channelUrl);
             //Assert.IsInstanceOf(typeof(SendBirdOpenChannel), response, "response is SendBirdOpenChannel");
-        }
-        
-        /// <summary>
-        /// Test OcViewMuteById
-        /// </summary>
-        [Test]
-        public void OcViewMuteByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
-            //string mutedUserId = null;
-            //string apiToken = null;
-            //var response = instance.OcViewMuteById(channelUrl, mutedUserId, apiToken);
-            //Assert.IsInstanceOf(typeof(OcViewMuteByIdResponse), response, "response is OcViewMuteByIdResponse");
         }
         
     }

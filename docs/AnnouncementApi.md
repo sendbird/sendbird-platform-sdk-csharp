@@ -37,7 +37,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new AnnouncementApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var uniqueId = uniqueId_example;  // string | 
+            var uniqueId = "uniqueId_example";  // string | 
 
             try
             {
@@ -115,7 +115,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new AnnouncementApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var announcementGroup = announcementGroup_example;  // string | 
+            var announcementGroup = "announcementGroup_example";  // string | 
 
             try
             {
@@ -193,9 +193,9 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new AnnouncementApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var uniqueId = uniqueId_example;  // string | 
+            var uniqueId = "uniqueId_example";  // string | 
             var limit = 56;  // int? |  (optional) 
-            var next = next_example;  // string |  (optional) 
+            var next = "next_example";  // string |  (optional) 
             var uniqueIds = new List<string>(); // List<string> |  (optional) 
             var channelUrls = new List<string>(); // List<string> |  (optional) 
             var hasOpened = true;  // bool? |  (optional) 
@@ -281,7 +281,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new AnnouncementApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var uniqueId = uniqueId_example;  // string | 
+            var uniqueId = "uniqueId_example";  // string | 
 
             try
             {

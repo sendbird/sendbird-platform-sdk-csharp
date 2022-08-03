@@ -105,6 +105,14 @@ namespace sendbird_platform_sdk.Test
         {
             // TODO unit test for the property 'UpdatedAt'
         }
+        /// <summary>
+        /// Test the property 'MsgId'
+        /// </summary>
+        [Test]
+        public void MsgIdTest()
+        {
+            // TODO unit test for the property 'MsgId'
+        }
 
     }
 

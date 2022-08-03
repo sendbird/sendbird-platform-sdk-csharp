@@ -185,6 +185,62 @@ namespace sendbird_platform_sdk.Test
         {
             // TODO unit test for the property 'OpenRate'
         }
+        /// <summary>
+        /// Test the property 'CreateChannel'
+        /// </summary>
+        [Test]
+        public void CreateChannelTest()
+        {
+            // TODO unit test for the property 'CreateChannel'
+        }
+        /// <summary>
+        /// Test the property 'CreateChannelOptions'
+        /// </summary>
+        [Test]
+        public void CreateChannelOptionsTest()
+        {
+            // TODO unit test for the property 'CreateChannelOptions'
+        }
+        /// <summary>
+        /// Test the property 'EndAt'
+        /// </summary>
+        [Test]
+        public void EndAtTest()
+        {
+            // TODO unit test for the property 'EndAt'
+        }
+        /// <summary>
+        /// Test the property 'MarkAsRead'
+        /// </summary>
+        [Test]
+        public void MarkAsReadTest()
+        {
+            // TODO unit test for the property 'MarkAsRead'
+        }
+        /// <summary>
+        /// Test the property 'SentChannelCount'
+        /// </summary>
+        [Test]
+        public void SentChannelCountTest()
+        {
+            // TODO unit test for the property 'SentChannelCount'
+        }
+        /// <summary>
+        /// Test the property 'TargetChannelType'
+        /// </summary>
+        [Test]
+        public void TargetChannelTypeTest()
+        {
+            // TODO unit test for the property 'TargetChannelType'
+        }
+        /// <summary>
+        /// Test the property 'TargetCustomType'
+        /// </summary>
+        [Test]
+        public void TargetCustomTypeTest()
+        {
+            // TODO unit test for the property 'TargetCustomType'
+        }
 
     }
 

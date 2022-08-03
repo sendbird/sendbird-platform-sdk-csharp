@@ -66,28 +66,44 @@ namespace sendbird_platform_sdk.Test
 
 
         /// <summary>
-        /// Test the property 'ConnectionStatus'
+        /// Test the property 'RequireAuthForProfileImage'
         /// </summary>
         [Test]
-        public void ConnectionStatusTest()
+        public void RequireAuthForProfileImageTest()
         {
-            // TODO unit test for the property 'ConnectionStatus'
+            // TODO unit test for the property 'RequireAuthForProfileImage'
         }
         /// <summary>
-        /// Test the property 'FriendDiscoveryKey'
+        /// Test the property 'IsOnline'
         /// </summary>
         [Test]
-        public void FriendDiscoveryKeyTest()
+        public void IsOnlineTest()
         {
-            // TODO unit test for the property 'FriendDiscoveryKey'
+            // TODO unit test for the property 'IsOnline'
         }
         /// <summary>
-        /// Test the property 'FriendName'
+        /// Test the property 'UserId'
         /// </summary>
         [Test]
-        public void FriendNameTest()
+        public void UserIdTest()
         {
-            // TODO unit test for the property 'FriendName'
+            // TODO unit test for the property 'UserId'
+        }
+        /// <summary>
+        /// Test the property 'AccessToken'
+        /// </summary>
+        [Test]
+        public void AccessTokenTest()
+        {
+            // TODO unit test for the property 'AccessToken'
+        }
+        /// <summary>
+        /// Test the property 'HasEverLoggedIn'
+        /// </summary>
+        [Test]
+        public void HasEverLoggedInTest()
+        {
+            // TODO unit test for the property 'HasEverLoggedIn'
         }
         /// <summary>
         /// Test the property 'IsActive'
@@ -106,14 +122,6 @@ namespace sendbird_platform_sdk.Test
             // TODO unit test for the property 'LastSeenAt'
         }
         /// <summary>
-        /// Test the property 'MetaData'
-        /// </summary>
-        [Test]
-        public void MetaDataTest()
-        {
-            // TODO unit test for the property 'MetaData'
-        }
-        /// <summary>
         /// Test the property 'Nickname'
         /// </summary>
         [Test]
@@ -122,12 +130,20 @@ namespace sendbird_platform_sdk.Test
             // TODO unit test for the property 'Nickname'
         }
         /// <summary>
-        /// Test the property 'PlainProfileUrl'
+        /// Test the property 'DiscoveryKeys'
         /// </summary>
         [Test]
-        public void PlainProfileUrlTest()
+        public void DiscoveryKeysTest()
         {
-            // TODO unit test for the property 'PlainProfileUrl'
+            // TODO unit test for the property 'DiscoveryKeys'
+        }
+        /// <summary>
+        /// Test the property 'SessionTokens'
+        /// </summary>
+        [Test]
+        public void SessionTokensTest()
+        {
+            // TODO unit test for the property 'SessionTokens'
         }
         /// <summary>
         /// Test the property 'PreferredLanguages'
@@ -146,20 +162,92 @@ namespace sendbird_platform_sdk.Test
             // TODO unit test for the property 'ProfileUrl'
         }
         /// <summary>
-        /// Test the property 'RequireAuth'
+        /// Test the property 'CreatedAt'
         /// </summary>
         [Test]
-        public void RequireAuthTest()
+        public void CreatedAtTest()
         {
-            // TODO unit test for the property 'RequireAuth'
+            // TODO unit test for the property 'CreatedAt'
         }
         /// <summary>
-        /// Test the property 'UserId'
+        /// Test the property 'PhoneNumber'
         /// </summary>
         [Test]
-        public void UserIdTest()
+        public void PhoneNumberTest()
         {
-            // TODO unit test for the property 'UserId'
+            // TODO unit test for the property 'PhoneNumber'
+        }
+        /// <summary>
+        /// Test the property 'Local'
+        /// </summary>
+        [Test]
+        public void LocalTest()
+        {
+            // TODO unit test for the property 'Local'
+        }
+        /// <summary>
+        /// Test the property 'Locale'
+        /// </summary>
+        [Test]
+        public void LocaleTest()
+        {
+            // TODO unit test for the property 'Locale'
+        }
+        /// <summary>
+        /// Test the property 'IsHideMeFromFriends'
+        /// </summary>
+        [Test]
+        public void IsHideMeFromFriendsTest()
+        {
+            // TODO unit test for the property 'IsHideMeFromFriends'
+        }
+        /// <summary>
+        /// Test the property 'IsShadowBlocked'
+        /// </summary>
+        [Test]
+        public void IsShadowBlockedTest()
+        {
+            // TODO unit test for the property 'IsShadowBlocked'
+        }
+        /// <summary>
+        /// Test the property 'IsCreated'
+        /// </summary>
+        [Test]
+        public void IsCreatedTest()
+        {
+            // TODO unit test for the property 'IsCreated'
+        }
+        /// <summary>
+        /// Test the property 'Metadata'
+        /// </summary>
+        [Test]
+        public void MetadataTest()
+        {
+            // TODO unit test for the property 'Metadata'
+        }
+        /// <summary>
+        /// Test the property 'Description'
+        /// </summary>
+        [Test]
+        public void DescriptionTest()
+        {
+            // TODO unit test for the property 'Description'
+        }
+        /// <summary>
+        /// Test the property 'EndAt'
+        /// </summary>
+        [Test]
+        public void EndAtTest()
+        {
+            // TODO unit test for the property 'EndAt'
+        }
+        /// <summary>
+        /// Test the property 'StartAt'
+        /// </summary>
+        [Test]
+        public void StartAtTest()
+        {
+            // TODO unit test for the property 'StartAt'
         }
 
     }

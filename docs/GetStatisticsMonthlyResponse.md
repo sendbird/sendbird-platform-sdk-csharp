@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Statistics** | [**List&lt;GetStatisticsDailyResponseStatistics&gt;**](GetStatisticsDailyResponseStatistics.md) |  | [optional] 
+**Statistics** | [**List&lt;GetStatisticsDailyResponseStatisticsInner&gt;**](GetStatisticsDailyResponseStatisticsInner.md) |  | [optional] 
 **Week** | **decimal** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

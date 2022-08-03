@@ -38,20 +38,9 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="LeaveMyGroupChannelsData" /> class.
         /// </summary>
-        /// <param name="userId">Specifies the unique ID of the user to leave all joined group channels. (required).</param>
         /// <param name="customType">Specifies the custom channel type to make the user leave joined group channels with the corresponding type. (required).</param>
-        public LeaveMyGroupChannelsData(string userId = default(string), string customType = default(string))
+        public LeaveMyGroupChannelsData(string customType = default(string))
         {
-            // to ensure "userId" is required (not null)
-            if (userId == null)
-            {
-                throw new InvalidDataException("userId is a required property for LeaveMyGroupChannelsData and cannot be null");
-            }
-            else
-            {
-                this.UserId = userId;
-            }
-
             // to ensure "customType" is required (not null)
             if (customType == null)
             {
@@ -63,13 +52,6 @@ namespace sendbird_platform_sdk.Model
             }
 
         }
-
-        /// <summary>
-        /// Specifies the unique ID of the user to leave all joined group channels.
-        /// </summary>
-        /// <value>Specifies the unique ID of the user to leave all joined group channels.</value>
-        [DataMember(Name="user_id", EmitDefaultValue=true)]
-        public string UserId { get; set; }
 
         /// <summary>
         /// Specifies the custom channel type to make the user leave joined group channels with the corresponding type.
@@ -86,7 +68,6 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class LeaveMyGroupChannelsData {\n");
-            sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("  CustomType: ").Append(CustomType).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -123,11 +104,6 @@ namespace sendbird_platform_sdk.Model
 
             return 
                 (
-                    this.UserId == input.UserId ||
-                    (this.UserId != null &&
-                    this.UserId.Equals(input.UserId))
-                ) && 
-                (
                     this.CustomType == input.CustomType ||
                     (this.CustomType != null &&
                     this.CustomType.Equals(input.CustomType))
@@ -143,8 +119,6 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.UserId != null)
-                    hashCode = hashCode * 59 + this.UserId.GetHashCode();
                 if (this.CustomType != null)
                     hashCode = hashCode * 59 + this.CustomType.GetHashCode();
                 return hashCode;

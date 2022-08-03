@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Bots** | [**List&lt;ListBotsResponseBots&gt;**](ListBotsResponseBots.md) |  | [optional] 
+**Bots** | [**List&lt;ListBotsResponseBotsInner&gt;**](ListBotsResponseBotsInner.md) |  | [optional] 
 **Next** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

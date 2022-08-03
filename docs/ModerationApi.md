@@ -60,7 +60,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var userId = userId_example;  // string | 
+            var userId = "userId_example";  // string | 
             var banFromChannelsWithCustomChannelTypesData = new BanFromChannelsWithCustomChannelTypesData(); // BanFromChannelsWithCustomChannelTypesData |  (optional) 
 
             try
@@ -140,7 +140,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var userId = userId_example;  // string | 
+            var userId = "userId_example";  // string | 
             var blockUserData = new BlockUserData(); // BlockUserData |  (optional) 
 
             try
@@ -220,7 +220,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var gcBanUserData = new GcBanUserData(); // GcBanUserData |  (optional) 
 
             try
@@ -300,7 +300,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var gcFreezeChannelData = new GcFreezeChannelData(); // GcFreezeChannelData |  (optional) 
 
             try
@@ -380,8 +380,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var token = token_example;  // string |  (optional) 
+            var channelUrl = "channelUrl_example";  // string | 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
@@ -462,8 +462,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var token = token_example;  // string |  (optional) 
+            var channelUrl = "channelUrl_example";  // string | 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
@@ -544,7 +544,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var gcMuteUserData = new GcMuteUserData(); // GcMuteUserData |  (optional) 
 
             try
@@ -600,7 +600,7 @@ No authorization required
 
 ## GcUnbanUserById
 
-> InlineResponse2001 GcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
+> OcDeleteChannelByUrl200Response GcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
 
 Unban a user
 
@@ -624,13 +624,13 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var bannedUserId = bannedUserId_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var bannedUserId = "bannedUserId_example";  // string | 
 
             try
             {
                 // Unban a user
-                InlineResponse2001 result = apiInstance.GcUnbanUserById(apiToken, channelUrl, bannedUserId);
+                OcDeleteChannelByUrl200Response result = apiInstance.GcUnbanUserById(apiToken, channelUrl, bannedUserId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -655,7 +655,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**OcDeleteChannelByUrl200Response**](OcDeleteChannelByUrl200Response.md)
 
 ### Authorization
 
@@ -680,7 +680,7 @@ No authorization required
 
 ## GcUnmuteUserById
 
-> InlineResponse2001 GcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
+> OcDeleteChannelByUrl200Response GcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
 
 Unmute a user
 
@@ -704,13 +704,13 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var mutedUserId = mutedUserId_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var mutedUserId = "mutedUserId_example";  // string | 
 
             try
             {
                 // Unmute a user
-                InlineResponse2001 result = apiInstance.GcUnmuteUserById(apiToken, channelUrl, mutedUserId);
+                OcDeleteChannelByUrl200Response result = apiInstance.GcUnmuteUserById(apiToken, channelUrl, mutedUserId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -735,7 +735,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**OcDeleteChannelByUrl200Response**](OcDeleteChannelByUrl200Response.md)
 
 ### Authorization
 
@@ -784,8 +784,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var bannedUserId = bannedUserId_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var bannedUserId = "bannedUserId_example";  // string | 
             var gcUpdateBanByIdData = new GcUpdateBanByIdData(); // GcUpdateBanByIdData |  (optional) 
 
             try
@@ -866,8 +866,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var bannedUserId = bannedUserId_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var bannedUserId = "bannedUserId_example";  // string | 
 
             try
             {
@@ -946,8 +946,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var mutedUserId = mutedUserId_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var mutedUserId = "mutedUserId_example";  // string | 
 
             try
             {
@@ -1026,8 +1026,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var userId = userId_example;  // string | 
-            var token = token_example;  // string |  (optional) 
+            var userId = "userId_example";  // string | 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
@@ -1108,12 +1108,12 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var userId = userId_example;  // string | 
-            var token = token_example;  // string |  (optional) 
+            var userId = "userId_example";  // string | 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
-            var userIds = userIds_example;  // string |  (optional) 
-            var metadatakey = metadatakey_example;  // string |  (optional) 
-            var metadatavaluesIn = metadatavaluesIn_example;  // string |  (optional) 
+            var userIds = "userIds_example";  // string |  (optional) 
+            var metadatakey = "metadatakey_example";  // string |  (optional) 
+            var metadatavaluesIn = "metadatavaluesIn_example";  // string |  (optional) 
 
             try
             {
@@ -1196,8 +1196,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var userId = userId_example;  // string | 
-            var token = token_example;  // string |  (optional) 
+            var userId = "userId_example";  // string | 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
@@ -1278,7 +1278,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var userId = userId_example;  // string | 
+            var userId = "userId_example";  // string | 
             var muteInChannelsWithCustomChannelTypesData = new MuteInChannelsWithCustomChannelTypesData(); // MuteInChannelsWithCustomChannelTypesData |  (optional) 
 
             try
@@ -1358,7 +1358,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var ocBanUserData = new OcBanUserData(); // OcBanUserData |  (optional) 
 
             try
@@ -1438,7 +1438,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var ocFreezeChannelData = new OcFreezeChannelData(); // OcFreezeChannelData |  (optional) 
 
             try
@@ -1518,8 +1518,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var token = token_example;  // string |  (optional) 
+            var channelUrl = "channelUrl_example";  // string | 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
@@ -1600,8 +1600,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var token = token_example;  // string |  (optional) 
+            var channelUrl = "channelUrl_example";  // string | 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
@@ -1682,7 +1682,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var ocMuteUserData = new OcMuteUserData(); // OcMuteUserData |  (optional) 
 
             try
@@ -1738,7 +1738,7 @@ No authorization required
 
 ## OcUnbanUserById
 
-> InlineResponse2001 OcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
+> OcDeleteChannelByUrl200Response OcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
 
 Unban a user
 
@@ -1762,13 +1762,13 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var bannedUserId = bannedUserId_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var bannedUserId = "bannedUserId_example";  // string | 
 
             try
             {
                 // Unban a user
-                InlineResponse2001 result = apiInstance.OcUnbanUserById(apiToken, channelUrl, bannedUserId);
+                OcDeleteChannelByUrl200Response result = apiInstance.OcUnbanUserById(apiToken, channelUrl, bannedUserId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1793,7 +1793,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**OcDeleteChannelByUrl200Response**](OcDeleteChannelByUrl200Response.md)
 
 ### Authorization
 
@@ -1818,7 +1818,7 @@ No authorization required
 
 ## OcUnmuteUserById
 
-> InlineResponse2001 OcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
+> OcDeleteChannelByUrl200Response OcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
 
 Unmute a user
 
@@ -1842,13 +1842,13 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var mutedUserId = mutedUserId_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var mutedUserId = "mutedUserId_example";  // string | 
 
             try
             {
                 // Unmute a user
-                InlineResponse2001 result = apiInstance.OcUnmuteUserById(apiToken, channelUrl, mutedUserId);
+                OcDeleteChannelByUrl200Response result = apiInstance.OcUnmuteUserById(apiToken, channelUrl, mutedUserId);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1873,7 +1873,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**OcDeleteChannelByUrl200Response**](OcDeleteChannelByUrl200Response.md)
 
 ### Authorization
 
@@ -1922,8 +1922,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var bannedUserId = bannedUserId_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var bannedUserId = "bannedUserId_example";  // string | 
             var ocUpdateBanByIdData = new OcUpdateBanByIdData(); // OcUpdateBanByIdData |  (optional) 
 
             try
@@ -2004,8 +2004,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var bannedUserId = bannedUserId_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var bannedUserId = "bannedUserId_example";  // string | 
 
             try
             {
@@ -2084,8 +2084,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var mutedUserId = mutedUserId_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var mutedUserId = "mutedUserId_example";  // string | 
 
             try
             {
@@ -2164,8 +2164,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ModerationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var userId = userId_example;  // string | 
-            var targetId = targetId_example;  // string | 
+            var userId = "userId_example";  // string | 
+            var targetId = "targetId_example";  // string | 
 
             try
             {

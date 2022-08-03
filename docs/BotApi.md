@@ -120,7 +120,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new BotApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var botUserid = botUserid_example;  // string | 
+            var botUserid = "botUserid_example";  // string | 
 
             try
             {
@@ -198,7 +198,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new BotApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var botUserid = botUserid_example;  // string | 
+            var botUserid = "botUserid_example";  // string | 
             var joinChannelsData = new JoinChannelsData(); // JoinChannelsData |  (optional) 
 
             try
@@ -278,8 +278,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new BotApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var botUserid = botUserid_example;  // string | 
-            var channelUrl = channelUrl_example;  // string |  (optional) 
+            var botUserid = "botUserid_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string |  (optional) 
 
             try
             {
@@ -357,8 +357,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new BotApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var botUserid = botUserid_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var botUserid = "botUserid_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
 
             try
             {
@@ -437,7 +437,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new BotApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var token = token_example;  // string |  (optional) 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
@@ -517,7 +517,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new BotApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var botUserid = botUserid_example;  // string | 
+            var botUserid = "botUserid_example";  // string | 
             var sendBotSMessageData = new SendBotSMessageData(); // SendBotSMessageData |  (optional) 
 
             try
@@ -597,7 +597,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new BotApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var botUserid = botUserid_example;  // string | 
+            var botUserid = "botUserid_example";  // string | 
             var updateBotByIdData = new UpdateBotByIdData(); // UpdateBotByIdData |  (optional) 
 
             try
@@ -677,7 +677,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new BotApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var botUserid = botUserid_example;  // string | 
+            var botUserid = "botUserid_example";  // string | 
 
             try
             {

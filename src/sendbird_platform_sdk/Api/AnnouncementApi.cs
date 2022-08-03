@@ -29,7 +29,7 @@ namespace sendbird_platform_sdk.Api
         /// Get detailed open rate of an announcement
         /// </summary>
         /// <remarks>
-        /// ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;unique_id&#x60;      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
+        /// ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `unique_id`      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Api
         /// Get detailed open rate of an announcement
         /// </summary>
         /// <remarks>
-        /// ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;unique_id&#x60;      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
+        /// ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `unique_id`      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -133,7 +133,7 @@ namespace sendbird_platform_sdk.Api
         /// Get detailed open rate of an announcement
         /// </summary>
         /// <remarks>
-        /// ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;unique_id&#x60;      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
+        /// ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `unique_id`      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -146,7 +146,7 @@ namespace sendbird_platform_sdk.Api
         /// Get detailed open rate of an announcement
         /// </summary>
         /// <remarks>
-        /// ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;unique_id&#x60;      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
+        /// ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `unique_id`      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -351,7 +351,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Get detailed open rate of an announcement ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;unique_id&#x60;      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
+        /// Get detailed open rate of an announcement ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `unique_id`      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -364,7 +364,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Get detailed open rate of an announcement ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;unique_id&#x60;      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
+        /// Get detailed open rate of an announcement ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `unique_id`      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -423,7 +423,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Get detailed open rate of an announcement ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;unique_id&#x60;      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
+        /// Get detailed open rate of an announcement ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `unique_id`      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -438,7 +438,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Get detailed open rate of an announcement ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;unique_id&#x60;      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
+        /// Get detailed open rate of an announcement ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `unique_id`      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>

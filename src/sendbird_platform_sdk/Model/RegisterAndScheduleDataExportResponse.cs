@@ -47,7 +47,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="senderIds">senderIds.</param>
         /// <param name="file">file.</param>
         /// <param name="userIds">userIds.</param>
-        public RegisterAndScheduleDataExportResponse(List<string> channelCustomTypes = default(List<string>), string dataType = default(string), string requestId = default(string), string status = default(string), string format = default(string), string csvDelimiter = default(string), string timezone = default(string), decimal createdAt = default(decimal), decimal startTs = default(decimal), decimal endTs = default(decimal), List<string> channelUrls = default(List<string>), List<string> senderIds = default(List<string>), ListDataExportsByMessageChannelOrUserResponseFile file = default(ListDataExportsByMessageChannelOrUserResponseFile), List<decimal> userIds = default(List<decimal>))
+        public RegisterAndScheduleDataExportResponse(List<string> channelCustomTypes = default(List<string>), string dataType = default(string), string requestId = default(string), string status = default(string), string format = default(string), string csvDelimiter = default(string), string timezone = default(string), decimal createdAt = default(decimal), decimal startTs = default(decimal), decimal endTs = default(decimal), List<string> channelUrls = default(List<string>), List<string> senderIds = default(List<string>), ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile file = default(ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile), List<string> userIds = default(List<string>))
         {
             this.ChannelCustomTypes = channelCustomTypes;
             this.DataType = dataType;
@@ -141,13 +141,13 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets File
         /// </summary>
         [DataMember(Name="file", EmitDefaultValue=false)]
-        public ListDataExportsByMessageChannelOrUserResponseFile File { get; set; }
+        public ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile File { get; set; }
 
         /// <summary>
         /// Gets or Sets UserIds
         /// </summary>
         [DataMember(Name="user_ids", EmitDefaultValue=false)]
-        public List<decimal> UserIds { get; set; }
+        public List<string> UserIds { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -66,20 +66,12 @@ namespace sendbird_platform_sdk.Test
 
 
         /// <summary>
-        /// Test the property 'PushTriggerOption'
+        /// Test the property 'SnoozeStartTs'
         /// </summary>
         [Test]
-        public void PushTriggerOptionTest()
+        public void SnoozeStartTsTest()
         {
-            // TODO unit test for the property 'PushTriggerOption'
-        }
-        /// <summary>
-        /// Test the property 'DoNotDisturb'
-        /// </summary>
-        [Test]
-        public void DoNotDisturbTest()
-        {
-            // TODO unit test for the property 'DoNotDisturb'
+            // TODO unit test for the property 'SnoozeStartTs'
         }
         /// <summary>
         /// Test the property 'StartHour'
@@ -90,20 +82,12 @@ namespace sendbird_platform_sdk.Test
             // TODO unit test for the property 'StartHour'
         }
         /// <summary>
-        /// Test the property 'StartMin'
+        /// Test the property 'SnoozeEnabled'
         /// </summary>
         [Test]
-        public void StartMinTest()
+        public void SnoozeEnabledTest()
         {
-            // TODO unit test for the property 'StartMin'
-        }
-        /// <summary>
-        /// Test the property 'EndHour'
-        /// </summary>
-        [Test]
-        public void EndHourTest()
-        {
-            // TODO unit test for the property 'EndHour'
+            // TODO unit test for the property 'SnoozeEnabled'
         }
         /// <summary>
         /// Test the property 'EndMin'
@@ -114,20 +98,36 @@ namespace sendbird_platform_sdk.Test
             // TODO unit test for the property 'EndMin'
         }
         /// <summary>
-        /// Test the property 'SnoozeEnabled'
+        /// Test the property 'Timezone'
         /// </summary>
         [Test]
-        public void SnoozeEnabledTest()
+        public void TimezoneTest()
         {
-            // TODO unit test for the property 'SnoozeEnabled'
+            // TODO unit test for the property 'Timezone'
         }
         /// <summary>
-        /// Test the property 'SnoozeStartTs'
+        /// Test the property 'BlockPushFromBots'
         /// </summary>
         [Test]
-        public void SnoozeStartTsTest()
+        public void BlockPushFromBotsTest()
         {
-            // TODO unit test for the property 'SnoozeStartTs'
+            // TODO unit test for the property 'BlockPushFromBots'
+        }
+        /// <summary>
+        /// Test the property 'PushBlockedBotIds'
+        /// </summary>
+        [Test]
+        public void PushBlockedBotIdsTest()
+        {
+            // TODO unit test for the property 'PushBlockedBotIds'
+        }
+        /// <summary>
+        /// Test the property 'StartMin'
+        /// </summary>
+        [Test]
+        public void StartMinTest()
+        {
+            // TODO unit test for the property 'StartMin'
         }
         /// <summary>
         /// Test the property 'SnoozeEndTs'
@@ -138,12 +138,28 @@ namespace sendbird_platform_sdk.Test
             // TODO unit test for the property 'SnoozeEndTs'
         }
         /// <summary>
-        /// Test the property 'Timezone'
+        /// Test the property 'DoNotDisturb'
         /// </summary>
         [Test]
-        public void TimezoneTest()
+        public void DoNotDisturbTest()
         {
-            // TODO unit test for the property 'Timezone'
+            // TODO unit test for the property 'DoNotDisturb'
+        }
+        /// <summary>
+        /// Test the property 'EndHour'
+        /// </summary>
+        [Test]
+        public void EndHourTest()
+        {
+            // TODO unit test for the property 'EndHour'
+        }
+        /// <summary>
+        /// Test the property 'EnablePushForReplies'
+        /// </summary>
+        [Test]
+        public void EnablePushForRepliesTest()
+        {
+            // TODO unit test for the property 'EnablePushForReplies'
         }
         /// <summary>
         /// Test the property 'PushSound'
@@ -152,6 +168,14 @@ namespace sendbird_platform_sdk.Test
         public void PushSoundTest()
         {
             // TODO unit test for the property 'PushSound'
+        }
+        /// <summary>
+        /// Test the property 'PushTriggerOption'
+        /// </summary>
+        [Test]
+        public void PushTriggerOptionTest()
+        {
+            // TODO unit test for the property 'PushTriggerOption'
         }
 
     }

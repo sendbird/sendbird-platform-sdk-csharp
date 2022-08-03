@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="userIds">userIds.</param>
         /// <param name="channelDeleteOption">channelDeleteOption.</param>
         /// <param name="createdAt">createdAt.</param>
-        public ViewGdprRequestByIdResponse(string requestId = default(string), string action = default(string), string status = default(string), string userId = default(string), ListDataExportsByMessageChannelOrUserResponseFile files = default(ListDataExportsByMessageChannelOrUserResponseFile), List<string> userIds = default(List<string>), string channelDeleteOption = default(string), decimal createdAt = default(decimal))
+        public ViewGdprRequestByIdResponse(string requestId = default(string), string action = default(string), string status = default(string), string userId = default(string), ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile files = default(ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile), List<string> userIds = default(List<string>), string channelDeleteOption = default(string), decimal createdAt = default(decimal))
         {
             this.RequestId = requestId;
             this.Action = action;
@@ -81,7 +81,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets Files
         /// </summary>
         [DataMember(Name="files", EmitDefaultValue=false)]
-        public ListDataExportsByMessageChannelOrUserResponseFile Files { get; set; }
+        public ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile Files { get; set; }
 
         /// <summary>
         /// Gets or Sets UserIds

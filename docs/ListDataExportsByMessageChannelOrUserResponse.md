@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ExportedData** | [**List&lt;ListDataExportsByMessageChannelOrUserResponseExportedData&gt;**](ListDataExportsByMessageChannelOrUserResponseExportedData.md) |  | [optional] 
+**ExportedData** | [**List&lt;ListDataExportsByMessageChannelOrUserResponseExportedDataInner&gt;**](ListDataExportsByMessageChannelOrUserResponseExportedDataInner.md) |  | [optional] 
 **Next** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

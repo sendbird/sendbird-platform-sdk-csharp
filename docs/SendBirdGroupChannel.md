@@ -48,6 +48,7 @@ Name | Type | Description | Notes
 **SmsFallback** | [**SendBirdGroupChannelSmsFallback**](SendBirdGroupChannelSmsFallback.md) |  | [optional] 
 **UnreadMentionCount** | **decimal** |  | [optional] 
 **UnreadMessageCount** | **decimal** |  | [optional] 
+**Channel** | [**SendBirdGroupChannelChannel**](SendBirdGroupChannelChannel.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

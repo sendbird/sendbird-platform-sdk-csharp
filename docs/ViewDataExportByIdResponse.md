@@ -17,8 +17,8 @@ Name | Type | Description | Notes
 **ChannelUrls** | **List&lt;string&gt;** |  | [optional] 
 **ChannelCustomTypes** | **List&lt;string&gt;** |  | [optional] 
 **SenderIds** | **List&lt;string&gt;** |  | [optional] 
-**File** | [**ListDataExportsByMessageChannelOrUserResponseFile**](ListDataExportsByMessageChannelOrUserResponseFile.md) |  | [optional] 
-**UserIds** | **List&lt;decimal&gt;** |  | [optional] 
+**File** | [**ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile**](ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile.md) |  | [optional] 
+**UserIds** | **List&lt;string&gt;** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

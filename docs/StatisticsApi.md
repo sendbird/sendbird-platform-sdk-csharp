@@ -190,7 +190,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new StatisticsApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var date = date_example;  // string |  (optional) 
+            var date = "date_example";  // string |  (optional) 
 
             try
             {
@@ -268,7 +268,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new StatisticsApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var date = date_example;  // string |  (optional) 
+            var date = "date_example";  // string |  (optional) 
 
             try
             {
@@ -346,7 +346,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new StatisticsApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var timeDimension = timeDimension_example;  // string | 
+            var timeDimension = "timeDimension_example";  // string | 
             var startYear = 56;  // int | 
             var startMonth = 56;  // int | 
             var endYear = 56;  // int | 

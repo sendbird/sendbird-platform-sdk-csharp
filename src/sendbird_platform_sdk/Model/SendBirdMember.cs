@@ -53,7 +53,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets Role
         /// </summary>
-        [DataMember(Name="role", EmitDefaultValue=false)]
+        [DataMember(Name="role", EmitDefaultValue=true)]
         public RoleEnum? Role { get; set; }
         /// <summary>
         /// Defines State
@@ -87,8 +87,6 @@ namespace sendbird_platform_sdk.Model
         /// <param name="friendDiscoveryKey">friendDiscoveryKey.</param>
         /// <param name="friendName">friendName.</param>
         /// <param name="isActive">isActive.</param>
-        /// <param name="isBlockedByMe">isBlockedByMe.</param>
-        /// <param name="isBlockingMe">isBlockingMe.</param>
         /// <param name="isMuted">isMuted.</param>
         /// <param name="lastSeenAt">lastSeenAt.</param>
         /// <param name="metaData">metaData.</param>
@@ -97,18 +95,22 @@ namespace sendbird_platform_sdk.Model
         /// <param name="preferredLanguages">preferredLanguages.</param>
         /// <param name="profileUrl">profileUrl.</param>
         /// <param name="requireAuth">requireAuth.</param>
+        /// <param name="requireAuthForProfileImage">requireAuthForProfileImage.</param>
+        /// <param name="metadata">metadata.</param>
+        /// <param name="isOnline">isOnline.</param>
+        /// <param name="mutedEndAt">mutedEndAt.</param>
+        /// <param name="mutedDescription">mutedDescription.</param>
         /// <param name="restrictionInfo">restrictionInfo.</param>
         /// <param name="role">role.</param>
         /// <param name="state">state.</param>
         /// <param name="userId">userId.</param>
-        public SendBirdMember(string connectionStatus = default(string), string friendDiscoveryKey = default(string), string friendName = default(string), bool isActive = default(bool), bool isBlockedByMe = default(bool), bool isBlockingMe = default(bool), bool isMuted = default(bool), int lastSeenAt = default(int), SBObject metaData = default(SBObject), string nickname = default(string), string plainProfileUrl = default(string), List<string> preferredLanguages = default(List<string>), string profileUrl = default(string), bool requireAuth = default(bool), SendBirdRestrictionInfo restrictionInfo = default(SendBirdRestrictionInfo), RoleEnum? role = default(RoleEnum?), StateEnum? state = default(StateEnum?), string userId = default(string))
+        public SendBirdMember(string connectionStatus = default(string), string friendDiscoveryKey = default(string), string friendName = default(string), bool isActive = default(bool), bool isMuted = default(bool), int lastSeenAt = default(int), SBObject metaData = default(SBObject), string nickname = default(string), string plainProfileUrl = default(string), List<string> preferredLanguages = default(List<string>), string profileUrl = default(string), bool requireAuth = default(bool), bool requireAuthForProfileImage = default(bool), Object metadata = default(Object), bool isOnline = default(bool), decimal mutedEndAt = default(decimal), string mutedDescription = default(string), SendBirdRestrictionInfo restrictionInfo = default(SendBirdRestrictionInfo), RoleEnum? role = default(RoleEnum?), StateEnum? state = default(StateEnum?), string userId = default(string))
         {
+            this.Role = role;
             this.ConnectionStatus = connectionStatus;
             this.FriendDiscoveryKey = friendDiscoveryKey;
             this.FriendName = friendName;
             this.IsActive = isActive;
-            this.IsBlockedByMe = isBlockedByMe;
-            this.IsBlockingMe = isBlockingMe;
             this.IsMuted = isMuted;
             this.LastSeenAt = lastSeenAt;
             this.MetaData = metaData;
@@ -117,6 +119,11 @@ namespace sendbird_platform_sdk.Model
             this.PreferredLanguages = preferredLanguages;
             this.ProfileUrl = profileUrl;
             this.RequireAuth = requireAuth;
+            this.RequireAuthForProfileImage = requireAuthForProfileImage;
+            this.Metadata = metadata;
+            this.IsOnline = isOnline;
+            this.MutedEndAt = mutedEndAt;
+            this.MutedDescription = mutedDescription;
             this.RestrictionInfo = restrictionInfo;
             this.Role = role;
             this.State = state;
@@ -146,18 +153,6 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         [DataMember(Name="is_active", EmitDefaultValue=false)]
         public bool IsActive { get; set; }
-
-        /// <summary>
-        /// Gets or Sets IsBlockedByMe
-        /// </summary>
-        [DataMember(Name="is_blocked_by_me", EmitDefaultValue=false)]
-        public bool IsBlockedByMe { get; set; }
-
-        /// <summary>
-        /// Gets or Sets IsBlockingMe
-        /// </summary>
-        [DataMember(Name="is_blocking_me", EmitDefaultValue=false)]
-        public bool IsBlockingMe { get; set; }
 
         /// <summary>
         /// Gets or Sets IsMuted
@@ -208,6 +203,36 @@ namespace sendbird_platform_sdk.Model
         public bool RequireAuth { get; set; }
 
         /// <summary>
+        /// Gets or Sets RequireAuthForProfileImage
+        /// </summary>
+        [DataMember(Name="require_auth_for_profile_image", EmitDefaultValue=false)]
+        public bool RequireAuthForProfileImage { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Metadata
+        /// </summary>
+        [DataMember(Name="metadata", EmitDefaultValue=false)]
+        public Object Metadata { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsOnline
+        /// </summary>
+        [DataMember(Name="is_online", EmitDefaultValue=false)]
+        public bool IsOnline { get; set; }
+
+        /// <summary>
+        /// Gets or Sets MutedEndAt
+        /// </summary>
+        [DataMember(Name="muted_end_at", EmitDefaultValue=false)]
+        public decimal MutedEndAt { get; set; }
+
+        /// <summary>
+        /// Gets or Sets MutedDescription
+        /// </summary>
+        [DataMember(Name="muted_description", EmitDefaultValue=false)]
+        public string MutedDescription { get; set; }
+
+        /// <summary>
         /// Gets or Sets RestrictionInfo
         /// </summary>
         [DataMember(Name="restriction_info", EmitDefaultValue=false)]
@@ -233,8 +258,6 @@ namespace sendbird_platform_sdk.Model
             sb.Append("  FriendDiscoveryKey: ").Append(FriendDiscoveryKey).Append("\n");
             sb.Append("  FriendName: ").Append(FriendName).Append("\n");
             sb.Append("  IsActive: ").Append(IsActive).Append("\n");
-            sb.Append("  IsBlockedByMe: ").Append(IsBlockedByMe).Append("\n");
-            sb.Append("  IsBlockingMe: ").Append(IsBlockingMe).Append("\n");
             sb.Append("  IsMuted: ").Append(IsMuted).Append("\n");
             sb.Append("  LastSeenAt: ").Append(LastSeenAt).Append("\n");
             sb.Append("  MetaData: ").Append(MetaData).Append("\n");
@@ -243,6 +266,11 @@ namespace sendbird_platform_sdk.Model
             sb.Append("  PreferredLanguages: ").Append(PreferredLanguages).Append("\n");
             sb.Append("  ProfileUrl: ").Append(ProfileUrl).Append("\n");
             sb.Append("  RequireAuth: ").Append(RequireAuth).Append("\n");
+            sb.Append("  RequireAuthForProfileImage: ").Append(RequireAuthForProfileImage).Append("\n");
+            sb.Append("  Metadata: ").Append(Metadata).Append("\n");
+            sb.Append("  IsOnline: ").Append(IsOnline).Append("\n");
+            sb.Append("  MutedEndAt: ").Append(MutedEndAt).Append("\n");
+            sb.Append("  MutedDescription: ").Append(MutedDescription).Append("\n");
             sb.Append("  RestrictionInfo: ").Append(RestrictionInfo).Append("\n");
             sb.Append("  Role: ").Append(Role).Append("\n");
             sb.Append("  State: ").Append(State).Append("\n");
@@ -302,16 +330,6 @@ namespace sendbird_platform_sdk.Model
                     this.IsActive.Equals(input.IsActive))
                 ) && 
                 (
-                    this.IsBlockedByMe == input.IsBlockedByMe ||
-                    (this.IsBlockedByMe != null &&
-                    this.IsBlockedByMe.Equals(input.IsBlockedByMe))
-                ) && 
-                (
-                    this.IsBlockingMe == input.IsBlockingMe ||
-                    (this.IsBlockingMe != null &&
-                    this.IsBlockingMe.Equals(input.IsBlockingMe))
-                ) && 
-                (
                     this.IsMuted == input.IsMuted ||
                     (this.IsMuted != null &&
                     this.IsMuted.Equals(input.IsMuted))
@@ -353,6 +371,31 @@ namespace sendbird_platform_sdk.Model
                     this.RequireAuth.Equals(input.RequireAuth))
                 ) && 
                 (
+                    this.RequireAuthForProfileImage == input.RequireAuthForProfileImage ||
+                    (this.RequireAuthForProfileImage != null &&
+                    this.RequireAuthForProfileImage.Equals(input.RequireAuthForProfileImage))
+                ) && 
+                (
+                    this.Metadata == input.Metadata ||
+                    (this.Metadata != null &&
+                    this.Metadata.Equals(input.Metadata))
+                ) && 
+                (
+                    this.IsOnline == input.IsOnline ||
+                    (this.IsOnline != null &&
+                    this.IsOnline.Equals(input.IsOnline))
+                ) && 
+                (
+                    this.MutedEndAt == input.MutedEndAt ||
+                    (this.MutedEndAt != null &&
+                    this.MutedEndAt.Equals(input.MutedEndAt))
+                ) && 
+                (
+                    this.MutedDescription == input.MutedDescription ||
+                    (this.MutedDescription != null &&
+                    this.MutedDescription.Equals(input.MutedDescription))
+                ) && 
+                (
                     this.RestrictionInfo == input.RestrictionInfo ||
                     (this.RestrictionInfo != null &&
                     this.RestrictionInfo.Equals(input.RestrictionInfo))
@@ -391,10 +434,6 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.FriendName.GetHashCode();
                 if (this.IsActive != null)
                     hashCode = hashCode * 59 + this.IsActive.GetHashCode();
-                if (this.IsBlockedByMe != null)
-                    hashCode = hashCode * 59 + this.IsBlockedByMe.GetHashCode();
-                if (this.IsBlockingMe != null)
-                    hashCode = hashCode * 59 + this.IsBlockingMe.GetHashCode();
                 if (this.IsMuted != null)
                     hashCode = hashCode * 59 + this.IsMuted.GetHashCode();
                 if (this.LastSeenAt != null)
@@ -411,6 +450,16 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.ProfileUrl.GetHashCode();
                 if (this.RequireAuth != null)
                     hashCode = hashCode * 59 + this.RequireAuth.GetHashCode();
+                if (this.RequireAuthForProfileImage != null)
+                    hashCode = hashCode * 59 + this.RequireAuthForProfileImage.GetHashCode();
+                if (this.Metadata != null)
+                    hashCode = hashCode * 59 + this.Metadata.GetHashCode();
+                if (this.IsOnline != null)
+                    hashCode = hashCode * 59 + this.IsOnline.GetHashCode();
+                if (this.MutedEndAt != null)
+                    hashCode = hashCode * 59 + this.MutedEndAt.GetHashCode();
+                if (this.MutedDescription != null)
+                    hashCode = hashCode * 59 + this.MutedDescription.GetHashCode();
                 if (this.RestrictionInfo != null)
                     hashCode = hashCode * 59 + this.RestrictionInfo.GetHashCode();
                 if (this.Role != null)

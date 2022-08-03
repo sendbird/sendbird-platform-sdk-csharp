@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="openStatus">openStatus.</param>
         /// <param name="next">next.</param>
-        public GetDetailedOpenStatusOfAnnouncementByIdResponse(List<GetDetailedOpenStatusOfAnnouncementByIdResponseOpenStatus> openStatus = default(List<GetDetailedOpenStatusOfAnnouncementByIdResponseOpenStatus>), string next = default(string))
+        public GetDetailedOpenStatusOfAnnouncementByIdResponse(List<GetDetailedOpenStatusOfAnnouncementByIdResponseOpenStatusInner> openStatus = default(List<GetDetailedOpenStatusOfAnnouncementByIdResponseOpenStatusInner>), string next = default(string))
         {
             this.OpenStatus = openStatus;
             this.Next = next;
@@ -45,7 +45,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets OpenStatus
         /// </summary>
         [DataMember(Name="open_status", EmitDefaultValue=false)]
-        public List<GetDetailedOpenStatusOfAnnouncementByIdResponseOpenStatus> OpenStatus { get; set; }
+        public List<GetDetailedOpenStatusOfAnnouncementByIdResponseOpenStatusInner> OpenStatus { get; set; }
 
         /// <summary>
         /// Gets or Sets Next

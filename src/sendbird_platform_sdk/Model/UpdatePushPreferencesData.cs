@@ -38,7 +38,6 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdatePushPreferencesData" /> class.
         /// </summary>
-        /// <param name="userId">Specifies the unique ID of the target user. (required).</param>
         /// <param name="pushTriggerOption">Determines the type of push notification trigger to apply to the user&#39;s joined group channels. Valid values are the following:&lt;br /&gt;- all (default): when disconnected from Sendbird server, the user receives notifications for all new messages including mentioned messages the user has been mentioned in.&lt;br /&gt;- mention_only: when disconnected from Sendbird server, the user only receives notifications for messages the user has been mentioned in.&lt;br /&gt;- off: the user doesn&#39;t receive any notifications. (required).</param>
         /// <param name="doNotDisturb">Determines whether to pause notification messages for the user during a specific time of day. (Default: false) (required).</param>
         /// <param name="startHour">Specifies the hour to start pausing the notifications for Do Not Disturb of the user. (required).</param>
@@ -52,18 +51,8 @@ namespace sendbird_platform_sdk.Model
         /// <param name="pushBlockedBotIds">Specifies an array of one or more IDs of bots whose push notifications are blocked. This property is effective only when the block_push_from_bots is set to true. (required).</param>
         /// <param name="timezone">Specifies the timezone to be applied to push preferences with a value such as UTC, Asia/Seoul, Europe/London, etc. (required).</param>
         /// <param name="pushSound">Specifies the name of a sound file to be played when a push notification is delivered to your client app. (required).</param>
-        public UpdatePushPreferencesData(string userId = default(string), string pushTriggerOption = default(string), bool doNotDisturb = default(bool), int startHour = default(int), int startMin = default(int), int endHour = default(int), int endMin = default(int), bool snoozeEnabled = default(bool), int snoozeStartTs = default(int), int snoozeEndTs = default(int), bool blockPushFromBots = default(bool), List<int> pushBlockedBotIds = default(List<int>), string timezone = default(string), string pushSound = default(string))
+        public UpdatePushPreferencesData(string pushTriggerOption = default(string), bool doNotDisturb = default(bool), int startHour = default(int), int startMin = default(int), int endHour = default(int), int endMin = default(int), bool snoozeEnabled = default(bool), int snoozeStartTs = default(int), int snoozeEndTs = default(int), bool blockPushFromBots = default(bool), List<int> pushBlockedBotIds = default(List<int>), string timezone = default(string), string pushSound = default(string))
         {
-            // to ensure "userId" is required (not null)
-            if (userId == null)
-            {
-                throw new InvalidDataException("userId is a required property for UpdatePushPreferencesData and cannot be null");
-            }
-            else
-            {
-                this.UserId = userId;
-            }
-
             // to ensure "pushTriggerOption" is required (not null)
             if (pushTriggerOption == null)
             {
@@ -197,13 +186,6 @@ namespace sendbird_platform_sdk.Model
         }
 
         /// <summary>
-        /// Specifies the unique ID of the target user.
-        /// </summary>
-        /// <value>Specifies the unique ID of the target user.</value>
-        [DataMember(Name="user_id", EmitDefaultValue=true)]
-        public string UserId { get; set; }
-
-        /// <summary>
         /// Determines the type of push notification trigger to apply to the user&#39;s joined group channels. Valid values are the following:&lt;br /&gt;- all (default): when disconnected from Sendbird server, the user receives notifications for all new messages including mentioned messages the user has been mentioned in.&lt;br /&gt;- mention_only: when disconnected from Sendbird server, the user only receives notifications for messages the user has been mentioned in.&lt;br /&gt;- off: the user doesn&#39;t receive any notifications.
         /// </summary>
         /// <value>Determines the type of push notification trigger to apply to the user&#39;s joined group channels. Valid values are the following:&lt;br /&gt;- all (default): when disconnected from Sendbird server, the user receives notifications for all new messages including mentioned messages the user has been mentioned in.&lt;br /&gt;- mention_only: when disconnected from Sendbird server, the user only receives notifications for messages the user has been mentioned in.&lt;br /&gt;- off: the user doesn&#39;t receive any notifications.</value>
@@ -302,7 +284,6 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class UpdatePushPreferencesData {\n");
-            sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("  PushTriggerOption: ").Append(PushTriggerOption).Append("\n");
             sb.Append("  DoNotDisturb: ").Append(DoNotDisturb).Append("\n");
             sb.Append("  StartHour: ").Append(StartHour).Append("\n");
@@ -350,11 +331,6 @@ namespace sendbird_platform_sdk.Model
                 return false;
 
             return 
-                (
-                    this.UserId == input.UserId ||
-                    (this.UserId != null &&
-                    this.UserId.Equals(input.UserId))
-                ) && 
                 (
                     this.PushTriggerOption == input.PushTriggerOption ||
                     (this.PushTriggerOption != null &&
@@ -432,8 +408,6 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.UserId != null)
-                    hashCode = hashCode * 59 + this.UserId.GetHashCode();
                 if (this.PushTriggerOption != null)
                     hashCode = hashCode * 59 + this.PushTriggerOption.GetHashCode();
                 if (this.DoNotDisturb != null)

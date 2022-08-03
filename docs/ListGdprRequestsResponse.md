@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Requests** | [**List&lt;ListGdprRequestsResponseRequests&gt;**](ListGdprRequestsResponseRequests.md) |  | [optional] 
+**Requests** | [**List&lt;ListGdprRequestsResponseRequestsInner&gt;**](ListGdprRequestsResponseRequestsInner.md) |  | [optional] 
 **Next** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

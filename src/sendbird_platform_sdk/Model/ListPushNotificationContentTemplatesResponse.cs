@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="ListPushNotificationContentTemplatesResponse" /> class.
         /// </summary>
         /// <param name="pushMessageTemplates">pushMessageTemplates.</param>
-        public ListPushNotificationContentTemplatesResponse(List<ListPushNotificationContentTemplatesResponsePushMessageTemplates> pushMessageTemplates = default(List<ListPushNotificationContentTemplatesResponsePushMessageTemplates>))
+        public ListPushNotificationContentTemplatesResponse(List<ListPushNotificationContentTemplatesResponsePushMessageTemplatesInner> pushMessageTemplates = default(List<ListPushNotificationContentTemplatesResponsePushMessageTemplatesInner>))
         {
             this.PushMessageTemplates = pushMessageTemplates;
         }
@@ -43,7 +43,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets PushMessageTemplates
         /// </summary>
         [DataMember(Name="push_message_templates", EmitDefaultValue=false)]
-        public List<ListPushNotificationContentTemplatesResponsePushMessageTemplates> PushMessageTemplates { get; set; }
+        public List<ListPushNotificationContentTemplatesResponsePushMessageTemplatesInner> PushMessageTemplates { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

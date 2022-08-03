@@ -42,7 +42,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var operatorIds = new List<string>(); // List<string> | 
             var deleteAll = true;  // bool? |  (optional) 
 
@@ -177,7 +177,7 @@ No authorization required
 
 ## OcDeleteChannelByUrl
 
-> InlineResponse2001 OcDeleteChannelByUrl (string apiToken, string channelUrl)
+> OcDeleteChannelByUrl200Response OcDeleteChannelByUrl (string apiToken, string channelUrl)
 
 Delete a channel
 
@@ -201,12 +201,12 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
 
             try
             {
                 // Delete a channel
-                InlineResponse2001 result = apiInstance.OcDeleteChannelByUrl(apiToken, channelUrl);
+                OcDeleteChannelByUrl200Response result = apiInstance.OcDeleteChannelByUrl(apiToken, channelUrl);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -230,7 +230,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**OcDeleteChannelByUrl200Response**](OcDeleteChannelByUrl200Response.md)
 
 ### Authorization
 
@@ -279,14 +279,14 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var token = token_example;  // string |  (optional) 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
-            var customTypes = customTypes_example;  // string |  (optional) 
-            var nameContains = nameContains_example;  // string |  (optional) 
-            var urlContains = urlContains_example;  // string |  (optional) 
+            var customTypes = "customTypes_example";  // string |  (optional) 
+            var nameContains = "nameContains_example";  // string |  (optional) 
+            var urlContains = "urlContains_example";  // string |  (optional) 
             var showFrozen = true;  // bool? |  (optional) 
             var showMetadata = true;  // bool? |  (optional) 
-            var customType = customType_example;  // string |  (optional) 
+            var customType = "customType_example";  // string |  (optional) 
 
             try
             {
@@ -371,8 +371,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var token = token_example;  // string |  (optional) 
+            var channelUrl = "channelUrl_example";  // string | 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
@@ -453,8 +453,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var token = token_example;  // string |  (optional) 
+            var channelUrl = "channelUrl_example";  // string | 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
@@ -511,7 +511,7 @@ No authorization required
 
 ## OcRegisterOperators
 
-> InlineResponse2001 OcRegisterOperators (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = null)
+> OcDeleteChannelByUrl200Response OcRegisterOperators (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = null)
 
 Register operators
 
@@ -535,13 +535,13 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var ocRegisterOperatorsData = new OcRegisterOperatorsData(); // OcRegisterOperatorsData |  (optional) 
 
             try
             {
                 // Register operators
-                InlineResponse2001 result = apiInstance.OcRegisterOperators(apiToken, channelUrl, ocRegisterOperatorsData);
+                OcDeleteChannelByUrl200Response result = apiInstance.OcRegisterOperators(apiToken, channelUrl, ocRegisterOperatorsData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -566,7 +566,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**OcDeleteChannelByUrl200Response**](OcDeleteChannelByUrl200Response.md)
 
 ### Authorization
 
@@ -615,7 +615,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var ocUpdateChannelByUrlData = new OcUpdateChannelByUrlData(); // OcUpdateChannelByUrlData |  (optional) 
 
             try
@@ -695,7 +695,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new OpenChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
 
             try
             {

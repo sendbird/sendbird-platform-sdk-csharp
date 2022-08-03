@@ -40,7 +40,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="metadata">Specifies a &#x60;JSON&#x60; object which has key-value items to update. A key can&#39;t contain a comma (,) and its length is limited to 128 characters. A value must be a string and its length is limited to 190 characters. This property can have up to 5 items. (required).</param>
         /// <param name="upsert">upsert (required).</param>
-        public UpdateChannelMetadataData(string metadata = default(string), bool upsert = default(bool))
+        public UpdateChannelMetadataData(Object metadata = default(Object), bool upsert = default(bool))
         {
             // to ensure "metadata" is required (not null)
             if (metadata == null)
@@ -69,7 +69,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <value>Specifies a &#x60;JSON&#x60; object which has key-value items to update. A key can&#39;t contain a comma (,) and its length is limited to 128 characters. A value must be a string and its length is limited to 190 characters. This property can have up to 5 items.</value>
         [DataMember(Name="metadata", EmitDefaultValue=true)]
-        public string Metadata { get; set; }
+        public Object Metadata { get; set; }
 
         /// <summary>
         /// Gets or Sets Upsert

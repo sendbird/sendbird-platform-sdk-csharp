@@ -69,7 +69,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var body = ;  // Object |  (optional) 
+            var body = null;  // Object |  (optional) 
 
             try
             {
@@ -225,9 +225,9 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelType = channelType_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var messageId = messageId_example;  // string | 
+            var channelType = "channelType_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var messageId = "messageId_example";  // string | 
             var addExtraDataToMessageData = new AddExtraDataToMessageData(); // AddExtraDataToMessageData |  (optional) 
 
             try
@@ -309,9 +309,9 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelType = channelType_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var messageId = messageId_example;  // string | 
+            var channelType = "channelType_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var messageId = "messageId_example";  // string | 
             var addReactionToAMessageData = new AddReactionToAMessageData(); // AddReactionToAMessageData |  (optional) 
 
             try
@@ -393,7 +393,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var emojiKey = emojiKey_example;  // string | 
+            var emojiKey = "emojiKey_example";  // string | 
 
             try
             {
@@ -470,7 +470,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var emojiCategoryId = emojiCategoryId_example;  // string | 
+            var emojiCategoryId = "emojiCategoryId_example";  // string | 
 
             try
             {
@@ -548,9 +548,9 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelType = channelType_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var messageId = messageId_example;  // string | 
+            var channelType = "channelType_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var messageId = "messageId_example";  // string | 
 
             try
             {
@@ -708,7 +708,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var gcMarkAllMessagesAsDeliveredData = new GcMarkAllMessagesAsDeliveredData(); // GcMarkAllMessagesAsDeliveredData |  (optional) 
 
             try
@@ -788,7 +788,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var gcMarkAllMessagesAsReadData = new GcMarkAllMessagesAsReadData(); // GcMarkAllMessagesAsReadData |  (optional) 
 
             try
@@ -868,8 +868,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var userIds = userIds_example;  // string |  (optional) 
+            var channelUrl = "channelUrl_example";  // string | 
+            var userIds = "userIds_example";  // string |  (optional) 
 
             try
             {
@@ -948,7 +948,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var emojiKey = emojiKey_example;  // string | 
+            var emojiKey = "emojiKey_example";  // string | 
 
             try
             {
@@ -1026,7 +1026,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var emojiCategoryId = emojiCategoryId_example;  // string | 
+            var emojiCategoryId = "emojiCategoryId_example";  // string | 
 
             try
             {
@@ -1180,13 +1180,13 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var startDate = startDate_example;  // string | 
-            var endDate = endDate_example;  // string | 
-            var startWeek = startWeek_example;  // string | 
-            var endWeek = endWeek_example;  // string | 
-            var startMonth = startMonth_example;  // string | 
-            var endMonth = endMonth_example;  // string | 
-            var announcementGroup = announcementGroup_example;  // string |  (optional) 
+            var startDate = "startDate_example";  // string | 
+            var endDate = "endDate_example";  // string | 
+            var startWeek = "startWeek_example";  // string | 
+            var endWeek = "endWeek_example";  // string | 
+            var startMonth = "startMonth_example";  // string | 
+            var endMonth = "endMonth_example";  // string | 
+            var announcementGroup = "announcementGroup_example";  // string |  (optional) 
 
             try
             {
@@ -1422,7 +1422,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var token = token_example;  // string |  (optional) 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
@@ -1502,11 +1502,11 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var token = token_example;  // string |  (optional) 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
-            var order = order_example;  // string |  (optional) 
-            var status = status_example;  // string |  (optional) 
-            var announcementGroup = announcementGroup_example;  // string |  (optional) 
+            var order = "order_example";  // string |  (optional) 
+            var status = "status_example";  // string |  (optional) 
+            var announcementGroup = "announcementGroup_example";  // string |  (optional) 
 
             try
             {
@@ -1664,25 +1664,25 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelType = channelType_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelType = "channelType_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var messageTs = 56;  // int? |  (optional) 
             var messageId = 56;  // int? |  (optional) 
             var prevLimit = 56;  // int? |  (optional) 
             var nextLimit = 56;  // int? |  (optional) 
             var include = true;  // bool? |  (optional) 
             var reverse = true;  // bool? |  (optional) 
-            var senderId = senderId_example;  // string |  (optional) 
-            var senderIds = senderIds_example;  // string |  (optional) 
-            var operatorFilter = operatorFilter_example;  // string |  (optional) 
-            var customTypes = customTypes_example;  // string |  (optional) 
-            var messageType = messageType_example;  // string |  (optional) 
+            var senderId = "senderId_example";  // string |  (optional) 
+            var senderIds = "senderIds_example";  // string |  (optional) 
+            var operatorFilter = "operatorFilter_example";  // string |  (optional) 
+            var customTypes = "customTypes_example";  // string |  (optional) 
+            var messageType = "messageType_example";  // string |  (optional) 
             var includingRemoved = true;  // bool? |  (optional) 
             var includeReactions = true;  // bool? |  (optional) 
             var withSortedMetaArray = true;  // bool? |  (optional) 
             var showSubchannelMessagesOnly = true;  // bool? |  (optional) 
-            var userId = userId_example;  // string |  (optional) 
-            var customType = customType_example;  // string |  (optional) 
+            var userId = "userId_example";  // string |  (optional) 
+            var customType = "customType_example";  // string |  (optional) 
             var withMetaArray = true;  // bool? |  (optional) 
 
             try
@@ -1780,9 +1780,9 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelType = channelType_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var messageId = messageId_example;  // string | 
+            var channelType = "channelType_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var messageId = "messageId_example";  // string | 
             var listUsers = true;  // bool? |  (optional) 
 
             try
@@ -1864,8 +1864,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var targetChannelUrl = targetChannelUrl_example;  // string | 
-            var body = ;  // Object |  (optional) 
+            var targetChannelUrl = "targetChannelUrl_example";  // string | 
+            var body = null;  // Object |  (optional) 
 
             try
             {
@@ -1943,9 +1943,9 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelType = channelType_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var messageId = messageId_example;  // string | 
+            var channelType = "channelType_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var messageId = "messageId_example";  // string | 
             var keys = new List<string>(); // List<string> |  (optional) 
 
             try
@@ -2027,11 +2027,11 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelType = channelType_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var messageId = messageId_example;  // string | 
-            var userId = userId_example;  // string |  (optional) 
-            var reaction = reaction_example;  // string |  (optional) 
+            var channelType = "channelType_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var messageId = "messageId_example";  // string | 
+            var userId = "userId_example";  // string |  (optional) 
+            var reaction = "reaction_example";  // string |  (optional) 
 
             try
             {
@@ -2191,8 +2191,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelType = channelType_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelType = "channelType_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var sendMessageData = new SendMessageData(); // SendMessageData |  (optional) 
 
             try
@@ -2249,7 +2249,7 @@ No authorization required
 
 ## TranslateMessageIntoOtherLanguages
 
-> SendBirdMessageResponse TranslateMessageIntoOtherLanguages (string apiToken, string channelType, string channelUrl, string messageId, Object body = null)
+> SendBirdMessageResponse TranslateMessageIntoOtherLanguages (string apiToken, string channelType, string channelUrl, string messageId, TranslateMessageIntoOtherLanguagesData translateMessageIntoOtherLanguagesData = null)
 
 Translate a message into other languages
 
@@ -2273,15 +2273,15 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelType = channelType_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var messageId = messageId_example;  // string | 
-            var body = ;  // Object |  (optional) 
+            var channelType = "channelType_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var messageId = "messageId_example";  // string | 
+            var translateMessageIntoOtherLanguagesData = new TranslateMessageIntoOtherLanguagesData(); // TranslateMessageIntoOtherLanguagesData |  (optional) 
 
             try
             {
                 // Translate a message into other languages
-                SendBirdMessageResponse result = apiInstance.TranslateMessageIntoOtherLanguages(apiToken, channelType, channelUrl, messageId, body);
+                SendBirdMessageResponse result = apiInstance.TranslateMessageIntoOtherLanguages(apiToken, channelType, channelUrl, messageId, translateMessageIntoOtherLanguagesData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -2304,7 +2304,7 @@ Name | Type | Description  | Notes
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
  **messageId** | **string**|  | 
- **body** | **Object**|  | [optional] 
+ **translateMessageIntoOtherLanguagesData** | [**TranslateMessageIntoOtherLanguagesData**](TranslateMessageIntoOtherLanguagesData.md)|  | [optional] 
 
 ### Return type
 
@@ -2357,7 +2357,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var uniqueId = uniqueId_example;  // string | 
+            var uniqueId = "uniqueId_example";  // string | 
             var updateAnnouncementByIdData = new UpdateAnnouncementByIdData(); // UpdateAnnouncementByIdData |  (optional) 
 
             try
@@ -2437,7 +2437,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var emojiCategoryId = emojiCategoryId_example;  // string | 
+            var emojiCategoryId = "emojiCategoryId_example";  // string | 
             var updateEmojiCategoryUrlByIdData = new UpdateEmojiCategoryUrlByIdData(); // UpdateEmojiCategoryUrlByIdData |  (optional) 
 
             try
@@ -2517,7 +2517,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var emojiKey = emojiKey_example;  // string | 
+            var emojiKey = "emojiKey_example";  // string | 
             var updateEmojiUrlByKeyData = new UpdateEmojiUrlByKeyData(); // UpdateEmojiUrlByKeyData |  (optional) 
 
             try
@@ -2597,9 +2597,9 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelType = channelType_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var messageId = messageId_example;  // string | 
+            var channelType = "channelType_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var messageId = "messageId_example";  // string | 
             var updateExtraDataInMessageData = new UpdateExtraDataInMessageData(); // UpdateExtraDataInMessageData |  (optional) 
 
             try
@@ -2681,9 +2681,9 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelType = channelType_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var messageId = messageId_example;  // string | 
+            var channelType = "channelType_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var messageId = "messageId_example";  // string | 
             var updateMessageByIdData = new UpdateMessageByIdData(); // UpdateMessageByIdData |  (optional) 
 
             try
@@ -2843,9 +2843,9 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelType = channelType_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var messageId = messageId_example;  // string | 
+            var channelType = "channelType_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var messageId = "messageId_example";  // string | 
             var withSortedMetaArray = true;  // bool? |  (optional) 
             var withMetaArray = true;  // bool? |  (optional) 
 
@@ -2929,8 +2929,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new MessageApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelType = channelType_example;  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelType = "channelType_example";  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
 
             try
             {

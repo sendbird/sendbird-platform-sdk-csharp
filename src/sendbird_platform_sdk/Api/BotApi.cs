@@ -29,7 +29,7 @@ namespace sendbird_platform_sdk.Api
         /// Create a bot
         /// </summary>
         /// <remarks>
-        /// ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  &gt; __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
+        /// ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  > __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Api
         /// Create a bot
         /// </summary>
         /// <remarks>
-        /// ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  &gt; __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
+        /// ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  > __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -172,10 +172,10 @@ namespace sendbird_platform_sdk.Api
         /// <returns>ApiResponse of ListBotsResponse</returns>
         ApiResponse<ListBotsResponse> ListBotsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?));
         /// <summary>
-        /// Send a bot&#39;s message
+        /// Send a bot's message
         /// </summary>
         /// <remarks>
-        /// ## Send a bot&#39;s message  Sends a bot&#39;s message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;bot_userid&#x60;      Type: string      Description: Specifies the ID of the bot to send a message.
+        /// ## Send a bot's message  Sends a bot's message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `bot_userid`      Type: string      Description: Specifies the ID of the bot to send a message.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -185,10 +185,10 @@ namespace sendbird_platform_sdk.Api
         SendBirdMessageResponse SendBotsMessage (string apiToken, string botUserid, SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData));
 
         /// <summary>
-        /// Send a bot&#39;s message
+        /// Send a bot's message
         /// </summary>
         /// <remarks>
-        /// ## Send a bot&#39;s message  Sends a bot&#39;s message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;bot_userid&#x60;      Type: string      Description: Specifies the ID of the bot to send a message.
+        /// ## Send a bot's message  Sends a bot's message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `bot_userid`      Type: string      Description: Specifies the ID of the bot to send a message.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -250,7 +250,7 @@ namespace sendbird_platform_sdk.Api
         /// Create a bot
         /// </summary>
         /// <remarks>
-        /// ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  &gt; __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
+        /// ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  > __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -263,7 +263,7 @@ namespace sendbird_platform_sdk.Api
         /// Create a bot
         /// </summary>
         /// <remarks>
-        /// ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  &gt; __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
+        /// ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  > __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -405,10 +405,10 @@ namespace sendbird_platform_sdk.Api
         /// <returns>Task of ApiResponse (ListBotsResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<ListBotsResponse>> ListBotsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// Send a bot&#39;s message
+        /// Send a bot's message
         /// </summary>
         /// <remarks>
-        /// ## Send a bot&#39;s message  Sends a bot&#39;s message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;bot_userid&#x60;      Type: string      Description: Specifies the ID of the bot to send a message.
+        /// ## Send a bot's message  Sends a bot's message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `bot_userid`      Type: string      Description: Specifies the ID of the bot to send a message.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -422,7 +422,7 @@ namespace sendbird_platform_sdk.Api
         /// Send a bot&#39;s message
         /// </summary>
         /// <remarks>
-        /// ## Send a bot&#39;s message  Sends a bot&#39;s message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;bot_userid&#x60;      Type: string      Description: Specifies the ID of the bot to send a message.
+        /// ## Send a bot's message  Sends a bot's message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `bot_userid`      Type: string      Description: Specifies the ID of the bot to send a message.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -595,7 +595,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Create a bot ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  &gt; __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
+        /// Create a bot ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  > __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -608,7 +608,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Create a bot ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  &gt; __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
+        /// Create a bot ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  > __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -672,7 +672,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Create a bot ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  &gt; __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
+        /// Create a bot ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  > __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -687,7 +687,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Create a bot ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  &gt; __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
+        /// Create a bot ## Create a bot  Creates a new bot within the application. Creating a bot is similar to creating a normal user, except that a callback URL is specified in order for the bot to receive events.  > __Note__: The bot must [join](#2-join-channels) a group channel first to interact with users. In group channels, you can invite a bot through the [invite as members](https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-create-a-bot
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1523,7 +1523,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Send a bot&#39;s message ## Send a bot&#39;s message  Sends a bot&#39;s message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;bot_userid&#x60;      Type: string      Description: Specifies the ID of the bot to send a message.
+        /// Send a bot's message ## Send a bot's message  Sends a bot's message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `bot_userid`      Type: string      Description: Specifies the ID of the bot to send a message.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1537,7 +1537,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Send a bot&#39;s message ## Send a bot&#39;s message  Sends a bot&#39;s message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;bot_userid&#x60;      Type: string      Description: Specifies the ID of the bot to send a message.
+        /// Send a bot's message ## Send a bot's message  Sends a bot's message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `bot_userid`      Type: string      Description: Specifies the ID of the bot to send a message.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1606,7 +1606,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Send a bot&#39;s message ## Send a bot&#39;s message  Sends a bot&#39;s message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;bot_userid&#x60;      Type: string      Description: Specifies the ID of the bot to send a message.
+        /// Send a bot's message ## Send a bot's message  Sends a bot's message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `bot_userid`      Type: string      Description: Specifies the ID of the bot to send a message.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1622,7 +1622,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Send a bot&#39;s message ## Send a bot&#39;s message  Sends a bot&#39;s message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;bot_userid&#x60;      Type: string      Description: Specifies the ID of the bot to send a message.
+        /// Send a bot's message ## Send a bot's message  Sends a bot's message to a channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-send-a-bot-s-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `bot_userid`      Type: string      Description: Specifies the ID of the bot to send a message.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>

@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="bots">bots.</param>
         /// <param name="next">next.</param>
-        public ListBotsResponse(List<ListBotsResponseBots> bots = default(List<ListBotsResponseBots>), string next = default(string))
+        public ListBotsResponse(List<ListBotsResponseBotsInner> bots = default(List<ListBotsResponseBotsInner>), string next = default(string))
         {
             this.Bots = bots;
             this.Next = next;
@@ -45,7 +45,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets Bots
         /// </summary>
         [DataMember(Name="bots", EmitDefaultValue=false)]
-        public List<ListBotsResponseBots> Bots { get; set; }
+        public List<ListBotsResponseBotsInner> Bots { get; set; }
 
         /// <summary>
         /// Gets or Sets Next

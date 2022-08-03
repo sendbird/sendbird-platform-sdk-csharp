@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**BannedList** | [**List&lt;OcListBannedUsersResponseBannedList&gt;**](OcListBannedUsersResponseBannedList.md) |  | [optional] 
+**BannedList** | [**List&lt;OcListBannedUsersResponseBannedListInner&gt;**](OcListBannedUsersResponseBannedListInner.md) |  | [optional] 
 **TotalBanCount** | **decimal** |  | [optional] 
 **Next** | **string** |  | [optional] 
 

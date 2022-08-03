@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Emojis** | [**List&lt;ListAllEmojisAndEmojiCategoriesResponseEmojis&gt;**](ListAllEmojisAndEmojiCategoriesResponseEmojis.md) |  | [optional] 
+**Emojis** | [**List&lt;ListAllEmojisAndEmojiCategoriesResponseEmojiCategoriesInnerEmojisInner&gt;**](ListAllEmojisAndEmojiCategoriesResponseEmojiCategoriesInnerEmojisInner.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

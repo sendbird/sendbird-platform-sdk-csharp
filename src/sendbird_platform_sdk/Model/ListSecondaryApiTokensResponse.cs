@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="ListSecondaryApiTokensResponse" /> class.
         /// </summary>
         /// <param name="apiTokens">apiTokens.</param>
-        public ListSecondaryApiTokensResponse(List<ListSecondaryApiTokensResponseApiTokens> apiTokens = default(List<ListSecondaryApiTokensResponseApiTokens>))
+        public ListSecondaryApiTokensResponse(List<ListSecondaryApiTokensResponseApiTokensInner> apiTokens = default(List<ListSecondaryApiTokensResponseApiTokensInner>))
         {
             this.ApiTokens = apiTokens;
         }
@@ -43,7 +43,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets ApiTokens
         /// </summary>
         [DataMember(Name="api_tokens", EmitDefaultValue=false)]
-        public List<ListSecondaryApiTokensResponseApiTokens> ApiTokens { get; set; }
+        public List<ListSecondaryApiTokensResponseApiTokensInner> ApiTokens { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

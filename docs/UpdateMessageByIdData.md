@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **CustomType** | **string** | Specifies a custom message type which is used for message grouping. The length is limited to 128 characters.&lt;br /&gt;&lt;br /&gt; Custom types are also used within Sendbird&#39;s [Advanced analytics](/docs/chat/v3/platform-api/guides/advanced-analytics) to segment metrics, which enables the sub-classification of data views. | [optional] 
 **Data** | **string** | Specifies additional message information such as custom font size, font type or &#x60;JSON&#x60; formatted string. | [optional] 
 **MentionType** | **string** | Specifies the mentioning method which indicates the user scope who will get a notification for the message. Acceptable values are users and channel. If set to users, only the specified users with the mentioned_users property below will get notified. If set to channel, all users in the channel will get notified. (Default: users) | [optional] 
-**MentionedUserIds** | **List&lt;int&gt;** | Specifies an array of one or more IDs of the users who will get a notification for the message. | [optional] 
+**MentionedUserIds** | **List&lt;string&gt;** | Specifies an array of one or more IDs of the users who will get a notification for the message. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

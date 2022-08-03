@@ -40,7 +40,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="channelUrl">Specifies the URL of the channel to register operators to. (required).</param>
         /// <param name="operatorIds">Specifies an array of one or more IDs of users to register as operators of the channel. The maximum allowed number of operators per channel is 100. (required).</param>
-        public OcRegisterOperatorsData(string channelUrl = default(string), List<int> operatorIds = default(List<int>))
+        public OcRegisterOperatorsData(string channelUrl = default(string), List<string> operatorIds = default(List<string>))
         {
             // to ensure "channelUrl" is required (not null)
             if (channelUrl == null)
@@ -76,7 +76,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <value>Specifies an array of one or more IDs of users to register as operators of the channel. The maximum allowed number of operators per channel is 100.</value>
         [DataMember(Name="operator_ids", EmitDefaultValue=true)]
-        public List<int> OperatorIds { get; set; }
+        public List<string> OperatorIds { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -38,20 +38,9 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="MarkAllMessagesAsReadData" /> class.
         /// </summary>
-        /// <param name="userId">Specifies the unique ID of the target user. (required).</param>
         /// <param name="channelUrls">Specifies an array of one or more group channel URLs to mark all of the unread messages in as read. If not specified, all of the unread messages in the joined group channels are marked as read. (required).</param>
-        public MarkAllMessagesAsReadData(string userId = default(string), List<string> channelUrls = default(List<string>))
+        public MarkAllMessagesAsReadData(List<string> channelUrls = default(List<string>))
         {
-            // to ensure "userId" is required (not null)
-            if (userId == null)
-            {
-                throw new InvalidDataException("userId is a required property for MarkAllMessagesAsReadData and cannot be null");
-            }
-            else
-            {
-                this.UserId = userId;
-            }
-
             // to ensure "channelUrls" is required (not null)
             if (channelUrls == null)
             {
@@ -63,13 +52,6 @@ namespace sendbird_platform_sdk.Model
             }
 
         }
-
-        /// <summary>
-        /// Specifies the unique ID of the target user.
-        /// </summary>
-        /// <value>Specifies the unique ID of the target user.</value>
-        [DataMember(Name="user_id", EmitDefaultValue=true)]
-        public string UserId { get; set; }
 
         /// <summary>
         /// Specifies an array of one or more group channel URLs to mark all of the unread messages in as read. If not specified, all of the unread messages in the joined group channels are marked as read.
@@ -86,7 +68,6 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class MarkAllMessagesAsReadData {\n");
-            sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("  ChannelUrls: ").Append(ChannelUrls).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -123,11 +104,6 @@ namespace sendbird_platform_sdk.Model
 
             return 
                 (
-                    this.UserId == input.UserId ||
-                    (this.UserId != null &&
-                    this.UserId.Equals(input.UserId))
-                ) && 
-                (
                     this.ChannelUrls == input.ChannelUrls ||
                     this.ChannelUrls != null &&
                     input.ChannelUrls != null &&
@@ -144,8 +120,6 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.UserId != null)
-                    hashCode = hashCode * 59 + this.UserId.GetHashCode();
                 if (this.ChannelUrls != null)
                     hashCode = hashCode * 59 + this.ChannelUrls.GetHashCode();
                 return hashCode;

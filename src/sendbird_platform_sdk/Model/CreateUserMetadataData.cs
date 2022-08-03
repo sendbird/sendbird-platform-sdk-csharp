@@ -38,20 +38,9 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateUserMetadataData" /> class.
         /// </summary>
-        /// <param name="userId">Specifies the ID of the user to store the metadata in. (required).</param>
         /// <param name="metadata">Specifies a &#x60;JSON&#x60; object that stores key-value items. The key must not have a comma (,) and its length is limited to 128 characters. The value must be a string and its length is limited to 190 characters. This property can have up to 5 items. (required).</param>
-        public CreateUserMetadataData(string userId = default(string), string metadata = default(string))
+        public CreateUserMetadataData(Object metadata = default(Object))
         {
-            // to ensure "userId" is required (not null)
-            if (userId == null)
-            {
-                throw new InvalidDataException("userId is a required property for CreateUserMetadataData and cannot be null");
-            }
-            else
-            {
-                this.UserId = userId;
-            }
-
             // to ensure "metadata" is required (not null)
             if (metadata == null)
             {
@@ -65,18 +54,11 @@ namespace sendbird_platform_sdk.Model
         }
 
         /// <summary>
-        /// Specifies the ID of the user to store the metadata in.
-        /// </summary>
-        /// <value>Specifies the ID of the user to store the metadata in.</value>
-        [DataMember(Name="user_id", EmitDefaultValue=true)]
-        public string UserId { get; set; }
-
-        /// <summary>
         /// Specifies a &#x60;JSON&#x60; object that stores key-value items. The key must not have a comma (,) and its length is limited to 128 characters. The value must be a string and its length is limited to 190 characters. This property can have up to 5 items.
         /// </summary>
         /// <value>Specifies a &#x60;JSON&#x60; object that stores key-value items. The key must not have a comma (,) and its length is limited to 128 characters. The value must be a string and its length is limited to 190 characters. This property can have up to 5 items.</value>
         [DataMember(Name="metadata", EmitDefaultValue=true)]
-        public string Metadata { get; set; }
+        public Object Metadata { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -86,7 +68,6 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class CreateUserMetadataData {\n");
-            sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("  Metadata: ").Append(Metadata).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -123,11 +104,6 @@ namespace sendbird_platform_sdk.Model
 
             return 
                 (
-                    this.UserId == input.UserId ||
-                    (this.UserId != null &&
-                    this.UserId.Equals(input.UserId))
-                ) && 
-                (
                     this.Metadata == input.Metadata ||
                     (this.Metadata != null &&
                     this.Metadata.Equals(input.Metadata))
@@ -143,8 +119,6 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.UserId != null)
-                    hashCode = hashCode * 59 + this.UserId.GetHashCode();
                 if (this.Metadata != null)
                     hashCode = hashCode * 59 + this.Metadata.GetHashCode();
                 return hashCode;

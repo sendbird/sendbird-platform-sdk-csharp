@@ -40,7 +40,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="bannedList">bannedList (required).</param>
         /// <param name="onDemandUpsert">onDemandUpsert.</param>
-        public BanUsersInChannelsWithCustomChannelTypeData(List<V3ApplicationsSettingsByChannelCustomTypeCustomTypeBanBannedList> bannedList = default(List<V3ApplicationsSettingsByChannelCustomTypeCustomTypeBanBannedList>), bool onDemandUpsert = default(bool))
+        public BanUsersInChannelsWithCustomChannelTypeData(List<BanUsersInChannelsWithCustomChannelTypeDataBannedListInner> bannedList = default(List<BanUsersInChannelsWithCustomChannelTypeDataBannedListInner>), bool onDemandUpsert = default(bool))
         {
             // to ensure "bannedList" is required (not null)
             if (bannedList == null)
@@ -59,7 +59,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets BannedList
         /// </summary>
         [DataMember(Name="banned_list", EmitDefaultValue=true)]
-        public List<V3ApplicationsSettingsByChannelCustomTypeCustomTypeBanBannedList> BannedList { get; set; }
+        public List<BanUsersInChannelsWithCustomChannelTypeDataBannedListInner> BannedList { get; set; }
 
         /// <summary>
         /// Gets or Sets OnDemandUpsert

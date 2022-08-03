@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ReportLogs** | [**List&lt;ListReportsResponseReportLogs&gt;**](ListReportsResponseReportLogs.md) |  | [optional] 
+**ReportLogs** | [**List&lt;ListReportsResponseReportLogsInner&gt;**](ListReportsResponseReportLogsInner.md) |  | [optional] 
 **Next** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

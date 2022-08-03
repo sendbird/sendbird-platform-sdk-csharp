@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ReportLogs** | [**List&lt;ListReportsOnMessageByIdResponseReportLogs&gt;**](ListReportsOnMessageByIdResponseReportLogs.md) |  | [optional] 
+**ReportLogs** | [**List&lt;ListReportsOnMessageByIdResponseReportLogsInner&gt;**](ListReportsOnMessageByIdResponseReportLogsInner.md) |  | [optional] 
 **Next** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

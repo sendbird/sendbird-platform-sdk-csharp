@@ -137,6 +137,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="updatedAt">updatedAt.</param>
         public SendBirdBaseMessageInstance(SendBirdAppleCriticalAlertOptions appleCriticalAlertOptions = default(SendBirdAppleCriticalAlertOptions), string channelType = default(string), string channelUrl = default(string), decimal createdAt = default(decimal), string customType = default(string), string data = default(string), bool isReplyToChannel = default(bool), string mentionType = default(string), List<SendBirdUser> mentionedUsers = default(List<SendBirdUser>), decimal messageId = default(decimal), MessageTypeEnum? messageType = default(MessageTypeEnum?), SBObject metaArray = default(SBObject), List<SendBirdMessageMetaArray> metaArrays = default(List<SendBirdMessageMetaArray>), SendBirdOGMetaData ogMetaData = default(SendBirdOGMetaData), SendBirdMessageResponse parentMessage = default(SendBirdMessageResponse), decimal parentMessageId = default(decimal), string parentMessageText = default(string), List<SendBirdReaction> reactions = default(List<SendBirdReaction>), SendingStatusEnum? sendingStatus = default(SendingStatusEnum?), bool silent = default(bool), SendBirdThreadInfo threadInfo = default(SendBirdThreadInfo), decimal updatedAt = default(decimal))
         {
+            this.ParentMessage = parentMessage;
             this.AppleCriticalAlertOptions = appleCriticalAlertOptions;
             this.ChannelType = channelType;
             this.ChannelUrl = channelUrl;
@@ -243,7 +244,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets ParentMessage
         /// </summary>
-        [DataMember(Name="parent_message", EmitDefaultValue=false)]
+        [DataMember(Name="parent_message", EmitDefaultValue=true)]
         public SendBirdMessageResponse ParentMessage { get; set; }
 
         /// <summary>

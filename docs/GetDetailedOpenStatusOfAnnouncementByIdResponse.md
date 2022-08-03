@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**OpenStatus** | [**List&lt;GetDetailedOpenStatusOfAnnouncementByIdResponseOpenStatus&gt;**](GetDetailedOpenStatusOfAnnouncementByIdResponseOpenStatus.md) |  | [optional] 
+**OpenStatus** | [**List&lt;GetDetailedOpenStatusOfAnnouncementByIdResponseOpenStatusInner&gt;**](GetDetailedOpenStatusOfAnnouncementByIdResponseOpenStatusInner.md) |  | [optional] 
 **Next** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

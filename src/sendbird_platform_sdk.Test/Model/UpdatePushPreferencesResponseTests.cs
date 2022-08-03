@@ -66,6 +66,30 @@ namespace sendbird_platform_sdk.Test
 
 
         /// <summary>
+        /// Test the property 'BlockPushFromBots'
+        /// </summary>
+        [Test]
+        public void BlockPushFromBotsTest()
+        {
+            // TODO unit test for the property 'BlockPushFromBots'
+        }
+        /// <summary>
+        /// Test the property 'EnablePushForReplies'
+        /// </summary>
+        [Test]
+        public void EnablePushForRepliesTest()
+        {
+            // TODO unit test for the property 'EnablePushForReplies'
+        }
+        /// <summary>
+        /// Test the property 'PushBlockedBotIds'
+        /// </summary>
+        [Test]
+        public void PushBlockedBotIdsTest()
+        {
+            // TODO unit test for the property 'PushBlockedBotIds'
+        }
+        /// <summary>
         /// Test the property 'PushTriggerOption'
         /// </summary>
         [Test]

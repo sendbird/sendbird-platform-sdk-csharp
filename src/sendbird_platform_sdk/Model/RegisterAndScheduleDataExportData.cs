@@ -51,7 +51,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="showReadReceipt">Determines whether to include information about the read receipts of each channel in the exported data. The read receipt indicates the timestamps of when each user has last read the messages in the channel, in [Unix milliseconds](/docs/chat/v3/platform-api/guides/miscellaneous#2-timestamps). (Default: true).</param>
         /// <param name="showChannelMetadata">Determines whether to include [channel metadata](/docs/chat/v3/platform-api/guides/user-and-channel-metadata#2-view-a-channel-metadata) in the result files..</param>
         /// <param name="neighboringMessageLimit">Specifies the maximum number of other users&#39; messages to be exported, which took place after the specified message of a user filtered by the sender_ids property. Even if there may be more messages that took place, if the quantity exceeds the number of the neighboring_message_limit, they are omitted. Only the messages that took place right after the specified message will be counted and exported. This can be used to better analyze the context. Acceptable values are 1 to 10, inclusive. (Default: 0).</param>
-        public RegisterAndScheduleDataExportData(int startTs = default(int), int endTs = default(int), string format = default(string), string csvDelimiter = default(string), string timezone = default(string), List<int> senderIds = default(List<int>), List<int> excludeSenderIds = default(List<int>), List<string> channelUrls = default(List<string>), List<string> excludeChannelUrls = default(List<string>), List<int> userIds = default(List<int>), bool showReadReceipt = default(bool), bool showChannelMetadata = default(bool), int neighboringMessageLimit = default(int))
+        public RegisterAndScheduleDataExportData(int startTs = default(int), int endTs = default(int), string format = default(string), string csvDelimiter = default(string), string timezone = default(string), List<string> senderIds = default(List<string>), List<string> excludeSenderIds = default(List<string>), List<string> channelUrls = default(List<string>), List<string> excludeChannelUrls = default(List<string>), List<string> userIds = default(List<string>), bool showReadReceipt = default(bool), bool showChannelMetadata = default(bool), int neighboringMessageLimit = default(int))
         {
             // to ensure "startTs" is required (not null)
             if (startTs == null)
@@ -126,14 +126,14 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <value>Specifies an array of the IDs of the users which are used to filter the messages by its sender for the export. This property is effective only when the data_type parameter is set to messages, and can be specified up to 10 IDs in the request. (Default: all messages sent by any user)</value>
         [DataMember(Name="sender_ids", EmitDefaultValue=false)]
-        public List<int> SenderIds { get; set; }
+        public List<string> SenderIds { get; set; }
 
         /// <summary>
         /// Specifies an array of the IDs of the users which are used to exclude their sent messages from the export. This property is effective only when the data_type parameter is set to messages, and can be specified up to 10 IDs. (Default: all messages sent by any user)
         /// </summary>
         /// <value>Specifies an array of the IDs of the users which are used to exclude their sent messages from the export. This property is effective only when the data_type parameter is set to messages, and can be specified up to 10 IDs. (Default: all messages sent by any user)</value>
         [DataMember(Name="exclude_sender_ids", EmitDefaultValue=false)]
-        public List<int> ExcludeSenderIds { get; set; }
+        public List<string> ExcludeSenderIds { get; set; }
 
         /// <summary>
         /// Specifies an array of one or more URLs of channels to export the messages from. This property is effective only when the data_type parameter is set to messages or channels. (Default: all channels)
@@ -154,7 +154,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <value>Specifies an array of the IDs of the users to export their information. This property is effective only when the data_type parameter is set to users. (Default: all users)</value>
         [DataMember(Name="user_ids", EmitDefaultValue=false)]
-        public List<int> UserIds { get; set; }
+        public List<string> UserIds { get; set; }
 
         /// <summary>
         /// Determines whether to include information about the read receipts of each channel in the exported data. The read receipt indicates the timestamps of when each user has last read the messages in the channel, in [Unix milliseconds](/docs/chat/v3/platform-api/guides/miscellaneous#2-timestamps). (Default: true)

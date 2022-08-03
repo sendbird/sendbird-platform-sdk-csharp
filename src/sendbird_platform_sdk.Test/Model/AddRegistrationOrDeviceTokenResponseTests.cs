@@ -66,6 +66,14 @@ namespace sendbird_platform_sdk.Test
 
 
         /// <summary>
+        /// Test the property 'Tokens'
+        /// </summary>
+        [Test]
+        public void TokensTest()
+        {
+            // TODO unit test for the property 'Tokens'
+        }
+        /// <summary>
         /// Test the property 'Token'
         /// </summary>
         [Test]

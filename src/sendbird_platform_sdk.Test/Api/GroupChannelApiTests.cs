@@ -70,25 +70,11 @@ namespace sendbird_platform_sdk.Test
         public void GcAcceptInvitationTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
+            //string channelUrl = null;
             //GcAcceptInvitationData gcAcceptInvitationData = null;
-            //var response = instance.GcAcceptInvitation(channelUrl, apiToken, gcAcceptInvitationData);
+            //var response = instance.GcAcceptInvitation(apiToken, channelUrl, gcAcceptInvitationData);
             //Assert.IsInstanceOf(typeof(SendBirdGroupChannel), response, "response is SendBirdGroupChannel");
-        }
-        
-        /// <summary>
-        /// Test GcBanUser
-        /// </summary>
-        [Test]
-        public void GcBanUserTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
-            //string apiToken = null;
-            //GcBanUserData gcBanUserData = null;
-            //var response = instance.GcBanUser(channelUrl, apiToken, gcBanUserData);
-            //Assert.IsInstanceOf(typeof(GcBanUserResponse), response, "response is GcBanUserResponse");
         }
         
         /// <summary>
@@ -98,12 +84,12 @@ namespace sendbird_platform_sdk.Test
         public void GcCancelTheRegistrationOfOperatorsTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
             //string channelUrl = null;
             //List<string> operatorIds = null;
-            //string apiToken = null;
             //bool? deleteAll = null;
-            //instance.GcCancelTheRegistrationOfOperators(channelUrl, operatorIds, apiToken, deleteAll);
-            
+            //var response = instance.GcCancelTheRegistrationOfOperators(apiToken, channelUrl, operatorIds, deleteAll);
+            //Assert.IsInstanceOf(typeof(OcDeleteChannelByUrl200Response), response, "response is OcDeleteChannelByUrl200Response");
         }
         
         /// <summary>
@@ -113,10 +99,10 @@ namespace sendbird_platform_sdk.Test
         public void GcCheckIfMemberByIdTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
             //string channelUrl = null;
             //string userId = null;
-            //string apiToken = null;
-            //var response = instance.GcCheckIfMemberById(channelUrl, userId, apiToken);
+            //var response = instance.GcCheckIfMemberById(apiToken, channelUrl, userId);
             //Assert.IsInstanceOf(typeof(GcCheckIfMemberByIdResponse), response, "response is GcCheckIfMemberByIdResponse");
         }
         
@@ -140,11 +126,11 @@ namespace sendbird_platform_sdk.Test
         public void GcDeclineInvitationTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
+            //string channelUrl = null;
             //GcDeclineInvitationData gcDeclineInvitationData = null;
-            //instance.GcDeclineInvitation(channelUrl, apiToken, gcDeclineInvitationData);
-            
+            //var response = instance.GcDeclineInvitation(apiToken, channelUrl, gcDeclineInvitationData);
+            //Assert.IsInstanceOf(typeof(OcDeleteChannelByUrl200Response), response, "response is OcDeleteChannelByUrl200Response");
         }
         
         /// <summary>
@@ -154,24 +140,10 @@ namespace sendbird_platform_sdk.Test
         public void GcDeleteChannelByUrlTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
-            //instance.GcDeleteChannelByUrl(channelUrl, apiToken);
-            
-        }
-        
-        /// <summary>
-        /// Test GcFreezeChannel
-        /// </summary>
-        [Test]
-        public void GcFreezeChannelTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
             //string channelUrl = null;
-            //string apiToken = null;
-            //GcFreezeChannelData gcFreezeChannelData = null;
-            //var response = instance.GcFreezeChannel(channelUrl, apiToken, gcFreezeChannelData);
-            //Assert.IsInstanceOf(typeof(SendBirdGroupChannel), response, "response is SendBirdGroupChannel");
+            //var response = instance.GcDeleteChannelByUrl(apiToken, channelUrl);
+            //Assert.IsInstanceOf(typeof(OcDeleteChannelByUrl200Response), response, "response is OcDeleteChannelByUrl200Response");
         }
         
         /// <summary>
@@ -181,11 +153,11 @@ namespace sendbird_platform_sdk.Test
         public void GcHideOrArchiveChannelTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
+            //string channelUrl = null;
             //GcHideOrArchiveChannelData gcHideOrArchiveChannelData = null;
-            //instance.GcHideOrArchiveChannel(channelUrl, apiToken, gcHideOrArchiveChannelData);
-            
+            //var response = instance.GcHideOrArchiveChannel(apiToken, channelUrl, gcHideOrArchiveChannelData);
+            //Assert.IsInstanceOf(typeof(OcDeleteChannelByUrl200Response), response, "response is OcDeleteChannelByUrl200Response");
         }
         
         /// <summary>
@@ -195,10 +167,10 @@ namespace sendbird_platform_sdk.Test
         public void GcInviteAsMembersTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
+            //string channelUrl = null;
             //GcInviteAsMembersData gcInviteAsMembersData = null;
-            //var response = instance.GcInviteAsMembers(channelUrl, apiToken, gcInviteAsMembersData);
+            //var response = instance.GcInviteAsMembers(apiToken, channelUrl, gcInviteAsMembersData);
             //Assert.IsInstanceOf(typeof(SendBirdGroupChannel), response, "response is SendBirdGroupChannel");
         }
         
@@ -209,10 +181,10 @@ namespace sendbird_platform_sdk.Test
         public void GcJoinChannelTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
+            //string channelUrl = null;
             //GcJoinChannelData gcJoinChannelData = null;
-            //instance.GcJoinChannel(channelUrl, apiToken, gcJoinChannelData);
+            //instance.GcJoinChannel(apiToken, channelUrl, gcJoinChannelData);
             
         }
         
@@ -223,26 +195,11 @@ namespace sendbird_platform_sdk.Test
         public void GcLeaveChannelTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
+            //string channelUrl = null;
             //GcLeaveChannelData gcLeaveChannelData = null;
-            //instance.GcLeaveChannel(channelUrl, apiToken, gcLeaveChannelData);
-            
-        }
-        
-        /// <summary>
-        /// Test GcListBannedUsers
-        /// </summary>
-        [Test]
-        public void GcListBannedUsersTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
-            //string apiToken = null;
-            //string token = null;
-            //int? limit = null;
-            //var response = instance.GcListBannedUsers(channelUrl, apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(GcListBannedUsersResponse), response, "response is GcListBannedUsersResponse");
+            //var response = instance.GcLeaveChannel(apiToken, channelUrl, gcLeaveChannelData);
+            //Assert.IsInstanceOf(typeof(OcDeleteChannelByUrl200Response), response, "response is OcDeleteChannelByUrl200Response");
         }
         
         /// <summary>
@@ -306,8 +263,8 @@ namespace sendbird_platform_sdk.Test
         public void GcListMembersTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
+            //string channelUrl = null;
             //string token = null;
             //int? limit = null;
             //bool? showDeliveryReceipt = null;
@@ -317,23 +274,8 @@ namespace sendbird_platform_sdk.Test
             //string memberStateFilter = null;
             //string mutedMemberFilter = null;
             //string nicknameStartswith = null;
-            //var response = instance.GcListMembers(channelUrl, apiToken, token, limit, showDeliveryReceipt, showReadReceipt, order, operatorFilter, memberStateFilter, mutedMemberFilter, nicknameStartswith);
+            //var response = instance.GcListMembers(apiToken, channelUrl, token, limit, showDeliveryReceipt, showReadReceipt, order, operatorFilter, memberStateFilter, mutedMemberFilter, nicknameStartswith);
             //Assert.IsInstanceOf(typeof(GcListMembersResponse), response, "response is GcListMembersResponse");
-        }
-        
-        /// <summary>
-        /// Test GcListMutedUsers
-        /// </summary>
-        [Test]
-        public void GcListMutedUsersTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
-            //string apiToken = null;
-            //string token = null;
-            //int? limit = null;
-            //var response = instance.GcListMutedUsers(channelUrl, apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(GcListMutedUsersResponse), response, "response is GcListMutedUsersResponse");
         }
         
         /// <summary>
@@ -343,26 +285,12 @@ namespace sendbird_platform_sdk.Test
         public void GcListOperatorsTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
+            //string channelUrl = null;
             //string token = null;
             //int? limit = null;
-            //var response = instance.GcListOperators(channelUrl, apiToken, token, limit);
+            //var response = instance.GcListOperators(apiToken, channelUrl, token, limit);
             //Assert.IsInstanceOf(typeof(GcListOperatorsResponse), response, "response is GcListOperatorsResponse");
-        }
-        
-        /// <summary>
-        /// Test GcMuteUser
-        /// </summary>
-        [Test]
-        public void GcMuteUserTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
-            //string apiToken = null;
-            //GcMuteUserData gcMuteUserData = null;
-            //var response = instance.GcMuteUser(channelUrl, apiToken, gcMuteUserData);
-            //Assert.IsInstanceOf(typeof(SendBirdGroupChannel), response, "response is SendBirdGroupChannel");
         }
         
         /// <summary>
@@ -372,10 +300,10 @@ namespace sendbird_platform_sdk.Test
         public void GcRegisterOperatorsTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
+            //string channelUrl = null;
             //GcRegisterOperatorsData gcRegisterOperatorsData = null;
-            //var response = instance.GcRegisterOperators(channelUrl, apiToken, gcRegisterOperatorsData);
+            //var response = instance.GcRegisterOperators(apiToken, channelUrl, gcRegisterOperatorsData);
             //Assert.IsInstanceOf(typeof(GcRegisterOperatorsResponse), response, "response is GcRegisterOperatorsResponse");
         }
         
@@ -386,25 +314,11 @@ namespace sendbird_platform_sdk.Test
         public void GcResetChatHistoryTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
+            //string channelUrl = null;
             //GcResetChatHistoryData gcResetChatHistoryData = null;
-            //instance.GcResetChatHistory(channelUrl, apiToken, gcResetChatHistoryData);
-            
-        }
-        
-        /// <summary>
-        /// Test GcUnbanUserById
-        /// </summary>
-        [Test]
-        public void GcUnbanUserByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
-            //string bannedUserId = null;
-            //string apiToken = null;
-            //instance.GcUnbanUserById(channelUrl, bannedUserId, apiToken);
-            
+            //var response = instance.GcResetChatHistory(apiToken, channelUrl, gcResetChatHistoryData);
+            //Assert.IsInstanceOf(typeof(GcResetChatHistoryResponse), response, "response is GcResetChatHistoryResponse");
         }
         
         /// <summary>
@@ -414,41 +328,12 @@ namespace sendbird_platform_sdk.Test
         public void GcUnhideOrUnarchiveChannelTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
+            //string apiToken = null;
             //string channelUrl = null;
             //string userId = null;
-            //string apiToken = null;
             //bool? shouldUnhideAll = null;
-            //instance.GcUnhideOrUnarchiveChannel(channelUrl, userId, apiToken, shouldUnhideAll);
-            
-        }
-        
-        /// <summary>
-        /// Test GcUnmuteUserById
-        /// </summary>
-        [Test]
-        public void GcUnmuteUserByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
-            //string mutedUserId = null;
-            //string apiToken = null;
-            //instance.GcUnmuteUserById(channelUrl, mutedUserId, apiToken);
-            
-        }
-        
-        /// <summary>
-        /// Test GcUpdateBanById
-        /// </summary>
-        [Test]
-        public void GcUpdateBanByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
-            //string bannedUserId = null;
-            //string apiToken = null;
-            //GcUpdateBanByIdData gcUpdateBanByIdData = null;
-            //var response = instance.GcUpdateBanById(channelUrl, bannedUserId, apiToken, gcUpdateBanByIdData);
-            //Assert.IsInstanceOf(typeof(SendBirdUser), response, "response is SendBirdUser");
+            //var response = instance.GcUnhideOrUnarchiveChannel(apiToken, channelUrl, userId, shouldUnhideAll);
+            //Assert.IsInstanceOf(typeof(OcDeleteChannelByUrl200Response), response, "response is OcDeleteChannelByUrl200Response");
         }
         
         /// <summary>
@@ -458,25 +343,11 @@ namespace sendbird_platform_sdk.Test
         public void GcUpdateChannelByUrlTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
+            //string channelUrl = null;
             //GcUpdateChannelByUrlData gcUpdateChannelByUrlData = null;
-            //var response = instance.GcUpdateChannelByUrl(channelUrl, apiToken, gcUpdateChannelByUrlData);
+            //var response = instance.GcUpdateChannelByUrl(apiToken, channelUrl, gcUpdateChannelByUrlData);
             //Assert.IsInstanceOf(typeof(SendBirdGroupChannel), response, "response is SendBirdGroupChannel");
-        }
-        
-        /// <summary>
-        /// Test GcViewBanById
-        /// </summary>
-        [Test]
-        public void GcViewBanByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
-            //string bannedUserId = null;
-            //string apiToken = null;
-            //var response = instance.GcViewBanById(channelUrl, bannedUserId, apiToken);
-            //Assert.IsInstanceOf(typeof(SendBirdUser), response, "response is SendBirdUser");
         }
         
         /// <summary>
@@ -486,29 +357,15 @@ namespace sendbird_platform_sdk.Test
         public void GcViewChannelByUrlTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
             //string apiToken = null;
+            //string channelUrl = null;
             //bool? showDeliveryReceipt = null;
             //bool? showReadReceipt = null;
             //bool? showMember = null;
             //bool? readReceipt = null;
             //bool? member = null;
-            //var response = instance.GcViewChannelByUrl(channelUrl, apiToken, showDeliveryReceipt, showReadReceipt, showMember, readReceipt, member);
+            //var response = instance.GcViewChannelByUrl(apiToken, channelUrl, showDeliveryReceipt, showReadReceipt, showMember, readReceipt, member);
             //Assert.IsInstanceOf(typeof(SendBirdGroupChannel), response, "response is SendBirdGroupChannel");
-        }
-        
-        /// <summary>
-        /// Test GcViewMuteById
-        /// </summary>
-        [Test]
-        public void GcViewMuteByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string channelUrl = null;
-            //string mutedUserId = null;
-            //string apiToken = null;
-            //var response = instance.GcViewMuteById(channelUrl, mutedUserId, apiToken);
-            //Assert.IsInstanceOf(typeof(GcViewMuteByIdResponse), response, "response is GcViewMuteByIdResponse");
         }
         
     }

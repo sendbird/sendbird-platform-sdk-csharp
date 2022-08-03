@@ -184,7 +184,7 @@ namespace sendbird_platform_sdk.Test
             //string channelUrl = null;
             //string messageId = null;
             //var response = instance.ViewModeratedMessageById(apiToken, channelType, channelUrl, messageId);
-            //Assert.IsInstanceOf(typeof(Dictionary<string, string>), response, "response is Dictionary<string, string>");
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         
     }

@@ -29,7 +29,7 @@ namespace sendbird_platform_sdk.Api
         /// Accept an invitation
         /// </summary>
         /// <remarks>
-        /// ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  &gt; __Note__: This action is effective only when the &#x60;auto_accept&#x60; property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -42,7 +42,7 @@ namespace sendbird_platform_sdk.Api
         /// Accept an invitation
         /// </summary>
         /// <remarks>
-        /// ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  &gt; __Note__: This action is effective only when the &#x60;auto_accept&#x60; property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -54,29 +54,29 @@ namespace sendbird_platform_sdk.Api
         /// Cancel the registration of operators
         /// </summary>
         /// <remarks>
-        /// ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        InlineResponse2001 GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?));
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        OcDeleteChannelByUrl200Response GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?));
 
         /// <summary>
         /// Cancel the registration of operators
         /// </summary>
         /// <remarks>
-        /// ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        ApiResponse<InlineResponse2001> GcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?));
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        ApiResponse<OcDeleteChannelByUrl200Response> GcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?));
         /// <summary>
         /// Check if member
         /// </summary>
@@ -106,7 +106,7 @@ namespace sendbird_platform_sdk.Api
         /// Create a channel
         /// </summary>
         /// <remarks>
-        /// ## Create a channel  Creates a new group channel.  &gt; If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the &#x60;distinct&#x60; property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can&#39;t see previously sent messages or data in the new channel. On the other hand, if the &#x60;distinct&#x60; property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
+        /// ## Create a channel  Creates a new group channel.  > If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the `distinct` property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can't see previously sent messages or data in the new channel. On the other hand, if the `distinct` property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -118,7 +118,7 @@ namespace sendbird_platform_sdk.Api
         /// Create a channel
         /// </summary>
         /// <remarks>
-        /// ## Create a channel  Creates a new group channel.  &gt; If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the &#x60;distinct&#x60; property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can&#39;t see previously sent messages or data in the new channel. On the other hand, if the &#x60;distinct&#x60; property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
+        /// ## Create a channel  Creates a new group channel.  > If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the `distinct` property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can't see previously sent messages or data in the new channel. On the other hand, if the `distinct` property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -129,27 +129,27 @@ namespace sendbird_platform_sdk.Api
         /// Decline an invitation
         /// </summary>
         /// <remarks>
-        /// ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  &gt; __Note__: This action is effective only when the &#x60;auto_accept&#x60; property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcDeclineInvitationData"> (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        InlineResponse2001 GcDeclineInvitation (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData));
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        OcDeleteChannelByUrl200Response GcDeclineInvitation (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData));
 
         /// <summary>
         /// Decline an invitation
         /// </summary>
         /// <remarks>
-        /// ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  &gt; __Note__: This action is effective only when the &#x60;auto_accept&#x60; property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcDeclineInvitationData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        ApiResponse<InlineResponse2001> GcDeclineInvitationWithHttpInfo (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData));
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        ApiResponse<OcDeleteChannelByUrl200Response> GcDeclineInvitationWithHttpInfo (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData));
         /// <summary>
         /// Delete a channel
         /// </summary>
@@ -159,8 +159,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <returns>InlineResponse2001</returns>
-        InlineResponse2001 GcDeleteChannelByUrl (string apiToken, string channelUrl);
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        OcDeleteChannelByUrl200Response GcDeleteChannelByUrl (string apiToken, string channelUrl);
 
         /// <summary>
         /// Delete a channel
@@ -171,38 +171,38 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        ApiResponse<InlineResponse2001> GcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl);
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        ApiResponse<OcDeleteChannelByUrl200Response> GcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl);
         /// <summary>
         /// Hide or archive a channel
         /// </summary>
         /// <remarks>
-        /// ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn&#39;t appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn't appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        InlineResponse2001 GcHideOrArchiveChannel (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData));
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        OcDeleteChannelByUrl200Response GcHideOrArchiveChannel (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData));
 
         /// <summary>
         /// Hide or archive a channel
         /// </summary>
         /// <remarks>
-        /// ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn&#39;t appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn't appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        ApiResponse<InlineResponse2001> GcHideOrArchiveChannelWithHttpInfo (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData));
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        ApiResponse<OcDeleteChannelByUrl200Response> GcHideOrArchiveChannelWithHttpInfo (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData));
         /// <summary>
         /// Invite as members
         /// </summary>
         /// <remarks>
-        /// ## Invite as members  Invites one or more users as members into the group channel.  &gt; __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Invite as members  Invites one or more users as members into the group channel.  > __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -215,7 +215,7 @@ namespace sendbird_platform_sdk.Api
         /// Invite as members
         /// </summary>
         /// <remarks>
-        /// ## Invite as members  Invites one or more users as members into the group channel.  &gt; __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Invite as members  Invites one or more users as members into the group channel.  > __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -227,7 +227,7 @@ namespace sendbird_platform_sdk.Api
         /// Join a channel
         /// </summary>
         /// <remarks>
-        /// ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can&#39;t join a new channel.  &gt; __Note__: This action is only permitted for public group channels where the &#x60;is_public&#x60; property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can't join a new channel.  > __Note__: This action is only permitted for public group channels where the `is_public` property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -240,7 +240,7 @@ namespace sendbird_platform_sdk.Api
         /// Join a channel
         /// </summary>
         /// <remarks>
-        /// ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can&#39;t join a new channel.  &gt; __Note__: This action is only permitted for public group channels where the &#x60;is_public&#x60; property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can't join a new channel.  > __Note__: This action is only permitted for public group channels where the `is_public` property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -258,8 +258,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcLeaveChannelData"> (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        InlineResponse2001 GcLeaveChannel (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData));
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        OcDeleteChannelByUrl200Response GcLeaveChannel (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData));
 
         /// <summary>
         /// Leave a channel
@@ -271,13 +271,13 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcLeaveChannelData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        ApiResponse<InlineResponse2001> GcLeaveChannelWithHttpInfo (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData));
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        ApiResponse<OcDeleteChannelByUrl200Response> GcLeaveChannelWithHttpInfo (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData));
         /// <summary>
         /// List channels
         /// </summary>
         /// <remarks>
-        /// ## List channels  Retrieves a list of group channels in the application.  &gt; __Note__: If you want to get a list of a specific user&#39;s group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## List channels  Retrieves a list of group channels in the application.  > __Note__: If you want to get a list of a specific user's group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -330,7 +330,7 @@ namespace sendbird_platform_sdk.Api
         /// List channels
         /// </summary>
         /// <remarks>
-        /// ## List channels  Retrieves a list of group channels in the application.  &gt; __Note__: If you want to get a list of a specific user&#39;s group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## List channels  Retrieves a list of group channels in the application.  > __Note__: If you want to get a list of a specific user's group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -382,7 +382,7 @@ namespace sendbird_platform_sdk.Api
         /// List members
         /// </summary>
         /// <remarks>
-        /// ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
+        /// ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -403,7 +403,7 @@ namespace sendbird_platform_sdk.Api
         /// List members
         /// </summary>
         /// <remarks>
-        /// ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
+        /// ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -423,7 +423,7 @@ namespace sendbird_platform_sdk.Api
         /// List operators
         /// </summary>
         /// <remarks>
-        /// ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -437,7 +437,7 @@ namespace sendbird_platform_sdk.Api
         /// List operators
         /// </summary>
         /// <remarks>
-        /// ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -475,7 +475,7 @@ namespace sendbird_platform_sdk.Api
         /// Reset chat history
         /// </summary>
         /// <remarks>
-        /// ## Reset chat history  Resets the properties related to a user&#39;s chat history in a group channel, then clears the existing messages in the channel on the user&#39;s side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the &#x60;last_message&#x60; and &#x60;read_receipt&#x60; properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user&#39;s unread message.  Using the &#x60;reset_all&#x60; property, you can also reset the properties related to all users&#39; chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Reset chat history  Resets the properties related to a user's chat history in a group channel, then clears the existing messages in the channel on the user's side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the `last_message` and `read_receipt` properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user's unread message.  Using the `reset_all` property, you can also reset the properties related to all users' chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -488,7 +488,7 @@ namespace sendbird_platform_sdk.Api
         /// Reset chat history
         /// </summary>
         /// <remarks>
-        /// ## Reset chat history  Resets the properties related to a user&#39;s chat history in a group channel, then clears the existing messages in the channel on the user&#39;s side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the &#x60;last_message&#x60; and &#x60;read_receipt&#x60; properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user&#39;s unread message.  Using the &#x60;reset_all&#x60; property, you can also reset the properties related to all users&#39; chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Reset chat history  Resets the properties related to a user's chat history in a group channel, then clears the existing messages in the channel on the user's side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the `last_message` and `read_receipt` properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user's unread message.  Using the `reset_all` property, you can also reset the properties related to all users' chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -500,34 +500,34 @@ namespace sendbird_platform_sdk.Api
         /// Unhide or unarchive a channel
         /// </summary>
         /// <remarks>
-        /// ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
+        /// ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        InlineResponse2001 GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?));
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        OcDeleteChannelByUrl200Response GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?));
 
         /// <summary>
         /// Unhide or unarchive a channel
         /// </summary>
         /// <remarks>
-        /// ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
+        /// ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        ApiResponse<InlineResponse2001> GcUnhideOrUnarchiveChannelWithHttpInfo (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?));
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        ApiResponse<OcDeleteChannelByUrl200Response> GcUnhideOrUnarchiveChannelWithHttpInfo (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?));
         /// <summary>
         /// Update a channel
         /// </summary>
         /// <remarks>
-        /// ## Update a channel  Updates information on a group channel.  &gt; __Note__: You can&#39;t change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update a channel  Updates information on a group channel.  > __Note__: You can't change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -540,7 +540,7 @@ namespace sendbird_platform_sdk.Api
         /// Update a channel
         /// </summary>
         /// <remarks>
-        /// ## Update a channel  Updates information on a group channel.  &gt; __Note__: You can&#39;t change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update a channel  Updates information on a group channel.  > __Note__: You can't change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -552,7 +552,7 @@ namespace sendbird_platform_sdk.Api
         /// View a channel
         /// </summary>
         /// <remarks>
-        /// ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve.
+        /// ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -569,7 +569,7 @@ namespace sendbird_platform_sdk.Api
         /// View a channel
         /// </summary>
         /// <remarks>
-        /// ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve.
+        /// ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -587,7 +587,7 @@ namespace sendbird_platform_sdk.Api
         /// Accept an invitation
         /// </summary>
         /// <remarks>
-        /// ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  &gt; __Note__: This action is effective only when the &#x60;auto_accept&#x60; property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -601,7 +601,7 @@ namespace sendbird_platform_sdk.Api
         /// Accept an invitation
         /// </summary>
         /// <remarks>
-        /// ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  &gt; __Note__: This action is effective only when the &#x60;auto_accept&#x60; property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -614,7 +614,7 @@ namespace sendbird_platform_sdk.Api
         /// Cancel the registration of operators
         /// </summary>
         /// <remarks>
-        /// ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -622,14 +622,14 @@ namespace sendbird_platform_sdk.Api
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        System.Threading.Tasks.Task<InlineResponse2001> GcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Cancel the registration of operators
         /// </summary>
         /// <remarks>
-        /// ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -637,8 +637,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Check if member
         /// </summary>
@@ -670,7 +670,7 @@ namespace sendbird_platform_sdk.Api
         /// Create a channel
         /// </summary>
         /// <remarks>
-        /// ## Create a channel  Creates a new group channel.  &gt; If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the &#x60;distinct&#x60; property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can&#39;t see previously sent messages or data in the new channel. On the other hand, if the &#x60;distinct&#x60; property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
+        /// ## Create a channel  Creates a new group channel.  > If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the `distinct` property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can't see previously sent messages or data in the new channel. On the other hand, if the `distinct` property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -683,7 +683,7 @@ namespace sendbird_platform_sdk.Api
         /// Create a channel
         /// </summary>
         /// <remarks>
-        /// ## Create a channel  Creates a new group channel.  &gt; If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the &#x60;distinct&#x60; property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can&#39;t see previously sent messages or data in the new channel. On the other hand, if the &#x60;distinct&#x60; property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
+        /// ## Create a channel  Creates a new group channel.  > If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the `distinct` property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can't see previously sent messages or data in the new channel. On the other hand, if the `distinct` property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -695,29 +695,29 @@ namespace sendbird_platform_sdk.Api
         /// Decline an invitation
         /// </summary>
         /// <remarks>
-        /// ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  &gt; __Note__: This action is effective only when the &#x60;auto_accept&#x60; property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcDeclineInvitationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        System.Threading.Tasks.Task<InlineResponse2001> GcDeclineInvitationAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcDeclineInvitationAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Decline an invitation
         /// </summary>
         /// <remarks>
-        /// ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  &gt; __Note__: This action is effective only when the &#x60;auto_accept&#x60; property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcDeclineInvitationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> GcDeclineInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcDeclineInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Delete a channel
         /// </summary>
@@ -728,8 +728,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        System.Threading.Tasks.Task<InlineResponse2001> GcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Delete a channel
@@ -741,40 +741,40 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> GcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Hide or archive a channel
         /// </summary>
         /// <remarks>
-        /// ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn&#39;t appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn't appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        System.Threading.Tasks.Task<InlineResponse2001> GcHideOrArchiveChannelAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcHideOrArchiveChannelAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Hide or archive a channel
         /// </summary>
         /// <remarks>
-        /// ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn&#39;t appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn't appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> GcHideOrArchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcHideOrArchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Invite as members
         /// </summary>
         /// <remarks>
-        /// ## Invite as members  Invites one or more users as members into the group channel.  &gt; __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Invite as members  Invites one or more users as members into the group channel.  > __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -788,7 +788,7 @@ namespace sendbird_platform_sdk.Api
         /// Invite as members
         /// </summary>
         /// <remarks>
-        /// ## Invite as members  Invites one or more users as members into the group channel.  &gt; __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Invite as members  Invites one or more users as members into the group channel.  > __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -801,7 +801,7 @@ namespace sendbird_platform_sdk.Api
         /// Join a channel
         /// </summary>
         /// <remarks>
-        /// ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can&#39;t join a new channel.  &gt; __Note__: This action is only permitted for public group channels where the &#x60;is_public&#x60; property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can't join a new channel.  > __Note__: This action is only permitted for public group channels where the `is_public` property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -815,7 +815,7 @@ namespace sendbird_platform_sdk.Api
         /// Join a channel
         /// </summary>
         /// <remarks>
-        /// ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can&#39;t join a new channel.  &gt; __Note__: This action is only permitted for public group channels where the &#x60;is_public&#x60; property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can't join a new channel.  > __Note__: This action is only permitted for public group channels where the `is_public` property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -835,8 +835,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcLeaveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        System.Threading.Tasks.Task<InlineResponse2001> GcLeaveChannelAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcLeaveChannelAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Leave a channel
@@ -849,13 +849,13 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcLeaveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> GcLeaveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcLeaveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List channels
         /// </summary>
         /// <remarks>
-        /// ## List channels  Retrieves a list of group channels in the application.  &gt; __Note__: If you want to get a list of a specific user&#39;s group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## List channels  Retrieves a list of group channels in the application.  > __Note__: If you want to get a list of a specific user's group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -909,7 +909,7 @@ namespace sendbird_platform_sdk.Api
         /// List channels
         /// </summary>
         /// <remarks>
-        /// ## List channels  Retrieves a list of group channels in the application.  &gt; __Note__: If you want to get a list of a specific user&#39;s group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## List channels  Retrieves a list of group channels in the application.  > __Note__: If you want to get a list of a specific user's group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -962,7 +962,7 @@ namespace sendbird_platform_sdk.Api
         /// List members
         /// </summary>
         /// <remarks>
-        /// ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
+        /// ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -984,7 +984,7 @@ namespace sendbird_platform_sdk.Api
         /// List members
         /// </summary>
         /// <remarks>
-        /// ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
+        /// ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1005,7 +1005,7 @@ namespace sendbird_platform_sdk.Api
         /// List operators
         /// </summary>
         /// <remarks>
-        /// ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1020,7 +1020,7 @@ namespace sendbird_platform_sdk.Api
         /// List operators
         /// </summary>
         /// <remarks>
-        /// ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1061,7 +1061,7 @@ namespace sendbird_platform_sdk.Api
         /// Reset chat history
         /// </summary>
         /// <remarks>
-        /// ## Reset chat history  Resets the properties related to a user&#39;s chat history in a group channel, then clears the existing messages in the channel on the user&#39;s side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the &#x60;last_message&#x60; and &#x60;read_receipt&#x60; properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user&#39;s unread message.  Using the &#x60;reset_all&#x60; property, you can also reset the properties related to all users&#39; chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Reset chat history  Resets the properties related to a user's chat history in a group channel, then clears the existing messages in the channel on the user's side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the `last_message` and `read_receipt` properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user's unread message.  Using the `reset_all` property, you can also reset the properties related to all users' chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1075,7 +1075,7 @@ namespace sendbird_platform_sdk.Api
         /// Reset chat history
         /// </summary>
         /// <remarks>
-        /// ## Reset chat history  Resets the properties related to a user&#39;s chat history in a group channel, then clears the existing messages in the channel on the user&#39;s side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the &#x60;last_message&#x60; and &#x60;read_receipt&#x60; properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user&#39;s unread message.  Using the &#x60;reset_all&#x60; property, you can also reset the properties related to all users&#39; chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Reset chat history  Resets the properties related to a user's chat history in a group channel, then clears the existing messages in the channel on the user's side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the `last_message` and `read_receipt` properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user's unread message.  Using the `reset_all` property, you can also reset the properties related to all users' chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1088,7 +1088,7 @@ namespace sendbird_platform_sdk.Api
         /// Unhide or unarchive a channel
         /// </summary>
         /// <remarks>
-        /// ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
+        /// ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1096,14 +1096,14 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        System.Threading.Tasks.Task<InlineResponse2001> GcUnhideOrUnarchiveChannelAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnhideOrUnarchiveChannelAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Unhide or unarchive a channel
         /// </summary>
         /// <remarks>
-        /// ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
+        /// ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1111,13 +1111,13 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> GcUnhideOrUnarchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnhideOrUnarchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update a channel
         /// </summary>
         /// <remarks>
-        /// ## Update a channel  Updates information on a group channel.  &gt; __Note__: You can&#39;t change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update a channel  Updates information on a group channel.  > __Note__: You can't change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1131,7 +1131,7 @@ namespace sendbird_platform_sdk.Api
         /// Update a channel
         /// </summary>
         /// <remarks>
-        /// ## Update a channel  Updates information on a group channel.  &gt; __Note__: You can&#39;t change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update a channel  Updates information on a group channel.  > __Note__: You can't change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1144,7 +1144,7 @@ namespace sendbird_platform_sdk.Api
         /// View a channel
         /// </summary>
         /// <remarks>
-        /// ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve.
+        /// ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1162,7 +1162,7 @@ namespace sendbird_platform_sdk.Api
         /// View a channel
         /// </summary>
         /// <remarks>
-        /// ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve.
+        /// ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1287,7 +1287,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Accept an invitation ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  &gt; __Note__: This action is effective only when the &#x60;auto_accept&#x60; property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Accept an invitation ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1301,7 +1301,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Accept an invitation ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  &gt; __Note__: This action is effective only when the &#x60;auto_accept&#x60; property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Accept an invitation ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1370,7 +1370,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Accept an invitation ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  &gt; __Note__: This action is effective only when the &#x60;auto_accept&#x60; property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Accept an invitation ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1386,7 +1386,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Accept an invitation ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  &gt; __Note__: This action is effective only when the &#x60;auto_accept&#x60; property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Accept an invitation ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1456,30 +1456,30 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        public InlineResponse2001 GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?))
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        public OcDeleteChannelByUrl200Response GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?))
         {
-             ApiResponse<InlineResponse2001> localVarResponse = GcCancelTheRegistrationOfOperatorsWithHttpInfo(apiToken, channelUrl, operatorIds, deleteAll);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = GcCancelTheRegistrationOfOperatorsWithHttpInfo(apiToken, channelUrl, operatorIds, deleteAll);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        public ApiResponse<InlineResponse2001> GcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?))
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        public ApiResponse<OcDeleteChannelByUrl200Response> GcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1531,13 +1531,13 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
-        /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1545,16 +1545,16 @@ namespace sendbird_platform_sdk.Api
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2001> GcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2001> localVarResponse = await GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync(apiToken, channelUrl, operatorIds, deleteAll, cancellationToken);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync(apiToken, channelUrl, operatorIds, deleteAll, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1562,8 +1562,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1615,9 +1615,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
@@ -1780,7 +1780,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Create a channel ## Create a channel  Creates a new group channel.  &gt; If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the &#x60;distinct&#x60; property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can&#39;t see previously sent messages or data in the new channel. On the other hand, if the &#x60;distinct&#x60; property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
+        /// Create a channel ## Create a channel  Creates a new group channel.  > If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the `distinct` property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can't see previously sent messages or data in the new channel. On the other hand, if the `distinct` property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1793,7 +1793,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Create a channel ## Create a channel  Creates a new group channel.  &gt; If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the &#x60;distinct&#x60; property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can&#39;t see previously sent messages or data in the new channel. On the other hand, if the &#x60;distinct&#x60; property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
+        /// Create a channel ## Create a channel  Creates a new group channel.  > If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the `distinct` property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can't see previously sent messages or data in the new channel. On the other hand, if the `distinct` property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1857,7 +1857,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Create a channel ## Create a channel  Creates a new group channel.  &gt; If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the &#x60;distinct&#x60; property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can&#39;t see previously sent messages or data in the new channel. On the other hand, if the &#x60;distinct&#x60; property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
+        /// Create a channel ## Create a channel  Creates a new group channel.  > If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the `distinct` property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can't see previously sent messages or data in the new channel. On the other hand, if the `distinct` property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1872,7 +1872,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Create a channel ## Create a channel  Creates a new group channel.  &gt; If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the &#x60;distinct&#x60; property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can&#39;t see previously sent messages or data in the new channel. On the other hand, if the &#x60;distinct&#x60; property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
+        /// Create a channel ## Create a channel  Creates a new group channel.  > If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the `distinct` property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can't see previously sent messages or data in the new channel. On the other hand, if the `distinct` property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1937,28 +1937,28 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Decline an invitation ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  &gt; __Note__: This action is effective only when the &#x60;auto_accept&#x60; property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Decline an invitation ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcDeclineInvitationData"> (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        public InlineResponse2001 GcDeclineInvitation (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData))
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        public OcDeleteChannelByUrl200Response GcDeclineInvitation (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData))
         {
-             ApiResponse<InlineResponse2001> localVarResponse = GcDeclineInvitationWithHttpInfo(apiToken, channelUrl, gcDeclineInvitationData);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = GcDeclineInvitationWithHttpInfo(apiToken, channelUrl, gcDeclineInvitationData);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Decline an invitation ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  &gt; __Note__: This action is effective only when the &#x60;auto_accept&#x60; property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Decline an invitation ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcDeclineInvitationData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        public ApiResponse<InlineResponse2001> GcDeclineInvitationWithHttpInfo (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData))
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        public ApiResponse<OcDeleteChannelByUrl200Response> GcDeclineInvitationWithHttpInfo (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2014,37 +2014,37 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
-        /// Decline an invitation ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  &gt; __Note__: This action is effective only when the &#x60;auto_accept&#x60; property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Decline an invitation ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcDeclineInvitationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2001> GcDeclineInvitationAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcDeclineInvitationAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2001> localVarResponse = await GcDeclineInvitationWithHttpInfoAsync(apiToken, channelUrl, gcDeclineInvitationData, cancellationToken);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcDeclineInvitationWithHttpInfoAsync(apiToken, channelUrl, gcDeclineInvitationData, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Decline an invitation ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  &gt; __Note__: This action is effective only when the &#x60;auto_accept&#x60; property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Decline an invitation ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcDeclineInvitationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> GcDeclineInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcDeclineInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2100,9 +2100,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
@@ -2111,10 +2111,10 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <returns>InlineResponse2001</returns>
-        public InlineResponse2001 GcDeleteChannelByUrl (string apiToken, string channelUrl)
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        public OcDeleteChannelByUrl200Response GcDeleteChannelByUrl (string apiToken, string channelUrl)
         {
-             ApiResponse<InlineResponse2001> localVarResponse = GcDeleteChannelByUrlWithHttpInfo(apiToken, channelUrl);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = GcDeleteChannelByUrlWithHttpInfo(apiToken, channelUrl);
              return localVarResponse.Data;
         }
 
@@ -2124,8 +2124,8 @@ namespace sendbird_platform_sdk.Api
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        public ApiResponse<InlineResponse2001> GcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl)
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        public ApiResponse<OcDeleteChannelByUrl200Response> GcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2172,9 +2172,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
@@ -2184,10 +2184,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2001> GcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2001> localVarResponse = await GcDeleteChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, cancellationToken);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcDeleteChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2199,8 +2199,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> GcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2247,34 +2247,34 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
-        /// Hide or archive a channel ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn&#39;t appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Hide or archive a channel ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn't appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        public InlineResponse2001 GcHideOrArchiveChannel (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData))
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        public OcDeleteChannelByUrl200Response GcHideOrArchiveChannel (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData))
         {
-             ApiResponse<InlineResponse2001> localVarResponse = GcHideOrArchiveChannelWithHttpInfo(apiToken, channelUrl, gcHideOrArchiveChannelData);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = GcHideOrArchiveChannelWithHttpInfo(apiToken, channelUrl, gcHideOrArchiveChannelData);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Hide or archive a channel ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn&#39;t appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Hide or archive a channel ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn't appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        public ApiResponse<InlineResponse2001> GcHideOrArchiveChannelWithHttpInfo (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData))
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        public ApiResponse<OcDeleteChannelByUrl200Response> GcHideOrArchiveChannelWithHttpInfo (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2330,37 +2330,37 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
-        /// Hide or archive a channel ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn&#39;t appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Hide or archive a channel ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn't appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2001> GcHideOrArchiveChannelAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcHideOrArchiveChannelAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2001> localVarResponse = await GcHideOrArchiveChannelWithHttpInfoAsync(apiToken, channelUrl, gcHideOrArchiveChannelData, cancellationToken);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcHideOrArchiveChannelWithHttpInfoAsync(apiToken, channelUrl, gcHideOrArchiveChannelData, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Hide or archive a channel ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn&#39;t appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Hide or archive a channel ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn't appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> GcHideOrArchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcHideOrArchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2416,13 +2416,13 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
-        /// Invite as members ## Invite as members  Invites one or more users as members into the group channel.  &gt; __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Invite as members ## Invite as members  Invites one or more users as members into the group channel.  > __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2436,7 +2436,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Invite as members ## Invite as members  Invites one or more users as members into the group channel.  &gt; __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Invite as members ## Invite as members  Invites one or more users as members into the group channel.  > __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2505,7 +2505,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Invite as members ## Invite as members  Invites one or more users as members into the group channel.  &gt; __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Invite as members ## Invite as members  Invites one or more users as members into the group channel.  > __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2521,7 +2521,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Invite as members ## Invite as members  Invites one or more users as members into the group channel.  &gt; __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user&#39;s channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Invite as members ## Invite as members  Invites one or more users as members into the group channel.  > __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2591,7 +2591,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Join a channel ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can&#39;t join a new channel.  &gt; __Note__: This action is only permitted for public group channels where the &#x60;is_public&#x60; property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Join a channel ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can't join a new channel.  > __Note__: This action is only permitted for public group channels where the `is_public` property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2604,7 +2604,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Join a channel ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can&#39;t join a new channel.  &gt; __Note__: This action is only permitted for public group channels where the &#x60;is_public&#x60; property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Join a channel ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can't join a new channel.  > __Note__: This action is only permitted for public group channels where the `is_public` property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2672,7 +2672,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Join a channel ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can&#39;t join a new channel.  &gt; __Note__: This action is only permitted for public group channels where the &#x60;is_public&#x60; property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Join a channel ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can't join a new channel.  > __Note__: This action is only permitted for public group channels where the `is_public` property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2687,7 +2687,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Join a channel ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can&#39;t join a new channel.  &gt; __Note__: This action is only permitted for public group channels where the &#x60;is_public&#x60; property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Join a channel ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can't join a new channel.  > __Note__: This action is only permitted for public group channels where the `is_public` property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2762,10 +2762,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcLeaveChannelData"> (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        public InlineResponse2001 GcLeaveChannel (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData))
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        public OcDeleteChannelByUrl200Response GcLeaveChannel (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData))
         {
-             ApiResponse<InlineResponse2001> localVarResponse = GcLeaveChannelWithHttpInfo(apiToken, channelUrl, gcLeaveChannelData);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = GcLeaveChannelWithHttpInfo(apiToken, channelUrl, gcLeaveChannelData);
              return localVarResponse.Data;
         }
 
@@ -2776,8 +2776,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="gcLeaveChannelData"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        public ApiResponse<InlineResponse2001> GcLeaveChannelWithHttpInfo (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData))
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        public ApiResponse<OcDeleteChannelByUrl200Response> GcLeaveChannelWithHttpInfo (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2833,9 +2833,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
@@ -2846,10 +2846,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcLeaveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2001> GcLeaveChannelAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcLeaveChannelAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2001> localVarResponse = await GcLeaveChannelWithHttpInfoAsync(apiToken, channelUrl, gcLeaveChannelData, cancellationToken);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcLeaveChannelWithHttpInfoAsync(apiToken, channelUrl, gcLeaveChannelData, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2862,8 +2862,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="gcLeaveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> GcLeaveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcLeaveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2919,13 +2919,13 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
-        /// List channels ## List channels  Retrieves a list of group channels in the application.  &gt; __Note__: If you want to get a list of a specific user&#39;s group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// List channels ## List channels  Retrieves a list of group channels in the application.  > __Note__: If you want to get a list of a specific user's group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2979,7 +2979,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List channels ## List channels  Retrieves a list of group channels in the application.  &gt; __Note__: If you want to get a list of a specific user&#39;s group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// List channels ## List channels  Retrieves a list of group channels in the application.  > __Note__: If you want to get a list of a specific user's group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3117,7 +3117,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List channels ## List channels  Retrieves a list of group channels in the application.  &gt; __Note__: If you want to get a list of a specific user&#39;s group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// List channels ## List channels  Retrieves a list of group channels in the application.  > __Note__: If you want to get a list of a specific user's group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3173,7 +3173,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List channels ## List channels  Retrieves a list of group channels in the application.  &gt; __Note__: If you want to get a list of a specific user&#39;s group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// List channels ## List channels  Retrieves a list of group channels in the application.  > __Note__: If you want to get a list of a specific user's group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3312,7 +3312,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List members ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
+        /// List members ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3334,7 +3334,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List members ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
+        /// List members ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3411,7 +3411,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List members ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
+        /// List members ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3435,7 +3435,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List members ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
+        /// List members ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3513,7 +3513,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List operators ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// List operators ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3528,7 +3528,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List operators ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// List operators ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3591,7 +3591,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List operators ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// List operators ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3608,7 +3608,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List operators ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// List operators ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3841,7 +3841,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Reset chat history ## Reset chat history  Resets the properties related to a user&#39;s chat history in a group channel, then clears the existing messages in the channel on the user&#39;s side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the &#x60;last_message&#x60; and &#x60;read_receipt&#x60; properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user&#39;s unread message.  Using the &#x60;reset_all&#x60; property, you can also reset the properties related to all users&#39; chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Reset chat history ## Reset chat history  Resets the properties related to a user's chat history in a group channel, then clears the existing messages in the channel on the user's side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the `last_message` and `read_receipt` properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user's unread message.  Using the `reset_all` property, you can also reset the properties related to all users' chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3855,7 +3855,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Reset chat history ## Reset chat history  Resets the properties related to a user&#39;s chat history in a group channel, then clears the existing messages in the channel on the user&#39;s side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the &#x60;last_message&#x60; and &#x60;read_receipt&#x60; properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user&#39;s unread message.  Using the &#x60;reset_all&#x60; property, you can also reset the properties related to all users&#39; chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Reset chat history ## Reset chat history  Resets the properties related to a user's chat history in a group channel, then clears the existing messages in the channel on the user's side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the `last_message` and `read_receipt` properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user's unread message.  Using the `reset_all` property, you can also reset the properties related to all users' chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3924,7 +3924,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Reset chat history ## Reset chat history  Resets the properties related to a user&#39;s chat history in a group channel, then clears the existing messages in the channel on the user&#39;s side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the &#x60;last_message&#x60; and &#x60;read_receipt&#x60; properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user&#39;s unread message.  Using the &#x60;reset_all&#x60; property, you can also reset the properties related to all users&#39; chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Reset chat history ## Reset chat history  Resets the properties related to a user's chat history in a group channel, then clears the existing messages in the channel on the user's side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the `last_message` and `read_receipt` properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user's unread message.  Using the `reset_all` property, you can also reset the properties related to all users' chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3940,7 +3940,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Reset chat history ## Reset chat history  Resets the properties related to a user&#39;s chat history in a group channel, then clears the existing messages in the channel on the user&#39;s side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the &#x60;last_message&#x60; and &#x60;read_receipt&#x60; properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user&#39;s unread message.  Using the &#x60;reset_all&#x60; property, you can also reset the properties related to all users&#39; chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Reset chat history ## Reset chat history  Resets the properties related to a user's chat history in a group channel, then clears the existing messages in the channel on the user's side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the `last_message` and `read_receipt` properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user's unread message.  Using the `reset_all` property, you can also reset the properties related to all users' chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4010,30 +4010,30 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Unhide or unarchive a channel ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
+        /// Unhide or unarchive a channel ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        public InlineResponse2001 GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?))
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        public OcDeleteChannelByUrl200Response GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?))
         {
-             ApiResponse<InlineResponse2001> localVarResponse = GcUnhideOrUnarchiveChannelWithHttpInfo(apiToken, channelUrl, userId, shouldUnhideAll);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = GcUnhideOrUnarchiveChannelWithHttpInfo(apiToken, channelUrl, userId, shouldUnhideAll);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Unhide or unarchive a channel ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
+        /// Unhide or unarchive a channel ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        public ApiResponse<InlineResponse2001> GcUnhideOrUnarchiveChannelWithHttpInfo (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?))
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        public ApiResponse<OcDeleteChannelByUrl200Response> GcUnhideOrUnarchiveChannelWithHttpInfo (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4085,13 +4085,13 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
-        /// Unhide or unarchive a channel ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
+        /// Unhide or unarchive a channel ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4099,16 +4099,16 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2001> GcUnhideOrUnarchiveChannelAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnhideOrUnarchiveChannelAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2001> localVarResponse = await GcUnhideOrUnarchiveChannelWithHttpInfoAsync(apiToken, channelUrl, userId, shouldUnhideAll, cancellationToken);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcUnhideOrUnarchiveChannelWithHttpInfoAsync(apiToken, channelUrl, userId, shouldUnhideAll, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Unhide or unarchive a channel ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
+        /// Unhide or unarchive a channel ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4116,8 +4116,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> GcUnhideOrUnarchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnhideOrUnarchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4169,13 +4169,13 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
-        /// Update a channel ## Update a channel  Updates information on a group channel.  &gt; __Note__: You can&#39;t change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update a channel ## Update a channel  Updates information on a group channel.  > __Note__: You can't change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4189,7 +4189,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update a channel ## Update a channel  Updates information on a group channel.  &gt; __Note__: You can&#39;t change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update a channel ## Update a channel  Updates information on a group channel.  > __Note__: You can't change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4258,7 +4258,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update a channel ## Update a channel  Updates information on a group channel.  &gt; __Note__: You can&#39;t change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update a channel ## Update a channel  Updates information on a group channel.  > __Note__: You can't change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4274,7 +4274,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Update a channel ## Update a channel  Updates information on a group channel.  &gt; __Note__: You can&#39;t change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update a channel ## Update a channel  Updates information on a group channel.  > __Note__: You can't change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4344,7 +4344,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View a channel ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve.
+        /// View a channel ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4362,7 +4362,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View a channel ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve.
+        /// View a channel ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4431,7 +4431,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View a channel ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve.
+        /// View a channel ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4451,7 +4451,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// View a channel ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve.
+        /// View a channel ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>

@@ -66,6 +66,14 @@ namespace sendbird_platform_sdk.Test
 
 
         /// <summary>
+        /// Test the property 'ChannelUrl'
+        /// </summary>
+        [Test]
+        public void ChannelUrlTest()
+        {
+            // TODO unit test for the property 'ChannelUrl'
+        }
+        /// <summary>
         /// Test the property 'CoverUrl'
         /// </summary>
         [Test]
@@ -80,6 +88,14 @@ namespace sendbird_platform_sdk.Test
         public void CreatedAtTest()
         {
             // TODO unit test for the property 'CreatedAt'
+        }
+        /// <summary>
+        /// Test the property 'CreatedBy'
+        /// </summary>
+        [Test]
+        public void CreatedByTest()
+        {
+            // TODO unit test for the property 'CreatedBy'
         }
         /// <summary>
         /// Test the property 'Creator'
@@ -104,6 +120,30 @@ namespace sendbird_platform_sdk.Test
         public void DataTest()
         {
             // TODO unit test for the property 'Data'
+        }
+        /// <summary>
+        /// Test the property 'DisappearingMessage'
+        /// </summary>
+        [Test]
+        public void DisappearingMessageTest()
+        {
+            // TODO unit test for the property 'DisappearingMessage'
+        }
+        /// <summary>
+        /// Test the property 'Freeze'
+        /// </summary>
+        [Test]
+        public void FreezeTest()
+        {
+            // TODO unit test for the property 'Freeze'
+        }
+        /// <summary>
+        /// Test the property 'IgnoreProfanityFilter'
+        /// </summary>
+        [Test]
+        public void IgnoreProfanityFilterTest()
+        {
+            // TODO unit test for the property 'IgnoreProfanityFilter'
         }
         /// <summary>
         /// Test the property 'HiddenState'
@@ -144,6 +184,14 @@ namespace sendbird_platform_sdk.Test
         public void IsBroadcastTest()
         {
             // TODO unit test for the property 'IsBroadcast'
+        }
+        /// <summary>
+        /// Test the property 'IsCreated'
+        /// </summary>
+        [Test]
+        public void IsCreatedTest()
+        {
+            // TODO unit test for the property 'IsCreated'
         }
         /// <summary>
         /// Test the property 'IsDiscoverable'
@@ -234,6 +282,14 @@ namespace sendbird_platform_sdk.Test
             // TODO unit test for the property 'LastMessage'
         }
         /// <summary>
+        /// Test the property 'MaxLengthMessage'
+        /// </summary>
+        [Test]
+        public void MaxLengthMessageTest()
+        {
+            // TODO unit test for the property 'MaxLengthMessage'
+        }
+        /// <summary>
         /// Test the property 'MemberCount'
         /// </summary>
         [Test]
@@ -322,6 +378,22 @@ namespace sendbird_platform_sdk.Test
             // TODO unit test for the property 'Name'
         }
         /// <summary>
+        /// Test the property 'Operators'
+        /// </summary>
+        [Test]
+        public void OperatorsTest()
+        {
+            // TODO unit test for the property 'Operators'
+        }
+        /// <summary>
+        /// Test the property 'SmsFallback'
+        /// </summary>
+        [Test]
+        public void SmsFallbackTest()
+        {
+            // TODO unit test for the property 'SmsFallback'
+        }
+        /// <summary>
         /// Test the property 'UnreadMentionCount'
         /// </summary>
         [Test]
@@ -338,20 +410,20 @@ namespace sendbird_platform_sdk.Test
             // TODO unit test for the property 'UnreadMessageCount'
         }
         /// <summary>
-        /// Test the property 'ChannelUrl'
+        /// Test the property 'Channel'
         /// </summary>
         [Test]
-        public void ChannelUrlTest()
+        public void ChannelTest()
         {
-            // TODO unit test for the property 'ChannelUrl'
+            // TODO unit test for the property 'Channel'
         }
         /// <summary>
-        /// Test the property 'Operators'
+        /// Test the property 'IsDynamicPartitioned'
         /// </summary>
         [Test]
-        public void OperatorsTest()
+        public void IsDynamicPartitionedTest()
         {
-            // TODO unit test for the property 'Operators'
+            // TODO unit test for the property 'IsDynamicPartitioned'
         }
         /// <summary>
         /// Test the property 'ParticipantCount'

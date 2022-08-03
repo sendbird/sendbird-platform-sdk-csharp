@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="AddEmojiCategoriesResponse" /> class.
         /// </summary>
         /// <param name="emojiCategories">emojiCategories.</param>
-        public AddEmojiCategoriesResponse(List<AddEmojiCategoriesResponseEmojiCategories> emojiCategories = default(List<AddEmojiCategoriesResponseEmojiCategories>))
+        public AddEmojiCategoriesResponse(List<AddEmojiCategoriesResponseEmojiCategoriesInner> emojiCategories = default(List<AddEmojiCategoriesResponseEmojiCategoriesInner>))
         {
             this.EmojiCategories = emojiCategories;
         }
@@ -43,7 +43,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets EmojiCategories
         /// </summary>
         [DataMember(Name="emoji_categories", EmitDefaultValue=false)]
-        public List<AddEmojiCategoriesResponseEmojiCategories> EmojiCategories { get; set; }
+        public List<AddEmojiCategoriesResponseEmojiCategoriesInner> EmojiCategories { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

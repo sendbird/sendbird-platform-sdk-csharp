@@ -42,7 +42,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="targetId">Specifies the ID of the user to be blocked. (required).</param>
         /// <param name="userIds">Specifies an array of the IDs of the users to be blocked at a time. (for bulk mode) (required).</param>
         /// <param name="users">Specifies an array of the IDs of the users to be blocked at a time. The user_ids above and this property can be used interchangeably. (for bulk mode) (required).</param>
-        public BlockUserData(string userId = default(string), string targetId = default(string), List<int> userIds = default(List<int>), List<int> users = default(List<int>))
+        public BlockUserData(string userId = default(string), string targetId = default(string), List<string> userIds = default(List<string>), List<string> users = default(List<string>))
         {
             // to ensure "userId" is required (not null)
             if (userId == null)
@@ -105,14 +105,14 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <value>Specifies an array of the IDs of the users to be blocked at a time. (for bulk mode)</value>
         [DataMember(Name="user_ids", EmitDefaultValue=true)]
-        public List<int> UserIds { get; set; }
+        public List<string> UserIds { get; set; }
 
         /// <summary>
         /// Specifies an array of the IDs of the users to be blocked at a time. The user_ids above and this property can be used interchangeably. (for bulk mode)
         /// </summary>
         /// <value>Specifies an array of the IDs of the users to be blocked at a time. The user_ids above and this property can be used interchangeably. (for bulk mode)</value>
         [DataMember(Name="users", EmitDefaultValue=true)]
-        public List<int> Users { get; set; }
+        public List<string> Users { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

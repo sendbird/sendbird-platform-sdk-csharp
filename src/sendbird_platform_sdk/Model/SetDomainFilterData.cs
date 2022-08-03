@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="profanityFilter">profanityFilter.</param>
         /// <param name="profanityTriggeredModeration">profanityTriggeredModeration.</param>
         /// <param name="imageModeration">imageModeration.</param>
-        public SetDomainFilterData(V3ApplicationsSettingsGlobalCustomTypeDomainFilter domainFilter = default(V3ApplicationsSettingsGlobalCustomTypeDomainFilter), V3ApplicationsSettingsGlobalCustomTypeProfanityFilter profanityFilter = default(V3ApplicationsSettingsGlobalCustomTypeProfanityFilter), V3ApplicationsSettingsGlobalCustomTypeProfanityTriggeredModeration profanityTriggeredModeration = default(V3ApplicationsSettingsGlobalCustomTypeProfanityTriggeredModeration), V3ApplicationsSettingsGlobalCustomTypeImageModeration imageModeration = default(V3ApplicationsSettingsGlobalCustomTypeImageModeration))
+        public SetDomainFilterData(SetDomainFilterDataDomainFilter domainFilter = default(SetDomainFilterDataDomainFilter), SetDomainFilterDataProfanityFilter profanityFilter = default(SetDomainFilterDataProfanityFilter), SetDomainFilterDataProfanityTriggeredModeration profanityTriggeredModeration = default(SetDomainFilterDataProfanityTriggeredModeration), SetDomainFilterDataImageModeration imageModeration = default(SetDomainFilterDataImageModeration))
         {
             this.DomainFilter = domainFilter;
             this.ProfanityFilter = profanityFilter;
@@ -49,25 +49,25 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets DomainFilter
         /// </summary>
         [DataMember(Name="domain_filter", EmitDefaultValue=false)]
-        public V3ApplicationsSettingsGlobalCustomTypeDomainFilter DomainFilter { get; set; }
+        public SetDomainFilterDataDomainFilter DomainFilter { get; set; }
 
         /// <summary>
         /// Gets or Sets ProfanityFilter
         /// </summary>
         [DataMember(Name="profanity_filter", EmitDefaultValue=false)]
-        public V3ApplicationsSettingsGlobalCustomTypeProfanityFilter ProfanityFilter { get; set; }
+        public SetDomainFilterDataProfanityFilter ProfanityFilter { get; set; }
 
         /// <summary>
         /// Gets or Sets ProfanityTriggeredModeration
         /// </summary>
         [DataMember(Name="profanity_triggered_moderation", EmitDefaultValue=false)]
-        public V3ApplicationsSettingsGlobalCustomTypeProfanityTriggeredModeration ProfanityTriggeredModeration { get; set; }
+        public SetDomainFilterDataProfanityTriggeredModeration ProfanityTriggeredModeration { get; set; }
 
         /// <summary>
         /// Gets or Sets ImageModeration
         /// </summary>
         [DataMember(Name="image_moderation", EmitDefaultValue=false)]
-        public V3ApplicationsSettingsGlobalCustomTypeImageModeration ImageModeration { get; set; }
+        public SetDomainFilterDataImageModeration ImageModeration { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

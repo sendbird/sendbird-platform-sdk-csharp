@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="emojiHash">emojiHash.</param>
         /// <param name="emojiCategories">emojiCategories.</param>
-        public ListAllEmojisAndEmojiCategoriesResponse(string emojiHash = default(string), List<ListAllEmojisAndEmojiCategoriesResponseEmojiCategories> emojiCategories = default(List<ListAllEmojisAndEmojiCategoriesResponseEmojiCategories>))
+        public ListAllEmojisAndEmojiCategoriesResponse(string emojiHash = default(string), List<ListAllEmojisAndEmojiCategoriesResponseEmojiCategoriesInner> emojiCategories = default(List<ListAllEmojisAndEmojiCategoriesResponseEmojiCategoriesInner>))
         {
             this.EmojiHash = emojiHash;
             this.EmojiCategories = emojiCategories;
@@ -51,7 +51,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets EmojiCategories
         /// </summary>
         [DataMember(Name="emoji_categories", EmitDefaultValue=false)]
-        public List<ListAllEmojisAndEmojiCategoriesResponseEmojiCategories> EmojiCategories { get; set; }
+        public List<ListAllEmojisAndEmojiCategoriesResponseEmojiCategoriesInner> EmojiCategories { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

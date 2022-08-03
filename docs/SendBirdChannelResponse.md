@@ -48,6 +48,7 @@ Name | Type | Description | Notes
 **SmsFallback** | [**SendBirdGroupChannelSmsFallback**](SendBirdGroupChannelSmsFallback.md) |  | [optional] 
 **UnreadMentionCount** | **decimal** |  | [optional] 
 **UnreadMessageCount** | **decimal** |  | [optional] 
+**Channel** | [**SendBirdGroupChannelChannel**](SendBirdGroupChannelChannel.md) |  | [optional] 
 **IsDynamicPartitioned** | **bool** |  | [optional] 
 **ParticipantCount** | **decimal** |  | [optional] 
 

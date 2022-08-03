@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="announcements">announcements.</param>
         /// <param name="next">next.</param>
-        public ListAnnouncementsResponse(List<ListAnnouncementsResponseAnnouncements> announcements = default(List<ListAnnouncementsResponseAnnouncements>), string next = default(string))
+        public ListAnnouncementsResponse(List<ListAnnouncementsResponseAnnouncementsInner> announcements = default(List<ListAnnouncementsResponseAnnouncementsInner>), string next = default(string))
         {
             this.Announcements = announcements;
             this.Next = next;
@@ -45,7 +45,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets Announcements
         /// </summary>
         [DataMember(Name="announcements", EmitDefaultValue=false)]
-        public List<ListAnnouncementsResponseAnnouncements> Announcements { get; set; }
+        public List<ListAnnouncementsResponseAnnouncementsInner> Announcements { get; set; }
 
         /// <summary>
         /// Gets or Sets Next

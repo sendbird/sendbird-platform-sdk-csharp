@@ -37,7 +37,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new PrivacyApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var requestId = requestId_example;  // string | 
+            var requestId = "requestId_example";  // string | 
 
             try
             {
@@ -114,7 +114,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new PrivacyApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var token = token_example;  // string |  (optional) 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
@@ -272,7 +272,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new PrivacyApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var requestId = requestId_example;  // string | 
+            var requestId = "requestId_example";  // string | 
 
             try
             {

@@ -60,7 +60,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="parentMessageId">parentMessageId.</param>
         /// <param name="parentMessageInfo">parentMessageInfo.</param>
         /// <param name="isReplyToChannel">isReplyToChannel.</param>
-        public SendBirdMessageResponse(bool requireAuth = default(bool), decimal messageSurvivalSeconds = default(decimal), string customType = default(string), List<SendBirdMessageResponseMentionedUsers> mentionedUsers = default(List<SendBirdMessageResponseMentionedUsers>), Object translations = default(Object), decimal updatedAt = default(decimal), bool isOpMsg = default(bool), bool isRemoved = default(bool), SendBirdMessageResponseUser user = default(SendBirdMessageResponseUser), Object file = default(Object), string message = default(string), string data = default(string), decimal messageRetentionHour = default(decimal), bool silent = default(bool), string type = default(string), decimal createdAt = default(decimal), string channelType = default(string), string reqId = default(string), string mentionType = default(string), string channelUrl = default(string), decimal messageId = default(decimal), decimal size = default(decimal), List<Object> sortedMetaarray = default(List<Object>), Object threadInfo = default(Object), decimal parentMessageId = default(decimal), Object parentMessageInfo = default(Object), bool isReplyToChannel = default(bool))
+        public SendBirdMessageResponse(bool requireAuth = default(bool), decimal messageSurvivalSeconds = default(decimal), string customType = default(string), List<SendBirdMessageResponseMentionedUsersInner> mentionedUsers = default(List<SendBirdMessageResponseMentionedUsersInner>), Object translations = default(Object), decimal updatedAt = default(decimal), bool isOpMsg = default(bool), bool isRemoved = default(bool), SendBirdMessageResponseUser user = default(SendBirdMessageResponseUser), Object file = default(Object), string message = default(string), string data = default(string), decimal messageRetentionHour = default(decimal), bool silent = default(bool), string type = default(string), decimal createdAt = default(decimal), string channelType = default(string), string reqId = default(string), string mentionType = default(string), string channelUrl = default(string), decimal messageId = default(decimal), decimal size = default(decimal), List<Object> sortedMetaarray = default(List<Object>), Object threadInfo = default(Object), decimal parentMessageId = default(decimal), Object parentMessageInfo = default(Object), bool isReplyToChannel = default(bool))
         {
             this.RequireAuth = requireAuth;
             this.MessageSurvivalSeconds = messageSurvivalSeconds;
@@ -113,7 +113,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets MentionedUsers
         /// </summary>
         [DataMember(Name="mentioned_users", EmitDefaultValue=false)]
-        public List<SendBirdMessageResponseMentionedUsers> MentionedUsers { get; set; }
+        public List<SendBirdMessageResponseMentionedUsersInner> MentionedUsers { get; set; }
 
         /// <summary>
         /// Gets or Sets Translations

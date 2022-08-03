@@ -66,12 +66,116 @@ namespace sendbird_platform_sdk.Test
 
 
         /// <summary>
-        /// Test the property 'Size'
+        /// Test the property 'RequireAuth'
         /// </summary>
         [Test]
-        public void SizeTest()
+        public void RequireAuthTest()
         {
-            // TODO unit test for the property 'Size'
+            // TODO unit test for the property 'RequireAuth'
+        }
+        /// <summary>
+        /// Test the property 'MessageSurvivalSeconds'
+        /// </summary>
+        [Test]
+        public void MessageSurvivalSecondsTest()
+        {
+            // TODO unit test for the property 'MessageSurvivalSeconds'
+        }
+        /// <summary>
+        /// Test the property 'CustomType'
+        /// </summary>
+        [Test]
+        public void CustomTypeTest()
+        {
+            // TODO unit test for the property 'CustomType'
+        }
+        /// <summary>
+        /// Test the property 'MentionedUsers'
+        /// </summary>
+        [Test]
+        public void MentionedUsersTest()
+        {
+            // TODO unit test for the property 'MentionedUsers'
+        }
+        /// <summary>
+        /// Test the property 'Translations'
+        /// </summary>
+        [Test]
+        public void TranslationsTest()
+        {
+            // TODO unit test for the property 'Translations'
+        }
+        /// <summary>
+        /// Test the property 'UpdatedAt'
+        /// </summary>
+        [Test]
+        public void UpdatedAtTest()
+        {
+            // TODO unit test for the property 'UpdatedAt'
+        }
+        /// <summary>
+        /// Test the property 'IsOpMsg'
+        /// </summary>
+        [Test]
+        public void IsOpMsgTest()
+        {
+            // TODO unit test for the property 'IsOpMsg'
+        }
+        /// <summary>
+        /// Test the property 'IsRemoved'
+        /// </summary>
+        [Test]
+        public void IsRemovedTest()
+        {
+            // TODO unit test for the property 'IsRemoved'
+        }
+        /// <summary>
+        /// Test the property 'User'
+        /// </summary>
+        [Test]
+        public void UserTest()
+        {
+            // TODO unit test for the property 'User'
+        }
+        /// <summary>
+        /// Test the property 'File'
+        /// </summary>
+        [Test]
+        public void FileTest()
+        {
+            // TODO unit test for the property 'File'
+        }
+        /// <summary>
+        /// Test the property 'Message'
+        /// </summary>
+        [Test]
+        public void MessageTest()
+        {
+            // TODO unit test for the property 'Message'
+        }
+        /// <summary>
+        /// Test the property 'Data'
+        /// </summary>
+        [Test]
+        public void DataTest()
+        {
+            // TODO unit test for the property 'Data'
+        }
+        /// <summary>
+        /// Test the property 'MessageRetentionHour'
+        /// </summary>
+        [Test]
+        public void MessageRetentionHourTest()
+        {
+            // TODO unit test for the property 'MessageRetentionHour'
+        }
+        /// <summary>
+        /// Test the property 'Silent'
+        /// </summary>
+        [Test]
+        public void SilentTest()
+        {
+            // TODO unit test for the property 'Silent'
         }
         /// <summary>
         /// Test the property 'Type'
@@ -80,6 +184,102 @@ namespace sendbird_platform_sdk.Test
         public void TypeTest()
         {
             // TODO unit test for the property 'Type'
+        }
+        /// <summary>
+        /// Test the property 'CreatedAt'
+        /// </summary>
+        [Test]
+        public void CreatedAtTest()
+        {
+            // TODO unit test for the property 'CreatedAt'
+        }
+        /// <summary>
+        /// Test the property 'ChannelType'
+        /// </summary>
+        [Test]
+        public void ChannelTypeTest()
+        {
+            // TODO unit test for the property 'ChannelType'
+        }
+        /// <summary>
+        /// Test the property 'ReqId'
+        /// </summary>
+        [Test]
+        public void ReqIdTest()
+        {
+            // TODO unit test for the property 'ReqId'
+        }
+        /// <summary>
+        /// Test the property 'MentionType'
+        /// </summary>
+        [Test]
+        public void MentionTypeTest()
+        {
+            // TODO unit test for the property 'MentionType'
+        }
+        /// <summary>
+        /// Test the property 'ChannelUrl'
+        /// </summary>
+        [Test]
+        public void ChannelUrlTest()
+        {
+            // TODO unit test for the property 'ChannelUrl'
+        }
+        /// <summary>
+        /// Test the property 'MessageId'
+        /// </summary>
+        [Test]
+        public void MessageIdTest()
+        {
+            // TODO unit test for the property 'MessageId'
+        }
+        /// <summary>
+        /// Test the property 'Size'
+        /// </summary>
+        [Test]
+        public void SizeTest()
+        {
+            // TODO unit test for the property 'Size'
+        }
+        /// <summary>
+        /// Test the property 'SortedMetaarray'
+        /// </summary>
+        [Test]
+        public void SortedMetaarrayTest()
+        {
+            // TODO unit test for the property 'SortedMetaarray'
+        }
+        /// <summary>
+        /// Test the property 'ThreadInfo'
+        /// </summary>
+        [Test]
+        public void ThreadInfoTest()
+        {
+            // TODO unit test for the property 'ThreadInfo'
+        }
+        /// <summary>
+        /// Test the property 'ParentMessageId'
+        /// </summary>
+        [Test]
+        public void ParentMessageIdTest()
+        {
+            // TODO unit test for the property 'ParentMessageId'
+        }
+        /// <summary>
+        /// Test the property 'ParentMessageInfo'
+        /// </summary>
+        [Test]
+        public void ParentMessageInfoTest()
+        {
+            // TODO unit test for the property 'ParentMessageInfo'
+        }
+        /// <summary>
+        /// Test the property 'IsReplyToChannel'
+        /// </summary>
+        [Test]
+        public void IsReplyToChannelTest()
+        {
+            // TODO unit test for the property 'IsReplyToChannel'
         }
 
     }

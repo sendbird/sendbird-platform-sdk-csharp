@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="bannedChannels">bannedChannels.</param>
         /// <param name="next">next.</param>
-        public ListBannedChannelsResponse(List<ListBannedChannelsResponseBannedChannels> bannedChannels = default(List<ListBannedChannelsResponseBannedChannels>), string next = default(string))
+        public ListBannedChannelsResponse(List<ListBannedChannelsResponseBannedChannelsInner> bannedChannels = default(List<ListBannedChannelsResponseBannedChannelsInner>), string next = default(string))
         {
             this.BannedChannels = bannedChannels;
             this.Next = next;
@@ -45,7 +45,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets BannedChannels
         /// </summary>
         [DataMember(Name="banned_channels", EmitDefaultValue=false)]
-        public List<ListBannedChannelsResponseBannedChannels> BannedChannels { get; set; }
+        public List<ListBannedChannelsResponseBannedChannelsInner> BannedChannels { get; set; }
 
         /// <summary>
         /// Gets or Sets Next

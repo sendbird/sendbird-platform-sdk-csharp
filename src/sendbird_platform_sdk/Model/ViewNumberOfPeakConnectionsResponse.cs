@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="ViewNumberOfPeakConnectionsResponse" /> class.
         /// </summary>
         /// <param name="peakConnections">peakConnections.</param>
-        public ViewNumberOfPeakConnectionsResponse(List<ViewNumberOfPeakConnectionsResponsePeakConnections> peakConnections = default(List<ViewNumberOfPeakConnectionsResponsePeakConnections>))
+        public ViewNumberOfPeakConnectionsResponse(List<ViewNumberOfPeakConnectionsResponsePeakConnectionsInner> peakConnections = default(List<ViewNumberOfPeakConnectionsResponsePeakConnectionsInner>))
         {
             this.PeakConnections = peakConnections;
         }
@@ -43,7 +43,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets PeakConnections
         /// </summary>
         [DataMember(Name="peak_connections", EmitDefaultValue=false)]
-        public List<ViewNumberOfPeakConnectionsResponsePeakConnections> PeakConnections { get; set; }
+        public List<ViewNumberOfPeakConnectionsResponsePeakConnectionsInner> PeakConnections { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

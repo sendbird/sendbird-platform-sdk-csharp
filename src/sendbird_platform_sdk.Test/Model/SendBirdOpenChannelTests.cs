@@ -66,28 +66,12 @@ namespace sendbird_platform_sdk.Test
 
 
         /// <summary>
-        /// Test the property 'CoverUrl'
+        /// Test the property 'Name'
         /// </summary>
         [Test]
-        public void CoverUrlTest()
+        public void NameTest()
         {
-            // TODO unit test for the property 'CoverUrl'
-        }
-        /// <summary>
-        /// Test the property 'CreatedAt'
-        /// </summary>
-        [Test]
-        public void CreatedAtTest()
-        {
-            // TODO unit test for the property 'CreatedAt'
-        }
-        /// <summary>
-        /// Test the property 'Creator'
-        /// </summary>
-        [Test]
-        public void CreatorTest()
-        {
-            // TODO unit test for the property 'Creator'
+            // TODO unit test for the property 'Name'
         }
         /// <summary>
         /// Test the property 'CustomType'
@@ -98,12 +82,52 @@ namespace sendbird_platform_sdk.Test
             // TODO unit test for the property 'CustomType'
         }
         /// <summary>
+        /// Test the property 'ChannelUrl'
+        /// </summary>
+        [Test]
+        public void ChannelUrlTest()
+        {
+            // TODO unit test for the property 'ChannelUrl'
+        }
+        /// <summary>
+        /// Test the property 'CreatedAt'
+        /// </summary>
+        [Test]
+        public void CreatedAtTest()
+        {
+            // TODO unit test for the property 'CreatedAt'
+        }
+        /// <summary>
+        /// Test the property 'CoverUrl'
+        /// </summary>
+        [Test]
+        public void CoverUrlTest()
+        {
+            // TODO unit test for the property 'CoverUrl'
+        }
+        /// <summary>
+        /// Test the property 'Creator'
+        /// </summary>
+        [Test]
+        public void CreatorTest()
+        {
+            // TODO unit test for the property 'Creator'
+        }
+        /// <summary>
         /// Test the property 'Data'
         /// </summary>
         [Test]
         public void DataTest()
         {
             // TODO unit test for the property 'Data'
+        }
+        /// <summary>
+        /// Test the property 'IsDynamicPartitioned'
+        /// </summary>
+        [Test]
+        public void IsDynamicPartitionedTest()
+        {
+            // TODO unit test for the property 'IsDynamicPartitioned'
         }
         /// <summary>
         /// Test the property 'IsEphemeral'
@@ -122,12 +146,12 @@ namespace sendbird_platform_sdk.Test
             // TODO unit test for the property 'IsFrozen'
         }
         /// <summary>
-        /// Test the property 'Name'
+        /// Test the property 'MaxLengthMessage'
         /// </summary>
         [Test]
-        public void NameTest()
+        public void MaxLengthMessageTest()
         {
-            // TODO unit test for the property 'Name'
+            // TODO unit test for the property 'MaxLengthMessage'
         }
         /// <summary>
         /// Test the property 'Operators'
@@ -146,12 +170,12 @@ namespace sendbird_platform_sdk.Test
             // TODO unit test for the property 'ParticipantCount'
         }
         /// <summary>
-        /// Test the property 'ChannelUrl'
+        /// Test the property 'Freeze'
         /// </summary>
         [Test]
-        public void ChannelUrlTest()
+        public void FreezeTest()
         {
-            // TODO unit test for the property 'ChannelUrl'
+            // TODO unit test for the property 'Freeze'
         }
 
     }

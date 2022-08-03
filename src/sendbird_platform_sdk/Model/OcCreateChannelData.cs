@@ -33,193 +33,98 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="OcCreateChannelData" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected OcCreateChannelData() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="OcCreateChannelData" /> class.
-        /// </summary>
-        /// <param name="name">Specifies the channel topic, or the name of the channel. The length is limited to 191 characters. (Default: open channel) (required).</param>
-        /// <param name="channelUrl">Specifies the URL of the channel. Only numbers, characters, and underscores are allowed. The length is 4 to 100 characters, inclusive. If not specified, a URL is automatically generated. (required).</param>
-        /// <param name="coverUrl">Specifies the URL of the cover image. The length is limited to 2,048 characters. (required).</param>
-        /// <param name="coverFile">Uploads a file for the channel cover image. (required).</param>
-        /// <param name="customType">Specifies the custom channel type which is used for channel grouping. The length is limited to 128 characters.&lt;br /&gt;&lt;br /&gt; Custom types are also used within Sendbird&#39;s [Advanced analytics](/docs/chat/v3/platform-api/guides/advanced-analytics) to segment metrics, which enables the sub-classification of data views. (required).</param>
-        /// <param name="data">Specifies additional channel information such as a long description of the channel or &#x60;JSON&#x60; formatted string. (required).</param>
-        /// <param name="isEphemeral">Determines whether to preserve the messages in the channel for the purpose of retrieving chat history or not. It set to true, the messages in the channel are not saved in the Sendbird database and the chat history can&#39;t be retrieved. (Default: false) (required).</param>
-        /// <param name="isDynamicPartitioned2HowDynamicPartitioningWorks">Determines whether the channel is an open channel with dynamic partitioning or not. If the value of this property is true, the open channel can create several subchannels in order to accommodate a massive number of usres. (Default: false)&lt;br/&gt;&lt;br/&gt;  For the new Sendbird applications created after December 15, 2020, this property will be automatically set to true. (required).</param>
-        /// <param name="operatorIds">Specifies an array of one or more user IDs to register as operators of the channel. The maximum allowed number of operators per channel is 100. Operators can delete any messages in the channel, and can also receive all messages that have been throttled.&lt;br/&gt;&lt;br/&gt;  Operators cannot view messages that have been [moderated by](/docs/chat/v3/platform-api/guides/filter-and-moderation) the domain filter or profanity filter. Only the sender will be notified that the message has been blocked. (required).</param>
-        /// <param name="operators">(Deprecated) Specifies the string IDs of the users registered as channel operators. Operators can delete any messages in the channel, and can also receive all messages that have been throttled. (required).</param>
-        public OcCreateChannelData(string name = default(string), string channelUrl = default(string), string coverUrl = default(string), System.IO.Stream coverFile = default(System.IO.Stream), string customType = default(string), string data = default(string), bool isEphemeral = default(bool), bool isDynamicPartitioned2HowDynamicPartitioningWorks = default(bool), List<int> operatorIds = default(List<int>), List<string> operators = default(List<string>))
+        /// <param name="name">Specifies the channel topic, or the name of the channel. The length is limited to 191 characters. (Default: open channel).</param>
+        /// <param name="channelUrl">Specifies the URL of the channel. Only numbers, characters, and underscores are allowed. The length is 4 to 100 characters, inclusive. If not specified, a URL is automatically generated..</param>
+        /// <param name="coverUrl">Specifies the URL of the cover image. The length is limited to 2,048 characters..</param>
+        /// <param name="coverFile">Uploads a file for the channel cover image..</param>
+        /// <param name="customType">Specifies the custom channel type which is used for channel grouping. The length is limited to 128 characters.&lt;br /&gt;&lt;br /&gt; Custom types are also used within Sendbird&#39;s [Advanced analytics](/docs/chat/v3/platform-api/guides/advanced-analytics) to segment metrics, which enables the sub-classification of data views..</param>
+        /// <param name="data">Specifies additional channel information such as a long description of the channel or &#x60;JSON&#x60; formatted string..</param>
+        /// <param name="isEphemeral">Determines whether to preserve the messages in the channel for the purpose of retrieving chat history or not. It set to true, the messages in the channel are not saved in the Sendbird database and the chat history can&#39;t be retrieved. (Default: false).</param>
+        /// <param name="isDynamicPartitioned2HowDynamicPartitioningWorks">Determines whether the channel is an open channel with dynamic partitioning or not. If the value of this property is true, the open channel can create several subchannels in order to accommodate a massive number of usres. (Default: false)&lt;br/&gt;&lt;br/&gt;  For the new Sendbird applications created after December 15, 2020, this property will be automatically set to true..</param>
+        /// <param name="operatorIds">Specifies an array of one or more user IDs to register as operators of the channel. The maximum allowed number of operators per channel is 100. Operators can delete any messages in the channel, and can also receive all messages that have been throttled.&lt;br/&gt;&lt;br/&gt;  Operators cannot view messages that have been [moderated by](/docs/chat/v3/platform-api/guides/filter-and-moderation) the domain filter or profanity filter. Only the sender will be notified that the message has been blocked..</param>
+        /// <param name="operators">(Deprecated) Specifies the string IDs of the users registered as channel operators. Operators can delete any messages in the channel, and can also receive all messages that have been throttled..</param>
+        public OcCreateChannelData(string name = default(string), string channelUrl = default(string), string coverUrl = default(string), System.IO.Stream coverFile = default(System.IO.Stream), string customType = default(string), string data = default(string), bool isEphemeral = default(bool), bool isDynamicPartitioned2HowDynamicPartitioningWorks = default(bool), List<string> operatorIds = default(List<string>), List<string> operators = default(List<string>))
         {
-            // to ensure "name" is required (not null)
-            if (name == null)
-            {
-                throw new InvalidDataException("name is a required property for OcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.Name = name;
-            }
-
-            // to ensure "channelUrl" is required (not null)
-            if (channelUrl == null)
-            {
-                throw new InvalidDataException("channelUrl is a required property for OcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.ChannelUrl = channelUrl;
-            }
-
-            // to ensure "coverUrl" is required (not null)
-            if (coverUrl == null)
-            {
-                throw new InvalidDataException("coverUrl is a required property for OcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.CoverUrl = coverUrl;
-            }
-
-            // to ensure "coverFile" is required (not null)
-            if (coverFile == null)
-            {
-                throw new InvalidDataException("coverFile is a required property for OcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.CoverFile = coverFile;
-            }
-
-            // to ensure "customType" is required (not null)
-            if (customType == null)
-            {
-                throw new InvalidDataException("customType is a required property for OcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.CustomType = customType;
-            }
-
-            // to ensure "data" is required (not null)
-            if (data == null)
-            {
-                throw new InvalidDataException("data is a required property for OcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.Data = data;
-            }
-
-            // to ensure "isEphemeral" is required (not null)
-            if (isEphemeral == null)
-            {
-                throw new InvalidDataException("isEphemeral is a required property for OcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.IsEphemeral = isEphemeral;
-            }
-
-            // to ensure "isDynamicPartitioned2HowDynamicPartitioningWorks" is required (not null)
-            if (isDynamicPartitioned2HowDynamicPartitioningWorks == null)
-            {
-                throw new InvalidDataException("isDynamicPartitioned2HowDynamicPartitioningWorks is a required property for OcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.IsDynamicPartitioned2HowDynamicPartitioningWorks = isDynamicPartitioned2HowDynamicPartitioningWorks;
-            }
-
-            // to ensure "operatorIds" is required (not null)
-            if (operatorIds == null)
-            {
-                throw new InvalidDataException("operatorIds is a required property for OcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.OperatorIds = operatorIds;
-            }
-
-            // to ensure "operators" is required (not null)
-            if (operators == null)
-            {
-                throw new InvalidDataException("operators is a required property for OcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.Operators = operators;
-            }
-
+            this.Name = name;
+            this.ChannelUrl = channelUrl;
+            this.CoverUrl = coverUrl;
+            this.CoverFile = coverFile;
+            this.CustomType = customType;
+            this.Data = data;
+            this.IsEphemeral = isEphemeral;
+            this.IsDynamicPartitioned2HowDynamicPartitioningWorks = isDynamicPartitioned2HowDynamicPartitioningWorks;
+            this.OperatorIds = operatorIds;
+            this.Operators = operators;
         }
 
         /// <summary>
         /// Specifies the channel topic, or the name of the channel. The length is limited to 191 characters. (Default: open channel)
         /// </summary>
         /// <value>Specifies the channel topic, or the name of the channel. The length is limited to 191 characters. (Default: open channel)</value>
-        [DataMember(Name="name", EmitDefaultValue=true)]
+        [DataMember(Name="name", EmitDefaultValue=false)]
         public string Name { get; set; }
 
         /// <summary>
         /// Specifies the URL of the channel. Only numbers, characters, and underscores are allowed. The length is 4 to 100 characters, inclusive. If not specified, a URL is automatically generated.
         /// </summary>
         /// <value>Specifies the URL of the channel. Only numbers, characters, and underscores are allowed. The length is 4 to 100 characters, inclusive. If not specified, a URL is automatically generated.</value>
-        [DataMember(Name="channel_url", EmitDefaultValue=true)]
+        [DataMember(Name="channel_url", EmitDefaultValue=false)]
         public string ChannelUrl { get; set; }
 
         /// <summary>
         /// Specifies the URL of the cover image. The length is limited to 2,048 characters.
         /// </summary>
         /// <value>Specifies the URL of the cover image. The length is limited to 2,048 characters.</value>
-        [DataMember(Name="cover_url", EmitDefaultValue=true)]
+        [DataMember(Name="cover_url", EmitDefaultValue=false)]
         public string CoverUrl { get; set; }
 
         /// <summary>
         /// Uploads a file for the channel cover image.
         /// </summary>
         /// <value>Uploads a file for the channel cover image.</value>
-        [DataMember(Name="cover_file", EmitDefaultValue=true)]
+        [DataMember(Name="cover_file", EmitDefaultValue=false)]
         public System.IO.Stream CoverFile { get; set; }
 
         /// <summary>
         /// Specifies the custom channel type which is used for channel grouping. The length is limited to 128 characters.&lt;br /&gt;&lt;br /&gt; Custom types are also used within Sendbird&#39;s [Advanced analytics](/docs/chat/v3/platform-api/guides/advanced-analytics) to segment metrics, which enables the sub-classification of data views.
         /// </summary>
         /// <value>Specifies the custom channel type which is used for channel grouping. The length is limited to 128 characters.&lt;br /&gt;&lt;br /&gt; Custom types are also used within Sendbird&#39;s [Advanced analytics](/docs/chat/v3/platform-api/guides/advanced-analytics) to segment metrics, which enables the sub-classification of data views.</value>
-        [DataMember(Name="custom_type", EmitDefaultValue=true)]
+        [DataMember(Name="custom_type", EmitDefaultValue=false)]
         public string CustomType { get; set; }
 
         /// <summary>
         /// Specifies additional channel information such as a long description of the channel or &#x60;JSON&#x60; formatted string.
         /// </summary>
         /// <value>Specifies additional channel information such as a long description of the channel or &#x60;JSON&#x60; formatted string.</value>
-        [DataMember(Name="data", EmitDefaultValue=true)]
+        [DataMember(Name="data", EmitDefaultValue=false)]
         public string Data { get; set; }
 
         /// <summary>
         /// Determines whether to preserve the messages in the channel for the purpose of retrieving chat history or not. It set to true, the messages in the channel are not saved in the Sendbird database and the chat history can&#39;t be retrieved. (Default: false)
         /// </summary>
         /// <value>Determines whether to preserve the messages in the channel for the purpose of retrieving chat history or not. It set to true, the messages in the channel are not saved in the Sendbird database and the chat history can&#39;t be retrieved. (Default: false)</value>
-        [DataMember(Name="is_ephemeral", EmitDefaultValue=true)]
+        [DataMember(Name="is_ephemeral", EmitDefaultValue=false)]
         public bool IsEphemeral { get; set; }
 
         /// <summary>
         /// Determines whether the channel is an open channel with dynamic partitioning or not. If the value of this property is true, the open channel can create several subchannels in order to accommodate a massive number of usres. (Default: false)&lt;br/&gt;&lt;br/&gt;  For the new Sendbird applications created after December 15, 2020, this property will be automatically set to true.
         /// </summary>
         /// <value>Determines whether the channel is an open channel with dynamic partitioning or not. If the value of this property is true, the open channel can create several subchannels in order to accommodate a massive number of usres. (Default: false)&lt;br/&gt;&lt;br/&gt;  For the new Sendbird applications created after December 15, 2020, this property will be automatically set to true.</value>
-        [DataMember(Name="[is_dynamic_partitioned](#2-how-dynamic-partitioning-works)", EmitDefaultValue=true)]
+        [DataMember(Name="[is_dynamic_partitioned](#2-how-dynamic-partitioning-works)", EmitDefaultValue=false)]
         public bool IsDynamicPartitioned2HowDynamicPartitioningWorks { get; set; }
 
         /// <summary>
         /// Specifies an array of one or more user IDs to register as operators of the channel. The maximum allowed number of operators per channel is 100. Operators can delete any messages in the channel, and can also receive all messages that have been throttled.&lt;br/&gt;&lt;br/&gt;  Operators cannot view messages that have been [moderated by](/docs/chat/v3/platform-api/guides/filter-and-moderation) the domain filter or profanity filter. Only the sender will be notified that the message has been blocked.
         /// </summary>
         /// <value>Specifies an array of one or more user IDs to register as operators of the channel. The maximum allowed number of operators per channel is 100. Operators can delete any messages in the channel, and can also receive all messages that have been throttled.&lt;br/&gt;&lt;br/&gt;  Operators cannot view messages that have been [moderated by](/docs/chat/v3/platform-api/guides/filter-and-moderation) the domain filter or profanity filter. Only the sender will be notified that the message has been blocked.</value>
-        [DataMember(Name="operator_ids", EmitDefaultValue=true)]
-        public List<int> OperatorIds { get; set; }
+        [DataMember(Name="operator_ids", EmitDefaultValue=false)]
+        public List<string> OperatorIds { get; set; }
 
         /// <summary>
         /// (Deprecated) Specifies the string IDs of the users registered as channel operators. Operators can delete any messages in the channel, and can also receive all messages that have been throttled.
         /// </summary>
         /// <value>(Deprecated) Specifies the string IDs of the users registered as channel operators. Operators can delete any messages in the channel, and can also receive all messages that have been throttled.</value>
-        [DataMember(Name="operators", EmitDefaultValue=true)]
+        [DataMember(Name="operators", EmitDefaultValue=false)]
         public List<string> Operators { get; set; }
 
         /// <summary>

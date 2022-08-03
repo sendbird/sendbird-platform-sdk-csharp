@@ -98,22 +98,6 @@ namespace sendbird_platform_sdk.Test
             // TODO unit test for the property 'IsActive'
         }
         /// <summary>
-        /// Test the property 'IsBlockedByMe'
-        /// </summary>
-        [Test]
-        public void IsBlockedByMeTest()
-        {
-            // TODO unit test for the property 'IsBlockedByMe'
-        }
-        /// <summary>
-        /// Test the property 'IsBlockingMe'
-        /// </summary>
-        [Test]
-        public void IsBlockingMeTest()
-        {
-            // TODO unit test for the property 'IsBlockingMe'
-        }
-        /// <summary>
         /// Test the property 'IsMuted'
         /// </summary>
         [Test]
@@ -176,6 +160,46 @@ namespace sendbird_platform_sdk.Test
         public void RequireAuthTest()
         {
             // TODO unit test for the property 'RequireAuth'
+        }
+        /// <summary>
+        /// Test the property 'RequireAuthForProfileImage'
+        /// </summary>
+        [Test]
+        public void RequireAuthForProfileImageTest()
+        {
+            // TODO unit test for the property 'RequireAuthForProfileImage'
+        }
+        /// <summary>
+        /// Test the property 'Metadata'
+        /// </summary>
+        [Test]
+        public void MetadataTest()
+        {
+            // TODO unit test for the property 'Metadata'
+        }
+        /// <summary>
+        /// Test the property 'IsOnline'
+        /// </summary>
+        [Test]
+        public void IsOnlineTest()
+        {
+            // TODO unit test for the property 'IsOnline'
+        }
+        /// <summary>
+        /// Test the property 'MutedEndAt'
+        /// </summary>
+        [Test]
+        public void MutedEndAtTest()
+        {
+            // TODO unit test for the property 'MutedEndAt'
+        }
+        /// <summary>
+        /// Test the property 'MutedDescription'
+        /// </summary>
+        [Test]
+        public void MutedDescriptionTest()
+        {
+            // TODO unit test for the property 'MutedDescription'
         }
         /// <summary>
         /// Test the property 'RestrictionInfo'

@@ -51,7 +51,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var gcAcceptInvitationData = new GcAcceptInvitationData(); // GcAcceptInvitationData |  (optional) 
 
             try
@@ -107,7 +107,7 @@ No authorization required
 
 ## GcCancelTheRegistrationOfOperators
 
-> InlineResponse2001 GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = null)
+> OcDeleteChannelByUrl200Response GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = null)
 
 Cancel the registration of operators
 
@@ -131,14 +131,14 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var operatorIds = new List<string>(); // List<string> | 
             var deleteAll = true;  // bool? |  (optional) 
 
             try
             {
                 // Cancel the registration of operators
-                InlineResponse2001 result = apiInstance.GcCancelTheRegistrationOfOperators(apiToken, channelUrl, operatorIds, deleteAll);
+                OcDeleteChannelByUrl200Response result = apiInstance.GcCancelTheRegistrationOfOperators(apiToken, channelUrl, operatorIds, deleteAll);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**OcDeleteChannelByUrl200Response**](OcDeleteChannelByUrl200Response.md)
 
 ### Authorization
 
@@ -213,8 +213,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var userId = userId_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var userId = "userId_example";  // string | 
 
             try
             {
@@ -347,7 +347,7 @@ No authorization required
 
 ## GcDeclineInvitation
 
-> InlineResponse2001 GcDeclineInvitation (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = null)
+> OcDeleteChannelByUrl200Response GcDeclineInvitation (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = null)
 
 Decline an invitation
 
@@ -371,13 +371,13 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var gcDeclineInvitationData = new GcDeclineInvitationData(); // GcDeclineInvitationData |  (optional) 
 
             try
             {
                 // Decline an invitation
-                InlineResponse2001 result = apiInstance.GcDeclineInvitation(apiToken, channelUrl, gcDeclineInvitationData);
+                OcDeleteChannelByUrl200Response result = apiInstance.GcDeclineInvitation(apiToken, channelUrl, gcDeclineInvitationData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -402,7 +402,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**OcDeleteChannelByUrl200Response**](OcDeleteChannelByUrl200Response.md)
 
 ### Authorization
 
@@ -427,7 +427,7 @@ No authorization required
 
 ## GcDeleteChannelByUrl
 
-> InlineResponse2001 GcDeleteChannelByUrl (string apiToken, string channelUrl)
+> OcDeleteChannelByUrl200Response GcDeleteChannelByUrl (string apiToken, string channelUrl)
 
 Delete a channel
 
@@ -451,12 +451,12 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
 
             try
             {
                 // Delete a channel
-                InlineResponse2001 result = apiInstance.GcDeleteChannelByUrl(apiToken, channelUrl);
+                OcDeleteChannelByUrl200Response result = apiInstance.GcDeleteChannelByUrl(apiToken, channelUrl);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -480,7 +480,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**OcDeleteChannelByUrl200Response**](OcDeleteChannelByUrl200Response.md)
 
 ### Authorization
 
@@ -505,7 +505,7 @@ No authorization required
 
 ## GcHideOrArchiveChannel
 
-> InlineResponse2001 GcHideOrArchiveChannel (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = null)
+> OcDeleteChannelByUrl200Response GcHideOrArchiveChannel (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = null)
 
 Hide or archive a channel
 
@@ -529,13 +529,13 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var gcHideOrArchiveChannelData = new GcHideOrArchiveChannelData(); // GcHideOrArchiveChannelData |  (optional) 
 
             try
             {
                 // Hide or archive a channel
-                InlineResponse2001 result = apiInstance.GcHideOrArchiveChannel(apiToken, channelUrl, gcHideOrArchiveChannelData);
+                OcDeleteChannelByUrl200Response result = apiInstance.GcHideOrArchiveChannel(apiToken, channelUrl, gcHideOrArchiveChannelData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -560,7 +560,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**OcDeleteChannelByUrl200Response**](OcDeleteChannelByUrl200Response.md)
 
 ### Authorization
 
@@ -609,7 +609,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var gcInviteAsMembersData = new GcInviteAsMembersData(); // GcInviteAsMembersData |  (optional) 
 
             try
@@ -689,7 +689,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var gcJoinChannelData = new GcJoinChannelData(); // GcJoinChannelData |  (optional) 
 
             try
@@ -744,7 +744,7 @@ No authorization required
 
 ## GcLeaveChannel
 
-> InlineResponse2001 GcLeaveChannel (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = null)
+> OcDeleteChannelByUrl200Response GcLeaveChannel (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = null)
 
 Leave a channel
 
@@ -768,13 +768,13 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var gcLeaveChannelData = new GcLeaveChannelData(); // GcLeaveChannelData |  (optional) 
 
             try
             {
                 // Leave a channel
-                InlineResponse2001 result = apiInstance.GcLeaveChannel(apiToken, channelUrl, gcLeaveChannelData);
+                OcDeleteChannelByUrl200Response result = apiInstance.GcLeaveChannel(apiToken, channelUrl, gcLeaveChannelData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -799,7 +799,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**OcDeleteChannelByUrl200Response**](OcDeleteChannelByUrl200Response.md)
 
 ### Authorization
 
@@ -848,11 +848,11 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var token = token_example;  // string |  (optional) 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
-            var distinctMode = distinctMode_example;  // string |  (optional) 
-            var publicMode = publicMode_example;  // string |  (optional) 
-            var superMode = superMode_example;  // string |  (optional) 
+            var distinctMode = "distinctMode_example";  // string |  (optional) 
+            var publicMode = "publicMode_example";  // string |  (optional) 
+            var superMode = "superMode_example";  // string |  (optional) 
             var createdAfter = 56;  // int? |  (optional) 
             var createdBefore = 56;  // int? |  (optional) 
             var showEmpty = true;  // bool? |  (optional) 
@@ -861,35 +861,35 @@ namespace Example
             var showReadReceipt = true;  // bool? |  (optional) 
             var showMetadata = true;  // bool? |  (optional) 
             var showFrozen = true;  // bool? |  (optional) 
-            var order = order_example;  // string |  (optional) 
-            var metadataOrderKey = metadataOrderKey_example;  // string |  (optional) 
-            var customTypes = customTypes_example;  // string |  (optional) 
-            var customTypeStartswith = customTypeStartswith_example;  // string |  (optional) 
-            var channelUrls = channelUrls_example;  // string |  (optional) 
-            var name = name_example;  // string |  (optional) 
-            var nameContains = nameContains_example;  // string |  (optional) 
-            var nameStartswith = nameStartswith_example;  // string |  (optional) 
-            var membersExactlyIn = membersExactlyIn_example;  // string |  (optional) 
-            var membersIncludeIn = membersIncludeIn_example;  // string |  (optional) 
-            var queryType = queryType_example;  // string |  (optional) 
-            var membersNickname = membersNickname_example;  // string |  (optional) 
-            var membersNicknameContains = membersNicknameContains_example;  // string |  (optional) 
-            var metadataKey = metadataKey_example;  // string |  (optional) 
-            var metadataValues = metadataValues_example;  // string |  (optional) 
-            var metadataValueStartswith = metadataValueStartswith_example;  // string |  (optional) 
-            var metacounterKey = metacounterKey_example;  // string |  (optional) 
-            var metacounterValues = metacounterValues_example;  // string |  (optional) 
-            var metacounterValueGt = metacounterValueGt_example;  // string |  (optional) 
-            var metacounterValueGte = metacounterValueGte_example;  // string |  (optional) 
-            var metacounterValueLt = metacounterValueLt_example;  // string |  (optional) 
-            var metacounterValueLte = metacounterValueLte_example;  // string |  (optional) 
+            var order = "order_example";  // string |  (optional) 
+            var metadataOrderKey = "metadataOrderKey_example";  // string |  (optional) 
+            var customTypes = "customTypes_example";  // string |  (optional) 
+            var customTypeStartswith = "customTypeStartswith_example";  // string |  (optional) 
+            var channelUrls = "channelUrls_example";  // string |  (optional) 
+            var name = "name_example";  // string |  (optional) 
+            var nameContains = "nameContains_example";  // string |  (optional) 
+            var nameStartswith = "nameStartswith_example";  // string |  (optional) 
+            var membersExactlyIn = "membersExactlyIn_example";  // string |  (optional) 
+            var membersIncludeIn = "membersIncludeIn_example";  // string |  (optional) 
+            var queryType = "queryType_example";  // string |  (optional) 
+            var membersNickname = "membersNickname_example";  // string |  (optional) 
+            var membersNicknameContains = "membersNicknameContains_example";  // string |  (optional) 
+            var metadataKey = "metadataKey_example";  // string |  (optional) 
+            var metadataValues = "metadataValues_example";  // string |  (optional) 
+            var metadataValueStartswith = "metadataValueStartswith_example";  // string |  (optional) 
+            var metacounterKey = "metacounterKey_example";  // string |  (optional) 
+            var metacounterValues = "metacounterValues_example";  // string |  (optional) 
+            var metacounterValueGt = "metacounterValueGt_example";  // string |  (optional) 
+            var metacounterValueGte = "metacounterValueGte_example";  // string |  (optional) 
+            var metacounterValueLt = "metacounterValueLt_example";  // string |  (optional) 
+            var metacounterValueLte = "metacounterValueLte_example";  // string |  (optional) 
             var includeSortedMetaarrayInLastMessage = true;  // bool? |  (optional) 
-            var customType = customType_example;  // string |  (optional) 
+            var customType = "customType_example";  // string |  (optional) 
             var readReceipt = true;  // bool? |  (optional) 
             var member = true;  // bool? |  (optional) 
             var isDistinct = true;  // bool? |  (optional) 
-            var membersIn = membersIn_example;  // string |  (optional) 
-            var userId = userId_example;  // string |  (optional) 
+            var membersIn = "membersIn_example";  // string |  (optional) 
+            var userId = "userId_example";  // string |  (optional) 
 
             try
             {
@@ -1008,16 +1008,16 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var token = token_example;  // string |  (optional) 
+            var channelUrl = "channelUrl_example";  // string | 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
             var showDeliveryReceipt = true;  // bool? |  (optional) 
             var showReadReceipt = true;  // bool? |  (optional) 
-            var order = order_example;  // string |  (optional) 
-            var operatorFilter = operatorFilter_example;  // string |  (optional) 
-            var memberStateFilter = memberStateFilter_example;  // string |  (optional) 
-            var mutedMemberFilter = mutedMemberFilter_example;  // string |  (optional) 
-            var nicknameStartswith = nicknameStartswith_example;  // string |  (optional) 
+            var order = "order_example";  // string |  (optional) 
+            var operatorFilter = "operatorFilter_example";  // string |  (optional) 
+            var memberStateFilter = "memberStateFilter_example";  // string |  (optional) 
+            var mutedMemberFilter = "mutedMemberFilter_example";  // string |  (optional) 
+            var nicknameStartswith = "nicknameStartswith_example";  // string |  (optional) 
 
             try
             {
@@ -1104,8 +1104,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var token = token_example;  // string |  (optional) 
+            var channelUrl = "channelUrl_example";  // string | 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
@@ -1186,7 +1186,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var gcRegisterOperatorsData = new GcRegisterOperatorsData(); // GcRegisterOperatorsData |  (optional) 
 
             try
@@ -1266,7 +1266,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var gcResetChatHistoryData = new GcResetChatHistoryData(); // GcResetChatHistoryData |  (optional) 
 
             try
@@ -1322,7 +1322,7 @@ No authorization required
 
 ## GcUnhideOrUnarchiveChannel
 
-> InlineResponse2001 GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = null)
+> OcDeleteChannelByUrl200Response GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = null)
 
 Unhide or unarchive a channel
 
@@ -1346,14 +1346,14 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
-            var userId = userId_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
+            var userId = "userId_example";  // string | 
             var shouldUnhideAll = true;  // bool? |  (optional) 
 
             try
             {
                 // Unhide or unarchive a channel
-                InlineResponse2001 result = apiInstance.GcUnhideOrUnarchiveChannel(apiToken, channelUrl, userId, shouldUnhideAll);
+                OcDeleteChannelByUrl200Response result = apiInstance.GcUnhideOrUnarchiveChannel(apiToken, channelUrl, userId, shouldUnhideAll);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1379,7 +1379,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**OcDeleteChannelByUrl200Response**](OcDeleteChannelByUrl200Response.md)
 
 ### Authorization
 
@@ -1428,7 +1428,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var gcUpdateChannelByUrlData = new GcUpdateChannelByUrlData(); // GcUpdateChannelByUrlData |  (optional) 
 
             try
@@ -1508,7 +1508,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new GroupChannelApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var channelUrl = channelUrl_example;  // string | 
+            var channelUrl = "channelUrl_example";  // string | 
             var showDeliveryReceipt = true;  // bool? |  (optional) 
             var showReadReceipt = true;  // bool? |  (optional) 
             var showMember = true;  // bool? |  (optional) 

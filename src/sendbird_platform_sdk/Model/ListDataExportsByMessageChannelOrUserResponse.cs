@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="exportedData">exportedData.</param>
         /// <param name="next">next.</param>
-        public ListDataExportsByMessageChannelOrUserResponse(List<ListDataExportsByMessageChannelOrUserResponseExportedData> exportedData = default(List<ListDataExportsByMessageChannelOrUserResponseExportedData>), string next = default(string))
+        public ListDataExportsByMessageChannelOrUserResponse(List<ListDataExportsByMessageChannelOrUserResponseExportedDataInner> exportedData = default(List<ListDataExportsByMessageChannelOrUserResponseExportedDataInner>), string next = default(string))
         {
             this.ExportedData = exportedData;
             this.Next = next;
@@ -45,7 +45,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets ExportedData
         /// </summary>
         [DataMember(Name="exported_data", EmitDefaultValue=false)]
-        public List<ListDataExportsByMessageChannelOrUserResponseExportedData> ExportedData { get; set; }
+        public List<ListDataExportsByMessageChannelOrUserResponseExportedDataInner> ExportedData { get; set; }
 
         /// <summary>
         /// Gets or Sets Next

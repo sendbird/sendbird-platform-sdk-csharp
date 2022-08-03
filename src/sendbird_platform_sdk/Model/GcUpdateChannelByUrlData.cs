@@ -48,7 +48,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="isPublic">Determines whether to allow a user to join the channel without an invitation. (Default: false) (required).</param>
         /// <param name="accessCode">This property can be used only when the channel operator wants to set an access code for a public group channel. If specified, the is_access_code_required property of the channel resource is then set to true, and the channel begins to require the specified access code to a user who attempts to join. (required).</param>
         /// <param name="operatorIds">Specifies an array of one or more IDs of users to register as operators of the channel. If the operators are not members of the channel yet, they need an [invitation](#2-invite-as-members) to [join](#2-join-a-channel) a privte group channel while they don&#39;t need any to join a [public](#-3-private-vs-public) group channel. The maximum allowed number of operators per channel is 100. (required).</param>
-        public GcUpdateChannelByUrlData(string channelUrl = default(string), string name = default(string), string coverUrl = default(string), System.IO.Stream coverFile = default(System.IO.Stream), string customType = default(string), string data = default(string), bool isDistinct = default(bool), bool isPublic = default(bool), string accessCode = default(string), List<int> operatorIds = default(List<int>))
+        public GcUpdateChannelByUrlData(string channelUrl = default(string), string name = default(string), string coverUrl = default(string), System.IO.Stream coverFile = default(System.IO.Stream), string customType = default(string), string data = default(string), bool isDistinct = default(bool), bool isPublic = default(bool), string accessCode = default(string), List<string> operatorIds = default(List<string>))
         {
             // to ensure "channelUrl" is required (not null)
             if (channelUrl == null)
@@ -220,7 +220,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <value>Specifies an array of one or more IDs of users to register as operators of the channel. If the operators are not members of the channel yet, they need an [invitation](#2-invite-as-members) to [join](#2-join-a-channel) a privte group channel while they don&#39;t need any to join a [public](#-3-private-vs-public) group channel. The maximum allowed number of operators per channel is 100.</value>
         [DataMember(Name="operator_ids", EmitDefaultValue=true)]
-        public List<int> OperatorIds { get; set; }
+        public List<string> OperatorIds { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

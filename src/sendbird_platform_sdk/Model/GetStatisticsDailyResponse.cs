@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="statistics">statistics.</param>
         /// <param name="week">week.</param>
-        public GetStatisticsDailyResponse(List<GetStatisticsDailyResponseStatistics> statistics = default(List<GetStatisticsDailyResponseStatistics>), decimal week = default(decimal))
+        public GetStatisticsDailyResponse(List<GetStatisticsDailyResponseStatisticsInner> statistics = default(List<GetStatisticsDailyResponseStatisticsInner>), decimal week = default(decimal))
         {
             this.Statistics = statistics;
             this.Week = week;
@@ -45,7 +45,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets Statistics
         /// </summary>
         [DataMember(Name="statistics", EmitDefaultValue=false)]
-        public List<GetStatisticsDailyResponseStatistics> Statistics { get; set; }
+        public List<GetStatisticsDailyResponseStatisticsInner> Statistics { get; set; }
 
         /// <summary>
         /// Gets or Sets Week

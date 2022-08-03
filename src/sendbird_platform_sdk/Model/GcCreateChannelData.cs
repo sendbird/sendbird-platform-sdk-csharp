@@ -39,25 +39,25 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="GcCreateChannelData" /> class.
         /// </summary>
         /// <param name="userIds">Specifies an array of one or more IDs of users to invite to the channel. The maximum number of users to be invited at once is 100. The users below and this property can be used interchangeably. (required).</param>
-        /// <param name="users">Specifies an array of one or more IDs of users to invite to the channel. The maximum number of users to be invited at once is 100. The user_ids above and this property can be used interchangeably. (required).</param>
-        /// <param name="name">Specifies the name of the channel, or the channel topic. The length is limited to 191 characters. (Default: group channel) (required).</param>
-        /// <param name="channelUrl">Specifies the URL of the channel. Only numbers, characters, and underscores are allowed. The length is 4 to 100 characters, inclusive. If not specified, a URL is automatically generated. (required).</param>
-        /// <param name="coverUrl">Specifies the URL of the cover image for the channel. The length is limited to 2,048 characters. (required).</param>
-        /// <param name="coverFile">Uploads the cover image file for the channel. (required).</param>
-        /// <param name="customType">Specifies the custom channel type which is used for channel grouping. The length is limited to 128 characters.&lt;br /&gt;&lt;br /&gt; Custom types are also used within Sendbird&#39;s [Advanced analytics](/docs/chat/v3/platform-api/guides/advanced-analytics) to segment metrics, which enables the sub-classification of data views. (required).</param>
-        /// <param name="data">Specifies additional channel information such as a long description of the channel or &#x60;JSON&#x60; formatted string. (required).</param>
-        /// <param name="isDistinct">Determines whether to reuse an existing channel or create a new channel. If set to true, returns a channel with the same users in the user_ids or users property or creates a new channel if no match is found. Sendbird server can also use the custom channel type in the custom_type property if specified along with the users to return the corresponding channel. If set to false, Sendbird server always creates a new channel with a combination of the users as well as the channel custom type if specified. (Default: false)&lt;br /&gt;&lt;br /&gt; Under this property, Sendbird server does not distinguish channels based on other properties such as channel URL or channel name. (required).</param>
-        /// <param name="isPublic">Determines whether to allow a user to join the channel without an invitation. (Default: false) (required).</param>
-        /// <param name="isSuper">Determines whether to allow the channel to accommodate more than 2,000 members. (Default: false) &lt;br/&gt;&lt;br/&gt; Supergroup channels are not supported with the is_distinct property and the property is false by default. (required).</param>
-        /// <param name="isEphemeral">Determines whether to preserve the messages in the channel for the purpose of retrieving chat history. (Default: false) (required).</param>
-        /// <param name="accessCode">This parameter can only be used when the channel operator creates a public group channel. They can set an access code for the corresponding type of channel. The channel then requires the specified access code to a user who attempts to join. If specified, the is_access_code_required property of the channel resource is set to true. (required).</param>
-        /// <param name="inviterId">Specifies the ID of the user who has invited other users as members of the channel. The inviter is not automatically registered to the channel as a member, so you should specify the ID of the inviter in the user_ids property below if needed. (required).</param>
-        /// <param name="strict">Determines whether to receive a &#x60;400111&#x60; error and cease channel creation when there is at least one non-existing user in the specified user_ids or users property above. If set to false, the channel will be created excluding the non-existing users without receiving the mentioned error. (Default: false) (required).</param>
-        /// <param name="invitationStatus">Specifies an array of one or more information about the join status of each invited user to the channel. Each item of the array should be specified with a combination of the unique ID of a user in the user_ids or users property, a colon (:), and the user&#39;s join status (for example, user_id_1: join status). Acceptable values are joined, invited_by_friend, and invited_by_non_friend. (Default: joined) (required).</param>
-        /// <param name="hiddenStatus">Specifies an array of one or more channel hidden statuses about whether to hide the channel from each invited user&#39;s list of group channels, and whether to automatically unhide the hidden channel when receiving a new message from other member of that channel. Each item of the array should be specified with a combination of the unique ID of a user in the user_ids or users property, a colon (:), and the channel hidden status (for example, user_id_1: channel hidden status). Acceptable values are limited to the following:&lt;br /&gt;- unhidden (default): the channel is included in when retrieving a list of group channels.&lt;br /&gt;- hidden_allow_auto_unhide: the channel automatically gets unhidden when receiving a new message.&lt;br /&gt;- hidden_prevent_auto_unhide: the channel keeps hidden though receiving a new message. (required).</param>
-        /// <param name="operatorIds">Specifies an array of one or more IDs of users to register as operators of the channel. You should also include these IDs in the user_ids property to invite them to the channel as members. They can delete any messages in the channel, and also view all messages without any filtering or throttling. The maximum allowed number of operators per channel is 100. (required).</param>
-        /// <param name="blockSdkUserChannelJoin">Determines whether to block users from joining the channel through the Chat SDK. This parameter can be used in order to restrict the ways for users to join the channel, and only using the [join a channel](#2-join-a-channel) action can add a user to the channel. (Default: false) (required).</param>
-        public GcCreateChannelData(List<int> userIds = default(List<int>), List<int> users = default(List<int>), string name = default(string), string channelUrl = default(string), string coverUrl = default(string), System.IO.Stream coverFile = default(System.IO.Stream), string customType = default(string), string data = default(string), bool isDistinct = default(bool), bool isPublic = default(bool), bool isSuper = default(bool), bool isEphemeral = default(bool), string accessCode = default(string), string inviterId = default(string), bool strict = default(bool), List<string> invitationStatus = default(List<string>), List<string> hiddenStatus = default(List<string>), List<int> operatorIds = default(List<int>), bool blockSdkUserChannelJoin = default(bool))
+        /// <param name="users">Specifies an array of one or more IDs of users to invite to the channel. The maximum number of users to be invited at once is 100. The user_ids above and this property can be used interchangeably..</param>
+        /// <param name="name">Specifies the name of the channel, or the channel topic. The length is limited to 191 characters. (Default: group channel).</param>
+        /// <param name="channelUrl">Specifies the URL of the channel. Only numbers, characters, and underscores are allowed. The length is 4 to 100 characters, inclusive. If not specified, a URL is automatically generated..</param>
+        /// <param name="coverUrl">Specifies the URL of the cover image for the channel. The length is limited to 2,048 characters..</param>
+        /// <param name="coverFile">Uploads the cover image file for the channel..</param>
+        /// <param name="customType">Specifies the custom channel type which is used for channel grouping. The length is limited to 128 characters.&lt;br /&gt;&lt;br /&gt; Custom types are also used within Sendbird&#39;s [Advanced analytics](/docs/chat/v3/platform-api/guides/advanced-analytics) to segment metrics, which enables the sub-classification of data views..</param>
+        /// <param name="data">Specifies additional channel information such as a long description of the channel or &#x60;JSON&#x60; formatted string..</param>
+        /// <param name="isDistinct">Determines whether to reuse an existing channel or create a new channel. If set to true, returns a channel with the same users in the user_ids or users property or creates a new channel if no match is found. Sendbird server can also use the custom channel type in the custom_type property if specified along with the users to return the corresponding channel. If set to false, Sendbird server always creates a new channel with a combination of the users as well as the channel custom type if specified. (Default: false)&lt;br /&gt;&lt;br /&gt; Under this property, Sendbird server does not distinguish channels based on other properties such as channel URL or channel name..</param>
+        /// <param name="isPublic">Determines whether to allow a user to join the channel without an invitation. (Default: false).</param>
+        /// <param name="isSuper">Determines whether to allow the channel to accommodate more than 2,000 members. (Default: false) &lt;br/&gt;&lt;br/&gt; Supergroup channels are not supported with the is_distinct property and the property is false by default..</param>
+        /// <param name="isEphemeral">Determines whether to preserve the messages in the channel for the purpose of retrieving chat history. (Default: false).</param>
+        /// <param name="accessCode">This parameter can only be used when the channel operator creates a public group channel. They can set an access code for the corresponding type of channel. The channel then requires the specified access code to a user who attempts to join. If specified, the is_access_code_required property of the channel resource is set to true..</param>
+        /// <param name="inviterId">Specifies the ID of the user who has invited other users as members of the channel. The inviter is not automatically registered to the channel as a member, so you should specify the ID of the inviter in the user_ids property below if needed..</param>
+        /// <param name="strict">Determines whether to receive a &#x60;400111&#x60; error and cease channel creation when there is at least one non-existing user in the specified user_ids or users property above. If set to false, the channel will be created excluding the non-existing users without receiving the mentioned error. (Default: false).</param>
+        /// <param name="invitationStatus">Specifies one or more key-value pair items which set the invitation status of each user invited to the channel. The key should be a user_id and the value should be their joining status. Acceptable values are joined, invited_by_friend, and invited_by_non_friend. (Default: joined).</param>
+        /// <param name="hiddenStatus">Specifies one or more key-value pair items which set the channel&#39;s hidden status for each user. The key should be a user_id and the value should be their hidden status. Acceptable values are limited to the following:&lt;br /&gt;- unhidden (default): the channel is included in when retrieving a list of group channels.&lt;br /&gt;- hidden_allow_auto_unhide: the channel automatically gets unhidden when receiving a new message.&lt;br /&gt;- hidden_prevent_auto_unhide: the channel keeps hidden though receiving a new message..</param>
+        /// <param name="operatorIds">Specifies an array of one or more IDs of users to register as operators of the channel. You should also include these IDs in the user_ids property to invite them to the channel as members. They can delete any messages in the channel, and also view all messages without any filtering or throttling. The maximum allowed number of operators per channel is 100..</param>
+        /// <param name="blockSdkUserChannelJoin">Determines whether to block users from joining the channel through the Chat SDK. This parameter can be used in order to restrict the ways for users to join the channel, and only using the [join a channel](#2-join-a-channel) action can add a user to the channel. (Default: false).</param>
+        public GcCreateChannelData(List<string> userIds = default(List<string>), List<SendBirdUser> users = default(List<SendBirdUser>), string name = default(string), string channelUrl = default(string), string coverUrl = default(string), System.IO.Stream coverFile = default(System.IO.Stream), string customType = default(string), string data = default(string), bool isDistinct = default(bool), bool isPublic = default(bool), bool isSuper = default(bool), bool isEphemeral = default(bool), string accessCode = default(string), string inviterId = default(string), bool strict = default(bool), Object invitationStatus = default(Object), Object hiddenStatus = default(Object), List<string> operatorIds = default(List<string>), bool blockSdkUserChannelJoin = default(bool))
         {
             // to ensure "userIds" is required (not null)
             if (userIds == null)
@@ -69,186 +69,24 @@ namespace sendbird_platform_sdk.Model
                 this.UserIds = userIds;
             }
 
-            // to ensure "users" is required (not null)
-            if (users == null)
-            {
-                throw new InvalidDataException("users is a required property for GcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.Users = users;
-            }
-
-            // to ensure "name" is required (not null)
-            if (name == null)
-            {
-                throw new InvalidDataException("name is a required property for GcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.Name = name;
-            }
-
-            // to ensure "channelUrl" is required (not null)
-            if (channelUrl == null)
-            {
-                throw new InvalidDataException("channelUrl is a required property for GcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.ChannelUrl = channelUrl;
-            }
-
-            // to ensure "coverUrl" is required (not null)
-            if (coverUrl == null)
-            {
-                throw new InvalidDataException("coverUrl is a required property for GcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.CoverUrl = coverUrl;
-            }
-
-            // to ensure "coverFile" is required (not null)
-            if (coverFile == null)
-            {
-                throw new InvalidDataException("coverFile is a required property for GcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.CoverFile = coverFile;
-            }
-
-            // to ensure "customType" is required (not null)
-            if (customType == null)
-            {
-                throw new InvalidDataException("customType is a required property for GcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.CustomType = customType;
-            }
-
-            // to ensure "data" is required (not null)
-            if (data == null)
-            {
-                throw new InvalidDataException("data is a required property for GcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.Data = data;
-            }
-
-            // to ensure "isDistinct" is required (not null)
-            if (isDistinct == null)
-            {
-                throw new InvalidDataException("isDistinct is a required property for GcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.IsDistinct = isDistinct;
-            }
-
-            // to ensure "isPublic" is required (not null)
-            if (isPublic == null)
-            {
-                throw new InvalidDataException("isPublic is a required property for GcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.IsPublic = isPublic;
-            }
-
-            // to ensure "isSuper" is required (not null)
-            if (isSuper == null)
-            {
-                throw new InvalidDataException("isSuper is a required property for GcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.IsSuper = isSuper;
-            }
-
-            // to ensure "isEphemeral" is required (not null)
-            if (isEphemeral == null)
-            {
-                throw new InvalidDataException("isEphemeral is a required property for GcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.IsEphemeral = isEphemeral;
-            }
-
-            // to ensure "accessCode" is required (not null)
-            if (accessCode == null)
-            {
-                throw new InvalidDataException("accessCode is a required property for GcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.AccessCode = accessCode;
-            }
-
-            // to ensure "inviterId" is required (not null)
-            if (inviterId == null)
-            {
-                throw new InvalidDataException("inviterId is a required property for GcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.InviterId = inviterId;
-            }
-
-            // to ensure "strict" is required (not null)
-            if (strict == null)
-            {
-                throw new InvalidDataException("strict is a required property for GcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.Strict = strict;
-            }
-
-            // to ensure "invitationStatus" is required (not null)
-            if (invitationStatus == null)
-            {
-                throw new InvalidDataException("invitationStatus is a required property for GcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.InvitationStatus = invitationStatus;
-            }
-
-            // to ensure "hiddenStatus" is required (not null)
-            if (hiddenStatus == null)
-            {
-                throw new InvalidDataException("hiddenStatus is a required property for GcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.HiddenStatus = hiddenStatus;
-            }
-
-            // to ensure "operatorIds" is required (not null)
-            if (operatorIds == null)
-            {
-                throw new InvalidDataException("operatorIds is a required property for GcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.OperatorIds = operatorIds;
-            }
-
-            // to ensure "blockSdkUserChannelJoin" is required (not null)
-            if (blockSdkUserChannelJoin == null)
-            {
-                throw new InvalidDataException("blockSdkUserChannelJoin is a required property for GcCreateChannelData and cannot be null");
-            }
-            else
-            {
-                this.BlockSdkUserChannelJoin = blockSdkUserChannelJoin;
-            }
-
+            this.Users = users;
+            this.Name = name;
+            this.ChannelUrl = channelUrl;
+            this.CoverUrl = coverUrl;
+            this.CoverFile = coverFile;
+            this.CustomType = customType;
+            this.Data = data;
+            this.IsDistinct = isDistinct;
+            this.IsPublic = isPublic;
+            this.IsSuper = isSuper;
+            this.IsEphemeral = isEphemeral;
+            this.AccessCode = accessCode;
+            this.InviterId = inviterId;
+            this.Strict = strict;
+            this.InvitationStatus = invitationStatus;
+            this.HiddenStatus = hiddenStatus;
+            this.OperatorIds = operatorIds;
+            this.BlockSdkUserChannelJoin = blockSdkUserChannelJoin;
         }
 
         /// <summary>
@@ -256,132 +94,132 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <value>Specifies an array of one or more IDs of users to invite to the channel. The maximum number of users to be invited at once is 100. The users below and this property can be used interchangeably.</value>
         [DataMember(Name="user_ids", EmitDefaultValue=true)]
-        public List<int> UserIds { get; set; }
+        public List<string> UserIds { get; set; }
 
         /// <summary>
         /// Specifies an array of one or more IDs of users to invite to the channel. The maximum number of users to be invited at once is 100. The user_ids above and this property can be used interchangeably.
         /// </summary>
         /// <value>Specifies an array of one or more IDs of users to invite to the channel. The maximum number of users to be invited at once is 100. The user_ids above and this property can be used interchangeably.</value>
-        [DataMember(Name="users", EmitDefaultValue=true)]
-        public List<int> Users { get; set; }
+        [DataMember(Name="users", EmitDefaultValue=false)]
+        public List<SendBirdUser> Users { get; set; }
 
         /// <summary>
         /// Specifies the name of the channel, or the channel topic. The length is limited to 191 characters. (Default: group channel)
         /// </summary>
         /// <value>Specifies the name of the channel, or the channel topic. The length is limited to 191 characters. (Default: group channel)</value>
-        [DataMember(Name="name", EmitDefaultValue=true)]
+        [DataMember(Name="name", EmitDefaultValue=false)]
         public string Name { get; set; }
 
         /// <summary>
         /// Specifies the URL of the channel. Only numbers, characters, and underscores are allowed. The length is 4 to 100 characters, inclusive. If not specified, a URL is automatically generated.
         /// </summary>
         /// <value>Specifies the URL of the channel. Only numbers, characters, and underscores are allowed. The length is 4 to 100 characters, inclusive. If not specified, a URL is automatically generated.</value>
-        [DataMember(Name="channel_url", EmitDefaultValue=true)]
+        [DataMember(Name="channel_url", EmitDefaultValue=false)]
         public string ChannelUrl { get; set; }
 
         /// <summary>
         /// Specifies the URL of the cover image for the channel. The length is limited to 2,048 characters.
         /// </summary>
         /// <value>Specifies the URL of the cover image for the channel. The length is limited to 2,048 characters.</value>
-        [DataMember(Name="cover_url", EmitDefaultValue=true)]
+        [DataMember(Name="cover_url", EmitDefaultValue=false)]
         public string CoverUrl { get; set; }
 
         /// <summary>
         /// Uploads the cover image file for the channel.
         /// </summary>
         /// <value>Uploads the cover image file for the channel.</value>
-        [DataMember(Name="cover_file", EmitDefaultValue=true)]
+        [DataMember(Name="cover_file", EmitDefaultValue=false)]
         public System.IO.Stream CoverFile { get; set; }
 
         /// <summary>
         /// Specifies the custom channel type which is used for channel grouping. The length is limited to 128 characters.&lt;br /&gt;&lt;br /&gt; Custom types are also used within Sendbird&#39;s [Advanced analytics](/docs/chat/v3/platform-api/guides/advanced-analytics) to segment metrics, which enables the sub-classification of data views.
         /// </summary>
         /// <value>Specifies the custom channel type which is used for channel grouping. The length is limited to 128 characters.&lt;br /&gt;&lt;br /&gt; Custom types are also used within Sendbird&#39;s [Advanced analytics](/docs/chat/v3/platform-api/guides/advanced-analytics) to segment metrics, which enables the sub-classification of data views.</value>
-        [DataMember(Name="custom_type", EmitDefaultValue=true)]
+        [DataMember(Name="custom_type", EmitDefaultValue=false)]
         public string CustomType { get; set; }
 
         /// <summary>
         /// Specifies additional channel information such as a long description of the channel or &#x60;JSON&#x60; formatted string.
         /// </summary>
         /// <value>Specifies additional channel information such as a long description of the channel or &#x60;JSON&#x60; formatted string.</value>
-        [DataMember(Name="data", EmitDefaultValue=true)]
+        [DataMember(Name="data", EmitDefaultValue=false)]
         public string Data { get; set; }
 
         /// <summary>
         /// Determines whether to reuse an existing channel or create a new channel. If set to true, returns a channel with the same users in the user_ids or users property or creates a new channel if no match is found. Sendbird server can also use the custom channel type in the custom_type property if specified along with the users to return the corresponding channel. If set to false, Sendbird server always creates a new channel with a combination of the users as well as the channel custom type if specified. (Default: false)&lt;br /&gt;&lt;br /&gt; Under this property, Sendbird server does not distinguish channels based on other properties such as channel URL or channel name.
         /// </summary>
         /// <value>Determines whether to reuse an existing channel or create a new channel. If set to true, returns a channel with the same users in the user_ids or users property or creates a new channel if no match is found. Sendbird server can also use the custom channel type in the custom_type property if specified along with the users to return the corresponding channel. If set to false, Sendbird server always creates a new channel with a combination of the users as well as the channel custom type if specified. (Default: false)&lt;br /&gt;&lt;br /&gt; Under this property, Sendbird server does not distinguish channels based on other properties such as channel URL or channel name.</value>
-        [DataMember(Name="is_distinct", EmitDefaultValue=true)]
+        [DataMember(Name="is_distinct", EmitDefaultValue=false)]
         public bool IsDistinct { get; set; }
 
         /// <summary>
         /// Determines whether to allow a user to join the channel without an invitation. (Default: false)
         /// </summary>
         /// <value>Determines whether to allow a user to join the channel without an invitation. (Default: false)</value>
-        [DataMember(Name="is_public", EmitDefaultValue=true)]
+        [DataMember(Name="is_public", EmitDefaultValue=false)]
         public bool IsPublic { get; set; }
 
         /// <summary>
         /// Determines whether to allow the channel to accommodate more than 2,000 members. (Default: false) &lt;br/&gt;&lt;br/&gt; Supergroup channels are not supported with the is_distinct property and the property is false by default.
         /// </summary>
         /// <value>Determines whether to allow the channel to accommodate more than 2,000 members. (Default: false) &lt;br/&gt;&lt;br/&gt; Supergroup channels are not supported with the is_distinct property and the property is false by default.</value>
-        [DataMember(Name="is_super", EmitDefaultValue=true)]
+        [DataMember(Name="is_super", EmitDefaultValue=false)]
         public bool IsSuper { get; set; }
 
         /// <summary>
         /// Determines whether to preserve the messages in the channel for the purpose of retrieving chat history. (Default: false)
         /// </summary>
         /// <value>Determines whether to preserve the messages in the channel for the purpose of retrieving chat history. (Default: false)</value>
-        [DataMember(Name="is_ephemeral", EmitDefaultValue=true)]
+        [DataMember(Name="is_ephemeral", EmitDefaultValue=false)]
         public bool IsEphemeral { get; set; }
 
         /// <summary>
         /// This parameter can only be used when the channel operator creates a public group channel. They can set an access code for the corresponding type of channel. The channel then requires the specified access code to a user who attempts to join. If specified, the is_access_code_required property of the channel resource is set to true.
         /// </summary>
         /// <value>This parameter can only be used when the channel operator creates a public group channel. They can set an access code for the corresponding type of channel. The channel then requires the specified access code to a user who attempts to join. If specified, the is_access_code_required property of the channel resource is set to true.</value>
-        [DataMember(Name="access_code", EmitDefaultValue=true)]
+        [DataMember(Name="access_code", EmitDefaultValue=false)]
         public string AccessCode { get; set; }
 
         /// <summary>
         /// Specifies the ID of the user who has invited other users as members of the channel. The inviter is not automatically registered to the channel as a member, so you should specify the ID of the inviter in the user_ids property below if needed.
         /// </summary>
         /// <value>Specifies the ID of the user who has invited other users as members of the channel. The inviter is not automatically registered to the channel as a member, so you should specify the ID of the inviter in the user_ids property below if needed.</value>
-        [DataMember(Name="inviter_id", EmitDefaultValue=true)]
+        [DataMember(Name="inviter_id", EmitDefaultValue=false)]
         public string InviterId { get; set; }
 
         /// <summary>
         /// Determines whether to receive a &#x60;400111&#x60; error and cease channel creation when there is at least one non-existing user in the specified user_ids or users property above. If set to false, the channel will be created excluding the non-existing users without receiving the mentioned error. (Default: false)
         /// </summary>
         /// <value>Determines whether to receive a &#x60;400111&#x60; error and cease channel creation when there is at least one non-existing user in the specified user_ids or users property above. If set to false, the channel will be created excluding the non-existing users without receiving the mentioned error. (Default: false)</value>
-        [DataMember(Name="strict", EmitDefaultValue=true)]
+        [DataMember(Name="strict", EmitDefaultValue=false)]
         public bool Strict { get; set; }
 
         /// <summary>
-        /// Specifies an array of one or more information about the join status of each invited user to the channel. Each item of the array should be specified with a combination of the unique ID of a user in the user_ids or users property, a colon (:), and the user&#39;s join status (for example, user_id_1: join status). Acceptable values are joined, invited_by_friend, and invited_by_non_friend. (Default: joined)
+        /// Specifies one or more key-value pair items which set the invitation status of each user invited to the channel. The key should be a user_id and the value should be their joining status. Acceptable values are joined, invited_by_friend, and invited_by_non_friend. (Default: joined)
         /// </summary>
-        /// <value>Specifies an array of one or more information about the join status of each invited user to the channel. Each item of the array should be specified with a combination of the unique ID of a user in the user_ids or users property, a colon (:), and the user&#39;s join status (for example, user_id_1: join status). Acceptable values are joined, invited_by_friend, and invited_by_non_friend. (Default: joined)</value>
-        [DataMember(Name="invitation_status", EmitDefaultValue=true)]
-        public List<string> InvitationStatus { get; set; }
+        /// <value>Specifies one or more key-value pair items which set the invitation status of each user invited to the channel. The key should be a user_id and the value should be their joining status. Acceptable values are joined, invited_by_friend, and invited_by_non_friend. (Default: joined)</value>
+        [DataMember(Name="invitation_status", EmitDefaultValue=false)]
+        public Object InvitationStatus { get; set; }
 
         /// <summary>
-        /// Specifies an array of one or more channel hidden statuses about whether to hide the channel from each invited user&#39;s list of group channels, and whether to automatically unhide the hidden channel when receiving a new message from other member of that channel. Each item of the array should be specified with a combination of the unique ID of a user in the user_ids or users property, a colon (:), and the channel hidden status (for example, user_id_1: channel hidden status). Acceptable values are limited to the following:&lt;br /&gt;- unhidden (default): the channel is included in when retrieving a list of group channels.&lt;br /&gt;- hidden_allow_auto_unhide: the channel automatically gets unhidden when receiving a new message.&lt;br /&gt;- hidden_prevent_auto_unhide: the channel keeps hidden though receiving a new message.
+        /// Specifies one or more key-value pair items which set the channel&#39;s hidden status for each user. The key should be a user_id and the value should be their hidden status. Acceptable values are limited to the following:&lt;br /&gt;- unhidden (default): the channel is included in when retrieving a list of group channels.&lt;br /&gt;- hidden_allow_auto_unhide: the channel automatically gets unhidden when receiving a new message.&lt;br /&gt;- hidden_prevent_auto_unhide: the channel keeps hidden though receiving a new message.
         /// </summary>
-        /// <value>Specifies an array of one or more channel hidden statuses about whether to hide the channel from each invited user&#39;s list of group channels, and whether to automatically unhide the hidden channel when receiving a new message from other member of that channel. Each item of the array should be specified with a combination of the unique ID of a user in the user_ids or users property, a colon (:), and the channel hidden status (for example, user_id_1: channel hidden status). Acceptable values are limited to the following:&lt;br /&gt;- unhidden (default): the channel is included in when retrieving a list of group channels.&lt;br /&gt;- hidden_allow_auto_unhide: the channel automatically gets unhidden when receiving a new message.&lt;br /&gt;- hidden_prevent_auto_unhide: the channel keeps hidden though receiving a new message.</value>
-        [DataMember(Name="hidden_status", EmitDefaultValue=true)]
-        public List<string> HiddenStatus { get; set; }
+        /// <value>Specifies one or more key-value pair items which set the channel&#39;s hidden status for each user. The key should be a user_id and the value should be their hidden status. Acceptable values are limited to the following:&lt;br /&gt;- unhidden (default): the channel is included in when retrieving a list of group channels.&lt;br /&gt;- hidden_allow_auto_unhide: the channel automatically gets unhidden when receiving a new message.&lt;br /&gt;- hidden_prevent_auto_unhide: the channel keeps hidden though receiving a new message.</value>
+        [DataMember(Name="hidden_status", EmitDefaultValue=false)]
+        public Object HiddenStatus { get; set; }
 
         /// <summary>
         /// Specifies an array of one or more IDs of users to register as operators of the channel. You should also include these IDs in the user_ids property to invite them to the channel as members. They can delete any messages in the channel, and also view all messages without any filtering or throttling. The maximum allowed number of operators per channel is 100.
         /// </summary>
         /// <value>Specifies an array of one or more IDs of users to register as operators of the channel. You should also include these IDs in the user_ids property to invite them to the channel as members. They can delete any messages in the channel, and also view all messages without any filtering or throttling. The maximum allowed number of operators per channel is 100.</value>
-        [DataMember(Name="operator_ids", EmitDefaultValue=true)]
-        public List<int> OperatorIds { get; set; }
+        [DataMember(Name="operator_ids", EmitDefaultValue=false)]
+        public List<string> OperatorIds { get; set; }
 
         /// <summary>
         /// Determines whether to block users from joining the channel through the Chat SDK. This parameter can be used in order to restrict the ways for users to join the channel, and only using the [join a channel](#2-join-a-channel) action can add a user to the channel. (Default: false)
         /// </summary>
         /// <value>Determines whether to block users from joining the channel through the Chat SDK. This parameter can be used in order to restrict the ways for users to join the channel, and only using the [join a channel](#2-join-a-channel) action can add a user to the channel. (Default: false)</value>
-        [DataMember(Name="block_sdk_user_channel_join", EmitDefaultValue=true)]
+        [DataMember(Name="block_sdk_user_channel_join", EmitDefaultValue=false)]
         public bool BlockSdkUserChannelJoin { get; set; }
 
         /// <summary>
@@ -524,15 +362,13 @@ namespace sendbird_platform_sdk.Model
                 ) && 
                 (
                     this.InvitationStatus == input.InvitationStatus ||
-                    this.InvitationStatus != null &&
-                    input.InvitationStatus != null &&
-                    this.InvitationStatus.SequenceEqual(input.InvitationStatus)
+                    (this.InvitationStatus != null &&
+                    this.InvitationStatus.Equals(input.InvitationStatus))
                 ) && 
                 (
                     this.HiddenStatus == input.HiddenStatus ||
-                    this.HiddenStatus != null &&
-                    input.HiddenStatus != null &&
-                    this.HiddenStatus.SequenceEqual(input.HiddenStatus)
+                    (this.HiddenStatus != null &&
+                    this.HiddenStatus.Equals(input.HiddenStatus))
                 ) && 
                 (
                     this.OperatorIds == input.OperatorIds ||

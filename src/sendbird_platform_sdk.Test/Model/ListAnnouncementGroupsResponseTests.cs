@@ -66,12 +66,12 @@ namespace sendbird_platform_sdk.Test
 
 
         /// <summary>
-        /// Test the property 'AnnouncementGroup'
+        /// Test the property 'AnnouncementGroups'
         /// </summary>
         [Test]
-        public void AnnouncementGroupTest()
+        public void AnnouncementGroupsTest()
         {
-            // TODO unit test for the property 'AnnouncementGroup'
+            // TODO unit test for the property 'AnnouncementGroups'
         }
         /// <summary>
         /// Test the property 'Next'

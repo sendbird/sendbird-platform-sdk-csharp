@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="AddApnsPushConfigurationResponse" /> class.
         /// </summary>
         /// <param name="pushConfigurations">pushConfigurations.</param>
-        public AddApnsPushConfigurationResponse(List<AddApnsPushConfigurationResponsePushConfigurations> pushConfigurations = default(List<AddApnsPushConfigurationResponsePushConfigurations>))
+        public AddApnsPushConfigurationResponse(List<AddApnsPushConfigurationResponsePushConfigurationsInner> pushConfigurations = default(List<AddApnsPushConfigurationResponsePushConfigurationsInner>))
         {
             this.PushConfigurations = pushConfigurations;
         }
@@ -43,7 +43,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets PushConfigurations
         /// </summary>
         [DataMember(Name="push_configurations", EmitDefaultValue=false)]
-        public List<AddApnsPushConfigurationResponsePushConfigurations> PushConfigurations { get; set; }
+        public List<AddApnsPushConfigurationResponsePushConfigurationsInner> PushConfigurations { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

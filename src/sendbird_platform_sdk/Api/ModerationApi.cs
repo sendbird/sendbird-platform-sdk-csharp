@@ -54,7 +54,7 @@ namespace sendbird_platform_sdk.Api
         /// Block a user
         /// </summary>
         /// <remarks>
-        /// ## Block a user  Allows a user to block another user. A user doesn&#39;t receive messages from someone they have blocked anymore. Also, blocking someone doesn&#39;t alert them that they have been blocked. Blocked users still can send messages as normal in the channel: however, they can&#39;t receive any messages from the users who have blocked them.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-block-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Block a user  Allows a user to block another user. A user doesn't receive messages from someone they have blocked anymore. Also, blocking someone doesn't alert them that they have been blocked. Blocked users still can send messages as normal in the channel: however, they can't receive any messages from the users who have blocked them.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-block-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -67,7 +67,7 @@ namespace sendbird_platform_sdk.Api
         /// Block a user
         /// </summary>
         /// <remarks>
-        /// ## Block a user  Allows a user to block another user. A user doesn&#39;t receive messages from someone they have blocked anymore. Also, blocking someone doesn&#39;t alert them that they have been blocked. Blocked users still can send messages as normal in the channel: however, they can&#39;t receive any messages from the users who have blocked them.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-block-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Block a user  Allows a user to block another user. A user doesn't receive messages from someone they have blocked anymore. Also, blocking someone doesn't alert them that they have been blocked. Blocked users still can send messages as normal in the channel: however, they can't receive any messages from the users who have blocked them.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-block-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -104,7 +104,7 @@ namespace sendbird_platform_sdk.Api
         /// Freeze a channel
         /// </summary>
         /// <remarks>
-        /// ## Freeze a channel  Freezes or unfreezes a group channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Freeze a channel  Freezes or unfreezes a group channel.  > __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -117,7 +117,7 @@ namespace sendbird_platform_sdk.Api
         /// Freeze a channel
         /// </summary>
         /// <remarks>
-        /// ## Freeze a channel  Freezes or unfreezes a group channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Freeze a channel  Freezes or unfreezes a group channel.  > __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -129,7 +129,7 @@ namespace sendbird_platform_sdk.Api
         /// List banned users
         /// </summary>
         /// <remarks>
-        /// ## List banned users  Retrieves a list of the banned users from a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
+        /// ## List banned users  Retrieves a list of the banned users from a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -143,7 +143,7 @@ namespace sendbird_platform_sdk.Api
         /// List banned users
         /// </summary>
         /// <remarks>
-        /// ## List banned users  Retrieves a list of the banned users from a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
+        /// ## List banned users  Retrieves a list of the banned users from a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -156,7 +156,7 @@ namespace sendbird_platform_sdk.Api
         /// List muted users
         /// </summary>
         /// <remarks>
-        /// ## List muted users  Retrieves a list of the muted users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
+        /// ## List muted users  Retrieves a list of the muted users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -170,7 +170,7 @@ namespace sendbird_platform_sdk.Api
         /// List muted users
         /// </summary>
         /// <remarks>
-        /// ## List muted users  Retrieves a list of the muted users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
+        /// ## List muted users  Retrieves a list of the muted users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -183,7 +183,7 @@ namespace sendbird_platform_sdk.Api
         /// Mute a user
         /// </summary>
         /// <remarks>
-        /// ## Mute a user  Mutes a user in a group channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-mute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Mute a user  Mutes a user in a group channel. A muted user remains in the channel and is allowed to view the messages, but can't send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-mute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -196,7 +196,7 @@ namespace sendbird_platform_sdk.Api
         /// Mute a user
         /// </summary>
         /// <remarks>
-        /// ## Mute a user  Mutes a user in a group channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-mute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Mute a user  Mutes a user in a group channel. A muted user remains in the channel and is allowed to view the messages, but can't send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-mute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -214,8 +214,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>InlineResponse2001</returns>
-        InlineResponse2001 GcUnbanUserById (string apiToken, string channelUrl, string bannedUserId);
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        OcDeleteChannelByUrl200Response GcUnbanUserById (string apiToken, string channelUrl, string bannedUserId);
 
         /// <summary>
         /// Unban a user
@@ -227,8 +227,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        ApiResponse<InlineResponse2001> GcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId);
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        ApiResponse<OcDeleteChannelByUrl200Response> GcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId);
         /// <summary>
         /// Unmute a user
         /// </summary>
@@ -239,8 +239,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <returns>InlineResponse2001</returns>
-        InlineResponse2001 GcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId);
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        OcDeleteChannelByUrl200Response GcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId);
 
         /// <summary>
         /// Unmute a user
@@ -252,8 +252,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        ApiResponse<InlineResponse2001> GcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId);
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        ApiResponse<OcDeleteChannelByUrl200Response> GcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId);
         /// <summary>
         /// Update a ban
         /// </summary>
@@ -335,7 +335,7 @@ namespace sendbird_platform_sdk.Api
         /// List banned channels
         /// </summary>
         /// <remarks>
-        /// ## List banned channels  Retrieves a list of open and group channels with additional information where a user is banned.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-banned-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// ## List banned channels  Retrieves a list of open and group channels with additional information where a user is banned.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-banned-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -349,7 +349,7 @@ namespace sendbird_platform_sdk.Api
         /// List banned channels
         /// </summary>
         /// <remarks>
-        /// ## List banned channels  Retrieves a list of open and group channels with additional information where a user is banned.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-banned-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// ## List banned channels  Retrieves a list of open and group channels with additional information where a user is banned.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-banned-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -362,7 +362,7 @@ namespace sendbird_platform_sdk.Api
         /// List blocked users
         /// </summary>
         /// <remarks>
-        /// ## List blocked users  Retrieves a list of other users that a user has blocked.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-blocked-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// ## List blocked users  Retrieves a list of other users that a user has blocked.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-blocked-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -379,7 +379,7 @@ namespace sendbird_platform_sdk.Api
         /// List blocked users
         /// </summary>
         /// <remarks>
-        /// ## List blocked users  Retrieves a list of other users that a user has blocked.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-blocked-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// ## List blocked users  Retrieves a list of other users that a user has blocked.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-blocked-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -395,7 +395,7 @@ namespace sendbird_platform_sdk.Api
         /// List muted channels
         /// </summary>
         /// <remarks>
-        /// ## List muted channels  Retrieves a list of open and group channels with additional information where a user is muted.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-muted-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// ## List muted channels  Retrieves a list of open and group channels with additional information where a user is muted.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-muted-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -409,7 +409,7 @@ namespace sendbird_platform_sdk.Api
         /// List muted channels
         /// </summary>
         /// <remarks>
-        /// ## List muted channels  Retrieves a list of open and group channels with additional information where a user is muted.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-muted-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// ## List muted channels  Retrieves a list of open and group channels with additional information where a user is muted.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-muted-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -472,7 +472,7 @@ namespace sendbird_platform_sdk.Api
         /// Freeze a channel
         /// </summary>
         /// <remarks>
-        /// ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Freeze a channel  Freezes or unfreezes an open channel.  > __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -485,7 +485,7 @@ namespace sendbird_platform_sdk.Api
         /// Freeze a channel
         /// </summary>
         /// <remarks>
-        /// ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Freeze a channel  Freezes or unfreezes an open channel.  > __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -497,7 +497,7 @@ namespace sendbird_platform_sdk.Api
         /// List banned users
         /// </summary>
         /// <remarks>
-        /// ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
+        /// ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -511,7 +511,7 @@ namespace sendbird_platform_sdk.Api
         /// List banned users
         /// </summary>
         /// <remarks>
-        /// ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
+        /// ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -524,7 +524,7 @@ namespace sendbird_platform_sdk.Api
         /// List muted users
         /// </summary>
         /// <remarks>
-        /// ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
+        /// ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -538,7 +538,7 @@ namespace sendbird_platform_sdk.Api
         /// List muted users
         /// </summary>
         /// <remarks>
-        /// ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
+        /// ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -551,7 +551,7 @@ namespace sendbird_platform_sdk.Api
         /// Mute a user
         /// </summary>
         /// <remarks>
-        /// ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
+        /// ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can't send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -564,7 +564,7 @@ namespace sendbird_platform_sdk.Api
         /// Mute a user
         /// </summary>
         /// <remarks>
-        /// ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
+        /// ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can't send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -582,8 +582,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>InlineResponse2001</returns>
-        InlineResponse2001 OcUnbanUserById (string apiToken, string channelUrl, string bannedUserId);
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        OcDeleteChannelByUrl200Response OcUnbanUserById (string apiToken, string channelUrl, string bannedUserId);
 
         /// <summary>
         /// Unban a user
@@ -595,8 +595,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        ApiResponse<InlineResponse2001> OcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId);
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        ApiResponse<OcDeleteChannelByUrl200Response> OcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId);
         /// <summary>
         /// Unmute a user
         /// </summary>
@@ -607,8 +607,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <returns>InlineResponse2001</returns>
-        InlineResponse2001 OcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId);
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        OcDeleteChannelByUrl200Response OcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId);
 
         /// <summary>
         /// Unmute a user
@@ -620,8 +620,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        ApiResponse<InlineResponse2001> OcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId);
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        ApiResponse<OcDeleteChannelByUrl200Response> OcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId);
         /// <summary>
         /// Update a ban
         /// </summary>
@@ -757,7 +757,7 @@ namespace sendbird_platform_sdk.Api
         /// Block a user
         /// </summary>
         /// <remarks>
-        /// ## Block a user  Allows a user to block another user. A user doesn&#39;t receive messages from someone they have blocked anymore. Also, blocking someone doesn&#39;t alert them that they have been blocked. Blocked users still can send messages as normal in the channel: however, they can&#39;t receive any messages from the users who have blocked them.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-block-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Block a user  Allows a user to block another user. A user doesn't receive messages from someone they have blocked anymore. Also, blocking someone doesn't alert them that they have been blocked. Blocked users still can send messages as normal in the channel: however, they can't receive any messages from the users who have blocked them.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-block-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -771,7 +771,7 @@ namespace sendbird_platform_sdk.Api
         /// Block a user
         /// </summary>
         /// <remarks>
-        /// ## Block a user  Allows a user to block another user. A user doesn&#39;t receive messages from someone they have blocked anymore. Also, blocking someone doesn&#39;t alert them that they have been blocked. Blocked users still can send messages as normal in the channel: however, they can&#39;t receive any messages from the users who have blocked them.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-block-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Block a user  Allows a user to block another user. A user doesn't receive messages from someone they have blocked anymore. Also, blocking someone doesn't alert them that they have been blocked. Blocked users still can send messages as normal in the channel: however, they can't receive any messages from the users who have blocked them.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-block-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -811,7 +811,7 @@ namespace sendbird_platform_sdk.Api
         /// Freeze a channel
         /// </summary>
         /// <remarks>
-        /// ## Freeze a channel  Freezes or unfreezes a group channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Freeze a channel  Freezes or unfreezes a group channel.  > __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -825,7 +825,7 @@ namespace sendbird_platform_sdk.Api
         /// Freeze a channel
         /// </summary>
         /// <remarks>
-        /// ## Freeze a channel  Freezes or unfreezes a group channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Freeze a channel  Freezes or unfreezes a group channel.  > __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -838,7 +838,7 @@ namespace sendbird_platform_sdk.Api
         /// List banned users
         /// </summary>
         /// <remarks>
-        /// ## List banned users  Retrieves a list of the banned users from a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
+        /// ## List banned users  Retrieves a list of the banned users from a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -853,7 +853,7 @@ namespace sendbird_platform_sdk.Api
         /// List banned users
         /// </summary>
         /// <remarks>
-        /// ## List banned users  Retrieves a list of the banned users from a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
+        /// ## List banned users  Retrieves a list of the banned users from a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -867,7 +867,7 @@ namespace sendbird_platform_sdk.Api
         /// List muted users
         /// </summary>
         /// <remarks>
-        /// ## List muted users  Retrieves a list of the muted users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
+        /// ## List muted users  Retrieves a list of the muted users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -882,7 +882,7 @@ namespace sendbird_platform_sdk.Api
         /// List muted users
         /// </summary>
         /// <remarks>
-        /// ## List muted users  Retrieves a list of the muted users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
+        /// ## List muted users  Retrieves a list of the muted users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -896,7 +896,7 @@ namespace sendbird_platform_sdk.Api
         /// Mute a user
         /// </summary>
         /// <remarks>
-        /// ## Mute a user  Mutes a user in a group channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-mute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Mute a user  Mutes a user in a group channel. A muted user remains in the channel and is allowed to view the messages, but can't send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-mute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -910,7 +910,7 @@ namespace sendbird_platform_sdk.Api
         /// Mute a user
         /// </summary>
         /// <remarks>
-        /// ## Mute a user  Mutes a user in a group channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-mute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Mute a user  Mutes a user in a group channel. A muted user remains in the channel and is allowed to view the messages, but can't send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-mute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -930,8 +930,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        System.Threading.Tasks.Task<InlineResponse2001> GcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Unban a user
@@ -944,8 +944,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> GcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Unmute a user
         /// </summary>
@@ -957,8 +957,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        System.Threading.Tasks.Task<InlineResponse2001> GcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Unmute a user
@@ -971,8 +971,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> GcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update a ban
         /// </summary>
@@ -1060,7 +1060,7 @@ namespace sendbird_platform_sdk.Api
         /// List banned channels
         /// </summary>
         /// <remarks>
-        /// ## List banned channels  Retrieves a list of open and group channels with additional information where a user is banned.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-banned-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// ## List banned channels  Retrieves a list of open and group channels with additional information where a user is banned.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-banned-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1075,7 +1075,7 @@ namespace sendbird_platform_sdk.Api
         /// List banned channels
         /// </summary>
         /// <remarks>
-        /// ## List banned channels  Retrieves a list of open and group channels with additional information where a user is banned.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-banned-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// ## List banned channels  Retrieves a list of open and group channels with additional information where a user is banned.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-banned-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1089,7 +1089,7 @@ namespace sendbird_platform_sdk.Api
         /// List blocked users
         /// </summary>
         /// <remarks>
-        /// ## List blocked users  Retrieves a list of other users that a user has blocked.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-blocked-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// ## List blocked users  Retrieves a list of other users that a user has blocked.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-blocked-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1107,7 +1107,7 @@ namespace sendbird_platform_sdk.Api
         /// List blocked users
         /// </summary>
         /// <remarks>
-        /// ## List blocked users  Retrieves a list of other users that a user has blocked.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-blocked-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// ## List blocked users  Retrieves a list of other users that a user has blocked.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-blocked-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1124,7 +1124,7 @@ namespace sendbird_platform_sdk.Api
         /// List muted channels
         /// </summary>
         /// <remarks>
-        /// ## List muted channels  Retrieves a list of open and group channels with additional information where a user is muted.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-muted-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// ## List muted channels  Retrieves a list of open and group channels with additional information where a user is muted.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-muted-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1139,7 +1139,7 @@ namespace sendbird_platform_sdk.Api
         /// List muted channels
         /// </summary>
         /// <remarks>
-        /// ## List muted channels  Retrieves a list of open and group channels with additional information where a user is muted.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-muted-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// ## List muted channels  Retrieves a list of open and group channels with additional information where a user is muted.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-muted-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1207,7 +1207,7 @@ namespace sendbird_platform_sdk.Api
         /// Freeze a channel
         /// </summary>
         /// <remarks>
-        /// ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Freeze a channel  Freezes or unfreezes an open channel.  > __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1221,7 +1221,7 @@ namespace sendbird_platform_sdk.Api
         /// Freeze a channel
         /// </summary>
         /// <remarks>
-        /// ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Freeze a channel  Freezes or unfreezes an open channel.  > __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1234,7 +1234,7 @@ namespace sendbird_platform_sdk.Api
         /// List banned users
         /// </summary>
         /// <remarks>
-        /// ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
+        /// ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1249,7 +1249,7 @@ namespace sendbird_platform_sdk.Api
         /// List banned users
         /// </summary>
         /// <remarks>
-        /// ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
+        /// ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1263,7 +1263,7 @@ namespace sendbird_platform_sdk.Api
         /// List muted users
         /// </summary>
         /// <remarks>
-        /// ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
+        /// ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1278,7 +1278,7 @@ namespace sendbird_platform_sdk.Api
         /// List muted users
         /// </summary>
         /// <remarks>
-        /// ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
+        /// ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1292,7 +1292,7 @@ namespace sendbird_platform_sdk.Api
         /// Mute a user
         /// </summary>
         /// <remarks>
-        /// ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
+        /// ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can't send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1306,7 +1306,7 @@ namespace sendbird_platform_sdk.Api
         /// Mute a user
         /// </summary>
         /// <remarks>
-        /// ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
+        /// ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can't send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1326,8 +1326,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        System.Threading.Tasks.Task<InlineResponse2001> OcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Unban a user
@@ -1340,8 +1340,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> OcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Unmute a user
         /// </summary>
@@ -1353,8 +1353,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        System.Threading.Tasks.Task<InlineResponse2001> OcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Unmute a user
@@ -1367,8 +1367,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> OcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update a ban
         /// </summary>
@@ -1760,7 +1760,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Block a user ## Block a user  Allows a user to block another user. A user doesn&#39;t receive messages from someone they have blocked anymore. Also, blocking someone doesn&#39;t alert them that they have been blocked. Blocked users still can send messages as normal in the channel: however, they can&#39;t receive any messages from the users who have blocked them.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-block-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Block a user ## Block a user  Allows a user to block another user. A user doesn't receive messages from someone they have blocked anymore. Also, blocking someone doesn't alert them that they have been blocked. Blocked users still can send messages as normal in the channel: however, they can't receive any messages from the users who have blocked them.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-block-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1774,7 +1774,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Block a user ## Block a user  Allows a user to block another user. A user doesn&#39;t receive messages from someone they have blocked anymore. Also, blocking someone doesn&#39;t alert them that they have been blocked. Blocked users still can send messages as normal in the channel: however, they can&#39;t receive any messages from the users who have blocked them.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-block-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Block a user ## Block a user  Allows a user to block another user. A user doesn't receive messages from someone they have blocked anymore. Also, blocking someone doesn't alert them that they have been blocked. Blocked users still can send messages as normal in the channel: however, they can't receive any messages from the users who have blocked them.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-block-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1843,7 +1843,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Block a user ## Block a user  Allows a user to block another user. A user doesn&#39;t receive messages from someone they have blocked anymore. Also, blocking someone doesn&#39;t alert them that they have been blocked. Blocked users still can send messages as normal in the channel: however, they can&#39;t receive any messages from the users who have blocked them.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-block-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Block a user ## Block a user  Allows a user to block another user. A user doesn't receive messages from someone they have blocked anymore. Also, blocking someone doesn't alert them that they have been blocked. Blocked users still can send messages as normal in the channel: however, they can't receive any messages from the users who have blocked them.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-block-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1859,7 +1859,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Block a user ## Block a user  Allows a user to block another user. A user doesn&#39;t receive messages from someone they have blocked anymore. Also, blocking someone doesn&#39;t alert them that they have been blocked. Blocked users still can send messages as normal in the channel: however, they can&#39;t receive any messages from the users who have blocked them.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-block-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Block a user ## Block a user  Allows a user to block another user. A user doesn't receive messages from someone they have blocked anymore. Also, blocking someone doesn't alert them that they have been blocked. Blocked users still can send messages as normal in the channel: however, they can't receive any messages from the users who have blocked them.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-block-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2098,7 +2098,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes a group channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes a group channel.  > __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2112,7 +2112,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes a group channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes a group channel.  > __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2181,7 +2181,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes a group channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes a group channel.  > __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2197,7 +2197,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes a group channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes a group channel.  > __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2267,7 +2267,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List banned users ## List banned users  Retrieves a list of the banned users from a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
+        /// List banned users ## List banned users  Retrieves a list of the banned users from a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2282,7 +2282,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List banned users ## List banned users  Retrieves a list of the banned users from a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
+        /// List banned users ## List banned users  Retrieves a list of the banned users from a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2345,7 +2345,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List banned users ## List banned users  Retrieves a list of the banned users from a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
+        /// List banned users ## List banned users  Retrieves a list of the banned users from a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2362,7 +2362,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List banned users ## List banned users  Retrieves a list of the banned users from a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
+        /// List banned users ## List banned users  Retrieves a list of the banned users from a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2426,7 +2426,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List muted users ## List muted users  Retrieves a list of the muted users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
+        /// List muted users ## List muted users  Retrieves a list of the muted users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2441,7 +2441,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List muted users ## List muted users  Retrieves a list of the muted users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
+        /// List muted users ## List muted users  Retrieves a list of the muted users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2504,7 +2504,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List muted users ## List muted users  Retrieves a list of the muted users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
+        /// List muted users ## List muted users  Retrieves a list of the muted users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2521,7 +2521,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List muted users ## List muted users  Retrieves a list of the muted users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
+        /// List muted users ## List muted users  Retrieves a list of the muted users in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2585,7 +2585,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Mute a user ## Mute a user  Mutes a user in a group channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-mute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Mute a user ## Mute a user  Mutes a user in a group channel. A muted user remains in the channel and is allowed to view the messages, but can't send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-mute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2599,7 +2599,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Mute a user ## Mute a user  Mutes a user in a group channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-mute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Mute a user ## Mute a user  Mutes a user in a group channel. A muted user remains in the channel and is allowed to view the messages, but can't send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-mute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2668,7 +2668,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Mute a user ## Mute a user  Mutes a user in a group channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-mute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Mute a user ## Mute a user  Mutes a user in a group channel. A muted user remains in the channel and is allowed to view the messages, but can't send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-mute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2684,7 +2684,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Mute a user ## Mute a user  Mutes a user in a group channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-mute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Mute a user ## Mute a user  Mutes a user in a group channel. A muted user remains in the channel and is allowed to view the messages, but can't send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-mute-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -2760,10 +2760,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>InlineResponse2001</returns>
-        public InlineResponse2001 GcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        public OcDeleteChannelByUrl200Response GcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
         {
-             ApiResponse<InlineResponse2001> localVarResponse = GcUnbanUserByIdWithHttpInfo(apiToken, channelUrl, bannedUserId);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = GcUnbanUserByIdWithHttpInfo(apiToken, channelUrl, bannedUserId);
              return localVarResponse.Data;
         }
 
@@ -2774,8 +2774,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        public ApiResponse<InlineResponse2001> GcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId)
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        public ApiResponse<OcDeleteChannelByUrl200Response> GcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2826,9 +2826,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
@@ -2839,10 +2839,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2001> GcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2001> localVarResponse = await GcUnbanUserByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcUnbanUserByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2855,8 +2855,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> GcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2907,9 +2907,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
@@ -2919,10 +2919,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <returns>InlineResponse2001</returns>
-        public InlineResponse2001 GcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        public OcDeleteChannelByUrl200Response GcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
         {
-             ApiResponse<InlineResponse2001> localVarResponse = GcUnmuteUserByIdWithHttpInfo(apiToken, channelUrl, mutedUserId);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = GcUnmuteUserByIdWithHttpInfo(apiToken, channelUrl, mutedUserId);
              return localVarResponse.Data;
         }
 
@@ -2933,8 +2933,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        public ApiResponse<InlineResponse2001> GcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId)
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        public ApiResponse<OcDeleteChannelByUrl200Response> GcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2985,9 +2985,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
@@ -2998,10 +2998,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2001> GcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2001> localVarResponse = await GcUnmuteUserByIdWithHttpInfoAsync(apiToken, channelUrl, mutedUserId, cancellationToken);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcUnmuteUserByIdWithHttpInfoAsync(apiToken, channelUrl, mutedUserId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -3014,8 +3014,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> GcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3066,9 +3066,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
@@ -3571,7 +3571,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List banned channels ## List banned channels  Retrieves a list of open and group channels with additional information where a user is banned.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-banned-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// List banned channels ## List banned channels  Retrieves a list of open and group channels with additional information where a user is banned.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-banned-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3586,7 +3586,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List banned channels ## List banned channels  Retrieves a list of open and group channels with additional information where a user is banned.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-banned-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// List banned channels ## List banned channels  Retrieves a list of open and group channels with additional information where a user is banned.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-banned-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3649,7 +3649,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List banned channels ## List banned channels  Retrieves a list of open and group channels with additional information where a user is banned.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-banned-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// List banned channels ## List banned channels  Retrieves a list of open and group channels with additional information where a user is banned.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-banned-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3666,7 +3666,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List banned channels ## List banned channels  Retrieves a list of open and group channels with additional information where a user is banned.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-banned-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// List banned channels ## List banned channels  Retrieves a list of open and group channels with additional information where a user is banned.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-banned-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3730,7 +3730,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List blocked users ## List blocked users  Retrieves a list of other users that a user has blocked.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-blocked-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// List blocked users ## List blocked users  Retrieves a list of other users that a user has blocked.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-blocked-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3748,7 +3748,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List blocked users ## List blocked users  Retrieves a list of other users that a user has blocked.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-blocked-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// List blocked users ## List blocked users  Retrieves a list of other users that a user has blocked.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-blocked-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3817,7 +3817,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List blocked users ## List blocked users  Retrieves a list of other users that a user has blocked.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-blocked-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// List blocked users ## List blocked users  Retrieves a list of other users that a user has blocked.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-blocked-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3837,7 +3837,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List blocked users ## List blocked users  Retrieves a list of other users that a user has blocked.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-blocked-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// List blocked users ## List blocked users  Retrieves a list of other users that a user has blocked.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-blocked-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3907,7 +3907,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List muted channels ## List muted channels  Retrieves a list of open and group channels with additional information where a user is muted.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-muted-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// List muted channels ## List muted channels  Retrieves a list of open and group channels with additional information where a user is muted.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-muted-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3922,7 +3922,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List muted channels ## List muted channels  Retrieves a list of open and group channels with additional information where a user is muted.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-muted-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// List muted channels ## List muted channels  Retrieves a list of open and group channels with additional information where a user is muted.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-muted-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -3985,7 +3985,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List muted channels ## List muted channels  Retrieves a list of open and group channels with additional information where a user is muted.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-muted-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// List muted channels ## List muted channels  Retrieves a list of open and group channels with additional information where a user is muted.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-muted-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4002,7 +4002,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List muted channels ## List muted channels  Retrieves a list of open and group channels with additional information where a user is muted.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-muted-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;user_id&#x60;      Type: string      Description: Specifies the unique ID of the target user.
+        /// List muted channels ## List muted channels  Retrieves a list of open and group channels with additional information where a user is muted.  https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-muted-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `user_id`      Type: string      Description: Specifies the unique ID of the target user.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4404,7 +4404,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes an open channel.  > __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4418,7 +4418,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes an open channel.  > __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4487,7 +4487,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes an open channel.  > __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4503,7 +4503,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes an open channel.  &gt; __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Freeze a channel ## Freeze a channel  Freezes or unfreezes an open channel.  > __Note__: Only users designated as channel operators are allowed to talk when a channel is frozen.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-freeze-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4573,7 +4573,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List banned users ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
+        /// List banned users ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4588,7 +4588,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List banned users ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
+        /// List banned users ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4651,7 +4651,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List banned users ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
+        /// List banned users ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4668,7 +4668,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List banned users ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
+        /// List banned users ## List banned users  Retrieves a list of banned users from a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-banned-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel where to retrieve a list of banned users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4732,7 +4732,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List muted users ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
+        /// List muted users ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4747,7 +4747,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List muted users ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
+        /// List muted users ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4810,7 +4810,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List muted users ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
+        /// List muted users ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4827,7 +4827,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List muted users ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
+        /// List muted users ## List muted users  Retrieves a list of muted users in the channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-muted-users - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of muted users.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4891,7 +4891,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Mute a user ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
+        /// Mute a user ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can't send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4905,7 +4905,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Mute a user ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
+        /// Mute a user ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can't send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4974,7 +4974,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Mute a user ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
+        /// Mute a user ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can't send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -4990,7 +4990,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Mute a user ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can&#39;t send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
+        /// Mute a user ## Mute a user  Mutes a user in the channel. A muted user remains in the channel and is allowed to view the messages, but can't send any messages until unmuted.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-mute-a-user
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -5066,10 +5066,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>InlineResponse2001</returns>
-        public InlineResponse2001 OcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        public OcDeleteChannelByUrl200Response OcUnbanUserById (string apiToken, string channelUrl, string bannedUserId)
         {
-             ApiResponse<InlineResponse2001> localVarResponse = OcUnbanUserByIdWithHttpInfo(apiToken, channelUrl, bannedUserId);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = OcUnbanUserByIdWithHttpInfo(apiToken, channelUrl, bannedUserId);
              return localVarResponse.Data;
         }
 
@@ -5080,8 +5080,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        public ApiResponse<InlineResponse2001> OcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId)
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        public ApiResponse<OcDeleteChannelByUrl200Response> OcUnbanUserByIdWithHttpInfo (string apiToken, string channelUrl, string bannedUserId)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5132,9 +5132,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
@@ -5145,10 +5145,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2001> OcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2001> localVarResponse = await OcUnbanUserByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await OcUnbanUserByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -5161,8 +5161,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> OcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5213,9 +5213,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
@@ -5225,10 +5225,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <returns>InlineResponse2001</returns>
-        public InlineResponse2001 OcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
+        /// <returns>OcDeleteChannelByUrl200Response</returns>
+        public OcDeleteChannelByUrl200Response OcUnmuteUserById (string apiToken, string channelUrl, string mutedUserId)
         {
-             ApiResponse<InlineResponse2001> localVarResponse = OcUnmuteUserByIdWithHttpInfo(apiToken, channelUrl, mutedUserId);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = OcUnmuteUserByIdWithHttpInfo(apiToken, channelUrl, mutedUserId);
              return localVarResponse.Data;
         }
 
@@ -5239,8 +5239,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        public ApiResponse<InlineResponse2001> OcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId)
+        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
+        public ApiResponse<OcDeleteChannelByUrl200Response> OcUnmuteUserByIdWithHttpInfo (string apiToken, string channelUrl, string mutedUserId)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5291,9 +5291,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>
@@ -5304,10 +5304,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of InlineResponse2001</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2001> OcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<InlineResponse2001> localVarResponse = await OcUnmuteUserByIdWithHttpInfoAsync(apiToken, channelUrl, mutedUserId, cancellationToken);
+             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await OcUnmuteUserByIdWithHttpInfoAsync(apiToken, channelUrl, mutedUserId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -5320,8 +5320,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> OcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5372,9 +5372,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<InlineResponse2001>(localVarStatusCode,
+            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (InlineResponse2001) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2001)));
+                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
         }
 
         /// <summary>

@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**PushConfigurations** | [**List&lt;AddHmsPushConfigurationResponsePushConfigurations&gt;**](AddHmsPushConfigurationResponsePushConfigurations.md) |  | [optional] 
+**PushConfigurations** | [**List&lt;AddHmsPushConfigurationResponsePushConfigurationsInner&gt;**](AddHmsPushConfigurationResponsePushConfigurationsInner.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

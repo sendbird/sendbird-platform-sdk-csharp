@@ -73,6 +73,14 @@ namespace sendbird_platform_sdk.Test
         {
             // TODO unit test for the property 'IsMember'
         }
+        /// <summary>
+        /// Test the property 'State'
+        /// </summary>
+        [Test]
+        public void StateTest()
+        {
+            // TODO unit test for the property 'State'
+        }
 
     }
 

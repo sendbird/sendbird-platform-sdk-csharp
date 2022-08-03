@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**PushMessageTemplates** | [**List&lt;ListPushNotificationContentTemplatesResponsePushMessageTemplates&gt;**](ListPushNotificationContentTemplatesResponsePushMessageTemplates.md) |  | [optional] 
+**PushMessageTemplates** | [**List&lt;ListPushNotificationContentTemplatesResponsePushMessageTemplatesInner&gt;**](ListPushNotificationContentTemplatesResponsePushMessageTemplatesInner.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

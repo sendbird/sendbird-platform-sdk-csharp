@@ -43,6 +43,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="createdAt">createdAt.</param>
         public ReportUserByIdResponse(string reportType = default(string), string reportCategory = default(string), SendBirdUser reportingUser = default(SendBirdUser), SendBirdUser offendingUser = default(SendBirdUser), SendBirdMessageResponse reportedMessage = default(SendBirdMessageResponse), SendBirdChannelResponse channel = default(SendBirdChannelResponse), string reportDescription = default(string), decimal createdAt = default(decimal))
         {
+            this.ReportedMessage = reportedMessage;
             this.ReportType = reportType;
             this.ReportCategory = reportCategory;
             this.ReportingUser = reportingUser;
@@ -80,7 +81,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets ReportedMessage
         /// </summary>
-        [DataMember(Name="reported_message", EmitDefaultValue=false)]
+        [DataMember(Name="reported_message", EmitDefaultValue=true)]
         public SendBirdMessageResponse ReportedMessage { get; set; }
 
         /// <summary>

@@ -81,6 +81,14 @@ namespace sendbird_platform_sdk.Test
         {
             // TODO unit test for the property 'Next'
         }
+        /// <summary>
+        /// Test the property 'Ts'
+        /// </summary>
+        [Test]
+        public void TsTest()
+        {
+            // TODO unit test for the property 'Ts'
+        }
 
     }
 

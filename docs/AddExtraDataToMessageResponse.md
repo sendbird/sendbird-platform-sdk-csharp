@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**SortedMetaarray** | [**List&lt;ListMessagesResponseSortedMetaarray&gt;**](ListMessagesResponseSortedMetaarray.md) |  | [optional] 
+**SortedMetaarray** | [**List&lt;ListMessagesResponseMessagesInnerSortedMetaarrayInner&gt;**](ListMessagesResponseMessagesInnerSortedMetaarrayInner.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

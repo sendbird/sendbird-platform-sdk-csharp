@@ -46,7 +46,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="data">Specifies additional channel information such as a long description of the channel or &#x60;JSON&#x60; formatted string. (required).</param>
         /// <param name="operatorIds">Specifies an array of one or more user IDs to register as operators of the channel. The maximum allowed number of operators per channel is 100. Operators can delete any messages in the channel, and can also receive all messages that have been throttled.&lt;br/&gt;&lt;br/&gt;  Operators cannot view messages that have been [moderated by](/docs/chat/v3/platform-api/guides/filter-and-moderation) the domain filter or profanity filter. Only the sender will be notified that the message has been blocked. (required).</param>
         /// <param name="operators">(Deprecated) Specifies the string IDs of the users registered as channel operators. Operators can delete any messages in the channel, and can also receive all messages that have been throttled. (required).</param>
-        public OcUpdateChannelByUrlData(string channelUrl = default(string), string name = default(string), string coverUrl = default(string), System.IO.Stream coverFile = default(System.IO.Stream), string customType = default(string), string data = default(string), List<int> operatorIds = default(List<int>), List<string> operators = default(List<string>))
+        public OcUpdateChannelByUrlData(string channelUrl = default(string), string name = default(string), string coverUrl = default(string), System.IO.Stream coverFile = default(System.IO.Stream), string customType = default(string), string data = default(string), List<string> operatorIds = default(List<string>), List<string> operators = default(List<string>))
         {
             // to ensure "channelUrl" is required (not null)
             if (channelUrl == null)
@@ -177,7 +177,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <value>Specifies an array of one or more user IDs to register as operators of the channel. The maximum allowed number of operators per channel is 100. Operators can delete any messages in the channel, and can also receive all messages that have been throttled.&lt;br/&gt;&lt;br/&gt;  Operators cannot view messages that have been [moderated by](/docs/chat/v3/platform-api/guides/filter-and-moderation) the domain filter or profanity filter. Only the sender will be notified that the message has been blocked.</value>
         [DataMember(Name="operator_ids", EmitDefaultValue=true)]
-        public List<int> OperatorIds { get; set; }
+        public List<string> OperatorIds { get; set; }
 
         /// <summary>
         /// (Deprecated) Specifies the string IDs of the users registered as channel operators. Operators can delete any messages in the channel, and can also receive all messages that have been throttled.

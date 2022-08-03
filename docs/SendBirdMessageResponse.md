@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **RequireAuth** | **bool** |  | [optional] 
 **MessageSurvivalSeconds** | **decimal** |  | [optional] 
 **CustomType** | **string** |  | [optional] 
-**MentionedUsers** | [**List&lt;SendBirdMessageResponseMentionedUsers&gt;**](SendBirdMessageResponseMentionedUsers.md) |  | [optional] 
+**MentionedUsers** | [**List&lt;SendBirdMessageResponseMentionedUsersInner&gt;**](SendBirdMessageResponseMentionedUsersInner.md) |  | [optional] 
 **Translations** | **Object** |  | [optional] 
 **UpdatedAt** | **decimal** |  | [optional] 
 **IsOpMsg** | **bool** |  | [optional] 

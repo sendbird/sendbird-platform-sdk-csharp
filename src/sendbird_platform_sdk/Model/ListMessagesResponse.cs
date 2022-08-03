@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="ListMessagesResponse" /> class.
         /// </summary>
         /// <param name="messages">messages.</param>
-        public ListMessagesResponse(List<ListMessagesResponseMessages> messages = default(List<ListMessagesResponseMessages>))
+        public ListMessagesResponse(List<ListMessagesResponseMessagesInner> messages = default(List<ListMessagesResponseMessagesInner>))
         {
             this.Messages = messages;
         }
@@ -43,7 +43,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets Messages
         /// </summary>
         [DataMember(Name="messages", EmitDefaultValue=false)]
-        public List<ListMessagesResponseMessages> Messages { get; set; }
+        public List<ListMessagesResponseMessagesInner> Messages { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

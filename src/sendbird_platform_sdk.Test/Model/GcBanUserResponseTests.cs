@@ -97,6 +97,54 @@ namespace sendbird_platform_sdk.Test
         {
             // TODO unit test for the property 'Description'
         }
+        /// <summary>
+        /// Test the property 'Metadata'
+        /// </summary>
+        [Test]
+        public void MetadataTest()
+        {
+            // TODO unit test for the property 'Metadata'
+        }
+        /// <summary>
+        /// Test the property 'NextUrl'
+        /// </summary>
+        [Test]
+        public void NextUrlTest()
+        {
+            // TODO unit test for the property 'NextUrl'
+        }
+        /// <summary>
+        /// Test the property 'Nickname'
+        /// </summary>
+        [Test]
+        public void NicknameTest()
+        {
+            // TODO unit test for the property 'Nickname'
+        }
+        /// <summary>
+        /// Test the property 'ProfileUrl'
+        /// </summary>
+        [Test]
+        public void ProfileUrlTest()
+        {
+            // TODO unit test for the property 'ProfileUrl'
+        }
+        /// <summary>
+        /// Test the property 'RequireAuthForProfileImage'
+        /// </summary>
+        [Test]
+        public void RequireAuthForProfileImageTest()
+        {
+            // TODO unit test for the property 'RequireAuthForProfileImage'
+        }
+        /// <summary>
+        /// Test the property 'UserId'
+        /// </summary>
+        [Test]
+        public void UserIdTest()
+        {
+            // TODO unit test for the property 'UserId'
+        }
 
     }
 

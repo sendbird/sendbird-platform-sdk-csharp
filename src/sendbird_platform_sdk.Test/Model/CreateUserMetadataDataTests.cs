@@ -66,14 +66,6 @@ namespace sendbird_platform_sdk.Test
 
 
         /// <summary>
-        /// Test the property 'UserId'
-        /// </summary>
-        [Test]
-        public void UserIdTest()
-        {
-            // TODO unit test for the property 'UserId'
-        }
-        /// <summary>
         /// Test the property 'Metadata'
         /// </summary>
         [Test]

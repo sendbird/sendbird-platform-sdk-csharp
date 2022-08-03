@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Action** | **string** |  | [optional] 
 **Status** | **string** |  | [optional] 
 **UserId** | **string** |  | [optional] 
-**Files** | [**ListDataExportsByMessageChannelOrUserResponseFile**](ListDataExportsByMessageChannelOrUserResponseFile.md) |  | [optional] 
+**Files** | [**ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile**](ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile.md) |  | [optional] 
 **UserIds** | **List&lt;string&gt;** |  | [optional] 
 **ChannelDeleteOption** | **string** |  | [optional] 
 **CreatedAt** | **decimal** |  | [optional] 

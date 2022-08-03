@@ -40,7 +40,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="emojiCategoryId">Specifies the unique ID of the emoji category that a list of new emojis belong to. (required).</param>
         /// <param name="emojis">Specifies a list of one or more new emojis to register. (required).</param>
-        public AddEmojisData(int emojiCategoryId = default(int), List<string> emojis = default(List<string>))
+        public AddEmojisData(int emojiCategoryId = default(int), List<Object> emojis = default(List<Object>))
         {
             // to ensure "emojiCategoryId" is required (not null)
             if (emojiCategoryId == null)
@@ -76,7 +76,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <value>Specifies a list of one or more new emojis to register.</value>
         [DataMember(Name="emojis", EmitDefaultValue=true)]
-        public List<string> Emojis { get; set; }
+        public List<Object> Emojis { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -58,7 +58,7 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a channel
         /// </summary>
         /// <remarks>
-        /// ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
+        /// ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -73,7 +73,7 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a channel
         /// </summary>
         /// <remarks>
-        /// ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
+        /// ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -87,7 +87,7 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a message
         /// </summary>
         /// <remarks>
-        /// ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where the reported message is in.  &#x60;message_id&#x60;      Type: string      Description: Specifies the unique ID of the reported message.
+        /// ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel where the reported message is in.  `message_id`      Type: string      Description: Specifies the unique ID of the reported message.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -103,7 +103,7 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a message
         /// </summary>
         /// <remarks>
-        /// ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where the reported message is in.  &#x60;message_id&#x60;      Type: string      Description: Specifies the unique ID of the reported message.
+        /// ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel where the reported message is in.  `message_id`      Type: string      Description: Specifies the unique ID of the reported message.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -118,7 +118,7 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a user
         /// </summary>
         /// <remarks>
-        /// ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;offending_user_id&#x60;      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
+        /// ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `offending_user_id`      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -132,7 +132,7 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a user
         /// </summary>
         /// <remarks>
-        /// ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;offending_user_id&#x60;      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
+        /// ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `offending_user_id`      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -233,8 +233,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <returns>Dictionary&lt;string, string&gt;</returns>
-        Dictionary<string, string> ViewModeratedMessageById (string apiToken, string channelType, string channelUrl, string messageId);
+        /// <returns>Object</returns>
+        Object ViewModeratedMessageById (string apiToken, string channelType, string channelUrl, string messageId);
 
         /// <summary>
         /// View a moderated message
@@ -247,8 +247,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <returns>ApiResponse of Dictionary&lt;string, string&gt;</returns>
-        ApiResponse<Dictionary<string, string>> ViewModeratedMessageByIdWithHttpInfo (string apiToken, string channelType, string channelUrl, string messageId);
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> ViewModeratedMessageByIdWithHttpInfo (string apiToken, string channelType, string channelUrl, string messageId);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -286,7 +286,7 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a channel
         /// </summary>
         /// <remarks>
-        /// ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
+        /// ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -302,7 +302,7 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a channel
         /// </summary>
         /// <remarks>
-        /// ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
+        /// ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -317,7 +317,7 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a message
         /// </summary>
         /// <remarks>
-        /// ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where the reported message is in.  &#x60;message_id&#x60;      Type: string      Description: Specifies the unique ID of the reported message.
+        /// ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel where the reported message is in.  `message_id`      Type: string      Description: Specifies the unique ID of the reported message.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -334,7 +334,7 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a message
         /// </summary>
         /// <remarks>
-        /// ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where the reported message is in.  &#x60;message_id&#x60;      Type: string      Description: Specifies the unique ID of the reported message.
+        /// ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel where the reported message is in.  `message_id`      Type: string      Description: Specifies the unique ID of the reported message.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -350,7 +350,7 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a user
         /// </summary>
         /// <remarks>
-        /// ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;offending_user_id&#x60;      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
+        /// ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `offending_user_id`      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -365,7 +365,7 @@ namespace sendbird_platform_sdk.Api
         /// List reports on a user
         /// </summary>
         /// <remarks>
-        /// ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;offending_user_id&#x60;      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
+        /// ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `offending_user_id`      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -474,8 +474,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of Dictionary&lt;string, string&gt;</returns>
-        System.Threading.Tasks.Task<Dictionary<string, string>> ViewModeratedMessageByIdAsync (string apiToken, string channelType, string channelUrl, string messageId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> ViewModeratedMessageByIdAsync (string apiToken, string channelType, string channelUrl, string messageId, CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// View a moderated message
@@ -489,8 +489,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewModeratedMessageByIdWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string messageId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> ViewModeratedMessageByIdWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string messageId, CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -762,7 +762,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List reports on a channel ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
+        /// List reports on a channel ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -778,7 +778,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List reports on a channel ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
+        /// List reports on a channel ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -846,7 +846,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List reports on a channel ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
+        /// List reports on a channel ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -864,7 +864,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List reports on a channel ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
+        /// List reports on a channel ## List reports on a channel  Retrieves a list of reports on a channel that has offensive messages or abusive activities.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel which is reported for offensive messages or inappropriate activities.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -933,7 +933,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List reports on a message ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where the reported message is in.  &#x60;message_id&#x60;      Type: string      Description: Specifies the unique ID of the reported message.
+        /// List reports on a message ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel where the reported message is in.  `message_id`      Type: string      Description: Specifies the unique ID of the reported message.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -950,7 +950,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List reports on a message ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where the reported message is in.  &#x60;message_id&#x60;      Type: string      Description: Specifies the unique ID of the reported message.
+        /// List reports on a message ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel where the reported message is in.  `message_id`      Type: string      Description: Specifies the unique ID of the reported message.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1023,7 +1023,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List reports on a message ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where the reported message is in.  &#x60;message_id&#x60;      Type: string      Description: Specifies the unique ID of the reported message.
+        /// List reports on a message ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel where the reported message is in.  `message_id`      Type: string      Description: Specifies the unique ID of the reported message.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1042,7 +1042,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List reports on a message ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;channel_type&#x60;      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  &#x60;channel_url&#x60;      Type: string      Description: Specifies the URL of the channel where the reported message is in.  &#x60;message_id&#x60;      Type: string      Description: Specifies the unique ID of the reported message.
+        /// List reports on a message ## List reports on a message  Retrieves a list of reports on a message which contains suspicious, harassing, or inappropriate content.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-message - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_type`      Type: string      Description: Specifies the type of the channel. Either open_channels or group_channels.  `channel_url`      Type: string      Description: Specifies the URL of the channel where the reported message is in.  `message_id`      Type: string      Description: Specifies the unique ID of the reported message.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1116,7 +1116,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List reports on a user ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;offending_user_id&#x60;      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
+        /// List reports on a user ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `offending_user_id`      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1131,7 +1131,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List reports on a user ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;offending_user_id&#x60;      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
+        /// List reports on a user ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `offending_user_id`      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1194,7 +1194,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List reports on a user ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;offending_user_id&#x60;      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
+        /// List reports on a user ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `offending_user_id`      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1211,7 +1211,7 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// List reports on a user ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   &#x60;offending_user_id&#x60;      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
+        /// List reports on a user ## List reports on a user  Retrieves a list of reports on a user who sends an offensive message.  https://sendbird.com/docs/chat/v3/platform-api/guides/report-content-and-subject#2-list-reports-on-a-user - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `offending_user_id`      Type: string      Description: Specifies the unique ID of the user who has sent the message to report.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
@@ -1825,10 +1825,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <returns>Dictionary&lt;string, string&gt;</returns>
-        public Dictionary<string, string> ViewModeratedMessageById (string apiToken, string channelType, string channelUrl, string messageId)
+        /// <returns>Object</returns>
+        public Object ViewModeratedMessageById (string apiToken, string channelType, string channelUrl, string messageId)
         {
-             ApiResponse<Dictionary<string, string>> localVarResponse = ViewModeratedMessageByIdWithHttpInfo(apiToken, channelType, channelUrl, messageId);
+             ApiResponse<Object> localVarResponse = ViewModeratedMessageByIdWithHttpInfo(apiToken, channelType, channelUrl, messageId);
              return localVarResponse.Data;
         }
 
@@ -1840,8 +1840,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelType"></param>
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
-        /// <returns>ApiResponse of Dictionary&lt;string, string&gt;</returns>
-        public ApiResponse<Dictionary<string, string>> ViewModeratedMessageByIdWithHttpInfo (string apiToken, string channelType, string channelUrl, string messageId)
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse<Object> ViewModeratedMessageByIdWithHttpInfo (string apiToken, string channelType, string channelUrl, string messageId)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1896,9 +1896,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Dictionary<string, string>>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (Dictionary<string, string>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Dictionary<string, string>)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -1910,10 +1910,10 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of Dictionary&lt;string, string&gt;</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, string>> ViewModeratedMessageByIdAsync (string apiToken, string channelType, string channelUrl, string messageId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> ViewModeratedMessageByIdAsync (string apiToken, string channelType, string channelUrl, string messageId, CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<Dictionary<string, string>> localVarResponse = await ViewModeratedMessageByIdWithHttpInfoAsync(apiToken, channelType, channelUrl, messageId, cancellationToken);
+             ApiResponse<Object> localVarResponse = await ViewModeratedMessageByIdWithHttpInfoAsync(apiToken, channelType, channelUrl, messageId, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1927,8 +1927,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="messageId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewModeratedMessageByIdWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string messageId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> ViewModeratedMessageByIdWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string messageId, CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1983,9 +1983,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Dictionary<string, string>>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (Dictionary<string, string>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Dictionary<string, string>)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
     }

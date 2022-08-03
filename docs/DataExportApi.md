@@ -36,8 +36,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new DataExportApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var dataType = dataType_example;  // string | 
-            var token = token_example;  // string |  (optional) 
+            var dataType = "dataType_example";  // string | 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
@@ -118,7 +118,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new DataExportApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var dataType = dataType_example;  // string | 
+            var dataType = "dataType_example";  // string | 
             var registerAndScheduleDataExportData = new RegisterAndScheduleDataExportData(); // RegisterAndScheduleDataExportData |  (optional) 
 
             try
@@ -198,8 +198,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new DataExportApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var dataType = dataType_example;  // string | 
-            var requestId = requestId_example;  // string | 
+            var dataType = "dataType_example";  // string | 
+            var requestId = "requestId_example";  // string | 
 
             try
             {

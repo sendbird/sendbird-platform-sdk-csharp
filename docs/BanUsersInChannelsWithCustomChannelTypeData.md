@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**BannedList** | [**List&lt;V3ApplicationsSettingsByChannelCustomTypeCustomTypeBanBannedList&gt;**](V3ApplicationsSettingsByChannelCustomTypeCustomTypeBanBannedList.md) |  | 
+**BannedList** | [**List&lt;BanUsersInChannelsWithCustomChannelTypeDataBannedListInner&gt;**](BanUsersInChannelsWithCustomChannelTypeDataBannedListInner.md) |  | 
 **OnDemandUpsert** | **bool** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

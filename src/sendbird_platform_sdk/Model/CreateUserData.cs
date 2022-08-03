@@ -45,7 +45,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="issueAccessToken">Determines whether to create an access token for the user. If true, an opaque string token is issued and provided upon creation, which should be passed whenever the user logs in. If false, an access token is not required when the user logs in. (Default: false).</param>
         /// <param name="discoveryKeys">Specifies an array of unique keys of the user which is provided to Sendbird server for discovering friends. By using the keys, the server can identify and match the user with other users..</param>
         /// <param name="metadata">Specifies a &#x60;JSON&#x60; object to store key-value items for additional user information such as phone number, email or a long description of the user. The key must not have a comma (,) and its length is limited to 128 characters. The value must be a string and its length is limited to 190 characters. This property can have up to 5 items..</param>
-        public CreateUserData(string userId = default(string), string nickname = default(string), string profileUrl = default(string), System.IO.Stream profileFile = default(System.IO.Stream), bool issueAccessToken = default(bool), List<string> discoveryKeys = default(List<string>), string metadata = default(string))
+        public CreateUserData(string userId = default(string), string nickname = default(string), string profileUrl = default(string), System.IO.Stream profileFile = default(System.IO.Stream), bool issueAccessToken = default(bool), List<string> discoveryKeys = default(List<string>), Object metadata = default(Object))
         {
             // to ensure "userId" is required (not null)
             if (userId == null)
@@ -130,7 +130,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <value>Specifies a &#x60;JSON&#x60; object to store key-value items for additional user information such as phone number, email or a long description of the user. The key must not have a comma (,) and its length is limited to 128 characters. The value must be a string and its length is limited to 190 characters. This property can have up to 5 items.</value>
         [DataMember(Name="metadata", EmitDefaultValue=false)]
-        public string Metadata { get; set; }
+        public Object Metadata { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

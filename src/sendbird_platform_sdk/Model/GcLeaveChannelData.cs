@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="channelUrl">Specifies the URL of the channel to leave. (required).</param>
         /// <param name="userIds">Specifies an array of one or more IDs of the users to leave the channel. (required).</param>
         /// <param name="shouldLeaveAll">Determines whether to make all members leave the channel. (Default: false) (required).</param>
-        public GcLeaveChannelData(string channelUrl = default(string), List<int> userIds = default(List<int>), bool shouldLeaveAll = default(bool))
+        public GcLeaveChannelData(string channelUrl = default(string), List<string> userIds = default(List<string>), bool shouldLeaveAll = default(bool))
         {
             // to ensure "channelUrl" is required (not null)
             if (channelUrl == null)
@@ -87,7 +87,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <value>Specifies an array of one or more IDs of the users to leave the channel.</value>
         [DataMember(Name="user_ids", EmitDefaultValue=true)]
-        public List<int> UserIds { get; set; }
+        public List<string> UserIds { get; set; }
 
         /// <summary>
         /// Determines whether to make all members leave the channel. (Default: false)

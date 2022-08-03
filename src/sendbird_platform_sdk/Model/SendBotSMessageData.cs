@@ -47,7 +47,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="markAsRead">Determines whether to mark the message as read for the bot. If set to false, the bot&#39;s unread_count and read_receipt remain unchanged after the message is sent. (Default: true).</param>
         /// <param name="dedupId">Specifies the unique ID for the message to prevent the same message data from getting sent to the channel..</param>
         /// <param name="createdAt">Specifies the time that the message was sent, in [Unix milliseconds](/docs/chat/v3/platform-api/guides/miscellaneous#2-timestamps) format..</param>
-        public SendBotSMessageData(string message = default(string), string channelUrl = default(string), string customType = default(string), string data = default(string), bool sendPush = default(bool), List<int> mentioned = default(List<int>), bool markAsRead = default(bool), string dedupId = default(string), int createdAt = default(int))
+        public SendBotSMessageData(string message = default(string), string channelUrl = default(string), string customType = default(string), string data = default(string), bool sendPush = default(bool), List<string> mentioned = default(List<string>), bool markAsRead = default(bool), string dedupId = default(string), int createdAt = default(int))
         {
             // to ensure "message" is required (not null)
             if (message == null)
@@ -118,7 +118,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <value>Specifies an array of one or more IDs of the users who get a notification for the message.</value>
         [DataMember(Name="mentioned", EmitDefaultValue=false)]
-        public List<int> Mentioned { get; set; }
+        public List<string> Mentioned { get; set; }
 
         /// <summary>
         /// Determines whether to mark the message as read for the bot. If set to false, the bot&#39;s unread_count and read_receipt remain unchanged after the message is sent. (Default: true)

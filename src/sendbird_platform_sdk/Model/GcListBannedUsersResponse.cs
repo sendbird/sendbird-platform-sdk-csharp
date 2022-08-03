@@ -36,7 +36,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="bannedList">bannedList.</param>
         /// <param name="totalBanCount">totalBanCount.</param>
         /// <param name="next">next.</param>
-        public GcListBannedUsersResponse(List<OcListBannedUsersResponseBannedList> bannedList = default(List<OcListBannedUsersResponseBannedList>), decimal totalBanCount = default(decimal), string next = default(string))
+        public GcListBannedUsersResponse(List<OcListBannedUsersResponseBannedListInner> bannedList = default(List<OcListBannedUsersResponseBannedListInner>), decimal totalBanCount = default(decimal), string next = default(string))
         {
             this.BannedList = bannedList;
             this.TotalBanCount = totalBanCount;
@@ -47,7 +47,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets BannedList
         /// </summary>
         [DataMember(Name="banned_list", EmitDefaultValue=false)]
-        public List<OcListBannedUsersResponseBannedList> BannedList { get; set; }
+        public List<OcListBannedUsersResponseBannedListInner> BannedList { get; set; }
 
         /// <summary>
         /// Gets or Sets TotalBanCount

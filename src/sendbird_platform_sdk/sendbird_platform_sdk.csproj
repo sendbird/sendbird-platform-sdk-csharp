@@ -12,7 +12,7 @@ The version of the OpenAPI document: 1.0.0
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D9FCBA40-885D-409C-BFA4-081B7F785E19}</ProjectGuid>
+    <ProjectGuid>{B91D86ED-0311-412F-9A83-30CE170B1403}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>sendbird_platform_sdk</RootNamespace>

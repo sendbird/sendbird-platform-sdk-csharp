@@ -374,7 +374,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var customType = customType_example;  // string | 
+            var customType = "customType_example";  // string | 
             var banUsersInChannelsWithCustomChannelTypeData = new BanUsersInChannelsWithCustomChannelTypeData(); // BanUsersInChannelsWithCustomChannelTypeData |  (optional) 
 
             try
@@ -532,7 +532,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var providerId = providerId_example;  // string | 
+            var providerId = "providerId_example";  // string | 
 
             try
             {
@@ -688,8 +688,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var customType = customType_example;  // string | 
-            var token = token_example;  // string |  (optional) 
+            var customType = "customType_example";  // string | 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
@@ -746,7 +746,7 @@ No authorization required
 
 ## ListMutedUsersInChannelsWithCustomChannelType
 
-> InlineResponse200 ListMutedUsersInChannelsWithCustomChannelType (string apiToken, string customType, string token = null, int? limit = null)
+> ListMutedUsersInChannelsWithCustomChannelType200Response ListMutedUsersInChannelsWithCustomChannelType (string apiToken, string customType, string token = null, int? limit = null)
 
 List muted users in channels with a custom channel type
 
@@ -770,14 +770,14 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var customType = customType_example;  // string | 
-            var token = token_example;  // string |  (optional) 
+            var customType = "customType_example";  // string | 
+            var token = "token_example";  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
 
             try
             {
                 // List muted users in channels with a custom channel type
-                InlineResponse200 result = apiInstance.ListMutedUsersInChannelsWithCustomChannelType(apiToken, customType, token, limit);
+                ListMutedUsersInChannelsWithCustomChannelType200Response result = apiInstance.ListMutedUsersInChannelsWithCustomChannelType(apiToken, customType, token, limit);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -803,7 +803,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**ListMutedUsersInChannelsWithCustomChannelType200Response**](ListMutedUsersInChannelsWithCustomChannelType200Response.md)
 
 ### Authorization
 
@@ -852,7 +852,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var pushType = pushType_example;  // string | 
+            var pushType = "pushType_example";  // string | 
 
             try
             {
@@ -1082,7 +1082,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var customType = customType_example;  // string | 
+            var customType = "customType_example";  // string | 
             var muteUsersInChannelsWithCustomChannelTypeData = new MuteUsersInChannelsWithCustomChannelTypeData(); // MuteUsersInChannelsWithCustomChannelTypeData |  (optional) 
 
             try
@@ -1162,8 +1162,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var pushType = pushType_example;  // string | 
-            var providerId = providerId_example;  // string | 
+            var pushType = "pushType_example";  // string | 
+            var providerId = "providerId_example";  // string | 
 
             try
             {
@@ -1318,7 +1318,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var apiToken2 = apiToken_example;  // string | 
+            var apiToken2 = "apiToken_example";  // string | 
 
             try
             {
@@ -1396,7 +1396,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var customType = customType_example;  // string | 
+            var customType = "customType_example";  // string | 
             var setDomainFilterData = new SetDomainFilterData(); // SetDomainFilterData |  (optional) 
 
             try
@@ -1476,7 +1476,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var customType = customType_example;  // string | 
+            var customType = "customType_example";  // string | 
             var userIds = new List<string>(); // List<string> | 
 
             try
@@ -1556,7 +1556,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var customType = customType_example;  // string | 
+            var customType = "customType_example";  // string | 
             var userIds = new List<string>(); // List<string> | 
 
             try
@@ -1636,7 +1636,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var providerId = providerId_example;  // string | 
+            var providerId = "providerId_example";  // string | 
             var updateApnsPushConfigurationByIdData = new UpdateApnsPushConfigurationByIdData(); // UpdateApnsPushConfigurationByIdData |  (optional) 
 
             try
@@ -1794,7 +1794,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var providerId = providerId_example;  // string | 
+            var providerId = "providerId_example";  // string | 
             var updateFcmPushConfigurationByIdData = new UpdateFcmPushConfigurationByIdData(); // UpdateFcmPushConfigurationByIdData |  (optional) 
 
             try
@@ -1874,7 +1874,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var providerId = providerId_example;  // string | 
+            var providerId = "providerId_example";  // string | 
             var updateHmsPushConfigurationByIdData = new UpdateHmsPushConfigurationByIdData(); // UpdateHmsPushConfigurationByIdData |  (optional) 
 
             try
@@ -1954,7 +1954,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var templateName = templateName_example;  // string | 
+            var templateName = "templateName_example";  // string | 
             var updatePushNotificationContentTemplateData = new UpdatePushNotificationContentTemplateData(); // UpdatePushNotificationContentTemplateData |  (optional) 
 
             try
@@ -2110,8 +2110,8 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var pushType = pushType_example;  // string | 
-            var providerId = providerId_example;  // string | 
+            var pushType = "pushType_example";  // string | 
+            var providerId = "providerId_example";  // string | 
 
             try
             {
@@ -2190,7 +2190,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var templateName = templateName_example;  // string | 
+            var templateName = "templateName_example";  // string | 
 
             try
             {
@@ -2268,7 +2268,7 @@ namespace Example
             Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
             var apiInstance = new ApplicationApi(Configuration.Default);
             var apiToken = {{API_TOKEN}};  // string | 
-            var apiToken2 = apiToken_example;  // string | 
+            var apiToken2 = "apiToken_example";  // string | 
 
             try
             {

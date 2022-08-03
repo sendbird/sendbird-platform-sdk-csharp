@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**PushConfigurations** | [**List&lt;AddFcmPushConfigurationResponsePushConfigurations&gt;**](AddFcmPushConfigurationResponsePushConfigurations.md) |  | [optional] 
+**PushConfigurations** | [**List&lt;AddFcmPushConfigurationResponsePushConfigurationsInner&gt;**](AddFcmPushConfigurationResponsePushConfigurationsInner.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
