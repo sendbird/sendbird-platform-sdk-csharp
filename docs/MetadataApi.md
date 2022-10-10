@@ -836,7 +836,7 @@ No authorization required
 
 ## UpdateChannelMetacounterByKey
 
-> Object UpdateChannelMetacounterByKey (string apiToken, string channelType, string channelUrl, string key, Object body = null)
+> Dictionary&lt;string, string&gt; UpdateChannelMetacounterByKey (string apiToken, string channelType, string channelUrl, string key, Object body = null)
 
 Update a channel metacounter - When updating a specific item of a channel metacounter by its key
 
@@ -868,7 +868,7 @@ namespace Example
             try
             {
                 // Update a channel metacounter - When updating a specific item of a channel metacounter by its key
-                Object result = apiInstance.UpdateChannelMetacounterByKey(apiToken, channelType, channelUrl, key, body);
+                Dictionary<string, string> result = apiInstance.UpdateChannelMetacounterByKey(apiToken, channelType, channelUrl, key, body);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -895,7 +895,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+**Dictionary<string, string>**
 
 ### Authorization
 
@@ -920,7 +920,7 @@ No authorization required
 
 ## UpdateChannelMetadata
 
-> Object UpdateChannelMetadata (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = null)
+> Dictionary&lt;string, string&gt; UpdateChannelMetadata (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = null)
 
 Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata
 
@@ -951,7 +951,7 @@ namespace Example
             try
             {
                 // Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata
-                Object result = apiInstance.UpdateChannelMetadata(apiToken, channelType, channelUrl, updateChannelMetadataData);
+                Dictionary<string, string> result = apiInstance.UpdateChannelMetadata(apiToken, channelType, channelUrl, updateChannelMetadataData);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -977,7 +977,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+**Dictionary<string, string>**
 
 ### Authorization
 
@@ -1002,7 +1002,7 @@ No authorization required
 
 ## UpdateChannelMetadataByKey
 
-> Object UpdateChannelMetadataByKey (string apiToken, string channelType, string channelUrl, string key, Object body = null)
+> Dictionary&lt;string, string&gt; UpdateChannelMetadataByKey (string apiToken, string channelType, string channelUrl, string key, Object body = null)
 
 Update a channel metadata - When updating a specific item of a channel metadata by its key
 
@@ -1034,7 +1034,7 @@ namespace Example
             try
             {
                 // Update a channel metadata - When updating a specific item of a channel metadata by its key
-                Object result = apiInstance.UpdateChannelMetadataByKey(apiToken, channelType, channelUrl, key, body);
+                Dictionary<string, string> result = apiInstance.UpdateChannelMetadataByKey(apiToken, channelType, channelUrl, key, body);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1061,7 +1061,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+**Dictionary<string, string>**
 
 ### Authorization
 
@@ -1166,7 +1166,7 @@ No authorization required
 
 ## UpdateUserMetadataByKey
 
-> Object UpdateUserMetadataByKey (string apiToken, string userId, string key, Object body = null)
+> Dictionary&lt;string, string&gt; UpdateUserMetadataByKey (string apiToken, string userId, string key, Object body = null)
 
 Update a user metadata - When updating a specific item of a user metadata by its key
 
@@ -1197,7 +1197,7 @@ namespace Example
             try
             {
                 // Update a user metadata - When updating a specific item of a user metadata by its key
-                Object result = apiInstance.UpdateUserMetadataByKey(apiToken, userId, key, body);
+                Dictionary<string, string> result = apiInstance.UpdateUserMetadataByKey(apiToken, userId, key, body);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1223,7 +1223,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+**Dictionary<string, string>**
 
 ### Authorization
 
@@ -1248,7 +1248,7 @@ No authorization required
 
 ## ViewChannelMetacounter
 
-> Object ViewChannelMetacounter (string apiToken, string channelType, string channelUrl, string key = null, List<string> keys = null)
+> Dictionary&lt;string, string&gt; ViewChannelMetacounter (string apiToken, string channelType, string channelUrl, string key = null, List<string> keys = null)
 
 View a channel metacounter - When retrieving all items of a channel metacounter
 
@@ -1280,7 +1280,7 @@ namespace Example
             try
             {
                 // View a channel metacounter - When retrieving all items of a channel metacounter
-                Object result = apiInstance.ViewChannelMetacounter(apiToken, channelType, channelUrl, key, keys);
+                Dictionary<string, string> result = apiInstance.ViewChannelMetacounter(apiToken, channelType, channelUrl, key, keys);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1307,7 +1307,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+**Dictionary<string, string>**
 
 ### Authorization
 
@@ -1414,7 +1414,7 @@ No authorization required
 
 ## ViewChannelMetadata
 
-> Object ViewChannelMetadata (string apiToken, string channelType, string channelUrl, string key = null, List<string> keys = null)
+> Dictionary&lt;string, string&gt; ViewChannelMetadata (string apiToken, string channelType, string channelUrl, string key = null, List<string> keys = null)
 
 View a channel metadata - When retrieving all items of a channel metadata
 
@@ -1446,7 +1446,7 @@ namespace Example
             try
             {
                 // View a channel metadata - When retrieving all items of a channel metadata
-                Object result = apiInstance.ViewChannelMetadata(apiToken, channelType, channelUrl, key, keys);
+                Dictionary<string, string> result = apiInstance.ViewChannelMetadata(apiToken, channelType, channelUrl, key, keys);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1473,7 +1473,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+**Dictionary<string, string>**
 
 ### Authorization
 
@@ -1498,7 +1498,7 @@ No authorization required
 
 ## ViewChannelMetadataByKey
 
-> Object ViewChannelMetadataByKey (string apiToken, string channelType, string channelUrl, string key)
+> Dictionary&lt;string, string&gt; ViewChannelMetadataByKey (string apiToken, string channelType, string channelUrl, string key)
 
 View a channel metadata - When retrieving a specific item of a channel metadata by its key
 
@@ -1529,7 +1529,7 @@ namespace Example
             try
             {
                 // View a channel metadata - When retrieving a specific item of a channel metadata by its key
-                Object result = apiInstance.ViewChannelMetadataByKey(apiToken, channelType, channelUrl, key);
+                Dictionary<string, string> result = apiInstance.ViewChannelMetadataByKey(apiToken, channelType, channelUrl, key);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1555,7 +1555,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+**Dictionary<string, string>**
 
 ### Authorization
 
@@ -1662,7 +1662,7 @@ No authorization required
 
 ## ViewUserMetadataByKey
 
-> Object ViewUserMetadataByKey (string apiToken, string userId, string key)
+> Dictionary&lt;string, string&gt; ViewUserMetadataByKey (string apiToken, string userId, string key)
 
 View a user metadata - When retrieving a specific item of a user metadata by its key
 
@@ -1692,7 +1692,7 @@ namespace Example
             try
             {
                 // View a user metadata - When retrieving a specific item of a user metadata by its key
-                Object result = apiInstance.ViewUserMetadataByKey(apiToken, userId, key);
+                Dictionary<string, string> result = apiInstance.ViewUserMetadataByKey(apiToken, userId, key);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1717,7 +1717,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+**Dictionary<string, string>**
 
 ### Authorization
 

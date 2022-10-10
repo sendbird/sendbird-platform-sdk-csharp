@@ -1640,7 +1640,7 @@ No authorization required
 
 ## ListMessages
 
-> ListMessagesResponse ListMessages (string apiToken, string channelType, string channelUrl, int? messageTs = null, int? messageId = null, int? prevLimit = null, int? nextLimit = null, bool? include = null, bool? reverse = null, string senderId = null, string senderIds = null, string operatorFilter = null, string customTypes = null, string messageType = null, bool? includingRemoved = null, bool? includeReactions = null, bool? withSortedMetaArray = null, bool? showSubchannelMessagesOnly = null, string userId = null, string customType = null, bool? withMetaArray = null)
+> ListMessagesResponse ListMessages (string apiToken, string channelType, string channelUrl, string messageTs = null, int? messageId = null, int? prevLimit = null, int? nextLimit = null, bool? include = null, bool? reverse = null, string senderId = null, string senderIds = null, string operatorFilter = null, string customTypes = null, string messageType = null, bool? includingRemoved = null, bool? includeReactions = null, bool? withSortedMetaArray = null, bool? showSubchannelMessagesOnly = null, string userId = null, string customType = null, bool? withMetaArray = null)
 
 List messages
 
@@ -1666,7 +1666,7 @@ namespace Example
             var apiToken = {{API_TOKEN}};  // string | 
             var channelType = "channelType_example";  // string | 
             var channelUrl = "channelUrl_example";  // string | 
-            var messageTs = 56;  // int? |  (optional) 
+            var messageTs = "messageTs_example";  // string |  (optional) 
             var messageId = 56;  // int? |  (optional) 
             var prevLimit = 56;  // int? |  (optional) 
             var nextLimit = 56;  // int? |  (optional) 
@@ -1710,7 +1710,7 @@ Name | Type | Description  | Notes
  **apiToken** | **string**|  | 
  **channelType** | **string**|  | 
  **channelUrl** | **string**|  | 
- **messageTs** | **int?**|  | [optional] 
+ **messageTs** | **string**|  | [optional] 
  **messageId** | **int?**|  | [optional] 
  **prevLimit** | **int?**|  | [optional] 
  **nextLimit** | **int?**|  | [optional] 

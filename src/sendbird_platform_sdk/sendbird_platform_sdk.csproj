@@ -2,17 +2,17 @@
 <!--
 Sendbird Platform SDK
 
-Sendbird Platform API Javascript SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
 
 The version of the OpenAPI document: 1.0.0
-
+Contact: support@sendbird.com
 -->
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B91D86ED-0311-412F-9A83-30CE170B1403}</ProjectGuid>
+    <ProjectGuid>{B0BA1864-A783-49EE-BFB4-1BF55A51BDC0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>sendbird_platform_sdk</RootNamespace>

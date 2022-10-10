@@ -11,7 +11,6 @@ Name | Type | Description | Notes
 **IsActive** | **bool** |  | [optional] 
 **IsMuted** | **bool** |  | [optional] 
 **LastSeenAt** | **int** |  | [optional] 
-**MetaData** | [**SBObject**](SBObject.md) |  | [optional] 
 **Nickname** | **string** |  | [optional] 
 **PlainProfileUrl** | **string** |  | [optional] 
 **PreferredLanguages** | **List&lt;string&gt;** |  | [optional] 

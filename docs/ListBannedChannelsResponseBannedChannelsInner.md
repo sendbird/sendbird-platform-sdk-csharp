@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **StartAt** | **decimal** |  | [optional] 
 **Description** | **string** |  | [optional] 
-**Channel** | [**SendBirdChannelResponse**](.md) |  | [optional] 
+**Channel** | [**SendBirdChannelResponse**](SendBirdChannelResponse.md) |  | [optional] 
 **EndAt** | **decimal** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

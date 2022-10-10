@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**AddRegistrationOrDeviceToken**](UserApi.md#addregistrationordevicetoken) | **POST** /v3/users/{user_id}/push/{token_type} | Add a registration or device token
 [**ChoosePushNotificationContentTemplate**](UserApi.md#choosepushnotificationcontenttemplate) | **PUT** /v3/users/{user_id}/push/template | Choose a push notification content template
 [**CreateUser**](UserApi.md#createuser) | **POST** /v3/users | Create a user
+[**CreateUserToken**](UserApi.md#createusertoken) | **POST** /v3/users/{user_id}/token | Create user token
 [**DeleteUserById**](UserApi.md#deleteuserbyid) | **DELETE** /v3/users/{user_id} | Delete a user
 [**LeaveMyGroupChannels**](UserApi.md#leavemygroupchannels) | **PUT** /v3/users/{user_id}/my_group_channels/leave | Leave my group channels
 [**ListMyGroupChannels**](UserApi.md#listmygroupchannels) | **GET** /v3/users/{user_id}/my_group_channels | List my group channels
@@ -254,6 +255,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**SendBirdUser**](SendBirdUser.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## CreateUserToken
+
+> CreateUserTokenResponse CreateUserToken (string apiToken, string userId, CreateUserTokenData createUserTokenData = null)
+
+Create user token
+
+## Create user token
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class CreateUserTokenExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var userId = "userId_example";  // string | 
+            var createUserTokenData = new CreateUserTokenData(); // CreateUserTokenData |  (optional) 
+
+            try
+            {
+                // Create user token
+                CreateUserTokenResponse result = apiInstance.CreateUserToken(apiToken, userId, createUserTokenData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.CreateUserToken: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **userId** | **string**|  | 
+ **createUserTokenData** | [**CreateUserTokenData**](CreateUserTokenData.md)|  | [optional] 
+
+### Return type
+
+[**CreateUserTokenResponse**](CreateUserTokenResponse.md)
 
 ### Authorization
 

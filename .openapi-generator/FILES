@@ -46,6 +46,8 @@ docs/CreateChannelMetadataResponse.md
 docs/CreateUserData.md
 docs/CreateUserMetadataData.md
 docs/CreateUserMetadataResponse.md
+docs/CreateUserTokenData.md
+docs/CreateUserTokenResponse.md
 docs/CustomTypeListBannedUsersResponse.md
 docs/DataExportApi.md
 docs/DeleteAllowedIpsFromWhitelistResponse.md
@@ -206,6 +208,8 @@ docs/SendBirdGroupChannelChannel.md
 docs/SendBirdGroupChannelCollection.md
 docs/SendBirdGroupChannelCreatedBy.md
 docs/SendBirdGroupChannelDisappearingMessage.md
+docs/SendBirdGroupChannelInviter.md
+docs/SendBirdGroupChannelLastMessage.md
 docs/SendBirdGroupChannelSmsFallback.md
 docs/SendBirdMember.md
 docs/SendBirdMessageMetaArray.md
@@ -305,7 +309,6 @@ docs/WebhookApi.md
 git_push.sh
 mono_nunit_test.sh
 sendbird_platform_sdk.sln
-src/sendbird_platform_sdk.Test/Model/ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInnerTests.cs
 src/sendbird_platform_sdk.Test/packages.config
 src/sendbird_platform_sdk.Test/sendbird_platform_sdk.Test.csproj
 src/sendbird_platform_sdk/Api/AnnouncementApi.cs
@@ -371,6 +374,8 @@ src/sendbird_platform_sdk/Model/CreateChannelMetadataResponse.cs
 src/sendbird_platform_sdk/Model/CreateUserData.cs
 src/sendbird_platform_sdk/Model/CreateUserMetadataData.cs
 src/sendbird_platform_sdk/Model/CreateUserMetadataResponse.cs
+src/sendbird_platform_sdk/Model/CreateUserTokenData.cs
+src/sendbird_platform_sdk/Model/CreateUserTokenResponse.cs
 src/sendbird_platform_sdk/Model/CustomTypeListBannedUsersResponse.cs
 src/sendbird_platform_sdk/Model/DeleteAllowedIpsFromWhitelistResponse.cs
 src/sendbird_platform_sdk/Model/DeleteApnsCertificateByIdResponse.cs
@@ -523,6 +528,8 @@ src/sendbird_platform_sdk/Model/SendBirdGroupChannelChannel.cs
 src/sendbird_platform_sdk/Model/SendBirdGroupChannelCollection.cs
 src/sendbird_platform_sdk/Model/SendBirdGroupChannelCreatedBy.cs
 src/sendbird_platform_sdk/Model/SendBirdGroupChannelDisappearingMessage.cs
+src/sendbird_platform_sdk/Model/SendBirdGroupChannelInviter.cs
+src/sendbird_platform_sdk/Model/SendBirdGroupChannelLastMessage.cs
 src/sendbird_platform_sdk/Model/SendBirdGroupChannelSmsFallback.cs
 src/sendbird_platform_sdk/Model/SendBirdMember.cs
 src/sendbird_platform_sdk/Model/SendBirdMessageMetaArray.cs

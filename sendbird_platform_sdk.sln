@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sendbird_platform_sdk", "src\sendbird_platform_sdk\sendbird_platform_sdk.csproj", "{B91D86ED-0311-412F-9A83-30CE170B1403}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sendbird_platform_sdk", "src\sendbird_platform_sdk\sendbird_platform_sdk.csproj", "{B0BA1864-A783-49EE-BFB4-1BF55A51BDC0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sendbird_platform_sdk.Test", "src\sendbird_platform_sdk.Test\sendbird_platform_sdk.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
 EndProject
@@ -12,10 +12,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B91D86ED-0311-412F-9A83-30CE170B1403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B91D86ED-0311-412F-9A83-30CE170B1403}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B91D86ED-0311-412F-9A83-30CE170B1403}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B91D86ED-0311-412F-9A83-30CE170B1403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0BA1864-A783-49EE-BFB4-1BF55A51BDC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0BA1864-A783-49EE-BFB4-1BF55A51BDC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0BA1864-A783-49EE-BFB4-1BF55A51BDC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0BA1864-A783-49EE-BFB4-1BF55A51BDC0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU
