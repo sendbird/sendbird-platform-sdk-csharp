@@ -55,7 +55,16 @@ namespace sendbird_platform_sdk.Model
         /// <param name="apnsBundleId">Specifies the bundle ID of the client app in order to send a push notification to iOS devices. You can find this in Settings &gt; Chat &gt; Notifications &gt; Push notification services.</param>
         /// <param name="sound">Specifies the name of the file that sounds for critical alerts..</param>
         /// <param name="volume">Specifies the volume of the critical alert sound. The volume ranges from 0.0 to 1.0, which indicates silent and full volume, respectively. (Default 1.0).</param>
-        public SendMessageData(string userId = default(string), string channelType = default(string), string channelUrl = default(string), string messageType = default(string), string message = default(string), string customType = default(string), string data = default(string), bool sendPush = default(bool), string mentionType = default(string), List<string> mentionedUserIds = default(List<string>), bool isSilent = default(bool), string sortedMetaarray = default(string), int createdAt = default(int), string dedupId = default(string), string apnsBundleId = default(string), string sound = default(string), decimal volume = default(decimal))
+        /// <param name="url">url.</param>
+        /// <param name="file">file.</param>
+        /// <param name="fileName">fileName.</param>
+        /// <param name="fileSize">fileSize.</param>
+        /// <param name="fileType">fileType.</param>
+        /// <param name="thumbnails">thumbnails.</param>
+        /// <param name="thumbnail1">thumbnail1.</param>
+        /// <param name="thumbnail2">thumbnail2.</param>
+        /// <param name="thumbnail3">thumbnail3.</param>
+        public SendMessageData(string userId = default(string), string channelType = default(string), string channelUrl = default(string), string messageType = default(string), string message = default(string), string customType = default(string), string data = default(string), bool sendPush = default(bool), string mentionType = default(string), List<string> mentionedUserIds = default(List<string>), bool isSilent = default(bool), string sortedMetaarray = default(string), int createdAt = default(int), string dedupId = default(string), string apnsBundleId = default(string), string sound = default(string), decimal volume = default(decimal), string url = default(string), string file = default(string), string fileName = default(string), decimal fileSize = default(decimal), string fileType = default(string), List<string> thumbnails = default(List<string>), string thumbnail1 = default(string), string thumbnail2 = default(string), string thumbnail3 = default(string))
         {
             // to ensure "userId" is required (not null)
             if (userId == null)
@@ -101,6 +110,15 @@ namespace sendbird_platform_sdk.Model
             this.ApnsBundleId = apnsBundleId;
             this.Sound = sound;
             this.Volume = volume;
+            this.Url = url;
+            this.File = file;
+            this.FileName = fileName;
+            this.FileSize = fileSize;
+            this.FileType = fileType;
+            this.Thumbnails = thumbnails;
+            this.Thumbnail1 = thumbnail1;
+            this.Thumbnail2 = thumbnail2;
+            this.Thumbnail3 = thumbnail3;
         }
 
         /// <summary>
@@ -223,6 +241,60 @@ namespace sendbird_platform_sdk.Model
         public decimal Volume { get; set; }
 
         /// <summary>
+        /// Gets or Sets Url
+        /// </summary>
+        [DataMember(Name="url", EmitDefaultValue=false)]
+        public string Url { get; set; }
+
+        /// <summary>
+        /// Gets or Sets File
+        /// </summary>
+        [DataMember(Name="file", EmitDefaultValue=false)]
+        public string File { get; set; }
+
+        /// <summary>
+        /// Gets or Sets FileName
+        /// </summary>
+        [DataMember(Name="file_name", EmitDefaultValue=false)]
+        public string FileName { get; set; }
+
+        /// <summary>
+        /// Gets or Sets FileSize
+        /// </summary>
+        [DataMember(Name="file_size", EmitDefaultValue=false)]
+        public decimal FileSize { get; set; }
+
+        /// <summary>
+        /// Gets or Sets FileType
+        /// </summary>
+        [DataMember(Name="file_type", EmitDefaultValue=false)]
+        public string FileType { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Thumbnails
+        /// </summary>
+        [DataMember(Name="thumbnails", EmitDefaultValue=false)]
+        public List<string> Thumbnails { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Thumbnail1
+        /// </summary>
+        [DataMember(Name="thumbnail1", EmitDefaultValue=false)]
+        public string Thumbnail1 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Thumbnail2
+        /// </summary>
+        [DataMember(Name="thumbnail2", EmitDefaultValue=false)]
+        public string Thumbnail2 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Thumbnail3
+        /// </summary>
+        [DataMember(Name="thumbnail3", EmitDefaultValue=false)]
+        public string Thumbnail3 { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -247,6 +319,15 @@ namespace sendbird_platform_sdk.Model
             sb.Append("  ApnsBundleId: ").Append(ApnsBundleId).Append("\n");
             sb.Append("  Sound: ").Append(Sound).Append("\n");
             sb.Append("  Volume: ").Append(Volume).Append("\n");
+            sb.Append("  Url: ").Append(Url).Append("\n");
+            sb.Append("  File: ").Append(File).Append("\n");
+            sb.Append("  FileName: ").Append(FileName).Append("\n");
+            sb.Append("  FileSize: ").Append(FileSize).Append("\n");
+            sb.Append("  FileType: ").Append(FileType).Append("\n");
+            sb.Append("  Thumbnails: ").Append(Thumbnails).Append("\n");
+            sb.Append("  Thumbnail1: ").Append(Thumbnail1).Append("\n");
+            sb.Append("  Thumbnail2: ").Append(Thumbnail2).Append("\n");
+            sb.Append("  Thumbnail3: ").Append(Thumbnail3).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -366,6 +447,52 @@ namespace sendbird_platform_sdk.Model
                     this.Volume == input.Volume ||
                     (this.Volume != null &&
                     this.Volume.Equals(input.Volume))
+                ) && 
+                (
+                    this.Url == input.Url ||
+                    (this.Url != null &&
+                    this.Url.Equals(input.Url))
+                ) && 
+                (
+                    this.File == input.File ||
+                    (this.File != null &&
+                    this.File.Equals(input.File))
+                ) && 
+                (
+                    this.FileName == input.FileName ||
+                    (this.FileName != null &&
+                    this.FileName.Equals(input.FileName))
+                ) && 
+                (
+                    this.FileSize == input.FileSize ||
+                    (this.FileSize != null &&
+                    this.FileSize.Equals(input.FileSize))
+                ) && 
+                (
+                    this.FileType == input.FileType ||
+                    (this.FileType != null &&
+                    this.FileType.Equals(input.FileType))
+                ) && 
+                (
+                    this.Thumbnails == input.Thumbnails ||
+                    this.Thumbnails != null &&
+                    input.Thumbnails != null &&
+                    this.Thumbnails.SequenceEqual(input.Thumbnails)
+                ) && 
+                (
+                    this.Thumbnail1 == input.Thumbnail1 ||
+                    (this.Thumbnail1 != null &&
+                    this.Thumbnail1.Equals(input.Thumbnail1))
+                ) && 
+                (
+                    this.Thumbnail2 == input.Thumbnail2 ||
+                    (this.Thumbnail2 != null &&
+                    this.Thumbnail2.Equals(input.Thumbnail2))
+                ) && 
+                (
+                    this.Thumbnail3 == input.Thumbnail3 ||
+                    (this.Thumbnail3 != null &&
+                    this.Thumbnail3.Equals(input.Thumbnail3))
                 );
         }
 
@@ -412,6 +539,24 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.Sound.GetHashCode();
                 if (this.Volume != null)
                     hashCode = hashCode * 59 + this.Volume.GetHashCode();
+                if (this.Url != null)
+                    hashCode = hashCode * 59 + this.Url.GetHashCode();
+                if (this.File != null)
+                    hashCode = hashCode * 59 + this.File.GetHashCode();
+                if (this.FileName != null)
+                    hashCode = hashCode * 59 + this.FileName.GetHashCode();
+                if (this.FileSize != null)
+                    hashCode = hashCode * 59 + this.FileSize.GetHashCode();
+                if (this.FileType != null)
+                    hashCode = hashCode * 59 + this.FileType.GetHashCode();
+                if (this.Thumbnails != null)
+                    hashCode = hashCode * 59 + this.Thumbnails.GetHashCode();
+                if (this.Thumbnail1 != null)
+                    hashCode = hashCode * 59 + this.Thumbnail1.GetHashCode();
+                if (this.Thumbnail2 != null)
+                    hashCode = hashCode * 59 + this.Thumbnail2.GetHashCode();
+                if (this.Thumbnail3 != null)
+                    hashCode = hashCode * 59 + this.Thumbnail3.GetHashCode();
                 return hashCode;
             }
         }

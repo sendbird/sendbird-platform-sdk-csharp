@@ -38,10 +38,10 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ScheduleAnnouncementData" /> class.
         /// </summary>
-        /// <param name="message">The [message](/docs/chat/v3/platform-api/guides/messages#-3-resource-representation) of a new announcement. (required).</param>
-        /// <param name="messageType">Specifies the type of the message, which can be either MESG for a text message and ADMM for an admin message. (required).</param>
-        /// <param name="messageUserId">Specifies the unique ID of the sender when the message.type is MESG. When the message.type value is ADMM, this property is not effective. (required).</param>
-        /// <param name="messageContent">Specifies the content of the message. (required).</param>
+        /// <param name="message">message (required).</param>
+        /// <param name="messageType">Specifies the type of the message, which can be either MESG for a text message and ADMM for an admin message..</param>
+        /// <param name="userId">Specifies the unique ID of the sender when the message.type is MESG. When the message.type value is ADMM, this property is not effective..</param>
+        /// <param name="content">Specifies the content of the message..</param>
         /// <param name="targetAt">Specifies the target channels to send the announcement to. Acceptable values are the following: &lt;br/&gt; - sender_all_channels (Default): sends the announcement to all of the sender&#39;s group channels.&lt;br /&gt;- target_channels: sends the announcement to all target group channels. When the &#x60;message.type&#x60; of the announcement is ADMM, this is the only valid option. &lt;br /&gt; - target_users_included_channels: sends the announcement to group channels consisting of the sender, target users, and other members. &lt;br/&gt; - target_users_only_channels: sends the announcement to group channels consisting of the sender and target users only. (required).</param>
         /// <param name="targetList">Specifies an array of one or more target user IDs or target channel URLs to send the announcement to when the target_at is  target_channels, target_users_only_channels, or target_users_included_channels.&lt;br /&gt;&lt;br /&gt;  When the target_at value is sender_all_channels, this property is not effective. (required).</param>
         /// <param name="targetChannelType">Determines which type of group channel to send the announcement to, based on the target_at and target_list. This property is effective only when the target_at is either target_users_only_channels or target_users_included_channels and the target_list is specified. Acceptable values are limited to the following:&lt;br/&gt;- all: send the announcement to all channels that have all target users and the sender in them, regardless of channel type.&lt;br/&gt;- distinct (default): sends this announcement to the distinct channels. Distinct channels continue to use the same existing channels whenever someone attempts to create a new channel with the same members.&lt;br/&gt;- non-distinct: sends this announcement to the non-distinct channels. Non-distinct channels always create a new channel even if there is an existing channel with the same members.&lt;br/&gt;&lt;br/&gt; The distinct and non-distinct channels are a subtype of group channels, determined by the [is_distinct](/docs/chat/v3/platform-api/guides/group-channel#2-types-of-a-channel-3-resource-representation) property. (required).</param>
@@ -62,7 +62,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="endAt">Specifies the time to permanently end the announcement, in [Unix milliseconds](/docs/chat/v3/platform-api/guides/miscellaneous##2-timestamps) format. If this property is specified, the announcement ends even when the announcement is not sent to all its targets. &lt;br/&gt;&lt;br/&gt; For the announcement to run safely, the end_at time should be set at least 10 minutes later than the scheduled_at time..</param>
         /// <param name="enablePush">Determines whether to turn on push notification for the announcement. If set to true, push notifications will be sent for the announcement. (Default: true).</param>
         /// <param name="assignSenderAsChannelInviter">Determines whether to assign an announcement sender as an inviter of the newly created channels. (Default: false).</param>
-        public ScheduleAnnouncementData(string message = default(string), string messageType = default(string), string messageUserId = default(string), string messageContent = default(string), string targetAt = default(string), List<string> targetList = default(List<string>), string targetChannelType = default(string), string uniqueId = default(string), string messageCustomType = default(string), string messageData = default(string), bool createChannel = default(bool), string announcementGroup = default(string), string createChannelOptions = default(string), string createChannelOptionsName = default(string), string createChannelOptionsCoverUrl = default(string), string createChannelOptionsCustomType = default(string), string createChannelOptionsData = default(string), string createChannelOptionsDistinct = default(string), int scheduledAt = default(int), string ceaseAt = default(string), string resumeAt = default(string), int endAt = default(int), bool enablePush = default(bool), bool assignSenderAsChannelInviter = default(bool))
+        public ScheduleAnnouncementData(ScheduleAnnouncementDataMessage message = default(ScheduleAnnouncementDataMessage), string messageType = default(string), string userId = default(string), string content = default(string), string targetAt = default(string), List<string> targetList = default(List<string>), string targetChannelType = default(string), string uniqueId = default(string), string messageCustomType = default(string), string messageData = default(string), bool createChannel = default(bool), string announcementGroup = default(string), string createChannelOptions = default(string), string createChannelOptionsName = default(string), string createChannelOptionsCoverUrl = default(string), string createChannelOptionsCustomType = default(string), string createChannelOptionsData = default(string), string createChannelOptionsDistinct = default(string), int scheduledAt = default(int), string ceaseAt = default(string), string resumeAt = default(string), int endAt = default(int), bool enablePush = default(bool), bool assignSenderAsChannelInviter = default(bool))
         {
             // to ensure "message" is required (not null)
             if (message == null)
@@ -72,36 +72,6 @@ namespace sendbird_platform_sdk.Model
             else
             {
                 this.Message = message;
-            }
-
-            // to ensure "messageType" is required (not null)
-            if (messageType == null)
-            {
-                throw new InvalidDataException("messageType is a required property for ScheduleAnnouncementData and cannot be null");
-            }
-            else
-            {
-                this.MessageType = messageType;
-            }
-
-            // to ensure "messageUserId" is required (not null)
-            if (messageUserId == null)
-            {
-                throw new InvalidDataException("messageUserId is a required property for ScheduleAnnouncementData and cannot be null");
-            }
-            else
-            {
-                this.MessageUserId = messageUserId;
-            }
-
-            // to ensure "messageContent" is required (not null)
-            if (messageContent == null)
-            {
-                throw new InvalidDataException("messageContent is a required property for ScheduleAnnouncementData and cannot be null");
-            }
-            else
-            {
-                this.MessageContent = messageContent;
             }
 
             // to ensure "targetAt" is required (not null)
@@ -134,6 +104,9 @@ namespace sendbird_platform_sdk.Model
                 this.TargetChannelType = targetChannelType;
             }
 
+            this.MessageType = messageType;
+            this.UserId = userId;
+            this.Content = content;
             this.UniqueId = uniqueId;
             this.MessageCustomType = messageCustomType;
             this.MessageData = messageData;
@@ -154,32 +127,31 @@ namespace sendbird_platform_sdk.Model
         }
 
         /// <summary>
-        /// The [message](/docs/chat/v3/platform-api/guides/messages#-3-resource-representation) of a new announcement.
+        /// Gets or Sets Message
         /// </summary>
-        /// <value>The [message](/docs/chat/v3/platform-api/guides/messages#-3-resource-representation) of a new announcement.</value>
         [DataMember(Name="message", EmitDefaultValue=true)]
-        public string Message { get; set; }
+        public ScheduleAnnouncementDataMessage Message { get; set; }
 
         /// <summary>
         /// Specifies the type of the message, which can be either MESG for a text message and ADMM for an admin message.
         /// </summary>
         /// <value>Specifies the type of the message, which can be either MESG for a text message and ADMM for an admin message.</value>
-        [DataMember(Name="message.type", EmitDefaultValue=true)]
+        [DataMember(Name="message_type", EmitDefaultValue=false)]
         public string MessageType { get; set; }
 
         /// <summary>
         /// Specifies the unique ID of the sender when the message.type is MESG. When the message.type value is ADMM, this property is not effective.
         /// </summary>
         /// <value>Specifies the unique ID of the sender when the message.type is MESG. When the message.type value is ADMM, this property is not effective.</value>
-        [DataMember(Name="message.user_id", EmitDefaultValue=true)]
-        public string MessageUserId { get; set; }
+        [DataMember(Name="user_id", EmitDefaultValue=false)]
+        public string UserId { get; set; }
 
         /// <summary>
         /// Specifies the content of the message.
         /// </summary>
         /// <value>Specifies the content of the message.</value>
-        [DataMember(Name="message.content", EmitDefaultValue=true)]
-        public string MessageContent { get; set; }
+        [DataMember(Name="content", EmitDefaultValue=false)]
+        public string Content { get; set; }
 
         /// <summary>
         /// Specifies the target channels to send the announcement to. Acceptable values are the following: &lt;br/&gt; - sender_all_channels (Default): sends the announcement to all of the sender&#39;s group channels.&lt;br /&gt;- target_channels: sends the announcement to all target group channels. When the &#x60;message.type&#x60; of the announcement is ADMM, this is the only valid option. &lt;br /&gt; - target_users_included_channels: sends the announcement to group channels consisting of the sender, target users, and other members. &lt;br/&gt; - target_users_only_channels: sends the announcement to group channels consisting of the sender and target users only.
@@ -331,8 +303,8 @@ namespace sendbird_platform_sdk.Model
             sb.Append("class ScheduleAnnouncementData {\n");
             sb.Append("  Message: ").Append(Message).Append("\n");
             sb.Append("  MessageType: ").Append(MessageType).Append("\n");
-            sb.Append("  MessageUserId: ").Append(MessageUserId).Append("\n");
-            sb.Append("  MessageContent: ").Append(MessageContent).Append("\n");
+            sb.Append("  UserId: ").Append(UserId).Append("\n");
+            sb.Append("  Content: ").Append(Content).Append("\n");
             sb.Append("  TargetAt: ").Append(TargetAt).Append("\n");
             sb.Append("  TargetList: ").Append(TargetList).Append("\n");
             sb.Append("  TargetChannelType: ").Append(TargetChannelType).Append("\n");
@@ -398,14 +370,14 @@ namespace sendbird_platform_sdk.Model
                     this.MessageType.Equals(input.MessageType))
                 ) && 
                 (
-                    this.MessageUserId == input.MessageUserId ||
-                    (this.MessageUserId != null &&
-                    this.MessageUserId.Equals(input.MessageUserId))
+                    this.UserId == input.UserId ||
+                    (this.UserId != null &&
+                    this.UserId.Equals(input.UserId))
                 ) && 
                 (
-                    this.MessageContent == input.MessageContent ||
-                    (this.MessageContent != null &&
-                    this.MessageContent.Equals(input.MessageContent))
+                    this.Content == input.Content ||
+                    (this.Content != null &&
+                    this.Content.Equals(input.Content))
                 ) && 
                 (
                     this.TargetAt == input.TargetAt ||
@@ -523,10 +495,10 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.Message.GetHashCode();
                 if (this.MessageType != null)
                     hashCode = hashCode * 59 + this.MessageType.GetHashCode();
-                if (this.MessageUserId != null)
-                    hashCode = hashCode * 59 + this.MessageUserId.GetHashCode();
-                if (this.MessageContent != null)
-                    hashCode = hashCode * 59 + this.MessageContent.GetHashCode();
+                if (this.UserId != null)
+                    hashCode = hashCode * 59 + this.UserId.GetHashCode();
+                if (this.Content != null)
+                    hashCode = hashCode * 59 + this.Content.GetHashCode();
                 if (this.TargetAt != null)
                     hashCode = hashCode * 59 + this.TargetAt.GetHashCode();
                 if (this.TargetList != null)

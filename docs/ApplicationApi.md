@@ -9,9 +9,11 @@ Method | HTTP request | Description
 [**AddHmsPushConfiguration**](ApplicationApi.md#addhmspushconfiguration) | **POST** /v3/applications/push/hms | Add an HMS push configuration
 [**AddIpToWhitelist**](ApplicationApi.md#addiptowhitelist) | **PUT** /v3/applications/settings/ip_whitelist | Add an IP to a whitelist
 [**BanUsersInChannelsWithCustomChannelType**](ApplicationApi.md#banusersinchannelswithcustomchanneltype) | **POST** /v3/applications/settings_by_channel_custom_type/{custom_type}/ban | Ban users in channels with a custom channel type
+[**ConfigureAutoEventMessages**](ApplicationApi.md#configureautoeventmessages) | **PUT** /v3/applications/settings/auto_event_message | Configure auto event message settings
 [**DeleteAllowedIpsFromWhitelist**](ApplicationApi.md#deleteallowedipsfromwhitelist) | **DELETE** /v3/applications/settings/ip_whitelist | Delete allowed IPs from a whitelist
 [**DeleteApnsCertificateById**](ApplicationApi.md#deleteapnscertificatebyid) | **DELETE** /v3/applications/push/apns/cert/{provider_id} | Delete an APNs certificate
 [**GenerateSecondaryApiToken**](ApplicationApi.md#generatesecondaryapitoken) | **POST** /v3/applications/api_tokens | Generate a secondary API token
+[**ListAutoEventMessages**](ApplicationApi.md#listautoeventmessages) | **GET** /v3/applications/settings/auto_event_message | List auto event messages
 [**ListBannedUsersInChannelsWithCustomChannelType**](ApplicationApi.md#listbannedusersinchannelswithcustomchanneltype) | **GET** /v3/applications/settings_by_channel_custom_type/{custom_type}/ban | List banned users in channels with a custom channel type
 [**ListMutedUsersInChannelsWithCustomChannelType**](ApplicationApi.md#listmutedusersinchannelswithcustomchanneltype) | **GET** /v3/applications/settings_by_channel_custom_type/{custom_type}/mute | List muted users in channels with a custom channel type
 [**ListPushConfigurations**](ApplicationApi.md#listpushconfigurations) | **GET** /v3/applications/push/{push_type} | List push configurations
@@ -428,6 +430,84 @@ No authorization required
 [[Back to README]](../README.md)
 
 
+## ConfigureAutoEventMessages
+
+> SendBirdAutoEventMessageSettings ConfigureAutoEventMessages (string apiToken, ConfigureAutoEventData configureAutoEventData = null)
+
+Configure auto event message settings
+
+## Configure auto event message settings  Determines whether to automatically send event messages to group channels when events take place in an application. You can choose which auto event message to receive on the Sendbird Dashboard  https://sendbird.com/docs/chat/v3/platform-api/application/managing-auto-event-messages/configure-auto-event-message-settings - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class ConfigureAutoEventMessagesExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+            var configureAutoEventData = new ConfigureAutoEventData(); // ConfigureAutoEventData |  (optional) 
+
+            try
+            {
+                // Configure auto event message settings
+                SendBirdAutoEventMessageSettings result = apiInstance.ConfigureAutoEventMessages(apiToken, configureAutoEventData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.ConfigureAutoEventMessages: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+ **configureAutoEventData** | [**ConfigureAutoEventData**](ConfigureAutoEventData.md)|  | [optional] 
+
+### Return type
+
+[**SendBirdAutoEventMessageSettings**](SendBirdAutoEventMessageSettings.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## DeleteAllowedIpsFromWhitelist
 
 > DeleteAllowedIpsFromWhitelistResponse DeleteAllowedIpsFromWhitelist (string apiToken, List<string> ipWhitelistAddresses)
@@ -648,6 +728,82 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ListAutoEventMessages
+
+> SendBirdAutoEventMessageSettings ListAutoEventMessages (string apiToken)
+
+List auto event messages
+
+## List auto event messages  Retrieves a list of auto event messages that are sent in a specified application and indicates which ones are in use. Auto event messages are Admin messages that are automatically generated when a specific event occurs.  https://sendbird.com/docs/chat/v3/platform-api/application/managing-auto-event-messages/list-auto-event-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class ListAutoEventMessagesExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new ApplicationApi(Configuration.Default);
+            var apiToken = {{API_TOKEN}};  // string | 
+
+            try
+            {
+                // List auto event messages
+                SendBirdAutoEventMessageSettings result = apiInstance.ListAutoEventMessages(apiToken);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.ListAutoEventMessages: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiToken** | **string**|  | 
+
+### Return type
+
+[**SendBirdAutoEventMessageSettings**](SendBirdAutoEventMessageSettings.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
 - **Accept**: application/json
 
 

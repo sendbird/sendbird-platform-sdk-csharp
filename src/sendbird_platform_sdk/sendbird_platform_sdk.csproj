@@ -12,7 +12,7 @@ Contact: support@sendbird.com
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B0BA1864-A783-49EE-BFB4-1BF55A51BDC0}</ProjectGuid>
+    <ProjectGuid>{6DA2C7B5-DB35-4720-9631-E3C338FB2635}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>sendbird_platform_sdk</RootNamespace>

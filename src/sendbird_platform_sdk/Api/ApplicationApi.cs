@@ -143,6 +143,29 @@ namespace sendbird_platform_sdk.Api
         /// <returns>ApiResponse of Object</returns>
         ApiResponse<Object> BanUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = default(BanUsersInChannelsWithCustomChannelTypeData));
         /// <summary>
+        /// Configure auto event message settings
+        /// </summary>
+        /// <remarks>
+        /// ## Configure auto event message settings  Determines whether to automatically send event messages to group channels when events take place in an application. You can choose which auto event message to receive on the Sendbird Dashboard  https://sendbird.com/docs/chat/v3/platform-api/application/managing-auto-event-messages/configure-auto-event-message-settings - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="configureAutoEventData"> (optional)</param>
+        /// <returns>SendBirdAutoEventMessageSettings</returns>
+        SendBirdAutoEventMessageSettings ConfigureAutoEventMessages (string apiToken, ConfigureAutoEventData configureAutoEventData = default(ConfigureAutoEventData));
+
+        /// <summary>
+        /// Configure auto event message settings
+        /// </summary>
+        /// <remarks>
+        /// ## Configure auto event message settings  Determines whether to automatically send event messages to group channels when events take place in an application. You can choose which auto event message to receive on the Sendbird Dashboard  https://sendbird.com/docs/chat/v3/platform-api/application/managing-auto-event-messages/configure-auto-event-message-settings - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="configureAutoEventData"> (optional)</param>
+        /// <returns>ApiResponse of SendBirdAutoEventMessageSettings</returns>
+        ApiResponse<SendBirdAutoEventMessageSettings> ConfigureAutoEventMessagesWithHttpInfo (string apiToken, ConfigureAutoEventData configureAutoEventData = default(ConfigureAutoEventData));
+        /// <summary>
         /// Delete allowed IPs from a whitelist
         /// </summary>
         /// <remarks>
@@ -211,6 +234,27 @@ namespace sendbird_platform_sdk.Api
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
         /// <returns>ApiResponse of GenerateSecondaryApiTokenResponse</returns>
         ApiResponse<GenerateSecondaryApiTokenResponse> GenerateSecondaryApiTokenWithHttpInfo (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData));
+        /// <summary>
+        /// List auto event messages
+        /// </summary>
+        /// <remarks>
+        /// ## List auto event messages  Retrieves a list of auto event messages that are sent in a specified application and indicates which ones are in use. Auto event messages are Admin messages that are automatically generated when a specific event occurs.  https://sendbird.com/docs/chat/v3/platform-api/application/managing-auto-event-messages/list-auto-event-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <returns>SendBirdAutoEventMessageSettings</returns>
+        SendBirdAutoEventMessageSettings ListAutoEventMessages (string apiToken);
+
+        /// <summary>
+        /// List auto event messages
+        /// </summary>
+        /// <remarks>
+        /// ## List auto event messages  Retrieves a list of auto event messages that are sent in a specified application and indicates which ones are in use. Auto event messages are Admin messages that are automatically generated when a specific event occurs.  https://sendbird.com/docs/chat/v3/platform-api/application/managing-auto-event-messages/list-auto-event-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <returns>ApiResponse of SendBirdAutoEventMessageSettings</returns>
+        ApiResponse<SendBirdAutoEventMessageSettings> ListAutoEventMessagesWithHttpInfo (string apiToken);
         /// <summary>
         /// List banned users in channels with a custom channel type
         /// </summary>
@@ -844,6 +888,31 @@ namespace sendbird_platform_sdk.Api
         /// <returns>Task of ApiResponse (Object)</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> BanUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = default(BanUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
+        /// Configure auto event message settings
+        /// </summary>
+        /// <remarks>
+        /// ## Configure auto event message settings  Determines whether to automatically send event messages to group channels when events take place in an application. You can choose which auto event message to receive on the Sendbird Dashboard  https://sendbird.com/docs/chat/v3/platform-api/application/managing-auto-event-messages/configure-auto-event-message-settings - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="configureAutoEventData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of SendBirdAutoEventMessageSettings</returns>
+        System.Threading.Tasks.Task<SendBirdAutoEventMessageSettings> ConfigureAutoEventMessagesAsync (string apiToken, ConfigureAutoEventData configureAutoEventData = default(ConfigureAutoEventData), CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// Configure auto event message settings
+        /// </summary>
+        /// <remarks>
+        /// ## Configure auto event message settings  Determines whether to automatically send event messages to group channels when events take place in an application. You can choose which auto event message to receive on the Sendbird Dashboard  https://sendbird.com/docs/chat/v3/platform-api/application/managing-auto-event-messages/configure-auto-event-message-settings - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="configureAutoEventData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (SendBirdAutoEventMessageSettings)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SendBirdAutoEventMessageSettings>> ConfigureAutoEventMessagesWithHttpInfoAsync (string apiToken, ConfigureAutoEventData configureAutoEventData = default(ConfigureAutoEventData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
         /// Delete allowed IPs from a whitelist
         /// </summary>
         /// <remarks>
@@ -918,6 +987,29 @@ namespace sendbird_platform_sdk.Api
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GenerateSecondaryApiTokenResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GenerateSecondaryApiTokenResponse>> GenerateSecondaryApiTokenWithHttpInfoAsync (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
+        /// List auto event messages
+        /// </summary>
+        /// <remarks>
+        /// ## List auto event messages  Retrieves a list of auto event messages that are sent in a specified application and indicates which ones are in use. Auto event messages are Admin messages that are automatically generated when a specific event occurs.  https://sendbird.com/docs/chat/v3/platform-api/application/managing-auto-event-messages/list-auto-event-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of SendBirdAutoEventMessageSettings</returns>
+        System.Threading.Tasks.Task<SendBirdAutoEventMessageSettings> ListAutoEventMessagesAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// List auto event messages
+        /// </summary>
+        /// <remarks>
+        /// ## List auto event messages  Retrieves a list of auto event messages that are sent in a specified application and indicates which ones are in use. Auto event messages are Admin messages that are automatically generated when a specific event occurs.  https://sendbird.com/docs/chat/v3/platform-api/application/managing-auto-event-messages/list-auto-event-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (SendBirdAutoEventMessageSettings)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SendBirdAutoEventMessageSettings>> ListAutoEventMessagesWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List banned users in channels with a custom channel type
         /// </summary>
@@ -2372,6 +2464,163 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
+        /// Configure auto event message settings ## Configure auto event message settings  Determines whether to automatically send event messages to group channels when events take place in an application. You can choose which auto event message to receive on the Sendbird Dashboard  https://sendbird.com/docs/chat/v3/platform-api/application/managing-auto-event-messages/configure-auto-event-message-settings - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="configureAutoEventData"> (optional)</param>
+        /// <returns>SendBirdAutoEventMessageSettings</returns>
+        public SendBirdAutoEventMessageSettings ConfigureAutoEventMessages (string apiToken, ConfigureAutoEventData configureAutoEventData = default(ConfigureAutoEventData))
+        {
+             ApiResponse<SendBirdAutoEventMessageSettings> localVarResponse = ConfigureAutoEventMessagesWithHttpInfo(apiToken, configureAutoEventData);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Configure auto event message settings ## Configure auto event message settings  Determines whether to automatically send event messages to group channels when events take place in an application. You can choose which auto event message to receive on the Sendbird Dashboard  https://sendbird.com/docs/chat/v3/platform-api/application/managing-auto-event-messages/configure-auto-event-message-settings - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="configureAutoEventData"> (optional)</param>
+        /// <returns>ApiResponse of SendBirdAutoEventMessageSettings</returns>
+        public ApiResponse<SendBirdAutoEventMessageSettings> ConfigureAutoEventMessagesWithHttpInfo (string apiToken, ConfigureAutoEventData configureAutoEventData = default(ConfigureAutoEventData))
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ConfigureAutoEventMessages");
+
+            var localVarPath = "/v3/applications/settings/auto_event_message";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (configureAutoEventData != null && configureAutoEventData.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(configureAutoEventData); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = configureAutoEventData; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ConfigureAutoEventMessages", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<SendBirdAutoEventMessageSettings>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (SendBirdAutoEventMessageSettings) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdAutoEventMessageSettings)));
+        }
+
+        /// <summary>
+        /// Configure auto event message settings ## Configure auto event message settings  Determines whether to automatically send event messages to group channels when events take place in an application. You can choose which auto event message to receive on the Sendbird Dashboard  https://sendbird.com/docs/chat/v3/platform-api/application/managing-auto-event-messages/configure-auto-event-message-settings - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="configureAutoEventData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of SendBirdAutoEventMessageSettings</returns>
+        public async System.Threading.Tasks.Task<SendBirdAutoEventMessageSettings> ConfigureAutoEventMessagesAsync (string apiToken, ConfigureAutoEventData configureAutoEventData = default(ConfigureAutoEventData), CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<SendBirdAutoEventMessageSettings> localVarResponse = await ConfigureAutoEventMessagesWithHttpInfoAsync(apiToken, configureAutoEventData, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Configure auto event message settings ## Configure auto event message settings  Determines whether to automatically send event messages to group channels when events take place in an application. You can choose which auto event message to receive on the Sendbird Dashboard  https://sendbird.com/docs/chat/v3/platform-api/application/managing-auto-event-messages/configure-auto-event-message-settings - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="configureAutoEventData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (SendBirdAutoEventMessageSettings)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdAutoEventMessageSettings>> ConfigureAutoEventMessagesWithHttpInfoAsync (string apiToken, ConfigureAutoEventData configureAutoEventData = default(ConfigureAutoEventData), CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ConfigureAutoEventMessages");
+
+            var localVarPath = "/v3/applications/settings/auto_event_message";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (configureAutoEventData != null && configureAutoEventData.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(configureAutoEventData); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = configureAutoEventData; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ConfigureAutoEventMessages", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<SendBirdAutoEventMessageSettings>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (SendBirdAutoEventMessageSettings) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdAutoEventMessageSettings)));
+        }
+
+        /// <summary>
         /// Delete allowed IPs from a whitelist ## Delete allowed IPs from a whitelist  Deletes allowed IPs from the whitelist by specifying their IP addresses or ranges. You can configure the IP whitelist under Settings > Security > Allowed IPs in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-delete-allowed-ips-from-a-whitelist
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2820,6 +3069,141 @@ namespace sendbird_platform_sdk.Api
             return new ApiResponse<GenerateSecondaryApiTokenResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
                 (GenerateSecondaryApiTokenResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GenerateSecondaryApiTokenResponse)));
+        }
+
+        /// <summary>
+        /// List auto event messages ## List auto event messages  Retrieves a list of auto event messages that are sent in a specified application and indicates which ones are in use. Auto event messages are Admin messages that are automatically generated when a specific event occurs.  https://sendbird.com/docs/chat/v3/platform-api/application/managing-auto-event-messages/list-auto-event-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <returns>SendBirdAutoEventMessageSettings</returns>
+        public SendBirdAutoEventMessageSettings ListAutoEventMessages (string apiToken)
+        {
+             ApiResponse<SendBirdAutoEventMessageSettings> localVarResponse = ListAutoEventMessagesWithHttpInfo(apiToken);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// List auto event messages ## List auto event messages  Retrieves a list of auto event messages that are sent in a specified application and indicates which ones are in use. Auto event messages are Admin messages that are automatically generated when a specific event occurs.  https://sendbird.com/docs/chat/v3/platform-api/application/managing-auto-event-messages/list-auto-event-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <returns>ApiResponse of SendBirdAutoEventMessageSettings</returns>
+        public ApiResponse<SendBirdAutoEventMessageSettings> ListAutoEventMessagesWithHttpInfo (string apiToken)
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ListAutoEventMessages");
+
+            var localVarPath = "/v3/applications/settings/auto_event_message";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ListAutoEventMessages", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<SendBirdAutoEventMessageSettings>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (SendBirdAutoEventMessageSettings) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdAutoEventMessageSettings)));
+        }
+
+        /// <summary>
+        /// List auto event messages ## List auto event messages  Retrieves a list of auto event messages that are sent in a specified application and indicates which ones are in use. Auto event messages are Admin messages that are automatically generated when a specific event occurs.  https://sendbird.com/docs/chat/v3/platform-api/application/managing-auto-event-messages/list-auto-event-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of SendBirdAutoEventMessageSettings</returns>
+        public async System.Threading.Tasks.Task<SendBirdAutoEventMessageSettings> ListAutoEventMessagesAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<SendBirdAutoEventMessageSettings> localVarResponse = await ListAutoEventMessagesWithHttpInfoAsync(apiToken, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// List auto event messages ## List auto event messages  Retrieves a list of auto event messages that are sent in a specified application and indicates which ones are in use. Auto event messages are Admin messages that are automatically generated when a specific event occurs.  https://sendbird.com/docs/chat/v3/platform-api/application/managing-auto-event-messages/list-auto-event-messages - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (SendBirdAutoEventMessageSettings)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdAutoEventMessageSettings>> ListAutoEventMessagesWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling ApplicationApi->ListAutoEventMessages");
+
+            var localVarPath = "/v3/applications/settings/auto_event_message";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ListAutoEventMessages", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<SendBirdAutoEventMessageSettings>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (SendBirdAutoEventMessageSettings) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdAutoEventMessageSettings)));
         }
 
         /// <summary>

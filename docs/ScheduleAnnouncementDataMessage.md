@@ -1,14 +1,13 @@
 
-# sendbird_platform_sdk.Model.SendBirdMessageResponseMentionedUsers
+# sendbird_platform_sdk.Model.ScheduleAnnouncementDataMessage
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Type** | **string** |  | [optional] 
 **UserId** | **string** |  | [optional] 
-**Nickname** | **string** |  | [optional] 
-**ProfileUrl** | **string** |  | [optional] 
-**Metadata** | [**InlineResponse2001**](InlineResponse2001.md) |  | [optional] 
+**Content** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

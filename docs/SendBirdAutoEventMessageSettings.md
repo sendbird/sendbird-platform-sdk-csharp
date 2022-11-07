@@ -1,12 +1,11 @@
 
-# sendbird_platform_sdk.Model.ListSecondaryApiTokensResponseApiTokens
+# sendbird_platform_sdk.Model.SendBirdAutoEventMessageSettings
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Token** | **string** |  | [optional] 
-**CreatedAt** | **decimal** |  | [optional] 
+**AutoEventMessage** | [**ConfigureAutoEventDataAutoEventMessage**](ConfigureAutoEventDataAutoEventMessage.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

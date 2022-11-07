@@ -37,6 +37,8 @@ docs/ChoosePushNotificationContentTemplateResponse.md
 docs/ChooseWhichEventsToSubscribeToData.md
 docs/ChooseWhichEventsToSubscribeToResponse.md
 docs/ChooseWhichEventsToSubscribeToResponseWebhook.md
+docs/ConfigureAutoEventData.md
+docs/ConfigureAutoEventDataAutoEventMessage.md
 docs/CreateBotData.md
 docs/CreateBotResponse.md
 docs/CreateBotResponseBot.md
@@ -192,11 +194,13 @@ docs/RetrieveListOfSubscribedEventsResponseWebhook.md
 docs/RevokeSecondaryApiTokenByTokenResponse.md
 docs/SBObject.md
 docs/ScheduleAnnouncementData.md
+docs/ScheduleAnnouncementDataMessage.md
 docs/ScheduleAnnouncementResponse.md
 docs/ScheduleAnnouncementResponseCreateChannelOptions.md
 docs/ScheduleAnnouncementResponseMessage.md
 docs/SendBirdAdminMessage.md
 docs/SendBirdAppleCriticalAlertOptions.md
+docs/SendBirdAutoEventMessageSettings.md
 docs/SendBirdBaseChannel.md
 docs/SendBirdBaseMessageInstance.md
 docs/SendBirdChannelResponse.md
@@ -365,6 +369,8 @@ src/sendbird_platform_sdk/Model/ChoosePushNotificationContentTemplateResponse.cs
 src/sendbird_platform_sdk/Model/ChooseWhichEventsToSubscribeToData.cs
 src/sendbird_platform_sdk/Model/ChooseWhichEventsToSubscribeToResponse.cs
 src/sendbird_platform_sdk/Model/ChooseWhichEventsToSubscribeToResponseWebhook.cs
+src/sendbird_platform_sdk/Model/ConfigureAutoEventData.cs
+src/sendbird_platform_sdk/Model/ConfigureAutoEventDataAutoEventMessage.cs
 src/sendbird_platform_sdk/Model/CreateBotData.cs
 src/sendbird_platform_sdk/Model/CreateBotResponse.cs
 src/sendbird_platform_sdk/Model/CreateBotResponseBot.cs
@@ -512,11 +518,13 @@ src/sendbird_platform_sdk/Model/RetrieveListOfSubscribedEventsResponseWebhook.cs
 src/sendbird_platform_sdk/Model/RevokeSecondaryApiTokenByTokenResponse.cs
 src/sendbird_platform_sdk/Model/SBObject.cs
 src/sendbird_platform_sdk/Model/ScheduleAnnouncementData.cs
+src/sendbird_platform_sdk/Model/ScheduleAnnouncementDataMessage.cs
 src/sendbird_platform_sdk/Model/ScheduleAnnouncementResponse.cs
 src/sendbird_platform_sdk/Model/ScheduleAnnouncementResponseCreateChannelOptions.cs
 src/sendbird_platform_sdk/Model/ScheduleAnnouncementResponseMessage.cs
 src/sendbird_platform_sdk/Model/SendBirdAdminMessage.cs
 src/sendbird_platform_sdk/Model/SendBirdAppleCriticalAlertOptions.cs
+src/sendbird_platform_sdk/Model/SendBirdAutoEventMessageSettings.cs
 src/sendbird_platform_sdk/Model/SendBirdBaseChannel.cs
 src/sendbird_platform_sdk/Model/SendBirdBaseMessageInstance.cs
 src/sendbird_platform_sdk/Model/SendBirdChannelResponse.cs

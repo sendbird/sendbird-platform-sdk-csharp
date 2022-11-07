@@ -26,6 +26,62 @@ namespace sendbird_platform_sdk.Api
     {
         #region Synchronous Operations
         /// <summary>
+        /// Get detailed open rate of an announcement
+        /// </summary>
+        /// <remarks>
+        /// ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `unique_id`      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="uniqueId"></param>
+        /// <returns>GetDetailedOpenRateOfAnnouncementByIdResponse</returns>
+        GetDetailedOpenRateOfAnnouncementByIdResponse GetDetailedOpenRateOfAnnouncementById (string apiToken, string uniqueId);
+
+        /// <summary>
+        /// Get detailed open rate of an announcement
+        /// </summary>
+        /// <remarks>
+        /// ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `unique_id`      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="uniqueId"></param>
+        /// <returns>ApiResponse of GetDetailedOpenRateOfAnnouncementByIdResponse</returns>
+        ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfo (string apiToken, string uniqueId);
+        /// <summary>
+        /// Get detailed open status of an announcement
+        /// </summary>
+        /// <remarks>
+        /// ## Get detailed open status of an announcement  Retrieves the detailed open status information of a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-status-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="uniqueId"></param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="next"> (optional)</param>
+        /// <param name="uniqueIds"> (optional)</param>
+        /// <param name="channelUrls"> (optional)</param>
+        /// <param name="hasOpened"> (optional)</param>
+        /// <returns>GetDetailedOpenStatusOfAnnouncementByIdResponse</returns>
+        GetDetailedOpenStatusOfAnnouncementByIdResponse GetDetailedOpenStatusOfAnnouncementById (string apiToken, string uniqueId, int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?));
+
+        /// <summary>
+        /// Get detailed open status of an announcement
+        /// </summary>
+        /// <remarks>
+        /// ## Get detailed open status of an announcement  Retrieves the detailed open status information of a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-status-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="uniqueId"></param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="next"> (optional)</param>
+        /// <param name="uniqueIds"> (optional)</param>
+        /// <param name="channelUrls"> (optional)</param>
+        /// <param name="hasOpened"> (optional)</param>
+        /// <returns>ApiResponse of GetDetailedOpenStatusOfAnnouncementByIdResponse</returns>
+        ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfo (string apiToken, string uniqueId, int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?));
+        /// <summary>
         /// Retrieve Advanced analytics metrics
         /// </summary>
         /// <remarks>
@@ -150,6 +206,66 @@ namespace sendbird_platform_sdk.Api
         ApiResponse<ViewNumberOfPeakConnectionsResponse> ViewNumberOfPeakConnectionsWithHttpInfo (string apiToken, string timeDimension, int startYear, int startMonth, int endYear, int endMonth, int? startDay = default(int?), int? endDay = default(int?));
         #endregion Synchronous Operations
         #region Asynchronous Operations
+        /// <summary>
+        /// Get detailed open rate of an announcement
+        /// </summary>
+        /// <remarks>
+        /// ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `unique_id`      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="uniqueId"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of GetDetailedOpenRateOfAnnouncementByIdResponse</returns>
+        System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementByIdResponse> GetDetailedOpenRateOfAnnouncementByIdAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// Get detailed open rate of an announcement
+        /// </summary>
+        /// <remarks>
+        /// ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `unique_id`      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="uniqueId"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (GetDetailedOpenRateOfAnnouncementByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse>> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
+        /// Get detailed open status of an announcement
+        /// </summary>
+        /// <remarks>
+        /// ## Get detailed open status of an announcement  Retrieves the detailed open status information of a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-status-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="uniqueId"></param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="next"> (optional)</param>
+        /// <param name="uniqueIds"> (optional)</param>
+        /// <param name="channelUrls"> (optional)</param>
+        /// <param name="hasOpened"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of GetDetailedOpenStatusOfAnnouncementByIdResponse</returns>
+        System.Threading.Tasks.Task<GetDetailedOpenStatusOfAnnouncementByIdResponse> GetDetailedOpenStatusOfAnnouncementByIdAsync (string apiToken, string uniqueId, int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// Get detailed open status of an announcement
+        /// </summary>
+        /// <remarks>
+        /// ## Get detailed open status of an announcement  Retrieves the detailed open status information of a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-status-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="uniqueId"></param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="next"> (optional)</param>
+        /// <param name="uniqueIds"> (optional)</param>
+        /// <param name="channelUrls"> (optional)</param>
+        /// <param name="hasOpened"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (GetDetailedOpenStatusOfAnnouncementByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse>> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Retrieve Advanced analytics metrics
         /// </summary>
@@ -392,6 +508,330 @@ namespace sendbird_platform_sdk.Api
         public void AddDefaultHeader(string key, string value)
         {
             this.Configuration.AddDefaultHeader(key, value);
+        }
+
+        /// <summary>
+        /// Get detailed open rate of an announcement ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `unique_id`      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="uniqueId"></param>
+        /// <returns>GetDetailedOpenRateOfAnnouncementByIdResponse</returns>
+        public GetDetailedOpenRateOfAnnouncementByIdResponse GetDetailedOpenRateOfAnnouncementById (string apiToken, string uniqueId)
+        {
+             ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse> localVarResponse = GetDetailedOpenRateOfAnnouncementByIdWithHttpInfo(apiToken, uniqueId);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get detailed open rate of an announcement ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `unique_id`      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="uniqueId"></param>
+        /// <returns>ApiResponse of GetDetailedOpenRateOfAnnouncementByIdResponse</returns>
+        public ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfo (string apiToken, string uniqueId)
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling StatisticsApi->GetDetailedOpenRateOfAnnouncementById");
+            // verify the required parameter 'uniqueId' is set
+            if (uniqueId == null)
+                throw new ApiException(400, "Missing required parameter 'uniqueId' when calling StatisticsApi->GetDetailedOpenRateOfAnnouncementById");
+
+            var localVarPath = "/v3/announcement_open_rate/{unique_id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (uniqueId != null) localVarPathParams.Add("unique_id", this.Configuration.ApiClient.ParameterToString(uniqueId)); // path parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetDetailedOpenRateOfAnnouncementById", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (GetDetailedOpenRateOfAnnouncementByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetDetailedOpenRateOfAnnouncementByIdResponse)));
+        }
+
+        /// <summary>
+        /// Get detailed open rate of an announcement ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `unique_id`      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="uniqueId"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of GetDetailedOpenRateOfAnnouncementByIdResponse</returns>
+        public async System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementByIdResponse> GetDetailedOpenRateOfAnnouncementByIdAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse> localVarResponse = await GetDetailedOpenRateOfAnnouncementByIdWithHttpInfoAsync(apiToken, uniqueId, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get detailed open rate of an announcement ## Get detailed open rate of an announcement  Retrieves the detailed open rate information of an announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `unique_id`      Type: string      Description: Specifies the unique ID of the announcement to get its open rate.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="uniqueId"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (GetDetailedOpenRateOfAnnouncementByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse>> GetDetailedOpenRateOfAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling StatisticsApi->GetDetailedOpenRateOfAnnouncementById");
+            // verify the required parameter 'uniqueId' is set
+            if (uniqueId == null)
+                throw new ApiException(400, "Missing required parameter 'uniqueId' when calling StatisticsApi->GetDetailedOpenRateOfAnnouncementById");
+
+            var localVarPath = "/v3/announcement_open_rate/{unique_id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (uniqueId != null) localVarPathParams.Add("unique_id", this.Configuration.ApiClient.ParameterToString(uniqueId)); // path parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetDetailedOpenRateOfAnnouncementById", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<GetDetailedOpenRateOfAnnouncementByIdResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (GetDetailedOpenRateOfAnnouncementByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetDetailedOpenRateOfAnnouncementByIdResponse)));
+        }
+
+        /// <summary>
+        /// Get detailed open status of an announcement ## Get detailed open status of an announcement  Retrieves the detailed open status information of a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-status-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="uniqueId"></param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="next"> (optional)</param>
+        /// <param name="uniqueIds"> (optional)</param>
+        /// <param name="channelUrls"> (optional)</param>
+        /// <param name="hasOpened"> (optional)</param>
+        /// <returns>GetDetailedOpenStatusOfAnnouncementByIdResponse</returns>
+        public GetDetailedOpenStatusOfAnnouncementByIdResponse GetDetailedOpenStatusOfAnnouncementById (string apiToken, string uniqueId, int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?))
+        {
+             ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse> localVarResponse = GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfo(apiToken, uniqueId, limit, next, uniqueIds, channelUrls, hasOpened);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get detailed open status of an announcement ## Get detailed open status of an announcement  Retrieves the detailed open status information of a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-status-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="uniqueId"></param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="next"> (optional)</param>
+        /// <param name="uniqueIds"> (optional)</param>
+        /// <param name="channelUrls"> (optional)</param>
+        /// <param name="hasOpened"> (optional)</param>
+        /// <returns>ApiResponse of GetDetailedOpenStatusOfAnnouncementByIdResponse</returns>
+        public ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfo (string apiToken, string uniqueId, int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?))
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling StatisticsApi->GetDetailedOpenStatusOfAnnouncementById");
+            // verify the required parameter 'uniqueId' is set
+            if (uniqueId == null)
+                throw new ApiException(400, "Missing required parameter 'uniqueId' when calling StatisticsApi->GetDetailedOpenStatusOfAnnouncementById");
+
+            var localVarPath = "/v3/announcement_open_status/{unique_id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (uniqueId != null) localVarPathParams.Add("unique_id", this.Configuration.ApiClient.ParameterToString(uniqueId)); // path parameter
+            if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
+            if (next != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "next", next)); // query parameter
+            if (uniqueIds != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("multi", "unique_ids", uniqueIds)); // query parameter
+            if (channelUrls != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("multi", "channel_urls", channelUrls)); // query parameter
+            if (hasOpened != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "has_opened", hasOpened)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetDetailedOpenStatusOfAnnouncementById", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (GetDetailedOpenStatusOfAnnouncementByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetDetailedOpenStatusOfAnnouncementByIdResponse)));
+        }
+
+        /// <summary>
+        /// Get detailed open status of an announcement ## Get detailed open status of an announcement  Retrieves the detailed open status information of a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-status-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="uniqueId"></param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="next"> (optional)</param>
+        /// <param name="uniqueIds"> (optional)</param>
+        /// <param name="channelUrls"> (optional)</param>
+        /// <param name="hasOpened"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of GetDetailedOpenStatusOfAnnouncementByIdResponse</returns>
+        public async System.Threading.Tasks.Task<GetDetailedOpenStatusOfAnnouncementByIdResponse> GetDetailedOpenStatusOfAnnouncementByIdAsync (string apiToken, string uniqueId, int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse> localVarResponse = await GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfoAsync(apiToken, uniqueId, limit, next, uniqueIds, channelUrls, hasOpened, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get detailed open status of an announcement ## Get detailed open status of an announcement  Retrieves the detailed open status information of a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-status-of-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="apiToken"></param>
+        /// <param name="uniqueId"></param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="next"> (optional)</param>
+        /// <param name="uniqueIds"> (optional)</param>
+        /// <param name="channelUrls"> (optional)</param>
+        /// <param name="hasOpened"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (GetDetailedOpenStatusOfAnnouncementByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse>> GetDetailedOpenStatusOfAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, int? limit = default(int?), string next = default(string), List<string> uniqueIds = default(List<string>), List<string> channelUrls = default(List<string>), bool? hasOpened = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'apiToken' is set
+            if (apiToken == null)
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling StatisticsApi->GetDetailedOpenStatusOfAnnouncementById");
+            // verify the required parameter 'uniqueId' is set
+            if (uniqueId == null)
+                throw new ApiException(400, "Missing required parameter 'uniqueId' when calling StatisticsApi->GetDetailedOpenStatusOfAnnouncementById");
+
+            var localVarPath = "/v3/announcement_open_status/{unique_id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (uniqueId != null) localVarPathParams.Add("unique_id", this.Configuration.ApiClient.ParameterToString(uniqueId)); // path parameter
+            if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
+            if (next != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "next", next)); // query parameter
+            if (uniqueIds != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("multi", "unique_ids", uniqueIds)); // query parameter
+            if (channelUrls != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("multi", "channel_urls", channelUrls)); // query parameter
+            if (hasOpened != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "has_opened", hasOpened)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetDetailedOpenStatusOfAnnouncementById", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<GetDetailedOpenStatusOfAnnouncementByIdResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (GetDetailedOpenStatusOfAnnouncementByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetDetailedOpenStatusOfAnnouncementByIdResponse)));
         }
 
         /// <summary>
