@@ -39,7 +39,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="openRates">openRates.</param>
         /// <param name="cumulativeOpenCounts">cumulativeOpenCounts.</param>
         /// <param name="cumulativeOpenRates">cumulativeOpenRates.</param>
-        public GetDetailedOpenRateOfAnnouncementGroupResponse(string uniqueId = default(string), string announcementGroup = default(string), List<decimal> openCounts = default(List<decimal>), List<decimal> openRates = default(List<decimal>), List<decimal> cumulativeOpenCounts = default(List<decimal>), List<decimal> cumulativeOpenRates = default(List<decimal>))
+        public GetDetailedOpenRateOfAnnouncementGroupResponse(string uniqueId = default, string announcementGroup = default, List<decimal> openCounts = default(List<decimal>), List<decimal> openRates = default(List<decimal>), List<decimal> cumulativeOpenCounts = default(List<decimal>), List<decimal> cumulativeOpenRates = default(List<decimal>))
         {
             this.UniqueId = uniqueId;
             this.AnnouncementGroup = announcementGroup;

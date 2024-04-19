@@ -42,7 +42,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="url">Specifies the URL of your webhook server to receive payloads for events. (required).</param>
         /// <param name="includeMembers">Determines whether to include the information on the members of group channels in payloads. (Default: false).</param>
         /// <param name="enabledEvents">Specifies an array of one or more [events](#2-webhook-events) for your webhook server to subscribe to. If set to an asterisk () only, the server will subscribe to all supported events. If set to an empty array, the server will unsubscribe from all (which indicates turning off webhooks)..</param>
-        public ChooseWhichEventsToSubscribeToData(bool enabled = default(bool), string url = default(string), bool includeMembers = default(bool), List<string> enabledEvents = default(List<string>))
+        public ChooseWhichEventsToSubscribeToData(bool enabled = default(bool), string url = default, bool includeMembers = default(bool), List<string> enabledEvents = default)
         {
             // to ensure "enabled" is required (not null)
             if (enabled == null)

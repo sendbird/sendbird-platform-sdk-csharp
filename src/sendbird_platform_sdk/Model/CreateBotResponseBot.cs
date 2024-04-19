@@ -39,7 +39,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="botNickname">botNickname.</param>
         /// <param name="botType">botType.</param>
         /// <param name="botMetadata">botMetadata.</param>
-        public CreateBotResponseBot(string botToken = default(string), string botProfileUrl = default(string), string botUserid = default(string), string botNickname = default(string), string botType = default(string), Object botMetadata = default(Object))
+        public CreateBotResponseBot(string botToken = default, string botProfileUrl = default, string botUserid = default, string botNickname = default, string botType = default, Object botMetadata = default)
         {
             this.BotToken = botToken;
             this.BotProfileUrl = botProfileUrl;

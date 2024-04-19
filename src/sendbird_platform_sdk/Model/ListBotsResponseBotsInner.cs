@@ -39,7 +39,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="isPrivacyMode">isPrivacyMode.</param>
         /// <param name="showMember">showMember.</param>
         /// <param name="channelInvitationPreference">channelInvitationPreference.</param>
-        public ListBotsResponseBotsInner(CreateBotResponseBot bot = default(CreateBotResponseBot), string botCallbackUrl = default(string), bool enableMarkAsRead = default(bool), bool isPrivacyMode = default(bool), bool showMember = default(bool), decimal channelInvitationPreference = default(decimal))
+        public ListBotsResponseBotsInner(CreateBotResponseBot bot = default(CreateBotResponseBot), string botCallbackUrl = default, bool enableMarkAsRead = default(bool), bool isPrivacyMode = default(bool), bool showMember = default(bool), decimal channelInvitationPreference = default(decimal))
         {
             this.Bot = bot;
             this.BotCallbackUrl = botCallbackUrl;

@@ -85,7 +85,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="endMonth"></param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <returns>GetStatisticsDailyResponse</returns>
-        GetStatisticsDailyResponse GetStatisticsDaily (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string));
+        GetStatisticsDailyResponse GetStatisticsDaily (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default);
 
         /// <summary>
         /// Get statistics - daily
@@ -103,7 +103,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="endMonth"></param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <returns>ApiResponse of GetStatisticsDailyResponse</returns>
-        ApiResponse<GetStatisticsDailyResponse> GetStatisticsDailyWithHttpInfo (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string));
+        ApiResponse<GetStatisticsDailyResponse> GetStatisticsDailyWithHttpInfo (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default);
         /// <summary>
         /// Get statistics - monthly
         /// </summary>
@@ -136,7 +136,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListAnnouncementGroupsResponse</returns>
-        ListAnnouncementGroupsResponse ListAnnouncementGroups (string apiToken, string token = default(string), int? limit = default(int?));
+        ListAnnouncementGroupsResponse ListAnnouncementGroups (string apiToken, string token = default, int? limit = default);
 
         /// <summary>
         /// List announcement groups
@@ -149,7 +149,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListAnnouncementGroupsResponse</returns>
-        ApiResponse<ListAnnouncementGroupsResponse> ListAnnouncementGroupsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?));
+        ApiResponse<ListAnnouncementGroupsResponse> ListAnnouncementGroupsWithHttpInfo (string apiToken, string token = default, int? limit = default);
         /// <summary>
         /// Schedule an announcement
         /// </summary>
@@ -234,7 +234,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="announcementGroup"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
-        System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupAsync (string apiToken, string announcementGroup, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupAsync (string apiToken, string announcementGroup, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Get detailed open rate of an announcement group
@@ -247,7 +247,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="announcementGroup"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetDetailedOpenRateOfAnnouncementGroupResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse>> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync (string apiToken, string announcementGroup, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse>> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync (string apiToken, string announcementGroup, CancellationToken cancellationToken = default);
         /// <summary>
         /// Get statistics - weekly
         /// </summary>
@@ -258,7 +258,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetStatisticsResponse</returns>
-        System.Threading.Tasks.Task<GetStatisticsResponse> GetStatisticsAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GetStatisticsResponse> GetStatisticsAsync (string apiToken, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Get statistics - weekly
@@ -270,7 +270,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetStatisticsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetStatisticsResponse>> GetStatisticsWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GetStatisticsResponse>> GetStatisticsWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default);
         /// <summary>
         /// Get statistics - daily
         /// </summary>
@@ -288,7 +288,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetStatisticsDailyResponse</returns>
-        System.Threading.Tasks.Task<GetStatisticsDailyResponse> GetStatisticsDailyAsync (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GetStatisticsDailyResponse> GetStatisticsDailyAsync (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Get statistics - daily
@@ -307,7 +307,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetStatisticsDailyResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetStatisticsDailyResponse>> GetStatisticsDailyWithHttpInfoAsync (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GetStatisticsDailyResponse>> GetStatisticsDailyWithHttpInfoAsync (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Get statistics - monthly
         /// </summary>
@@ -318,7 +318,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetStatisticsMonthlyResponse</returns>
-        System.Threading.Tasks.Task<GetStatisticsMonthlyResponse> GetStatisticsMonthlyAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GetStatisticsMonthlyResponse> GetStatisticsMonthlyAsync (string apiToken, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Get statistics - monthly
@@ -330,7 +330,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetStatisticsMonthlyResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetStatisticsMonthlyResponse>> GetStatisticsMonthlyWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GetStatisticsMonthlyResponse>> GetStatisticsMonthlyWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default);
         /// <summary>
         /// List announcement groups
         /// </summary>
@@ -343,7 +343,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListAnnouncementGroupsResponse</returns>
-        System.Threading.Tasks.Task<ListAnnouncementGroupsResponse> ListAnnouncementGroupsAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListAnnouncementGroupsResponse> ListAnnouncementGroupsAsync (string apiToken, string token = default, int? limit = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List announcement groups
@@ -357,7 +357,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListAnnouncementGroupsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListAnnouncementGroupsResponse>> ListAnnouncementGroupsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListAnnouncementGroupsResponse>> ListAnnouncementGroupsWithHttpInfoAsync (string apiToken, string token = default, int? limit = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Schedule an announcement
         /// </summary>
@@ -369,7 +369,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="scheduleAnnouncementData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ScheduleAnnouncementResponse</returns>
-        System.Threading.Tasks.Task<ScheduleAnnouncementResponse> ScheduleAnnouncementAsync (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ScheduleAnnouncementResponse> ScheduleAnnouncementAsync (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Schedule an announcement
@@ -382,7 +382,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="scheduleAnnouncementData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ScheduleAnnouncementResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ScheduleAnnouncementResponse>> ScheduleAnnouncementWithHttpInfoAsync (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ScheduleAnnouncementResponse>> ScheduleAnnouncementWithHttpInfoAsync (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Update an announcement
         /// </summary>
@@ -395,7 +395,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateAnnouncementByIdResponse</returns>
-        System.Threading.Tasks.Task<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdAsync (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdAsync (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Update an announcement
@@ -409,7 +409,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateAnnouncementByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UpdateAnnouncementByIdResponse>> UpdateAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<UpdateAnnouncementByIdResponse>> UpdateAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default);
         /// <summary>
         /// View an announcement
         /// </summary>
@@ -421,7 +421,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewAnnouncementByIdResponse</returns>
-        System.Threading.Tasks.Task<ViewAnnouncementByIdResponse> ViewAnnouncementByIdAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewAnnouncementByIdResponse> ViewAnnouncementByIdAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View an announcement
@@ -434,7 +434,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewAnnouncementByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewAnnouncementByIdResponse>> ViewAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewAnnouncementByIdResponse>> ViewAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default);
         #endregion Asynchronous Operations
     }
 
@@ -626,7 +626,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="announcementGroup"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
-        public async System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupAsync (string apiToken, string announcementGroup, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupAsync (string apiToken, string announcementGroup, CancellationToken cancellationToken = default)
         {
              ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse> localVarResponse = await GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync(apiToken, announcementGroup, cancellationToken);
              return localVarResponse.Data;
@@ -641,7 +641,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="announcementGroup"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetDetailedOpenRateOfAnnouncementGroupResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse>> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync (string apiToken, string announcementGroup, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse>> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync (string apiToken, string announcementGroup, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -766,7 +766,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetStatisticsResponse</returns>
-        public async System.Threading.Tasks.Task<GetStatisticsResponse> GetStatisticsAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GetStatisticsResponse> GetStatisticsAsync (string apiToken, CancellationToken cancellationToken = default)
         {
              ApiResponse<GetStatisticsResponse> localVarResponse = await GetStatisticsWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -780,7 +780,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetStatisticsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GetStatisticsResponse>> GetStatisticsWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GetStatisticsResponse>> GetStatisticsWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -841,7 +841,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="endMonth"></param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <returns>GetStatisticsDailyResponse</returns>
-        public GetStatisticsDailyResponse GetStatisticsDaily (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string))
+        public GetStatisticsDailyResponse GetStatisticsDaily (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default)
         {
              ApiResponse<GetStatisticsDailyResponse> localVarResponse = GetStatisticsDailyWithHttpInfo(apiToken, startDate, endDate, startWeek, endWeek, startMonth, endMonth, announcementGroup);
              return localVarResponse.Data;
@@ -860,7 +860,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="endMonth"></param>
         /// <param name="announcementGroup"> (optional)</param>
         /// <returns>ApiResponse of GetStatisticsDailyResponse</returns>
-        public ApiResponse<GetStatisticsDailyResponse> GetStatisticsDailyWithHttpInfo (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string))
+        public ApiResponse<GetStatisticsDailyResponse> GetStatisticsDailyWithHttpInfo (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -947,7 +947,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetStatisticsDailyResponse</returns>
-        public async System.Threading.Tasks.Task<GetStatisticsDailyResponse> GetStatisticsDailyAsync (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GetStatisticsDailyResponse> GetStatisticsDailyAsync (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<GetStatisticsDailyResponse> localVarResponse = await GetStatisticsDailyWithHttpInfoAsync(apiToken, startDate, endDate, startWeek, endWeek, startMonth, endMonth, announcementGroup, cancellationToken);
              return localVarResponse.Data;
@@ -968,7 +968,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="announcementGroup"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetStatisticsDailyResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GetStatisticsDailyResponse>> GetStatisticsDailyWithHttpInfoAsync (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GetStatisticsDailyResponse>> GetStatisticsDailyWithHttpInfoAsync (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1114,7 +1114,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GetStatisticsMonthlyResponse</returns>
-        public async System.Threading.Tasks.Task<GetStatisticsMonthlyResponse> GetStatisticsMonthlyAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GetStatisticsMonthlyResponse> GetStatisticsMonthlyAsync (string apiToken, CancellationToken cancellationToken = default)
         {
              ApiResponse<GetStatisticsMonthlyResponse> localVarResponse = await GetStatisticsMonthlyWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -1128,7 +1128,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GetStatisticsMonthlyResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GetStatisticsMonthlyResponse>> GetStatisticsMonthlyWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GetStatisticsMonthlyResponse>> GetStatisticsMonthlyWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1184,7 +1184,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListAnnouncementGroupsResponse</returns>
-        public ListAnnouncementGroupsResponse ListAnnouncementGroups (string apiToken, string token = default(string), int? limit = default(int?))
+        public ListAnnouncementGroupsResponse ListAnnouncementGroups (string apiToken, string token = default, int? limit = default)
         {
              ApiResponse<ListAnnouncementGroupsResponse> localVarResponse = ListAnnouncementGroupsWithHttpInfo(apiToken, token, limit);
              return localVarResponse.Data;
@@ -1198,7 +1198,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListAnnouncementGroupsResponse</returns>
-        public ApiResponse<ListAnnouncementGroupsResponse> ListAnnouncementGroupsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?))
+        public ApiResponse<ListAnnouncementGroupsResponse> ListAnnouncementGroupsWithHttpInfo (string apiToken, string token = default, int? limit = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1257,7 +1257,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListAnnouncementGroupsResponse</returns>
-        public async System.Threading.Tasks.Task<ListAnnouncementGroupsResponse> ListAnnouncementGroupsAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListAnnouncementGroupsResponse> ListAnnouncementGroupsAsync (string apiToken, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<ListAnnouncementGroupsResponse> localVarResponse = await ListAnnouncementGroupsWithHttpInfoAsync(apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
@@ -1273,7 +1273,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListAnnouncementGroupsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListAnnouncementGroupsResponse>> ListAnnouncementGroupsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListAnnouncementGroupsResponse>> ListAnnouncementGroupsWithHttpInfoAsync (string apiToken, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1408,7 +1408,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="scheduleAnnouncementData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ScheduleAnnouncementResponse</returns>
-        public async System.Threading.Tasks.Task<ScheduleAnnouncementResponse> ScheduleAnnouncementAsync (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ScheduleAnnouncementResponse> ScheduleAnnouncementAsync (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default)
         {
              ApiResponse<ScheduleAnnouncementResponse> localVarResponse = await ScheduleAnnouncementWithHttpInfoAsync(apiToken, scheduleAnnouncementData, cancellationToken);
              return localVarResponse.Data;
@@ -1423,7 +1423,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="scheduleAnnouncementData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ScheduleAnnouncementResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ScheduleAnnouncementResponse>> ScheduleAnnouncementWithHttpInfoAsync (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ScheduleAnnouncementResponse>> ScheduleAnnouncementWithHttpInfoAsync (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1572,7 +1572,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateAnnouncementByIdResponse</returns>
-        public async System.Threading.Tasks.Task<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdAsync (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdAsync (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default)
         {
              ApiResponse<UpdateAnnouncementByIdResponse> localVarResponse = await UpdateAnnouncementByIdWithHttpInfoAsync(apiToken, uniqueId, updateAnnouncementByIdData, cancellationToken);
              return localVarResponse.Data;
@@ -1588,7 +1588,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateAnnouncementByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateAnnouncementByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UpdateAnnouncementByIdResponse>> UpdateAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateAnnouncementByIdResponse>> UpdateAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1729,7 +1729,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewAnnouncementByIdResponse</returns>
-        public async System.Threading.Tasks.Task<ViewAnnouncementByIdResponse> ViewAnnouncementByIdAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewAnnouncementByIdResponse> ViewAnnouncementByIdAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default)
         {
              ApiResponse<ViewAnnouncementByIdResponse> localVarResponse = await ViewAnnouncementByIdWithHttpInfoAsync(apiToken, uniqueId, cancellationToken);
              return localVarResponse.Data;
@@ -1744,7 +1744,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="uniqueId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewAnnouncementByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewAnnouncementByIdResponse>> ViewAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewAnnouncementByIdResponse>> ViewAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)

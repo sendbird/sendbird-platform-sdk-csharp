@@ -267,7 +267,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>CustomTypeListBannedUsersResponse</returns>
-        CustomTypeListBannedUsersResponse ListBannedUsersInChannelsWithCustomChannelType (string apiToken, string customType, string token = default(string), int? limit = default(int?));
+        CustomTypeListBannedUsersResponse ListBannedUsersInChannelsWithCustomChannelType (string apiToken, string customType, string token = default, int? limit = default);
 
         /// <summary>
         /// List banned users in channels with a custom channel type
@@ -281,7 +281,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of CustomTypeListBannedUsersResponse</returns>
-        ApiResponse<CustomTypeListBannedUsersResponse> ListBannedUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, string token = default(string), int? limit = default(int?));
+        ApiResponse<CustomTypeListBannedUsersResponse> ListBannedUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, string token = default, int? limit = default);
         /// <summary>
         /// List muted users in channels with a custom channel type
         /// </summary>
@@ -294,7 +294,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListMutedUsersInChannelsWithCustomChannelType200Response</returns>
-        ListMutedUsersInChannelsWithCustomChannelType200Response ListMutedUsersInChannelsWithCustomChannelType (string apiToken, string customType, string token = default(string), int? limit = default(int?));
+        ListMutedUsersInChannelsWithCustomChannelType200Response ListMutedUsersInChannelsWithCustomChannelType (string apiToken, string customType, string token = default, int? limit = default);
 
         /// <summary>
         /// List muted users in channels with a custom channel type
@@ -308,7 +308,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListMutedUsersInChannelsWithCustomChannelType200Response</returns>
-        ApiResponse<ListMutedUsersInChannelsWithCustomChannelType200Response> ListMutedUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, string token = default(string), int? limit = default(int?));
+        ApiResponse<ListMutedUsersInChannelsWithCustomChannelType200Response> ListMutedUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, string token = default, int? limit = default);
         /// <summary>
         /// List push configurations
         /// </summary>
@@ -771,7 +771,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddApnsPushConfigurationResponse</returns>
-        System.Threading.Tasks.Task<AddApnsPushConfigurationResponse> AddApnsPushConfigurationAsync (string apiToken, AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<AddApnsPushConfigurationResponse> AddApnsPushConfigurationAsync (string apiToken, AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Add an APNs push configuration
@@ -784,7 +784,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddApnsPushConfigurationResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AddApnsPushConfigurationResponse>> AddApnsPushConfigurationWithHttpInfoAsync (string apiToken, AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<AddApnsPushConfigurationResponse>> AddApnsPushConfigurationWithHttpInfoAsync (string apiToken, AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Add a FCM push configuration
         /// </summary>
@@ -796,7 +796,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddFcmPushConfigurationResponse</returns>
-        System.Threading.Tasks.Task<AddFcmPushConfigurationResponse> AddFcmPushConfigurationAsync (string apiToken, AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<AddFcmPushConfigurationResponse> AddFcmPushConfigurationAsync (string apiToken, AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Add a FCM push configuration
@@ -809,7 +809,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddFcmPushConfigurationResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AddFcmPushConfigurationResponse>> AddFcmPushConfigurationWithHttpInfoAsync (string apiToken, AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<AddFcmPushConfigurationResponse>> AddFcmPushConfigurationWithHttpInfoAsync (string apiToken, AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Add an HMS push configuration
         /// </summary>
@@ -821,7 +821,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddHmsPushConfigurationResponse</returns>
-        System.Threading.Tasks.Task<AddHmsPushConfigurationResponse> AddHmsPushConfigurationAsync (string apiToken, AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<AddHmsPushConfigurationResponse> AddHmsPushConfigurationAsync (string apiToken, AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Add an HMS push configuration
@@ -834,7 +834,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddHmsPushConfigurationResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AddHmsPushConfigurationResponse>> AddHmsPushConfigurationWithHttpInfoAsync (string apiToken, AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<AddHmsPushConfigurationResponse>> AddHmsPushConfigurationWithHttpInfoAsync (string apiToken, AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Add an IP to a whitelist
         /// </summary>
@@ -846,7 +846,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addIpToWhitelistData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddIpToWhitelistResponse</returns>
-        System.Threading.Tasks.Task<AddIpToWhitelistResponse> AddIpToWhitelistAsync (string apiToken, AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<AddIpToWhitelistResponse> AddIpToWhitelistAsync (string apiToken, AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Add an IP to a whitelist
@@ -859,7 +859,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addIpToWhitelistData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddIpToWhitelistResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AddIpToWhitelistResponse>> AddIpToWhitelistWithHttpInfoAsync (string apiToken, AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<AddIpToWhitelistResponse>> AddIpToWhitelistWithHttpInfoAsync (string apiToken, AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Ban users in channels with a custom channel type
         /// </summary>
@@ -872,7 +872,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="banUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> BanUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = default(BanUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Object> BanUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = default(BanUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Ban users in channels with a custom channel type
@@ -886,7 +886,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="banUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> BanUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = default(BanUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> BanUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = default(BanUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Configure auto event message settings
         /// </summary>
@@ -898,7 +898,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="configureAutoEventData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdAutoEventMessageSettings</returns>
-        System.Threading.Tasks.Task<SendBirdAutoEventMessageSettings> ConfigureAutoEventMessagesAsync (string apiToken, ConfigureAutoEventData configureAutoEventData = default(ConfigureAutoEventData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdAutoEventMessageSettings> ConfigureAutoEventMessagesAsync (string apiToken, ConfigureAutoEventData configureAutoEventData = default(ConfigureAutoEventData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Configure auto event message settings
@@ -911,7 +911,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="configureAutoEventData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdAutoEventMessageSettings)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdAutoEventMessageSettings>> ConfigureAutoEventMessagesWithHttpInfoAsync (string apiToken, ConfigureAutoEventData configureAutoEventData = default(ConfigureAutoEventData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdAutoEventMessageSettings>> ConfigureAutoEventMessagesWithHttpInfoAsync (string apiToken, ConfigureAutoEventData configureAutoEventData = default(ConfigureAutoEventData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Delete allowed IPs from a whitelist
         /// </summary>
@@ -923,7 +923,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ipWhitelistAddresses"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of DeleteAllowedIpsFromWhitelistResponse</returns>
-        System.Threading.Tasks.Task<DeleteAllowedIpsFromWhitelistResponse> DeleteAllowedIpsFromWhitelistAsync (string apiToken, List<string> ipWhitelistAddresses, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<DeleteAllowedIpsFromWhitelistResponse> DeleteAllowedIpsFromWhitelistAsync (string apiToken, List<string> ipWhitelistAddresses, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Delete allowed IPs from a whitelist
@@ -936,7 +936,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ipWhitelistAddresses"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (DeleteAllowedIpsFromWhitelistResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DeleteAllowedIpsFromWhitelistResponse>> DeleteAllowedIpsFromWhitelistWithHttpInfoAsync (string apiToken, List<string> ipWhitelistAddresses, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DeleteAllowedIpsFromWhitelistResponse>> DeleteAllowedIpsFromWhitelistWithHttpInfoAsync (string apiToken, List<string> ipWhitelistAddresses, CancellationToken cancellationToken = default);
         /// <summary>
         /// Delete an APNs certificate
         /// </summary>
@@ -948,7 +948,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of DeleteApnsCertificateByIdResponse</returns>
-        System.Threading.Tasks.Task<DeleteApnsCertificateByIdResponse> DeleteApnsCertificateByIdAsync (string apiToken, string providerId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<DeleteApnsCertificateByIdResponse> DeleteApnsCertificateByIdAsync (string apiToken, string providerId, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Delete an APNs certificate
@@ -961,7 +961,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (DeleteApnsCertificateByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DeleteApnsCertificateByIdResponse>> DeleteApnsCertificateByIdWithHttpInfoAsync (string apiToken, string providerId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<DeleteApnsCertificateByIdResponse>> DeleteApnsCertificateByIdWithHttpInfoAsync (string apiToken, string providerId, CancellationToken cancellationToken = default);
         /// <summary>
         /// Generate a secondary API token
         /// </summary>
@@ -973,7 +973,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GenerateSecondaryApiTokenResponse</returns>
-        System.Threading.Tasks.Task<GenerateSecondaryApiTokenResponse> GenerateSecondaryApiTokenAsync (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GenerateSecondaryApiTokenResponse> GenerateSecondaryApiTokenAsync (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Generate a secondary API token
@@ -986,7 +986,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GenerateSecondaryApiTokenResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GenerateSecondaryApiTokenResponse>> GenerateSecondaryApiTokenWithHttpInfoAsync (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GenerateSecondaryApiTokenResponse>> GenerateSecondaryApiTokenWithHttpInfoAsync (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default);
         /// <summary>
         /// List auto event messages
         /// </summary>
@@ -997,7 +997,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdAutoEventMessageSettings</returns>
-        System.Threading.Tasks.Task<SendBirdAutoEventMessageSettings> ListAutoEventMessagesAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdAutoEventMessageSettings> ListAutoEventMessagesAsync (string apiToken, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List auto event messages
@@ -1009,7 +1009,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdAutoEventMessageSettings)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdAutoEventMessageSettings>> ListAutoEventMessagesWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdAutoEventMessageSettings>> ListAutoEventMessagesWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default);
         /// <summary>
         /// List banned users in channels with a custom channel type
         /// </summary>
@@ -1023,7 +1023,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of CustomTypeListBannedUsersResponse</returns>
-        System.Threading.Tasks.Task<CustomTypeListBannedUsersResponse> ListBannedUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<CustomTypeListBannedUsersResponse> ListBannedUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, string token = default, int? limit = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List banned users in channels with a custom channel type
@@ -1038,7 +1038,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (CustomTypeListBannedUsersResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CustomTypeListBannedUsersResponse>> ListBannedUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<CustomTypeListBannedUsersResponse>> ListBannedUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, string token = default, int? limit = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// List muted users in channels with a custom channel type
         /// </summary>
@@ -1052,7 +1052,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListMutedUsersInChannelsWithCustomChannelType200Response</returns>
-        System.Threading.Tasks.Task<ListMutedUsersInChannelsWithCustomChannelType200Response> ListMutedUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListMutedUsersInChannelsWithCustomChannelType200Response> ListMutedUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, string token = default, int? limit = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List muted users in channels with a custom channel type
@@ -1067,7 +1067,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListMutedUsersInChannelsWithCustomChannelType200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListMutedUsersInChannelsWithCustomChannelType200Response>> ListMutedUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListMutedUsersInChannelsWithCustomChannelType200Response>> ListMutedUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, string token = default, int? limit = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// List push configurations
         /// </summary>
@@ -1079,7 +1079,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="pushType"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListPushConfigurationsResponse</returns>
-        System.Threading.Tasks.Task<ListPushConfigurationsResponse> ListPushConfigurationsAsync (string apiToken, string pushType, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListPushConfigurationsResponse> ListPushConfigurationsAsync (string apiToken, string pushType, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List push configurations
@@ -1092,7 +1092,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="pushType"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListPushConfigurationsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListPushConfigurationsResponse>> ListPushConfigurationsWithHttpInfoAsync (string apiToken, string pushType, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListPushConfigurationsResponse>> ListPushConfigurationsWithHttpInfoAsync (string apiToken, string pushType, CancellationToken cancellationToken = default);
         /// <summary>
         /// List push notification content templates
         /// </summary>
@@ -1103,7 +1103,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListPushNotificationContentTemplatesResponse</returns>
-        System.Threading.Tasks.Task<ListPushNotificationContentTemplatesResponse> ListPushNotificationContentTemplatesAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListPushNotificationContentTemplatesResponse> ListPushNotificationContentTemplatesAsync (string apiToken, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List push notification content templates
@@ -1115,7 +1115,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListPushNotificationContentTemplatesResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListPushNotificationContentTemplatesResponse>> ListPushNotificationContentTemplatesWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListPushNotificationContentTemplatesResponse>> ListPushNotificationContentTemplatesWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default);
         /// <summary>
         /// List secondary API tokens
         /// </summary>
@@ -1126,7 +1126,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListSecondaryApiTokensResponse</returns>
-        System.Threading.Tasks.Task<ListSecondaryApiTokensResponse> ListSecondaryApiTokensAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListSecondaryApiTokensResponse> ListSecondaryApiTokensAsync (string apiToken, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List secondary API tokens
@@ -1138,7 +1138,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListSecondaryApiTokensResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListSecondaryApiTokensResponse>> ListSecondaryApiTokensWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListSecondaryApiTokensResponse>> ListSecondaryApiTokensWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default);
         /// <summary>
         /// Mute users in channels with a custom channel type
         /// </summary>
@@ -1151,7 +1151,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="muteUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> MuteUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, MuteUsersInChannelsWithCustomChannelTypeData muteUsersInChannelsWithCustomChannelTypeData = default(MuteUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Object> MuteUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, MuteUsersInChannelsWithCustomChannelTypeData muteUsersInChannelsWithCustomChannelTypeData = default(MuteUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Mute users in channels with a custom channel type
@@ -1165,7 +1165,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="muteUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> MuteUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, MuteUsersInChannelsWithCustomChannelTypeData muteUsersInChannelsWithCustomChannelTypeData = default(MuteUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> MuteUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, MuteUsersInChannelsWithCustomChannelTypeData muteUsersInChannelsWithCustomChannelTypeData = default(MuteUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Remove a push configuration
         /// </summary>
@@ -1178,7 +1178,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RemovePushConfigurationByIdResponse</returns>
-        System.Threading.Tasks.Task<RemovePushConfigurationByIdResponse> RemovePushConfigurationByIdAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<RemovePushConfigurationByIdResponse> RemovePushConfigurationByIdAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Remove a push configuration
@@ -1192,7 +1192,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RemovePushConfigurationByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RemovePushConfigurationByIdResponse>> RemovePushConfigurationByIdWithHttpInfoAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<RemovePushConfigurationByIdResponse>> RemovePushConfigurationByIdWithHttpInfoAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default);
         /// <summary>
         /// Retrieve an IP whitelist
         /// </summary>
@@ -1203,7 +1203,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RetrieveIpWhitelistResponse</returns>
-        System.Threading.Tasks.Task<RetrieveIpWhitelistResponse> RetrieveIpWhitelistAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<RetrieveIpWhitelistResponse> RetrieveIpWhitelistAsync (string apiToken, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Retrieve an IP whitelist
@@ -1215,7 +1215,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RetrieveIpWhitelistResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RetrieveIpWhitelistResponse>> RetrieveIpWhitelistWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<RetrieveIpWhitelistResponse>> RetrieveIpWhitelistWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default);
         /// <summary>
         /// Revoke a secondary API token
         /// </summary>
@@ -1227,7 +1227,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken2"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RevokeSecondaryApiTokenByTokenResponse</returns>
-        System.Threading.Tasks.Task<RevokeSecondaryApiTokenByTokenResponse> RevokeSecondaryApiTokenByTokenAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<RevokeSecondaryApiTokenByTokenResponse> RevokeSecondaryApiTokenByTokenAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Revoke a secondary API token
@@ -1240,7 +1240,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken2"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RevokeSecondaryApiTokenByTokenResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RevokeSecondaryApiTokenByTokenResponse>> RevokeSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<RevokeSecondaryApiTokenByTokenResponse>> RevokeSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default);
         /// <summary>
         /// Message moderation
         /// </summary>
@@ -1253,7 +1253,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="setDomainFilterData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdChannelResponse</returns>
-        System.Threading.Tasks.Task<SendBirdChannelResponse> SetDomainFilterAsync (string apiToken, string customType, SetDomainFilterData setDomainFilterData = default(SetDomainFilterData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdChannelResponse> SetDomainFilterAsync (string apiToken, string customType, SetDomainFilterData setDomainFilterData = default(SetDomainFilterData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Message moderation
@@ -1267,7 +1267,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="setDomainFilterData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdChannelResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdChannelResponse>> SetDomainFilterWithHttpInfoAsync (string apiToken, string customType, SetDomainFilterData setDomainFilterData = default(SetDomainFilterData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdChannelResponse>> SetDomainFilterWithHttpInfoAsync (string apiToken, string customType, SetDomainFilterData setDomainFilterData = default(SetDomainFilterData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Unban users in channels with a custom channel type
         /// </summary>
@@ -1280,7 +1280,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userIds"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> UnbanUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Object> UnbanUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Unban users in channels with a custom channel type
@@ -1294,7 +1294,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userIds"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> UnbanUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> UnbanUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default);
         /// <summary>
         /// Unmute users in channels with a custom channel type
         /// </summary>
@@ -1307,7 +1307,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userIds"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> UnmuteUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Object> UnmuteUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Unmute users in channels with a custom channel type
@@ -1321,7 +1321,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userIds"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> UnmuteUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> UnmuteUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default);
         /// <summary>
         /// Update an APNs push configuration
         /// </summary>
@@ -1334,7 +1334,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateApnsPushConfigurationByIdResponse</returns>
-        System.Threading.Tasks.Task<UpdateApnsPushConfigurationByIdResponse> UpdateApnsPushConfigurationByIdAsync (string apiToken, string providerId, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<UpdateApnsPushConfigurationByIdResponse> UpdateApnsPushConfigurationByIdAsync (string apiToken, string providerId, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Update an APNs push configuration
@@ -1348,7 +1348,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateApnsPushConfigurationByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UpdateApnsPushConfigurationByIdResponse>> UpdateApnsPushConfigurationByIdWithHttpInfoAsync (string apiToken, string providerId, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<UpdateApnsPushConfigurationByIdResponse>> UpdateApnsPushConfigurationByIdWithHttpInfoAsync (string apiToken, string providerId, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Update default channel invitation preference
         /// </summary>
@@ -1360,7 +1360,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateDefaultChannelInvitationPreferenceResponse</returns>
-        System.Threading.Tasks.Task<UpdateDefaultChannelInvitationPreferenceResponse> UpdateDefaultChannelInvitationPreferenceAsync (string apiToken, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<UpdateDefaultChannelInvitationPreferenceResponse> UpdateDefaultChannelInvitationPreferenceAsync (string apiToken, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Update default channel invitation preference
@@ -1373,7 +1373,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateDefaultChannelInvitationPreferenceResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse>> UpdateDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse>> UpdateDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a FCM push configuration
         /// </summary>
@@ -1386,7 +1386,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateFcmPushConfigurationByIdResponse</returns>
-        System.Threading.Tasks.Task<UpdateFcmPushConfigurationByIdResponse> UpdateFcmPushConfigurationByIdAsync (string apiToken, string providerId, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<UpdateFcmPushConfigurationByIdResponse> UpdateFcmPushConfigurationByIdAsync (string apiToken, string providerId, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Update a FCM push configuration
@@ -1400,7 +1400,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateFcmPushConfigurationByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UpdateFcmPushConfigurationByIdResponse>> UpdateFcmPushConfigurationByIdWithHttpInfoAsync (string apiToken, string providerId, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<UpdateFcmPushConfigurationByIdResponse>> UpdateFcmPushConfigurationByIdWithHttpInfoAsync (string apiToken, string providerId, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Update an HMS push configuration
         /// </summary>
@@ -1413,7 +1413,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateHmsPushConfigurationByIdResponse</returns>
-        System.Threading.Tasks.Task<UpdateHmsPushConfigurationByIdResponse> UpdateHmsPushConfigurationByIdAsync (string apiToken, string providerId, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<UpdateHmsPushConfigurationByIdResponse> UpdateHmsPushConfigurationByIdAsync (string apiToken, string providerId, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Update an HMS push configuration
@@ -1427,7 +1427,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateHmsPushConfigurationByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UpdateHmsPushConfigurationByIdResponse>> UpdateHmsPushConfigurationByIdWithHttpInfoAsync (string apiToken, string providerId, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<UpdateHmsPushConfigurationByIdResponse>> UpdateHmsPushConfigurationByIdWithHttpInfoAsync (string apiToken, string providerId, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a push notification content template
         /// </summary>
@@ -1440,7 +1440,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdatePushNotificationContentTemplateResponse</returns>
-        System.Threading.Tasks.Task<UpdatePushNotificationContentTemplateResponse> UpdatePushNotificationContentTemplateAsync (string apiToken, string templateName, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<UpdatePushNotificationContentTemplateResponse> UpdatePushNotificationContentTemplateAsync (string apiToken, string templateName, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Update a push notification content template
@@ -1454,7 +1454,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdatePushNotificationContentTemplateResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UpdatePushNotificationContentTemplateResponse>> UpdatePushNotificationContentTemplateWithHttpInfoAsync (string apiToken, string templateName, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<UpdatePushNotificationContentTemplateResponse>> UpdatePushNotificationContentTemplateWithHttpInfoAsync (string apiToken, string templateName, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default);
         /// <summary>
         /// View default channel invitation preference
         /// </summary>
@@ -1465,7 +1465,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewDefaultChannelInvitationPreferenceResponse</returns>
-        System.Threading.Tasks.Task<ViewDefaultChannelInvitationPreferenceResponse> ViewDefaultChannelInvitationPreferenceAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewDefaultChannelInvitationPreferenceResponse> ViewDefaultChannelInvitationPreferenceAsync (string apiToken, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View default channel invitation preference
@@ -1477,7 +1477,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewDefaultChannelInvitationPreferenceResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewDefaultChannelInvitationPreferenceResponse>> ViewDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewDefaultChannelInvitationPreferenceResponse>> ViewDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default);
         /// <summary>
         /// View a push configuration
         /// </summary>
@@ -1490,7 +1490,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewPushConfigurationByIdResponse</returns>
-        System.Threading.Tasks.Task<ViewPushConfigurationByIdResponse> ViewPushConfigurationByIdAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewPushConfigurationByIdResponse> ViewPushConfigurationByIdAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View a push configuration
@@ -1504,7 +1504,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewPushConfigurationByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewPushConfigurationByIdResponse>> ViewPushConfigurationByIdWithHttpInfoAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewPushConfigurationByIdResponse>> ViewPushConfigurationByIdWithHttpInfoAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default);
         /// <summary>
         /// View a push notification content template
         /// </summary>
@@ -1516,7 +1516,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="templateName"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewPushNotificationContentTemplateResponse</returns>
-        System.Threading.Tasks.Task<ViewPushNotificationContentTemplateResponse> ViewPushNotificationContentTemplateAsync (string apiToken, string templateName, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewPushNotificationContentTemplateResponse> ViewPushNotificationContentTemplateAsync (string apiToken, string templateName, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View a push notification content template
@@ -1529,7 +1529,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="templateName"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewPushNotificationContentTemplateResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewPushNotificationContentTemplateResponse>> ViewPushNotificationContentTemplateWithHttpInfoAsync (string apiToken, string templateName, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewPushNotificationContentTemplateResponse>> ViewPushNotificationContentTemplateWithHttpInfoAsync (string apiToken, string templateName, CancellationToken cancellationToken = default);
         /// <summary>
         /// View a secondary API token
         /// </summary>
@@ -1541,7 +1541,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken2"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewSecondaryApiTokenByTokenResponse</returns>
-        System.Threading.Tasks.Task<ViewSecondaryApiTokenByTokenResponse> ViewSecondaryApiTokenByTokenAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewSecondaryApiTokenByTokenResponse> ViewSecondaryApiTokenByTokenAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View a secondary API token
@@ -1554,7 +1554,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken2"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewSecondaryApiTokenByTokenResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewSecondaryApiTokenByTokenResponse>> ViewSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewSecondaryApiTokenByTokenResponse>> ViewSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default);
         #endregion Asynchronous Operations
     }
 
@@ -1751,7 +1751,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddApnsPushConfigurationResponse</returns>
-        public async System.Threading.Tasks.Task<AddApnsPushConfigurationResponse> AddApnsPushConfigurationAsync (string apiToken, AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<AddApnsPushConfigurationResponse> AddApnsPushConfigurationAsync (string apiToken, AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default)
         {
              ApiResponse<AddApnsPushConfigurationResponse> localVarResponse = await AddApnsPushConfigurationWithHttpInfoAsync(apiToken, addApnsPushConfigurationData, cancellationToken);
              return localVarResponse.Data;
@@ -1766,7 +1766,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addApnsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddApnsPushConfigurationResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<AddApnsPushConfigurationResponse>> AddApnsPushConfigurationWithHttpInfoAsync (string apiToken, AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<AddApnsPushConfigurationResponse>> AddApnsPushConfigurationWithHttpInfoAsync (string apiToken, AddApnsPushConfigurationData addApnsPushConfigurationData = default(AddApnsPushConfigurationData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1908,7 +1908,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddFcmPushConfigurationResponse</returns>
-        public async System.Threading.Tasks.Task<AddFcmPushConfigurationResponse> AddFcmPushConfigurationAsync (string apiToken, AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<AddFcmPushConfigurationResponse> AddFcmPushConfigurationAsync (string apiToken, AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default)
         {
              ApiResponse<AddFcmPushConfigurationResponse> localVarResponse = await AddFcmPushConfigurationWithHttpInfoAsync(apiToken, addFcmPushConfigurationData, cancellationToken);
              return localVarResponse.Data;
@@ -1923,7 +1923,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addFcmPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddFcmPushConfigurationResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<AddFcmPushConfigurationResponse>> AddFcmPushConfigurationWithHttpInfoAsync (string apiToken, AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<AddFcmPushConfigurationResponse>> AddFcmPushConfigurationWithHttpInfoAsync (string apiToken, AddFcmPushConfigurationData addFcmPushConfigurationData = default(AddFcmPushConfigurationData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2065,7 +2065,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddHmsPushConfigurationResponse</returns>
-        public async System.Threading.Tasks.Task<AddHmsPushConfigurationResponse> AddHmsPushConfigurationAsync (string apiToken, AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<AddHmsPushConfigurationResponse> AddHmsPushConfigurationAsync (string apiToken, AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default)
         {
              ApiResponse<AddHmsPushConfigurationResponse> localVarResponse = await AddHmsPushConfigurationWithHttpInfoAsync(apiToken, addHmsPushConfigurationData, cancellationToken);
              return localVarResponse.Data;
@@ -2080,7 +2080,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addHmsPushConfigurationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddHmsPushConfigurationResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<AddHmsPushConfigurationResponse>> AddHmsPushConfigurationWithHttpInfoAsync (string apiToken, AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<AddHmsPushConfigurationResponse>> AddHmsPushConfigurationWithHttpInfoAsync (string apiToken, AddHmsPushConfigurationData addHmsPushConfigurationData = default(AddHmsPushConfigurationData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2222,7 +2222,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addIpToWhitelistData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddIpToWhitelistResponse</returns>
-        public async System.Threading.Tasks.Task<AddIpToWhitelistResponse> AddIpToWhitelistAsync (string apiToken, AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<AddIpToWhitelistResponse> AddIpToWhitelistAsync (string apiToken, AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default)
         {
              ApiResponse<AddIpToWhitelistResponse> localVarResponse = await AddIpToWhitelistWithHttpInfoAsync(apiToken, addIpToWhitelistData, cancellationToken);
              return localVarResponse.Data;
@@ -2237,7 +2237,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addIpToWhitelistData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddIpToWhitelistResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<AddIpToWhitelistResponse>> AddIpToWhitelistWithHttpInfoAsync (string apiToken, AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<AddIpToWhitelistResponse>> AddIpToWhitelistWithHttpInfoAsync (string apiToken, AddIpToWhitelistData addIpToWhitelistData = default(AddIpToWhitelistData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2386,7 +2386,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="banUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> BanUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = default(BanUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Object> BanUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = default(BanUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default)
         {
              ApiResponse<Object> localVarResponse = await BanUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync(apiToken, customType, banUsersInChannelsWithCustomChannelTypeData, cancellationToken);
              return localVarResponse.Data;
@@ -2402,7 +2402,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="banUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> BanUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = default(BanUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> BanUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, BanUsersInChannelsWithCustomChannelTypeData banUsersInChannelsWithCustomChannelTypeData = default(BanUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2548,7 +2548,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="configureAutoEventData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdAutoEventMessageSettings</returns>
-        public async System.Threading.Tasks.Task<SendBirdAutoEventMessageSettings> ConfigureAutoEventMessagesAsync (string apiToken, ConfigureAutoEventData configureAutoEventData = default(ConfigureAutoEventData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdAutoEventMessageSettings> ConfigureAutoEventMessagesAsync (string apiToken, ConfigureAutoEventData configureAutoEventData = default(ConfigureAutoEventData), CancellationToken cancellationToken = default)
         {
              ApiResponse<SendBirdAutoEventMessageSettings> localVarResponse = await ConfigureAutoEventMessagesWithHttpInfoAsync(apiToken, configureAutoEventData, cancellationToken);
              return localVarResponse.Data;
@@ -2563,7 +2563,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="configureAutoEventData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdAutoEventMessageSettings)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdAutoEventMessageSettings>> ConfigureAutoEventMessagesWithHttpInfoAsync (string apiToken, ConfigureAutoEventData configureAutoEventData = default(ConfigureAutoEventData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdAutoEventMessageSettings>> ConfigureAutoEventMessagesWithHttpInfoAsync (string apiToken, ConfigureAutoEventData configureAutoEventData = default(ConfigureAutoEventData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2700,7 +2700,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ipWhitelistAddresses"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of DeleteAllowedIpsFromWhitelistResponse</returns>
-        public async System.Threading.Tasks.Task<DeleteAllowedIpsFromWhitelistResponse> DeleteAllowedIpsFromWhitelistAsync (string apiToken, List<string> ipWhitelistAddresses, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<DeleteAllowedIpsFromWhitelistResponse> DeleteAllowedIpsFromWhitelistAsync (string apiToken, List<string> ipWhitelistAddresses, CancellationToken cancellationToken = default)
         {
              ApiResponse<DeleteAllowedIpsFromWhitelistResponse> localVarResponse = await DeleteAllowedIpsFromWhitelistWithHttpInfoAsync(apiToken, ipWhitelistAddresses, cancellationToken);
              return localVarResponse.Data;
@@ -2715,7 +2715,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ipWhitelistAddresses"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (DeleteAllowedIpsFromWhitelistResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<DeleteAllowedIpsFromWhitelistResponse>> DeleteAllowedIpsFromWhitelistWithHttpInfoAsync (string apiToken, List<string> ipWhitelistAddresses, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<DeleteAllowedIpsFromWhitelistResponse>> DeleteAllowedIpsFromWhitelistWithHttpInfoAsync (string apiToken, List<string> ipWhitelistAddresses, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2847,7 +2847,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of DeleteApnsCertificateByIdResponse</returns>
-        public async System.Threading.Tasks.Task<DeleteApnsCertificateByIdResponse> DeleteApnsCertificateByIdAsync (string apiToken, string providerId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<DeleteApnsCertificateByIdResponse> DeleteApnsCertificateByIdAsync (string apiToken, string providerId, CancellationToken cancellationToken = default)
         {
              ApiResponse<DeleteApnsCertificateByIdResponse> localVarResponse = await DeleteApnsCertificateByIdWithHttpInfoAsync(apiToken, providerId, cancellationToken);
              return localVarResponse.Data;
@@ -2862,7 +2862,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (DeleteApnsCertificateByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<DeleteApnsCertificateByIdResponse>> DeleteApnsCertificateByIdWithHttpInfoAsync (string apiToken, string providerId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<DeleteApnsCertificateByIdResponse>> DeleteApnsCertificateByIdWithHttpInfoAsync (string apiToken, string providerId, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2999,7 +2999,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GenerateSecondaryApiTokenResponse</returns>
-        public async System.Threading.Tasks.Task<GenerateSecondaryApiTokenResponse> GenerateSecondaryApiTokenAsync (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GenerateSecondaryApiTokenResponse> GenerateSecondaryApiTokenAsync (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default)
         {
              ApiResponse<GenerateSecondaryApiTokenResponse> localVarResponse = await GenerateSecondaryApiTokenWithHttpInfoAsync(apiToken, generateSecondaryApiTokenData, cancellationToken);
              return localVarResponse.Data;
@@ -3014,7 +3014,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="generateSecondaryApiTokenData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GenerateSecondaryApiTokenResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GenerateSecondaryApiTokenResponse>> GenerateSecondaryApiTokenWithHttpInfoAsync (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GenerateSecondaryApiTokenResponse>> GenerateSecondaryApiTokenWithHttpInfoAsync (string apiToken, GenerateSecondaryApiTokenData generateSecondaryApiTokenData = default(GenerateSecondaryApiTokenData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3144,7 +3144,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdAutoEventMessageSettings</returns>
-        public async System.Threading.Tasks.Task<SendBirdAutoEventMessageSettings> ListAutoEventMessagesAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdAutoEventMessageSettings> ListAutoEventMessagesAsync (string apiToken, CancellationToken cancellationToken = default)
         {
              ApiResponse<SendBirdAutoEventMessageSettings> localVarResponse = await ListAutoEventMessagesWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -3158,7 +3158,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdAutoEventMessageSettings)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdAutoEventMessageSettings>> ListAutoEventMessagesWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdAutoEventMessageSettings>> ListAutoEventMessagesWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3215,7 +3215,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>CustomTypeListBannedUsersResponse</returns>
-        public CustomTypeListBannedUsersResponse ListBannedUsersInChannelsWithCustomChannelType (string apiToken, string customType, string token = default(string), int? limit = default(int?))
+        public CustomTypeListBannedUsersResponse ListBannedUsersInChannelsWithCustomChannelType (string apiToken, string customType, string token = default, int? limit = default)
         {
              ApiResponse<CustomTypeListBannedUsersResponse> localVarResponse = ListBannedUsersInChannelsWithCustomChannelTypeWithHttpInfo(apiToken, customType, token, limit);
              return localVarResponse.Data;
@@ -3230,7 +3230,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of CustomTypeListBannedUsersResponse</returns>
-        public ApiResponse<CustomTypeListBannedUsersResponse> ListBannedUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, string token = default(string), int? limit = default(int?))
+        public ApiResponse<CustomTypeListBannedUsersResponse> ListBannedUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, string token = default, int? limit = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3294,7 +3294,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of CustomTypeListBannedUsersResponse</returns>
-        public async System.Threading.Tasks.Task<CustomTypeListBannedUsersResponse> ListBannedUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<CustomTypeListBannedUsersResponse> ListBannedUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<CustomTypeListBannedUsersResponse> localVarResponse = await ListBannedUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync(apiToken, customType, token, limit, cancellationToken);
              return localVarResponse.Data;
@@ -3311,7 +3311,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (CustomTypeListBannedUsersResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CustomTypeListBannedUsersResponse>> ListBannedUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<CustomTypeListBannedUsersResponse>> ListBannedUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3374,7 +3374,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListMutedUsersInChannelsWithCustomChannelType200Response</returns>
-        public ListMutedUsersInChannelsWithCustomChannelType200Response ListMutedUsersInChannelsWithCustomChannelType (string apiToken, string customType, string token = default(string), int? limit = default(int?))
+        public ListMutedUsersInChannelsWithCustomChannelType200Response ListMutedUsersInChannelsWithCustomChannelType (string apiToken, string customType, string token = default, int? limit = default)
         {
              ApiResponse<ListMutedUsersInChannelsWithCustomChannelType200Response> localVarResponse = ListMutedUsersInChannelsWithCustomChannelTypeWithHttpInfo(apiToken, customType, token, limit);
              return localVarResponse.Data;
@@ -3389,7 +3389,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListMutedUsersInChannelsWithCustomChannelType200Response</returns>
-        public ApiResponse<ListMutedUsersInChannelsWithCustomChannelType200Response> ListMutedUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, string token = default(string), int? limit = default(int?))
+        public ApiResponse<ListMutedUsersInChannelsWithCustomChannelType200Response> ListMutedUsersInChannelsWithCustomChannelTypeWithHttpInfo (string apiToken, string customType, string token = default, int? limit = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3453,7 +3453,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListMutedUsersInChannelsWithCustomChannelType200Response</returns>
-        public async System.Threading.Tasks.Task<ListMutedUsersInChannelsWithCustomChannelType200Response> ListMutedUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListMutedUsersInChannelsWithCustomChannelType200Response> ListMutedUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<ListMutedUsersInChannelsWithCustomChannelType200Response> localVarResponse = await ListMutedUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync(apiToken, customType, token, limit, cancellationToken);
              return localVarResponse.Data;
@@ -3470,7 +3470,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListMutedUsersInChannelsWithCustomChannelType200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListMutedUsersInChannelsWithCustomChannelType200Response>> ListMutedUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListMutedUsersInChannelsWithCustomChannelType200Response>> ListMutedUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3604,7 +3604,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="pushType"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListPushConfigurationsResponse</returns>
-        public async System.Threading.Tasks.Task<ListPushConfigurationsResponse> ListPushConfigurationsAsync (string apiToken, string pushType, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListPushConfigurationsResponse> ListPushConfigurationsAsync (string apiToken, string pushType, CancellationToken cancellationToken = default)
         {
              ApiResponse<ListPushConfigurationsResponse> localVarResponse = await ListPushConfigurationsWithHttpInfoAsync(apiToken, pushType, cancellationToken);
              return localVarResponse.Data;
@@ -3619,7 +3619,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="pushType"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListPushConfigurationsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListPushConfigurationsResponse>> ListPushConfigurationsWithHttpInfoAsync (string apiToken, string pushType, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListPushConfigurationsResponse>> ListPushConfigurationsWithHttpInfoAsync (string apiToken, string pushType, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3744,7 +3744,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListPushNotificationContentTemplatesResponse</returns>
-        public async System.Threading.Tasks.Task<ListPushNotificationContentTemplatesResponse> ListPushNotificationContentTemplatesAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListPushNotificationContentTemplatesResponse> ListPushNotificationContentTemplatesAsync (string apiToken, CancellationToken cancellationToken = default)
         {
              ApiResponse<ListPushNotificationContentTemplatesResponse> localVarResponse = await ListPushNotificationContentTemplatesWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -3758,7 +3758,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListPushNotificationContentTemplatesResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListPushNotificationContentTemplatesResponse>> ListPushNotificationContentTemplatesWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListPushNotificationContentTemplatesResponse>> ListPushNotificationContentTemplatesWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3879,7 +3879,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListSecondaryApiTokensResponse</returns>
-        public async System.Threading.Tasks.Task<ListSecondaryApiTokensResponse> ListSecondaryApiTokensAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListSecondaryApiTokensResponse> ListSecondaryApiTokensAsync (string apiToken, CancellationToken cancellationToken = default)
         {
              ApiResponse<ListSecondaryApiTokensResponse> localVarResponse = await ListSecondaryApiTokensWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -3893,7 +3893,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListSecondaryApiTokensResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListSecondaryApiTokensResponse>> ListSecondaryApiTokensWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListSecondaryApiTokensResponse>> ListSecondaryApiTokensWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4033,7 +4033,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="muteUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> MuteUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, MuteUsersInChannelsWithCustomChannelTypeData muteUsersInChannelsWithCustomChannelTypeData = default(MuteUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Object> MuteUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, MuteUsersInChannelsWithCustomChannelTypeData muteUsersInChannelsWithCustomChannelTypeData = default(MuteUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default)
         {
              ApiResponse<Object> localVarResponse = await MuteUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync(apiToken, customType, muteUsersInChannelsWithCustomChannelTypeData, cancellationToken);
              return localVarResponse.Data;
@@ -4049,7 +4049,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="muteUsersInChannelsWithCustomChannelTypeData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> MuteUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, MuteUsersInChannelsWithCustomChannelTypeData muteUsersInChannelsWithCustomChannelTypeData = default(MuteUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> MuteUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, MuteUsersInChannelsWithCustomChannelTypeData muteUsersInChannelsWithCustomChannelTypeData = default(MuteUsersInChannelsWithCustomChannelTypeData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4197,7 +4197,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RemovePushConfigurationByIdResponse</returns>
-        public async System.Threading.Tasks.Task<RemovePushConfigurationByIdResponse> RemovePushConfigurationByIdAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<RemovePushConfigurationByIdResponse> RemovePushConfigurationByIdAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default)
         {
              ApiResponse<RemovePushConfigurationByIdResponse> localVarResponse = await RemovePushConfigurationByIdWithHttpInfoAsync(apiToken, pushType, providerId, cancellationToken);
              return localVarResponse.Data;
@@ -4213,7 +4213,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RemovePushConfigurationByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RemovePushConfigurationByIdResponse>> RemovePushConfigurationByIdWithHttpInfoAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<RemovePushConfigurationByIdResponse>> RemovePushConfigurationByIdWithHttpInfoAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4342,7 +4342,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RetrieveIpWhitelistResponse</returns>
-        public async System.Threading.Tasks.Task<RetrieveIpWhitelistResponse> RetrieveIpWhitelistAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<RetrieveIpWhitelistResponse> RetrieveIpWhitelistAsync (string apiToken, CancellationToken cancellationToken = default)
         {
              ApiResponse<RetrieveIpWhitelistResponse> localVarResponse = await RetrieveIpWhitelistWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -4356,7 +4356,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RetrieveIpWhitelistResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RetrieveIpWhitelistResponse>> RetrieveIpWhitelistWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<RetrieveIpWhitelistResponse>> RetrieveIpWhitelistWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4484,7 +4484,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken2"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RevokeSecondaryApiTokenByTokenResponse</returns>
-        public async System.Threading.Tasks.Task<RevokeSecondaryApiTokenByTokenResponse> RevokeSecondaryApiTokenByTokenAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<RevokeSecondaryApiTokenByTokenResponse> RevokeSecondaryApiTokenByTokenAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default)
         {
              ApiResponse<RevokeSecondaryApiTokenByTokenResponse> localVarResponse = await RevokeSecondaryApiTokenByTokenWithHttpInfoAsync(apiToken, apiToken2, cancellationToken);
              return localVarResponse.Data;
@@ -4499,7 +4499,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken2"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RevokeSecondaryApiTokenByTokenResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RevokeSecondaryApiTokenByTokenResponse>> RevokeSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<RevokeSecondaryApiTokenByTokenResponse>> RevokeSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4643,7 +4643,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="setDomainFilterData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdChannelResponse</returns>
-        public async System.Threading.Tasks.Task<SendBirdChannelResponse> SetDomainFilterAsync (string apiToken, string customType, SetDomainFilterData setDomainFilterData = default(SetDomainFilterData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdChannelResponse> SetDomainFilterAsync (string apiToken, string customType, SetDomainFilterData setDomainFilterData = default(SetDomainFilterData), CancellationToken cancellationToken = default)
         {
              ApiResponse<SendBirdChannelResponse> localVarResponse = await SetDomainFilterWithHttpInfoAsync(apiToken, customType, setDomainFilterData, cancellationToken);
              return localVarResponse.Data;
@@ -4659,7 +4659,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="setDomainFilterData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdChannelResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdChannelResponse>> SetDomainFilterWithHttpInfoAsync (string apiToken, string customType, SetDomainFilterData setDomainFilterData = default(SetDomainFilterData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdChannelResponse>> SetDomainFilterWithHttpInfoAsync (string apiToken, string customType, SetDomainFilterData setDomainFilterData = default(SetDomainFilterData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4807,7 +4807,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userIds"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> UnbanUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Object> UnbanUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default)
         {
              ApiResponse<Object> localVarResponse = await UnbanUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync(apiToken, customType, userIds, cancellationToken);
              return localVarResponse.Data;
@@ -4823,7 +4823,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userIds"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> UnbanUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> UnbanUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4966,7 +4966,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userIds"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> UnmuteUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Object> UnmuteUsersInChannelsWithCustomChannelTypeAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default)
         {
              ApiResponse<Object> localVarResponse = await UnmuteUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync(apiToken, customType, userIds, cancellationToken);
              return localVarResponse.Data;
@@ -4982,7 +4982,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userIds"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> UnmuteUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> UnmuteUsersInChannelsWithCustomChannelTypeWithHttpInfoAsync (string apiToken, string customType, List<string> userIds, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5130,7 +5130,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateApnsPushConfigurationByIdResponse</returns>
-        public async System.Threading.Tasks.Task<UpdateApnsPushConfigurationByIdResponse> UpdateApnsPushConfigurationByIdAsync (string apiToken, string providerId, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<UpdateApnsPushConfigurationByIdResponse> UpdateApnsPushConfigurationByIdAsync (string apiToken, string providerId, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default)
         {
              ApiResponse<UpdateApnsPushConfigurationByIdResponse> localVarResponse = await UpdateApnsPushConfigurationByIdWithHttpInfoAsync(apiToken, providerId, updateApnsPushConfigurationByIdData, cancellationToken);
              return localVarResponse.Data;
@@ -5146,7 +5146,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateApnsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateApnsPushConfigurationByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UpdateApnsPushConfigurationByIdResponse>> UpdateApnsPushConfigurationByIdWithHttpInfoAsync (string apiToken, string providerId, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateApnsPushConfigurationByIdResponse>> UpdateApnsPushConfigurationByIdWithHttpInfoAsync (string apiToken, string providerId, UpdateApnsPushConfigurationByIdData updateApnsPushConfigurationByIdData = default(UpdateApnsPushConfigurationByIdData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5292,7 +5292,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateDefaultChannelInvitationPreferenceResponse</returns>
-        public async System.Threading.Tasks.Task<UpdateDefaultChannelInvitationPreferenceResponse> UpdateDefaultChannelInvitationPreferenceAsync (string apiToken, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<UpdateDefaultChannelInvitationPreferenceResponse> UpdateDefaultChannelInvitationPreferenceAsync (string apiToken, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default)
         {
              ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse> localVarResponse = await UpdateDefaultChannelInvitationPreferenceWithHttpInfoAsync(apiToken, updateDefaultChannelInvitationPreferenceData, cancellationToken);
              return localVarResponse.Data;
@@ -5307,7 +5307,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateDefaultChannelInvitationPreferenceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateDefaultChannelInvitationPreferenceResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse>> UpdateDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateDefaultChannelInvitationPreferenceResponse>> UpdateDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken, UpdateDefaultChannelInvitationPreferenceData updateDefaultChannelInvitationPreferenceData = default(UpdateDefaultChannelInvitationPreferenceData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5456,7 +5456,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateFcmPushConfigurationByIdResponse</returns>
-        public async System.Threading.Tasks.Task<UpdateFcmPushConfigurationByIdResponse> UpdateFcmPushConfigurationByIdAsync (string apiToken, string providerId, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<UpdateFcmPushConfigurationByIdResponse> UpdateFcmPushConfigurationByIdAsync (string apiToken, string providerId, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default)
         {
              ApiResponse<UpdateFcmPushConfigurationByIdResponse> localVarResponse = await UpdateFcmPushConfigurationByIdWithHttpInfoAsync(apiToken, providerId, updateFcmPushConfigurationByIdData, cancellationToken);
              return localVarResponse.Data;
@@ -5472,7 +5472,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateFcmPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateFcmPushConfigurationByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UpdateFcmPushConfigurationByIdResponse>> UpdateFcmPushConfigurationByIdWithHttpInfoAsync (string apiToken, string providerId, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateFcmPushConfigurationByIdResponse>> UpdateFcmPushConfigurationByIdWithHttpInfoAsync (string apiToken, string providerId, UpdateFcmPushConfigurationByIdData updateFcmPushConfigurationByIdData = default(UpdateFcmPushConfigurationByIdData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5625,7 +5625,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateHmsPushConfigurationByIdResponse</returns>
-        public async System.Threading.Tasks.Task<UpdateHmsPushConfigurationByIdResponse> UpdateHmsPushConfigurationByIdAsync (string apiToken, string providerId, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<UpdateHmsPushConfigurationByIdResponse> UpdateHmsPushConfigurationByIdAsync (string apiToken, string providerId, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default)
         {
              ApiResponse<UpdateHmsPushConfigurationByIdResponse> localVarResponse = await UpdateHmsPushConfigurationByIdWithHttpInfoAsync(apiToken, providerId, updateHmsPushConfigurationByIdData, cancellationToken);
              return localVarResponse.Data;
@@ -5641,7 +5641,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateHmsPushConfigurationByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateHmsPushConfigurationByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UpdateHmsPushConfigurationByIdResponse>> UpdateHmsPushConfigurationByIdWithHttpInfoAsync (string apiToken, string providerId, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateHmsPushConfigurationByIdResponse>> UpdateHmsPushConfigurationByIdWithHttpInfoAsync (string apiToken, string providerId, UpdateHmsPushConfigurationByIdData updateHmsPushConfigurationByIdData = default(UpdateHmsPushConfigurationByIdData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5794,7 +5794,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdatePushNotificationContentTemplateResponse</returns>
-        public async System.Threading.Tasks.Task<UpdatePushNotificationContentTemplateResponse> UpdatePushNotificationContentTemplateAsync (string apiToken, string templateName, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<UpdatePushNotificationContentTemplateResponse> UpdatePushNotificationContentTemplateAsync (string apiToken, string templateName, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default)
         {
              ApiResponse<UpdatePushNotificationContentTemplateResponse> localVarResponse = await UpdatePushNotificationContentTemplateWithHttpInfoAsync(apiToken, templateName, updatePushNotificationContentTemplateData, cancellationToken);
              return localVarResponse.Data;
@@ -5810,7 +5810,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updatePushNotificationContentTemplateData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdatePushNotificationContentTemplateResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UpdatePushNotificationContentTemplateResponse>> UpdatePushNotificationContentTemplateWithHttpInfoAsync (string apiToken, string templateName, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<UpdatePushNotificationContentTemplateResponse>> UpdatePushNotificationContentTemplateWithHttpInfoAsync (string apiToken, string templateName, UpdatePushNotificationContentTemplateData updatePushNotificationContentTemplateData = default(UpdatePushNotificationContentTemplateData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5944,7 +5944,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewDefaultChannelInvitationPreferenceResponse</returns>
-        public async System.Threading.Tasks.Task<ViewDefaultChannelInvitationPreferenceResponse> ViewDefaultChannelInvitationPreferenceAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewDefaultChannelInvitationPreferenceResponse> ViewDefaultChannelInvitationPreferenceAsync (string apiToken, CancellationToken cancellationToken = default)
         {
              ApiResponse<ViewDefaultChannelInvitationPreferenceResponse> localVarResponse = await ViewDefaultChannelInvitationPreferenceWithHttpInfoAsync(apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -5958,7 +5958,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewDefaultChannelInvitationPreferenceResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewDefaultChannelInvitationPreferenceResponse>> ViewDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewDefaultChannelInvitationPreferenceResponse>> ViewDefaultChannelInvitationPreferenceWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -6093,7 +6093,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewPushConfigurationByIdResponse</returns>
-        public async System.Threading.Tasks.Task<ViewPushConfigurationByIdResponse> ViewPushConfigurationByIdAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewPushConfigurationByIdResponse> ViewPushConfigurationByIdAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default)
         {
              ApiResponse<ViewPushConfigurationByIdResponse> localVarResponse = await ViewPushConfigurationByIdWithHttpInfoAsync(apiToken, pushType, providerId, cancellationToken);
              return localVarResponse.Data;
@@ -6109,7 +6109,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="providerId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewPushConfigurationByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewPushConfigurationByIdResponse>> ViewPushConfigurationByIdWithHttpInfoAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewPushConfigurationByIdResponse>> ViewPushConfigurationByIdWithHttpInfoAsync (string apiToken, string pushType, string providerId, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -6245,7 +6245,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="templateName"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewPushNotificationContentTemplateResponse</returns>
-        public async System.Threading.Tasks.Task<ViewPushNotificationContentTemplateResponse> ViewPushNotificationContentTemplateAsync (string apiToken, string templateName, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewPushNotificationContentTemplateResponse> ViewPushNotificationContentTemplateAsync (string apiToken, string templateName, CancellationToken cancellationToken = default)
         {
              ApiResponse<ViewPushNotificationContentTemplateResponse> localVarResponse = await ViewPushNotificationContentTemplateWithHttpInfoAsync(apiToken, templateName, cancellationToken);
              return localVarResponse.Data;
@@ -6260,7 +6260,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="templateName"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewPushNotificationContentTemplateResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewPushNotificationContentTemplateResponse>> ViewPushNotificationContentTemplateWithHttpInfoAsync (string apiToken, string templateName, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewPushNotificationContentTemplateResponse>> ViewPushNotificationContentTemplateWithHttpInfoAsync (string apiToken, string templateName, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -6392,7 +6392,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken2"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewSecondaryApiTokenByTokenResponse</returns>
-        public async System.Threading.Tasks.Task<ViewSecondaryApiTokenByTokenResponse> ViewSecondaryApiTokenByTokenAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewSecondaryApiTokenByTokenResponse> ViewSecondaryApiTokenByTokenAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default)
         {
              ApiResponse<ViewSecondaryApiTokenByTokenResponse> localVarResponse = await ViewSecondaryApiTokenByTokenWithHttpInfoAsync(apiToken, apiToken2, cancellationToken);
              return localVarResponse.Data;
@@ -6407,7 +6407,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken2"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewSecondaryApiTokenByTokenResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewSecondaryApiTokenByTokenResponse>> ViewSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewSecondaryApiTokenByTokenResponse>> ViewSecondaryApiTokenByTokenWithHttpInfoAsync (string apiToken, string apiToken2, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)

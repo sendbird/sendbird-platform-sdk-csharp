@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="pushTriggerOption">Determines the type of push notification trigger to apply to the speficied channel. Acceptable values are limited to the following:&lt;br /&gt;- default: the user&#39;s push notification trigger setting automatically applies to the channel. This is the default setting.&lt;br /&gt;- all: when disconnected from Sendbird server, the user receives notifications for all new messages in the channel including messages the user has been mentioned in.&lt;br /&gt;- mention_only: when disconnected from Sendbird server, the user only receives notifications for messages in the channel the user has been mentioned in.&lt;br /&gt;- off: the user doesn&#39;t receive any notifications in the channel. (required).</param>
         /// <param name="enable">(Deprecated) Determines whether notification messages for the user are delivered to the group channel. (default: true) (required).</param>
         /// <param name="pushSound">Specifies the name of a sound file to be played when a push notification is delivered to the specified channel. (required).</param>
-        public UpdatePushPreferencesForChannelByUrlData(string pushTriggerOption = default(string), bool enable = default(bool), string pushSound = default(string))
+        public UpdatePushPreferencesForChannelByUrlData(string pushTriggerOption = default, bool enable = default(bool), string pushSound = default)
         {
             // to ensure "pushTriggerOption" is required (not null)
             if (pushTriggerOption == null)

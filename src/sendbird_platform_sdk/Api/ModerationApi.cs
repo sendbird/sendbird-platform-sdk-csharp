@@ -137,7 +137,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>GcListBannedUsersResponse</returns>
-        GcListBannedUsersResponse GcListBannedUsers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        GcListBannedUsersResponse GcListBannedUsers (string apiToken, string channelUrl, string token = default, int? limit = default);
 
         /// <summary>
         /// List banned users
@@ -151,7 +151,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of GcListBannedUsersResponse</returns>
-        ApiResponse<GcListBannedUsersResponse> GcListBannedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        ApiResponse<GcListBannedUsersResponse> GcListBannedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default, int? limit = default);
         /// <summary>
         /// List muted users
         /// </summary>
@@ -164,7 +164,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>GcListMutedUsersResponse</returns>
-        GcListMutedUsersResponse GcListMutedUsers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        GcListMutedUsersResponse GcListMutedUsers (string apiToken, string channelUrl, string token = default, int? limit = default);
 
         /// <summary>
         /// List muted users
@@ -178,7 +178,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of GcListMutedUsersResponse</returns>
-        ApiResponse<GcListMutedUsersResponse> GcListMutedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        ApiResponse<GcListMutedUsersResponse> GcListMutedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default, int? limit = default);
         /// <summary>
         /// Mute a user
         /// </summary>
@@ -343,7 +343,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListBannedChannelsResponse</returns>
-        ListBannedChannelsResponse ListBannedChannels (string apiToken, string userId, string token = default(string), int? limit = default(int?));
+        ListBannedChannelsResponse ListBannedChannels (string apiToken, string userId, string token = default, int? limit = default);
 
         /// <summary>
         /// List banned channels
@@ -357,7 +357,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListBannedChannelsResponse</returns>
-        ApiResponse<ListBannedChannelsResponse> ListBannedChannelsWithHttpInfo (string apiToken, string userId, string token = default(string), int? limit = default(int?));
+        ApiResponse<ListBannedChannelsResponse> ListBannedChannelsWithHttpInfo (string apiToken, string userId, string token = default, int? limit = default);
         /// <summary>
         /// List blocked users
         /// </summary>
@@ -373,7 +373,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
         /// <returns>ListBlockedUsersResponse</returns>
-        ListBlockedUsersResponse ListBlockedUsers (string apiToken, string userId, string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string));
+        ListBlockedUsersResponse ListBlockedUsers (string apiToken, string userId, string token = default, int? limit = default, string userIds = default, string metadatakey = default, string metadatavaluesIn = default);
 
         /// <summary>
         /// List blocked users
@@ -390,7 +390,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
         /// <returns>ApiResponse of ListBlockedUsersResponse</returns>
-        ApiResponse<ListBlockedUsersResponse> ListBlockedUsersWithHttpInfo (string apiToken, string userId, string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string));
+        ApiResponse<ListBlockedUsersResponse> ListBlockedUsersWithHttpInfo (string apiToken, string userId, string token = default, int? limit = default, string userIds = default, string metadatakey = default, string metadatavaluesIn = default);
         /// <summary>
         /// List muted channels
         /// </summary>
@@ -403,7 +403,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListMutedChannelsResponse</returns>
-        ListMutedChannelsResponse ListMutedChannels (string apiToken, string userId, string token = default(string), int? limit = default(int?));
+        ListMutedChannelsResponse ListMutedChannels (string apiToken, string userId, string token = default, int? limit = default);
 
         /// <summary>
         /// List muted channels
@@ -417,7 +417,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListMutedChannelsResponse</returns>
-        ApiResponse<ListMutedChannelsResponse> ListMutedChannelsWithHttpInfo (string apiToken, string userId, string token = default(string), int? limit = default(int?));
+        ApiResponse<ListMutedChannelsResponse> ListMutedChannelsWithHttpInfo (string apiToken, string userId, string token = default, int? limit = default);
         /// <summary>
         /// Mute in channels with custom channel types
         /// </summary>
@@ -505,7 +505,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>OcListBannedUsersResponse</returns>
-        OcListBannedUsersResponse OcListBannedUsers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        OcListBannedUsersResponse OcListBannedUsers (string apiToken, string channelUrl, string token = default, int? limit = default);
 
         /// <summary>
         /// List banned users
@@ -519,7 +519,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of OcListBannedUsersResponse</returns>
-        ApiResponse<OcListBannedUsersResponse> OcListBannedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        ApiResponse<OcListBannedUsersResponse> OcListBannedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default, int? limit = default);
         /// <summary>
         /// List muted users
         /// </summary>
@@ -532,7 +532,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>OcListMutedUsersResponse</returns>
-        OcListMutedUsersResponse OcListMutedUsers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        OcListMutedUsersResponse OcListMutedUsers (string apiToken, string channelUrl, string token = default, int? limit = default);
 
         /// <summary>
         /// List muted users
@@ -546,7 +546,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of OcListMutedUsersResponse</returns>
-        ApiResponse<OcListMutedUsersResponse> OcListMutedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        ApiResponse<OcListMutedUsersResponse> OcListMutedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default, int? limit = default);
         /// <summary>
         /// Mute a user
         /// </summary>
@@ -738,7 +738,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="banFromChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> BanFromChannelsWithCustomChannelTypesAsync (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Object> BanFromChannelsWithCustomChannelTypesAsync (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Ban from channels with custom channel types
@@ -752,7 +752,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="banFromChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> BanFromChannelsWithCustomChannelTypesWithHttpInfoAsync (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> BanFromChannelsWithCustomChannelTypesWithHttpInfoAsync (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Block a user
         /// </summary>
@@ -765,7 +765,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="blockUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of BlockUserResponse</returns>
-        System.Threading.Tasks.Task<BlockUserResponse> BlockUserAsync (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<BlockUserResponse> BlockUserAsync (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Block a user
@@ -779,7 +779,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="blockUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (BlockUserResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<BlockUserResponse>> BlockUserWithHttpInfoAsync (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<BlockUserResponse>> BlockUserWithHttpInfoAsync (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Ban a user
         /// </summary>
@@ -792,7 +792,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcBanUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcBanUserResponse</returns>
-        System.Threading.Tasks.Task<GcBanUserResponse> GcBanUserAsync (string apiToken, string channelUrl, GcBanUserData gcBanUserData = default(GcBanUserData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GcBanUserResponse> GcBanUserAsync (string apiToken, string channelUrl, GcBanUserData gcBanUserData = default(GcBanUserData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Ban a user
@@ -806,7 +806,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcBanUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcBanUserResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GcBanUserResponse>> GcBanUserWithHttpInfoAsync (string apiToken, string channelUrl, GcBanUserData gcBanUserData = default(GcBanUserData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GcBanUserResponse>> GcBanUserWithHttpInfoAsync (string apiToken, string channelUrl, GcBanUserData gcBanUserData = default(GcBanUserData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Freeze a channel
         /// </summary>
@@ -819,7 +819,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcFreezeChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdGroupChannel</returns>
-        System.Threading.Tasks.Task<SendBirdGroupChannel> GcFreezeChannelAsync (string apiToken, string channelUrl, GcFreezeChannelData gcFreezeChannelData = default(GcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdGroupChannel> GcFreezeChannelAsync (string apiToken, string channelUrl, GcFreezeChannelData gcFreezeChannelData = default(GcFreezeChannelData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Freeze a channel
@@ -833,7 +833,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcFreezeChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcFreezeChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcFreezeChannelData gcFreezeChannelData = default(GcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcFreezeChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcFreezeChannelData gcFreezeChannelData = default(GcFreezeChannelData), CancellationToken cancellationToken = default);
         /// <summary>
         /// List banned users
         /// </summary>
@@ -847,7 +847,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcListBannedUsersResponse</returns>
-        System.Threading.Tasks.Task<GcListBannedUsersResponse> GcListBannedUsersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GcListBannedUsersResponse> GcListBannedUsersAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List banned users
@@ -862,7 +862,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcListBannedUsersResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GcListBannedUsersResponse>> GcListBannedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GcListBannedUsersResponse>> GcListBannedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// List muted users
         /// </summary>
@@ -876,7 +876,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcListMutedUsersResponse</returns>
-        System.Threading.Tasks.Task<GcListMutedUsersResponse> GcListMutedUsersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GcListMutedUsersResponse> GcListMutedUsersAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List muted users
@@ -891,7 +891,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcListMutedUsersResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GcListMutedUsersResponse>> GcListMutedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GcListMutedUsersResponse>> GcListMutedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Mute a user
         /// </summary>
@@ -904,7 +904,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcMuteUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdGroupChannel</returns>
-        System.Threading.Tasks.Task<SendBirdGroupChannel> GcMuteUserAsync (string apiToken, string channelUrl, GcMuteUserData gcMuteUserData = default(GcMuteUserData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdGroupChannel> GcMuteUserAsync (string apiToken, string channelUrl, GcMuteUserData gcMuteUserData = default(GcMuteUserData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Mute a user
@@ -918,7 +918,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcMuteUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcMuteUserWithHttpInfoAsync (string apiToken, string channelUrl, GcMuteUserData gcMuteUserData = default(GcMuteUserData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcMuteUserWithHttpInfoAsync (string apiToken, string channelUrl, GcMuteUserData gcMuteUserData = default(GcMuteUserData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Unban a user
         /// </summary>
@@ -931,7 +931,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Unban a user
@@ -945,7 +945,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default);
         /// <summary>
         /// Unmute a user
         /// </summary>
@@ -958,7 +958,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Unmute a user
@@ -972,7 +972,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a ban
         /// </summary>
@@ -986,7 +986,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcUpdateBanByIdResponse</returns>
-        System.Threading.Tasks.Task<GcUpdateBanByIdResponse> GcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GcUpdateBanByIdResponse> GcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Update a ban
@@ -1001,7 +1001,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcUpdateBanByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GcUpdateBanByIdResponse>> GcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GcUpdateBanByIdResponse>> GcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData), CancellationToken cancellationToken = default);
         /// <summary>
         /// View a ban
         /// </summary>
@@ -1014,7 +1014,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcViewBanByIdResponse</returns>
-        System.Threading.Tasks.Task<GcViewBanByIdResponse> GcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GcViewBanByIdResponse> GcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View a ban
@@ -1028,7 +1028,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcViewBanByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GcViewBanByIdResponse>> GcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GcViewBanByIdResponse>> GcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default);
         /// <summary>
         /// View a mute
         /// </summary>
@@ -1041,7 +1041,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcViewMuteByIdResponse</returns>
-        System.Threading.Tasks.Task<GcViewMuteByIdResponse> GcViewMuteByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GcViewMuteByIdResponse> GcViewMuteByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View a mute
@@ -1055,7 +1055,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcViewMuteByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GcViewMuteByIdResponse>> GcViewMuteByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GcViewMuteByIdResponse>> GcViewMuteByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default);
         /// <summary>
         /// List banned channels
         /// </summary>
@@ -1069,7 +1069,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListBannedChannelsResponse</returns>
-        System.Threading.Tasks.Task<ListBannedChannelsResponse> ListBannedChannelsAsync (string apiToken, string userId, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListBannedChannelsResponse> ListBannedChannelsAsync (string apiToken, string userId, string token = default, int? limit = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List banned channels
@@ -1084,7 +1084,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListBannedChannelsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListBannedChannelsResponse>> ListBannedChannelsWithHttpInfoAsync (string apiToken, string userId, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListBannedChannelsResponse>> ListBannedChannelsWithHttpInfoAsync (string apiToken, string userId, string token = default, int? limit = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// List blocked users
         /// </summary>
@@ -1101,7 +1101,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metadatavaluesIn"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListBlockedUsersResponse</returns>
-        System.Threading.Tasks.Task<ListBlockedUsersResponse> ListBlockedUsersAsync (string apiToken, string userId, string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListBlockedUsersResponse> ListBlockedUsersAsync (string apiToken, string userId, string token = default, int? limit = default, string userIds = default, string metadatakey = default, string metadatavaluesIn = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List blocked users
@@ -1119,7 +1119,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metadatavaluesIn"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListBlockedUsersResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListBlockedUsersResponse>> ListBlockedUsersWithHttpInfoAsync (string apiToken, string userId, string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListBlockedUsersResponse>> ListBlockedUsersWithHttpInfoAsync (string apiToken, string userId, string token = default, int? limit = default, string userIds = default, string metadatakey = default, string metadatavaluesIn = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// List muted channels
         /// </summary>
@@ -1133,7 +1133,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListMutedChannelsResponse</returns>
-        System.Threading.Tasks.Task<ListMutedChannelsResponse> ListMutedChannelsAsync (string apiToken, string userId, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListMutedChannelsResponse> ListMutedChannelsAsync (string apiToken, string userId, string token = default, int? limit = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List muted channels
@@ -1148,7 +1148,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListMutedChannelsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListMutedChannelsResponse>> ListMutedChannelsWithHttpInfoAsync (string apiToken, string userId, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListMutedChannelsResponse>> ListMutedChannelsWithHttpInfoAsync (string apiToken, string userId, string token = default, int? limit = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Mute in channels with custom channel types
         /// </summary>
@@ -1161,7 +1161,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="muteInChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> MuteInChannelsWithCustomChannelTypesAsync (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Object> MuteInChannelsWithCustomChannelTypesAsync (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Mute in channels with custom channel types
@@ -1175,7 +1175,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="muteInChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> MuteInChannelsWithCustomChannelTypesWithHttpInfoAsync (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> MuteInChannelsWithCustomChannelTypesWithHttpInfoAsync (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Ban a user
         /// </summary>
@@ -1188,7 +1188,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocBanUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcBanUserResponse</returns>
-        System.Threading.Tasks.Task<OcBanUserResponse> OcBanUserAsync (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcBanUserResponse> OcBanUserAsync (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Ban a user
@@ -1202,7 +1202,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocBanUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcBanUserResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcBanUserResponse>> OcBanUserWithHttpInfoAsync (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcBanUserResponse>> OcBanUserWithHttpInfoAsync (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Freeze a channel
         /// </summary>
@@ -1215,7 +1215,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocFreezeChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        System.Threading.Tasks.Task<SendBirdOpenChannel> OcFreezeChannelAsync (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdOpenChannel> OcFreezeChannelAsync (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Freeze a channel
@@ -1229,7 +1229,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocFreezeChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcFreezeChannelWithHttpInfoAsync (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcFreezeChannelWithHttpInfoAsync (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default);
         /// <summary>
         /// List banned users
         /// </summary>
@@ -1243,7 +1243,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListBannedUsersResponse</returns>
-        System.Threading.Tasks.Task<OcListBannedUsersResponse> OcListBannedUsersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcListBannedUsersResponse> OcListBannedUsersAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List banned users
@@ -1258,7 +1258,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListBannedUsersResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcListBannedUsersResponse>> OcListBannedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcListBannedUsersResponse>> OcListBannedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// List muted users
         /// </summary>
@@ -1272,7 +1272,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListMutedUsersResponse</returns>
-        System.Threading.Tasks.Task<OcListMutedUsersResponse> OcListMutedUsersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcListMutedUsersResponse> OcListMutedUsersAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List muted users
@@ -1287,7 +1287,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListMutedUsersResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcListMutedUsersResponse>> OcListMutedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcListMutedUsersResponse>> OcListMutedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Mute a user
         /// </summary>
@@ -1300,7 +1300,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocMuteUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        System.Threading.Tasks.Task<SendBirdOpenChannel> OcMuteUserAsync (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdOpenChannel> OcMuteUserAsync (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Mute a user
@@ -1314,7 +1314,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocMuteUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcMuteUserWithHttpInfoAsync (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcMuteUserWithHttpInfoAsync (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Unban a user
         /// </summary>
@@ -1327,7 +1327,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Unban a user
@@ -1341,7 +1341,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default);
         /// <summary>
         /// Unmute a user
         /// </summary>
@@ -1354,7 +1354,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Unmute a user
@@ -1368,7 +1368,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a ban
         /// </summary>
@@ -1382,7 +1382,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcUpdateBanByIdResponse</returns>
-        System.Threading.Tasks.Task<OcUpdateBanByIdResponse> OcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcUpdateBanByIdResponse> OcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Update a ban
@@ -1397,7 +1397,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcUpdateBanByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcUpdateBanByIdResponse>> OcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcUpdateBanByIdResponse>> OcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default);
         /// <summary>
         /// View a ban
         /// </summary>
@@ -1410,7 +1410,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcViewBanByIdResponse</returns>
-        System.Threading.Tasks.Task<OcViewBanByIdResponse> OcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcViewBanByIdResponse> OcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View a ban
@@ -1424,7 +1424,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcViewBanByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcViewBanByIdResponse>> OcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcViewBanByIdResponse>> OcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default);
         /// <summary>
         /// View a mute
         /// </summary>
@@ -1437,7 +1437,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcViewMuteByIdResponse</returns>
-        System.Threading.Tasks.Task<OcViewMuteByIdResponse> OcViewMuteByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcViewMuteByIdResponse> OcViewMuteByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View a mute
@@ -1451,7 +1451,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcViewMuteByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcViewMuteByIdResponse>> OcViewMuteByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcViewMuteByIdResponse>> OcViewMuteByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default);
         /// <summary>
         /// Unblock a user
         /// </summary>
@@ -1464,7 +1464,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="targetId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> UnblockUserByIdAsync (string apiToken, string userId, string targetId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Object> UnblockUserByIdAsync (string apiToken, string userId, string targetId, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Unblock a user
@@ -1478,7 +1478,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="targetId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> UnblockUserByIdWithHttpInfoAsync (string apiToken, string userId, string targetId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> UnblockUserByIdWithHttpInfoAsync (string apiToken, string userId, string targetId, CancellationToken cancellationToken = default);
         #endregion Asynchronous Operations
     }
 
@@ -1682,7 +1682,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="banFromChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> BanFromChannelsWithCustomChannelTypesAsync (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Object> BanFromChannelsWithCustomChannelTypesAsync (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default)
         {
              ApiResponse<Object> localVarResponse = await BanFromChannelsWithCustomChannelTypesWithHttpInfoAsync(apiToken, userId, banFromChannelsWithCustomChannelTypesData, cancellationToken);
              return localVarResponse.Data;
@@ -1698,7 +1698,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="banFromChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> BanFromChannelsWithCustomChannelTypesWithHttpInfoAsync (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> BanFromChannelsWithCustomChannelTypesWithHttpInfoAsync (string apiToken, string userId, BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = default(BanFromChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1851,7 +1851,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="blockUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of BlockUserResponse</returns>
-        public async System.Threading.Tasks.Task<BlockUserResponse> BlockUserAsync (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<BlockUserResponse> BlockUserAsync (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData), CancellationToken cancellationToken = default)
         {
              ApiResponse<BlockUserResponse> localVarResponse = await BlockUserWithHttpInfoAsync(apiToken, userId, blockUserData, cancellationToken);
              return localVarResponse.Data;
@@ -1867,7 +1867,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="blockUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (BlockUserResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<BlockUserResponse>> BlockUserWithHttpInfoAsync (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<BlockUserResponse>> BlockUserWithHttpInfoAsync (string apiToken, string userId, BlockUserData blockUserData = default(BlockUserData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2020,7 +2020,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcBanUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcBanUserResponse</returns>
-        public async System.Threading.Tasks.Task<GcBanUserResponse> GcBanUserAsync (string apiToken, string channelUrl, GcBanUserData gcBanUserData = default(GcBanUserData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GcBanUserResponse> GcBanUserAsync (string apiToken, string channelUrl, GcBanUserData gcBanUserData = default(GcBanUserData), CancellationToken cancellationToken = default)
         {
              ApiResponse<GcBanUserResponse> localVarResponse = await GcBanUserWithHttpInfoAsync(apiToken, channelUrl, gcBanUserData, cancellationToken);
              return localVarResponse.Data;
@@ -2036,7 +2036,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcBanUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcBanUserResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GcBanUserResponse>> GcBanUserWithHttpInfoAsync (string apiToken, string channelUrl, GcBanUserData gcBanUserData = default(GcBanUserData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GcBanUserResponse>> GcBanUserWithHttpInfoAsync (string apiToken, string channelUrl, GcBanUserData gcBanUserData = default(GcBanUserData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2189,7 +2189,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcFreezeChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdGroupChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcFreezeChannelAsync (string apiToken, string channelUrl, GcFreezeChannelData gcFreezeChannelData = default(GcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcFreezeChannelAsync (string apiToken, string channelUrl, GcFreezeChannelData gcFreezeChannelData = default(GcFreezeChannelData), CancellationToken cancellationToken = default)
         {
              ApiResponse<SendBirdGroupChannel> localVarResponse = await GcFreezeChannelWithHttpInfoAsync(apiToken, channelUrl, gcFreezeChannelData, cancellationToken);
              return localVarResponse.Data;
@@ -2205,7 +2205,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcFreezeChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcFreezeChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcFreezeChannelData gcFreezeChannelData = default(GcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcFreezeChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcFreezeChannelData gcFreezeChannelData = default(GcFreezeChannelData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2275,7 +2275,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>GcListBannedUsersResponse</returns>
-        public GcListBannedUsersResponse GcListBannedUsers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
+        public GcListBannedUsersResponse GcListBannedUsers (string apiToken, string channelUrl, string token = default, int? limit = default)
         {
              ApiResponse<GcListBannedUsersResponse> localVarResponse = GcListBannedUsersWithHttpInfo(apiToken, channelUrl, token, limit);
              return localVarResponse.Data;
@@ -2290,7 +2290,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of GcListBannedUsersResponse</returns>
-        public ApiResponse<GcListBannedUsersResponse> GcListBannedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
+        public ApiResponse<GcListBannedUsersResponse> GcListBannedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default, int? limit = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2354,7 +2354,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcListBannedUsersResponse</returns>
-        public async System.Threading.Tasks.Task<GcListBannedUsersResponse> GcListBannedUsersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GcListBannedUsersResponse> GcListBannedUsersAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<GcListBannedUsersResponse> localVarResponse = await GcListBannedUsersWithHttpInfoAsync(apiToken, channelUrl, token, limit, cancellationToken);
              return localVarResponse.Data;
@@ -2371,7 +2371,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcListBannedUsersResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GcListBannedUsersResponse>> GcListBannedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GcListBannedUsersResponse>> GcListBannedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2434,7 +2434,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>GcListMutedUsersResponse</returns>
-        public GcListMutedUsersResponse GcListMutedUsers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
+        public GcListMutedUsersResponse GcListMutedUsers (string apiToken, string channelUrl, string token = default, int? limit = default)
         {
              ApiResponse<GcListMutedUsersResponse> localVarResponse = GcListMutedUsersWithHttpInfo(apiToken, channelUrl, token, limit);
              return localVarResponse.Data;
@@ -2449,7 +2449,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of GcListMutedUsersResponse</returns>
-        public ApiResponse<GcListMutedUsersResponse> GcListMutedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
+        public ApiResponse<GcListMutedUsersResponse> GcListMutedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default, int? limit = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2513,7 +2513,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcListMutedUsersResponse</returns>
-        public async System.Threading.Tasks.Task<GcListMutedUsersResponse> GcListMutedUsersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GcListMutedUsersResponse> GcListMutedUsersAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<GcListMutedUsersResponse> localVarResponse = await GcListMutedUsersWithHttpInfoAsync(apiToken, channelUrl, token, limit, cancellationToken);
              return localVarResponse.Data;
@@ -2530,7 +2530,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcListMutedUsersResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GcListMutedUsersResponse>> GcListMutedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GcListMutedUsersResponse>> GcListMutedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2676,7 +2676,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcMuteUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdGroupChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcMuteUserAsync (string apiToken, string channelUrl, GcMuteUserData gcMuteUserData = default(GcMuteUserData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcMuteUserAsync (string apiToken, string channelUrl, GcMuteUserData gcMuteUserData = default(GcMuteUserData), CancellationToken cancellationToken = default)
         {
              ApiResponse<SendBirdGroupChannel> localVarResponse = await GcMuteUserWithHttpInfoAsync(apiToken, channelUrl, gcMuteUserData, cancellationToken);
              return localVarResponse.Data;
@@ -2692,7 +2692,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcMuteUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcMuteUserWithHttpInfoAsync (string apiToken, string channelUrl, GcMuteUserData gcMuteUserData = default(GcMuteUserData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcMuteUserWithHttpInfoAsync (string apiToken, string channelUrl, GcMuteUserData gcMuteUserData = default(GcMuteUserData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2840,7 +2840,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default)
         {
              ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcUnbanUserByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
              return localVarResponse.Data;
@@ -2856,7 +2856,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2999,7 +2999,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default)
         {
              ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcUnmuteUserByIdWithHttpInfoAsync(apiToken, channelUrl, mutedUserId, cancellationToken);
              return localVarResponse.Data;
@@ -3015,7 +3015,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3170,7 +3170,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcUpdateBanByIdResponse</returns>
-        public async System.Threading.Tasks.Task<GcUpdateBanByIdResponse> GcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GcUpdateBanByIdResponse> GcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData), CancellationToken cancellationToken = default)
         {
              ApiResponse<GcUpdateBanByIdResponse> localVarResponse = await GcUpdateBanByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, gcUpdateBanByIdData, cancellationToken);
              return localVarResponse.Data;
@@ -3187,7 +3187,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcUpdateBanByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GcUpdateBanByIdResponse>> GcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GcUpdateBanByIdResponse>> GcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, GcUpdateBanByIdData gcUpdateBanByIdData = default(GcUpdateBanByIdData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3339,7 +3339,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcViewBanByIdResponse</returns>
-        public async System.Threading.Tasks.Task<GcViewBanByIdResponse> GcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GcViewBanByIdResponse> GcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default)
         {
              ApiResponse<GcViewBanByIdResponse> localVarResponse = await GcViewBanByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
              return localVarResponse.Data;
@@ -3355,7 +3355,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcViewBanByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GcViewBanByIdResponse>> GcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GcViewBanByIdResponse>> GcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3498,7 +3498,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcViewMuteByIdResponse</returns>
-        public async System.Threading.Tasks.Task<GcViewMuteByIdResponse> GcViewMuteByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GcViewMuteByIdResponse> GcViewMuteByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default)
         {
              ApiResponse<GcViewMuteByIdResponse> localVarResponse = await GcViewMuteByIdWithHttpInfoAsync(apiToken, channelUrl, mutedUserId, cancellationToken);
              return localVarResponse.Data;
@@ -3514,7 +3514,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcViewMuteByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GcViewMuteByIdResponse>> GcViewMuteByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GcViewMuteByIdResponse>> GcViewMuteByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3579,7 +3579,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListBannedChannelsResponse</returns>
-        public ListBannedChannelsResponse ListBannedChannels (string apiToken, string userId, string token = default(string), int? limit = default(int?))
+        public ListBannedChannelsResponse ListBannedChannels (string apiToken, string userId, string token = default, int? limit = default)
         {
              ApiResponse<ListBannedChannelsResponse> localVarResponse = ListBannedChannelsWithHttpInfo(apiToken, userId, token, limit);
              return localVarResponse.Data;
@@ -3594,7 +3594,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListBannedChannelsResponse</returns>
-        public ApiResponse<ListBannedChannelsResponse> ListBannedChannelsWithHttpInfo (string apiToken, string userId, string token = default(string), int? limit = default(int?))
+        public ApiResponse<ListBannedChannelsResponse> ListBannedChannelsWithHttpInfo (string apiToken, string userId, string token = default, int? limit = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3658,7 +3658,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListBannedChannelsResponse</returns>
-        public async System.Threading.Tasks.Task<ListBannedChannelsResponse> ListBannedChannelsAsync (string apiToken, string userId, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListBannedChannelsResponse> ListBannedChannelsAsync (string apiToken, string userId, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<ListBannedChannelsResponse> localVarResponse = await ListBannedChannelsWithHttpInfoAsync(apiToken, userId, token, limit, cancellationToken);
              return localVarResponse.Data;
@@ -3675,7 +3675,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListBannedChannelsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListBannedChannelsResponse>> ListBannedChannelsWithHttpInfoAsync (string apiToken, string userId, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListBannedChannelsResponse>> ListBannedChannelsWithHttpInfoAsync (string apiToken, string userId, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3741,7 +3741,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
         /// <returns>ListBlockedUsersResponse</returns>
-        public ListBlockedUsersResponse ListBlockedUsers (string apiToken, string userId, string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string))
+        public ListBlockedUsersResponse ListBlockedUsers (string apiToken, string userId, string token = default, int? limit = default, string userIds = default, string metadatakey = default, string metadatavaluesIn = default)
         {
              ApiResponse<ListBlockedUsersResponse> localVarResponse = ListBlockedUsersWithHttpInfo(apiToken, userId, token, limit, userIds, metadatakey, metadatavaluesIn);
              return localVarResponse.Data;
@@ -3759,7 +3759,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metadatakey"> (optional)</param>
         /// <param name="metadatavaluesIn"> (optional)</param>
         /// <returns>ApiResponse of ListBlockedUsersResponse</returns>
-        public ApiResponse<ListBlockedUsersResponse> ListBlockedUsersWithHttpInfo (string apiToken, string userId, string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string))
+        public ApiResponse<ListBlockedUsersResponse> ListBlockedUsersWithHttpInfo (string apiToken, string userId, string token = default, int? limit = default, string userIds = default, string metadatakey = default, string metadatavaluesIn = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3829,7 +3829,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metadatavaluesIn"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListBlockedUsersResponse</returns>
-        public async System.Threading.Tasks.Task<ListBlockedUsersResponse> ListBlockedUsersAsync (string apiToken, string userId, string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListBlockedUsersResponse> ListBlockedUsersAsync (string apiToken, string userId, string token = default, int? limit = default, string userIds = default, string metadatakey = default, string metadatavaluesIn = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<ListBlockedUsersResponse> localVarResponse = await ListBlockedUsersWithHttpInfoAsync(apiToken, userId, token, limit, userIds, metadatakey, metadatavaluesIn, cancellationToken);
              return localVarResponse.Data;
@@ -3849,7 +3849,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="metadatavaluesIn"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListBlockedUsersResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListBlockedUsersResponse>> ListBlockedUsersWithHttpInfoAsync (string apiToken, string userId, string token = default(string), int? limit = default(int?), string userIds = default(string), string metadatakey = default(string), string metadatavaluesIn = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListBlockedUsersResponse>> ListBlockedUsersWithHttpInfoAsync (string apiToken, string userId, string token = default, int? limit = default, string userIds = default, string metadatakey = default, string metadatavaluesIn = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3915,7 +3915,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListMutedChannelsResponse</returns>
-        public ListMutedChannelsResponse ListMutedChannels (string apiToken, string userId, string token = default(string), int? limit = default(int?))
+        public ListMutedChannelsResponse ListMutedChannels (string apiToken, string userId, string token = default, int? limit = default)
         {
              ApiResponse<ListMutedChannelsResponse> localVarResponse = ListMutedChannelsWithHttpInfo(apiToken, userId, token, limit);
              return localVarResponse.Data;
@@ -3930,7 +3930,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListMutedChannelsResponse</returns>
-        public ApiResponse<ListMutedChannelsResponse> ListMutedChannelsWithHttpInfo (string apiToken, string userId, string token = default(string), int? limit = default(int?))
+        public ApiResponse<ListMutedChannelsResponse> ListMutedChannelsWithHttpInfo (string apiToken, string userId, string token = default, int? limit = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3994,7 +3994,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListMutedChannelsResponse</returns>
-        public async System.Threading.Tasks.Task<ListMutedChannelsResponse> ListMutedChannelsAsync (string apiToken, string userId, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListMutedChannelsResponse> ListMutedChannelsAsync (string apiToken, string userId, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<ListMutedChannelsResponse> localVarResponse = await ListMutedChannelsWithHttpInfoAsync(apiToken, userId, token, limit, cancellationToken);
              return localVarResponse.Data;
@@ -4011,7 +4011,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListMutedChannelsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListMutedChannelsResponse>> ListMutedChannelsWithHttpInfoAsync (string apiToken, string userId, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListMutedChannelsResponse>> ListMutedChannelsWithHttpInfoAsync (string apiToken, string userId, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4157,7 +4157,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="muteInChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> MuteInChannelsWithCustomChannelTypesAsync (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Object> MuteInChannelsWithCustomChannelTypesAsync (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default)
         {
              ApiResponse<Object> localVarResponse = await MuteInChannelsWithCustomChannelTypesWithHttpInfoAsync(apiToken, userId, muteInChannelsWithCustomChannelTypesData, cancellationToken);
              return localVarResponse.Data;
@@ -4173,7 +4173,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="muteInChannelsWithCustomChannelTypesData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> MuteInChannelsWithCustomChannelTypesWithHttpInfoAsync (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> MuteInChannelsWithCustomChannelTypesWithHttpInfoAsync (string apiToken, string userId, MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = default(MuteInChannelsWithCustomChannelTypesData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4326,7 +4326,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocBanUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcBanUserResponse</returns>
-        public async System.Threading.Tasks.Task<OcBanUserResponse> OcBanUserAsync (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcBanUserResponse> OcBanUserAsync (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default)
         {
              ApiResponse<OcBanUserResponse> localVarResponse = await OcBanUserWithHttpInfoAsync(apiToken, channelUrl, ocBanUserData, cancellationToken);
              return localVarResponse.Data;
@@ -4342,7 +4342,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocBanUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcBanUserResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcBanUserResponse>> OcBanUserWithHttpInfoAsync (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcBanUserResponse>> OcBanUserWithHttpInfoAsync (string apiToken, string channelUrl, OcBanUserData ocBanUserData = default(OcBanUserData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4495,7 +4495,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocFreezeChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcFreezeChannelAsync (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcFreezeChannelAsync (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default)
         {
              ApiResponse<SendBirdOpenChannel> localVarResponse = await OcFreezeChannelWithHttpInfoAsync(apiToken, channelUrl, ocFreezeChannelData, cancellationToken);
              return localVarResponse.Data;
@@ -4511,7 +4511,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocFreezeChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcFreezeChannelWithHttpInfoAsync (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcFreezeChannelWithHttpInfoAsync (string apiToken, string channelUrl, OcFreezeChannelData ocFreezeChannelData = default(OcFreezeChannelData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4581,7 +4581,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>OcListBannedUsersResponse</returns>
-        public OcListBannedUsersResponse OcListBannedUsers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
+        public OcListBannedUsersResponse OcListBannedUsers (string apiToken, string channelUrl, string token = default, int? limit = default)
         {
              ApiResponse<OcListBannedUsersResponse> localVarResponse = OcListBannedUsersWithHttpInfo(apiToken, channelUrl, token, limit);
              return localVarResponse.Data;
@@ -4596,7 +4596,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of OcListBannedUsersResponse</returns>
-        public ApiResponse<OcListBannedUsersResponse> OcListBannedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
+        public ApiResponse<OcListBannedUsersResponse> OcListBannedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default, int? limit = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4660,7 +4660,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListBannedUsersResponse</returns>
-        public async System.Threading.Tasks.Task<OcListBannedUsersResponse> OcListBannedUsersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcListBannedUsersResponse> OcListBannedUsersAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<OcListBannedUsersResponse> localVarResponse = await OcListBannedUsersWithHttpInfoAsync(apiToken, channelUrl, token, limit, cancellationToken);
              return localVarResponse.Data;
@@ -4677,7 +4677,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListBannedUsersResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcListBannedUsersResponse>> OcListBannedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcListBannedUsersResponse>> OcListBannedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4740,7 +4740,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>OcListMutedUsersResponse</returns>
-        public OcListMutedUsersResponse OcListMutedUsers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
+        public OcListMutedUsersResponse OcListMutedUsers (string apiToken, string channelUrl, string token = default, int? limit = default)
         {
              ApiResponse<OcListMutedUsersResponse> localVarResponse = OcListMutedUsersWithHttpInfo(apiToken, channelUrl, token, limit);
              return localVarResponse.Data;
@@ -4755,7 +4755,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of OcListMutedUsersResponse</returns>
-        public ApiResponse<OcListMutedUsersResponse> OcListMutedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
+        public ApiResponse<OcListMutedUsersResponse> OcListMutedUsersWithHttpInfo (string apiToken, string channelUrl, string token = default, int? limit = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4819,7 +4819,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListMutedUsersResponse</returns>
-        public async System.Threading.Tasks.Task<OcListMutedUsersResponse> OcListMutedUsersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcListMutedUsersResponse> OcListMutedUsersAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<OcListMutedUsersResponse> localVarResponse = await OcListMutedUsersWithHttpInfoAsync(apiToken, channelUrl, token, limit, cancellationToken);
              return localVarResponse.Data;
@@ -4836,7 +4836,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListMutedUsersResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcListMutedUsersResponse>> OcListMutedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcListMutedUsersResponse>> OcListMutedUsersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4982,7 +4982,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocMuteUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcMuteUserAsync (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcMuteUserAsync (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default)
         {
              ApiResponse<SendBirdOpenChannel> localVarResponse = await OcMuteUserWithHttpInfoAsync(apiToken, channelUrl, ocMuteUserData, cancellationToken);
              return localVarResponse.Data;
@@ -4998,7 +4998,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocMuteUserData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcMuteUserWithHttpInfoAsync (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcMuteUserWithHttpInfoAsync (string apiToken, string channelUrl, OcMuteUserData ocMuteUserData = default(OcMuteUserData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5146,7 +5146,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcUnbanUserByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default)
         {
              ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await OcUnbanUserByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
              return localVarResponse.Data;
@@ -5162,7 +5162,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcUnbanUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5305,7 +5305,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcUnmuteUserByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default)
         {
              ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await OcUnmuteUserByIdWithHttpInfoAsync(apiToken, channelUrl, mutedUserId, cancellationToken);
              return localVarResponse.Data;
@@ -5321,7 +5321,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcUnmuteUserByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5476,7 +5476,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcUpdateBanByIdResponse</returns>
-        public async System.Threading.Tasks.Task<OcUpdateBanByIdResponse> OcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcUpdateBanByIdResponse> OcUpdateBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default)
         {
              ApiResponse<OcUpdateBanByIdResponse> localVarResponse = await OcUpdateBanByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, ocUpdateBanByIdData, cancellationToken);
              return localVarResponse.Data;
@@ -5493,7 +5493,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocUpdateBanByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcUpdateBanByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcUpdateBanByIdResponse>> OcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcUpdateBanByIdResponse>> OcUpdateBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, OcUpdateBanByIdData ocUpdateBanByIdData = default(OcUpdateBanByIdData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5645,7 +5645,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcViewBanByIdResponse</returns>
-        public async System.Threading.Tasks.Task<OcViewBanByIdResponse> OcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcViewBanByIdResponse> OcViewBanByIdAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default)
         {
              ApiResponse<OcViewBanByIdResponse> localVarResponse = await OcViewBanByIdWithHttpInfoAsync(apiToken, channelUrl, bannedUserId, cancellationToken);
              return localVarResponse.Data;
@@ -5661,7 +5661,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="bannedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcViewBanByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcViewBanByIdResponse>> OcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcViewBanByIdResponse>> OcViewBanByIdWithHttpInfoAsync (string apiToken, string channelUrl, string bannedUserId, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5804,7 +5804,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcViewMuteByIdResponse</returns>
-        public async System.Threading.Tasks.Task<OcViewMuteByIdResponse> OcViewMuteByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcViewMuteByIdResponse> OcViewMuteByIdAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default)
         {
              ApiResponse<OcViewMuteByIdResponse> localVarResponse = await OcViewMuteByIdWithHttpInfoAsync(apiToken, channelUrl, mutedUserId, cancellationToken);
              return localVarResponse.Data;
@@ -5820,7 +5820,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedUserId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcViewMuteByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcViewMuteByIdResponse>> OcViewMuteByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcViewMuteByIdResponse>> OcViewMuteByIdWithHttpInfoAsync (string apiToken, string channelUrl, string mutedUserId, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -5963,7 +5963,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="targetId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> UnblockUserByIdAsync (string apiToken, string userId, string targetId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Object> UnblockUserByIdAsync (string apiToken, string userId, string targetId, CancellationToken cancellationToken = default)
         {
              ApiResponse<Object> localVarResponse = await UnblockUserByIdWithHttpInfoAsync(apiToken, userId, targetId, cancellationToken);
              return localVarResponse.Data;
@@ -5979,7 +5979,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="targetId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> UnblockUserByIdWithHttpInfoAsync (string apiToken, string userId, string targetId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> UnblockUserByIdWithHttpInfoAsync (string apiToken, string userId, string targetId, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)

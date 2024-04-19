@@ -40,7 +40,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="channelUrl">Specifies the URL of the private group channel to decline an invitation from. (required).</param>
         /// <param name="userId">Specifies the unique ID of the user to decline an invitation. (required).</param>
-        public GcDeclineInvitationData(string channelUrl = default(string), string userId = default(string))
+        public GcDeclineInvitationData(string channelUrl = default, string userId = default)
         {
             // to ensure "channelUrl" is required (not null)
             if (channelUrl == null)

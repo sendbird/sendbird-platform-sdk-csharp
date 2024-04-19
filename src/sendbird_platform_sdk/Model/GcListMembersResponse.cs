@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="members">members.</param>
         /// <param name="next">next.</param>
-        public GcListMembersResponse(List<SendBirdUser> members = default(List<SendBirdUser>), string next = default(string))
+        public GcListMembersResponse(List<SendBirdUser> members = default(List<SendBirdUser>), string next = default)
         {
             this.Members = members;
             this.Next = next;

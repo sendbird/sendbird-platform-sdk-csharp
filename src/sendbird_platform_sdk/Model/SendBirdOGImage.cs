@@ -39,7 +39,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="type">type.</param>
         /// <param name="url">url.</param>
         /// <param name="width">width.</param>
-        public SendBirdOGImage(string alt = default(string), decimal height = default(decimal), string secureUrl = default(string), string type = default(string), string url = default(string), decimal width = default(decimal))
+        public SendBirdOGImage(string alt = default, decimal height = default(decimal), string secureUrl = default, string type = default, string url = default, decimal width = default(decimal))
         {
             this.Alt = alt;
             this.Height = height;

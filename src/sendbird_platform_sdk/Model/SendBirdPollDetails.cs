@@ -74,7 +74,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="status">status.</param>
         /// <param name="updatedAt">updatedAt.</param>
         /// <param name="voterCount">voterCount.</param>
-        public SendBirdPollDetails(bool allowMultipleVotes = default(bool), bool allowUserSuggestion = default(bool), decimal closeAt = default(decimal), decimal createdAt = default(decimal), string createdBy = default(string), bool isAnonymous = default(bool), List<SendBirdPollOption> options = default(List<SendBirdPollOption>), StatusEnum? status = default(StatusEnum?), decimal updatedAt = default(decimal), decimal voterCount = default(decimal))
+        public SendBirdPollDetails(bool allowMultipleVotes = default(bool), bool allowUserSuggestion = default(bool), decimal closeAt = default(decimal), decimal createdAt = default(decimal), string createdBy = default, bool isAnonymous = default(bool), List<SendBirdPollOption> options = default(List<SendBirdPollOption>), StatusEnum? status = default(StatusEnum?), decimal updatedAt = default(decimal), decimal voterCount = default(decimal))
         {
             this.AllowMultipleVotes = allowMultipleVotes;
             this.AllowUserSuggestion = allowUserSuggestion;

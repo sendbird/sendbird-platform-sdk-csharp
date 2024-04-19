@@ -59,7 +59,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListGdprRequestsResponse</returns>
-        ListGdprRequestsResponse ListGdprRequests (string apiToken, string token = default(string), int? limit = default(int?));
+        ListGdprRequestsResponse ListGdprRequests (string apiToken, string token = default, int? limit = default);
 
         /// <summary>
         /// List GDPR requests
@@ -72,7 +72,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListGdprRequestsResponse</returns>
-        ApiResponse<ListGdprRequestsResponse> ListGdprRequestsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?));
+        ApiResponse<ListGdprRequestsResponse> ListGdprRequestsWithHttpInfo (string apiToken, string token = default, int? limit = default);
         /// <summary>
         /// Register a GDPR request
         /// </summary>
@@ -132,7 +132,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="requestId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task CancelTheRegistrationOfGdprRequestByIdAsync (string apiToken, string requestId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task CancelTheRegistrationOfGdprRequestByIdAsync (string apiToken, string requestId, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Cancel the registration of a GDPR request
@@ -145,7 +145,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="requestId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> CancelTheRegistrationOfGdprRequestByIdWithHttpInfoAsync (string apiToken, string requestId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> CancelTheRegistrationOfGdprRequestByIdWithHttpInfoAsync (string apiToken, string requestId, CancellationToken cancellationToken = default);
         /// <summary>
         /// List GDPR requests
         /// </summary>
@@ -158,7 +158,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListGdprRequestsResponse</returns>
-        System.Threading.Tasks.Task<ListGdprRequestsResponse> ListGdprRequestsAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListGdprRequestsResponse> ListGdprRequestsAsync (string apiToken, string token = default, int? limit = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List GDPR requests
@@ -172,7 +172,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListGdprRequestsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListGdprRequestsResponse>> ListGdprRequestsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListGdprRequestsResponse>> ListGdprRequestsWithHttpInfoAsync (string apiToken, string token = default, int? limit = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Register a GDPR request
         /// </summary>
@@ -184,7 +184,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="registerGdprRequestData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RegisterGdprRequestResponse</returns>
-        System.Threading.Tasks.Task<RegisterGdprRequestResponse> RegisterGdprRequestAsync (string apiToken, RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<RegisterGdprRequestResponse> RegisterGdprRequestAsync (string apiToken, RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Register a GDPR request
@@ -197,7 +197,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="registerGdprRequestData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RegisterGdprRequestResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RegisterGdprRequestResponse>> RegisterGdprRequestWithHttpInfoAsync (string apiToken, RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<RegisterGdprRequestResponse>> RegisterGdprRequestWithHttpInfoAsync (string apiToken, RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default);
         /// <summary>
         /// View a GDPR request
         /// </summary>
@@ -209,7 +209,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="requestId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewGdprRequestByIdResponse</returns>
-        System.Threading.Tasks.Task<ViewGdprRequestByIdResponse> ViewGdprRequestByIdAsync (string apiToken, string requestId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewGdprRequestByIdResponse> ViewGdprRequestByIdAsync (string apiToken, string requestId, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View a GDPR request
@@ -222,7 +222,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="requestId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewGdprRequestByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewGdprRequestByIdResponse>> ViewGdprRequestByIdWithHttpInfoAsync (string apiToken, string requestId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewGdprRequestByIdResponse>> ViewGdprRequestByIdWithHttpInfoAsync (string apiToken, string requestId, CancellationToken cancellationToken = default);
         #endregion Asynchronous Operations
     }
 
@@ -412,7 +412,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="requestId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task CancelTheRegistrationOfGdprRequestByIdAsync (string apiToken, string requestId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task CancelTheRegistrationOfGdprRequestByIdAsync (string apiToken, string requestId, CancellationToken cancellationToken = default)
         {
              await CancelTheRegistrationOfGdprRequestByIdWithHttpInfoAsync(apiToken, requestId, cancellationToken);
 
@@ -426,7 +426,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="requestId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> CancelTheRegistrationOfGdprRequestByIdWithHttpInfoAsync (string apiToken, string requestId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> CancelTheRegistrationOfGdprRequestByIdWithHttpInfoAsync (string apiToken, string requestId, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -485,7 +485,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListGdprRequestsResponse</returns>
-        public ListGdprRequestsResponse ListGdprRequests (string apiToken, string token = default(string), int? limit = default(int?))
+        public ListGdprRequestsResponse ListGdprRequests (string apiToken, string token = default, int? limit = default)
         {
              ApiResponse<ListGdprRequestsResponse> localVarResponse = ListGdprRequestsWithHttpInfo(apiToken, token, limit);
              return localVarResponse.Data;
@@ -499,7 +499,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListGdprRequestsResponse</returns>
-        public ApiResponse<ListGdprRequestsResponse> ListGdprRequestsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?))
+        public ApiResponse<ListGdprRequestsResponse> ListGdprRequestsWithHttpInfo (string apiToken, string token = default, int? limit = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -558,7 +558,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListGdprRequestsResponse</returns>
-        public async System.Threading.Tasks.Task<ListGdprRequestsResponse> ListGdprRequestsAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListGdprRequestsResponse> ListGdprRequestsAsync (string apiToken, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<ListGdprRequestsResponse> localVarResponse = await ListGdprRequestsWithHttpInfoAsync(apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
@@ -574,7 +574,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListGdprRequestsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListGdprRequestsResponse>> ListGdprRequestsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListGdprRequestsResponse>> ListGdprRequestsWithHttpInfoAsync (string apiToken, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -709,7 +709,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="registerGdprRequestData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RegisterGdprRequestResponse</returns>
-        public async System.Threading.Tasks.Task<RegisterGdprRequestResponse> RegisterGdprRequestAsync (string apiToken, RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<RegisterGdprRequestResponse> RegisterGdprRequestAsync (string apiToken, RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default)
         {
              ApiResponse<RegisterGdprRequestResponse> localVarResponse = await RegisterGdprRequestWithHttpInfoAsync(apiToken, registerGdprRequestData, cancellationToken);
              return localVarResponse.Data;
@@ -724,7 +724,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="registerGdprRequestData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RegisterGdprRequestResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RegisterGdprRequestResponse>> RegisterGdprRequestWithHttpInfoAsync (string apiToken, RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<RegisterGdprRequestResponse>> RegisterGdprRequestWithHttpInfoAsync (string apiToken, RegisterGdprRequestData registerGdprRequestData = default(RegisterGdprRequestData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -861,7 +861,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="requestId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewGdprRequestByIdResponse</returns>
-        public async System.Threading.Tasks.Task<ViewGdprRequestByIdResponse> ViewGdprRequestByIdAsync (string apiToken, string requestId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewGdprRequestByIdResponse> ViewGdprRequestByIdAsync (string apiToken, string requestId, CancellationToken cancellationToken = default)
         {
              ApiResponse<ViewGdprRequestByIdResponse> localVarResponse = await ViewGdprRequestByIdWithHttpInfoAsync(apiToken, requestId, cancellationToken);
              return localVarResponse.Data;
@@ -876,7 +876,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="requestId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewGdprRequestByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewGdprRequestByIdResponse>> ViewGdprRequestByIdWithHttpInfoAsync (string apiToken, string requestId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewGdprRequestByIdResponse>> ViewGdprRequestByIdWithHttpInfoAsync (string apiToken, string requestId, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)

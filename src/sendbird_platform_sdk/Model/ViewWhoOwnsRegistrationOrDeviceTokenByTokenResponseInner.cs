@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner" /> class.
         /// </summary>
         /// <param name="userId">userId.</param>
-        public ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner(string userId = default(string))
+        public ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner(string userId = default)
         {
             this.UserId = userId;
         }

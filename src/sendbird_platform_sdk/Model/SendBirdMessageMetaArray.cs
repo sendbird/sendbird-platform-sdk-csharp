@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="key">key.</param>
         /// <param name="value">value.</param>
-        public SendBirdMessageMetaArray(string key = default(string), List<string> value = default(List<string>))
+        public SendBirdMessageMetaArray(string key = default, List<string> value = default)
         {
             this.Key = key;
             this.Value = value;

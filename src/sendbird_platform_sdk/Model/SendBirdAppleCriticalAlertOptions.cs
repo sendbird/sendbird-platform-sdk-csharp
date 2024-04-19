@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="name">name.</param>
         /// <param name="volume">volume.</param>
-        public SendBirdAppleCriticalAlertOptions(string name = default(string), decimal volume = default(decimal))
+        public SendBirdAppleCriticalAlertOptions(string name = default, decimal volume = default(decimal))
         {
             this.Name = name;
             this.Volume = volume;

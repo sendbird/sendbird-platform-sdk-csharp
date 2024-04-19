@@ -39,7 +39,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="RegisterAsOperatorToChannelsWithCustomChannelTypesData" /> class.
         /// </summary>
         /// <param name="channelCustomTypes">Specifies an array of one or more custom channel types, in order to register the user as an operator to channels with the channel types. (required).</param>
-        public RegisterAsOperatorToChannelsWithCustomChannelTypesData(List<string> channelCustomTypes = default(List<string>))
+        public RegisterAsOperatorToChannelsWithCustomChannelTypesData(List<string> channelCustomTypes = default)
         {
             // to ensure "channelCustomTypes" is required (not null)
             if (channelCustomTypes == null)

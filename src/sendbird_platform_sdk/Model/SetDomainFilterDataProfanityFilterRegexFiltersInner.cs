@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="SetDomainFilterDataProfanityFilterRegexFiltersInner" /> class.
         /// </summary>
         /// <param name="regex">regex.</param>
-        public SetDomainFilterDataProfanityFilterRegexFiltersInner(string regex = default(string))
+        public SetDomainFilterDataProfanityFilterRegexFiltersInner(string regex = default)
         {
             this.Regex = regex;
         }

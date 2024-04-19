@@ -47,7 +47,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="enableMarkAsRead">Determines whether to mark the bot&#39;s message as read upon sending it. (Default: true).</param>
         /// <param name="showMember">Determines whether to include information about the members of each channel in a callback response. (Default: false).</param>
         /// <param name="channelInvitationPreference">channelInvitationPreference.</param>
-        public CreateBotData(string botUserid = default(string), string botNickname = default(string), string botProfileUrl = default(string), string botType = default(string), string botCallbackUrl = default(string), bool isPrivacyMode = default(bool), bool enableMarkAsRead = default(bool), bool showMember = default(bool), int channelInvitationPreference = default(int))
+        public CreateBotData(string botUserid = default, string botNickname = default, string botProfileUrl = default, string botType = default, string botCallbackUrl = default, bool isPrivacyMode = default(bool), bool enableMarkAsRead = default(bool), bool showMember = default(bool), int channelInvitationPreference = default(int))
         {
             // to ensure "botUserid" is required (not null)
             if (botUserid == null)

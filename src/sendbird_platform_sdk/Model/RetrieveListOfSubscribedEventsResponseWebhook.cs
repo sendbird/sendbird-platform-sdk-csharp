@@ -39,7 +39,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="enabledEvents">enabledEvents.</param>
         /// <param name="allWebhookCategories">allWebhookCategories.</param>
         /// <param name="includeUnreadCount">includeUnreadCount.</param>
-        public RetrieveListOfSubscribedEventsResponseWebhook(bool enabled = default(bool), string url = default(string), bool includeMembers = default(bool), List<string> enabledEvents = default(List<string>), List<string> allWebhookCategories = default(List<string>), bool includeUnreadCount = default(bool))
+        public RetrieveListOfSubscribedEventsResponseWebhook(bool enabled = default(bool), string url = default, bool includeMembers = default(bool), List<string> enabledEvents = default, List<string> allWebhookCategories = default, bool includeUnreadCount = default(bool))
         {
             this.Enabled = enabled;
             this.Url = url;

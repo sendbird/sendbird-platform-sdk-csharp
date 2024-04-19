@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="description">description.</param>
         /// <param name="endAt">endAt.</param>
         /// <param name="startAt">startAt.</param>
-        public OcUpdateBanByIdResponse(SendBirdUser user = default(SendBirdUser), string description = default(string), decimal endAt = default(decimal), decimal startAt = default(decimal))
+        public OcUpdateBanByIdResponse(SendBirdUser user = default(SendBirdUser), string description = default, decimal endAt = default(decimal), decimal startAt = default(decimal))
         {
             this.User = user;
             this.Description = description;

@@ -43,7 +43,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="reportCategory">Specifies the category which indicates the reason for reporting. Acceptable values are suspicious, harassing, inappropriate, and spam. (required).</param>
         /// <param name="reportingUserId">Specifies the unique ID of the user who reports the channel..</param>
         /// <param name="reportDescription">Specifies additional information to be included in the report..</param>
-        public ReportChannelByUrlData(string channelType = default(string), string channelUrl = default(string), string reportCategory = default(string), string reportingUserId = default(string), string reportDescription = default(string))
+        public ReportChannelByUrlData(string channelType = default, string channelUrl = default, string reportCategory = default, string reportingUserId = default, string reportDescription = default)
         {
             // to ensure "reportCategory" is required (not null)
             if (reportCategory == null)

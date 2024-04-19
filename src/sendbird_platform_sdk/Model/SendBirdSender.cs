@@ -46,7 +46,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="profileUrl">profileUrl.</param>
         /// <param name="requireAuth">requireAuth.</param>
         /// <param name="userId">userId.</param>
-        public SendBirdSender(string connectionStatus = default(string), string friendDiscoveryKey = default(string), string friendName = default(string), bool isActive = default(bool), bool isBlockedByMe = default(bool), int lastSeenAt = default(int), Object metadata = default(Object), string nickname = default(string), string plainProfileUrl = default(string), List<string> preferredLanguages = default(List<string>), string profileUrl = default(string), bool requireAuth = default(bool), string userId = default(string))
+        public SendBirdSender(string connectionStatus = default, string friendDiscoveryKey = default, string friendName = default, bool isActive = default(bool), bool isBlockedByMe = default(bool), int lastSeenAt = default(int), Object metadata = default, string nickname = default, string plainProfileUrl = default, List<string> preferredLanguages = default, string profileUrl = default, bool requireAuth = default(bool), string userId = default)
         {
             this.ConnectionStatus = connectionStatus;
             this.FriendDiscoveryKey = friendDiscoveryKey;

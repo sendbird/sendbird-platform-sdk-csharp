@@ -40,7 +40,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="userIds">userIds.</param>
         /// <param name="channelDeleteOption">channelDeleteOption.</param>
         /// <param name="createdAt">createdAt.</param>
-        public RegisterGdprRequestResponse(string requestId = default(string), string action = default(string), string status = default(string), string userId = default(string), List<string> userIds = default(List<string>), string channelDeleteOption = default(string), decimal createdAt = default(decimal))
+        public RegisterGdprRequestResponse(string requestId = default, string action = default, string status = default, string userId = default, List<string> userIds = default, string channelDeleteOption = default, decimal createdAt = default(decimal))
         {
             this.RequestId = requestId;
             this.Action = action;

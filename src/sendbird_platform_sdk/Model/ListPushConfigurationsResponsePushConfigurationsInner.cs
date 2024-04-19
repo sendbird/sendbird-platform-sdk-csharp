@@ -39,7 +39,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="apiKey">apiKey.</param>
         /// <param name="senderId">senderId.</param>
         /// <param name="pushSound">pushSound.</param>
-        public ListPushConfigurationsResponsePushConfigurationsInner(string id = default(string), string pushType = default(string), decimal createdAt = default(decimal), string apiKey = default(string), string senderId = default(string), string pushSound = default(string))
+        public ListPushConfigurationsResponsePushConfigurationsInner(string id = default, string pushType = default, decimal createdAt = default(decimal), string apiKey = default, string senderId = default, string pushSound = default)
         {
             this.Id = id;
             this.PushType = pushType;

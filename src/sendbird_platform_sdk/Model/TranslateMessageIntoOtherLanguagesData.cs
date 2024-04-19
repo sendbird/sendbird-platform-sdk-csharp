@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="TranslateMessageIntoOtherLanguagesData" /> class.
         /// </summary>
         /// <param name="targetLangs">Specifies an array of one or more codes of [translation](/docs/chat/v3/platform-api/message/translations/translation-engine) to translate the message..</param>
-        public TranslateMessageIntoOtherLanguagesData(List<string> targetLangs = default(List<string>))
+        public TranslateMessageIntoOtherLanguagesData(List<string> targetLangs = default)
         {
             this.TargetLangs = targetLangs;
         }

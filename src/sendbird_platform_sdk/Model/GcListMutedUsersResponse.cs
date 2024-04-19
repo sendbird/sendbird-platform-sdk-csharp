@@ -36,7 +36,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="mutedList">mutedList.</param>
         /// <param name="totalMuteCount">totalMuteCount.</param>
         /// <param name="next">next.</param>
-        public GcListMutedUsersResponse(List<SendBirdUser> mutedList = default(List<SendBirdUser>), decimal totalMuteCount = default(decimal), string next = default(string))
+        public GcListMutedUsersResponse(List<SendBirdUser> mutedList = default(List<SendBirdUser>), decimal totalMuteCount = default(decimal), string next = default)
         {
             this.MutedList = mutedList;
             this.TotalMuteCount = totalMuteCount;

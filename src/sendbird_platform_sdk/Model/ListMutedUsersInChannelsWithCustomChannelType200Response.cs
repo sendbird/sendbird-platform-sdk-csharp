@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="mutedList">mutedList.</param>
         /// <param name="next">next.</param>
-        public ListMutedUsersInChannelsWithCustomChannelType200Response(List<SendBirdUser> mutedList = default(List<SendBirdUser>), string next = default(string))
+        public ListMutedUsersInChannelsWithCustomChannelType200Response(List<SendBirdUser> mutedList = default(List<SendBirdUser>), string next = default)
         {
             this.MutedList = mutedList;
             this.Next = next;

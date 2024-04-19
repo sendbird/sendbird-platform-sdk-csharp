@@ -36,7 +36,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="channels">channels.</param>
         /// <param name="next">next.</param>
         /// <param name="ts">ts.</param>
-        public OcListChannelsResponse(List<SendBirdOpenChannel> channels = default(List<SendBirdOpenChannel>), string next = default(string), decimal ts = default(decimal))
+        public OcListChannelsResponse(List<SendBirdOpenChannel> channels = default(List<SendBirdOpenChannel>), string next = default, decimal ts = default(decimal))
         {
             this.Channels = channels;
             this.Next = next;

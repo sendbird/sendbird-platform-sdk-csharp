@@ -42,7 +42,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="isFrozen">isFrozen.</param>
         /// <param name="name">name.</param>
         /// <param name="url">url.</param>
-        public SendBirdBaseChannel(string coverUrl = default(string), decimal createdAt = default(decimal), SendBirdUser creator = default(SendBirdUser), string customType = default(string), string data = default(string), bool isEphemeral = default(bool), bool isFrozen = default(bool), string name = default(string), string url = default(string))
+        public SendBirdBaseChannel(string coverUrl = default, decimal createdAt = default(decimal), SendBirdUser creator = default(SendBirdUser), string customType = default, string data = default, bool isEphemeral = default(bool), bool isFrozen = default(bool), string name = default, string url = default)
         {
             this.CoverUrl = coverUrl;
             this.CreatedAt = createdAt;

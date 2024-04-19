@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="users">users.</param>
         /// <param name="next">next.</param>
-        public ListBlockedUsersResponse(List<SendBirdUser> users = default(List<SendBirdUser>), string next = default(string))
+        public ListBlockedUsersResponse(List<SendBirdUser> users = default(List<SendBirdUser>), string next = default)
         {
             this.Users = users;
             this.Next = next;

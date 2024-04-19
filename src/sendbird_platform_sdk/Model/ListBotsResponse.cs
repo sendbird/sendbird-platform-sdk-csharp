@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="bots">bots.</param>
         /// <param name="next">next.</param>
-        public ListBotsResponse(List<ListBotsResponseBotsInner> bots = default(List<ListBotsResponseBotsInner>), string next = default(string))
+        public ListBotsResponse(List<ListBotsResponseBotsInner> bots = default(List<ListBotsResponseBotsInner>), string next = default)
         {
             this.Bots = bots;
             this.Next = next;

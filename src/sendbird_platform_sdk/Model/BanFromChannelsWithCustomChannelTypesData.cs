@@ -39,7 +39,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="BanFromChannelsWithCustomChannelTypesData" /> class.
         /// </summary>
         /// <param name="channelCustomTypes">Specifies an array of one or more custom channel types, in order to ban the user from channels with the channel types. The user is permanently banned unless unbanned (10 years, technically). (required).</param>
-        public BanFromChannelsWithCustomChannelTypesData(List<string> channelCustomTypes = default(List<string>))
+        public BanFromChannelsWithCustomChannelTypesData(List<string> channelCustomTypes = default)
         {
             // to ensure "channelCustomTypes" is required (not null)
             if (channelCustomTypes == null)

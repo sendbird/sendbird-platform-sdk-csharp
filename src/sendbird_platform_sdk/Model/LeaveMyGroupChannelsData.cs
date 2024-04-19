@@ -39,7 +39,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="LeaveMyGroupChannelsData" /> class.
         /// </summary>
         /// <param name="customType">Specifies the custom channel type to make the user leave joined group channels with the corresponding type. (required).</param>
-        public LeaveMyGroupChannelsData(string customType = default(string))
+        public LeaveMyGroupChannelsData(string customType = default)
         {
             // to ensure "customType" is required (not null)
             if (customType == null)

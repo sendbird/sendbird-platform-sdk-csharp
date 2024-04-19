@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="isMember">isMember.</param>
         /// <param name="state">state.</param>
-        public GcCheckIfMemberByIdResponse(bool isMember = default(bool), string state = default(string))
+        public GcCheckIfMemberByIdResponse(bool isMember = default(bool), string state = default)
         {
             this.IsMember = isMember;
             this.State = state;

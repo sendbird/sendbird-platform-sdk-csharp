@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="createChannelMetacounterData"> (optional)</param>
         /// <returns>Object</returns>
-        Object CreateChannelMetacounter (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default(CreateChannelMetacounterData));
+        Object CreateChannelMetacounter (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default);
 
         /// <summary>
         /// Create a channel metacounter
@@ -51,7 +51,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="createChannelMetacounterData"> (optional)</param>
         /// <returns>ApiResponse of Object</returns>
-        ApiResponse<Object> CreateChannelMetacounterWithHttpInfo (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default(CreateChannelMetacounterData));
+        ApiResponse<Object> CreateChannelMetacounterWithHttpInfo (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default);
         /// <summary>
         /// Create a channel metadata
         /// </summary>
@@ -64,7 +64,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="createChannelMetadataData"> (optional)</param>
         /// <returns>CreateChannelMetadataResponse</returns>
-        CreateChannelMetadataResponse CreateChannelMetadata (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData));
+        CreateChannelMetadataResponse CreateChannelMetadata (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default);
 
         /// <summary>
         /// Create a channel metadata
@@ -78,7 +78,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="createChannelMetadataData"> (optional)</param>
         /// <returns>ApiResponse of CreateChannelMetadataResponse</returns>
-        ApiResponse<CreateChannelMetadataResponse> CreateChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData));
+        ApiResponse<CreateChannelMetadataResponse> CreateChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default);
         /// <summary>
         /// Create a user metadata
         /// </summary>
@@ -90,7 +90,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="createUserMetadataData"> (optional)</param>
         /// <returns>CreateUserMetadataResponse</returns>
-        CreateUserMetadataResponse CreateUserMetadata (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData));
+        CreateUserMetadataResponse CreateUserMetadata (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default);
 
         /// <summary>
         /// Create a user metadata
@@ -103,7 +103,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="createUserMetadataData"> (optional)</param>
         /// <returns>ApiResponse of CreateUserMetadataResponse</returns>
-        ApiResponse<CreateUserMetadataResponse> CreateUserMetadataWithHttpInfo (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData));
+        ApiResponse<CreateUserMetadataResponse> CreateUserMetadataWithHttpInfo (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default);
         /// <summary>
         /// Delete a channel metacounter - When deleting all items of a channel metacounter
         /// </summary>
@@ -168,7 +168,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="key"> (optional)</param>
         /// <returns></returns>
-        void DeleteChannelMetadata (string apiToken, string channelType, string channelUrl, string key = default(string));
+        void DeleteChannelMetadata (string apiToken, string channelType, string channelUrl, string key = default);
 
         /// <summary>
         /// Delete a channel metadata - When deleting all items of a channel metadata
@@ -182,7 +182,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="key"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, string key = default(string));
+        ApiResponse<Object> DeleteChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, string key = default);
         /// <summary>
         /// Delete a channel metadata - When deleting a specific item of a channel metadata by its key
         /// </summary>
@@ -221,7 +221,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="key"> (optional)</param>
         /// <returns></returns>
-        void DeleteUserMetadata (string apiToken, string userId, string key = default(string));
+        void DeleteUserMetadata (string apiToken, string userId, string key = default);
 
         /// <summary>
         /// Delete a user metadata - When deleting all items of a user metadata
@@ -234,7 +234,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="key"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteUserMetadataWithHttpInfo (string apiToken, string userId, string key = default(string));
+        ApiResponse<Object> DeleteUserMetadataWithHttpInfo (string apiToken, string userId, string key = default);
         /// <summary>
         /// Delete a user metadata - When deleting a specific item of a user metadata by its key
         /// </summary>
@@ -272,7 +272,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="updateChannelMetacounterData"> (optional)</param>
         /// <returns>Object</returns>
-        Object UpdateChannelMetacounter (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default(UpdateChannelMetacounterData));
+        Object UpdateChannelMetacounter (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default);
 
         /// <summary>
         /// Update a channel metacounter - When updating existing items of a channel metacounter by their keys or adding new items to the metacounter
@@ -286,7 +286,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="updateChannelMetacounterData"> (optional)</param>
         /// <returns>ApiResponse of Object</returns>
-        ApiResponse<Object> UpdateChannelMetacounterWithHttpInfo (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default(UpdateChannelMetacounterData));
+        ApiResponse<Object> UpdateChannelMetacounterWithHttpInfo (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default);
         /// <summary>
         /// Update a channel metacounter - When updating a specific item of a channel metacounter by its key
         /// </summary>
@@ -300,7 +300,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="body"> (optional)</param>
         /// <returns>Dictionary of string</returns>
-        Dictionary<string, string> UpdateChannelMetacounterByKey (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object));
+        Dictionary<string, string> UpdateChannelMetacounterByKey (string apiToken, string channelType, string channelUrl, string key, Object body = default);
 
         /// <summary>
         /// Update a channel metacounter - When updating a specific item of a channel metacounter by its key
@@ -315,7 +315,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="body"> (optional)</param>
         /// <returns>ApiResponse of Dictionary of string</returns>
-        ApiResponse<Dictionary<string, string>> UpdateChannelMetacounterByKeyWithHttpInfo (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object));
+        ApiResponse<Dictionary<string, string>> UpdateChannelMetacounterByKeyWithHttpInfo (string apiToken, string channelType, string channelUrl, string key, Object body = default);
         /// <summary>
         /// Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata
         /// </summary>
@@ -328,7 +328,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="updateChannelMetadataData"> (optional)</param>
         /// <returns>Dictionary of string</returns>
-        Dictionary<string, string> UpdateChannelMetadata (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default(UpdateChannelMetadataData));
+        Dictionary<string, string> UpdateChannelMetadata (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default);
 
         /// <summary>
         /// Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata
@@ -342,7 +342,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="updateChannelMetadataData"> (optional)</param>
         /// <returns>ApiResponse of Dictionary of string</returns>
-        ApiResponse<Dictionary<string, string>> UpdateChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default(UpdateChannelMetadataData));
+        ApiResponse<Dictionary<string, string>> UpdateChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default);
         /// <summary>
         /// Update a channel metadata - When updating a specific item of a channel metadata by its key
         /// </summary>
@@ -356,7 +356,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="body"> (optional)</param>
         /// <returns>Dictionary of string</returns>
-        Dictionary<string, string> UpdateChannelMetadataByKey (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object));
+        Dictionary<string, string> UpdateChannelMetadataByKey (string apiToken, string channelType, string channelUrl, string key, Object body = default);
 
         /// <summary>
         /// Update a channel metadata - When updating a specific item of a channel metadata by its key
@@ -371,7 +371,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="body"> (optional)</param>
         /// <returns>ApiResponse of Dictionary of string</returns>
-        ApiResponse<Dictionary<string, string>> UpdateChannelMetadataByKeyWithHttpInfo (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object));
+        ApiResponse<Dictionary<string, string>> UpdateChannelMetadataByKeyWithHttpInfo (string apiToken, string channelType, string channelUrl, string key, Object body = default);
         /// <summary>
         /// Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata
         /// </summary>
@@ -383,7 +383,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="updateUserMetadataData"> (optional)</param>
         /// <returns>UpdateUserMetadataResponse</returns>
-        UpdateUserMetadataResponse UpdateUserMetadata (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData));
+        UpdateUserMetadataResponse UpdateUserMetadata (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default);
 
         /// <summary>
         /// Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata
@@ -396,7 +396,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="updateUserMetadataData"> (optional)</param>
         /// <returns>ApiResponse of UpdateUserMetadataResponse</returns>
-        ApiResponse<UpdateUserMetadataResponse> UpdateUserMetadataWithHttpInfo (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData));
+        ApiResponse<UpdateUserMetadataResponse> UpdateUserMetadataWithHttpInfo (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default);
         /// <summary>
         /// Update a user metadata - When updating a specific item of a user metadata by its key
         /// </summary>
@@ -409,7 +409,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="body"> (optional)</param>
         /// <returns>Dictionary of string</returns>
-        Dictionary<string, string> UpdateUserMetadataByKey (string apiToken, string userId, string key, Object body = default(Object));
+        Dictionary<string, string> UpdateUserMetadataByKey (string apiToken, string userId, string key, Object body = default);
 
         /// <summary>
         /// Update a user metadata - When updating a specific item of a user metadata by its key
@@ -423,7 +423,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="body"> (optional)</param>
         /// <returns>ApiResponse of Dictionary of string</returns>
-        ApiResponse<Dictionary<string, string>> UpdateUserMetadataByKeyWithHttpInfo (string apiToken, string userId, string key, Object body = default(Object));
+        ApiResponse<Dictionary<string, string>> UpdateUserMetadataByKeyWithHttpInfo (string apiToken, string userId, string key, Object body = default);
         /// <summary>
         /// View a channel metacounter - When retrieving all items of a channel metacounter
         /// </summary>
@@ -437,7 +437,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
         /// <returns>Dictionary of string</returns>
-        Dictionary<string, string> ViewChannelMetacounter (string apiToken, string channelType, string channelUrl, string key = default(string), List<string> keys = default(List<string>));
+        Dictionary<string, string> ViewChannelMetacounter (string apiToken, string channelType, string channelUrl, string key = default, List<string> keys = default);
 
         /// <summary>
         /// View a channel metacounter - When retrieving all items of a channel metacounter
@@ -452,7 +452,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
         /// <returns>ApiResponse of Dictionary of string</returns>
-        ApiResponse<Dictionary<string, string>> ViewChannelMetacounterWithHttpInfo (string apiToken, string channelType, string channelUrl, string key = default(string), List<string> keys = default(List<string>));
+        ApiResponse<Dictionary<string, string>> ViewChannelMetacounterWithHttpInfo (string apiToken, string channelType, string channelUrl, string key = default, List<string> keys = default);
         /// <summary>
         /// View a channel metacounter - When retrieving a specific item of a channel metacounter by its key
         /// </summary>
@@ -493,7 +493,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
         /// <returns>Dictionary of string</returns>
-        Dictionary<string, string> ViewChannelMetadata (string apiToken, string channelType, string channelUrl, string key = default(string), List<string> keys = default(List<string>));
+        Dictionary<string, string> ViewChannelMetadata (string apiToken, string channelType, string channelUrl, string key = default, List<string> keys = default);
 
         /// <summary>
         /// View a channel metadata - When retrieving all items of a channel metadata
@@ -508,7 +508,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
         /// <returns>ApiResponse of Dictionary of string</returns>
-        ApiResponse<Dictionary<string, string>> ViewChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, string key = default(string), List<string> keys = default(List<string>));
+        ApiResponse<Dictionary<string, string>> ViewChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, string key = default, List<string> keys = default);
         /// <summary>
         /// View a channel metadata - When retrieving a specific item of a channel metadata by its key
         /// </summary>
@@ -548,7 +548,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
         /// <returns>ViewUserMetadataResponse</returns>
-        ViewUserMetadataResponse ViewUserMetadata (string apiToken, string userId, string key = default(string), List<string> keys = default(List<string>));
+        ViewUserMetadataResponse ViewUserMetadata (string apiToken, string userId, string key = default, List<string> keys = default);
 
         /// <summary>
         /// View a user metadata - When retrieving all items of a user metadata
@@ -562,7 +562,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
         /// <returns>ApiResponse of ViewUserMetadataResponse</returns>
-        ApiResponse<ViewUserMetadataResponse> ViewUserMetadataWithHttpInfo (string apiToken, string userId, string key = default(string), List<string> keys = default(List<string>));
+        ApiResponse<ViewUserMetadataResponse> ViewUserMetadataWithHttpInfo (string apiToken, string userId, string key = default, List<string> keys = default);
         /// <summary>
         /// View a user metadata - When retrieving a specific item of a user metadata by its key
         /// </summary>
@@ -603,7 +603,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="createChannelMetacounterData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> CreateChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default(CreateChannelMetacounterData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Object> CreateChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Create a channel metacounter
@@ -618,7 +618,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="createChannelMetacounterData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> CreateChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default(CreateChannelMetacounterData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> CreateChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a channel metadata
         /// </summary>
@@ -632,7 +632,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="createChannelMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of CreateChannelMetadataResponse</returns>
-        System.Threading.Tasks.Task<CreateChannelMetadataResponse> CreateChannelMetadataAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<CreateChannelMetadataResponse> CreateChannelMetadataAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Create a channel metadata
@@ -647,7 +647,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="createChannelMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (CreateChannelMetadataResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CreateChannelMetadataResponse>> CreateChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<CreateChannelMetadataResponse>> CreateChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a user metadata
         /// </summary>
@@ -660,7 +660,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="createUserMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of CreateUserMetadataResponse</returns>
-        System.Threading.Tasks.Task<CreateUserMetadataResponse> CreateUserMetadataAsync (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<CreateUserMetadataResponse> CreateUserMetadataAsync (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Create a user metadata
@@ -674,7 +674,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="createUserMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (CreateUserMetadataResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CreateUserMetadataResponse>> CreateUserMetadataWithHttpInfoAsync (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<CreateUserMetadataResponse>> CreateUserMetadataWithHttpInfoAsync (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Delete a channel metacounter - When deleting all items of a channel metacounter
         /// </summary>
@@ -687,7 +687,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task DeleteChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Delete a channel metacounter - When deleting all items of a channel metacounter
@@ -701,7 +701,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, CancellationToken cancellationToken = default);
         /// <summary>
         /// Delete a channel metacounter - When deleting a specific item of a channel metacounter by its key
         /// </summary>
@@ -715,7 +715,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteChannelMetacounterByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task DeleteChannelMetacounterByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Delete a channel metacounter - When deleting a specific item of a channel metacounter by its key
@@ -730,7 +730,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetacounterByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetacounterByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default);
         /// <summary>
         /// Delete a channel metadata - When deleting all items of a channel metadata
         /// </summary>
@@ -744,7 +744,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteChannelMetadataAsync (string apiToken, string channelType, string channelUrl, string key = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task DeleteChannelMetadataAsync (string apiToken, string channelType, string channelUrl, string key = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Delete a channel metadata - When deleting all items of a channel metadata
@@ -759,7 +759,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Delete a channel metadata - When deleting a specific item of a channel metadata by its key
         /// </summary>
@@ -773,7 +773,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteChannelMetadataByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task DeleteChannelMetadataByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Delete a channel metadata - When deleting a specific item of a channel metadata by its key
@@ -788,7 +788,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetadataByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetadataByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default);
         /// <summary>
         /// Delete a user metadata - When deleting all items of a user metadata
         /// </summary>
@@ -801,7 +801,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteUserMetadataAsync (string apiToken, string userId, string key = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task DeleteUserMetadataAsync (string apiToken, string userId, string key = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Delete a user metadata - When deleting all items of a user metadata
@@ -815,7 +815,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteUserMetadataWithHttpInfoAsync (string apiToken, string userId, string key = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteUserMetadataWithHttpInfoAsync (string apiToken, string userId, string key = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Delete a user metadata - When deleting a specific item of a user metadata by its key
         /// </summary>
@@ -828,7 +828,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteUserMetadataByKeyAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task DeleteUserMetadataByKeyAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Delete a user metadata - When deleting a specific item of a user metadata by its key
@@ -842,7 +842,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteUserMetadataByKeyWithHttpInfoAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteUserMetadataByKeyWithHttpInfoAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a channel metacounter - When updating existing items of a channel metacounter by their keys or adding new items to the metacounter
         /// </summary>
@@ -856,7 +856,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateChannelMetacounterData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> UpdateChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default(UpdateChannelMetacounterData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Object> UpdateChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Update a channel metacounter - When updating existing items of a channel metacounter by their keys or adding new items to the metacounter
@@ -871,7 +871,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateChannelMetacounterData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> UpdateChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default(UpdateChannelMetacounterData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> UpdateChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a channel metacounter - When updating a specific item of a channel metacounter by its key
         /// </summary>
@@ -886,7 +886,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Dictionary of string</returns>
-        System.Threading.Tasks.Task<Dictionary<string, string>> UpdateChannelMetacounterByKeyAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Dictionary<string, string>> UpdateChannelMetacounterByKeyAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Update a channel metacounter - When updating a specific item of a channel metacounter by its key
@@ -902,7 +902,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateChannelMetacounterByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateChannelMetacounterByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata
         /// </summary>
@@ -916,7 +916,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateChannelMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Dictionary of string</returns>
-        System.Threading.Tasks.Task<Dictionary<string, string>> UpdateChannelMetadataAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default(UpdateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Dictionary<string, string>> UpdateChannelMetadataAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Update a channel metadata - When updating existing items of a channel metadata by their keys or adding new items to the metadata
@@ -931,7 +931,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateChannelMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default(UpdateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a channel metadata - When updating a specific item of a channel metadata by its key
         /// </summary>
@@ -946,7 +946,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Dictionary of string</returns>
-        System.Threading.Tasks.Task<Dictionary<string, string>> UpdateChannelMetadataByKeyAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Dictionary<string, string>> UpdateChannelMetadataByKeyAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Update a channel metadata - When updating a specific item of a channel metadata by its key
@@ -962,7 +962,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateChannelMetadataByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateChannelMetadataByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata
         /// </summary>
@@ -975,7 +975,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateUserMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateUserMetadataResponse</returns>
-        System.Threading.Tasks.Task<UpdateUserMetadataResponse> UpdateUserMetadataAsync (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<UpdateUserMetadataResponse> UpdateUserMetadataAsync (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Update a user metadata - When updating existing items of a user metadata by their keys or adding new items to the metadata
@@ -989,7 +989,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateUserMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateUserMetadataResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UpdateUserMetadataResponse>> UpdateUserMetadataWithHttpInfoAsync (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<UpdateUserMetadataResponse>> UpdateUserMetadataWithHttpInfoAsync (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a user metadata - When updating a specific item of a user metadata by its key
         /// </summary>
@@ -1003,7 +1003,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Dictionary of string</returns>
-        System.Threading.Tasks.Task<Dictionary<string, string>> UpdateUserMetadataByKeyAsync (string apiToken, string userId, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Dictionary<string, string>> UpdateUserMetadataByKeyAsync (string apiToken, string userId, string key, Object body = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Update a user metadata - When updating a specific item of a user metadata by its key
@@ -1018,7 +1018,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateUserMetadataByKeyWithHttpInfoAsync (string apiToken, string userId, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateUserMetadataByKeyWithHttpInfoAsync (string apiToken, string userId, string key, Object body = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// View a channel metacounter - When retrieving all items of a channel metacounter
         /// </summary>
@@ -1033,7 +1033,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Dictionary of string</returns>
-        System.Threading.Tasks.Task<Dictionary<string, string>> ViewChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Dictionary<string, string>> ViewChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, string key = default, List<string> keys = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View a channel metacounter - When retrieving all items of a channel metacounter
@@ -1049,7 +1049,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key = default, List<string> keys = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// View a channel metacounter - When retrieving a specific item of a channel metacounter by its key
         /// </summary>
@@ -1063,7 +1063,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> ViewChannelMetacounterByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Object> ViewChannelMetacounterByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View a channel metacounter - When retrieving a specific item of a channel metacounter by its key
@@ -1078,7 +1078,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> ViewChannelMetacounterByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> ViewChannelMetacounterByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default);
         /// <summary>
         /// View a channel metadata - When retrieving all items of a channel metadata
         /// </summary>
@@ -1093,7 +1093,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Dictionary of string</returns>
-        System.Threading.Tasks.Task<Dictionary<string, string>> ViewChannelMetadataAsync (string apiToken, string channelType, string channelUrl, string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Dictionary<string, string>> ViewChannelMetadataAsync (string apiToken, string channelType, string channelUrl, string key = default, List<string> keys = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View a channel metadata - When retrieving all items of a channel metadata
@@ -1109,7 +1109,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key = default, List<string> keys = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// View a channel metadata - When retrieving a specific item of a channel metadata by its key
         /// </summary>
@@ -1123,7 +1123,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Dictionary of string</returns>
-        System.Threading.Tasks.Task<Dictionary<string, string>> ViewChannelMetadataByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Dictionary<string, string>> ViewChannelMetadataByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View a channel metadata - When retrieving a specific item of a channel metadata by its key
@@ -1138,7 +1138,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewChannelMetadataByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewChannelMetadataByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default);
         /// <summary>
         /// View a user metadata - When retrieving all items of a user metadata
         /// </summary>
@@ -1152,7 +1152,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewUserMetadataResponse</returns>
-        System.Threading.Tasks.Task<ViewUserMetadataResponse> ViewUserMetadataAsync (string apiToken, string userId, string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewUserMetadataResponse> ViewUserMetadataAsync (string apiToken, string userId, string key = default, List<string> keys = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View a user metadata - When retrieving all items of a user metadata
@@ -1167,7 +1167,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewUserMetadataResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewUserMetadataResponse>> ViewUserMetadataWithHttpInfoAsync (string apiToken, string userId, string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewUserMetadataResponse>> ViewUserMetadataWithHttpInfoAsync (string apiToken, string userId, string key = default, List<string> keys = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// View a user metadata - When retrieving a specific item of a user metadata by its key
         /// </summary>
@@ -1180,7 +1180,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Dictionary of string</returns>
-        System.Threading.Tasks.Task<Dictionary<string, string>> ViewUserMetadataByKeyAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Dictionary<string, string>> ViewUserMetadataByKeyAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View a user metadata - When retrieving a specific item of a user metadata by its key
@@ -1194,7 +1194,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewUserMetadataByKeyWithHttpInfoAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewUserMetadataByKeyWithHttpInfoAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default);
         #endregion Asynchronous Operations
     }
 
@@ -1315,7 +1315,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="createChannelMetacounterData"> (optional)</param>
         /// <returns>Object</returns>
-        public Object CreateChannelMetacounter (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default(CreateChannelMetacounterData))
+        public Object CreateChannelMetacounter (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default)
         {
              ApiResponse<Object> localVarResponse = CreateChannelMetacounterWithHttpInfo(apiToken, channelType, channelUrl, createChannelMetacounterData);
              return localVarResponse.Data;
@@ -1330,7 +1330,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="createChannelMetacounterData"> (optional)</param>
         /// <returns>ApiResponse of Object</returns>
-        public ApiResponse<Object> CreateChannelMetacounterWithHttpInfo (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default(CreateChannelMetacounterData))
+        public ApiResponse<Object> CreateChannelMetacounterWithHttpInfo (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1405,7 +1405,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="createChannelMetacounterData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> CreateChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default(CreateChannelMetacounterData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Object> CreateChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<Object> localVarResponse = await CreateChannelMetacounterWithHttpInfoAsync(apiToken, channelType, channelUrl, createChannelMetacounterData, cancellationToken);
              return localVarResponse.Data;
@@ -1422,7 +1422,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="createChannelMetacounterData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> CreateChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default(CreateChannelMetacounterData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> CreateChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetacounterData createChannelMetacounterData = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1496,7 +1496,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="createChannelMetadataData"> (optional)</param>
         /// <returns>CreateChannelMetadataResponse</returns>
-        public CreateChannelMetadataResponse CreateChannelMetadata (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData))
+        public CreateChannelMetadataResponse CreateChannelMetadata (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default)
         {
              ApiResponse<CreateChannelMetadataResponse> localVarResponse = CreateChannelMetadataWithHttpInfo(apiToken, channelType, channelUrl, createChannelMetadataData);
              return localVarResponse.Data;
@@ -1511,7 +1511,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="createChannelMetadataData"> (optional)</param>
         /// <returns>ApiResponse of CreateChannelMetadataResponse</returns>
-        public ApiResponse<CreateChannelMetadataResponse> CreateChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData))
+        public ApiResponse<CreateChannelMetadataResponse> CreateChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1586,7 +1586,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="createChannelMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of CreateChannelMetadataResponse</returns>
-        public async System.Threading.Tasks.Task<CreateChannelMetadataResponse> CreateChannelMetadataAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<CreateChannelMetadataResponse> CreateChannelMetadataAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<CreateChannelMetadataResponse> localVarResponse = await CreateChannelMetadataWithHttpInfoAsync(apiToken, channelType, channelUrl, createChannelMetadataData, cancellationToken);
              return localVarResponse.Data;
@@ -1603,7 +1603,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="createChannelMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (CreateChannelMetadataResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CreateChannelMetadataResponse>> CreateChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default(CreateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<CreateChannelMetadataResponse>> CreateChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, CreateChannelMetadataData createChannelMetadataData = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1676,7 +1676,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="createUserMetadataData"> (optional)</param>
         /// <returns>CreateUserMetadataResponse</returns>
-        public CreateUserMetadataResponse CreateUserMetadata (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData))
+        public CreateUserMetadataResponse CreateUserMetadata (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default)
         {
              ApiResponse<CreateUserMetadataResponse> localVarResponse = CreateUserMetadataWithHttpInfo(apiToken, userId, createUserMetadataData);
              return localVarResponse.Data;
@@ -1690,7 +1690,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="createUserMetadataData"> (optional)</param>
         /// <returns>ApiResponse of CreateUserMetadataResponse</returns>
-        public ApiResponse<CreateUserMetadataResponse> CreateUserMetadataWithHttpInfo (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData))
+        public ApiResponse<CreateUserMetadataResponse> CreateUserMetadataWithHttpInfo (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1760,7 +1760,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="createUserMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of CreateUserMetadataResponse</returns>
-        public async System.Threading.Tasks.Task<CreateUserMetadataResponse> CreateUserMetadataAsync (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<CreateUserMetadataResponse> CreateUserMetadataAsync (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<CreateUserMetadataResponse> localVarResponse = await CreateUserMetadataWithHttpInfoAsync(apiToken, userId, createUserMetadataData, cancellationToken);
              return localVarResponse.Data;
@@ -1776,7 +1776,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="createUserMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (CreateUserMetadataResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CreateUserMetadataResponse>> CreateUserMetadataWithHttpInfoAsync (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default(CreateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<CreateUserMetadataResponse>> CreateUserMetadataWithHttpInfoAsync (string apiToken, string userId, CreateUserMetadataData createUserMetadataData = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1922,7 +1922,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task DeleteChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, CancellationToken cancellationToken = default)
         {
              await DeleteChannelMetacounterWithHttpInfoAsync(apiToken, channelType, channelUrl, cancellationToken);
 
@@ -1937,7 +1937,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2084,7 +2084,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteChannelMetacounterByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task DeleteChannelMetacounterByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default)
         {
              await DeleteChannelMetacounterByKeyWithHttpInfoAsync(apiToken, channelType, channelUrl, key, cancellationToken);
 
@@ -2100,7 +2100,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetacounterByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetacounterByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2168,7 +2168,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="key"> (optional)</param>
         /// <returns></returns>
-        public void DeleteChannelMetadata (string apiToken, string channelType, string channelUrl, string key = default(string))
+        public void DeleteChannelMetadata (string apiToken, string channelType, string channelUrl, string key = default)
         {
              DeleteChannelMetadataWithHttpInfo(apiToken, channelType, channelUrl, key);
         }
@@ -2182,7 +2182,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="key"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, string key = default(string))
+        public ApiResponse<Object> DeleteChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, string key = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2248,7 +2248,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteChannelMetadataAsync (string apiToken, string channelType, string channelUrl, string key = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task DeleteChannelMetadataAsync (string apiToken, string channelType, string channelUrl, string key = default, CancellationToken cancellationToken = default)
         {
              await DeleteChannelMetadataWithHttpInfoAsync(apiToken, channelType, channelUrl, key, cancellationToken);
 
@@ -2264,7 +2264,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2412,7 +2412,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteChannelMetadataByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task DeleteChannelMetadataByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default)
         {
              await DeleteChannelMetadataByKeyWithHttpInfoAsync(apiToken, channelType, channelUrl, key, cancellationToken);
 
@@ -2428,7 +2428,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetadataByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteChannelMetadataByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2495,7 +2495,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="key"> (optional)</param>
         /// <returns></returns>
-        public void DeleteUserMetadata (string apiToken, string userId, string key = default(string))
+        public void DeleteUserMetadata (string apiToken, string userId, string key = default)
         {
              DeleteUserMetadataWithHttpInfo(apiToken, userId, key);
         }
@@ -2508,7 +2508,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="key"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteUserMetadataWithHttpInfo (string apiToken, string userId, string key = default(string))
+        public ApiResponse<Object> DeleteUserMetadataWithHttpInfo (string apiToken, string userId, string key = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2569,7 +2569,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteUserMetadataAsync (string apiToken, string userId, string key = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task DeleteUserMetadataAsync (string apiToken, string userId, string key = default, CancellationToken cancellationToken = default)
         {
              await DeleteUserMetadataWithHttpInfoAsync(apiToken, userId, key, cancellationToken);
 
@@ -2584,7 +2584,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteUserMetadataWithHttpInfoAsync (string apiToken, string userId, string key = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteUserMetadataWithHttpInfoAsync (string apiToken, string userId, string key = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2721,7 +2721,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteUserMetadataByKeyAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task DeleteUserMetadataByKeyAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default)
         {
              await DeleteUserMetadataByKeyWithHttpInfoAsync(apiToken, userId, key, cancellationToken);
 
@@ -2736,7 +2736,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteUserMetadataByKeyWithHttpInfoAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteUserMetadataByKeyWithHttpInfoAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2800,7 +2800,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="updateChannelMetacounterData"> (optional)</param>
         /// <returns>Object</returns>
-        public Object UpdateChannelMetacounter (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default(UpdateChannelMetacounterData))
+        public Object UpdateChannelMetacounter (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default)
         {
              ApiResponse<Object> localVarResponse = UpdateChannelMetacounterWithHttpInfo(apiToken, channelType, channelUrl, updateChannelMetacounterData);
              return localVarResponse.Data;
@@ -2815,7 +2815,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="updateChannelMetacounterData"> (optional)</param>
         /// <returns>ApiResponse of Object</returns>
-        public ApiResponse<Object> UpdateChannelMetacounterWithHttpInfo (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default(UpdateChannelMetacounterData))
+        public ApiResponse<Object> UpdateChannelMetacounterWithHttpInfo (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2890,7 +2890,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateChannelMetacounterData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> UpdateChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default(UpdateChannelMetacounterData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Object> UpdateChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<Object> localVarResponse = await UpdateChannelMetacounterWithHttpInfoAsync(apiToken, channelType, channelUrl, updateChannelMetacounterData, cancellationToken);
              return localVarResponse.Data;
@@ -2907,7 +2907,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateChannelMetacounterData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> UpdateChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default(UpdateChannelMetacounterData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> UpdateChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetacounterData updateChannelMetacounterData = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2982,7 +2982,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="body"> (optional)</param>
         /// <returns>Dictionary of string</returns>
-        public Dictionary<string, string> UpdateChannelMetacounterByKey (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object))
+        public Dictionary<string, string> UpdateChannelMetacounterByKey (string apiToken, string channelType, string channelUrl, string key, Object body = default)
         {
              ApiResponse<Dictionary<string, string>> localVarResponse = UpdateChannelMetacounterByKeyWithHttpInfo(apiToken, channelType, channelUrl, key, body);
              return localVarResponse.Data;
@@ -2998,7 +2998,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="body"> (optional)</param>
         /// <returns>ApiResponse of Dictionary of string</returns>
-        public ApiResponse<Dictionary<string, string>> UpdateChannelMetacounterByKeyWithHttpInfo (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object))
+        public ApiResponse<Dictionary<string, string>> UpdateChannelMetacounterByKeyWithHttpInfo (string apiToken, string channelType, string channelUrl, string key, Object body = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3078,7 +3078,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Dictionary of string</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, string>> UpdateChannelMetacounterByKeyAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Dictionary<string, string>> UpdateChannelMetacounterByKeyAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<Dictionary<string, string>> localVarResponse = await UpdateChannelMetacounterByKeyWithHttpInfoAsync(apiToken, channelType, channelUrl, key, body, cancellationToken);
              return localVarResponse.Data;
@@ -3096,7 +3096,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateChannelMetacounterByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateChannelMetacounterByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3174,7 +3174,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="updateChannelMetadataData"> (optional)</param>
         /// <returns>Dictionary of string</returns>
-        public Dictionary<string, string> UpdateChannelMetadata (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default(UpdateChannelMetadataData))
+        public Dictionary<string, string> UpdateChannelMetadata (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default)
         {
              ApiResponse<Dictionary<string, string>> localVarResponse = UpdateChannelMetadataWithHttpInfo(apiToken, channelType, channelUrl, updateChannelMetadataData);
              return localVarResponse.Data;
@@ -3189,7 +3189,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="updateChannelMetadataData"> (optional)</param>
         /// <returns>ApiResponse of Dictionary of string</returns>
-        public ApiResponse<Dictionary<string, string>> UpdateChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default(UpdateChannelMetadataData))
+        public ApiResponse<Dictionary<string, string>> UpdateChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3264,7 +3264,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateChannelMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Dictionary of string</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, string>> UpdateChannelMetadataAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default(UpdateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Dictionary<string, string>> UpdateChannelMetadataAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<Dictionary<string, string>> localVarResponse = await UpdateChannelMetadataWithHttpInfoAsync(apiToken, channelType, channelUrl, updateChannelMetadataData, cancellationToken);
              return localVarResponse.Data;
@@ -3281,7 +3281,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateChannelMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default(UpdateChannelMetadataData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, UpdateChannelMetadataData updateChannelMetadataData = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3356,7 +3356,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="body"> (optional)</param>
         /// <returns>Dictionary of string</returns>
-        public Dictionary<string, string> UpdateChannelMetadataByKey (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object))
+        public Dictionary<string, string> UpdateChannelMetadataByKey (string apiToken, string channelType, string channelUrl, string key, Object body = default)
         {
              ApiResponse<Dictionary<string, string>> localVarResponse = UpdateChannelMetadataByKeyWithHttpInfo(apiToken, channelType, channelUrl, key, body);
              return localVarResponse.Data;
@@ -3372,7 +3372,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="body"> (optional)</param>
         /// <returns>ApiResponse of Dictionary of string</returns>
-        public ApiResponse<Dictionary<string, string>> UpdateChannelMetadataByKeyWithHttpInfo (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object))
+        public ApiResponse<Dictionary<string, string>> UpdateChannelMetadataByKeyWithHttpInfo (string apiToken, string channelType, string channelUrl, string key, Object body = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3452,7 +3452,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Dictionary of string</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, string>> UpdateChannelMetadataByKeyAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Dictionary<string, string>> UpdateChannelMetadataByKeyAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<Dictionary<string, string>> localVarResponse = await UpdateChannelMetadataByKeyWithHttpInfoAsync(apiToken, channelType, channelUrl, key, body, cancellationToken);
              return localVarResponse.Data;
@@ -3470,7 +3470,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateChannelMetadataByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateChannelMetadataByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, Object body = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3547,7 +3547,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="updateUserMetadataData"> (optional)</param>
         /// <returns>UpdateUserMetadataResponse</returns>
-        public UpdateUserMetadataResponse UpdateUserMetadata (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData))
+        public UpdateUserMetadataResponse UpdateUserMetadata (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default)
         {
              ApiResponse<UpdateUserMetadataResponse> localVarResponse = UpdateUserMetadataWithHttpInfo(apiToken, userId, updateUserMetadataData);
              return localVarResponse.Data;
@@ -3561,7 +3561,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="updateUserMetadataData"> (optional)</param>
         /// <returns>ApiResponse of UpdateUserMetadataResponse</returns>
-        public ApiResponse<UpdateUserMetadataResponse> UpdateUserMetadataWithHttpInfo (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData))
+        public ApiResponse<UpdateUserMetadataResponse> UpdateUserMetadataWithHttpInfo (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3631,7 +3631,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateUserMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateUserMetadataResponse</returns>
-        public async System.Threading.Tasks.Task<UpdateUserMetadataResponse> UpdateUserMetadataAsync (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<UpdateUserMetadataResponse> UpdateUserMetadataAsync (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<UpdateUserMetadataResponse> localVarResponse = await UpdateUserMetadataWithHttpInfoAsync(apiToken, userId, updateUserMetadataData, cancellationToken);
              return localVarResponse.Data;
@@ -3647,7 +3647,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateUserMetadataData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateUserMetadataResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UpdateUserMetadataResponse>> UpdateUserMetadataWithHttpInfoAsync (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default(UpdateUserMetadataData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateUserMetadataResponse>> UpdateUserMetadataWithHttpInfoAsync (string apiToken, string userId, UpdateUserMetadataData updateUserMetadataData = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3717,7 +3717,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="body"> (optional)</param>
         /// <returns>Dictionary of string</returns>
-        public Dictionary<string, string> UpdateUserMetadataByKey (string apiToken, string userId, string key, Object body = default(Object))
+        public Dictionary<string, string> UpdateUserMetadataByKey (string apiToken, string userId, string key, Object body = default)
         {
              ApiResponse<Dictionary<string, string>> localVarResponse = UpdateUserMetadataByKeyWithHttpInfo(apiToken, userId, key, body);
              return localVarResponse.Data;
@@ -3732,7 +3732,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="body"> (optional)</param>
         /// <returns>ApiResponse of Dictionary of string</returns>
-        public ApiResponse<Dictionary<string, string>> UpdateUserMetadataByKeyWithHttpInfo (string apiToken, string userId, string key, Object body = default(Object))
+        public ApiResponse<Dictionary<string, string>> UpdateUserMetadataByKeyWithHttpInfo (string apiToken, string userId, string key, Object body = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3807,7 +3807,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Dictionary of string</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, string>> UpdateUserMetadataByKeyAsync (string apiToken, string userId, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Dictionary<string, string>> UpdateUserMetadataByKeyAsync (string apiToken, string userId, string key, Object body = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<Dictionary<string, string>> localVarResponse = await UpdateUserMetadataByKeyWithHttpInfoAsync(apiToken, userId, key, body, cancellationToken);
              return localVarResponse.Data;
@@ -3824,7 +3824,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateUserMetadataByKeyWithHttpInfoAsync (string apiToken, string userId, string key, Object body = default(Object), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> UpdateUserMetadataByKeyWithHttpInfoAsync (string apiToken, string userId, string key, Object body = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3899,7 +3899,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
         /// <returns>Dictionary of string</returns>
-        public Dictionary<string, string> ViewChannelMetacounter (string apiToken, string channelType, string channelUrl, string key = default(string), List<string> keys = default(List<string>))
+        public Dictionary<string, string> ViewChannelMetacounter (string apiToken, string channelType, string channelUrl, string key = default, List<string> keys = default)
         {
              ApiResponse<Dictionary<string, string>> localVarResponse = ViewChannelMetacounterWithHttpInfo(apiToken, channelType, channelUrl, key, keys);
              return localVarResponse.Data;
@@ -3915,7 +3915,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
         /// <returns>ApiResponse of Dictionary of string</returns>
-        public ApiResponse<Dictionary<string, string>> ViewChannelMetacounterWithHttpInfo (string apiToken, string channelType, string channelUrl, string key = default(string), List<string> keys = default(List<string>))
+        public ApiResponse<Dictionary<string, string>> ViewChannelMetacounterWithHttpInfo (string apiToken, string channelType, string channelUrl, string key = default, List<string> keys = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3984,7 +3984,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Dictionary of string</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, string>> ViewChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Dictionary<string, string>> ViewChannelMetacounterAsync (string apiToken, string channelType, string channelUrl, string key = default, List<string> keys = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<Dictionary<string, string>> localVarResponse = await ViewChannelMetacounterWithHttpInfoAsync(apiToken, channelType, channelUrl, key, keys, cancellationToken);
              return localVarResponse.Data;
@@ -4002,7 +4002,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewChannelMetacounterWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key = default, List<string> keys = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4154,7 +4154,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> ViewChannelMetacounterByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Object> ViewChannelMetacounterByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default)
         {
              ApiResponse<Object> localVarResponse = await ViewChannelMetacounterByKeyWithHttpInfoAsync(apiToken, channelType, channelUrl, key, cancellationToken);
              return localVarResponse.Data;
@@ -4171,7 +4171,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> ViewChannelMetacounterByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> ViewChannelMetacounterByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4241,7 +4241,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
         /// <returns>Dictionary of string</returns>
-        public Dictionary<string, string> ViewChannelMetadata (string apiToken, string channelType, string channelUrl, string key = default(string), List<string> keys = default(List<string>))
+        public Dictionary<string, string> ViewChannelMetadata (string apiToken, string channelType, string channelUrl, string key = default, List<string> keys = default)
         {
              ApiResponse<Dictionary<string, string>> localVarResponse = ViewChannelMetadataWithHttpInfo(apiToken, channelType, channelUrl, key, keys);
              return localVarResponse.Data;
@@ -4257,7 +4257,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
         /// <returns>ApiResponse of Dictionary of string</returns>
-        public ApiResponse<Dictionary<string, string>> ViewChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, string key = default(string), List<string> keys = default(List<string>))
+        public ApiResponse<Dictionary<string, string>> ViewChannelMetadataWithHttpInfo (string apiToken, string channelType, string channelUrl, string key = default, List<string> keys = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4326,7 +4326,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Dictionary of string</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, string>> ViewChannelMetadataAsync (string apiToken, string channelType, string channelUrl, string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Dictionary<string, string>> ViewChannelMetadataAsync (string apiToken, string channelType, string channelUrl, string key = default, List<string> keys = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<Dictionary<string, string>> localVarResponse = await ViewChannelMetadataWithHttpInfoAsync(apiToken, channelType, channelUrl, key, keys, cancellationToken);
              return localVarResponse.Data;
@@ -4344,7 +4344,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewChannelMetadataWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key = default, List<string> keys = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4496,7 +4496,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Dictionary of string</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, string>> ViewChannelMetadataByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Dictionary<string, string>> ViewChannelMetadataByKeyAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default)
         {
              ApiResponse<Dictionary<string, string>> localVarResponse = await ViewChannelMetadataByKeyWithHttpInfoAsync(apiToken, channelType, channelUrl, key, cancellationToken);
              return localVarResponse.Data;
@@ -4513,7 +4513,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewChannelMetadataByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewChannelMetadataByKeyWithHttpInfoAsync (string apiToken, string channelType, string channelUrl, string key, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4582,7 +4582,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
         /// <returns>ViewUserMetadataResponse</returns>
-        public ViewUserMetadataResponse ViewUserMetadata (string apiToken, string userId, string key = default(string), List<string> keys = default(List<string>))
+        public ViewUserMetadataResponse ViewUserMetadata (string apiToken, string userId, string key = default, List<string> keys = default)
         {
              ApiResponse<ViewUserMetadataResponse> localVarResponse = ViewUserMetadataWithHttpInfo(apiToken, userId, key, keys);
              return localVarResponse.Data;
@@ -4597,7 +4597,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"> (optional)</param>
         /// <param name="keys"> (optional)</param>
         /// <returns>ApiResponse of ViewUserMetadataResponse</returns>
-        public ApiResponse<ViewUserMetadataResponse> ViewUserMetadataWithHttpInfo (string apiToken, string userId, string key = default(string), List<string> keys = default(List<string>))
+        public ApiResponse<ViewUserMetadataResponse> ViewUserMetadataWithHttpInfo (string apiToken, string userId, string key = default, List<string> keys = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4661,7 +4661,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewUserMetadataResponse</returns>
-        public async System.Threading.Tasks.Task<ViewUserMetadataResponse> ViewUserMetadataAsync (string apiToken, string userId, string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewUserMetadataResponse> ViewUserMetadataAsync (string apiToken, string userId, string key = default, List<string> keys = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<ViewUserMetadataResponse> localVarResponse = await ViewUserMetadataWithHttpInfoAsync(apiToken, userId, key, keys, cancellationToken);
              return localVarResponse.Data;
@@ -4678,7 +4678,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="keys"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewUserMetadataResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewUserMetadataResponse>> ViewUserMetadataWithHttpInfoAsync (string apiToken, string userId, string key = default(string), List<string> keys = default(List<string>), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewUserMetadataResponse>> ViewUserMetadataWithHttpInfoAsync (string apiToken, string userId, string key = default, List<string> keys = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4819,7 +4819,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Dictionary of string</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, string>> ViewUserMetadataByKeyAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Dictionary<string, string>> ViewUserMetadataByKeyAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default)
         {
              ApiResponse<Dictionary<string, string>> localVarResponse = await ViewUserMetadataByKeyWithHttpInfoAsync(apiToken, userId, key, cancellationToken);
              return localVarResponse.Data;
@@ -4835,7 +4835,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="key"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, string&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewUserMetadataByKeyWithHttpInfoAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Dictionary<string, string>>> ViewUserMetadataByKeyWithHttpInfoAsync (string apiToken, string userId, string key, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)

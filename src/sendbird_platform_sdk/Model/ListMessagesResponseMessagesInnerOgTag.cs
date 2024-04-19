@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="ogtitle">ogtitle.</param>
         /// <param name="ogdescription">ogdescription.</param>
         /// <param name="ogimage">ogimage.</param>
-        public ListMessagesResponseMessagesInnerOgTag(string ogurl = default(string), string ogtitle = default(string), string ogdescription = default(string), ListMessagesResponseMessagesInnerOgTagOgImage ogimage = default(ListMessagesResponseMessagesInnerOgTagOgImage))
+        public ListMessagesResponseMessagesInnerOgTag(string ogurl = default, string ogtitle = default, string ogdescription = default, ListMessagesResponseMessagesInnerOgTagOgImage ogimage = default(ListMessagesResponseMessagesInnerOgTagOgImage))
         {
             this.Ogurl = ogurl;
             this.Ogtitle = ogtitle;

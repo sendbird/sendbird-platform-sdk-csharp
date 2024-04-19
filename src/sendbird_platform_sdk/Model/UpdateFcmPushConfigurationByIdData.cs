@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="providerId">Specifies the provider ID of the push configuration to update. (required).</param>
         /// <param name="apiKey">Specifies the FCM server key to update. (required).</param>
         /// <param name="pushSound">Specifies the name of a sound file to be played when a push notification is delivered to your client app. The file should be located in the &#x60;/res/raw&#x60; folder. (required).</param>
-        public UpdateFcmPushConfigurationByIdData(string providerId = default(string), string apiKey = default(string), string pushSound = default(string))
+        public UpdateFcmPushConfigurationByIdData(string providerId = default, string apiKey = default, string pushSound = default)
         {
             // to ensure "providerId" is required (not null)
             if (providerId == null)

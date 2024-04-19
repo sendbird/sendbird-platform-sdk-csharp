@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="nickname">nickname.</param>
         /// <param name="userId">userId.</param>
         /// <param name="profileUrl">profileUrl.</param>
-        public SendBirdGroupChannelCreatedBy(bool requireAuthForProfileImage = default(bool), string nickname = default(string), string userId = default(string), string profileUrl = default(string))
+        public SendBirdGroupChannelCreatedBy(bool requireAuthForProfileImage = default(bool), string nickname = default, string userId = default, string profileUrl = default)
         {
             this.RequireAuthForProfileImage = requireAuthForProfileImage;
             this.Nickname = nickname;

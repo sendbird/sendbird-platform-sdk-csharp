@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="gcmRegToken">Specifies a registration token for Firebase Cloud Messaging (formerly [Google Cloud Messaging](https://developers.google.com/cloud-messaging/)). (required).</param>
         /// <param name="huaweiDeviceToken">Specifies a device token for Huawei Mobile Services. (required).</param>
         /// <param name="apnsDeviceToken">Specifies a device token for Apple Push Notification Service. (required).</param>
-        public AddRegistrationOrDeviceTokenData(string gcmRegToken = default(string), string huaweiDeviceToken = default(string), string apnsDeviceToken = default(string))
+        public AddRegistrationOrDeviceTokenData(string gcmRegToken = default, string huaweiDeviceToken = default, string apnsDeviceToken = default)
         {
             // to ensure "gcmRegToken" is required (not null)
             if (gcmRegToken == null)

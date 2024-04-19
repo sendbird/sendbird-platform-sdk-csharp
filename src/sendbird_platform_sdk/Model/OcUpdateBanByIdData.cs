@@ -42,7 +42,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="bannedUserId">Specifies the ID of the banned user to update. (required).</param>
         /// <param name="seconds">Specifies a new ban duration to update. If set to -1, the user will be banned permanently (10 years, technically). (required).</param>
         /// <param name="description">Specifies a new reason for the banning to update. The length is limited to 250 characters. (required).</param>
-        public OcUpdateBanByIdData(string channelUrl = default(string), string bannedUserId = default(string), int seconds = default(int), string description = default(string))
+        public OcUpdateBanByIdData(string channelUrl = default, string bannedUserId = default, int seconds = default(int), string description = default)
         {
             // to ensure "channelUrl" is required (not null)
             if (channelUrl == null)

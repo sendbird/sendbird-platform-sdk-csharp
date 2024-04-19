@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="announcementGroups">announcementGroups.</param>
         /// <param name="next">next.</param>
-        public ListAnnouncementGroupsResponse(List<string> announcementGroups = default(List<string>), string next = default(string))
+        public ListAnnouncementGroupsResponse(List<string> announcementGroups = default, string next = default)
         {
             this.AnnouncementGroups = announcementGroups;
             this.Next = next;

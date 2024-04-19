@@ -42,7 +42,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="huaweiAppId">Specifies the unique ID of application for HMS to update. (required).</param>
         /// <param name="huaweiAppSecret">Specifies the secret key of the application to update. (required).</param>
         /// <param name="pushSound">Specifies the name of a sound file to be played when a push notification is delivered to your client app. The file should be located in the &#x60;/res/raw&#x60; folder. (required).</param>
-        public UpdateHmsPushConfigurationByIdData(string providerId = default(string), string huaweiAppId = default(string), string huaweiAppSecret = default(string), string pushSound = default(string))
+        public UpdateHmsPushConfigurationByIdData(string providerId = default, string huaweiAppId = default, string huaweiAppSecret = default, string pushSound = default)
         {
             // to ensure "providerId" is required (not null)
             if (providerId == null)

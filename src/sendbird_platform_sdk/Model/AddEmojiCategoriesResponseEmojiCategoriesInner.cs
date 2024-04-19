@@ -36,7 +36,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="id">id.</param>
         /// <param name="name">name.</param>
         /// <param name="url">url.</param>
-        public AddEmojiCategoriesResponseEmojiCategoriesInner(decimal id = default(decimal), string name = default(string), string url = default(string))
+        public AddEmojiCategoriesResponseEmojiCategoriesInner(decimal id = default(decimal), string name = default, string url = default)
         {
             this.Id = id;
             this.Name = name;

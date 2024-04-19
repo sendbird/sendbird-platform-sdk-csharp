@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="value">value.</param>
         /// <param name="key">key.</param>
-        public UpdateExtraDataInMessageResponseSortedMetaarrayInner(List<string> value = default(List<string>), string key = default(string))
+        public UpdateExtraDataInMessageResponseSortedMetaarrayInner(List<string> value = default, string key = default)
         {
             this.Value = value;
             this.Key = key;

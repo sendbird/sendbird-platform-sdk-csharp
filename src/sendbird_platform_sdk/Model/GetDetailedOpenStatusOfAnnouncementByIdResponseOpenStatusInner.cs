@@ -38,7 +38,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="hasOpened">hasOpened.</param>
         /// <param name="sentAt">sentAt.</param>
         /// <param name="openAt">openAt.</param>
-        public GetDetailedOpenStatusOfAnnouncementByIdResponseOpenStatusInner(string userId = default(string), string channelUrl = default(string), bool hasOpened = default(bool), decimal sentAt = default(decimal), decimal openAt = default(decimal))
+        public GetDetailedOpenStatusOfAnnouncementByIdResponseOpenStatusInner(string userId = default, string channelUrl = default, bool hasOpened = default(bool), decimal sentAt = default(decimal), decimal openAt = default(decimal))
         {
             this.UserId = userId;
             this.ChannelUrl = channelUrl;

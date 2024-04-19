@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="description">description.</param>
         /// <param name="channel">channel.</param>
         /// <param name="endAt">endAt.</param>
-        public ListBannedChannelsResponseBannedChannelsInner(decimal startAt = default(decimal), string description = default(string), SendBirdChannelResponse channel = default(SendBirdChannelResponse), decimal endAt = default(decimal))
+        public ListBannedChannelsResponseBannedChannelsInner(decimal startAt = default(decimal), string description = default, SendBirdChannelResponse channel = default(SendBirdChannelResponse), decimal endAt = default(decimal))
         {
             this.StartAt = startAt;
             this.Description = description;

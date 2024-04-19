@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="userId">Specifies the ID of the target user to mute. (required).</param>
         /// <param name="seconds">Specifies the duration of mute status. If set to -1, the user will be muted permanently (10 years, technically). (Default: -1) (required).</param>
         /// <param name="description">Specifies a reason for the muting. (required).</param>
-        public OcMuteUserData(string userId = default(string), int seconds = default(int), string description = default(string))
+        public OcMuteUserData(string userId = default, int seconds = default(int), string description = default)
         {
             // to ensure "userId" is required (not null)
             if (userId == null)

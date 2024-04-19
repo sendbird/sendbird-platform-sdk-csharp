@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="waitSeconds">waitSeconds.</param>
         /// <param name="excludeUserIds">excludeUserIds.</param>
-        public SendBirdGroupChannelSmsFallback(decimal waitSeconds = default(decimal), List<string> excludeUserIds = default(List<string>))
+        public SendBirdGroupChannelSmsFallback(decimal waitSeconds = default(decimal), List<string> excludeUserIds = default)
         {
             this.WaitSeconds = waitSeconds;
             this.ExcludeUserIds = excludeUserIds;

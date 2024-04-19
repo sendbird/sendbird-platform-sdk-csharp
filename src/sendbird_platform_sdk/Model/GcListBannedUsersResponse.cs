@@ -36,7 +36,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="bannedList">bannedList.</param>
         /// <param name="totalBanCount">totalBanCount.</param>
         /// <param name="next">next.</param>
-        public GcListBannedUsersResponse(List<OcListBannedUsersResponseBannedListInner> bannedList = default(List<OcListBannedUsersResponseBannedListInner>), decimal totalBanCount = default(decimal), string next = default(string))
+        public GcListBannedUsersResponse(List<OcListBannedUsersResponseBannedListInner> bannedList = default(List<OcListBannedUsersResponseBannedListInner>), decimal totalBanCount = default(decimal), string next = default)
         {
             this.BannedList = bannedList;
             this.TotalBanCount = totalBanCount;

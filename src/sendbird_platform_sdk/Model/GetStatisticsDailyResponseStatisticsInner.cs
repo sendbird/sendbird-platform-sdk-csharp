@@ -44,7 +44,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="sentUserCount">sentUserCount.</param>
         /// <param name="openRate">openRate.</param>
         /// <param name="openCount">openCount.</param>
-        public GetStatisticsDailyResponseStatisticsInner(string dateRange = default(string), decimal canceledAnnouncementCount = default(decimal), decimal stoppedAnnouncementCount = default(decimal), decimal completedAnnouncementCount = default(decimal), decimal totalAnnouncementCount = default(decimal), decimal targetChannelCount = default(decimal), decimal targetUserCount = default(decimal), decimal sentChannelCount = default(decimal), decimal sentUserCount = default(decimal), decimal openRate = default(decimal), decimal openCount = default(decimal))
+        public GetStatisticsDailyResponseStatisticsInner(string dateRange = default, decimal canceledAnnouncementCount = default(decimal), decimal stoppedAnnouncementCount = default(decimal), decimal completedAnnouncementCount = default(decimal), decimal totalAnnouncementCount = default(decimal), decimal targetChannelCount = default(decimal), decimal targetUserCount = default(decimal), decimal sentChannelCount = default(decimal), decimal sentUserCount = default(decimal), decimal openRate = default(decimal), decimal openCount = default(decimal))
         {
             this.DateRange = dateRange;
             this.CanceledAnnouncementCount = canceledAnnouncementCount;

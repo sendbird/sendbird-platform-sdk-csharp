@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="UpdateCountPreferenceOfChannelByUrlResponse" /> class.
         /// </summary>
         /// <param name="countPreference">countPreference.</param>
-        public UpdateCountPreferenceOfChannelByUrlResponse(string countPreference = default(string))
+        public UpdateCountPreferenceOfChannelByUrlResponse(string countPreference = default)
         {
             this.CountPreference = countPreference;
         }

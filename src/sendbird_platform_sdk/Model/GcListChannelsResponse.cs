@@ -36,7 +36,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="channels">channels.</param>
         /// <param name="next">next.</param>
         /// <param name="ts">ts.</param>
-        public GcListChannelsResponse(List<SendBirdGroupChannel> channels = default(List<SendBirdGroupChannel>), string next = default(string), decimal ts = default(decimal))
+        public GcListChannelsResponse(List<SendBirdGroupChannel> channels = default(List<SendBirdGroupChannel>), string next = default, decimal ts = default(decimal))
         {
             this.Channels = channels;
             this.Next = next;

@@ -58,7 +58,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <returns>RetrieveListOfSubscribedEventsResponse</returns>
-        RetrieveListOfSubscribedEventsResponse RetrieveListOfSubscribedEvents (string apiToken, bool? displayAllWebhookCategories = default(bool?));
+        RetrieveListOfSubscribedEventsResponse RetrieveListOfSubscribedEvents (string apiToken, bool? displayAllWebhookCategories = default);
 
         /// <summary>
         /// Retrieve a list of subscribed events
@@ -70,7 +70,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <returns>ApiResponse of RetrieveListOfSubscribedEventsResponse</returns>
-        ApiResponse<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsWithHttpInfo (string apiToken, bool? displayAllWebhookCategories = default(bool?));
+        ApiResponse<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsWithHttpInfo (string apiToken, bool? displayAllWebhookCategories = default);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -84,7 +84,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ChooseWhichEventsToSubscribeToResponse</returns>
-        System.Threading.Tasks.Task<ChooseWhichEventsToSubscribeToResponse> ChooseWhichEventsToSubscribeToAsync (string apiToken, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ChooseWhichEventsToSubscribeToResponse> ChooseWhichEventsToSubscribeToAsync (string apiToken, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Choose which events to subscribe to
@@ -97,7 +97,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ChooseWhichEventsToSubscribeToResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ChooseWhichEventsToSubscribeToResponse>> ChooseWhichEventsToSubscribeToWithHttpInfoAsync (string apiToken, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ChooseWhichEventsToSubscribeToResponse>> ChooseWhichEventsToSubscribeToWithHttpInfoAsync (string apiToken, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Retrieve a list of subscribed events
         /// </summary>
@@ -109,7 +109,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RetrieveListOfSubscribedEventsResponse</returns>
-        System.Threading.Tasks.Task<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsAsync (string apiToken, bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsAsync (string apiToken, bool? displayAllWebhookCategories = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Retrieve a list of subscribed events
@@ -122,7 +122,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RetrieveListOfSubscribedEventsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<RetrieveListOfSubscribedEventsResponse>> RetrieveListOfSubscribedEventsWithHttpInfoAsync (string apiToken, bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<RetrieveListOfSubscribedEventsResponse>> RetrieveListOfSubscribedEventsWithHttpInfoAsync (string apiToken, bool? displayAllWebhookCategories = default, CancellationToken cancellationToken = default);
         #endregion Asynchronous Operations
     }
 
@@ -319,7 +319,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ChooseWhichEventsToSubscribeToResponse</returns>
-        public async System.Threading.Tasks.Task<ChooseWhichEventsToSubscribeToResponse> ChooseWhichEventsToSubscribeToAsync (string apiToken, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ChooseWhichEventsToSubscribeToResponse> ChooseWhichEventsToSubscribeToAsync (string apiToken, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default)
         {
              ApiResponse<ChooseWhichEventsToSubscribeToResponse> localVarResponse = await ChooseWhichEventsToSubscribeToWithHttpInfoAsync(apiToken, chooseWhichEventsToSubscribeToData, cancellationToken);
              return localVarResponse.Data;
@@ -334,7 +334,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="chooseWhichEventsToSubscribeToData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ChooseWhichEventsToSubscribeToResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ChooseWhichEventsToSubscribeToResponse>> ChooseWhichEventsToSubscribeToWithHttpInfoAsync (string apiToken, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ChooseWhichEventsToSubscribeToResponse>> ChooseWhichEventsToSubscribeToWithHttpInfoAsync (string apiToken, ChooseWhichEventsToSubscribeToData chooseWhichEventsToSubscribeToData = default(ChooseWhichEventsToSubscribeToData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -398,7 +398,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <returns>RetrieveListOfSubscribedEventsResponse</returns>
-        public RetrieveListOfSubscribedEventsResponse RetrieveListOfSubscribedEvents (string apiToken, bool? displayAllWebhookCategories = default(bool?))
+        public RetrieveListOfSubscribedEventsResponse RetrieveListOfSubscribedEvents (string apiToken, bool? displayAllWebhookCategories = default)
         {
              ApiResponse<RetrieveListOfSubscribedEventsResponse> localVarResponse = RetrieveListOfSubscribedEventsWithHttpInfo(apiToken, displayAllWebhookCategories);
              return localVarResponse.Data;
@@ -411,7 +411,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <returns>ApiResponse of RetrieveListOfSubscribedEventsResponse</returns>
-        public ApiResponse<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsWithHttpInfo (string apiToken, bool? displayAllWebhookCategories = default(bool?))
+        public ApiResponse<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsWithHttpInfo (string apiToken, bool? displayAllWebhookCategories = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -468,7 +468,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of RetrieveListOfSubscribedEventsResponse</returns>
-        public async System.Threading.Tasks.Task<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsAsync (string apiToken, bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<RetrieveListOfSubscribedEventsResponse> RetrieveListOfSubscribedEventsAsync (string apiToken, bool? displayAllWebhookCategories = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<RetrieveListOfSubscribedEventsResponse> localVarResponse = await RetrieveListOfSubscribedEventsWithHttpInfoAsync(apiToken, displayAllWebhookCategories, cancellationToken);
              return localVarResponse.Data;
@@ -483,7 +483,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="displayAllWebhookCategories"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (RetrieveListOfSubscribedEventsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<RetrieveListOfSubscribedEventsResponse>> RetrieveListOfSubscribedEventsWithHttpInfoAsync (string apiToken, bool? displayAllWebhookCategories = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<RetrieveListOfSubscribedEventsResponse>> RetrieveListOfSubscribedEventsWithHttpInfoAsync (string apiToken, bool? displayAllWebhookCategories = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)

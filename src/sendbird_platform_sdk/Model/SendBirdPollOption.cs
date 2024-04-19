@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="text">text.</param>
         /// <param name="updatedAt">updatedAt.</param>
         /// <param name="voteCount">voteCount.</param>
-        public SendBirdPollOption(decimal createdAt = default(decimal), string createdBy = default(string), decimal id = default(decimal), List<SendBirdUser> partialVoters = default(List<SendBirdUser>), decimal pollId = default(decimal), string text = default(string), decimal updatedAt = default(decimal), decimal voteCount = default(decimal))
+        public SendBirdPollOption(decimal createdAt = default(decimal), string createdBy = default, decimal id = default(decimal), List<SendBirdUser> partialVoters = default(List<SendBirdUser>), decimal pollId = default(decimal), string text = default, decimal updatedAt = default(decimal), decimal voteCount = default(decimal))
         {
             this.CreatedAt = createdAt;
             this.CreatedBy = createdBy;

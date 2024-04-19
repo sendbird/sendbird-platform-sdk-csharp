@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse" /> class.
         /// </summary>
         /// <param name="userId">userId.</param>
-        public RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse(string userId = default(string))
+        public RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse(string userId = default)
         {
             this.UserId = userId;
         }

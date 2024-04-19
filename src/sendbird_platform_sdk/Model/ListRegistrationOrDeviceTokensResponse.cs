@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="tokens">tokens.</param>
         /// <param name="type">type.</param>
         /// <param name="user">user.</param>
-        public ListRegistrationOrDeviceTokensResponse(List<string> token = default(List<string>), List<string> tokens = default(List<string>), string type = default(string), SendBirdUser user = default(SendBirdUser))
+        public ListRegistrationOrDeviceTokensResponse(List<string> token = default, List<string> tokens = default, string type = default, SendBirdUser user = default(SendBirdUser))
         {
             this.Token = token;
             this.Tokens = tokens;

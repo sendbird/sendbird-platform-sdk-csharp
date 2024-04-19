@@ -39,7 +39,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="realWidth">realWidth.</param>
         /// <param name="url">url.</param>
         /// <param name="width">width.</param>
-        public SendBirdThumbnailSBObject(decimal height = default(decimal), string plainUrl = default(string), decimal realHeight = default(decimal), decimal realWidth = default(decimal), string url = default(string), decimal width = default(decimal))
+        public SendBirdThumbnailSBObject(decimal height = default(decimal), string plainUrl = default, decimal realHeight = default(decimal), decimal realWidth = default(decimal), string url = default, decimal width = default(decimal))
         {
             this.Height = height;
             this.PlainUrl = plainUrl;

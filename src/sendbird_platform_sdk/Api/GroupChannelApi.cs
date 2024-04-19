@@ -62,7 +62,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
         /// <returns>OcDeleteChannelByUrl200Response</returns>
-        OcDeleteChannelByUrl200Response GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?));
+        OcDeleteChannelByUrl200Response GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default);
 
         /// <summary>
         /// Cancel the registration of operators
@@ -76,7 +76,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
         /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        ApiResponse<OcDeleteChannelByUrl200Response> GcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?));
+        ApiResponse<OcDeleteChannelByUrl200Response> GcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default);
         /// <summary>
         /// Check if member
         /// </summary>
@@ -324,7 +324,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="membersIn"> (optional)</param>
         /// <param name="userId"> (optional)</param>
         /// <returns>GcListChannelsResponse</returns>
-        GcListChannelsResponse GcListChannels (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), string customType = default(string), bool? readReceipt = default(bool?), bool? member = default(bool?), bool? isDistinct = default(bool?), string membersIn = default(string), string userId = default(string));
+        GcListChannelsResponse GcListChannels (string apiToken, string token = default, int? limit = default, string distinctMode = default, string publicMode = default, string superMode = default, int? createdAfter = default, int? createdBefore = default, bool? showEmpty = default, bool? showMember = default, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, bool? showMetadata = default, bool? showFrozen = default, string order = default, string metadataOrderKey = default, string customTypes = default, string customTypeStartswith = default, string channelUrls = default, string name = default, string nameContains = default, string nameStartswith = default, string membersExactlyIn = default, string membersIncludeIn = default, string queryType = default, string membersNickname = default, string membersNicknameContains = default, string metadataKey = default, string metadataValues = default, string metadataValueStartswith = default, string metacounterKey = default, string metacounterValues = default, string metacounterValueGt = default, string metacounterValueGte = default, string metacounterValueLt = default, string metacounterValueLte = default, bool? includeSortedMetaarrayInLastMessage = default, string customType = default, bool? readReceipt = default, bool? member = default, bool? isDistinct = default, string membersIn = default, string userId = default);
 
         /// <summary>
         /// List channels
@@ -377,7 +377,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="membersIn"> (optional)</param>
         /// <param name="userId"> (optional)</param>
         /// <returns>ApiResponse of GcListChannelsResponse</returns>
-        ApiResponse<GcListChannelsResponse> GcListChannelsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), string customType = default(string), bool? readReceipt = default(bool?), bool? member = default(bool?), bool? isDistinct = default(bool?), string membersIn = default(string), string userId = default(string));
+        ApiResponse<GcListChannelsResponse> GcListChannelsWithHttpInfo (string apiToken, string token = default, int? limit = default, string distinctMode = default, string publicMode = default, string superMode = default, int? createdAfter = default, int? createdBefore = default, bool? showEmpty = default, bool? showMember = default, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, bool? showMetadata = default, bool? showFrozen = default, string order = default, string metadataOrderKey = default, string customTypes = default, string customTypeStartswith = default, string channelUrls = default, string name = default, string nameContains = default, string nameStartswith = default, string membersExactlyIn = default, string membersIncludeIn = default, string queryType = default, string membersNickname = default, string membersNicknameContains = default, string metadataKey = default, string metadataValues = default, string metadataValueStartswith = default, string metacounterKey = default, string metacounterValues = default, string metacounterValueGt = default, string metacounterValueGte = default, string metacounterValueLt = default, string metacounterValueLte = default, bool? includeSortedMetaarrayInLastMessage = default, string customType = default, bool? readReceipt = default, bool? member = default, bool? isDistinct = default, string membersIn = default, string userId = default);
         /// <summary>
         /// List members
         /// </summary>
@@ -397,7 +397,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedMemberFilter"> (optional)</param>
         /// <param name="nicknameStartswith"> (optional)</param>
         /// <returns>GcListMembersResponse</returns>
-        GcListMembersResponse GcListMembers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string nicknameStartswith = default(string));
+        GcListMembersResponse GcListMembers (string apiToken, string channelUrl, string token = default, int? limit = default, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, string order = default, string operatorFilter = default, string memberStateFilter = default, string mutedMemberFilter = default, string nicknameStartswith = default);
 
         /// <summary>
         /// List members
@@ -418,7 +418,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedMemberFilter"> (optional)</param>
         /// <param name="nicknameStartswith"> (optional)</param>
         /// <returns>ApiResponse of GcListMembersResponse</returns>
-        ApiResponse<GcListMembersResponse> GcListMembersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string nicknameStartswith = default(string));
+        ApiResponse<GcListMembersResponse> GcListMembersWithHttpInfo (string apiToken, string channelUrl, string token = default, int? limit = default, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, string order = default, string operatorFilter = default, string memberStateFilter = default, string mutedMemberFilter = default, string nicknameStartswith = default);
         /// <summary>
         /// List operators
         /// </summary>
@@ -431,7 +431,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>GcListOperatorsResponse</returns>
-        GcListOperatorsResponse GcListOperators (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        GcListOperatorsResponse GcListOperators (string apiToken, string channelUrl, string token = default, int? limit = default);
 
         /// <summary>
         /// List operators
@@ -445,7 +445,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of GcListOperatorsResponse</returns>
-        ApiResponse<GcListOperatorsResponse> GcListOperatorsWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        ApiResponse<GcListOperatorsResponse> GcListOperatorsWithHttpInfo (string apiToken, string channelUrl, string token = default, int? limit = default);
         /// <summary>
         /// Register operators
         /// </summary>
@@ -508,7 +508,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
         /// <returns>OcDeleteChannelByUrl200Response</returns>
-        OcDeleteChannelByUrl200Response GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?));
+        OcDeleteChannelByUrl200Response GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default);
 
         /// <summary>
         /// Unhide or unarchive a channel
@@ -522,7 +522,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
         /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        ApiResponse<OcDeleteChannelByUrl200Response> GcUnhideOrUnarchiveChannelWithHttpInfo (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?));
+        ApiResponse<OcDeleteChannelByUrl200Response> GcUnhideOrUnarchiveChannelWithHttpInfo (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default);
         /// <summary>
         /// Update a channel
         /// </summary>
@@ -563,7 +563,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="readReceipt"> (optional)</param>
         /// <param name="member"> (optional)</param>
         /// <returns>SendBirdGroupChannel</returns>
-        SendBirdGroupChannel GcViewChannelByUrl (string apiToken, string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), bool? readReceipt = default(bool?), bool? member = default(bool?));
+        SendBirdGroupChannel GcViewChannelByUrl (string apiToken, string channelUrl, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, bool? showMember = default, bool? readReceipt = default, bool? member = default);
 
         /// <summary>
         /// View a channel
@@ -580,7 +580,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="readReceipt"> (optional)</param>
         /// <param name="member"> (optional)</param>
         /// <returns>ApiResponse of SendBirdGroupChannel</returns>
-        ApiResponse<SendBirdGroupChannel> GcViewChannelByUrlWithHttpInfo (string apiToken, string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), bool? readReceipt = default(bool?), bool? member = default(bool?));
+        ApiResponse<SendBirdGroupChannel> GcViewChannelByUrlWithHttpInfo (string apiToken, string channelUrl, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, bool? showMember = default, bool? readReceipt = default, bool? member = default);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -595,7 +595,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcAcceptInvitationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdGroupChannel</returns>
-        System.Threading.Tasks.Task<SendBirdGroupChannel> GcAcceptInvitationAsync (string apiToken, string channelUrl, GcAcceptInvitationData gcAcceptInvitationData = default(GcAcceptInvitationData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdGroupChannel> GcAcceptInvitationAsync (string apiToken, string channelUrl, GcAcceptInvitationData gcAcceptInvitationData = default(GcAcceptInvitationData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Accept an invitation
@@ -609,7 +609,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcAcceptInvitationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcAcceptInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcAcceptInvitationData gcAcceptInvitationData = default(GcAcceptInvitationData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcAcceptInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcAcceptInvitationData gcAcceptInvitationData = default(GcAcceptInvitationData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Cancel the registration of operators
         /// </summary>
@@ -623,7 +623,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Cancel the registration of operators
@@ -638,7 +638,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Check if member
         /// </summary>
@@ -651,7 +651,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcCheckIfMemberByIdResponse</returns>
-        System.Threading.Tasks.Task<GcCheckIfMemberByIdResponse> GcCheckIfMemberByIdAsync (string apiToken, string channelUrl, string userId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GcCheckIfMemberByIdResponse> GcCheckIfMemberByIdAsync (string apiToken, string channelUrl, string userId, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Check if member
@@ -665,7 +665,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcCheckIfMemberByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GcCheckIfMemberByIdResponse>> GcCheckIfMemberByIdWithHttpInfoAsync (string apiToken, string channelUrl, string userId, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GcCheckIfMemberByIdResponse>> GcCheckIfMemberByIdWithHttpInfoAsync (string apiToken, string channelUrl, string userId, CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a channel
         /// </summary>
@@ -677,7 +677,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcCreateChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdGroupChannel</returns>
-        System.Threading.Tasks.Task<SendBirdGroupChannel> GcCreateChannelAsync (string apiToken, GcCreateChannelData gcCreateChannelData = default(GcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdGroupChannel> GcCreateChannelAsync (string apiToken, GcCreateChannelData gcCreateChannelData = default(GcCreateChannelData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Create a channel
@@ -690,7 +690,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcCreateChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcCreateChannelWithHttpInfoAsync (string apiToken, GcCreateChannelData gcCreateChannelData = default(GcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcCreateChannelWithHttpInfoAsync (string apiToken, GcCreateChannelData gcCreateChannelData = default(GcCreateChannelData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Decline an invitation
         /// </summary>
@@ -703,7 +703,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcDeclineInvitationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcDeclineInvitationAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcDeclineInvitationAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Decline an invitation
@@ -717,7 +717,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcDeclineInvitationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcDeclineInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcDeclineInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Delete a channel
         /// </summary>
@@ -729,7 +729,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Delete a channel
@@ -742,7 +742,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default);
         /// <summary>
         /// Hide or archive a channel
         /// </summary>
@@ -755,7 +755,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcHideOrArchiveChannelAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcHideOrArchiveChannelAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Hide or archive a channel
@@ -769,7 +769,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcHideOrArchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcHideOrArchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Invite as members
         /// </summary>
@@ -782,7 +782,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcInviteAsMembersData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdGroupChannel</returns>
-        System.Threading.Tasks.Task<SendBirdGroupChannel> GcInviteAsMembersAsync (string apiToken, string channelUrl, GcInviteAsMembersData gcInviteAsMembersData = default(GcInviteAsMembersData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdGroupChannel> GcInviteAsMembersAsync (string apiToken, string channelUrl, GcInviteAsMembersData gcInviteAsMembersData = default(GcInviteAsMembersData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Invite as members
@@ -796,7 +796,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcInviteAsMembersData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcInviteAsMembersWithHttpInfoAsync (string apiToken, string channelUrl, GcInviteAsMembersData gcInviteAsMembersData = default(GcInviteAsMembersData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcInviteAsMembersWithHttpInfoAsync (string apiToken, string channelUrl, GcInviteAsMembersData gcInviteAsMembersData = default(GcInviteAsMembersData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Join a channel
         /// </summary>
@@ -809,7 +809,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcJoinChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GcJoinChannelAsync (string apiToken, string channelUrl, GcJoinChannelData gcJoinChannelData = default(GcJoinChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task GcJoinChannelAsync (string apiToken, string channelUrl, GcJoinChannelData gcJoinChannelData = default(GcJoinChannelData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Join a channel
@@ -823,7 +823,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcJoinChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GcJoinChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcJoinChannelData gcJoinChannelData = default(GcJoinChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> GcJoinChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcJoinChannelData gcJoinChannelData = default(GcJoinChannelData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Leave a channel
         /// </summary>
@@ -836,7 +836,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcLeaveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcLeaveChannelAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcLeaveChannelAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Leave a channel
@@ -850,7 +850,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcLeaveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcLeaveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcLeaveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default);
         /// <summary>
         /// List channels
         /// </summary>
@@ -903,7 +903,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcListChannelsResponse</returns>
-        System.Threading.Tasks.Task<GcListChannelsResponse> GcListChannelsAsync (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), string customType = default(string), bool? readReceipt = default(bool?), bool? member = default(bool?), bool? isDistinct = default(bool?), string membersIn = default(string), string userId = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GcListChannelsResponse> GcListChannelsAsync (string apiToken, string token = default, int? limit = default, string distinctMode = default, string publicMode = default, string superMode = default, int? createdAfter = default, int? createdBefore = default, bool? showEmpty = default, bool? showMember = default, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, bool? showMetadata = default, bool? showFrozen = default, string order = default, string metadataOrderKey = default, string customTypes = default, string customTypeStartswith = default, string channelUrls = default, string name = default, string nameContains = default, string nameStartswith = default, string membersExactlyIn = default, string membersIncludeIn = default, string queryType = default, string membersNickname = default, string membersNicknameContains = default, string metadataKey = default, string metadataValues = default, string metadataValueStartswith = default, string metacounterKey = default, string metacounterValues = default, string metacounterValueGt = default, string metacounterValueGte = default, string metacounterValueLt = default, string metacounterValueLte = default, bool? includeSortedMetaarrayInLastMessage = default, string customType = default, bool? readReceipt = default, bool? member = default, bool? isDistinct = default, string membersIn = default, string userId = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List channels
@@ -957,7 +957,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcListChannelsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GcListChannelsResponse>> GcListChannelsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), string customType = default(string), bool? readReceipt = default(bool?), bool? member = default(bool?), bool? isDistinct = default(bool?), string membersIn = default(string), string userId = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GcListChannelsResponse>> GcListChannelsWithHttpInfoAsync (string apiToken, string token = default, int? limit = default, string distinctMode = default, string publicMode = default, string superMode = default, int? createdAfter = default, int? createdBefore = default, bool? showEmpty = default, bool? showMember = default, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, bool? showMetadata = default, bool? showFrozen = default, string order = default, string metadataOrderKey = default, string customTypes = default, string customTypeStartswith = default, string channelUrls = default, string name = default, string nameContains = default, string nameStartswith = default, string membersExactlyIn = default, string membersIncludeIn = default, string queryType = default, string membersNickname = default, string membersNicknameContains = default, string metadataKey = default, string metadataValues = default, string metadataValueStartswith = default, string metacounterKey = default, string metacounterValues = default, string metacounterValueGt = default, string metacounterValueGte = default, string metacounterValueLt = default, string metacounterValueLte = default, bool? includeSortedMetaarrayInLastMessage = default, string customType = default, bool? readReceipt = default, bool? member = default, bool? isDistinct = default, string membersIn = default, string userId = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// List members
         /// </summary>
@@ -978,7 +978,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="nicknameStartswith"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcListMembersResponse</returns>
-        System.Threading.Tasks.Task<GcListMembersResponse> GcListMembersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string nicknameStartswith = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GcListMembersResponse> GcListMembersAsync (string apiToken, string channelUrl, string token = default, int? limit = default, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, string order = default, string operatorFilter = default, string memberStateFilter = default, string mutedMemberFilter = default, string nicknameStartswith = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List members
@@ -1000,7 +1000,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="nicknameStartswith"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcListMembersResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GcListMembersResponse>> GcListMembersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string nicknameStartswith = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GcListMembersResponse>> GcListMembersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default, int? limit = default, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, string order = default, string operatorFilter = default, string memberStateFilter = default, string mutedMemberFilter = default, string nicknameStartswith = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// List operators
         /// </summary>
@@ -1014,7 +1014,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcListOperatorsResponse</returns>
-        System.Threading.Tasks.Task<GcListOperatorsResponse> GcListOperatorsAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GcListOperatorsResponse> GcListOperatorsAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List operators
@@ -1029,7 +1029,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcListOperatorsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GcListOperatorsResponse>> GcListOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GcListOperatorsResponse>> GcListOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Register operators
         /// </summary>
@@ -1042,7 +1042,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcRegisterOperatorsResponse</returns>
-        System.Threading.Tasks.Task<GcRegisterOperatorsResponse> GcRegisterOperatorsAsync (string apiToken, string channelUrl, GcRegisterOperatorsData gcRegisterOperatorsData = default(GcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GcRegisterOperatorsResponse> GcRegisterOperatorsAsync (string apiToken, string channelUrl, GcRegisterOperatorsData gcRegisterOperatorsData = default(GcRegisterOperatorsData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Register operators
@@ -1056,7 +1056,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcRegisterOperatorsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GcRegisterOperatorsResponse>> GcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, GcRegisterOperatorsData gcRegisterOperatorsData = default(GcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GcRegisterOperatorsResponse>> GcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, GcRegisterOperatorsData gcRegisterOperatorsData = default(GcRegisterOperatorsData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Reset chat history
         /// </summary>
@@ -1069,7 +1069,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcResetChatHistoryData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcResetChatHistoryResponse</returns>
-        System.Threading.Tasks.Task<GcResetChatHistoryResponse> GcResetChatHistoryAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<GcResetChatHistoryResponse> GcResetChatHistoryAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Reset chat history
@@ -1083,7 +1083,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcResetChatHistoryData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcResetChatHistoryResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GcResetChatHistoryResponse>> GcResetChatHistoryWithHttpInfoAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GcResetChatHistoryResponse>> GcResetChatHistoryWithHttpInfoAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Unhide or unarchive a channel
         /// </summary>
@@ -1097,7 +1097,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="shouldUnhideAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnhideOrUnarchiveChannelAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnhideOrUnarchiveChannelAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Unhide or unarchive a channel
@@ -1112,7 +1112,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="shouldUnhideAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnhideOrUnarchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnhideOrUnarchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a channel
         /// </summary>
@@ -1125,7 +1125,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcUpdateChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdGroupChannel</returns>
-        System.Threading.Tasks.Task<SendBirdGroupChannel> GcUpdateChannelByUrlAsync (string apiToken, string channelUrl, GcUpdateChannelByUrlData gcUpdateChannelByUrlData = default(GcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdGroupChannel> GcUpdateChannelByUrlAsync (string apiToken, string channelUrl, GcUpdateChannelByUrlData gcUpdateChannelByUrlData = default(GcUpdateChannelByUrlData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Update a channel
@@ -1139,7 +1139,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcUpdateChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcUpdateChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, GcUpdateChannelByUrlData gcUpdateChannelByUrlData = default(GcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcUpdateChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, GcUpdateChannelByUrlData gcUpdateChannelByUrlData = default(GcUpdateChannelByUrlData), CancellationToken cancellationToken = default);
         /// <summary>
         /// View a channel
         /// </summary>
@@ -1156,7 +1156,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="member"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdGroupChannel</returns>
-        System.Threading.Tasks.Task<SendBirdGroupChannel> GcViewChannelByUrlAsync (string apiToken, string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), bool? readReceipt = default(bool?), bool? member = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdGroupChannel> GcViewChannelByUrlAsync (string apiToken, string channelUrl, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, bool? showMember = default, bool? readReceipt = default, bool? member = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View a channel
@@ -1174,7 +1174,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="member"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcViewChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), bool? readReceipt = default(bool?), bool? member = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcViewChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, bool? showMember = default, bool? readReceipt = default, bool? member = default, CancellationToken cancellationToken = default);
         #endregion Asynchronous Operations
     }
 
@@ -1378,7 +1378,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcAcceptInvitationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdGroupChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcAcceptInvitationAsync (string apiToken, string channelUrl, GcAcceptInvitationData gcAcceptInvitationData = default(GcAcceptInvitationData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcAcceptInvitationAsync (string apiToken, string channelUrl, GcAcceptInvitationData gcAcceptInvitationData = default(GcAcceptInvitationData), CancellationToken cancellationToken = default)
         {
              ApiResponse<SendBirdGroupChannel> localVarResponse = await GcAcceptInvitationWithHttpInfoAsync(apiToken, channelUrl, gcAcceptInvitationData, cancellationToken);
              return localVarResponse.Data;
@@ -1394,7 +1394,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcAcceptInvitationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcAcceptInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcAcceptInvitationData gcAcceptInvitationData = default(GcAcceptInvitationData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcAcceptInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcAcceptInvitationData gcAcceptInvitationData = default(GcAcceptInvitationData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1464,7 +1464,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
         /// <returns>OcDeleteChannelByUrl200Response</returns>
-        public OcDeleteChannelByUrl200Response GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?))
+        public OcDeleteChannelByUrl200Response GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default)
         {
              ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = GcCancelTheRegistrationOfOperatorsWithHttpInfo(apiToken, channelUrl, operatorIds, deleteAll);
              return localVarResponse.Data;
@@ -1479,7 +1479,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
         /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        public ApiResponse<OcDeleteChannelByUrl200Response> GcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?))
+        public ApiResponse<OcDeleteChannelByUrl200Response> GcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1546,7 +1546,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync(apiToken, channelUrl, operatorIds, deleteAll, cancellationToken);
              return localVarResponse.Data;
@@ -1563,7 +1563,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1707,7 +1707,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcCheckIfMemberByIdResponse</returns>
-        public async System.Threading.Tasks.Task<GcCheckIfMemberByIdResponse> GcCheckIfMemberByIdAsync (string apiToken, string channelUrl, string userId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GcCheckIfMemberByIdResponse> GcCheckIfMemberByIdAsync (string apiToken, string channelUrl, string userId, CancellationToken cancellationToken = default)
         {
              ApiResponse<GcCheckIfMemberByIdResponse> localVarResponse = await GcCheckIfMemberByIdWithHttpInfoAsync(apiToken, channelUrl, userId, cancellationToken);
              return localVarResponse.Data;
@@ -1723,7 +1723,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcCheckIfMemberByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GcCheckIfMemberByIdResponse>> GcCheckIfMemberByIdWithHttpInfoAsync (string apiToken, string channelUrl, string userId, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GcCheckIfMemberByIdResponse>> GcCheckIfMemberByIdWithHttpInfoAsync (string apiToken, string channelUrl, string userId, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1864,7 +1864,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcCreateChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdGroupChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcCreateChannelAsync (string apiToken, GcCreateChannelData gcCreateChannelData = default(GcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcCreateChannelAsync (string apiToken, GcCreateChannelData gcCreateChannelData = default(GcCreateChannelData), CancellationToken cancellationToken = default)
         {
              ApiResponse<SendBirdGroupChannel> localVarResponse = await GcCreateChannelWithHttpInfoAsync(apiToken, gcCreateChannelData, cancellationToken);
              return localVarResponse.Data;
@@ -1879,7 +1879,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcCreateChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcCreateChannelWithHttpInfoAsync (string apiToken, GcCreateChannelData gcCreateChannelData = default(GcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcCreateChannelWithHttpInfoAsync (string apiToken, GcCreateChannelData gcCreateChannelData = default(GcCreateChannelData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2028,7 +2028,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcDeclineInvitationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcDeclineInvitationAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcDeclineInvitationAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default)
         {
              ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcDeclineInvitationWithHttpInfoAsync(apiToken, channelUrl, gcDeclineInvitationData, cancellationToken);
              return localVarResponse.Data;
@@ -2044,7 +2044,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcDeclineInvitationData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcDeclineInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcDeclineInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2185,7 +2185,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default)
         {
              ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcDeleteChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, cancellationToken);
              return localVarResponse.Data;
@@ -2200,7 +2200,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2344,7 +2344,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcHideOrArchiveChannelAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcHideOrArchiveChannelAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default)
         {
              ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcHideOrArchiveChannelWithHttpInfoAsync(apiToken, channelUrl, gcHideOrArchiveChannelData, cancellationToken);
              return localVarResponse.Data;
@@ -2360,7 +2360,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcHideOrArchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcHideOrArchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2513,7 +2513,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcInviteAsMembersData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdGroupChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcInviteAsMembersAsync (string apiToken, string channelUrl, GcInviteAsMembersData gcInviteAsMembersData = default(GcInviteAsMembersData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcInviteAsMembersAsync (string apiToken, string channelUrl, GcInviteAsMembersData gcInviteAsMembersData = default(GcInviteAsMembersData), CancellationToken cancellationToken = default)
         {
              ApiResponse<SendBirdGroupChannel> localVarResponse = await GcInviteAsMembersWithHttpInfoAsync(apiToken, channelUrl, gcInviteAsMembersData, cancellationToken);
              return localVarResponse.Data;
@@ -2529,7 +2529,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcInviteAsMembersData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcInviteAsMembersWithHttpInfoAsync (string apiToken, string channelUrl, GcInviteAsMembersData gcInviteAsMembersData = default(GcInviteAsMembersData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcInviteAsMembersWithHttpInfoAsync (string apiToken, string channelUrl, GcInviteAsMembersData gcInviteAsMembersData = default(GcInviteAsMembersData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2680,7 +2680,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcJoinChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GcJoinChannelAsync (string apiToken, string channelUrl, GcJoinChannelData gcJoinChannelData = default(GcJoinChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task GcJoinChannelAsync (string apiToken, string channelUrl, GcJoinChannelData gcJoinChannelData = default(GcJoinChannelData), CancellationToken cancellationToken = default)
         {
              await GcJoinChannelWithHttpInfoAsync(apiToken, channelUrl, gcJoinChannelData, cancellationToken);
 
@@ -2695,7 +2695,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcJoinChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GcJoinChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcJoinChannelData gcJoinChannelData = default(GcJoinChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> GcJoinChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcJoinChannelData gcJoinChannelData = default(GcJoinChannelData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2847,7 +2847,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcLeaveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcLeaveChannelAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcLeaveChannelAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default)
         {
              ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcLeaveChannelWithHttpInfoAsync(apiToken, channelUrl, gcLeaveChannelData, cancellationToken);
              return localVarResponse.Data;
@@ -2863,7 +2863,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcLeaveChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcLeaveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcLeaveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2972,7 +2972,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="membersIn"> (optional)</param>
         /// <param name="userId"> (optional)</param>
         /// <returns>GcListChannelsResponse</returns>
-        public GcListChannelsResponse GcListChannels (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), string customType = default(string), bool? readReceipt = default(bool?), bool? member = default(bool?), bool? isDistinct = default(bool?), string membersIn = default(string), string userId = default(string))
+        public GcListChannelsResponse GcListChannels (string apiToken, string token = default, int? limit = default, string distinctMode = default, string publicMode = default, string superMode = default, int? createdAfter = default, int? createdBefore = default, bool? showEmpty = default, bool? showMember = default, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, bool? showMetadata = default, bool? showFrozen = default, string order = default, string metadataOrderKey = default, string customTypes = default, string customTypeStartswith = default, string channelUrls = default, string name = default, string nameContains = default, string nameStartswith = default, string membersExactlyIn = default, string membersIncludeIn = default, string queryType = default, string membersNickname = default, string membersNicknameContains = default, string metadataKey = default, string metadataValues = default, string metadataValueStartswith = default, string metacounterKey = default, string metacounterValues = default, string metacounterValueGt = default, string metacounterValueGte = default, string metacounterValueLt = default, string metacounterValueLte = default, bool? includeSortedMetaarrayInLastMessage = default, string customType = default, bool? readReceipt = default, bool? member = default, bool? isDistinct = default, string membersIn = default, string userId = default)
         {
              ApiResponse<GcListChannelsResponse> localVarResponse = GcListChannelsWithHttpInfo(apiToken, token, limit, distinctMode, publicMode, superMode, createdAfter, createdBefore, showEmpty, showMember, showDeliveryReceipt, showReadReceipt, showMetadata, showFrozen, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, includeSortedMetaarrayInLastMessage, customType, readReceipt, member, isDistinct, membersIn, userId);
              return localVarResponse.Data;
@@ -3026,7 +3026,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="membersIn"> (optional)</param>
         /// <param name="userId"> (optional)</param>
         /// <returns>ApiResponse of GcListChannelsResponse</returns>
-        public ApiResponse<GcListChannelsResponse> GcListChannelsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), string customType = default(string), bool? readReceipt = default(bool?), bool? member = default(bool?), bool? isDistinct = default(bool?), string membersIn = default(string), string userId = default(string))
+        public ApiResponse<GcListChannelsResponse> GcListChannelsWithHttpInfo (string apiToken, string token = default, int? limit = default, string distinctMode = default, string publicMode = default, string superMode = default, int? createdAfter = default, int? createdBefore = default, bool? showEmpty = default, bool? showMember = default, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, bool? showMetadata = default, bool? showFrozen = default, string order = default, string metadataOrderKey = default, string customTypes = default, string customTypeStartswith = default, string channelUrls = default, string name = default, string nameContains = default, string nameStartswith = default, string membersExactlyIn = default, string membersIncludeIn = default, string queryType = default, string membersNickname = default, string membersNicknameContains = default, string metadataKey = default, string metadataValues = default, string metadataValueStartswith = default, string metacounterKey = default, string metacounterValues = default, string metacounterValueGt = default, string metacounterValueGte = default, string metacounterValueLt = default, string metacounterValueLte = default, bool? includeSortedMetaarrayInLastMessage = default, string customType = default, bool? readReceipt = default, bool? member = default, bool? isDistinct = default, string membersIn = default, string userId = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3165,7 +3165,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcListChannelsResponse</returns>
-        public async System.Threading.Tasks.Task<GcListChannelsResponse> GcListChannelsAsync (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), string customType = default(string), bool? readReceipt = default(bool?), bool? member = default(bool?), bool? isDistinct = default(bool?), string membersIn = default(string), string userId = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GcListChannelsResponse> GcListChannelsAsync (string apiToken, string token = default, int? limit = default, string distinctMode = default, string publicMode = default, string superMode = default, int? createdAfter = default, int? createdBefore = default, bool? showEmpty = default, bool? showMember = default, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, bool? showMetadata = default, bool? showFrozen = default, string order = default, string metadataOrderKey = default, string customTypes = default, string customTypeStartswith = default, string channelUrls = default, string name = default, string nameContains = default, string nameStartswith = default, string membersExactlyIn = default, string membersIncludeIn = default, string queryType = default, string membersNickname = default, string membersNicknameContains = default, string metadataKey = default, string metadataValues = default, string metadataValueStartswith = default, string metacounterKey = default, string metacounterValues = default, string metacounterValueGt = default, string metacounterValueGte = default, string metacounterValueLt = default, string metacounterValueLte = default, bool? includeSortedMetaarrayInLastMessage = default, string customType = default, bool? readReceipt = default, bool? member = default, bool? isDistinct = default, string membersIn = default, string userId = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<GcListChannelsResponse> localVarResponse = await GcListChannelsWithHttpInfoAsync(apiToken, token, limit, distinctMode, publicMode, superMode, createdAfter, createdBefore, showEmpty, showMember, showDeliveryReceipt, showReadReceipt, showMetadata, showFrozen, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, includeSortedMetaarrayInLastMessage, customType, readReceipt, member, isDistinct, membersIn, userId, cancellationToken);
              return localVarResponse.Data;
@@ -3221,7 +3221,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcListChannelsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GcListChannelsResponse>> GcListChannelsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), string customType = default(string), bool? readReceipt = default(bool?), bool? member = default(bool?), bool? isDistinct = default(bool?), string membersIn = default(string), string userId = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GcListChannelsResponse>> GcListChannelsWithHttpInfoAsync (string apiToken, string token = default, int? limit = default, string distinctMode = default, string publicMode = default, string superMode = default, int? createdAfter = default, int? createdBefore = default, bool? showEmpty = default, bool? showMember = default, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, bool? showMetadata = default, bool? showFrozen = default, string order = default, string metadataOrderKey = default, string customTypes = default, string customTypeStartswith = default, string channelUrls = default, string name = default, string nameContains = default, string nameStartswith = default, string membersExactlyIn = default, string membersIncludeIn = default, string queryType = default, string membersNickname = default, string membersNicknameContains = default, string metadataKey = default, string metadataValues = default, string metadataValueStartswith = default, string metacounterKey = default, string metacounterValues = default, string metacounterValueGt = default, string metacounterValueGte = default, string metacounterValueLt = default, string metacounterValueLte = default, bool? includeSortedMetaarrayInLastMessage = default, string customType = default, bool? readReceipt = default, bool? member = default, bool? isDistinct = default, string membersIn = default, string userId = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3327,7 +3327,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedMemberFilter"> (optional)</param>
         /// <param name="nicknameStartswith"> (optional)</param>
         /// <returns>GcListMembersResponse</returns>
-        public GcListMembersResponse GcListMembers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string nicknameStartswith = default(string))
+        public GcListMembersResponse GcListMembers (string apiToken, string channelUrl, string token = default, int? limit = default, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, string order = default, string operatorFilter = default, string memberStateFilter = default, string mutedMemberFilter = default, string nicknameStartswith = default)
         {
              ApiResponse<GcListMembersResponse> localVarResponse = GcListMembersWithHttpInfo(apiToken, channelUrl, token, limit, showDeliveryReceipt, showReadReceipt, order, operatorFilter, memberStateFilter, mutedMemberFilter, nicknameStartswith);
              return localVarResponse.Data;
@@ -3349,7 +3349,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="mutedMemberFilter"> (optional)</param>
         /// <param name="nicknameStartswith"> (optional)</param>
         /// <returns>ApiResponse of GcListMembersResponse</returns>
-        public ApiResponse<GcListMembersResponse> GcListMembersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string nicknameStartswith = default(string))
+        public ApiResponse<GcListMembersResponse> GcListMembersWithHttpInfo (string apiToken, string channelUrl, string token = default, int? limit = default, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, string order = default, string operatorFilter = default, string memberStateFilter = default, string mutedMemberFilter = default, string nicknameStartswith = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3427,7 +3427,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="nicknameStartswith"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcListMembersResponse</returns>
-        public async System.Threading.Tasks.Task<GcListMembersResponse> GcListMembersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string nicknameStartswith = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GcListMembersResponse> GcListMembersAsync (string apiToken, string channelUrl, string token = default, int? limit = default, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, string order = default, string operatorFilter = default, string memberStateFilter = default, string mutedMemberFilter = default, string nicknameStartswith = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<GcListMembersResponse> localVarResponse = await GcListMembersWithHttpInfoAsync(apiToken, channelUrl, token, limit, showDeliveryReceipt, showReadReceipt, order, operatorFilter, memberStateFilter, mutedMemberFilter, nicknameStartswith, cancellationToken);
              return localVarResponse.Data;
@@ -3451,7 +3451,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="nicknameStartswith"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcListMembersResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GcListMembersResponse>> GcListMembersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string nicknameStartswith = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GcListMembersResponse>> GcListMembersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default, int? limit = default, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, string order = default, string operatorFilter = default, string memberStateFilter = default, string mutedMemberFilter = default, string nicknameStartswith = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3521,7 +3521,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>GcListOperatorsResponse</returns>
-        public GcListOperatorsResponse GcListOperators (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
+        public GcListOperatorsResponse GcListOperators (string apiToken, string channelUrl, string token = default, int? limit = default)
         {
              ApiResponse<GcListOperatorsResponse> localVarResponse = GcListOperatorsWithHttpInfo(apiToken, channelUrl, token, limit);
              return localVarResponse.Data;
@@ -3536,7 +3536,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of GcListOperatorsResponse</returns>
-        public ApiResponse<GcListOperatorsResponse> GcListOperatorsWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
+        public ApiResponse<GcListOperatorsResponse> GcListOperatorsWithHttpInfo (string apiToken, string channelUrl, string token = default, int? limit = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3600,7 +3600,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcListOperatorsResponse</returns>
-        public async System.Threading.Tasks.Task<GcListOperatorsResponse> GcListOperatorsAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GcListOperatorsResponse> GcListOperatorsAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<GcListOperatorsResponse> localVarResponse = await GcListOperatorsWithHttpInfoAsync(apiToken, channelUrl, token, limit, cancellationToken);
              return localVarResponse.Data;
@@ -3617,7 +3617,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcListOperatorsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GcListOperatorsResponse>> GcListOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GcListOperatorsResponse>> GcListOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3763,7 +3763,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcRegisterOperatorsResponse</returns>
-        public async System.Threading.Tasks.Task<GcRegisterOperatorsResponse> GcRegisterOperatorsAsync (string apiToken, string channelUrl, GcRegisterOperatorsData gcRegisterOperatorsData = default(GcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GcRegisterOperatorsResponse> GcRegisterOperatorsAsync (string apiToken, string channelUrl, GcRegisterOperatorsData gcRegisterOperatorsData = default(GcRegisterOperatorsData), CancellationToken cancellationToken = default)
         {
              ApiResponse<GcRegisterOperatorsResponse> localVarResponse = await GcRegisterOperatorsWithHttpInfoAsync(apiToken, channelUrl, gcRegisterOperatorsData, cancellationToken);
              return localVarResponse.Data;
@@ -3779,7 +3779,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcRegisterOperatorsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GcRegisterOperatorsResponse>> GcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, GcRegisterOperatorsData gcRegisterOperatorsData = default(GcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GcRegisterOperatorsResponse>> GcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, GcRegisterOperatorsData gcRegisterOperatorsData = default(GcRegisterOperatorsData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -3932,7 +3932,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcResetChatHistoryData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of GcResetChatHistoryResponse</returns>
-        public async System.Threading.Tasks.Task<GcResetChatHistoryResponse> GcResetChatHistoryAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<GcResetChatHistoryResponse> GcResetChatHistoryAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default)
         {
              ApiResponse<GcResetChatHistoryResponse> localVarResponse = await GcResetChatHistoryWithHttpInfoAsync(apiToken, channelUrl, gcResetChatHistoryData, cancellationToken);
              return localVarResponse.Data;
@@ -3948,7 +3948,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcResetChatHistoryData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (GcResetChatHistoryResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GcResetChatHistoryResponse>> GcResetChatHistoryWithHttpInfoAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<GcResetChatHistoryResponse>> GcResetChatHistoryWithHttpInfoAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4018,7 +4018,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
         /// <returns>OcDeleteChannelByUrl200Response</returns>
-        public OcDeleteChannelByUrl200Response GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?))
+        public OcDeleteChannelByUrl200Response GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default)
         {
              ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = GcUnhideOrUnarchiveChannelWithHttpInfo(apiToken, channelUrl, userId, shouldUnhideAll);
              return localVarResponse.Data;
@@ -4033,7 +4033,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="userId"></param>
         /// <param name="shouldUnhideAll"> (optional)</param>
         /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        public ApiResponse<OcDeleteChannelByUrl200Response> GcUnhideOrUnarchiveChannelWithHttpInfo (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?))
+        public ApiResponse<OcDeleteChannelByUrl200Response> GcUnhideOrUnarchiveChannelWithHttpInfo (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4100,7 +4100,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="shouldUnhideAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnhideOrUnarchiveChannelAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnhideOrUnarchiveChannelAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcUnhideOrUnarchiveChannelWithHttpInfoAsync(apiToken, channelUrl, userId, shouldUnhideAll, cancellationToken);
              return localVarResponse.Data;
@@ -4117,7 +4117,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="shouldUnhideAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnhideOrUnarchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnhideOrUnarchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4266,7 +4266,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcUpdateChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdGroupChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcUpdateChannelByUrlAsync (string apiToken, string channelUrl, GcUpdateChannelByUrlData gcUpdateChannelByUrlData = default(GcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcUpdateChannelByUrlAsync (string apiToken, string channelUrl, GcUpdateChannelByUrlData gcUpdateChannelByUrlData = default(GcUpdateChannelByUrlData), CancellationToken cancellationToken = default)
         {
              ApiResponse<SendBirdGroupChannel> localVarResponse = await GcUpdateChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, gcUpdateChannelByUrlData, cancellationToken);
              return localVarResponse.Data;
@@ -4282,7 +4282,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="gcUpdateChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcUpdateChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, GcUpdateChannelByUrlData gcUpdateChannelByUrlData = default(GcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcUpdateChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, GcUpdateChannelByUrlData gcUpdateChannelByUrlData = default(GcUpdateChannelByUrlData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4355,7 +4355,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="readReceipt"> (optional)</param>
         /// <param name="member"> (optional)</param>
         /// <returns>SendBirdGroupChannel</returns>
-        public SendBirdGroupChannel GcViewChannelByUrl (string apiToken, string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), bool? readReceipt = default(bool?), bool? member = default(bool?))
+        public SendBirdGroupChannel GcViewChannelByUrl (string apiToken, string channelUrl, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, bool? showMember = default, bool? readReceipt = default, bool? member = default)
         {
              ApiResponse<SendBirdGroupChannel> localVarResponse = GcViewChannelByUrlWithHttpInfo(apiToken, channelUrl, showDeliveryReceipt, showReadReceipt, showMember, readReceipt, member);
              return localVarResponse.Data;
@@ -4373,7 +4373,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="readReceipt"> (optional)</param>
         /// <param name="member"> (optional)</param>
         /// <returns>ApiResponse of SendBirdGroupChannel</returns>
-        public ApiResponse<SendBirdGroupChannel> GcViewChannelByUrlWithHttpInfo (string apiToken, string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), bool? readReceipt = default(bool?), bool? member = default(bool?))
+        public ApiResponse<SendBirdGroupChannel> GcViewChannelByUrlWithHttpInfo (string apiToken, string channelUrl, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, bool? showMember = default, bool? readReceipt = default, bool? member = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -4443,7 +4443,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="member"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdGroupChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcViewChannelByUrlAsync (string apiToken, string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), bool? readReceipt = default(bool?), bool? member = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcViewChannelByUrlAsync (string apiToken, string channelUrl, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, bool? showMember = default, bool? readReceipt = default, bool? member = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<SendBirdGroupChannel> localVarResponse = await GcViewChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, showDeliveryReceipt, showReadReceipt, showMember, readReceipt, member, cancellationToken);
              return localVarResponse.Data;
@@ -4463,7 +4463,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="member"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcViewChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), bool? readReceipt = default(bool?), bool? member = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcViewChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, bool? showDeliveryReceipt = default, bool? showReadReceipt = default, bool? showMember = default, bool? readReceipt = default, bool? member = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)

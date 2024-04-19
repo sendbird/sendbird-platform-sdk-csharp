@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="size">size.</param>
         /// <param name="type">type.</param>
-        public Blob(decimal size = default(decimal), string type = default(string))
+        public Blob(decimal size = default(decimal), string type = default)
         {
             this.Size = size;
             this.Type = type;

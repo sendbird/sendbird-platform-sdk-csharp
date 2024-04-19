@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="userId">userId (required).</param>
         /// <param name="seconds">seconds.</param>
         /// <param name="description">description.</param>
-        public BanUsersInChannelsWithCustomChannelTypeDataBannedListInner(string userId = default(string), decimal seconds = default(decimal), string description = default(string))
+        public BanUsersInChannelsWithCustomChannelTypeDataBannedListInner(string userId = default, decimal seconds = default(decimal), string description = default)
         {
             // to ensure "userId" is required (not null)
             if (userId == null)

@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="UpdateApnsPushConfigurationByIdResponse" /> class.
         /// </summary>
         /// <param name="pushConfigurations">pushConfigurations.</param>
-        public UpdateApnsPushConfigurationByIdResponse(string pushConfigurations = default(string))
+        public UpdateApnsPushConfigurationByIdResponse(string pushConfigurations = default)
         {
             this.PushConfigurations = pushConfigurations;
         }

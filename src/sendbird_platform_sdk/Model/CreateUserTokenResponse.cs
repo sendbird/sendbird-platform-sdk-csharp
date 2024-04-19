@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="token">token.</param>
         /// <param name="expiresAt">expiresAt.</param>
-        public CreateUserTokenResponse(string token = default(string), decimal expiresAt = default(decimal))
+        public CreateUserTokenResponse(string token = default, decimal expiresAt = default(decimal))
         {
             this.Token = token;
             this.ExpiresAt = expiresAt;

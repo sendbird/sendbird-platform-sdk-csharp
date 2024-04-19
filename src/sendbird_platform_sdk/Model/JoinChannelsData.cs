@@ -40,7 +40,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="botUserid">Specifies the ID of the bot to join the channels. (required).</param>
         /// <param name="channelUrls">Specifies an array of one or more URLs of the channels to join. (required).</param>
-        public JoinChannelsData(string botUserid = default(string), List<string> channelUrls = default(List<string>))
+        public JoinChannelsData(string botUserid = default, List<string> channelUrls = default)
         {
             // to ensure "botUserid" is required (not null)
             if (botUserid == null)

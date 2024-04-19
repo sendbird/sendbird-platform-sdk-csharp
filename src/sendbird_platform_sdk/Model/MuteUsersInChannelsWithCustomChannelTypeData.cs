@@ -42,7 +42,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="seconds">seconds.</param>
         /// <param name="description">description.</param>
         /// <param name="onDemandUpsert">onDemandUpsert.</param>
-        public MuteUsersInChannelsWithCustomChannelTypeData(List<string> userIds = default(List<string>), decimal seconds = default(decimal), string description = default(string), bool onDemandUpsert = default(bool))
+        public MuteUsersInChannelsWithCustomChannelTypeData(List<string> userIds = default, decimal seconds = default(decimal), string description = default, bool onDemandUpsert = default(bool))
         {
             // to ensure "userIds" is required (not null)
             if (userIds == null)

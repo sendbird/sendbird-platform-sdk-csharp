@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="applicationId">Specifies the unique ID of your application. (required).</param>
         /// <param name="channelUrl">Specifies the URL of the target channel. (required).</param>
         /// <param name="userId">Specifies the ID of the recipient to mark messages as delivered. (required).</param>
-        public GcMarkAllMessagesAsDeliveredData(string applicationId = default(string), string channelUrl = default(string), string userId = default(string))
+        public GcMarkAllMessagesAsDeliveredData(string applicationId = default, string channelUrl = default, string userId = default)
         {
             // to ensure "applicationId" is required (not null)
             if (applicationId == null)

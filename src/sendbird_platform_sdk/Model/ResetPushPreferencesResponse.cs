@@ -47,7 +47,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="enablePushForReplies">enablePushForReplies.</param>
         /// <param name="pushSound">pushSound.</param>
         /// <param name="pushTriggerOption">pushTriggerOption.</param>
-        public ResetPushPreferencesResponse(string snoozeStartTs = default(string), decimal startHour = default(decimal), bool snoozeEnabled = default(bool), decimal endMin = default(decimal), string timezone = default(string), bool blockPushFromBots = default(bool), List<decimal> pushBlockedBotIds = default(List<decimal>), decimal startMin = default(decimal), string snoozeEndTs = default(string), bool doNotDisturb = default(bool), decimal endHour = default(decimal), bool enablePushForReplies = default(bool), string pushSound = default(string), string pushTriggerOption = default(string))
+        public ResetPushPreferencesResponse(string snoozeStartTs = default, decimal startHour = default(decimal), bool snoozeEnabled = default(bool), decimal endMin = default(decimal), string timezone = default, bool blockPushFromBots = default(bool), List<decimal> pushBlockedBotIds = default(List<decimal>), decimal startMin = default(decimal), string snoozeEndTs = default, bool doNotDisturb = default(bool), decimal endHour = default(decimal), bool enablePushForReplies = default(bool), string pushSound = default, string pushTriggerOption = default)
         {
             this.SnoozeStartTs = snoozeStartTs;
             this.StartHour = startHour;

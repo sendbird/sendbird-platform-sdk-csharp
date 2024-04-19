@@ -36,7 +36,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="detail">detail.</param>
         /// <param name="type">type.</param>
         /// <param name="vendor">vendor.</param>
-        public SendBirdPlugin(Object detail = default(Object), string type = default(string), string vendor = default(string))
+        public SendBirdPlugin(Object detail = default, string type = default, string vendor = default)
         {
             this.Detail = detail;
             this.Type = type;

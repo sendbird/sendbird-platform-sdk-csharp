@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="customType">customType.</param>
         /// <param name="maxLengthMessage">maxLengthMessage.</param>
         /// <param name="memberCount">memberCount.</param>
-        public SendBirdGroupChannelChannel(string channelUrl = default(string), string name = default(string), string coverUrl = default(string), string data = default(string), decimal createdAt = default(decimal), string customType = default(string), decimal maxLengthMessage = default(decimal), decimal memberCount = default(decimal))
+        public SendBirdGroupChannelChannel(string channelUrl = default, string name = default, string coverUrl = default, string data = default, decimal createdAt = default(decimal), string customType = default, decimal maxLengthMessage = default(decimal), decimal memberCount = default(decimal))
         {
             this.ChannelUrl = channelUrl;
             this.Name = name;

@@ -40,7 +40,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="emojiKey">Specifies the key of the emoji to update. (required).</param>
         /// <param name="url">Specifies the new image URL of the emoji. (required).</param>
-        public UpdateEmojiUrlByKeyData(string emojiKey = default(string), string url = default(string))
+        public UpdateEmojiUrlByKeyData(string emojiKey = default, string url = default)
         {
             // to ensure "emojiKey" is required (not null)
             if (emojiKey == null)

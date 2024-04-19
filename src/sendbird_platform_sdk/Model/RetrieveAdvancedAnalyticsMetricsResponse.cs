@@ -39,7 +39,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="channelType">channelType.</param>
         /// <param name="customChannelType">customChannelType.</param>
         /// <param name="customMessageType">customMessageType.</param>
-        public RetrieveAdvancedAnalyticsMetricsResponse(string segments = default(string), string date = default(string), decimal value = default(decimal), string channelType = default(string), string customChannelType = default(string), string customMessageType = default(string))
+        public RetrieveAdvancedAnalyticsMetricsResponse(string segments = default, string date = default, decimal value = default(decimal), string channelType = default, string customChannelType = default, string customMessageType = default)
         {
             this.Segments = segments;
             this.Date = date;

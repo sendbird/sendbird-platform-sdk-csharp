@@ -42,7 +42,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="targetId">Specifies the ID of the user to be blocked. (required).</param>
         /// <param name="userIds">Specifies an array of the IDs of the users to be blocked at a time. (for bulk mode) (required).</param>
         /// <param name="users">Specifies an array of the IDs of the users to be blocked at a time. The user_ids above and this property can be used interchangeably. (for bulk mode) (required).</param>
-        public BlockUserData(string userId = default(string), string targetId = default(string), List<string> userIds = default(List<string>), List<string> users = default(List<string>))
+        public BlockUserData(string userId = default, string targetId = default, List<string> userIds = default, List<string> users = default)
         {
             // to ensure "userId" is required (not null)
             if (userId == null)

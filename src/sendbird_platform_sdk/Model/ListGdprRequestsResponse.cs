@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="requests">requests.</param>
         /// <param name="next">next.</param>
-        public ListGdprRequestsResponse(List<ListGdprRequestsResponseRequestsInner> requests = default(List<ListGdprRequestsResponseRequestsInner>), string next = default(string))
+        public ListGdprRequestsResponse(List<ListGdprRequestsResponseRequestsInner> requests = default(List<ListGdprRequestsResponseRequestsInner>), string next = default)
         {
             this.Requests = requests;
             this.Next = next;

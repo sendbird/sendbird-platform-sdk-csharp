@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="exportedData">exportedData.</param>
         /// <param name="next">next.</param>
-        public ListDataExportsByMessageChannelOrUserResponse(List<ListDataExportsByMessageChannelOrUserResponseExportedDataInner> exportedData = default(List<ListDataExportsByMessageChannelOrUserResponseExportedDataInner>), string next = default(string))
+        public ListDataExportsByMessageChannelOrUserResponse(List<ListDataExportsByMessageChannelOrUserResponseExportedDataInner> exportedData = default(List<ListDataExportsByMessageChannelOrUserResponseExportedDataInner>), string next = default)
         {
             this.ExportedData = exportedData;
             this.Next = next;

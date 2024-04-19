@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="key">key.</param>
         /// <param name="url">url.</param>
-        public SendBirdEmoji(string key = default(string), string url = default(string))
+        public SendBirdEmoji(string key = default, string url = default)
         {
             this.Key = key;
             this.Url = url;

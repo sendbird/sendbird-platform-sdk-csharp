@@ -36,7 +36,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="uniqueId">uniqueId.</param>
         /// <param name="announcementGroup">announcementGroup.</param>
         /// <param name="message">message.</param>
-        public UpdateAnnouncementByIdResponse(string uniqueId = default(string), string announcementGroup = default(string), UpdateAnnouncementByIdResponseMessage message = default(UpdateAnnouncementByIdResponseMessage))
+        public UpdateAnnouncementByIdResponse(string uniqueId = default, string announcementGroup = default, UpdateAnnouncementByIdResponseMessage message = default(UpdateAnnouncementByIdResponseMessage))
         {
             this.UniqueId = uniqueId;
             this.AnnouncementGroup = announcementGroup;

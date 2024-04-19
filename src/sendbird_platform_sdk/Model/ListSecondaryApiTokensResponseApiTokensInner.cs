@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="token">token.</param>
         /// <param name="createdAt">createdAt.</param>
-        public ListSecondaryApiTokensResponseApiTokensInner(string token = default(string), decimal createdAt = default(decimal))
+        public ListSecondaryApiTokensResponseApiTokensInner(string token = default, decimal createdAt = default(decimal))
         {
             this.Token = token;
             this.CreatedAt = createdAt;
