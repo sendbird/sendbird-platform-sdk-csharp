@@ -858,7 +858,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
-        /// <returns>List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner></returns>
+        /// <returns>List of ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner</returns>
         List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner> ViewWhoOwnsRegistrationOrDeviceTokenByToken (string apiToken, string tokenType, string token);
 
         /// <summary>
@@ -871,7 +871,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
-        /// <returns>ApiResponse of List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner></returns>
+        /// <returns>ApiResponse of List of ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner</returns>
         ApiResponse<List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo (string apiToken, string tokenType, string token);
         #endregion Synchronous Operations
         #region Asynchronous Operations
@@ -1767,8 +1767,8 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner></returns>
-        System.Threading.Tasks.Task<List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of List of ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner</returns>
+        System.Threading.Tasks.Task<List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View who owns a registration or device token
@@ -6866,7 +6866,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
-        /// <returns>List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner></returns>
+        /// <returns>List of ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner</returns>
         public List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner> ViewWhoOwnsRegistrationOrDeviceTokenByToken (string apiToken, string tokenType, string token)
         {
              ApiResponse<List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>> localVarResponse = ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo(apiToken, tokenType, token);
@@ -6880,7 +6880,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"></param>
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
-        /// <returns>ApiResponse of List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner></returns>
+        /// <returns>ApiResponse of List of ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner</returns>
         public ApiResponse<List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfo (string apiToken, string tokenType, string token)
         {
             // verify the required parameter 'apiToken' is set
@@ -6945,7 +6945,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="tokenType"></param>
         /// <param name="token"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner></returns>
+        /// <returns>Task of List of ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner</returns>
         public async System.Threading.Tasks.Task<List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>> ViewWhoOwnsRegistrationOrDeviceTokenByTokenAsync (string apiToken, string tokenType, string token, CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>> localVarResponse = await ViewWhoOwnsRegistrationOrDeviceTokenByTokenWithHttpInfoAsync(apiToken, tokenType, token, cancellationToken);
