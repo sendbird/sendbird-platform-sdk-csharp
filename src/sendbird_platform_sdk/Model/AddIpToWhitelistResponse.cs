@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="AddIpToWhitelistResponse" /> class.
         /// </summary>
         /// <param name="ipWhitelistAddresses">ipWhitelistAddresses.</param>
-        public AddIpToWhitelistResponse(List<string> ipWhitelistAddresses = default(List<string>))
+        public AddIpToWhitelistResponse(List<string> ipWhitelistAddresses = default)
         {
             this.IpWhitelistAddresses = ipWhitelistAddresses;
         }

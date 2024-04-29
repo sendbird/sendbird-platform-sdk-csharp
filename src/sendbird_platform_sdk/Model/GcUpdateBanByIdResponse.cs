@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="startAt">startAt.</param>
         /// <param name="endAt">endAt.</param>
         /// <param name="description">description.</param>
-        public GcUpdateBanByIdResponse(SendBirdUser user = default(SendBirdUser), decimal startAt = default(decimal), decimal endAt = default(decimal), string description = default(string))
+        public GcUpdateBanByIdResponse(SendBirdUser user = default(SendBirdUser), decimal startAt = default(decimal), decimal endAt = default(decimal), string description = default)
         {
             this.User = user;
             this.StartAt = startAt;

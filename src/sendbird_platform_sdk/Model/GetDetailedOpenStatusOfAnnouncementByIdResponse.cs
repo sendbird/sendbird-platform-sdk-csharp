@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="openStatus">openStatus.</param>
         /// <param name="next">next.</param>
-        public GetDetailedOpenStatusOfAnnouncementByIdResponse(List<GetDetailedOpenStatusOfAnnouncementByIdResponseOpenStatusInner> openStatus = default(List<GetDetailedOpenStatusOfAnnouncementByIdResponseOpenStatusInner>), string next = default(string))
+        public GetDetailedOpenStatusOfAnnouncementByIdResponse(List<GetDetailedOpenStatusOfAnnouncementByIdResponseOpenStatusInner> openStatus = default(List<GetDetailedOpenStatusOfAnnouncementByIdResponseOpenStatusInner>), string next = default)
         {
             this.OpenStatus = openStatus;
             this.Next = next;

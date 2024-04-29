@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="userIds">userIds.</param>
         /// <param name="channelDeleteOption">channelDeleteOption.</param>
         /// <param name="createdAt">createdAt.</param>
-        public ListGdprRequestsResponseRequestsInner(string requestId = default(string), string action = default(string), string status = default(string), string userId = default(string), ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile files = default(ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile), List<string> userIds = default(List<string>), string channelDeleteOption = default(string), decimal createdAt = default(decimal))
+        public ListGdprRequestsResponseRequestsInner(string requestId = default, string action = default, string status = default, string userId = default, ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile files = default(ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile), List<string> userIds = default, string channelDeleteOption = default, decimal createdAt = default(decimal))
         {
             this.RequestId = requestId;
             this.Action = action;

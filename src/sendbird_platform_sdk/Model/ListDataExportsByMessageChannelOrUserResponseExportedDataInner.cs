@@ -45,7 +45,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="senderIds">senderIds.</param>
         /// <param name="file">file.</param>
         /// <param name="userIds">userIds.</param>
-        public ListDataExportsByMessageChannelOrUserResponseExportedDataInner(string requestId = default(string), string status = default(string), string format = default(string), string csvDelimiter = default(string), string timezone = default(string), decimal createdAt = default(decimal), decimal startTs = default(decimal), decimal endTs = default(decimal), List<string> channelUrls = default(List<string>), List<string> senderIds = default(List<string>), ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile file = default(ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile), List<string> userIds = default(List<string>))
+        public ListDataExportsByMessageChannelOrUserResponseExportedDataInner(string requestId = default, string status = default, string format = default, string csvDelimiter = default, string timezone = default, decimal createdAt = default(decimal), decimal startTs = default(decimal), decimal endTs = default(decimal), List<string> channelUrls = default, List<string> senderIds = default, ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile file = default(ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile), List<string> userIds = default)
         {
             this.RequestId = requestId;
             this.Status = status;

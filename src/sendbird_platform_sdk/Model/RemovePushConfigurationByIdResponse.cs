@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="RemovePushConfigurationByIdResponse" /> class.
         /// </summary>
         /// <param name="pushConfigurations">pushConfigurations.</param>
-        public RemovePushConfigurationByIdResponse(List<string> pushConfigurations = default(List<string>))
+        public RemovePushConfigurationByIdResponse(List<string> pushConfigurations = default)
         {
             this.PushConfigurations = pushConfigurations;
         }

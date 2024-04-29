@@ -45,7 +45,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="timezone">timezone.</param>
         /// <param name="pushSound">pushSound.</param>
         /// <param name="enable">enable.</param>
-        public UpdatePushPreferencesForChannelByUrlResponse(string pushTriggerOption = default(string), bool doNotDisturb = default(bool), decimal startHour = default(decimal), decimal startMin = default(decimal), decimal endHour = default(decimal), decimal endMin = default(decimal), bool snoozeEnabled = default(bool), decimal snoozeStartTs = default(decimal), decimal snoozeEndTs = default(decimal), string timezone = default(string), string pushSound = default(string), bool enable = default(bool))
+        public UpdatePushPreferencesForChannelByUrlResponse(string pushTriggerOption = default, bool doNotDisturb = default(bool), decimal startHour = default(decimal), decimal startMin = default(decimal), decimal endHour = default(decimal), decimal endMin = default(decimal), bool snoozeEnabled = default(bool), decimal snoozeStartTs = default(decimal), decimal snoozeEndTs = default(decimal), string timezone = default, string pushSound = default, bool enable = default(bool))
         {
             this.PushTriggerOption = pushTriggerOption;
             this.DoNotDisturb = doNotDisturb;

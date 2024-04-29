@@ -43,7 +43,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="contentAvailable">contentAvailable.</param>
         /// <param name="mutableContent">mutableContent.</param>
         /// <param name="pushSound">pushSound.</param>
-        public AddApnsPushConfigurationResponsePushConfigurationsInner(string id = default(string), string pushType = default(string), decimal createdAt = default(decimal), string apnsCerEnvType = default(string), decimal apnsExpiration = default(decimal), string apnsName = default(string), decimal hasUnreadCountBadge = default(decimal), bool contentAvailable = default(bool), bool mutableContent = default(bool), string pushSound = default(string))
+        public AddApnsPushConfigurationResponsePushConfigurationsInner(string id = default, string pushType = default, decimal createdAt = default(decimal), string apnsCerEnvType = default, decimal apnsExpiration = default(decimal), string apnsName = default, decimal hasUnreadCountBadge = default(decimal), bool contentAvailable = default(bool), bool mutableContent = default(bool), string pushSound = default)
         {
             this.Id = id;
             this.PushType = pushType;

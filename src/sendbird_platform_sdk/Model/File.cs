@@ -38,7 +38,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="size">size.</param>
         /// <param name="type">type.</param>
         /// <param name="webkitRelativePath">webkitRelativePath.</param>
-        public File(decimal lastModified = default(decimal), string name = default(string), decimal size = default(decimal), string type = default(string), string webkitRelativePath = default(string))
+        public File(decimal lastModified = default(decimal), string name = default, decimal size = default(decimal), string type = default, string webkitRelativePath = default)
         {
             this.LastModified = lastModified;
             this.Name = name;

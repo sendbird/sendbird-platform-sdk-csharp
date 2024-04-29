@@ -39,7 +39,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="GenerateSecondaryApiTokenData" /> class.
         /// </summary>
         /// <param name="hTTPAPITOKEN">Specifies the master API token of the application. (required).</param>
-        public GenerateSecondaryApiTokenData(string hTTPAPITOKEN = default(string))
+        public GenerateSecondaryApiTokenData(string hTTPAPITOKEN = default)
         {
             // to ensure "hTTPAPITOKEN" is required (not null)
             if (hTTPAPITOKEN == null)

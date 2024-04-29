@@ -43,7 +43,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="messageId">Specifies the unique ID of the message to add a reaction to. (required).</param>
         /// <param name="userId">Specifies the ID of the user who reacts to the message. (required).</param>
         /// <param name="reaction">Specifies the unique key of the reaction to be added to the message. The length is limited to 192 charaters. (required).</param>
-        public AddReactionToAMessageData(string channelType = default(string), string channelUrl = default(string), int messageId = default(int), string userId = default(string), string reaction = default(string))
+        public AddReactionToAMessageData(string channelType = default, string channelUrl = default, int messageId = default(int), string userId = default, string reaction = default)
         {
             // to ensure "channelType" is required (not null)
             if (channelType == null)

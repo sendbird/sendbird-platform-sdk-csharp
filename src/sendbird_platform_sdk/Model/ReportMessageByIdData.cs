@@ -45,7 +45,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="offendingUserId">Specifies the unique ID of the user who has sent the message to report. (required).</param>
         /// <param name="reportingUserId">Specifies the unique ID of the user who reports the message..</param>
         /// <param name="reportDescription">Specifies additional information to be included in the report..</param>
-        public ReportMessageByIdData(string channelType = default(string), string channelUrl = default(string), string messageId = default(string), string reportCategory = default(string), string offendingUserId = default(string), string reportingUserId = default(string), string reportDescription = default(string))
+        public ReportMessageByIdData(string channelType = default, string channelUrl = default, string messageId = default, string reportCategory = default, string offendingUserId = default, string reportingUserId = default, string reportDescription = default)
         {
             // to ensure "reportCategory" is required (not null)
             if (reportCategory == null)

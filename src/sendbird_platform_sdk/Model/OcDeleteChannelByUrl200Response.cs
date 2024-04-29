@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="OcDeleteChannelByUrl200Response" /> class.
         /// </summary>
         /// <param name="anyOf">anyOf.</param>
-        public OcDeleteChannelByUrl200Response(string anyOf = default(string))
+        public OcDeleteChannelByUrl200Response(string anyOf = default)
         {
             this.AnyOf = anyOf;
         }

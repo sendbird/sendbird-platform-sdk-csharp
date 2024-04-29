@@ -39,7 +39,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="MuteInChannelsWithCustomChannelTypesData" /> class.
         /// </summary>
         /// <param name="channelCustomTypes">Specifies an array of one or more custom channel types, in order to mute the user in channels with the channel types. The user is permanently muted unless unmuted (10 years, technically). (required).</param>
-        public MuteInChannelsWithCustomChannelTypesData(List<string> channelCustomTypes = default(List<string>))
+        public MuteInChannelsWithCustomChannelTypesData(List<string> channelCustomTypes = default)
         {
             // to ensure "channelCustomTypes" is required (not null)
             if (channelCustomTypes == null)

@@ -36,7 +36,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="details">details.</param>
         /// <param name="id">id.</param>
         /// <param name="title">title.</param>
-        public SendBirdPoll(SendBirdPollDetails details = default(SendBirdPollDetails), decimal id = default(decimal), string title = default(string))
+        public SendBirdPoll(SendBirdPollDetails details = default(SendBirdPollDetails), decimal id = default(decimal), string title = default)
         {
             this.Details = details;
             this.Id = id;

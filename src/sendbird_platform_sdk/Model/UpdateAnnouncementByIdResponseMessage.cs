@@ -48,7 +48,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="sentUserCount">sentUserCount.</param>
         /// <param name="openCount">openCount.</param>
         /// <param name="openRate">openRate.</param>
-        public UpdateAnnouncementByIdResponseMessage(string type = default(string), string customType = default(string), string userId = default(string), string content = default(string), string data = default(string), bool enablePush = default(bool), string targetAt = default(string), decimal targetUserCount = default(decimal), decimal targetChannelCount = default(decimal), string status = default(string), decimal scheduledAt = default(decimal), decimal completedAt = default(decimal), decimal sentUserCount = default(decimal), decimal openCount = default(decimal), decimal openRate = default(decimal))
+        public UpdateAnnouncementByIdResponseMessage(string type = default, string customType = default, string userId = default, string content = default, string data = default, bool enablePush = default(bool), string targetAt = default, decimal targetUserCount = default(decimal), decimal targetChannelCount = default(decimal), string status = default, decimal scheduledAt = default(decimal), decimal completedAt = default(decimal), decimal sentUserCount = default(decimal), decimal openCount = default(decimal), decimal openRate = default(decimal))
         {
             this.Type = type;
             this.CustomType = customType;

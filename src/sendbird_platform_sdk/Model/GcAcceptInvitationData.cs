@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="channelUrl">Specifies the URL of the private group channel to join through accepting an invitation. (required).</param>
         /// <param name="userId">Specifies the unique ID of the user to accept an invitation to join the private group channel. (required).</param>
         /// <param name="accessCode">This property should be specified if the private group channel to join requires an access code to the invited users, which means that the is_access_code_required property of the channel resource is true. (required).</param>
-        public GcAcceptInvitationData(string channelUrl = default(string), string userId = default(string), string accessCode = default(string))
+        public GcAcceptInvitationData(string channelUrl = default, string userId = default, string accessCode = default)
         {
             // to ensure "channelUrl" is required (not null)
             if (channelUrl == null)

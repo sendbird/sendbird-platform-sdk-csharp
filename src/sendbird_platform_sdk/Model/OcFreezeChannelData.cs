@@ -40,7 +40,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="channelUrl">Specifies the URL of the channel to freeze. (required).</param>
         /// <param name="freeze">Determines whether to freeze the channel. (Default: false) (required).</param>
-        public OcFreezeChannelData(string channelUrl = default(string), bool freeze = default(bool))
+        public OcFreezeChannelData(string channelUrl = default, bool freeze = default(bool))
         {
             // to ensure "channelUrl" is required (not null)
             if (channelUrl == null)

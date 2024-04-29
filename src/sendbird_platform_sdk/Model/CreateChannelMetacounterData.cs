@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="channelType">Specifies the type of the channel. Either open_channels or group_channels. (required).</param>
         /// <param name="channelUrl">Specifies the URL of the channel to store the metacounter in. (required).</param>
         /// <param name="metacounter">Specifies a &#x60;JSON&#x60; object that stores key-value items. The key must not have a comma (,) and its length is limited to 128 characters. The value must be an integer. This property can have up to 5 items. (required).</param>
-        public CreateChannelMetacounterData(string channelType = default(string), string channelUrl = default(string), string metacounter = default(string))
+        public CreateChannelMetacounterData(string channelType = default, string channelUrl = default, string metacounter = default)
         {
             // to ensure "channelType" is required (not null)
             if (channelType == null)

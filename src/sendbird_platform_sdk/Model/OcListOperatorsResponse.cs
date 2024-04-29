@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="operators">operators.</param>
         /// <param name="next">next.</param>
-        public OcListOperatorsResponse(List<SendBirdUser> operators = default(List<SendBirdUser>), string next = default(string))
+        public OcListOperatorsResponse(List<SendBirdUser> operators = default(List<SendBirdUser>), string next = default)
         {
             this.Operators = operators;
             this.Next = next;

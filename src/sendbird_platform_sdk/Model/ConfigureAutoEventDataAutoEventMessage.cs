@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="userJoin">userJoin.</param>
         /// <param name="channelCreate">channelCreate.</param>
         /// <param name="channelChange">channelChange.</param>
-        public ConfigureAutoEventDataAutoEventMessage(Object userLeave = default(Object), Object userJoin = default(Object), Object channelCreate = default(Object), Object channelChange = default(Object))
+        public ConfigureAutoEventDataAutoEventMessage(Object userLeave = default, Object userJoin = default, Object channelCreate = default, Object channelChange = default)
         {
             this.UserLeave = userLeave;
             this.UserJoin = userJoin;

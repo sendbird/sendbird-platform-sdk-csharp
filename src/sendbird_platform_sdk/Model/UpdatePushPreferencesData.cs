@@ -51,7 +51,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="pushBlockedBotIds">Specifies an array of one or more IDs of bots whose push notifications are blocked. This property is effective only when the block_push_from_bots is set to true. (required).</param>
         /// <param name="timezone">Specifies the timezone to be applied to push preferences with a value such as UTC, Asia/Seoul, Europe/London, etc. (required).</param>
         /// <param name="pushSound">Specifies the name of a sound file to be played when a push notification is delivered to your client app. (required).</param>
-        public UpdatePushPreferencesData(string pushTriggerOption = default(string), bool doNotDisturb = default(bool), int startHour = default(int), int startMin = default(int), int endHour = default(int), int endMin = default(int), bool snoozeEnabled = default(bool), int snoozeStartTs = default(int), int snoozeEndTs = default(int), bool blockPushFromBots = default(bool), List<int> pushBlockedBotIds = default(List<int>), string timezone = default(string), string pushSound = default(string))
+        public UpdatePushPreferencesData(string pushTriggerOption = default, bool doNotDisturb = default(bool), int startHour = default(int), int startMin = default(int), int endHour = default(int), int endMin = default(int), bool snoozeEnabled = default(bool), int snoozeStartTs = default(int), int snoozeEndTs = default(int), bool blockPushFromBots = default(bool), List<int> pushBlockedBotIds = default(List<int>), string timezone = default, string pushSound = default)
         {
             // to ensure "pushTriggerOption" is required (not null)
             if (pushTriggerOption == null)

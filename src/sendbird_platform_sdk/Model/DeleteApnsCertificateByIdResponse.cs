@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="DeleteApnsCertificateByIdResponse" /> class.
         /// </summary>
         /// <param name="pushConfigurations">pushConfigurations.</param>
-        public DeleteApnsCertificateByIdResponse(List<string> pushConfigurations = default(List<string>))
+        public DeleteApnsCertificateByIdResponse(List<string> pushConfigurations = default)
         {
             this.PushConfigurations = pushConfigurations;
         }

@@ -40,7 +40,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="nickname">nickname.</param>
         /// <param name="profileUrl">profileUrl.</param>
         /// <param name="metadata">metadata.</param>
-        public SendBirdMessageResponseUser(bool requireAuthForProfileImage = default(bool), bool isActive = default(bool), string role = default(string), string userId = default(string), string nickname = default(string), string profileUrl = default(string), OcDeleteChannelByUrl200Response metadata = default(OcDeleteChannelByUrl200Response))
+        public SendBirdMessageResponseUser(bool requireAuthForProfileImage = default(bool), bool isActive = default(bool), string role = default, string userId = default, string nickname = default, string profileUrl = default, OcDeleteChannelByUrl200Response metadata = default(OcDeleteChannelByUrl200Response))
         {
             this.RequireAuthForProfileImage = requireAuthForProfileImage;
             this.IsActive = isActive;

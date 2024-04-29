@@ -47,7 +47,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="data">Specifies additional message information such as custom font size, font type or &#x60;JSON&#x60; formatted string..</param>
         /// <param name="mentionType">Specifies the mentioning method which indicates the user scope who will get a notification for the message. Acceptable values are users and channel. If set to users, only the specified users with the mentioned_users property below will get notified. If set to channel, all users in the channel will get notified. (Default: users).</param>
         /// <param name="mentionedUserIds">Specifies an array of one or more IDs of the users who will get a notification for the message..</param>
-        public UpdateMessageByIdData(string channelType = default(string), string channelUrl = default(string), int messageId = default(int), string messageType = default(string), string message = default(string), string customType = default(string), string data = default(string), string mentionType = default(string), List<string> mentionedUserIds = default(List<string>))
+        public UpdateMessageByIdData(string channelType = default, string channelUrl = default, int messageId = default(int), string messageType = default, string message = default, string customType = default, string data = default, string mentionType = default, List<string> mentionedUserIds = default)
         {
             // to ensure "messageId" is required (not null)
             if (messageId == null)

@@ -40,7 +40,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="apiKey">Specifies the FCM server key to register. (required).</param>
         /// <param name="pushSound">Specifies the name of a sound file to be played when a push notification is delivered to your client app. The file should be located in the &#x60;/res/raw&#x60; folder. (required).</param>
-        public AddFcmPushConfigurationData(string apiKey = default(string), string pushSound = default(string))
+        public AddFcmPushConfigurationData(string apiKey = default, string pushSound = default)
         {
             // to ensure "apiKey" is required (not null)
             if (apiKey == null)

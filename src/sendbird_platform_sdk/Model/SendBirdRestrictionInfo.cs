@@ -61,7 +61,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="description">description.</param>
         /// <param name="endAt">endAt.</param>
         /// <param name="restrictionType">restrictionType.</param>
-        public SendBirdRestrictionInfo(string description = default(string), decimal endAt = default(decimal), RestrictionTypeEnum? restrictionType = default(RestrictionTypeEnum?))
+        public SendBirdRestrictionInfo(string description = default, decimal endAt = default(decimal), RestrictionTypeEnum? restrictionType = default(RestrictionTypeEnum?))
         {
             this.Description = description;
             this.EndAt = endAt;

@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="token">token.</param>
         /// <param name="user">user.</param>
-        public RemoveRegistrationOrDeviceTokenResponse(List<string> token = default(List<string>), SendBirdUser user = default(SendBirdUser))
+        public RemoveRegistrationOrDeviceTokenResponse(List<string> token = default, SendBirdUser user = default(SendBirdUser))
         {
             this.Token = token;
             this.User = user;

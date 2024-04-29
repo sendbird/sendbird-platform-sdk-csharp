@@ -42,7 +42,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="channelUrl">Specifies the URL of the target channel. (required).</param>
         /// <param name="messageId">Specifies the unique ID of the message to add key-values items for additional information. (required).</param>
         /// <param name="sortedMetaarray">Specifies a &#x60;JSON&#x60; object of one or more key-values items which store additional message information. Each item consists of a key and the values in an array. Items are saved and will be returned in the exact order they&#39;ve been specified. (required).</param>
-        public AddExtraDataToMessageData(string channelType = default(string), string channelUrl = default(string), int messageId = default(int), string sortedMetaarray = default(string))
+        public AddExtraDataToMessageData(string channelType = default, string channelUrl = default, int messageId = default(int), string sortedMetaarray = default)
         {
             // to ensure "channelType" is required (not null)
             if (channelType == null)

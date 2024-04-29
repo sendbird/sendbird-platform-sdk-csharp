@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="bannedChannels">bannedChannels.</param>
         /// <param name="next">next.</param>
-        public ListBannedChannelsResponse(List<ListBannedChannelsResponseBannedChannelsInner> bannedChannels = default(List<ListBannedChannelsResponseBannedChannelsInner>), string next = default(string))
+        public ListBannedChannelsResponse(List<ListBannedChannelsResponseBannedChannelsInner> bannedChannels = default(List<ListBannedChannelsResponseBannedChannelsInner>), string next = default)
         {
             this.BannedChannels = bannedChannels;
             this.Next = next;

@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="CreateUserMetadataResponse" /> class.
         /// </summary>
         /// <param name="anyOf">anyOf.</param>
-        public CreateUserMetadataResponse(string anyOf = default(string))
+        public CreateUserMetadataResponse(string anyOf = default)
         {
             this.AnyOf = anyOf;
         }

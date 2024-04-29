@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="reportLogs">reportLogs.</param>
         /// <param name="next">next.</param>
-        public ListReportsOnMessageByIdResponse(List<ListReportsOnMessageByIdResponseReportLogsInner> reportLogs = default(List<ListReportsOnMessageByIdResponseReportLogsInner>), string next = default(string))
+        public ListReportsOnMessageByIdResponse(List<ListReportsOnMessageByIdResponseReportLogsInner> reportLogs = default(List<ListReportsOnMessageByIdResponseReportLogsInner>), string next = default)
         {
             this.ReportLogs = reportLogs;
             this.Next = next;

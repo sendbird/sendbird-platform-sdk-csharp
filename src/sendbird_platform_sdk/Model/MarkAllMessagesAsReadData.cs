@@ -39,7 +39,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="MarkAllMessagesAsReadData" /> class.
         /// </summary>
         /// <param name="channelUrls">Specifies an array of one or more group channel URLs to mark all of the unread messages in as read. If not specified, all of the unread messages in the joined group channels are marked as read. (required).</param>
-        public MarkAllMessagesAsReadData(List<string> channelUrls = default(List<string>))
+        public MarkAllMessagesAsReadData(List<string> channelUrls = default)
         {
             // to ensure "channelUrls" is required (not null)
             if (channelUrls == null)

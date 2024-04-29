@@ -36,7 +36,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="mESG">mESG.</param>
         /// <param name="fILE">fILE.</param>
         /// <param name="aDMM">aDMM.</param>
-        public ListPushNotificationContentTemplatesResponsePushMessageTemplatesInnerTemplate(string mESG = default(string), string fILE = default(string), string aDMM = default(string))
+        public ListPushNotificationContentTemplatesResponsePushMessageTemplatesInnerTemplate(string mESG = default, string fILE = default, string aDMM = default)
         {
             this.MESG = mESG;
             this.FILE = fILE;

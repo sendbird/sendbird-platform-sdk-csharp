@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="caller">caller.</param>
         /// <param name="length">length.</param>
         /// <param name="prototype">prototype.</param>
-        public Function(Object arguments = default(Object), Function caller = default(Function), decimal length = default(decimal), Object prototype = default(Object))
+        public Function(Object arguments = default, Function caller = default(Function), decimal length = default(decimal), Object prototype = default)
         {
             this.Arguments = arguments;
             this.Prototype = prototype;

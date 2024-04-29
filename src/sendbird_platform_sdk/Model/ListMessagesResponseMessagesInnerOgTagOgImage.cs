@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="secureUrl">secureUrl.</param>
         /// <param name="width">width.</param>
         /// <param name="height">height.</param>
-        public ListMessagesResponseMessagesInnerOgTagOgImage(string url = default(string), string secureUrl = default(string), decimal width = default(decimal), decimal height = default(decimal))
+        public ListMessagesResponseMessagesInnerOgTagOgImage(string url = default, string secureUrl = default, decimal width = default(decimal), decimal height = default(decimal))
         {
             this.Url = url;
             this.SecureUrl = secureUrl;

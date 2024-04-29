@@ -39,7 +39,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="reaction">reaction.</param>
         /// <param name="updatedAt">updatedAt.</param>
         /// <param name="msgId">msgId.</param>
-        public AddReactionToAMessageResponse(string userId = default(string), string operation = default(string), bool success = default(bool), string reaction = default(string), decimal updatedAt = default(decimal), decimal msgId = default(decimal))
+        public AddReactionToAMessageResponse(string userId = default, string operation = default, bool success = default(bool), string reaction = default, decimal updatedAt = default(decimal), decimal msgId = default(decimal))
         {
             this.UserId = userId;
             this.Operation = operation;

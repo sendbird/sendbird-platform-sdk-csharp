@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="description">description.</param>
         /// <param name="title">title.</param>
         /// <param name="url">url.</param>
-        public SendBirdOGMetaData(SendBirdOGImage defaultImage = default(SendBirdOGImage), string description = default(string), string title = default(string), string url = default(string))
+        public SendBirdOGMetaData(SendBirdOGImage defaultImage = default(SendBirdOGImage), string description = default, string title = default, string url = default)
         {
             this.DefaultImage = defaultImage;
             this.Description = description;

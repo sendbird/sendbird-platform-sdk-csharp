@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
         /// <returns></returns>
-        void OcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?));
+        void OcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default);
 
         /// <summary>
         /// Cancel the registration of operators
@@ -51,7 +51,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> OcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?));
+        ApiResponse<Object> OcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default);
         /// <summary>
         /// Create a channel
         /// </summary>
@@ -115,7 +115,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <returns>OcListChannelsResponse</returns>
-        OcListChannelsResponse OcListChannels (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string));
+        OcListChannelsResponse OcListChannels (string apiToken, string token = default, int? limit = default, string customTypes = default, string nameContains = default, string urlContains = default, bool? showFrozen = default, bool? showMetadata = default, string customType = default);
 
         /// <summary>
         /// List channels
@@ -134,7 +134,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <returns>ApiResponse of OcListChannelsResponse</returns>
-        ApiResponse<OcListChannelsResponse> OcListChannelsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string));
+        ApiResponse<OcListChannelsResponse> OcListChannelsWithHttpInfo (string apiToken, string token = default, int? limit = default, string customTypes = default, string nameContains = default, string urlContains = default, bool? showFrozen = default, bool? showMetadata = default, string customType = default);
         /// <summary>
         /// List operators
         /// </summary>
@@ -147,7 +147,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>OcListOperatorsResponse</returns>
-        OcListOperatorsResponse OcListOperators (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        OcListOperatorsResponse OcListOperators (string apiToken, string channelUrl, string token = default, int? limit = default);
 
         /// <summary>
         /// List operators
@@ -161,7 +161,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of OcListOperatorsResponse</returns>
-        ApiResponse<OcListOperatorsResponse> OcListOperatorsWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        ApiResponse<OcListOperatorsResponse> OcListOperatorsWithHttpInfo (string apiToken, string channelUrl, string token = default, int? limit = default);
         /// <summary>
         /// List participants
         /// </summary>
@@ -174,7 +174,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>OcListParticipantsResponse</returns>
-        OcListParticipantsResponse OcListParticipants (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        OcListParticipantsResponse OcListParticipants (string apiToken, string channelUrl, string token = default, int? limit = default);
 
         /// <summary>
         /// List participants
@@ -188,7 +188,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of OcListParticipantsResponse</returns>
-        ApiResponse<OcListParticipantsResponse> OcListParticipantsWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        ApiResponse<OcListParticipantsResponse> OcListParticipantsWithHttpInfo (string apiToken, string channelUrl, string token = default, int? limit = default);
         /// <summary>
         /// Register operators
         /// </summary>
@@ -277,7 +277,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task OcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task OcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Cancel the registration of operators
@@ -292,7 +292,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> OcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> OcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a channel
         /// </summary>
@@ -304,7 +304,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocCreateChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        System.Threading.Tasks.Task<SendBirdOpenChannel> OcCreateChannelAsync (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdOpenChannel> OcCreateChannelAsync (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Create a channel
@@ -317,7 +317,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocCreateChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcCreateChannelWithHttpInfoAsync (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcCreateChannelWithHttpInfoAsync (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Delete a channel
         /// </summary>
@@ -329,7 +329,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Delete a channel
@@ -342,7 +342,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default);
         /// <summary>
         /// List channels
         /// </summary>
@@ -361,7 +361,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customType"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListChannelsResponse</returns>
-        System.Threading.Tasks.Task<OcListChannelsResponse> OcListChannelsAsync (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcListChannelsResponse> OcListChannelsAsync (string apiToken, string token = default, int? limit = default, string customTypes = default, string nameContains = default, string urlContains = default, bool? showFrozen = default, bool? showMetadata = default, string customType = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List channels
@@ -381,7 +381,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customType"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListChannelsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcListChannelsResponse>> OcListChannelsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcListChannelsResponse>> OcListChannelsWithHttpInfoAsync (string apiToken, string token = default, int? limit = default, string customTypes = default, string nameContains = default, string urlContains = default, bool? showFrozen = default, bool? showMetadata = default, string customType = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// List operators
         /// </summary>
@@ -395,7 +395,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListOperatorsResponse</returns>
-        System.Threading.Tasks.Task<OcListOperatorsResponse> OcListOperatorsAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcListOperatorsResponse> OcListOperatorsAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List operators
@@ -410,7 +410,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListOperatorsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcListOperatorsResponse>> OcListOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcListOperatorsResponse>> OcListOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// List participants
         /// </summary>
@@ -424,7 +424,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListParticipantsResponse</returns>
-        System.Threading.Tasks.Task<OcListParticipantsResponse> OcListParticipantsAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcListParticipantsResponse> OcListParticipantsAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List participants
@@ -439,7 +439,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListParticipantsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcListParticipantsResponse>> OcListParticipantsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcListParticipantsResponse>> OcListParticipantsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Register operators
         /// </summary>
@@ -452,7 +452,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcRegisterOperatorsAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcRegisterOperatorsAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Register operators
@@ -466,7 +466,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a channel
         /// </summary>
@@ -479,7 +479,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        System.Threading.Tasks.Task<SendBirdOpenChannel> OcUpdateChannelByUrlAsync (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdOpenChannel> OcUpdateChannelByUrlAsync (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Update a channel
@@ -493,7 +493,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcUpdateChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcUpdateChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default);
         /// <summary>
         /// View a channel
         /// </summary>
@@ -505,7 +505,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        System.Threading.Tasks.Task<SendBirdOpenChannel> OcViewChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdOpenChannel> OcViewChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View a channel
@@ -518,7 +518,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcViewChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcViewChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default);
         #endregion Asynchronous Operations
     }
 
@@ -639,7 +639,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
         /// <returns></returns>
-        public void OcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?))
+        public void OcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default)
         {
              OcCancelTheRegistrationOfOperatorsWithHttpInfo(apiToken, channelUrl, operatorIds, deleteAll);
         }
@@ -653,7 +653,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="operatorIds"></param>
         /// <param name="deleteAll"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> OcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?))
+        public ApiResponse<Object> OcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -719,7 +719,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task OcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task OcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default, CancellationToken cancellationToken = default)
         {
              await OcCancelTheRegistrationOfOperatorsWithHttpInfoAsync(apiToken, channelUrl, operatorIds, deleteAll, cancellationToken);
 
@@ -735,7 +735,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="deleteAll"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> OcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> OcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -876,7 +876,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocCreateChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcCreateChannelAsync (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcCreateChannelAsync (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default)
         {
              ApiResponse<SendBirdOpenChannel> localVarResponse = await OcCreateChannelWithHttpInfoAsync(apiToken, ocCreateChannelData, cancellationToken);
              return localVarResponse.Data;
@@ -891,7 +891,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocCreateChannelData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcCreateChannelWithHttpInfoAsync (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcCreateChannelWithHttpInfoAsync (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1028,7 +1028,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default)
         {
              ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await OcDeleteChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, cancellationToken);
              return localVarResponse.Data;
@@ -1043,7 +1043,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1109,7 +1109,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <returns>OcListChannelsResponse</returns>
-        public OcListChannelsResponse OcListChannels (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string))
+        public OcListChannelsResponse OcListChannels (string apiToken, string token = default, int? limit = default, string customTypes = default, string nameContains = default, string urlContains = default, bool? showFrozen = default, bool? showMetadata = default, string customType = default)
         {
              ApiResponse<OcListChannelsResponse> localVarResponse = OcListChannelsWithHttpInfo(apiToken, token, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, customType);
              return localVarResponse.Data;
@@ -1129,7 +1129,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="customType"> (optional)</param>
         /// <returns>ApiResponse of OcListChannelsResponse</returns>
-        public ApiResponse<OcListChannelsResponse> OcListChannelsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string))
+        public ApiResponse<OcListChannelsResponse> OcListChannelsWithHttpInfo (string apiToken, string token = default, int? limit = default, string customTypes = default, string nameContains = default, string urlContains = default, bool? showFrozen = default, bool? showMetadata = default, string customType = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1200,7 +1200,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customType"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListChannelsResponse</returns>
-        public async System.Threading.Tasks.Task<OcListChannelsResponse> OcListChannelsAsync (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcListChannelsResponse> OcListChannelsAsync (string apiToken, string token = default, int? limit = default, string customTypes = default, string nameContains = default, string urlContains = default, bool? showFrozen = default, bool? showMetadata = default, string customType = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<OcListChannelsResponse> localVarResponse = await OcListChannelsWithHttpInfoAsync(apiToken, token, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, customType, cancellationToken);
              return localVarResponse.Data;
@@ -1222,7 +1222,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="customType"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListChannelsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcListChannelsResponse>> OcListChannelsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcListChannelsResponse>> OcListChannelsWithHttpInfoAsync (string apiToken, string token = default, int? limit = default, string customTypes = default, string nameContains = default, string urlContains = default, bool? showFrozen = default, bool? showMetadata = default, string customType = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1287,7 +1287,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>OcListOperatorsResponse</returns>
-        public OcListOperatorsResponse OcListOperators (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
+        public OcListOperatorsResponse OcListOperators (string apiToken, string channelUrl, string token = default, int? limit = default)
         {
              ApiResponse<OcListOperatorsResponse> localVarResponse = OcListOperatorsWithHttpInfo(apiToken, channelUrl, token, limit);
              return localVarResponse.Data;
@@ -1302,7 +1302,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of OcListOperatorsResponse</returns>
-        public ApiResponse<OcListOperatorsResponse> OcListOperatorsWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
+        public ApiResponse<OcListOperatorsResponse> OcListOperatorsWithHttpInfo (string apiToken, string channelUrl, string token = default, int? limit = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1366,7 +1366,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListOperatorsResponse</returns>
-        public async System.Threading.Tasks.Task<OcListOperatorsResponse> OcListOperatorsAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcListOperatorsResponse> OcListOperatorsAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<OcListOperatorsResponse> localVarResponse = await OcListOperatorsWithHttpInfoAsync(apiToken, channelUrl, token, limit, cancellationToken);
              return localVarResponse.Data;
@@ -1383,7 +1383,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListOperatorsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcListOperatorsResponse>> OcListOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcListOperatorsResponse>> OcListOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1446,7 +1446,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>OcListParticipantsResponse</returns>
-        public OcListParticipantsResponse OcListParticipants (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
+        public OcListParticipantsResponse OcListParticipants (string apiToken, string channelUrl, string token = default, int? limit = default)
         {
              ApiResponse<OcListParticipantsResponse> localVarResponse = OcListParticipantsWithHttpInfo(apiToken, channelUrl, token, limit);
              return localVarResponse.Data;
@@ -1461,7 +1461,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of OcListParticipantsResponse</returns>
-        public ApiResponse<OcListParticipantsResponse> OcListParticipantsWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
+        public ApiResponse<OcListParticipantsResponse> OcListParticipantsWithHttpInfo (string apiToken, string channelUrl, string token = default, int? limit = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1525,7 +1525,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcListParticipantsResponse</returns>
-        public async System.Threading.Tasks.Task<OcListParticipantsResponse> OcListParticipantsAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcListParticipantsResponse> OcListParticipantsAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<OcListParticipantsResponse> localVarResponse = await OcListParticipantsWithHttpInfoAsync(apiToken, channelUrl, token, limit, cancellationToken);
              return localVarResponse.Data;
@@ -1542,7 +1542,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcListParticipantsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcListParticipantsResponse>> OcListParticipantsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcListParticipantsResponse>> OcListParticipantsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1688,7 +1688,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcRegisterOperatorsAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcRegisterOperatorsAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default)
         {
              ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await OcRegisterOperatorsWithHttpInfoAsync(apiToken, channelUrl, ocRegisterOperatorsData, cancellationToken);
              return localVarResponse.Data;
@@ -1704,7 +1704,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocRegisterOperatorsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1857,7 +1857,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcUpdateChannelByUrlAsync (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcUpdateChannelByUrlAsync (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default)
         {
              ApiResponse<SendBirdOpenChannel> localVarResponse = await OcUpdateChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, ocUpdateChannelByUrlData, cancellationToken);
              return localVarResponse.Data;
@@ -1873,7 +1873,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcUpdateChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcUpdateChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -2014,7 +2014,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdOpenChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcViewChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcViewChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default)
         {
              ApiResponse<SendBirdOpenChannel> localVarResponse = await OcViewChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, cancellationToken);
              return localVarResponse.Data;
@@ -2029,7 +2029,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcViewChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcViewChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)

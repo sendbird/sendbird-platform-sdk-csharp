@@ -43,7 +43,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="agentId">Specifies the ID of the agent (operator) who bans the user. (required).</param>
         /// <param name="seconds">Specifies the ban duration. If set to -1, the user will be banned permanently (10 years, technically). (Default: -1) (required).</param>
         /// <param name="description">Specifies a reason for the banning. The length is limited to 250 characters. (required).</param>
-        public GcBanUserData(string channelUrl = default(string), string userId = default(string), string agentId = default(string), int seconds = default(int), string description = default(string))
+        public GcBanUserData(string channelUrl = default, string userId = default, string agentId = default, int seconds = default(int), string description = default)
         {
             // to ensure "channelUrl" is required (not null)
             if (channelUrl == null)

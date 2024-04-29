@@ -40,7 +40,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="emojiCategoryId">Specifies the unique ID of the emoji category to update. (required).</param>
         /// <param name="url">Specifies the new URL of the emoji category. (required).</param>
-        public UpdateEmojiCategoryUrlByIdData(int emojiCategoryId = default(int), string url = default(string))
+        public UpdateEmojiCategoryUrlByIdData(int emojiCategoryId = default(int), string url = default)
         {
             // to ensure "emojiCategoryId" is required (not null)
             if (emojiCategoryId == null)

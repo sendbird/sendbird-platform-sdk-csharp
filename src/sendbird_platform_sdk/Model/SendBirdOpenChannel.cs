@@ -47,7 +47,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="operators">operators.</param>
         /// <param name="participantCount">participantCount.</param>
         /// <param name="freeze">freeze.</param>
-        public SendBirdOpenChannel(string name = default(string), string customType = default(string), string channelUrl = default(string), decimal createdAt = default(decimal), string coverUrl = default(string), SendBirdUser creator = default(SendBirdUser), string data = default(string), bool isDynamicPartitioned = default(bool), bool isEphemeral = default(bool), bool isFrozen = default(bool), decimal maxLengthMessage = default(decimal), List<SendBirdUser> operators = default(List<SendBirdUser>), decimal participantCount = default(decimal), bool freeze = default(bool))
+        public SendBirdOpenChannel(string name = default, string customType = default, string channelUrl = default, decimal createdAt = default(decimal), string coverUrl = default, SendBirdUser creator = default(SendBirdUser), string data = default, bool isDynamicPartitioned = default(bool), bool isEphemeral = default(bool), bool isFrozen = default(bool), decimal maxLengthMessage = default(decimal), List<SendBirdUser> operators = default(List<SendBirdUser>), decimal participantCount = default(decimal), bool freeze = default(bool))
         {
             this.Name = name;
             this.CustomType = customType;

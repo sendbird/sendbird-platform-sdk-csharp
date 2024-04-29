@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="nickname">nickname.</param>
         /// <param name="profileUrl">profileUrl.</param>
         /// <param name="metadata">metadata.</param>
-        public SendBirdMessageResponseMentionedUsersInner(string userId = default(string), string nickname = default(string), string profileUrl = default(string), OcDeleteChannelByUrl200Response metadata = default(OcDeleteChannelByUrl200Response))
+        public SendBirdMessageResponseMentionedUsersInner(string userId = default, string nickname = default, string profileUrl = default, OcDeleteChannelByUrl200Response metadata = default(OcDeleteChannelByUrl200Response))
         {
             this.UserId = userId;
             this.Nickname = nickname;

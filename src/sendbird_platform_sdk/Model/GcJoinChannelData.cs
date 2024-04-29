@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="channelUrl">Specifies the URL of the channel to join. (required).</param>
         /// <param name="userId">Specifies the unique ID of the user to join the public group channel. (required).</param>
         /// <param name="accessCode">This property should be specified if the public group channel to join requires an access code to users, which means that the is_access_code_required property of the channel resource is true. (required).</param>
-        public GcJoinChannelData(string channelUrl = default(string), string userId = default(string), string accessCode = default(string))
+        public GcJoinChannelData(string channelUrl = default, string userId = default, string accessCode = default)
         {
             // to ensure "channelUrl" is required (not null)
             if (channelUrl == null)

@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="emojiHash">emojiHash.</param>
         /// <param name="emojiCategories">emojiCategories.</param>
-        public ListAllEmojisAndEmojiCategoriesResponse(string emojiHash = default(string), List<ListAllEmojisAndEmojiCategoriesResponseEmojiCategoriesInner> emojiCategories = default(List<ListAllEmojisAndEmojiCategoriesResponseEmojiCategoriesInner>))
+        public ListAllEmojisAndEmojiCategoriesResponse(string emojiHash = default, List<ListAllEmojisAndEmojiCategoriesResponseEmojiCategoriesInner> emojiCategories = default(List<ListAllEmojisAndEmojiCategoriesResponseEmojiCategoriesInner>))
         {
             this.EmojiHash = emojiHash;
             this.EmojiCategories = emojiCategories;

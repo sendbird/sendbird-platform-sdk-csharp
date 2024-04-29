@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="ChoosePushNotificationContentTemplateResponse" /> class.
         /// </summary>
         /// <param name="name">name.</param>
-        public ChoosePushNotificationContentTemplateResponse(string name = default(string))
+        public ChoosePushNotificationContentTemplateResponse(string name = default)
         {
             this.Name = name;
         }

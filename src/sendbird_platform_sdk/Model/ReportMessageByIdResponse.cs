@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="channel">channel.</param>
         /// <param name="reportDescription">reportDescription.</param>
         /// <param name="createdAt">createdAt.</param>
-        public ReportMessageByIdResponse(string reportType = default(string), string reportCategory = default(string), SendBirdUser reportingUser = default(SendBirdUser), SendBirdUser offendingUser = default(SendBirdUser), SendBirdMessageResponse reportedMessage = default(SendBirdMessageResponse), SendBirdChannelResponse channel = default(SendBirdChannelResponse), string reportDescription = default(string), decimal createdAt = default(decimal))
+        public ReportMessageByIdResponse(string reportType = default, string reportCategory = default, SendBirdUser reportingUser = default(SendBirdUser), SendBirdUser offendingUser = default(SendBirdUser), SendBirdMessageResponse reportedMessage = default(SendBirdMessageResponse), SendBirdChannelResponse channel = default(SendBirdChannelResponse), string reportDescription = default, decimal createdAt = default(decimal))
         {
             this.ReportedMessage = reportedMessage;
             this.ReportType = reportType;

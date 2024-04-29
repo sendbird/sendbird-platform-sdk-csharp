@@ -36,7 +36,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="type">type.</param>
         /// <param name="userId">userId.</param>
         /// <param name="content">content.</param>
-        public ScheduleAnnouncementDataMessage(string type = default(string), string userId = default(string), string content = default(string))
+        public ScheduleAnnouncementDataMessage(string type = default, string userId = default, string content = default)
         {
             this.Type = type;
             this.UserId = userId;

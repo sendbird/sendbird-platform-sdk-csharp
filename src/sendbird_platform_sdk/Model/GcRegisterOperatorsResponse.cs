@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="GcRegisterOperatorsResponse" /> class.
         /// </summary>
         /// <param name="operatorIds">operatorIds.</param>
-        public GcRegisterOperatorsResponse(List<string> operatorIds = default(List<string>))
+        public GcRegisterOperatorsResponse(List<string> operatorIds = default)
         {
             this.OperatorIds = operatorIds;
         }

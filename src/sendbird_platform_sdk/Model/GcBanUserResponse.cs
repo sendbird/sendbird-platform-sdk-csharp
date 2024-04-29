@@ -43,7 +43,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="profileUrl">profileUrl.</param>
         /// <param name="requireAuthForProfileImage">requireAuthForProfileImage.</param>
         /// <param name="userId">userId.</param>
-        public GcBanUserResponse(SendBirdUser user = default(SendBirdUser), decimal startAt = default(decimal), decimal endAt = default(decimal), string description = default(string), OcDeleteChannelByUrl200Response metadata = default(OcDeleteChannelByUrl200Response), string nextUrl = default(string), string nickname = default(string), string profileUrl = default(string), bool requireAuthForProfileImage = default(bool), string userId = default(string))
+        public GcBanUserResponse(SendBirdUser user = default(SendBirdUser), decimal startAt = default(decimal), decimal endAt = default(decimal), string description = default, OcDeleteChannelByUrl200Response metadata = default(OcDeleteChannelByUrl200Response), string nextUrl = default, string nickname = default, string profileUrl = default, bool requireAuthForProfileImage = default(bool), string userId = default)
         {
             this.User = user;
             this.StartAt = startAt;

@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="name">name.</param>
         /// <param name="url">url.</param>
         /// <param name="emojis">emojis.</param>
-        public ListAllEmojisAndEmojiCategoriesResponseEmojiCategoriesInner(decimal id = default(decimal), string name = default(string), string url = default(string), List<ListAllEmojisAndEmojiCategoriesResponseEmojiCategoriesInnerEmojisInner> emojis = default(List<ListAllEmojisAndEmojiCategoriesResponseEmojiCategoriesInnerEmojisInner>))
+        public ListAllEmojisAndEmojiCategoriesResponseEmojiCategoriesInner(decimal id = default(decimal), string name = default, string url = default, List<ListAllEmojisAndEmojiCategoriesResponseEmojiCategoriesInnerEmojisInner> emojis = default(List<ListAllEmojisAndEmojiCategoriesResponseEmojiCategoriesInnerEmojisInner>))
         {
             this.Id = id;
             this.Name = name;

@@ -40,7 +40,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="channelUrl">Specifies the URL of the channel to register operators to. (required).</param>
         /// <param name="operatorIds">Specifies an array of one or more IDs of users to register as operators of the channel. The maximum allowed number of operators per channel is 100. (required).</param>
-        public OcRegisterOperatorsData(string channelUrl = default(string), List<string> operatorIds = default(List<string>))
+        public OcRegisterOperatorsData(string channelUrl = default, List<string> operatorIds = default)
         {
             // to ensure "channelUrl" is required (not null)
             if (channelUrl == null)

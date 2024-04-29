@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="templateName">templateName.</param>
         /// <param name="template">template.</param>
-        public ListPushNotificationContentTemplatesResponsePushMessageTemplatesInner(string templateName = default(string), ListPushNotificationContentTemplatesResponsePushMessageTemplatesInnerTemplate template = default(ListPushNotificationContentTemplatesResponsePushMessageTemplatesInnerTemplate))
+        public ListPushNotificationContentTemplatesResponsePushMessageTemplatesInner(string templateName = default, ListPushNotificationContentTemplatesResponsePushMessageTemplatesInnerTemplate template = default(ListPushNotificationContentTemplatesResponsePushMessageTemplatesInnerTemplate))
         {
             this.TemplateName = templateName;
             this.Template = template;

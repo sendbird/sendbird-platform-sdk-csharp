@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="pushType">pushType.</param>
         /// <param name="apiKey">apiKey.</param>
         /// <param name="pushSound">pushSound.</param>
-        public AddFcmPushConfigurationResponsePushConfigurationsInner(string id = default(string), string pushType = default(string), string apiKey = default(string), string pushSound = default(string))
+        public AddFcmPushConfigurationResponsePushConfigurationsInner(string id = default, string pushType = default, string apiKey = default, string pushSound = default)
         {
             this.Id = id;
             this.PushType = pushType;

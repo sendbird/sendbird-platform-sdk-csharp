@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="ListReactionsOfMessageResponse" /> class.
         /// </summary>
         /// <param name="key">key.</param>
-        public ListReactionsOfMessageResponse(List<string> key = default(List<string>))
+        public ListReactionsOfMessageResponse(List<string> key = default)
         {
             this.Key = key;
         }

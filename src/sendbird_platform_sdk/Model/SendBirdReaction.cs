@@ -36,7 +36,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="key">key.</param>
         /// <param name="updatedAt">updatedAt.</param>
         /// <param name="userIds">userIds.</param>
-        public SendBirdReaction(string key = default(string), decimal updatedAt = default(decimal), List<string> userIds = default(List<string>))
+        public SendBirdReaction(string key = default, decimal updatedAt = default(decimal), List<string> userIds = default)
         {
             this.Key = key;
             this.UpdatedAt = updatedAt;

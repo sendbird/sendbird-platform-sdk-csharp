@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="date">date.</param>
         /// <param name="peakConnections">peakConnections.</param>
-        public ViewNumberOfPeakConnectionsResponsePeakConnectionsInner(string date = default(string), decimal peakConnections = default(decimal))
+        public ViewNumberOfPeakConnectionsResponsePeakConnectionsInner(string date = default, decimal peakConnections = default(decimal))
         {
             this.Date = date;
             this.PeakConnections = peakConnections;

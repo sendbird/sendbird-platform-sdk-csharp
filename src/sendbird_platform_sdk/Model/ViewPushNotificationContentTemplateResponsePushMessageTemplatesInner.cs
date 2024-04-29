@@ -36,7 +36,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="templateName">templateName.</param>
         /// <param name="template">template.</param>
         /// <param name="pushMessagePreview">pushMessagePreview.</param>
-        public ViewPushNotificationContentTemplateResponsePushMessageTemplatesInner(string templateName = default(string), ListPushNotificationContentTemplatesResponsePushMessageTemplatesInnerTemplate template = default(ListPushNotificationContentTemplatesResponsePushMessageTemplatesInnerTemplate), ListPushNotificationContentTemplatesResponsePushMessageTemplatesInnerTemplate pushMessagePreview = default(ListPushNotificationContentTemplatesResponsePushMessageTemplatesInnerTemplate))
+        public ViewPushNotificationContentTemplateResponsePushMessageTemplatesInner(string templateName = default, ListPushNotificationContentTemplatesResponsePushMessageTemplatesInnerTemplate template = default(ListPushNotificationContentTemplatesResponsePushMessageTemplatesInnerTemplate), ListPushNotificationContentTemplatesResponsePushMessageTemplatesInnerTemplate pushMessagePreview = default(ListPushNotificationContentTemplatesResponsePushMessageTemplatesInnerTemplate))
         {
             this.TemplateName = templateName;
             this.Template = template;

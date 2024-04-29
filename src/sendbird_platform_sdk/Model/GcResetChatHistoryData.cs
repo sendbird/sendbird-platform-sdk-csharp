@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="channelUrl">Specifies the URL of the target channel to reset chat history. (required).</param>
         /// <param name="userId">Specifies the unique ID of the user whose chat history to reset in the channel. If this user_id property is specified, the reset_all property is not required. (required).</param>
         /// <param name="resetAll">Determines whether to reset all users&#39; chat history in the channel. If this reset_all property is specified, the user_id property is not required. (required).</param>
-        public GcResetChatHistoryData(string channelUrl = default(string), string userId = default(string), bool resetAll = default(bool))
+        public GcResetChatHistoryData(string channelUrl = default, string userId = default, bool resetAll = default(bool))
         {
             // to ensure "channelUrl" is required (not null)
             if (channelUrl == null)

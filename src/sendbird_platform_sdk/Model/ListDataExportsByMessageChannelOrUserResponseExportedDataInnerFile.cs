@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="url">url.</param>
         /// <param name="expiresAt">expiresAt.</param>
-        public ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile(string url = default(string), decimal expiresAt = default(decimal))
+        public ListDataExportsByMessageChannelOrUserResponseExportedDataInnerFile(string url = default, decimal expiresAt = default(decimal))
         {
             this.Url = url;
             this.ExpiresAt = expiresAt;

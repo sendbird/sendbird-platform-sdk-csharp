@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="participants">participants.</param>
         /// <param name="next">next.</param>
-        public OcListParticipantsResponse(List<SendBirdUser> participants = default(List<SendBirdUser>), string next = default(string))
+        public OcListParticipantsResponse(List<SendBirdUser> participants = default(List<SendBirdUser>), string next = default)
         {
             this.Participants = participants;
             this.Next = next;

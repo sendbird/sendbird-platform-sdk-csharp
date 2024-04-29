@@ -41,7 +41,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="channelUrl">Specifies the URL of the target channel. (required).</param>
         /// <param name="userId">Specifies the ID of the user to mark all messages as read. (required).</param>
         /// <param name="timestamp">Specifies the timestamp to be the reference point of marking as read. If specified, the messages received before the specified time are marked as read. (required).</param>
-        public GcMarkAllMessagesAsReadData(string channelUrl = default(string), string userId = default(string), int timestamp = default(int))
+        public GcMarkAllMessagesAsReadData(string channelUrl = default, string userId = default, int timestamp = default(int))
         {
             // to ensure "channelUrl" is required (not null)
             if (channelUrl == null)

@@ -39,7 +39,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="AddIpToWhitelistData" /> class.
         /// </summary>
         /// <param name="ipWhitelistAddresses">Specifies an array of one or more IP ranges and addresses to add to a whitelist. (required).</param>
-        public AddIpToWhitelistData(List<string> ipWhitelistAddresses = default(List<string>))
+        public AddIpToWhitelistData(List<string> ipWhitelistAddresses = default)
         {
             // to ensure "ipWhitelistAddresses" is required (not null)
             if (ipWhitelistAddresses == null)

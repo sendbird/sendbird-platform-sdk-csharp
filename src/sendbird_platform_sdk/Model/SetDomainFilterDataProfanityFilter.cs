@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="regexFilters">regexFilters.</param>
         /// <param name="type">type.</param>
         /// <param name="shouldCheckGlobal">shouldCheckGlobal.</param>
-        public SetDomainFilterDataProfanityFilter(List<string> keywords = default(List<string>), List<SetDomainFilterDataProfanityFilterRegexFiltersInner> regexFilters = default(List<SetDomainFilterDataProfanityFilterRegexFiltersInner>), int type = default(int), bool shouldCheckGlobal = default(bool))
+        public SetDomainFilterDataProfanityFilter(List<string> keywords = default, List<SetDomainFilterDataProfanityFilterRegexFiltersInner> regexFilters = default(List<SetDomainFilterDataProfanityFilterRegexFiltersInner>), int type = default(int), bool shouldCheckGlobal = default(bool))
         {
             this.Keywords = keywords;
             this.RegexFilters = regexFilters;

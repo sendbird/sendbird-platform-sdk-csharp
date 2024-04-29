@@ -38,7 +38,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="huaweiAppId">huaweiAppId.</param>
         /// <param name="huaweiAppSecret">huaweiAppSecret.</param>
         /// <param name="pushSound">pushSound.</param>
-        public AddHmsPushConfigurationResponsePushConfigurationsInner(string id = default(string), string pushType = default(string), string huaweiAppId = default(string), string huaweiAppSecret = default(string), string pushSound = default(string))
+        public AddHmsPushConfigurationResponsePushConfigurationsInner(string id = default, string pushType = default, string huaweiAppId = default, string huaweiAppSecret = default, string pushSound = default)
         {
             this.Id = id;
             this.PushType = pushType;

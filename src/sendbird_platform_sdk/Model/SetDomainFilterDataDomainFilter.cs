@@ -36,7 +36,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="domains">domains.</param>
         /// <param name="type">type.</param>
         /// <param name="shouldCheckGlobal">shouldCheckGlobal.</param>
-        public SetDomainFilterDataDomainFilter(List<string> domains = default(List<string>), int type = default(int), bool shouldCheckGlobal = default(bool))
+        public SetDomainFilterDataDomainFilter(List<string> domains = default, int type = default(int), bool shouldCheckGlobal = default(bool))
         {
             this.Domains = domains;
             this.Type = type;

@@ -107,7 +107,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="channelUrl"> (optional)</param>
         /// <returns></returns>
-        void LeaveChannels (string apiToken, string botUserid, string channelUrl = default(string));
+        void LeaveChannels (string apiToken, string botUserid, string channelUrl = default);
 
         /// <summary>
         /// Leave channels - When leaving all channels
@@ -120,7 +120,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="channelUrl"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> LeaveChannelsWithHttpInfo (string apiToken, string botUserid, string channelUrl = default(string));
+        ApiResponse<Object> LeaveChannelsWithHttpInfo (string apiToken, string botUserid, string channelUrl = default);
         /// <summary>
         /// Leave channels - When leaving a channel by its channel URL
         /// </summary>
@@ -157,7 +157,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListBotsResponse</returns>
-        ListBotsResponse ListBots (string apiToken, string token = default(string), int? limit = default(int?));
+        ListBotsResponse ListBots (string apiToken, string token = default, int? limit = default);
 
         /// <summary>
         /// List bots
@@ -170,7 +170,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListBotsResponse</returns>
-        ApiResponse<ListBotsResponse> ListBotsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?));
+        ApiResponse<ListBotsResponse> ListBotsWithHttpInfo (string apiToken, string token = default, int? limit = default);
         /// <summary>
         /// Send a bot's message
         /// </summary>
@@ -257,7 +257,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="createBotData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of CreateBotResponse</returns>
-        System.Threading.Tasks.Task<CreateBotResponse> CreateBotAsync (string apiToken, CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<CreateBotResponse> CreateBotAsync (string apiToken, CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Create a bot
@@ -270,7 +270,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="createBotData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (CreateBotResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CreateBotResponse>> CreateBotWithHttpInfoAsync (string apiToken, CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<CreateBotResponse>> CreateBotWithHttpInfoAsync (string apiToken, CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Delete a bot
         /// </summary>
@@ -282,7 +282,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> DeleteBotByIdAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Object> DeleteBotByIdAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Delete a bot
@@ -295,7 +295,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBotByIdWithHttpInfoAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBotByIdWithHttpInfoAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default);
         /// <summary>
         /// Join channels
         /// </summary>
@@ -308,7 +308,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="joinChannelsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of JoinChannelsResponse</returns>
-        System.Threading.Tasks.Task<JoinChannelsResponse> JoinChannelsAsync (string apiToken, string botUserid, JoinChannelsData joinChannelsData = default(JoinChannelsData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<JoinChannelsResponse> JoinChannelsAsync (string apiToken, string botUserid, JoinChannelsData joinChannelsData = default(JoinChannelsData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Join channels
@@ -322,7 +322,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="joinChannelsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (JoinChannelsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<JoinChannelsResponse>> JoinChannelsWithHttpInfoAsync (string apiToken, string botUserid, JoinChannelsData joinChannelsData = default(JoinChannelsData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<JoinChannelsResponse>> JoinChannelsWithHttpInfoAsync (string apiToken, string botUserid, JoinChannelsData joinChannelsData = default(JoinChannelsData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Leave channels - When leaving all channels
         /// </summary>
@@ -335,7 +335,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task LeaveChannelsAsync (string apiToken, string botUserid, string channelUrl = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task LeaveChannelsAsync (string apiToken, string botUserid, string channelUrl = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Leave channels - When leaving all channels
@@ -349,7 +349,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> LeaveChannelsWithHttpInfoAsync (string apiToken, string botUserid, string channelUrl = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> LeaveChannelsWithHttpInfoAsync (string apiToken, string botUserid, string channelUrl = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Leave channels - When leaving a channel by its channel URL
         /// </summary>
@@ -362,7 +362,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> LeaveChannelsByUrlAsync (string apiToken, string botUserid, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Object> LeaveChannelsByUrlAsync (string apiToken, string botUserid, string channelUrl, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Leave channels - When leaving a channel by its channel URL
@@ -376,7 +376,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> LeaveChannelsByUrlWithHttpInfoAsync (string apiToken, string botUserid, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> LeaveChannelsByUrlWithHttpInfoAsync (string apiToken, string botUserid, string channelUrl, CancellationToken cancellationToken = default);
         /// <summary>
         /// List bots
         /// </summary>
@@ -389,7 +389,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListBotsResponse</returns>
-        System.Threading.Tasks.Task<ListBotsResponse> ListBotsAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ListBotsResponse> ListBotsAsync (string apiToken, string token = default, int? limit = default, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// List bots
@@ -403,7 +403,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListBotsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListBotsResponse>> ListBotsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ListBotsResponse>> ListBotsWithHttpInfoAsync (string apiToken, string token = default, int? limit = default, CancellationToken cancellationToken = default);
         /// <summary>
         /// Send a bot's message
         /// </summary>
@@ -416,7 +416,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="sendBotSMessageData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdMessageResponse</returns>
-        System.Threading.Tasks.Task<SendBirdMessageResponse> SendBotsMessageAsync (string apiToken, string botUserid, SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendBirdMessageResponse> SendBotsMessageAsync (string apiToken, string botUserid, SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Send a bot&#39;s message
@@ -430,7 +430,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="sendBotSMessageData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdMessageResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdMessageResponse>> SendBotsMessageWithHttpInfoAsync (string apiToken, string botUserid, SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendBirdMessageResponse>> SendBotsMessageWithHttpInfoAsync (string apiToken, string botUserid, SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData), CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a bot
         /// </summary>
@@ -443,7 +443,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateBotByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateBotByIdResponse</returns>
-        System.Threading.Tasks.Task<UpdateBotByIdResponse> UpdateBotByIdAsync (string apiToken, string botUserid, UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<UpdateBotByIdResponse> UpdateBotByIdAsync (string apiToken, string botUserid, UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Update a bot
@@ -457,7 +457,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateBotByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateBotByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UpdateBotByIdResponse>> UpdateBotByIdWithHttpInfoAsync (string apiToken, string botUserid, UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<UpdateBotByIdResponse>> UpdateBotByIdWithHttpInfoAsync (string apiToken, string botUserid, UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default);
         /// <summary>
         /// View a bot
         /// </summary>
@@ -469,7 +469,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewBotByIdResponse</returns>
-        System.Threading.Tasks.Task<ViewBotByIdResponse> ViewBotByIdAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ViewBotByIdResponse> ViewBotByIdAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// View a bot
@@ -482,7 +482,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewBotByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewBotByIdResponse>> ViewBotByIdWithHttpInfoAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ViewBotByIdResponse>> ViewBotByIdWithHttpInfoAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default);
         #endregion Asynchronous Operations
     }
 
@@ -679,7 +679,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="createBotData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of CreateBotResponse</returns>
-        public async System.Threading.Tasks.Task<CreateBotResponse> CreateBotAsync (string apiToken, CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<CreateBotResponse> CreateBotAsync (string apiToken, CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default)
         {
              ApiResponse<CreateBotResponse> localVarResponse = await CreateBotWithHttpInfoAsync(apiToken, createBotData, cancellationToken);
              return localVarResponse.Data;
@@ -694,7 +694,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="createBotData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (CreateBotResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<CreateBotResponse>> CreateBotWithHttpInfoAsync (string apiToken, CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<CreateBotResponse>> CreateBotWithHttpInfoAsync (string apiToken, CreateBotData createBotData = default(CreateBotData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -831,7 +831,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> DeleteBotByIdAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Object> DeleteBotByIdAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default)
         {
              ApiResponse<Object> localVarResponse = await DeleteBotByIdWithHttpInfoAsync(apiToken, botUserid, cancellationToken);
              return localVarResponse.Data;
@@ -846,7 +846,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBotByIdWithHttpInfoAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBotByIdWithHttpInfoAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -990,7 +990,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="joinChannelsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of JoinChannelsResponse</returns>
-        public async System.Threading.Tasks.Task<JoinChannelsResponse> JoinChannelsAsync (string apiToken, string botUserid, JoinChannelsData joinChannelsData = default(JoinChannelsData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<JoinChannelsResponse> JoinChannelsAsync (string apiToken, string botUserid, JoinChannelsData joinChannelsData = default(JoinChannelsData), CancellationToken cancellationToken = default)
         {
              ApiResponse<JoinChannelsResponse> localVarResponse = await JoinChannelsWithHttpInfoAsync(apiToken, botUserid, joinChannelsData, cancellationToken);
              return localVarResponse.Data;
@@ -1006,7 +1006,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="joinChannelsData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (JoinChannelsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<JoinChannelsResponse>> JoinChannelsWithHttpInfoAsync (string apiToken, string botUserid, JoinChannelsData joinChannelsData = default(JoinChannelsData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<JoinChannelsResponse>> JoinChannelsWithHttpInfoAsync (string apiToken, string botUserid, JoinChannelsData joinChannelsData = default(JoinChannelsData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1075,7 +1075,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="channelUrl"> (optional)</param>
         /// <returns></returns>
-        public void LeaveChannels (string apiToken, string botUserid, string channelUrl = default(string))
+        public void LeaveChannels (string apiToken, string botUserid, string channelUrl = default)
         {
              LeaveChannelsWithHttpInfo(apiToken, botUserid, channelUrl);
         }
@@ -1088,7 +1088,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="channelUrl"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> LeaveChannelsWithHttpInfo (string apiToken, string botUserid, string channelUrl = default(string))
+        public ApiResponse<Object> LeaveChannelsWithHttpInfo (string apiToken, string botUserid, string channelUrl = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1149,7 +1149,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task LeaveChannelsAsync (string apiToken, string botUserid, string channelUrl = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task LeaveChannelsAsync (string apiToken, string botUserid, string channelUrl = default, CancellationToken cancellationToken = default)
         {
              await LeaveChannelsWithHttpInfoAsync(apiToken, botUserid, channelUrl, cancellationToken);
 
@@ -1164,7 +1164,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> LeaveChannelsWithHttpInfoAsync (string apiToken, string botUserid, string channelUrl = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> LeaveChannelsWithHttpInfoAsync (string apiToken, string botUserid, string channelUrl = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1303,7 +1303,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> LeaveChannelsByUrlAsync (string apiToken, string botUserid, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Object> LeaveChannelsByUrlAsync (string apiToken, string botUserid, string channelUrl, CancellationToken cancellationToken = default)
         {
              ApiResponse<Object> localVarResponse = await LeaveChannelsByUrlWithHttpInfoAsync(apiToken, botUserid, channelUrl, cancellationToken);
              return localVarResponse.Data;
@@ -1319,7 +1319,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="channelUrl"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> LeaveChannelsByUrlWithHttpInfoAsync (string apiToken, string botUserid, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> LeaveChannelsByUrlWithHttpInfoAsync (string apiToken, string botUserid, string channelUrl, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1383,7 +1383,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ListBotsResponse</returns>
-        public ListBotsResponse ListBots (string apiToken, string token = default(string), int? limit = default(int?))
+        public ListBotsResponse ListBots (string apiToken, string token = default, int? limit = default)
         {
              ApiResponse<ListBotsResponse> localVarResponse = ListBotsWithHttpInfo(apiToken, token, limit);
              return localVarResponse.Data;
@@ -1397,7 +1397,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
         /// <returns>ApiResponse of ListBotsResponse</returns>
-        public ApiResponse<ListBotsResponse> ListBotsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?))
+        public ApiResponse<ListBotsResponse> ListBotsWithHttpInfo (string apiToken, string token = default, int? limit = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1456,7 +1456,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ListBotsResponse</returns>
-        public async System.Threading.Tasks.Task<ListBotsResponse> ListBotsAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ListBotsResponse> ListBotsAsync (string apiToken, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
              ApiResponse<ListBotsResponse> localVarResponse = await ListBotsWithHttpInfoAsync(apiToken, token, limit, cancellationToken);
              return localVarResponse.Data;
@@ -1472,7 +1472,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="limit"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ListBotsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListBotsResponse>> ListBotsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ListBotsResponse>> ListBotsWithHttpInfoAsync (string apiToken, string token = default, int? limit = default, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1614,7 +1614,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="sendBotSMessageData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendBirdMessageResponse</returns>
-        public async System.Threading.Tasks.Task<SendBirdMessageResponse> SendBotsMessageAsync (string apiToken, string botUserid, SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendBirdMessageResponse> SendBotsMessageAsync (string apiToken, string botUserid, SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData), CancellationToken cancellationToken = default)
         {
              ApiResponse<SendBirdMessageResponse> localVarResponse = await SendBotsMessageWithHttpInfoAsync(apiToken, botUserid, sendBotSMessageData, cancellationToken);
              return localVarResponse.Data;
@@ -1630,7 +1630,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="sendBotSMessageData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendBirdMessageResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdMessageResponse>> SendBotsMessageWithHttpInfoAsync (string apiToken, string botUserid, SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendBirdMessageResponse>> SendBotsMessageWithHttpInfoAsync (string apiToken, string botUserid, SendBotSMessageData sendBotSMessageData = default(SendBotSMessageData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1783,7 +1783,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateBotByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateBotByIdResponse</returns>
-        public async System.Threading.Tasks.Task<UpdateBotByIdResponse> UpdateBotByIdAsync (string apiToken, string botUserid, UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<UpdateBotByIdResponse> UpdateBotByIdAsync (string apiToken, string botUserid, UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default)
         {
              ApiResponse<UpdateBotByIdResponse> localVarResponse = await UpdateBotByIdWithHttpInfoAsync(apiToken, botUserid, updateBotByIdData, cancellationToken);
              return localVarResponse.Data;
@@ -1799,7 +1799,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateBotByIdData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateBotByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UpdateBotByIdResponse>> UpdateBotByIdWithHttpInfoAsync (string apiToken, string botUserid, UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateBotByIdResponse>> UpdateBotByIdWithHttpInfoAsync (string apiToken, string botUserid, UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
@@ -1940,7 +1940,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ViewBotByIdResponse</returns>
-        public async System.Threading.Tasks.Task<ViewBotByIdResponse> ViewBotByIdAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ViewBotByIdResponse> ViewBotByIdAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default)
         {
              ApiResponse<ViewBotByIdResponse> localVarResponse = await ViewBotByIdWithHttpInfoAsync(apiToken, botUserid, cancellationToken);
              return localVarResponse.Data;
@@ -1955,7 +1955,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="botUserid"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (ViewBotByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewBotByIdResponse>> ViewBotByIdWithHttpInfoAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<ViewBotByIdResponse>> ViewBotByIdWithHttpInfoAsync (string apiToken, string botUserid, CancellationToken cancellationToken = default)
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)

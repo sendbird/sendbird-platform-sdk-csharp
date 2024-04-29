@@ -38,7 +38,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="startAt">startAt.</param>
         /// <param name="endAt">endAt.</param>
         /// <param name="description">description.</param>
-        public OcViewMuteByIdResponse(bool isMuted = default(bool), decimal remainingDuration = default(decimal), decimal startAt = default(decimal), decimal endAt = default(decimal), string description = default(string))
+        public OcViewMuteByIdResponse(bool isMuted = default(bool), decimal remainingDuration = default(decimal), decimal startAt = default(decimal), decimal endAt = default(decimal), string description = default)
         {
             this.IsMuted = isMuted;
             this.RemainingDuration = remainingDuration;

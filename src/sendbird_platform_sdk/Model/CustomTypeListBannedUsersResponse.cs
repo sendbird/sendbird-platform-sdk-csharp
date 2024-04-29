@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="bannedList">bannedList.</param>
         /// <param name="next">next.</param>
-        public CustomTypeListBannedUsersResponse(List<OcListBannedUsersResponseBannedListInner> bannedList = default(List<OcListBannedUsersResponseBannedListInner>), string next = default(string))
+        public CustomTypeListBannedUsersResponse(List<OcListBannedUsersResponseBannedListInner> bannedList = default(List<OcListBannedUsersResponseBannedListInner>), string next = default)
         {
             this.BannedList = bannedList;
             this.Next = next;

@@ -38,7 +38,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="name">name.</param>
         /// <param name="coverUrl">coverUrl.</param>
         /// <param name="customType">customType.</param>
-        public ScheduleAnnouncementResponseCreateChannelOptions(bool distinct = default(bool), string data = default(string), string name = default(string), string coverUrl = default(string), string customType = default(string))
+        public ScheduleAnnouncementResponseCreateChannelOptions(bool distinct = default(bool), string data = default, string name = default, string coverUrl = default, string customType = default)
         {
             this.Distinct = distinct;
             this.Data = data;
