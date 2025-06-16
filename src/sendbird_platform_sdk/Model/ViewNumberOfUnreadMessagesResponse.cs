@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="ViewNumberOfUnreadMessagesResponse" /> class.
         /// </summary>
         /// <param name="unreadCount">unreadCount.</param>
-        public ViewNumberOfUnreadMessagesResponse(decimal unreadCount = default(decimal))
+        public ViewNumberOfUnreadMessagesResponse(int unreadCount = default(int))
         {
             this.UnreadCount = unreadCount;
         }
@@ -43,7 +43,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets UnreadCount
         /// </summary>
         [DataMember(Name="unread_count", EmitDefaultValue=false)]
-        public decimal UnreadCount { get; set; }
+        public int UnreadCount { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

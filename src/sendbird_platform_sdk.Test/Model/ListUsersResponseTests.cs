@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -66,20 +66,20 @@ namespace sendbird_platform_sdk.Test
 
 
         /// <summary>
-        /// Test the property 'Users'
-        /// </summary>
-        [Test]
-        public void UsersTest()
-        {
-            // TODO unit test for the property 'Users'
-        }
-        /// <summary>
         /// Test the property 'Next'
         /// </summary>
         [Test]
         public void NextTest()
         {
             // TODO unit test for the property 'Next'
+        }
+        /// <summary>
+        /// Test the property 'Users'
+        /// </summary>
+        [Test]
+        public void UsersTest()
+        {
+            // TODO unit test for the property 'Users'
         }
 
     }

@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -33,25 +33,25 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ListUsersResponse" /> class.
         /// </summary>
-        /// <param name="users">users.</param>
         /// <param name="next">next.</param>
-        public ListUsersResponse(List<SendBirdUser> users = default(List<SendBirdUser>), string next = default(string))
+        /// <param name="users">users.</param>
+        public ListUsersResponse(string next = default(string), List<SendbirdUser> users = default(List<SendbirdUser>))
         {
-            this.Users = users;
             this.Next = next;
+            this.Users = users;
         }
-
-        /// <summary>
-        /// Gets or Sets Users
-        /// </summary>
-        [DataMember(Name="users", EmitDefaultValue=false)]
-        public List<SendBirdUser> Users { get; set; }
 
         /// <summary>
         /// Gets or Sets Next
         /// </summary>
         [DataMember(Name="next", EmitDefaultValue=false)]
         public string Next { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Users
+        /// </summary>
+        [DataMember(Name="users", EmitDefaultValue=false)]
+        public List<SendbirdUser> Users { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -61,8 +61,8 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class ListUsersResponse {\n");
-            sb.Append("  Users: ").Append(Users).Append("\n");
             sb.Append("  Next: ").Append(Next).Append("\n");
+            sb.Append("  Users: ").Append(Users).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -98,15 +98,15 @@ namespace sendbird_platform_sdk.Model
 
             return 
                 (
+                    this.Next == input.Next ||
+                    (this.Next != null &&
+                    this.Next.Equals(input.Next))
+                ) && 
+                (
                     this.Users == input.Users ||
                     this.Users != null &&
                     input.Users != null &&
                     this.Users.SequenceEqual(input.Users)
-                ) && 
-                (
-                    this.Next == input.Next ||
-                    (this.Next != null &&
-                    this.Next.Equals(input.Next))
                 );
         }
 
@@ -119,10 +119,10 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Users != null)
-                    hashCode = hashCode * 59 + this.Users.GetHashCode();
                 if (this.Next != null)
                     hashCode = hashCode * 59 + this.Next.GetHashCode();
+                if (this.Users != null)
+                    hashCode = hashCode * 59 + this.Users.GetHashCode();
                 return hashCode;
             }
         }

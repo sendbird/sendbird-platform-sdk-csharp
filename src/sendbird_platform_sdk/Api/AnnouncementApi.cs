@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -26,415 +26,55 @@ namespace sendbird_platform_sdk.Api
     {
         #region Synchronous Operations
         /// <summary>
-        /// Get detailed open rate of an announcement group
-        /// </summary>
-        /// <remarks>
-        /// ## Get detailed open rate of an announcement group  Retrieves the detailed open rate information of an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement-group - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="announcementGroup"></param>
-        /// <returns>GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
-        GetDetailedOpenRateOfAnnouncementGroupResponse GetDetailedOpenRateOfAnnouncementGroup (string apiToken, string announcementGroup);
-
-        /// <summary>
-        /// Get detailed open rate of an announcement group
-        /// </summary>
-        /// <remarks>
-        /// ## Get detailed open rate of an announcement group  Retrieves the detailed open rate information of an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement-group - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="announcementGroup"></param>
-        /// <returns>ApiResponse of GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
-        ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfo (string apiToken, string announcementGroup);
-        /// <summary>
-        /// Get statistics - weekly
-        /// </summary>
-        /// <remarks>
-        /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <returns>GetStatisticsResponse</returns>
-        GetStatisticsResponse GetStatistics (string apiToken);
-
-        /// <summary>
-        /// Get statistics - weekly
-        /// </summary>
-        /// <remarks>
-        /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <returns>ApiResponse of GetStatisticsResponse</returns>
-        ApiResponse<GetStatisticsResponse> GetStatisticsWithHttpInfo (string apiToken);
-        /// <summary>
-        /// Get statistics - daily
-        /// </summary>
-        /// <remarks>
-        /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="startDate"></param>
-        /// <param name="endDate"></param>
-        /// <param name="startWeek"></param>
-        /// <param name="endWeek"></param>
-        /// <param name="startMonth"></param>
-        /// <param name="endMonth"></param>
-        /// <param name="announcementGroup"> (optional)</param>
-        /// <returns>GetStatisticsDailyResponse</returns>
-        GetStatisticsDailyResponse GetStatisticsDaily (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string));
-
-        /// <summary>
-        /// Get statistics - daily
-        /// </summary>
-        /// <remarks>
-        /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="startDate"></param>
-        /// <param name="endDate"></param>
-        /// <param name="startWeek"></param>
-        /// <param name="endWeek"></param>
-        /// <param name="startMonth"></param>
-        /// <param name="endMonth"></param>
-        /// <param name="announcementGroup"> (optional)</param>
-        /// <returns>ApiResponse of GetStatisticsDailyResponse</returns>
-        ApiResponse<GetStatisticsDailyResponse> GetStatisticsDailyWithHttpInfo (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string));
-        /// <summary>
-        /// Get statistics - monthly
-        /// </summary>
-        /// <remarks>
-        /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <returns>GetStatisticsMonthlyResponse</returns>
-        GetStatisticsMonthlyResponse GetStatisticsMonthly (string apiToken);
-
-        /// <summary>
-        /// Get statistics - monthly
-        /// </summary>
-        /// <remarks>
-        /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <returns>ApiResponse of GetStatisticsMonthlyResponse</returns>
-        ApiResponse<GetStatisticsMonthlyResponse> GetStatisticsMonthlyWithHttpInfo (string apiToken);
-        /// <summary>
-        /// List announcement groups
-        /// </summary>
-        /// <remarks>
-        /// ## List announcement groups  Retrieves a list of announcement groups.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcement-groups - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>ListAnnouncementGroupsResponse</returns>
-        ListAnnouncementGroupsResponse ListAnnouncementGroups (string apiToken, string token = default(string), int? limit = default(int?));
-
-        /// <summary>
-        /// List announcement groups
-        /// </summary>
-        /// <remarks>
-        /// ## List announcement groups  Retrieves a list of announcement groups.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcement-groups - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of ListAnnouncementGroupsResponse</returns>
-        ApiResponse<ListAnnouncementGroupsResponse> ListAnnouncementGroupsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?));
-        /// <summary>
         /// Schedule an announcement
         /// </summary>
         /// <remarks>
-        /// ## Schedule an announcement  Schedules a new announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-schedule-an-announcement
+        /// ## Schedule an announcement  Creates an announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  [https://sendbird.com/docs/chat/platform-api/v3/message/announcements/create-an-announcement#1-create-an-announcement](https://sendbird.com/docs/chat/platform-api/v3/message/announcements/create-an-announcement#1-create-an-announcement)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="scheduleAnnouncementData"> (optional)</param>
-        /// <returns>ScheduleAnnouncementResponse</returns>
-        ScheduleAnnouncementResponse ScheduleAnnouncement (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData));
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="scheduleAnAnnouncementRequest"> (optional)</param>
+        /// <returns>ScheduleAnAnnouncementResponse</returns>
+        ScheduleAnAnnouncementResponse ScheduleAnAnnouncement (string apiToken = default(string), ScheduleAnAnnouncementRequest scheduleAnAnnouncementRequest = default(ScheduleAnAnnouncementRequest));
 
         /// <summary>
         /// Schedule an announcement
         /// </summary>
         /// <remarks>
-        /// ## Schedule an announcement  Schedules a new announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-schedule-an-announcement
+        /// ## Schedule an announcement  Creates an announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  [https://sendbird.com/docs/chat/platform-api/v3/message/announcements/create-an-announcement#1-create-an-announcement](https://sendbird.com/docs/chat/platform-api/v3/message/announcements/create-an-announcement#1-create-an-announcement)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="scheduleAnnouncementData"> (optional)</param>
-        /// <returns>ApiResponse of ScheduleAnnouncementResponse</returns>
-        ApiResponse<ScheduleAnnouncementResponse> ScheduleAnnouncementWithHttpInfo (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData));
-        /// <summary>
-        /// Update an announcement
-        /// </summary>
-        /// <remarks>
-        /// ## Update an announcement  Updates information of a specific announcement before it starts or changes the status of a specific announcement after it starts. For the 2 different applications, refer to the request body below.  >__Note__: Updating information of an announcement is possible only when the announcement status is scheduled, indicating it hasn't started yet.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-update-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="uniqueId"></param>
-        /// <param name="updateAnnouncementByIdData"> (optional)</param>
-        /// <returns>UpdateAnnouncementByIdResponse</returns>
-        UpdateAnnouncementByIdResponse UpdateAnnouncementById (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData));
-
-        /// <summary>
-        /// Update an announcement
-        /// </summary>
-        /// <remarks>
-        /// ## Update an announcement  Updates information of a specific announcement before it starts or changes the status of a specific announcement after it starts. For the 2 different applications, refer to the request body below.  >__Note__: Updating information of an announcement is possible only when the announcement status is scheduled, indicating it hasn't started yet.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-update-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="uniqueId"></param>
-        /// <param name="updateAnnouncementByIdData"> (optional)</param>
-        /// <returns>ApiResponse of UpdateAnnouncementByIdResponse</returns>
-        ApiResponse<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdWithHttpInfo (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData));
-        /// <summary>
-        /// View an announcement
-        /// </summary>
-        /// <remarks>
-        /// ## View an announcement  Retrieves information on a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-view-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="uniqueId"></param>
-        /// <returns>ViewAnnouncementByIdResponse</returns>
-        ViewAnnouncementByIdResponse ViewAnnouncementById (string apiToken, string uniqueId);
-
-        /// <summary>
-        /// View an announcement
-        /// </summary>
-        /// <remarks>
-        /// ## View an announcement  Retrieves information on a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-view-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="uniqueId"></param>
-        /// <returns>ApiResponse of ViewAnnouncementByIdResponse</returns>
-        ApiResponse<ViewAnnouncementByIdResponse> ViewAnnouncementByIdWithHttpInfo (string apiToken, string uniqueId);
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="scheduleAnAnnouncementRequest"> (optional)</param>
+        /// <returns>ApiResponse of ScheduleAnAnnouncementResponse</returns>
+        ApiResponse<ScheduleAnAnnouncementResponse> ScheduleAnAnnouncementWithHttpInfo (string apiToken = default(string), ScheduleAnAnnouncementRequest scheduleAnAnnouncementRequest = default(ScheduleAnAnnouncementRequest));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
-        /// Get detailed open rate of an announcement group
-        /// </summary>
-        /// <remarks>
-        /// ## Get detailed open rate of an announcement group  Retrieves the detailed open rate information of an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement-group - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="announcementGroup"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
-        System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupAsync (string apiToken, string announcementGroup, CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Get detailed open rate of an announcement group
-        /// </summary>
-        /// <remarks>
-        /// ## Get detailed open rate of an announcement group  Retrieves the detailed open rate information of an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement-group - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="announcementGroup"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GetDetailedOpenRateOfAnnouncementGroupResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse>> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync (string apiToken, string announcementGroup, CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Get statistics - weekly
-        /// </summary>
-        /// <remarks>
-        /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GetStatisticsResponse</returns>
-        System.Threading.Tasks.Task<GetStatisticsResponse> GetStatisticsAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Get statistics - weekly
-        /// </summary>
-        /// <remarks>
-        /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GetStatisticsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetStatisticsResponse>> GetStatisticsWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Get statistics - daily
-        /// </summary>
-        /// <remarks>
-        /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="startDate"></param>
-        /// <param name="endDate"></param>
-        /// <param name="startWeek"></param>
-        /// <param name="endWeek"></param>
-        /// <param name="startMonth"></param>
-        /// <param name="endMonth"></param>
-        /// <param name="announcementGroup"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GetStatisticsDailyResponse</returns>
-        System.Threading.Tasks.Task<GetStatisticsDailyResponse> GetStatisticsDailyAsync (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Get statistics - daily
-        /// </summary>
-        /// <remarks>
-        /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="startDate"></param>
-        /// <param name="endDate"></param>
-        /// <param name="startWeek"></param>
-        /// <param name="endWeek"></param>
-        /// <param name="startMonth"></param>
-        /// <param name="endMonth"></param>
-        /// <param name="announcementGroup"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GetStatisticsDailyResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetStatisticsDailyResponse>> GetStatisticsDailyWithHttpInfoAsync (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Get statistics - monthly
-        /// </summary>
-        /// <remarks>
-        /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GetStatisticsMonthlyResponse</returns>
-        System.Threading.Tasks.Task<GetStatisticsMonthlyResponse> GetStatisticsMonthlyAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Get statistics - monthly
-        /// </summary>
-        /// <remarks>
-        /// ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GetStatisticsMonthlyResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetStatisticsMonthlyResponse>> GetStatisticsMonthlyWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// List announcement groups
-        /// </summary>
-        /// <remarks>
-        /// ## List announcement groups  Retrieves a list of announcement groups.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcement-groups - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ListAnnouncementGroupsResponse</returns>
-        System.Threading.Tasks.Task<ListAnnouncementGroupsResponse> ListAnnouncementGroupsAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// List announcement groups
-        /// </summary>
-        /// <remarks>
-        /// ## List announcement groups  Retrieves a list of announcement groups.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcement-groups - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (ListAnnouncementGroupsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ListAnnouncementGroupsResponse>> ListAnnouncementGroupsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
         /// Schedule an announcement
         /// </summary>
         /// <remarks>
-        /// ## Schedule an announcement  Schedules a new announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-schedule-an-announcement
+        /// ## Schedule an announcement  Creates an announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  [https://sendbird.com/docs/chat/platform-api/v3/message/announcements/create-an-announcement#1-create-an-announcement](https://sendbird.com/docs/chat/platform-api/v3/message/announcements/create-an-announcement#1-create-an-announcement)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="scheduleAnnouncementData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="scheduleAnAnnouncementRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ScheduleAnnouncementResponse</returns>
-        System.Threading.Tasks.Task<ScheduleAnnouncementResponse> ScheduleAnnouncementAsync (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ScheduleAnAnnouncementResponse</returns>
+        System.Threading.Tasks.Task<ScheduleAnAnnouncementResponse> ScheduleAnAnnouncementAsync (string apiToken = default(string), ScheduleAnAnnouncementRequest scheduleAnAnnouncementRequest = default(ScheduleAnAnnouncementRequest), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Schedule an announcement
         /// </summary>
         /// <remarks>
-        /// ## Schedule an announcement  Schedules a new announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-schedule-an-announcement
+        /// ## Schedule an announcement  Creates an announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  [https://sendbird.com/docs/chat/platform-api/v3/message/announcements/create-an-announcement#1-create-an-announcement](https://sendbird.com/docs/chat/platform-api/v3/message/announcements/create-an-announcement#1-create-an-announcement)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="scheduleAnnouncementData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="scheduleAnAnnouncementRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (ScheduleAnnouncementResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ScheduleAnnouncementResponse>> ScheduleAnnouncementWithHttpInfoAsync (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Update an announcement
-        /// </summary>
-        /// <remarks>
-        /// ## Update an announcement  Updates information of a specific announcement before it starts or changes the status of a specific announcement after it starts. For the 2 different applications, refer to the request body below.  >__Note__: Updating information of an announcement is possible only when the announcement status is scheduled, indicating it hasn't started yet.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-update-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="uniqueId"></param>
-        /// <param name="updateAnnouncementByIdData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of UpdateAnnouncementByIdResponse</returns>
-        System.Threading.Tasks.Task<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdAsync (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Update an announcement
-        /// </summary>
-        /// <remarks>
-        /// ## Update an announcement  Updates information of a specific announcement before it starts or changes the status of a specific announcement after it starts. For the 2 different applications, refer to the request body below.  >__Note__: Updating information of an announcement is possible only when the announcement status is scheduled, indicating it hasn't started yet.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-update-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="uniqueId"></param>
-        /// <param name="updateAnnouncementByIdData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (UpdateAnnouncementByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UpdateAnnouncementByIdResponse>> UpdateAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// View an announcement
-        /// </summary>
-        /// <remarks>
-        /// ## View an announcement  Retrieves information on a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-view-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="uniqueId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ViewAnnouncementByIdResponse</returns>
-        System.Threading.Tasks.Task<ViewAnnouncementByIdResponse> ViewAnnouncementByIdAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// View an announcement
-        /// </summary>
-        /// <remarks>
-        /// ## View an announcement  Retrieves information on a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-view-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="uniqueId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (ViewAnnouncementByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ViewAnnouncementByIdResponse>> ViewAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ScheduleAnAnnouncementResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ScheduleAnAnnouncementResponse>> ScheduleAnAnnouncementWithHttpInfoAsync (string apiToken = default(string), ScheduleAnAnnouncementRequest scheduleAnAnnouncementRequest = default(ScheduleAnAnnouncementRequest), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -547,807 +187,27 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Get detailed open rate of an announcement group ## Get detailed open rate of an announcement group  Retrieves the detailed open rate information of an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement-group - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Schedule an announcement ## Schedule an announcement  Creates an announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  [https://sendbird.com/docs/chat/platform-api/v3/message/announcements/create-an-announcement#1-create-an-announcement](https://sendbird.com/docs/chat/platform-api/v3/message/announcements/create-an-announcement#1-create-an-announcement)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="announcementGroup"></param>
-        /// <returns>GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
-        public GetDetailedOpenRateOfAnnouncementGroupResponse GetDetailedOpenRateOfAnnouncementGroup (string apiToken, string announcementGroup)
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="scheduleAnAnnouncementRequest"> (optional)</param>
+        /// <returns>ScheduleAnAnnouncementResponse</returns>
+        public ScheduleAnAnnouncementResponse ScheduleAnAnnouncement (string apiToken = default(string), ScheduleAnAnnouncementRequest scheduleAnAnnouncementRequest = default(ScheduleAnAnnouncementRequest))
         {
-             ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse> localVarResponse = GetDetailedOpenRateOfAnnouncementGroupWithHttpInfo(apiToken, announcementGroup);
+             ApiResponse<ScheduleAnAnnouncementResponse> localVarResponse = ScheduleAnAnnouncementWithHttpInfo(apiToken, scheduleAnAnnouncementRequest);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Get detailed open rate of an announcement group ## Get detailed open rate of an announcement group  Retrieves the detailed open rate information of an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement-group - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Schedule an announcement ## Schedule an announcement  Creates an announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  [https://sendbird.com/docs/chat/platform-api/v3/message/announcements/create-an-announcement#1-create-an-announcement](https://sendbird.com/docs/chat/platform-api/v3/message/announcements/create-an-announcement#1-create-an-announcement)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="announcementGroup"></param>
-        /// <returns>ApiResponse of GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
-        public ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfo (string apiToken, string announcementGroup)
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="scheduleAnAnnouncementRequest"> (optional)</param>
+        /// <returns>ApiResponse of ScheduleAnAnnouncementResponse</returns>
+        public ApiResponse<ScheduleAnAnnouncementResponse> ScheduleAnAnnouncementWithHttpInfo (string apiToken = default(string), ScheduleAnAnnouncementRequest scheduleAnAnnouncementRequest = default(ScheduleAnAnnouncementRequest))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementApi->GetDetailedOpenRateOfAnnouncementGroup");
-            // verify the required parameter 'announcementGroup' is set
-            if (announcementGroup == null)
-                throw new ApiException(400, "Missing required parameter 'announcementGroup' when calling AnnouncementApi->GetDetailedOpenRateOfAnnouncementGroup");
-
-            var localVarPath = "/v3/announcement_open_rate_by_group/{announcement_group}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (announcementGroup != null) localVarPathParams.Add("announcement_group", this.Configuration.ApiClient.ParameterToString(announcementGroup)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetDetailedOpenRateOfAnnouncementGroup", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GetDetailedOpenRateOfAnnouncementGroupResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetDetailedOpenRateOfAnnouncementGroupResponse)));
-        }
-
-        /// <summary>
-        /// Get detailed open rate of an announcement group ## Get detailed open rate of an announcement group  Retrieves the detailed open rate information of an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement-group - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="announcementGroup"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GetDetailedOpenRateOfAnnouncementGroupResponse</returns>
-        public async System.Threading.Tasks.Task<GetDetailedOpenRateOfAnnouncementGroupResponse> GetDetailedOpenRateOfAnnouncementGroupAsync (string apiToken, string announcementGroup, CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse> localVarResponse = await GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync(apiToken, announcementGroup, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Get detailed open rate of an announcement group ## Get detailed open rate of an announcement group  Retrieves the detailed open rate information of an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-detailed-open-rate-of-an-announcement-group - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="announcementGroup"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GetDetailedOpenRateOfAnnouncementGroupResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse>> GetDetailedOpenRateOfAnnouncementGroupWithHttpInfoAsync (string apiToken, string announcementGroup, CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementApi->GetDetailedOpenRateOfAnnouncementGroup");
-            // verify the required parameter 'announcementGroup' is set
-            if (announcementGroup == null)
-                throw new ApiException(400, "Missing required parameter 'announcementGroup' when calling AnnouncementApi->GetDetailedOpenRateOfAnnouncementGroup");
-
-            var localVarPath = "/v3/announcement_open_rate_by_group/{announcement_group}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (announcementGroup != null) localVarPathParams.Add("announcement_group", this.Configuration.ApiClient.ParameterToString(announcementGroup)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetDetailedOpenRateOfAnnouncementGroup", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<GetDetailedOpenRateOfAnnouncementGroupResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GetDetailedOpenRateOfAnnouncementGroupResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetDetailedOpenRateOfAnnouncementGroupResponse)));
-        }
-
-        /// <summary>
-        /// Get statistics - weekly ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <returns>GetStatisticsResponse</returns>
-        public GetStatisticsResponse GetStatistics (string apiToken)
-        {
-             ApiResponse<GetStatisticsResponse> localVarResponse = GetStatisticsWithHttpInfo(apiToken);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Get statistics - weekly ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <returns>ApiResponse of GetStatisticsResponse</returns>
-        public ApiResponse<GetStatisticsResponse> GetStatisticsWithHttpInfo (string apiToken)
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementApi->GetStatistics");
-
-            var localVarPath = "/v3/announcement_stats/weekly";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetStatistics", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<GetStatisticsResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GetStatisticsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetStatisticsResponse)));
-        }
-
-        /// <summary>
-        /// Get statistics - weekly ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GetStatisticsResponse</returns>
-        public async System.Threading.Tasks.Task<GetStatisticsResponse> GetStatisticsAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<GetStatisticsResponse> localVarResponse = await GetStatisticsWithHttpInfoAsync(apiToken, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Get statistics - weekly ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GetStatisticsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GetStatisticsResponse>> GetStatisticsWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementApi->GetStatistics");
-
-            var localVarPath = "/v3/announcement_stats/weekly";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetStatistics", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<GetStatisticsResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GetStatisticsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetStatisticsResponse)));
-        }
-
-        /// <summary>
-        /// Get statistics - daily ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="startDate"></param>
-        /// <param name="endDate"></param>
-        /// <param name="startWeek"></param>
-        /// <param name="endWeek"></param>
-        /// <param name="startMonth"></param>
-        /// <param name="endMonth"></param>
-        /// <param name="announcementGroup"> (optional)</param>
-        /// <returns>GetStatisticsDailyResponse</returns>
-        public GetStatisticsDailyResponse GetStatisticsDaily (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string))
-        {
-             ApiResponse<GetStatisticsDailyResponse> localVarResponse = GetStatisticsDailyWithHttpInfo(apiToken, startDate, endDate, startWeek, endWeek, startMonth, endMonth, announcementGroup);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Get statistics - daily ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="startDate"></param>
-        /// <param name="endDate"></param>
-        /// <param name="startWeek"></param>
-        /// <param name="endWeek"></param>
-        /// <param name="startMonth"></param>
-        /// <param name="endMonth"></param>
-        /// <param name="announcementGroup"> (optional)</param>
-        /// <returns>ApiResponse of GetStatisticsDailyResponse</returns>
-        public ApiResponse<GetStatisticsDailyResponse> GetStatisticsDailyWithHttpInfo (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementApi->GetStatisticsDaily");
-            // verify the required parameter 'startDate' is set
-            if (startDate == null)
-                throw new ApiException(400, "Missing required parameter 'startDate' when calling AnnouncementApi->GetStatisticsDaily");
-            // verify the required parameter 'endDate' is set
-            if (endDate == null)
-                throw new ApiException(400, "Missing required parameter 'endDate' when calling AnnouncementApi->GetStatisticsDaily");
-            // verify the required parameter 'startWeek' is set
-            if (startWeek == null)
-                throw new ApiException(400, "Missing required parameter 'startWeek' when calling AnnouncementApi->GetStatisticsDaily");
-            // verify the required parameter 'endWeek' is set
-            if (endWeek == null)
-                throw new ApiException(400, "Missing required parameter 'endWeek' when calling AnnouncementApi->GetStatisticsDaily");
-            // verify the required parameter 'startMonth' is set
-            if (startMonth == null)
-                throw new ApiException(400, "Missing required parameter 'startMonth' when calling AnnouncementApi->GetStatisticsDaily");
-            // verify the required parameter 'endMonth' is set
-            if (endMonth == null)
-                throw new ApiException(400, "Missing required parameter 'endMonth' when calling AnnouncementApi->GetStatisticsDaily");
-
-            var localVarPath = "/v3/announcement_stats/daily";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (startDate != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "start_date", startDate)); // query parameter
-            if (endDate != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "end_date", endDate)); // query parameter
-            if (startWeek != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "start_week", startWeek)); // query parameter
-            if (endWeek != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "end_week", endWeek)); // query parameter
-            if (startMonth != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "start_month", startMonth)); // query parameter
-            if (endMonth != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "end_month", endMonth)); // query parameter
-            if (announcementGroup != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "announcement_group", announcementGroup)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetStatisticsDaily", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<GetStatisticsDailyResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GetStatisticsDailyResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetStatisticsDailyResponse)));
-        }
-
-        /// <summary>
-        /// Get statistics - daily ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="startDate"></param>
-        /// <param name="endDate"></param>
-        /// <param name="startWeek"></param>
-        /// <param name="endWeek"></param>
-        /// <param name="startMonth"></param>
-        /// <param name="endMonth"></param>
-        /// <param name="announcementGroup"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GetStatisticsDailyResponse</returns>
-        public async System.Threading.Tasks.Task<GetStatisticsDailyResponse> GetStatisticsDailyAsync (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<GetStatisticsDailyResponse> localVarResponse = await GetStatisticsDailyWithHttpInfoAsync(apiToken, startDate, endDate, startWeek, endWeek, startMonth, endMonth, announcementGroup, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Get statistics - daily ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="startDate"></param>
-        /// <param name="endDate"></param>
-        /// <param name="startWeek"></param>
-        /// <param name="endWeek"></param>
-        /// <param name="startMonth"></param>
-        /// <param name="endMonth"></param>
-        /// <param name="announcementGroup"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GetStatisticsDailyResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GetStatisticsDailyResponse>> GetStatisticsDailyWithHttpInfoAsync (string apiToken, string startDate, string endDate, string startWeek, string endWeek, string startMonth, string endMonth, string announcementGroup = default(string), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementApi->GetStatisticsDaily");
-            // verify the required parameter 'startDate' is set
-            if (startDate == null)
-                throw new ApiException(400, "Missing required parameter 'startDate' when calling AnnouncementApi->GetStatisticsDaily");
-            // verify the required parameter 'endDate' is set
-            if (endDate == null)
-                throw new ApiException(400, "Missing required parameter 'endDate' when calling AnnouncementApi->GetStatisticsDaily");
-            // verify the required parameter 'startWeek' is set
-            if (startWeek == null)
-                throw new ApiException(400, "Missing required parameter 'startWeek' when calling AnnouncementApi->GetStatisticsDaily");
-            // verify the required parameter 'endWeek' is set
-            if (endWeek == null)
-                throw new ApiException(400, "Missing required parameter 'endWeek' when calling AnnouncementApi->GetStatisticsDaily");
-            // verify the required parameter 'startMonth' is set
-            if (startMonth == null)
-                throw new ApiException(400, "Missing required parameter 'startMonth' when calling AnnouncementApi->GetStatisticsDaily");
-            // verify the required parameter 'endMonth' is set
-            if (endMonth == null)
-                throw new ApiException(400, "Missing required parameter 'endMonth' when calling AnnouncementApi->GetStatisticsDaily");
-
-            var localVarPath = "/v3/announcement_stats/daily";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (startDate != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "start_date", startDate)); // query parameter
-            if (endDate != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "end_date", endDate)); // query parameter
-            if (startWeek != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "start_week", startWeek)); // query parameter
-            if (endWeek != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "end_week", endWeek)); // query parameter
-            if (startMonth != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "start_month", startMonth)); // query parameter
-            if (endMonth != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "end_month", endMonth)); // query parameter
-            if (announcementGroup != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "announcement_group", announcementGroup)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetStatisticsDaily", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<GetStatisticsDailyResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GetStatisticsDailyResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetStatisticsDailyResponse)));
-        }
-
-        /// <summary>
-        /// Get statistics - monthly ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <returns>GetStatisticsMonthlyResponse</returns>
-        public GetStatisticsMonthlyResponse GetStatisticsMonthly (string apiToken)
-        {
-             ApiResponse<GetStatisticsMonthlyResponse> localVarResponse = GetStatisticsMonthlyWithHttpInfo(apiToken);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Get statistics - monthly ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <returns>ApiResponse of GetStatisticsMonthlyResponse</returns>
-        public ApiResponse<GetStatisticsMonthlyResponse> GetStatisticsMonthlyWithHttpInfo (string apiToken)
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementApi->GetStatisticsMonthly");
-
-            var localVarPath = "/v3/announcement_stats/monthly";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetStatisticsMonthly", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<GetStatisticsMonthlyResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GetStatisticsMonthlyResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetStatisticsMonthlyResponse)));
-        }
-
-        /// <summary>
-        /// Get statistics - monthly ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GetStatisticsMonthlyResponse</returns>
-        public async System.Threading.Tasks.Task<GetStatisticsMonthlyResponse> GetStatisticsMonthlyAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<GetStatisticsMonthlyResponse> localVarResponse = await GetStatisticsMonthlyWithHttpInfoAsync(apiToken, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Get statistics - monthly ## Get statistics  Retrieves the daily, weekly or monthly statistics of an announcement or an announcement group.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-get-statistics - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GetStatisticsMonthlyResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GetStatisticsMonthlyResponse>> GetStatisticsMonthlyWithHttpInfoAsync (string apiToken, CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementApi->GetStatisticsMonthly");
-
-            var localVarPath = "/v3/announcement_stats/monthly";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetStatisticsMonthly", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<GetStatisticsMonthlyResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GetStatisticsMonthlyResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetStatisticsMonthlyResponse)));
-        }
-
-        /// <summary>
-        /// List announcement groups ## List announcement groups  Retrieves a list of announcement groups.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcement-groups - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>ListAnnouncementGroupsResponse</returns>
-        public ListAnnouncementGroupsResponse ListAnnouncementGroups (string apiToken, string token = default(string), int? limit = default(int?))
-        {
-             ApiResponse<ListAnnouncementGroupsResponse> localVarResponse = ListAnnouncementGroupsWithHttpInfo(apiToken, token, limit);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// List announcement groups ## List announcement groups  Retrieves a list of announcement groups.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcement-groups - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of ListAnnouncementGroupsResponse</returns>
-        public ApiResponse<ListAnnouncementGroupsResponse> ListAnnouncementGroupsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementApi->ListAnnouncementGroups");
-
-            var localVarPath = "/v3/announcement_group";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
-            if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("ListAnnouncementGroups", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<ListAnnouncementGroupsResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (ListAnnouncementGroupsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListAnnouncementGroupsResponse)));
-        }
-
-        /// <summary>
-        /// List announcement groups ## List announcement groups  Retrieves a list of announcement groups.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcement-groups - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ListAnnouncementGroupsResponse</returns>
-        public async System.Threading.Tasks.Task<ListAnnouncementGroupsResponse> ListAnnouncementGroupsAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<ListAnnouncementGroupsResponse> localVarResponse = await ListAnnouncementGroupsWithHttpInfoAsync(apiToken, token, limit, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// List announcement groups ## List announcement groups  Retrieves a list of announcement groups.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-list-announcement-groups - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (ListAnnouncementGroupsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ListAnnouncementGroupsResponse>> ListAnnouncementGroupsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementApi->ListAnnouncementGroups");
-
-            var localVarPath = "/v3/announcement_group";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
-            if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("ListAnnouncementGroups", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<ListAnnouncementGroupsResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (ListAnnouncementGroupsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListAnnouncementGroupsResponse)));
-        }
-
-        /// <summary>
-        /// Schedule an announcement ## Schedule an announcement  Schedules a new announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-schedule-an-announcement
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="scheduleAnnouncementData"> (optional)</param>
-        /// <returns>ScheduleAnnouncementResponse</returns>
-        public ScheduleAnnouncementResponse ScheduleAnnouncement (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData))
-        {
-             ApiResponse<ScheduleAnnouncementResponse> localVarResponse = ScheduleAnnouncementWithHttpInfo(apiToken, scheduleAnnouncementData);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Schedule an announcement ## Schedule an announcement  Schedules a new announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-schedule-an-announcement
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="scheduleAnnouncementData"> (optional)</param>
-        /// <returns>ApiResponse of ScheduleAnnouncementResponse</returns>
-        public ApiResponse<ScheduleAnnouncementResponse> ScheduleAnnouncementWithHttpInfo (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementApi->ScheduleAnnouncement");
 
             var localVarPath = "/v3/announcements";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1371,14 +231,14 @@ namespace sendbird_platform_sdk.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (scheduleAnnouncementData != null && scheduleAnnouncementData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (scheduleAnAnnouncementRequest != null && scheduleAnAnnouncementRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(scheduleAnnouncementData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(scheduleAnAnnouncementRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = scheduleAnnouncementData; // byte array
+                localVarPostBody = scheduleAnAnnouncementRequest; // byte array
             }
 
 
@@ -1391,43 +251,40 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("ScheduleAnnouncement", localVarResponse);
+                Exception exception = ExceptionFactory("ScheduleAnAnnouncement", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<ScheduleAnnouncementResponse>(localVarStatusCode,
+            return new ApiResponse<ScheduleAnAnnouncementResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (ScheduleAnnouncementResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ScheduleAnnouncementResponse)));
+                (ScheduleAnAnnouncementResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ScheduleAnAnnouncementResponse)));
         }
 
         /// <summary>
-        /// Schedule an announcement ## Schedule an announcement  Schedules a new announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-schedule-an-announcement
+        /// Schedule an announcement ## Schedule an announcement  Creates an announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  [https://sendbird.com/docs/chat/platform-api/v3/message/announcements/create-an-announcement#1-create-an-announcement](https://sendbird.com/docs/chat/platform-api/v3/message/announcements/create-an-announcement#1-create-an-announcement)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="scheduleAnnouncementData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="scheduleAnAnnouncementRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ScheduleAnnouncementResponse</returns>
-        public async System.Threading.Tasks.Task<ScheduleAnnouncementResponse> ScheduleAnnouncementAsync (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ScheduleAnAnnouncementResponse</returns>
+        public async System.Threading.Tasks.Task<ScheduleAnAnnouncementResponse> ScheduleAnAnnouncementAsync (string apiToken = default(string), ScheduleAnAnnouncementRequest scheduleAnAnnouncementRequest = default(ScheduleAnAnnouncementRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<ScheduleAnnouncementResponse> localVarResponse = await ScheduleAnnouncementWithHttpInfoAsync(apiToken, scheduleAnnouncementData, cancellationToken);
+             ApiResponse<ScheduleAnAnnouncementResponse> localVarResponse = await ScheduleAnAnnouncementWithHttpInfoAsync(apiToken, scheduleAnAnnouncementRequest, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Schedule an announcement ## Schedule an announcement  Schedules a new announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-schedule-an-announcement
+        /// Schedule an announcement ## Schedule an announcement  Creates an announcement. You can also schedule an announcement in the [Sendbird Dashboard](https://dashboard.sendbird.com).  [https://sendbird.com/docs/chat/platform-api/v3/message/announcements/create-an-announcement#1-create-an-announcement](https://sendbird.com/docs/chat/platform-api/v3/message/announcements/create-an-announcement#1-create-an-announcement)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="scheduleAnnouncementData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="scheduleAnAnnouncementRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (ScheduleAnnouncementResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ScheduleAnnouncementResponse>> ScheduleAnnouncementWithHttpInfoAsync (string apiToken, ScheduleAnnouncementData scheduleAnnouncementData = default(ScheduleAnnouncementData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ScheduleAnAnnouncementResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ScheduleAnAnnouncementResponse>> ScheduleAnAnnouncementWithHttpInfoAsync (string apiToken = default(string), ScheduleAnAnnouncementRequest scheduleAnAnnouncementRequest = default(ScheduleAnAnnouncementRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementApi->ScheduleAnnouncement");
 
             var localVarPath = "/v3/announcements";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1451,14 +308,14 @@ namespace sendbird_platform_sdk.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (scheduleAnnouncementData != null && scheduleAnnouncementData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (scheduleAnAnnouncementRequest != null && scheduleAnAnnouncementRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(scheduleAnnouncementData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(scheduleAnAnnouncementRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = scheduleAnnouncementData; // byte array
+                localVarPostBody = scheduleAnAnnouncementRequest; // byte array
             }
 
 
@@ -1471,329 +328,13 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("ScheduleAnnouncement", localVarResponse);
+                Exception exception = ExceptionFactory("ScheduleAnAnnouncement", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<ScheduleAnnouncementResponse>(localVarStatusCode,
+            return new ApiResponse<ScheduleAnAnnouncementResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (ScheduleAnnouncementResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ScheduleAnnouncementResponse)));
-        }
-
-        /// <summary>
-        /// Update an announcement ## Update an announcement  Updates information of a specific announcement before it starts or changes the status of a specific announcement after it starts. For the 2 different applications, refer to the request body below.  >__Note__: Updating information of an announcement is possible only when the announcement status is scheduled, indicating it hasn't started yet.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-update-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="uniqueId"></param>
-        /// <param name="updateAnnouncementByIdData"> (optional)</param>
-        /// <returns>UpdateAnnouncementByIdResponse</returns>
-        public UpdateAnnouncementByIdResponse UpdateAnnouncementById (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData))
-        {
-             ApiResponse<UpdateAnnouncementByIdResponse> localVarResponse = UpdateAnnouncementByIdWithHttpInfo(apiToken, uniqueId, updateAnnouncementByIdData);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Update an announcement ## Update an announcement  Updates information of a specific announcement before it starts or changes the status of a specific announcement after it starts. For the 2 different applications, refer to the request body below.  >__Note__: Updating information of an announcement is possible only when the announcement status is scheduled, indicating it hasn't started yet.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-update-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="uniqueId"></param>
-        /// <param name="updateAnnouncementByIdData"> (optional)</param>
-        /// <returns>ApiResponse of UpdateAnnouncementByIdResponse</returns>
-        public ApiResponse<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdWithHttpInfo (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementApi->UpdateAnnouncementById");
-            // verify the required parameter 'uniqueId' is set
-            if (uniqueId == null)
-                throw new ApiException(400, "Missing required parameter 'uniqueId' when calling AnnouncementApi->UpdateAnnouncementById");
-
-            var localVarPath = "/v3/announcements/{unique_id}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (uniqueId != null) localVarPathParams.Add("unique_id", this.Configuration.ApiClient.ParameterToString(uniqueId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (updateAnnouncementByIdData != null && updateAnnouncementByIdData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(updateAnnouncementByIdData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = updateAnnouncementByIdData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("UpdateAnnouncementById", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<UpdateAnnouncementByIdResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (UpdateAnnouncementByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateAnnouncementByIdResponse)));
-        }
-
-        /// <summary>
-        /// Update an announcement ## Update an announcement  Updates information of a specific announcement before it starts or changes the status of a specific announcement after it starts. For the 2 different applications, refer to the request body below.  >__Note__: Updating information of an announcement is possible only when the announcement status is scheduled, indicating it hasn't started yet.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-update-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="uniqueId"></param>
-        /// <param name="updateAnnouncementByIdData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of UpdateAnnouncementByIdResponse</returns>
-        public async System.Threading.Tasks.Task<UpdateAnnouncementByIdResponse> UpdateAnnouncementByIdAsync (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<UpdateAnnouncementByIdResponse> localVarResponse = await UpdateAnnouncementByIdWithHttpInfoAsync(apiToken, uniqueId, updateAnnouncementByIdData, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Update an announcement ## Update an announcement  Updates information of a specific announcement before it starts or changes the status of a specific announcement after it starts. For the 2 different applications, refer to the request body below.  >__Note__: Updating information of an announcement is possible only when the announcement status is scheduled, indicating it hasn't started yet.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-update-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="uniqueId"></param>
-        /// <param name="updateAnnouncementByIdData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (UpdateAnnouncementByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UpdateAnnouncementByIdResponse>> UpdateAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, UpdateAnnouncementByIdData updateAnnouncementByIdData = default(UpdateAnnouncementByIdData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementApi->UpdateAnnouncementById");
-            // verify the required parameter 'uniqueId' is set
-            if (uniqueId == null)
-                throw new ApiException(400, "Missing required parameter 'uniqueId' when calling AnnouncementApi->UpdateAnnouncementById");
-
-            var localVarPath = "/v3/announcements/{unique_id}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (uniqueId != null) localVarPathParams.Add("unique_id", this.Configuration.ApiClient.ParameterToString(uniqueId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (updateAnnouncementByIdData != null && updateAnnouncementByIdData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(updateAnnouncementByIdData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = updateAnnouncementByIdData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("UpdateAnnouncementById", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<UpdateAnnouncementByIdResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (UpdateAnnouncementByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateAnnouncementByIdResponse)));
-        }
-
-        /// <summary>
-        /// View an announcement ## View an announcement  Retrieves information on a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-view-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="uniqueId"></param>
-        /// <returns>ViewAnnouncementByIdResponse</returns>
-        public ViewAnnouncementByIdResponse ViewAnnouncementById (string apiToken, string uniqueId)
-        {
-             ApiResponse<ViewAnnouncementByIdResponse> localVarResponse = ViewAnnouncementByIdWithHttpInfo(apiToken, uniqueId);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// View an announcement ## View an announcement  Retrieves information on a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-view-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="uniqueId"></param>
-        /// <returns>ApiResponse of ViewAnnouncementByIdResponse</returns>
-        public ApiResponse<ViewAnnouncementByIdResponse> ViewAnnouncementByIdWithHttpInfo (string apiToken, string uniqueId)
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementApi->ViewAnnouncementById");
-            // verify the required parameter 'uniqueId' is set
-            if (uniqueId == null)
-                throw new ApiException(400, "Missing required parameter 'uniqueId' when calling AnnouncementApi->ViewAnnouncementById");
-
-            var localVarPath = "/v3/announcements/{unique_id}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (uniqueId != null) localVarPathParams.Add("unique_id", this.Configuration.ApiClient.ParameterToString(uniqueId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("ViewAnnouncementById", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<ViewAnnouncementByIdResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (ViewAnnouncementByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewAnnouncementByIdResponse)));
-        }
-
-        /// <summary>
-        /// View an announcement ## View an announcement  Retrieves information on a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-view-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="uniqueId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ViewAnnouncementByIdResponse</returns>
-        public async System.Threading.Tasks.Task<ViewAnnouncementByIdResponse> ViewAnnouncementByIdAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<ViewAnnouncementByIdResponse> localVarResponse = await ViewAnnouncementByIdWithHttpInfoAsync(apiToken, uniqueId, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// View an announcement ## View an announcement  Retrieves information on a specific announcement.  https://sendbird.com/docs/chat/v3/platform-api/guides/announcements#2-view-an-announcement - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="uniqueId"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (ViewAnnouncementByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<ViewAnnouncementByIdResponse>> ViewAnnouncementByIdWithHttpInfoAsync (string apiToken, string uniqueId, CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling AnnouncementApi->ViewAnnouncementById");
-            // verify the required parameter 'uniqueId' is set
-            if (uniqueId == null)
-                throw new ApiException(400, "Missing required parameter 'uniqueId' when calling AnnouncementApi->ViewAnnouncementById");
-
-            var localVarPath = "/v3/announcements/{unique_id}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (uniqueId != null) localVarPathParams.Add("unique_id", this.Configuration.ApiClient.ParameterToString(uniqueId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("ViewAnnouncementById", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<ViewAnnouncementByIdResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (ViewAnnouncementByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewAnnouncementByIdResponse)));
+                (ScheduleAnAnnouncementResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ScheduleAnAnnouncementResponse)));
         }
 
     }

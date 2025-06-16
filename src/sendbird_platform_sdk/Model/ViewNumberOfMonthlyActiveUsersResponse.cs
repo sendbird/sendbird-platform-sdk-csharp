@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="ViewNumberOfMonthlyActiveUsersResponse" /> class.
         /// </summary>
         /// <param name="mau">mau.</param>
-        public ViewNumberOfMonthlyActiveUsersResponse(decimal mau = default(decimal))
+        public ViewNumberOfMonthlyActiveUsersResponse(int mau = default(int))
         {
             this.Mau = mau;
         }
@@ -43,7 +43,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets Mau
         /// </summary>
         [DataMember(Name="mau", EmitDefaultValue=false)]
-        public decimal Mau { get; set; }
+        public int Mau { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

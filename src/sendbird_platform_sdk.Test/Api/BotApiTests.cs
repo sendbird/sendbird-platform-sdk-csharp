@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -64,29 +64,16 @@ namespace sendbird_platform_sdk.Test
 
         
         /// <summary>
-        /// Test CreateBot
+        /// Test CreateABot
         /// </summary>
         [Test]
-        public void CreateBotTest()
+        public void CreateABotTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
-            //CreateBotData createBotData = null;
-            //var response = instance.CreateBot(apiToken, createBotData);
-            //Assert.IsInstanceOf(typeof(CreateBotResponse), response, "response is CreateBotResponse");
-        }
-        
-        /// <summary>
-        /// Test DeleteBotById
-        /// </summary>
-        [Test]
-        public void DeleteBotByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string botUserid = null;
-            //var response = instance.DeleteBotById(apiToken, botUserid);
-            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
+            //CreateABotRequest createABotRequest = null;
+            //var response = instance.CreateABot(apiToken, createABotRequest);
+            //Assert.IsInstanceOf(typeof(CreateABotResponse), response, "response is CreateABotResponse");
         }
         
         /// <summary>
@@ -96,38 +83,37 @@ namespace sendbird_platform_sdk.Test
         public void JoinChannelsTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string botUserid = null;
-            //JoinChannelsData joinChannelsData = null;
-            //var response = instance.JoinChannels(apiToken, botUserid, joinChannelsData);
-            //Assert.IsInstanceOf(typeof(JoinChannelsResponse), response, "response is JoinChannelsResponse");
+            //string apiToken = null;
+            //JoinChannelsRequest joinChannelsRequest = null;
+            //var response = instance.JoinChannels(botUserid, apiToken, joinChannelsRequest);
+            //Assert.IsInstanceOf(typeof(SendbirdGroupChannelDetail), response, "response is SendbirdGroupChannelDetail");
         }
         
         /// <summary>
-        /// Test LeaveChannels
+        /// Test LeaveAGroupChannel
         /// </summary>
         [Test]
-        public void LeaveChannelsTest()
+        public void LeaveAGroupChannelTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string botUserid = null;
             //string channelUrl = null;
-            //instance.LeaveChannels(apiToken, botUserid, channelUrl);
-            
+            //string botUserid = null;
+            //string apiToken = null;
+            //var response = instance.LeaveAGroupChannel(channelUrl, botUserid, apiToken);
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         
         /// <summary>
-        /// Test LeaveChannelsByUrl
+        /// Test LeaveGroupChannels
         /// </summary>
         [Test]
-        public void LeaveChannelsByUrlTest()
+        public void LeaveGroupChannelsTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string botUserid = null;
-            //string channelUrl = null;
-            //var response = instance.LeaveChannelsByUrl(apiToken, botUserid, channelUrl);
+            //string apiToken = null;
+            //var response = instance.LeaveGroupChannels(botUserid, apiToken);
             //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         
@@ -138,52 +124,25 @@ namespace sendbird_platform_sdk.Test
         public void ListBotsTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string token = null;
             //int? limit = null;
-            //var response = instance.ListBots(apiToken, token, limit);
+            //string apiToken = null;
+            //var response = instance.ListBots(token, limit, apiToken);
             //Assert.IsInstanceOf(typeof(ListBotsResponse), response, "response is ListBotsResponse");
         }
         
         /// <summary>
-        /// Test SendBotsMessage
+        /// Test SendABotMessage
         /// </summary>
         [Test]
-        public void SendBotsMessageTest()
+        public void SendABotMessageTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string botUserid = null;
-            //SendBotSMessageData sendBotSMessageData = null;
-            //var response = instance.SendBotsMessage(apiToken, botUserid, sendBotSMessageData);
-            //Assert.IsInstanceOf(typeof(SendBirdMessageResponse), response, "response is SendBirdMessageResponse");
-        }
-        
-        /// <summary>
-        /// Test UpdateBotById
-        /// </summary>
-        [Test]
-        public void UpdateBotByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
-            //string botUserid = null;
-            //UpdateBotByIdData updateBotByIdData = null;
-            //var response = instance.UpdateBotById(apiToken, botUserid, updateBotByIdData);
-            //Assert.IsInstanceOf(typeof(UpdateBotByIdResponse), response, "response is UpdateBotByIdResponse");
-        }
-        
-        /// <summary>
-        /// Test ViewBotById
-        /// </summary>
-        [Test]
-        public void ViewBotByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string botUserid = null;
-            //var response = instance.ViewBotById(apiToken, botUserid);
-            //Assert.IsInstanceOf(typeof(ViewBotByIdResponse), response, "response is ViewBotByIdResponse");
+            //SendABotMessageRequest sendABotMessageRequest = null;
+            //var response = instance.SendABotMessage(botUserid, apiToken, sendABotMessageRequest);
+            //Assert.IsInstanceOf(typeof(SendbirdMessageResponse), response, "response is SendbirdMessageResponse");
         }
         
     }

@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Messages** | [**List&lt;ListMessagesResponseMessagesInner&gt;**](ListMessagesResponseMessagesInner.md) |  | [optional] 
+**Messages** | [**List&lt;SendbirdMessageResponse&gt;**](SendbirdMessageResponse.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

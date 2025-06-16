@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -64,45 +64,45 @@ namespace sendbird_platform_sdk.Test
 
         
         /// <summary>
-        /// Test AddRegistrationOrDeviceToken
+        /// Test AddARegistrationOrDeviceToken
         /// </summary>
         [Test]
-        public void AddRegistrationOrDeviceTokenTest()
+        public void AddARegistrationOrDeviceTokenTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
             //string tokenType = null;
-            //AddRegistrationOrDeviceTokenData addRegistrationOrDeviceTokenData = null;
-            //var response = instance.AddRegistrationOrDeviceToken(apiToken, userId, tokenType, addRegistrationOrDeviceTokenData);
-            //Assert.IsInstanceOf(typeof(AddRegistrationOrDeviceTokenResponse), response, "response is AddRegistrationOrDeviceTokenResponse");
+            //string apiToken = null;
+            //AddARegistrationOrDeviceTokenRequest addARegistrationOrDeviceTokenRequest = null;
+            //var response = instance.AddARegistrationOrDeviceToken(userId, tokenType, apiToken, addARegistrationOrDeviceTokenRequest);
+            //Assert.IsInstanceOf(typeof(AddARegistrationOrDeviceTokenResponse), response, "response is AddARegistrationOrDeviceTokenResponse");
         }
         
         /// <summary>
-        /// Test ChoosePushNotificationContentTemplate
+        /// Test ChooseAPushNotificationContentTemplate
         /// </summary>
         [Test]
-        public void ChoosePushNotificationContentTemplateTest()
+        public void ChooseAPushNotificationContentTemplateTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
-            //Object body = null;
-            //var response = instance.ChoosePushNotificationContentTemplate(apiToken, userId, body);
-            //Assert.IsInstanceOf(typeof(ChoosePushNotificationContentTemplateResponse), response, "response is ChoosePushNotificationContentTemplateResponse");
+            //string apiToken = null;
+            //ChooseAPushNotificationContentTemplateRequest chooseAPushNotificationContentTemplateRequest = null;
+            //var response = instance.ChooseAPushNotificationContentTemplate(userId, apiToken, chooseAPushNotificationContentTemplateRequest);
+            //Assert.IsInstanceOf(typeof(ChooseAPushNotificationContentTemplateResponse), response, "response is ChooseAPushNotificationContentTemplateResponse");
         }
         
         /// <summary>
-        /// Test CreateUser
+        /// Test CreateAUser
         /// </summary>
         [Test]
-        public void CreateUserTest()
+        public void CreateAUserTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
-            //CreateUserData createUserData = null;
-            //var response = instance.CreateUser(apiToken, createUserData);
-            //Assert.IsInstanceOf(typeof(SendBirdUser), response, "response is SendBirdUser");
+            //CreateAUserRequest createAUserRequest = null;
+            //var response = instance.CreateAUser(apiToken, createAUserRequest);
+            //Assert.IsInstanceOf(typeof(SendbirdUser), response, "response is SendbirdUser");
         }
         
         /// <summary>
@@ -112,24 +112,37 @@ namespace sendbird_platform_sdk.Test
         public void CreateUserTokenTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
-            //CreateUserTokenData createUserTokenData = null;
-            //var response = instance.CreateUserToken(apiToken, userId, createUserTokenData);
+            //string apiToken = null;
+            //CreateUserTokenRequest createUserTokenRequest = null;
+            //var response = instance.CreateUserToken(userId, apiToken, createUserTokenRequest);
             //Assert.IsInstanceOf(typeof(CreateUserTokenResponse), response, "response is CreateUserTokenResponse");
         }
         
         /// <summary>
-        /// Test DeleteUserById
+        /// Test DeleteAUser
         /// </summary>
         [Test]
-        public void DeleteUserByIdTest()
+        public void DeleteAUserTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
-            //var response = instance.DeleteUserById(apiToken, userId);
+            //string apiToken = null;
+            //var response = instance.DeleteAUser(userId, apiToken);
             //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
+        }
+        
+        /// <summary>
+        /// Test GetChannelInvitationPreference
+        /// </summary>
+        [Test]
+        public void GetChannelInvitationPreferenceTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string userId = null;
+            //string apiToken = null;
+            //var response = instance.GetChannelInvitationPreference(userId, apiToken);
+            //Assert.IsInstanceOf(typeof(GetChannelInvitationPreferenceResponse), response, "response is GetChannelInvitationPreferenceResponse");
         }
         
         /// <summary>
@@ -139,10 +152,10 @@ namespace sendbird_platform_sdk.Test
         public void LeaveMyGroupChannelsTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
-            //LeaveMyGroupChannelsData leaveMyGroupChannelsData = null;
-            //var response = instance.LeaveMyGroupChannels(apiToken, userId, leaveMyGroupChannelsData);
+            //string apiToken = null;
+            //LeaveMyGroupChannelsRequest leaveMyGroupChannelsRequest = null;
+            //var response = instance.LeaveMyGroupChannels(userId, apiToken, leaveMyGroupChannelsRequest);
             //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         
@@ -153,23 +166,21 @@ namespace sendbird_platform_sdk.Test
         public void ListMyGroupChannelsTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
+            //string apiToken = null;
             //string token = null;
             //int? limit = null;
             //string distinctMode = null;
             //string publicMode = null;
             //string superMode = null;
-            //string hiddenMode = null;
-            //string memberStateFilter = null;
-            //string unreadFilter = null;
-            //int? createdAfter = null;
-            //int? createdBefore = null;
+            //long? createdAfter = null;
+            //long? createdBefore = null;
             //bool? showEmpty = null;
-            //bool? showFrozen = null;
             //bool? showMember = null;
             //bool? showDeliveryReceipt = null;
             //bool? showReadReceipt = null;
+            //bool? showMetadata = null;
+            //bool? showFrozen = null;
             //string order = null;
             //string metadataOrderKey = null;
             //string customTypes = null;
@@ -183,6 +194,7 @@ namespace sendbird_platform_sdk.Test
             //string queryType = null;
             //string membersNickname = null;
             //string membersNicknameContains = null;
+            //string membersNicknameStartswith = null;
             //string searchQuery = null;
             //string searchFields = null;
             //string metadataKey = null;
@@ -194,8 +206,11 @@ namespace sendbird_platform_sdk.Test
             //string metacounterValueGte = null;
             //string metacounterValueLt = null;
             //string metacounterValueLte = null;
-            //string customType = null;
-            //var response = instance.ListMyGroupChannels(apiToken, userId, token, limit, distinctMode, publicMode, superMode, hiddenMode, memberStateFilter, unreadFilter, createdAfter, createdBefore, showEmpty, showFrozen, showMember, showDeliveryReceipt, showReadReceipt, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, searchQuery, searchFields, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, customType);
+            //bool? includeSortedMetaarrayInLastMessage = null;
+            //string hiddenMode = null;
+            //string unreadFilter = null;
+            //string memberStateFilter = null;
+            //var response = instance.ListMyGroupChannels(userId, apiToken, token, limit, distinctMode, publicMode, superMode, createdAfter, createdBefore, showEmpty, showMember, showDeliveryReceipt, showReadReceipt, showMetadata, showFrozen, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, membersNicknameStartswith, searchQuery, searchFields, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, includeSortedMetaarrayInLastMessage, hiddenMode, unreadFilter, memberStateFilter);
             //Assert.IsInstanceOf(typeof(ListMyGroupChannelsResponse), response, "response is ListMyGroupChannelsResponse");
         }
         
@@ -206,10 +221,10 @@ namespace sendbird_platform_sdk.Test
         public void ListRegistrationOrDeviceTokensTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
             //string tokenType = null;
-            //var response = instance.ListRegistrationOrDeviceTokens(apiToken, userId, tokenType);
+            //string apiToken = null;
+            //var response = instance.ListRegistrationOrDeviceTokens(userId, tokenType, apiToken);
             //Assert.IsInstanceOf(typeof(ListRegistrationOrDeviceTokensResponse), response, "response is ListRegistrationOrDeviceTokensResponse");
         }
         
@@ -220,7 +235,6 @@ namespace sendbird_platform_sdk.Test
         public void ListUsersTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string token = null;
             //int? limit = null;
             //string activeMode = null;
@@ -230,7 +244,8 @@ namespace sendbird_platform_sdk.Test
             //string nicknameStartswith = null;
             //string metadatakey = null;
             //string metadatavaluesIn = null;
-            //var response = instance.ListUsers(apiToken, token, limit, activeMode, showBot, userIds, nickname, nicknameStartswith, metadatakey, metadatavaluesIn);
+            //string apiToken = null;
+            //var response = instance.ListUsers(token, limit, activeMode, showBot, userIds, nickname, nicknameStartswith, metadatakey, metadatavaluesIn, apiToken);
             //Assert.IsInstanceOf(typeof(ListUsersResponse), response, "response is ListUsersResponse");
         }
         
@@ -241,67 +256,53 @@ namespace sendbird_platform_sdk.Test
         public void MarkAllMessagesAsReadTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
-            //MarkAllMessagesAsReadData markAllMessagesAsReadData = null;
-            //var response = instance.MarkAllMessagesAsRead(apiToken, userId, markAllMessagesAsReadData);
+            //string apiToken = null;
+            //MarkAllMessagesAsReadRequest markAllMessagesAsReadRequest = null;
+            //var response = instance.MarkAllMessagesAsRead(userId, apiToken, markAllMessagesAsReadRequest);
             //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         
         /// <summary>
-        /// Test RegisterAsOperatorToChannelsWithCustomChannelTypes
+        /// Test RemoveARegistrationOrDeviceToken
         /// </summary>
         [Test]
-        public void RegisterAsOperatorToChannelsWithCustomChannelTypesTest()
+        public void RemoveARegistrationOrDeviceTokenTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string userId = null;
-            //RegisterAsOperatorToChannelsWithCustomChannelTypesData registerAsOperatorToChannelsWithCustomChannelTypesData = null;
-            //var response = instance.RegisterAsOperatorToChannelsWithCustomChannelTypes(apiToken, userId, registerAsOperatorToChannelsWithCustomChannelTypesData);
-            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
-        }
-        
-        /// <summary>
-        /// Test RemoveRegistrationOrDeviceToken
-        /// </summary>
-        [Test]
-        public void RemoveRegistrationOrDeviceTokenTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string userId = null;
-            //var response = instance.RemoveRegistrationOrDeviceToken(apiToken, userId);
-            //Assert.IsInstanceOf(typeof(RemoveRegistrationOrDeviceTokenResponse), response, "response is RemoveRegistrationOrDeviceTokenResponse");
-        }
-        
-        /// <summary>
-        /// Test RemoveRegistrationOrDeviceTokenByToken
-        /// </summary>
-        [Test]
-        public void RemoveRegistrationOrDeviceTokenByTokenTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
             //string tokenType = null;
             //string token = null;
-            //var response = instance.RemoveRegistrationOrDeviceTokenByToken(apiToken, userId, tokenType, token);
-            //Assert.IsInstanceOf(typeof(RemoveRegistrationOrDeviceTokenByTokenResponse), response, "response is RemoveRegistrationOrDeviceTokenByTokenResponse");
+            //string apiToken = null;
+            //var response = instance.RemoveARegistrationOrDeviceToken(userId, tokenType, token, apiToken);
+            //Assert.IsInstanceOf(typeof(RemoveARegistrationOrDeviceTokenResponse), response, "response is RemoveARegistrationOrDeviceTokenResponse");
         }
         
         /// <summary>
-        /// Test RemoveRegistrationOrDeviceTokenFromOwnerByToken
+        /// Test RemoveARegistrationOrDeviceTokenFromAnOwner
         /// </summary>
         [Test]
-        public void RemoveRegistrationOrDeviceTokenFromOwnerByTokenTest()
+        public void RemoveARegistrationOrDeviceTokenFromAnOwnerTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string tokenType = null;
             //string token = null;
-            //var response = instance.RemoveRegistrationOrDeviceTokenFromOwnerByToken(apiToken, tokenType, token);
-            //Assert.IsInstanceOf(typeof(RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse), response, "response is RemoveRegistrationOrDeviceTokenFromOwnerByTokenResponse");
+            //string apiToken = null;
+            //var response = instance.RemoveARegistrationOrDeviceTokenFromAnOwner(tokenType, token, apiToken);
+            //Assert.IsInstanceOf(typeof(List<MarkChannelMessagesAsReadRequest>), response, "response is List<MarkChannelMessagesAsReadRequest>");
+        }
+        
+        /// <summary>
+        /// Test RemoveAllRegistrationOrDeviceToken
+        /// </summary>
+        [Test]
+        public void RemoveAllRegistrationOrDeviceTokenTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string userId = null;
+            //string apiToken = null;
+            //var response = instance.RemoveAllRegistrationOrDeviceToken(userId, apiToken);
+            //Assert.IsInstanceOf(typeof(RemoveAllRegistrationOrDeviceTokenResponse), response, "response is RemoveAllRegistrationOrDeviceTokenResponse");
         }
         
         /// <summary>
@@ -311,10 +312,24 @@ namespace sendbird_platform_sdk.Test
         public void ResetPushPreferencesTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
-            //var response = instance.ResetPushPreferences(apiToken, userId);
-            //Assert.IsInstanceOf(typeof(ResetPushPreferencesResponse), response, "response is ResetPushPreferencesResponse");
+            //string apiToken = null;
+            //var response = instance.ResetPushPreferences(userId, apiToken);
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
+        }
+        
+        /// <summary>
+        /// Test UpdateAUser
+        /// </summary>
+        [Test]
+        public void UpdateAUserTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string userId = null;
+            //string apiToken = null;
+            //UpdateAUserRequest updateAUserRequest = null;
+            //var response = instance.UpdateAUser(userId, apiToken, updateAUserRequest);
+            //Assert.IsInstanceOf(typeof(SendbirdUser), response, "response is SendbirdUser");
         }
         
         /// <summary>
@@ -324,25 +339,25 @@ namespace sendbird_platform_sdk.Test
         public void UpdateChannelInvitationPreferenceTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
-            //UpdateChannelInvitationPreferenceData updateChannelInvitationPreferenceData = null;
-            //var response = instance.UpdateChannelInvitationPreference(apiToken, userId, updateChannelInvitationPreferenceData);
+            //string apiToken = null;
+            //UpdateChannelInvitationPreferenceRequest updateChannelInvitationPreferenceRequest = null;
+            //var response = instance.UpdateChannelInvitationPreference(userId, apiToken, updateChannelInvitationPreferenceRequest);
             //Assert.IsInstanceOf(typeof(UpdateChannelInvitationPreferenceResponse), response, "response is UpdateChannelInvitationPreferenceResponse");
         }
         
         /// <summary>
-        /// Test UpdateCountPreferenceOfChannelByUrl
+        /// Test UpdateCountPreferenceOfAChannel
         /// </summary>
         [Test]
-        public void UpdateCountPreferenceOfChannelByUrlTest()
+        public void UpdateCountPreferenceOfAChannelTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
             //string channelUrl = null;
-            //UpdateCountPreferenceOfChannelByUrlData updateCountPreferenceOfChannelByUrlData = null;
-            //var response = instance.UpdateCountPreferenceOfChannelByUrl(apiToken, userId, channelUrl, updateCountPreferenceOfChannelByUrlData);
+            //string apiToken = null;
+            //UpdateCountPreferenceOfAChannelRequest updateCountPreferenceOfAChannelRequest = null;
+            //var response = instance.UpdateCountPreferenceOfAChannel(userId, channelUrl, apiToken, updateCountPreferenceOfAChannelRequest);
             //Assert.IsInstanceOf(typeof(UpdateCountPreferenceOfChannelByUrlResponse), response, "response is UpdateCountPreferenceOfChannelByUrlResponse");
         }
         
@@ -353,81 +368,56 @@ namespace sendbird_platform_sdk.Test
         public void UpdatePushPreferencesTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
-            //UpdatePushPreferencesData updatePushPreferencesData = null;
-            //var response = instance.UpdatePushPreferences(apiToken, userId, updatePushPreferencesData);
+            //string apiToken = null;
+            //UpdatePushPreferencesRequest updatePushPreferencesRequest = null;
+            //var response = instance.UpdatePushPreferences(userId, apiToken, updatePushPreferencesRequest);
             //Assert.IsInstanceOf(typeof(UpdatePushPreferencesResponse), response, "response is UpdatePushPreferencesResponse");
         }
         
         /// <summary>
-        /// Test UpdatePushPreferencesForChannelByUrl
+        /// Test UpdatePushPreferencesForAChannel
         /// </summary>
         [Test]
-        public void UpdatePushPreferencesForChannelByUrlTest()
+        public void UpdatePushPreferencesForAChannelTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
             //string channelUrl = null;
-            //UpdatePushPreferencesForChannelByUrlData updatePushPreferencesForChannelByUrlData = null;
-            //var response = instance.UpdatePushPreferencesForChannelByUrl(apiToken, userId, channelUrl, updatePushPreferencesForChannelByUrlData);
-            //Assert.IsInstanceOf(typeof(UpdatePushPreferencesForChannelByUrlResponse), response, "response is UpdatePushPreferencesForChannelByUrlResponse");
+            //string apiToken = null;
+            //UpdatePushPreferencesForAChannelRequest updatePushPreferencesForAChannelRequest = null;
+            //var response = instance.UpdatePushPreferencesForAChannel(userId, channelUrl, apiToken, updatePushPreferencesForAChannelRequest);
+            //Assert.IsInstanceOf(typeof(UpdatePushPreferencesForAChannelResponse), response, "response is UpdatePushPreferencesForAChannelResponse");
         }
         
         /// <summary>
-        /// Test UpdateUserById
+        /// Test ViewAUser
         /// </summary>
         [Test]
-        public void UpdateUserByIdTest()
+        public void ViewAUserTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
-            //UpdateUserByIdData updateUserByIdData = null;
-            //var response = instance.UpdateUserById(apiToken, userId, updateUserByIdData);
-            //Assert.IsInstanceOf(typeof(SendBirdUser), response, "response is SendBirdUser");
+            //bool? includeUnreadCount = null;
+            //string customTypes = null;
+            //string superMode = null;
+            //string apiToken = null;
+            //var response = instance.ViewAUser(userId, includeUnreadCount, customTypes, superMode, apiToken);
+            //Assert.IsInstanceOf(typeof(SendbirdUser), response, "response is SendbirdUser");
         }
         
         /// <summary>
-        /// Test ViewChannelInvitationPreference
+        /// Test ViewCountPreferenceOfAChannel
         /// </summary>
         [Test]
-        public void ViewChannelInvitationPreferenceTest()
+        public void ViewCountPreferenceOfAChannelTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string userId = null;
-            //var response = instance.ViewChannelInvitationPreference(apiToken, userId);
-            //Assert.IsInstanceOf(typeof(ViewChannelInvitationPreferenceResponse), response, "response is ViewChannelInvitationPreferenceResponse");
-        }
-        
-        /// <summary>
-        /// Test ViewCountPreferenceOfChannelByUrl
-        /// </summary>
-        [Test]
-        public void ViewCountPreferenceOfChannelByUrlTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
             //string channelUrl = null;
-            //var response = instance.ViewCountPreferenceOfChannelByUrl(apiToken, userId, channelUrl);
-            //Assert.IsInstanceOf(typeof(ViewCountPreferenceOfChannelByUrlResponse), response, "response is ViewCountPreferenceOfChannelByUrlResponse");
-        }
-        
-        /// <summary>
-        /// Test ViewNumberOfChannelsByJoinStatus
-        /// </summary>
-        [Test]
-        public void ViewNumberOfChannelsByJoinStatusTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
-            //string userId = null;
-            //string state = null;
-            //var response = instance.ViewNumberOfChannelsByJoinStatus(apiToken, userId, state);
-            //Assert.IsInstanceOf(typeof(ViewNumberOfChannelsByJoinStatusResponse), response, "response is ViewNumberOfChannelsByJoinStatusResponse");
+            //var response = instance.ViewCountPreferenceOfAChannel(userId, channelUrl, apiToken);
+            //Assert.IsInstanceOf(typeof(ViewCountPreferenceOfAChannelResponse), response, "response is ViewCountPreferenceOfAChannelResponse");
         }
         
         /// <summary>
@@ -437,27 +427,12 @@ namespace sendbird_platform_sdk.Test
         public void ViewNumberOfChannelsWithUnreadMessagesTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
-            //List<string> customTypes = null;
+            //string customTypes = null;
             //string superMode = null;
-            //var response = instance.ViewNumberOfChannelsWithUnreadMessages(apiToken, userId, customTypes, superMode);
-            //Assert.IsInstanceOf(typeof(ViewNumberOfChannelsWithUnreadMessagesResponse), response, "response is ViewNumberOfChannelsWithUnreadMessagesResponse");
-        }
-        
-        /// <summary>
-        /// Test ViewNumberOfUnreadItems
-        /// </summary>
-        [Test]
-        public void ViewNumberOfUnreadItemsTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
-            //string userId = null;
-            //string customType = null;
-            //string itemKeys = null;
-            //var response = instance.ViewNumberOfUnreadItems(apiToken, userId, customType, itemKeys);
-            //Assert.IsInstanceOf(typeof(ViewNumberOfUnreadItemsResponse), response, "response is ViewNumberOfUnreadItemsResponse");
+            //var response = instance.ViewNumberOfChannelsWithUnreadMessages(userId, customTypes, superMode, apiToken);
+            //Assert.IsInstanceOf(typeof(ViewNumberOfChannelsWithUnreadMessagesResponse), response, "response is ViewNumberOfChannelsWithUnreadMessagesResponse");
         }
         
         /// <summary>
@@ -467,11 +442,11 @@ namespace sendbird_platform_sdk.Test
         public void ViewNumberOfUnreadMessagesTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
             //string customTypes = null;
             //string superMode = null;
-            //var response = instance.ViewNumberOfUnreadMessages(apiToken, userId, customTypes, superMode);
+            //string apiToken = null;
+            //var response = instance.ViewNumberOfUnreadMessages(userId, customTypes, superMode, apiToken);
             //Assert.IsInstanceOf(typeof(ViewNumberOfUnreadMessagesResponse), response, "response is ViewNumberOfUnreadMessagesResponse");
         }
         
@@ -482,54 +457,38 @@ namespace sendbird_platform_sdk.Test
         public void ViewPushPreferencesTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
-            //var response = instance.ViewPushPreferences(apiToken, userId);
+            //string apiToken = null;
+            //var response = instance.ViewPushPreferences(userId, apiToken);
             //Assert.IsInstanceOf(typeof(ViewPushPreferencesResponse), response, "response is ViewPushPreferencesResponse");
         }
         
         /// <summary>
-        /// Test ViewPushPreferencesForChannelByUrl
+        /// Test ViewPushPreferencesForAChannel
         /// </summary>
         [Test]
-        public void ViewPushPreferencesForChannelByUrlTest()
+        public void ViewPushPreferencesForAChannelTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
             //string channelUrl = null;
-            //var response = instance.ViewPushPreferencesForChannelByUrl(apiToken, userId, channelUrl);
-            //Assert.IsInstanceOf(typeof(ViewPushPreferencesForChannelByUrlResponse), response, "response is ViewPushPreferencesForChannelByUrlResponse");
+            //string apiToken = null;
+            //var response = instance.ViewPushPreferencesForAChannel(userId, channelUrl, apiToken);
+            //Assert.IsInstanceOf(typeof(ViewPushPreferencesForAChannelResponse), response, "response is ViewPushPreferencesForAChannelResponse");
         }
         
         /// <summary>
-        /// Test ViewUserById
+        /// Test ViewWhoOwnsARegistrationOrDeviceToken
         /// </summary>
         [Test]
-        public void ViewUserByIdTest()
+        public void ViewWhoOwnsARegistrationOrDeviceTokenTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string userId = null;
-            //bool? includeUnreadCount = null;
-            //string customTypes = null;
-            //string superMode = null;
-            //var response = instance.ViewUserById(apiToken, userId, includeUnreadCount, customTypes, superMode);
-            //Assert.IsInstanceOf(typeof(SendBirdUser), response, "response is SendBirdUser");
-        }
-        
-        /// <summary>
-        /// Test ViewWhoOwnsRegistrationOrDeviceTokenByToken
-        /// </summary>
-        [Test]
-        public void ViewWhoOwnsRegistrationOrDeviceTokenByTokenTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string tokenType = null;
             //string token = null;
-            //var response = instance.ViewWhoOwnsRegistrationOrDeviceTokenByToken(apiToken, tokenType, token);
-            //Assert.IsInstanceOf(typeof(List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>), response, "response is List<ViewWhoOwnsRegistrationOrDeviceTokenByTokenResponseInner>");
+            //string apiToken = null;
+            //var response = instance.ViewWhoOwnsARegistrationOrDeviceToken(tokenType, token, apiToken);
+            //Assert.IsInstanceOf(typeof(List<MarkChannelMessagesAsReadRequest>), response, "response is List<MarkChannelMessagesAsReadRequest>");
         }
         
     }

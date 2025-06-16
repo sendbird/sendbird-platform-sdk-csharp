@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -25,18 +25,18 @@ using OpenAPIDateConverter = sendbird_platform_sdk.Client.OpenAPIDateConverter;
 namespace sendbird_platform_sdk.Model
 {
     /// <summary>
-    /// SendBirdReaction
+    /// SendbirdReaction
     /// </summary>
     [DataContract]
-    public partial class SendBirdReaction :  IEquatable<SendBirdReaction>, IValidatableObject
+    public partial class SendbirdReaction :  IEquatable<SendbirdReaction>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="SendBirdReaction" /> class.
+        /// Initializes a new instance of the <see cref="SendbirdReaction" /> class.
         /// </summary>
         /// <param name="key">key.</param>
         /// <param name="updatedAt">updatedAt.</param>
         /// <param name="userIds">userIds.</param>
-        public SendBirdReaction(string key = default(string), decimal updatedAt = default(decimal), List<string> userIds = default(List<string>))
+        public SendbirdReaction(string key = default(string), long updatedAt = default(long), List<string> userIds = default(List<string>))
         {
             this.Key = key;
             this.UpdatedAt = updatedAt;
@@ -53,7 +53,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets UpdatedAt
         /// </summary>
         [DataMember(Name="updated_at", EmitDefaultValue=false)]
-        public decimal UpdatedAt { get; set; }
+        public long UpdatedAt { get; set; }
 
         /// <summary>
         /// Gets or Sets UserIds
@@ -68,7 +68,7 @@ namespace sendbird_platform_sdk.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class SendBirdReaction {\n");
+            sb.Append("class SendbirdReaction {\n");
             sb.Append("  Key: ").Append(Key).Append("\n");
             sb.Append("  UpdatedAt: ").Append(UpdatedAt).Append("\n");
             sb.Append("  UserIds: ").Append(UserIds).Append("\n");
@@ -92,15 +92,15 @@ namespace sendbird_platform_sdk.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as SendBirdReaction);
+            return this.Equals(input as SendbirdReaction);
         }
 
         /// <summary>
-        /// Returns true if SendBirdReaction instances are equal
+        /// Returns true if SendbirdReaction instances are equal
         /// </summary>
-        /// <param name="input">Instance of SendBirdReaction to be compared</param>
+        /// <param name="input">Instance of SendbirdReaction to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(SendBirdReaction input)
+        public bool Equals(SendbirdReaction input)
         {
             if (input == null)
                 return false;

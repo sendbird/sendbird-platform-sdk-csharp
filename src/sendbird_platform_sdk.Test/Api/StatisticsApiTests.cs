@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -64,70 +64,15 @@ namespace sendbird_platform_sdk.Test
 
         
         /// <summary>
-        /// Test GetDetailedOpenRateOfAnnouncementById
-        /// </summary>
-        [Test]
-        public void GetDetailedOpenRateOfAnnouncementByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string uniqueId = null;
-            //var response = instance.GetDetailedOpenRateOfAnnouncementById(apiToken, uniqueId);
-            //Assert.IsInstanceOf(typeof(GetDetailedOpenRateOfAnnouncementByIdResponse), response, "response is GetDetailedOpenRateOfAnnouncementByIdResponse");
-        }
-        
-        /// <summary>
-        /// Test GetDetailedOpenStatusOfAnnouncementById
-        /// </summary>
-        [Test]
-        public void GetDetailedOpenStatusOfAnnouncementByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string uniqueId = null;
-            //int? limit = null;
-            //string next = null;
-            //List<string> uniqueIds = null;
-            //List<string> channelUrls = null;
-            //bool? hasOpened = null;
-            //var response = instance.GetDetailedOpenStatusOfAnnouncementById(apiToken, uniqueId, limit, next, uniqueIds, channelUrls, hasOpened);
-            //Assert.IsInstanceOf(typeof(GetDetailedOpenStatusOfAnnouncementByIdResponse), response, "response is GetDetailedOpenStatusOfAnnouncementByIdResponse");
-        }
-        
-        /// <summary>
-        /// Test RetrieveAdvancedAnalyticsMetrics
-        /// </summary>
-        [Test]
-        public void RetrieveAdvancedAnalyticsMetricsTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //var response = instance.RetrieveAdvancedAnalyticsMetrics(apiToken);
-            //Assert.IsInstanceOf(typeof(RetrieveAdvancedAnalyticsMetricsResponse), response, "response is RetrieveAdvancedAnalyticsMetricsResponse");
-        }
-        
-        /// <summary>
-        /// Test ViewNumberOfConcurrentConnections
-        /// </summary>
-        [Test]
-        public void ViewNumberOfConcurrentConnectionsTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //var response = instance.ViewNumberOfConcurrentConnections(apiToken);
-            //Assert.IsInstanceOf(typeof(ViewNumberOfConcurrentConnectionsResponse), response, "response is ViewNumberOfConcurrentConnectionsResponse");
-        }
-        
-        /// <summary>
         /// Test ViewNumberOfDailyActiveUsers
         /// </summary>
         [Test]
         public void ViewNumberOfDailyActiveUsersTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string date = null;
-            //var response = instance.ViewNumberOfDailyActiveUsers(apiToken, date);
+            //string apiToken = null;
+            //var response = instance.ViewNumberOfDailyActiveUsers(date, apiToken);
             //Assert.IsInstanceOf(typeof(ViewNumberOfDailyActiveUsersResponse), response, "response is ViewNumberOfDailyActiveUsersResponse");
         }
         
@@ -138,29 +83,10 @@ namespace sendbird_platform_sdk.Test
         public void ViewNumberOfMonthlyActiveUsersTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string date = null;
-            //var response = instance.ViewNumberOfMonthlyActiveUsers(apiToken, date);
-            //Assert.IsInstanceOf(typeof(ViewNumberOfMonthlyActiveUsersResponse), response, "response is ViewNumberOfMonthlyActiveUsersResponse");
-        }
-        
-        /// <summary>
-        /// Test ViewNumberOfPeakConnections
-        /// </summary>
-        [Test]
-        public void ViewNumberOfPeakConnectionsTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
-            //string timeDimension = null;
-            //int startYear = null;
-            //int startMonth = null;
-            //int endYear = null;
-            //int endMonth = null;
-            //int? startDay = null;
-            //int? endDay = null;
-            //var response = instance.ViewNumberOfPeakConnections(apiToken, timeDimension, startYear, startMonth, endYear, endMonth, startDay, endDay);
-            //Assert.IsInstanceOf(typeof(ViewNumberOfPeakConnectionsResponse), response, "response is ViewNumberOfPeakConnectionsResponse");
+            //var response = instance.ViewNumberOfMonthlyActiveUsers(date, apiToken);
+            //Assert.IsInstanceOf(typeof(ViewNumberOfMonthlyActiveUsersResponse), response, "response is ViewNumberOfMonthlyActiveUsersResponse");
         }
         
     }

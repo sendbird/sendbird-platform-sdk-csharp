@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -64,189 +64,45 @@ namespace sendbird_platform_sdk.Test
 
         
         /// <summary>
-        /// Test BanFromChannelsWithCustomChannelTypes
+        /// Test BlockAUser
         /// </summary>
         [Test]
-        public void BanFromChannelsWithCustomChannelTypesTest()
+        public void BlockAUserTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
-            //BanFromChannelsWithCustomChannelTypesData banFromChannelsWithCustomChannelTypesData = null;
-            //var response = instance.BanFromChannelsWithCustomChannelTypes(apiToken, userId, banFromChannelsWithCustomChannelTypesData);
-            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
+            //string apiToken = null;
+            //BlockAUserRequest blockAUserRequest = null;
+            //var response = instance.BlockAUser(userId, apiToken, blockAUserRequest);
+            //Assert.IsInstanceOf(typeof(BlockAUserResponse), response, "response is BlockAUserResponse");
         }
         
         /// <summary>
-        /// Test BlockUser
+        /// Test FreezeAGroupChannel
         /// </summary>
         [Test]
-        public void BlockUserTest()
+        public void FreezeAGroupChannelTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string userId = null;
-            //BlockUserData blockUserData = null;
-            //var response = instance.BlockUser(apiToken, userId, blockUserData);
-            //Assert.IsInstanceOf(typeof(BlockUserResponse), response, "response is BlockUserResponse");
-        }
-        
-        /// <summary>
-        /// Test GcBanUser
-        /// </summary>
-        [Test]
-        public void GcBanUserTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string channelUrl = null;
-            //GcBanUserData gcBanUserData = null;
-            //var response = instance.GcBanUser(apiToken, channelUrl, gcBanUserData);
-            //Assert.IsInstanceOf(typeof(GcBanUserResponse), response, "response is GcBanUserResponse");
+            //string apiToken = null;
+            //FreezeAGroupChannelRequest freezeAGroupChannelRequest = null;
+            //var response = instance.FreezeAGroupChannel(channelUrl, apiToken, freezeAGroupChannelRequest);
+            //Assert.IsInstanceOf(typeof(SendbirdGroupChannelDetail), response, "response is SendbirdGroupChannelDetail");
         }
         
         /// <summary>
-        /// Test GcFreezeChannel
+        /// Test FreezeAnOpenChannel
         /// </summary>
         [Test]
-        public void GcFreezeChannelTest()
+        public void FreezeAnOpenChannelTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string channelUrl = null;
-            //GcFreezeChannelData gcFreezeChannelData = null;
-            //var response = instance.GcFreezeChannel(apiToken, channelUrl, gcFreezeChannelData);
-            //Assert.IsInstanceOf(typeof(SendBirdGroupChannel), response, "response is SendBirdGroupChannel");
-        }
-        
-        /// <summary>
-        /// Test GcListBannedUsers
-        /// </summary>
-        [Test]
-        public void GcListBannedUsersTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
-            //string channelUrl = null;
-            //string token = null;
-            //int? limit = null;
-            //var response = instance.GcListBannedUsers(apiToken, channelUrl, token, limit);
-            //Assert.IsInstanceOf(typeof(GcListBannedUsersResponse), response, "response is GcListBannedUsersResponse");
-        }
-        
-        /// <summary>
-        /// Test GcListMutedUsers
-        /// </summary>
-        [Test]
-        public void GcListMutedUsersTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //string token = null;
-            //int? limit = null;
-            //var response = instance.GcListMutedUsers(apiToken, channelUrl, token, limit);
-            //Assert.IsInstanceOf(typeof(GcListMutedUsersResponse), response, "response is GcListMutedUsersResponse");
-        }
-        
-        /// <summary>
-        /// Test GcMuteUser
-        /// </summary>
-        [Test]
-        public void GcMuteUserTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //GcMuteUserData gcMuteUserData = null;
-            //var response = instance.GcMuteUser(apiToken, channelUrl, gcMuteUserData);
-            //Assert.IsInstanceOf(typeof(SendBirdGroupChannel), response, "response is SendBirdGroupChannel");
-        }
-        
-        /// <summary>
-        /// Test GcUnbanUserById
-        /// </summary>
-        [Test]
-        public void GcUnbanUserByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //string bannedUserId = null;
-            //var response = instance.GcUnbanUserById(apiToken, channelUrl, bannedUserId);
-            //Assert.IsInstanceOf(typeof(OcDeleteChannelByUrl200Response), response, "response is OcDeleteChannelByUrl200Response");
-        }
-        
-        /// <summary>
-        /// Test GcUnmuteUserById
-        /// </summary>
-        [Test]
-        public void GcUnmuteUserByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //string mutedUserId = null;
-            //var response = instance.GcUnmuteUserById(apiToken, channelUrl, mutedUserId);
-            //Assert.IsInstanceOf(typeof(OcDeleteChannelByUrl200Response), response, "response is OcDeleteChannelByUrl200Response");
-        }
-        
-        /// <summary>
-        /// Test GcUpdateBanById
-        /// </summary>
-        [Test]
-        public void GcUpdateBanByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //string bannedUserId = null;
-            //GcUpdateBanByIdData gcUpdateBanByIdData = null;
-            //var response = instance.GcUpdateBanById(apiToken, channelUrl, bannedUserId, gcUpdateBanByIdData);
-            //Assert.IsInstanceOf(typeof(GcUpdateBanByIdResponse), response, "response is GcUpdateBanByIdResponse");
-        }
-        
-        /// <summary>
-        /// Test GcViewBanById
-        /// </summary>
-        [Test]
-        public void GcViewBanByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //string bannedUserId = null;
-            //var response = instance.GcViewBanById(apiToken, channelUrl, bannedUserId);
-            //Assert.IsInstanceOf(typeof(GcViewBanByIdResponse), response, "response is GcViewBanByIdResponse");
-        }
-        
-        /// <summary>
-        /// Test GcViewMuteById
-        /// </summary>
-        [Test]
-        public void GcViewMuteByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //string mutedUserId = null;
-            //var response = instance.GcViewMuteById(apiToken, channelUrl, mutedUserId);
-            //Assert.IsInstanceOf(typeof(GcViewMuteByIdResponse), response, "response is GcViewMuteByIdResponse");
-        }
-        
-        /// <summary>
-        /// Test ListBannedChannels
-        /// </summary>
-        [Test]
-        public void ListBannedChannelsTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string userId = null;
-            //string token = null;
-            //int? limit = null;
-            //var response = instance.ListBannedChannels(apiToken, userId, token, limit);
-            //Assert.IsInstanceOf(typeof(ListBannedChannelsResponse), response, "response is ListBannedChannelsResponse");
+            //FreezeAnOpenChannelRequest freezeAnOpenChannelRequest = null;
+            //var response = instance.FreezeAnOpenChannel(channelUrl, apiToken, freezeAnOpenChannelRequest);
+            //Assert.IsInstanceOf(typeof(SendbirdOpenChannel), response, "response is SendbirdOpenChannel");
         }
         
         /// <summary>
@@ -256,200 +112,29 @@ namespace sendbird_platform_sdk.Test
         public void ListBlockedUsersTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
+            //string list = null;
             //string token = null;
             //int? limit = null;
             //string userIds = null;
             //string metadatakey = null;
             //string metadatavaluesIn = null;
-            //var response = instance.ListBlockedUsers(apiToken, userId, token, limit, userIds, metadatakey, metadatavaluesIn);
+            //string apiToken = null;
+            //var response = instance.ListBlockedUsers(userId, list, token, limit, userIds, metadatakey, metadatavaluesIn, apiToken);
             //Assert.IsInstanceOf(typeof(ListBlockedUsersResponse), response, "response is ListBlockedUsersResponse");
         }
         
         /// <summary>
-        /// Test ListMutedChannels
+        /// Test UnblockAUser
         /// </summary>
         [Test]
-        public void ListMutedChannelsTest()
+        public void UnblockAUserTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string userId = null;
-            //string token = null;
-            //int? limit = null;
-            //var response = instance.ListMutedChannels(apiToken, userId, token, limit);
-            //Assert.IsInstanceOf(typeof(ListMutedChannelsResponse), response, "response is ListMutedChannelsResponse");
-        }
-        
-        /// <summary>
-        /// Test MuteInChannelsWithCustomChannelTypes
-        /// </summary>
-        [Test]
-        public void MuteInChannelsWithCustomChannelTypesTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string userId = null;
-            //MuteInChannelsWithCustomChannelTypesData muteInChannelsWithCustomChannelTypesData = null;
-            //var response = instance.MuteInChannelsWithCustomChannelTypes(apiToken, userId, muteInChannelsWithCustomChannelTypesData);
-            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
-        }
-        
-        /// <summary>
-        /// Test OcBanUser
-        /// </summary>
-        [Test]
-        public void OcBanUserTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //OcBanUserData ocBanUserData = null;
-            //var response = instance.OcBanUser(apiToken, channelUrl, ocBanUserData);
-            //Assert.IsInstanceOf(typeof(OcBanUserResponse), response, "response is OcBanUserResponse");
-        }
-        
-        /// <summary>
-        /// Test OcFreezeChannel
-        /// </summary>
-        [Test]
-        public void OcFreezeChannelTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //OcFreezeChannelData ocFreezeChannelData = null;
-            //var response = instance.OcFreezeChannel(apiToken, channelUrl, ocFreezeChannelData);
-            //Assert.IsInstanceOf(typeof(SendBirdOpenChannel), response, "response is SendBirdOpenChannel");
-        }
-        
-        /// <summary>
-        /// Test OcListBannedUsers
-        /// </summary>
-        [Test]
-        public void OcListBannedUsersTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //string token = null;
-            //int? limit = null;
-            //var response = instance.OcListBannedUsers(apiToken, channelUrl, token, limit);
-            //Assert.IsInstanceOf(typeof(OcListBannedUsersResponse), response, "response is OcListBannedUsersResponse");
-        }
-        
-        /// <summary>
-        /// Test OcListMutedUsers
-        /// </summary>
-        [Test]
-        public void OcListMutedUsersTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //string token = null;
-            //int? limit = null;
-            //var response = instance.OcListMutedUsers(apiToken, channelUrl, token, limit);
-            //Assert.IsInstanceOf(typeof(OcListMutedUsersResponse), response, "response is OcListMutedUsersResponse");
-        }
-        
-        /// <summary>
-        /// Test OcMuteUser
-        /// </summary>
-        [Test]
-        public void OcMuteUserTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //OcMuteUserData ocMuteUserData = null;
-            //var response = instance.OcMuteUser(apiToken, channelUrl, ocMuteUserData);
-            //Assert.IsInstanceOf(typeof(SendBirdOpenChannel), response, "response is SendBirdOpenChannel");
-        }
-        
-        /// <summary>
-        /// Test OcUnbanUserById
-        /// </summary>
-        [Test]
-        public void OcUnbanUserByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //string bannedUserId = null;
-            //var response = instance.OcUnbanUserById(apiToken, channelUrl, bannedUserId);
-            //Assert.IsInstanceOf(typeof(OcDeleteChannelByUrl200Response), response, "response is OcDeleteChannelByUrl200Response");
-        }
-        
-        /// <summary>
-        /// Test OcUnmuteUserById
-        /// </summary>
-        [Test]
-        public void OcUnmuteUserByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //string mutedUserId = null;
-            //var response = instance.OcUnmuteUserById(apiToken, channelUrl, mutedUserId);
-            //Assert.IsInstanceOf(typeof(OcDeleteChannelByUrl200Response), response, "response is OcDeleteChannelByUrl200Response");
-        }
-        
-        /// <summary>
-        /// Test OcUpdateBanById
-        /// </summary>
-        [Test]
-        public void OcUpdateBanByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //string bannedUserId = null;
-            //OcUpdateBanByIdData ocUpdateBanByIdData = null;
-            //var response = instance.OcUpdateBanById(apiToken, channelUrl, bannedUserId, ocUpdateBanByIdData);
-            //Assert.IsInstanceOf(typeof(OcUpdateBanByIdResponse), response, "response is OcUpdateBanByIdResponse");
-        }
-        
-        /// <summary>
-        /// Test OcViewBanById
-        /// </summary>
-        [Test]
-        public void OcViewBanByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //string bannedUserId = null;
-            //var response = instance.OcViewBanById(apiToken, channelUrl, bannedUserId);
-            //Assert.IsInstanceOf(typeof(OcViewBanByIdResponse), response, "response is OcViewBanByIdResponse");
-        }
-        
-        /// <summary>
-        /// Test OcViewMuteById
-        /// </summary>
-        [Test]
-        public void OcViewMuteByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //string mutedUserId = null;
-            //var response = instance.OcViewMuteById(apiToken, channelUrl, mutedUserId);
-            //Assert.IsInstanceOf(typeof(OcViewMuteByIdResponse), response, "response is OcViewMuteByIdResponse");
-        }
-        
-        /// <summary>
-        /// Test UnblockUserById
-        /// </summary>
-        [Test]
-        public void UnblockUserByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string userId = null;
             //string targetId = null;
-            //var response = instance.UnblockUserById(apiToken, userId, targetId);
+            //string apiToken = null;
+            //var response = instance.UnblockAUser(userId, targetId, apiToken);
             //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         

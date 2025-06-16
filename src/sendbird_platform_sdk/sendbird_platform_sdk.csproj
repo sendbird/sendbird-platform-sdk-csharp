@@ -2,7 +2,7 @@
 <!--
 Sendbird Platform SDK
 
-Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
 
 The version of the OpenAPI document: 1.0.0
 Contact: support@sendbird.com
@@ -12,7 +12,7 @@ Contact: support@sendbird.com
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6DA2C7B5-DB35-4720-9631-E3C338FB2635}</ProjectGuid>
+    <ProjectGuid>{8AD682D1-4E08-4E04-9278-0C6351E28A37}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>sendbird_platform_sdk</RootNamespace>

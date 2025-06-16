@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -33,25 +33,25 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateUserTokenResponse" /> class.
         /// </summary>
-        /// <param name="token">token.</param>
         /// <param name="expiresAt">expiresAt.</param>
-        public CreateUserTokenResponse(string token = default(string), decimal expiresAt = default(decimal))
+        /// <param name="token">token.</param>
+        public CreateUserTokenResponse(long expiresAt = default(long), string token = default(string))
         {
-            this.Token = token;
             this.ExpiresAt = expiresAt;
+            this.Token = token;
         }
+
+        /// <summary>
+        /// Gets or Sets ExpiresAt
+        /// </summary>
+        [DataMember(Name="expires_at", EmitDefaultValue=false)]
+        public long ExpiresAt { get; set; }
 
         /// <summary>
         /// Gets or Sets Token
         /// </summary>
         [DataMember(Name="token", EmitDefaultValue=false)]
         public string Token { get; set; }
-
-        /// <summary>
-        /// Gets or Sets ExpiresAt
-        /// </summary>
-        [DataMember(Name="expires_at", EmitDefaultValue=false)]
-        public decimal ExpiresAt { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -61,8 +61,8 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class CreateUserTokenResponse {\n");
-            sb.Append("  Token: ").Append(Token).Append("\n");
             sb.Append("  ExpiresAt: ").Append(ExpiresAt).Append("\n");
+            sb.Append("  Token: ").Append(Token).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -98,14 +98,14 @@ namespace sendbird_platform_sdk.Model
 
             return 
                 (
-                    this.Token == input.Token ||
-                    (this.Token != null &&
-                    this.Token.Equals(input.Token))
-                ) && 
-                (
                     this.ExpiresAt == input.ExpiresAt ||
                     (this.ExpiresAt != null &&
                     this.ExpiresAt.Equals(input.ExpiresAt))
+                ) && 
+                (
+                    this.Token == input.Token ||
+                    (this.Token != null &&
+                    this.Token.Equals(input.Token))
                 );
         }
 
@@ -118,10 +118,10 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Token != null)
-                    hashCode = hashCode * 59 + this.Token.GetHashCode();
                 if (this.ExpiresAt != null)
                     hashCode = hashCode * 59 + this.ExpiresAt.GetHashCode();
+                if (this.Token != null)
+                    hashCode = hashCode * 59 + this.Token.GetHashCode();
                 return hashCode;
             }
         }

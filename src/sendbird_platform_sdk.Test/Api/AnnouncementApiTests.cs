@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -64,113 +64,16 @@ namespace sendbird_platform_sdk.Test
 
         
         /// <summary>
-        /// Test GetDetailedOpenRateOfAnnouncementGroup
+        /// Test ScheduleAnAnnouncement
         /// </summary>
         [Test]
-        public void GetDetailedOpenRateOfAnnouncementGroupTest()
+        public void ScheduleAnAnnouncementTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
-            //string announcementGroup = null;
-            //var response = instance.GetDetailedOpenRateOfAnnouncementGroup(apiToken, announcementGroup);
-            //Assert.IsInstanceOf(typeof(GetDetailedOpenRateOfAnnouncementGroupResponse), response, "response is GetDetailedOpenRateOfAnnouncementGroupResponse");
-        }
-        
-        /// <summary>
-        /// Test GetStatistics
-        /// </summary>
-        [Test]
-        public void GetStatisticsTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //var response = instance.GetStatistics(apiToken);
-            //Assert.IsInstanceOf(typeof(GetStatisticsResponse), response, "response is GetStatisticsResponse");
-        }
-        
-        /// <summary>
-        /// Test GetStatisticsDaily
-        /// </summary>
-        [Test]
-        public void GetStatisticsDailyTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string startDate = null;
-            //string endDate = null;
-            //string startWeek = null;
-            //string endWeek = null;
-            //string startMonth = null;
-            //string endMonth = null;
-            //string announcementGroup = null;
-            //var response = instance.GetStatisticsDaily(apiToken, startDate, endDate, startWeek, endWeek, startMonth, endMonth, announcementGroup);
-            //Assert.IsInstanceOf(typeof(GetStatisticsDailyResponse), response, "response is GetStatisticsDailyResponse");
-        }
-        
-        /// <summary>
-        /// Test GetStatisticsMonthly
-        /// </summary>
-        [Test]
-        public void GetStatisticsMonthlyTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //var response = instance.GetStatisticsMonthly(apiToken);
-            //Assert.IsInstanceOf(typeof(GetStatisticsMonthlyResponse), response, "response is GetStatisticsMonthlyResponse");
-        }
-        
-        /// <summary>
-        /// Test ListAnnouncementGroups
-        /// </summary>
-        [Test]
-        public void ListAnnouncementGroupsTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string token = null;
-            //int? limit = null;
-            //var response = instance.ListAnnouncementGroups(apiToken, token, limit);
-            //Assert.IsInstanceOf(typeof(ListAnnouncementGroupsResponse), response, "response is ListAnnouncementGroupsResponse");
-        }
-        
-        /// <summary>
-        /// Test ScheduleAnnouncement
-        /// </summary>
-        [Test]
-        public void ScheduleAnnouncementTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //ScheduleAnnouncementData scheduleAnnouncementData = null;
-            //var response = instance.ScheduleAnnouncement(apiToken, scheduleAnnouncementData);
-            //Assert.IsInstanceOf(typeof(ScheduleAnnouncementResponse), response, "response is ScheduleAnnouncementResponse");
-        }
-        
-        /// <summary>
-        /// Test UpdateAnnouncementById
-        /// </summary>
-        [Test]
-        public void UpdateAnnouncementByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string uniqueId = null;
-            //UpdateAnnouncementByIdData updateAnnouncementByIdData = null;
-            //var response = instance.UpdateAnnouncementById(apiToken, uniqueId, updateAnnouncementByIdData);
-            //Assert.IsInstanceOf(typeof(UpdateAnnouncementByIdResponse), response, "response is UpdateAnnouncementByIdResponse");
-        }
-        
-        /// <summary>
-        /// Test ViewAnnouncementById
-        /// </summary>
-        [Test]
-        public void ViewAnnouncementByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string uniqueId = null;
-            //var response = instance.ViewAnnouncementById(apiToken, uniqueId);
-            //Assert.IsInstanceOf(typeof(ViewAnnouncementByIdResponse), response, "response is ViewAnnouncementByIdResponse");
+            //ScheduleAnAnnouncementRequest scheduleAnAnnouncementRequest = null;
+            //var response = instance.ScheduleAnAnnouncement(apiToken, scheduleAnAnnouncementRequest);
+            //Assert.IsInstanceOf(typeof(ScheduleAnAnnouncementResponse), response, "response is ScheduleAnAnnouncementResponse");
         }
         
     }

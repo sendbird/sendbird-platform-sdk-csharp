@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -31,19 +31,51 @@ namespace sendbird_platform_sdk.Model
     public partial class UpdateCountPreferenceOfChannelByUrlResponse :  IEquatable<UpdateCountPreferenceOfChannelByUrlResponse>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateCountPreferenceOfChannelByUrlResponse" /> class.
+        /// Defines CountPreference
         /// </summary>
-        /// <param name="countPreference">countPreference.</param>
-        public UpdateCountPreferenceOfChannelByUrlResponse(string countPreference = default(string))
+        [JsonConverter(typeof(StringEnumConverter))]
+        public enum CountPreferenceEnum
         {
-            this.CountPreference = countPreference;
+            /// <summary>
+            /// Enum False for value: false
+            /// </summary>
+            [EnumMember(Value = "false")]
+            False = 1,
+
+            /// <summary>
+            /// Enum All for value: all
+            /// </summary>
+            [EnumMember(Value = "all")]
+            All = 2,
+
+            /// <summary>
+            /// Enum Unreadmessagecountonly for value: unread_message_count_only
+            /// </summary>
+            [EnumMember(Value = "unread_message_count_only")]
+            Unreadmessagecountonly = 3,
+
+            /// <summary>
+            /// Enum Unreadmentionedcountonly for value: unread_mentioned_count_only
+            /// </summary>
+            [EnumMember(Value = "unread_mentioned_count_only")]
+            Unreadmentionedcountonly = 4
+
         }
 
         /// <summary>
         /// Gets or Sets CountPreference
         /// </summary>
         [DataMember(Name="count_preference", EmitDefaultValue=false)]
-        public string CountPreference { get; set; }
+        public CountPreferenceEnum? CountPreference { get; set; }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UpdateCountPreferenceOfChannelByUrlResponse" /> class.
+        /// </summary>
+        /// <param name="countPreference">countPreference.</param>
+        public UpdateCountPreferenceOfChannelByUrlResponse(CountPreferenceEnum? countPreference = default(CountPreferenceEnum?))
+        {
+            this.CountPreference = countPreference;
+        }
+
 
         /// <summary>
         /// Returns the string presentation of the object

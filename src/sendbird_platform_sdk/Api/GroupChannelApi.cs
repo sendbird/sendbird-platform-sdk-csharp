@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -29,225 +29,233 @@ namespace sendbird_platform_sdk.Api
         /// Accept an invitation
         /// </summary>
         /// <remarks>
-        /// ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Accept an invitation  Accepts an invitation from a group channel for a user to join. A single user may join up to 2,000 group channels, and any invitation to a user who is at capacity will be automatically canceled. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  > **Note**: This action is only available when the `auto_accept` property of an application is set to **false**. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/setting-up-channels/update-default-invitation-preference) action, or the [update channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-channel-invitation-preference) action.      [https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/accept-an-invitation-channel#1-accept-an-invitation](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/accept-an-invitation-channel#1-accept-an-invitation)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcAcceptInvitationData"> (optional)</param>
-        /// <returns>SendBirdGroupChannel</returns>
-        SendBirdGroupChannel GcAcceptInvitation (string apiToken, string channelUrl, GcAcceptInvitationData gcAcceptInvitationData = default(GcAcceptInvitationData));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="acceptAnInvitationRequest"> (optional)</param>
+        /// <returns>SendbirdGroupChannelDetail</returns>
+        SendbirdGroupChannelDetail AcceptAnInvitation (string channelUrl, string apiToken = default(string), AcceptAnInvitationRequest acceptAnInvitationRequest = default(AcceptAnInvitationRequest));
 
         /// <summary>
         /// Accept an invitation
         /// </summary>
         /// <remarks>
-        /// ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Accept an invitation  Accepts an invitation from a group channel for a user to join. A single user may join up to 2,000 group channels, and any invitation to a user who is at capacity will be automatically canceled. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  > **Note**: This action is only available when the `auto_accept` property of an application is set to **false**. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/setting-up-channels/update-default-invitation-preference) action, or the [update channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-channel-invitation-preference) action.      [https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/accept-an-invitation-channel#1-accept-an-invitation](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/accept-an-invitation-channel#1-accept-an-invitation)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcAcceptInvitationData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdGroupChannel</returns>
-        ApiResponse<SendBirdGroupChannel> GcAcceptInvitationWithHttpInfo (string apiToken, string channelUrl, GcAcceptInvitationData gcAcceptInvitationData = default(GcAcceptInvitationData));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="acceptAnInvitationRequest"> (optional)</param>
+        /// <returns>ApiResponse of SendbirdGroupChannelDetail</returns>
+        ApiResponse<SendbirdGroupChannelDetail> AcceptAnInvitationWithHttpInfo (string channelUrl, string apiToken = default(string), AcceptAnInvitationRequest acceptAnInvitationRequest = default(AcceptAnInvitationRequest));
         /// <summary>
         /// Cancel the registration of operators
         /// </summary>
         /// <remarks>
-        /// ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// ## Unregister operators from a group channel  You can unregister operators in a group channel but keep them in the channel as members using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/unregister-operators-from-a-group-channel#1-unregister-operators-from-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="operatorIds"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="operatorIds">Specifies an array of one or more operator IDs to unregister from the channel. The operators in this array remain as participants of the channel after losing their operational roles. Urlencoding each operator ID is recommended. An example of a Urlencoded array would be ?operator_ids&#x3D;urlencoded_id_1,urlencoded_id_2.</param>
         /// <param name="deleteAll"> (optional)</param>
-        /// <returns>OcDeleteChannelByUrl200Response</returns>
-        OcDeleteChannelByUrl200Response GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?));
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>Object</returns>
+        Object CancelTheRegistrationOfOperators (string channelUrl, string operatorIds, bool? deleteAll = default(bool?), string apiToken = default(string));
 
         /// <summary>
         /// Cancel the registration of operators
         /// </summary>
         /// <remarks>
-        /// ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// ## Unregister operators from a group channel  You can unregister operators in a group channel but keep them in the channel as members using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/unregister-operators-from-a-group-channel#1-unregister-operators-from-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="operatorIds"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="operatorIds">Specifies an array of one or more operator IDs to unregister from the channel. The operators in this array remain as participants of the channel after losing their operational roles. Urlencoding each operator ID is recommended. An example of a Urlencoded array would be ?operator_ids&#x3D;urlencoded_id_1,urlencoded_id_2.</param>
         /// <param name="deleteAll"> (optional)</param>
-        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        ApiResponse<OcDeleteChannelByUrl200Response> GcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?));
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> CancelTheRegistrationOfOperatorsWithHttpInfo (string channelUrl, string operatorIds, bool? deleteAll = default(bool?), string apiToken = default(string));
         /// <summary>
         /// Check if member
         /// </summary>
         /// <remarks>
-        /// ## Check if member  Checks whether the user is a member of the group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-check-if-member - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Check if user is a member  Checks if a user is a member of a group channel.  > **Note**: See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.      [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/check-if-user-is-a-member#1-check-if-user-is-a-member](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/check-if-user-is-a-member#1-check-if-user-is-a-member)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="userId"></param>
-        /// <returns>GcCheckIfMemberByIdResponse</returns>
-        GcCheckIfMemberByIdResponse GcCheckIfMemberById (string apiToken, string channelUrl, string userId);
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="userId">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>CheckIfMemberResponse</returns>
+        CheckIfMemberResponse CheckIfMember (string channelUrl, string userId, string apiToken = default(string));
 
         /// <summary>
         /// Check if member
         /// </summary>
         /// <remarks>
-        /// ## Check if member  Checks whether the user is a member of the group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-check-if-member - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Check if user is a member  Checks if a user is a member of a group channel.  > **Note**: See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.      [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/check-if-user-is-a-member#1-check-if-user-is-a-member](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/check-if-user-is-a-member#1-check-if-user-is-a-member)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="userId"></param>
-        /// <returns>ApiResponse of GcCheckIfMemberByIdResponse</returns>
-        ApiResponse<GcCheckIfMemberByIdResponse> GcCheckIfMemberByIdWithHttpInfo (string apiToken, string channelUrl, string userId);
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="userId">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of CheckIfMemberResponse</returns>
+        ApiResponse<CheckIfMemberResponse> CheckIfMemberWithHttpInfo (string channelUrl, string userId, string apiToken = default(string));
         /// <summary>
-        /// Create a channel
+        /// Create a group channel
         /// </summary>
         /// <remarks>
-        /// ## Create a channel  Creates a new group channel.  > If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the `distinct` property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can't see previously sent messages or data in the new channel. On the other hand, if the `distinct` property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
+        /// ## Create a group channel  You can create a group channel for 1-to-1 and 1-to-N conversations. By default, group channels are used for conversations between up to 100 members. This number can stretch up to tens of thousands in Supergroup channels. Group channels can either be private and invite only, or public. They support typing indicators, unread count and read receipts, allowing for an interactive chat experience. A user can join up to 2000 group channels, and higher numbers would negatively impact the performance for the end user. The Chat history is turned off by default and its settings can be changed on Sendbird Dashboard by going to Settings > Chat > Channels > Group channels > Chat history. To learn more about group channels, see Channel Overview.  > If you are seeing the error message Maximum \"channel join\" count reached., then consider deleting channels that are no longer used. For situations where an agent connects with many customers such as support, delivery logistics or sales, we recommend using Sendbird Desk.  https://sendbird.com/docs/chat/platform-api/v3/channel/creating-a-channel/create-a-group-channel#1-create-a-group-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="gcCreateChannelData"> (optional)</param>
-        /// <returns>SendBirdGroupChannel</returns>
-        SendBirdGroupChannel GcCreateChannel (string apiToken, GcCreateChannelData gcCreateChannelData = default(GcCreateChannelData));
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="createAGroupChannelRequest"> (optional)</param>
+        /// <returns>SendbirdGroupChannelDetail</returns>
+        SendbirdGroupChannelDetail CreateAGroupChannel (string apiToken = default(string), CreateAGroupChannelRequest createAGroupChannelRequest = default(CreateAGroupChannelRequest));
 
         /// <summary>
-        /// Create a channel
+        /// Create a group channel
         /// </summary>
         /// <remarks>
-        /// ## Create a channel  Creates a new group channel.  > If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the `distinct` property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can't see previously sent messages or data in the new channel. On the other hand, if the `distinct` property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
+        /// ## Create a group channel  You can create a group channel for 1-to-1 and 1-to-N conversations. By default, group channels are used for conversations between up to 100 members. This number can stretch up to tens of thousands in Supergroup channels. Group channels can either be private and invite only, or public. They support typing indicators, unread count and read receipts, allowing for an interactive chat experience. A user can join up to 2000 group channels, and higher numbers would negatively impact the performance for the end user. The Chat history is turned off by default and its settings can be changed on Sendbird Dashboard by going to Settings > Chat > Channels > Group channels > Chat history. To learn more about group channels, see Channel Overview.  > If you are seeing the error message Maximum \"channel join\" count reached., then consider deleting channels that are no longer used. For situations where an agent connects with many customers such as support, delivery logistics or sales, we recommend using Sendbird Desk.  https://sendbird.com/docs/chat/platform-api/v3/channel/creating-a-channel/create-a-group-channel#1-create-a-group-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="gcCreateChannelData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdGroupChannel</returns>
-        ApiResponse<SendBirdGroupChannel> GcCreateChannelWithHttpInfo (string apiToken, GcCreateChannelData gcCreateChannelData = default(GcCreateChannelData));
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="createAGroupChannelRequest"> (optional)</param>
+        /// <returns>ApiResponse of SendbirdGroupChannelDetail</returns>
+        ApiResponse<SendbirdGroupChannelDetail> CreateAGroupChannelWithHttpInfo (string apiToken = default(string), CreateAGroupChannelRequest createAGroupChannelRequest = default(CreateAGroupChannelRequest));
         /// <summary>
-        /// Decline an invitation
+        /// Delete a group channel
         /// </summary>
         /// <remarks>
-        /// ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Delete a group channel  You can delete a group channel or a Supergroup channel using this API. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-a-group-channel#1-delete-a-group-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-a-group-channel#1-delete-a-group-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcDeclineInvitationData"> (optional)</param>
-        /// <returns>OcDeleteChannelByUrl200Response</returns>
-        OcDeleteChannelByUrl200Response GcDeclineInvitation (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData));
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>Object</returns>
+        Object DeleteAGroupChannel (string channelUrl, string apiToken = default(string));
 
         /// <summary>
-        /// Decline an invitation
+        /// Delete a group channel
         /// </summary>
         /// <remarks>
-        /// ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Delete a group channel  You can delete a group channel or a Supergroup channel using this API. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-a-group-channel#1-delete-a-group-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-a-group-channel#1-delete-a-group-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcDeclineInvitationData"> (optional)</param>
-        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        ApiResponse<OcDeleteChannelByUrl200Response> GcDeclineInvitationWithHttpInfo (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData));
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> DeleteAGroupChannelWithHttpInfo (string channelUrl, string apiToken = default(string));
         /// <summary>
-        /// Delete a channel
+        /// Get a group channel
         /// </summary>
         /// <remarks>
-        /// ## Delete a channel  Deletes a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Get a group channel  This action retrieves information about a specific [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel). You can use the optional query parameters to determine whether to include delivery receipt, read receipt, or member information in the response.  https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-a-group-channel#1-get-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <returns>OcDeleteChannelByUrl200Response</returns>
-        OcDeleteChannelByUrl200Response GcDeleteChannelByUrl (string apiToken, string channelUrl);
+        /// <param name="showDeliveryReceipt"> (optional)</param>
+        /// <param name="showReadReceipt"> (optional)</param>
+        /// <param name="showMember"> (optional)</param>
+        /// <param name="memberActiveMode">Restricts the member list to members who are activated or deactivated in the channel. This parameter is only effective if the parameter show_member is true. Acceptable values are all, activated, and deactivated. (default: all) (optional)</param>
+        /// <param name="userId"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>GetAGroupChannelResponse</returns>
+        GetAGroupChannelResponse GetAGroupChannel (string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), string memberActiveMode = default(string), string userId = default(string), string apiToken = default(string));
 
         /// <summary>
-        /// Delete a channel
+        /// Get a group channel
         /// </summary>
         /// <remarks>
-        /// ## Delete a channel  Deletes a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Get a group channel  This action retrieves information about a specific [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel). You can use the optional query parameters to determine whether to include delivery receipt, read receipt, or member information in the response.  https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-a-group-channel#1-get-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        ApiResponse<OcDeleteChannelByUrl200Response> GcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl);
+        /// <param name="showDeliveryReceipt"> (optional)</param>
+        /// <param name="showReadReceipt"> (optional)</param>
+        /// <param name="showMember"> (optional)</param>
+        /// <param name="memberActiveMode">Restricts the member list to members who are activated or deactivated in the channel. This parameter is only effective if the parameter show_member is true. Acceptable values are all, activated, and deactivated. (default: all) (optional)</param>
+        /// <param name="userId"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of GetAGroupChannelResponse</returns>
+        ApiResponse<GetAGroupChannelResponse> GetAGroupChannelWithHttpInfo (string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), string memberActiveMode = default(string), string userId = default(string), string apiToken = default(string));
         /// <summary>
-        /// Hide or archive a channel
+        /// Hide a channel
         /// </summary>
         /// <remarks>
-        /// ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn't appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Hide a channel  This action allows you to hide a [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel) from a user's channel list. Hiding a channel gives users the ability to archive channels so that they can focus on channels that need the most attention.  With this API, you can allow users to hide a channel from themselves or from all channel members. You can also determine whether to have the channel remain hidden when a new message is sent to the channel. Note that only group channels can be hidden.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/hide-a-channel#1-hide-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/hide-a-channel#1-hide-a-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
-        /// <returns>OcDeleteChannelByUrl200Response</returns>
-        OcDeleteChannelByUrl200Response GcHideOrArchiveChannel (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="hideAChannelRequest"> (optional)</param>
+        /// <returns>Object</returns>
+        Object HideAChannel (string channelUrl, string apiToken = default(string), HideAChannelRequest hideAChannelRequest = default(HideAChannelRequest));
 
         /// <summary>
-        /// Hide or archive a channel
+        /// Hide a channel
         /// </summary>
         /// <remarks>
-        /// ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn't appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Hide a channel  This action allows you to hide a [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel) from a user's channel list. Hiding a channel gives users the ability to archive channels so that they can focus on channels that need the most attention.  With this API, you can allow users to hide a channel from themselves or from all channel members. You can also determine whether to have the channel remain hidden when a new message is sent to the channel. Note that only group channels can be hidden.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/hide-a-channel#1-hide-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/hide-a-channel#1-hide-a-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
-        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        ApiResponse<OcDeleteChannelByUrl200Response> GcHideOrArchiveChannelWithHttpInfo (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="hideAChannelRequest"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> HideAChannelWithHttpInfo (string channelUrl, string apiToken = default(string), HideAChannelRequest hideAChannelRequest = default(HideAChannelRequest));
         /// <summary>
         /// Invite as members
         /// </summary>
         /// <remarks>
-        /// ## Invite as members  Invites one or more users as members into the group channel.  > __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Invite as members  Invites one or more users as members to a group channel. Users can join a group channel immediately after receiving an invitation, without having to accept it. To give users an option to accept or decline an invitation, see [update default channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/setting-up-channels/update-default-invitation-preference) or [update channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-channel-invitation-preference). See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  > **Note**: By default, [blocked users](https://sendbird.com/docs/chat/platform-api/v3/moderation/blocking-users/block-users) are included when sending invitations. If you wish to exclude blocked users, [contact our sales team](https://get.sendbird.com/talk-to-sales.html).      [https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel#1-invite-as-members](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel#1-invite-as-members)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcInviteAsMembersData"> (optional)</param>
-        /// <returns>SendBirdGroupChannel</returns>
-        SendBirdGroupChannel GcInviteAsMembers (string apiToken, string channelUrl, GcInviteAsMembersData gcInviteAsMembersData = default(GcInviteAsMembersData));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="inviteAsMembersRequest"> (optional)</param>
+        /// <returns>InviteAsMembersResponse</returns>
+        InviteAsMembersResponse InviteAsMembers (string channelUrl, string apiToken = default(string), InviteAsMembersRequest inviteAsMembersRequest = default(InviteAsMembersRequest));
 
         /// <summary>
         /// Invite as members
         /// </summary>
         /// <remarks>
-        /// ## Invite as members  Invites one or more users as members into the group channel.  > __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Invite as members  Invites one or more users as members to a group channel. Users can join a group channel immediately after receiving an invitation, without having to accept it. To give users an option to accept or decline an invitation, see [update default channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/setting-up-channels/update-default-invitation-preference) or [update channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-channel-invitation-preference). See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  > **Note**: By default, [blocked users](https://sendbird.com/docs/chat/platform-api/v3/moderation/blocking-users/block-users) are included when sending invitations. If you wish to exclude blocked users, [contact our sales team](https://get.sendbird.com/talk-to-sales.html).      [https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel#1-invite-as-members](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel#1-invite-as-members)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcInviteAsMembersData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdGroupChannel</returns>
-        ApiResponse<SendBirdGroupChannel> GcInviteAsMembersWithHttpInfo (string apiToken, string channelUrl, GcInviteAsMembersData gcInviteAsMembersData = default(GcInviteAsMembersData));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="inviteAsMembersRequest"> (optional)</param>
+        /// <returns>ApiResponse of InviteAsMembersResponse</returns>
+        ApiResponse<InviteAsMembersResponse> InviteAsMembersWithHttpInfo (string channelUrl, string apiToken = default(string), InviteAsMembersRequest inviteAsMembersRequest = default(InviteAsMembersRequest));
         /// <summary>
         /// Join a channel
         /// </summary>
         /// <remarks>
-        /// ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can't join a new channel.  > __Note__: This action is only permitted for public group channels where the `is_public` property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Join a channel  This API allows a user to join a [public](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-group-channel-types) group channel. Users can only join public group channels where the `is_public` property is set to `true` using this API. A single user can join up to 2,000 group channels, and a user who reaches the capacity can’t join a new channel. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/join-a-channel#1-join-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/join-a-channel#1-join-a-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcJoinChannelData"> (optional)</param>
-        /// <returns></returns>
-        void GcJoinChannel (string apiToken, string channelUrl, GcJoinChannelData gcJoinChannelData = default(GcJoinChannelData));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="joinAChannelRequest"> (optional)</param>
+        /// <returns>SendbirdGroupChannelDetail</returns>
+        SendbirdGroupChannelDetail JoinAChannel (string channelUrl, string apiToken = default(string), JoinAChannelRequest joinAChannelRequest = default(JoinAChannelRequest));
 
         /// <summary>
         /// Join a channel
         /// </summary>
         /// <remarks>
-        /// ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can't join a new channel.  > __Note__: This action is only permitted for public group channels where the `is_public` property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Join a channel  This API allows a user to join a [public](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-group-channel-types) group channel. Users can only join public group channels where the `is_public` property is set to `true` using this API. A single user can join up to 2,000 group channels, and a user who reaches the capacity can’t join a new channel. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/join-a-channel#1-join-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/join-a-channel#1-join-a-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcJoinChannelData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GcJoinChannelWithHttpInfo (string apiToken, string channelUrl, GcJoinChannelData gcJoinChannelData = default(GcJoinChannelData));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="joinAChannelRequest"> (optional)</param>
+        /// <returns>ApiResponse of SendbirdGroupChannelDetail</returns>
+        ApiResponse<SendbirdGroupChannelDetail> JoinAChannelWithHttpInfo (string channelUrl, string apiToken = default(string), JoinAChannelRequest joinAChannelRequest = default(JoinAChannelRequest));
         /// <summary>
         /// Leave a channel
         /// </summary>
@@ -255,11 +263,11 @@ namespace sendbird_platform_sdk.Api
         /// ## Leave a channel  Makes one or more members leave a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-leave-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcLeaveChannelData"> (optional)</param>
-        /// <returns>OcDeleteChannelByUrl200Response</returns>
-        OcDeleteChannelByUrl200Response GcLeaveChannel (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData));
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="leaveAChannelRequest"> (optional)</param>
+        /// <returns>Object</returns>
+        Object LeaveAChannel (string channelUrl, string apiToken = default(string), LeaveAChannelRequest leaveAChannelRequest = default(LeaveAChannelRequest));
 
         /// <summary>
         /// Leave a channel
@@ -268,26 +276,26 @@ namespace sendbird_platform_sdk.Api
         /// ## Leave a channel  Makes one or more members leave a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-leave-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcLeaveChannelData"> (optional)</param>
-        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        ApiResponse<OcDeleteChannelByUrl200Response> GcLeaveChannelWithHttpInfo (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData));
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="leaveAChannelRequest"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> LeaveAChannelWithHttpInfo (string channelUrl, string apiToken = default(string), LeaveAChannelRequest leaveAChannelRequest = default(LeaveAChannelRequest));
         /// <summary>
         /// List channels
         /// </summary>
         /// <remarks>
-        /// ## List channels  Retrieves a list of group channels in the application.  > __Note__: If you want to get a list of a specific user's group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## List group channels  This action retrieves a list of [group channels](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel). You can use various query parameters to determine the search scope and select what kind of information you want to receive about the queried channels.  If you want to retrieve a list of group channels that a specific user has joined, use the [list group channels by user](https://sendbird.com/docs/chat/platform-api/v3/user/managing-joined-group-channels/list-group-channels-by-user) action under the User section.  https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-group-channels#1-list-group-channels
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="token">Specifies a page token that indicates the starting index of a chunk of results. If not specified, the index is set as 0. (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
         /// <param name="distinctMode"> (optional)</param>
         /// <param name="publicMode"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
-        /// <param name="createdAfter"> (optional)</param>
-        /// <param name="createdBefore"> (optional)</param>
+        /// <param name="createdAfter">Restricts the search scope to only retrieve group channels which have been created after the specified time, in Unix milliseconds format. (optional)</param>
+        /// <param name="createdBefore">Restricts the search scope to only retrieve group channels which have been created before the specified time, in Unix milliseconds format. (optional)</param>
         /// <param name="showEmpty"> (optional)</param>
         /// <param name="showMember"> (optional)</param>
         /// <param name="showDeliveryReceipt"> (optional)</param>
@@ -295,52 +303,46 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="showFrozen"> (optional)</param>
         /// <param name="order"> (optional)</param>
-        /// <param name="metadataOrderKey"> (optional)</param>
-        /// <param name="customTypes"> (optional)</param>
-        /// <param name="customTypeStartswith"> (optional)</param>
-        /// <param name="channelUrls"> (optional)</param>
-        /// <param name="name"> (optional)</param>
-        /// <param name="nameContains"> (optional)</param>
-        /// <param name="nameStartswith"> (optional)</param>
-        /// <param name="membersExactlyIn"> (optional)</param>
-        /// <param name="membersIncludeIn"> (optional)</param>
-        /// <param name="queryType"> (optional)</param>
-        /// <param name="membersNickname"> (optional)</param>
-        /// <param name="membersNicknameContains"> (optional)</param>
-        /// <param name="metadataKey"> (optional)</param>
-        /// <param name="metadataValues"> (optional)</param>
-        /// <param name="metadataValueStartswith"> (optional)</param>
-        /// <param name="metacounterKey"> (optional)</param>
-        /// <param name="metacounterValues"> (optional)</param>
-        /// <param name="metacounterValueGt"> (optional)</param>
-        /// <param name="metacounterValueGte"> (optional)</param>
-        /// <param name="metacounterValueLt"> (optional)</param>
-        /// <param name="metacounterValueLte"> (optional)</param>
-        /// <param name="includeSortedMetaarrayInLastMessage"> (optional)</param>
-        /// <param name="customType"> (optional)</param>
-        /// <param name="readReceipt"> (optional)</param>
-        /// <param name="member"> (optional)</param>
-        /// <param name="isDistinct"> (optional)</param>
-        /// <param name="membersIn"> (optional)</param>
-        /// <param name="userId"> (optional)</param>
-        /// <returns>GcListChannelsResponse</returns>
-        GcListChannelsResponse GcListChannels (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), string customType = default(string), bool? readReceipt = default(bool?), bool? member = default(bool?), bool? isDistinct = default(bool?), string membersIn = default(string), string userId = default(string));
+        /// <param name="metadataOrderKey">Specifies the key of an item in metadata. When a value of the order parameter is set to metadata_value_alphabetical, the results are alphabetically sorted by the value of the item specified by the key. (optional)</param>
+        /// <param name="customTypes">Specifies a comma-separated string of one or more custom types to filter group channels. URL encoding each type is recommended. If not specified, all channels are returned, regardless of their custom type. (optional)</param>
+        /// <param name="customTypeStartswith">Searches for group channels with the custom type which starts with the specified value. URL encoding the value is recommended. (optional)</param>
+        /// <param name="channelUrls">Specifies a comma-separated string of one or more group channel URLs to restrict the search scope. URL encoding each channel URL is recommended. (optional)</param>
+        /// <param name="name">Specifies one or more group channel names. (optional)</param>
+        /// <param name="nameContains">Searches for group channels whose names contain the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended. (optional)</param>
+        /// <param name="nameStartswith">Searches for group channels whose names start with the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended. (optional)</param>
+        /// <param name="membersExactlyIn">Searches for group channels with all the specified users as members. The parameter value should consist of user IDs separated by commas.  Only user IDs that match those of existing users are used for channel search. URL encoding each ID is recommended. (optional)</param>
+        /// <param name="membersIncludeIn">Searches for group channels that include one or more users as members among the specified users. The value should consist of user IDs separated by commas or %2C. You can specify up to 60 user IDs.  Only user IDs that match those of existing users are used for channel search. URL encoding each ID is recommended. (optional)</param>
+        /// <param name="queryType">Specifies a logical condition applied to the members_include_in parameter. Acceptable values are either AND or OR. For example, if you specify three members, A, B, and C, in members_include_in, the value of AND returns all channels that include every one of {A. B, C} as members. The value of OR returns channels that include {A}, plus those that include {B}, plus those that include {C}. (Default: AND) (optional)</param>
+        /// <param name="membersNickname">Searches for group channels with members whose nicknames match the specified value. URL encoding the value is recommended. (optional)</param>
+        /// <param name="membersNicknameContains">Searches for group channels with members whose nicknames contain the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended.  * We recommend using at least three characters for the parameter value for better search efficiency when you design and implement related features. If you would like to allow one or two characters for searching, use members_nickname instead to prevent performance issues. (optional)</param>
+        /// <param name="metadataKey">Searches for group channels with metadata containing an item with the specified value as its key. To use this parameter, either the metadata_values parameter or the metadata_value_startswith parameter should be specified. (optional)</param>
+        /// <param name="metadataValues">Searches for group channels with metadata containing an item with the key specified by the metadata_key parameter, and the value of that item matches one or more values specified by this parameter. The string should be specified with multiple values separated by commas. URL encoding each value is recommended. To use this parameter, the metadata_key parameter should be specified. (optional)</param>
+        /// <param name="metadataValueStartswith">Searches for group channels with metadata containing an item with the key specified by the metadata_key parameter, and the values of that item that start with the specified value of this parameter. URL encoding the value is recommended. To use this parameter, the metadata_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterKey">Searches for group channels with metacounter containing an item with the specified value as its key. To use this parameter, either the metacounter_values parameter or one of the metacounter_value_gt, metacounter_value_gte, metacounter_value_lt, and metacounter_value_lte parameters should be specified. (optional)</param>
+        /// <param name="metacounterValues">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is equal to one or more values specified by this parameter. The string should be specified with multiple values separated by commas. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueGt">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is greater than the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueGte">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is greater than or equal to the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueLt">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is lower than the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueLte">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is lower than or equal to the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="includeSortedMetaarrayInLastMessage">Determines whether to include the sorted_metaarray as one of the last_message’s properties in the response. (optional)</param>
+        /// <returns>GroupChatListChannelsResponse</returns>
+        GroupChatListChannelsResponse ListChannels (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), long? createdAfter = default(long?), long? createdBefore = default(long?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?));
 
         /// <summary>
         /// List channels
         /// </summary>
         /// <remarks>
-        /// ## List channels  Retrieves a list of group channels in the application.  > __Note__: If you want to get a list of a specific user's group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## List group channels  This action retrieves a list of [group channels](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel). You can use various query parameters to determine the search scope and select what kind of information you want to receive about the queried channels.  If you want to retrieve a list of group channels that a specific user has joined, use the [list group channels by user](https://sendbird.com/docs/chat/platform-api/v3/user/managing-joined-group-channels/list-group-channels-by-user) action under the User section.  https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-group-channels#1-list-group-channels
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="token">Specifies a page token that indicates the starting index of a chunk of results. If not specified, the index is set as 0. (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
         /// <param name="distinctMode"> (optional)</param>
         /// <param name="publicMode"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
-        /// <param name="createdAfter"> (optional)</param>
-        /// <param name="createdBefore"> (optional)</param>
+        /// <param name="createdAfter">Restricts the search scope to only retrieve group channels which have been created after the specified time, in Unix milliseconds format. (optional)</param>
+        /// <param name="createdBefore">Restricts the search scope to only retrieve group channels which have been created before the specified time, in Unix milliseconds format. (optional)</param>
         /// <param name="showEmpty"> (optional)</param>
         /// <param name="showMember"> (optional)</param>
         /// <param name="showDeliveryReceipt"> (optional)</param>
@@ -348,482 +350,509 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="showFrozen"> (optional)</param>
         /// <param name="order"> (optional)</param>
-        /// <param name="metadataOrderKey"> (optional)</param>
-        /// <param name="customTypes"> (optional)</param>
-        /// <param name="customTypeStartswith"> (optional)</param>
-        /// <param name="channelUrls"> (optional)</param>
-        /// <param name="name"> (optional)</param>
-        /// <param name="nameContains"> (optional)</param>
-        /// <param name="nameStartswith"> (optional)</param>
-        /// <param name="membersExactlyIn"> (optional)</param>
-        /// <param name="membersIncludeIn"> (optional)</param>
-        /// <param name="queryType"> (optional)</param>
-        /// <param name="membersNickname"> (optional)</param>
-        /// <param name="membersNicknameContains"> (optional)</param>
-        /// <param name="metadataKey"> (optional)</param>
-        /// <param name="metadataValues"> (optional)</param>
-        /// <param name="metadataValueStartswith"> (optional)</param>
-        /// <param name="metacounterKey"> (optional)</param>
-        /// <param name="metacounterValues"> (optional)</param>
-        /// <param name="metacounterValueGt"> (optional)</param>
-        /// <param name="metacounterValueGte"> (optional)</param>
-        /// <param name="metacounterValueLt"> (optional)</param>
-        /// <param name="metacounterValueLte"> (optional)</param>
-        /// <param name="includeSortedMetaarrayInLastMessage"> (optional)</param>
-        /// <param name="customType"> (optional)</param>
-        /// <param name="readReceipt"> (optional)</param>
-        /// <param name="member"> (optional)</param>
-        /// <param name="isDistinct"> (optional)</param>
-        /// <param name="membersIn"> (optional)</param>
-        /// <param name="userId"> (optional)</param>
-        /// <returns>ApiResponse of GcListChannelsResponse</returns>
-        ApiResponse<GcListChannelsResponse> GcListChannelsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), string customType = default(string), bool? readReceipt = default(bool?), bool? member = default(bool?), bool? isDistinct = default(bool?), string membersIn = default(string), string userId = default(string));
+        /// <param name="metadataOrderKey">Specifies the key of an item in metadata. When a value of the order parameter is set to metadata_value_alphabetical, the results are alphabetically sorted by the value of the item specified by the key. (optional)</param>
+        /// <param name="customTypes">Specifies a comma-separated string of one or more custom types to filter group channels. URL encoding each type is recommended. If not specified, all channels are returned, regardless of their custom type. (optional)</param>
+        /// <param name="customTypeStartswith">Searches for group channels with the custom type which starts with the specified value. URL encoding the value is recommended. (optional)</param>
+        /// <param name="channelUrls">Specifies a comma-separated string of one or more group channel URLs to restrict the search scope. URL encoding each channel URL is recommended. (optional)</param>
+        /// <param name="name">Specifies one or more group channel names. (optional)</param>
+        /// <param name="nameContains">Searches for group channels whose names contain the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended. (optional)</param>
+        /// <param name="nameStartswith">Searches for group channels whose names start with the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended. (optional)</param>
+        /// <param name="membersExactlyIn">Searches for group channels with all the specified users as members. The parameter value should consist of user IDs separated by commas.  Only user IDs that match those of existing users are used for channel search. URL encoding each ID is recommended. (optional)</param>
+        /// <param name="membersIncludeIn">Searches for group channels that include one or more users as members among the specified users. The value should consist of user IDs separated by commas or %2C. You can specify up to 60 user IDs.  Only user IDs that match those of existing users are used for channel search. URL encoding each ID is recommended. (optional)</param>
+        /// <param name="queryType">Specifies a logical condition applied to the members_include_in parameter. Acceptable values are either AND or OR. For example, if you specify three members, A, B, and C, in members_include_in, the value of AND returns all channels that include every one of {A. B, C} as members. The value of OR returns channels that include {A}, plus those that include {B}, plus those that include {C}. (Default: AND) (optional)</param>
+        /// <param name="membersNickname">Searches for group channels with members whose nicknames match the specified value. URL encoding the value is recommended. (optional)</param>
+        /// <param name="membersNicknameContains">Searches for group channels with members whose nicknames contain the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended.  * We recommend using at least three characters for the parameter value for better search efficiency when you design and implement related features. If you would like to allow one or two characters for searching, use members_nickname instead to prevent performance issues. (optional)</param>
+        /// <param name="metadataKey">Searches for group channels with metadata containing an item with the specified value as its key. To use this parameter, either the metadata_values parameter or the metadata_value_startswith parameter should be specified. (optional)</param>
+        /// <param name="metadataValues">Searches for group channels with metadata containing an item with the key specified by the metadata_key parameter, and the value of that item matches one or more values specified by this parameter. The string should be specified with multiple values separated by commas. URL encoding each value is recommended. To use this parameter, the metadata_key parameter should be specified. (optional)</param>
+        /// <param name="metadataValueStartswith">Searches for group channels with metadata containing an item with the key specified by the metadata_key parameter, and the values of that item that start with the specified value of this parameter. URL encoding the value is recommended. To use this parameter, the metadata_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterKey">Searches for group channels with metacounter containing an item with the specified value as its key. To use this parameter, either the metacounter_values parameter or one of the metacounter_value_gt, metacounter_value_gte, metacounter_value_lt, and metacounter_value_lte parameters should be specified. (optional)</param>
+        /// <param name="metacounterValues">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is equal to one or more values specified by this parameter. The string should be specified with multiple values separated by commas. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueGt">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is greater than the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueGte">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is greater than or equal to the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueLt">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is lower than the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueLte">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is lower than or equal to the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="includeSortedMetaarrayInLastMessage">Determines whether to include the sorted_metaarray as one of the last_message’s properties in the response. (optional)</param>
+        /// <returns>ApiResponse of GroupChatListChannelsResponse</returns>
+        ApiResponse<GroupChatListChannelsResponse> ListChannelsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), long? createdAfter = default(long?), long? createdBefore = default(long?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?));
         /// <summary>
         /// List members
         /// </summary>
         /// <remarks>
-        /// ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
+        /// ## List members  Retrieves a list of members of a group channel.  > **Note**: See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.      [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/list-members-of-a-group-channel#1-list-members-of-a-group-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/list-members-of-a-group-channel#1-list-members-of-a-group-channel)  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of members of.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
+        /// <param name="userId">Specifies the unique ID of a user. If &#x60;user_id&#x60; is provided, the response will include two additional boolean properties about each user in the members list. - &#x60;is_blocking_me&#x60;: Indicates whether the listed user is blocking the user specified in the user_id parameter. - &#x60;is_blocked_by_me&#x60;: Indicates whether the listed user is blocked by the user specified in the user_id parameter. (optional)</param>
         /// <param name="showDeliveryReceipt"> (optional)</param>
         /// <param name="showReadReceipt"> (optional)</param>
-        /// <param name="order"> (optional)</param>
-        /// <param name="operatorFilter"> (optional)</param>
-        /// <param name="memberStateFilter"> (optional)</param>
-        /// <param name="mutedMemberFilter"> (optional)</param>
-        /// <param name="nicknameStartswith"> (optional)</param>
-        /// <returns>GcListMembersResponse</returns>
-        GcListMembersResponse GcListMembers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string nicknameStartswith = default(string));
+        /// <param name="showMemberIsMuted"> (optional)</param>
+        /// <param name="order">Specifies the method to sort a list of results. Acceptable values are the following: - &#x60;member_nickname_alphabetical&#x60; (default): sorts by the member nicknames in alphabetical order. - &#x60;operator_then_member_alphabetical&#x60;: sorts by the operational role and member nickname in alphabetical order where channel operators are listed before channel members. (optional)</param>
+        /// <param name="operatorFilter">Restricts the search scope to only retrieve operators or non-operator members of the channel. Acceptable values are the following: - &#x60;all&#x60; (default): no filter is applied to the list. - &#x60;operator&#x60;: only channel operators are retrieved. - &#x60;nonoperator&#x60;: all channel members, except channel operators, are retrieved. (optional)</param>
+        /// <param name="memberStateFilter">Restricts the search scope to retrieve members based on if they have accepted an invitation or if they were invited by a friend. Acceptable values are &#x60;invited_only&#x60;, &#x60;joined_only&#x60;, &#x60;invited_by_friend&#x60;, &#x60;invited_by_non_friend&#x60;, and &#x60;all&#x60;. (Default: &#x60;all&#x60;) (optional)</param>
+        /// <param name="mutedMemberFilter">Restricts the search scope to retrieve members who are muted or unmuted in the channel. Acceptable values are &#x60;all&#x60;, &#x60;muted&#x60;, and &#x60;unmuted&#x60;. (Default: &#x60;all&#x60;) (optional)</param>
+        /// <param name="memberActiveModeFilter">Restricts the search scope to retrieve members who are activated or deactivated in the channel. Acceptable values are &#x60;all&#x60;, &#x60;activated&#x60;, and &#x60;deactivated&#x60;. (default: &#x60;activated&#x60;) (optional)</param>
+        /// <param name="nicknameStartswith">Searches for members whose nicknames start with the specified value. Urlencoding the value is recommended. (optional)</param>
+        /// <param name="includePushPreference">Determines whether to include information about the push preference of each member, such as &#x60;push_enabled&#x60;, &#x60;push_trigger_option&#x60;, and &#x60;do_not_disturb&#x60;. (Default: &#x60;false&#x60;) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>GroupChannelListMembersResponse</returns>
+        GroupChannelListMembersResponse ListMembers (string channelUrl, string token = default(string), int? limit = default(int?), string userId = default(string), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMemberIsMuted = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string memberActiveModeFilter = default(string), string nicknameStartswith = default(string), bool? includePushPreference = default(bool?), string apiToken = default(string));
 
         /// <summary>
         /// List members
         /// </summary>
         /// <remarks>
-        /// ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
+        /// ## List members  Retrieves a list of members of a group channel.  > **Note**: See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.      [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/list-members-of-a-group-channel#1-list-members-of-a-group-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/list-members-of-a-group-channel#1-list-members-of-a-group-channel)  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of members of.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
+        /// <param name="userId">Specifies the unique ID of a user. If &#x60;user_id&#x60; is provided, the response will include two additional boolean properties about each user in the members list. - &#x60;is_blocking_me&#x60;: Indicates whether the listed user is blocking the user specified in the user_id parameter. - &#x60;is_blocked_by_me&#x60;: Indicates whether the listed user is blocked by the user specified in the user_id parameter. (optional)</param>
         /// <param name="showDeliveryReceipt"> (optional)</param>
         /// <param name="showReadReceipt"> (optional)</param>
-        /// <param name="order"> (optional)</param>
-        /// <param name="operatorFilter"> (optional)</param>
-        /// <param name="memberStateFilter"> (optional)</param>
-        /// <param name="mutedMemberFilter"> (optional)</param>
-        /// <param name="nicknameStartswith"> (optional)</param>
-        /// <returns>ApiResponse of GcListMembersResponse</returns>
-        ApiResponse<GcListMembersResponse> GcListMembersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string nicknameStartswith = default(string));
+        /// <param name="showMemberIsMuted"> (optional)</param>
+        /// <param name="order">Specifies the method to sort a list of results. Acceptable values are the following: - &#x60;member_nickname_alphabetical&#x60; (default): sorts by the member nicknames in alphabetical order. - &#x60;operator_then_member_alphabetical&#x60;: sorts by the operational role and member nickname in alphabetical order where channel operators are listed before channel members. (optional)</param>
+        /// <param name="operatorFilter">Restricts the search scope to only retrieve operators or non-operator members of the channel. Acceptable values are the following: - &#x60;all&#x60; (default): no filter is applied to the list. - &#x60;operator&#x60;: only channel operators are retrieved. - &#x60;nonoperator&#x60;: all channel members, except channel operators, are retrieved. (optional)</param>
+        /// <param name="memberStateFilter">Restricts the search scope to retrieve members based on if they have accepted an invitation or if they were invited by a friend. Acceptable values are &#x60;invited_only&#x60;, &#x60;joined_only&#x60;, &#x60;invited_by_friend&#x60;, &#x60;invited_by_non_friend&#x60;, and &#x60;all&#x60;. (Default: &#x60;all&#x60;) (optional)</param>
+        /// <param name="mutedMemberFilter">Restricts the search scope to retrieve members who are muted or unmuted in the channel. Acceptable values are &#x60;all&#x60;, &#x60;muted&#x60;, and &#x60;unmuted&#x60;. (Default: &#x60;all&#x60;) (optional)</param>
+        /// <param name="memberActiveModeFilter">Restricts the search scope to retrieve members who are activated or deactivated in the channel. Acceptable values are &#x60;all&#x60;, &#x60;activated&#x60;, and &#x60;deactivated&#x60;. (default: &#x60;activated&#x60;) (optional)</param>
+        /// <param name="nicknameStartswith">Searches for members whose nicknames start with the specified value. Urlencoding the value is recommended. (optional)</param>
+        /// <param name="includePushPreference">Determines whether to include information about the push preference of each member, such as &#x60;push_enabled&#x60;, &#x60;push_trigger_option&#x60;, and &#x60;do_not_disturb&#x60;. (Default: &#x60;false&#x60;) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of GroupChannelListMembersResponse</returns>
+        ApiResponse<GroupChannelListMembersResponse> ListMembersWithHttpInfo (string channelUrl, string token = default(string), int? limit = default(int?), string userId = default(string), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMemberIsMuted = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string memberActiveModeFilter = default(string), string nicknameStartswith = default(string), bool? includePushPreference = default(bool?), string apiToken = default(string));
         /// <summary>
         /// List operators
         /// </summary>
         /// <remarks>
-        /// ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// ## List operators  You can retrieve a list of operators of a group channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/list-operators-of-a-group-channel#1-list-operators-of-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>GcListOperatorsResponse</returns>
-        GcListOperatorsResponse GcListOperators (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ListOperatorsResponse</returns>
+        ListOperatorsResponse ListOperators (string channelUrl, string token = default(string), int? limit = default(int?), string apiToken = default(string));
 
         /// <summary>
         /// List operators
         /// </summary>
         /// <remarks>
-        /// ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// ## List operators  You can retrieve a list of operators of a group channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/list-operators-of-a-group-channel#1-list-operators-of-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of GcListOperatorsResponse</returns>
-        ApiResponse<GcListOperatorsResponse> GcListOperatorsWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of ListOperatorsResponse</returns>
+        ApiResponse<ListOperatorsResponse> ListOperatorsWithHttpInfo (string channelUrl, string token = default(string), int? limit = default(int?), string apiToken = default(string));
         /// <summary>
-        /// Register operators
+        /// Register operators to a group channel
         /// </summary>
         /// <remarks>
-        /// ## Register operators  Registers one or more operators to a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Register operators to a group channel  You can register one or more operators to a group channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/register-operators-to-a-group-channel#1-register-operators-to-a-group-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcRegisterOperatorsData"> (optional)</param>
-        /// <returns>GcRegisterOperatorsResponse</returns>
-        GcRegisterOperatorsResponse GcRegisterOperators (string apiToken, string channelUrl, GcRegisterOperatorsData gcRegisterOperatorsData = default(GcRegisterOperatorsData));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="registerOperatorsToAGroupChannelRequest"> (optional)</param>
+        /// <returns>Object</returns>
+        Object RegisterOperatorsToAGroupChannel (string channelUrl, string apiToken = default(string), RegisterOperatorsToAGroupChannelRequest registerOperatorsToAGroupChannelRequest = default(RegisterOperatorsToAGroupChannelRequest));
 
         /// <summary>
-        /// Register operators
+        /// Register operators to a group channel
         /// </summary>
         /// <remarks>
-        /// ## Register operators  Registers one or more operators to a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Register operators to a group channel  You can register one or more operators to a group channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/register-operators-to-a-group-channel#1-register-operators-to-a-group-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcRegisterOperatorsData"> (optional)</param>
-        /// <returns>ApiResponse of GcRegisterOperatorsResponse</returns>
-        ApiResponse<GcRegisterOperatorsResponse> GcRegisterOperatorsWithHttpInfo (string apiToken, string channelUrl, GcRegisterOperatorsData gcRegisterOperatorsData = default(GcRegisterOperatorsData));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="registerOperatorsToAGroupChannelRequest"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> RegisterOperatorsToAGroupChannelWithHttpInfo (string channelUrl, string apiToken = default(string), RegisterOperatorsToAGroupChannelRequest registerOperatorsToAGroupChannelRequest = default(RegisterOperatorsToAGroupChannelRequest));
         /// <summary>
         /// Reset chat history
         /// </summary>
         /// <remarks>
-        /// ## Reset chat history  Resets the properties related to a user's chat history in a group channel, then clears the existing messages in the channel on the user's side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the `last_message` and `read_receipt` properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user's unread message.  Using the `reset_all` property, you can also reset the properties related to all users' chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Reset chat history  This action resets the properties related to a specific user's chat history in a [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel), clearing existing messages in a channel from only the specified user's end. Because this action doesn't delete messages from the Sendbird database, other members in the channel can still retrieve and see the messages.  This action clears the messages for the specified user by updating the `last_message` and `read_receipt` properties of the [group channel resource](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-list-of-properties-for-group-channels) in addition to other internally managed data such as the count of a user's unread messages.  Using the `reset_all` property, you can also reset the properties related to the chat history of all members in a group channel.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/reset-chat-history#1-reset-chat-history
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcResetChatHistoryData"> (optional)</param>
-        /// <returns>GcResetChatHistoryResponse</returns>
-        GcResetChatHistoryResponse GcResetChatHistory (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="resetChatHistoryRequest"> (optional)</param>
+        /// <returns>ResetChatHistoryResponse</returns>
+        ResetChatHistoryResponse ResetChatHistory (string channelUrl, string apiToken = default(string), ResetChatHistoryRequest resetChatHistoryRequest = default(ResetChatHistoryRequest));
 
         /// <summary>
         /// Reset chat history
         /// </summary>
         /// <remarks>
-        /// ## Reset chat history  Resets the properties related to a user's chat history in a group channel, then clears the existing messages in the channel on the user's side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the `last_message` and `read_receipt` properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user's unread message.  Using the `reset_all` property, you can also reset the properties related to all users' chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Reset chat history  This action resets the properties related to a specific user's chat history in a [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel), clearing existing messages in a channel from only the specified user's end. Because this action doesn't delete messages from the Sendbird database, other members in the channel can still retrieve and see the messages.  This action clears the messages for the specified user by updating the `last_message` and `read_receipt` properties of the [group channel resource](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-list-of-properties-for-group-channels) in addition to other internally managed data such as the count of a user's unread messages.  Using the `reset_all` property, you can also reset the properties related to the chat history of all members in a group channel.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/reset-chat-history#1-reset-chat-history
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcResetChatHistoryData"> (optional)</param>
-        /// <returns>ApiResponse of GcResetChatHistoryResponse</returns>
-        ApiResponse<GcResetChatHistoryResponse> GcResetChatHistoryWithHttpInfo (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="resetChatHistoryRequest"> (optional)</param>
+        /// <returns>ApiResponse of ResetChatHistoryResponse</returns>
+        ApiResponse<ResetChatHistoryResponse> ResetChatHistoryWithHttpInfo (string channelUrl, string apiToken = default(string), ResetChatHistoryRequest resetChatHistoryRequest = default(ResetChatHistoryRequest));
         /// <summary>
-        /// Unhide or unarchive a channel
+        /// Start typing indicators
         /// </summary>
         /// <remarks>
-        /// ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
+        /// ## Start typing indicators  You can start showing a typing indicator using this API. Seeing whether other users are typing can help a more interactive conversation environment by showing real-time engagement of other users.  If you're looking for an easy way to show typing indicators on your app, check out Sendbird UIKit for a ready-to-use UI feature that can be customized to fit your needs.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-typing-indicators/start-typing-indicators#1-start-typing-indicators  `channel_url`   Type: string   Description: Specifies the URL of the channel to set typing indicators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="userId"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="startTypingIndicatorsRequest"> (optional)</param>
+        /// <returns>Object</returns>
+        Object StartTypingIndicators (string channelUrl, string apiToken = default(string), StartTypingIndicatorsRequest startTypingIndicatorsRequest = default(StartTypingIndicatorsRequest));
+
+        /// <summary>
+        /// Start typing indicators
+        /// </summary>
+        /// <remarks>
+        /// ## Start typing indicators  You can start showing a typing indicator using this API. Seeing whether other users are typing can help a more interactive conversation environment by showing real-time engagement of other users.  If you're looking for an easy way to show typing indicators on your app, check out Sendbird UIKit for a ready-to-use UI feature that can be customized to fit your needs.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-typing-indicators/start-typing-indicators#1-start-typing-indicators  `channel_url`   Type: string   Description: Specifies the URL of the channel to set typing indicators.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="startTypingIndicatorsRequest"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> StartTypingIndicatorsWithHttpInfo (string channelUrl, string apiToken = default(string), StartTypingIndicatorsRequest startTypingIndicatorsRequest = default(StartTypingIndicatorsRequest));
+        /// <summary>
+        /// Stop typing indicators
+        /// </summary>
+        /// <remarks>
+        /// ## Stop typing indicators  You can stop showing a typing indicator using this API. To signal that a user is no longer typing, you can let the indicator disappear when the user sends a message or completely deletes the message text.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-typing-indicators/stop-typing-indicators#1-stop-typing-indicators  `channel_url`   Type: string   Description: Specifies the URL of the channel to set typing indicators.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="startTypingIndicatorsRequest"> (optional)</param>
+        /// <returns>Object</returns>
+        Object StopTypingIndicators (string channelUrl, string apiToken = default(string), StartTypingIndicatorsRequest startTypingIndicatorsRequest = default(StartTypingIndicatorsRequest));
+
+        /// <summary>
+        /// Stop typing indicators
+        /// </summary>
+        /// <remarks>
+        /// ## Stop typing indicators  You can stop showing a typing indicator using this API. To signal that a user is no longer typing, you can let the indicator disappear when the user sends a message or completely deletes the message text.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-typing-indicators/stop-typing-indicators#1-stop-typing-indicators  `channel_url`   Type: string   Description: Specifies the URL of the channel to set typing indicators.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="startTypingIndicatorsRequest"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> StopTypingIndicatorsWithHttpInfo (string channelUrl, string apiToken = default(string), StartTypingIndicatorsRequest startTypingIndicatorsRequest = default(StartTypingIndicatorsRequest));
+        /// <summary>
+        /// Unhide a channel
+        /// </summary>
+        /// <remarks>
+        /// ## Unhide a channel  This action lets a hidden [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel) reappear on the channel list of a specific user or every member in the group channel. Hiding or unhiding a channel lets users organize their channel list based on those that require the most attention. Note that only group channels can be hidden or unhidden.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/unhide-a-channel#1-unhide-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/unhide-a-channel#1-unhide-a-channel)  `channel_url`   Type: string   Description: Specifies the URL of the channel to unhide or unarchive.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="userId">(Required) </param>
         /// <param name="shouldUnhideAll"> (optional)</param>
-        /// <returns>OcDeleteChannelByUrl200Response</returns>
-        OcDeleteChannelByUrl200Response GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?));
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>Object</returns>
+        Object UnhideAChannel (string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), string apiToken = default(string));
 
         /// <summary>
-        /// Unhide or unarchive a channel
+        /// Unhide a channel
         /// </summary>
         /// <remarks>
-        /// ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
+        /// ## Unhide a channel  This action lets a hidden [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel) reappear on the channel list of a specific user or every member in the group channel. Hiding or unhiding a channel lets users organize their channel list based on those that require the most attention. Note that only group channels can be hidden or unhidden.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/unhide-a-channel#1-unhide-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/unhide-a-channel#1-unhide-a-channel)  `channel_url`   Type: string   Description: Specifies the URL of the channel to unhide or unarchive.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="userId"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="userId">(Required) </param>
         /// <param name="shouldUnhideAll"> (optional)</param>
-        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        ApiResponse<OcDeleteChannelByUrl200Response> GcUnhideOrUnarchiveChannelWithHttpInfo (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?));
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> UnhideAChannelWithHttpInfo (string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), string apiToken = default(string));
         /// <summary>
-        /// Update a channel
+        /// Update a group channel
         /// </summary>
         /// <remarks>
-        /// ## Update a channel  Updates information on a group channel.  > __Note__: You can't change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update a group channel  You can update information about a group channel or a Supergroup channel using this API. You can't make any changes to the members of a channel with this API. To change members, see [invite as members](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel) instead. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-a-group-channel#1-update-a-group-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcUpdateChannelByUrlData"> (optional)</param>
-        /// <returns>SendBirdGroupChannel</returns>
-        SendBirdGroupChannel GcUpdateChannelByUrl (string apiToken, string channelUrl, GcUpdateChannelByUrlData gcUpdateChannelByUrlData = default(GcUpdateChannelByUrlData));
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateAGroupChannelRequest"> (optional)</param>
+        /// <returns>SendbirdGroupChannelDetail</returns>
+        SendbirdGroupChannelDetail UpdateAGroupChannel (string channelUrl, string apiToken = default(string), UpdateAGroupChannelRequest updateAGroupChannelRequest = default(UpdateAGroupChannelRequest));
 
         /// <summary>
-        /// Update a channel
+        /// Update a group channel
         /// </summary>
         /// <remarks>
-        /// ## Update a channel  Updates information on a group channel.  > __Note__: You can't change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update a group channel  You can update information about a group channel or a Supergroup channel using this API. You can't make any changes to the members of a channel with this API. To change members, see [invite as members](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel) instead. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-a-group-channel#1-update-a-group-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcUpdateChannelByUrlData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdGroupChannel</returns>
-        ApiResponse<SendBirdGroupChannel> GcUpdateChannelByUrlWithHttpInfo (string apiToken, string channelUrl, GcUpdateChannelByUrlData gcUpdateChannelByUrlData = default(GcUpdateChannelByUrlData));
-        /// <summary>
-        /// View a channel
-        /// </summary>
-        /// <remarks>
-        /// ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="showDeliveryReceipt"> (optional)</param>
-        /// <param name="showReadReceipt"> (optional)</param>
-        /// <param name="showMember"> (optional)</param>
-        /// <param name="readReceipt"> (optional)</param>
-        /// <param name="member"> (optional)</param>
-        /// <returns>SendBirdGroupChannel</returns>
-        SendBirdGroupChannel GcViewChannelByUrl (string apiToken, string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), bool? readReceipt = default(bool?), bool? member = default(bool?));
-
-        /// <summary>
-        /// View a channel
-        /// </summary>
-        /// <remarks>
-        /// ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="showDeliveryReceipt"> (optional)</param>
-        /// <param name="showReadReceipt"> (optional)</param>
-        /// <param name="showMember"> (optional)</param>
-        /// <param name="readReceipt"> (optional)</param>
-        /// <param name="member"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdGroupChannel</returns>
-        ApiResponse<SendBirdGroupChannel> GcViewChannelByUrlWithHttpInfo (string apiToken, string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), bool? readReceipt = default(bool?), bool? member = default(bool?));
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateAGroupChannelRequest"> (optional)</param>
+        /// <returns>ApiResponse of SendbirdGroupChannelDetail</returns>
+        ApiResponse<SendbirdGroupChannelDetail> UpdateAGroupChannelWithHttpInfo (string channelUrl, string apiToken = default(string), UpdateAGroupChannelRequest updateAGroupChannelRequest = default(UpdateAGroupChannelRequest));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
         /// Accept an invitation
         /// </summary>
         /// <remarks>
-        /// ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Accept an invitation  Accepts an invitation from a group channel for a user to join. A single user may join up to 2,000 group channels, and any invitation to a user who is at capacity will be automatically canceled. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  > **Note**: This action is only available when the `auto_accept` property of an application is set to **false**. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/setting-up-channels/update-default-invitation-preference) action, or the [update channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-channel-invitation-preference) action.      [https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/accept-an-invitation-channel#1-accept-an-invitation](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/accept-an-invitation-channel#1-accept-an-invitation)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcAcceptInvitationData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="acceptAnInvitationRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdGroupChannel</returns>
-        System.Threading.Tasks.Task<SendBirdGroupChannel> GcAcceptInvitationAsync (string apiToken, string channelUrl, GcAcceptInvitationData gcAcceptInvitationData = default(GcAcceptInvitationData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of SendbirdGroupChannelDetail</returns>
+        System.Threading.Tasks.Task<SendbirdGroupChannelDetail> AcceptAnInvitationAsync (string channelUrl, string apiToken = default(string), AcceptAnInvitationRequest acceptAnInvitationRequest = default(AcceptAnInvitationRequest), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Accept an invitation
         /// </summary>
         /// <remarks>
-        /// ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Accept an invitation  Accepts an invitation from a group channel for a user to join. A single user may join up to 2,000 group channels, and any invitation to a user who is at capacity will be automatically canceled. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  > **Note**: This action is only available when the `auto_accept` property of an application is set to **false**. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/setting-up-channels/update-default-invitation-preference) action, or the [update channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-channel-invitation-preference) action.      [https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/accept-an-invitation-channel#1-accept-an-invitation](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/accept-an-invitation-channel#1-accept-an-invitation)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcAcceptInvitationData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="acceptAnInvitationRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcAcceptInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcAcceptInvitationData gcAcceptInvitationData = default(GcAcceptInvitationData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (SendbirdGroupChannelDetail)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SendbirdGroupChannelDetail>> AcceptAnInvitationWithHttpInfoAsync (string channelUrl, string apiToken = default(string), AcceptAnInvitationRequest acceptAnInvitationRequest = default(AcceptAnInvitationRequest), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Cancel the registration of operators
         /// </summary>
         /// <remarks>
-        /// ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// ## Unregister operators from a group channel  You can unregister operators in a group channel but keep them in the channel as members using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/unregister-operators-from-a-group-channel#1-unregister-operators-from-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="operatorIds"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="operatorIds">Specifies an array of one or more operator IDs to unregister from the channel. The operators in this array remain as participants of the channel after losing their operational roles. Urlencoding each operator ID is recommended. An example of a Urlencoded array would be ?operator_ids&#x3D;urlencoded_id_1,urlencoded_id_2.</param>
         /// <param name="deleteAll"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> CancelTheRegistrationOfOperatorsAsync (string channelUrl, string operatorIds, bool? deleteAll = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Cancel the registration of operators
         /// </summary>
         /// <remarks>
-        /// ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// ## Unregister operators from a group channel  You can unregister operators in a group channel but keep them in the channel as members using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/unregister-operators-from-a-group-channel#1-unregister-operators-from-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="operatorIds"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="operatorIds">Specifies an array of one or more operator IDs to unregister from the channel. The operators in this array remain as participants of the channel after losing their operational roles. Urlencoding each operator ID is recommended. An example of a Urlencoded array would be ?operator_ids&#x3D;urlencoded_id_1,urlencoded_id_2.</param>
         /// <param name="deleteAll"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> CancelTheRegistrationOfOperatorsWithHttpInfoAsync (string channelUrl, string operatorIds, bool? deleteAll = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Check if member
         /// </summary>
         /// <remarks>
-        /// ## Check if member  Checks whether the user is a member of the group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-check-if-member - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Check if user is a member  Checks if a user is a member of a group channel.  > **Note**: See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.      [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/check-if-user-is-a-member#1-check-if-user-is-a-member](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/check-if-user-is-a-member#1-check-if-user-is-a-member)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="userId"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="userId">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GcCheckIfMemberByIdResponse</returns>
-        System.Threading.Tasks.Task<GcCheckIfMemberByIdResponse> GcCheckIfMemberByIdAsync (string apiToken, string channelUrl, string userId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of CheckIfMemberResponse</returns>
+        System.Threading.Tasks.Task<CheckIfMemberResponse> CheckIfMemberAsync (string channelUrl, string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Check if member
         /// </summary>
         /// <remarks>
-        /// ## Check if member  Checks whether the user is a member of the group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-check-if-member - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Check if user is a member  Checks if a user is a member of a group channel.  > **Note**: See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.      [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/check-if-user-is-a-member#1-check-if-user-is-a-member](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/check-if-user-is-a-member#1-check-if-user-is-a-member)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="userId"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="userId">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GcCheckIfMemberByIdResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GcCheckIfMemberByIdResponse>> GcCheckIfMemberByIdWithHttpInfoAsync (string apiToken, string channelUrl, string userId, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (CheckIfMemberResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CheckIfMemberResponse>> CheckIfMemberWithHttpInfoAsync (string channelUrl, string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// Create a channel
+        /// Create a group channel
         /// </summary>
         /// <remarks>
-        /// ## Create a channel  Creates a new group channel.  > If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the `distinct` property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can't see previously sent messages or data in the new channel. On the other hand, if the `distinct` property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
+        /// ## Create a group channel  You can create a group channel for 1-to-1 and 1-to-N conversations. By default, group channels are used for conversations between up to 100 members. This number can stretch up to tens of thousands in Supergroup channels. Group channels can either be private and invite only, or public. They support typing indicators, unread count and read receipts, allowing for an interactive chat experience. A user can join up to 2000 group channels, and higher numbers would negatively impact the performance for the end user. The Chat history is turned off by default and its settings can be changed on Sendbird Dashboard by going to Settings > Chat > Channels > Group channels > Chat history. To learn more about group channels, see Channel Overview.  > If you are seeing the error message Maximum \"channel join\" count reached., then consider deleting channels that are no longer used. For situations where an agent connects with many customers such as support, delivery logistics or sales, we recommend using Sendbird Desk.  https://sendbird.com/docs/chat/platform-api/v3/channel/creating-a-channel/create-a-group-channel#1-create-a-group-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="gcCreateChannelData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="createAGroupChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdGroupChannel</returns>
-        System.Threading.Tasks.Task<SendBirdGroupChannel> GcCreateChannelAsync (string apiToken, GcCreateChannelData gcCreateChannelData = default(GcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of SendbirdGroupChannelDetail</returns>
+        System.Threading.Tasks.Task<SendbirdGroupChannelDetail> CreateAGroupChannelAsync (string apiToken = default(string), CreateAGroupChannelRequest createAGroupChannelRequest = default(CreateAGroupChannelRequest), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
-        /// Create a channel
+        /// Create a group channel
         /// </summary>
         /// <remarks>
-        /// ## Create a channel  Creates a new group channel.  > If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the `distinct` property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can't see previously sent messages or data in the new channel. On the other hand, if the `distinct` property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
+        /// ## Create a group channel  You can create a group channel for 1-to-1 and 1-to-N conversations. By default, group channels are used for conversations between up to 100 members. This number can stretch up to tens of thousands in Supergroup channels. Group channels can either be private and invite only, or public. They support typing indicators, unread count and read receipts, allowing for an interactive chat experience. A user can join up to 2000 group channels, and higher numbers would negatively impact the performance for the end user. The Chat history is turned off by default and its settings can be changed on Sendbird Dashboard by going to Settings > Chat > Channels > Group channels > Chat history. To learn more about group channels, see Channel Overview.  > If you are seeing the error message Maximum \"channel join\" count reached., then consider deleting channels that are no longer used. For situations where an agent connects with many customers such as support, delivery logistics or sales, we recommend using Sendbird Desk.  https://sendbird.com/docs/chat/platform-api/v3/channel/creating-a-channel/create-a-group-channel#1-create-a-group-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="gcCreateChannelData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="createAGroupChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcCreateChannelWithHttpInfoAsync (string apiToken, GcCreateChannelData gcCreateChannelData = default(GcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (SendbirdGroupChannelDetail)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SendbirdGroupChannelDetail>> CreateAGroupChannelWithHttpInfoAsync (string apiToken = default(string), CreateAGroupChannelRequest createAGroupChannelRequest = default(CreateAGroupChannelRequest), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// Decline an invitation
+        /// Delete a group channel
         /// </summary>
         /// <remarks>
-        /// ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Delete a group channel  You can delete a group channel or a Supergroup channel using this API. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-a-group-channel#1-delete-a-group-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-a-group-channel#1-delete-a-group-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcDeclineInvitationData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcDeclineInvitationAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> DeleteAGroupChannelAsync (string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
-        /// Decline an invitation
+        /// Delete a group channel
         /// </summary>
         /// <remarks>
-        /// ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Delete a group channel  You can delete a group channel or a Supergroup channel using this API. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-a-group-channel#1-delete-a-group-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-a-group-channel#1-delete-a-group-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcDeclineInvitationData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcDeclineInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteAGroupChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// Delete a channel
+        /// Get a group channel
         /// </summary>
         /// <remarks>
-        /// ## Delete a channel  Deletes a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Get a group channel  This action retrieves information about a specific [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel). You can use the optional query parameters to determine whether to include delivery receipt, read receipt, or member information in the response.  https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-a-group-channel#1-get-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
+        /// <param name="showDeliveryReceipt"> (optional)</param>
+        /// <param name="showReadReceipt"> (optional)</param>
+        /// <param name="showMember"> (optional)</param>
+        /// <param name="memberActiveMode">Restricts the member list to members who are activated or deactivated in the channel. This parameter is only effective if the parameter show_member is true. Acceptable values are all, activated, and deactivated. (default: all) (optional)</param>
+        /// <param name="userId"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of GetAGroupChannelResponse</returns>
+        System.Threading.Tasks.Task<GetAGroupChannelResponse> GetAGroupChannelAsync (string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), string memberActiveMode = default(string), string userId = default(string), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
-        /// Delete a channel
+        /// Get a group channel
         /// </summary>
         /// <remarks>
-        /// ## Delete a channel  Deletes a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Get a group channel  This action retrieves information about a specific [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel). You can use the optional query parameters to determine whether to include delivery receipt, read receipt, or member information in the response.  https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-a-group-channel#1-get-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
+        /// <param name="showDeliveryReceipt"> (optional)</param>
+        /// <param name="showReadReceipt"> (optional)</param>
+        /// <param name="showMember"> (optional)</param>
+        /// <param name="memberActiveMode">Restricts the member list to members who are activated or deactivated in the channel. This parameter is only effective if the parameter show_member is true. Acceptable values are all, activated, and deactivated. (default: all) (optional)</param>
+        /// <param name="userId"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (GetAGroupChannelResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GetAGroupChannelResponse>> GetAGroupChannelWithHttpInfoAsync (string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), string memberActiveMode = default(string), string userId = default(string), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// Hide or archive a channel
+        /// Hide a channel
         /// </summary>
         /// <remarks>
-        /// ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn't appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Hide a channel  This action allows you to hide a [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel) from a user's channel list. Hiding a channel gives users the ability to archive channels so that they can focus on channels that need the most attention.  With this API, you can allow users to hide a channel from themselves or from all channel members. You can also determine whether to have the channel remain hidden when a new message is sent to the channel. Note that only group channels can be hidden.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/hide-a-channel#1-hide-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/hide-a-channel#1-hide-a-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="hideAChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcHideOrArchiveChannelAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> HideAChannelAsync (string channelUrl, string apiToken = default(string), HideAChannelRequest hideAChannelRequest = default(HideAChannelRequest), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
-        /// Hide or archive a channel
+        /// Hide a channel
         /// </summary>
         /// <remarks>
-        /// ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn't appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Hide a channel  This action allows you to hide a [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel) from a user's channel list. Hiding a channel gives users the ability to archive channels so that they can focus on channels that need the most attention.  With this API, you can allow users to hide a channel from themselves or from all channel members. You can also determine whether to have the channel remain hidden when a new message is sent to the channel. Note that only group channels can be hidden.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/hide-a-channel#1-hide-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/hide-a-channel#1-hide-a-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="hideAChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcHideOrArchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> HideAChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), HideAChannelRequest hideAChannelRequest = default(HideAChannelRequest), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Invite as members
         /// </summary>
         /// <remarks>
-        /// ## Invite as members  Invites one or more users as members into the group channel.  > __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Invite as members  Invites one or more users as members to a group channel. Users can join a group channel immediately after receiving an invitation, without having to accept it. To give users an option to accept or decline an invitation, see [update default channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/setting-up-channels/update-default-invitation-preference) or [update channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-channel-invitation-preference). See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  > **Note**: By default, [blocked users](https://sendbird.com/docs/chat/platform-api/v3/moderation/blocking-users/block-users) are included when sending invitations. If you wish to exclude blocked users, [contact our sales team](https://get.sendbird.com/talk-to-sales.html).      [https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel#1-invite-as-members](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel#1-invite-as-members)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcInviteAsMembersData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="inviteAsMembersRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdGroupChannel</returns>
-        System.Threading.Tasks.Task<SendBirdGroupChannel> GcInviteAsMembersAsync (string apiToken, string channelUrl, GcInviteAsMembersData gcInviteAsMembersData = default(GcInviteAsMembersData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of InviteAsMembersResponse</returns>
+        System.Threading.Tasks.Task<InviteAsMembersResponse> InviteAsMembersAsync (string channelUrl, string apiToken = default(string), InviteAsMembersRequest inviteAsMembersRequest = default(InviteAsMembersRequest), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Invite as members
         /// </summary>
         /// <remarks>
-        /// ## Invite as members  Invites one or more users as members into the group channel.  > __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Invite as members  Invites one or more users as members to a group channel. Users can join a group channel immediately after receiving an invitation, without having to accept it. To give users an option to accept or decline an invitation, see [update default channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/setting-up-channels/update-default-invitation-preference) or [update channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-channel-invitation-preference). See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  > **Note**: By default, [blocked users](https://sendbird.com/docs/chat/platform-api/v3/moderation/blocking-users/block-users) are included when sending invitations. If you wish to exclude blocked users, [contact our sales team](https://get.sendbird.com/talk-to-sales.html).      [https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel#1-invite-as-members](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel#1-invite-as-members)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcInviteAsMembersData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="inviteAsMembersRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcInviteAsMembersWithHttpInfoAsync (string apiToken, string channelUrl, GcInviteAsMembersData gcInviteAsMembersData = default(GcInviteAsMembersData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (InviteAsMembersResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<InviteAsMembersResponse>> InviteAsMembersWithHttpInfoAsync (string channelUrl, string apiToken = default(string), InviteAsMembersRequest inviteAsMembersRequest = default(InviteAsMembersRequest), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Join a channel
         /// </summary>
         /// <remarks>
-        /// ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can't join a new channel.  > __Note__: This action is only permitted for public group channels where the `is_public` property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Join a channel  This API allows a user to join a [public](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-group-channel-types) group channel. Users can only join public group channels where the `is_public` property is set to `true` using this API. A single user can join up to 2,000 group channels, and a user who reaches the capacity can’t join a new channel. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/join-a-channel#1-join-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/join-a-channel#1-join-a-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcJoinChannelData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="joinAChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GcJoinChannelAsync (string apiToken, string channelUrl, GcJoinChannelData gcJoinChannelData = default(GcJoinChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of SendbirdGroupChannelDetail</returns>
+        System.Threading.Tasks.Task<SendbirdGroupChannelDetail> JoinAChannelAsync (string channelUrl, string apiToken = default(string), JoinAChannelRequest joinAChannelRequest = default(JoinAChannelRequest), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Join a channel
         /// </summary>
         /// <remarks>
-        /// ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can't join a new channel.  > __Note__: This action is only permitted for public group channels where the `is_public` property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Join a channel  This API allows a user to join a [public](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-group-channel-types) group channel. Users can only join public group channels where the `is_public` property is set to `true` using this API. A single user can join up to 2,000 group channels, and a user who reaches the capacity can’t join a new channel. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/join-a-channel#1-join-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/join-a-channel#1-join-a-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcJoinChannelData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="joinAChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GcJoinChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcJoinChannelData gcJoinChannelData = default(GcJoinChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (SendbirdGroupChannelDetail)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SendbirdGroupChannelDetail>> JoinAChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), JoinAChannelRequest joinAChannelRequest = default(JoinAChannelRequest), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Leave a channel
         /// </summary>
@@ -831,12 +860,12 @@ namespace sendbird_platform_sdk.Api
         /// ## Leave a channel  Makes one or more members leave a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-leave-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcLeaveChannelData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="leaveAChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcLeaveChannelAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> LeaveAChannelAsync (string channelUrl, string apiToken = default(string), LeaveAChannelRequest leaveAChannelRequest = default(LeaveAChannelRequest), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Leave a channel
@@ -845,27 +874,27 @@ namespace sendbird_platform_sdk.Api
         /// ## Leave a channel  Makes one or more members leave a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-leave-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcLeaveChannelData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="leaveAChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcLeaveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> LeaveAChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), LeaveAChannelRequest leaveAChannelRequest = default(LeaveAChannelRequest), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List channels
         /// </summary>
         /// <remarks>
-        /// ## List channels  Retrieves a list of group channels in the application.  > __Note__: If you want to get a list of a specific user's group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## List group channels  This action retrieves a list of [group channels](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel). You can use various query parameters to determine the search scope and select what kind of information you want to receive about the queried channels.  If you want to retrieve a list of group channels that a specific user has joined, use the [list group channels by user](https://sendbird.com/docs/chat/platform-api/v3/user/managing-joined-group-channels/list-group-channels-by-user) action under the User section.  https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-group-channels#1-list-group-channels
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="token">Specifies a page token that indicates the starting index of a chunk of results. If not specified, the index is set as 0. (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
         /// <param name="distinctMode"> (optional)</param>
         /// <param name="publicMode"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
-        /// <param name="createdAfter"> (optional)</param>
-        /// <param name="createdBefore"> (optional)</param>
+        /// <param name="createdAfter">Restricts the search scope to only retrieve group channels which have been created after the specified time, in Unix milliseconds format. (optional)</param>
+        /// <param name="createdBefore">Restricts the search scope to only retrieve group channels which have been created before the specified time, in Unix milliseconds format. (optional)</param>
         /// <param name="showEmpty"> (optional)</param>
         /// <param name="showMember"> (optional)</param>
         /// <param name="showDeliveryReceipt"> (optional)</param>
@@ -873,53 +902,47 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="showFrozen"> (optional)</param>
         /// <param name="order"> (optional)</param>
-        /// <param name="metadataOrderKey"> (optional)</param>
-        /// <param name="customTypes"> (optional)</param>
-        /// <param name="customTypeStartswith"> (optional)</param>
-        /// <param name="channelUrls"> (optional)</param>
-        /// <param name="name"> (optional)</param>
-        /// <param name="nameContains"> (optional)</param>
-        /// <param name="nameStartswith"> (optional)</param>
-        /// <param name="membersExactlyIn"> (optional)</param>
-        /// <param name="membersIncludeIn"> (optional)</param>
-        /// <param name="queryType"> (optional)</param>
-        /// <param name="membersNickname"> (optional)</param>
-        /// <param name="membersNicknameContains"> (optional)</param>
-        /// <param name="metadataKey"> (optional)</param>
-        /// <param name="metadataValues"> (optional)</param>
-        /// <param name="metadataValueStartswith"> (optional)</param>
-        /// <param name="metacounterKey"> (optional)</param>
-        /// <param name="metacounterValues"> (optional)</param>
-        /// <param name="metacounterValueGt"> (optional)</param>
-        /// <param name="metacounterValueGte"> (optional)</param>
-        /// <param name="metacounterValueLt"> (optional)</param>
-        /// <param name="metacounterValueLte"> (optional)</param>
-        /// <param name="includeSortedMetaarrayInLastMessage"> (optional)</param>
-        /// <param name="customType"> (optional)</param>
-        /// <param name="readReceipt"> (optional)</param>
-        /// <param name="member"> (optional)</param>
-        /// <param name="isDistinct"> (optional)</param>
-        /// <param name="membersIn"> (optional)</param>
-        /// <param name="userId"> (optional)</param>
+        /// <param name="metadataOrderKey">Specifies the key of an item in metadata. When a value of the order parameter is set to metadata_value_alphabetical, the results are alphabetically sorted by the value of the item specified by the key. (optional)</param>
+        /// <param name="customTypes">Specifies a comma-separated string of one or more custom types to filter group channels. URL encoding each type is recommended. If not specified, all channels are returned, regardless of their custom type. (optional)</param>
+        /// <param name="customTypeStartswith">Searches for group channels with the custom type which starts with the specified value. URL encoding the value is recommended. (optional)</param>
+        /// <param name="channelUrls">Specifies a comma-separated string of one or more group channel URLs to restrict the search scope. URL encoding each channel URL is recommended. (optional)</param>
+        /// <param name="name">Specifies one or more group channel names. (optional)</param>
+        /// <param name="nameContains">Searches for group channels whose names contain the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended. (optional)</param>
+        /// <param name="nameStartswith">Searches for group channels whose names start with the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended. (optional)</param>
+        /// <param name="membersExactlyIn">Searches for group channels with all the specified users as members. The parameter value should consist of user IDs separated by commas.  Only user IDs that match those of existing users are used for channel search. URL encoding each ID is recommended. (optional)</param>
+        /// <param name="membersIncludeIn">Searches for group channels that include one or more users as members among the specified users. The value should consist of user IDs separated by commas or %2C. You can specify up to 60 user IDs.  Only user IDs that match those of existing users are used for channel search. URL encoding each ID is recommended. (optional)</param>
+        /// <param name="queryType">Specifies a logical condition applied to the members_include_in parameter. Acceptable values are either AND or OR. For example, if you specify three members, A, B, and C, in members_include_in, the value of AND returns all channels that include every one of {A. B, C} as members. The value of OR returns channels that include {A}, plus those that include {B}, plus those that include {C}. (Default: AND) (optional)</param>
+        /// <param name="membersNickname">Searches for group channels with members whose nicknames match the specified value. URL encoding the value is recommended. (optional)</param>
+        /// <param name="membersNicknameContains">Searches for group channels with members whose nicknames contain the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended.  * We recommend using at least three characters for the parameter value for better search efficiency when you design and implement related features. If you would like to allow one or two characters for searching, use members_nickname instead to prevent performance issues. (optional)</param>
+        /// <param name="metadataKey">Searches for group channels with metadata containing an item with the specified value as its key. To use this parameter, either the metadata_values parameter or the metadata_value_startswith parameter should be specified. (optional)</param>
+        /// <param name="metadataValues">Searches for group channels with metadata containing an item with the key specified by the metadata_key parameter, and the value of that item matches one or more values specified by this parameter. The string should be specified with multiple values separated by commas. URL encoding each value is recommended. To use this parameter, the metadata_key parameter should be specified. (optional)</param>
+        /// <param name="metadataValueStartswith">Searches for group channels with metadata containing an item with the key specified by the metadata_key parameter, and the values of that item that start with the specified value of this parameter. URL encoding the value is recommended. To use this parameter, the metadata_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterKey">Searches for group channels with metacounter containing an item with the specified value as its key. To use this parameter, either the metacounter_values parameter or one of the metacounter_value_gt, metacounter_value_gte, metacounter_value_lt, and metacounter_value_lte parameters should be specified. (optional)</param>
+        /// <param name="metacounterValues">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is equal to one or more values specified by this parameter. The string should be specified with multiple values separated by commas. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueGt">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is greater than the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueGte">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is greater than or equal to the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueLt">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is lower than the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueLte">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is lower than or equal to the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="includeSortedMetaarrayInLastMessage">Determines whether to include the sorted_metaarray as one of the last_message’s properties in the response. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GcListChannelsResponse</returns>
-        System.Threading.Tasks.Task<GcListChannelsResponse> GcListChannelsAsync (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), string customType = default(string), bool? readReceipt = default(bool?), bool? member = default(bool?), bool? isDistinct = default(bool?), string membersIn = default(string), string userId = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of GroupChatListChannelsResponse</returns>
+        System.Threading.Tasks.Task<GroupChatListChannelsResponse> ListChannelsAsync (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), long? createdAfter = default(long?), long? createdBefore = default(long?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List channels
         /// </summary>
         /// <remarks>
-        /// ## List channels  Retrieves a list of group channels in the application.  > __Note__: If you want to get a list of a specific user's group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## List group channels  This action retrieves a list of [group channels](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel). You can use various query parameters to determine the search scope and select what kind of information you want to receive about the queried channels.  If you want to retrieve a list of group channels that a specific user has joined, use the [list group channels by user](https://sendbird.com/docs/chat/platform-api/v3/user/managing-joined-group-channels/list-group-channels-by-user) action under the User section.  https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-group-channels#1-list-group-channels
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="token">Specifies a page token that indicates the starting index of a chunk of results. If not specified, the index is set as 0. (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
         /// <param name="distinctMode"> (optional)</param>
         /// <param name="publicMode"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
-        /// <param name="createdAfter"> (optional)</param>
-        /// <param name="createdBefore"> (optional)</param>
+        /// <param name="createdAfter">Restricts the search scope to only retrieve group channels which have been created after the specified time, in Unix milliseconds format. (optional)</param>
+        /// <param name="createdBefore">Restricts the search scope to only retrieve group channels which have been created before the specified time, in Unix milliseconds format. (optional)</param>
         /// <param name="showEmpty"> (optional)</param>
         /// <param name="showMember"> (optional)</param>
         /// <param name="showDeliveryReceipt"> (optional)</param>
@@ -927,254 +950,275 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="showFrozen"> (optional)</param>
         /// <param name="order"> (optional)</param>
-        /// <param name="metadataOrderKey"> (optional)</param>
-        /// <param name="customTypes"> (optional)</param>
-        /// <param name="customTypeStartswith"> (optional)</param>
-        /// <param name="channelUrls"> (optional)</param>
-        /// <param name="name"> (optional)</param>
-        /// <param name="nameContains"> (optional)</param>
-        /// <param name="nameStartswith"> (optional)</param>
-        /// <param name="membersExactlyIn"> (optional)</param>
-        /// <param name="membersIncludeIn"> (optional)</param>
-        /// <param name="queryType"> (optional)</param>
-        /// <param name="membersNickname"> (optional)</param>
-        /// <param name="membersNicknameContains"> (optional)</param>
-        /// <param name="metadataKey"> (optional)</param>
-        /// <param name="metadataValues"> (optional)</param>
-        /// <param name="metadataValueStartswith"> (optional)</param>
-        /// <param name="metacounterKey"> (optional)</param>
-        /// <param name="metacounterValues"> (optional)</param>
-        /// <param name="metacounterValueGt"> (optional)</param>
-        /// <param name="metacounterValueGte"> (optional)</param>
-        /// <param name="metacounterValueLt"> (optional)</param>
-        /// <param name="metacounterValueLte"> (optional)</param>
-        /// <param name="includeSortedMetaarrayInLastMessage"> (optional)</param>
-        /// <param name="customType"> (optional)</param>
-        /// <param name="readReceipt"> (optional)</param>
-        /// <param name="member"> (optional)</param>
-        /// <param name="isDistinct"> (optional)</param>
-        /// <param name="membersIn"> (optional)</param>
-        /// <param name="userId"> (optional)</param>
+        /// <param name="metadataOrderKey">Specifies the key of an item in metadata. When a value of the order parameter is set to metadata_value_alphabetical, the results are alphabetically sorted by the value of the item specified by the key. (optional)</param>
+        /// <param name="customTypes">Specifies a comma-separated string of one or more custom types to filter group channels. URL encoding each type is recommended. If not specified, all channels are returned, regardless of their custom type. (optional)</param>
+        /// <param name="customTypeStartswith">Searches for group channels with the custom type which starts with the specified value. URL encoding the value is recommended. (optional)</param>
+        /// <param name="channelUrls">Specifies a comma-separated string of one or more group channel URLs to restrict the search scope. URL encoding each channel URL is recommended. (optional)</param>
+        /// <param name="name">Specifies one or more group channel names. (optional)</param>
+        /// <param name="nameContains">Searches for group channels whose names contain the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended. (optional)</param>
+        /// <param name="nameStartswith">Searches for group channels whose names start with the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended. (optional)</param>
+        /// <param name="membersExactlyIn">Searches for group channels with all the specified users as members. The parameter value should consist of user IDs separated by commas.  Only user IDs that match those of existing users are used for channel search. URL encoding each ID is recommended. (optional)</param>
+        /// <param name="membersIncludeIn">Searches for group channels that include one or more users as members among the specified users. The value should consist of user IDs separated by commas or %2C. You can specify up to 60 user IDs.  Only user IDs that match those of existing users are used for channel search. URL encoding each ID is recommended. (optional)</param>
+        /// <param name="queryType">Specifies a logical condition applied to the members_include_in parameter. Acceptable values are either AND or OR. For example, if you specify three members, A, B, and C, in members_include_in, the value of AND returns all channels that include every one of {A. B, C} as members. The value of OR returns channels that include {A}, plus those that include {B}, plus those that include {C}. (Default: AND) (optional)</param>
+        /// <param name="membersNickname">Searches for group channels with members whose nicknames match the specified value. URL encoding the value is recommended. (optional)</param>
+        /// <param name="membersNicknameContains">Searches for group channels with members whose nicknames contain the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended.  * We recommend using at least three characters for the parameter value for better search efficiency when you design and implement related features. If you would like to allow one or two characters for searching, use members_nickname instead to prevent performance issues. (optional)</param>
+        /// <param name="metadataKey">Searches for group channels with metadata containing an item with the specified value as its key. To use this parameter, either the metadata_values parameter or the metadata_value_startswith parameter should be specified. (optional)</param>
+        /// <param name="metadataValues">Searches for group channels with metadata containing an item with the key specified by the metadata_key parameter, and the value of that item matches one or more values specified by this parameter. The string should be specified with multiple values separated by commas. URL encoding each value is recommended. To use this parameter, the metadata_key parameter should be specified. (optional)</param>
+        /// <param name="metadataValueStartswith">Searches for group channels with metadata containing an item with the key specified by the metadata_key parameter, and the values of that item that start with the specified value of this parameter. URL encoding the value is recommended. To use this parameter, the metadata_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterKey">Searches for group channels with metacounter containing an item with the specified value as its key. To use this parameter, either the metacounter_values parameter or one of the metacounter_value_gt, metacounter_value_gte, metacounter_value_lt, and metacounter_value_lte parameters should be specified. (optional)</param>
+        /// <param name="metacounterValues">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is equal to one or more values specified by this parameter. The string should be specified with multiple values separated by commas. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueGt">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is greater than the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueGte">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is greater than or equal to the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueLt">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is lower than the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueLte">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is lower than or equal to the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="includeSortedMetaarrayInLastMessage">Determines whether to include the sorted_metaarray as one of the last_message’s properties in the response. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GcListChannelsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GcListChannelsResponse>> GcListChannelsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), string customType = default(string), bool? readReceipt = default(bool?), bool? member = default(bool?), bool? isDistinct = default(bool?), string membersIn = default(string), string userId = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (GroupChatListChannelsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GroupChatListChannelsResponse>> ListChannelsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), long? createdAfter = default(long?), long? createdBefore = default(long?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List members
         /// </summary>
         /// <remarks>
-        /// ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
+        /// ## List members  Retrieves a list of members of a group channel.  > **Note**: See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.      [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/list-members-of-a-group-channel#1-list-members-of-a-group-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/list-members-of-a-group-channel#1-list-members-of-a-group-channel)  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of members of.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
+        /// <param name="userId">Specifies the unique ID of a user. If &#x60;user_id&#x60; is provided, the response will include two additional boolean properties about each user in the members list. - &#x60;is_blocking_me&#x60;: Indicates whether the listed user is blocking the user specified in the user_id parameter. - &#x60;is_blocked_by_me&#x60;: Indicates whether the listed user is blocked by the user specified in the user_id parameter. (optional)</param>
         /// <param name="showDeliveryReceipt"> (optional)</param>
         /// <param name="showReadReceipt"> (optional)</param>
-        /// <param name="order"> (optional)</param>
-        /// <param name="operatorFilter"> (optional)</param>
-        /// <param name="memberStateFilter"> (optional)</param>
-        /// <param name="mutedMemberFilter"> (optional)</param>
-        /// <param name="nicknameStartswith"> (optional)</param>
+        /// <param name="showMemberIsMuted"> (optional)</param>
+        /// <param name="order">Specifies the method to sort a list of results. Acceptable values are the following: - &#x60;member_nickname_alphabetical&#x60; (default): sorts by the member nicknames in alphabetical order. - &#x60;operator_then_member_alphabetical&#x60;: sorts by the operational role and member nickname in alphabetical order where channel operators are listed before channel members. (optional)</param>
+        /// <param name="operatorFilter">Restricts the search scope to only retrieve operators or non-operator members of the channel. Acceptable values are the following: - &#x60;all&#x60; (default): no filter is applied to the list. - &#x60;operator&#x60;: only channel operators are retrieved. - &#x60;nonoperator&#x60;: all channel members, except channel operators, are retrieved. (optional)</param>
+        /// <param name="memberStateFilter">Restricts the search scope to retrieve members based on if they have accepted an invitation or if they were invited by a friend. Acceptable values are &#x60;invited_only&#x60;, &#x60;joined_only&#x60;, &#x60;invited_by_friend&#x60;, &#x60;invited_by_non_friend&#x60;, and &#x60;all&#x60;. (Default: &#x60;all&#x60;) (optional)</param>
+        /// <param name="mutedMemberFilter">Restricts the search scope to retrieve members who are muted or unmuted in the channel. Acceptable values are &#x60;all&#x60;, &#x60;muted&#x60;, and &#x60;unmuted&#x60;. (Default: &#x60;all&#x60;) (optional)</param>
+        /// <param name="memberActiveModeFilter">Restricts the search scope to retrieve members who are activated or deactivated in the channel. Acceptable values are &#x60;all&#x60;, &#x60;activated&#x60;, and &#x60;deactivated&#x60;. (default: &#x60;activated&#x60;) (optional)</param>
+        /// <param name="nicknameStartswith">Searches for members whose nicknames start with the specified value. Urlencoding the value is recommended. (optional)</param>
+        /// <param name="includePushPreference">Determines whether to include information about the push preference of each member, such as &#x60;push_enabled&#x60;, &#x60;push_trigger_option&#x60;, and &#x60;do_not_disturb&#x60;. (Default: &#x60;false&#x60;) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GcListMembersResponse</returns>
-        System.Threading.Tasks.Task<GcListMembersResponse> GcListMembersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string nicknameStartswith = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of GroupChannelListMembersResponse</returns>
+        System.Threading.Tasks.Task<GroupChannelListMembersResponse> ListMembersAsync (string channelUrl, string token = default(string), int? limit = default(int?), string userId = default(string), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMemberIsMuted = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string memberActiveModeFilter = default(string), string nicknameStartswith = default(string), bool? includePushPreference = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List members
         /// </summary>
         /// <remarks>
-        /// ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
+        /// ## List members  Retrieves a list of members of a group channel.  > **Note**: See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.      [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/list-members-of-a-group-channel#1-list-members-of-a-group-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/list-members-of-a-group-channel#1-list-members-of-a-group-channel)  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of members of.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
+        /// <param name="userId">Specifies the unique ID of a user. If &#x60;user_id&#x60; is provided, the response will include two additional boolean properties about each user in the members list. - &#x60;is_blocking_me&#x60;: Indicates whether the listed user is blocking the user specified in the user_id parameter. - &#x60;is_blocked_by_me&#x60;: Indicates whether the listed user is blocked by the user specified in the user_id parameter. (optional)</param>
         /// <param name="showDeliveryReceipt"> (optional)</param>
         /// <param name="showReadReceipt"> (optional)</param>
-        /// <param name="order"> (optional)</param>
-        /// <param name="operatorFilter"> (optional)</param>
-        /// <param name="memberStateFilter"> (optional)</param>
-        /// <param name="mutedMemberFilter"> (optional)</param>
-        /// <param name="nicknameStartswith"> (optional)</param>
+        /// <param name="showMemberIsMuted"> (optional)</param>
+        /// <param name="order">Specifies the method to sort a list of results. Acceptable values are the following: - &#x60;member_nickname_alphabetical&#x60; (default): sorts by the member nicknames in alphabetical order. - &#x60;operator_then_member_alphabetical&#x60;: sorts by the operational role and member nickname in alphabetical order where channel operators are listed before channel members. (optional)</param>
+        /// <param name="operatorFilter">Restricts the search scope to only retrieve operators or non-operator members of the channel. Acceptable values are the following: - &#x60;all&#x60; (default): no filter is applied to the list. - &#x60;operator&#x60;: only channel operators are retrieved. - &#x60;nonoperator&#x60;: all channel members, except channel operators, are retrieved. (optional)</param>
+        /// <param name="memberStateFilter">Restricts the search scope to retrieve members based on if they have accepted an invitation or if they were invited by a friend. Acceptable values are &#x60;invited_only&#x60;, &#x60;joined_only&#x60;, &#x60;invited_by_friend&#x60;, &#x60;invited_by_non_friend&#x60;, and &#x60;all&#x60;. (Default: &#x60;all&#x60;) (optional)</param>
+        /// <param name="mutedMemberFilter">Restricts the search scope to retrieve members who are muted or unmuted in the channel. Acceptable values are &#x60;all&#x60;, &#x60;muted&#x60;, and &#x60;unmuted&#x60;. (Default: &#x60;all&#x60;) (optional)</param>
+        /// <param name="memberActiveModeFilter">Restricts the search scope to retrieve members who are activated or deactivated in the channel. Acceptable values are &#x60;all&#x60;, &#x60;activated&#x60;, and &#x60;deactivated&#x60;. (default: &#x60;activated&#x60;) (optional)</param>
+        /// <param name="nicknameStartswith">Searches for members whose nicknames start with the specified value. Urlencoding the value is recommended. (optional)</param>
+        /// <param name="includePushPreference">Determines whether to include information about the push preference of each member, such as &#x60;push_enabled&#x60;, &#x60;push_trigger_option&#x60;, and &#x60;do_not_disturb&#x60;. (Default: &#x60;false&#x60;) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GcListMembersResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GcListMembersResponse>> GcListMembersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string nicknameStartswith = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (GroupChannelListMembersResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GroupChannelListMembersResponse>> ListMembersWithHttpInfoAsync (string channelUrl, string token = default(string), int? limit = default(int?), string userId = default(string), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMemberIsMuted = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string memberActiveModeFilter = default(string), string nicknameStartswith = default(string), bool? includePushPreference = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// List operators
         /// </summary>
         /// <remarks>
-        /// ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// ## List operators  You can retrieve a list of operators of a group channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/list-operators-of-a-group-channel#1-list-operators-of-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GcListOperatorsResponse</returns>
-        System.Threading.Tasks.Task<GcListOperatorsResponse> GcListOperatorsAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListOperatorsResponse</returns>
+        System.Threading.Tasks.Task<ListOperatorsResponse> ListOperatorsAsync (string channelUrl, string token = default(string), int? limit = default(int?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// List operators
         /// </summary>
         /// <remarks>
-        /// ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// ## List operators  You can retrieve a list of operators of a group channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/list-operators-of-a-group-channel#1-list-operators-of-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GcListOperatorsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GcListOperatorsResponse>> GcListOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListOperatorsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListOperatorsResponse>> ListOperatorsWithHttpInfoAsync (string channelUrl, string token = default(string), int? limit = default(int?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// Register operators
+        /// Register operators to a group channel
         /// </summary>
         /// <remarks>
-        /// ## Register operators  Registers one or more operators to a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Register operators to a group channel  You can register one or more operators to a group channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/register-operators-to-a-group-channel#1-register-operators-to-a-group-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcRegisterOperatorsData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="registerOperatorsToAGroupChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GcRegisterOperatorsResponse</returns>
-        System.Threading.Tasks.Task<GcRegisterOperatorsResponse> GcRegisterOperatorsAsync (string apiToken, string channelUrl, GcRegisterOperatorsData gcRegisterOperatorsData = default(GcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> RegisterOperatorsToAGroupChannelAsync (string channelUrl, string apiToken = default(string), RegisterOperatorsToAGroupChannelRequest registerOperatorsToAGroupChannelRequest = default(RegisterOperatorsToAGroupChannelRequest), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
-        /// Register operators
+        /// Register operators to a group channel
         /// </summary>
         /// <remarks>
-        /// ## Register operators  Registers one or more operators to a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Register operators to a group channel  You can register one or more operators to a group channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/register-operators-to-a-group-channel#1-register-operators-to-a-group-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcRegisterOperatorsData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="registerOperatorsToAGroupChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GcRegisterOperatorsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GcRegisterOperatorsResponse>> GcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, GcRegisterOperatorsData gcRegisterOperatorsData = default(GcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> RegisterOperatorsToAGroupChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), RegisterOperatorsToAGroupChannelRequest registerOperatorsToAGroupChannelRequest = default(RegisterOperatorsToAGroupChannelRequest), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Reset chat history
         /// </summary>
         /// <remarks>
-        /// ## Reset chat history  Resets the properties related to a user's chat history in a group channel, then clears the existing messages in the channel on the user's side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the `last_message` and `read_receipt` properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user's unread message.  Using the `reset_all` property, you can also reset the properties related to all users' chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Reset chat history  This action resets the properties related to a specific user's chat history in a [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel), clearing existing messages in a channel from only the specified user's end. Because this action doesn't delete messages from the Sendbird database, other members in the channel can still retrieve and see the messages.  This action clears the messages for the specified user by updating the `last_message` and `read_receipt` properties of the [group channel resource](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-list-of-properties-for-group-channels) in addition to other internally managed data such as the count of a user's unread messages.  Using the `reset_all` property, you can also reset the properties related to the chat history of all members in a group channel.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/reset-chat-history#1-reset-chat-history
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcResetChatHistoryData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="resetChatHistoryRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GcResetChatHistoryResponse</returns>
-        System.Threading.Tasks.Task<GcResetChatHistoryResponse> GcResetChatHistoryAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ResetChatHistoryResponse</returns>
+        System.Threading.Tasks.Task<ResetChatHistoryResponse> ResetChatHistoryAsync (string channelUrl, string apiToken = default(string), ResetChatHistoryRequest resetChatHistoryRequest = default(ResetChatHistoryRequest), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Reset chat history
         /// </summary>
         /// <remarks>
-        /// ## Reset chat history  Resets the properties related to a user's chat history in a group channel, then clears the existing messages in the channel on the user's side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the `last_message` and `read_receipt` properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user's unread message.  Using the `reset_all` property, you can also reset the properties related to all users' chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Reset chat history  This action resets the properties related to a specific user's chat history in a [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel), clearing existing messages in a channel from only the specified user's end. Because this action doesn't delete messages from the Sendbird database, other members in the channel can still retrieve and see the messages.  This action clears the messages for the specified user by updating the `last_message` and `read_receipt` properties of the [group channel resource](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-list-of-properties-for-group-channels) in addition to other internally managed data such as the count of a user's unread messages.  Using the `reset_all` property, you can also reset the properties related to the chat history of all members in a group channel.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/reset-chat-history#1-reset-chat-history
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcResetChatHistoryData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="resetChatHistoryRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GcResetChatHistoryResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GcResetChatHistoryResponse>> GcResetChatHistoryWithHttpInfoAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ResetChatHistoryResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ResetChatHistoryResponse>> ResetChatHistoryWithHttpInfoAsync (string channelUrl, string apiToken = default(string), ResetChatHistoryRequest resetChatHistoryRequest = default(ResetChatHistoryRequest), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// Unhide or unarchive a channel
+        /// Start typing indicators
         /// </summary>
         /// <remarks>
-        /// ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
+        /// ## Start typing indicators  You can start showing a typing indicator using this API. Seeing whether other users are typing can help a more interactive conversation environment by showing real-time engagement of other users.  If you're looking for an easy way to show typing indicators on your app, check out Sendbird UIKit for a ready-to-use UI feature that can be customized to fit your needs.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-typing-indicators/start-typing-indicators#1-start-typing-indicators  `channel_url`   Type: string   Description: Specifies the URL of the channel to set typing indicators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="userId"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="startTypingIndicatorsRequest"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> StartTypingIndicatorsAsync (string channelUrl, string apiToken = default(string), StartTypingIndicatorsRequest startTypingIndicatorsRequest = default(StartTypingIndicatorsRequest), CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// Start typing indicators
+        /// </summary>
+        /// <remarks>
+        /// ## Start typing indicators  You can start showing a typing indicator using this API. Seeing whether other users are typing can help a more interactive conversation environment by showing real-time engagement of other users.  If you're looking for an easy way to show typing indicators on your app, check out Sendbird UIKit for a ready-to-use UI feature that can be customized to fit your needs.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-typing-indicators/start-typing-indicators#1-start-typing-indicators  `channel_url`   Type: string   Description: Specifies the URL of the channel to set typing indicators.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="startTypingIndicatorsRequest"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> StartTypingIndicatorsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), StartTypingIndicatorsRequest startTypingIndicatorsRequest = default(StartTypingIndicatorsRequest), CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
+        /// Stop typing indicators
+        /// </summary>
+        /// <remarks>
+        /// ## Stop typing indicators  You can stop showing a typing indicator using this API. To signal that a user is no longer typing, you can let the indicator disappear when the user sends a message or completely deletes the message text.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-typing-indicators/stop-typing-indicators#1-stop-typing-indicators  `channel_url`   Type: string   Description: Specifies the URL of the channel to set typing indicators.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="startTypingIndicatorsRequest"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> StopTypingIndicatorsAsync (string channelUrl, string apiToken = default(string), StartTypingIndicatorsRequest startTypingIndicatorsRequest = default(StartTypingIndicatorsRequest), CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// Stop typing indicators
+        /// </summary>
+        /// <remarks>
+        /// ## Stop typing indicators  You can stop showing a typing indicator using this API. To signal that a user is no longer typing, you can let the indicator disappear when the user sends a message or completely deletes the message text.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-typing-indicators/stop-typing-indicators#1-stop-typing-indicators  `channel_url`   Type: string   Description: Specifies the URL of the channel to set typing indicators.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="startTypingIndicatorsRequest"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> StopTypingIndicatorsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), StartTypingIndicatorsRequest startTypingIndicatorsRequest = default(StartTypingIndicatorsRequest), CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
+        /// Unhide a channel
+        /// </summary>
+        /// <remarks>
+        /// ## Unhide a channel  This action lets a hidden [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel) reappear on the channel list of a specific user or every member in the group channel. Hiding or unhiding a channel lets users organize their channel list based on those that require the most attention. Note that only group channels can be hidden or unhidden.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/unhide-a-channel#1-unhide-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/unhide-a-channel#1-unhide-a-channel)  `channel_url`   Type: string   Description: Specifies the URL of the channel to unhide or unarchive.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="userId">(Required) </param>
         /// <param name="shouldUnhideAll"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnhideOrUnarchiveChannelAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> UnhideAChannelAsync (string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
-        /// Unhide or unarchive a channel
+        /// Unhide a channel
         /// </summary>
         /// <remarks>
-        /// ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
+        /// ## Unhide a channel  This action lets a hidden [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel) reappear on the channel list of a specific user or every member in the group channel. Hiding or unhiding a channel lets users organize their channel list based on those that require the most attention. Note that only group channels can be hidden or unhidden.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/unhide-a-channel#1-unhide-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/unhide-a-channel#1-unhide-a-channel)  `channel_url`   Type: string   Description: Specifies the URL of the channel to unhide or unarchive.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="userId"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="userId">(Required) </param>
         /// <param name="shouldUnhideAll"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnhideOrUnarchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> UnhideAChannelWithHttpInfoAsync (string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// Update a channel
+        /// Update a group channel
         /// </summary>
         /// <remarks>
-        /// ## Update a channel  Updates information on a group channel.  > __Note__: You can't change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update a group channel  You can update information about a group channel or a Supergroup channel using this API. You can't make any changes to the members of a channel with this API. To change members, see [invite as members](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel) instead. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-a-group-channel#1-update-a-group-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcUpdateChannelByUrlData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateAGroupChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdGroupChannel</returns>
-        System.Threading.Tasks.Task<SendBirdGroupChannel> GcUpdateChannelByUrlAsync (string apiToken, string channelUrl, GcUpdateChannelByUrlData gcUpdateChannelByUrlData = default(GcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of SendbirdGroupChannelDetail</returns>
+        System.Threading.Tasks.Task<SendbirdGroupChannelDetail> UpdateAGroupChannelAsync (string channelUrl, string apiToken = default(string), UpdateAGroupChannelRequest updateAGroupChannelRequest = default(UpdateAGroupChannelRequest), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
-        /// Update a channel
+        /// Update a group channel
         /// </summary>
         /// <remarks>
-        /// ## Update a channel  Updates information on a group channel.  > __Note__: You can't change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update a group channel  You can update information about a group channel or a Supergroup channel using this API. You can't make any changes to the members of a channel with this API. To change members, see [invite as members](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel) instead. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-a-group-channel#1-update-a-group-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcUpdateChannelByUrlData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateAGroupChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcUpdateChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, GcUpdateChannelByUrlData gcUpdateChannelByUrlData = default(GcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// View a channel
-        /// </summary>
-        /// <remarks>
-        /// ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="showDeliveryReceipt"> (optional)</param>
-        /// <param name="showReadReceipt"> (optional)</param>
-        /// <param name="showMember"> (optional)</param>
-        /// <param name="readReceipt"> (optional)</param>
-        /// <param name="member"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdGroupChannel</returns>
-        System.Threading.Tasks.Task<SendBirdGroupChannel> GcViewChannelByUrlAsync (string apiToken, string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), bool? readReceipt = default(bool?), bool? member = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// View a channel
-        /// </summary>
-        /// <remarks>
-        /// ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve.
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="showDeliveryReceipt"> (optional)</param>
-        /// <param name="showReadReceipt"> (optional)</param>
-        /// <param name="showMember"> (optional)</param>
-        /// <param name="readReceipt"> (optional)</param>
-        /// <param name="member"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcViewChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), bool? readReceipt = default(bool?), bool? member = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (SendbirdGroupChannelDetail)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SendbirdGroupChannelDetail>> UpdateAGroupChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), UpdateAGroupChannelRequest updateAGroupChannelRequest = default(UpdateAGroupChannelRequest), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -1287,35 +1331,32 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Accept an invitation ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Accept an invitation ## Accept an invitation  Accepts an invitation from a group channel for a user to join. A single user may join up to 2,000 group channels, and any invitation to a user who is at capacity will be automatically canceled. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  > **Note**: This action is only available when the `auto_accept` property of an application is set to **false**. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/setting-up-channels/update-default-invitation-preference) action, or the [update channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-channel-invitation-preference) action.      [https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/accept-an-invitation-channel#1-accept-an-invitation](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/accept-an-invitation-channel#1-accept-an-invitation)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcAcceptInvitationData"> (optional)</param>
-        /// <returns>SendBirdGroupChannel</returns>
-        public SendBirdGroupChannel GcAcceptInvitation (string apiToken, string channelUrl, GcAcceptInvitationData gcAcceptInvitationData = default(GcAcceptInvitationData))
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="acceptAnInvitationRequest"> (optional)</param>
+        /// <returns>SendbirdGroupChannelDetail</returns>
+        public SendbirdGroupChannelDetail AcceptAnInvitation (string channelUrl, string apiToken = default(string), AcceptAnInvitationRequest acceptAnInvitationRequest = default(AcceptAnInvitationRequest))
         {
-             ApiResponse<SendBirdGroupChannel> localVarResponse = GcAcceptInvitationWithHttpInfo(apiToken, channelUrl, gcAcceptInvitationData);
+             ApiResponse<SendbirdGroupChannelDetail> localVarResponse = AcceptAnInvitationWithHttpInfo(channelUrl, apiToken, acceptAnInvitationRequest);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Accept an invitation ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Accept an invitation ## Accept an invitation  Accepts an invitation from a group channel for a user to join. A single user may join up to 2,000 group channels, and any invitation to a user who is at capacity will be automatically canceled. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  > **Note**: This action is only available when the `auto_accept` property of an application is set to **false**. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/setting-up-channels/update-default-invitation-preference) action, or the [update channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-channel-invitation-preference) action.      [https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/accept-an-invitation-channel#1-accept-an-invitation](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/accept-an-invitation-channel#1-accept-an-invitation)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcAcceptInvitationData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdGroupChannel</returns>
-        public ApiResponse<SendBirdGroupChannel> GcAcceptInvitationWithHttpInfo (string apiToken, string channelUrl, GcAcceptInvitationData gcAcceptInvitationData = default(GcAcceptInvitationData))
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="acceptAnInvitationRequest"> (optional)</param>
+        /// <returns>ApiResponse of SendbirdGroupChannelDetail</returns>
+        public ApiResponse<SendbirdGroupChannelDetail> AcceptAnInvitationWithHttpInfo (string channelUrl, string apiToken = default(string), AcceptAnInvitationRequest acceptAnInvitationRequest = default(AcceptAnInvitationRequest))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcAcceptInvitation");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcAcceptInvitation");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->AcceptAnInvitation");
 
             var localVarPath = "/v3/group_channels/{channel_url}/accept";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1340,14 +1381,14 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcAcceptInvitationData != null && gcAcceptInvitationData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (acceptAnInvitationRequest != null && acceptAnInvitationRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcAcceptInvitationData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(acceptAnInvitationRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = gcAcceptInvitationData; // byte array
+                localVarPostBody = acceptAnInvitationRequest; // byte array
             }
 
 
@@ -1360,48 +1401,45 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcAcceptInvitation", localVarResponse);
+                Exception exception = ExceptionFactory("AcceptAnInvitation", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdGroupChannel>(localVarStatusCode,
+            return new ApiResponse<SendbirdGroupChannelDetail>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdGroupChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdGroupChannel)));
+                (SendbirdGroupChannelDetail) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendbirdGroupChannelDetail)));
         }
 
         /// <summary>
-        /// Accept an invitation ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Accept an invitation ## Accept an invitation  Accepts an invitation from a group channel for a user to join. A single user may join up to 2,000 group channels, and any invitation to a user who is at capacity will be automatically canceled. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  > **Note**: This action is only available when the `auto_accept` property of an application is set to **false**. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/setting-up-channels/update-default-invitation-preference) action, or the [update channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-channel-invitation-preference) action.      [https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/accept-an-invitation-channel#1-accept-an-invitation](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/accept-an-invitation-channel#1-accept-an-invitation)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcAcceptInvitationData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="acceptAnInvitationRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdGroupChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcAcceptInvitationAsync (string apiToken, string channelUrl, GcAcceptInvitationData gcAcceptInvitationData = default(GcAcceptInvitationData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of SendbirdGroupChannelDetail</returns>
+        public async System.Threading.Tasks.Task<SendbirdGroupChannelDetail> AcceptAnInvitationAsync (string channelUrl, string apiToken = default(string), AcceptAnInvitationRequest acceptAnInvitationRequest = default(AcceptAnInvitationRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdGroupChannel> localVarResponse = await GcAcceptInvitationWithHttpInfoAsync(apiToken, channelUrl, gcAcceptInvitationData, cancellationToken);
+             ApiResponse<SendbirdGroupChannelDetail> localVarResponse = await AcceptAnInvitationWithHttpInfoAsync(channelUrl, apiToken, acceptAnInvitationRequest, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Accept an invitation ## Accept an invitation  Accepts an invitation from a [private](#4-private-vs-public) group channel for a user to join. Since a user is allowed to join up to 2,000 group channels, the invitation to a user who already belongs to a maximum number of group channels will be canceled automatically.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-accept-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Accept an invitation ## Accept an invitation  Accepts an invitation from a group channel for a user to join. A single user may join up to 2,000 group channels, and any invitation to a user who is at capacity will be automatically canceled. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  > **Note**: This action is only available when the `auto_accept` property of an application is set to **false**. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/setting-up-channels/update-default-invitation-preference) action, or the [update channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-channel-invitation-preference) action.      [https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/accept-an-invitation-channel#1-accept-an-invitation](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/accept-an-invitation-channel#1-accept-an-invitation)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcAcceptInvitationData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="acceptAnInvitationRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcAcceptInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcAcceptInvitationData gcAcceptInvitationData = default(GcAcceptInvitationData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (SendbirdGroupChannelDetail)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<SendbirdGroupChannelDetail>> AcceptAnInvitationWithHttpInfoAsync (string channelUrl, string apiToken = default(string), AcceptAnInvitationRequest acceptAnInvitationRequest = default(AcceptAnInvitationRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcAcceptInvitation");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcAcceptInvitation");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->AcceptAnInvitation");
 
             var localVarPath = "/v3/group_channels/{channel_url}/accept";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1426,14 +1464,14 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcAcceptInvitationData != null && gcAcceptInvitationData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (acceptAnInvitationRequest != null && acceptAnInvitationRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcAcceptInvitationData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(acceptAnInvitationRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = gcAcceptInvitationData; // byte array
+                localVarPostBody = acceptAnInvitationRequest; // byte array
             }
 
 
@@ -1446,50 +1484,47 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcAcceptInvitation", localVarResponse);
+                Exception exception = ExceptionFactory("AcceptAnInvitation", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdGroupChannel>(localVarStatusCode,
+            return new ApiResponse<SendbirdGroupChannelDetail>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdGroupChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdGroupChannel)));
+                (SendbirdGroupChannelDetail) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendbirdGroupChannelDetail)));
         }
 
         /// <summary>
-        /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// Cancel the registration of operators ## Unregister operators from a group channel  You can unregister operators in a group channel but keep them in the channel as members using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/unregister-operators-from-a-group-channel#1-unregister-operators-from-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="operatorIds"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="operatorIds">Specifies an array of one or more operator IDs to unregister from the channel. The operators in this array remain as participants of the channel after losing their operational roles. Urlencoding each operator ID is recommended. An example of a Urlencoded array would be ?operator_ids&#x3D;urlencoded_id_1,urlencoded_id_2.</param>
         /// <param name="deleteAll"> (optional)</param>
-        /// <returns>OcDeleteChannelByUrl200Response</returns>
-        public OcDeleteChannelByUrl200Response GcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?))
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>Object</returns>
+        public Object CancelTheRegistrationOfOperators (string channelUrl, string operatorIds, bool? deleteAll = default(bool?), string apiToken = default(string))
         {
-             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = GcCancelTheRegistrationOfOperatorsWithHttpInfo(apiToken, channelUrl, operatorIds, deleteAll);
+             ApiResponse<Object> localVarResponse = CancelTheRegistrationOfOperatorsWithHttpInfo(channelUrl, operatorIds, deleteAll, apiToken);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// Cancel the registration of operators ## Unregister operators from a group channel  You can unregister operators in a group channel but keep them in the channel as members using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/unregister-operators-from-a-group-channel#1-unregister-operators-from-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="operatorIds"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="operatorIds">Specifies an array of one or more operator IDs to unregister from the channel. The operators in this array remain as participants of the channel after losing their operational roles. Urlencoding each operator ID is recommended. An example of a Urlencoded array would be ?operator_ids&#x3D;urlencoded_id_1,urlencoded_id_2.</param>
         /// <param name="deleteAll"> (optional)</param>
-        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        public ApiResponse<OcDeleteChannelByUrl200Response> GcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?))
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse<Object> CancelTheRegistrationOfOperatorsWithHttpInfo (string channelUrl, string operatorIds, bool? deleteAll = default(bool?), string apiToken = default(string))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcCancelTheRegistrationOfOperators");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcCancelTheRegistrationOfOperators");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->CancelTheRegistrationOfOperators");
             // verify the required parameter 'operatorIds' is set
             if (operatorIds == null)
-                throw new ApiException(400, "Missing required parameter 'operatorIds' when calling GroupChannelApi->GcCancelTheRegistrationOfOperators");
+                throw new ApiException(400, "Missing required parameter 'operatorIds' when calling GroupChannelApi->CancelTheRegistrationOfOperators");
 
             var localVarPath = "/v3/group_channels/{channel_url}/operators";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1513,9 +1548,9 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (operatorIds != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("multi", "operator_ids", operatorIds)); // query parameter
+            if (operatorIds != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "operator_ids", operatorIds)); // query parameter
             if (deleteAll != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "delete_all", deleteAll)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
 
 
             // make the HTTP request
@@ -1527,53 +1562,50 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcCancelTheRegistrationOfOperators", localVarResponse);
+                Exception exception = ExceptionFactory("CancelTheRegistrationOfOperators", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
-        /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// Cancel the registration of operators ## Unregister operators from a group channel  You can unregister operators in a group channel but keep them in the channel as members using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/unregister-operators-from-a-group-channel#1-unregister-operators-from-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="operatorIds"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="operatorIds">Specifies an array of one or more operator IDs to unregister from the channel. The operators in this array remain as participants of the channel after losing their operational roles. Urlencoding each operator ID is recommended. An example of a Urlencoded array would be ?operator_ids&#x3D;urlencoded_id_1,urlencoded_id_2.</param>
         /// <param name="deleteAll"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> CancelTheRegistrationOfOperatorsAsync (string channelUrl, string operatorIds, bool? deleteAll = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync(apiToken, channelUrl, operatorIds, deleteAll, cancellationToken);
+             ApiResponse<Object> localVarResponse = await CancelTheRegistrationOfOperatorsWithHttpInfoAsync(channelUrl, operatorIds, deleteAll, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from a group channel but leave them as members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// Cancel the registration of operators ## Unregister operators from a group channel  You can unregister operators in a group channel but keep them in the channel as members using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/unregister-operators-from-a-group-channel#1-unregister-operators-from-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="operatorIds"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="operatorIds">Specifies an array of one or more operator IDs to unregister from the channel. The operators in this array remain as participants of the channel after losing their operational roles. Urlencoding each operator ID is recommended. An example of a Urlencoded array would be ?operator_ids&#x3D;urlencoded_id_1,urlencoded_id_2.</param>
         /// <param name="deleteAll"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> CancelTheRegistrationOfOperatorsWithHttpInfoAsync (string channelUrl, string operatorIds, bool? deleteAll = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcCancelTheRegistrationOfOperators");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcCancelTheRegistrationOfOperators");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->CancelTheRegistrationOfOperators");
             // verify the required parameter 'operatorIds' is set
             if (operatorIds == null)
-                throw new ApiException(400, "Missing required parameter 'operatorIds' when calling GroupChannelApi->GcCancelTheRegistrationOfOperators");
+                throw new ApiException(400, "Missing required parameter 'operatorIds' when calling GroupChannelApi->CancelTheRegistrationOfOperators");
 
             var localVarPath = "/v3/group_channels/{channel_url}/operators";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1597,9 +1629,9 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (operatorIds != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("multi", "operator_ids", operatorIds)); // query parameter
+            if (operatorIds != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "operator_ids", operatorIds)); // query parameter
             if (deleteAll != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "delete_all", deleteAll)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
 
 
             // make the HTTP request
@@ -1611,48 +1643,45 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcCancelTheRegistrationOfOperators", localVarResponse);
+                Exception exception = ExceptionFactory("CancelTheRegistrationOfOperators", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
-        /// Check if member ## Check if member  Checks whether the user is a member of the group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-check-if-member - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Check if member ## Check if user is a member  Checks if a user is a member of a group channel.  > **Note**: See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.      [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/check-if-user-is-a-member#1-check-if-user-is-a-member](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/check-if-user-is-a-member#1-check-if-user-is-a-member)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="userId"></param>
-        /// <returns>GcCheckIfMemberByIdResponse</returns>
-        public GcCheckIfMemberByIdResponse GcCheckIfMemberById (string apiToken, string channelUrl, string userId)
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="userId">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>CheckIfMemberResponse</returns>
+        public CheckIfMemberResponse CheckIfMember (string channelUrl, string userId, string apiToken = default(string))
         {
-             ApiResponse<GcCheckIfMemberByIdResponse> localVarResponse = GcCheckIfMemberByIdWithHttpInfo(apiToken, channelUrl, userId);
+             ApiResponse<CheckIfMemberResponse> localVarResponse = CheckIfMemberWithHttpInfo(channelUrl, userId, apiToken);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Check if member ## Check if member  Checks whether the user is a member of the group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-check-if-member - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Check if member ## Check if user is a member  Checks if a user is a member of a group channel.  > **Note**: See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.      [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/check-if-user-is-a-member#1-check-if-user-is-a-member](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/check-if-user-is-a-member#1-check-if-user-is-a-member)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="userId"></param>
-        /// <returns>ApiResponse of GcCheckIfMemberByIdResponse</returns>
-        public ApiResponse<GcCheckIfMemberByIdResponse> GcCheckIfMemberByIdWithHttpInfo (string apiToken, string channelUrl, string userId)
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="userId">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of CheckIfMemberResponse</returns>
+        public ApiResponse<CheckIfMemberResponse> CheckIfMemberWithHttpInfo (string channelUrl, string userId, string apiToken = default(string))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcCheckIfMemberById");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcCheckIfMemberById");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->CheckIfMember");
             // verify the required parameter 'userId' is set
             if (userId == null)
-                throw new ApiException(400, "Missing required parameter 'userId' when calling GroupChannelApi->GcCheckIfMemberById");
+                throw new ApiException(400, "Missing required parameter 'userId' when calling GroupChannelApi->CheckIfMember");
 
             var localVarPath = "/v3/group_channels/{channel_url}/members/{user_id}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1677,7 +1706,7 @@ namespace sendbird_platform_sdk.Api
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
             if (userId != null) localVarPathParams.Add("user_id", this.Configuration.ApiClient.ParameterToString(userId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
 
 
             // make the HTTP request
@@ -1689,51 +1718,48 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcCheckIfMemberById", localVarResponse);
+                Exception exception = ExceptionFactory("CheckIfMember", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<GcCheckIfMemberByIdResponse>(localVarStatusCode,
+            return new ApiResponse<CheckIfMemberResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GcCheckIfMemberByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GcCheckIfMemberByIdResponse)));
+                (CheckIfMemberResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CheckIfMemberResponse)));
         }
 
         /// <summary>
-        /// Check if member ## Check if member  Checks whether the user is a member of the group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-check-if-member - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Check if member ## Check if user is a member  Checks if a user is a member of a group channel.  > **Note**: See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.      [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/check-if-user-is-a-member#1-check-if-user-is-a-member](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/check-if-user-is-a-member#1-check-if-user-is-a-member)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="userId"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="userId">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GcCheckIfMemberByIdResponse</returns>
-        public async System.Threading.Tasks.Task<GcCheckIfMemberByIdResponse> GcCheckIfMemberByIdAsync (string apiToken, string channelUrl, string userId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of CheckIfMemberResponse</returns>
+        public async System.Threading.Tasks.Task<CheckIfMemberResponse> CheckIfMemberAsync (string channelUrl, string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<GcCheckIfMemberByIdResponse> localVarResponse = await GcCheckIfMemberByIdWithHttpInfoAsync(apiToken, channelUrl, userId, cancellationToken);
+             ApiResponse<CheckIfMemberResponse> localVarResponse = await CheckIfMemberWithHttpInfoAsync(channelUrl, userId, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Check if member ## Check if member  Checks whether the user is a member of the group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-check-if-member - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Check if member ## Check if user is a member  Checks if a user is a member of a group channel.  > **Note**: See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.      [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/check-if-user-is-a-member#1-check-if-user-is-a-member](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/check-if-user-is-a-member#1-check-if-user-is-a-member)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="userId"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="userId">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GcCheckIfMemberByIdResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GcCheckIfMemberByIdResponse>> GcCheckIfMemberByIdWithHttpInfoAsync (string apiToken, string channelUrl, string userId, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (CheckIfMemberResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<CheckIfMemberResponse>> CheckIfMemberWithHttpInfoAsync (string channelUrl, string userId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcCheckIfMemberById");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcCheckIfMemberById");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->CheckIfMember");
             // verify the required parameter 'userId' is set
             if (userId == null)
-                throw new ApiException(400, "Missing required parameter 'userId' when calling GroupChannelApi->GcCheckIfMemberById");
+                throw new ApiException(400, "Missing required parameter 'userId' when calling GroupChannelApi->CheckIfMember");
 
             var localVarPath = "/v3/group_channels/{channel_url}/members/{user_id}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1758,7 +1784,7 @@ namespace sendbird_platform_sdk.Api
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
             if (userId != null) localVarPathParams.Add("user_id", this.Configuration.ApiClient.ParameterToString(userId)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
 
 
             // make the HTTP request
@@ -1770,40 +1796,37 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcCheckIfMemberById", localVarResponse);
+                Exception exception = ExceptionFactory("CheckIfMember", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<GcCheckIfMemberByIdResponse>(localVarStatusCode,
+            return new ApiResponse<CheckIfMemberResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GcCheckIfMemberByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GcCheckIfMemberByIdResponse)));
+                (CheckIfMemberResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CheckIfMemberResponse)));
         }
 
         /// <summary>
-        /// Create a channel ## Create a channel  Creates a new group channel.  > If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the `distinct` property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can't see previously sent messages or data in the new channel. On the other hand, if the `distinct` property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
+        /// Create a group channel ## Create a group channel  You can create a group channel for 1-to-1 and 1-to-N conversations. By default, group channels are used for conversations between up to 100 members. This number can stretch up to tens of thousands in Supergroup channels. Group channels can either be private and invite only, or public. They support typing indicators, unread count and read receipts, allowing for an interactive chat experience. A user can join up to 2000 group channels, and higher numbers would negatively impact the performance for the end user. The Chat history is turned off by default and its settings can be changed on Sendbird Dashboard by going to Settings > Chat > Channels > Group channels > Chat history. To learn more about group channels, see Channel Overview.  > If you are seeing the error message Maximum \"channel join\" count reached., then consider deleting channels that are no longer used. For situations where an agent connects with many customers such as support, delivery logistics or sales, we recommend using Sendbird Desk.  https://sendbird.com/docs/chat/platform-api/v3/channel/creating-a-channel/create-a-group-channel#1-create-a-group-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="gcCreateChannelData"> (optional)</param>
-        /// <returns>SendBirdGroupChannel</returns>
-        public SendBirdGroupChannel GcCreateChannel (string apiToken, GcCreateChannelData gcCreateChannelData = default(GcCreateChannelData))
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="createAGroupChannelRequest"> (optional)</param>
+        /// <returns>SendbirdGroupChannelDetail</returns>
+        public SendbirdGroupChannelDetail CreateAGroupChannel (string apiToken = default(string), CreateAGroupChannelRequest createAGroupChannelRequest = default(CreateAGroupChannelRequest))
         {
-             ApiResponse<SendBirdGroupChannel> localVarResponse = GcCreateChannelWithHttpInfo(apiToken, gcCreateChannelData);
+             ApiResponse<SendbirdGroupChannelDetail> localVarResponse = CreateAGroupChannelWithHttpInfo(apiToken, createAGroupChannelRequest);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Create a channel ## Create a channel  Creates a new group channel.  > If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the `distinct` property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can't see previously sent messages or data in the new channel. On the other hand, if the `distinct` property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
+        /// Create a group channel ## Create a group channel  You can create a group channel for 1-to-1 and 1-to-N conversations. By default, group channels are used for conversations between up to 100 members. This number can stretch up to tens of thousands in Supergroup channels. Group channels can either be private and invite only, or public. They support typing indicators, unread count and read receipts, allowing for an interactive chat experience. A user can join up to 2000 group channels, and higher numbers would negatively impact the performance for the end user. The Chat history is turned off by default and its settings can be changed on Sendbird Dashboard by going to Settings > Chat > Channels > Group channels > Chat history. To learn more about group channels, see Channel Overview.  > If you are seeing the error message Maximum \"channel join\" count reached., then consider deleting channels that are no longer used. For situations where an agent connects with many customers such as support, delivery logistics or sales, we recommend using Sendbird Desk.  https://sendbird.com/docs/chat/platform-api/v3/channel/creating-a-channel/create-a-group-channel#1-create-a-group-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="gcCreateChannelData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdGroupChannel</returns>
-        public ApiResponse<SendBirdGroupChannel> GcCreateChannelWithHttpInfo (string apiToken, GcCreateChannelData gcCreateChannelData = default(GcCreateChannelData))
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="createAGroupChannelRequest"> (optional)</param>
+        /// <returns>ApiResponse of SendbirdGroupChannelDetail</returns>
+        public ApiResponse<SendbirdGroupChannelDetail> CreateAGroupChannelWithHttpInfo (string apiToken = default(string), CreateAGroupChannelRequest createAGroupChannelRequest = default(CreateAGroupChannelRequest))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcCreateChannel");
 
             var localVarPath = "/v3/group_channels";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1827,14 +1850,14 @@ namespace sendbird_platform_sdk.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcCreateChannelData != null && gcCreateChannelData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (createAGroupChannelRequest != null && createAGroupChannelRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcCreateChannelData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(createAGroupChannelRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = gcCreateChannelData; // byte array
+                localVarPostBody = createAGroupChannelRequest; // byte array
             }
 
 
@@ -1847,43 +1870,40 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcCreateChannel", localVarResponse);
+                Exception exception = ExceptionFactory("CreateAGroupChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdGroupChannel>(localVarStatusCode,
+            return new ApiResponse<SendbirdGroupChannelDetail>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdGroupChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdGroupChannel)));
+                (SendbirdGroupChannelDetail) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendbirdGroupChannelDetail)));
         }
 
         /// <summary>
-        /// Create a channel ## Create a channel  Creates a new group channel.  > If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the `distinct` property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can't see previously sent messages or data in the new channel. On the other hand, if the `distinct` property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
+        /// Create a group channel ## Create a group channel  You can create a group channel for 1-to-1 and 1-to-N conversations. By default, group channels are used for conversations between up to 100 members. This number can stretch up to tens of thousands in Supergroup channels. Group channels can either be private and invite only, or public. They support typing indicators, unread count and read receipts, allowing for an interactive chat experience. A user can join up to 2000 group channels, and higher numbers would negatively impact the performance for the end user. The Chat history is turned off by default and its settings can be changed on Sendbird Dashboard by going to Settings > Chat > Channels > Group channels > Chat history. To learn more about group channels, see Channel Overview.  > If you are seeing the error message Maximum \"channel join\" count reached., then consider deleting channels that are no longer used. For situations where an agent connects with many customers such as support, delivery logistics or sales, we recommend using Sendbird Desk.  https://sendbird.com/docs/chat/platform-api/v3/channel/creating-a-channel/create-a-group-channel#1-create-a-group-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="gcCreateChannelData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="createAGroupChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdGroupChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcCreateChannelAsync (string apiToken, GcCreateChannelData gcCreateChannelData = default(GcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of SendbirdGroupChannelDetail</returns>
+        public async System.Threading.Tasks.Task<SendbirdGroupChannelDetail> CreateAGroupChannelAsync (string apiToken = default(string), CreateAGroupChannelRequest createAGroupChannelRequest = default(CreateAGroupChannelRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdGroupChannel> localVarResponse = await GcCreateChannelWithHttpInfoAsync(apiToken, gcCreateChannelData, cancellationToken);
+             ApiResponse<SendbirdGroupChannelDetail> localVarResponse = await CreateAGroupChannelWithHttpInfoAsync(apiToken, createAGroupChannelRequest, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Create a channel ## Create a channel  Creates a new group channel.  > If you are creating a 1-on-1 direct messaging channel for a user, it is recommended that you turn on the `distinct` property. If the property is turned off, a user can create a new channel even if they have had the previous chat between them, and therefore can't see previously sent messages or data in the new channel. On the other hand, if the `distinct` property is turned on, every 1-on-1 conversation between the same two users occurs within the same channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-create-a-channel
+        /// Create a group channel ## Create a group channel  You can create a group channel for 1-to-1 and 1-to-N conversations. By default, group channels are used for conversations between up to 100 members. This number can stretch up to tens of thousands in Supergroup channels. Group channels can either be private and invite only, or public. They support typing indicators, unread count and read receipts, allowing for an interactive chat experience. A user can join up to 2000 group channels, and higher numbers would negatively impact the performance for the end user. The Chat history is turned off by default and its settings can be changed on Sendbird Dashboard by going to Settings > Chat > Channels > Group channels > Chat history. To learn more about group channels, see Channel Overview.  > If you are seeing the error message Maximum \"channel join\" count reached., then consider deleting channels that are no longer used. For situations where an agent connects with many customers such as support, delivery logistics or sales, we recommend using Sendbird Desk.  https://sendbird.com/docs/chat/platform-api/v3/channel/creating-a-channel/create-a-group-channel#1-create-a-group-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="gcCreateChannelData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="createAGroupChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcCreateChannelWithHttpInfoAsync (string apiToken, GcCreateChannelData gcCreateChannelData = default(GcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (SendbirdGroupChannelDetail)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<SendbirdGroupChannelDetail>> CreateAGroupChannelWithHttpInfoAsync (string apiToken = default(string), CreateAGroupChannelRequest createAGroupChannelRequest = default(CreateAGroupChannelRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcCreateChannel");
 
             var localVarPath = "/v3/group_channels";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1907,14 +1927,14 @@ namespace sendbird_platform_sdk.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcCreateChannelData != null && gcCreateChannelData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (createAGroupChannelRequest != null && createAGroupChannelRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcCreateChannelData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(createAGroupChannelRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = gcCreateChannelData; // byte array
+                localVarPostBody = createAGroupChannelRequest; // byte array
             }
 
 
@@ -1927,212 +1947,40 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcCreateChannel", localVarResponse);
+                Exception exception = ExceptionFactory("CreateAGroupChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdGroupChannel>(localVarStatusCode,
+            return new ApiResponse<SendbirdGroupChannelDetail>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdGroupChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdGroupChannel)));
+                (SendbirdGroupChannelDetail) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendbirdGroupChannelDetail)));
         }
 
         /// <summary>
-        /// Decline an invitation ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Delete a group channel ## Delete a group channel  You can delete a group channel or a Supergroup channel using this API. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-a-group-channel#1-delete-a-group-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-a-group-channel#1-delete-a-group-channel)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcDeclineInvitationData"> (optional)</param>
-        /// <returns>OcDeleteChannelByUrl200Response</returns>
-        public OcDeleteChannelByUrl200Response GcDeclineInvitation (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData))
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>Object</returns>
+        public Object DeleteAGroupChannel (string channelUrl, string apiToken = default(string))
         {
-             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = GcDeclineInvitationWithHttpInfo(apiToken, channelUrl, gcDeclineInvitationData);
+             ApiResponse<Object> localVarResponse = DeleteAGroupChannelWithHttpInfo(channelUrl, apiToken);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Decline an invitation ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Delete a group channel ## Delete a group channel  You can delete a group channel or a Supergroup channel using this API. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-a-group-channel#1-delete-a-group-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-a-group-channel#1-delete-a-group-channel)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcDeclineInvitationData"> (optional)</param>
-        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        public ApiResponse<OcDeleteChannelByUrl200Response> GcDeclineInvitationWithHttpInfo (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData))
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse<Object> DeleteAGroupChannelWithHttpInfo (string channelUrl, string apiToken = default(string))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcDeclineInvitation");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcDeclineInvitation");
-
-            var localVarPath = "/v3/group_channels/{channel_url}/decline";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcDeclineInvitationData != null && gcDeclineInvitationData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcDeclineInvitationData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = gcDeclineInvitationData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GcDeclineInvitation", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
-        }
-
-        /// <summary>
-        /// Decline an invitation ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcDeclineInvitationData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcDeclineInvitationAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcDeclineInvitationWithHttpInfoAsync(apiToken, channelUrl, gcDeclineInvitationData, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Decline an invitation ## Decline an invitation  Declines an invitation for a user to not join a [private](#4-private-vs-public) group channel.  > __Note__: This action is effective only when the `auto_accept` property of an application is set to false. You can change the value of the property using the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action, or [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-decline-an-invitation - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcDeclineInvitationData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcDeclineInvitationWithHttpInfoAsync (string apiToken, string channelUrl, GcDeclineInvitationData gcDeclineInvitationData = default(GcDeclineInvitationData), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcDeclineInvitation");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcDeclineInvitation");
-
-            var localVarPath = "/v3/group_channels/{channel_url}/decline";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcDeclineInvitationData != null && gcDeclineInvitationData.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcDeclineInvitationData); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = gcDeclineInvitationData; // byte array
-            }
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GcDeclineInvitation", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
-        }
-
-        /// <summary>
-        /// Delete a channel ## Delete a channel  Deletes a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <returns>OcDeleteChannelByUrl200Response</returns>
-        public OcDeleteChannelByUrl200Response GcDeleteChannelByUrl (string apiToken, string channelUrl)
-        {
-             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = GcDeleteChannelByUrlWithHttpInfo(apiToken, channelUrl);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Delete a channel ## Delete a channel  Deletes a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        public ApiResponse<OcDeleteChannelByUrl200Response> GcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl)
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcDeleteChannelByUrl");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcDeleteChannelByUrl");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->DeleteAGroupChannel");
 
             var localVarPath = "/v3/group_channels/{channel_url}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2156,7 +2004,7 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
 
 
             // make the HTTP request
@@ -2168,46 +2016,43 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcDeleteChannelByUrl", localVarResponse);
+                Exception exception = ExceptionFactory("DeleteAGroupChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
-        /// Delete a channel ## Delete a channel  Deletes a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Delete a group channel ## Delete a group channel  You can delete a group channel or a Supergroup channel using this API. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-a-group-channel#1-delete-a-group-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-a-group-channel#1-delete-a-group-channel)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> DeleteAGroupChannelAsync (string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcDeleteChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, cancellationToken);
+             ApiResponse<Object> localVarResponse = await DeleteAGroupChannelWithHttpInfoAsync(channelUrl, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Delete a channel ## Delete a channel  Deletes a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Delete a group channel ## Delete a group channel  You can delete a group channel or a Supergroup channel using this API. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-a-group-channel#1-delete-a-group-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-a-group-channel#1-delete-a-group-channel)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteAGroupChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcDeleteChannelByUrl");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcDeleteChannelByUrl");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->DeleteAGroupChannel");
 
             var localVarPath = "/v3/group_channels/{channel_url}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2231,7 +2076,7 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
 
 
             // make the HTTP request
@@ -2243,45 +2088,213 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcDeleteChannelByUrl", localVarResponse);
+                Exception exception = ExceptionFactory("DeleteAGroupChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
-        /// Hide or archive a channel ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn't appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Get a group channel ## Get a group channel  This action retrieves information about a specific [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel). You can use the optional query parameters to determine whether to include delivery receipt, read receipt, or member information in the response.  https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-a-group-channel#1-get-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
-        /// <returns>OcDeleteChannelByUrl200Response</returns>
-        public OcDeleteChannelByUrl200Response GcHideOrArchiveChannel (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData))
+        /// <param name="showDeliveryReceipt"> (optional)</param>
+        /// <param name="showReadReceipt"> (optional)</param>
+        /// <param name="showMember"> (optional)</param>
+        /// <param name="memberActiveMode">Restricts the member list to members who are activated or deactivated in the channel. This parameter is only effective if the parameter show_member is true. Acceptable values are all, activated, and deactivated. (default: all) (optional)</param>
+        /// <param name="userId"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>GetAGroupChannelResponse</returns>
+        public GetAGroupChannelResponse GetAGroupChannel (string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), string memberActiveMode = default(string), string userId = default(string), string apiToken = default(string))
         {
-             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = GcHideOrArchiveChannelWithHttpInfo(apiToken, channelUrl, gcHideOrArchiveChannelData);
+             ApiResponse<GetAGroupChannelResponse> localVarResponse = GetAGroupChannelWithHttpInfo(channelUrl, showDeliveryReceipt, showReadReceipt, showMember, memberActiveMode, userId, apiToken);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Hide or archive a channel ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn't appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Get a group channel ## Get a group channel  This action retrieves information about a specific [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel). You can use the optional query parameters to determine whether to include delivery receipt, read receipt, or member information in the response.  https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-a-group-channel#1-get-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
-        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        public ApiResponse<OcDeleteChannelByUrl200Response> GcHideOrArchiveChannelWithHttpInfo (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData))
+        /// <param name="showDeliveryReceipt"> (optional)</param>
+        /// <param name="showReadReceipt"> (optional)</param>
+        /// <param name="showMember"> (optional)</param>
+        /// <param name="memberActiveMode">Restricts the member list to members who are activated or deactivated in the channel. This parameter is only effective if the parameter show_member is true. Acceptable values are all, activated, and deactivated. (default: all) (optional)</param>
+        /// <param name="userId"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of GetAGroupChannelResponse</returns>
+        public ApiResponse<GetAGroupChannelResponse> GetAGroupChannelWithHttpInfo (string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), string memberActiveMode = default(string), string userId = default(string), string apiToken = default(string))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcHideOrArchiveChannel");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcHideOrArchiveChannel");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GetAGroupChannel");
+
+            var localVarPath = "/v3/group_channels/{channel_url}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
+            if (showDeliveryReceipt != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_delivery_receipt", showDeliveryReceipt)); // query parameter
+            if (showReadReceipt != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_read_receipt", showReadReceipt)); // query parameter
+            if (showMember != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_member", showMember)); // query parameter
+            if (memberActiveMode != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "member_active_mode", memberActiveMode)); // query parameter
+            if (userId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "user_id", userId)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetAGroupChannel", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<GetAGroupChannelResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (GetAGroupChannelResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetAGroupChannelResponse)));
+        }
+
+        /// <summary>
+        /// Get a group channel ## Get a group channel  This action retrieves information about a specific [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel). You can use the optional query parameters to determine whether to include delivery receipt, read receipt, or member information in the response.  https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-a-group-channel#1-get-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl"></param>
+        /// <param name="showDeliveryReceipt"> (optional)</param>
+        /// <param name="showReadReceipt"> (optional)</param>
+        /// <param name="showMember"> (optional)</param>
+        /// <param name="memberActiveMode">Restricts the member list to members who are activated or deactivated in the channel. This parameter is only effective if the parameter show_member is true. Acceptable values are all, activated, and deactivated. (default: all) (optional)</param>
+        /// <param name="userId"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of GetAGroupChannelResponse</returns>
+        public async System.Threading.Tasks.Task<GetAGroupChannelResponse> GetAGroupChannelAsync (string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), string memberActiveMode = default(string), string userId = default(string), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<GetAGroupChannelResponse> localVarResponse = await GetAGroupChannelWithHttpInfoAsync(channelUrl, showDeliveryReceipt, showReadReceipt, showMember, memberActiveMode, userId, apiToken, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get a group channel ## Get a group channel  This action retrieves information about a specific [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel). You can use the optional query parameters to determine whether to include delivery receipt, read receipt, or member information in the response.  https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-a-group-channel#1-get-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl"></param>
+        /// <param name="showDeliveryReceipt"> (optional)</param>
+        /// <param name="showReadReceipt"> (optional)</param>
+        /// <param name="showMember"> (optional)</param>
+        /// <param name="memberActiveMode">Restricts the member list to members who are activated or deactivated in the channel. This parameter is only effective if the parameter show_member is true. Acceptable values are all, activated, and deactivated. (default: all) (optional)</param>
+        /// <param name="userId"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (GetAGroupChannelResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<GetAGroupChannelResponse>> GetAGroupChannelWithHttpInfoAsync (string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), string memberActiveMode = default(string), string userId = default(string), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'channelUrl' is set
+            if (channelUrl == null)
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GetAGroupChannel");
+
+            var localVarPath = "/v3/group_channels/{channel_url}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
+            if (showDeliveryReceipt != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_delivery_receipt", showDeliveryReceipt)); // query parameter
+            if (showReadReceipt != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_read_receipt", showReadReceipt)); // query parameter
+            if (showMember != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_member", showMember)); // query parameter
+            if (memberActiveMode != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "member_active_mode", memberActiveMode)); // query parameter
+            if (userId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "user_id", userId)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetAGroupChannel", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<GetAGroupChannelResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (GetAGroupChannelResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetAGroupChannelResponse)));
+        }
+
+        /// <summary>
+        /// Hide a channel ## Hide a channel  This action allows you to hide a [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel) from a user's channel list. Hiding a channel gives users the ability to archive channels so that they can focus on channels that need the most attention.  With this API, you can allow users to hide a channel from themselves or from all channel members. You can also determine whether to have the channel remain hidden when a new message is sent to the channel. Note that only group channels can be hidden.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/hide-a-channel#1-hide-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/hide-a-channel#1-hide-a-channel)
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="hideAChannelRequest"> (optional)</param>
+        /// <returns>Object</returns>
+        public Object HideAChannel (string channelUrl, string apiToken = default(string), HideAChannelRequest hideAChannelRequest = default(HideAChannelRequest))
+        {
+             ApiResponse<Object> localVarResponse = HideAChannelWithHttpInfo(channelUrl, apiToken, hideAChannelRequest);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Hide a channel ## Hide a channel  This action allows you to hide a [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel) from a user's channel list. Hiding a channel gives users the ability to archive channels so that they can focus on channels that need the most attention.  With this API, you can allow users to hide a channel from themselves or from all channel members. You can also determine whether to have the channel remain hidden when a new message is sent to the channel. Note that only group channels can be hidden.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/hide-a-channel#1-hide-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/hide-a-channel#1-hide-a-channel)
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="hideAChannelRequest"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse<Object> HideAChannelWithHttpInfo (string channelUrl, string apiToken = default(string), HideAChannelRequest hideAChannelRequest = default(HideAChannelRequest))
+        {
+            // verify the required parameter 'channelUrl' is set
+            if (channelUrl == null)
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->HideAChannel");
 
             var localVarPath = "/v3/group_channels/{channel_url}/hide";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2306,14 +2319,14 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcHideOrArchiveChannelData != null && gcHideOrArchiveChannelData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (hideAChannelRequest != null && hideAChannelRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcHideOrArchiveChannelData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(hideAChannelRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = gcHideOrArchiveChannelData; // byte array
+                localVarPostBody = hideAChannelRequest; // byte array
             }
 
 
@@ -2326,48 +2339,45 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcHideOrArchiveChannel", localVarResponse);
+                Exception exception = ExceptionFactory("HideAChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
-        /// Hide or archive a channel ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn't appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Hide a channel ## Hide a channel  This action allows you to hide a [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel) from a user's channel list. Hiding a channel gives users the ability to archive channels so that they can focus on channels that need the most attention.  With this API, you can allow users to hide a channel from themselves or from all channel members. You can also determine whether to have the channel remain hidden when a new message is sent to the channel. Note that only group channels can be hidden.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/hide-a-channel#1-hide-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/hide-a-channel#1-hide-a-channel)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="hideAChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcHideOrArchiveChannelAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> HideAChannelAsync (string channelUrl, string apiToken = default(string), HideAChannelRequest hideAChannelRequest = default(HideAChannelRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcHideOrArchiveChannelWithHttpInfoAsync(apiToken, channelUrl, gcHideOrArchiveChannelData, cancellationToken);
+             ApiResponse<Object> localVarResponse = await HideAChannelWithHttpInfoAsync(channelUrl, apiToken, hideAChannelRequest, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Hide or archive a channel ## Hide or archive a channel  Hides or archives a channel from the channel list of either a specific user or entire channel members. Normally, a hidden channel comes back and shows up in the channel list when a member in the channel sends a new message. This automatically-triggered behavior is intended for users who want to temporarily remove a channel from their list because [leaving the channel](#2-leave-the-channel) would delete all the past messages and stored data.  You can also leave out a channel from the list and archive the channel. The channel doesn't appear even when receiving a new message from other member.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-hide-or-archive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Hide a channel ## Hide a channel  This action allows you to hide a [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel) from a user's channel list. Hiding a channel gives users the ability to archive channels so that they can focus on channels that need the most attention.  With this API, you can allow users to hide a channel from themselves or from all channel members. You can also determine whether to have the channel remain hidden when a new message is sent to the channel. Note that only group channels can be hidden.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/hide-a-channel#1-hide-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/hide-a-channel#1-hide-a-channel)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcHideOrArchiveChannelData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="hideAChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcHideOrArchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcHideOrArchiveChannelData gcHideOrArchiveChannelData = default(GcHideOrArchiveChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> HideAChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), HideAChannelRequest hideAChannelRequest = default(HideAChannelRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcHideOrArchiveChannel");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcHideOrArchiveChannel");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->HideAChannel");
 
             var localVarPath = "/v3/group_channels/{channel_url}/hide";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2392,14 +2402,14 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcHideOrArchiveChannelData != null && gcHideOrArchiveChannelData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (hideAChannelRequest != null && hideAChannelRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcHideOrArchiveChannelData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(hideAChannelRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = gcHideOrArchiveChannelData; // byte array
+                localVarPostBody = hideAChannelRequest; // byte array
             }
 
 
@@ -2412,45 +2422,42 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcHideOrArchiveChannel", localVarResponse);
+                Exception exception = ExceptionFactory("HideAChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
-        /// Invite as members ## Invite as members  Invites one or more users as members into the group channel.  > __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Invite as members ## Invite as members  Invites one or more users as members to a group channel. Users can join a group channel immediately after receiving an invitation, without having to accept it. To give users an option to accept or decline an invitation, see [update default channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/setting-up-channels/update-default-invitation-preference) or [update channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-channel-invitation-preference). See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  > **Note**: By default, [blocked users](https://sendbird.com/docs/chat/platform-api/v3/moderation/blocking-users/block-users) are included when sending invitations. If you wish to exclude blocked users, [contact our sales team](https://get.sendbird.com/talk-to-sales.html).      [https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel#1-invite-as-members](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel#1-invite-as-members)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcInviteAsMembersData"> (optional)</param>
-        /// <returns>SendBirdGroupChannel</returns>
-        public SendBirdGroupChannel GcInviteAsMembers (string apiToken, string channelUrl, GcInviteAsMembersData gcInviteAsMembersData = default(GcInviteAsMembersData))
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="inviteAsMembersRequest"> (optional)</param>
+        /// <returns>InviteAsMembersResponse</returns>
+        public InviteAsMembersResponse InviteAsMembers (string channelUrl, string apiToken = default(string), InviteAsMembersRequest inviteAsMembersRequest = default(InviteAsMembersRequest))
         {
-             ApiResponse<SendBirdGroupChannel> localVarResponse = GcInviteAsMembersWithHttpInfo(apiToken, channelUrl, gcInviteAsMembersData);
+             ApiResponse<InviteAsMembersResponse> localVarResponse = InviteAsMembersWithHttpInfo(channelUrl, apiToken, inviteAsMembersRequest);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Invite as members ## Invite as members  Invites one or more users as members into the group channel.  > __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Invite as members ## Invite as members  Invites one or more users as members to a group channel. Users can join a group channel immediately after receiving an invitation, without having to accept it. To give users an option to accept or decline an invitation, see [update default channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/setting-up-channels/update-default-invitation-preference) or [update channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-channel-invitation-preference). See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  > **Note**: By default, [blocked users](https://sendbird.com/docs/chat/platform-api/v3/moderation/blocking-users/block-users) are included when sending invitations. If you wish to exclude blocked users, [contact our sales team](https://get.sendbird.com/talk-to-sales.html).      [https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel#1-invite-as-members](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel#1-invite-as-members)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcInviteAsMembersData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdGroupChannel</returns>
-        public ApiResponse<SendBirdGroupChannel> GcInviteAsMembersWithHttpInfo (string apiToken, string channelUrl, GcInviteAsMembersData gcInviteAsMembersData = default(GcInviteAsMembersData))
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="inviteAsMembersRequest"> (optional)</param>
+        /// <returns>ApiResponse of InviteAsMembersResponse</returns>
+        public ApiResponse<InviteAsMembersResponse> InviteAsMembersWithHttpInfo (string channelUrl, string apiToken = default(string), InviteAsMembersRequest inviteAsMembersRequest = default(InviteAsMembersRequest))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcInviteAsMembers");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcInviteAsMembers");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->InviteAsMembers");
 
             var localVarPath = "/v3/group_channels/{channel_url}/invite";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2475,14 +2482,14 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcInviteAsMembersData != null && gcInviteAsMembersData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (inviteAsMembersRequest != null && inviteAsMembersRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcInviteAsMembersData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(inviteAsMembersRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = gcInviteAsMembersData; // byte array
+                localVarPostBody = inviteAsMembersRequest; // byte array
             }
 
 
@@ -2495,48 +2502,45 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcInviteAsMembers", localVarResponse);
+                Exception exception = ExceptionFactory("InviteAsMembers", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdGroupChannel>(localVarStatusCode,
+            return new ApiResponse<InviteAsMembersResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdGroupChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdGroupChannel)));
+                (InviteAsMembersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InviteAsMembersResponse)));
         }
 
         /// <summary>
-        /// Invite as members ## Invite as members  Invites one or more users as members into the group channel.  > __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Invite as members ## Invite as members  Invites one or more users as members to a group channel. Users can join a group channel immediately after receiving an invitation, without having to accept it. To give users an option to accept or decline an invitation, see [update default channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/setting-up-channels/update-default-invitation-preference) or [update channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-channel-invitation-preference). See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  > **Note**: By default, [blocked users](https://sendbird.com/docs/chat/platform-api/v3/moderation/blocking-users/block-users) are included when sending invitations. If you wish to exclude blocked users, [contact our sales team](https://get.sendbird.com/talk-to-sales.html).      [https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel#1-invite-as-members](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel#1-invite-as-members)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcInviteAsMembersData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="inviteAsMembersRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdGroupChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcInviteAsMembersAsync (string apiToken, string channelUrl, GcInviteAsMembersData gcInviteAsMembersData = default(GcInviteAsMembersData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of InviteAsMembersResponse</returns>
+        public async System.Threading.Tasks.Task<InviteAsMembersResponse> InviteAsMembersAsync (string channelUrl, string apiToken = default(string), InviteAsMembersRequest inviteAsMembersRequest = default(InviteAsMembersRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdGroupChannel> localVarResponse = await GcInviteAsMembersWithHttpInfoAsync(apiToken, channelUrl, gcInviteAsMembersData, cancellationToken);
+             ApiResponse<InviteAsMembersResponse> localVarResponse = await InviteAsMembersWithHttpInfoAsync(channelUrl, apiToken, inviteAsMembersRequest, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Invite as members ## Invite as members  Invites one or more users as members into the group channel.  > __Note__: By default, users in your application automatically join a [private](#4-private-vs-public) group channel promptly from an invitation without having to accept it. If you want to give them the option to decide whether to accept or decline an invitation, you should set the value of channel invitation preference to false through the [update default channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/application#2-update-default-channel-invitation-preference) action. Or using the [update a user's channel invitation preference](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-channel-invitation-preference) action, you can also allow the option individually by user.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-invite-as-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Invite as members ## Invite as members  Invites one or more users as members to a group channel. Users can join a group channel immediately after receiving an invitation, without having to accept it. To give users an option to accept or decline an invitation, see [update default channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/setting-up-channels/update-default-invitation-preference) or [update channel invitation preference](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-channel-invitation-preference). See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  > **Note**: By default, [blocked users](https://sendbird.com/docs/chat/platform-api/v3/moderation/blocking-users/block-users) are included when sending invitations. If you wish to exclude blocked users, [contact our sales team](https://get.sendbird.com/talk-to-sales.html).      [https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel#1-invite-as-members](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel#1-invite-as-members)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcInviteAsMembersData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="inviteAsMembersRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcInviteAsMembersWithHttpInfoAsync (string apiToken, string channelUrl, GcInviteAsMembersData gcInviteAsMembersData = default(GcInviteAsMembersData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (InviteAsMembersResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<InviteAsMembersResponse>> InviteAsMembersWithHttpInfoAsync (string channelUrl, string apiToken = default(string), InviteAsMembersRequest inviteAsMembersRequest = default(InviteAsMembersRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcInviteAsMembers");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcInviteAsMembers");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->InviteAsMembers");
 
             var localVarPath = "/v3/group_channels/{channel_url}/invite";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2561,14 +2565,14 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcInviteAsMembersData != null && gcInviteAsMembersData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (inviteAsMembersRequest != null && inviteAsMembersRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcInviteAsMembersData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(inviteAsMembersRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = gcInviteAsMembersData; // byte array
+                localVarPostBody = inviteAsMembersRequest; // byte array
             }
 
 
@@ -2581,44 +2585,42 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcInviteAsMembers", localVarResponse);
+                Exception exception = ExceptionFactory("InviteAsMembers", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdGroupChannel>(localVarStatusCode,
+            return new ApiResponse<InviteAsMembersResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdGroupChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdGroupChannel)));
+                (InviteAsMembersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InviteAsMembersResponse)));
         }
 
         /// <summary>
-        /// Join a channel ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can't join a new channel.  > __Note__: This action is only permitted for public group channels where the `is_public` property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Join a channel ## Join a channel  This API allows a user to join a [public](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-group-channel-types) group channel. Users can only join public group channels where the `is_public` property is set to `true` using this API. A single user can join up to 2,000 group channels, and a user who reaches the capacity can’t join a new channel. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/join-a-channel#1-join-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/join-a-channel#1-join-a-channel)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcJoinChannelData"> (optional)</param>
-        /// <returns></returns>
-        public void GcJoinChannel (string apiToken, string channelUrl, GcJoinChannelData gcJoinChannelData = default(GcJoinChannelData))
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="joinAChannelRequest"> (optional)</param>
+        /// <returns>SendbirdGroupChannelDetail</returns>
+        public SendbirdGroupChannelDetail JoinAChannel (string channelUrl, string apiToken = default(string), JoinAChannelRequest joinAChannelRequest = default(JoinAChannelRequest))
         {
-             GcJoinChannelWithHttpInfo(apiToken, channelUrl, gcJoinChannelData);
+             ApiResponse<SendbirdGroupChannelDetail> localVarResponse = JoinAChannelWithHttpInfo(channelUrl, apiToken, joinAChannelRequest);
+             return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Join a channel ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can't join a new channel.  > __Note__: This action is only permitted for public group channels where the `is_public` property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Join a channel ## Join a channel  This API allows a user to join a [public](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-group-channel-types) group channel. Users can only join public group channels where the `is_public` property is set to `true` using this API. A single user can join up to 2,000 group channels, and a user who reaches the capacity can’t join a new channel. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/join-a-channel#1-join-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/join-a-channel#1-join-a-channel)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcJoinChannelData"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GcJoinChannelWithHttpInfo (string apiToken, string channelUrl, GcJoinChannelData gcJoinChannelData = default(GcJoinChannelData))
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="joinAChannelRequest"> (optional)</param>
+        /// <returns>ApiResponse of SendbirdGroupChannelDetail</returns>
+        public ApiResponse<SendbirdGroupChannelDetail> JoinAChannelWithHttpInfo (string channelUrl, string apiToken = default(string), JoinAChannelRequest joinAChannelRequest = default(JoinAChannelRequest))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcJoinChannel");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcJoinChannel");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->JoinAChannel");
 
             var localVarPath = "/v3/group_channels/{channel_url}/join";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2636,20 +2638,21 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcJoinChannelData != null && gcJoinChannelData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (joinAChannelRequest != null && joinAChannelRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcJoinChannelData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(joinAChannelRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = gcJoinChannelData; // byte array
+                localVarPostBody = joinAChannelRequest; // byte array
             }
 
 
@@ -2662,47 +2665,45 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcJoinChannel", localVarResponse);
+                Exception exception = ExceptionFactory("JoinAChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<SendbirdGroupChannelDetail>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (SendbirdGroupChannelDetail) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendbirdGroupChannelDetail)));
         }
 
         /// <summary>
-        /// Join a channel ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can't join a new channel.  > __Note__: This action is only permitted for public group channels where the `is_public` property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Join a channel ## Join a channel  This API allows a user to join a [public](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-group-channel-types) group channel. Users can only join public group channels where the `is_public` property is set to `true` using this API. A single user can join up to 2,000 group channels, and a user who reaches the capacity can’t join a new channel. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/join-a-channel#1-join-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/join-a-channel#1-join-a-channel)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcJoinChannelData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="joinAChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GcJoinChannelAsync (string apiToken, string channelUrl, GcJoinChannelData gcJoinChannelData = default(GcJoinChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of SendbirdGroupChannelDetail</returns>
+        public async System.Threading.Tasks.Task<SendbirdGroupChannelDetail> JoinAChannelAsync (string channelUrl, string apiToken = default(string), JoinAChannelRequest joinAChannelRequest = default(JoinAChannelRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-             await GcJoinChannelWithHttpInfoAsync(apiToken, channelUrl, gcJoinChannelData, cancellationToken);
+             ApiResponse<SendbirdGroupChannelDetail> localVarResponse = await JoinAChannelWithHttpInfoAsync(channelUrl, apiToken, joinAChannelRequest, cancellationToken);
+             return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Join a channel ## Join a channel  Allows a user to join a [public](#4-private-vs-public) group channel. Since a user is allowed to join up to 2,000 group channels, a user who already belongs to a maximum number of group channels can't join a new channel.  > __Note__: This action is only permitted for public group channels where the `is_public` property is true.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-join-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Join a channel ## Join a channel  This API allows a user to join a [public](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-group-channel-types) group channel. Users can only join public group channels where the `is_public` property is set to `true` using this API. A single user can join up to 2,000 group channels, and a user who reaches the capacity can’t join a new channel. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/join-a-channel#1-join-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/join-a-channel#1-join-a-channel)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcJoinChannelData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="joinAChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GcJoinChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcJoinChannelData gcJoinChannelData = default(GcJoinChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (SendbirdGroupChannelDetail)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<SendbirdGroupChannelDetail>> JoinAChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), JoinAChannelRequest joinAChannelRequest = default(JoinAChannelRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcJoinChannel");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcJoinChannel");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->JoinAChannel");
 
             var localVarPath = "/v3/group_channels/{channel_url}/join";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2720,20 +2721,21 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcJoinChannelData != null && gcJoinChannelData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (joinAChannelRequest != null && joinAChannelRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcJoinChannelData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(joinAChannelRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = gcJoinChannelData; // byte array
+                localVarPostBody = joinAChannelRequest; // byte array
             }
 
 
@@ -2746,26 +2748,26 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcJoinChannel", localVarResponse);
+                Exception exception = ExceptionFactory("JoinAChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<SendbirdGroupChannelDetail>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
+                (SendbirdGroupChannelDetail) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendbirdGroupChannelDetail)));
         }
 
         /// <summary>
         /// Leave a channel ## Leave a channel  Makes one or more members leave a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-leave-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcLeaveChannelData"> (optional)</param>
-        /// <returns>OcDeleteChannelByUrl200Response</returns>
-        public OcDeleteChannelByUrl200Response GcLeaveChannel (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData))
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="leaveAChannelRequest"> (optional)</param>
+        /// <returns>Object</returns>
+        public Object LeaveAChannel (string channelUrl, string apiToken = default(string), LeaveAChannelRequest leaveAChannelRequest = default(LeaveAChannelRequest))
         {
-             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = GcLeaveChannelWithHttpInfo(apiToken, channelUrl, gcLeaveChannelData);
+             ApiResponse<Object> localVarResponse = LeaveAChannelWithHttpInfo(channelUrl, apiToken, leaveAChannelRequest);
              return localVarResponse.Data;
         }
 
@@ -2773,18 +2775,15 @@ namespace sendbird_platform_sdk.Api
         /// Leave a channel ## Leave a channel  Makes one or more members leave a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-leave-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcLeaveChannelData"> (optional)</param>
-        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        public ApiResponse<OcDeleteChannelByUrl200Response> GcLeaveChannelWithHttpInfo (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData))
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="leaveAChannelRequest"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse<Object> LeaveAChannelWithHttpInfo (string channelUrl, string apiToken = default(string), LeaveAChannelRequest leaveAChannelRequest = default(LeaveAChannelRequest))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcLeaveChannel");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcLeaveChannel");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->LeaveAChannel");
 
             var localVarPath = "/v3/group_channels/{channel_url}/leave";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2810,13 +2809,13 @@ namespace sendbird_platform_sdk.Api
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
             if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcLeaveChannelData != null && gcLeaveChannelData.GetType() != typeof(byte[]))
+            if (leaveAChannelRequest != null && leaveAChannelRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcLeaveChannelData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(leaveAChannelRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = gcLeaveChannelData; // byte array
+                localVarPostBody = leaveAChannelRequest; // byte array
             }
 
 
@@ -2829,27 +2828,27 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcLeaveChannel", localVarResponse);
+                Exception exception = ExceptionFactory("LeaveAChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
         /// Leave a channel ## Leave a channel  Makes one or more members leave a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-leave-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcLeaveChannelData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="leaveAChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcLeaveChannelAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> LeaveAChannelAsync (string channelUrl, string apiToken = default(string), LeaveAChannelRequest leaveAChannelRequest = default(LeaveAChannelRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcLeaveChannelWithHttpInfoAsync(apiToken, channelUrl, gcLeaveChannelData, cancellationToken);
+             ApiResponse<Object> localVarResponse = await LeaveAChannelWithHttpInfoAsync(channelUrl, apiToken, leaveAChannelRequest, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -2858,19 +2857,16 @@ namespace sendbird_platform_sdk.Api
         /// Leave a channel ## Leave a channel  Makes one or more members leave a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-leave-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcLeaveChannelData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="leaveAChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcLeaveChannelWithHttpInfoAsync (string apiToken, string channelUrl, GcLeaveChannelData gcLeaveChannelData = default(GcLeaveChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> LeaveAChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), LeaveAChannelRequest leaveAChannelRequest = default(LeaveAChannelRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcLeaveChannel");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcLeaveChannel");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->LeaveAChannel");
 
             var localVarPath = "/v3/group_channels/{channel_url}/leave";
             var localVarPathParams = new Dictionary<String, String>();
@@ -2896,13 +2892,13 @@ namespace sendbird_platform_sdk.Api
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
             if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcLeaveChannelData != null && gcLeaveChannelData.GetType() != typeof(byte[]))
+            if (leaveAChannelRequest != null && leaveAChannelRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcLeaveChannelData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(leaveAChannelRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = gcLeaveChannelData; // byte array
+                localVarPostBody = leaveAChannelRequest; // byte array
             }
 
 
@@ -2915,27 +2911,27 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcLeaveChannel", localVarResponse);
+                Exception exception = ExceptionFactory("LeaveAChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
-        /// List channels ## List channels  Retrieves a list of group channels in the application.  > __Note__: If you want to get a list of a specific user's group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// List channels ## List group channels  This action retrieves a list of [group channels](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel). You can use various query parameters to determine the search scope and select what kind of information you want to receive about the queried channels.  If you want to retrieve a list of group channels that a specific user has joined, use the [list group channels by user](https://sendbird.com/docs/chat/platform-api/v3/user/managing-joined-group-channels/list-group-channels-by-user) action under the User section.  https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-group-channels#1-list-group-channels
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="token">Specifies a page token that indicates the starting index of a chunk of results. If not specified, the index is set as 0. (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
         /// <param name="distinctMode"> (optional)</param>
         /// <param name="publicMode"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
-        /// <param name="createdAfter"> (optional)</param>
-        /// <param name="createdBefore"> (optional)</param>
+        /// <param name="createdAfter">Restricts the search scope to only retrieve group channels which have been created after the specified time, in Unix milliseconds format. (optional)</param>
+        /// <param name="createdBefore">Restricts the search scope to only retrieve group channels which have been created before the specified time, in Unix milliseconds format. (optional)</param>
         /// <param name="showEmpty"> (optional)</param>
         /// <param name="showMember"> (optional)</param>
         /// <param name="showDeliveryReceipt"> (optional)</param>
@@ -2943,53 +2939,47 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="showFrozen"> (optional)</param>
         /// <param name="order"> (optional)</param>
-        /// <param name="metadataOrderKey"> (optional)</param>
-        /// <param name="customTypes"> (optional)</param>
-        /// <param name="customTypeStartswith"> (optional)</param>
-        /// <param name="channelUrls"> (optional)</param>
-        /// <param name="name"> (optional)</param>
-        /// <param name="nameContains"> (optional)</param>
-        /// <param name="nameStartswith"> (optional)</param>
-        /// <param name="membersExactlyIn"> (optional)</param>
-        /// <param name="membersIncludeIn"> (optional)</param>
-        /// <param name="queryType"> (optional)</param>
-        /// <param name="membersNickname"> (optional)</param>
-        /// <param name="membersNicknameContains"> (optional)</param>
-        /// <param name="metadataKey"> (optional)</param>
-        /// <param name="metadataValues"> (optional)</param>
-        /// <param name="metadataValueStartswith"> (optional)</param>
-        /// <param name="metacounterKey"> (optional)</param>
-        /// <param name="metacounterValues"> (optional)</param>
-        /// <param name="metacounterValueGt"> (optional)</param>
-        /// <param name="metacounterValueGte"> (optional)</param>
-        /// <param name="metacounterValueLt"> (optional)</param>
-        /// <param name="metacounterValueLte"> (optional)</param>
-        /// <param name="includeSortedMetaarrayInLastMessage"> (optional)</param>
-        /// <param name="customType"> (optional)</param>
-        /// <param name="readReceipt"> (optional)</param>
-        /// <param name="member"> (optional)</param>
-        /// <param name="isDistinct"> (optional)</param>
-        /// <param name="membersIn"> (optional)</param>
-        /// <param name="userId"> (optional)</param>
-        /// <returns>GcListChannelsResponse</returns>
-        public GcListChannelsResponse GcListChannels (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), string customType = default(string), bool? readReceipt = default(bool?), bool? member = default(bool?), bool? isDistinct = default(bool?), string membersIn = default(string), string userId = default(string))
+        /// <param name="metadataOrderKey">Specifies the key of an item in metadata. When a value of the order parameter is set to metadata_value_alphabetical, the results are alphabetically sorted by the value of the item specified by the key. (optional)</param>
+        /// <param name="customTypes">Specifies a comma-separated string of one or more custom types to filter group channels. URL encoding each type is recommended. If not specified, all channels are returned, regardless of their custom type. (optional)</param>
+        /// <param name="customTypeStartswith">Searches for group channels with the custom type which starts with the specified value. URL encoding the value is recommended. (optional)</param>
+        /// <param name="channelUrls">Specifies a comma-separated string of one or more group channel URLs to restrict the search scope. URL encoding each channel URL is recommended. (optional)</param>
+        /// <param name="name">Specifies one or more group channel names. (optional)</param>
+        /// <param name="nameContains">Searches for group channels whose names contain the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended. (optional)</param>
+        /// <param name="nameStartswith">Searches for group channels whose names start with the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended. (optional)</param>
+        /// <param name="membersExactlyIn">Searches for group channels with all the specified users as members. The parameter value should consist of user IDs separated by commas.  Only user IDs that match those of existing users are used for channel search. URL encoding each ID is recommended. (optional)</param>
+        /// <param name="membersIncludeIn">Searches for group channels that include one or more users as members among the specified users. The value should consist of user IDs separated by commas or %2C. You can specify up to 60 user IDs.  Only user IDs that match those of existing users are used for channel search. URL encoding each ID is recommended. (optional)</param>
+        /// <param name="queryType">Specifies a logical condition applied to the members_include_in parameter. Acceptable values are either AND or OR. For example, if you specify three members, A, B, and C, in members_include_in, the value of AND returns all channels that include every one of {A. B, C} as members. The value of OR returns channels that include {A}, plus those that include {B}, plus those that include {C}. (Default: AND) (optional)</param>
+        /// <param name="membersNickname">Searches for group channels with members whose nicknames match the specified value. URL encoding the value is recommended. (optional)</param>
+        /// <param name="membersNicknameContains">Searches for group channels with members whose nicknames contain the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended.  * We recommend using at least three characters for the parameter value for better search efficiency when you design and implement related features. If you would like to allow one or two characters for searching, use members_nickname instead to prevent performance issues. (optional)</param>
+        /// <param name="metadataKey">Searches for group channels with metadata containing an item with the specified value as its key. To use this parameter, either the metadata_values parameter or the metadata_value_startswith parameter should be specified. (optional)</param>
+        /// <param name="metadataValues">Searches for group channels with metadata containing an item with the key specified by the metadata_key parameter, and the value of that item matches one or more values specified by this parameter. The string should be specified with multiple values separated by commas. URL encoding each value is recommended. To use this parameter, the metadata_key parameter should be specified. (optional)</param>
+        /// <param name="metadataValueStartswith">Searches for group channels with metadata containing an item with the key specified by the metadata_key parameter, and the values of that item that start with the specified value of this parameter. URL encoding the value is recommended. To use this parameter, the metadata_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterKey">Searches for group channels with metacounter containing an item with the specified value as its key. To use this parameter, either the metacounter_values parameter or one of the metacounter_value_gt, metacounter_value_gte, metacounter_value_lt, and metacounter_value_lte parameters should be specified. (optional)</param>
+        /// <param name="metacounterValues">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is equal to one or more values specified by this parameter. The string should be specified with multiple values separated by commas. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueGt">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is greater than the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueGte">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is greater than or equal to the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueLt">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is lower than the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueLte">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is lower than or equal to the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="includeSortedMetaarrayInLastMessage">Determines whether to include the sorted_metaarray as one of the last_message’s properties in the response. (optional)</param>
+        /// <returns>GroupChatListChannelsResponse</returns>
+        public GroupChatListChannelsResponse ListChannels (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), long? createdAfter = default(long?), long? createdBefore = default(long?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?))
         {
-             ApiResponse<GcListChannelsResponse> localVarResponse = GcListChannelsWithHttpInfo(apiToken, token, limit, distinctMode, publicMode, superMode, createdAfter, createdBefore, showEmpty, showMember, showDeliveryReceipt, showReadReceipt, showMetadata, showFrozen, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, includeSortedMetaarrayInLastMessage, customType, readReceipt, member, isDistinct, membersIn, userId);
+             ApiResponse<GroupChatListChannelsResponse> localVarResponse = ListChannelsWithHttpInfo(apiToken, token, limit, distinctMode, publicMode, superMode, createdAfter, createdBefore, showEmpty, showMember, showDeliveryReceipt, showReadReceipt, showMetadata, showFrozen, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, includeSortedMetaarrayInLastMessage);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// List channels ## List channels  Retrieves a list of group channels in the application.  > __Note__: If you want to get a list of a specific user's group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// List channels ## List group channels  This action retrieves a list of [group channels](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel). You can use various query parameters to determine the search scope and select what kind of information you want to receive about the queried channels.  If you want to retrieve a list of group channels that a specific user has joined, use the [list group channels by user](https://sendbird.com/docs/chat/platform-api/v3/user/managing-joined-group-channels/list-group-channels-by-user) action under the User section.  https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-group-channels#1-list-group-channels
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="token">Specifies a page token that indicates the starting index of a chunk of results. If not specified, the index is set as 0. (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
         /// <param name="distinctMode"> (optional)</param>
         /// <param name="publicMode"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
-        /// <param name="createdAfter"> (optional)</param>
-        /// <param name="createdBefore"> (optional)</param>
+        /// <param name="createdAfter">Restricts the search scope to only retrieve group channels which have been created after the specified time, in Unix milliseconds format. (optional)</param>
+        /// <param name="createdBefore">Restricts the search scope to only retrieve group channels which have been created before the specified time, in Unix milliseconds format. (optional)</param>
         /// <param name="showEmpty"> (optional)</param>
         /// <param name="showMember"> (optional)</param>
         /// <param name="showDeliveryReceipt"> (optional)</param>
@@ -2997,40 +2987,34 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="showFrozen"> (optional)</param>
         /// <param name="order"> (optional)</param>
-        /// <param name="metadataOrderKey"> (optional)</param>
-        /// <param name="customTypes"> (optional)</param>
-        /// <param name="customTypeStartswith"> (optional)</param>
-        /// <param name="channelUrls"> (optional)</param>
-        /// <param name="name"> (optional)</param>
-        /// <param name="nameContains"> (optional)</param>
-        /// <param name="nameStartswith"> (optional)</param>
-        /// <param name="membersExactlyIn"> (optional)</param>
-        /// <param name="membersIncludeIn"> (optional)</param>
-        /// <param name="queryType"> (optional)</param>
-        /// <param name="membersNickname"> (optional)</param>
-        /// <param name="membersNicknameContains"> (optional)</param>
-        /// <param name="metadataKey"> (optional)</param>
-        /// <param name="metadataValues"> (optional)</param>
-        /// <param name="metadataValueStartswith"> (optional)</param>
-        /// <param name="metacounterKey"> (optional)</param>
-        /// <param name="metacounterValues"> (optional)</param>
-        /// <param name="metacounterValueGt"> (optional)</param>
-        /// <param name="metacounterValueGte"> (optional)</param>
-        /// <param name="metacounterValueLt"> (optional)</param>
-        /// <param name="metacounterValueLte"> (optional)</param>
-        /// <param name="includeSortedMetaarrayInLastMessage"> (optional)</param>
-        /// <param name="customType"> (optional)</param>
-        /// <param name="readReceipt"> (optional)</param>
-        /// <param name="member"> (optional)</param>
-        /// <param name="isDistinct"> (optional)</param>
-        /// <param name="membersIn"> (optional)</param>
-        /// <param name="userId"> (optional)</param>
-        /// <returns>ApiResponse of GcListChannelsResponse</returns>
-        public ApiResponse<GcListChannelsResponse> GcListChannelsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), string customType = default(string), bool? readReceipt = default(bool?), bool? member = default(bool?), bool? isDistinct = default(bool?), string membersIn = default(string), string userId = default(string))
+        /// <param name="metadataOrderKey">Specifies the key of an item in metadata. When a value of the order parameter is set to metadata_value_alphabetical, the results are alphabetically sorted by the value of the item specified by the key. (optional)</param>
+        /// <param name="customTypes">Specifies a comma-separated string of one or more custom types to filter group channels. URL encoding each type is recommended. If not specified, all channels are returned, regardless of their custom type. (optional)</param>
+        /// <param name="customTypeStartswith">Searches for group channels with the custom type which starts with the specified value. URL encoding the value is recommended. (optional)</param>
+        /// <param name="channelUrls">Specifies a comma-separated string of one or more group channel URLs to restrict the search scope. URL encoding each channel URL is recommended. (optional)</param>
+        /// <param name="name">Specifies one or more group channel names. (optional)</param>
+        /// <param name="nameContains">Searches for group channels whose names contain the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended. (optional)</param>
+        /// <param name="nameStartswith">Searches for group channels whose names start with the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended. (optional)</param>
+        /// <param name="membersExactlyIn">Searches for group channels with all the specified users as members. The parameter value should consist of user IDs separated by commas.  Only user IDs that match those of existing users are used for channel search. URL encoding each ID is recommended. (optional)</param>
+        /// <param name="membersIncludeIn">Searches for group channels that include one or more users as members among the specified users. The value should consist of user IDs separated by commas or %2C. You can specify up to 60 user IDs.  Only user IDs that match those of existing users are used for channel search. URL encoding each ID is recommended. (optional)</param>
+        /// <param name="queryType">Specifies a logical condition applied to the members_include_in parameter. Acceptable values are either AND or OR. For example, if you specify three members, A, B, and C, in members_include_in, the value of AND returns all channels that include every one of {A. B, C} as members. The value of OR returns channels that include {A}, plus those that include {B}, plus those that include {C}. (Default: AND) (optional)</param>
+        /// <param name="membersNickname">Searches for group channels with members whose nicknames match the specified value. URL encoding the value is recommended. (optional)</param>
+        /// <param name="membersNicknameContains">Searches for group channels with members whose nicknames contain the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended.  * We recommend using at least three characters for the parameter value for better search efficiency when you design and implement related features. If you would like to allow one or two characters for searching, use members_nickname instead to prevent performance issues. (optional)</param>
+        /// <param name="metadataKey">Searches for group channels with metadata containing an item with the specified value as its key. To use this parameter, either the metadata_values parameter or the metadata_value_startswith parameter should be specified. (optional)</param>
+        /// <param name="metadataValues">Searches for group channels with metadata containing an item with the key specified by the metadata_key parameter, and the value of that item matches one or more values specified by this parameter. The string should be specified with multiple values separated by commas. URL encoding each value is recommended. To use this parameter, the metadata_key parameter should be specified. (optional)</param>
+        /// <param name="metadataValueStartswith">Searches for group channels with metadata containing an item with the key specified by the metadata_key parameter, and the values of that item that start with the specified value of this parameter. URL encoding the value is recommended. To use this parameter, the metadata_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterKey">Searches for group channels with metacounter containing an item with the specified value as its key. To use this parameter, either the metacounter_values parameter or one of the metacounter_value_gt, metacounter_value_gte, metacounter_value_lt, and metacounter_value_lte parameters should be specified. (optional)</param>
+        /// <param name="metacounterValues">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is equal to one or more values specified by this parameter. The string should be specified with multiple values separated by commas. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueGt">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is greater than the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueGte">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is greater than or equal to the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueLt">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is lower than the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueLte">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is lower than or equal to the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="includeSortedMetaarrayInLastMessage">Determines whether to include the sorted_metaarray as one of the last_message’s properties in the response. (optional)</param>
+        /// <returns>ApiResponse of GroupChatListChannelsResponse</returns>
+        public ApiResponse<GroupChatListChannelsResponse> ListChannelsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), long? createdAfter = default(long?), long? createdBefore = default(long?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcListChannels");
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->ListChannels");
 
             var localVarPath = "/v3/group_channels";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3089,13 +3073,7 @@ namespace sendbird_platform_sdk.Api
             if (metacounterValueLt != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "metacounter_value_lt", metacounterValueLt)); // query parameter
             if (metacounterValueLte != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "metacounter_value_lte", metacounterValueLte)); // query parameter
             if (includeSortedMetaarrayInLastMessage != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "include_sorted_metaarray_in_last_message", includeSortedMetaarrayInLastMessage)); // query parameter
-            if (customType != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "custom_type", customType)); // query parameter
-            if (readReceipt != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "read_receipt", readReceipt)); // query parameter
-            if (member != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "member", member)); // query parameter
-            if (isDistinct != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "is_distinct", isDistinct)); // query parameter
-            if (membersIn != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "members_in", membersIn)); // query parameter
-            if (userId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "user_id", userId)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
 
 
             // make the HTTP request
@@ -3107,27 +3085,27 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcListChannels", localVarResponse);
+                Exception exception = ExceptionFactory("ListChannels", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<GcListChannelsResponse>(localVarStatusCode,
+            return new ApiResponse<GroupChatListChannelsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GcListChannelsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GcListChannelsResponse)));
+                (GroupChatListChannelsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GroupChatListChannelsResponse)));
         }
 
         /// <summary>
-        /// List channels ## List channels  Retrieves a list of group channels in the application.  > __Note__: If you want to get a list of a specific user's group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// List channels ## List group channels  This action retrieves a list of [group channels](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel). You can use various query parameters to determine the search scope and select what kind of information you want to receive about the queried channels.  If you want to retrieve a list of group channels that a specific user has joined, use the [list group channels by user](https://sendbird.com/docs/chat/platform-api/v3/user/managing-joined-group-channels/list-group-channels-by-user) action under the User section.  https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-group-channels#1-list-group-channels
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="token">Specifies a page token that indicates the starting index of a chunk of results. If not specified, the index is set as 0. (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
         /// <param name="distinctMode"> (optional)</param>
         /// <param name="publicMode"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
-        /// <param name="createdAfter"> (optional)</param>
-        /// <param name="createdBefore"> (optional)</param>
+        /// <param name="createdAfter">Restricts the search scope to only retrieve group channels which have been created after the specified time, in Unix milliseconds format. (optional)</param>
+        /// <param name="createdBefore">Restricts the search scope to only retrieve group channels which have been created before the specified time, in Unix milliseconds format. (optional)</param>
         /// <param name="showEmpty"> (optional)</param>
         /// <param name="showMember"> (optional)</param>
         /// <param name="showDeliveryReceipt"> (optional)</param>
@@ -3135,55 +3113,49 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="showFrozen"> (optional)</param>
         /// <param name="order"> (optional)</param>
-        /// <param name="metadataOrderKey"> (optional)</param>
-        /// <param name="customTypes"> (optional)</param>
-        /// <param name="customTypeStartswith"> (optional)</param>
-        /// <param name="channelUrls"> (optional)</param>
-        /// <param name="name"> (optional)</param>
-        /// <param name="nameContains"> (optional)</param>
-        /// <param name="nameStartswith"> (optional)</param>
-        /// <param name="membersExactlyIn"> (optional)</param>
-        /// <param name="membersIncludeIn"> (optional)</param>
-        /// <param name="queryType"> (optional)</param>
-        /// <param name="membersNickname"> (optional)</param>
-        /// <param name="membersNicknameContains"> (optional)</param>
-        /// <param name="metadataKey"> (optional)</param>
-        /// <param name="metadataValues"> (optional)</param>
-        /// <param name="metadataValueStartswith"> (optional)</param>
-        /// <param name="metacounterKey"> (optional)</param>
-        /// <param name="metacounterValues"> (optional)</param>
-        /// <param name="metacounterValueGt"> (optional)</param>
-        /// <param name="metacounterValueGte"> (optional)</param>
-        /// <param name="metacounterValueLt"> (optional)</param>
-        /// <param name="metacounterValueLte"> (optional)</param>
-        /// <param name="includeSortedMetaarrayInLastMessage"> (optional)</param>
-        /// <param name="customType"> (optional)</param>
-        /// <param name="readReceipt"> (optional)</param>
-        /// <param name="member"> (optional)</param>
-        /// <param name="isDistinct"> (optional)</param>
-        /// <param name="membersIn"> (optional)</param>
-        /// <param name="userId"> (optional)</param>
+        /// <param name="metadataOrderKey">Specifies the key of an item in metadata. When a value of the order parameter is set to metadata_value_alphabetical, the results are alphabetically sorted by the value of the item specified by the key. (optional)</param>
+        /// <param name="customTypes">Specifies a comma-separated string of one or more custom types to filter group channels. URL encoding each type is recommended. If not specified, all channels are returned, regardless of their custom type. (optional)</param>
+        /// <param name="customTypeStartswith">Searches for group channels with the custom type which starts with the specified value. URL encoding the value is recommended. (optional)</param>
+        /// <param name="channelUrls">Specifies a comma-separated string of one or more group channel URLs to restrict the search scope. URL encoding each channel URL is recommended. (optional)</param>
+        /// <param name="name">Specifies one or more group channel names. (optional)</param>
+        /// <param name="nameContains">Searches for group channels whose names contain the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended. (optional)</param>
+        /// <param name="nameStartswith">Searches for group channels whose names start with the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended. (optional)</param>
+        /// <param name="membersExactlyIn">Searches for group channels with all the specified users as members. The parameter value should consist of user IDs separated by commas.  Only user IDs that match those of existing users are used for channel search. URL encoding each ID is recommended. (optional)</param>
+        /// <param name="membersIncludeIn">Searches for group channels that include one or more users as members among the specified users. The value should consist of user IDs separated by commas or %2C. You can specify up to 60 user IDs.  Only user IDs that match those of existing users are used for channel search. URL encoding each ID is recommended. (optional)</param>
+        /// <param name="queryType">Specifies a logical condition applied to the members_include_in parameter. Acceptable values are either AND or OR. For example, if you specify three members, A, B, and C, in members_include_in, the value of AND returns all channels that include every one of {A. B, C} as members. The value of OR returns channels that include {A}, plus those that include {B}, plus those that include {C}. (Default: AND) (optional)</param>
+        /// <param name="membersNickname">Searches for group channels with members whose nicknames match the specified value. URL encoding the value is recommended. (optional)</param>
+        /// <param name="membersNicknameContains">Searches for group channels with members whose nicknames contain the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended.  * We recommend using at least three characters for the parameter value for better search efficiency when you design and implement related features. If you would like to allow one or two characters for searching, use members_nickname instead to prevent performance issues. (optional)</param>
+        /// <param name="metadataKey">Searches for group channels with metadata containing an item with the specified value as its key. To use this parameter, either the metadata_values parameter or the metadata_value_startswith parameter should be specified. (optional)</param>
+        /// <param name="metadataValues">Searches for group channels with metadata containing an item with the key specified by the metadata_key parameter, and the value of that item matches one or more values specified by this parameter. The string should be specified with multiple values separated by commas. URL encoding each value is recommended. To use this parameter, the metadata_key parameter should be specified. (optional)</param>
+        /// <param name="metadataValueStartswith">Searches for group channels with metadata containing an item with the key specified by the metadata_key parameter, and the values of that item that start with the specified value of this parameter. URL encoding the value is recommended. To use this parameter, the metadata_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterKey">Searches for group channels with metacounter containing an item with the specified value as its key. To use this parameter, either the metacounter_values parameter or one of the metacounter_value_gt, metacounter_value_gte, metacounter_value_lt, and metacounter_value_lte parameters should be specified. (optional)</param>
+        /// <param name="metacounterValues">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is equal to one or more values specified by this parameter. The string should be specified with multiple values separated by commas. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueGt">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is greater than the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueGte">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is greater than or equal to the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueLt">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is lower than the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueLte">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is lower than or equal to the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="includeSortedMetaarrayInLastMessage">Determines whether to include the sorted_metaarray as one of the last_message’s properties in the response. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GcListChannelsResponse</returns>
-        public async System.Threading.Tasks.Task<GcListChannelsResponse> GcListChannelsAsync (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), string customType = default(string), bool? readReceipt = default(bool?), bool? member = default(bool?), bool? isDistinct = default(bool?), string membersIn = default(string), string userId = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of GroupChatListChannelsResponse</returns>
+        public async System.Threading.Tasks.Task<GroupChatListChannelsResponse> ListChannelsAsync (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), long? createdAfter = default(long?), long? createdBefore = default(long?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<GcListChannelsResponse> localVarResponse = await GcListChannelsWithHttpInfoAsync(apiToken, token, limit, distinctMode, publicMode, superMode, createdAfter, createdBefore, showEmpty, showMember, showDeliveryReceipt, showReadReceipt, showMetadata, showFrozen, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, includeSortedMetaarrayInLastMessage, customType, readReceipt, member, isDistinct, membersIn, userId, cancellationToken);
+             ApiResponse<GroupChatListChannelsResponse> localVarResponse = await ListChannelsWithHttpInfoAsync(apiToken, token, limit, distinctMode, publicMode, superMode, createdAfter, createdBefore, showEmpty, showMember, showDeliveryReceipt, showReadReceipt, showMetadata, showFrozen, order, metadataOrderKey, customTypes, customTypeStartswith, channelUrls, name, nameContains, nameStartswith, membersExactlyIn, membersIncludeIn, queryType, membersNickname, membersNicknameContains, metadataKey, metadataValues, metadataValueStartswith, metacounterKey, metacounterValues, metacounterValueGt, metacounterValueGte, metacounterValueLt, metacounterValueLte, includeSortedMetaarrayInLastMessage, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// List channels ## List channels  Retrieves a list of group channels in the application.  > __Note__: If you want to get a list of a specific user's group channels, use the [list my group channels](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-list-my-group-channels) action instead.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// List channels ## List group channels  This action retrieves a list of [group channels](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel). You can use various query parameters to determine the search scope and select what kind of information you want to receive about the queried channels.  If you want to retrieve a list of group channels that a specific user has joined, use the [list group channels by user](https://sendbird.com/docs/chat/platform-api/v3/user/managing-joined-group-channels/list-group-channels-by-user) action under the User section.  https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-group-channels#1-list-group-channels
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiToken"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="token">Specifies a page token that indicates the starting index of a chunk of results. If not specified, the index is set as 0. (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
         /// <param name="distinctMode"> (optional)</param>
         /// <param name="publicMode"> (optional)</param>
         /// <param name="superMode"> (optional)</param>
-        /// <param name="createdAfter"> (optional)</param>
-        /// <param name="createdBefore"> (optional)</param>
+        /// <param name="createdAfter">Restricts the search scope to only retrieve group channels which have been created after the specified time, in Unix milliseconds format. (optional)</param>
+        /// <param name="createdBefore">Restricts the search scope to only retrieve group channels which have been created before the specified time, in Unix milliseconds format. (optional)</param>
         /// <param name="showEmpty"> (optional)</param>
         /// <param name="showMember"> (optional)</param>
         /// <param name="showDeliveryReceipt"> (optional)</param>
@@ -3191,41 +3163,35 @@ namespace sendbird_platform_sdk.Api
         /// <param name="showMetadata"> (optional)</param>
         /// <param name="showFrozen"> (optional)</param>
         /// <param name="order"> (optional)</param>
-        /// <param name="metadataOrderKey"> (optional)</param>
-        /// <param name="customTypes"> (optional)</param>
-        /// <param name="customTypeStartswith"> (optional)</param>
-        /// <param name="channelUrls"> (optional)</param>
-        /// <param name="name"> (optional)</param>
-        /// <param name="nameContains"> (optional)</param>
-        /// <param name="nameStartswith"> (optional)</param>
-        /// <param name="membersExactlyIn"> (optional)</param>
-        /// <param name="membersIncludeIn"> (optional)</param>
-        /// <param name="queryType"> (optional)</param>
-        /// <param name="membersNickname"> (optional)</param>
-        /// <param name="membersNicknameContains"> (optional)</param>
-        /// <param name="metadataKey"> (optional)</param>
-        /// <param name="metadataValues"> (optional)</param>
-        /// <param name="metadataValueStartswith"> (optional)</param>
-        /// <param name="metacounterKey"> (optional)</param>
-        /// <param name="metacounterValues"> (optional)</param>
-        /// <param name="metacounterValueGt"> (optional)</param>
-        /// <param name="metacounterValueGte"> (optional)</param>
-        /// <param name="metacounterValueLt"> (optional)</param>
-        /// <param name="metacounterValueLte"> (optional)</param>
-        /// <param name="includeSortedMetaarrayInLastMessage"> (optional)</param>
-        /// <param name="customType"> (optional)</param>
-        /// <param name="readReceipt"> (optional)</param>
-        /// <param name="member"> (optional)</param>
-        /// <param name="isDistinct"> (optional)</param>
-        /// <param name="membersIn"> (optional)</param>
-        /// <param name="userId"> (optional)</param>
+        /// <param name="metadataOrderKey">Specifies the key of an item in metadata. When a value of the order parameter is set to metadata_value_alphabetical, the results are alphabetically sorted by the value of the item specified by the key. (optional)</param>
+        /// <param name="customTypes">Specifies a comma-separated string of one or more custom types to filter group channels. URL encoding each type is recommended. If not specified, all channels are returned, regardless of their custom type. (optional)</param>
+        /// <param name="customTypeStartswith">Searches for group channels with the custom type which starts with the specified value. URL encoding the value is recommended. (optional)</param>
+        /// <param name="channelUrls">Specifies a comma-separated string of one or more group channel URLs to restrict the search scope. URL encoding each channel URL is recommended. (optional)</param>
+        /// <param name="name">Specifies one or more group channel names. (optional)</param>
+        /// <param name="nameContains">Searches for group channels whose names contain the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended. (optional)</param>
+        /// <param name="nameStartswith">Searches for group channels whose names start with the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended. (optional)</param>
+        /// <param name="membersExactlyIn">Searches for group channels with all the specified users as members. The parameter value should consist of user IDs separated by commas.  Only user IDs that match those of existing users are used for channel search. URL encoding each ID is recommended. (optional)</param>
+        /// <param name="membersIncludeIn">Searches for group channels that include one or more users as members among the specified users. The value should consist of user IDs separated by commas or %2C. You can specify up to 60 user IDs.  Only user IDs that match those of existing users are used for channel search. URL encoding each ID is recommended. (optional)</param>
+        /// <param name="queryType">Specifies a logical condition applied to the members_include_in parameter. Acceptable values are either AND or OR. For example, if you specify three members, A, B, and C, in members_include_in, the value of AND returns all channels that include every one of {A. B, C} as members. The value of OR returns channels that include {A}, plus those that include {B}, plus those that include {C}. (Default: AND) (optional)</param>
+        /// <param name="membersNickname">Searches for group channels with members whose nicknames match the specified value. URL encoding the value is recommended. (optional)</param>
+        /// <param name="membersNicknameContains">Searches for group channels with members whose nicknames contain the specified value. Note that this parameter is case-insensitive. URL encoding the value is recommended.  * We recommend using at least three characters for the parameter value for better search efficiency when you design and implement related features. If you would like to allow one or two characters for searching, use members_nickname instead to prevent performance issues. (optional)</param>
+        /// <param name="metadataKey">Searches for group channels with metadata containing an item with the specified value as its key. To use this parameter, either the metadata_values parameter or the metadata_value_startswith parameter should be specified. (optional)</param>
+        /// <param name="metadataValues">Searches for group channels with metadata containing an item with the key specified by the metadata_key parameter, and the value of that item matches one or more values specified by this parameter. The string should be specified with multiple values separated by commas. URL encoding each value is recommended. To use this parameter, the metadata_key parameter should be specified. (optional)</param>
+        /// <param name="metadataValueStartswith">Searches for group channels with metadata containing an item with the key specified by the metadata_key parameter, and the values of that item that start with the specified value of this parameter. URL encoding the value is recommended. To use this parameter, the metadata_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterKey">Searches for group channels with metacounter containing an item with the specified value as its key. To use this parameter, either the metacounter_values parameter or one of the metacounter_value_gt, metacounter_value_gte, metacounter_value_lt, and metacounter_value_lte parameters should be specified. (optional)</param>
+        /// <param name="metacounterValues">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is equal to one or more values specified by this parameter. The string should be specified with multiple values separated by commas. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueGt">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is greater than the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueGte">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is greater than or equal to the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueLt">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is lower than the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="metacounterValueLte">Searches for group channels with metacounter containing an item with the key specified by the metadata_key parameter, where the value of that item is lower than or equal to the value specified by this parameter. To use this parameter, the metacounter_key parameter should be specified. (optional)</param>
+        /// <param name="includeSortedMetaarrayInLastMessage">Determines whether to include the sorted_metaarray as one of the last_message’s properties in the response. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GcListChannelsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GcListChannelsResponse>> GcListChannelsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), int? createdAfter = default(int?), int? createdBefore = default(int?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), string customType = default(string), bool? readReceipt = default(bool?), bool? member = default(bool?), bool? isDistinct = default(bool?), string membersIn = default(string), string userId = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (GroupChatListChannelsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<GroupChatListChannelsResponse>> ListChannelsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), string distinctMode = default(string), string publicMode = default(string), string superMode = default(string), long? createdAfter = default(long?), long? createdBefore = default(long?), bool? showEmpty = default(bool?), bool? showMember = default(bool?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMetadata = default(bool?), bool? showFrozen = default(bool?), string order = default(string), string metadataOrderKey = default(string), string customTypes = default(string), string customTypeStartswith = default(string), string channelUrls = default(string), string name = default(string), string nameContains = default(string), string nameStartswith = default(string), string membersExactlyIn = default(string), string membersIncludeIn = default(string), string queryType = default(string), string membersNickname = default(string), string membersNicknameContains = default(string), string metadataKey = default(string), string metadataValues = default(string), string metadataValueStartswith = default(string), string metacounterKey = default(string), string metacounterValues = default(string), string metacounterValueGt = default(string), string metacounterValueGte = default(string), string metacounterValueLt = default(string), string metacounterValueLte = default(string), bool? includeSortedMetaarrayInLastMessage = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'apiToken' is set
             if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcListChannels");
+                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->ListChannels");
 
             var localVarPath = "/v3/group_channels";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3284,13 +3250,7 @@ namespace sendbird_platform_sdk.Api
             if (metacounterValueLt != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "metacounter_value_lt", metacounterValueLt)); // query parameter
             if (metacounterValueLte != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "metacounter_value_lte", metacounterValueLte)); // query parameter
             if (includeSortedMetaarrayInLastMessage != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "include_sorted_metaarray_in_last_message", includeSortedMetaarrayInLastMessage)); // query parameter
-            if (customType != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "custom_type", customType)); // query parameter
-            if (readReceipt != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "read_receipt", readReceipt)); // query parameter
-            if (member != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "member", member)); // query parameter
-            if (isDistinct != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "is_distinct", isDistinct)); // query parameter
-            if (membersIn != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "members_in", membersIn)); // query parameter
-            if (userId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "user_id", userId)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
 
 
             // make the HTTP request
@@ -3302,61 +3262,66 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcListChannels", localVarResponse);
+                Exception exception = ExceptionFactory("ListChannels", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<GcListChannelsResponse>(localVarStatusCode,
+            return new ApiResponse<GroupChatListChannelsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GcListChannelsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GcListChannelsResponse)));
+                (GroupChatListChannelsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GroupChatListChannelsResponse)));
         }
 
         /// <summary>
-        /// List members ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
+        /// List members ## List members  Retrieves a list of members of a group channel.  > **Note**: See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.      [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/list-members-of-a-group-channel#1-list-members-of-a-group-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/list-members-of-a-group-channel#1-list-members-of-a-group-channel)  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of members of.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
+        /// <param name="userId">Specifies the unique ID of a user. If &#x60;user_id&#x60; is provided, the response will include two additional boolean properties about each user in the members list. - &#x60;is_blocking_me&#x60;: Indicates whether the listed user is blocking the user specified in the user_id parameter. - &#x60;is_blocked_by_me&#x60;: Indicates whether the listed user is blocked by the user specified in the user_id parameter. (optional)</param>
         /// <param name="showDeliveryReceipt"> (optional)</param>
         /// <param name="showReadReceipt"> (optional)</param>
-        /// <param name="order"> (optional)</param>
-        /// <param name="operatorFilter"> (optional)</param>
-        /// <param name="memberStateFilter"> (optional)</param>
-        /// <param name="mutedMemberFilter"> (optional)</param>
-        /// <param name="nicknameStartswith"> (optional)</param>
-        /// <returns>GcListMembersResponse</returns>
-        public GcListMembersResponse GcListMembers (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string nicknameStartswith = default(string))
+        /// <param name="showMemberIsMuted"> (optional)</param>
+        /// <param name="order">Specifies the method to sort a list of results. Acceptable values are the following: - &#x60;member_nickname_alphabetical&#x60; (default): sorts by the member nicknames in alphabetical order. - &#x60;operator_then_member_alphabetical&#x60;: sorts by the operational role and member nickname in alphabetical order where channel operators are listed before channel members. (optional)</param>
+        /// <param name="operatorFilter">Restricts the search scope to only retrieve operators or non-operator members of the channel. Acceptable values are the following: - &#x60;all&#x60; (default): no filter is applied to the list. - &#x60;operator&#x60;: only channel operators are retrieved. - &#x60;nonoperator&#x60;: all channel members, except channel operators, are retrieved. (optional)</param>
+        /// <param name="memberStateFilter">Restricts the search scope to retrieve members based on if they have accepted an invitation or if they were invited by a friend. Acceptable values are &#x60;invited_only&#x60;, &#x60;joined_only&#x60;, &#x60;invited_by_friend&#x60;, &#x60;invited_by_non_friend&#x60;, and &#x60;all&#x60;. (Default: &#x60;all&#x60;) (optional)</param>
+        /// <param name="mutedMemberFilter">Restricts the search scope to retrieve members who are muted or unmuted in the channel. Acceptable values are &#x60;all&#x60;, &#x60;muted&#x60;, and &#x60;unmuted&#x60;. (Default: &#x60;all&#x60;) (optional)</param>
+        /// <param name="memberActiveModeFilter">Restricts the search scope to retrieve members who are activated or deactivated in the channel. Acceptable values are &#x60;all&#x60;, &#x60;activated&#x60;, and &#x60;deactivated&#x60;. (default: &#x60;activated&#x60;) (optional)</param>
+        /// <param name="nicknameStartswith">Searches for members whose nicknames start with the specified value. Urlencoding the value is recommended. (optional)</param>
+        /// <param name="includePushPreference">Determines whether to include information about the push preference of each member, such as &#x60;push_enabled&#x60;, &#x60;push_trigger_option&#x60;, and &#x60;do_not_disturb&#x60;. (Default: &#x60;false&#x60;) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>GroupChannelListMembersResponse</returns>
+        public GroupChannelListMembersResponse ListMembers (string channelUrl, string token = default(string), int? limit = default(int?), string userId = default(string), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMemberIsMuted = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string memberActiveModeFilter = default(string), string nicknameStartswith = default(string), bool? includePushPreference = default(bool?), string apiToken = default(string))
         {
-             ApiResponse<GcListMembersResponse> localVarResponse = GcListMembersWithHttpInfo(apiToken, channelUrl, token, limit, showDeliveryReceipt, showReadReceipt, order, operatorFilter, memberStateFilter, mutedMemberFilter, nicknameStartswith);
+             ApiResponse<GroupChannelListMembersResponse> localVarResponse = ListMembersWithHttpInfo(channelUrl, token, limit, userId, showDeliveryReceipt, showReadReceipt, showMemberIsMuted, order, operatorFilter, memberStateFilter, mutedMemberFilter, memberActiveModeFilter, nicknameStartswith, includePushPreference, apiToken);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// List members ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
+        /// List members ## List members  Retrieves a list of members of a group channel.  > **Note**: See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.      [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/list-members-of-a-group-channel#1-list-members-of-a-group-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/list-members-of-a-group-channel#1-list-members-of-a-group-channel)  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of members of.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
+        /// <param name="userId">Specifies the unique ID of a user. If &#x60;user_id&#x60; is provided, the response will include two additional boolean properties about each user in the members list. - &#x60;is_blocking_me&#x60;: Indicates whether the listed user is blocking the user specified in the user_id parameter. - &#x60;is_blocked_by_me&#x60;: Indicates whether the listed user is blocked by the user specified in the user_id parameter. (optional)</param>
         /// <param name="showDeliveryReceipt"> (optional)</param>
         /// <param name="showReadReceipt"> (optional)</param>
-        /// <param name="order"> (optional)</param>
-        /// <param name="operatorFilter"> (optional)</param>
-        /// <param name="memberStateFilter"> (optional)</param>
-        /// <param name="mutedMemberFilter"> (optional)</param>
-        /// <param name="nicknameStartswith"> (optional)</param>
-        /// <returns>ApiResponse of GcListMembersResponse</returns>
-        public ApiResponse<GcListMembersResponse> GcListMembersWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string nicknameStartswith = default(string))
+        /// <param name="showMemberIsMuted"> (optional)</param>
+        /// <param name="order">Specifies the method to sort a list of results. Acceptable values are the following: - &#x60;member_nickname_alphabetical&#x60; (default): sorts by the member nicknames in alphabetical order. - &#x60;operator_then_member_alphabetical&#x60;: sorts by the operational role and member nickname in alphabetical order where channel operators are listed before channel members. (optional)</param>
+        /// <param name="operatorFilter">Restricts the search scope to only retrieve operators or non-operator members of the channel. Acceptable values are the following: - &#x60;all&#x60; (default): no filter is applied to the list. - &#x60;operator&#x60;: only channel operators are retrieved. - &#x60;nonoperator&#x60;: all channel members, except channel operators, are retrieved. (optional)</param>
+        /// <param name="memberStateFilter">Restricts the search scope to retrieve members based on if they have accepted an invitation or if they were invited by a friend. Acceptable values are &#x60;invited_only&#x60;, &#x60;joined_only&#x60;, &#x60;invited_by_friend&#x60;, &#x60;invited_by_non_friend&#x60;, and &#x60;all&#x60;. (Default: &#x60;all&#x60;) (optional)</param>
+        /// <param name="mutedMemberFilter">Restricts the search scope to retrieve members who are muted or unmuted in the channel. Acceptable values are &#x60;all&#x60;, &#x60;muted&#x60;, and &#x60;unmuted&#x60;. (Default: &#x60;all&#x60;) (optional)</param>
+        /// <param name="memberActiveModeFilter">Restricts the search scope to retrieve members who are activated or deactivated in the channel. Acceptable values are &#x60;all&#x60;, &#x60;activated&#x60;, and &#x60;deactivated&#x60;. (default: &#x60;activated&#x60;) (optional)</param>
+        /// <param name="nicknameStartswith">Searches for members whose nicknames start with the specified value. Urlencoding the value is recommended. (optional)</param>
+        /// <param name="includePushPreference">Determines whether to include information about the push preference of each member, such as &#x60;push_enabled&#x60;, &#x60;push_trigger_option&#x60;, and &#x60;do_not_disturb&#x60;. (Default: &#x60;false&#x60;) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of GroupChannelListMembersResponse</returns>
+        public ApiResponse<GroupChannelListMembersResponse> ListMembersWithHttpInfo (string channelUrl, string token = default(string), int? limit = default(int?), string userId = default(string), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMemberIsMuted = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string memberActiveModeFilter = default(string), string nicknameStartswith = default(string), bool? includePushPreference = default(bool?), string apiToken = default(string))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcListMembers");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcListMembers");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->ListMembers");
 
             var localVarPath = "/v3/group_channels/{channel_url}/members";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3382,14 +3347,18 @@ namespace sendbird_platform_sdk.Api
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
             if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
             if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
+            if (userId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "user_id", userId)); // query parameter
             if (showDeliveryReceipt != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_delivery_receipt", showDeliveryReceipt)); // query parameter
             if (showReadReceipt != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_read_receipt", showReadReceipt)); // query parameter
+            if (showMemberIsMuted != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_member_is_muted", showMemberIsMuted)); // query parameter
             if (order != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "order", order)); // query parameter
             if (operatorFilter != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "operator_filter", operatorFilter)); // query parameter
             if (memberStateFilter != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "member_state_filter", memberStateFilter)); // query parameter
             if (mutedMemberFilter != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "muted_member_filter", mutedMemberFilter)); // query parameter
+            if (memberActiveModeFilter != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "member_active_mode_filter", memberActiveModeFilter)); // query parameter
             if (nicknameStartswith != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "nickname_startswith", nicknameStartswith)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (includePushPreference != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "include_push_preference", includePushPreference)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
 
 
             // make the HTTP request
@@ -3401,64 +3370,69 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcListMembers", localVarResponse);
+                Exception exception = ExceptionFactory("ListMembers", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<GcListMembersResponse>(localVarStatusCode,
+            return new ApiResponse<GroupChannelListMembersResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GcListMembersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GcListMembersResponse)));
+                (GroupChannelListMembersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GroupChannelListMembersResponse)));
         }
 
         /// <summary>
-        /// List members ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
+        /// List members ## List members  Retrieves a list of members of a group channel.  > **Note**: See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.      [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/list-members-of-a-group-channel#1-list-members-of-a-group-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/list-members-of-a-group-channel#1-list-members-of-a-group-channel)  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of members of.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
+        /// <param name="userId">Specifies the unique ID of a user. If &#x60;user_id&#x60; is provided, the response will include two additional boolean properties about each user in the members list. - &#x60;is_blocking_me&#x60;: Indicates whether the listed user is blocking the user specified in the user_id parameter. - &#x60;is_blocked_by_me&#x60;: Indicates whether the listed user is blocked by the user specified in the user_id parameter. (optional)</param>
         /// <param name="showDeliveryReceipt"> (optional)</param>
         /// <param name="showReadReceipt"> (optional)</param>
-        /// <param name="order"> (optional)</param>
-        /// <param name="operatorFilter"> (optional)</param>
-        /// <param name="memberStateFilter"> (optional)</param>
-        /// <param name="mutedMemberFilter"> (optional)</param>
-        /// <param name="nicknameStartswith"> (optional)</param>
+        /// <param name="showMemberIsMuted"> (optional)</param>
+        /// <param name="order">Specifies the method to sort a list of results. Acceptable values are the following: - &#x60;member_nickname_alphabetical&#x60; (default): sorts by the member nicknames in alphabetical order. - &#x60;operator_then_member_alphabetical&#x60;: sorts by the operational role and member nickname in alphabetical order where channel operators are listed before channel members. (optional)</param>
+        /// <param name="operatorFilter">Restricts the search scope to only retrieve operators or non-operator members of the channel. Acceptable values are the following: - &#x60;all&#x60; (default): no filter is applied to the list. - &#x60;operator&#x60;: only channel operators are retrieved. - &#x60;nonoperator&#x60;: all channel members, except channel operators, are retrieved. (optional)</param>
+        /// <param name="memberStateFilter">Restricts the search scope to retrieve members based on if they have accepted an invitation or if they were invited by a friend. Acceptable values are &#x60;invited_only&#x60;, &#x60;joined_only&#x60;, &#x60;invited_by_friend&#x60;, &#x60;invited_by_non_friend&#x60;, and &#x60;all&#x60;. (Default: &#x60;all&#x60;) (optional)</param>
+        /// <param name="mutedMemberFilter">Restricts the search scope to retrieve members who are muted or unmuted in the channel. Acceptable values are &#x60;all&#x60;, &#x60;muted&#x60;, and &#x60;unmuted&#x60;. (Default: &#x60;all&#x60;) (optional)</param>
+        /// <param name="memberActiveModeFilter">Restricts the search scope to retrieve members who are activated or deactivated in the channel. Acceptable values are &#x60;all&#x60;, &#x60;activated&#x60;, and &#x60;deactivated&#x60;. (default: &#x60;activated&#x60;) (optional)</param>
+        /// <param name="nicknameStartswith">Searches for members whose nicknames start with the specified value. Urlencoding the value is recommended. (optional)</param>
+        /// <param name="includePushPreference">Determines whether to include information about the push preference of each member, such as &#x60;push_enabled&#x60;, &#x60;push_trigger_option&#x60;, and &#x60;do_not_disturb&#x60;. (Default: &#x60;false&#x60;) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GcListMembersResponse</returns>
-        public async System.Threading.Tasks.Task<GcListMembersResponse> GcListMembersAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string nicknameStartswith = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of GroupChannelListMembersResponse</returns>
+        public async System.Threading.Tasks.Task<GroupChannelListMembersResponse> ListMembersAsync (string channelUrl, string token = default(string), int? limit = default(int?), string userId = default(string), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMemberIsMuted = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string memberActiveModeFilter = default(string), string nicknameStartswith = default(string), bool? includePushPreference = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<GcListMembersResponse> localVarResponse = await GcListMembersWithHttpInfoAsync(apiToken, channelUrl, token, limit, showDeliveryReceipt, showReadReceipt, order, operatorFilter, memberStateFilter, mutedMemberFilter, nicknameStartswith, cancellationToken);
+             ApiResponse<GroupChannelListMembersResponse> localVarResponse = await ListMembersWithHttpInfoAsync(channelUrl, token, limit, userId, showDeliveryReceipt, showReadReceipt, showMemberIsMuted, order, operatorFilter, memberStateFilter, mutedMemberFilter, memberActiveModeFilter, nicknameStartswith, includePushPreference, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// List members ## List members  Retrieves a list of members of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-members - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of members of.
+        /// List members ## List members  Retrieves a list of members of a group channel.  > **Note**: See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.      [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/list-members-of-a-group-channel#1-list-members-of-a-group-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-users/list-members-of-a-group-channel#1-list-members-of-a-group-channel)  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of members of.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
+        /// <param name="userId">Specifies the unique ID of a user. If &#x60;user_id&#x60; is provided, the response will include two additional boolean properties about each user in the members list. - &#x60;is_blocking_me&#x60;: Indicates whether the listed user is blocking the user specified in the user_id parameter. - &#x60;is_blocked_by_me&#x60;: Indicates whether the listed user is blocked by the user specified in the user_id parameter. (optional)</param>
         /// <param name="showDeliveryReceipt"> (optional)</param>
         /// <param name="showReadReceipt"> (optional)</param>
-        /// <param name="order"> (optional)</param>
-        /// <param name="operatorFilter"> (optional)</param>
-        /// <param name="memberStateFilter"> (optional)</param>
-        /// <param name="mutedMemberFilter"> (optional)</param>
-        /// <param name="nicknameStartswith"> (optional)</param>
+        /// <param name="showMemberIsMuted"> (optional)</param>
+        /// <param name="order">Specifies the method to sort a list of results. Acceptable values are the following: - &#x60;member_nickname_alphabetical&#x60; (default): sorts by the member nicknames in alphabetical order. - &#x60;operator_then_member_alphabetical&#x60;: sorts by the operational role and member nickname in alphabetical order where channel operators are listed before channel members. (optional)</param>
+        /// <param name="operatorFilter">Restricts the search scope to only retrieve operators or non-operator members of the channel. Acceptable values are the following: - &#x60;all&#x60; (default): no filter is applied to the list. - &#x60;operator&#x60;: only channel operators are retrieved. - &#x60;nonoperator&#x60;: all channel members, except channel operators, are retrieved. (optional)</param>
+        /// <param name="memberStateFilter">Restricts the search scope to retrieve members based on if they have accepted an invitation or if they were invited by a friend. Acceptable values are &#x60;invited_only&#x60;, &#x60;joined_only&#x60;, &#x60;invited_by_friend&#x60;, &#x60;invited_by_non_friend&#x60;, and &#x60;all&#x60;. (Default: &#x60;all&#x60;) (optional)</param>
+        /// <param name="mutedMemberFilter">Restricts the search scope to retrieve members who are muted or unmuted in the channel. Acceptable values are &#x60;all&#x60;, &#x60;muted&#x60;, and &#x60;unmuted&#x60;. (Default: &#x60;all&#x60;) (optional)</param>
+        /// <param name="memberActiveModeFilter">Restricts the search scope to retrieve members who are activated or deactivated in the channel. Acceptable values are &#x60;all&#x60;, &#x60;activated&#x60;, and &#x60;deactivated&#x60;. (default: &#x60;activated&#x60;) (optional)</param>
+        /// <param name="nicknameStartswith">Searches for members whose nicknames start with the specified value. Urlencoding the value is recommended. (optional)</param>
+        /// <param name="includePushPreference">Determines whether to include information about the push preference of each member, such as &#x60;push_enabled&#x60;, &#x60;push_trigger_option&#x60;, and &#x60;do_not_disturb&#x60;. (Default: &#x60;false&#x60;) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GcListMembersResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GcListMembersResponse>> GcListMembersWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string nicknameStartswith = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (GroupChannelListMembersResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<GroupChannelListMembersResponse>> ListMembersWithHttpInfoAsync (string channelUrl, string token = default(string), int? limit = default(int?), string userId = default(string), bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMemberIsMuted = default(bool?), string order = default(string), string operatorFilter = default(string), string memberStateFilter = default(string), string mutedMemberFilter = default(string), string memberActiveModeFilter = default(string), string nicknameStartswith = default(string), bool? includePushPreference = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcListMembers");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcListMembers");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->ListMembers");
 
             var localVarPath = "/v3/group_channels/{channel_url}/members";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3484,14 +3458,18 @@ namespace sendbird_platform_sdk.Api
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
             if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
             if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
+            if (userId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "user_id", userId)); // query parameter
             if (showDeliveryReceipt != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_delivery_receipt", showDeliveryReceipt)); // query parameter
             if (showReadReceipt != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_read_receipt", showReadReceipt)); // query parameter
+            if (showMemberIsMuted != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_member_is_muted", showMemberIsMuted)); // query parameter
             if (order != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "order", order)); // query parameter
             if (operatorFilter != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "operator_filter", operatorFilter)); // query parameter
             if (memberStateFilter != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "member_state_filter", memberStateFilter)); // query parameter
             if (mutedMemberFilter != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "muted_member_filter", mutedMemberFilter)); // query parameter
+            if (memberActiveModeFilter != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "member_active_mode_filter", memberActiveModeFilter)); // query parameter
             if (nicknameStartswith != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "nickname_startswith", nicknameStartswith)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (includePushPreference != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "include_push_preference", includePushPreference)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
 
 
             // make the HTTP request
@@ -3503,47 +3481,44 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcListMembers", localVarResponse);
+                Exception exception = ExceptionFactory("ListMembers", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<GcListMembersResponse>(localVarStatusCode,
+            return new ApiResponse<GroupChannelListMembersResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GcListMembersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GcListMembersResponse)));
+                (GroupChannelListMembersResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GroupChannelListMembersResponse)));
         }
 
         /// <summary>
-        /// List operators ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// List operators ## List operators  You can retrieve a list of operators of a group channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/list-operators-of-a-group-channel#1-list-operators-of-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>GcListOperatorsResponse</returns>
-        public GcListOperatorsResponse GcListOperators (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ListOperatorsResponse</returns>
+        public ListOperatorsResponse ListOperators (string channelUrl, string token = default(string), int? limit = default(int?), string apiToken = default(string))
         {
-             ApiResponse<GcListOperatorsResponse> localVarResponse = GcListOperatorsWithHttpInfo(apiToken, channelUrl, token, limit);
+             ApiResponse<ListOperatorsResponse> localVarResponse = ListOperatorsWithHttpInfo(channelUrl, token, limit, apiToken);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// List operators ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// List operators ## List operators  You can retrieve a list of operators of a group channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/list-operators-of-a-group-channel#1-list-operators-of-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of GcListOperatorsResponse</returns>
-        public ApiResponse<GcListOperatorsResponse> GcListOperatorsWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of ListOperatorsResponse</returns>
+        public ApiResponse<ListOperatorsResponse> ListOperatorsWithHttpInfo (string channelUrl, string token = default(string), int? limit = default(int?), string apiToken = default(string))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcListOperators");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcListOperators");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->ListOperators");
 
             var localVarPath = "/v3/group_channels/{channel_url}/operators";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3569,7 +3544,7 @@ namespace sendbird_platform_sdk.Api
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
             if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
             if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
 
 
             // make the HTTP request
@@ -3581,50 +3556,47 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcListOperators", localVarResponse);
+                Exception exception = ExceptionFactory("ListOperators", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<GcListOperatorsResponse>(localVarStatusCode,
+            return new ApiResponse<ListOperatorsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GcListOperatorsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GcListOperatorsResponse)));
+                (ListOperatorsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListOperatorsResponse)));
         }
 
         /// <summary>
-        /// List operators ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// List operators ## List operators  You can retrieve a list of operators of a group channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/list-operators-of-a-group-channel#1-list-operators-of-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GcListOperatorsResponse</returns>
-        public async System.Threading.Tasks.Task<GcListOperatorsResponse> GcListOperatorsAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListOperatorsResponse</returns>
+        public async System.Threading.Tasks.Task<ListOperatorsResponse> ListOperatorsAsync (string channelUrl, string token = default(string), int? limit = default(int?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<GcListOperatorsResponse> localVarResponse = await GcListOperatorsWithHttpInfoAsync(apiToken, channelUrl, token, limit, cancellationToken);
+             ApiResponse<ListOperatorsResponse> localVarResponse = await ListOperatorsWithHttpInfoAsync(channelUrl, token, limit, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// List operators ## List operators  Retrieves a list of operators of a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// List operators ## List operators  You can retrieve a list of operators of a group channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/list-operators-of-a-group-channel#1-list-operators-of-a-group-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="limit">Specifies the number of results to return per page. Acceptable values are 1 to 100, inclusive. (Default: 10) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GcListOperatorsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GcListOperatorsResponse>> GcListOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListOperatorsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListOperatorsResponse>> ListOperatorsWithHttpInfoAsync (string channelUrl, string token = default(string), int? limit = default(int?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcListOperators");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcListOperators");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->ListOperators");
 
             var localVarPath = "/v3/group_channels/{channel_url}/operators";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3650,7 +3622,7 @@ namespace sendbird_platform_sdk.Api
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
             if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
             if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
 
 
             // make the HTTP request
@@ -3662,45 +3634,42 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcListOperators", localVarResponse);
+                Exception exception = ExceptionFactory("ListOperators", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<GcListOperatorsResponse>(localVarStatusCode,
+            return new ApiResponse<ListOperatorsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GcListOperatorsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GcListOperatorsResponse)));
+                (ListOperatorsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListOperatorsResponse)));
         }
 
         /// <summary>
-        /// Register operators ## Register operators  Registers one or more operators to a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Register operators to a group channel ## Register operators to a group channel  You can register one or more operators to a group channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/register-operators-to-a-group-channel#1-register-operators-to-a-group-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcRegisterOperatorsData"> (optional)</param>
-        /// <returns>GcRegisterOperatorsResponse</returns>
-        public GcRegisterOperatorsResponse GcRegisterOperators (string apiToken, string channelUrl, GcRegisterOperatorsData gcRegisterOperatorsData = default(GcRegisterOperatorsData))
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="registerOperatorsToAGroupChannelRequest"> (optional)</param>
+        /// <returns>Object</returns>
+        public Object RegisterOperatorsToAGroupChannel (string channelUrl, string apiToken = default(string), RegisterOperatorsToAGroupChannelRequest registerOperatorsToAGroupChannelRequest = default(RegisterOperatorsToAGroupChannelRequest))
         {
-             ApiResponse<GcRegisterOperatorsResponse> localVarResponse = GcRegisterOperatorsWithHttpInfo(apiToken, channelUrl, gcRegisterOperatorsData);
+             ApiResponse<Object> localVarResponse = RegisterOperatorsToAGroupChannelWithHttpInfo(channelUrl, apiToken, registerOperatorsToAGroupChannelRequest);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Register operators ## Register operators  Registers one or more operators to a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Register operators to a group channel ## Register operators to a group channel  You can register one or more operators to a group channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/register-operators-to-a-group-channel#1-register-operators-to-a-group-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcRegisterOperatorsData"> (optional)</param>
-        /// <returns>ApiResponse of GcRegisterOperatorsResponse</returns>
-        public ApiResponse<GcRegisterOperatorsResponse> GcRegisterOperatorsWithHttpInfo (string apiToken, string channelUrl, GcRegisterOperatorsData gcRegisterOperatorsData = default(GcRegisterOperatorsData))
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="registerOperatorsToAGroupChannelRequest"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse<Object> RegisterOperatorsToAGroupChannelWithHttpInfo (string channelUrl, string apiToken = default(string), RegisterOperatorsToAGroupChannelRequest registerOperatorsToAGroupChannelRequest = default(RegisterOperatorsToAGroupChannelRequest))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcRegisterOperators");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcRegisterOperators");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->RegisterOperatorsToAGroupChannel");
 
             var localVarPath = "/v3/group_channels/{channel_url}/operators";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3725,14 +3694,14 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcRegisterOperatorsData != null && gcRegisterOperatorsData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (registerOperatorsToAGroupChannelRequest != null && registerOperatorsToAGroupChannelRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcRegisterOperatorsData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(registerOperatorsToAGroupChannelRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = gcRegisterOperatorsData; // byte array
+                localVarPostBody = registerOperatorsToAGroupChannelRequest; // byte array
             }
 
 
@@ -3745,48 +3714,45 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcRegisterOperators", localVarResponse);
+                Exception exception = ExceptionFactory("RegisterOperatorsToAGroupChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<GcRegisterOperatorsResponse>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GcRegisterOperatorsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GcRegisterOperatorsResponse)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
-        /// Register operators ## Register operators  Registers one or more operators to a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Register operators to a group channel ## Register operators to a group channel  You can register one or more operators to a group channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/register-operators-to-a-group-channel#1-register-operators-to-a-group-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcRegisterOperatorsData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="registerOperatorsToAGroupChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GcRegisterOperatorsResponse</returns>
-        public async System.Threading.Tasks.Task<GcRegisterOperatorsResponse> GcRegisterOperatorsAsync (string apiToken, string channelUrl, GcRegisterOperatorsData gcRegisterOperatorsData = default(GcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> RegisterOperatorsToAGroupChannelAsync (string channelUrl, string apiToken = default(string), RegisterOperatorsToAGroupChannelRequest registerOperatorsToAGroupChannelRequest = default(RegisterOperatorsToAGroupChannelRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<GcRegisterOperatorsResponse> localVarResponse = await GcRegisterOperatorsWithHttpInfoAsync(apiToken, channelUrl, gcRegisterOperatorsData, cancellationToken);
+             ApiResponse<Object> localVarResponse = await RegisterOperatorsToAGroupChannelWithHttpInfoAsync(channelUrl, apiToken, registerOperatorsToAGroupChannelRequest, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Register operators ## Register operators  Registers one or more operators to a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Register operators to a group channel ## Register operators to a group channel  You can register one or more operators to a group channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/register-operators-to-a-group-channel#1-register-operators-to-a-group-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcRegisterOperatorsData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="registerOperatorsToAGroupChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GcRegisterOperatorsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GcRegisterOperatorsResponse>> GcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, GcRegisterOperatorsData gcRegisterOperatorsData = default(GcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> RegisterOperatorsToAGroupChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), RegisterOperatorsToAGroupChannelRequest registerOperatorsToAGroupChannelRequest = default(RegisterOperatorsToAGroupChannelRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcRegisterOperators");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcRegisterOperators");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->RegisterOperatorsToAGroupChannel");
 
             var localVarPath = "/v3/group_channels/{channel_url}/operators";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3811,14 +3777,14 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcRegisterOperatorsData != null && gcRegisterOperatorsData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (registerOperatorsToAGroupChannelRequest != null && registerOperatorsToAGroupChannelRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcRegisterOperatorsData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(registerOperatorsToAGroupChannelRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = gcRegisterOperatorsData; // byte array
+                localVarPostBody = registerOperatorsToAGroupChannelRequest; // byte array
             }
 
 
@@ -3831,45 +3797,42 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcRegisterOperators", localVarResponse);
+                Exception exception = ExceptionFactory("RegisterOperatorsToAGroupChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<GcRegisterOperatorsResponse>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GcRegisterOperatorsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GcRegisterOperatorsResponse)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
-        /// Reset chat history ## Reset chat history  Resets the properties related to a user's chat history in a group channel, then clears the existing messages in the channel on the user's side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the `last_message` and `read_receipt` properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user's unread message.  Using the `reset_all` property, you can also reset the properties related to all users' chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Reset chat history ## Reset chat history  This action resets the properties related to a specific user's chat history in a [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel), clearing existing messages in a channel from only the specified user's end. Because this action doesn't delete messages from the Sendbird database, other members in the channel can still retrieve and see the messages.  This action clears the messages for the specified user by updating the `last_message` and `read_receipt` properties of the [group channel resource](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-list-of-properties-for-group-channels) in addition to other internally managed data such as the count of a user's unread messages.  Using the `reset_all` property, you can also reset the properties related to the chat history of all members in a group channel.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/reset-chat-history#1-reset-chat-history
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcResetChatHistoryData"> (optional)</param>
-        /// <returns>GcResetChatHistoryResponse</returns>
-        public GcResetChatHistoryResponse GcResetChatHistory (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData))
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="resetChatHistoryRequest"> (optional)</param>
+        /// <returns>ResetChatHistoryResponse</returns>
+        public ResetChatHistoryResponse ResetChatHistory (string channelUrl, string apiToken = default(string), ResetChatHistoryRequest resetChatHistoryRequest = default(ResetChatHistoryRequest))
         {
-             ApiResponse<GcResetChatHistoryResponse> localVarResponse = GcResetChatHistoryWithHttpInfo(apiToken, channelUrl, gcResetChatHistoryData);
+             ApiResponse<ResetChatHistoryResponse> localVarResponse = ResetChatHistoryWithHttpInfo(channelUrl, apiToken, resetChatHistoryRequest);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Reset chat history ## Reset chat history  Resets the properties related to a user's chat history in a group channel, then clears the existing messages in the channel on the user's side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the `last_message` and `read_receipt` properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user's unread message.  Using the `reset_all` property, you can also reset the properties related to all users' chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Reset chat history ## Reset chat history  This action resets the properties related to a specific user's chat history in a [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel), clearing existing messages in a channel from only the specified user's end. Because this action doesn't delete messages from the Sendbird database, other members in the channel can still retrieve and see the messages.  This action clears the messages for the specified user by updating the `last_message` and `read_receipt` properties of the [group channel resource](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-list-of-properties-for-group-channels) in addition to other internally managed data such as the count of a user's unread messages.  Using the `reset_all` property, you can also reset the properties related to the chat history of all members in a group channel.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/reset-chat-history#1-reset-chat-history
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcResetChatHistoryData"> (optional)</param>
-        /// <returns>ApiResponse of GcResetChatHistoryResponse</returns>
-        public ApiResponse<GcResetChatHistoryResponse> GcResetChatHistoryWithHttpInfo (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData))
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="resetChatHistoryRequest"> (optional)</param>
+        /// <returns>ApiResponse of ResetChatHistoryResponse</returns>
+        public ApiResponse<ResetChatHistoryResponse> ResetChatHistoryWithHttpInfo (string channelUrl, string apiToken = default(string), ResetChatHistoryRequest resetChatHistoryRequest = default(ResetChatHistoryRequest))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcResetChatHistory");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcResetChatHistory");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->ResetChatHistory");
 
             var localVarPath = "/v3/group_channels/{channel_url}/reset_user_history";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3894,14 +3857,14 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcResetChatHistoryData != null && gcResetChatHistoryData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (resetChatHistoryRequest != null && resetChatHistoryRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcResetChatHistoryData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(resetChatHistoryRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = gcResetChatHistoryData; // byte array
+                localVarPostBody = resetChatHistoryRequest; // byte array
             }
 
 
@@ -3914,48 +3877,45 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcResetChatHistory", localVarResponse);
+                Exception exception = ExceptionFactory("ResetChatHistory", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<GcResetChatHistoryResponse>(localVarStatusCode,
+            return new ApiResponse<ResetChatHistoryResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GcResetChatHistoryResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GcResetChatHistoryResponse)));
+                (ResetChatHistoryResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ResetChatHistoryResponse)));
         }
 
         /// <summary>
-        /// Reset chat history ## Reset chat history  Resets the properties related to a user's chat history in a group channel, then clears the existing messages in the channel on the user's side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the `last_message` and `read_receipt` properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user's unread message.  Using the `reset_all` property, you can also reset the properties related to all users' chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Reset chat history ## Reset chat history  This action resets the properties related to a specific user's chat history in a [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel), clearing existing messages in a channel from only the specified user's end. Because this action doesn't delete messages from the Sendbird database, other members in the channel can still retrieve and see the messages.  This action clears the messages for the specified user by updating the `last_message` and `read_receipt` properties of the [group channel resource](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-list-of-properties-for-group-channels) in addition to other internally managed data such as the count of a user's unread messages.  Using the `reset_all` property, you can also reset the properties related to the chat history of all members in a group channel.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/reset-chat-history#1-reset-chat-history
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcResetChatHistoryData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="resetChatHistoryRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of GcResetChatHistoryResponse</returns>
-        public async System.Threading.Tasks.Task<GcResetChatHistoryResponse> GcResetChatHistoryAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ResetChatHistoryResponse</returns>
+        public async System.Threading.Tasks.Task<ResetChatHistoryResponse> ResetChatHistoryAsync (string channelUrl, string apiToken = default(string), ResetChatHistoryRequest resetChatHistoryRequest = default(ResetChatHistoryRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<GcResetChatHistoryResponse> localVarResponse = await GcResetChatHistoryWithHttpInfoAsync(apiToken, channelUrl, gcResetChatHistoryData, cancellationToken);
+             ApiResponse<ResetChatHistoryResponse> localVarResponse = await ResetChatHistoryWithHttpInfoAsync(channelUrl, apiToken, resetChatHistoryRequest, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Reset chat history ## Reset chat history  Resets the properties related to a user's chat history in a group channel, then clears the existing messages in the channel on the user's side only. A user can no longer see the messages in a group channel once this action is called, but those messages are not deleted from the database of the Sendbird system. All other members in the channel can retrieve and see the messages.  This action simply clears the messages for the user by updating the `last_message` and `read_receipt` properties of the [channel](#2-types-of-a-channel-3-resource-representation) resource in addition to other internally managed data such as the number of the user's unread message.  Using the `reset_all` property, you can also reset the properties related to all users' chat history in a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-reset-chat-history - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Reset chat history ## Reset chat history  This action resets the properties related to a specific user's chat history in a [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel), clearing existing messages in a channel from only the specified user's end. Because this action doesn't delete messages from the Sendbird database, other members in the channel can still retrieve and see the messages.  This action clears the messages for the specified user by updating the `last_message` and `read_receipt` properties of the [group channel resource](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-list-of-properties-for-group-channels) in addition to other internally managed data such as the count of a user's unread messages.  Using the `reset_all` property, you can also reset the properties related to the chat history of all members in a group channel.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/reset-chat-history#1-reset-chat-history
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="gcResetChatHistoryData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="resetChatHistoryRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (GcResetChatHistoryResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GcResetChatHistoryResponse>> GcResetChatHistoryWithHttpInfoAsync (string apiToken, string channelUrl, GcResetChatHistoryData gcResetChatHistoryData = default(GcResetChatHistoryData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ResetChatHistoryResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ResetChatHistoryResponse>> ResetChatHistoryWithHttpInfoAsync (string channelUrl, string apiToken = default(string), ResetChatHistoryRequest resetChatHistoryRequest = default(ResetChatHistoryRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcResetChatHistory");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcResetChatHistory");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->ResetChatHistory");
 
             var localVarPath = "/v3/group_channels/{channel_url}/reset_user_history";
             var localVarPathParams = new Dictionary<String, String>();
@@ -3980,14 +3940,14 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcResetChatHistoryData != null && gcResetChatHistoryData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (resetChatHistoryRequest != null && resetChatHistoryRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcResetChatHistoryData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(resetChatHistoryRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = gcResetChatHistoryData; // byte array
+                localVarPostBody = resetChatHistoryRequest; // byte array
             }
 
 
@@ -4000,50 +3960,373 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcResetChatHistory", localVarResponse);
+                Exception exception = ExceptionFactory("ResetChatHistory", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<GcResetChatHistoryResponse>(localVarStatusCode,
+            return new ApiResponse<ResetChatHistoryResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (GcResetChatHistoryResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GcResetChatHistoryResponse)));
+                (ResetChatHistoryResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ResetChatHistoryResponse)));
         }
 
         /// <summary>
-        /// Unhide or unarchive a channel ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
+        /// Start typing indicators ## Start typing indicators  You can start showing a typing indicator using this API. Seeing whether other users are typing can help a more interactive conversation environment by showing real-time engagement of other users.  If you're looking for an easy way to show typing indicators on your app, check out Sendbird UIKit for a ready-to-use UI feature that can be customized to fit your needs.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-typing-indicators/start-typing-indicators#1-start-typing-indicators  `channel_url`   Type: string   Description: Specifies the URL of the channel to set typing indicators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="userId"></param>
-        /// <param name="shouldUnhideAll"> (optional)</param>
-        /// <returns>OcDeleteChannelByUrl200Response</returns>
-        public OcDeleteChannelByUrl200Response GcUnhideOrUnarchiveChannel (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?))
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="startTypingIndicatorsRequest"> (optional)</param>
+        /// <returns>Object</returns>
+        public Object StartTypingIndicators (string channelUrl, string apiToken = default(string), StartTypingIndicatorsRequest startTypingIndicatorsRequest = default(StartTypingIndicatorsRequest))
         {
-             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = GcUnhideOrUnarchiveChannelWithHttpInfo(apiToken, channelUrl, userId, shouldUnhideAll);
+             ApiResponse<Object> localVarResponse = StartTypingIndicatorsWithHttpInfo(channelUrl, apiToken, startTypingIndicatorsRequest);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Unhide or unarchive a channel ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
+        /// Start typing indicators ## Start typing indicators  You can start showing a typing indicator using this API. Seeing whether other users are typing can help a more interactive conversation environment by showing real-time engagement of other users.  If you're looking for an easy way to show typing indicators on your app, check out Sendbird UIKit for a ready-to-use UI feature that can be customized to fit your needs.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-typing-indicators/start-typing-indicators#1-start-typing-indicators  `channel_url`   Type: string   Description: Specifies the URL of the channel to set typing indicators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="userId"></param>
-        /// <param name="shouldUnhideAll"> (optional)</param>
-        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        public ApiResponse<OcDeleteChannelByUrl200Response> GcUnhideOrUnarchiveChannelWithHttpInfo (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?))
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="startTypingIndicatorsRequest"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse<Object> StartTypingIndicatorsWithHttpInfo (string channelUrl, string apiToken = default(string), StartTypingIndicatorsRequest startTypingIndicatorsRequest = default(StartTypingIndicatorsRequest))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcUnhideOrUnarchiveChannel");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcUnhideOrUnarchiveChannel");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->StartTypingIndicators");
+
+            var localVarPath = "/v3/group_channels/{channel_url}/typing";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (startTypingIndicatorsRequest != null && startTypingIndicatorsRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(startTypingIndicatorsRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = startTypingIndicatorsRequest; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("StartTypingIndicators", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+        }
+
+        /// <summary>
+        /// Start typing indicators ## Start typing indicators  You can start showing a typing indicator using this API. Seeing whether other users are typing can help a more interactive conversation environment by showing real-time engagement of other users.  If you're looking for an easy way to show typing indicators on your app, check out Sendbird UIKit for a ready-to-use UI feature that can be customized to fit your needs.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-typing-indicators/start-typing-indicators#1-start-typing-indicators  `channel_url`   Type: string   Description: Specifies the URL of the channel to set typing indicators.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="startTypingIndicatorsRequest"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> StartTypingIndicatorsAsync (string channelUrl, string apiToken = default(string), StartTypingIndicatorsRequest startTypingIndicatorsRequest = default(StartTypingIndicatorsRequest), CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<Object> localVarResponse = await StartTypingIndicatorsWithHttpInfoAsync(channelUrl, apiToken, startTypingIndicatorsRequest, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Start typing indicators ## Start typing indicators  You can start showing a typing indicator using this API. Seeing whether other users are typing can help a more interactive conversation environment by showing real-time engagement of other users.  If you're looking for an easy way to show typing indicators on your app, check out Sendbird UIKit for a ready-to-use UI feature that can be customized to fit your needs.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-typing-indicators/start-typing-indicators#1-start-typing-indicators  `channel_url`   Type: string   Description: Specifies the URL of the channel to set typing indicators.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="startTypingIndicatorsRequest"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> StartTypingIndicatorsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), StartTypingIndicatorsRequest startTypingIndicatorsRequest = default(StartTypingIndicatorsRequest), CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'channelUrl' is set
+            if (channelUrl == null)
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->StartTypingIndicators");
+
+            var localVarPath = "/v3/group_channels/{channel_url}/typing";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (startTypingIndicatorsRequest != null && startTypingIndicatorsRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(startTypingIndicatorsRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = startTypingIndicatorsRequest; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("StartTypingIndicators", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+        }
+
+        /// <summary>
+        /// Stop typing indicators ## Stop typing indicators  You can stop showing a typing indicator using this API. To signal that a user is no longer typing, you can let the indicator disappear when the user sends a message or completely deletes the message text.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-typing-indicators/stop-typing-indicators#1-stop-typing-indicators  `channel_url`   Type: string   Description: Specifies the URL of the channel to set typing indicators.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="startTypingIndicatorsRequest"> (optional)</param>
+        /// <returns>Object</returns>
+        public Object StopTypingIndicators (string channelUrl, string apiToken = default(string), StartTypingIndicatorsRequest startTypingIndicatorsRequest = default(StartTypingIndicatorsRequest))
+        {
+             ApiResponse<Object> localVarResponse = StopTypingIndicatorsWithHttpInfo(channelUrl, apiToken, startTypingIndicatorsRequest);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Stop typing indicators ## Stop typing indicators  You can stop showing a typing indicator using this API. To signal that a user is no longer typing, you can let the indicator disappear when the user sends a message or completely deletes the message text.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-typing-indicators/stop-typing-indicators#1-stop-typing-indicators  `channel_url`   Type: string   Description: Specifies the URL of the channel to set typing indicators.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="startTypingIndicatorsRequest"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse<Object> StopTypingIndicatorsWithHttpInfo (string channelUrl, string apiToken = default(string), StartTypingIndicatorsRequest startTypingIndicatorsRequest = default(StartTypingIndicatorsRequest))
+        {
+            // verify the required parameter 'channelUrl' is set
+            if (channelUrl == null)
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->StopTypingIndicators");
+
+            var localVarPath = "/v3/group_channels/{channel_url}/typing";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (startTypingIndicatorsRequest != null && startTypingIndicatorsRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(startTypingIndicatorsRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = startTypingIndicatorsRequest; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("StopTypingIndicators", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+        }
+
+        /// <summary>
+        /// Stop typing indicators ## Stop typing indicators  You can stop showing a typing indicator using this API. To signal that a user is no longer typing, you can let the indicator disappear when the user sends a message or completely deletes the message text.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-typing-indicators/stop-typing-indicators#1-stop-typing-indicators  `channel_url`   Type: string   Description: Specifies the URL of the channel to set typing indicators.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="startTypingIndicatorsRequest"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> StopTypingIndicatorsAsync (string channelUrl, string apiToken = default(string), StartTypingIndicatorsRequest startTypingIndicatorsRequest = default(StartTypingIndicatorsRequest), CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<Object> localVarResponse = await StopTypingIndicatorsWithHttpInfoAsync(channelUrl, apiToken, startTypingIndicatorsRequest, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Stop typing indicators ## Stop typing indicators  You can stop showing a typing indicator using this API. To signal that a user is no longer typing, you can let the indicator disappear when the user sends a message or completely deletes the message text.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-typing-indicators/stop-typing-indicators#1-stop-typing-indicators  `channel_url`   Type: string   Description: Specifies the URL of the channel to set typing indicators.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="startTypingIndicatorsRequest"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> StopTypingIndicatorsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), StartTypingIndicatorsRequest startTypingIndicatorsRequest = default(StartTypingIndicatorsRequest), CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'channelUrl' is set
+            if (channelUrl == null)
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->StopTypingIndicators");
+
+            var localVarPath = "/v3/group_channels/{channel_url}/typing";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (startTypingIndicatorsRequest != null && startTypingIndicatorsRequest.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(startTypingIndicatorsRequest); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = startTypingIndicatorsRequest; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("StopTypingIndicators", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+        }
+
+        /// <summary>
+        /// Unhide a channel ## Unhide a channel  This action lets a hidden [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel) reappear on the channel list of a specific user or every member in the group channel. Hiding or unhiding a channel lets users organize their channel list based on those that require the most attention. Note that only group channels can be hidden or unhidden.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/unhide-a-channel#1-unhide-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/unhide-a-channel#1-unhide-a-channel)  `channel_url`   Type: string   Description: Specifies the URL of the channel to unhide or unarchive.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="userId">(Required) </param>
+        /// <param name="shouldUnhideAll"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>Object</returns>
+        public Object UnhideAChannel (string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), string apiToken = default(string))
+        {
+             ApiResponse<Object> localVarResponse = UnhideAChannelWithHttpInfo(channelUrl, userId, shouldUnhideAll, apiToken);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Unhide a channel ## Unhide a channel  This action lets a hidden [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel) reappear on the channel list of a specific user or every member in the group channel. Hiding or unhiding a channel lets users organize their channel list based on those that require the most attention. Note that only group channels can be hidden or unhidden.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/unhide-a-channel#1-unhide-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/unhide-a-channel#1-unhide-a-channel)  `channel_url`   Type: string   Description: Specifies the URL of the channel to unhide or unarchive.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="userId">(Required) </param>
+        /// <param name="shouldUnhideAll"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse<Object> UnhideAChannelWithHttpInfo (string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), string apiToken = default(string))
+        {
+            // verify the required parameter 'channelUrl' is set
+            if (channelUrl == null)
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->UnhideAChannel");
             // verify the required parameter 'userId' is set
             if (userId == null)
-                throw new ApiException(400, "Missing required parameter 'userId' when calling GroupChannelApi->GcUnhideOrUnarchiveChannel");
+                throw new ApiException(400, "Missing required parameter 'userId' when calling GroupChannelApi->UnhideAChannel");
 
             var localVarPath = "/v3/group_channels/{channel_url}/hide";
             var localVarPathParams = new Dictionary<String, String>();
@@ -4069,7 +4352,7 @@ namespace sendbird_platform_sdk.Api
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
             if (userId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "user_id", userId)); // query parameter
             if (shouldUnhideAll != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "should_unhide_all", shouldUnhideAll)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
 
 
             // make the HTTP request
@@ -4081,53 +4364,50 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcUnhideOrUnarchiveChannel", localVarResponse);
+                Exception exception = ExceptionFactory("UnhideAChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
-        /// Unhide or unarchive a channel ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
+        /// Unhide a channel ## Unhide a channel  This action lets a hidden [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel) reappear on the channel list of a specific user or every member in the group channel. Hiding or unhiding a channel lets users organize their channel list based on those that require the most attention. Note that only group channels can be hidden or unhidden.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/unhide-a-channel#1-unhide-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/unhide-a-channel#1-unhide-a-channel)  `channel_url`   Type: string   Description: Specifies the URL of the channel to unhide or unarchive.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="userId"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="userId">(Required) </param>
         /// <param name="shouldUnhideAll"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> GcUnhideOrUnarchiveChannelAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> UnhideAChannelAsync (string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await GcUnhideOrUnarchiveChannelWithHttpInfoAsync(apiToken, channelUrl, userId, shouldUnhideAll, cancellationToken);
+             ApiResponse<Object> localVarResponse = await UnhideAChannelWithHttpInfoAsync(channelUrl, userId, shouldUnhideAll, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Unhide or unarchive a channel ## Unhide or unarchive a channel  Makes a hidden or archived channel reappear in the channel list of either a specific user or entire channel members.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-unhide-or-unarchive-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to unhide or unarchive.
+        /// Unhide a channel ## Unhide a channel  This action lets a hidden [group channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-group-channel) reappear on the channel list of a specific user or every member in the group channel. Hiding or unhiding a channel lets users organize their channel list based on those that require the most attention. Note that only group channels can be hidden or unhidden.  [https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/unhide-a-channel#1-unhide-a-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/unhide-a-channel#1-unhide-a-channel)  `channel_url`   Type: string   Description: Specifies the URL of the channel to unhide or unarchive.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="userId"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="userId">(Required) </param>
         /// <param name="shouldUnhideAll"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> GcUnhideOrUnarchiveChannelWithHttpInfoAsync (string apiToken, string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> UnhideAChannelWithHttpInfoAsync (string channelUrl, string userId, bool? shouldUnhideAll = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcUnhideOrUnarchiveChannel");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcUnhideOrUnarchiveChannel");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->UnhideAChannel");
             // verify the required parameter 'userId' is set
             if (userId == null)
-                throw new ApiException(400, "Missing required parameter 'userId' when calling GroupChannelApi->GcUnhideOrUnarchiveChannel");
+                throw new ApiException(400, "Missing required parameter 'userId' when calling GroupChannelApi->UnhideAChannel");
 
             var localVarPath = "/v3/group_channels/{channel_url}/hide";
             var localVarPathParams = new Dictionary<String, String>();
@@ -4153,7 +4433,7 @@ namespace sendbird_platform_sdk.Api
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
             if (userId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "user_id", userId)); // query parameter
             if (shouldUnhideAll != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "should_unhide_all", shouldUnhideAll)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
 
 
             // make the HTTP request
@@ -4165,45 +4445,42 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcUnhideOrUnarchiveChannel", localVarResponse);
+                Exception exception = ExceptionFactory("UnhideAChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
-        /// Update a channel ## Update a channel  Updates information on a group channel.  > __Note__: You can't change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update a group channel ## Update a group channel  You can update information about a group channel or a Supergroup channel using this API. You can't make any changes to the members of a channel with this API. To change members, see [invite as members](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel) instead. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-a-group-channel#1-update-a-group-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcUpdateChannelByUrlData"> (optional)</param>
-        /// <returns>SendBirdGroupChannel</returns>
-        public SendBirdGroupChannel GcUpdateChannelByUrl (string apiToken, string channelUrl, GcUpdateChannelByUrlData gcUpdateChannelByUrlData = default(GcUpdateChannelByUrlData))
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateAGroupChannelRequest"> (optional)</param>
+        /// <returns>SendbirdGroupChannelDetail</returns>
+        public SendbirdGroupChannelDetail UpdateAGroupChannel (string channelUrl, string apiToken = default(string), UpdateAGroupChannelRequest updateAGroupChannelRequest = default(UpdateAGroupChannelRequest))
         {
-             ApiResponse<SendBirdGroupChannel> localVarResponse = GcUpdateChannelByUrlWithHttpInfo(apiToken, channelUrl, gcUpdateChannelByUrlData);
+             ApiResponse<SendbirdGroupChannelDetail> localVarResponse = UpdateAGroupChannelWithHttpInfo(channelUrl, apiToken, updateAGroupChannelRequest);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Update a channel ## Update a channel  Updates information on a group channel.  > __Note__: You can't change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update a group channel ## Update a group channel  You can update information about a group channel or a Supergroup channel using this API. You can't make any changes to the members of a channel with this API. To change members, see [invite as members](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel) instead. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-a-group-channel#1-update-a-group-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcUpdateChannelByUrlData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdGroupChannel</returns>
-        public ApiResponse<SendBirdGroupChannel> GcUpdateChannelByUrlWithHttpInfo (string apiToken, string channelUrl, GcUpdateChannelByUrlData gcUpdateChannelByUrlData = default(GcUpdateChannelByUrlData))
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateAGroupChannelRequest"> (optional)</param>
+        /// <returns>ApiResponse of SendbirdGroupChannelDetail</returns>
+        public ApiResponse<SendbirdGroupChannelDetail> UpdateAGroupChannelWithHttpInfo (string channelUrl, string apiToken = default(string), UpdateAGroupChannelRequest updateAGroupChannelRequest = default(UpdateAGroupChannelRequest))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcUpdateChannelByUrl");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcUpdateChannelByUrl");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->UpdateAGroupChannel");
 
             var localVarPath = "/v3/group_channels/{channel_url}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -4228,14 +4505,14 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcUpdateChannelByUrlData != null && gcUpdateChannelByUrlData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (updateAGroupChannelRequest != null && updateAGroupChannelRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcUpdateChannelByUrlData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(updateAGroupChannelRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = gcUpdateChannelByUrlData; // byte array
+                localVarPostBody = updateAGroupChannelRequest; // byte array
             }
 
 
@@ -4248,48 +4525,45 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcUpdateChannelByUrl", localVarResponse);
+                Exception exception = ExceptionFactory("UpdateAGroupChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdGroupChannel>(localVarStatusCode,
+            return new ApiResponse<SendbirdGroupChannelDetail>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdGroupChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdGroupChannel)));
+                (SendbirdGroupChannelDetail) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendbirdGroupChannelDetail)));
         }
 
         /// <summary>
-        /// Update a channel ## Update a channel  Updates information on a group channel.  > __Note__: You can't change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update a group channel ## Update a group channel  You can update information about a group channel or a Supergroup channel using this API. You can't make any changes to the members of a channel with this API. To change members, see [invite as members](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel) instead. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-a-group-channel#1-update-a-group-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcUpdateChannelByUrlData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateAGroupChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdGroupChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcUpdateChannelByUrlAsync (string apiToken, string channelUrl, GcUpdateChannelByUrlData gcUpdateChannelByUrlData = default(GcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of SendbirdGroupChannelDetail</returns>
+        public async System.Threading.Tasks.Task<SendbirdGroupChannelDetail> UpdateAGroupChannelAsync (string channelUrl, string apiToken = default(string), UpdateAGroupChannelRequest updateAGroupChannelRequest = default(UpdateAGroupChannelRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdGroupChannel> localVarResponse = await GcUpdateChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, gcUpdateChannelByUrlData, cancellationToken);
+             ApiResponse<SendbirdGroupChannelDetail> localVarResponse = await UpdateAGroupChannelWithHttpInfoAsync(channelUrl, apiToken, updateAGroupChannelRequest, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Update a channel ## Update a channel  Updates information on a group channel.  > __Note__: You can't change the members of the channel here. To do so, see [invite as members](#2-invite-as-members) action below.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update a group channel ## Update a group channel  You can update information about a group channel or a Supergroup channel using this API. You can't make any changes to the members of a channel with this API. To change members, see [invite as members](https://sendbird.com/docs/chat/platform-api/v3/channel/inviting-a-user/invite-as-members-channel) instead. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-a-group-channel#1-update-a-group-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="channelUrl"></param>
-        /// <param name="gcUpdateChannelByUrlData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateAGroupChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcUpdateChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, GcUpdateChannelByUrlData gcUpdateChannelByUrlData = default(GcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (SendbirdGroupChannelDetail)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<SendbirdGroupChannelDetail>> UpdateAGroupChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), UpdateAGroupChannelRequest updateAGroupChannelRequest = default(UpdateAGroupChannelRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcUpdateChannelByUrl");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcUpdateChannelByUrl");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->UpdateAGroupChannel");
 
             var localVarPath = "/v3/group_channels/{channel_url}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -4314,14 +4588,14 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (gcUpdateChannelByUrlData != null && gcUpdateChannelByUrlData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (updateAGroupChannelRequest != null && updateAGroupChannelRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(gcUpdateChannelByUrlData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(updateAGroupChannelRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = gcUpdateChannelByUrlData; // byte array
+                localVarPostBody = updateAGroupChannelRequest; // byte array
             }
 
 
@@ -4334,190 +4608,13 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GcUpdateChannelByUrl", localVarResponse);
+                Exception exception = ExceptionFactory("UpdateAGroupChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdGroupChannel>(localVarStatusCode,
+            return new ApiResponse<SendbirdGroupChannelDetail>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdGroupChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdGroupChannel)));
-        }
-
-        /// <summary>
-        /// View a channel ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="showDeliveryReceipt"> (optional)</param>
-        /// <param name="showReadReceipt"> (optional)</param>
-        /// <param name="showMember"> (optional)</param>
-        /// <param name="readReceipt"> (optional)</param>
-        /// <param name="member"> (optional)</param>
-        /// <returns>SendBirdGroupChannel</returns>
-        public SendBirdGroupChannel GcViewChannelByUrl (string apiToken, string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), bool? readReceipt = default(bool?), bool? member = default(bool?))
-        {
-             ApiResponse<SendBirdGroupChannel> localVarResponse = GcViewChannelByUrlWithHttpInfo(apiToken, channelUrl, showDeliveryReceipt, showReadReceipt, showMember, readReceipt, member);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// View a channel ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="showDeliveryReceipt"> (optional)</param>
-        /// <param name="showReadReceipt"> (optional)</param>
-        /// <param name="showMember"> (optional)</param>
-        /// <param name="readReceipt"> (optional)</param>
-        /// <param name="member"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdGroupChannel</returns>
-        public ApiResponse<SendBirdGroupChannel> GcViewChannelByUrlWithHttpInfo (string apiToken, string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), bool? readReceipt = default(bool?), bool? member = default(bool?))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcViewChannelByUrl");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcViewChannelByUrl");
-
-            var localVarPath = "/v3/group_channels/{channel_url}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (showDeliveryReceipt != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_delivery_receipt", showDeliveryReceipt)); // query parameter
-            if (showReadReceipt != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_read_receipt", showReadReceipt)); // query parameter
-            if (showMember != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_member", showMember)); // query parameter
-            if (readReceipt != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "read_receipt", readReceipt)); // query parameter
-            if (member != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "member", member)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GcViewChannelByUrl", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<SendBirdGroupChannel>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdGroupChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdGroupChannel)));
-        }
-
-        /// <summary>
-        /// View a channel ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="showDeliveryReceipt"> (optional)</param>
-        /// <param name="showReadReceipt"> (optional)</param>
-        /// <param name="showMember"> (optional)</param>
-        /// <param name="readReceipt"> (optional)</param>
-        /// <param name="member"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdGroupChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdGroupChannel> GcViewChannelByUrlAsync (string apiToken, string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), bool? readReceipt = default(bool?), bool? member = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<SendBirdGroupChannel> localVarResponse = await GcViewChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, showDeliveryReceipt, showReadReceipt, showMember, readReceipt, member, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// View a channel ## View a channel  Retrieves information on a group channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/group-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="showDeliveryReceipt"> (optional)</param>
-        /// <param name="showReadReceipt"> (optional)</param>
-        /// <param name="showMember"> (optional)</param>
-        /// <param name="readReceipt"> (optional)</param>
-        /// <param name="member"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdGroupChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdGroupChannel>> GcViewChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, bool? showDeliveryReceipt = default(bool?), bool? showReadReceipt = default(bool?), bool? showMember = default(bool?), bool? readReceipt = default(bool?), bool? member = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling GroupChannelApi->GcViewChannelByUrl");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling GroupChannelApi->GcViewChannelByUrl");
-
-            var localVarPath = "/v3/group_channels/{channel_url}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (showDeliveryReceipt != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_delivery_receipt", showDeliveryReceipt)); // query parameter
-            if (showReadReceipt != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_read_receipt", showReadReceipt)); // query parameter
-            if (showMember != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_member", showMember)); // query parameter
-            if (readReceipt != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "read_receipt", readReceipt)); // query parameter
-            if (member != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "member", member)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GcViewChannelByUrl", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<SendBirdGroupChannel>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdGroupChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdGroupChannel)));
+                (SendbirdGroupChannelDetail) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendbirdGroupChannelDetail)));
         }
 
     }

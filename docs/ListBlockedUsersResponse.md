@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Users** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  | [optional] 
+**Users** | [**List&lt;SendbirdUser&gt;**](SendbirdUser.md) |  | [optional] 
 **Next** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
