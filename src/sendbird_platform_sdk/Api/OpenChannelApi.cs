@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -26,499 +26,447 @@ namespace sendbird_platform_sdk.Api
     {
         #region Synchronous Operations
         /// <summary>
-        /// Cancel the registration of operators
+        /// Create an open channel
         /// </summary>
         /// <remarks>
-        /// ## Cancel the registration of operators  Cancels the registration of operators from an open channel but leave them as participants.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// ## Create an open channel  You can create an [open channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel) that facilitates conversations for millions of users. Open channels allow a seamless chat experience possible for all participants by using [dynamic partitioning](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-how-dynamic-partitioning-works) which creates subchannels that each handle up to tens of thousands of participants.  Because users don't need invitations to join open channels, short-lived live events like concerts or live streams that don't require a sustained membership are good use cases for open channels.  [https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel](https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="operatorIds"></param>
-        /// <param name="deleteAll"> (optional)</param>
-        /// <returns></returns>
-        void OcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?));
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="createAnOpenChannelRequest"> (optional)</param>
+        /// <returns>SendbirdOpenChannel</returns>
+        SendbirdOpenChannel CreateAnOpenChannel (string apiToken = default(string), CreateAnOpenChannelRequest createAnOpenChannelRequest = default(CreateAnOpenChannelRequest));
 
         /// <summary>
-        /// Cancel the registration of operators
+        /// Create an open channel
         /// </summary>
         /// <remarks>
-        /// ## Cancel the registration of operators  Cancels the registration of operators from an open channel but leave them as participants.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// ## Create an open channel  You can create an [open channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel) that facilitates conversations for millions of users. Open channels allow a seamless chat experience possible for all participants by using [dynamic partitioning](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-how-dynamic-partitioning-works) which creates subchannels that each handle up to tens of thousands of participants.  Because users don't need invitations to join open channels, short-lived live events like concerts or live streams that don't require a sustained membership are good use cases for open channels.  [https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel](https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="operatorIds"></param>
-        /// <param name="deleteAll"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> OcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?));
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="createAnOpenChannelRequest"> (optional)</param>
+        /// <returns>ApiResponse of SendbirdOpenChannel</returns>
+        ApiResponse<SendbirdOpenChannel> CreateAnOpenChannelWithHttpInfo (string apiToken = default(string), CreateAnOpenChannelRequest createAnOpenChannelRequest = default(CreateAnOpenChannelRequest));
         /// <summary>
-        /// Create a channel
+        /// Delete an open channel
         /// </summary>
         /// <remarks>
-        /// ## Create a channel  Creates an open channel.  >__Note__: Classic open channels created before the deprecation date of March 2021 will maintain their original form and functions. However, new applications created after December 15, 2020, will be able to create dynamic partitioning open channels only.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel
+        /// ## Delete an open channel  You can delete an open channel using this API. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-an-open-channel#1-delete-an-open-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="ocCreateChannelData"> (optional)</param>
-        /// <returns>SendBirdOpenChannel</returns>
-        SendBirdOpenChannel OcCreateChannel (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>Object</returns>
+        Object DeleteAnOpenChannel (string channelUrl, string apiToken = default(string));
 
         /// <summary>
-        /// Create a channel
+        /// Delete an open channel
         /// </summary>
         /// <remarks>
-        /// ## Create a channel  Creates an open channel.  >__Note__: Classic open channels created before the deprecation date of March 2021 will maintain their original form and functions. However, new applications created after December 15, 2020, will be able to create dynamic partitioning open channels only.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel
+        /// ## Delete an open channel  You can delete an open channel using this API. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-an-open-channel#1-delete-an-open-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="ocCreateChannelData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        ApiResponse<SendBirdOpenChannel> OcCreateChannelWithHttpInfo (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> DeleteAnOpenChannelWithHttpInfo (string channelUrl, string apiToken = default(string));
         /// <summary>
-        /// Delete a channel
+        /// Get an open channel
         /// </summary>
         /// <remarks>
-        /// ## Delete a channel  Deletes an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Get an open channel  This action retrieves information about a specific [open channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel).  [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-an-open-channel#1-get-an-open-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-an-open-channel#1-get-an-open-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <returns>OcDeleteChannelByUrl200Response</returns>
-        OcDeleteChannelByUrl200Response OcDeleteChannelByUrl (string apiToken, string channelUrl);
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="includeOperators">Determines whether to include a list of operators in the response. (Default: false) (optional)</param>
+        /// <returns>SendbirdOpenChannel</returns>
+        SendbirdOpenChannel GetAnOpenChannel (string channelUrl, string apiToken = default(string), bool? includeOperators = default(bool?));
 
         /// <summary>
-        /// Delete a channel
+        /// Get an open channel
         /// </summary>
         /// <remarks>
-        /// ## Delete a channel  Deletes an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Get an open channel  This action retrieves information about a specific [open channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel).  [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-an-open-channel#1-get-an-open-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-an-open-channel#1-get-an-open-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        ApiResponse<OcDeleteChannelByUrl200Response> OcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl);
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="includeOperators">Determines whether to include a list of operators in the response. (Default: false) (optional)</param>
+        /// <returns>ApiResponse of SendbirdOpenChannel</returns>
+        ApiResponse<SendbirdOpenChannel> GetAnOpenChannelWithHttpInfo (string channelUrl, string apiToken = default(string), bool? includeOperators = default(bool?));
         /// <summary>
-        /// List channels
+        /// List operators of an open channel
         /// </summary>
         /// <remarks>
-        /// ## List channels  Retrieves a list of open channels. You can query the list using various parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## List operators of an open channel  You can retrieve a list of operators of an open channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/list-operators-of-an-open-channel#1-list-operators-of-an-open-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <param name="customTypes"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ListOperatorsResponse</returns>
+        ListOperatorsResponse ListChannelOperators (string channelUrl, string token = default(string), int? limit = default(int?), string apiToken = default(string));
+
+        /// <summary>
+        /// List operators of an open channel
+        /// </summary>
+        /// <remarks>
+        /// ## List operators of an open channel  You can retrieve a list of operators of an open channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/list-operators-of-an-open-channel#1-list-operators-of-an-open-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of ListOperatorsResponse</returns>
+        ApiResponse<ListOperatorsResponse> ListChannelOperatorsWithHttpInfo (string channelUrl, string token = default(string), int? limit = default(int?), string apiToken = default(string));
+        /// <summary>
+        /// List open channels
+        /// </summary>
+        /// <remarks>
+        /// ## List open channels  This action retrieves a list of [open channels](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel). You can use various query parameters to determine the search scope and select what kind of information you want to receive about the queried channels.  [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-open-channels#1-list-open-channels](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-open-channels#1-list-open-channels)
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="token"> (optional)</param>
+        /// <param name="channelUrls">Specifies a comma-separated string of one or more open channel URLs to restrict the search scope. URL encoding each channel URL is recommended. (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="customTypes">Specifies a comma-separated string of one or more custom types to filter open channels. Urlencoding each type is recommended (for example, ?custom_types&#x3D;urlencoded_type_1,urlencoded_type_2). If not specified, all channels are returned, regardless of their custom type. (optional)</param>
         /// <param name="nameContains"> (optional)</param>
         /// <param name="urlContains"> (optional)</param>
-        /// <param name="showFrozen"> (optional)</param>
-        /// <param name="showMetadata"> (optional)</param>
-        /// <param name="customType"> (optional)</param>
-        /// <returns>OcListChannelsResponse</returns>
-        OcListChannelsResponse OcListChannels (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string));
+        /// <param name="showFrozen">Determines whether to include frozen channels in the response. Frozen channels are channels where only channel operators are allowed to send messages. (Default: true) (optional)</param>
+        /// <param name="showMetadata">Determines whether to include channel metadata in the response. (Default: false) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ListOpenChannelsResponse</returns>
+        ListOpenChannelsResponse ListOpenChannels (string token = default(string), string channelUrls = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string apiToken = default(string));
 
         /// <summary>
-        /// List channels
+        /// List open channels
         /// </summary>
         /// <remarks>
-        /// ## List channels  Retrieves a list of open channels. You can query the list using various parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## List open channels  This action retrieves a list of [open channels](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel). You can use various query parameters to determine the search scope and select what kind of information you want to receive about the queried channels.  [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-open-channels#1-list-open-channels](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-open-channels#1-list-open-channels)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
+        /// <param name="channelUrls">Specifies a comma-separated string of one or more open channel URLs to restrict the search scope. URL encoding each channel URL is recommended. (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <param name="customTypes"> (optional)</param>
+        /// <param name="customTypes">Specifies a comma-separated string of one or more custom types to filter open channels. Urlencoding each type is recommended (for example, ?custom_types&#x3D;urlencoded_type_1,urlencoded_type_2). If not specified, all channels are returned, regardless of their custom type. (optional)</param>
         /// <param name="nameContains"> (optional)</param>
         /// <param name="urlContains"> (optional)</param>
-        /// <param name="showFrozen"> (optional)</param>
-        /// <param name="showMetadata"> (optional)</param>
-        /// <param name="customType"> (optional)</param>
-        /// <returns>ApiResponse of OcListChannelsResponse</returns>
-        ApiResponse<OcListChannelsResponse> OcListChannelsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string));
+        /// <param name="showFrozen">Determines whether to include frozen channels in the response. Frozen channels are channels where only channel operators are allowed to send messages. (Default: true) (optional)</param>
+        /// <param name="showMetadata">Determines whether to include channel metadata in the response. (Default: false) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of ListOpenChannelsResponse</returns>
+        ApiResponse<ListOpenChannelsResponse> ListOpenChannelsWithHttpInfo (string token = default(string), string channelUrls = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string apiToken = default(string));
         /// <summary>
-        /// List operators
+        /// Register operators to an open channel
         /// </summary>
         /// <remarks>
-        /// ## List operators  Retrieves a list of operators of an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// ## Register operators to an open channel  You can register one or more operators to an open channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/register-operators-to-an-open-channel#1-register-operators-to-an-open-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>OcListOperatorsResponse</returns>
-        OcListOperatorsResponse OcListOperators (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="registerOperatorsToAGroupChannelRequest"> (optional)</param>
+        /// <returns>Object</returns>
+        Object RegisterOperators (string channelUrl, string apiToken = default(string), RegisterOperatorsToAGroupChannelRequest registerOperatorsToAGroupChannelRequest = default(RegisterOperatorsToAGroupChannelRequest));
 
         /// <summary>
-        /// List operators
+        /// Register operators to an open channel
         /// </summary>
         /// <remarks>
-        /// ## List operators  Retrieves a list of operators of an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// ## Register operators to an open channel  You can register one or more operators to an open channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/register-operators-to-an-open-channel#1-register-operators-to-an-open-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of OcListOperatorsResponse</returns>
-        ApiResponse<OcListOperatorsResponse> OcListOperatorsWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="registerOperatorsToAGroupChannelRequest"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> RegisterOperatorsWithHttpInfo (string channelUrl, string apiToken = default(string), RegisterOperatorsToAGroupChannelRequest registerOperatorsToAGroupChannelRequest = default(RegisterOperatorsToAGroupChannelRequest));
         /// <summary>
-        /// List participants
+        /// Unregister operators from an open channel
         /// </summary>
         /// <remarks>
-        /// ## List participants  Retrieves a list of the participants of an open channel. A participant refers to a user who has entered the open channel and is currently online.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-participants - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of participants in.
+        /// ## Unregister operators from an open channel  You can unregister operators in an open channel but keep them in the channel as participants using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/unregister-operators-from-an-open-channel#1-unregister-operators-from-an-open-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>OcListParticipantsResponse</returns>
-        OcListParticipantsResponse OcListParticipants (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="operatorIds">Specifies an array of one or more operator IDs to unregister from the channel. The operators in this array remain as participants of the channel after losing their operational roles. Urlencoding each operator ID is recommended. An example of a Urlencoded array would be ?operator_ids&#x3D;urlencoded_id_1,urlencoded_id_2.</param>
+        /// <param name="deleteAll">Determines whether to unregister all operators and leave them as the participants of the channel. When this is set to true, the operator_ids property isn&#39;t effective and doesn&#39;t need to be specified in the request. (Default: false) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>Object</returns>
+        Object UnregisterOperators (string channelUrl, string operatorIds, bool? deleteAll = default(bool?), string apiToken = default(string));
 
         /// <summary>
-        /// List participants
+        /// Unregister operators from an open channel
         /// </summary>
         /// <remarks>
-        /// ## List participants  Retrieves a list of the participants of an open channel. A participant refers to a user who has entered the open channel and is currently online.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-participants - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of participants in.
+        /// ## Unregister operators from an open channel  You can unregister operators in an open channel but keep them in the channel as participants using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/unregister-operators-from-an-open-channel#1-unregister-operators-from-an-open-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of OcListParticipantsResponse</returns>
-        ApiResponse<OcListParticipantsResponse> OcListParticipantsWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="operatorIds">Specifies an array of one or more operator IDs to unregister from the channel. The operators in this array remain as participants of the channel after losing their operational roles. Urlencoding each operator ID is recommended. An example of a Urlencoded array would be ?operator_ids&#x3D;urlencoded_id_1,urlencoded_id_2.</param>
+        /// <param name="deleteAll">Determines whether to unregister all operators and leave them as the participants of the channel. When this is set to true, the operator_ids property isn&#39;t effective and doesn&#39;t need to be specified in the request. (Default: false) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> UnregisterOperatorsWithHttpInfo (string channelUrl, string operatorIds, bool? deleteAll = default(bool?), string apiToken = default(string));
         /// <summary>
-        /// Register operators
+        /// Update an open channel
         /// </summary>
         /// <remarks>
-        /// ## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update an open channel  You can update information about an open channel using this API. You can add a cover image to a channel to better identify the channel or specify a custom channel type for grouping channels by custom type. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-an-open-channel#1-update-an-open-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocRegisterOperatorsData"> (optional)</param>
-        /// <returns>OcDeleteChannelByUrl200Response</returns>
-        OcDeleteChannelByUrl200Response OcRegisterOperators (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData));
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateAnOpenChannelRequest"> (optional)</param>
+        /// <returns>SendbirdOpenChannel</returns>
+        SendbirdOpenChannel UpdateAnOpenChannel (string channelUrl, string apiToken = default(string), UpdateAnOpenChannelRequest updateAnOpenChannelRequest = default(UpdateAnOpenChannelRequest));
 
         /// <summary>
-        /// Register operators
+        /// Update an open channel
         /// </summary>
         /// <remarks>
-        /// ## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update an open channel  You can update information about an open channel using this API. You can add a cover image to a channel to better identify the channel or specify a custom channel type for grouping channels by custom type. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-an-open-channel#1-update-an-open-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocRegisterOperatorsData"> (optional)</param>
-        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        ApiResponse<OcDeleteChannelByUrl200Response> OcRegisterOperatorsWithHttpInfo (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData));
-        /// <summary>
-        /// Update a channel
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel  Updates information on an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
-        /// <returns>SendBirdOpenChannel</returns>
-        SendBirdOpenChannel OcUpdateChannelByUrl (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData));
-
-        /// <summary>
-        /// Update a channel
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel  Updates information on an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        ApiResponse<SendBirdOpenChannel> OcUpdateChannelByUrlWithHttpInfo (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData));
-        /// <summary>
-        /// View a channel
-        /// </summary>
-        /// <remarks>
-        /// ## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <returns>SendBirdOpenChannel</returns>
-        SendBirdOpenChannel OcViewChannelByUrl (string apiToken, string channelUrl);
-
-        /// <summary>
-        /// View a channel
-        /// </summary>
-        /// <remarks>
-        /// ## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        ApiResponse<SendBirdOpenChannel> OcViewChannelByUrlWithHttpInfo (string apiToken, string channelUrl);
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateAnOpenChannelRequest"> (optional)</param>
+        /// <returns>ApiResponse of SendbirdOpenChannel</returns>
+        ApiResponse<SendbirdOpenChannel> UpdateAnOpenChannelWithHttpInfo (string channelUrl, string apiToken = default(string), UpdateAnOpenChannelRequest updateAnOpenChannelRequest = default(UpdateAnOpenChannelRequest));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
-        /// Cancel the registration of operators
+        /// Create an open channel
         /// </summary>
         /// <remarks>
-        /// ## Cancel the registration of operators  Cancels the registration of operators from an open channel but leave them as participants.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// ## Create an open channel  You can create an [open channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel) that facilitates conversations for millions of users. Open channels allow a seamless chat experience possible for all participants by using [dynamic partitioning](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-how-dynamic-partitioning-works) which creates subchannels that each handle up to tens of thousands of participants.  Because users don't need invitations to join open channels, short-lived live events like concerts or live streams that don't require a sustained membership are good use cases for open channels.  [https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel](https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="operatorIds"></param>
-        /// <param name="deleteAll"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="createAnOpenChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task OcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of SendbirdOpenChannel</returns>
+        System.Threading.Tasks.Task<SendbirdOpenChannel> CreateAnOpenChannelAsync (string apiToken = default(string), CreateAnOpenChannelRequest createAnOpenChannelRequest = default(CreateAnOpenChannelRequest), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
-        /// Cancel the registration of operators
+        /// Create an open channel
         /// </summary>
         /// <remarks>
-        /// ## Cancel the registration of operators  Cancels the registration of operators from an open channel but leave them as participants.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// ## Create an open channel  You can create an [open channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel) that facilitates conversations for millions of users. Open channels allow a seamless chat experience possible for all participants by using [dynamic partitioning](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-how-dynamic-partitioning-works) which creates subchannels that each handle up to tens of thousands of participants.  Because users don't need invitations to join open channels, short-lived live events like concerts or live streams that don't require a sustained membership are good use cases for open channels.  [https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel](https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="operatorIds"></param>
-        /// <param name="deleteAll"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="createAnOpenChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> OcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (SendbirdOpenChannel)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SendbirdOpenChannel>> CreateAnOpenChannelWithHttpInfoAsync (string apiToken = default(string), CreateAnOpenChannelRequest createAnOpenChannelRequest = default(CreateAnOpenChannelRequest), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// Create a channel
+        /// Delete an open channel
         /// </summary>
         /// <remarks>
-        /// ## Create a channel  Creates an open channel.  >__Note__: Classic open channels created before the deprecation date of March 2021 will maintain their original form and functions. However, new applications created after December 15, 2020, will be able to create dynamic partitioning open channels only.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel
+        /// ## Delete an open channel  You can delete an open channel using this API. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-an-open-channel#1-delete-an-open-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="ocCreateChannelData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdOpenChannel</returns>
-        System.Threading.Tasks.Task<SendBirdOpenChannel> OcCreateChannelAsync (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> DeleteAnOpenChannelAsync (string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
-        /// Create a channel
+        /// Delete an open channel
         /// </summary>
         /// <remarks>
-        /// ## Create a channel  Creates an open channel.  >__Note__: Classic open channels created before the deprecation date of March 2021 will maintain their original form and functions. However, new applications created after December 15, 2020, will be able to create dynamic partitioning open channels only.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel
+        /// ## Delete an open channel  You can delete an open channel using this API. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-an-open-channel#1-delete-an-open-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="ocCreateChannelData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcCreateChannelWithHttpInfoAsync (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteAnOpenChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// Delete a channel
+        /// Get an open channel
         /// </summary>
         /// <remarks>
-        /// ## Delete a channel  Deletes an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Get an open channel  This action retrieves information about a specific [open channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel).  [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-an-open-channel#1-get-an-open-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-an-open-channel#1-get-an-open-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="includeOperators">Determines whether to include a list of operators in the response. (Default: false) (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of SendbirdOpenChannel</returns>
+        System.Threading.Tasks.Task<SendbirdOpenChannel> GetAnOpenChannelAsync (string channelUrl, string apiToken = default(string), bool? includeOperators = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
-        /// Delete a channel
+        /// Get an open channel
         /// </summary>
         /// <remarks>
-        /// ## Delete a channel  Deletes an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Get an open channel  This action retrieves information about a specific [open channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel).  [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-an-open-channel#1-get-an-open-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-an-open-channel#1-get-an-open-channel)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="includeOperators">Determines whether to include a list of operators in the response. (Default: false) (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (SendbirdOpenChannel)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SendbirdOpenChannel>> GetAnOpenChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), bool? includeOperators = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// List channels
+        /// List operators of an open channel
         /// </summary>
         /// <remarks>
-        /// ## List channels  Retrieves a list of open channels. You can query the list using various parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## List operators of an open channel  You can retrieve a list of operators of an open channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/list-operators-of-an-open-channel#1-list-operators-of-an-open-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <param name="customTypes"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ListOperatorsResponse</returns>
+        System.Threading.Tasks.Task<ListOperatorsResponse> ListChannelOperatorsAsync (string channelUrl, string token = default(string), int? limit = default(int?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// List operators of an open channel
+        /// </summary>
+        /// <remarks>
+        /// ## List operators of an open channel  You can retrieve a list of operators of an open channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/list-operators-of-an-open-channel#1-list-operators-of-an-open-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (ListOperatorsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListOperatorsResponse>> ListChannelOperatorsWithHttpInfoAsync (string channelUrl, string token = default(string), int? limit = default(int?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
+        /// List open channels
+        /// </summary>
+        /// <remarks>
+        /// ## List open channels  This action retrieves a list of [open channels](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel). You can use various query parameters to determine the search scope and select what kind of information you want to receive about the queried channels.  [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-open-channels#1-list-open-channels](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-open-channels#1-list-open-channels)
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="token"> (optional)</param>
+        /// <param name="channelUrls">Specifies a comma-separated string of one or more open channel URLs to restrict the search scope. URL encoding each channel URL is recommended. (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="customTypes">Specifies a comma-separated string of one or more custom types to filter open channels. Urlencoding each type is recommended (for example, ?custom_types&#x3D;urlencoded_type_1,urlencoded_type_2). If not specified, all channels are returned, regardless of their custom type. (optional)</param>
         /// <param name="nameContains"> (optional)</param>
         /// <param name="urlContains"> (optional)</param>
-        /// <param name="showFrozen"> (optional)</param>
-        /// <param name="showMetadata"> (optional)</param>
-        /// <param name="customType"> (optional)</param>
+        /// <param name="showFrozen">Determines whether to include frozen channels in the response. Frozen channels are channels where only channel operators are allowed to send messages. (Default: true) (optional)</param>
+        /// <param name="showMetadata">Determines whether to include channel metadata in the response. (Default: false) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcListChannelsResponse</returns>
-        System.Threading.Tasks.Task<OcListChannelsResponse> OcListChannelsAsync (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ListOpenChannelsResponse</returns>
+        System.Threading.Tasks.Task<ListOpenChannelsResponse> ListOpenChannelsAsync (string token = default(string), string channelUrls = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
-        /// List channels
+        /// List open channels
         /// </summary>
         /// <remarks>
-        /// ## List channels  Retrieves a list of open channels. You can query the list using various parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## List open channels  This action retrieves a list of [open channels](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel). You can use various query parameters to determine the search scope and select what kind of information you want to receive about the queried channels.  [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-open-channels#1-list-open-channels](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-open-channels#1-list-open-channels)
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
+        /// <param name="channelUrls">Specifies a comma-separated string of one or more open channel URLs to restrict the search scope. URL encoding each channel URL is recommended. (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <param name="customTypes"> (optional)</param>
+        /// <param name="customTypes">Specifies a comma-separated string of one or more custom types to filter open channels. Urlencoding each type is recommended (for example, ?custom_types&#x3D;urlencoded_type_1,urlencoded_type_2). If not specified, all channels are returned, regardless of their custom type. (optional)</param>
         /// <param name="nameContains"> (optional)</param>
         /// <param name="urlContains"> (optional)</param>
-        /// <param name="showFrozen"> (optional)</param>
-        /// <param name="showMetadata"> (optional)</param>
-        /// <param name="customType"> (optional)</param>
+        /// <param name="showFrozen">Determines whether to include frozen channels in the response. Frozen channels are channels where only channel operators are allowed to send messages. (Default: true) (optional)</param>
+        /// <param name="showMetadata">Determines whether to include channel metadata in the response. (Default: false) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcListChannelsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcListChannelsResponse>> OcListChannelsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (ListOpenChannelsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ListOpenChannelsResponse>> ListOpenChannelsWithHttpInfoAsync (string token = default(string), string channelUrls = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// List operators
+        /// Register operators to an open channel
         /// </summary>
         /// <remarks>
-        /// ## List operators  Retrieves a list of operators of an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// ## Register operators to an open channel  You can register one or more operators to an open channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/register-operators-to-an-open-channel#1-register-operators-to-an-open-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="registerOperatorsToAGroupChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcListOperatorsResponse</returns>
-        System.Threading.Tasks.Task<OcListOperatorsResponse> OcListOperatorsAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> RegisterOperatorsAsync (string channelUrl, string apiToken = default(string), RegisterOperatorsToAGroupChannelRequest registerOperatorsToAGroupChannelRequest = default(RegisterOperatorsToAGroupChannelRequest), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
-        /// List operators
+        /// Register operators to an open channel
         /// </summary>
         /// <remarks>
-        /// ## List operators  Retrieves a list of operators of an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// ## Register operators to an open channel  You can register one or more operators to an open channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/register-operators-to-an-open-channel#1-register-operators-to-an-open-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="registerOperatorsToAGroupChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcListOperatorsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcListOperatorsResponse>> OcListOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> RegisterOperatorsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), RegisterOperatorsToAGroupChannelRequest registerOperatorsToAGroupChannelRequest = default(RegisterOperatorsToAGroupChannelRequest), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// List participants
+        /// Unregister operators from an open channel
         /// </summary>
         /// <remarks>
-        /// ## List participants  Retrieves a list of the participants of an open channel. A participant refers to a user who has entered the open channel and is currently online.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-participants - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of participants in.
+        /// ## Unregister operators from an open channel  You can unregister operators in an open channel but keep them in the channel as participants using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/unregister-operators-from-an-open-channel#1-unregister-operators-from-an-open-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="operatorIds">Specifies an array of one or more operator IDs to unregister from the channel. The operators in this array remain as participants of the channel after losing their operational roles. Urlencoding each operator ID is recommended. An example of a Urlencoded array would be ?operator_ids&#x3D;urlencoded_id_1,urlencoded_id_2.</param>
+        /// <param name="deleteAll">Determines whether to unregister all operators and leave them as the participants of the channel. When this is set to true, the operator_ids property isn&#39;t effective and doesn&#39;t need to be specified in the request. (Default: false) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcListParticipantsResponse</returns>
-        System.Threading.Tasks.Task<OcListParticipantsResponse> OcListParticipantsAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> UnregisterOperatorsAsync (string channelUrl, string operatorIds, bool? deleteAll = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
-        /// List participants
+        /// Unregister operators from an open channel
         /// </summary>
         /// <remarks>
-        /// ## List participants  Retrieves a list of the participants of an open channel. A participant refers to a user who has entered the open channel and is currently online.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-participants - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of participants in.
+        /// ## Unregister operators from an open channel  You can unregister operators in an open channel but keep them in the channel as participants using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/unregister-operators-from-an-open-channel#1-unregister-operators-from-an-open-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="operatorIds">Specifies an array of one or more operator IDs to unregister from the channel. The operators in this array remain as participants of the channel after losing their operational roles. Urlencoding each operator ID is recommended. An example of a Urlencoded array would be ?operator_ids&#x3D;urlencoded_id_1,urlencoded_id_2.</param>
+        /// <param name="deleteAll">Determines whether to unregister all operators and leave them as the participants of the channel. When this is set to true, the operator_ids property isn&#39;t effective and doesn&#39;t need to be specified in the request. (Default: false) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcListParticipantsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcListParticipantsResponse>> OcListParticipantsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> UnregisterOperatorsWithHttpInfoAsync (string channelUrl, string operatorIds, bool? deleteAll = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// Register operators
+        /// Update an open channel
         /// </summary>
         /// <remarks>
-        /// ## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update an open channel  You can update information about an open channel using this API. You can add a cover image to a channel to better identify the channel or specify a custom channel type for grouping channels by custom type. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-an-open-channel#1-update-an-open-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocRegisterOperatorsData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateAnOpenChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcRegisterOperatorsAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of SendbirdOpenChannel</returns>
+        System.Threading.Tasks.Task<SendbirdOpenChannel> UpdateAnOpenChannelAsync (string channelUrl, string apiToken = default(string), UpdateAnOpenChannelRequest updateAnOpenChannelRequest = default(UpdateAnOpenChannelRequest), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
-        /// Register operators
+        /// Update an open channel
         /// </summary>
         /// <remarks>
-        /// ## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// ## Update an open channel  You can update information about an open channel using this API. You can add a cover image to a channel to better identify the channel or specify a custom channel type for grouping channels by custom type. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-an-open-channel#1-update-an-open-channel
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocRegisterOperatorsData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateAnOpenChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// Update a channel
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel  Updates information on an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdOpenChannel</returns>
-        System.Threading.Tasks.Task<SendBirdOpenChannel> OcUpdateChannelByUrlAsync (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Update a channel
-        /// </summary>
-        /// <remarks>
-        /// ## Update a channel  Updates information on an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcUpdateChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// View a channel
-        /// </summary>
-        /// <remarks>
-        /// ## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdOpenChannel</returns>
-        System.Threading.Tasks.Task<SendBirdOpenChannel> OcViewChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// View a channel
-        /// </summary>
-        /// <remarks>
-        /// ## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </remarks>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcViewChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (SendbirdOpenChannel)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SendbirdOpenChannel>> UpdateAnOpenChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), UpdateAnOpenChannelRequest updateAnOpenChannelRequest = default(UpdateAnOpenChannelRequest), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -631,191 +579,27 @@ namespace sendbird_platform_sdk.Api
         }
 
         /// <summary>
-        /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from an open channel but leave them as participants.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// Create an open channel ## Create an open channel  You can create an [open channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel) that facilitates conversations for millions of users. Open channels allow a seamless chat experience possible for all participants by using [dynamic partitioning](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-how-dynamic-partitioning-works) which creates subchannels that each handle up to tens of thousands of participants.  Because users don't need invitations to join open channels, short-lived live events like concerts or live streams that don't require a sustained membership are good use cases for open channels.  [https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel](https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="operatorIds"></param>
-        /// <param name="deleteAll"> (optional)</param>
-        /// <returns></returns>
-        public void OcCancelTheRegistrationOfOperators (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?))
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="createAnOpenChannelRequest"> (optional)</param>
+        /// <returns>SendbirdOpenChannel</returns>
+        public SendbirdOpenChannel CreateAnOpenChannel (string apiToken = default(string), CreateAnOpenChannelRequest createAnOpenChannelRequest = default(CreateAnOpenChannelRequest))
         {
-             OcCancelTheRegistrationOfOperatorsWithHttpInfo(apiToken, channelUrl, operatorIds, deleteAll);
-        }
-
-        /// <summary>
-        /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from an open channel but leave them as participants.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="operatorIds"></param>
-        /// <param name="deleteAll"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> OcCancelTheRegistrationOfOperatorsWithHttpInfo (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcCancelTheRegistrationOfOperators");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcCancelTheRegistrationOfOperators");
-            // verify the required parameter 'operatorIds' is set
-            if (operatorIds == null)
-                throw new ApiException(400, "Missing required parameter 'operatorIds' when calling OpenChannelApi->OcCancelTheRegistrationOfOperators");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/operators";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (operatorIds != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("multi", "operator_ids", operatorIds)); // query parameter
-            if (deleteAll != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "delete_all", deleteAll)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcCancelTheRegistrationOfOperators", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
-        }
-
-        /// <summary>
-        /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from an open channel but leave them as participants.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="operatorIds"></param>
-        /// <param name="deleteAll"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task OcCancelTheRegistrationOfOperatorsAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             await OcCancelTheRegistrationOfOperatorsWithHttpInfoAsync(apiToken, channelUrl, operatorIds, deleteAll, cancellationToken);
-
-        }
-
-        /// <summary>
-        /// Cancel the registration of operators ## Cancel the registration of operators  Cancels the registration of operators from an open channel but leave them as participants.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-cancel-the-registration-of-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to cancel the registration of operators.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="operatorIds"></param>
-        /// <param name="deleteAll"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> OcCancelTheRegistrationOfOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, List<string> operatorIds, bool? deleteAll = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcCancelTheRegistrationOfOperators");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcCancelTheRegistrationOfOperators");
-            // verify the required parameter 'operatorIds' is set
-            if (operatorIds == null)
-                throw new ApiException(400, "Missing required parameter 'operatorIds' when calling OpenChannelApi->OcCancelTheRegistrationOfOperators");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/operators";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (operatorIds != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("multi", "operator_ids", operatorIds)); // query parameter
-            if (deleteAll != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "delete_all", deleteAll)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcCancelTheRegistrationOfOperators", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                null);
-        }
-
-        /// <summary>
-        /// Create a channel ## Create a channel  Creates an open channel.  >__Note__: Classic open channels created before the deprecation date of March 2021 will maintain their original form and functions. However, new applications created after December 15, 2020, will be able to create dynamic partitioning open channels only.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="ocCreateChannelData"> (optional)</param>
-        /// <returns>SendBirdOpenChannel</returns>
-        public SendBirdOpenChannel OcCreateChannel (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData))
-        {
-             ApiResponse<SendBirdOpenChannel> localVarResponse = OcCreateChannelWithHttpInfo(apiToken, ocCreateChannelData);
+             ApiResponse<SendbirdOpenChannel> localVarResponse = CreateAnOpenChannelWithHttpInfo(apiToken, createAnOpenChannelRequest);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Create a channel ## Create a channel  Creates an open channel.  >__Note__: Classic open channels created before the deprecation date of March 2021 will maintain their original form and functions. However, new applications created after December 15, 2020, will be able to create dynamic partitioning open channels only.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel
+        /// Create an open channel ## Create an open channel  You can create an [open channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel) that facilitates conversations for millions of users. Open channels allow a seamless chat experience possible for all participants by using [dynamic partitioning](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-how-dynamic-partitioning-works) which creates subchannels that each handle up to tens of thousands of participants.  Because users don't need invitations to join open channels, short-lived live events like concerts or live streams that don't require a sustained membership are good use cases for open channels.  [https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel](https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="ocCreateChannelData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        public ApiResponse<SendBirdOpenChannel> OcCreateChannelWithHttpInfo (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData))
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="createAnOpenChannelRequest"> (optional)</param>
+        /// <returns>ApiResponse of SendbirdOpenChannel</returns>
+        public ApiResponse<SendbirdOpenChannel> CreateAnOpenChannelWithHttpInfo (string apiToken = default(string), CreateAnOpenChannelRequest createAnOpenChannelRequest = default(CreateAnOpenChannelRequest))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcCreateChannel");
 
             var localVarPath = "/v3/open_channels";
             var localVarPathParams = new Dictionary<String, String>();
@@ -839,14 +623,14 @@ namespace sendbird_platform_sdk.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (ocCreateChannelData != null && ocCreateChannelData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (createAnOpenChannelRequest != null && createAnOpenChannelRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(ocCreateChannelData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(createAnOpenChannelRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = ocCreateChannelData; // byte array
+                localVarPostBody = createAnOpenChannelRequest; // byte array
             }
 
 
@@ -859,43 +643,40 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("OcCreateChannel", localVarResponse);
+                Exception exception = ExceptionFactory("CreateAnOpenChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdOpenChannel>(localVarStatusCode,
+            return new ApiResponse<SendbirdOpenChannel>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdOpenChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdOpenChannel)));
+                (SendbirdOpenChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendbirdOpenChannel)));
         }
 
         /// <summary>
-        /// Create a channel ## Create a channel  Creates an open channel.  >__Note__: Classic open channels created before the deprecation date of March 2021 will maintain their original form and functions. However, new applications created after December 15, 2020, will be able to create dynamic partitioning open channels only.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel
+        /// Create an open channel ## Create an open channel  You can create an [open channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel) that facilitates conversations for millions of users. Open channels allow a seamless chat experience possible for all participants by using [dynamic partitioning](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-how-dynamic-partitioning-works) which creates subchannels that each handle up to tens of thousands of participants.  Because users don't need invitations to join open channels, short-lived live events like concerts or live streams that don't require a sustained membership are good use cases for open channels.  [https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel](https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="ocCreateChannelData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="createAnOpenChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdOpenChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcCreateChannelAsync (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of SendbirdOpenChannel</returns>
+        public async System.Threading.Tasks.Task<SendbirdOpenChannel> CreateAnOpenChannelAsync (string apiToken = default(string), CreateAnOpenChannelRequest createAnOpenChannelRequest = default(CreateAnOpenChannelRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdOpenChannel> localVarResponse = await OcCreateChannelWithHttpInfoAsync(apiToken, ocCreateChannelData, cancellationToken);
+             ApiResponse<SendbirdOpenChannel> localVarResponse = await CreateAnOpenChannelWithHttpInfoAsync(apiToken, createAnOpenChannelRequest, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Create a channel ## Create a channel  Creates an open channel.  >__Note__: Classic open channels created before the deprecation date of March 2021 will maintain their original form and functions. However, new applications created after December 15, 2020, will be able to create dynamic partitioning open channels only.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel
+        /// Create an open channel ## Create an open channel  You can create an [open channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel) that facilitates conversations for millions of users. Open channels allow a seamless chat experience possible for all participants by using [dynamic partitioning](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#4-how-dynamic-partitioning-works) which creates subchannels that each handle up to tens of thousands of participants.  Because users don't need invitations to join open channels, short-lived live events like concerts or live streams that don't require a sustained membership are good use cases for open channels.  [https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel](https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-create-a-channel)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="ocCreateChannelData"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="createAnOpenChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcCreateChannelWithHttpInfoAsync (string apiToken, OcCreateChannelData ocCreateChannelData = default(OcCreateChannelData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (SendbirdOpenChannel)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<SendbirdOpenChannel>> CreateAnOpenChannelWithHttpInfoAsync (string apiToken = default(string), CreateAnOpenChannelRequest createAnOpenChannelRequest = default(CreateAnOpenChannelRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcCreateChannel");
 
             var localVarPath = "/v3/open_channels";
             var localVarPathParams = new Dictionary<String, String>();
@@ -919,14 +700,14 @@ namespace sendbird_platform_sdk.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (ocCreateChannelData != null && ocCreateChannelData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (createAnOpenChannelRequest != null && createAnOpenChannelRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(ocCreateChannelData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(createAnOpenChannelRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = ocCreateChannelData; // byte array
+                localVarPostBody = createAnOpenChannelRequest; // byte array
             }
 
 
@@ -939,43 +720,40 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("OcCreateChannel", localVarResponse);
+                Exception exception = ExceptionFactory("CreateAnOpenChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdOpenChannel>(localVarStatusCode,
+            return new ApiResponse<SendbirdOpenChannel>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdOpenChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdOpenChannel)));
+                (SendbirdOpenChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendbirdOpenChannel)));
         }
 
         /// <summary>
-        /// Delete a channel ## Delete a channel  Deletes an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Delete an open channel ## Delete an open channel  You can delete an open channel using this API. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-an-open-channel#1-delete-an-open-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <returns>OcDeleteChannelByUrl200Response</returns>
-        public OcDeleteChannelByUrl200Response OcDeleteChannelByUrl (string apiToken, string channelUrl)
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>Object</returns>
+        public Object DeleteAnOpenChannel (string channelUrl, string apiToken = default(string))
         {
-             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = OcDeleteChannelByUrlWithHttpInfo(apiToken, channelUrl);
+             ApiResponse<Object> localVarResponse = DeleteAnOpenChannelWithHttpInfo(channelUrl, apiToken);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Delete a channel ## Delete a channel  Deletes an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Delete an open channel ## Delete an open channel  You can delete an open channel using this API. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-an-open-channel#1-delete-an-open-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        public ApiResponse<OcDeleteChannelByUrl200Response> OcDeleteChannelByUrlWithHttpInfo (string apiToken, string channelUrl)
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse<Object> DeleteAnOpenChannelWithHttpInfo (string channelUrl, string apiToken = default(string))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcDeleteChannelByUrl");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcDeleteChannelByUrl");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->DeleteAnOpenChannel");
 
             var localVarPath = "/v3/open_channels/{channel_url}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -999,7 +777,7 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
 
 
             // make the HTTP request
@@ -1011,46 +789,43 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("OcDeleteChannelByUrl", localVarResponse);
+                Exception exception = ExceptionFactory("DeleteAnOpenChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
-        /// Delete a channel ## Delete a channel  Deletes an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Delete an open channel ## Delete an open channel  You can delete an open channel using this API. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-an-open-channel#1-delete-an-open-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcDeleteChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> DeleteAnOpenChannelAsync (string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await OcDeleteChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, cancellationToken);
+             ApiResponse<Object> localVarResponse = await DeleteAnOpenChannelWithHttpInfoAsync(channelUrl, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Delete a channel ## Delete a channel  Deletes an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-delete-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Delete an open channel ## Delete an open channel  You can delete an open channel using this API. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/delete-an-open-channel#1-delete-an-open-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcDeleteChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteAnOpenChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcDeleteChannelByUrl");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcDeleteChannelByUrl");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->DeleteAnOpenChannel");
 
             var localVarPath = "/v3/open_channels/{channel_url}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1074,7 +849,7 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
 
 
             // make the HTTP request
@@ -1086,54 +861,351 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("OcDeleteChannelByUrl", localVarResponse);
+                Exception exception = ExceptionFactory("DeleteAnOpenChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
-        /// List channels ## List channels  Retrieves a list of open channels. You can query the list using various parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Get an open channel ## Get an open channel  This action retrieves information about a specific [open channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel).  [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-an-open-channel#1-get-an-open-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-an-open-channel#1-get-an-open-channel)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <param name="customTypes"> (optional)</param>
-        /// <param name="nameContains"> (optional)</param>
-        /// <param name="urlContains"> (optional)</param>
-        /// <param name="showFrozen"> (optional)</param>
-        /// <param name="showMetadata"> (optional)</param>
-        /// <param name="customType"> (optional)</param>
-        /// <returns>OcListChannelsResponse</returns>
-        public OcListChannelsResponse OcListChannels (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string))
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="includeOperators">Determines whether to include a list of operators in the response. (Default: false) (optional)</param>
+        /// <returns>SendbirdOpenChannel</returns>
+        public SendbirdOpenChannel GetAnOpenChannel (string channelUrl, string apiToken = default(string), bool? includeOperators = default(bool?))
         {
-             ApiResponse<OcListChannelsResponse> localVarResponse = OcListChannelsWithHttpInfo(apiToken, token, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, customType);
+             ApiResponse<SendbirdOpenChannel> localVarResponse = GetAnOpenChannelWithHttpInfo(channelUrl, apiToken, includeOperators);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// List channels ## List channels  Retrieves a list of open channels. You can query the list using various parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Get an open channel ## Get an open channel  This action retrieves information about a specific [open channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel).  [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-an-open-channel#1-get-an-open-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-an-open-channel#1-get-an-open-channel)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="includeOperators">Determines whether to include a list of operators in the response. (Default: false) (optional)</param>
+        /// <returns>ApiResponse of SendbirdOpenChannel</returns>
+        public ApiResponse<SendbirdOpenChannel> GetAnOpenChannelWithHttpInfo (string channelUrl, string apiToken = default(string), bool? includeOperators = default(bool?))
+        {
+            // verify the required parameter 'channelUrl' is set
+            if (channelUrl == null)
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->GetAnOpenChannel");
+
+            var localVarPath = "/v3/open_channels/{channel_url}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
+            if (includeOperators != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "include_operators", includeOperators)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetAnOpenChannel", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<SendbirdOpenChannel>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (SendbirdOpenChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendbirdOpenChannel)));
+        }
+
+        /// <summary>
+        /// Get an open channel ## Get an open channel  This action retrieves information about a specific [open channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel).  [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-an-open-channel#1-get-an-open-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-an-open-channel#1-get-an-open-channel)
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="includeOperators">Determines whether to include a list of operators in the response. (Default: false) (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of SendbirdOpenChannel</returns>
+        public async System.Threading.Tasks.Task<SendbirdOpenChannel> GetAnOpenChannelAsync (string channelUrl, string apiToken = default(string), bool? includeOperators = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<SendbirdOpenChannel> localVarResponse = await GetAnOpenChannelWithHttpInfoAsync(channelUrl, apiToken, includeOperators, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get an open channel ## Get an open channel  This action retrieves information about a specific [open channel](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel).  [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-an-open-channel#1-get-an-open-channel](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/get-an-open-channel#1-get-an-open-channel)
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="includeOperators">Determines whether to include a list of operators in the response. (Default: false) (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (SendbirdOpenChannel)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<SendbirdOpenChannel>> GetAnOpenChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), bool? includeOperators = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'channelUrl' is set
+            if (channelUrl == null)
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->GetAnOpenChannel");
+
+            var localVarPath = "/v3/open_channels/{channel_url}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
+            if (includeOperators != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "include_operators", includeOperators)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetAnOpenChannel", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<SendbirdOpenChannel>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (SendbirdOpenChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendbirdOpenChannel)));
+        }
+
+        /// <summary>
+        /// List operators of an open channel ## List operators of an open channel  You can retrieve a list of operators of an open channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/list-operators-of-an-open-channel#1-list-operators-of-an-open-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
         /// <param name="token"> (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <param name="customTypes"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ListOperatorsResponse</returns>
+        public ListOperatorsResponse ListChannelOperators (string channelUrl, string token = default(string), int? limit = default(int?), string apiToken = default(string))
+        {
+             ApiResponse<ListOperatorsResponse> localVarResponse = ListChannelOperatorsWithHttpInfo(channelUrl, token, limit, apiToken);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// List operators of an open channel ## List operators of an open channel  You can retrieve a list of operators of an open channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/list-operators-of-an-open-channel#1-list-operators-of-an-open-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of ListOperatorsResponse</returns>
+        public ApiResponse<ListOperatorsResponse> ListChannelOperatorsWithHttpInfo (string channelUrl, string token = default(string), int? limit = default(int?), string apiToken = default(string))
+        {
+            // verify the required parameter 'channelUrl' is set
+            if (channelUrl == null)
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->ListChannelOperators");
+
+            var localVarPath = "/v3/open_channels/{channel_url}/operators";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
+            if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
+            if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ListChannelOperators", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ListOperatorsResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (ListOperatorsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListOperatorsResponse)));
+        }
+
+        /// <summary>
+        /// List operators of an open channel ## List operators of an open channel  You can retrieve a list of operators of an open channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/list-operators-of-an-open-channel#1-list-operators-of-an-open-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ListOperatorsResponse</returns>
+        public async System.Threading.Tasks.Task<ListOperatorsResponse> ListChannelOperatorsAsync (string channelUrl, string token = default(string), int? limit = default(int?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<ListOperatorsResponse> localVarResponse = await ListChannelOperatorsWithHttpInfoAsync(channelUrl, token, limit, apiToken, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// List operators of an open channel ## List operators of an open channel  You can retrieve a list of operators of an open channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/list-operators-of-an-open-channel#1-list-operators-of-an-open-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="token"> (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (ListOperatorsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListOperatorsResponse>> ListChannelOperatorsWithHttpInfoAsync (string channelUrl, string token = default(string), int? limit = default(int?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'channelUrl' is set
+            if (channelUrl == null)
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->ListChannelOperators");
+
+            var localVarPath = "/v3/open_channels/{channel_url}/operators";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
+            if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
+            if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ListChannelOperators", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ListOperatorsResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (ListOperatorsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListOperatorsResponse)));
+        }
+
+        /// <summary>
+        /// List open channels ## List open channels  This action retrieves a list of [open channels](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel). You can use various query parameters to determine the search scope and select what kind of information you want to receive about the queried channels.  [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-open-channels#1-list-open-channels](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-open-channels#1-list-open-channels)
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="token"> (optional)</param>
+        /// <param name="channelUrls">Specifies a comma-separated string of one or more open channel URLs to restrict the search scope. URL encoding each channel URL is recommended. (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="customTypes">Specifies a comma-separated string of one or more custom types to filter open channels. Urlencoding each type is recommended (for example, ?custom_types&#x3D;urlencoded_type_1,urlencoded_type_2). If not specified, all channels are returned, regardless of their custom type. (optional)</param>
         /// <param name="nameContains"> (optional)</param>
         /// <param name="urlContains"> (optional)</param>
-        /// <param name="showFrozen"> (optional)</param>
-        /// <param name="showMetadata"> (optional)</param>
-        /// <param name="customType"> (optional)</param>
-        /// <returns>ApiResponse of OcListChannelsResponse</returns>
-        public ApiResponse<OcListChannelsResponse> OcListChannelsWithHttpInfo (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string))
+        /// <param name="showFrozen">Determines whether to include frozen channels in the response. Frozen channels are channels where only channel operators are allowed to send messages. (Default: true) (optional)</param>
+        /// <param name="showMetadata">Determines whether to include channel metadata in the response. (Default: false) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ListOpenChannelsResponse</returns>
+        public ListOpenChannelsResponse ListOpenChannels (string token = default(string), string channelUrls = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string apiToken = default(string))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListChannels");
+             ApiResponse<ListOpenChannelsResponse> localVarResponse = ListOpenChannelsWithHttpInfo(token, channelUrls, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, apiToken);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// List open channels ## List open channels  This action retrieves a list of [open channels](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel). You can use various query parameters to determine the search scope and select what kind of information you want to receive about the queried channels.  [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-open-channels#1-list-open-channels](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-open-channels#1-list-open-channels)
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="token"> (optional)</param>
+        /// <param name="channelUrls">Specifies a comma-separated string of one or more open channel URLs to restrict the search scope. URL encoding each channel URL is recommended. (optional)</param>
+        /// <param name="limit"> (optional)</param>
+        /// <param name="customTypes">Specifies a comma-separated string of one or more custom types to filter open channels. Urlencoding each type is recommended (for example, ?custom_types&#x3D;urlencoded_type_1,urlencoded_type_2). If not specified, all channels are returned, regardless of their custom type. (optional)</param>
+        /// <param name="nameContains"> (optional)</param>
+        /// <param name="urlContains"> (optional)</param>
+        /// <param name="showFrozen">Determines whether to include frozen channels in the response. Frozen channels are channels where only channel operators are allowed to send messages. (Default: true) (optional)</param>
+        /// <param name="showMetadata">Determines whether to include channel metadata in the response. (Default: false) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of ListOpenChannelsResponse</returns>
+        public ApiResponse<ListOpenChannelsResponse> ListOpenChannelsWithHttpInfo (string token = default(string), string channelUrls = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string apiToken = default(string))
+        {
 
             var localVarPath = "/v3/open_channels";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1157,14 +1229,14 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
+            if (channelUrls != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "channel_urls", channelUrls)); // query parameter
             if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
             if (customTypes != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "custom_types", customTypes)); // query parameter
             if (nameContains != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "name_contains", nameContains)); // query parameter
             if (urlContains != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "url_contains", urlContains)); // query parameter
             if (showFrozen != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_frozen", showFrozen)); // query parameter
             if (showMetadata != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_metadata", showMetadata)); // query parameter
-            if (customType != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "custom_type", customType)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
 
 
             // make the HTTP request
@@ -1176,57 +1248,54 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("OcListChannels", localVarResponse);
+                Exception exception = ExceptionFactory("ListOpenChannels", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<OcListChannelsResponse>(localVarStatusCode,
+            return new ApiResponse<ListOpenChannelsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcListChannelsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListChannelsResponse)));
+                (ListOpenChannelsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListOpenChannelsResponse)));
         }
 
         /// <summary>
-        /// List channels ## List channels  Retrieves a list of open channels. You can query the list using various parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// List open channels ## List open channels  This action retrieves a list of [open channels](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel). You can use various query parameters to determine the search scope and select what kind of information you want to receive about the queried channels.  [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-open-channels#1-list-open-channels](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-open-channels#1-list-open-channels)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
+        /// <param name="channelUrls">Specifies a comma-separated string of one or more open channel URLs to restrict the search scope. URL encoding each channel URL is recommended. (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <param name="customTypes"> (optional)</param>
+        /// <param name="customTypes">Specifies a comma-separated string of one or more custom types to filter open channels. Urlencoding each type is recommended (for example, ?custom_types&#x3D;urlencoded_type_1,urlencoded_type_2). If not specified, all channels are returned, regardless of their custom type. (optional)</param>
         /// <param name="nameContains"> (optional)</param>
         /// <param name="urlContains"> (optional)</param>
-        /// <param name="showFrozen"> (optional)</param>
-        /// <param name="showMetadata"> (optional)</param>
-        /// <param name="customType"> (optional)</param>
+        /// <param name="showFrozen">Determines whether to include frozen channels in the response. Frozen channels are channels where only channel operators are allowed to send messages. (Default: true) (optional)</param>
+        /// <param name="showMetadata">Determines whether to include channel metadata in the response. (Default: false) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcListChannelsResponse</returns>
-        public async System.Threading.Tasks.Task<OcListChannelsResponse> OcListChannelsAsync (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ListOpenChannelsResponse</returns>
+        public async System.Threading.Tasks.Task<ListOpenChannelsResponse> ListOpenChannelsAsync (string token = default(string), string channelUrls = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<OcListChannelsResponse> localVarResponse = await OcListChannelsWithHttpInfoAsync(apiToken, token, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, customType, cancellationToken);
+             ApiResponse<ListOpenChannelsResponse> localVarResponse = await ListOpenChannelsWithHttpInfoAsync(token, channelUrls, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, apiToken, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// List channels ## List channels  Retrieves a list of open channels. You can query the list using various parameters.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-channels - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// List open channels ## List open channels  This action retrieves a list of [open channels](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel). You can use various query parameters to determine the search scope and select what kind of information you want to receive about the queried channels.  [https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-open-channels#1-list-open-channels](https://sendbird.com/docs/chat/platform-api/v3/channel/listing-channels-in-an-application/list-open-channels#1-list-open-channels)
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
         /// <param name="token"> (optional)</param>
+        /// <param name="channelUrls">Specifies a comma-separated string of one or more open channel URLs to restrict the search scope. URL encoding each channel URL is recommended. (optional)</param>
         /// <param name="limit"> (optional)</param>
-        /// <param name="customTypes"> (optional)</param>
+        /// <param name="customTypes">Specifies a comma-separated string of one or more custom types to filter open channels. Urlencoding each type is recommended (for example, ?custom_types&#x3D;urlencoded_type_1,urlencoded_type_2). If not specified, all channels are returned, regardless of their custom type. (optional)</param>
         /// <param name="nameContains"> (optional)</param>
         /// <param name="urlContains"> (optional)</param>
-        /// <param name="showFrozen"> (optional)</param>
-        /// <param name="showMetadata"> (optional)</param>
-        /// <param name="customType"> (optional)</param>
+        /// <param name="showFrozen">Determines whether to include frozen channels in the response. Frozen channels are channels where only channel operators are allowed to send messages. (Default: true) (optional)</param>
+        /// <param name="showMetadata">Determines whether to include channel metadata in the response. (Default: false) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcListChannelsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcListChannelsResponse>> OcListChannelsWithHttpInfoAsync (string apiToken, string token = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string customType = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (ListOpenChannelsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ListOpenChannelsResponse>> ListOpenChannelsWithHttpInfoAsync (string token = default(string), string channelUrls = default(string), int? limit = default(int?), string customTypes = default(string), string nameContains = default(string), string urlContains = default(string), bool? showFrozen = default(bool?), bool? showMetadata = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListChannels");
 
             var localVarPath = "/v3/open_channels";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1250,14 +1319,14 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
+            if (channelUrls != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "channel_urls", channelUrls)); // query parameter
             if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
             if (customTypes != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "custom_types", customTypes)); // query parameter
             if (nameContains != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "name_contains", nameContains)); // query parameter
             if (urlContains != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "url_contains", urlContains)); // query parameter
             if (showFrozen != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_frozen", showFrozen)); // query parameter
             if (showMetadata != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "show_metadata", showMetadata)); // query parameter
-            if (customType != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "custom_type", customType)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
 
 
             // make the HTTP request
@@ -1269,363 +1338,42 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("OcListChannels", localVarResponse);
+                Exception exception = ExceptionFactory("ListOpenChannels", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<OcListChannelsResponse>(localVarStatusCode,
+            return new ApiResponse<ListOpenChannelsResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcListChannelsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListChannelsResponse)));
+                (ListOpenChannelsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ListOpenChannelsResponse)));
         }
 
         /// <summary>
-        /// List operators ## List operators  Retrieves a list of operators of an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// Register operators to an open channel ## Register operators to an open channel  You can register one or more operators to an open channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/register-operators-to-an-open-channel#1-register-operators-to-an-open-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>OcListOperatorsResponse</returns>
-        public OcListOperatorsResponse OcListOperators (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="registerOperatorsToAGroupChannelRequest"> (optional)</param>
+        /// <returns>Object</returns>
+        public Object RegisterOperators (string channelUrl, string apiToken = default(string), RegisterOperatorsToAGroupChannelRequest registerOperatorsToAGroupChannelRequest = default(RegisterOperatorsToAGroupChannelRequest))
         {
-             ApiResponse<OcListOperatorsResponse> localVarResponse = OcListOperatorsWithHttpInfo(apiToken, channelUrl, token, limit);
+             ApiResponse<Object> localVarResponse = RegisterOperatorsWithHttpInfo(channelUrl, apiToken, registerOperatorsToAGroupChannelRequest);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// List operators ## List operators  Retrieves a list of operators of an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
+        /// Register operators to an open channel ## Register operators to an open channel  You can register one or more operators to an open channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/register-operators-to-an-open-channel#1-register-operators-to-an-open-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of OcListOperatorsResponse</returns>
-        public ApiResponse<OcListOperatorsResponse> OcListOperatorsWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="registerOperatorsToAGroupChannelRequest"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse<Object> RegisterOperatorsWithHttpInfo (string channelUrl, string apiToken = default(string), RegisterOperatorsToAGroupChannelRequest registerOperatorsToAGroupChannelRequest = default(RegisterOperatorsToAGroupChannelRequest))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListOperators");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcListOperators");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/operators";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
-            if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcListOperators", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OcListOperatorsResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcListOperatorsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListOperatorsResponse)));
-        }
-
-        /// <summary>
-        /// List operators ## List operators  Retrieves a list of operators of an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcListOperatorsResponse</returns>
-        public async System.Threading.Tasks.Task<OcListOperatorsResponse> OcListOperatorsAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<OcListOperatorsResponse> localVarResponse = await OcListOperatorsWithHttpInfoAsync(apiToken, channelUrl, token, limit, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// List operators ## List operators  Retrieves a list of operators of an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of operators.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcListOperatorsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcListOperatorsResponse>> OcListOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListOperators");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcListOperators");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/operators";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
-            if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcListOperators", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OcListOperatorsResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcListOperatorsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListOperatorsResponse)));
-        }
-
-        /// <summary>
-        /// List participants ## List participants  Retrieves a list of the participants of an open channel. A participant refers to a user who has entered the open channel and is currently online.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-participants - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of participants in.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>OcListParticipantsResponse</returns>
-        public OcListParticipantsResponse OcListParticipants (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
-        {
-             ApiResponse<OcListParticipantsResponse> localVarResponse = OcListParticipantsWithHttpInfo(apiToken, channelUrl, token, limit);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// List participants ## List participants  Retrieves a list of the participants of an open channel. A participant refers to a user who has entered the open channel and is currently online.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-participants - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of participants in.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <returns>ApiResponse of OcListParticipantsResponse</returns>
-        public ApiResponse<OcListParticipantsResponse> OcListParticipantsWithHttpInfo (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListParticipants");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcListParticipants");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/participants";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
-            if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcListParticipants", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OcListParticipantsResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcListParticipantsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListParticipantsResponse)));
-        }
-
-        /// <summary>
-        /// List participants ## List participants  Retrieves a list of the participants of an open channel. A participant refers to a user who has entered the open channel and is currently online.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-participants - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of participants in.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcListParticipantsResponse</returns>
-        public async System.Threading.Tasks.Task<OcListParticipantsResponse> OcListParticipantsAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<OcListParticipantsResponse> localVarResponse = await OcListParticipantsWithHttpInfoAsync(apiToken, channelUrl, token, limit, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// List participants ## List participants  Retrieves a list of the participants of an open channel. A participant refers to a user who has entered the open channel and is currently online.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-list-participants - -- -- -- -- -- -- -- -- -- -- -- -- -- -   `channel_url`      Type: string      Description: Specifies the URL of the channel to retrieve a list of participants in.
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="limit"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcListParticipantsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcListParticipantsResponse>> OcListParticipantsWithHttpInfoAsync (string apiToken, string channelUrl, string token = default(string), int? limit = default(int?), CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcListParticipants");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcListParticipants");
-
-            var localVarPath = "/v3/open_channels/{channel_url}/participants";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (token != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "token", token)); // query parameter
-            if (limit != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "limit", limit)); // query parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcListParticipants", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<OcListParticipantsResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcListParticipantsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcListParticipantsResponse)));
-        }
-
-        /// <summary>
-        /// Register operators ## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocRegisterOperatorsData"> (optional)</param>
-        /// <returns>OcDeleteChannelByUrl200Response</returns>
-        public OcDeleteChannelByUrl200Response OcRegisterOperators (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData))
-        {
-             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = OcRegisterOperatorsWithHttpInfo(apiToken, channelUrl, ocRegisterOperatorsData);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Register operators ## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocRegisterOperatorsData"> (optional)</param>
-        /// <returns>ApiResponse of OcDeleteChannelByUrl200Response</returns>
-        public ApiResponse<OcDeleteChannelByUrl200Response> OcRegisterOperatorsWithHttpInfo (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcRegisterOperators");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcRegisterOperators");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->RegisterOperators");
 
             var localVarPath = "/v3/open_channels/{channel_url}/operators";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1650,14 +1398,14 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (ocRegisterOperatorsData != null && ocRegisterOperatorsData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (registerOperatorsToAGroupChannelRequest != null && registerOperatorsToAGroupChannelRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(ocRegisterOperatorsData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(registerOperatorsToAGroupChannelRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = ocRegisterOperatorsData; // byte array
+                localVarPostBody = registerOperatorsToAGroupChannelRequest; // byte array
             }
 
 
@@ -1670,48 +1418,45 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("OcRegisterOperators", localVarResponse);
+                Exception exception = ExceptionFactory("RegisterOperators", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
-        /// Register operators ## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Register operators to an open channel ## Register operators to an open channel  You can register one or more operators to an open channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/register-operators-to-an-open-channel#1-register-operators-to-an-open-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocRegisterOperatorsData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="registerOperatorsToAGroupChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of OcDeleteChannelByUrl200Response</returns>
-        public async System.Threading.Tasks.Task<OcDeleteChannelByUrl200Response> OcRegisterOperatorsAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> RegisterOperatorsAsync (string channelUrl, string apiToken = default(string), RegisterOperatorsToAGroupChannelRequest registerOperatorsToAGroupChannelRequest = default(RegisterOperatorsToAGroupChannelRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<OcDeleteChannelByUrl200Response> localVarResponse = await OcRegisterOperatorsWithHttpInfoAsync(apiToken, channelUrl, ocRegisterOperatorsData, cancellationToken);
+             ApiResponse<Object> localVarResponse = await RegisterOperatorsWithHttpInfoAsync(channelUrl, apiToken, registerOperatorsToAGroupChannelRequest, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Register operators ## Register operators  Registers one or more operators to an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-register-operators - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Register operators to an open channel ## Register operators to an open channel  You can register one or more operators to an open channel using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/register-operators-to-an-open-channel#1-register-operators-to-an-open-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocRegisterOperatorsData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="registerOperatorsToAGroupChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (OcDeleteChannelByUrl200Response)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<OcDeleteChannelByUrl200Response>> OcRegisterOperatorsWithHttpInfoAsync (string apiToken, string channelUrl, OcRegisterOperatorsData ocRegisterOperatorsData = default(OcRegisterOperatorsData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> RegisterOperatorsWithHttpInfoAsync (string channelUrl, string apiToken = default(string), RegisterOperatorsToAGroupChannelRequest registerOperatorsToAGroupChannelRequest = default(RegisterOperatorsToAGroupChannelRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcRegisterOperators");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcRegisterOperators");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->RegisterOperators");
 
             var localVarPath = "/v3/open_channels/{channel_url}/operators";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1736,14 +1481,14 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (ocRegisterOperatorsData != null && ocRegisterOperatorsData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (registerOperatorsToAGroupChannelRequest != null && registerOperatorsToAGroupChannelRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(ocRegisterOperatorsData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(registerOperatorsToAGroupChannelRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = ocRegisterOperatorsData; // byte array
+                localVarPostBody = registerOperatorsToAGroupChannelRequest; // byte array
             }
 
 
@@ -1756,45 +1501,201 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("OcRegisterOperators", localVarResponse);
+                Exception exception = ExceptionFactory("RegisterOperators", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<OcDeleteChannelByUrl200Response>(localVarStatusCode,
+            return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (OcDeleteChannelByUrl200Response) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(OcDeleteChannelByUrl200Response)));
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
-        /// Update a channel ## Update a channel  Updates information on an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Unregister operators from an open channel ## Unregister operators from an open channel  You can unregister operators in an open channel but keep them in the channel as participants using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/unregister-operators-from-an-open-channel#1-unregister-operators-from-an-open-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
-        /// <returns>SendBirdOpenChannel</returns>
-        public SendBirdOpenChannel OcUpdateChannelByUrl (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData))
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="operatorIds">Specifies an array of one or more operator IDs to unregister from the channel. The operators in this array remain as participants of the channel after losing their operational roles. Urlencoding each operator ID is recommended. An example of a Urlencoded array would be ?operator_ids&#x3D;urlencoded_id_1,urlencoded_id_2.</param>
+        /// <param name="deleteAll">Determines whether to unregister all operators and leave them as the participants of the channel. When this is set to true, the operator_ids property isn&#39;t effective and doesn&#39;t need to be specified in the request. (Default: false) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>Object</returns>
+        public Object UnregisterOperators (string channelUrl, string operatorIds, bool? deleteAll = default(bool?), string apiToken = default(string))
         {
-             ApiResponse<SendBirdOpenChannel> localVarResponse = OcUpdateChannelByUrlWithHttpInfo(apiToken, channelUrl, ocUpdateChannelByUrlData);
+             ApiResponse<Object> localVarResponse = UnregisterOperatorsWithHttpInfo(channelUrl, operatorIds, deleteAll, apiToken);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Update a channel ## Update a channel  Updates information on an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Unregister operators from an open channel ## Unregister operators from an open channel  You can unregister operators in an open channel but keep them in the channel as participants using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/unregister-operators-from-an-open-channel#1-unregister-operators-from-an-open-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to cancel the registration of operators.
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
-        /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        public ApiResponse<SendBirdOpenChannel> OcUpdateChannelByUrlWithHttpInfo (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData))
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="operatorIds">Specifies an array of one or more operator IDs to unregister from the channel. The operators in this array remain as participants of the channel after losing their operational roles. Urlencoding each operator ID is recommended. An example of a Urlencoded array would be ?operator_ids&#x3D;urlencoded_id_1,urlencoded_id_2.</param>
+        /// <param name="deleteAll">Determines whether to unregister all operators and leave them as the participants of the channel. When this is set to true, the operator_ids property isn&#39;t effective and doesn&#39;t need to be specified in the request. (Default: false) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse<Object> UnregisterOperatorsWithHttpInfo (string channelUrl, string operatorIds, bool? deleteAll = default(bool?), string apiToken = default(string))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcUpdateChannelByUrl");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcUpdateChannelByUrl");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->UnregisterOperators");
+            // verify the required parameter 'operatorIds' is set
+            if (operatorIds == null)
+                throw new ApiException(400, "Missing required parameter 'operatorIds' when calling OpenChannelApi->UnregisterOperators");
+
+            var localVarPath = "/v3/open_channels/{channel_url}/operators";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
+            if (operatorIds != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "operator_ids", operatorIds)); // query parameter
+            if (deleteAll != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "delete_all", deleteAll)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UnregisterOperators", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+        }
+
+        /// <summary>
+        /// Unregister operators from an open channel ## Unregister operators from an open channel  You can unregister operators in an open channel but keep them in the channel as participants using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/unregister-operators-from-an-open-channel#1-unregister-operators-from-an-open-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="operatorIds">Specifies an array of one or more operator IDs to unregister from the channel. The operators in this array remain as participants of the channel after losing their operational roles. Urlencoding each operator ID is recommended. An example of a Urlencoded array would be ?operator_ids&#x3D;urlencoded_id_1,urlencoded_id_2.</param>
+        /// <param name="deleteAll">Determines whether to unregister all operators and leave them as the participants of the channel. When this is set to true, the operator_ids property isn&#39;t effective and doesn&#39;t need to be specified in the request. (Default: false) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> UnregisterOperatorsAsync (string channelUrl, string operatorIds, bool? deleteAll = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<Object> localVarResponse = await UnregisterOperatorsWithHttpInfoAsync(channelUrl, operatorIds, deleteAll, apiToken, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Unregister operators from an open channel ## Unregister operators from an open channel  You can unregister operators in an open channel but keep them in the channel as participants using this API.  https://sendbird.com/docs/chat/platform-api/v3/user/assigning-a-user-role/unregister-operators-from-an-open-channel#1-unregister-operators-from-an-open-channel  `channel_url`   Type: string   Description: Specifies the URL of the channel to cancel the registration of operators.
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="operatorIds">Specifies an array of one or more operator IDs to unregister from the channel. The operators in this array remain as participants of the channel after losing their operational roles. Urlencoding each operator ID is recommended. An example of a Urlencoded array would be ?operator_ids&#x3D;urlencoded_id_1,urlencoded_id_2.</param>
+        /// <param name="deleteAll">Determines whether to unregister all operators and leave them as the participants of the channel. When this is set to true, the operator_ids property isn&#39;t effective and doesn&#39;t need to be specified in the request. (Default: false) (optional)</param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> UnregisterOperatorsWithHttpInfoAsync (string channelUrl, string operatorIds, bool? deleteAll = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'channelUrl' is set
+            if (channelUrl == null)
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->UnregisterOperators");
+            // verify the required parameter 'operatorIds' is set
+            if (operatorIds == null)
+                throw new ApiException(400, "Missing required parameter 'operatorIds' when calling OpenChannelApi->UnregisterOperators");
+
+            var localVarPath = "/v3/open_channels/{channel_url}/operators";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
+            if (operatorIds != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "operator_ids", operatorIds)); // query parameter
+            if (deleteAll != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "delete_all", deleteAll)); // query parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UnregisterOperators", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+        }
+
+        /// <summary>
+        /// Update an open channel ## Update an open channel  You can update information about an open channel using this API. You can add a cover image to a channel to better identify the channel or specify a custom channel type for grouping channels by custom type. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-an-open-channel#1-update-an-open-channel
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateAnOpenChannelRequest"> (optional)</param>
+        /// <returns>SendbirdOpenChannel</returns>
+        public SendbirdOpenChannel UpdateAnOpenChannel (string channelUrl, string apiToken = default(string), UpdateAnOpenChannelRequest updateAnOpenChannelRequest = default(UpdateAnOpenChannelRequest))
+        {
+             ApiResponse<SendbirdOpenChannel> localVarResponse = UpdateAnOpenChannelWithHttpInfo(channelUrl, apiToken, updateAnOpenChannelRequest);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Update an open channel ## Update an open channel  You can update information about an open channel using this API. You can add a cover image to a channel to better identify the channel or specify a custom channel type for grouping channels by custom type. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-an-open-channel#1-update-an-open-channel
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateAnOpenChannelRequest"> (optional)</param>
+        /// <returns>ApiResponse of SendbirdOpenChannel</returns>
+        public ApiResponse<SendbirdOpenChannel> UpdateAnOpenChannelWithHttpInfo (string channelUrl, string apiToken = default(string), UpdateAnOpenChannelRequest updateAnOpenChannelRequest = default(UpdateAnOpenChannelRequest))
+        {
+            // verify the required parameter 'channelUrl' is set
+            if (channelUrl == null)
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->UpdateAnOpenChannel");
 
             var localVarPath = "/v3/open_channels/{channel_url}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1819,14 +1720,14 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (ocUpdateChannelByUrlData != null && ocUpdateChannelByUrlData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (updateAnOpenChannelRequest != null && updateAnOpenChannelRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(ocUpdateChannelByUrlData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(updateAnOpenChannelRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = ocUpdateChannelByUrlData; // byte array
+                localVarPostBody = updateAnOpenChannelRequest; // byte array
             }
 
 
@@ -1839,48 +1740,45 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("OcUpdateChannelByUrl", localVarResponse);
+                Exception exception = ExceptionFactory("UpdateAnOpenChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdOpenChannel>(localVarStatusCode,
+            return new ApiResponse<SendbirdOpenChannel>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdOpenChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdOpenChannel)));
+                (SendbirdOpenChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendbirdOpenChannel)));
         }
 
         /// <summary>
-        /// Update a channel ## Update a channel  Updates information on an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update an open channel ## Update an open channel  You can update information about an open channel using this API. You can add a cover image to a channel to better identify the channel or specify a custom channel type for grouping channels by custom type. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-an-open-channel#1-update-an-open-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateAnOpenChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdOpenChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcUpdateChannelByUrlAsync (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of SendbirdOpenChannel</returns>
+        public async System.Threading.Tasks.Task<SendbirdOpenChannel> UpdateAnOpenChannelAsync (string channelUrl, string apiToken = default(string), UpdateAnOpenChannelRequest updateAnOpenChannelRequest = default(UpdateAnOpenChannelRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendBirdOpenChannel> localVarResponse = await OcUpdateChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, ocUpdateChannelByUrlData, cancellationToken);
+             ApiResponse<SendbirdOpenChannel> localVarResponse = await UpdateAnOpenChannelWithHttpInfoAsync(channelUrl, apiToken, updateAnOpenChannelRequest, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Update a channel ## Update a channel  Updates information on an open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-update-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// Update an open channel ## Update an open channel  You can update information about an open channel using this API. You can add a cover image to a channel to better identify the channel or specify a custom channel type for grouping channels by custom type. See [this page](https://sendbird.com/docs/chat/platform-api/v3/channel/channel-overview#2-channel-types-3-open-channel-vs-group-channel-vs-supergroup-channel) to learn more about channel types.  https://sendbird.com/docs/chat/platform-api/v3/channel/managing-a-channel/update-an-open-channel#1-update-an-open-channel
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="ocUpdateChannelByUrlData"> (optional)</param>
+        /// <param name="channelUrl">(Required) </param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateAnOpenChannelRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcUpdateChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, OcUpdateChannelByUrlData ocUpdateChannelByUrlData = default(OcUpdateChannelByUrlData), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (SendbirdOpenChannel)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<SendbirdOpenChannel>> UpdateAnOpenChannelWithHttpInfoAsync (string channelUrl, string apiToken = default(string), UpdateAnOpenChannelRequest updateAnOpenChannelRequest = default(UpdateAnOpenChannelRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcUpdateChannelByUrl");
             // verify the required parameter 'channelUrl' is set
             if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcUpdateChannelByUrl");
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->UpdateAnOpenChannel");
 
             var localVarPath = "/v3/open_channels/{channel_url}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1905,14 +1803,14 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (ocUpdateChannelByUrlData != null && ocUpdateChannelByUrlData.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (updateAnOpenChannelRequest != null && updateAnOpenChannelRequest.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(ocUpdateChannelByUrlData); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(updateAnOpenChannelRequest); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = ocUpdateChannelByUrlData; // byte array
+                localVarPostBody = updateAnOpenChannelRequest; // byte array
             }
 
 
@@ -1925,160 +1823,13 @@ namespace sendbird_platform_sdk.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("OcUpdateChannelByUrl", localVarResponse);
+                Exception exception = ExceptionFactory("UpdateAnOpenChannel", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendBirdOpenChannel>(localVarStatusCode,
+            return new ApiResponse<SendbirdOpenChannel>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdOpenChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdOpenChannel)));
-        }
-
-        /// <summary>
-        /// View a channel ## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <returns>SendBirdOpenChannel</returns>
-        public SendBirdOpenChannel OcViewChannelByUrl (string apiToken, string channelUrl)
-        {
-             ApiResponse<SendBirdOpenChannel> localVarResponse = OcViewChannelByUrlWithHttpInfo(apiToken, channelUrl);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// View a channel ## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <returns>ApiResponse of SendBirdOpenChannel</returns>
-        public ApiResponse<SendBirdOpenChannel> OcViewChannelByUrlWithHttpInfo (string apiToken, string channelUrl)
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcViewChannelByUrl");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcViewChannelByUrl");
-
-            var localVarPath = "/v3/open_channels/{channel_url}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcViewChannelByUrl", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<SendBirdOpenChannel>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdOpenChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdOpenChannel)));
-        }
-
-        /// <summary>
-        /// View a channel ## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendBirdOpenChannel</returns>
-        public async System.Threading.Tasks.Task<SendBirdOpenChannel> OcViewChannelByUrlAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<SendBirdOpenChannel> localVarResponse = await OcViewChannelByUrlWithHttpInfoAsync(apiToken, channelUrl, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// View a channel ## View a channel  Retrieves information on a specific open channel.  https://sendbird.com/docs/chat/v3/platform-api/guides/open-channel#2-view-a-channel - -- -- -- -- -- -- -- -- -- -- -- -- -- -
-        /// </summary>
-        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="apiToken"></param>
-        /// <param name="channelUrl"></param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendBirdOpenChannel)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendBirdOpenChannel>> OcViewChannelByUrlWithHttpInfoAsync (string apiToken, string channelUrl, CancellationToken cancellationToken = default(CancellationToken))
-        {
-            // verify the required parameter 'apiToken' is set
-            if (apiToken == null)
-                throw new ApiException(400, "Missing required parameter 'apiToken' when calling OpenChannelApi->OcViewChannelByUrl");
-            // verify the required parameter 'channelUrl' is set
-            if (channelUrl == null)
-                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling OpenChannelApi->OcViewChannelByUrl");
-
-            var localVarPath = "/v3/open_channels/{channel_url}";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (channelUrl != null) localVarPathParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("OcViewChannelByUrl", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<SendBirdOpenChannel>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendBirdOpenChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendBirdOpenChannel)));
+                (SendbirdOpenChannel) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendbirdOpenChannel)));
         }
 
     }

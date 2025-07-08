@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -37,7 +37,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="tokens">tokens.</param>
         /// <param name="type">type.</param>
         /// <param name="user">user.</param>
-        public ListRegistrationOrDeviceTokensResponse(List<string> token = default(List<string>), List<string> tokens = default(List<string>), string type = default(string), SendBirdUser user = default(SendBirdUser))
+        public ListRegistrationOrDeviceTokensResponse(List<string> token = default(List<string>), List<string> tokens = default(List<string>), string type = default(string), SendbirdBasicUserInfo user = default(SendbirdBasicUserInfo))
         {
             this.Token = token;
             this.Tokens = tokens;
@@ -67,7 +67,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets User
         /// </summary>
         [DataMember(Name="user", EmitDefaultValue=false)]
-        public SendBirdUser User { get; set; }
+        public SendbirdBasicUserInfo User { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

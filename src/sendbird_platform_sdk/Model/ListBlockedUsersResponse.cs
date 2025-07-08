@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -35,7 +35,7 @@ namespace sendbird_platform_sdk.Model
         /// </summary>
         /// <param name="users">users.</param>
         /// <param name="next">next.</param>
-        public ListBlockedUsersResponse(List<SendBirdUser> users = default(List<SendBirdUser>), string next = default(string))
+        public ListBlockedUsersResponse(List<SendbirdUser> users = default(List<SendbirdUser>), string next = default(string))
         {
             this.Users = users;
             this.Next = next;
@@ -45,7 +45,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets Users
         /// </summary>
         [DataMember(Name="users", EmitDefaultValue=false)]
-        public List<SendBirdUser> Users { get; set; }
+        public List<SendbirdUser> Users { get; set; }
 
         /// <summary>
         /// Gets or Sets Next

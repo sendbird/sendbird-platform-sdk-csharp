@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -25,13 +25,13 @@ using OpenAPIDateConverter = sendbird_platform_sdk.Client.OpenAPIDateConverter;
 namespace sendbird_platform_sdk.Model
 {
     /// <summary>
-    /// SendBirdMessageResponse
+    /// SendbirdMessageResponse
     /// </summary>
     [DataContract]
-    public partial class SendBirdMessageResponse :  IEquatable<SendBirdMessageResponse>, IValidatableObject
+    public partial class SendbirdMessageResponse :  IEquatable<SendbirdMessageResponse>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="SendBirdMessageResponse" /> class.
+        /// Initializes a new instance of the <see cref="SendbirdMessageResponse" /> class.
         /// </summary>
         /// <param name="requireAuth">requireAuth.</param>
         /// <param name="messageSurvivalSeconds">messageSurvivalSeconds.</param>
@@ -40,9 +40,11 @@ namespace sendbird_platform_sdk.Model
         /// <param name="translations">translations.</param>
         /// <param name="updatedAt">updatedAt.</param>
         /// <param name="isOpMsg">isOpMsg.</param>
+        /// <param name="reactions">reactions.</param>
         /// <param name="isRemoved">isRemoved.</param>
         /// <param name="user">user.</param>
         /// <param name="file">file.</param>
+        /// <param name="files">files.</param>
         /// <param name="message">message.</param>
         /// <param name="data">data.</param>
         /// <param name="messageRetentionHour">messageRetentionHour.</param>
@@ -54,14 +56,16 @@ namespace sendbird_platform_sdk.Model
         /// <param name="mentionType">mentionType.</param>
         /// <param name="channelUrl">channelUrl.</param>
         /// <param name="messageId">messageId.</param>
-        /// <param name="size">size.</param>
         /// <param name="sortedMetaarray">sortedMetaarray.</param>
         /// <param name="threadInfo">threadInfo.</param>
         /// <param name="parentMessageId">parentMessageId.</param>
         /// <param name="parentMessageInfo">parentMessageInfo.</param>
         /// <param name="isReplyToChannel">isReplyToChannel.</param>
-        public SendBirdMessageResponse(bool requireAuth = default(bool), decimal messageSurvivalSeconds = default(decimal), string customType = default(string), List<SendBirdMessageResponseMentionedUsersInner> mentionedUsers = default(List<SendBirdMessageResponseMentionedUsersInner>), Object translations = default(Object), decimal updatedAt = default(decimal), bool isOpMsg = default(bool), bool isRemoved = default(bool), SendBirdMessageResponseUser user = default(SendBirdMessageResponseUser), Object file = default(Object), string message = default(string), string data = default(string), decimal messageRetentionHour = default(decimal), bool silent = default(bool), string type = default(string), decimal createdAt = default(decimal), string channelType = default(string), string reqId = default(string), string mentionType = default(string), string channelUrl = default(string), decimal messageId = default(decimal), decimal size = default(decimal), List<Object> sortedMetaarray = default(List<Object>), Object threadInfo = default(Object), decimal parentMessageId = default(decimal), Object parentMessageInfo = default(Object), bool isReplyToChannel = default(bool))
+        /// <param name="messageEvents">messageEvents.</param>
+        /// <param name="extendedMessagePayload">extendedMessagePayload.</param>
+        public SendbirdMessageResponse(bool requireAuth = default(bool), int messageSurvivalSeconds = default(int), string customType = default(string), List<SendbirdBasicUserInfo> mentionedUsers = default(List<SendbirdBasicUserInfo>), Object translations = default(Object), long updatedAt = default(long), bool isOpMsg = default(bool), List<SendbirdReaction> reactions = default(List<SendbirdReaction>), bool isRemoved = default(bool), SendbirdBasicUserInfo user = default(SendbirdBasicUserInfo), Object file = default(Object), List<SendbirdFile> files = default(List<SendbirdFile>), string message = default(string), string data = default(string), int messageRetentionHour = default(int), bool silent = default(bool), string type = default(string), long createdAt = default(long), string channelType = default(string), string reqId = default(string), string mentionType = default(string), string channelUrl = default(string), int messageId = default(int), List<SendbirdSortedMetaarrayInner> sortedMetaarray = default(List<SendbirdSortedMetaarrayInner>), Object threadInfo = default(Object), int parentMessageId = default(int), SendbirdParentMessageInfo parentMessageInfo = default(SendbirdParentMessageInfo), bool isReplyToChannel = default(bool), SendbirdMessageResponseMessageEvents messageEvents = default(SendbirdMessageResponseMessageEvents), SendbirdExtendedMessagePayload extendedMessagePayload = default(SendbirdExtendedMessagePayload))
         {
+            this.MessageEvents = messageEvents;
             this.RequireAuth = requireAuth;
             this.MessageSurvivalSeconds = messageSurvivalSeconds;
             this.CustomType = customType;
@@ -69,9 +73,11 @@ namespace sendbird_platform_sdk.Model
             this.Translations = translations;
             this.UpdatedAt = updatedAt;
             this.IsOpMsg = isOpMsg;
+            this.Reactions = reactions;
             this.IsRemoved = isRemoved;
             this.User = user;
             this.File = file;
+            this.Files = files;
             this.Message = message;
             this.Data = data;
             this.MessageRetentionHour = messageRetentionHour;
@@ -83,12 +89,13 @@ namespace sendbird_platform_sdk.Model
             this.MentionType = mentionType;
             this.ChannelUrl = channelUrl;
             this.MessageId = messageId;
-            this.Size = size;
             this.SortedMetaarray = sortedMetaarray;
             this.ThreadInfo = threadInfo;
             this.ParentMessageId = parentMessageId;
             this.ParentMessageInfo = parentMessageInfo;
             this.IsReplyToChannel = isReplyToChannel;
+            this.MessageEvents = messageEvents;
+            this.ExtendedMessagePayload = extendedMessagePayload;
         }
 
         /// <summary>
@@ -101,7 +108,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets MessageSurvivalSeconds
         /// </summary>
         [DataMember(Name="message_survival_seconds", EmitDefaultValue=false)]
-        public decimal MessageSurvivalSeconds { get; set; }
+        public int MessageSurvivalSeconds { get; set; }
 
         /// <summary>
         /// Gets or Sets CustomType
@@ -113,7 +120,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets MentionedUsers
         /// </summary>
         [DataMember(Name="mentioned_users", EmitDefaultValue=false)]
-        public List<SendBirdMessageResponseMentionedUsersInner> MentionedUsers { get; set; }
+        public List<SendbirdBasicUserInfo> MentionedUsers { get; set; }
 
         /// <summary>
         /// Gets or Sets Translations
@@ -125,13 +132,19 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets UpdatedAt
         /// </summary>
         [DataMember(Name="updated_at", EmitDefaultValue=false)]
-        public decimal UpdatedAt { get; set; }
+        public long UpdatedAt { get; set; }
 
         /// <summary>
         /// Gets or Sets IsOpMsg
         /// </summary>
         [DataMember(Name="is_op_msg", EmitDefaultValue=false)]
         public bool IsOpMsg { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Reactions
+        /// </summary>
+        [DataMember(Name="reactions", EmitDefaultValue=false)]
+        public List<SendbirdReaction> Reactions { get; set; }
 
         /// <summary>
         /// Gets or Sets IsRemoved
@@ -143,13 +156,19 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets User
         /// </summary>
         [DataMember(Name="user", EmitDefaultValue=false)]
-        public SendBirdMessageResponseUser User { get; set; }
+        public SendbirdBasicUserInfo User { get; set; }
 
         /// <summary>
         /// Gets or Sets File
         /// </summary>
         [DataMember(Name="file", EmitDefaultValue=false)]
         public Object File { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Files
+        /// </summary>
+        [DataMember(Name="files", EmitDefaultValue=false)]
+        public List<SendbirdFile> Files { get; set; }
 
         /// <summary>
         /// Gets or Sets Message
@@ -167,7 +186,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets MessageRetentionHour
         /// </summary>
         [DataMember(Name="message_retention_hour", EmitDefaultValue=false)]
-        public decimal MessageRetentionHour { get; set; }
+        public int MessageRetentionHour { get; set; }
 
         /// <summary>
         /// Gets or Sets Silent
@@ -185,7 +204,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets CreatedAt
         /// </summary>
         [DataMember(Name="created_at", EmitDefaultValue=false)]
-        public decimal CreatedAt { get; set; }
+        public long CreatedAt { get; set; }
 
         /// <summary>
         /// Gets or Sets ChannelType
@@ -215,19 +234,13 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets MessageId
         /// </summary>
         [DataMember(Name="message_id", EmitDefaultValue=false)]
-        public decimal MessageId { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Size
-        /// </summary>
-        [DataMember(Name="size", EmitDefaultValue=false)]
-        public decimal Size { get; set; }
+        public int MessageId { get; set; }
 
         /// <summary>
         /// Gets or Sets SortedMetaarray
         /// </summary>
         [DataMember(Name="sorted_metaarray", EmitDefaultValue=false)]
-        public List<Object> SortedMetaarray { get; set; }
+        public List<SendbirdSortedMetaarrayInner> SortedMetaarray { get; set; }
 
         /// <summary>
         /// Gets or Sets ThreadInfo
@@ -239,13 +252,13 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets ParentMessageId
         /// </summary>
         [DataMember(Name="parent_message_id", EmitDefaultValue=false)]
-        public decimal ParentMessageId { get; set; }
+        public int ParentMessageId { get; set; }
 
         /// <summary>
         /// Gets or Sets ParentMessageInfo
         /// </summary>
         [DataMember(Name="parent_message_info", EmitDefaultValue=false)]
-        public Object ParentMessageInfo { get; set; }
+        public SendbirdParentMessageInfo ParentMessageInfo { get; set; }
 
         /// <summary>
         /// Gets or Sets IsReplyToChannel
@@ -254,13 +267,25 @@ namespace sendbird_platform_sdk.Model
         public bool IsReplyToChannel { get; set; }
 
         /// <summary>
+        /// Gets or Sets MessageEvents
+        /// </summary>
+        [DataMember(Name="message_events", EmitDefaultValue=true)]
+        public SendbirdMessageResponseMessageEvents MessageEvents { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ExtendedMessagePayload
+        /// </summary>
+        [DataMember(Name="extended_message_payload", EmitDefaultValue=false)]
+        public SendbirdExtendedMessagePayload ExtendedMessagePayload { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class SendBirdMessageResponse {\n");
+            sb.Append("class SendbirdMessageResponse {\n");
             sb.Append("  RequireAuth: ").Append(RequireAuth).Append("\n");
             sb.Append("  MessageSurvivalSeconds: ").Append(MessageSurvivalSeconds).Append("\n");
             sb.Append("  CustomType: ").Append(CustomType).Append("\n");
@@ -268,9 +293,11 @@ namespace sendbird_platform_sdk.Model
             sb.Append("  Translations: ").Append(Translations).Append("\n");
             sb.Append("  UpdatedAt: ").Append(UpdatedAt).Append("\n");
             sb.Append("  IsOpMsg: ").Append(IsOpMsg).Append("\n");
+            sb.Append("  Reactions: ").Append(Reactions).Append("\n");
             sb.Append("  IsRemoved: ").Append(IsRemoved).Append("\n");
             sb.Append("  User: ").Append(User).Append("\n");
             sb.Append("  File: ").Append(File).Append("\n");
+            sb.Append("  Files: ").Append(Files).Append("\n");
             sb.Append("  Message: ").Append(Message).Append("\n");
             sb.Append("  Data: ").Append(Data).Append("\n");
             sb.Append("  MessageRetentionHour: ").Append(MessageRetentionHour).Append("\n");
@@ -282,12 +309,13 @@ namespace sendbird_platform_sdk.Model
             sb.Append("  MentionType: ").Append(MentionType).Append("\n");
             sb.Append("  ChannelUrl: ").Append(ChannelUrl).Append("\n");
             sb.Append("  MessageId: ").Append(MessageId).Append("\n");
-            sb.Append("  Size: ").Append(Size).Append("\n");
             sb.Append("  SortedMetaarray: ").Append(SortedMetaarray).Append("\n");
             sb.Append("  ThreadInfo: ").Append(ThreadInfo).Append("\n");
             sb.Append("  ParentMessageId: ").Append(ParentMessageId).Append("\n");
             sb.Append("  ParentMessageInfo: ").Append(ParentMessageInfo).Append("\n");
             sb.Append("  IsReplyToChannel: ").Append(IsReplyToChannel).Append("\n");
+            sb.Append("  MessageEvents: ").Append(MessageEvents).Append("\n");
+            sb.Append("  ExtendedMessagePayload: ").Append(ExtendedMessagePayload).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -308,15 +336,15 @@ namespace sendbird_platform_sdk.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as SendBirdMessageResponse);
+            return this.Equals(input as SendbirdMessageResponse);
         }
 
         /// <summary>
-        /// Returns true if SendBirdMessageResponse instances are equal
+        /// Returns true if SendbirdMessageResponse instances are equal
         /// </summary>
-        /// <param name="input">Instance of SendBirdMessageResponse to be compared</param>
+        /// <param name="input">Instance of SendbirdMessageResponse to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(SendBirdMessageResponse input)
+        public bool Equals(SendbirdMessageResponse input)
         {
             if (input == null)
                 return false;
@@ -359,6 +387,12 @@ namespace sendbird_platform_sdk.Model
                     this.IsOpMsg.Equals(input.IsOpMsg))
                 ) && 
                 (
+                    this.Reactions == input.Reactions ||
+                    this.Reactions != null &&
+                    input.Reactions != null &&
+                    this.Reactions.SequenceEqual(input.Reactions)
+                ) && 
+                (
                     this.IsRemoved == input.IsRemoved ||
                     (this.IsRemoved != null &&
                     this.IsRemoved.Equals(input.IsRemoved))
@@ -372,6 +406,12 @@ namespace sendbird_platform_sdk.Model
                     this.File == input.File ||
                     (this.File != null &&
                     this.File.Equals(input.File))
+                ) && 
+                (
+                    this.Files == input.Files ||
+                    this.Files != null &&
+                    input.Files != null &&
+                    this.Files.SequenceEqual(input.Files)
                 ) && 
                 (
                     this.Message == input.Message ||
@@ -429,11 +469,6 @@ namespace sendbird_platform_sdk.Model
                     this.MessageId.Equals(input.MessageId))
                 ) && 
                 (
-                    this.Size == input.Size ||
-                    (this.Size != null &&
-                    this.Size.Equals(input.Size))
-                ) && 
-                (
                     this.SortedMetaarray == input.SortedMetaarray ||
                     this.SortedMetaarray != null &&
                     input.SortedMetaarray != null &&
@@ -458,6 +493,16 @@ namespace sendbird_platform_sdk.Model
                     this.IsReplyToChannel == input.IsReplyToChannel ||
                     (this.IsReplyToChannel != null &&
                     this.IsReplyToChannel.Equals(input.IsReplyToChannel))
+                ) && 
+                (
+                    this.MessageEvents == input.MessageEvents ||
+                    (this.MessageEvents != null &&
+                    this.MessageEvents.Equals(input.MessageEvents))
+                ) && 
+                (
+                    this.ExtendedMessagePayload == input.ExtendedMessagePayload ||
+                    (this.ExtendedMessagePayload != null &&
+                    this.ExtendedMessagePayload.Equals(input.ExtendedMessagePayload))
                 );
         }
 
@@ -484,12 +529,16 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.UpdatedAt.GetHashCode();
                 if (this.IsOpMsg != null)
                     hashCode = hashCode * 59 + this.IsOpMsg.GetHashCode();
+                if (this.Reactions != null)
+                    hashCode = hashCode * 59 + this.Reactions.GetHashCode();
                 if (this.IsRemoved != null)
                     hashCode = hashCode * 59 + this.IsRemoved.GetHashCode();
                 if (this.User != null)
                     hashCode = hashCode * 59 + this.User.GetHashCode();
                 if (this.File != null)
                     hashCode = hashCode * 59 + this.File.GetHashCode();
+                if (this.Files != null)
+                    hashCode = hashCode * 59 + this.Files.GetHashCode();
                 if (this.Message != null)
                     hashCode = hashCode * 59 + this.Message.GetHashCode();
                 if (this.Data != null)
@@ -512,8 +561,6 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.ChannelUrl.GetHashCode();
                 if (this.MessageId != null)
                     hashCode = hashCode * 59 + this.MessageId.GetHashCode();
-                if (this.Size != null)
-                    hashCode = hashCode * 59 + this.Size.GetHashCode();
                 if (this.SortedMetaarray != null)
                     hashCode = hashCode * 59 + this.SortedMetaarray.GetHashCode();
                 if (this.ThreadInfo != null)
@@ -524,6 +571,10 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.ParentMessageInfo.GetHashCode();
                 if (this.IsReplyToChannel != null)
                     hashCode = hashCode * 59 + this.IsReplyToChannel.GetHashCode();
+                if (this.MessageEvents != null)
+                    hashCode = hashCode * 59 + this.MessageEvents.GetHashCode();
+                if (this.ExtendedMessagePayload != null)
+                    hashCode = hashCode * 59 + this.ExtendedMessagePayload.GetHashCode();
                 return hashCode;
             }
         }

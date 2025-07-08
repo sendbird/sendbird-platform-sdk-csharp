@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -64,224 +64,68 @@ namespace sendbird_platform_sdk.Test
 
         
         /// <summary>
-        /// Test AddEmojiCategories
+        /// Test AddExtraDataToAMessage
         /// </summary>
         [Test]
-        public void AddEmojiCategoriesTest()
+        public void AddExtraDataToAMessageTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //Object body = null;
-            //var response = instance.AddEmojiCategories(apiToken, body);
-            //Assert.IsInstanceOf(typeof(AddEmojiCategoriesResponse), response, "response is AddEmojiCategoriesResponse");
-        }
-        
-        /// <summary>
-        /// Test AddEmojis
-        /// </summary>
-        [Test]
-        public void AddEmojisTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //AddEmojisData addEmojisData = null;
-            //var response = instance.AddEmojis(apiToken, addEmojisData);
-            //Assert.IsInstanceOf(typeof(AddEmojisResponse), response, "response is AddEmojisResponse");
-        }
-        
-        /// <summary>
-        /// Test AddExtraDataToMessage
-        /// </summary>
-        [Test]
-        public void AddExtraDataToMessageTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string channelType = null;
             //string channelUrl = null;
             //string messageId = null;
-            //AddExtraDataToMessageData addExtraDataToMessageData = null;
-            //var response = instance.AddExtraDataToMessage(apiToken, channelType, channelUrl, messageId, addExtraDataToMessageData);
-            //Assert.IsInstanceOf(typeof(AddExtraDataToMessageResponse), response, "response is AddExtraDataToMessageResponse");
+            //string apiToken = null;
+            //AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = null;
+            //var response = instance.AddExtraDataToAMessage(channelType, channelUrl, messageId, apiToken, addExtraDataToAMessageRequest);
+            //Assert.IsInstanceOf(typeof(AddExtraDataToAMessageResponse), response, "response is AddExtraDataToAMessageResponse");
         }
         
         /// <summary>
-        /// Test AddReactionToAMessage
+        /// Test DeleteAMessage
         /// </summary>
         [Test]
-        public void AddReactionToAMessageTest()
+        public void DeleteAMessageTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string channelType = null;
             //string channelUrl = null;
             //string messageId = null;
-            //AddReactionToAMessageData addReactionToAMessageData = null;
-            //var response = instance.AddReactionToAMessage(apiToken, channelType, channelUrl, messageId, addReactionToAMessageData);
-            //Assert.IsInstanceOf(typeof(AddReactionToAMessageResponse), response, "response is AddReactionToAMessageResponse");
-        }
-        
-        /// <summary>
-        /// Test DeleteEmojiByKey
-        /// </summary>
-        [Test]
-        public void DeleteEmojiByKeyTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
-            //string emojiKey = null;
-            //instance.DeleteEmojiByKey(apiToken, emojiKey);
-            
-        }
-        
-        /// <summary>
-        /// Test DeleteEmojiCategoryById
-        /// </summary>
-        [Test]
-        public void DeleteEmojiCategoryByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string emojiCategoryId = null;
-            //var response = instance.DeleteEmojiCategoryById(apiToken, emojiCategoryId);
+            //var response = instance.DeleteAMessage(channelType, channelUrl, messageId, apiToken);
             //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         
         /// <summary>
-        /// Test DeleteMessageById
+        /// Test GetAMessage
         /// </summary>
         [Test]
-        public void DeleteMessageByIdTest()
+        public void GetAMessageTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string channelType = null;
             //string channelUrl = null;
             //string messageId = null;
-            //var response = instance.DeleteMessageById(apiToken, channelType, channelUrl, messageId);
-            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
+            //bool? includeReactions = null;
+            //bool? includeThreadInfo = null;
+            //bool? includeParentMessageInfo = null;
+            //bool? includePollDetails = null;
+            //bool? withSortedMetaArray = null;
+            //string apiToken = null;
+            //var response = instance.GetAMessage(channelType, channelUrl, messageId, includeReactions, includeThreadInfo, includeParentMessageInfo, includePollDetails, withSortedMetaArray, apiToken);
+            //Assert.IsInstanceOf(typeof(SendbirdMessageResponse), response, "response is SendbirdMessageResponse");
         }
         
         /// <summary>
-        /// Test EnableReactions
+        /// Test GetTotalNumberOfMessagesInAChannel
         /// </summary>
         [Test]
-        public void EnableReactionsTest()
+        public void GetTotalNumberOfMessagesInAChannelTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //EnableReactionsData enableReactionsData = null;
-            //var response = instance.EnableReactions(apiToken, enableReactionsData);
-            //Assert.IsInstanceOf(typeof(EnableReactionsResponse), response, "response is EnableReactionsResponse");
-        }
-        
-        /// <summary>
-        /// Test GcMarkAllMessagesAsDelivered
-        /// </summary>
-        [Test]
-        public void GcMarkAllMessagesAsDeliveredTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
+            //string channelType = null;
             //string channelUrl = null;
-            //GcMarkAllMessagesAsDeliveredData gcMarkAllMessagesAsDeliveredData = null;
-            //var response = instance.GcMarkAllMessagesAsDelivered(apiToken, channelUrl, gcMarkAllMessagesAsDeliveredData);
-            //Assert.IsInstanceOf(typeof(GcMarkAllMessagesAsDeliveredResponse), response, "response is GcMarkAllMessagesAsDeliveredResponse");
-        }
-        
-        /// <summary>
-        /// Test GcMarkAllMessagesAsRead
-        /// </summary>
-        [Test]
-        public void GcMarkAllMessagesAsReadTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
-            //string channelUrl = null;
-            //GcMarkAllMessagesAsReadData gcMarkAllMessagesAsReadData = null;
-            //var response = instance.GcMarkAllMessagesAsRead(apiToken, channelUrl, gcMarkAllMessagesAsReadData);
-            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
-        }
-        
-        /// <summary>
-        /// Test GcViewNumberOfEachMembersUnreadMessages
-        /// </summary>
-        [Test]
-        public void GcViewNumberOfEachMembersUnreadMessagesTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //string userIds = null;
-            //var response = instance.GcViewNumberOfEachMembersUnreadMessages(apiToken, channelUrl, userIds);
-            //Assert.IsInstanceOf(typeof(GcViewNumberOfEachMembersUnreadMessagesResponse), response, "response is GcViewNumberOfEachMembersUnreadMessagesResponse");
-        }
-        
-        /// <summary>
-        /// Test GetEmojiByKey
-        /// </summary>
-        [Test]
-        public void GetEmojiByKeyTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string emojiKey = null;
-            //var response = instance.GetEmojiByKey(apiToken, emojiKey);
-            //Assert.IsInstanceOf(typeof(SendBirdEmoji), response, "response is SendBirdEmoji");
-        }
-        
-        /// <summary>
-        /// Test GetEmojiCategoryById
-        /// </summary>
-        [Test]
-        public void GetEmojiCategoryByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string emojiCategoryId = null;
-            //var response = instance.GetEmojiCategoryById(apiToken, emojiCategoryId);
-            //Assert.IsInstanceOf(typeof(SendBirdEmojiCategory), response, "response is SendBirdEmojiCategory");
-        }
-        
-        /// <summary>
-        /// Test ListAllEmojisAndEmojiCategories
-        /// </summary>
-        [Test]
-        public void ListAllEmojisAndEmojiCategoriesTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //var response = instance.ListAllEmojisAndEmojiCategories(apiToken);
-            //Assert.IsInstanceOf(typeof(ListAllEmojisAndEmojiCategoriesResponse), response, "response is ListAllEmojisAndEmojiCategoriesResponse");
-        }
-        
-        /// <summary>
-        /// Test ListAnnouncements
-        /// </summary>
-        [Test]
-        public void ListAnnouncementsTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string token = null;
-            //int? limit = null;
-            //string order = null;
-            //string status = null;
-            //string announcementGroup = null;
-            //var response = instance.ListAnnouncements(apiToken, token, limit, order, status, announcementGroup);
-            //Assert.IsInstanceOf(typeof(ListAnnouncementsResponse), response, "response is ListAnnouncementsResponse");
-        }
-        
-        /// <summary>
-        /// Test ListEmojis
-        /// </summary>
-        [Test]
-        public void ListEmojisTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //var response = instance.ListEmojis(apiToken);
-            //Assert.IsInstanceOf(typeof(ListEmojisResponse), response, "response is ListEmojisResponse");
+            //var response = instance.GetTotalNumberOfMessagesInAChannel(channelType, channelUrl, apiToken);
+            //Assert.IsInstanceOf(typeof(GetTotalNumberOfMessagesInAChannelResponse), response, "response is GetTotalNumberOfMessagesInAChannelResponse");
         }
         
         /// <summary>
@@ -291,11 +135,10 @@ namespace sendbird_platform_sdk.Test
         public void ListMessagesTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string channelType = null;
             //string channelUrl = null;
-            //string messageTs = null;
-            //int? messageId = null;
+            //long messageTs = null;
+            //long messageId = null;
             //int? prevLimit = null;
             //int? nextLimit = null;
             //bool? include = null;
@@ -307,211 +150,107 @@ namespace sendbird_platform_sdk.Test
             //string messageType = null;
             //bool? includingRemoved = null;
             //bool? includeReactions = null;
+            //string includeReplyType = null;
+            //bool? includeParentMessageInfo = null;
+            //bool? includeThreadInfo = null;
+            //bool? includePollDetails = null;
             //bool? withSortedMetaArray = null;
             //bool? showSubchannelMessagesOnly = null;
             //string userId = null;
-            //string customType = null;
-            //bool? withMetaArray = null;
-            //var response = instance.ListMessages(apiToken, channelType, channelUrl, messageTs, messageId, prevLimit, nextLimit, include, reverse, senderId, senderIds, operatorFilter, customTypes, messageType, includingRemoved, includeReactions, withSortedMetaArray, showSubchannelMessagesOnly, userId, customType, withMetaArray);
+            //string apiToken = null;
+            //var response = instance.ListMessages(channelType, channelUrl, messageTs, messageId, prevLimit, nextLimit, include, reverse, senderId, senderIds, operatorFilter, customTypes, messageType, includingRemoved, includeReactions, includeReplyType, includeParentMessageInfo, includeThreadInfo, includePollDetails, withSortedMetaArray, showSubchannelMessagesOnly, userId, apiToken);
             //Assert.IsInstanceOf(typeof(ListMessagesResponse), response, "response is ListMessagesResponse");
         }
         
         /// <summary>
-        /// Test ListReactionsOfMessage
+        /// Test MarkChannelMessagesAsRead
         /// </summary>
         [Test]
-        public void ListReactionsOfMessageTest()
+        public void MarkChannelMessagesAsReadTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelType = null;
             //string channelUrl = null;
-            //string messageId = null;
-            //bool? listUsers = null;
-            //var response = instance.ListReactionsOfMessage(apiToken, channelType, channelUrl, messageId, listUsers);
-            //Assert.IsInstanceOf(typeof(ListReactionsOfMessageResponse), response, "response is ListReactionsOfMessageResponse");
-        }
-        
-        /// <summary>
-        /// Test MigrateMessagesByUrl
-        /// </summary>
-        [Test]
-        public void MigrateMessagesByUrlTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
-            //string targetChannelUrl = null;
-            //Object body = null;
-            //instance.MigrateMessagesByUrl(apiToken, targetChannelUrl, body);
-            
-        }
-        
-        /// <summary>
-        /// Test RemoveExtraDataFromMessage
-        /// </summary>
-        [Test]
-        public void RemoveExtraDataFromMessageTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelType = null;
-            //string channelUrl = null;
-            //string messageId = null;
-            //List<string> keys = null;
-            //var response = instance.RemoveExtraDataFromMessage(apiToken, channelType, channelUrl, messageId, keys);
+            //MarkChannelMessagesAsReadRequest markChannelMessagesAsReadRequest = null;
+            //var response = instance.MarkChannelMessagesAsRead(channelUrl, apiToken, markChannelMessagesAsReadRequest);
             //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         
         /// <summary>
-        /// Test RemoveReactionFromAMessage
+        /// Test MigrateMessages
         /// </summary>
         [Test]
-        public void RemoveReactionFromAMessageTest()
+        public void MigrateMessagesTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
+            //string targetChannelUrl = null;
             //string apiToken = null;
+            //MigrateMessagesRequest migrateMessagesRequest = null;
+            //var response = instance.MigrateMessages(targetChannelUrl, apiToken, migrateMessagesRequest);
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
+        }
+        
+        /// <summary>
+        /// Test RemoveExtraDataFromAMessage
+        /// </summary>
+        [Test]
+        public void RemoveExtraDataFromAMessageTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
             //string channelType = null;
             //string channelUrl = null;
             //string messageId = null;
-            //string userId = null;
-            //string reaction = null;
-            //var response = instance.RemoveReactionFromAMessage(apiToken, channelType, channelUrl, messageId, userId, reaction);
-            //Assert.IsInstanceOf(typeof(RemoveReactionFromAMessageResponse), response, "response is RemoveReactionFromAMessageResponse");
+            //string keys = null;
+            //string apiToken = null;
+            //var response = instance.RemoveExtraDataFromAMessage(channelType, channelUrl, messageId, keys, apiToken);
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         
         /// <summary>
-        /// Test SendMessage
+        /// Test SendAMessage
         /// </summary>
         [Test]
-        public void SendMessageTest()
+        public void SendAMessageTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string channelType = null;
             //string channelUrl = null;
-            //SendMessageData sendMessageData = null;
-            //var response = instance.SendMessage(apiToken, channelType, channelUrl, sendMessageData);
-            //Assert.IsInstanceOf(typeof(SendBirdMessageResponse), response, "response is SendBirdMessageResponse");
+            //string apiToken = null;
+            //SendAMessageRequest sendAMessageRequest = null;
+            //var response = instance.SendAMessage(channelType, channelUrl, apiToken, sendAMessageRequest);
+            //Assert.IsInstanceOf(typeof(SendbirdMessageResponse), response, "response is SendbirdMessageResponse");
         }
         
         /// <summary>
-        /// Test TranslateMessageIntoOtherLanguages
+        /// Test UpdateAMessage
         /// </summary>
         [Test]
-        public void TranslateMessageIntoOtherLanguagesTest()
+        public void UpdateAMessageTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelType = null;
-            //string channelUrl = null;
-            //string messageId = null;
-            //TranslateMessageIntoOtherLanguagesData translateMessageIntoOtherLanguagesData = null;
-            //var response = instance.TranslateMessageIntoOtherLanguages(apiToken, channelType, channelUrl, messageId, translateMessageIntoOtherLanguagesData);
-            //Assert.IsInstanceOf(typeof(SendBirdMessageResponse), response, "response is SendBirdMessageResponse");
-        }
-        
-        /// <summary>
-        /// Test UpdateEmojiCategoryUrlById
-        /// </summary>
-        [Test]
-        public void UpdateEmojiCategoryUrlByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string emojiCategoryId = null;
-            //UpdateEmojiCategoryUrlByIdData updateEmojiCategoryUrlByIdData = null;
-            //var response = instance.UpdateEmojiCategoryUrlById(apiToken, emojiCategoryId, updateEmojiCategoryUrlByIdData);
-            //Assert.IsInstanceOf(typeof(SendBirdEmojiCategory), response, "response is SendBirdEmojiCategory");
-        }
-        
-        /// <summary>
-        /// Test UpdateEmojiUrlByKey
-        /// </summary>
-        [Test]
-        public void UpdateEmojiUrlByKeyTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string emojiKey = null;
-            //UpdateEmojiUrlByKeyData updateEmojiUrlByKeyData = null;
-            //var response = instance.UpdateEmojiUrlByKey(apiToken, emojiKey, updateEmojiUrlByKeyData);
-            //Assert.IsInstanceOf(typeof(SendBirdEmoji), response, "response is SendBirdEmoji");
-        }
-        
-        /// <summary>
-        /// Test UpdateExtraDataInMessage
-        /// </summary>
-        [Test]
-        public void UpdateExtraDataInMessageTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string channelType = null;
             //string channelUrl = null;
             //string messageId = null;
-            //UpdateExtraDataInMessageData updateExtraDataInMessageData = null;
-            //var response = instance.UpdateExtraDataInMessage(apiToken, channelType, channelUrl, messageId, updateExtraDataInMessageData);
-            //Assert.IsInstanceOf(typeof(UpdateExtraDataInMessageResponse), response, "response is UpdateExtraDataInMessageResponse");
+            //string apiToken = null;
+            //UpdateAMessageRequest updateAMessageRequest = null;
+            //var response = instance.UpdateAMessage(channelType, channelUrl, messageId, apiToken, updateAMessageRequest);
+            //Assert.IsInstanceOf(typeof(SendbirdMessageResponse), response, "response is SendbirdMessageResponse");
         }
         
         /// <summary>
-        /// Test UpdateMessageById
+        /// Test UpdateExtraDataInAMessage
         /// </summary>
         [Test]
-        public void UpdateMessageByIdTest()
+        public void UpdateExtraDataInAMessageTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string channelType = null;
             //string channelUrl = null;
             //string messageId = null;
-            //UpdateMessageByIdData updateMessageByIdData = null;
-            //var response = instance.UpdateMessageById(apiToken, channelType, channelUrl, messageId, updateMessageByIdData);
-            //Assert.IsInstanceOf(typeof(SendBirdMessageResponse), response, "response is SendBirdMessageResponse");
-        }
-        
-        /// <summary>
-        /// Test UseDefaultEmojis
-        /// </summary>
-        [Test]
-        public void UseDefaultEmojisTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
-            //UseDefaultEmojisData useDefaultEmojisData = null;
-            //var response = instance.UseDefaultEmojis(apiToken, useDefaultEmojisData);
-            //Assert.IsInstanceOf(typeof(UseDefaultEmojisResponse), response, "response is UseDefaultEmojisResponse");
-        }
-        
-        /// <summary>
-        /// Test ViewMessageById
-        /// </summary>
-        [Test]
-        public void ViewMessageByIdTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelType = null;
-            //string channelUrl = null;
-            //string messageId = null;
-            //bool? withSortedMetaArray = null;
-            //bool? withMetaArray = null;
-            //var response = instance.ViewMessageById(apiToken, channelType, channelUrl, messageId, withSortedMetaArray, withMetaArray);
-            //Assert.IsInstanceOf(typeof(SendBirdMessageResponse), response, "response is SendBirdMessageResponse");
-        }
-        
-        /// <summary>
-        /// Test ViewTotalNumberOfMessagesInChannel
-        /// </summary>
-        [Test]
-        public void ViewTotalNumberOfMessagesInChannelTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelType = null;
-            //string channelUrl = null;
-            //var response = instance.ViewTotalNumberOfMessagesInChannel(apiToken, channelType, channelUrl);
-            //Assert.IsInstanceOf(typeof(ViewTotalNumberOfMessagesInChannelResponse), response, "response is ViewTotalNumberOfMessagesInChannelResponse");
+            //UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = null;
+            //var response = instance.UpdateExtraDataInAMessage(channelType, channelUrl, messageId, apiToken, updateExtraDataInAMessageRequest);
+            //Assert.IsInstanceOf(typeof(UpdateExtraDataInAMessageResponse), response, "response is UpdateExtraDataInAMessageResponse");
         }
         
     }

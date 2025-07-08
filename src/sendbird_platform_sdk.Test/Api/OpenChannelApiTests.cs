@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -64,135 +64,121 @@ namespace sendbird_platform_sdk.Test
 
         
         /// <summary>
-        /// Test OcCancelTheRegistrationOfOperators
+        /// Test CreateAnOpenChannel
         /// </summary>
         [Test]
-        public void OcCancelTheRegistrationOfOperatorsTest()
+        public void CreateAnOpenChannelTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
+            //CreateAnOpenChannelRequest createAnOpenChannelRequest = null;
+            //var response = instance.CreateAnOpenChannel(apiToken, createAnOpenChannelRequest);
+            //Assert.IsInstanceOf(typeof(SendbirdOpenChannel), response, "response is SendbirdOpenChannel");
+        }
+        
+        /// <summary>
+        /// Test DeleteAnOpenChannel
+        /// </summary>
+        [Test]
+        public void DeleteAnOpenChannelTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
             //string channelUrl = null;
-            //List<string> operatorIds = null;
-            //bool? deleteAll = null;
-            //instance.OcCancelTheRegistrationOfOperators(apiToken, channelUrl, operatorIds, deleteAll);
-            
+            //string apiToken = null;
+            //var response = instance.DeleteAnOpenChannel(channelUrl, apiToken);
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         
         /// <summary>
-        /// Test OcCreateChannel
+        /// Test GetAnOpenChannel
         /// </summary>
         [Test]
-        public void OcCreateChannelTest()
+        public void GetAnOpenChannelTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //OcCreateChannelData ocCreateChannelData = null;
-            //var response = instance.OcCreateChannel(apiToken, ocCreateChannelData);
-            //Assert.IsInstanceOf(typeof(SendBirdOpenChannel), response, "response is SendBirdOpenChannel");
-        }
-        
-        /// <summary>
-        /// Test OcDeleteChannelByUrl
-        /// </summary>
-        [Test]
-        public void OcDeleteChannelByUrlTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string channelUrl = null;
-            //var response = instance.OcDeleteChannelByUrl(apiToken, channelUrl);
-            //Assert.IsInstanceOf(typeof(OcDeleteChannelByUrl200Response), response, "response is OcDeleteChannelByUrl200Response");
+            //string apiToken = null;
+            //bool? includeOperators = null;
+            //var response = instance.GetAnOpenChannel(channelUrl, apiToken, includeOperators);
+            //Assert.IsInstanceOf(typeof(SendbirdOpenChannel), response, "response is SendbirdOpenChannel");
         }
         
         /// <summary>
-        /// Test OcListChannels
+        /// Test ListChannelOperators
         /// </summary>
         [Test]
-        public void OcListChannelsTest()
+        public void ListChannelOperatorsTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
+            //string channelUrl = null;
             //string token = null;
+            //int? limit = null;
+            //string apiToken = null;
+            //var response = instance.ListChannelOperators(channelUrl, token, limit, apiToken);
+            //Assert.IsInstanceOf(typeof(ListOperatorsResponse), response, "response is ListOperatorsResponse");
+        }
+        
+        /// <summary>
+        /// Test ListOpenChannels
+        /// </summary>
+        [Test]
+        public void ListOpenChannelsTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string token = null;
+            //string channelUrls = null;
             //int? limit = null;
             //string customTypes = null;
             //string nameContains = null;
             //string urlContains = null;
             //bool? showFrozen = null;
             //bool? showMetadata = null;
-            //string customType = null;
-            //var response = instance.OcListChannels(apiToken, token, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, customType);
-            //Assert.IsInstanceOf(typeof(OcListChannelsResponse), response, "response is OcListChannelsResponse");
+            //string apiToken = null;
+            //var response = instance.ListOpenChannels(token, channelUrls, limit, customTypes, nameContains, urlContains, showFrozen, showMetadata, apiToken);
+            //Assert.IsInstanceOf(typeof(ListOpenChannelsResponse), response, "response is ListOpenChannelsResponse");
         }
         
         /// <summary>
-        /// Test OcListOperators
+        /// Test RegisterOperators
         /// </summary>
         [Test]
-        public void OcListOperatorsTest()
+        public void RegisterOperatorsTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string channelUrl = null;
-            //string token = null;
-            //int? limit = null;
-            //var response = instance.OcListOperators(apiToken, channelUrl, token, limit);
-            //Assert.IsInstanceOf(typeof(OcListOperatorsResponse), response, "response is OcListOperatorsResponse");
+            //string apiToken = null;
+            //RegisterOperatorsToAGroupChannelRequest registerOperatorsToAGroupChannelRequest = null;
+            //var response = instance.RegisterOperators(channelUrl, apiToken, registerOperatorsToAGroupChannelRequest);
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         
         /// <summary>
-        /// Test OcListParticipants
+        /// Test UnregisterOperators
         /// </summary>
         [Test]
-        public void OcListParticipantsTest()
+        public void UnregisterOperatorsTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string channelUrl = null;
-            //string token = null;
-            //int? limit = null;
-            //var response = instance.OcListParticipants(apiToken, channelUrl, token, limit);
-            //Assert.IsInstanceOf(typeof(OcListParticipantsResponse), response, "response is OcListParticipantsResponse");
+            //string operatorIds = null;
+            //bool? deleteAll = null;
+            //string apiToken = null;
+            //var response = instance.UnregisterOperators(channelUrl, operatorIds, deleteAll, apiToken);
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         
         /// <summary>
-        /// Test OcRegisterOperators
+        /// Test UpdateAnOpenChannel
         /// </summary>
         [Test]
-        public void OcRegisterOperatorsTest()
+        public void UpdateAnOpenChannelTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string channelUrl = null;
-            //OcRegisterOperatorsData ocRegisterOperatorsData = null;
-            //var response = instance.OcRegisterOperators(apiToken, channelUrl, ocRegisterOperatorsData);
-            //Assert.IsInstanceOf(typeof(OcDeleteChannelByUrl200Response), response, "response is OcDeleteChannelByUrl200Response");
-        }
-        
-        /// <summary>
-        /// Test OcUpdateChannelByUrl
-        /// </summary>
-        [Test]
-        public void OcUpdateChannelByUrlTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
-            //string channelUrl = null;
-            //OcUpdateChannelByUrlData ocUpdateChannelByUrlData = null;
-            //var response = instance.OcUpdateChannelByUrl(apiToken, channelUrl, ocUpdateChannelByUrlData);
-            //Assert.IsInstanceOf(typeof(SendBirdOpenChannel), response, "response is SendBirdOpenChannel");
-        }
-        
-        /// <summary>
-        /// Test OcViewChannelByUrl
-        /// </summary>
-        [Test]
-        public void OcViewChannelByUrlTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelUrl = null;
-            //var response = instance.OcViewChannelByUrl(apiToken, channelUrl);
-            //Assert.IsInstanceOf(typeof(SendBirdOpenChannel), response, "response is SendBirdOpenChannel");
+            //UpdateAnOpenChannelRequest updateAnOpenChannelRequest = null;
+            //var response = instance.UpdateAnOpenChannel(channelUrl, apiToken, updateAnOpenChannelRequest);
+            //Assert.IsInstanceOf(typeof(SendbirdOpenChannel), response, "response is SendbirdOpenChannel");
         }
         
     }

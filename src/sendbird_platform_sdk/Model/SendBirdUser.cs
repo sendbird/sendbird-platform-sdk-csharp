@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -28,84 +28,122 @@ namespace sendbird_platform_sdk.Model
     /// User
     /// </summary>
     [DataContract]
-    public partial class SendBirdUser :  IEquatable<SendBirdUser>, IValidatableObject
+    public partial class SendbirdUser :  IEquatable<SendbirdUser>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="SendBirdUser" /> class.
+        /// Defines State
         /// </summary>
-        /// <param name="requireAuthForProfileImage">requireAuthForProfileImage.</param>
-        /// <param name="isOnline">isOnline.</param>
-        /// <param name="userId">userId.</param>
-        /// <param name="accessToken">accessToken.</param>
-        /// <param name="hasEverLoggedIn">hasEverLoggedIn.</param>
-        /// <param name="isActive">isActive.</param>
-        /// <param name="lastSeenAt">lastSeenAt.</param>
-        /// <param name="nickname">nickname.</param>
-        /// <param name="discoveryKeys">discoveryKeys.</param>
-        /// <param name="sessionTokens">sessionTokens.</param>
-        /// <param name="preferredLanguages">preferredLanguages.</param>
-        /// <param name="profileUrl">profileUrl.</param>
-        /// <param name="createdAt">createdAt.</param>
-        /// <param name="phoneNumber">phoneNumber.</param>
-        /// <param name="local">local.</param>
-        /// <param name="locale">locale.</param>
-        /// <param name="isHideMeFromFriends">isHideMeFromFriends.</param>
-        /// <param name="isShadowBlocked">isShadowBlocked.</param>
-        /// <param name="isCreated">isCreated.</param>
-        /// <param name="metadata">metadata.</param>
-        /// <param name="description">description.</param>
-        /// <param name="endAt">endAt.</param>
-        /// <param name="startAt">startAt.</param>
-        public SendBirdUser(bool requireAuthForProfileImage = default(bool), bool isOnline = default(bool), string userId = default(string), string accessToken = default(string), bool hasEverLoggedIn = default(bool), bool isActive = default(bool), int lastSeenAt = default(int), string nickname = default(string), List<string> discoveryKeys = default(List<string>), List<Object> sessionTokens = default(List<Object>), List<string> preferredLanguages = default(List<string>), string profileUrl = default(string), int createdAt = default(int), string phoneNumber = default(string), string local = default(string), string locale = default(string), bool isHideMeFromFriends = default(bool), bool isShadowBlocked = default(bool), bool isCreated = default(bool), Object metadata = default(Object), string description = default(string), decimal endAt = default(decimal), decimal startAt = default(decimal))
+        [JsonConverter(typeof(StringEnumConverter))]
+        public enum StateEnum
         {
-            this.RequireAuthForProfileImage = requireAuthForProfileImage;
-            this.IsOnline = isOnline;
-            this.UserId = userId;
-            this.AccessToken = accessToken;
-            this.HasEverLoggedIn = hasEverLoggedIn;
-            this.IsActive = isActive;
-            this.LastSeenAt = lastSeenAt;
-            this.Nickname = nickname;
-            this.DiscoveryKeys = discoveryKeys;
-            this.SessionTokens = sessionTokens;
-            this.PreferredLanguages = preferredLanguages;
-            this.ProfileUrl = profileUrl;
-            this.CreatedAt = createdAt;
-            this.PhoneNumber = phoneNumber;
-            this.Local = local;
-            this.Locale = locale;
-            this.IsHideMeFromFriends = isHideMeFromFriends;
-            this.IsShadowBlocked = isShadowBlocked;
-            this.IsCreated = isCreated;
-            this.Metadata = metadata;
-            this.Description = description;
-            this.EndAt = endAt;
-            this.StartAt = startAt;
+            /// <summary>
+            /// Enum Empty for value: 
+            /// </summary>
+            [EnumMember(Value = "")]
+            Empty = 1,
+
+            /// <summary>
+            /// Enum Invited for value: invited
+            /// </summary>
+            [EnumMember(Value = "invited")]
+            Invited = 2,
+
+            /// <summary>
+            /// Enum Joined for value: joined
+            /// </summary>
+            [EnumMember(Value = "joined")]
+            Joined = 3
+
         }
 
         /// <summary>
-        /// Gets or Sets RequireAuthForProfileImage
+        /// Gets or Sets State
         /// </summary>
-        [DataMember(Name="require_auth_for_profile_image", EmitDefaultValue=false)]
-        public bool RequireAuthForProfileImage { get; set; }
-
+        [DataMember(Name="state", EmitDefaultValue=true)]
+        public StateEnum? State { get; set; }
         /// <summary>
-        /// Gets or Sets IsOnline
+        /// Initializes a new instance of the <see cref="SendbirdUser" /> class.
         /// </summary>
-        [DataMember(Name="is_online", EmitDefaultValue=false)]
-        public bool IsOnline { get; set; }
-
+        [JsonConstructorAttribute]
+        protected SendbirdUser() { }
         /// <summary>
-        /// Gets or Sets UserId
+        /// Initializes a new instance of the <see cref="SendbirdUser" /> class.
         /// </summary>
-        [DataMember(Name="user_id", EmitDefaultValue=false)]
-        public string UserId { get; set; }
+        /// <param name="accessToken">accessToken.</param>
+        /// <param name="createdAt">createdAt.</param>
+        /// <param name="discoveryKeys">discoveryKeys.</param>
+        /// <param name="hasEverLoggedIn">hasEverLoggedIn.</param>
+        /// <param name="isActive">isActive.</param>
+        /// <param name="isHideMeFromFriends">isHideMeFromFriends.</param>
+        /// <param name="isOnline">isOnline.</param>
+        /// <param name="isShadowBlocked">isShadowBlocked.</param>
+        /// <param name="lastSeenAt">lastSeenAt.</param>
+        /// <param name="locale">locale.</param>
+        /// <param name="metadata">metadata.</param>
+        /// <param name="nickname">nickname.</param>
+        /// <param name="preferredLanguages">preferredLanguages.</param>
+        /// <param name="profileUrl">profileUrl.</param>
+        /// <param name="requireAuthForProfileImage">requireAuthForProfileImage.</param>
+        /// <param name="userId">userId (required).</param>
+        /// <param name="state">state.</param>
+        /// <param name="unreadChannelCount">unreadChannelCount.</param>
+        /// <param name="unreadMessageCount">unreadMessageCount.</param>
+        /// <param name="phoneNumber">phoneNumber.</param>
+        /// <param name="isCreated">isCreated.</param>
+        /// <param name="sessionTokens">sessionTokens.</param>
+        public SendbirdUser(string accessToken = default(string), long createdAt = default(long), List<string> discoveryKeys = default(List<string>), bool hasEverLoggedIn = default(bool), bool isActive = default(bool), bool isHideMeFromFriends = default(bool), bool isOnline = default(bool), bool isShadowBlocked = default(bool), long lastSeenAt = default(long), string locale = default(string), Object metadata = default(Object), string nickname = default(string), List<string> preferredLanguages = default(List<string>), string profileUrl = default(string), bool requireAuthForProfileImage = default(bool), string userId = default(string), StateEnum? state = default(StateEnum?), int unreadChannelCount = default(int), int unreadMessageCount = default(int), string phoneNumber = default(string), bool isCreated = default(bool), List<string> sessionTokens = default(List<string>))
+        {
+            // to ensure "userId" is required (not null)
+            if (userId == null)
+            {
+                throw new InvalidDataException("userId is a required property for SendbirdUser and cannot be null");
+            }
+            else
+            {
+                this.UserId = userId;
+            }
+
+            this.State = state;
+            this.AccessToken = accessToken;
+            this.CreatedAt = createdAt;
+            this.DiscoveryKeys = discoveryKeys;
+            this.HasEverLoggedIn = hasEverLoggedIn;
+            this.IsActive = isActive;
+            this.IsHideMeFromFriends = isHideMeFromFriends;
+            this.IsOnline = isOnline;
+            this.IsShadowBlocked = isShadowBlocked;
+            this.LastSeenAt = lastSeenAt;
+            this.Locale = locale;
+            this.Metadata = metadata;
+            this.Nickname = nickname;
+            this.PreferredLanguages = preferredLanguages;
+            this.ProfileUrl = profileUrl;
+            this.RequireAuthForProfileImage = requireAuthForProfileImage;
+            this.State = state;
+            this.UnreadChannelCount = unreadChannelCount;
+            this.UnreadMessageCount = unreadMessageCount;
+            this.PhoneNumber = phoneNumber;
+            this.IsCreated = isCreated;
+            this.SessionTokens = sessionTokens;
+        }
 
         /// <summary>
         /// Gets or Sets AccessToken
         /// </summary>
         [DataMember(Name="access_token", EmitDefaultValue=false)]
         public string AccessToken { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CreatedAt
+        /// </summary>
+        [DataMember(Name="created_at", EmitDefaultValue=false)]
+        public long CreatedAt { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DiscoveryKeys
+        /// </summary>
+        [DataMember(Name="discovery_keys", EmitDefaultValue=false)]
+        public List<string> DiscoveryKeys { get; set; }
 
         /// <summary>
         /// Gets or Sets HasEverLoggedIn
@@ -120,28 +158,46 @@ namespace sendbird_platform_sdk.Model
         public bool IsActive { get; set; }
 
         /// <summary>
+        /// Gets or Sets IsHideMeFromFriends
+        /// </summary>
+        [DataMember(Name="is_hide_me_from_friends", EmitDefaultValue=false)]
+        public bool IsHideMeFromFriends { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsOnline
+        /// </summary>
+        [DataMember(Name="is_online", EmitDefaultValue=false)]
+        public bool IsOnline { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsShadowBlocked
+        /// </summary>
+        [DataMember(Name="is_shadow_blocked", EmitDefaultValue=false)]
+        public bool IsShadowBlocked { get; set; }
+
+        /// <summary>
         /// Gets or Sets LastSeenAt
         /// </summary>
         [DataMember(Name="last_seen_at", EmitDefaultValue=false)]
-        public int LastSeenAt { get; set; }
+        public long LastSeenAt { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Locale
+        /// </summary>
+        [DataMember(Name="locale", EmitDefaultValue=false)]
+        public string Locale { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Metadata
+        /// </summary>
+        [DataMember(Name="metadata", EmitDefaultValue=false)]
+        public Object Metadata { get; set; }
 
         /// <summary>
         /// Gets or Sets Nickname
         /// </summary>
         [DataMember(Name="nickname", EmitDefaultValue=false)]
         public string Nickname { get; set; }
-
-        /// <summary>
-        /// Gets or Sets DiscoveryKeys
-        /// </summary>
-        [DataMember(Name="discovery_keys", EmitDefaultValue=false)]
-        public List<string> DiscoveryKeys { get; set; }
-
-        /// <summary>
-        /// Gets or Sets SessionTokens
-        /// </summary>
-        [DataMember(Name="session_tokens", EmitDefaultValue=false)]
-        public List<Object> SessionTokens { get; set; }
 
         /// <summary>
         /// Gets or Sets PreferredLanguages
@@ -156,10 +212,29 @@ namespace sendbird_platform_sdk.Model
         public string ProfileUrl { get; set; }
 
         /// <summary>
-        /// Gets or Sets CreatedAt
+        /// Gets or Sets RequireAuthForProfileImage
         /// </summary>
-        [DataMember(Name="created_at", EmitDefaultValue=false)]
-        public int CreatedAt { get; set; }
+        [DataMember(Name="require_auth_for_profile_image", EmitDefaultValue=false)]
+        public bool RequireAuthForProfileImage { get; set; }
+
+        /// <summary>
+        /// Gets or Sets UserId
+        /// </summary>
+        [DataMember(Name="user_id", EmitDefaultValue=true)]
+        public string UserId { get; set; }
+
+
+        /// <summary>
+        /// Gets or Sets UnreadChannelCount
+        /// </summary>
+        [DataMember(Name="unread_channel_count", EmitDefaultValue=false)]
+        public int UnreadChannelCount { get; set; }
+
+        /// <summary>
+        /// Gets or Sets UnreadMessageCount
+        /// </summary>
+        [DataMember(Name="unread_message_count", EmitDefaultValue=false)]
+        public int UnreadMessageCount { get; set; }
 
         /// <summary>
         /// Gets or Sets PhoneNumber
@@ -168,58 +243,16 @@ namespace sendbird_platform_sdk.Model
         public string PhoneNumber { get; set; }
 
         /// <summary>
-        /// Gets or Sets Local
-        /// </summary>
-        [DataMember(Name="local", EmitDefaultValue=false)]
-        public string Local { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Locale
-        /// </summary>
-        [DataMember(Name="locale", EmitDefaultValue=false)]
-        public string Locale { get; set; }
-
-        /// <summary>
-        /// Gets or Sets IsHideMeFromFriends
-        /// </summary>
-        [DataMember(Name="is_hide_me_from_friends", EmitDefaultValue=false)]
-        public bool IsHideMeFromFriends { get; set; }
-
-        /// <summary>
-        /// Gets or Sets IsShadowBlocked
-        /// </summary>
-        [DataMember(Name="is_shadow_blocked", EmitDefaultValue=false)]
-        public bool IsShadowBlocked { get; set; }
-
-        /// <summary>
         /// Gets or Sets IsCreated
         /// </summary>
         [DataMember(Name="is_created", EmitDefaultValue=false)]
         public bool IsCreated { get; set; }
 
         /// <summary>
-        /// Gets or Sets Metadata
+        /// Gets or Sets SessionTokens
         /// </summary>
-        [DataMember(Name="metadata", EmitDefaultValue=false)]
-        public Object Metadata { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Description
-        /// </summary>
-        [DataMember(Name="description", EmitDefaultValue=false)]
-        public string Description { get; set; }
-
-        /// <summary>
-        /// Gets or Sets EndAt
-        /// </summary>
-        [DataMember(Name="end_at", EmitDefaultValue=false)]
-        public decimal EndAt { get; set; }
-
-        /// <summary>
-        /// Gets or Sets StartAt
-        /// </summary>
-        [DataMember(Name="start_at", EmitDefaultValue=false)]
-        public decimal StartAt { get; set; }
+        [DataMember(Name="session_tokens", EmitDefaultValue=false)]
+        public List<string> SessionTokens { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -228,30 +261,29 @@ namespace sendbird_platform_sdk.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class SendBirdUser {\n");
-            sb.Append("  RequireAuthForProfileImage: ").Append(RequireAuthForProfileImage).Append("\n");
-            sb.Append("  IsOnline: ").Append(IsOnline).Append("\n");
-            sb.Append("  UserId: ").Append(UserId).Append("\n");
+            sb.Append("class SendbirdUser {\n");
             sb.Append("  AccessToken: ").Append(AccessToken).Append("\n");
+            sb.Append("  CreatedAt: ").Append(CreatedAt).Append("\n");
+            sb.Append("  DiscoveryKeys: ").Append(DiscoveryKeys).Append("\n");
             sb.Append("  HasEverLoggedIn: ").Append(HasEverLoggedIn).Append("\n");
             sb.Append("  IsActive: ").Append(IsActive).Append("\n");
+            sb.Append("  IsHideMeFromFriends: ").Append(IsHideMeFromFriends).Append("\n");
+            sb.Append("  IsOnline: ").Append(IsOnline).Append("\n");
+            sb.Append("  IsShadowBlocked: ").Append(IsShadowBlocked).Append("\n");
             sb.Append("  LastSeenAt: ").Append(LastSeenAt).Append("\n");
+            sb.Append("  Locale: ").Append(Locale).Append("\n");
+            sb.Append("  Metadata: ").Append(Metadata).Append("\n");
             sb.Append("  Nickname: ").Append(Nickname).Append("\n");
-            sb.Append("  DiscoveryKeys: ").Append(DiscoveryKeys).Append("\n");
-            sb.Append("  SessionTokens: ").Append(SessionTokens).Append("\n");
             sb.Append("  PreferredLanguages: ").Append(PreferredLanguages).Append("\n");
             sb.Append("  ProfileUrl: ").Append(ProfileUrl).Append("\n");
-            sb.Append("  CreatedAt: ").Append(CreatedAt).Append("\n");
+            sb.Append("  RequireAuthForProfileImage: ").Append(RequireAuthForProfileImage).Append("\n");
+            sb.Append("  UserId: ").Append(UserId).Append("\n");
+            sb.Append("  State: ").Append(State).Append("\n");
+            sb.Append("  UnreadChannelCount: ").Append(UnreadChannelCount).Append("\n");
+            sb.Append("  UnreadMessageCount: ").Append(UnreadMessageCount).Append("\n");
             sb.Append("  PhoneNumber: ").Append(PhoneNumber).Append("\n");
-            sb.Append("  Local: ").Append(Local).Append("\n");
-            sb.Append("  Locale: ").Append(Locale).Append("\n");
-            sb.Append("  IsHideMeFromFriends: ").Append(IsHideMeFromFriends).Append("\n");
-            sb.Append("  IsShadowBlocked: ").Append(IsShadowBlocked).Append("\n");
             sb.Append("  IsCreated: ").Append(IsCreated).Append("\n");
-            sb.Append("  Metadata: ").Append(Metadata).Append("\n");
-            sb.Append("  Description: ").Append(Description).Append("\n");
-            sb.Append("  EndAt: ").Append(EndAt).Append("\n");
-            sb.Append("  StartAt: ").Append(StartAt).Append("\n");
+            sb.Append("  SessionTokens: ").Append(SessionTokens).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -272,39 +304,35 @@ namespace sendbird_platform_sdk.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as SendBirdUser);
+            return this.Equals(input as SendbirdUser);
         }
 
         /// <summary>
-        /// Returns true if SendBirdUser instances are equal
+        /// Returns true if SendbirdUser instances are equal
         /// </summary>
-        /// <param name="input">Instance of SendBirdUser to be compared</param>
+        /// <param name="input">Instance of SendbirdUser to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(SendBirdUser input)
+        public bool Equals(SendbirdUser input)
         {
             if (input == null)
                 return false;
 
             return 
                 (
-                    this.RequireAuthForProfileImage == input.RequireAuthForProfileImage ||
-                    (this.RequireAuthForProfileImage != null &&
-                    this.RequireAuthForProfileImage.Equals(input.RequireAuthForProfileImage))
-                ) && 
-                (
-                    this.IsOnline == input.IsOnline ||
-                    (this.IsOnline != null &&
-                    this.IsOnline.Equals(input.IsOnline))
-                ) && 
-                (
-                    this.UserId == input.UserId ||
-                    (this.UserId != null &&
-                    this.UserId.Equals(input.UserId))
-                ) && 
-                (
                     this.AccessToken == input.AccessToken ||
                     (this.AccessToken != null &&
                     this.AccessToken.Equals(input.AccessToken))
+                ) && 
+                (
+                    this.CreatedAt == input.CreatedAt ||
+                    (this.CreatedAt != null &&
+                    this.CreatedAt.Equals(input.CreatedAt))
+                ) && 
+                (
+                    this.DiscoveryKeys == input.DiscoveryKeys ||
+                    this.DiscoveryKeys != null &&
+                    input.DiscoveryKeys != null &&
+                    this.DiscoveryKeys.SequenceEqual(input.DiscoveryKeys)
                 ) && 
                 (
                     this.HasEverLoggedIn == input.HasEverLoggedIn ||
@@ -317,26 +345,39 @@ namespace sendbird_platform_sdk.Model
                     this.IsActive.Equals(input.IsActive))
                 ) && 
                 (
+                    this.IsHideMeFromFriends == input.IsHideMeFromFriends ||
+                    (this.IsHideMeFromFriends != null &&
+                    this.IsHideMeFromFriends.Equals(input.IsHideMeFromFriends))
+                ) && 
+                (
+                    this.IsOnline == input.IsOnline ||
+                    (this.IsOnline != null &&
+                    this.IsOnline.Equals(input.IsOnline))
+                ) && 
+                (
+                    this.IsShadowBlocked == input.IsShadowBlocked ||
+                    (this.IsShadowBlocked != null &&
+                    this.IsShadowBlocked.Equals(input.IsShadowBlocked))
+                ) && 
+                (
                     this.LastSeenAt == input.LastSeenAt ||
                     (this.LastSeenAt != null &&
                     this.LastSeenAt.Equals(input.LastSeenAt))
                 ) && 
                 (
+                    this.Locale == input.Locale ||
+                    (this.Locale != null &&
+                    this.Locale.Equals(input.Locale))
+                ) && 
+                (
+                    this.Metadata == input.Metadata ||
+                    (this.Metadata != null &&
+                    this.Metadata.Equals(input.Metadata))
+                ) && 
+                (
                     this.Nickname == input.Nickname ||
                     (this.Nickname != null &&
                     this.Nickname.Equals(input.Nickname))
-                ) && 
-                (
-                    this.DiscoveryKeys == input.DiscoveryKeys ||
-                    this.DiscoveryKeys != null &&
-                    input.DiscoveryKeys != null &&
-                    this.DiscoveryKeys.SequenceEqual(input.DiscoveryKeys)
-                ) && 
-                (
-                    this.SessionTokens == input.SessionTokens ||
-                    this.SessionTokens != null &&
-                    input.SessionTokens != null &&
-                    this.SessionTokens.SequenceEqual(input.SessionTokens)
                 ) && 
                 (
                     this.PreferredLanguages == input.PreferredLanguages ||
@@ -350,9 +391,29 @@ namespace sendbird_platform_sdk.Model
                     this.ProfileUrl.Equals(input.ProfileUrl))
                 ) && 
                 (
-                    this.CreatedAt == input.CreatedAt ||
-                    (this.CreatedAt != null &&
-                    this.CreatedAt.Equals(input.CreatedAt))
+                    this.RequireAuthForProfileImage == input.RequireAuthForProfileImage ||
+                    (this.RequireAuthForProfileImage != null &&
+                    this.RequireAuthForProfileImage.Equals(input.RequireAuthForProfileImage))
+                ) && 
+                (
+                    this.UserId == input.UserId ||
+                    (this.UserId != null &&
+                    this.UserId.Equals(input.UserId))
+                ) && 
+                (
+                    this.State == input.State ||
+                    (this.State != null &&
+                    this.State.Equals(input.State))
+                ) && 
+                (
+                    this.UnreadChannelCount == input.UnreadChannelCount ||
+                    (this.UnreadChannelCount != null &&
+                    this.UnreadChannelCount.Equals(input.UnreadChannelCount))
+                ) && 
+                (
+                    this.UnreadMessageCount == input.UnreadMessageCount ||
+                    (this.UnreadMessageCount != null &&
+                    this.UnreadMessageCount.Equals(input.UnreadMessageCount))
                 ) && 
                 (
                     this.PhoneNumber == input.PhoneNumber ||
@@ -360,49 +421,15 @@ namespace sendbird_platform_sdk.Model
                     this.PhoneNumber.Equals(input.PhoneNumber))
                 ) && 
                 (
-                    this.Local == input.Local ||
-                    (this.Local != null &&
-                    this.Local.Equals(input.Local))
-                ) && 
-                (
-                    this.Locale == input.Locale ||
-                    (this.Locale != null &&
-                    this.Locale.Equals(input.Locale))
-                ) && 
-                (
-                    this.IsHideMeFromFriends == input.IsHideMeFromFriends ||
-                    (this.IsHideMeFromFriends != null &&
-                    this.IsHideMeFromFriends.Equals(input.IsHideMeFromFriends))
-                ) && 
-                (
-                    this.IsShadowBlocked == input.IsShadowBlocked ||
-                    (this.IsShadowBlocked != null &&
-                    this.IsShadowBlocked.Equals(input.IsShadowBlocked))
-                ) && 
-                (
                     this.IsCreated == input.IsCreated ||
                     (this.IsCreated != null &&
                     this.IsCreated.Equals(input.IsCreated))
                 ) && 
                 (
-                    this.Metadata == input.Metadata ||
-                    (this.Metadata != null &&
-                    this.Metadata.Equals(input.Metadata))
-                ) && 
-                (
-                    this.Description == input.Description ||
-                    (this.Description != null &&
-                    this.Description.Equals(input.Description))
-                ) && 
-                (
-                    this.EndAt == input.EndAt ||
-                    (this.EndAt != null &&
-                    this.EndAt.Equals(input.EndAt))
-                ) && 
-                (
-                    this.StartAt == input.StartAt ||
-                    (this.StartAt != null &&
-                    this.StartAt.Equals(input.StartAt))
+                    this.SessionTokens == input.SessionTokens ||
+                    this.SessionTokens != null &&
+                    input.SessionTokens != null &&
+                    this.SessionTokens.SequenceEqual(input.SessionTokens)
                 );
         }
 
@@ -415,52 +442,50 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.RequireAuthForProfileImage != null)
-                    hashCode = hashCode * 59 + this.RequireAuthForProfileImage.GetHashCode();
-                if (this.IsOnline != null)
-                    hashCode = hashCode * 59 + this.IsOnline.GetHashCode();
-                if (this.UserId != null)
-                    hashCode = hashCode * 59 + this.UserId.GetHashCode();
                 if (this.AccessToken != null)
                     hashCode = hashCode * 59 + this.AccessToken.GetHashCode();
+                if (this.CreatedAt != null)
+                    hashCode = hashCode * 59 + this.CreatedAt.GetHashCode();
+                if (this.DiscoveryKeys != null)
+                    hashCode = hashCode * 59 + this.DiscoveryKeys.GetHashCode();
                 if (this.HasEverLoggedIn != null)
                     hashCode = hashCode * 59 + this.HasEverLoggedIn.GetHashCode();
                 if (this.IsActive != null)
                     hashCode = hashCode * 59 + this.IsActive.GetHashCode();
+                if (this.IsHideMeFromFriends != null)
+                    hashCode = hashCode * 59 + this.IsHideMeFromFriends.GetHashCode();
+                if (this.IsOnline != null)
+                    hashCode = hashCode * 59 + this.IsOnline.GetHashCode();
+                if (this.IsShadowBlocked != null)
+                    hashCode = hashCode * 59 + this.IsShadowBlocked.GetHashCode();
                 if (this.LastSeenAt != null)
                     hashCode = hashCode * 59 + this.LastSeenAt.GetHashCode();
+                if (this.Locale != null)
+                    hashCode = hashCode * 59 + this.Locale.GetHashCode();
+                if (this.Metadata != null)
+                    hashCode = hashCode * 59 + this.Metadata.GetHashCode();
                 if (this.Nickname != null)
                     hashCode = hashCode * 59 + this.Nickname.GetHashCode();
-                if (this.DiscoveryKeys != null)
-                    hashCode = hashCode * 59 + this.DiscoveryKeys.GetHashCode();
-                if (this.SessionTokens != null)
-                    hashCode = hashCode * 59 + this.SessionTokens.GetHashCode();
                 if (this.PreferredLanguages != null)
                     hashCode = hashCode * 59 + this.PreferredLanguages.GetHashCode();
                 if (this.ProfileUrl != null)
                     hashCode = hashCode * 59 + this.ProfileUrl.GetHashCode();
-                if (this.CreatedAt != null)
-                    hashCode = hashCode * 59 + this.CreatedAt.GetHashCode();
+                if (this.RequireAuthForProfileImage != null)
+                    hashCode = hashCode * 59 + this.RequireAuthForProfileImage.GetHashCode();
+                if (this.UserId != null)
+                    hashCode = hashCode * 59 + this.UserId.GetHashCode();
+                if (this.State != null)
+                    hashCode = hashCode * 59 + this.State.GetHashCode();
+                if (this.UnreadChannelCount != null)
+                    hashCode = hashCode * 59 + this.UnreadChannelCount.GetHashCode();
+                if (this.UnreadMessageCount != null)
+                    hashCode = hashCode * 59 + this.UnreadMessageCount.GetHashCode();
                 if (this.PhoneNumber != null)
                     hashCode = hashCode * 59 + this.PhoneNumber.GetHashCode();
-                if (this.Local != null)
-                    hashCode = hashCode * 59 + this.Local.GetHashCode();
-                if (this.Locale != null)
-                    hashCode = hashCode * 59 + this.Locale.GetHashCode();
-                if (this.IsHideMeFromFriends != null)
-                    hashCode = hashCode * 59 + this.IsHideMeFromFriends.GetHashCode();
-                if (this.IsShadowBlocked != null)
-                    hashCode = hashCode * 59 + this.IsShadowBlocked.GetHashCode();
                 if (this.IsCreated != null)
                     hashCode = hashCode * 59 + this.IsCreated.GetHashCode();
-                if (this.Metadata != null)
-                    hashCode = hashCode * 59 + this.Metadata.GetHashCode();
-                if (this.Description != null)
-                    hashCode = hashCode * 59 + this.Description.GetHashCode();
-                if (this.EndAt != null)
-                    hashCode = hashCode * 59 + this.EndAt.GetHashCode();
-                if (this.StartAt != null)
-                    hashCode = hashCode * 59 + this.StartAt.GetHashCode();
+                if (this.SessionTokens != null)
+                    hashCode = hashCode * 59 + this.SessionTokens.GetHashCode();
                 return hashCode;
             }
         }

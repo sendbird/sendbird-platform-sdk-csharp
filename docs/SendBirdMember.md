@@ -1,30 +1,32 @@
 
-# sendbird_platform_sdk.Model.SendBirdMember
+# sendbird_platform_sdk.Model.SendbirdMember
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ConnectionStatus** | **string** |  | [optional] 
-**FriendDiscoveryKey** | **string** |  | [optional] 
+**DeliveredTs** | **long** |  | [optional] 
+**DoNotDisturb** | **bool** |  | [optional] 
+**FriendDiscoveryKey** | **List&lt;string&gt;** |  | [optional] 
 **FriendName** | **string** |  | [optional] 
 **IsActive** | **bool** |  | [optional] 
+**IsBlockedByMe** | **bool** |  | [optional] 
+**IsBlockingMe** | **bool** |  | [optional] 
 **IsMuted** | **bool** |  | [optional] 
-**LastSeenAt** | **int** |  | [optional] 
-**Nickname** | **string** |  | [optional] 
-**PlainProfileUrl** | **string** |  | [optional] 
-**PreferredLanguages** | **List&lt;string&gt;** |  | [optional] 
-**ProfileUrl** | **string** |  | [optional] 
-**RequireAuth** | **bool** |  | [optional] 
-**RequireAuthForProfileImage** | **bool** |  | [optional] 
-**Metadata** | **Object** |  | [optional] 
 **IsOnline** | **bool** |  | [optional] 
-**MutedEndAt** | **decimal** |  | [optional] 
+**LastSeenAt** | **long** |  | [optional] 
+**Metadata** | **Object** |  | [optional] 
 **MutedDescription** | **string** |  | [optional] 
-**RestrictionInfo** | [**SendBirdRestrictionInfo**](SendBirdRestrictionInfo.md) |  | [optional] 
+**MutedEndAt** | **long** |  | [optional] 
+**Nickname** | **string** |  | [optional] 
+**PushEnabled** | **bool** |  | [optional] 
+**PushTriggerOption** | [**SendbirdPushTriggerOption**](SendbirdPushTriggerOption.md) |  | [optional] 
+**ProfileUrl** | **string** |  | [optional] 
+**RequireAuthForProfileImage** | **bool** |  | [optional] 
+**ReadTs** | **long** |  | [optional] 
 **Role** | **string** |  | [optional] 
 **State** | **string** |  | [optional] 
-**UserId** | **string** |  | [optional] 
+**UserId** | **string** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

@@ -1,12 +1,12 @@
 
-# sendbird_platform_sdk.Model.SendBirdReaction
+# sendbird_platform_sdk.Model.SendbirdReaction
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Key** | **string** |  | [optional] 
-**UpdatedAt** | **decimal** |  | [optional] 
+**UpdatedAt** | **long** |  | [optional] 
 **UserIds** | **List&lt;string&gt;** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

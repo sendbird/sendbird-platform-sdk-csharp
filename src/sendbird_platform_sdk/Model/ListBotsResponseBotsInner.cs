@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -33,27 +33,43 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ListBotsResponseBotsInner" /> class.
         /// </summary>
+        /// <param name="ai">ai.</param>
         /// <param name="bot">bot.</param>
         /// <param name="botCallbackUrl">botCallbackUrl.</param>
-        /// <param name="enableMarkAsRead">enableMarkAsRead.</param>
-        /// <param name="isPrivacyMode">isPrivacyMode.</param>
-        /// <param name="showMember">showMember.</param>
+        /// <param name="botStyle">botStyle.</param>
         /// <param name="channelInvitationPreference">channelInvitationPreference.</param>
-        public ListBotsResponseBotsInner(CreateBotResponseBot bot = default(CreateBotResponseBot), string botCallbackUrl = default(string), bool enableMarkAsRead = default(bool), bool isPrivacyMode = default(bool), bool showMember = default(bool), decimal channelInvitationPreference = default(decimal))
+        /// <param name="createdAt">createdAt.</param>
+        /// <param name="enableMarkAsRead">enableMarkAsRead.</param>
+        /// <param name="firstMessages">firstMessages.</param>
+        /// <param name="isPrivacyMode">isPrivacyMode.</param>
+        /// <param name="safeguard">safeguard.</param>
+        /// <param name="showMember">showMember.</param>
+        public ListBotsResponseBotsInner(ListBotsResponseBotsInnerAi ai = default(ListBotsResponseBotsInnerAi), ListBotsResponseBotsInnerBot bot = default(ListBotsResponseBotsInnerBot), string botCallbackUrl = default(string), ListBotsResponseBotsInnerBotStyle botStyle = default(ListBotsResponseBotsInnerBotStyle), int channelInvitationPreference = default(int), long createdAt = default(long), bool enableMarkAsRead = default(bool), List<ListBotsResponseBotsInnerFirstMessagesInner> firstMessages = default(List<ListBotsResponseBotsInnerFirstMessagesInner>), bool isPrivacyMode = default(bool), ListBotsResponseBotsInnerSafeguard safeguard = default(ListBotsResponseBotsInnerSafeguard), bool showMember = default(bool))
         {
+            this.Ai = ai;
             this.Bot = bot;
             this.BotCallbackUrl = botCallbackUrl;
-            this.EnableMarkAsRead = enableMarkAsRead;
-            this.IsPrivacyMode = isPrivacyMode;
-            this.ShowMember = showMember;
+            this.BotStyle = botStyle;
             this.ChannelInvitationPreference = channelInvitationPreference;
+            this.CreatedAt = createdAt;
+            this.EnableMarkAsRead = enableMarkAsRead;
+            this.FirstMessages = firstMessages;
+            this.IsPrivacyMode = isPrivacyMode;
+            this.Safeguard = safeguard;
+            this.ShowMember = showMember;
         }
+
+        /// <summary>
+        /// Gets or Sets Ai
+        /// </summary>
+        [DataMember(Name="ai", EmitDefaultValue=false)]
+        public ListBotsResponseBotsInnerAi Ai { get; set; }
 
         /// <summary>
         /// Gets or Sets Bot
         /// </summary>
         [DataMember(Name="bot", EmitDefaultValue=false)]
-        public CreateBotResponseBot Bot { get; set; }
+        public ListBotsResponseBotsInnerBot Bot { get; set; }
 
         /// <summary>
         /// Gets or Sets BotCallbackUrl
@@ -62,10 +78,34 @@ namespace sendbird_platform_sdk.Model
         public string BotCallbackUrl { get; set; }
 
         /// <summary>
+        /// Gets or Sets BotStyle
+        /// </summary>
+        [DataMember(Name="bot_style", EmitDefaultValue=false)]
+        public ListBotsResponseBotsInnerBotStyle BotStyle { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ChannelInvitationPreference
+        /// </summary>
+        [DataMember(Name="channel_invitation_preference", EmitDefaultValue=false)]
+        public int ChannelInvitationPreference { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CreatedAt
+        /// </summary>
+        [DataMember(Name="created_at", EmitDefaultValue=false)]
+        public long CreatedAt { get; set; }
+
+        /// <summary>
         /// Gets or Sets EnableMarkAsRead
         /// </summary>
         [DataMember(Name="enable_mark_as_read", EmitDefaultValue=false)]
         public bool EnableMarkAsRead { get; set; }
+
+        /// <summary>
+        /// Gets or Sets FirstMessages
+        /// </summary>
+        [DataMember(Name="first_messages", EmitDefaultValue=false)]
+        public List<ListBotsResponseBotsInnerFirstMessagesInner> FirstMessages { get; set; }
 
         /// <summary>
         /// Gets or Sets IsPrivacyMode
@@ -74,16 +114,16 @@ namespace sendbird_platform_sdk.Model
         public bool IsPrivacyMode { get; set; }
 
         /// <summary>
+        /// Gets or Sets Safeguard
+        /// </summary>
+        [DataMember(Name="safeguard", EmitDefaultValue=false)]
+        public ListBotsResponseBotsInnerSafeguard Safeguard { get; set; }
+
+        /// <summary>
         /// Gets or Sets ShowMember
         /// </summary>
         [DataMember(Name="show_member", EmitDefaultValue=false)]
         public bool ShowMember { get; set; }
-
-        /// <summary>
-        /// Gets or Sets ChannelInvitationPreference
-        /// </summary>
-        [DataMember(Name="channel_invitation_preference", EmitDefaultValue=false)]
-        public decimal ChannelInvitationPreference { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -93,12 +133,17 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class ListBotsResponseBotsInner {\n");
+            sb.Append("  Ai: ").Append(Ai).Append("\n");
             sb.Append("  Bot: ").Append(Bot).Append("\n");
             sb.Append("  BotCallbackUrl: ").Append(BotCallbackUrl).Append("\n");
-            sb.Append("  EnableMarkAsRead: ").Append(EnableMarkAsRead).Append("\n");
-            sb.Append("  IsPrivacyMode: ").Append(IsPrivacyMode).Append("\n");
-            sb.Append("  ShowMember: ").Append(ShowMember).Append("\n");
+            sb.Append("  BotStyle: ").Append(BotStyle).Append("\n");
             sb.Append("  ChannelInvitationPreference: ").Append(ChannelInvitationPreference).Append("\n");
+            sb.Append("  CreatedAt: ").Append(CreatedAt).Append("\n");
+            sb.Append("  EnableMarkAsRead: ").Append(EnableMarkAsRead).Append("\n");
+            sb.Append("  FirstMessages: ").Append(FirstMessages).Append("\n");
+            sb.Append("  IsPrivacyMode: ").Append(IsPrivacyMode).Append("\n");
+            sb.Append("  Safeguard: ").Append(Safeguard).Append("\n");
+            sb.Append("  ShowMember: ").Append(ShowMember).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -134,6 +179,11 @@ namespace sendbird_platform_sdk.Model
 
             return 
                 (
+                    this.Ai == input.Ai ||
+                    (this.Ai != null &&
+                    this.Ai.Equals(input.Ai))
+                ) && 
+                (
                     this.Bot == input.Bot ||
                     (this.Bot != null &&
                     this.Bot.Equals(input.Bot))
@@ -144,9 +194,30 @@ namespace sendbird_platform_sdk.Model
                     this.BotCallbackUrl.Equals(input.BotCallbackUrl))
                 ) && 
                 (
+                    this.BotStyle == input.BotStyle ||
+                    (this.BotStyle != null &&
+                    this.BotStyle.Equals(input.BotStyle))
+                ) && 
+                (
+                    this.ChannelInvitationPreference == input.ChannelInvitationPreference ||
+                    (this.ChannelInvitationPreference != null &&
+                    this.ChannelInvitationPreference.Equals(input.ChannelInvitationPreference))
+                ) && 
+                (
+                    this.CreatedAt == input.CreatedAt ||
+                    (this.CreatedAt != null &&
+                    this.CreatedAt.Equals(input.CreatedAt))
+                ) && 
+                (
                     this.EnableMarkAsRead == input.EnableMarkAsRead ||
                     (this.EnableMarkAsRead != null &&
                     this.EnableMarkAsRead.Equals(input.EnableMarkAsRead))
+                ) && 
+                (
+                    this.FirstMessages == input.FirstMessages ||
+                    this.FirstMessages != null &&
+                    input.FirstMessages != null &&
+                    this.FirstMessages.SequenceEqual(input.FirstMessages)
                 ) && 
                 (
                     this.IsPrivacyMode == input.IsPrivacyMode ||
@@ -154,14 +225,14 @@ namespace sendbird_platform_sdk.Model
                     this.IsPrivacyMode.Equals(input.IsPrivacyMode))
                 ) && 
                 (
+                    this.Safeguard == input.Safeguard ||
+                    (this.Safeguard != null &&
+                    this.Safeguard.Equals(input.Safeguard))
+                ) && 
+                (
                     this.ShowMember == input.ShowMember ||
                     (this.ShowMember != null &&
                     this.ShowMember.Equals(input.ShowMember))
-                ) && 
-                (
-                    this.ChannelInvitationPreference == input.ChannelInvitationPreference ||
-                    (this.ChannelInvitationPreference != null &&
-                    this.ChannelInvitationPreference.Equals(input.ChannelInvitationPreference))
                 );
         }
 
@@ -174,18 +245,28 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.Ai != null)
+                    hashCode = hashCode * 59 + this.Ai.GetHashCode();
                 if (this.Bot != null)
                     hashCode = hashCode * 59 + this.Bot.GetHashCode();
                 if (this.BotCallbackUrl != null)
                     hashCode = hashCode * 59 + this.BotCallbackUrl.GetHashCode();
-                if (this.EnableMarkAsRead != null)
-                    hashCode = hashCode * 59 + this.EnableMarkAsRead.GetHashCode();
-                if (this.IsPrivacyMode != null)
-                    hashCode = hashCode * 59 + this.IsPrivacyMode.GetHashCode();
-                if (this.ShowMember != null)
-                    hashCode = hashCode * 59 + this.ShowMember.GetHashCode();
+                if (this.BotStyle != null)
+                    hashCode = hashCode * 59 + this.BotStyle.GetHashCode();
                 if (this.ChannelInvitationPreference != null)
                     hashCode = hashCode * 59 + this.ChannelInvitationPreference.GetHashCode();
+                if (this.CreatedAt != null)
+                    hashCode = hashCode * 59 + this.CreatedAt.GetHashCode();
+                if (this.EnableMarkAsRead != null)
+                    hashCode = hashCode * 59 + this.EnableMarkAsRead.GetHashCode();
+                if (this.FirstMessages != null)
+                    hashCode = hashCode * 59 + this.FirstMessages.GetHashCode();
+                if (this.IsPrivacyMode != null)
+                    hashCode = hashCode * 59 + this.IsPrivacyMode.GetHashCode();
+                if (this.Safeguard != null)
+                    hashCode = hashCode * 59 + this.Safeguard.GetHashCode();
+                if (this.ShowMember != null)
+                    hashCode = hashCode * 59 + this.ShowMember.GetHashCode();
                 return hashCode;
             }
         }

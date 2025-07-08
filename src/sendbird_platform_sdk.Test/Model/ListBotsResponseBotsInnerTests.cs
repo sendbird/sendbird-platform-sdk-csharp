@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -66,6 +66,14 @@ namespace sendbird_platform_sdk.Test
 
 
         /// <summary>
+        /// Test the property 'Ai'
+        /// </summary>
+        [Test]
+        public void AiTest()
+        {
+            // TODO unit test for the property 'Ai'
+        }
+        /// <summary>
         /// Test the property 'Bot'
         /// </summary>
         [Test]
@@ -82,12 +90,44 @@ namespace sendbird_platform_sdk.Test
             // TODO unit test for the property 'BotCallbackUrl'
         }
         /// <summary>
+        /// Test the property 'BotStyle'
+        /// </summary>
+        [Test]
+        public void BotStyleTest()
+        {
+            // TODO unit test for the property 'BotStyle'
+        }
+        /// <summary>
+        /// Test the property 'ChannelInvitationPreference'
+        /// </summary>
+        [Test]
+        public void ChannelInvitationPreferenceTest()
+        {
+            // TODO unit test for the property 'ChannelInvitationPreference'
+        }
+        /// <summary>
+        /// Test the property 'CreatedAt'
+        /// </summary>
+        [Test]
+        public void CreatedAtTest()
+        {
+            // TODO unit test for the property 'CreatedAt'
+        }
+        /// <summary>
         /// Test the property 'EnableMarkAsRead'
         /// </summary>
         [Test]
         public void EnableMarkAsReadTest()
         {
             // TODO unit test for the property 'EnableMarkAsRead'
+        }
+        /// <summary>
+        /// Test the property 'FirstMessages'
+        /// </summary>
+        [Test]
+        public void FirstMessagesTest()
+        {
+            // TODO unit test for the property 'FirstMessages'
         }
         /// <summary>
         /// Test the property 'IsPrivacyMode'
@@ -98,20 +138,20 @@ namespace sendbird_platform_sdk.Test
             // TODO unit test for the property 'IsPrivacyMode'
         }
         /// <summary>
+        /// Test the property 'Safeguard'
+        /// </summary>
+        [Test]
+        public void SafeguardTest()
+        {
+            // TODO unit test for the property 'Safeguard'
+        }
+        /// <summary>
         /// Test the property 'ShowMember'
         /// </summary>
         [Test]
         public void ShowMemberTest()
         {
             // TODO unit test for the property 'ShowMember'
-        }
-        /// <summary>
-        /// Test the property 'ChannelInvitationPreference'
-        /// </summary>
-        [Test]
-        public void ChannelInvitationPreferenceTest()
-        {
-            // TODO unit test for the property 'ChannelInvitationPreference'
         }
 
     }

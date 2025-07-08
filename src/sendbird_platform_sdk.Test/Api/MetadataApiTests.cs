@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -64,316 +64,64 @@ namespace sendbird_platform_sdk.Test
 
         
         /// <summary>
-        /// Test CreateChannelMetacounter
+        /// Test CreateAChannelMetadata
         /// </summary>
         [Test]
-        public void CreateChannelMetacounterTest()
+        public void CreateAChannelMetadataTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string channelType = null;
             //string channelUrl = null;
-            //CreateChannelMetacounterData createChannelMetacounterData = null;
-            //var response = instance.CreateChannelMetacounter(apiToken, channelType, channelUrl, createChannelMetacounterData);
+            //string apiToken = null;
+            //CreateAChannelMetadataRequest createAChannelMetadataRequest = null;
+            //var response = instance.CreateAChannelMetadata(channelType, channelUrl, apiToken, createAChannelMetadataRequest);
+            //Assert.IsInstanceOf(typeof(CreateAChannelMetadataResponse), response, "response is CreateAChannelMetadataResponse");
+        }
+        
+        /// <summary>
+        /// Test DeleteAChannelMetadataWhenDeletingAllItemsOfAChannelMetadata
+        /// </summary>
+        [Test]
+        public void DeleteAChannelMetadataWhenDeletingAllItemsOfAChannelMetadataTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string channelType = null;
+            //string channelUrl = null;
+            //string key = null;
+            //string apiToken = null;
+            //var response = instance.DeleteAChannelMetadataWhenDeletingAllItemsOfAChannelMetadata(channelType, channelUrl, key, apiToken);
             //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         
         /// <summary>
-        /// Test CreateChannelMetadata
+        /// Test UpdateAChannelMetadata
         /// </summary>
         [Test]
-        public void CreateChannelMetadataTest()
+        public void UpdateAChannelMetadataTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string channelType = null;
             //string channelUrl = null;
-            //CreateChannelMetadataData createChannelMetadataData = null;
-            //var response = instance.CreateChannelMetadata(apiToken, channelType, channelUrl, createChannelMetadataData);
-            //Assert.IsInstanceOf(typeof(CreateChannelMetadataResponse), response, "response is CreateChannelMetadataResponse");
-        }
-        
-        /// <summary>
-        /// Test CreateUserMetadata
-        /// </summary>
-        [Test]
-        public void CreateUserMetadataTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
             //string apiToken = null;
-            //string userId = null;
-            //CreateUserMetadataData createUserMetadataData = null;
-            //var response = instance.CreateUserMetadata(apiToken, userId, createUserMetadataData);
-            //Assert.IsInstanceOf(typeof(CreateUserMetadataResponse), response, "response is CreateUserMetadataResponse");
-        }
-        
-        /// <summary>
-        /// Test DeleteChannelMetacounter
-        /// </summary>
-        [Test]
-        public void DeleteChannelMetacounterTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelType = null;
-            //string channelUrl = null;
-            //instance.DeleteChannelMetacounter(apiToken, channelType, channelUrl);
-            
-        }
-        
-        /// <summary>
-        /// Test DeleteChannelMetacounterByKey
-        /// </summary>
-        [Test]
-        public void DeleteChannelMetacounterByKeyTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelType = null;
-            //string channelUrl = null;
-            //string key = null;
-            //instance.DeleteChannelMetacounterByKey(apiToken, channelType, channelUrl, key);
-            
-        }
-        
-        /// <summary>
-        /// Test DeleteChannelMetadata
-        /// </summary>
-        [Test]
-        public void DeleteChannelMetadataTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelType = null;
-            //string channelUrl = null;
-            //string key = null;
-            //instance.DeleteChannelMetadata(apiToken, channelType, channelUrl, key);
-            
-        }
-        
-        /// <summary>
-        /// Test DeleteChannelMetadataByKey
-        /// </summary>
-        [Test]
-        public void DeleteChannelMetadataByKeyTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelType = null;
-            //string channelUrl = null;
-            //string key = null;
-            //instance.DeleteChannelMetadataByKey(apiToken, channelType, channelUrl, key);
-            
-        }
-        
-        /// <summary>
-        /// Test DeleteUserMetadata
-        /// </summary>
-        [Test]
-        public void DeleteUserMetadataTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string userId = null;
-            //string key = null;
-            //instance.DeleteUserMetadata(apiToken, userId, key);
-            
-        }
-        
-        /// <summary>
-        /// Test DeleteUserMetadataByKey
-        /// </summary>
-        [Test]
-        public void DeleteUserMetadataByKeyTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string userId = null;
-            //string key = null;
-            //instance.DeleteUserMetadataByKey(apiToken, userId, key);
-            
-        }
-        
-        /// <summary>
-        /// Test UpdateChannelMetacounter
-        /// </summary>
-        [Test]
-        public void UpdateChannelMetacounterTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelType = null;
-            //string channelUrl = null;
-            //UpdateChannelMetacounterData updateChannelMetacounterData = null;
-            //var response = instance.UpdateChannelMetacounter(apiToken, channelType, channelUrl, updateChannelMetacounterData);
+            //UpdateAChannelMetadataRequest updateAChannelMetadataRequest = null;
+            //var response = instance.UpdateAChannelMetadata(channelType, channelUrl, apiToken, updateAChannelMetadataRequest);
             //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
         }
         
         /// <summary>
-        /// Test UpdateChannelMetacounterByKey
+        /// Test ViewAChannelMetadataWhenRetrievingAllItemsOfAChannelMetadata
         /// </summary>
         [Test]
-        public void UpdateChannelMetacounterByKeyTest()
+        public void ViewAChannelMetadataWhenRetrievingAllItemsOfAChannelMetadataTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
             //string channelType = null;
             //string channelUrl = null;
             //string key = null;
-            //Object body = null;
-            //var response = instance.UpdateChannelMetacounterByKey(apiToken, channelType, channelUrl, key, body);
-            //Assert.IsInstanceOf(typeof(Dictionary<string, string>), response, "response is Dictionary<string, string>");
-        }
-        
-        /// <summary>
-        /// Test UpdateChannelMetadata
-        /// </summary>
-        [Test]
-        public void UpdateChannelMetadataTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
+            //string keys = null;
             //string apiToken = null;
-            //string channelType = null;
-            //string channelUrl = null;
-            //UpdateChannelMetadataData updateChannelMetadataData = null;
-            //var response = instance.UpdateChannelMetadata(apiToken, channelType, channelUrl, updateChannelMetadataData);
-            //Assert.IsInstanceOf(typeof(Dictionary<string, string>), response, "response is Dictionary<string, string>");
-        }
-        
-        /// <summary>
-        /// Test UpdateChannelMetadataByKey
-        /// </summary>
-        [Test]
-        public void UpdateChannelMetadataByKeyTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelType = null;
-            //string channelUrl = null;
-            //string key = null;
-            //Object body = null;
-            //var response = instance.UpdateChannelMetadataByKey(apiToken, channelType, channelUrl, key, body);
-            //Assert.IsInstanceOf(typeof(Dictionary<string, string>), response, "response is Dictionary<string, string>");
-        }
-        
-        /// <summary>
-        /// Test UpdateUserMetadata
-        /// </summary>
-        [Test]
-        public void UpdateUserMetadataTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string userId = null;
-            //UpdateUserMetadataData updateUserMetadataData = null;
-            //var response = instance.UpdateUserMetadata(apiToken, userId, updateUserMetadataData);
-            //Assert.IsInstanceOf(typeof(UpdateUserMetadataResponse), response, "response is UpdateUserMetadataResponse");
-        }
-        
-        /// <summary>
-        /// Test UpdateUserMetadataByKey
-        /// </summary>
-        [Test]
-        public void UpdateUserMetadataByKeyTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string userId = null;
-            //string key = null;
-            //Object body = null;
-            //var response = instance.UpdateUserMetadataByKey(apiToken, userId, key, body);
-            //Assert.IsInstanceOf(typeof(Dictionary<string, string>), response, "response is Dictionary<string, string>");
-        }
-        
-        /// <summary>
-        /// Test ViewChannelMetacounter
-        /// </summary>
-        [Test]
-        public void ViewChannelMetacounterTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelType = null;
-            //string channelUrl = null;
-            //string key = null;
-            //List<string> keys = null;
-            //var response = instance.ViewChannelMetacounter(apiToken, channelType, channelUrl, key, keys);
-            //Assert.IsInstanceOf(typeof(Dictionary<string, string>), response, "response is Dictionary<string, string>");
-        }
-        
-        /// <summary>
-        /// Test ViewChannelMetacounterByKey
-        /// </summary>
-        [Test]
-        public void ViewChannelMetacounterByKeyTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelType = null;
-            //string channelUrl = null;
-            //string key = null;
-            //var response = instance.ViewChannelMetacounterByKey(apiToken, channelType, channelUrl, key);
+            //var response = instance.ViewAChannelMetadataWhenRetrievingAllItemsOfAChannelMetadata(channelType, channelUrl, key, keys, apiToken);
             //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
-        }
-        
-        /// <summary>
-        /// Test ViewChannelMetadata
-        /// </summary>
-        [Test]
-        public void ViewChannelMetadataTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelType = null;
-            //string channelUrl = null;
-            //string key = null;
-            //List<string> keys = null;
-            //var response = instance.ViewChannelMetadata(apiToken, channelType, channelUrl, key, keys);
-            //Assert.IsInstanceOf(typeof(Dictionary<string, string>), response, "response is Dictionary<string, string>");
-        }
-        
-        /// <summary>
-        /// Test ViewChannelMetadataByKey
-        /// </summary>
-        [Test]
-        public void ViewChannelMetadataByKeyTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string channelType = null;
-            //string channelUrl = null;
-            //string key = null;
-            //var response = instance.ViewChannelMetadataByKey(apiToken, channelType, channelUrl, key);
-            //Assert.IsInstanceOf(typeof(Dictionary<string, string>), response, "response is Dictionary<string, string>");
-        }
-        
-        /// <summary>
-        /// Test ViewUserMetadata
-        /// </summary>
-        [Test]
-        public void ViewUserMetadataTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string userId = null;
-            //string key = null;
-            //List<string> keys = null;
-            //var response = instance.ViewUserMetadata(apiToken, userId, key, keys);
-            //Assert.IsInstanceOf(typeof(ViewUserMetadataResponse), response, "response is ViewUserMetadataResponse");
-        }
-        
-        /// <summary>
-        /// Test ViewUserMetadataByKey
-        /// </summary>
-        [Test]
-        public void ViewUserMetadataByKeyTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //string apiToken = null;
-            //string userId = null;
-            //string key = null;
-            //var response = instance.ViewUserMetadataByKey(apiToken, userId, key);
-            //Assert.IsInstanceOf(typeof(Dictionary<string, string>), response, "response is Dictionary<string, string>");
         }
         
     }

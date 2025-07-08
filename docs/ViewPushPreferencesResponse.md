@@ -5,20 +5,20 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**SnoozeStartTs** | **string** |  | [optional] 
-**StartHour** | **decimal** |  | [optional] 
-**SnoozeEnabled** | **bool** |  | [optional] 
-**EndMin** | **decimal** |  | [optional] 
-**Timezone** | **string** |  | [optional] 
 **BlockPushFromBots** | **bool** |  | [optional] 
-**PushBlockedBotIds** | **List&lt;string&gt;** |  | [optional] 
-**StartMin** | **decimal** |  | [optional] 
-**SnoozeEndTs** | **string** |  | [optional] 
 **DoNotDisturb** | **bool** |  | [optional] 
-**EndHour** | **decimal** |  | [optional] 
 **EnablePushForReplies** | **bool** |  | [optional] 
+**EndHour** | **int** |  | [optional] 
+**EndMin** | **int** |  | [optional] 
+**PushBlockedBotIds** | **List&lt;string&gt;** |  | [optional] 
 **PushSound** | **string** |  | [optional] 
-**PushTriggerOption** | **string** |  | [optional] 
+**PushTriggerOption** | [**SendbirdPushTriggerOption**](SendbirdPushTriggerOption.md) |  | [optional] 
+**SnoozeEnabled** | **bool** |  | [optional] 
+**SnoozeEndTs** | **long** |  | [optional] 
+**SnoozeStartTs** | **long** |  | [optional] 
+**StartHour** | **int** |  | [optional] 
+**StartMin** | **int** |  | [optional] 
+**Timezone** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

@@ -1,24 +1,23 @@
 
-# sendbird_platform_sdk.Model.SendBirdOpenChannel
+# sendbird_platform_sdk.Model.SendbirdOpenChannel
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **string** |  | [optional] 
-**CustomType** | **string** |  | [optional] 
-**ChannelUrl** | **string** |  | [optional] 
-**CreatedAt** | **decimal** |  | [optional] 
+**ChannelUrl** | **string** |  | 
 **CoverUrl** | **string** |  | [optional] 
-**Creator** | [**SendBirdUser**](SendBirdUser.md) |  | [optional] 
+**CreatedAt** | **long** |  | [optional] 
+**CustomType** | **string** |  | [optional] 
 **Data** | **string** |  | [optional] 
+**Freeze** | **bool** |  | [optional] 
 **IsDynamicPartitioned** | **bool** |  | [optional] 
 **IsEphemeral** | **bool** |  | [optional] 
-**IsFrozen** | **bool** |  | [optional] 
-**MaxLengthMessage** | **decimal** |  | [optional] 
-**Operators** | [**List&lt;SendBirdUser&gt;**](SendBirdUser.md) |  | [optional] 
-**ParticipantCount** | **decimal** |  | [optional] 
-**Freeze** | **bool** |  | [optional] 
+**MaxLengthMessage** | **int** |  | [optional] 
+**Name** | **string** |  | [optional] 
+**Operators** | [**List&lt;SendbirdBasicUserInfo&gt;**](SendbirdBasicUserInfo.md) |  | [optional] 
+**ParticipantCount** | **int** |  | [optional] 
+**Metadata** | **Object** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

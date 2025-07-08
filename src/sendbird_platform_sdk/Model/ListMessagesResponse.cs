@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -34,7 +34,7 @@ namespace sendbird_platform_sdk.Model
         /// Initializes a new instance of the <see cref="ListMessagesResponse" /> class.
         /// </summary>
         /// <param name="messages">messages.</param>
-        public ListMessagesResponse(List<ListMessagesResponseMessagesInner> messages = default(List<ListMessagesResponseMessagesInner>))
+        public ListMessagesResponse(List<SendbirdMessageResponse> messages = default(List<SendbirdMessageResponse>))
         {
             this.Messages = messages;
         }
@@ -43,7 +43,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets Messages
         /// </summary>
         [DataMember(Name="messages", EmitDefaultValue=false)]
-        public List<ListMessagesResponseMessagesInner> Messages { get; set; }
+        public List<SendbirdMessageResponse> Messages { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

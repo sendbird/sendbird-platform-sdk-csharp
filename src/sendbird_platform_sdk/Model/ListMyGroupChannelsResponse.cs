@@ -1,7 +1,7 @@
 /*
  * Sendbird Platform SDK
  *
- * Sendbird Platform API SDK  https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+ * Sendbird Platform API SDK  [https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api)  Contact Support:   Name: Sendbird   Email: [support@sendbird.com](https://mailto:support@sendbird.com)
  *
  * The version of the OpenAPI document: 1.0.0
  * Contact: support@sendbird.com
@@ -36,7 +36,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="channels">channels.</param>
         /// <param name="next">next.</param>
         /// <param name="ts">ts.</param>
-        public ListMyGroupChannelsResponse(List<SendBirdGroupChannel> channels = default(List<SendBirdGroupChannel>), string next = default(string), decimal ts = default(decimal))
+        public ListMyGroupChannelsResponse(List<SendbirdGroupChannel> channels = default(List<SendbirdGroupChannel>), string next = default(string), long ts = default(long))
         {
             this.Channels = channels;
             this.Next = next;
@@ -47,7 +47,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets Channels
         /// </summary>
         [DataMember(Name="channels", EmitDefaultValue=false)]
-        public List<SendBirdGroupChannel> Channels { get; set; }
+        public List<SendbirdGroupChannel> Channels { get; set; }
 
         /// <summary>
         /// Gets or Sets Next
@@ -59,7 +59,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets Ts
         /// </summary>
         [DataMember(Name="ts", EmitDefaultValue=false)]
-        public decimal Ts { get; set; }
+        public long Ts { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
