@@ -23,7 +23,7 @@ namespace Example
         public static void Main()
         {
 
-            Configuration.Default.BasePath = "https://YOUR_APP_ID_FROM_DASHBOARD.sendbird.com";
+            Configuration.Default.BasePath = "https://api-YOUR_APP_ID_FROM_DASHBOARD.sendbird.com";
             var apiInstance = new UserApi(Configuration.Default);
             var apiToken = "YOUR_MASTER_API_TOKEN_FROM_DASHBOARD";
 
@@ -72,11 +72,9 @@ All the documentation for this project lives in the /docs directory of this repo
 |       | Documentation |
 | ----------- | ----------- |
 | Announcement   | [docs/AnnouncementApi.md](docs/AnnouncementApi.md)|
-| Application | [docs/ApplicationApi.md](docs/ApplicationApi.md)  |
 | Bot | [docs/BotApi.md](docs/BotApi.md)  |
 | GroupChannel | [docs/GroupChannelApi.md](docs/GroupChannelApi.md)  |
 | Message | [docs/MessageApi.md](docs/MessageApi.md)  |
 | OpenChannel | [docs/OpenChannelApi.md ](docs/OpenChannelApi.md)  |
 | User | [docs/UserApi.md](docs/UserApi.md)  |
-| Webhooks | [docs/WebhooksApi.md](docs/WebhooksApi.md)  |
 
