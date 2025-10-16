@@ -75,10 +75,11 @@ namespace sendbird_platform_sdk.Model
         /// <param name="role">role.</param>
         /// <param name="nickname">nickname.</param>
         /// <param name="userId">userId (required).</param>
-        /// <param name="profileUrl">profileUrl.</param>
+        /// <param name="profileUrl">profileUrl (default to &quot;&quot;).</param>
         /// <param name="metadata">metadata.</param>
-        public SendbirdBasicUserInfo(bool requireAuthForProfileImage = default(bool), bool isActive = default(bool), bool isBlockedByMe = default(bool), RoleEnum? role = default(RoleEnum?), string nickname = default(string), string userId = default(string), string profileUrl = default(string), Object metadata = default(Object))
+        public SendbirdBasicUserInfo(bool requireAuthForProfileImage = default(bool), bool isActive = default(bool), bool isBlockedByMe = default(bool), RoleEnum? role = default(RoleEnum?), string nickname = default(string), string userId = default(string), string profileUrl = "", Object metadata = default(Object))
         {
+            this.Nickname = nickname;
             // to ensure "userId" is required (not null)
             if (userId == null)
             {
@@ -89,12 +90,21 @@ namespace sendbird_platform_sdk.Model
                 this.UserId = userId;
             }
 
+            this.Metadata = metadata;
             this.RequireAuthForProfileImage = requireAuthForProfileImage;
             this.IsActive = isActive;
             this.IsBlockedByMe = isBlockedByMe;
             this.Role = role;
             this.Nickname = nickname;
-            this.ProfileUrl = profileUrl;
+            // use default value if no "profileUrl" provided
+            if (profileUrl == null)
+            {
+                this.ProfileUrl = "";
+            }
+            else
+            {
+                this.ProfileUrl = profileUrl;
+            }
             this.Metadata = metadata;
         }
 
@@ -120,7 +130,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets Nickname
         /// </summary>
-        [DataMember(Name="nickname", EmitDefaultValue=false)]
+        [DataMember(Name="nickname", EmitDefaultValue=true)]
         public string Nickname { get; set; }
 
         /// <summary>
@@ -138,7 +148,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets Metadata
         /// </summary>
-        [DataMember(Name="metadata", EmitDefaultValue=false)]
+        [DataMember(Name="metadata", EmitDefaultValue=true)]
         public Object Metadata { get; set; }
 
         /// <summary>

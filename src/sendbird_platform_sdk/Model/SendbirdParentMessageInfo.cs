@@ -42,7 +42,6 @@ namespace sendbird_platform_sdk.Model
         /// <param name="files">files.</param>
         public SendbirdParentMessageInfo(string customType = default(string), string message = default(string), string type = default(string), long ts = default(long), SendbirdUser user = default(SendbirdUser), SendbirdFile file = default(SendbirdFile), List<SendbirdFile> files = default(List<SendbirdFile>))
         {
-            this.User = user;
             this.CustomType = customType;
             this.Message = message;
             this.Type = type;
@@ -79,7 +78,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets User
         /// </summary>
-        [DataMember(Name="user", EmitDefaultValue=true)]
+        [DataMember(Name="user", EmitDefaultValue=false)]
         public SendbirdUser User { get; set; }
 
         /// <summary>

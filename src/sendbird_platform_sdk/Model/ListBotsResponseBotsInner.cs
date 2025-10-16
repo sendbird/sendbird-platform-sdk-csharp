@@ -33,7 +33,6 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ListBotsResponseBotsInner" /> class.
         /// </summary>
-        /// <param name="ai">ai.</param>
         /// <param name="bot">bot.</param>
         /// <param name="botCallbackUrl">botCallbackUrl.</param>
         /// <param name="botStyle">botStyle.</param>
@@ -44,9 +43,8 @@ namespace sendbird_platform_sdk.Model
         /// <param name="isPrivacyMode">isPrivacyMode.</param>
         /// <param name="safeguard">safeguard.</param>
         /// <param name="showMember">showMember.</param>
-        public ListBotsResponseBotsInner(ListBotsResponseBotsInnerAi ai = default(ListBotsResponseBotsInnerAi), ListBotsResponseBotsInnerBot bot = default(ListBotsResponseBotsInnerBot), string botCallbackUrl = default(string), ListBotsResponseBotsInnerBotStyle botStyle = default(ListBotsResponseBotsInnerBotStyle), int channelInvitationPreference = default(int), long createdAt = default(long), bool enableMarkAsRead = default(bool), List<ListBotsResponseBotsInnerFirstMessagesInner> firstMessages = default(List<ListBotsResponseBotsInnerFirstMessagesInner>), bool isPrivacyMode = default(bool), ListBotsResponseBotsInnerSafeguard safeguard = default(ListBotsResponseBotsInnerSafeguard), bool showMember = default(bool))
+        public ListBotsResponseBotsInner(ListBotsResponseBotsInnerBot bot = default(ListBotsResponseBotsInnerBot), string botCallbackUrl = default(string), ListBotsResponseBotsInnerBotStyle botStyle = default(ListBotsResponseBotsInnerBotStyle), int channelInvitationPreference = default(int), long createdAt = default(long), bool enableMarkAsRead = default(bool), List<ListBotsResponseBotsInnerFirstMessagesInner> firstMessages = default(List<ListBotsResponseBotsInnerFirstMessagesInner>), bool isPrivacyMode = default(bool), ListBotsResponseBotsInnerSafeguard safeguard = default(ListBotsResponseBotsInnerSafeguard), bool showMember = default(bool))
         {
-            this.Ai = ai;
             this.Bot = bot;
             this.BotCallbackUrl = botCallbackUrl;
             this.BotStyle = botStyle;
@@ -58,12 +56,6 @@ namespace sendbird_platform_sdk.Model
             this.Safeguard = safeguard;
             this.ShowMember = showMember;
         }
-
-        /// <summary>
-        /// Gets or Sets Ai
-        /// </summary>
-        [DataMember(Name="ai", EmitDefaultValue=false)]
-        public ListBotsResponseBotsInnerAi Ai { get; set; }
 
         /// <summary>
         /// Gets or Sets Bot
@@ -133,7 +125,6 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class ListBotsResponseBotsInner {\n");
-            sb.Append("  Ai: ").Append(Ai).Append("\n");
             sb.Append("  Bot: ").Append(Bot).Append("\n");
             sb.Append("  BotCallbackUrl: ").Append(BotCallbackUrl).Append("\n");
             sb.Append("  BotStyle: ").Append(BotStyle).Append("\n");
@@ -178,11 +169,6 @@ namespace sendbird_platform_sdk.Model
                 return false;
 
             return 
-                (
-                    this.Ai == input.Ai ||
-                    (this.Ai != null &&
-                    this.Ai.Equals(input.Ai))
-                ) && 
                 (
                     this.Bot == input.Bot ||
                     (this.Bot != null &&
@@ -245,8 +231,6 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Ai != null)
-                    hashCode = hashCode * 59 + this.Ai.GetHashCode();
                 if (this.Bot != null)
                     hashCode = hashCode * 59 + this.Bot.GetHashCode();
                 if (this.BotCallbackUrl != null)

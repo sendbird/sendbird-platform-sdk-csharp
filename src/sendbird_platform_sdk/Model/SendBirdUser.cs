@@ -82,7 +82,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="metadata">metadata.</param>
         /// <param name="nickname">nickname.</param>
         /// <param name="preferredLanguages">preferredLanguages.</param>
-        /// <param name="profileUrl">profileUrl.</param>
+        /// <param name="profileUrl">profileUrl (default to &quot;&quot;).</param>
         /// <param name="requireAuthForProfileImage">requireAuthForProfileImage.</param>
         /// <param name="userId">userId (required).</param>
         /// <param name="state">state.</param>
@@ -90,9 +90,12 @@ namespace sendbird_platform_sdk.Model
         /// <param name="unreadMessageCount">unreadMessageCount.</param>
         /// <param name="phoneNumber">phoneNumber.</param>
         /// <param name="isCreated">isCreated.</param>
-        /// <param name="sessionTokens">sessionTokens.</param>
-        public SendbirdUser(string accessToken = default(string), long createdAt = default(long), List<string> discoveryKeys = default(List<string>), bool hasEverLoggedIn = default(bool), bool isActive = default(bool), bool isHideMeFromFriends = default(bool), bool isOnline = default(bool), bool isShadowBlocked = default(bool), long lastSeenAt = default(long), string locale = default(string), Object metadata = default(Object), string nickname = default(string), List<string> preferredLanguages = default(List<string>), string profileUrl = default(string), bool requireAuthForProfileImage = default(bool), string userId = default(string), StateEnum? state = default(StateEnum?), int unreadChannelCount = default(int), int unreadMessageCount = default(int), string phoneNumber = default(string), bool isCreated = default(bool), List<string> sessionTokens = default(List<string>))
+        public SendbirdUser(string accessToken = default(string), long createdAt = default(long), List<string> discoveryKeys = default(List<string>), bool hasEverLoggedIn = default(bool), bool isActive = default(bool), bool isHideMeFromFriends = default(bool), bool isOnline = default(bool), bool isShadowBlocked = default(bool), long lastSeenAt = default(long), string locale = default(string), Object metadata = default(Object), string nickname = default(string), List<string> preferredLanguages = default(List<string>), string profileUrl = "", bool requireAuthForProfileImage = default(bool), string userId = default(string), StateEnum? state = default(StateEnum?), int unreadChannelCount = default(int), int unreadMessageCount = default(int), string phoneNumber = default(string), bool isCreated = default(bool))
         {
+            this.DiscoveryKeys = discoveryKeys;
+            this.Metadata = metadata;
+            this.Nickname = nickname;
+            this.PreferredLanguages = preferredLanguages;
             // to ensure "userId" is required (not null)
             if (userId == null)
             {
@@ -117,14 +120,21 @@ namespace sendbird_platform_sdk.Model
             this.Metadata = metadata;
             this.Nickname = nickname;
             this.PreferredLanguages = preferredLanguages;
-            this.ProfileUrl = profileUrl;
+            // use default value if no "profileUrl" provided
+            if (profileUrl == null)
+            {
+                this.ProfileUrl = "";
+            }
+            else
+            {
+                this.ProfileUrl = profileUrl;
+            }
             this.RequireAuthForProfileImage = requireAuthForProfileImage;
             this.State = state;
             this.UnreadChannelCount = unreadChannelCount;
             this.UnreadMessageCount = unreadMessageCount;
             this.PhoneNumber = phoneNumber;
             this.IsCreated = isCreated;
-            this.SessionTokens = sessionTokens;
         }
 
         /// <summary>
@@ -142,7 +152,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets DiscoveryKeys
         /// </summary>
-        [DataMember(Name="discovery_keys", EmitDefaultValue=false)]
+        [DataMember(Name="discovery_keys", EmitDefaultValue=true)]
         public List<string> DiscoveryKeys { get; set; }
 
         /// <summary>
@@ -190,19 +200,19 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets Metadata
         /// </summary>
-        [DataMember(Name="metadata", EmitDefaultValue=false)]
+        [DataMember(Name="metadata", EmitDefaultValue=true)]
         public Object Metadata { get; set; }
 
         /// <summary>
         /// Gets or Sets Nickname
         /// </summary>
-        [DataMember(Name="nickname", EmitDefaultValue=false)]
+        [DataMember(Name="nickname", EmitDefaultValue=true)]
         public string Nickname { get; set; }
 
         /// <summary>
         /// Gets or Sets PreferredLanguages
         /// </summary>
-        [DataMember(Name="preferred_languages", EmitDefaultValue=false)]
+        [DataMember(Name="preferred_languages", EmitDefaultValue=true)]
         public List<string> PreferredLanguages { get; set; }
 
         /// <summary>
@@ -249,12 +259,6 @@ namespace sendbird_platform_sdk.Model
         public bool IsCreated { get; set; }
 
         /// <summary>
-        /// Gets or Sets SessionTokens
-        /// </summary>
-        [DataMember(Name="session_tokens", EmitDefaultValue=false)]
-        public List<string> SessionTokens { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -283,7 +287,6 @@ namespace sendbird_platform_sdk.Model
             sb.Append("  UnreadMessageCount: ").Append(UnreadMessageCount).Append("\n");
             sb.Append("  PhoneNumber: ").Append(PhoneNumber).Append("\n");
             sb.Append("  IsCreated: ").Append(IsCreated).Append("\n");
-            sb.Append("  SessionTokens: ").Append(SessionTokens).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -424,12 +427,6 @@ namespace sendbird_platform_sdk.Model
                     this.IsCreated == input.IsCreated ||
                     (this.IsCreated != null &&
                     this.IsCreated.Equals(input.IsCreated))
-                ) && 
-                (
-                    this.SessionTokens == input.SessionTokens ||
-                    this.SessionTokens != null &&
-                    input.SessionTokens != null &&
-                    this.SessionTokens.SequenceEqual(input.SessionTokens)
                 );
         }
 
@@ -484,8 +481,6 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.PhoneNumber.GetHashCode();
                 if (this.IsCreated != null)
                     hashCode = hashCode * 59 + this.IsCreated.GetHashCode();
-                if (this.SessionTokens != null)
-                    hashCode = hashCode * 59 + this.SessionTokens.GetHashCode();
                 return hashCode;
             }
         }

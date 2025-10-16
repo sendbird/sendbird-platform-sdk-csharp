@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **Metadata** | **Object** |  | [optional] 
 **Nickname** | **string** |  | [optional] 
 **PreferredLanguages** | **List&lt;string&gt;** |  | [optional] 
-**ProfileUrl** | **string** |  | [optional] 
+**ProfileUrl** | **string** |  | [optional] [default to ""]
 **RequireAuthForProfileImage** | **bool** |  | [optional] 
 **UserId** | **string** |  | 
 **State** | **string** |  | [optional] 
@@ -26,7 +26,6 @@ Name | Type | Description | Notes
 **UnreadMessageCount** | **int** |  | [optional] 
 **PhoneNumber** | **string** |  | [optional] 
 **IsCreated** | **bool** |  | [optional] 
-**SessionTokens** | **List&lt;string&gt;** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

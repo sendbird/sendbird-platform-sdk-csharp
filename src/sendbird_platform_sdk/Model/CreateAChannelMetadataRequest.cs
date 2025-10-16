@@ -52,6 +52,7 @@ namespace sendbird_platform_sdk.Model
                 this.Metadata = metadata;
             }
 
+            this.Metadata = metadata;
             this.IncludeTs = includeTs;
         }
 

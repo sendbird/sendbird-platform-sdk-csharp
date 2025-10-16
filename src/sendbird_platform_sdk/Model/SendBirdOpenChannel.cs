@@ -63,6 +63,7 @@ namespace sendbird_platform_sdk.Model
                 this.ChannelUrl = channelUrl;
             }
 
+            this.Metadata = metadata;
             this.CoverUrl = coverUrl;
             this.CreatedAt = createdAt;
             this.CustomType = customType;
@@ -152,7 +153,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets Metadata
         /// </summary>
-        [DataMember(Name="metadata", EmitDefaultValue=false)]
+        [DataMember(Name="metadata", EmitDefaultValue=true)]
         public Object Metadata { get; set; }
 
         /// <summary>

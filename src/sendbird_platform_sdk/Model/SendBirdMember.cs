@@ -116,16 +116,18 @@ namespace sendbird_platform_sdk.Model
         /// <param name="nickname">nickname.</param>
         /// <param name="pushEnabled">pushEnabled.</param>
         /// <param name="pushTriggerOption">pushTriggerOption.</param>
-        /// <param name="profileUrl">profileUrl.</param>
+        /// <param name="profileUrl">profileUrl (default to &quot;&quot;).</param>
         /// <param name="requireAuthForProfileImage">requireAuthForProfileImage.</param>
         /// <param name="readTs">readTs.</param>
         /// <param name="role">role.</param>
         /// <param name="state">state.</param>
         /// <param name="userId">userId (required).</param>
-        public SendbirdMember(long deliveredTs = default(long), bool doNotDisturb = default(bool), List<string> friendDiscoveryKey = default(List<string>), string friendName = default(string), bool isActive = default(bool), bool isBlockedByMe = default(bool), bool isBlockingMe = default(bool), bool isMuted = default(bool), bool isOnline = default(bool), long lastSeenAt = default(long), Object metadata = default(Object), string mutedDescription = default(string), long mutedEndAt = default(long), string nickname = default(string), bool pushEnabled = default(bool), SendbirdPushTriggerOption pushTriggerOption = default(SendbirdPushTriggerOption), string profileUrl = default(string), bool requireAuthForProfileImage = default(bool), long readTs = default(long), RoleEnum? role = default(RoleEnum?), StateEnum? state = default(StateEnum?), string userId = default(string))
+        public SendbirdMember(long deliveredTs = default(long), bool doNotDisturb = default(bool), List<string> friendDiscoveryKey = default(List<string>), string friendName = default(string), bool isActive = default(bool), bool isBlockedByMe = default(bool), bool isBlockingMe = default(bool), bool isMuted = default(bool), bool isOnline = default(bool), long lastSeenAt = default(long), Object metadata = default(Object), string mutedDescription = default(string), long mutedEndAt = default(long), string nickname = default(string), bool pushEnabled = default(bool), SendbirdPushTriggerOption pushTriggerOption = default(SendbirdPushTriggerOption), string profileUrl = "", bool requireAuthForProfileImage = default(bool), long readTs = default(long), RoleEnum? role = default(RoleEnum?), StateEnum? state = default(StateEnum?), string userId = default(string))
         {
             this.FriendDiscoveryKey = friendDiscoveryKey;
             this.FriendName = friendName;
+            this.Metadata = metadata;
+            this.Nickname = nickname;
             this.Role = role;
             this.State = state;
             // to ensure "userId" is required (not null)
@@ -154,7 +156,15 @@ namespace sendbird_platform_sdk.Model
             this.Nickname = nickname;
             this.PushEnabled = pushEnabled;
             this.PushTriggerOption = pushTriggerOption;
-            this.ProfileUrl = profileUrl;
+            // use default value if no "profileUrl" provided
+            if (profileUrl == null)
+            {
+                this.ProfileUrl = "";
+            }
+            else
+            {
+                this.ProfileUrl = profileUrl;
+            }
             this.RequireAuthForProfileImage = requireAuthForProfileImage;
             this.ReadTs = readTs;
             this.Role = role;
@@ -224,7 +234,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets Metadata
         /// </summary>
-        [DataMember(Name="metadata", EmitDefaultValue=false)]
+        [DataMember(Name="metadata", EmitDefaultValue=true)]
         public Object Metadata { get; set; }
 
         /// <summary>
@@ -242,7 +252,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets Nickname
         /// </summary>
-        [DataMember(Name="nickname", EmitDefaultValue=false)]
+        [DataMember(Name="nickname", EmitDefaultValue=true)]
         public string Nickname { get; set; }
 
         /// <summary>

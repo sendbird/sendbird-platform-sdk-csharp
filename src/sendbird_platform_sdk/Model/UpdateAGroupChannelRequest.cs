@@ -46,6 +46,7 @@ namespace sendbird_platform_sdk.Model
         public UpdateAGroupChannelRequest(string accessCode = default(string), System.IO.Stream coverFile = default(System.IO.Stream), string coverUrl = default(string), string customType = default(string), string data = default(string), bool isDistinct = default(bool), bool isPublic = default(bool), bool isSuper = default(bool), string name = default(string), List<string> operatorIds = default(List<string>))
         {
             this.AccessCode = accessCode;
+            this.AccessCode = accessCode;
             this.CoverFile = coverFile;
             this.CoverUrl = coverUrl;
             this.CustomType = customType;
@@ -60,7 +61,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets AccessCode
         /// </summary>
-        [DataMember(Name="access_code", EmitDefaultValue=false)]
+        [DataMember(Name="access_code", EmitDefaultValue=true)]
         public string AccessCode { get; set; }
 
         /// <summary>

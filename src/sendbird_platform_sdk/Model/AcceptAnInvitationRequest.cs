@@ -42,6 +42,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="userId">userId (required).</param>
         public AcceptAnInvitationRequest(string accessCode = default(string), string userId = default(string))
         {
+            this.AccessCode = accessCode;
             // to ensure "userId" is required (not null)
             if (userId == null)
             {
@@ -58,7 +59,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets AccessCode
         /// </summary>
-        [DataMember(Name="access_code", EmitDefaultValue=false)]
+        [DataMember(Name="access_code", EmitDefaultValue=true)]
         public string AccessCode { get; set; }
 
         /// <summary>

@@ -83,7 +83,6 @@ namespace sendbird_platform_sdk.Model
                 this.ChannelUrl = channelUrl;
             }
 
-            this.LastMessage = lastMessage;
             this.Channel = channel;
             this.CoverUrl = coverUrl;
             this.CreatedAt = createdAt;
@@ -253,7 +252,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets LastMessage
         /// </summary>
-        [DataMember(Name="last_message", EmitDefaultValue=true)]
+        [DataMember(Name="last_message", EmitDefaultValue=false)]
         public SendbirdMessageResponse LastMessage { get; set; }
 
         /// <summary>

@@ -43,10 +43,12 @@ namespace sendbird_platform_sdk.Model
         /// <param name="metadata">metadata.</param>
         /// <param name="nickname">nickname (required).</param>
         /// <param name="profileFile">Specifies the file of the user&#39;s profile image. An acceptable image is limited to a JPG, JPEG, or PNG file of up to 5 MB. When passing a file, you should send a multipart request. If the profile_file property is specified, the profile_url property is not required..</param>
-        /// <param name="profileUrl">profileUrl (required).</param>
+        /// <param name="profileUrl">profileUrl (required) (default to &quot;&quot;).</param>
         /// <param name="userId">userId (required).</param>
-        public CreateAUserRequest(List<string> discoveryKeys = default(List<string>), bool issueAccessToken = default(bool), Object metadata = default(Object), string nickname = default(string), System.IO.Stream profileFile = default(System.IO.Stream), string profileUrl = default(string), string userId = default(string))
+        public CreateAUserRequest(List<string> discoveryKeys = default(List<string>), bool issueAccessToken = default(bool), Object metadata = default(Object), string nickname = default(string), System.IO.Stream profileFile = default(System.IO.Stream), string profileUrl = "", string userId = default(string))
         {
+            this.DiscoveryKeys = discoveryKeys;
+            this.Metadata = metadata;
             // to ensure "nickname" is required (not null)
             if (nickname == null)
             {
@@ -57,6 +59,7 @@ namespace sendbird_platform_sdk.Model
                 this.Nickname = nickname;
             }
 
+            this.Nickname = nickname;
             // to ensure "profileUrl" is required (not null)
             if (profileUrl == null)
             {
@@ -86,7 +89,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets DiscoveryKeys
         /// </summary>
-        [DataMember(Name="discovery_keys", EmitDefaultValue=false)]
+        [DataMember(Name="discovery_keys", EmitDefaultValue=true)]
         public List<string> DiscoveryKeys { get; set; }
 
         /// <summary>
@@ -98,7 +101,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets Metadata
         /// </summary>
-        [DataMember(Name="metadata", EmitDefaultValue=false)]
+        [DataMember(Name="metadata", EmitDefaultValue=true)]
         public Object Metadata { get; set; }
 
         /// <summary>

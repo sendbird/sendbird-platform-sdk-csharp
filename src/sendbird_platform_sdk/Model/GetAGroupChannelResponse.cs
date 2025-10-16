@@ -214,7 +214,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="unreadMentionCount">unreadMentionCount.</param>
         /// <param name="unreadMessageCount">unreadMessageCount.</param>
         /// <param name="userLastRead">userLastRead.</param>
-        public GetAGroupChannelResponse(SendbirdGroupChannelDetailChannel channel = default(SendbirdGroupChannelDetailChannel), string channelUrl = default(string), CountPreferenceEnum? countPreference = default(CountPreferenceEnum?), string coverUrl = default(string), long createdAt = default(long), SendbirdBasicUserInfo createdBy = default(SendbirdBasicUserInfo), string customType = default(string), string data = default(string), Object deliveryReceipt = default(Object), SendbirdDisappearingMessage disappearingMessage = default(SendbirdDisappearingMessage), bool freeze = default(bool), bool hasAiBot = default(bool), bool hasBot = default(bool), HiddenStateEnum? hiddenState = default(HiddenStateEnum?), bool ignoreProfanityFilter = default(bool), long invitedAt = default(long), SendbirdBasicUserInfo inviter = default(SendbirdBasicUserInfo), bool isAccessCodeRequired = default(bool), bool isBroadcast = default(bool), bool isDiscoverable = default(bool), bool isDistinct = default(bool), bool isEphemeral = default(bool), bool isExclusive = default(bool), bool isHidden = default(bool), bool isMuted = default(bool), bool isPublic = default(bool), bool isPushEnabled = default(bool), bool isSuper = default(bool), int joinedMemberCount = default(int), long joinedTs = default(long), SendbirdMessageResponse lastMessage = default(SendbirdMessageResponse), int maxLengthMessage = default(int), int memberCount = default(int), MemberStateEnum? memberState = default(MemberStateEnum?), List<SendbirdMember> members = default(List<SendbirdMember>), int messageSurvivalSeconds = default(int), Object metadata = default(Object), MyRoleEnum? myRole = default(MyRoleEnum?), string name = default(string), SendbirdPushTriggerOption pushTriggerOption = default(SendbirdPushTriggerOption), Dictionary<string, long> readReceipt = default(Dictionary<string, long>), SendbirdSmsFallback smsFallback = default(SendbirdSmsFallback), long tsMessageOffset = default(long), int unreadMentionCount = default(int), int unreadMessageCount = default(int), long userLastRead = default(long))
+        public GetAGroupChannelResponse(SendbirdGroupChannelDetailChannel channel = default(SendbirdGroupChannelDetailChannel), string channelUrl = default(string), CountPreferenceEnum? countPreference = default(CountPreferenceEnum?), string coverUrl = default(string), long createdAt = default(long), SendbirdBasicUserInfo createdBy = default(SendbirdBasicUserInfo), string customType = default(string), string data = default(string), Object deliveryReceipt = default(Object), SendbirdDisappearingMessage disappearingMessage = default(SendbirdDisappearingMessage), bool freeze = default(bool), bool hasAiBot = default(bool), bool hasBot = default(bool), HiddenStateEnum? hiddenState = default(HiddenStateEnum?), bool ignoreProfanityFilter = default(bool), long invitedAt = default(long), SendbirdBasicUserInfo inviter = default(SendbirdBasicUserInfo), bool? isAccessCodeRequired = default(bool?), bool isBroadcast = default(bool), bool isDiscoverable = default(bool), bool isDistinct = default(bool), bool isEphemeral = default(bool), bool isExclusive = default(bool), bool isHidden = default(bool), bool isMuted = default(bool), bool isPublic = default(bool), bool isPushEnabled = default(bool), bool isSuper = default(bool), int joinedMemberCount = default(int), long? joinedTs = default(long?), SendbirdGroupChannelLastMessage lastMessage = default(SendbirdGroupChannelLastMessage), int maxLengthMessage = default(int), int memberCount = default(int), MemberStateEnum? memberState = default(MemberStateEnum?), List<SendbirdMember> members = default(List<SendbirdMember>), int messageSurvivalSeconds = default(int), Object metadata = default(Object), MyRoleEnum? myRole = default(MyRoleEnum?), string name = default(string), SendbirdPushTriggerOption pushTriggerOption = default(SendbirdPushTriggerOption), Dictionary<string, long> readReceipt = default(Dictionary<string, long>), SendbirdSmsFallback smsFallback = default(SendbirdSmsFallback), long tsMessageOffset = default(long), int unreadMentionCount = default(int), int unreadMessageCount = default(int), long userLastRead = default(long))
         {
             // to ensure "channelUrl" is required (not null)
             if (channelUrl == null)
@@ -226,7 +226,9 @@ namespace sendbird_platform_sdk.Model
                 this.ChannelUrl = channelUrl;
             }
 
-            this.LastMessage = lastMessage;
+            this.IsAccessCodeRequired = isAccessCodeRequired;
+            this.JoinedTs = joinedTs;
+            this.Metadata = metadata;
             this.Channel = channel;
             this.CountPreference = countPreference;
             this.CoverUrl = coverUrl;
@@ -369,8 +371,8 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets IsAccessCodeRequired
         /// </summary>
-        [DataMember(Name="is_access_code_required", EmitDefaultValue=false)]
-        public bool IsAccessCodeRequired { get; set; }
+        [DataMember(Name="is_access_code_required", EmitDefaultValue=true)]
+        public bool? IsAccessCodeRequired { get; set; }
 
         /// <summary>
         /// Gets or Sets IsBroadcast
@@ -441,14 +443,14 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets JoinedTs
         /// </summary>
-        [DataMember(Name="joined_ts", EmitDefaultValue=false)]
-        public long JoinedTs { get; set; }
+        [DataMember(Name="joined_ts", EmitDefaultValue=true)]
+        public long? JoinedTs { get; set; }
 
         /// <summary>
         /// Gets or Sets LastMessage
         /// </summary>
-        [DataMember(Name="last_message", EmitDefaultValue=true)]
-        public SendbirdMessageResponse LastMessage { get; set; }
+        [DataMember(Name="last_message", EmitDefaultValue=false)]
+        public SendbirdGroupChannelLastMessage LastMessage { get; set; }
 
         /// <summary>
         /// Gets or Sets MaxLengthMessage
@@ -478,7 +480,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets Metadata
         /// </summary>
-        [DataMember(Name="metadata", EmitDefaultValue=false)]
+        [DataMember(Name="metadata", EmitDefaultValue=true)]
         public Object Metadata { get; set; }
 
 

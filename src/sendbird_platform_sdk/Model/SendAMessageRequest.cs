@@ -31,6 +31,37 @@ namespace sendbird_platform_sdk.Model
     public partial class SendAMessageRequest :  IEquatable<SendAMessageRequest>, IValidatableObject
     {
         /// <summary>
+        /// Defines MessageType
+        /// </summary>
+        [JsonConverter(typeof(StringEnumConverter))]
+        public enum MessageTypeEnum
+        {
+            /// <summary>
+            /// Enum MESG for value: MESG
+            /// </summary>
+            [EnumMember(Value = "MESG")]
+            MESG = 1,
+
+            /// <summary>
+            /// Enum ADMM for value: ADMM
+            /// </summary>
+            [EnumMember(Value = "ADMM")]
+            ADMM = 2,
+
+            /// <summary>
+            /// Enum FILE for value: FILE
+            /// </summary>
+            [EnumMember(Value = "FILE")]
+            FILE = 3
+
+        }
+
+        /// <summary>
+        /// Gets or Sets MessageType
+        /// </summary>
+        [DataMember(Name="message_type", EmitDefaultValue=true)]
+        public MessageTypeEnum MessageType { get; set; }
+        /// <summary>
         /// Defines MentionType
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
@@ -56,27 +87,6 @@ namespace sendbird_platform_sdk.Model
         [DataMember(Name="mention_type", EmitDefaultValue=false)]
         public MentionTypeEnum? MentionType { get; set; }
         /// <summary>
-        /// Specifies the type of the message. The value of ADMM represents an admin message.
-        /// </summary>
-        /// <value>Specifies the type of the message. The value of ADMM represents an admin message.</value>
-        [JsonConverter(typeof(StringEnumConverter))]
-        public enum MessageTypeEnum
-        {
-            /// <summary>
-            /// Enum ADMM for value: ADMM
-            /// </summary>
-            [EnumMember(Value = "ADMM")]
-            ADMM = 1
-
-        }
-
-        /// <summary>
-        /// Specifies the type of the message. The value of ADMM represents an admin message.
-        /// </summary>
-        /// <value>Specifies the type of the message. The value of ADMM represents an admin message.</value>
-        [DataMember(Name="message_type", EmitDefaultValue=true)]
-        public MessageTypeEnum MessageType { get; set; }
-        /// <summary>
         /// Initializes a new instance of the <see cref="SendAMessageRequest" /> class.
         /// </summary>
         [JsonConstructorAttribute]
@@ -84,6 +94,17 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="SendAMessageRequest" /> class.
         /// </summary>
+        /// <param name="messageType">messageType (required).</param>
+        /// <param name="userId">userId (required).</param>
+        /// <param name="message">Specifies the content of the message. * This property is required when message_type is MESG or ADMM..</param>
+        /// <param name="pushMessageTemplate">pushMessageTemplate.</param>
+        /// <param name="pollId">Specifies the ID of the poll to be associated with the message. * This property is only available for group channels and message_type is MESG..</param>
+        /// <param name="files">files.</param>
+        /// <param name="requireAuth">Determines whether to require an authentication key to verify if the file is being properly accessed. Only the user who uploaded the file or users who are in the channel where the file was uploaded should have access. The authentication key managed internally by the Sendbird system is generated every time a user logs in to the Sendbird server and is valid for three days starting from the last login. If set to false, Sendbird tries to access a file without any key. To access encrypted files, such as the files in the Sendbird server which are by default encrypted, the property must be set to true. (Default: false) The require_auth parameter only works if the file or URL is managed by Sendbird, which means that when you upload files using multipart format or provide URLs that point to the files hosted on the Sendbird server. However, if the file is hosted on a server or service that is not managed by Sendbird, access control and authentication for the file should be handled by the respective server or service hosting the file..</param>
+        /// <param name="thumbnail1">Specifies the URL of the thumbnail of the file. * This property is available when message_type is FILE..</param>
+        /// <param name="thumbnail2">Specifies the URL of the thumbnail of the file. * This property is available when message_type is FILE..</param>
+        /// <param name="thumbnail3">Specifies the URL of the thumbnail of the file. * This property is available when message_type is FILE..</param>
+        /// <param name="thumbnails">Specifies the URL of the thumbnail of the file. * This property is available when message_type is FILE..</param>
         /// <param name="apnsBundleId">apnsBundleId.</param>
         /// <param name="appleCriticalAlertOptions">appleCriticalAlertOptions.</param>
         /// <param name="createdAt">createdAt.</param>
@@ -95,32 +116,12 @@ namespace sendbird_platform_sdk.Model
         /// <param name="markAsRead">markAsRead.</param>
         /// <param name="mentionType">mentionType.</param>
         /// <param name="mentionedUserIds">mentionedUserIds.</param>
-        /// <param name="message">message (required).</param>
-        /// <param name="messageType">Specifies the type of the message. The value of ADMM represents an admin message. (required).</param>
-        /// <param name="pollId">pollId.</param>
-        /// <param name="pushMessageTemplate">pushMessageTemplate.</param>
         /// <param name="sendPush">sendPush.</param>
         /// <param name="sortedMetaarray">sortedMetaarray.</param>
         /// <param name="sound">sound.</param>
         /// <param name="volume">volume.</param>
-        /// <param name="files">files (required).</param>
-        /// <param name="requireAuth">Determines whether to require an authentication key to verify if the file is being properly accessed. Only the user who uploaded the file or users who are in the channel where the file was uploaded should have access. The authentication key managed internally by the Sendbird system is generated every time a user logs in to the Sendbird server and is valid for three days starting from the last login. If set to false, Sendbird tries to access a file without any key. To access encrypted files, such as the files in the Sendbird server which are by default encrypted, the property must be set to true. (Default: false) The require_auth parameter only works if the file or URL is managed by Sendbird, which means that when you upload files using multipart format or provide URLs that point to the files hosted on the Sendbird server. However, if the file is hosted on a server or service that is not managed by Sendbird, access control and authentication for the file should be handled by the respective server or service hosting the file..</param>
-        /// <param name="thumbnail1">thumbnail1.</param>
-        /// <param name="thumbnail2">thumbnail2.</param>
-        /// <param name="thumbnail3">thumbnail3.</param>
-        /// <param name="thumbnails">thumbnails.</param>
-        public SendAMessageRequest(string apnsBundleId = default(string), Object appleCriticalAlertOptions = default(Object), long createdAt = default(long), string customType = default(string), string data = default(string), string dedupId = default(string), bool includePollDetails = default(bool), bool isSilent = default(bool), bool markAsRead = default(bool), MentionTypeEnum? mentionType = default(MentionTypeEnum?), List<string> mentionedUserIds = default(List<string>), string message = default(string), MessageTypeEnum messageType = default(MessageTypeEnum), int pollId = default(int), SendTextMessageRequestBodyPushMessageTemplate pushMessageTemplate = default(SendTextMessageRequestBodyPushMessageTemplate), bool sendPush = default(bool), List<SendbirdSortedMetaarrayInner> sortedMetaarray = default(List<SendbirdSortedMetaarrayInner>), string sound = default(string), decimal volume = default(decimal), SendbirdFile files = default(SendbirdFile), bool requireAuth = default(bool), string thumbnail1 = default(string), string thumbnail2 = default(string), string thumbnail3 = default(string), List<string> thumbnails = default(List<string>))
+        public SendAMessageRequest(MessageTypeEnum messageType = default(MessageTypeEnum), string userId = default(string), string message = default(string), SendAMessageRequestPushMessageTemplate pushMessageTemplate = default(SendAMessageRequestPushMessageTemplate), int pollId = default(int), SendbirdFile files = default(SendbirdFile), bool requireAuth = default(bool), string thumbnail1 = default(string), string thumbnail2 = default(string), string thumbnail3 = default(string), List<string> thumbnails = default(List<string>), string apnsBundleId = default(string), Object appleCriticalAlertOptions = default(Object), long createdAt = default(long), string customType = default(string), string data = default(string), string dedupId = default(string), bool includePollDetails = default(bool), bool isSilent = default(bool), bool markAsRead = default(bool), MentionTypeEnum? mentionType = default(MentionTypeEnum?), List<string> mentionedUserIds = default(List<string>), bool sendPush = default(bool), List<SendbirdSortedMetaarrayInner> sortedMetaarray = default(List<SendbirdSortedMetaarrayInner>), string sound = default(string), decimal volume = default(decimal))
         {
-            // to ensure "message" is required (not null)
-            if (message == null)
-            {
-                throw new InvalidDataException("message is a required property for SendAMessageRequest and cannot be null");
-            }
-            else
-            {
-                this.Message = message;
-            }
-
             // to ensure "messageType" is required (not null)
             if (messageType == null)
             {
@@ -131,16 +132,25 @@ namespace sendbird_platform_sdk.Model
                 this.MessageType = messageType;
             }
 
-            // to ensure "files" is required (not null)
-            if (files == null)
+            // to ensure "userId" is required (not null)
+            if (userId == null)
             {
-                throw new InvalidDataException("files is a required property for SendAMessageRequest and cannot be null");
+                throw new InvalidDataException("userId is a required property for SendAMessageRequest and cannot be null");
             }
             else
             {
-                this.Files = files;
+                this.UserId = userId;
             }
 
+            this.Message = message;
+            this.PushMessageTemplate = pushMessageTemplate;
+            this.PollId = pollId;
+            this.Files = files;
+            this.RequireAuth = requireAuth;
+            this.Thumbnail1 = thumbnail1;
+            this.Thumbnail2 = thumbnail2;
+            this.Thumbnail3 = thumbnail3;
+            this.Thumbnails = thumbnails;
             this.ApnsBundleId = apnsBundleId;
             this.AppleCriticalAlertOptions = appleCriticalAlertOptions;
             this.CreatedAt = createdAt;
@@ -152,18 +162,79 @@ namespace sendbird_platform_sdk.Model
             this.MarkAsRead = markAsRead;
             this.MentionType = mentionType;
             this.MentionedUserIds = mentionedUserIds;
-            this.PollId = pollId;
-            this.PushMessageTemplate = pushMessageTemplate;
             this.SendPush = sendPush;
             this.SortedMetaarray = sortedMetaarray;
             this.Sound = sound;
             this.Volume = volume;
-            this.RequireAuth = requireAuth;
-            this.Thumbnail1 = thumbnail1;
-            this.Thumbnail2 = thumbnail2;
-            this.Thumbnail3 = thumbnail3;
-            this.Thumbnails = thumbnails;
         }
+
+
+        /// <summary>
+        /// Gets or Sets UserId
+        /// </summary>
+        [DataMember(Name="user_id", EmitDefaultValue=true)]
+        public string UserId { get; set; }
+
+        /// <summary>
+        /// Specifies the content of the message. * This property is required when message_type is MESG or ADMM.
+        /// </summary>
+        /// <value>Specifies the content of the message. * This property is required when message_type is MESG or ADMM.</value>
+        [DataMember(Name="message", EmitDefaultValue=false)]
+        public string Message { get; set; }
+
+        /// <summary>
+        /// Gets or Sets PushMessageTemplate
+        /// </summary>
+        [DataMember(Name="push_message_template", EmitDefaultValue=false)]
+        public SendAMessageRequestPushMessageTemplate PushMessageTemplate { get; set; }
+
+        /// <summary>
+        /// Specifies the ID of the poll to be associated with the message. * This property is only available for group channels and message_type is MESG.
+        /// </summary>
+        /// <value>Specifies the ID of the poll to be associated with the message. * This property is only available for group channels and message_type is MESG.</value>
+        [DataMember(Name="poll_id", EmitDefaultValue=false)]
+        public int PollId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Files
+        /// </summary>
+        [DataMember(Name="files", EmitDefaultValue=false)]
+        public SendbirdFile Files { get; set; }
+
+        /// <summary>
+        /// Determines whether to require an authentication key to verify if the file is being properly accessed. Only the user who uploaded the file or users who are in the channel where the file was uploaded should have access. The authentication key managed internally by the Sendbird system is generated every time a user logs in to the Sendbird server and is valid for three days starting from the last login. If set to false, Sendbird tries to access a file without any key. To access encrypted files, such as the files in the Sendbird server which are by default encrypted, the property must be set to true. (Default: false) The require_auth parameter only works if the file or URL is managed by Sendbird, which means that when you upload files using multipart format or provide URLs that point to the files hosted on the Sendbird server. However, if the file is hosted on a server or service that is not managed by Sendbird, access control and authentication for the file should be handled by the respective server or service hosting the file.
+        /// </summary>
+        /// <value>Determines whether to require an authentication key to verify if the file is being properly accessed. Only the user who uploaded the file or users who are in the channel where the file was uploaded should have access. The authentication key managed internally by the Sendbird system is generated every time a user logs in to the Sendbird server and is valid for three days starting from the last login. If set to false, Sendbird tries to access a file without any key. To access encrypted files, such as the files in the Sendbird server which are by default encrypted, the property must be set to true. (Default: false) The require_auth parameter only works if the file or URL is managed by Sendbird, which means that when you upload files using multipart format or provide URLs that point to the files hosted on the Sendbird server. However, if the file is hosted on a server or service that is not managed by Sendbird, access control and authentication for the file should be handled by the respective server or service hosting the file.</value>
+        [DataMember(Name="require_auth", EmitDefaultValue=false)]
+        public bool RequireAuth { get; set; }
+
+        /// <summary>
+        /// Specifies the URL of the thumbnail of the file. * This property is available when message_type is FILE.
+        /// </summary>
+        /// <value>Specifies the URL of the thumbnail of the file. * This property is available when message_type is FILE.</value>
+        [DataMember(Name="thumbnail1", EmitDefaultValue=false)]
+        public string Thumbnail1 { get; set; }
+
+        /// <summary>
+        /// Specifies the URL of the thumbnail of the file. * This property is available when message_type is FILE.
+        /// </summary>
+        /// <value>Specifies the URL of the thumbnail of the file. * This property is available when message_type is FILE.</value>
+        [DataMember(Name="thumbnail2", EmitDefaultValue=false)]
+        public string Thumbnail2 { get; set; }
+
+        /// <summary>
+        /// Specifies the URL of the thumbnail of the file. * This property is available when message_type is FILE.
+        /// </summary>
+        /// <value>Specifies the URL of the thumbnail of the file. * This property is available when message_type is FILE.</value>
+        [DataMember(Name="thumbnail3", EmitDefaultValue=false)]
+        public string Thumbnail3 { get; set; }
+
+        /// <summary>
+        /// Specifies the URL of the thumbnail of the file. * This property is available when message_type is FILE.
+        /// </summary>
+        /// <value>Specifies the URL of the thumbnail of the file. * This property is available when message_type is FILE.</value>
+        [DataMember(Name="thumbnails", EmitDefaultValue=false)]
+        public List<string> Thumbnails { get; set; }
 
         /// <summary>
         /// Gets or Sets ApnsBundleId
@@ -227,25 +298,6 @@ namespace sendbird_platform_sdk.Model
         public List<string> MentionedUserIds { get; set; }
 
         /// <summary>
-        /// Gets or Sets Message
-        /// </summary>
-        [DataMember(Name="message", EmitDefaultValue=true)]
-        public string Message { get; set; }
-
-
-        /// <summary>
-        /// Gets or Sets PollId
-        /// </summary>
-        [DataMember(Name="poll_id", EmitDefaultValue=false)]
-        public int PollId { get; set; }
-
-        /// <summary>
-        /// Gets or Sets PushMessageTemplate
-        /// </summary>
-        [DataMember(Name="push_message_template", EmitDefaultValue=false)]
-        public SendTextMessageRequestBodyPushMessageTemplate PushMessageTemplate { get; set; }
-
-        /// <summary>
         /// Gets or Sets SendPush
         /// </summary>
         [DataMember(Name="send_push", EmitDefaultValue=false)]
@@ -270,43 +322,6 @@ namespace sendbird_platform_sdk.Model
         public decimal Volume { get; set; }
 
         /// <summary>
-        /// Gets or Sets Files
-        /// </summary>
-        [DataMember(Name="files", EmitDefaultValue=true)]
-        public SendbirdFile Files { get; set; }
-
-        /// <summary>
-        /// Determines whether to require an authentication key to verify if the file is being properly accessed. Only the user who uploaded the file or users who are in the channel where the file was uploaded should have access. The authentication key managed internally by the Sendbird system is generated every time a user logs in to the Sendbird server and is valid for three days starting from the last login. If set to false, Sendbird tries to access a file without any key. To access encrypted files, such as the files in the Sendbird server which are by default encrypted, the property must be set to true. (Default: false) The require_auth parameter only works if the file or URL is managed by Sendbird, which means that when you upload files using multipart format or provide URLs that point to the files hosted on the Sendbird server. However, if the file is hosted on a server or service that is not managed by Sendbird, access control and authentication for the file should be handled by the respective server or service hosting the file.
-        /// </summary>
-        /// <value>Determines whether to require an authentication key to verify if the file is being properly accessed. Only the user who uploaded the file or users who are in the channel where the file was uploaded should have access. The authentication key managed internally by the Sendbird system is generated every time a user logs in to the Sendbird server and is valid for three days starting from the last login. If set to false, Sendbird tries to access a file without any key. To access encrypted files, such as the files in the Sendbird server which are by default encrypted, the property must be set to true. (Default: false) The require_auth parameter only works if the file or URL is managed by Sendbird, which means that when you upload files using multipart format or provide URLs that point to the files hosted on the Sendbird server. However, if the file is hosted on a server or service that is not managed by Sendbird, access control and authentication for the file should be handled by the respective server or service hosting the file.</value>
-        [DataMember(Name="require_auth", EmitDefaultValue=false)]
-        public bool RequireAuth { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Thumbnail1
-        /// </summary>
-        [DataMember(Name="thumbnail1", EmitDefaultValue=false)]
-        public string Thumbnail1 { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Thumbnail2
-        /// </summary>
-        [DataMember(Name="thumbnail2", EmitDefaultValue=false)]
-        public string Thumbnail2 { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Thumbnail3
-        /// </summary>
-        [DataMember(Name="thumbnail3", EmitDefaultValue=false)]
-        public string Thumbnail3 { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Thumbnails
-        /// </summary>
-        [DataMember(Name="thumbnails", EmitDefaultValue=false)]
-        public List<string> Thumbnails { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -314,6 +329,17 @@ namespace sendbird_platform_sdk.Model
         {
             var sb = new StringBuilder();
             sb.Append("class SendAMessageRequest {\n");
+            sb.Append("  MessageType: ").Append(MessageType).Append("\n");
+            sb.Append("  UserId: ").Append(UserId).Append("\n");
+            sb.Append("  Message: ").Append(Message).Append("\n");
+            sb.Append("  PushMessageTemplate: ").Append(PushMessageTemplate).Append("\n");
+            sb.Append("  PollId: ").Append(PollId).Append("\n");
+            sb.Append("  Files: ").Append(Files).Append("\n");
+            sb.Append("  RequireAuth: ").Append(RequireAuth).Append("\n");
+            sb.Append("  Thumbnail1: ").Append(Thumbnail1).Append("\n");
+            sb.Append("  Thumbnail2: ").Append(Thumbnail2).Append("\n");
+            sb.Append("  Thumbnail3: ").Append(Thumbnail3).Append("\n");
+            sb.Append("  Thumbnails: ").Append(Thumbnails).Append("\n");
             sb.Append("  ApnsBundleId: ").Append(ApnsBundleId).Append("\n");
             sb.Append("  AppleCriticalAlertOptions: ").Append(AppleCriticalAlertOptions).Append("\n");
             sb.Append("  CreatedAt: ").Append(CreatedAt).Append("\n");
@@ -325,20 +351,10 @@ namespace sendbird_platform_sdk.Model
             sb.Append("  MarkAsRead: ").Append(MarkAsRead).Append("\n");
             sb.Append("  MentionType: ").Append(MentionType).Append("\n");
             sb.Append("  MentionedUserIds: ").Append(MentionedUserIds).Append("\n");
-            sb.Append("  Message: ").Append(Message).Append("\n");
-            sb.Append("  MessageType: ").Append(MessageType).Append("\n");
-            sb.Append("  PollId: ").Append(PollId).Append("\n");
-            sb.Append("  PushMessageTemplate: ").Append(PushMessageTemplate).Append("\n");
             sb.Append("  SendPush: ").Append(SendPush).Append("\n");
             sb.Append("  SortedMetaarray: ").Append(SortedMetaarray).Append("\n");
             sb.Append("  Sound: ").Append(Sound).Append("\n");
             sb.Append("  Volume: ").Append(Volume).Append("\n");
-            sb.Append("  Files: ").Append(Files).Append("\n");
-            sb.Append("  RequireAuth: ").Append(RequireAuth).Append("\n");
-            sb.Append("  Thumbnail1: ").Append(Thumbnail1).Append("\n");
-            sb.Append("  Thumbnail2: ").Append(Thumbnail2).Append("\n");
-            sb.Append("  Thumbnail3: ").Append(Thumbnail3).Append("\n");
-            sb.Append("  Thumbnails: ").Append(Thumbnails).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -373,6 +389,62 @@ namespace sendbird_platform_sdk.Model
                 return false;
 
             return 
+                (
+                    this.MessageType == input.MessageType ||
+                    (this.MessageType != null &&
+                    this.MessageType.Equals(input.MessageType))
+                ) && 
+                (
+                    this.UserId == input.UserId ||
+                    (this.UserId != null &&
+                    this.UserId.Equals(input.UserId))
+                ) && 
+                (
+                    this.Message == input.Message ||
+                    (this.Message != null &&
+                    this.Message.Equals(input.Message))
+                ) && 
+                (
+                    this.PushMessageTemplate == input.PushMessageTemplate ||
+                    (this.PushMessageTemplate != null &&
+                    this.PushMessageTemplate.Equals(input.PushMessageTemplate))
+                ) && 
+                (
+                    this.PollId == input.PollId ||
+                    (this.PollId != null &&
+                    this.PollId.Equals(input.PollId))
+                ) && 
+                (
+                    this.Files == input.Files ||
+                    (this.Files != null &&
+                    this.Files.Equals(input.Files))
+                ) && 
+                (
+                    this.RequireAuth == input.RequireAuth ||
+                    (this.RequireAuth != null &&
+                    this.RequireAuth.Equals(input.RequireAuth))
+                ) && 
+                (
+                    this.Thumbnail1 == input.Thumbnail1 ||
+                    (this.Thumbnail1 != null &&
+                    this.Thumbnail1.Equals(input.Thumbnail1))
+                ) && 
+                (
+                    this.Thumbnail2 == input.Thumbnail2 ||
+                    (this.Thumbnail2 != null &&
+                    this.Thumbnail2.Equals(input.Thumbnail2))
+                ) && 
+                (
+                    this.Thumbnail3 == input.Thumbnail3 ||
+                    (this.Thumbnail3 != null &&
+                    this.Thumbnail3.Equals(input.Thumbnail3))
+                ) && 
+                (
+                    this.Thumbnails == input.Thumbnails ||
+                    this.Thumbnails != null &&
+                    input.Thumbnails != null &&
+                    this.Thumbnails.SequenceEqual(input.Thumbnails)
+                ) && 
                 (
                     this.ApnsBundleId == input.ApnsBundleId ||
                     (this.ApnsBundleId != null &&
@@ -430,26 +502,6 @@ namespace sendbird_platform_sdk.Model
                     this.MentionedUserIds.SequenceEqual(input.MentionedUserIds)
                 ) && 
                 (
-                    this.Message == input.Message ||
-                    (this.Message != null &&
-                    this.Message.Equals(input.Message))
-                ) && 
-                (
-                    this.MessageType == input.MessageType ||
-                    (this.MessageType != null &&
-                    this.MessageType.Equals(input.MessageType))
-                ) && 
-                (
-                    this.PollId == input.PollId ||
-                    (this.PollId != null &&
-                    this.PollId.Equals(input.PollId))
-                ) && 
-                (
-                    this.PushMessageTemplate == input.PushMessageTemplate ||
-                    (this.PushMessageTemplate != null &&
-                    this.PushMessageTemplate.Equals(input.PushMessageTemplate))
-                ) && 
-                (
                     this.SendPush == input.SendPush ||
                     (this.SendPush != null &&
                     this.SendPush.Equals(input.SendPush))
@@ -469,37 +521,6 @@ namespace sendbird_platform_sdk.Model
                     this.Volume == input.Volume ||
                     (this.Volume != null &&
                     this.Volume.Equals(input.Volume))
-                ) && 
-                (
-                    this.Files == input.Files ||
-                    (this.Files != null &&
-                    this.Files.Equals(input.Files))
-                ) && 
-                (
-                    this.RequireAuth == input.RequireAuth ||
-                    (this.RequireAuth != null &&
-                    this.RequireAuth.Equals(input.RequireAuth))
-                ) && 
-                (
-                    this.Thumbnail1 == input.Thumbnail1 ||
-                    (this.Thumbnail1 != null &&
-                    this.Thumbnail1.Equals(input.Thumbnail1))
-                ) && 
-                (
-                    this.Thumbnail2 == input.Thumbnail2 ||
-                    (this.Thumbnail2 != null &&
-                    this.Thumbnail2.Equals(input.Thumbnail2))
-                ) && 
-                (
-                    this.Thumbnail3 == input.Thumbnail3 ||
-                    (this.Thumbnail3 != null &&
-                    this.Thumbnail3.Equals(input.Thumbnail3))
-                ) && 
-                (
-                    this.Thumbnails == input.Thumbnails ||
-                    this.Thumbnails != null &&
-                    input.Thumbnails != null &&
-                    this.Thumbnails.SequenceEqual(input.Thumbnails)
                 );
         }
 
@@ -512,6 +533,28 @@ namespace sendbird_platform_sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.MessageType != null)
+                    hashCode = hashCode * 59 + this.MessageType.GetHashCode();
+                if (this.UserId != null)
+                    hashCode = hashCode * 59 + this.UserId.GetHashCode();
+                if (this.Message != null)
+                    hashCode = hashCode * 59 + this.Message.GetHashCode();
+                if (this.PushMessageTemplate != null)
+                    hashCode = hashCode * 59 + this.PushMessageTemplate.GetHashCode();
+                if (this.PollId != null)
+                    hashCode = hashCode * 59 + this.PollId.GetHashCode();
+                if (this.Files != null)
+                    hashCode = hashCode * 59 + this.Files.GetHashCode();
+                if (this.RequireAuth != null)
+                    hashCode = hashCode * 59 + this.RequireAuth.GetHashCode();
+                if (this.Thumbnail1 != null)
+                    hashCode = hashCode * 59 + this.Thumbnail1.GetHashCode();
+                if (this.Thumbnail2 != null)
+                    hashCode = hashCode * 59 + this.Thumbnail2.GetHashCode();
+                if (this.Thumbnail3 != null)
+                    hashCode = hashCode * 59 + this.Thumbnail3.GetHashCode();
+                if (this.Thumbnails != null)
+                    hashCode = hashCode * 59 + this.Thumbnails.GetHashCode();
                 if (this.ApnsBundleId != null)
                     hashCode = hashCode * 59 + this.ApnsBundleId.GetHashCode();
                 if (this.AppleCriticalAlertOptions != null)
@@ -534,14 +577,6 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.MentionType.GetHashCode();
                 if (this.MentionedUserIds != null)
                     hashCode = hashCode * 59 + this.MentionedUserIds.GetHashCode();
-                if (this.Message != null)
-                    hashCode = hashCode * 59 + this.Message.GetHashCode();
-                if (this.MessageType != null)
-                    hashCode = hashCode * 59 + this.MessageType.GetHashCode();
-                if (this.PollId != null)
-                    hashCode = hashCode * 59 + this.PollId.GetHashCode();
-                if (this.PushMessageTemplate != null)
-                    hashCode = hashCode * 59 + this.PushMessageTemplate.GetHashCode();
                 if (this.SendPush != null)
                     hashCode = hashCode * 59 + this.SendPush.GetHashCode();
                 if (this.SortedMetaarray != null)
@@ -550,18 +585,6 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.Sound.GetHashCode();
                 if (this.Volume != null)
                     hashCode = hashCode * 59 + this.Volume.GetHashCode();
-                if (this.Files != null)
-                    hashCode = hashCode * 59 + this.Files.GetHashCode();
-                if (this.RequireAuth != null)
-                    hashCode = hashCode * 59 + this.RequireAuth.GetHashCode();
-                if (this.Thumbnail1 != null)
-                    hashCode = hashCode * 59 + this.Thumbnail1.GetHashCode();
-                if (this.Thumbnail2 != null)
-                    hashCode = hashCode * 59 + this.Thumbnail2.GetHashCode();
-                if (this.Thumbnail3 != null)
-                    hashCode = hashCode * 59 + this.Thumbnail3.GetHashCode();
-                if (this.Thumbnails != null)
-                    hashCode = hashCode * 59 + this.Thumbnails.GetHashCode();
                 return hashCode;
             }
         }

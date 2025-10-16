@@ -38,7 +38,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addExtraDataToAMessageRequest"> (optional)</param>
         /// <returns>AddExtraDataToAMessageResponse</returns>
-        AddExtraDataToAMessageResponse AddExtraDataToAMessage (string channelType, string channelUrl, string messageId, string apiToken = default(string), AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = default(AddExtraDataToAMessageRequest));
+        AddExtraDataToAMessageResponse AddExtraDataToAMessage (string channelType, string channelUrl, long messageId, string apiToken = default(string), AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = default(AddExtraDataToAMessageRequest));
 
         /// <summary>
         /// Add extra data to a message
@@ -53,7 +53,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addExtraDataToAMessageRequest"> (optional)</param>
         /// <returns>ApiResponse of AddExtraDataToAMessageResponse</returns>
-        ApiResponse<AddExtraDataToAMessageResponse> AddExtraDataToAMessageWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string), AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = default(AddExtraDataToAMessageRequest));
+        ApiResponse<AddExtraDataToAMessageResponse> AddExtraDataToAMessageWithHttpInfo (string channelType, string channelUrl, long messageId, string apiToken = default(string), AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = default(AddExtraDataToAMessageRequest));
         /// <summary>
         /// Delete a message
         /// </summary>
@@ -66,7 +66,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="messageId">(Required) </param>
         /// <param name="apiToken"> (optional)</param>
         /// <returns>Object</returns>
-        Object DeleteAMessage (string channelType, string channelUrl, string messageId, string apiToken = default(string));
+        Object DeleteAMessage (string channelType, string channelUrl, long messageId, string apiToken = default(string));
 
         /// <summary>
         /// Delete a message
@@ -80,7 +80,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="messageId">(Required) </param>
         /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object</returns>
-        ApiResponse<Object> DeleteAMessageWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string));
+        ApiResponse<Object> DeleteAMessageWithHttpInfo (string channelType, string channelUrl, long messageId, string apiToken = default(string));
         /// <summary>
         /// Get a message
         /// </summary>
@@ -98,7 +98,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="withSortedMetaArray"> (optional)</param>
         /// <param name="apiToken"> (optional)</param>
         /// <returns>SendbirdMessageResponse</returns>
-        SendbirdMessageResponse GetAMessage (string channelType, string channelUrl, string messageId, bool? includeReactions = default(bool?), bool? includeThreadInfo = default(bool?), bool? includeParentMessageInfo = default(bool?), bool? includePollDetails = default(bool?), bool? withSortedMetaArray = default(bool?), string apiToken = default(string));
+        SendbirdMessageResponse GetAMessage (string channelType, string channelUrl, long messageId, bool? includeReactions = default(bool?), bool? includeThreadInfo = default(bool?), bool? includeParentMessageInfo = default(bool?), bool? includePollDetails = default(bool?), bool? withSortedMetaArray = default(bool?), string apiToken = default(string));
 
         /// <summary>
         /// Get a message
@@ -117,7 +117,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="withSortedMetaArray"> (optional)</param>
         /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of SendbirdMessageResponse</returns>
-        ApiResponse<SendbirdMessageResponse> GetAMessageWithHttpInfo (string channelType, string channelUrl, string messageId, bool? includeReactions = default(bool?), bool? includeThreadInfo = default(bool?), bool? includeParentMessageInfo = default(bool?), bool? includePollDetails = default(bool?), bool? withSortedMetaArray = default(bool?), string apiToken = default(string));
+        ApiResponse<SendbirdMessageResponse> GetAMessageWithHttpInfo (string channelType, string channelUrl, long messageId, bool? includeReactions = default(bool?), bool? includeThreadInfo = default(bool?), bool? includeParentMessageInfo = default(bool?), bool? includePollDetails = default(bool?), bool? withSortedMetaArray = default(bool?), string apiToken = default(string));
         /// <summary>
         /// Get total number of messages in a channel
         /// </summary>
@@ -271,7 +271,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="keys"> (optional)</param>
         /// <param name="apiToken"> (optional)</param>
         /// <returns>Object</returns>
-        Object RemoveExtraDataFromAMessage (string channelType, string channelUrl, string messageId, string keys = default(string), string apiToken = default(string));
+        Object RemoveExtraDataFromAMessage (string channelType, string channelUrl, long messageId, string keys = default(string), string apiToken = default(string));
 
         /// <summary>
         /// Remove extra data from a message
@@ -286,7 +286,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="keys"> (optional)</param>
         /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object</returns>
-        ApiResponse<Object> RemoveExtraDataFromAMessageWithHttpInfo (string channelType, string channelUrl, string messageId, string keys = default(string), string apiToken = default(string));
+        ApiResponse<Object> RemoveExtraDataFromAMessageWithHttpInfo (string channelType, string channelUrl, long messageId, string keys = default(string), string apiToken = default(string));
         /// <summary>
         /// Send a message
         /// </summary>
@@ -327,7 +327,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAMessageRequest"> (optional)</param>
         /// <returns>SendbirdMessageResponse</returns>
-        SendbirdMessageResponse UpdateAMessage (string channelType, string channelUrl, string messageId, string apiToken = default(string), UpdateAMessageRequest updateAMessageRequest = default(UpdateAMessageRequest));
+        SendbirdMessageResponse UpdateAMessage (string channelType, string channelUrl, long messageId, string apiToken = default(string), UpdateAMessageRequest updateAMessageRequest = default(UpdateAMessageRequest));
 
         /// <summary>
         /// Update a message
@@ -342,7 +342,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAMessageRequest"> (optional)</param>
         /// <returns>ApiResponse of SendbirdMessageResponse</returns>
-        ApiResponse<SendbirdMessageResponse> UpdateAMessageWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string), UpdateAMessageRequest updateAMessageRequest = default(UpdateAMessageRequest));
+        ApiResponse<SendbirdMessageResponse> UpdateAMessageWithHttpInfo (string channelType, string channelUrl, long messageId, string apiToken = default(string), UpdateAMessageRequest updateAMessageRequest = default(UpdateAMessageRequest));
         /// <summary>
         /// Update extra data in a message
         /// </summary>
@@ -356,7 +356,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateExtraDataInAMessageRequest"> (optional)</param>
         /// <returns>UpdateExtraDataInAMessageResponse</returns>
-        UpdateExtraDataInAMessageResponse UpdateExtraDataInAMessage (string channelType, string channelUrl, string messageId, string apiToken = default(string), UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = default(UpdateExtraDataInAMessageRequest));
+        UpdateExtraDataInAMessageResponse UpdateExtraDataInAMessage (string channelType, string channelUrl, long messageId, string apiToken = default(string), UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = default(UpdateExtraDataInAMessageRequest));
 
         /// <summary>
         /// Update extra data in a message
@@ -371,7 +371,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateExtraDataInAMessageRequest"> (optional)</param>
         /// <returns>ApiResponse of UpdateExtraDataInAMessageResponse</returns>
-        ApiResponse<UpdateExtraDataInAMessageResponse> UpdateExtraDataInAMessageWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string), UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = default(UpdateExtraDataInAMessageRequest));
+        ApiResponse<UpdateExtraDataInAMessageResponse> UpdateExtraDataInAMessageWithHttpInfo (string channelType, string channelUrl, long messageId, string apiToken = default(string), UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = default(UpdateExtraDataInAMessageRequest));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -388,7 +388,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addExtraDataToAMessageRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddExtraDataToAMessageResponse</returns>
-        System.Threading.Tasks.Task<AddExtraDataToAMessageResponse> AddExtraDataToAMessageAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = default(AddExtraDataToAMessageRequest), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<AddExtraDataToAMessageResponse> AddExtraDataToAMessageAsync (string channelType, string channelUrl, long messageId, string apiToken = default(string), AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = default(AddExtraDataToAMessageRequest), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Add extra data to a message
@@ -404,7 +404,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addExtraDataToAMessageRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddExtraDataToAMessageResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AddExtraDataToAMessageResponse>> AddExtraDataToAMessageWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = default(AddExtraDataToAMessageRequest), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<AddExtraDataToAMessageResponse>> AddExtraDataToAMessageWithHttpInfoAsync (string channelType, string channelUrl, long messageId, string apiToken = default(string), AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = default(AddExtraDataToAMessageRequest), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Delete a message
         /// </summary>
@@ -418,7 +418,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> DeleteAMessageAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Object> DeleteAMessageAsync (string channelType, string channelUrl, long messageId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Delete a message
@@ -433,7 +433,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteAMessageWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteAMessageWithHttpInfoAsync (string channelType, string channelUrl, long messageId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get a message
         /// </summary>
@@ -452,7 +452,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendbirdMessageResponse</returns>
-        System.Threading.Tasks.Task<SendbirdMessageResponse> GetAMessageAsync (string channelType, string channelUrl, string messageId, bool? includeReactions = default(bool?), bool? includeThreadInfo = default(bool?), bool? includeParentMessageInfo = default(bool?), bool? includePollDetails = default(bool?), bool? withSortedMetaArray = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendbirdMessageResponse> GetAMessageAsync (string channelType, string channelUrl, long messageId, bool? includeReactions = default(bool?), bool? includeThreadInfo = default(bool?), bool? includeParentMessageInfo = default(bool?), bool? includePollDetails = default(bool?), bool? withSortedMetaArray = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Get a message
@@ -472,7 +472,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendbirdMessageResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendbirdMessageResponse>> GetAMessageWithHttpInfoAsync (string channelType, string channelUrl, string messageId, bool? includeReactions = default(bool?), bool? includeThreadInfo = default(bool?), bool? includeParentMessageInfo = default(bool?), bool? includePollDetails = default(bool?), bool? withSortedMetaArray = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendbirdMessageResponse>> GetAMessageWithHttpInfoAsync (string channelType, string channelUrl, long messageId, bool? includeReactions = default(bool?), bool? includeThreadInfo = default(bool?), bool? includeParentMessageInfo = default(bool?), bool? includePollDetails = default(bool?), bool? withSortedMetaArray = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get total number of messages in a channel
         /// </summary>
@@ -635,7 +635,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> RemoveExtraDataFromAMessageAsync (string channelType, string channelUrl, string messageId, string keys = default(string), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<Object> RemoveExtraDataFromAMessageAsync (string channelType, string channelUrl, long messageId, string keys = default(string), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Remove extra data from a message
@@ -651,7 +651,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> RemoveExtraDataFromAMessageWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string keys = default(string), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> RemoveExtraDataFromAMessageWithHttpInfoAsync (string channelType, string channelUrl, long messageId, string keys = default(string), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Send a message
         /// </summary>
@@ -695,7 +695,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateAMessageRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendbirdMessageResponse</returns>
-        System.Threading.Tasks.Task<SendbirdMessageResponse> UpdateAMessageAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), UpdateAMessageRequest updateAMessageRequest = default(UpdateAMessageRequest), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<SendbirdMessageResponse> UpdateAMessageAsync (string channelType, string channelUrl, long messageId, string apiToken = default(string), UpdateAMessageRequest updateAMessageRequest = default(UpdateAMessageRequest), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update a message
@@ -711,7 +711,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateAMessageRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendbirdMessageResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendbirdMessageResponse>> UpdateAMessageWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), UpdateAMessageRequest updateAMessageRequest = default(UpdateAMessageRequest), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SendbirdMessageResponse>> UpdateAMessageWithHttpInfoAsync (string channelType, string channelUrl, long messageId, string apiToken = default(string), UpdateAMessageRequest updateAMessageRequest = default(UpdateAMessageRequest), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update extra data in a message
         /// </summary>
@@ -726,7 +726,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateExtraDataInAMessageRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateExtraDataInAMessageResponse</returns>
-        System.Threading.Tasks.Task<UpdateExtraDataInAMessageResponse> UpdateExtraDataInAMessageAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = default(UpdateExtraDataInAMessageRequest), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<UpdateExtraDataInAMessageResponse> UpdateExtraDataInAMessageAsync (string channelType, string channelUrl, long messageId, string apiToken = default(string), UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = default(UpdateExtraDataInAMessageRequest), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Update extra data in a message
@@ -742,7 +742,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateExtraDataInAMessageRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateExtraDataInAMessageResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<UpdateExtraDataInAMessageResponse>> UpdateExtraDataInAMessageWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = default(UpdateExtraDataInAMessageRequest), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<UpdateExtraDataInAMessageResponse>> UpdateExtraDataInAMessageWithHttpInfoAsync (string channelType, string channelUrl, long messageId, string apiToken = default(string), UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = default(UpdateExtraDataInAMessageRequest), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -864,7 +864,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addExtraDataToAMessageRequest"> (optional)</param>
         /// <returns>AddExtraDataToAMessageResponse</returns>
-        public AddExtraDataToAMessageResponse AddExtraDataToAMessage (string channelType, string channelUrl, string messageId, string apiToken = default(string), AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = default(AddExtraDataToAMessageRequest))
+        public AddExtraDataToAMessageResponse AddExtraDataToAMessage (string channelType, string channelUrl, long messageId, string apiToken = default(string), AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = default(AddExtraDataToAMessageRequest))
         {
              ApiResponse<AddExtraDataToAMessageResponse> localVarResponse = AddExtraDataToAMessageWithHttpInfo(channelType, channelUrl, messageId, apiToken, addExtraDataToAMessageRequest);
              return localVarResponse.Data;
@@ -880,7 +880,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="addExtraDataToAMessageRequest"> (optional)</param>
         /// <returns>ApiResponse of AddExtraDataToAMessageResponse</returns>
-        public ApiResponse<AddExtraDataToAMessageResponse> AddExtraDataToAMessageWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string), AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = default(AddExtraDataToAMessageRequest))
+        public ApiResponse<AddExtraDataToAMessageResponse> AddExtraDataToAMessageWithHttpInfo (string channelType, string channelUrl, long messageId, string apiToken = default(string), AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = default(AddExtraDataToAMessageRequest))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -957,7 +957,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addExtraDataToAMessageRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of AddExtraDataToAMessageResponse</returns>
-        public async System.Threading.Tasks.Task<AddExtraDataToAMessageResponse> AddExtraDataToAMessageAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = default(AddExtraDataToAMessageRequest), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<AddExtraDataToAMessageResponse> AddExtraDataToAMessageAsync (string channelType, string channelUrl, long messageId, string apiToken = default(string), AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = default(AddExtraDataToAMessageRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<AddExtraDataToAMessageResponse> localVarResponse = await AddExtraDataToAMessageWithHttpInfoAsync(channelType, channelUrl, messageId, apiToken, addExtraDataToAMessageRequest, cancellationToken);
              return localVarResponse.Data;
@@ -975,7 +975,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="addExtraDataToAMessageRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (AddExtraDataToAMessageResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<AddExtraDataToAMessageResponse>> AddExtraDataToAMessageWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = default(AddExtraDataToAMessageRequest), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<AddExtraDataToAMessageResponse>> AddExtraDataToAMessageWithHttpInfoAsync (string channelType, string channelUrl, long messageId, string apiToken = default(string), AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = default(AddExtraDataToAMessageRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -1050,7 +1050,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="messageId">(Required) </param>
         /// <param name="apiToken"> (optional)</param>
         /// <returns>Object</returns>
-        public Object DeleteAMessage (string channelType, string channelUrl, string messageId, string apiToken = default(string))
+        public Object DeleteAMessage (string channelType, string channelUrl, long messageId, string apiToken = default(string))
         {
              ApiResponse<Object> localVarResponse = DeleteAMessageWithHttpInfo(channelType, channelUrl, messageId, apiToken);
              return localVarResponse.Data;
@@ -1065,7 +1065,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="messageId">(Required) </param>
         /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object</returns>
-        public ApiResponse<Object> DeleteAMessageWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string))
+        public ApiResponse<Object> DeleteAMessageWithHttpInfo (string channelType, string channelUrl, long messageId, string apiToken = default(string))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -1132,7 +1132,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> DeleteAMessageAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Object> DeleteAMessageAsync (string channelType, string channelUrl, long messageId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<Object> localVarResponse = await DeleteAMessageWithHttpInfoAsync(channelType, channelUrl, messageId, apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -1149,7 +1149,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteAMessageWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteAMessageWithHttpInfoAsync (string channelType, string channelUrl, long messageId, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -1220,7 +1220,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="withSortedMetaArray"> (optional)</param>
         /// <param name="apiToken"> (optional)</param>
         /// <returns>SendbirdMessageResponse</returns>
-        public SendbirdMessageResponse GetAMessage (string channelType, string channelUrl, string messageId, bool? includeReactions = default(bool?), bool? includeThreadInfo = default(bool?), bool? includeParentMessageInfo = default(bool?), bool? includePollDetails = default(bool?), bool? withSortedMetaArray = default(bool?), string apiToken = default(string))
+        public SendbirdMessageResponse GetAMessage (string channelType, string channelUrl, long messageId, bool? includeReactions = default(bool?), bool? includeThreadInfo = default(bool?), bool? includeParentMessageInfo = default(bool?), bool? includePollDetails = default(bool?), bool? withSortedMetaArray = default(bool?), string apiToken = default(string))
         {
              ApiResponse<SendbirdMessageResponse> localVarResponse = GetAMessageWithHttpInfo(channelType, channelUrl, messageId, includeReactions, includeThreadInfo, includeParentMessageInfo, includePollDetails, withSortedMetaArray, apiToken);
              return localVarResponse.Data;
@@ -1240,7 +1240,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="withSortedMetaArray"> (optional)</param>
         /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of SendbirdMessageResponse</returns>
-        public ApiResponse<SendbirdMessageResponse> GetAMessageWithHttpInfo (string channelType, string channelUrl, string messageId, bool? includeReactions = default(bool?), bool? includeThreadInfo = default(bool?), bool? includeParentMessageInfo = default(bool?), bool? includePollDetails = default(bool?), bool? withSortedMetaArray = default(bool?), string apiToken = default(string))
+        public ApiResponse<SendbirdMessageResponse> GetAMessageWithHttpInfo (string channelType, string channelUrl, long messageId, bool? includeReactions = default(bool?), bool? includeThreadInfo = default(bool?), bool? includeParentMessageInfo = default(bool?), bool? includePollDetails = default(bool?), bool? withSortedMetaArray = default(bool?), string apiToken = default(string))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -1317,7 +1317,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendbirdMessageResponse</returns>
-        public async System.Threading.Tasks.Task<SendbirdMessageResponse> GetAMessageAsync (string channelType, string channelUrl, string messageId, bool? includeReactions = default(bool?), bool? includeThreadInfo = default(bool?), bool? includeParentMessageInfo = default(bool?), bool? includePollDetails = default(bool?), bool? withSortedMetaArray = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendbirdMessageResponse> GetAMessageAsync (string channelType, string channelUrl, long messageId, bool? includeReactions = default(bool?), bool? includeThreadInfo = default(bool?), bool? includeParentMessageInfo = default(bool?), bool? includePollDetails = default(bool?), bool? withSortedMetaArray = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<SendbirdMessageResponse> localVarResponse = await GetAMessageWithHttpInfoAsync(channelType, channelUrl, messageId, includeReactions, includeThreadInfo, includeParentMessageInfo, includePollDetails, withSortedMetaArray, apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -1339,7 +1339,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendbirdMessageResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendbirdMessageResponse>> GetAMessageWithHttpInfoAsync (string channelType, string channelUrl, string messageId, bool? includeReactions = default(bool?), bool? includeThreadInfo = default(bool?), bool? includeParentMessageInfo = default(bool?), bool? includePollDetails = default(bool?), bool? withSortedMetaArray = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendbirdMessageResponse>> GetAMessageWithHttpInfoAsync (string channelType, string channelUrl, long messageId, bool? includeReactions = default(bool?), bool? includeThreadInfo = default(bool?), bool? includeParentMessageInfo = default(bool?), bool? includePollDetails = default(bool?), bool? withSortedMetaArray = default(bool?), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -2175,7 +2175,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="keys"> (optional)</param>
         /// <param name="apiToken"> (optional)</param>
         /// <returns>Object</returns>
-        public Object RemoveExtraDataFromAMessage (string channelType, string channelUrl, string messageId, string keys = default(string), string apiToken = default(string))
+        public Object RemoveExtraDataFromAMessage (string channelType, string channelUrl, long messageId, string keys = default(string), string apiToken = default(string))
         {
              ApiResponse<Object> localVarResponse = RemoveExtraDataFromAMessageWithHttpInfo(channelType, channelUrl, messageId, keys, apiToken);
              return localVarResponse.Data;
@@ -2191,7 +2191,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="keys"> (optional)</param>
         /// <param name="apiToken"> (optional)</param>
         /// <returns>ApiResponse of Object</returns>
-        public ApiResponse<Object> RemoveExtraDataFromAMessageWithHttpInfo (string channelType, string channelUrl, string messageId, string keys = default(string), string apiToken = default(string))
+        public ApiResponse<Object> RemoveExtraDataFromAMessageWithHttpInfo (string channelType, string channelUrl, long messageId, string keys = default(string), string apiToken = default(string))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -2260,7 +2260,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> RemoveExtraDataFromAMessageAsync (string channelType, string channelUrl, string messageId, string keys = default(string), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<Object> RemoveExtraDataFromAMessageAsync (string channelType, string channelUrl, long messageId, string keys = default(string), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<Object> localVarResponse = await RemoveExtraDataFromAMessageWithHttpInfoAsync(channelType, channelUrl, messageId, keys, apiToken, cancellationToken);
              return localVarResponse.Data;
@@ -2278,7 +2278,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> RemoveExtraDataFromAMessageWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string keys = default(string), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> RemoveExtraDataFromAMessageWithHttpInfoAsync (string channelType, string channelUrl, long messageId, string keys = default(string), string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -2521,7 +2521,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAMessageRequest"> (optional)</param>
         /// <returns>SendbirdMessageResponse</returns>
-        public SendbirdMessageResponse UpdateAMessage (string channelType, string channelUrl, string messageId, string apiToken = default(string), UpdateAMessageRequest updateAMessageRequest = default(UpdateAMessageRequest))
+        public SendbirdMessageResponse UpdateAMessage (string channelType, string channelUrl, long messageId, string apiToken = default(string), UpdateAMessageRequest updateAMessageRequest = default(UpdateAMessageRequest))
         {
              ApiResponse<SendbirdMessageResponse> localVarResponse = UpdateAMessageWithHttpInfo(channelType, channelUrl, messageId, apiToken, updateAMessageRequest);
              return localVarResponse.Data;
@@ -2537,7 +2537,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateAMessageRequest"> (optional)</param>
         /// <returns>ApiResponse of SendbirdMessageResponse</returns>
-        public ApiResponse<SendbirdMessageResponse> UpdateAMessageWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string), UpdateAMessageRequest updateAMessageRequest = default(UpdateAMessageRequest))
+        public ApiResponse<SendbirdMessageResponse> UpdateAMessageWithHttpInfo (string channelType, string channelUrl, long messageId, string apiToken = default(string), UpdateAMessageRequest updateAMessageRequest = default(UpdateAMessageRequest))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -2614,7 +2614,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateAMessageRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of SendbirdMessageResponse</returns>
-        public async System.Threading.Tasks.Task<SendbirdMessageResponse> UpdateAMessageAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), UpdateAMessageRequest updateAMessageRequest = default(UpdateAMessageRequest), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<SendbirdMessageResponse> UpdateAMessageAsync (string channelType, string channelUrl, long messageId, string apiToken = default(string), UpdateAMessageRequest updateAMessageRequest = default(UpdateAMessageRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<SendbirdMessageResponse> localVarResponse = await UpdateAMessageWithHttpInfoAsync(channelType, channelUrl, messageId, apiToken, updateAMessageRequest, cancellationToken);
              return localVarResponse.Data;
@@ -2632,7 +2632,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateAMessageRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (SendbirdMessageResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendbirdMessageResponse>> UpdateAMessageWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), UpdateAMessageRequest updateAMessageRequest = default(UpdateAMessageRequest), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<SendbirdMessageResponse>> UpdateAMessageWithHttpInfoAsync (string channelType, string channelUrl, long messageId, string apiToken = default(string), UpdateAMessageRequest updateAMessageRequest = default(UpdateAMessageRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -2708,7 +2708,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateExtraDataInAMessageRequest"> (optional)</param>
         /// <returns>UpdateExtraDataInAMessageResponse</returns>
-        public UpdateExtraDataInAMessageResponse UpdateExtraDataInAMessage (string channelType, string channelUrl, string messageId, string apiToken = default(string), UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = default(UpdateExtraDataInAMessageRequest))
+        public UpdateExtraDataInAMessageResponse UpdateExtraDataInAMessage (string channelType, string channelUrl, long messageId, string apiToken = default(string), UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = default(UpdateExtraDataInAMessageRequest))
         {
              ApiResponse<UpdateExtraDataInAMessageResponse> localVarResponse = UpdateExtraDataInAMessageWithHttpInfo(channelType, channelUrl, messageId, apiToken, updateExtraDataInAMessageRequest);
              return localVarResponse.Data;
@@ -2724,7 +2724,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="apiToken"> (optional)</param>
         /// <param name="updateExtraDataInAMessageRequest"> (optional)</param>
         /// <returns>ApiResponse of UpdateExtraDataInAMessageResponse</returns>
-        public ApiResponse<UpdateExtraDataInAMessageResponse> UpdateExtraDataInAMessageWithHttpInfo (string channelType, string channelUrl, string messageId, string apiToken = default(string), UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = default(UpdateExtraDataInAMessageRequest))
+        public ApiResponse<UpdateExtraDataInAMessageResponse> UpdateExtraDataInAMessageWithHttpInfo (string channelType, string channelUrl, long messageId, string apiToken = default(string), UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = default(UpdateExtraDataInAMessageRequest))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)
@@ -2801,7 +2801,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateExtraDataInAMessageRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of UpdateExtraDataInAMessageResponse</returns>
-        public async System.Threading.Tasks.Task<UpdateExtraDataInAMessageResponse> UpdateExtraDataInAMessageAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = default(UpdateExtraDataInAMessageRequest), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<UpdateExtraDataInAMessageResponse> UpdateExtraDataInAMessageAsync (string channelType, string channelUrl, long messageId, string apiToken = default(string), UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = default(UpdateExtraDataInAMessageRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
              ApiResponse<UpdateExtraDataInAMessageResponse> localVarResponse = await UpdateExtraDataInAMessageWithHttpInfoAsync(channelType, channelUrl, messageId, apiToken, updateExtraDataInAMessageRequest, cancellationToken);
              return localVarResponse.Data;
@@ -2819,7 +2819,7 @@ namespace sendbird_platform_sdk.Api
         /// <param name="updateExtraDataInAMessageRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (UpdateExtraDataInAMessageResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<UpdateExtraDataInAMessageResponse>> UpdateExtraDataInAMessageWithHttpInfoAsync (string channelType, string channelUrl, string messageId, string apiToken = default(string), UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = default(UpdateExtraDataInAMessageRequest), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateExtraDataInAMessageResponse>> UpdateExtraDataInAMessageWithHttpInfoAsync (string channelType, string channelUrl, long messageId, string apiToken = default(string), UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = default(UpdateExtraDataInAMessageRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'channelType' is set
             if (channelType == null)

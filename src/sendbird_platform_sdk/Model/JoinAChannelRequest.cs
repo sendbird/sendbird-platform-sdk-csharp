@@ -53,6 +53,7 @@ namespace sendbird_platform_sdk.Model
             }
 
             this.AccessCode = accessCode;
+            this.AccessCode = accessCode;
         }
 
         /// <summary>
@@ -66,7 +67,7 @@ namespace sendbird_platform_sdk.Model
         /// This property should be specified if the public group channel to join requires an access code to users, which means that the is_access_code_required property of the channel resource is true.
         /// </summary>
         /// <value>This property should be specified if the public group channel to join requires an access code to users, which means that the is_access_code_required property of the channel resource is true.</value>
-        [DataMember(Name="access_code", EmitDefaultValue=false)]
+        [DataMember(Name="access_code", EmitDefaultValue=true)]
         public string AccessCode { get; set; }
 
         /// <summary>
