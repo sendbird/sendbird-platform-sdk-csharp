@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **Role** | **string** |  | [optional] 
 **Nickname** | **string** |  | [optional] 
 **UserId** | **string** |  | 
-**ProfileUrl** | **string** |  | [optional] 
+**ProfileUrl** | **string** |  | [optional] [default to ""]
 **Metadata** | **Object** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

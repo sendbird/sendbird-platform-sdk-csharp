@@ -63,7 +63,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="isReplyToChannel">isReplyToChannel.</param>
         /// <param name="messageEvents">messageEvents.</param>
         /// <param name="extendedMessagePayload">extendedMessagePayload.</param>
-        public SendbirdMessageResponse(bool requireAuth = default(bool), int messageSurvivalSeconds = default(int), string customType = default(string), List<SendbirdBasicUserInfo> mentionedUsers = default(List<SendbirdBasicUserInfo>), Object translations = default(Object), long updatedAt = default(long), bool isOpMsg = default(bool), List<SendbirdReaction> reactions = default(List<SendbirdReaction>), bool isRemoved = default(bool), SendbirdBasicUserInfo user = default(SendbirdBasicUserInfo), Object file = default(Object), List<SendbirdFile> files = default(List<SendbirdFile>), string message = default(string), string data = default(string), int messageRetentionHour = default(int), bool silent = default(bool), string type = default(string), long createdAt = default(long), string channelType = default(string), string reqId = default(string), string mentionType = default(string), string channelUrl = default(string), int messageId = default(int), List<SendbirdSortedMetaarrayInner> sortedMetaarray = default(List<SendbirdSortedMetaarrayInner>), Object threadInfo = default(Object), int parentMessageId = default(int), SendbirdParentMessageInfo parentMessageInfo = default(SendbirdParentMessageInfo), bool isReplyToChannel = default(bool), SendbirdMessageResponseMessageEvents messageEvents = default(SendbirdMessageResponseMessageEvents), SendbirdExtendedMessagePayload extendedMessagePayload = default(SendbirdExtendedMessagePayload))
+        public SendbirdMessageResponse(bool requireAuth = default(bool), int messageSurvivalSeconds = default(int), string customType = default(string), List<SendbirdBasicUserInfo> mentionedUsers = default(List<SendbirdBasicUserInfo>), Object translations = default(Object), long updatedAt = default(long), bool isOpMsg = default(bool), List<SendbirdReaction> reactions = default(List<SendbirdReaction>), bool isRemoved = default(bool), SendbirdBasicUserInfo user = default(SendbirdBasicUserInfo), Object file = default(Object), List<SendbirdFile> files = default(List<SendbirdFile>), string message = default(string), string data = default(string), int messageRetentionHour = default(int), bool silent = default(bool), string type = default(string), long createdAt = default(long), string channelType = default(string), string reqId = default(string), string mentionType = default(string), string channelUrl = default(string), long messageId = default(long), List<SendbirdSortedMetaarrayInner> sortedMetaarray = default(List<SendbirdSortedMetaarrayInner>), Object threadInfo = default(Object), int parentMessageId = default(int), SendbirdParentMessageInfo parentMessageInfo = default(SendbirdParentMessageInfo), bool isReplyToChannel = default(bool), SendbirdMessageResponseMessageEvents messageEvents = default(SendbirdMessageResponseMessageEvents), SendbirdMessageResponseExtendedMessagePayload extendedMessagePayload = default(SendbirdMessageResponseExtendedMessagePayload))
         {
             this.MessageEvents = messageEvents;
             this.RequireAuth = requireAuth;
@@ -234,7 +234,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets MessageId
         /// </summary>
         [DataMember(Name="message_id", EmitDefaultValue=false)]
-        public int MessageId { get; set; }
+        public long MessageId { get; set; }
 
         /// <summary>
         /// Gets or Sets SortedMetaarray
@@ -276,7 +276,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets ExtendedMessagePayload
         /// </summary>
         [DataMember(Name="extended_message_payload", EmitDefaultValue=false)]
-        public SendbirdExtendedMessagePayload ExtendedMessagePayload { get; set; }
+        public SendbirdMessageResponseExtendedMessagePayload ExtendedMessagePayload { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

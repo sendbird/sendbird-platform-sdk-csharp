@@ -49,6 +49,29 @@ namespace sendbird_platform_sdk.Api
         /// <returns>ApiResponse of CreateABotResponse</returns>
         ApiResponse<CreateABotResponse> CreateABotWithHttpInfo (string apiToken = default(string), CreateABotRequest createABotRequest = default(CreateABotRequest));
         /// <summary>
+        /// Delete a bot
+        /// </summary>
+        /// <remarks>
+        /// ## Delete a bot  Deletes a bot from an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-delete-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>Object</returns>
+        Object DeleteBotById (string botUserid, string apiToken = default(string));
+
+        /// <summary>
+        /// Delete a bot
+        /// </summary>
+        /// <remarks>
+        /// ## Delete a bot  Deletes a bot from an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-delete-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> DeleteBotByIdWithHttpInfo (string botUserid, string apiToken = default(string));
+        /// <summary>
         /// Join channels
         /// </summary>
         /// <remarks>
@@ -154,10 +177,30 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="botUserid">(Required) </param>
+        /// <param name="messageType">Specifies the type of message to send. MESG for text message, FILE for file message.</param>
+        /// <param name="channelUrl">Specifies the URL of the channel to send the message to.</param>
         /// <param name="apiToken"> (optional)</param>
-        /// <param name="sendABotMessageRequest"> (optional)</param>
-        /// <returns>SendbirdMessageResponse</returns>
-        SendbirdMessageResponse SendABotMessage (string botUserid, string apiToken = default(string), SendABotMessageRequest sendABotMessageRequest = default(SendABotMessageRequest));
+        /// <param name="message">Specifies the content of the message. * This property is required when message_type is MESG. (optional)</param>
+        /// <param name="mentioned">* This property is available when message_type is MESG. (optional)</param>
+        /// <param name="extendedMessagePayload"> (optional)</param>
+        /// <param name="file">When sending a single file with a message, specifies the data of the file to upload to the Sendbird server in raw binary format. When sending a request containing a file, change the value of the content-type header to multipart/form-data;boundary&#x3D;{your_unique_boundary_string} in the request. * This property is required when message_type is FILE. * This doesn&#39;t allow a converted base64-encoded string from a file as its value. (optional)</param>
+        /// <param name="requireAuth">Determines whether to require an authentication key to verify if the file is being properly accessed. Only the user who uploaded the file or users who are in the channel where the file was uploaded should have access. The authentication key managed internally by the Sendbird system is generated every time a user logs in to the Sendbird server and is valid for three days starting from the last login. If set to false, Sendbird tries to access a file without any key. To access encrypted files, such as the files in the Sendbird server which are by default encrypted, the property must be set to true. (Default: false) The require_auth parameter only works if the file or URL is managed by Sendbird, which means that when you upload files using multipart format or provide URLs that point to the files hosted on the Sendbird server. However, if the file is hosted on a server or service that is not managed by Sendbird, access control and authentication for the file should be handled by the respective server or service hosting the file. * This property is available when message_type is FILE. (optional)</param>
+        /// <param name="mentionType">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="mentionedUserIds">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="isSilent">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="sortedMetaarray"> (optional)</param>
+        /// <param name="apnsBundleId">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="appleCriticalAlertOptions">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="sound">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="volume">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="createdAt"> (optional)</param>
+        /// <param name="customType"> (optional)</param>
+        /// <param name="data"> (optional)</param>
+        /// <param name="dedupId"> (optional)</param>
+        /// <param name="markAsRead"> (optional)</param>
+        /// <param name="sendPush"> (optional)</param>
+        /// <returns>SendABotMessageResponse</returns>
+        SendABotMessageResponse SendABotMessage (string botUserid, string messageType, string channelUrl, string apiToken = default(string), string message = default(string), List<string> mentioned = default(List<string>), SendbirdExtendedMessagePayload extendedMessagePayload = default(SendbirdExtendedMessagePayload), System.IO.Stream file = default(System.IO.Stream), bool? requireAuth = default(bool?), string mentionType = default(string), List<string> mentionedUserIds = default(List<string>), bool? isSilent = default(bool?), List<SendbirdSortedMetaarrayInner> sortedMetaarray = default(List<SendbirdSortedMetaarrayInner>), string apnsBundleId = default(string), Object appleCriticalAlertOptions = default(Object), string sound = default(string), decimal? volume = default(decimal?), long? createdAt = default(long?), string customType = default(string), string data = default(string), string dedupId = default(string), bool? markAsRead = default(bool?), bool? sendPush = default(bool?));
 
         /// <summary>
         /// Send a bot's message
@@ -167,10 +210,78 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="botUserid">(Required) </param>
+        /// <param name="messageType">Specifies the type of message to send. MESG for text message, FILE for file message.</param>
+        /// <param name="channelUrl">Specifies the URL of the channel to send the message to.</param>
         /// <param name="apiToken"> (optional)</param>
-        /// <param name="sendABotMessageRequest"> (optional)</param>
-        /// <returns>ApiResponse of SendbirdMessageResponse</returns>
-        ApiResponse<SendbirdMessageResponse> SendABotMessageWithHttpInfo (string botUserid, string apiToken = default(string), SendABotMessageRequest sendABotMessageRequest = default(SendABotMessageRequest));
+        /// <param name="message">Specifies the content of the message. * This property is required when message_type is MESG. (optional)</param>
+        /// <param name="mentioned">* This property is available when message_type is MESG. (optional)</param>
+        /// <param name="extendedMessagePayload"> (optional)</param>
+        /// <param name="file">When sending a single file with a message, specifies the data of the file to upload to the Sendbird server in raw binary format. When sending a request containing a file, change the value of the content-type header to multipart/form-data;boundary&#x3D;{your_unique_boundary_string} in the request. * This property is required when message_type is FILE. * This doesn&#39;t allow a converted base64-encoded string from a file as its value. (optional)</param>
+        /// <param name="requireAuth">Determines whether to require an authentication key to verify if the file is being properly accessed. Only the user who uploaded the file or users who are in the channel where the file was uploaded should have access. The authentication key managed internally by the Sendbird system is generated every time a user logs in to the Sendbird server and is valid for three days starting from the last login. If set to false, Sendbird tries to access a file without any key. To access encrypted files, such as the files in the Sendbird server which are by default encrypted, the property must be set to true. (Default: false) The require_auth parameter only works if the file or URL is managed by Sendbird, which means that when you upload files using multipart format or provide URLs that point to the files hosted on the Sendbird server. However, if the file is hosted on a server or service that is not managed by Sendbird, access control and authentication for the file should be handled by the respective server or service hosting the file. * This property is available when message_type is FILE. (optional)</param>
+        /// <param name="mentionType">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="mentionedUserIds">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="isSilent">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="sortedMetaarray"> (optional)</param>
+        /// <param name="apnsBundleId">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="appleCriticalAlertOptions">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="sound">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="volume">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="createdAt"> (optional)</param>
+        /// <param name="customType"> (optional)</param>
+        /// <param name="data"> (optional)</param>
+        /// <param name="dedupId"> (optional)</param>
+        /// <param name="markAsRead"> (optional)</param>
+        /// <param name="sendPush"> (optional)</param>
+        /// <returns>ApiResponse of SendABotMessageResponse</returns>
+        ApiResponse<SendABotMessageResponse> SendABotMessageWithHttpInfo (string botUserid, string messageType, string channelUrl, string apiToken = default(string), string message = default(string), List<string> mentioned = default(List<string>), SendbirdExtendedMessagePayload extendedMessagePayload = default(SendbirdExtendedMessagePayload), System.IO.Stream file = default(System.IO.Stream), bool? requireAuth = default(bool?), string mentionType = default(string), List<string> mentionedUserIds = default(List<string>), bool? isSilent = default(bool?), List<SendbirdSortedMetaarrayInner> sortedMetaarray = default(List<SendbirdSortedMetaarrayInner>), string apnsBundleId = default(string), Object appleCriticalAlertOptions = default(Object), string sound = default(string), decimal? volume = default(decimal?), long? createdAt = default(long?), string customType = default(string), string data = default(string), string dedupId = default(string), bool? markAsRead = default(bool?), bool? sendPush = default(bool?));
+        /// <summary>
+        /// Update a bot
+        /// </summary>
+        /// <remarks>
+        /// ## Update a bot  Updates information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-update-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateBotByIdData"> (optional)</param>
+        /// <returns>UpdateBotByIdResponse</returns>
+        UpdateBotByIdResponse UpdateBotById (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData));
+
+        /// <summary>
+        /// Update a bot
+        /// </summary>
+        /// <remarks>
+        /// ## Update a bot  Updates information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-update-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateBotByIdData"> (optional)</param>
+        /// <returns>ApiResponse of UpdateBotByIdResponse</returns>
+        ApiResponse<UpdateBotByIdResponse> UpdateBotByIdWithHttpInfo (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData));
+        /// <summary>
+        /// View a bot
+        /// </summary>
+        /// <remarks>
+        /// ## View a bot  Retrieves information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-view-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ViewBotByIdResponse</returns>
+        ViewBotByIdResponse ViewBotById (string botUserid, string apiToken = default(string));
+
+        /// <summary>
+        /// View a bot
+        /// </summary>
+        /// <remarks>
+        /// ## View a bot  Retrieves information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-view-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of ViewBotByIdResponse</returns>
+        ApiResponse<ViewBotByIdResponse> ViewBotByIdWithHttpInfo (string botUserid, string apiToken = default(string));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -198,6 +309,31 @@ namespace sendbird_platform_sdk.Api
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (CreateABotResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<CreateABotResponse>> CreateABotWithHttpInfoAsync (string apiToken = default(string), CreateABotRequest createABotRequest = default(CreateABotRequest), CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
+        /// Delete a bot
+        /// </summary>
+        /// <remarks>
+        /// ## Delete a bot  Deletes a bot from an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-delete-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> DeleteBotByIdAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// Delete a bot
+        /// </summary>
+        /// <remarks>
+        /// ## Delete a bot  Deletes a bot from an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-delete-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Join channels
         /// </summary>
@@ -312,11 +448,31 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="botUserid">(Required) </param>
+        /// <param name="messageType">Specifies the type of message to send. MESG for text message, FILE for file message.</param>
+        /// <param name="channelUrl">Specifies the URL of the channel to send the message to.</param>
         /// <param name="apiToken"> (optional)</param>
-        /// <param name="sendABotMessageRequest"> (optional)</param>
+        /// <param name="message">Specifies the content of the message. * This property is required when message_type is MESG. (optional)</param>
+        /// <param name="mentioned">* This property is available when message_type is MESG. (optional)</param>
+        /// <param name="extendedMessagePayload"> (optional)</param>
+        /// <param name="file">When sending a single file with a message, specifies the data of the file to upload to the Sendbird server in raw binary format. When sending a request containing a file, change the value of the content-type header to multipart/form-data;boundary&#x3D;{your_unique_boundary_string} in the request. * This property is required when message_type is FILE. * This doesn&#39;t allow a converted base64-encoded string from a file as its value. (optional)</param>
+        /// <param name="requireAuth">Determines whether to require an authentication key to verify if the file is being properly accessed. Only the user who uploaded the file or users who are in the channel where the file was uploaded should have access. The authentication key managed internally by the Sendbird system is generated every time a user logs in to the Sendbird server and is valid for three days starting from the last login. If set to false, Sendbird tries to access a file without any key. To access encrypted files, such as the files in the Sendbird server which are by default encrypted, the property must be set to true. (Default: false) The require_auth parameter only works if the file or URL is managed by Sendbird, which means that when you upload files using multipart format or provide URLs that point to the files hosted on the Sendbird server. However, if the file is hosted on a server or service that is not managed by Sendbird, access control and authentication for the file should be handled by the respective server or service hosting the file. * This property is available when message_type is FILE. (optional)</param>
+        /// <param name="mentionType">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="mentionedUserIds">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="isSilent">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="sortedMetaarray"> (optional)</param>
+        /// <param name="apnsBundleId">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="appleCriticalAlertOptions">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="sound">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="volume">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="createdAt"> (optional)</param>
+        /// <param name="customType"> (optional)</param>
+        /// <param name="data"> (optional)</param>
+        /// <param name="dedupId"> (optional)</param>
+        /// <param name="markAsRead"> (optional)</param>
+        /// <param name="sendPush"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendbirdMessageResponse</returns>
-        System.Threading.Tasks.Task<SendbirdMessageResponse> SendABotMessageAsync (string botUserid, string apiToken = default(string), SendABotMessageRequest sendABotMessageRequest = default(SendABotMessageRequest), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of SendABotMessageResponse</returns>
+        System.Threading.Tasks.Task<SendABotMessageResponse> SendABotMessageAsync (string botUserid, string messageType, string channelUrl, string apiToken = default(string), string message = default(string), List<string> mentioned = default(List<string>), SendbirdExtendedMessagePayload extendedMessagePayload = default(SendbirdExtendedMessagePayload), System.IO.Stream file = default(System.IO.Stream), bool? requireAuth = default(bool?), string mentionType = default(string), List<string> mentionedUserIds = default(List<string>), bool? isSilent = default(bool?), List<SendbirdSortedMetaarrayInner> sortedMetaarray = default(List<SendbirdSortedMetaarrayInner>), string apnsBundleId = default(string), Object appleCriticalAlertOptions = default(Object), string sound = default(string), decimal? volume = default(decimal?), long? createdAt = default(long?), string customType = default(string), string data = default(string), string dedupId = default(string), bool? markAsRead = default(bool?), bool? sendPush = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// Send a bot&#39;s message
@@ -326,11 +482,83 @@ namespace sendbird_platform_sdk.Api
         /// </remarks>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="botUserid">(Required) </param>
+        /// <param name="messageType">Specifies the type of message to send. MESG for text message, FILE for file message.</param>
+        /// <param name="channelUrl">Specifies the URL of the channel to send the message to.</param>
         /// <param name="apiToken"> (optional)</param>
-        /// <param name="sendABotMessageRequest"> (optional)</param>
+        /// <param name="message">Specifies the content of the message. * This property is required when message_type is MESG. (optional)</param>
+        /// <param name="mentioned">* This property is available when message_type is MESG. (optional)</param>
+        /// <param name="extendedMessagePayload"> (optional)</param>
+        /// <param name="file">When sending a single file with a message, specifies the data of the file to upload to the Sendbird server in raw binary format. When sending a request containing a file, change the value of the content-type header to multipart/form-data;boundary&#x3D;{your_unique_boundary_string} in the request. * This property is required when message_type is FILE. * This doesn&#39;t allow a converted base64-encoded string from a file as its value. (optional)</param>
+        /// <param name="requireAuth">Determines whether to require an authentication key to verify if the file is being properly accessed. Only the user who uploaded the file or users who are in the channel where the file was uploaded should have access. The authentication key managed internally by the Sendbird system is generated every time a user logs in to the Sendbird server and is valid for three days starting from the last login. If set to false, Sendbird tries to access a file without any key. To access encrypted files, such as the files in the Sendbird server which are by default encrypted, the property must be set to true. (Default: false) The require_auth parameter only works if the file or URL is managed by Sendbird, which means that when you upload files using multipart format or provide URLs that point to the files hosted on the Sendbird server. However, if the file is hosted on a server or service that is not managed by Sendbird, access control and authentication for the file should be handled by the respective server or service hosting the file. * This property is available when message_type is FILE. (optional)</param>
+        /// <param name="mentionType">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="mentionedUserIds">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="isSilent">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="sortedMetaarray"> (optional)</param>
+        /// <param name="apnsBundleId">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="appleCriticalAlertOptions">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="sound">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="volume">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="createdAt"> (optional)</param>
+        /// <param name="customType"> (optional)</param>
+        /// <param name="data"> (optional)</param>
+        /// <param name="dedupId"> (optional)</param>
+        /// <param name="markAsRead"> (optional)</param>
+        /// <param name="sendPush"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendbirdMessageResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SendbirdMessageResponse>> SendABotMessageWithHttpInfoAsync (string botUserid, string apiToken = default(string), SendABotMessageRequest sendABotMessageRequest = default(SendABotMessageRequest), CancellationToken cancellationToken = default(CancellationToken));
+        /// <returns>Task of ApiResponse (SendABotMessageResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SendABotMessageResponse>> SendABotMessageWithHttpInfoAsync (string botUserid, string messageType, string channelUrl, string apiToken = default(string), string message = default(string), List<string> mentioned = default(List<string>), SendbirdExtendedMessagePayload extendedMessagePayload = default(SendbirdExtendedMessagePayload), System.IO.Stream file = default(System.IO.Stream), bool? requireAuth = default(bool?), string mentionType = default(string), List<string> mentionedUserIds = default(List<string>), bool? isSilent = default(bool?), List<SendbirdSortedMetaarrayInner> sortedMetaarray = default(List<SendbirdSortedMetaarrayInner>), string apnsBundleId = default(string), Object appleCriticalAlertOptions = default(Object), string sound = default(string), decimal? volume = default(decimal?), long? createdAt = default(long?), string customType = default(string), string data = default(string), string dedupId = default(string), bool? markAsRead = default(bool?), bool? sendPush = default(bool?), CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
+        /// Update a bot
+        /// </summary>
+        /// <remarks>
+        /// ## Update a bot  Updates information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-update-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateBotByIdData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of UpdateBotByIdResponse</returns>
+        System.Threading.Tasks.Task<UpdateBotByIdResponse> UpdateBotByIdAsync (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// Update a bot
+        /// </summary>
+        /// <remarks>
+        /// ## Update a bot  Updates information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-update-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateBotByIdData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (UpdateBotByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<UpdateBotByIdResponse>> UpdateBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
+        /// View a bot
+        /// </summary>
+        /// <remarks>
+        /// ## View a bot  Retrieves information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-view-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ViewBotByIdResponse</returns>
+        System.Threading.Tasks.Task<ViewBotByIdResponse> ViewBotByIdAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
+
+        /// <summary>
+        /// View a bot
+        /// </summary>
+        /// <remarks>
+        /// ## View a bot  Retrieves information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-view-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </remarks>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (ViewBotByIdResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ViewBotByIdResponse>> ViewBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -591,6 +819,147 @@ namespace sendbird_platform_sdk.Api
             return new ApiResponse<CreateABotResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
                 (CreateABotResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(CreateABotResponse)));
+        }
+
+        /// <summary>
+        /// Delete a bot ## Delete a bot  Deletes a bot from an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-delete-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>Object</returns>
+        public Object DeleteBotById (string botUserid, string apiToken = default(string))
+        {
+             ApiResponse<Object> localVarResponse = DeleteBotByIdWithHttpInfo(botUserid, apiToken);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Delete a bot ## Delete a bot  Deletes a bot from an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-delete-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of Object</returns>
+        public ApiResponse<Object> DeleteBotByIdWithHttpInfo (string botUserid, string apiToken = default(string))
+        {
+            // verify the required parameter 'botUserid' is set
+            if (botUserid == null)
+                throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotApi->DeleteBotById");
+
+            var localVarPath = "/v3/bots/{bot_userid}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (botUserid != null) localVarPathParams.Add("bot_userid", this.Configuration.ApiClient.ParameterToString(botUserid)); // path parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DeleteBotById", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+        }
+
+        /// <summary>
+        /// Delete a bot ## Delete a bot  Deletes a bot from an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-delete-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> DeleteBotByIdAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<Object> localVarResponse = await DeleteBotByIdWithHttpInfoAsync(botUserid, apiToken, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Delete a bot ## Delete a bot  Deletes a bot from an application.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-delete-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'botUserid' is set
+            if (botUserid == null)
+                throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotApi->DeleteBotById");
+
+            var localVarPath = "/v3/bots/{bot_userid}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (botUserid != null) localVarPathParams.Add("bot_userid", this.Configuration.ApiClient.ParameterToString(botUserid)); // path parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DeleteBotById", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (Object) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
         }
 
         /// <summary>
@@ -1196,12 +1565,32 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="botUserid">(Required) </param>
+        /// <param name="messageType">Specifies the type of message to send. MESG for text message, FILE for file message.</param>
+        /// <param name="channelUrl">Specifies the URL of the channel to send the message to.</param>
         /// <param name="apiToken"> (optional)</param>
-        /// <param name="sendABotMessageRequest"> (optional)</param>
-        /// <returns>SendbirdMessageResponse</returns>
-        public SendbirdMessageResponse SendABotMessage (string botUserid, string apiToken = default(string), SendABotMessageRequest sendABotMessageRequest = default(SendABotMessageRequest))
+        /// <param name="message">Specifies the content of the message. * This property is required when message_type is MESG. (optional)</param>
+        /// <param name="mentioned">* This property is available when message_type is MESG. (optional)</param>
+        /// <param name="extendedMessagePayload"> (optional)</param>
+        /// <param name="file">When sending a single file with a message, specifies the data of the file to upload to the Sendbird server in raw binary format. When sending a request containing a file, change the value of the content-type header to multipart/form-data;boundary&#x3D;{your_unique_boundary_string} in the request. * This property is required when message_type is FILE. * This doesn&#39;t allow a converted base64-encoded string from a file as its value. (optional)</param>
+        /// <param name="requireAuth">Determines whether to require an authentication key to verify if the file is being properly accessed. Only the user who uploaded the file or users who are in the channel where the file was uploaded should have access. The authentication key managed internally by the Sendbird system is generated every time a user logs in to the Sendbird server and is valid for three days starting from the last login. If set to false, Sendbird tries to access a file without any key. To access encrypted files, such as the files in the Sendbird server which are by default encrypted, the property must be set to true. (Default: false) The require_auth parameter only works if the file or URL is managed by Sendbird, which means that when you upload files using multipart format or provide URLs that point to the files hosted on the Sendbird server. However, if the file is hosted on a server or service that is not managed by Sendbird, access control and authentication for the file should be handled by the respective server or service hosting the file. * This property is available when message_type is FILE. (optional)</param>
+        /// <param name="mentionType">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="mentionedUserIds">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="isSilent">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="sortedMetaarray"> (optional)</param>
+        /// <param name="apnsBundleId">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="appleCriticalAlertOptions">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="sound">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="volume">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="createdAt"> (optional)</param>
+        /// <param name="customType"> (optional)</param>
+        /// <param name="data"> (optional)</param>
+        /// <param name="dedupId"> (optional)</param>
+        /// <param name="markAsRead"> (optional)</param>
+        /// <param name="sendPush"> (optional)</param>
+        /// <returns>SendABotMessageResponse</returns>
+        public SendABotMessageResponse SendABotMessage (string botUserid, string messageType, string channelUrl, string apiToken = default(string), string message = default(string), List<string> mentioned = default(List<string>), SendbirdExtendedMessagePayload extendedMessagePayload = default(SendbirdExtendedMessagePayload), System.IO.Stream file = default(System.IO.Stream), bool? requireAuth = default(bool?), string mentionType = default(string), List<string> mentionedUserIds = default(List<string>), bool? isSilent = default(bool?), List<SendbirdSortedMetaarrayInner> sortedMetaarray = default(List<SendbirdSortedMetaarrayInner>), string apnsBundleId = default(string), Object appleCriticalAlertOptions = default(Object), string sound = default(string), decimal? volume = default(decimal?), long? createdAt = default(long?), string customType = default(string), string data = default(string), string dedupId = default(string), bool? markAsRead = default(bool?), bool? sendPush = default(bool?))
         {
-             ApiResponse<SendbirdMessageResponse> localVarResponse = SendABotMessageWithHttpInfo(botUserid, apiToken, sendABotMessageRequest);
+             ApiResponse<SendABotMessageResponse> localVarResponse = SendABotMessageWithHttpInfo(botUserid, messageType, channelUrl, apiToken, message, mentioned, extendedMessagePayload, file, requireAuth, mentionType, mentionedUserIds, isSilent, sortedMetaarray, apnsBundleId, appleCriticalAlertOptions, sound, volume, createdAt, customType, data, dedupId, markAsRead, sendPush);
              return localVarResponse.Data;
         }
 
@@ -1210,14 +1599,40 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="botUserid">(Required) </param>
+        /// <param name="messageType">Specifies the type of message to send. MESG for text message, FILE for file message.</param>
+        /// <param name="channelUrl">Specifies the URL of the channel to send the message to.</param>
         /// <param name="apiToken"> (optional)</param>
-        /// <param name="sendABotMessageRequest"> (optional)</param>
-        /// <returns>ApiResponse of SendbirdMessageResponse</returns>
-        public ApiResponse<SendbirdMessageResponse> SendABotMessageWithHttpInfo (string botUserid, string apiToken = default(string), SendABotMessageRequest sendABotMessageRequest = default(SendABotMessageRequest))
+        /// <param name="message">Specifies the content of the message. * This property is required when message_type is MESG. (optional)</param>
+        /// <param name="mentioned">* This property is available when message_type is MESG. (optional)</param>
+        /// <param name="extendedMessagePayload"> (optional)</param>
+        /// <param name="file">When sending a single file with a message, specifies the data of the file to upload to the Sendbird server in raw binary format. When sending a request containing a file, change the value of the content-type header to multipart/form-data;boundary&#x3D;{your_unique_boundary_string} in the request. * This property is required when message_type is FILE. * This doesn&#39;t allow a converted base64-encoded string from a file as its value. (optional)</param>
+        /// <param name="requireAuth">Determines whether to require an authentication key to verify if the file is being properly accessed. Only the user who uploaded the file or users who are in the channel where the file was uploaded should have access. The authentication key managed internally by the Sendbird system is generated every time a user logs in to the Sendbird server and is valid for three days starting from the last login. If set to false, Sendbird tries to access a file without any key. To access encrypted files, such as the files in the Sendbird server which are by default encrypted, the property must be set to true. (Default: false) The require_auth parameter only works if the file or URL is managed by Sendbird, which means that when you upload files using multipart format or provide URLs that point to the files hosted on the Sendbird server. However, if the file is hosted on a server or service that is not managed by Sendbird, access control and authentication for the file should be handled by the respective server or service hosting the file. * This property is available when message_type is FILE. (optional)</param>
+        /// <param name="mentionType">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="mentionedUserIds">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="isSilent">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="sortedMetaarray"> (optional)</param>
+        /// <param name="apnsBundleId">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="appleCriticalAlertOptions">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="sound">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="volume">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="createdAt"> (optional)</param>
+        /// <param name="customType"> (optional)</param>
+        /// <param name="data"> (optional)</param>
+        /// <param name="dedupId"> (optional)</param>
+        /// <param name="markAsRead"> (optional)</param>
+        /// <param name="sendPush"> (optional)</param>
+        /// <returns>ApiResponse of SendABotMessageResponse</returns>
+        public ApiResponse<SendABotMessageResponse> SendABotMessageWithHttpInfo (string botUserid, string messageType, string channelUrl, string apiToken = default(string), string message = default(string), List<string> mentioned = default(List<string>), SendbirdExtendedMessagePayload extendedMessagePayload = default(SendbirdExtendedMessagePayload), System.IO.Stream file = default(System.IO.Stream), bool? requireAuth = default(bool?), string mentionType = default(string), List<string> mentionedUserIds = default(List<string>), bool? isSilent = default(bool?), List<SendbirdSortedMetaarrayInner> sortedMetaarray = default(List<SendbirdSortedMetaarrayInner>), string apnsBundleId = default(string), Object appleCriticalAlertOptions = default(Object), string sound = default(string), decimal? volume = default(decimal?), long? createdAt = default(long?), string customType = default(string), string data = default(string), string dedupId = default(string), bool? markAsRead = default(bool?), bool? sendPush = default(bool?))
         {
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
                 throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotApi->SendABotMessage");
+            // verify the required parameter 'messageType' is set
+            if (messageType == null)
+                throw new ApiException(400, "Missing required parameter 'messageType' when calling BotApi->SendABotMessage");
+            // verify the required parameter 'channelUrl' is set
+            if (channelUrl == null)
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling BotApi->SendABotMessage");
 
             var localVarPath = "/v3/bots/{bot_userid}/send";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1229,7 +1644,7 @@ namespace sendbird_platform_sdk.Api
 
             // to determine the Content-Type header
             String[] localVarHttpContentTypes = new String[] {
-                "application/json"
+                "multipart/form-data"
             };
             String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
 
@@ -1243,14 +1658,27 @@ namespace sendbird_platform_sdk.Api
 
             if (botUserid != null) localVarPathParams.Add("bot_userid", this.Configuration.ApiClient.ParameterToString(botUserid)); // path parameter
             if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (sendABotMessageRequest != null && sendABotMessageRequest.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(sendABotMessageRequest); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = sendABotMessageRequest; // byte array
-            }
+            if (messageType != null) localVarFormParams.Add("message_type", this.Configuration.ApiClient.ParameterToString(messageType)); // form parameter
+            if (channelUrl != null) localVarFormParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // form parameter
+            if (message != null) localVarFormParams.Add("message", this.Configuration.ApiClient.ParameterToString(message)); // form parameter
+            if (mentioned != null) localVarFormParams.Add("mentioned", this.Configuration.ApiClient.Serialize(mentioned)); // form parameter
+            if (extendedMessagePayload != null) localVarFormParams.Add("extended_message_payload", this.Configuration.ApiClient.Serialize(extendedMessagePayload)); // form parameter
+            if (file != null) localVarFileParams.Add("file", this.Configuration.ApiClient.ParameterToFile("file", file));
+            if (requireAuth != null) localVarFormParams.Add("require_auth", this.Configuration.ApiClient.ParameterToString(requireAuth)); // form parameter
+            if (mentionType != null) localVarFormParams.Add("mention_type", this.Configuration.ApiClient.ParameterToString(mentionType)); // form parameter
+            if (mentionedUserIds != null) localVarFormParams.Add("mentioned_user_ids", this.Configuration.ApiClient.Serialize(mentionedUserIds)); // form parameter
+            if (isSilent != null) localVarFormParams.Add("is_silent", this.Configuration.ApiClient.ParameterToString(isSilent)); // form parameter
+            if (sortedMetaarray != null) localVarFormParams.Add("sorted_metaarray", this.Configuration.ApiClient.Serialize(sortedMetaarray)); // form parameter
+            if (apnsBundleId != null) localVarFormParams.Add("apns_bundle_id", this.Configuration.ApiClient.ParameterToString(apnsBundleId)); // form parameter
+            if (appleCriticalAlertOptions != null) localVarFormParams.Add("apple_critical_alert_options", this.Configuration.ApiClient.Serialize(appleCriticalAlertOptions)); // form parameter
+            if (sound != null) localVarFormParams.Add("sound", this.Configuration.ApiClient.ParameterToString(sound)); // form parameter
+            if (volume != null) localVarFormParams.Add("volume", this.Configuration.ApiClient.ParameterToString(volume)); // form parameter
+            if (createdAt != null) localVarFormParams.Add("created_at", this.Configuration.ApiClient.ParameterToString(createdAt)); // form parameter
+            if (customType != null) localVarFormParams.Add("custom_type", this.Configuration.ApiClient.ParameterToString(customType)); // form parameter
+            if (data != null) localVarFormParams.Add("data", this.Configuration.ApiClient.ParameterToString(data)); // form parameter
+            if (dedupId != null) localVarFormParams.Add("dedup_id", this.Configuration.ApiClient.ParameterToString(dedupId)); // form parameter
+            if (markAsRead != null) localVarFormParams.Add("mark_as_read", this.Configuration.ApiClient.ParameterToString(markAsRead)); // form parameter
+            if (sendPush != null) localVarFormParams.Add("send_push", this.Configuration.ApiClient.ParameterToString(sendPush)); // form parameter
 
 
             // make the HTTP request
@@ -1266,9 +1694,9 @@ namespace sendbird_platform_sdk.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendbirdMessageResponse>(localVarStatusCode,
+            return new ApiResponse<SendABotMessageResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendbirdMessageResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendbirdMessageResponse)));
+                (SendABotMessageResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendABotMessageResponse)));
         }
 
         /// <summary>
@@ -1276,13 +1704,33 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="botUserid">(Required) </param>
+        /// <param name="messageType">Specifies the type of message to send. MESG for text message, FILE for file message.</param>
+        /// <param name="channelUrl">Specifies the URL of the channel to send the message to.</param>
         /// <param name="apiToken"> (optional)</param>
-        /// <param name="sendABotMessageRequest"> (optional)</param>
+        /// <param name="message">Specifies the content of the message. * This property is required when message_type is MESG. (optional)</param>
+        /// <param name="mentioned">* This property is available when message_type is MESG. (optional)</param>
+        /// <param name="extendedMessagePayload"> (optional)</param>
+        /// <param name="file">When sending a single file with a message, specifies the data of the file to upload to the Sendbird server in raw binary format. When sending a request containing a file, change the value of the content-type header to multipart/form-data;boundary&#x3D;{your_unique_boundary_string} in the request. * This property is required when message_type is FILE. * This doesn&#39;t allow a converted base64-encoded string from a file as its value. (optional)</param>
+        /// <param name="requireAuth">Determines whether to require an authentication key to verify if the file is being properly accessed. Only the user who uploaded the file or users who are in the channel where the file was uploaded should have access. The authentication key managed internally by the Sendbird system is generated every time a user logs in to the Sendbird server and is valid for three days starting from the last login. If set to false, Sendbird tries to access a file without any key. To access encrypted files, such as the files in the Sendbird server which are by default encrypted, the property must be set to true. (Default: false) The require_auth parameter only works if the file or URL is managed by Sendbird, which means that when you upload files using multipart format or provide URLs that point to the files hosted on the Sendbird server. However, if the file is hosted on a server or service that is not managed by Sendbird, access control and authentication for the file should be handled by the respective server or service hosting the file. * This property is available when message_type is FILE. (optional)</param>
+        /// <param name="mentionType">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="mentionedUserIds">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="isSilent">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="sortedMetaarray"> (optional)</param>
+        /// <param name="apnsBundleId">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="appleCriticalAlertOptions">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="sound">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="volume">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="createdAt"> (optional)</param>
+        /// <param name="customType"> (optional)</param>
+        /// <param name="data"> (optional)</param>
+        /// <param name="dedupId"> (optional)</param>
+        /// <param name="markAsRead"> (optional)</param>
+        /// <param name="sendPush"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of SendbirdMessageResponse</returns>
-        public async System.Threading.Tasks.Task<SendbirdMessageResponse> SendABotMessageAsync (string botUserid, string apiToken = default(string), SendABotMessageRequest sendABotMessageRequest = default(SendABotMessageRequest), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of SendABotMessageResponse</returns>
+        public async System.Threading.Tasks.Task<SendABotMessageResponse> SendABotMessageAsync (string botUserid, string messageType, string channelUrl, string apiToken = default(string), string message = default(string), List<string> mentioned = default(List<string>), SendbirdExtendedMessagePayload extendedMessagePayload = default(SendbirdExtendedMessagePayload), System.IO.Stream file = default(System.IO.Stream), bool? requireAuth = default(bool?), string mentionType = default(string), List<string> mentionedUserIds = default(List<string>), bool? isSilent = default(bool?), List<SendbirdSortedMetaarrayInner> sortedMetaarray = default(List<SendbirdSortedMetaarrayInner>), string apnsBundleId = default(string), Object appleCriticalAlertOptions = default(Object), string sound = default(string), decimal? volume = default(decimal?), long? createdAt = default(long?), string customType = default(string), string data = default(string), string dedupId = default(string), bool? markAsRead = default(bool?), bool? sendPush = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<SendbirdMessageResponse> localVarResponse = await SendABotMessageWithHttpInfoAsync(botUserid, apiToken, sendABotMessageRequest, cancellationToken);
+             ApiResponse<SendABotMessageResponse> localVarResponse = await SendABotMessageWithHttpInfoAsync(botUserid, messageType, channelUrl, apiToken, message, mentioned, extendedMessagePayload, file, requireAuth, mentionType, mentionedUserIds, isSilent, sortedMetaarray, apnsBundleId, appleCriticalAlertOptions, sound, volume, createdAt, customType, data, dedupId, markAsRead, sendPush, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -1292,17 +1740,136 @@ namespace sendbird_platform_sdk.Api
         /// </summary>
         /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="botUserid">(Required) </param>
+        /// <param name="messageType">Specifies the type of message to send. MESG for text message, FILE for file message.</param>
+        /// <param name="channelUrl">Specifies the URL of the channel to send the message to.</param>
         /// <param name="apiToken"> (optional)</param>
-        /// <param name="sendABotMessageRequest"> (optional)</param>
+        /// <param name="message">Specifies the content of the message. * This property is required when message_type is MESG. (optional)</param>
+        /// <param name="mentioned">* This property is available when message_type is MESG. (optional)</param>
+        /// <param name="extendedMessagePayload"> (optional)</param>
+        /// <param name="file">When sending a single file with a message, specifies the data of the file to upload to the Sendbird server in raw binary format. When sending a request containing a file, change the value of the content-type header to multipart/form-data;boundary&#x3D;{your_unique_boundary_string} in the request. * This property is required when message_type is FILE. * This doesn&#39;t allow a converted base64-encoded string from a file as its value. (optional)</param>
+        /// <param name="requireAuth">Determines whether to require an authentication key to verify if the file is being properly accessed. Only the user who uploaded the file or users who are in the channel where the file was uploaded should have access. The authentication key managed internally by the Sendbird system is generated every time a user logs in to the Sendbird server and is valid for three days starting from the last login. If set to false, Sendbird tries to access a file without any key. To access encrypted files, such as the files in the Sendbird server which are by default encrypted, the property must be set to true. (Default: false) The require_auth parameter only works if the file or URL is managed by Sendbird, which means that when you upload files using multipart format or provide URLs that point to the files hosted on the Sendbird server. However, if the file is hosted on a server or service that is not managed by Sendbird, access control and authentication for the file should be handled by the respective server or service hosting the file. * This property is available when message_type is FILE. (optional)</param>
+        /// <param name="mentionType">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="mentionedUserIds">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="isSilent">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="sortedMetaarray"> (optional)</param>
+        /// <param name="apnsBundleId">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="appleCriticalAlertOptions">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="sound">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="volume">* This property is available when message_type is FILE. (optional)</param>
+        /// <param name="createdAt"> (optional)</param>
+        /// <param name="customType"> (optional)</param>
+        /// <param name="data"> (optional)</param>
+        /// <param name="dedupId"> (optional)</param>
+        /// <param name="markAsRead"> (optional)</param>
+        /// <param name="sendPush"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (SendbirdMessageResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<SendbirdMessageResponse>> SendABotMessageWithHttpInfoAsync (string botUserid, string apiToken = default(string), SendABotMessageRequest sendABotMessageRequest = default(SendABotMessageRequest), CancellationToken cancellationToken = default(CancellationToken))
+        /// <returns>Task of ApiResponse (SendABotMessageResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<SendABotMessageResponse>> SendABotMessageWithHttpInfoAsync (string botUserid, string messageType, string channelUrl, string apiToken = default(string), string message = default(string), List<string> mentioned = default(List<string>), SendbirdExtendedMessagePayload extendedMessagePayload = default(SendbirdExtendedMessagePayload), System.IO.Stream file = default(System.IO.Stream), bool? requireAuth = default(bool?), string mentionType = default(string), List<string> mentionedUserIds = default(List<string>), bool? isSilent = default(bool?), List<SendbirdSortedMetaarrayInner> sortedMetaarray = default(List<SendbirdSortedMetaarrayInner>), string apnsBundleId = default(string), Object appleCriticalAlertOptions = default(Object), string sound = default(string), decimal? volume = default(decimal?), long? createdAt = default(long?), string customType = default(string), string data = default(string), string dedupId = default(string), bool? markAsRead = default(bool?), bool? sendPush = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
         {
             // verify the required parameter 'botUserid' is set
             if (botUserid == null)
                 throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotApi->SendABotMessage");
+            // verify the required parameter 'messageType' is set
+            if (messageType == null)
+                throw new ApiException(400, "Missing required parameter 'messageType' when calling BotApi->SendABotMessage");
+            // verify the required parameter 'channelUrl' is set
+            if (channelUrl == null)
+                throw new ApiException(400, "Missing required parameter 'channelUrl' when calling BotApi->SendABotMessage");
 
             var localVarPath = "/v3/bots/{bot_userid}/send";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "multipart/form-data"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (botUserid != null) localVarPathParams.Add("bot_userid", this.Configuration.ApiClient.ParameterToString(botUserid)); // path parameter
+            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (messageType != null) localVarFormParams.Add("message_type", this.Configuration.ApiClient.ParameterToString(messageType)); // form parameter
+            if (channelUrl != null) localVarFormParams.Add("channel_url", this.Configuration.ApiClient.ParameterToString(channelUrl)); // form parameter
+            if (message != null) localVarFormParams.Add("message", this.Configuration.ApiClient.ParameterToString(message)); // form parameter
+            if (mentioned != null) localVarFormParams.Add("mentioned", this.Configuration.ApiClient.Serialize(mentioned)); // form parameter
+            if (extendedMessagePayload != null) localVarFormParams.Add("extended_message_payload", this.Configuration.ApiClient.Serialize(extendedMessagePayload)); // form parameter
+            if (file != null) localVarFileParams.Add("file", this.Configuration.ApiClient.ParameterToFile("file", file));
+            if (requireAuth != null) localVarFormParams.Add("require_auth", this.Configuration.ApiClient.ParameterToString(requireAuth)); // form parameter
+            if (mentionType != null) localVarFormParams.Add("mention_type", this.Configuration.ApiClient.ParameterToString(mentionType)); // form parameter
+            if (mentionedUserIds != null) localVarFormParams.Add("mentioned_user_ids", this.Configuration.ApiClient.Serialize(mentionedUserIds)); // form parameter
+            if (isSilent != null) localVarFormParams.Add("is_silent", this.Configuration.ApiClient.ParameterToString(isSilent)); // form parameter
+            if (sortedMetaarray != null) localVarFormParams.Add("sorted_metaarray", this.Configuration.ApiClient.Serialize(sortedMetaarray)); // form parameter
+            if (apnsBundleId != null) localVarFormParams.Add("apns_bundle_id", this.Configuration.ApiClient.ParameterToString(apnsBundleId)); // form parameter
+            if (appleCriticalAlertOptions != null) localVarFormParams.Add("apple_critical_alert_options", this.Configuration.ApiClient.Serialize(appleCriticalAlertOptions)); // form parameter
+            if (sound != null) localVarFormParams.Add("sound", this.Configuration.ApiClient.ParameterToString(sound)); // form parameter
+            if (volume != null) localVarFormParams.Add("volume", this.Configuration.ApiClient.ParameterToString(volume)); // form parameter
+            if (createdAt != null) localVarFormParams.Add("created_at", this.Configuration.ApiClient.ParameterToString(createdAt)); // form parameter
+            if (customType != null) localVarFormParams.Add("custom_type", this.Configuration.ApiClient.ParameterToString(customType)); // form parameter
+            if (data != null) localVarFormParams.Add("data", this.Configuration.ApiClient.ParameterToString(data)); // form parameter
+            if (dedupId != null) localVarFormParams.Add("dedup_id", this.Configuration.ApiClient.ParameterToString(dedupId)); // form parameter
+            if (markAsRead != null) localVarFormParams.Add("mark_as_read", this.Configuration.ApiClient.ParameterToString(markAsRead)); // form parameter
+            if (sendPush != null) localVarFormParams.Add("send_push", this.Configuration.ApiClient.ParameterToString(sendPush)); // form parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("SendABotMessage", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<SendABotMessageResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (SendABotMessageResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendABotMessageResponse)));
+        }
+
+        /// <summary>
+        /// Update a bot ## Update a bot  Updates information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-update-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateBotByIdData"> (optional)</param>
+        /// <returns>UpdateBotByIdResponse</returns>
+        public UpdateBotByIdResponse UpdateBotById (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData))
+        {
+             ApiResponse<UpdateBotByIdResponse> localVarResponse = UpdateBotByIdWithHttpInfo(botUserid, apiToken, updateBotByIdData);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Update a bot ## Update a bot  Updates information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-update-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateBotByIdData"> (optional)</param>
+        /// <returns>ApiResponse of UpdateBotByIdResponse</returns>
+        public ApiResponse<UpdateBotByIdResponse> UpdateBotByIdWithHttpInfo (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData))
+        {
+            // verify the required parameter 'botUserid' is set
+            if (botUserid == null)
+                throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotApi->UpdateBotById");
+
+            var localVarPath = "/v3/bots/{bot_userid}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -1325,33 +1892,257 @@ namespace sendbird_platform_sdk.Api
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
             if (botUserid != null) localVarPathParams.Add("bot_userid", this.Configuration.ApiClient.ParameterToString(botUserid)); // path parameter
-            if (apiToken != null) localVarHeaderParams.Add("api-token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
-            if (sendABotMessageRequest != null && sendABotMessageRequest.GetType() != typeof(byte[]))
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (updateBotByIdData != null && updateBotByIdData.GetType() != typeof(byte[]))
             {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(sendABotMessageRequest); // http body (model) parameter
+                localVarPostBody = this.Configuration.ApiClient.Serialize(updateBotByIdData); // http body (model) parameter
             }
             else
             {
-                localVarPostBody = sendABotMessageRequest; // byte array
+                localVarPostBody = updateBotByIdData; // byte array
+            }
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UpdateBotById", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<UpdateBotByIdResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (UpdateBotByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateBotByIdResponse)));
+        }
+
+        /// <summary>
+        /// Update a bot ## Update a bot  Updates information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-update-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateBotByIdData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of UpdateBotByIdResponse</returns>
+        public async System.Threading.Tasks.Task<UpdateBotByIdResponse> UpdateBotByIdAsync (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<UpdateBotByIdResponse> localVarResponse = await UpdateBotByIdWithHttpInfoAsync(botUserid, apiToken, updateBotByIdData, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Update a bot ## Update a bot  Updates information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-update-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="updateBotByIdData"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (UpdateBotByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<UpdateBotByIdResponse>> UpdateBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), UpdateBotByIdData updateBotByIdData = default(UpdateBotByIdData), CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'botUserid' is set
+            if (botUserid == null)
+                throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotApi->UpdateBotById");
+
+            var localVarPath = "/v3/bots/{bot_userid}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (botUserid != null) localVarPathParams.Add("bot_userid", this.Configuration.ApiClient.ParameterToString(botUserid)); // path parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+            if (updateBotByIdData != null && updateBotByIdData.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(updateBotByIdData); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = updateBotByIdData; // byte array
             }
 
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType, cancellationToken);
 
             int localVarStatusCode = (int) localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("SendABotMessage", localVarResponse);
+                Exception exception = ExceptionFactory("UpdateBotById", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<SendbirdMessageResponse>(localVarStatusCode,
+            return new ApiResponse<UpdateBotByIdResponse>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (SendbirdMessageResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(SendbirdMessageResponse)));
+                (UpdateBotByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(UpdateBotByIdResponse)));
+        }
+
+        /// <summary>
+        /// View a bot ## View a bot  Retrieves information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-view-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ViewBotByIdResponse</returns>
+        public ViewBotByIdResponse ViewBotById (string botUserid, string apiToken = default(string))
+        {
+             ApiResponse<ViewBotByIdResponse> localVarResponse = ViewBotByIdWithHttpInfo(botUserid, apiToken);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// View a bot ## View a bot  Retrieves information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-view-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <returns>ApiResponse of ViewBotByIdResponse</returns>
+        public ApiResponse<ViewBotByIdResponse> ViewBotByIdWithHttpInfo (string botUserid, string apiToken = default(string))
+        {
+            // verify the required parameter 'botUserid' is set
+            if (botUserid == null)
+                throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotApi->ViewBotById");
+
+            var localVarPath = "/v3/bots/{bot_userid}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (botUserid != null) localVarPathParams.Add("bot_userid", this.Configuration.ApiClient.ParameterToString(botUserid)); // path parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ViewBotById", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ViewBotByIdResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (ViewBotByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewBotByIdResponse)));
+        }
+
+        /// <summary>
+        /// View a bot ## View a bot  Retrieves information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-view-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ViewBotByIdResponse</returns>
+        public async System.Threading.Tasks.Task<ViewBotByIdResponse> ViewBotByIdAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<ViewBotByIdResponse> localVarResponse = await ViewBotByIdWithHttpInfoAsync(botUserid, apiToken, cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// View a bot ## View a bot  Retrieves information on a bot.  https://sendbird.com/docs/chat/v3/platform-api/guides/bot-interface#2-view-a-bot - -- -- -- -- -- -- -- -- -- -- -- -- -- -
+        /// </summary>
+        /// <exception cref="sendbird_platform_sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="botUserid"></param>
+        /// <param name="apiToken"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (ViewBotByIdResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ViewBotByIdResponse>> ViewBotByIdWithHttpInfoAsync (string botUserid, string apiToken = default(string), CancellationToken cancellationToken = default(CancellationToken))
+        {
+            // verify the required parameter 'botUserid' is set
+            if (botUserid == null)
+                throw new ApiException(400, "Missing required parameter 'botUserid' when calling BotApi->ViewBotById");
+
+            var localVarPath = "/v3/bots/{bot_userid}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (botUserid != null) localVarPathParams.Add("bot_userid", this.Configuration.ApiClient.ParameterToString(botUserid)); // path parameter
+            if (apiToken != null) localVarHeaderParams.Add("Api-Token", this.Configuration.ApiClient.ParameterToString(apiToken)); // header parameter
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ViewBotById", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<ViewBotByIdResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (ViewBotByIdResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(ViewBotByIdResponse)));
         }
 
     }

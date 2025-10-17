@@ -233,14 +233,6 @@ namespace sendbird_platform_sdk.Test
         {
             // TODO unit test for the property 'IsCreated'
         }
-        /// <summary>
-        /// Test the property 'SessionTokens'
-        /// </summary>
-        [Test]
-        public void SessionTokensTest()
-        {
-            // TODO unit test for the property 'SessionTokens'
-        }
 
     }
 

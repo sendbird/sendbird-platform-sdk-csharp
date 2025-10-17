@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Bot** | [**CreateABotResponseBot**](CreateABotResponseBot.md) |  | 
 **BotCallbackUrl** | **string** |  | [optional] 
-**BotStyle** | [**CreateABotResponseBotStyle**](CreateABotResponseBotStyle.md) |  | [optional] 
+**BotStyle** | [**ListBotsResponseBotsInnerBotStyle**](ListBotsResponseBotsInnerBotStyle.md) |  | [optional] 
 **ChannelInvitationPreference** | **int** |  | [optional] 
 **CreatedAt** | **long** |  | [optional] 
 **EnableMarkAsRead** | **bool** |  | [optional] 

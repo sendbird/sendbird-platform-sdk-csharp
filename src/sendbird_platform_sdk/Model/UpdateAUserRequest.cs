@@ -45,6 +45,10 @@ namespace sendbird_platform_sdk.Model
         public UpdateAUserRequest(List<string> discoveryKeys = default(List<string>), bool isActive = default(bool), bool issueAccessToken = default(bool), long lastSeenAt = default(long), bool leaveAllWhenDeactivated = default(bool), string nickname = default(string), List<string> preferredLanguages = default(List<string>), System.IO.Stream profileFile = default(System.IO.Stream), string profileUrl = default(string))
         {
             this.DiscoveryKeys = discoveryKeys;
+            this.Nickname = nickname;
+            this.PreferredLanguages = preferredLanguages;
+            this.ProfileUrl = profileUrl;
+            this.DiscoveryKeys = discoveryKeys;
             this.IsActive = isActive;
             this.IssueAccessToken = issueAccessToken;
             this.LastSeenAt = lastSeenAt;
@@ -58,7 +62,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets DiscoveryKeys
         /// </summary>
-        [DataMember(Name="discovery_keys", EmitDefaultValue=false)]
+        [DataMember(Name="discovery_keys", EmitDefaultValue=true)]
         public List<string> DiscoveryKeys { get; set; }
 
         /// <summary>
@@ -88,13 +92,13 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets Nickname
         /// </summary>
-        [DataMember(Name="nickname", EmitDefaultValue=false)]
+        [DataMember(Name="nickname", EmitDefaultValue=true)]
         public string Nickname { get; set; }
 
         /// <summary>
         /// Gets or Sets PreferredLanguages
         /// </summary>
-        [DataMember(Name="preferred_languages", EmitDefaultValue=false)]
+        [DataMember(Name="preferred_languages", EmitDefaultValue=true)]
         public List<string> PreferredLanguages { get; set; }
 
         /// <summary>
@@ -106,7 +110,7 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets ProfileUrl
         /// </summary>
-        [DataMember(Name="profile_url", EmitDefaultValue=false)]
+        [DataMember(Name="profile_url", EmitDefaultValue=true)]
         public string ProfileUrl { get; set; }
 
         /// <summary>

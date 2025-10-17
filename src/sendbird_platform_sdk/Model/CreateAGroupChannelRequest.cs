@@ -57,8 +57,10 @@ namespace sendbird_platform_sdk.Model
         /// <param name="strict">strict.</param>
         /// <param name="userIds">userIds.</param>
         /// <param name="users">users (required).</param>
-        public CreateAGroupChannelRequest(string accessCode = default(string), bool blockSdkUserChannelJoin = default(bool), string channelUrl = default(string), System.IO.Stream coverFile = default(System.IO.Stream), string coverUrl = default(string), string customType = default(string), string data = default(string), Object hiddenStatus = default(Object), Object invitationStatus = default(Object), string inviterId = default(string), bool isDistinct = default(bool), bool isEphemeral = default(bool), bool isPublic = default(bool), bool isSuper = default(bool), string name = default(string), List<string> operatorIds = default(List<string>), bool strict = default(bool), List<string> userIds = default(List<string>), List<SendbirdUser> users = default(List<SendbirdUser>))
+        public CreateAGroupChannelRequest(string accessCode = default(string), bool? blockSdkUserChannelJoin = default(bool?), string channelUrl = default(string), System.IO.Stream coverFile = default(System.IO.Stream), string coverUrl = default(string), string customType = default(string), string data = default(string), Object hiddenStatus = default(Object), Object invitationStatus = default(Object), string inviterId = default(string), bool isDistinct = default(bool), bool isEphemeral = default(bool), bool isPublic = default(bool), bool isSuper = default(bool), string name = default(string), List<string> operatorIds = default(List<string>), bool strict = default(bool), List<string> userIds = default(List<string>), List<SendbirdUser> users = default(List<SendbirdUser>))
         {
+            this.AccessCode = accessCode;
+            this.BlockSdkUserChannelJoin = blockSdkUserChannelJoin;
             // to ensure "users" is required (not null)
             if (users == null)
             {
@@ -92,14 +94,14 @@ namespace sendbird_platform_sdk.Model
         /// <summary>
         /// Gets or Sets AccessCode
         /// </summary>
-        [DataMember(Name="access_code", EmitDefaultValue=false)]
+        [DataMember(Name="access_code", EmitDefaultValue=true)]
         public string AccessCode { get; set; }
 
         /// <summary>
         /// Gets or Sets BlockSdkUserChannelJoin
         /// </summary>
-        [DataMember(Name="block_sdk_user_channel_join", EmitDefaultValue=false)]
-        public bool BlockSdkUserChannelJoin { get; set; }
+        [DataMember(Name="block_sdk_user_channel_join", EmitDefaultValue=true)]
+        public bool? BlockSdkUserChannelJoin { get; set; }
 
         /// <summary>
         /// Gets or Sets ChannelUrl

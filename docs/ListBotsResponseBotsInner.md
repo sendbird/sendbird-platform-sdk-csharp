@@ -5,7 +5,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Ai** | [**ListBotsResponseBotsInnerAi**](ListBotsResponseBotsInnerAi.md) |  | [optional] 
 **Bot** | [**ListBotsResponseBotsInnerBot**](ListBotsResponseBotsInnerBot.md) |  | [optional] 
 **BotCallbackUrl** | **string** |  | [optional] 
 **BotStyle** | [**ListBotsResponseBotsInnerBotStyle**](ListBotsResponseBotsInnerBotStyle.md) |  | [optional] 

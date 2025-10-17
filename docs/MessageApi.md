@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 ## AddExtraDataToAMessage
 
-> AddExtraDataToAMessageResponse AddExtraDataToAMessage (string channelType, string channelUrl, string messageId, string apiToken = null, AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = null)
+> AddExtraDataToAMessageResponse AddExtraDataToAMessage (string channelType, string channelUrl, long messageId, string apiToken = null, AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = null)
 
 Add extra data to a message
 
@@ -45,7 +45,7 @@ namespace Example
             var apiInstance = new MessageApi(Configuration.Default);
             var channelType = "open_channels";  // string | (Required) 
             var channelUrl = "channelUrl_example";  // string | (Required) 
-            var messageId = "messageId_example";  // string | (Required) 
+            var messageId = 789L;  // long | (Required) 
             var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var addExtraDataToAMessageRequest = new AddExtraDataToAMessageRequest(); // AddExtraDataToAMessageRequest |  (optional) 
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **channelType** | **string**| (Required)  | 
  **channelUrl** | **string**| (Required)  | 
- **messageId** | **string**| (Required)  | 
+ **messageId** | **long**| (Required)  | 
  **apiToken** | **string**|  | [optional] 
  **addExtraDataToAMessageRequest** | [**AddExtraDataToAMessageRequest**](AddExtraDataToAMessageRequest.md)|  | [optional] 
 
@@ -104,7 +104,7 @@ No authorization required
 
 ## DeleteAMessage
 
-> Object DeleteAMessage (string channelType, string channelUrl, string messageId, string apiToken = null)
+> Object DeleteAMessage (string channelType, string channelUrl, long messageId, string apiToken = null)
 
 Delete a message
 
@@ -129,7 +129,7 @@ namespace Example
             var apiInstance = new MessageApi(Configuration.Default);
             var channelType = "open_channels";  // string | (Required) 
             var channelUrl = "channelUrl_example";  // string | (Required) 
-            var messageId = "messageId_example";  // string | (Required) 
+            var messageId = 789L;  // long | (Required) 
             var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
             try
@@ -156,7 +156,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **channelType** | **string**| (Required)  | 
  **channelUrl** | **string**| (Required)  | 
- **messageId** | **string**| (Required)  | 
+ **messageId** | **long**| (Required)  | 
  **apiToken** | **string**|  | [optional] 
 
 ### Return type
@@ -186,7 +186,7 @@ No authorization required
 
 ## GetAMessage
 
-> SendbirdMessageResponse GetAMessage (string channelType, string channelUrl, string messageId, bool? includeReactions = null, bool? includeThreadInfo = null, bool? includeParentMessageInfo = null, bool? includePollDetails = null, bool? withSortedMetaArray = null, string apiToken = null)
+> SendbirdMessageResponse GetAMessage (string channelType, string channelUrl, long messageId, bool? includeReactions = null, bool? includeThreadInfo = null, bool? includeParentMessageInfo = null, bool? includePollDetails = null, bool? withSortedMetaArray = null, string apiToken = null)
 
 Get a message
 
@@ -211,7 +211,7 @@ namespace Example
             var apiInstance = new MessageApi(Configuration.Default);
             var channelType = "open_channels";  // string | (Required) 
             var channelUrl = "channelUrl_example";  // string | (Required) 
-            var messageId = "messageId_example";  // string | (Required) 
+            var messageId = 789L;  // long | (Required) 
             var includeReactions = true;  // bool? |  (optional) 
             var includeThreadInfo = true;  // bool? |  (optional) 
             var includeParentMessageInfo = true;  // bool? |  (optional) 
@@ -243,7 +243,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **channelType** | **string**| (Required)  | 
  **channelUrl** | **string**| (Required)  | 
- **messageId** | **string**| (Required)  | 
+ **messageId** | **long**| (Required)  | 
  **includeReactions** | **bool?**|  | [optional] 
  **includeThreadInfo** | **bool?**|  | [optional] 
  **includeParentMessageInfo** | **bool?**|  | [optional] 
@@ -638,7 +638,7 @@ No authorization required
 
 ## RemoveExtraDataFromAMessage
 
-> Object RemoveExtraDataFromAMessage (string channelType, string channelUrl, string messageId, string keys = null, string apiToken = null)
+> Object RemoveExtraDataFromAMessage (string channelType, string channelUrl, long messageId, string keys = null, string apiToken = null)
 
 Remove extra data from a message
 
@@ -663,7 +663,7 @@ namespace Example
             var apiInstance = new MessageApi(Configuration.Default);
             var channelType = "open_channels";  // string | (Required) 
             var channelUrl = "channelUrl_example";  // string | (Required) 
-            var messageId = "messageId_example";  // string | (Required) 
+            var messageId = 789L;  // long | (Required) 
             var keys = "keys_example";  // string |  (optional) 
             var apiToken = {{API_TOKEN}};  // string |  (optional) 
 
@@ -691,7 +691,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **channelType** | **string**| (Required)  | 
  **channelUrl** | **string**| (Required)  | 
- **messageId** | **string**| (Required)  | 
+ **messageId** | **long**| (Required)  | 
  **keys** | **string**|  | [optional] 
  **apiToken** | **string**|  | [optional] 
 
@@ -804,7 +804,7 @@ No authorization required
 
 ## UpdateAMessage
 
-> SendbirdMessageResponse UpdateAMessage (string channelType, string channelUrl, string messageId, string apiToken = null, UpdateAMessageRequest updateAMessageRequest = null)
+> SendbirdMessageResponse UpdateAMessage (string channelType, string channelUrl, long messageId, string apiToken = null, UpdateAMessageRequest updateAMessageRequest = null)
 
 Update a message
 
@@ -829,7 +829,7 @@ namespace Example
             var apiInstance = new MessageApi(Configuration.Default);
             var channelType = "open_channels";  // string | (Required) 
             var channelUrl = "channelUrl_example";  // string | (Required) 
-            var messageId = "messageId_example";  // string | (Required) 
+            var messageId = 789L;  // long | (Required) 
             var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updateAMessageRequest = new UpdateAMessageRequest(); // UpdateAMessageRequest |  (optional) 
 
@@ -857,7 +857,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **channelType** | **string**| (Required)  | 
  **channelUrl** | **string**| (Required)  | 
- **messageId** | **string**| (Required)  | 
+ **messageId** | **long**| (Required)  | 
  **apiToken** | **string**|  | [optional] 
  **updateAMessageRequest** | [**UpdateAMessageRequest**](UpdateAMessageRequest.md)|  | [optional] 
 
@@ -888,7 +888,7 @@ No authorization required
 
 ## UpdateExtraDataInAMessage
 
-> UpdateExtraDataInAMessageResponse UpdateExtraDataInAMessage (string channelType, string channelUrl, string messageId, string apiToken = null, UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = null)
+> UpdateExtraDataInAMessageResponse UpdateExtraDataInAMessage (string channelType, string channelUrl, long messageId, string apiToken = null, UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = null)
 
 Update extra data in a message
 
@@ -913,7 +913,7 @@ namespace Example
             var apiInstance = new MessageApi(Configuration.Default);
             var channelType = "open_channels";  // string | (Required) 
             var channelUrl = "channelUrl_example";  // string | (Required) 
-            var messageId = "messageId_example";  // string | (Required) 
+            var messageId = 789L;  // long | (Required) 
             var apiToken = {{API_TOKEN}};  // string |  (optional) 
             var updateExtraDataInAMessageRequest = new UpdateExtraDataInAMessageRequest(); // UpdateExtraDataInAMessageRequest |  (optional) 
 
@@ -941,7 +941,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **channelType** | **string**| (Required)  | 
  **channelUrl** | **string**| (Required)  | 
- **messageId** | **string**| (Required)  | 
+ **messageId** | **long**| (Required)  | 
  **apiToken** | **string**|  | [optional] 
  **updateExtraDataInAMessageRequest** | [**UpdateExtraDataInAMessageRequest**](UpdateExtraDataInAMessageRequest.md)|  | [optional] 
 

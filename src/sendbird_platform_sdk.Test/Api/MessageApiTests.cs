@@ -72,7 +72,7 @@ namespace sendbird_platform_sdk.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string channelType = null;
             //string channelUrl = null;
-            //string messageId = null;
+            //long messageId = null;
             //string apiToken = null;
             //AddExtraDataToAMessageRequest addExtraDataToAMessageRequest = null;
             //var response = instance.AddExtraDataToAMessage(channelType, channelUrl, messageId, apiToken, addExtraDataToAMessageRequest);
@@ -88,7 +88,7 @@ namespace sendbird_platform_sdk.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string channelType = null;
             //string channelUrl = null;
-            //string messageId = null;
+            //long messageId = null;
             //string apiToken = null;
             //var response = instance.DeleteAMessage(channelType, channelUrl, messageId, apiToken);
             //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
@@ -103,7 +103,7 @@ namespace sendbird_platform_sdk.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string channelType = null;
             //string channelUrl = null;
-            //string messageId = null;
+            //long messageId = null;
             //bool? includeReactions = null;
             //bool? includeThreadInfo = null;
             //bool? includeParentMessageInfo = null;
@@ -199,7 +199,7 @@ namespace sendbird_platform_sdk.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string channelType = null;
             //string channelUrl = null;
-            //string messageId = null;
+            //long messageId = null;
             //string keys = null;
             //string apiToken = null;
             //var response = instance.RemoveExtraDataFromAMessage(channelType, channelUrl, messageId, keys, apiToken);
@@ -230,7 +230,7 @@ namespace sendbird_platform_sdk.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string channelType = null;
             //string channelUrl = null;
-            //string messageId = null;
+            //long messageId = null;
             //string apiToken = null;
             //UpdateAMessageRequest updateAMessageRequest = null;
             //var response = instance.UpdateAMessage(channelType, channelUrl, messageId, apiToken, updateAMessageRequest);
@@ -246,7 +246,7 @@ namespace sendbird_platform_sdk.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string channelType = null;
             //string channelUrl = null;
-            //string messageId = null;
+            //long messageId = null;
             //string apiToken = null;
             //UpdateExtraDataInAMessageRequest updateExtraDataInAMessageRequest = null;
             //var response = instance.UpdateExtraDataInAMessage(channelType, channelUrl, messageId, apiToken, updateExtraDataInAMessageRequest);

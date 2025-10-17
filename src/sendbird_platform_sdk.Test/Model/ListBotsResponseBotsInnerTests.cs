@@ -66,14 +66,6 @@ namespace sendbird_platform_sdk.Test
 
 
         /// <summary>
-        /// Test the property 'Ai'
-        /// </summary>
-        [Test]
-        public void AiTest()
-        {
-            // TODO unit test for the property 'Ai'
-        }
-        /// <summary>
         /// Test the property 'Bot'
         /// </summary>
         [Test]

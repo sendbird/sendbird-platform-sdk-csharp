@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Bot** | [**CreateBotResponseBot**](CreateBotResponseBot.md) |  | [optional] 
+**Bot** | [**ViewBotByIdResponseBot**](ViewBotByIdResponseBot.md) |  | [optional] 
 **BotCallbackUrl** | **string** |  | [optional] 
 **EnableMarkAsRead** | **bool** |  | [optional] 
 **IsPrivacyMode** | **bool** |  | [optional] 
 **ShowMember** | **bool** |  | [optional] 
-**ChannelInvitationPreference** | **decimal** |  | [optional] 
+**ChannelInvitationPreference** | **int** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

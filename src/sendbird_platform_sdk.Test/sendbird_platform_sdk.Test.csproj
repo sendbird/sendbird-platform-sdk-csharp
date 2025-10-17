@@ -81,7 +81,7 @@ Contact: support@sendbird.com
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
       <ProjectReference Include="..\sendbird_platform_sdk\sendbird_platform_sdk.csproj">
-          <Project>{8AD682D1-4E08-4E04-9278-0C6351E28A37}</Project>
+          <Project>{441E8FCD-2D7F-4717-9378-2C0F1D586A64}</Project>
           <Name>sendbird_platform_sdk</Name>
       </ProjectReference>
   </ItemGroup>

@@ -77,6 +77,19 @@ namespace sendbird_platform_sdk.Test
         }
         
         /// <summary>
+        /// Test DeleteBotById
+        /// </summary>
+        [Test]
+        public void DeleteBotByIdTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string botUserid = null;
+            //string apiToken = null;
+            //var response = instance.DeleteBotById(botUserid, apiToken);
+            //Assert.IsInstanceOf(typeof(Object), response, "response is Object");
+        }
+        
+        /// <summary>
         /// Test JoinChannels
         /// </summary>
         [Test]
@@ -139,10 +152,57 @@ namespace sendbird_platform_sdk.Test
         {
             // TODO uncomment below to test the method and replace null with proper value
             //string botUserid = null;
+            //string messageType = null;
+            //string channelUrl = null;
             //string apiToken = null;
-            //SendABotMessageRequest sendABotMessageRequest = null;
-            //var response = instance.SendABotMessage(botUserid, apiToken, sendABotMessageRequest);
-            //Assert.IsInstanceOf(typeof(SendbirdMessageResponse), response, "response is SendbirdMessageResponse");
+            //string message = null;
+            //List<string> mentioned = null;
+            //SendbirdExtendedMessagePayload extendedMessagePayload = null;
+            //System.IO.Stream file = null;
+            //bool? requireAuth = null;
+            //string mentionType = null;
+            //List<string> mentionedUserIds = null;
+            //bool? isSilent = null;
+            //List<SendbirdSortedMetaarrayInner> sortedMetaarray = null;
+            //string apnsBundleId = null;
+            //Object appleCriticalAlertOptions = null;
+            //string sound = null;
+            //decimal? volume = null;
+            //long? createdAt = null;
+            //string customType = null;
+            //string data = null;
+            //string dedupId = null;
+            //bool? markAsRead = null;
+            //bool? sendPush = null;
+            //var response = instance.SendABotMessage(botUserid, messageType, channelUrl, apiToken, message, mentioned, extendedMessagePayload, file, requireAuth, mentionType, mentionedUserIds, isSilent, sortedMetaarray, apnsBundleId, appleCriticalAlertOptions, sound, volume, createdAt, customType, data, dedupId, markAsRead, sendPush);
+            //Assert.IsInstanceOf(typeof(SendABotMessageResponse), response, "response is SendABotMessageResponse");
+        }
+        
+        /// <summary>
+        /// Test UpdateBotById
+        /// </summary>
+        [Test]
+        public void UpdateBotByIdTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string botUserid = null;
+            //string apiToken = null;
+            //UpdateBotByIdData updateBotByIdData = null;
+            //var response = instance.UpdateBotById(botUserid, apiToken, updateBotByIdData);
+            //Assert.IsInstanceOf(typeof(UpdateBotByIdResponse), response, "response is UpdateBotByIdResponse");
+        }
+        
+        /// <summary>
+        /// Test ViewBotById
+        /// </summary>
+        [Test]
+        public void ViewBotByIdTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string botUserid = null;
+            //string apiToken = null;
+            //var response = instance.ViewBotById(botUserid, apiToken);
+            //Assert.IsInstanceOf(typeof(ViewBotByIdResponse), response, "response is ViewBotByIdResponse");
         }
         
     }

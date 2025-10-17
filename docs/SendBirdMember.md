@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 **Nickname** | **string** |  | [optional] 
 **PushEnabled** | **bool** |  | [optional] 
 **PushTriggerOption** | [**SendbirdPushTriggerOption**](SendbirdPushTriggerOption.md) |  | [optional] 
-**ProfileUrl** | **string** |  | [optional] 
+**ProfileUrl** | **string** |  | [optional] [default to ""]
 **RequireAuthForProfileImage** | **bool** |  | [optional] 
 **ReadTs** | **long** |  | [optional] 
 **Role** | **string** |  | [optional] 

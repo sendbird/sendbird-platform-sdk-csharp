@@ -46,7 +46,7 @@ namespace sendbird_platform_sdk.Model
         /// <param name="enableMarkAsRead">enableMarkAsRead.</param>
         /// <param name="isPrivacyMode">isPrivacyMode.</param>
         /// <param name="showMember">showMember.</param>
-        public CreateABotResponse(CreateABotResponseBot bot = default(CreateABotResponseBot), string botCallbackUrl = default(string), CreateABotResponseBotStyle botStyle = default(CreateABotResponseBotStyle), int channelInvitationPreference = default(int), long createdAt = default(long), bool enableMarkAsRead = default(bool), bool isPrivacyMode = default(bool), bool showMember = default(bool))
+        public CreateABotResponse(CreateABotResponseBot bot = default(CreateABotResponseBot), string botCallbackUrl = default(string), ListBotsResponseBotsInnerBotStyle botStyle = default(ListBotsResponseBotsInnerBotStyle), int channelInvitationPreference = default(int), long createdAt = default(long), bool enableMarkAsRead = default(bool), bool isPrivacyMode = default(bool), bool showMember = default(bool))
         {
             // to ensure "bot" is required (not null)
             if (bot == null)
@@ -83,7 +83,7 @@ namespace sendbird_platform_sdk.Model
         /// Gets or Sets BotStyle
         /// </summary>
         [DataMember(Name="bot_style", EmitDefaultValue=false)]
-        public CreateABotResponseBotStyle BotStyle { get; set; }
+        public ListBotsResponseBotsInnerBotStyle BotStyle { get; set; }
 
         /// <summary>
         /// Gets or Sets ChannelInvitationPreference

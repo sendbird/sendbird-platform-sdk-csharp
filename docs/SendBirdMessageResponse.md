@@ -27,14 +27,14 @@ Name | Type | Description | Notes
 **ReqId** | **string** |  | [optional] 
 **MentionType** | **string** |  | [optional] 
 **ChannelUrl** | **string** |  | [optional] 
-**MessageId** | **int** |  | [optional] 
+**MessageId** | **long** |  | [optional] 
 **SortedMetaarray** | [**List&lt;SendbirdSortedMetaarrayInner&gt;**](SendbirdSortedMetaarrayInner.md) |  | [optional] 
 **ThreadInfo** | **Object** |  | [optional] 
 **ParentMessageId** | **int** |  | [optional] 
 **ParentMessageInfo** | [**SendbirdParentMessageInfo**](SendbirdParentMessageInfo.md) |  | [optional] 
 **IsReplyToChannel** | **bool** |  | [optional] 
 **MessageEvents** | [**SendbirdMessageResponseMessageEvents**](SendbirdMessageResponseMessageEvents.md) |  | [optional] 
-**ExtendedMessagePayload** | [**SendbirdExtendedMessagePayload**](SendbirdExtendedMessagePayload.md) |  | [optional] 
+**ExtendedMessagePayload** | [**SendbirdMessageResponseExtendedMessagePayload**](SendbirdMessageResponseExtendedMessagePayload.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

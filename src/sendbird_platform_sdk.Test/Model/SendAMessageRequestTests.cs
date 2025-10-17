@@ -66,6 +66,94 @@ namespace sendbird_platform_sdk.Test
 
 
         /// <summary>
+        /// Test the property 'MessageType'
+        /// </summary>
+        [Test]
+        public void MessageTypeTest()
+        {
+            // TODO unit test for the property 'MessageType'
+        }
+        /// <summary>
+        /// Test the property 'UserId'
+        /// </summary>
+        [Test]
+        public void UserIdTest()
+        {
+            // TODO unit test for the property 'UserId'
+        }
+        /// <summary>
+        /// Test the property 'Message'
+        /// </summary>
+        [Test]
+        public void MessageTest()
+        {
+            // TODO unit test for the property 'Message'
+        }
+        /// <summary>
+        /// Test the property 'PushMessageTemplate'
+        /// </summary>
+        [Test]
+        public void PushMessageTemplateTest()
+        {
+            // TODO unit test for the property 'PushMessageTemplate'
+        }
+        /// <summary>
+        /// Test the property 'PollId'
+        /// </summary>
+        [Test]
+        public void PollIdTest()
+        {
+            // TODO unit test for the property 'PollId'
+        }
+        /// <summary>
+        /// Test the property 'Files'
+        /// </summary>
+        [Test]
+        public void FilesTest()
+        {
+            // TODO unit test for the property 'Files'
+        }
+        /// <summary>
+        /// Test the property 'RequireAuth'
+        /// </summary>
+        [Test]
+        public void RequireAuthTest()
+        {
+            // TODO unit test for the property 'RequireAuth'
+        }
+        /// <summary>
+        /// Test the property 'Thumbnail1'
+        /// </summary>
+        [Test]
+        public void Thumbnail1Test()
+        {
+            // TODO unit test for the property 'Thumbnail1'
+        }
+        /// <summary>
+        /// Test the property 'Thumbnail2'
+        /// </summary>
+        [Test]
+        public void Thumbnail2Test()
+        {
+            // TODO unit test for the property 'Thumbnail2'
+        }
+        /// <summary>
+        /// Test the property 'Thumbnail3'
+        /// </summary>
+        [Test]
+        public void Thumbnail3Test()
+        {
+            // TODO unit test for the property 'Thumbnail3'
+        }
+        /// <summary>
+        /// Test the property 'Thumbnails'
+        /// </summary>
+        [Test]
+        public void ThumbnailsTest()
+        {
+            // TODO unit test for the property 'Thumbnails'
+        }
+        /// <summary>
         /// Test the property 'ApnsBundleId'
         /// </summary>
         [Test]
@@ -154,38 +242,6 @@ namespace sendbird_platform_sdk.Test
             // TODO unit test for the property 'MentionedUserIds'
         }
         /// <summary>
-        /// Test the property 'Message'
-        /// </summary>
-        [Test]
-        public void MessageTest()
-        {
-            // TODO unit test for the property 'Message'
-        }
-        /// <summary>
-        /// Test the property 'MessageType'
-        /// </summary>
-        [Test]
-        public void MessageTypeTest()
-        {
-            // TODO unit test for the property 'MessageType'
-        }
-        /// <summary>
-        /// Test the property 'PollId'
-        /// </summary>
-        [Test]
-        public void PollIdTest()
-        {
-            // TODO unit test for the property 'PollId'
-        }
-        /// <summary>
-        /// Test the property 'PushMessageTemplate'
-        /// </summary>
-        [Test]
-        public void PushMessageTemplateTest()
-        {
-            // TODO unit test for the property 'PushMessageTemplate'
-        }
-        /// <summary>
         /// Test the property 'SendPush'
         /// </summary>
         [Test]
@@ -216,54 +272,6 @@ namespace sendbird_platform_sdk.Test
         public void VolumeTest()
         {
             // TODO unit test for the property 'Volume'
-        }
-        /// <summary>
-        /// Test the property 'Files'
-        /// </summary>
-        [Test]
-        public void FilesTest()
-        {
-            // TODO unit test for the property 'Files'
-        }
-        /// <summary>
-        /// Test the property 'RequireAuth'
-        /// </summary>
-        [Test]
-        public void RequireAuthTest()
-        {
-            // TODO unit test for the property 'RequireAuth'
-        }
-        /// <summary>
-        /// Test the property 'Thumbnail1'
-        /// </summary>
-        [Test]
-        public void Thumbnail1Test()
-        {
-            // TODO unit test for the property 'Thumbnail1'
-        }
-        /// <summary>
-        /// Test the property 'Thumbnail2'
-        /// </summary>
-        [Test]
-        public void Thumbnail2Test()
-        {
-            // TODO unit test for the property 'Thumbnail2'
-        }
-        /// <summary>
-        /// Test the property 'Thumbnail3'
-        /// </summary>
-        [Test]
-        public void Thumbnail3Test()
-        {
-            // TODO unit test for the property 'Thumbnail3'
-        }
-        /// <summary>
-        /// Test the property 'Thumbnails'
-        /// </summary>
-        [Test]
-        public void ThumbnailsTest()
-        {
-            // TODO unit test for the property 'Thumbnails'
         }
 
     }

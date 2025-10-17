@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AccessCode** | **string** |  | [optional] 
-**BlockSdkUserChannelJoin** | **bool** |  | [optional] 
+**BlockSdkUserChannelJoin** | **bool?** |  | [optional] 
 **ChannelUrl** | **string** |  | [optional] 
 **CoverFile** | **System.IO.Stream** | Uploads a file for the channel cover image. | [optional] 
 **CoverUrl** | **string** |  | [optional] 
