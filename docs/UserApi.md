@@ -7,8 +7,11 @@ Method | HTTP request | Description
 [**AddARegistrationOrDeviceToken**](UserApi.md#addaregistrationordevicetoken) | **POST** /v3/users/{user_id}/push/{token_type} | Add a registration or device token
 [**ChooseAPushNotificationContentTemplate**](UserApi.md#chooseapushnotificationcontenttemplate) | **PUT** /v3/users/{user_id}/push/template | Choose a push notification content template
 [**CreateAUser**](UserApi.md#createauser) | **POST** /v3/users | Create a user
+[**CreateUserMetadata**](UserApi.md#createusermetadata) | **POST** /v3/users/{user_id}/metadata | Create user metadata
 [**CreateUserToken**](UserApi.md#createusertoken) | **POST** /v3/users/{user_id}/token | Create user token
 [**DeleteAUser**](UserApi.md#deleteauser) | **DELETE** /v3/users/{user_id} | Delete a user
+[**DeleteSpecificUserMetadata**](UserApi.md#deletespecificusermetadata) | **DELETE** /v3/users/{user_id}/metadata/{key} | Delete user metadata
+[**DeleteUserAllMetadata**](UserApi.md#deleteuserallmetadata) | **DELETE** /v3/users/{user_id}/metadata | Delete user metadata
 [**GetChannelInvitationPreference**](UserApi.md#getchannelinvitationpreference) | **GET** /v3/users/{user_id}/channel_invitation_preference | Get channel invitation preference
 [**LeaveMyGroupChannels**](UserApi.md#leavemygroupchannels) | **PUT** /v3/users/{user_id}/my_group_channels/leave | Leave my group channels
 [**ListMyGroupChannels**](UserApi.md#listmygroupchannels) | **GET** /v3/users/{user_id}/my_group_channels | List my group channels
@@ -24,12 +27,15 @@ Method | HTTP request | Description
 [**UpdateCountPreferenceOfAChannel**](UserApi.md#updatecountpreferenceofachannel) | **PUT** /v3/users/{user_id}/count_preference/{channel_url} | Update count preference of a channel
 [**UpdatePushPreferences**](UserApi.md#updatepushpreferences) | **PUT** /v3/users/{user_id}/push_preference | Update push preferences
 [**UpdatePushPreferencesForAChannel**](UserApi.md#updatepushpreferencesforachannel) | **PUT** /v3/users/{user_id}/push_preference/{channel_url} | Update push preferences for a channel
+[**UpdateSpecificUserMetadata**](UserApi.md#updatespecificusermetadata) | **PUT** /v3/users/{user_id}/metadata/{key} | Update specific user metadata
+[**UpdateUserMetadata**](UserApi.md#updateusermetadata) | **PUT** /v3/users/{user_id}/metadata | Update user metadata
 [**ViewAUser**](UserApi.md#viewauser) | **GET** /v3/users/{user_id} | View a user
 [**ViewCountPreferenceOfAChannel**](UserApi.md#viewcountpreferenceofachannel) | **GET** /v3/users/{user_id}/count_preference/{channel_url} | View count preference of a channel
 [**ViewNumberOfChannelsWithUnreadMessages**](UserApi.md#viewnumberofchannelswithunreadmessages) | **GET** /v3/users/{user_id}/unread_channel_count | View number of channels with unread messages
 [**ViewNumberOfUnreadMessages**](UserApi.md#viewnumberofunreadmessages) | **GET** /v3/users/{user_id}/unread_message_count | View number of unread messages
 [**ViewPushPreferences**](UserApi.md#viewpushpreferences) | **GET** /v3/users/{user_id}/push_preference | View push preferences
 [**ViewPushPreferencesForAChannel**](UserApi.md#viewpushpreferencesforachannel) | **GET** /v3/users/{user_id}/push_preference/{channel_url} | View push preferences for a channel
+[**ViewSpecificUserMetadata**](UserApi.md#viewspecificusermetadata) | **GET** /v3/users/{user_id}/metadata/{key} | Get specific user metadata
 [**ViewWhoOwnsARegistrationOrDeviceToken**](UserApi.md#viewwhoownsaregistrationordevicetoken) | **GET** /v3/push/device_tokens/{token_type}/{token} | View who owns a registration or device token
 
 
@@ -274,6 +280,86 @@ No authorization required
 [[Back to README]](../README.md)
 
 
+## CreateUserMetadata
+
+> Object CreateUserMetadata (string userId, string apiToken = null, CreateUserMetadataRequest createUserMetadataRequest = null)
+
+Create user metadata
+
+## Create metadata When creating new items of the user metadata. https://sendbird.com/docs/chat/platform-api/v3/user/managing-metadata/user-create-metadata
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class CreateUserMetadataExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var userId = "userId_example";  // string | (Required) 
+            var apiToken = "apiToken_example";  // string |  (optional) 
+            var createUserMetadataRequest = new CreateUserMetadataRequest(); // CreateUserMetadataRequest |  (optional) 
+
+            try
+            {
+                // Create user metadata
+                Object result = apiInstance.CreateUserMetadata(userId, apiToken, createUserMetadataRequest);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.CreateUserMetadata: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **string**| (Required)  | 
+ **apiToken** | **string**|  | [optional] 
+ **createUserMetadataRequest** | [**CreateUserMetadataRequest**](CreateUserMetadataRequest.md)|  | [optional] 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## CreateUserToken
 
 > CreateUserTokenResponse CreateUserToken (string userId, string apiToken = null, CreateUserTokenRequest createUserTokenRequest = null)
@@ -391,6 +477,164 @@ namespace Example
             catch (ApiException e)
             {
                 Debug.Print("Exception when calling UserApi.DeleteAUser: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **string**| (Required)  | 
+ **apiToken** | **string**|  | [optional] 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DeleteSpecificUserMetadata
+
+> Object DeleteSpecificUserMetadata (string userId, string key, string apiToken = null)
+
+Delete user metadata
+
+## Delete metadata https://sendbird.com/docs/chat/platform-api/v3/user/managing-metadata/user-delete-metadata
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class DeleteSpecificUserMetadataExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var userId = "userId_example";  // string | (Required) 
+            var key = "key_example";  // string | 
+            var apiToken = "apiToken_example";  // string |  (optional) 
+
+            try
+            {
+                // Delete user metadata
+                Object result = apiInstance.DeleteSpecificUserMetadata(userId, key, apiToken);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.DeleteSpecificUserMetadata: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **string**| (Required)  | 
+ **key** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DeleteUserAllMetadata
+
+> Object DeleteUserAllMetadata (string userId, string apiToken = null)
+
+Delete user metadata
+
+## Delete metadata You can delete a specific or all metadata of a user. Metadata stores additional user information such as their preference settings. https://sendbird.com/docs/chat/platform-api/v3/user/managing-metadata/user-delete-metadata
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class DeleteUserAllMetadataExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var userId = "userId_example";  // string | (Required) 
+            var apiToken = "apiToken_example";  // string |  (optional) 
+
+            try
+            {
+                // Delete user metadata
+                Object result = apiInstance.DeleteUserAllMetadata(userId, apiToken);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.DeleteUserAllMetadata: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -1728,6 +1972,168 @@ No authorization required
 [[Back to README]](../README.md)
 
 
+## UpdateSpecificUserMetadata
+
+> Object UpdateSpecificUserMetadata (string userId, string key, string apiToken = null, UpdateSpecificUserMetadataRequest updateSpecificUserMetadataRequest = null)
+
+Update specific user metadata
+
+## Update metadata https://sendbird.com/docs/chat/platform-api/v3/user/managing-metadata/user-update-metadata
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class UpdateSpecificUserMetadataExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var userId = "userId_example";  // string | (Required) 
+            var key = "key_example";  // string | 
+            var apiToken = "apiToken_example";  // string |  (optional) 
+            var updateSpecificUserMetadataRequest = new UpdateSpecificUserMetadataRequest(); // UpdateSpecificUserMetadataRequest |  (optional) 
+
+            try
+            {
+                // Update specific user metadata
+                Object result = apiInstance.UpdateSpecificUserMetadata(userId, key, apiToken, updateSpecificUserMetadataRequest);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.UpdateSpecificUserMetadata: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **string**| (Required)  | 
+ **key** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+ **updateSpecificUserMetadataRequest** | [**UpdateSpecificUserMetadataRequest**](UpdateSpecificUserMetadataRequest.md)|  | [optional] 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## UpdateUserMetadata
+
+> Object UpdateUserMetadata (string userId, string apiToken = null, UpdateUserMetadataRequest updateUserMetadataRequest = null)
+
+Update user metadata
+
+## Update metadata When updating existing items of the user metadata by their keys or adding new items to the metadata https://sendbird.com/docs/chat/platform-api/v3/user/managing-metadata/user-update-metadata
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class UpdateUserMetadataExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var userId = "userId_example";  // string | (Required) 
+            var apiToken = "apiToken_example";  // string |  (optional) 
+            var updateUserMetadataRequest = new UpdateUserMetadataRequest(); // UpdateUserMetadataRequest |  (optional) 
+
+            try
+            {
+                // Update user metadata
+                Object result = apiInstance.UpdateUserMetadata(userId, apiToken, updateUserMetadataRequest);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.UpdateUserMetadata: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **string**| (Required)  | 
+ **apiToken** | **string**|  | [optional] 
+ **updateUserMetadataRequest** | [**UpdateUserMetadataRequest**](UpdateUserMetadataRequest.md)|  | [optional] 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## ViewAUser
 
 > SendbirdUser ViewAUser (string userId, bool? includeUnreadCount = null, string customTypes = null, string superMode = null, string apiToken = null)
@@ -2192,6 +2598,86 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ViewPushPreferencesForAChannelResponse**](ViewPushPreferencesForAChannelResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful response |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ViewSpecificUserMetadata
+
+> Object ViewSpecificUserMetadata (string userId, string key, string apiToken = null)
+
+Get specific user metadata
+
+## Get metadata https://sendbird.com/docs/chat/platform-api/v3/user/managing-metadata/user-get-metadata
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using sendbird_platform_sdk.Api;
+using sendbird_platform_sdk.Client;
+using sendbird_platform_sdk.Model;
+
+namespace Example
+{
+    public class ViewSpecificUserMetadataExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api-APP_ID.sendbird.com";
+            var apiInstance = new UserApi(Configuration.Default);
+            var userId = "userId_example";  // string | (Required) 
+            var key = "key_example";  // string | 
+            var apiToken = {{API_TOKEN}};  // string |  (optional) 
+
+            try
+            {
+                // Get specific user metadata
+                Object result = apiInstance.ViewSpecificUserMetadata(userId, key, apiToken);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserApi.ViewSpecificUserMetadata: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **string**| (Required)  | 
+ **key** | **string**|  | 
+ **apiToken** | **string**|  | [optional] 
+
+### Return type
+
+**Object**
 
 ### Authorization
 
