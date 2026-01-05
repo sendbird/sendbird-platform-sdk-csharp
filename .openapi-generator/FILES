@@ -22,6 +22,7 @@ docs/CreateAChannelMetadataResponse.md
 docs/CreateAGroupChannelRequest.md
 docs/CreateAUserRequest.md
 docs/CreateAnOpenChannelRequest.md
+docs/CreateUserMetadataRequest.md
 docs/CreateUserTokenRequest.md
 docs/CreateUserTokenResponse.md
 docs/FreezeAGroupChannelRequest.md
@@ -125,6 +126,8 @@ docs/UpdatePushPreferencesForAChannelRequest.md
 docs/UpdatePushPreferencesForAChannelResponse.md
 docs/UpdatePushPreferencesRequest.md
 docs/UpdatePushPreferencesResponse.md
+docs/UpdateSpecificUserMetadataRequest.md
+docs/UpdateUserMetadataRequest.md
 docs/UserApi.md
 docs/ViewBotByIdResponse.md
 docs/ViewBotByIdResponseBot.md
@@ -138,6 +141,9 @@ docs/ViewPushPreferencesResponse.md
 git_push.sh
 mono_nunit_test.sh
 sendbird_platform_sdk.sln
+src/sendbird_platform_sdk.Test/Model/CreateUserMetadataRequestTests.cs
+src/sendbird_platform_sdk.Test/Model/UpdateSpecificUserMetadataRequestTests.cs
+src/sendbird_platform_sdk.Test/Model/UpdateUserMetadataRequestTests.cs
 src/sendbird_platform_sdk.Test/packages.config
 src/sendbird_platform_sdk.Test/sendbird_platform_sdk.Test.csproj
 src/sendbird_platform_sdk/Api/AnnouncementApi.cs
@@ -176,6 +182,7 @@ src/sendbird_platform_sdk/Model/CreateAChannelMetadataResponse.cs
 src/sendbird_platform_sdk/Model/CreateAGroupChannelRequest.cs
 src/sendbird_platform_sdk/Model/CreateAUserRequest.cs
 src/sendbird_platform_sdk/Model/CreateAnOpenChannelRequest.cs
+src/sendbird_platform_sdk/Model/CreateUserMetadataRequest.cs
 src/sendbird_platform_sdk/Model/CreateUserTokenRequest.cs
 src/sendbird_platform_sdk/Model/CreateUserTokenResponse.cs
 src/sendbird_platform_sdk/Model/FreezeAGroupChannelRequest.cs
@@ -273,6 +280,8 @@ src/sendbird_platform_sdk/Model/UpdatePushPreferencesForAChannelRequest.cs
 src/sendbird_platform_sdk/Model/UpdatePushPreferencesForAChannelResponse.cs
 src/sendbird_platform_sdk/Model/UpdatePushPreferencesRequest.cs
 src/sendbird_platform_sdk/Model/UpdatePushPreferencesResponse.cs
+src/sendbird_platform_sdk/Model/UpdateSpecificUserMetadataRequest.cs
+src/sendbird_platform_sdk/Model/UpdateUserMetadataRequest.cs
 src/sendbird_platform_sdk/Model/ViewBotByIdResponse.cs
 src/sendbird_platform_sdk/Model/ViewBotByIdResponseBot.cs
 src/sendbird_platform_sdk/Model/ViewCountPreferenceOfAChannelResponse.cs
