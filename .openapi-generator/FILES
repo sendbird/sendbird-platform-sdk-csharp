@@ -125,6 +125,8 @@ docs/UpdateExtraDataInAMessageResponse.md
 docs/UpdatePushPreferencesForAChannelRequest.md
 docs/UpdatePushPreferencesForAChannelResponse.md
 docs/UpdatePushPreferencesRequest.md
+docs/UpdatePushPreferencesRequestDndSchedulesInner.md
+docs/UpdatePushPreferencesRequestDndSchedulesInnerTimeWindowsInner.md
 docs/UpdatePushPreferencesResponse.md
 docs/UpdateSpecificUserMetadataRequest.md
 docs/UpdateUserMetadataRequest.md
@@ -141,9 +143,6 @@ docs/ViewPushPreferencesResponse.md
 git_push.sh
 mono_nunit_test.sh
 sendbird_platform_sdk.sln
-src/sendbird_platform_sdk.Test/Model/CreateUserMetadataRequestTests.cs
-src/sendbird_platform_sdk.Test/Model/UpdateSpecificUserMetadataRequestTests.cs
-src/sendbird_platform_sdk.Test/Model/UpdateUserMetadataRequestTests.cs
 src/sendbird_platform_sdk.Test/packages.config
 src/sendbird_platform_sdk.Test/sendbird_platform_sdk.Test.csproj
 src/sendbird_platform_sdk/Api/AnnouncementApi.cs
@@ -279,6 +278,8 @@ src/sendbird_platform_sdk/Model/UpdateExtraDataInAMessageResponse.cs
 src/sendbird_platform_sdk/Model/UpdatePushPreferencesForAChannelRequest.cs
 src/sendbird_platform_sdk/Model/UpdatePushPreferencesForAChannelResponse.cs
 src/sendbird_platform_sdk/Model/UpdatePushPreferencesRequest.cs
+src/sendbird_platform_sdk/Model/UpdatePushPreferencesRequestDndSchedulesInner.cs
+src/sendbird_platform_sdk/Model/UpdatePushPreferencesRequestDndSchedulesInnerTimeWindowsInner.cs
 src/sendbird_platform_sdk/Model/UpdatePushPreferencesResponse.cs
 src/sendbird_platform_sdk/Model/UpdateSpecificUserMetadataRequest.cs
 src/sendbird_platform_sdk/Model/UpdateUserMetadataRequest.cs
