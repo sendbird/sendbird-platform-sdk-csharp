@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **StartHour** | **int** |  | [optional] 
 **StartMin** | **int** |  | [optional] 
 **Timezone** | **string** |  | [optional] 
+**DndSchedules** | [**List&lt;UpdatePushPreferencesRequestDndSchedulesInner&gt;**](UpdatePushPreferencesRequestDndSchedulesInner.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

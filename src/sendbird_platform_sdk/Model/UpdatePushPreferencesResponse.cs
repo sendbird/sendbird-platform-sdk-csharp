@@ -47,7 +47,8 @@ namespace sendbird_platform_sdk.Model
         /// <param name="startHour">startHour.</param>
         /// <param name="startMin">startMin.</param>
         /// <param name="timezone">timezone.</param>
-        public UpdatePushPreferencesResponse(bool blockPushFromBots = default(bool), bool doNotDisturb = default(bool), bool enablePushForReplies = default(bool), int endHour = default(int), int endMin = default(int), List<string> pushBlockedBotIds = default(List<string>), string pushSound = default(string), SendbirdPushTriggerOption pushTriggerOption = default(SendbirdPushTriggerOption), bool snoozeEnabled = default(bool), long snoozeEndTs = default(long), long snoozeStartTs = default(long), int startHour = default(int), int startMin = default(int), string timezone = default(string))
+        /// <param name="dndSchedules">dndSchedules.</param>
+        public UpdatePushPreferencesResponse(bool blockPushFromBots = default(bool), bool doNotDisturb = default(bool), bool enablePushForReplies = default(bool), int endHour = default(int), int endMin = default(int), List<string> pushBlockedBotIds = default(List<string>), string pushSound = default(string), SendbirdPushTriggerOption pushTriggerOption = default(SendbirdPushTriggerOption), bool snoozeEnabled = default(bool), long snoozeEndTs = default(long), long snoozeStartTs = default(long), int startHour = default(int), int startMin = default(int), string timezone = default(string), List<UpdatePushPreferencesRequestDndSchedulesInner> dndSchedules = default(List<UpdatePushPreferencesRequestDndSchedulesInner>))
         {
             this.BlockPushFromBots = blockPushFromBots;
             this.DoNotDisturb = doNotDisturb;
@@ -63,6 +64,7 @@ namespace sendbird_platform_sdk.Model
             this.StartHour = startHour;
             this.StartMin = startMin;
             this.Timezone = timezone;
+            this.DndSchedules = dndSchedules;
         }
 
         /// <summary>
@@ -150,6 +152,12 @@ namespace sendbird_platform_sdk.Model
         public string Timezone { get; set; }
 
         /// <summary>
+        /// Gets or Sets DndSchedules
+        /// </summary>
+        [DataMember(Name="dnd_schedules", EmitDefaultValue=false)]
+        public List<UpdatePushPreferencesRequestDndSchedulesInner> DndSchedules { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -171,6 +179,7 @@ namespace sendbird_platform_sdk.Model
             sb.Append("  StartHour: ").Append(StartHour).Append("\n");
             sb.Append("  StartMin: ").Append(StartMin).Append("\n");
             sb.Append("  Timezone: ").Append(Timezone).Append("\n");
+            sb.Append("  DndSchedules: ").Append(DndSchedules).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -275,6 +284,12 @@ namespace sendbird_platform_sdk.Model
                     this.Timezone == input.Timezone ||
                     (this.Timezone != null &&
                     this.Timezone.Equals(input.Timezone))
+                ) && 
+                (
+                    this.DndSchedules == input.DndSchedules ||
+                    this.DndSchedules != null &&
+                    input.DndSchedules != null &&
+                    this.DndSchedules.SequenceEqual(input.DndSchedules)
                 );
         }
 
@@ -315,6 +330,8 @@ namespace sendbird_platform_sdk.Model
                     hashCode = hashCode * 59 + this.StartMin.GetHashCode();
                 if (this.Timezone != null)
                     hashCode = hashCode * 59 + this.Timezone.GetHashCode();
+                if (this.DndSchedules != null)
+                    hashCode = hashCode * 59 + this.DndSchedules.GetHashCode();
                 return hashCode;
             }
         }
